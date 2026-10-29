@@ -98,19 +98,29 @@ def fetch_rss_sources():
             source_status[url] = str(e)
     return rss_items, source_status
 
-# ==================== Gemini 评估与多模型降级重试逻辑 ====================
+# ==================== Gemini 评估与多模型降级重试逻辑（含最新事实防错与诙谐漫画编剧） ====================
 def evaluate_with_gemini(raw_text, is_morning=False):
     if not client:
         return None, "Google GenAI Client 未初始化"
     
     mode_desc = "每日权威早报汇总" if is_morning else "重大突发新闻速递"
+    
     prompt = f"""
-    你是一个严谨的体育新闻事实核验员与小红书主编。
-    请根据以下抓取到的 RSS 资讯，并使用 Google Search Grounding 联网核对过去几小时内欧洲足坛（Big6伤病、重磅签约、财务案进展、巨星动态）的最新事实：
+    你是一位严谨的体育新闻事实核验员，同时也是“越位情报局”的爆款内容导演与诙谐漫画编剧。
+    
+    【最新事实防错映射表（必须严格遵守，绝对禁止使用旧信息）】
+    - 曼城 (Manchester City)：主教练为 Pep Guardiola（瓜迪奥拉）。
+    - 切尔西 (Chelsea)：主教练为 Enzo Maresca（马雷斯卡），所有权由 Clearlake Capital（清湖资本/埃格巴利 Eghbali）主导，伯利 (Todd Boehly) 已淡出日常管理。
+    - 曼联 (Manchester United)：主教练为 Rúben Amorim（阿莫林）。
+    - 利物浦 (Liverpool)：主教练为 Arne Slot（斯洛特）。
+    - 阿森纳 (Arsenal)：主教练为 Mikel Arteta（阿尔特塔）。
+    - 托特纳姆热刺 (Tottenham Hotspur)：主教练为 Ange Postecoglou（波斯特科格鲁）。
+
+    请根据以下抓取到的 RSS 资讯，并使用 Google Search Grounding 联网核对过去几小时内欧洲足坛的最新事实：
     {raw_text}
-
+    
     当前任务模式：{mode_desc}
-
+    
     请严格返回合法的 JSON 对象（不得包含 markdown 代码块反引号，仅返回纯 JSON 字符串），结构如下：
     {{
       "has_valid_news": true/false,
@@ -121,15 +131,17 @@ def evaluate_with_gemini(raw_text, is_morning=False):
       "draft_a": "争议拆解型文案草稿",
       "draft_b": "证据核验型文案草稿",
       "draft_c": "机制解释型文案草稿",
-      "cover_blueprint": "P1封面设计指引"
+      "cover_blueprint": "P1封面设计指引",
+      "image_prompt": "专门给AI绘图模型用的英文Prompt（3D caricature style, 诙谐夸张漫画隐喻，包含人物标志性特征）",
+      "banner_overlay_text": "叠加在图片上的黄色高对比度标题（8字以内）"
     }}
+    
     约束：如果未发现具有高信源支持的重大新闻，或者搜索证据不足，has_valid_news 必须设为 false。
     """
-
-    # 核心降级机制：定义备选模型优先级队列
+    
     candidate_models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-8b']
     last_error = None
-
+    
     for model_name in candidate_models:
         try:
             print(f"[INFO] 正在尝试使用模型: {model_name} ...")
@@ -143,7 +155,6 @@ def evaluate_with_gemini(raw_text, is_morning=False):
                 )
             )
             
-            # 提取 Google Search Grounding 引用元数据
             grounding_urls = []
             if response.candidates and response.candidates[0].grounding_metadata:
                 gm = response.candidates[0].grounding_metadata
@@ -160,7 +171,6 @@ def evaluate_with_gemini(raw_text, is_morning=False):
             
             data = json.loads(text.strip())
             
-            # 程序级校验：模型声明 has_valid_news=true 但无 grounding 证据支持时，强制降级
             if data.get("has_valid_news") and not grounding_urls:
                 print("[WARN] 拦截幻觉：模型声明有新闻但未提供有效的 Google Search Grounding 支撑 URL。")
                 data["has_valid_news"] = False
@@ -171,12 +181,11 @@ def evaluate_with_gemini(raw_text, is_morning=False):
             
             print(f"[SUCCESS] 模型 {model_name} 成功执行并完成生成！")
             return data, None
-
         except Exception as e:
             last_error = str(e)
             print(f"[WARN] 模型 {model_name} 执行失败: {e}。自动切换至队列中的下一个模型...")
             continue
-
+            
     return None, f"所有候选 Gemini 模型调用均失败，最终错误: {last_error}"
 
 # ==================== 主执行流 ====================
@@ -187,12 +196,11 @@ def main():
     today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
     is_morning_report = (RUN_MODE == "morning")
     
-    # 早报每日一次检查
     if is_morning_report and state.get("last_morning_report_date") == today_str:
         print("[INFO] 今日早报已发送过，跳过本次早报任务。")
         log_telemetry({"start_time": start_time, "status": "SKIPPED_MORNING_ALREADY_SENT"})
         return
-
+        
     rss_items, source_status = fetch_rss_sources()
     raw_blob = "\n".join([f"- [{i['title']}]({i['link']}): {i['desc']}" for i in rss_items])
     
@@ -206,7 +214,6 @@ def main():
         event_title = model_result.get("event_title", "未知事件")
         evidence_url = model_result.get("evidence_url", "")
         
-        # 去重校验：基于 URL / GUID 严格校验
         processed_urls = state.get("processed_urls", [])
         
         if evidence_url and evidence_url in processed_urls:
@@ -214,7 +221,6 @@ def main():
         elif is_morning_report and state.get("last_morning_report_date") == today_str:
             print("[INFO] 早报防重拦截：今日已发送。")
         else:
-            # 组装 Telegram 推送卡片
             mode_prefix = "🌅 **【越位情报局·每日权威早报】**" if is_morning_report else "🚨 **【越位情报局·突发新闻核验审核】**"
             card = f"{mode_prefix}\n\n"
             card += f"📌 **事件：** {event_title}\n"
@@ -224,14 +230,15 @@ def main():
             card += f"🔥 **[A稿: 争议拆解型]**\n{model_result.get('draft_a')}\n\n"
             card += f"🛡️ **[B稿: 证据核验型]**\n{model_result.get('draft_b')}\n\n"
             card += f"🧠 **[C稿: 机制解释型]**\n{model_result.get('draft_c')}\n\n"
-            card += f"🎨 **[封面指引]**\n{model_result.get('cover_blueprint')}"
+            card += f"🎨 **[封面指引]**\n{model_result.get('cover_blueprint')}\n\n"
+            card += f"🎭 **[漫画梗图 Prompt]**\n`{model_result.get('image_prompt')}`\n"
+            card += f"🏷️ **[图片黄字标题]** {model_result.get('banner_overlay_text')}"
             
-            # 只有成功发送 Telegram 后才保存状态
             push_success = send_telegram(card)
             if push_success:
                 if evidence_url:
                     processed_urls.append(evidence_url)
-                    state["processed_urls"] = processed_urls[-200:] # 保留最近 200 条
+                    state["processed_urls"] = processed_urls[-200:]
                 if is_morning_report:
                     state["last_morning_report_date"] = today_str
                 state_updated = True
