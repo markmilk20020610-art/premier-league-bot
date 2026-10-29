@@ -1,29 +1,12 @@
-name: Yuewei News Scanner
-
-concurrency:
-  group: yuewei-news-scanner-lock
-  cancel-in-progress: false
+name: Yuewei Premier League Bot Scanner
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # 常规高频扫描
-    - cron: '0 22 * * *'   # 每日早报 (UTC 22:00 = 北京时间早 06:00)
-  workflow_dispatch:
-    inputs:
-      mode:
-        description: 'Run mode (scan or morning)'
-        required: false
-        default: 'scan'
-        type: choice
-        options:
-          - scan
-          - morning
-
-permissions:
-  contents: write
+    - cron: '*/15 * * * *'  # 每 15 分钟自动触发一次
+  workflow_dispatch:        # 支持在 GitHub 后台手动点击 "Run workflow" 触发测试
 
 jobs:
-  run-bot:
+  run-scanner:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -37,31 +20,21 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests google-genai
 
-      - name: Determine Run Mode
-        id: set-mode
-        run: |
-          if [ "${{ github.event_name }}" == "schedule" ]; then
-            echo "RUN_MODE=scan" >> $GITHUB_ENV
-          elif [ "${{ github.event.inputs.mode }}" != "" ]; then
-            echo "RUN_MODE=${{ github.event.inputs.mode }}" >> $GITHUB_ENV
-          else
-            echo "RUN_MODE=scan" >> $GITHUB_ENV
-          fi
-
-      - name: Run Bot Pipeline
+      - name: Run bot.py (Scan Mode)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          RUN_MODE: ${{ env.RUN_MODE }}
+          RUN_MODE: "scan"
         run: python bot.py
 
-      - name: Commit and Push State Changes
+      - name: Commit state changes (if any)
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase || true
-          git add state.json run_telemetry.log || true
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update bot state and telemetry [skip ci]" && git push)
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add state.json || true
+          git commit -m "Auto-update bot state.json [skip ci]" || true
+          git push || true
