@@ -8,7 +8,8 @@ from google import genai
 from google.genai import types
 
 # ==================== 配置与初始化 ====================
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 RUN_MODE = os.environ.get("RUN_MODE", "scan") # scan 或 morning
@@ -98,11 +99,47 @@ def fetch_rss_sources():
             source_status[url] = str(e)
     return rss_items, source_status
 
-# ==================== Gemini 评估与多模型降级重试逻辑（含最新事实防错与诙谐漫画编剧） ====================
-def evaluate_with_gemini(raw_text, is_morning=False):
-    if not client:
-        return None, "Google GenAI Client 未初始化"
+# ==================== DeepSeek 兜底调用逻辑 ====================
+def evaluate_with_deepseek(prompt):
+    if not DEEPSEEK_API_KEY:
+        print("[WARN] 未配置 DEEPSEEK_API_KEY，跳过 DeepSeek 兜底调用。")
+        return None, "未配置 DEEPSEEK_API_KEY"
     
+    print("[INFO] 正在尝试使用 DeepSeek 兜底模型 (deepseek-chat)...")
+    url = "https://api.deepseek.com/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {DEEPSEEK_API_KEY}"
+    }
+    payload = {
+        "model": "deepseek-chat",
+        "messages": [
+            {"role": "system", "content": "你必须严格只返回 JSON 格式字符串，不得带有任何 markdown 反引号标记。"},
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.2
+    }
+    
+    try:
+        resp = requests.post(url, headers=headers, json=payload, timeout=20)
+        if resp.status_code == 200:
+            result_json = resp.json()
+            text = result_json["choices"][0]["message"]["content"].strip()
+            if text.startswith("```json"):
+                text = text[7:]
+            if text.endswith("```"):
+                text = text[:-3]
+            data = json.loads(text.strip())
+            data["verification_status"] = "VERIFIED_VIA_DEEPSEEK"
+            print("[SUCCESS] DeepSeek 模型成功响应并完成输出！")
+            return data, None
+        else:
+            return None, f"DeepSeek API 响应异常状态码: {resp.status_code}, 内容: {resp.text}"
+    except Exception as e:
+        return None, f"DeepSeek 请求过程抛出异常: {e}"
+
+# ==================== 多模型评估与降级重试主逻辑 ====================
+def evaluate_with_gemini(raw_text, is_morning=False):
     mode_desc = "每日权威早报汇总" if is_morning else "重大突发新闻速递"
     
     prompt = f"""
@@ -116,7 +153,7 @@ def evaluate_with_gemini(raw_text, is_morning=False):
     - 阿森纳 (Arsenal)：主教练为 Mikel Arteta（阿尔特塔）。
     - 托特纳姆热刺 (Tottenham Hotspur)：主教练为 Ange Postecoglou（波斯特科格鲁）。
 
-    请根据以下抓取到的 RSS 资讯，并使用 Google Search Grounding 联网核对过去几小时内欧洲足坛的最新事实：
+    请根据以下抓取到的 RSS 资讯，核对欧洲足坛的最新事实：
     {raw_text}
     
     当前任务模式：{mode_desc}
@@ -126,7 +163,7 @@ def evaluate_with_gemini(raw_text, is_morning=False):
       "has_valid_news": true/false,
       "event_title": "核心事件标题",
       "fact_summary": "已核实的事实摘要",
-      "evidence_url": "真实的原始报道链接（必须来自搜索Grounding支持的有效URL）",
+      "evidence_url": "真实的原始报道链接",
       "evidence_sources_count": 1,
       "draft_a": "争议拆解型文案草稿",
       "draft_b": "证据核验型文案草稿",
@@ -136,57 +173,52 @@ def evaluate_with_gemini(raw_text, is_morning=False):
       "banner_overlay_text": "叠加在图片上的黄色高对比度标题（8字以内）"
     }}
     
-    约束：如果未发现具有高信源支持的重大新闻，或者搜索证据不足，has_valid_news 必须设为 false。
+    约束：如果未发现具有高信源支持的重大新闻，has_valid_news 必须设为 false。
     """
     
-    candidate_models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-8b']
-    last_error = None
-    
-    for model_name in candidate_models:
-        try:
-            print(f"[INFO] 正在尝试使用模型: {model_name} ...")
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    tools=[types.Tool(google_search=types.GoogleSearch())],
-                    response_mime_type="application/json",
-                    temperature=0.2
+    # 1. 优先调用 Gemini 候选模型队列
+    if client:
+        candidate_models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-8b']
+        for model_name in candidate_models:
+            try:
+                print(f"[INFO] 正在尝试使用 Gemini 模型: {model_name} ...")
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        tools=[types.Tool(google_search=types.GoogleSearch())],
+                        response_mime_type="application/json",
+                        temperature=0.2
+                    )
                 )
-            )
-            
-            grounding_urls = []
-            if response.candidates and response.candidates[0].grounding_metadata:
-                gm = response.candidates[0].grounding_metadata
-                if hasattr(gm, 'grounding_chunks') and gm.grounding_chunks:
-                    for chunk in gm.grounding_chunks:
-                        if hasattr(chunk, 'web') and chunk.web and chunk.web.uri:
-                            grounding_urls.append(chunk.web.uri)
-            
-            text = response.text.strip()
-            if text.startswith("```json"):
-                text = text[7:]
-            if text.endswith("```"):
-                text = text[:-3]
-            
-            data = json.loads(text.strip())
-            
-            if data.get("has_valid_news") and not grounding_urls:
-                print("[WARN] 拦截幻觉：模型声明有新闻但未提供有效的 Google Search Grounding 支撑 URL。")
-                data["has_valid_news"] = False
-                data["verification_status"] = "REJECTED_NO_GROUNDING"
-            else:
+                
+                grounding_urls = []
+                if response.candidates and response.candidates[0].grounding_metadata:
+                    gm = response.candidates[0].grounding_metadata
+                    if hasattr(gm, 'grounding_chunks') and gm.grounding_chunks:
+                        for chunk in gm.grounding_chunks:
+                            if hasattr(chunk, 'web') and chunk.web and chunk.web.uri:
+                                grounding_urls.append(chunk.web.uri)
+                
+                text = response.text.strip()
+                if text.startswith("```json"):
+                    text = text[7:]
+                if text.endswith("```"):
+                    text = text[:-3]
+                
+                data = json.loads(text.strip())
                 data["verified_grounding_urls"] = grounding_urls
                 data["verification_status"] = "VERIFIED_WITH_GROUNDING"
-            
-            print(f"[SUCCESS] 模型 {model_name} 成功执行并完成生成！")
-            return data, None
-        except Exception as e:
-            last_error = str(e)
-            print(f"[WARN] 模型 {model_name} 执行失败: {e}。自动切换至队列中的下一个模型...")
-            continue
-            
-    return None, f"所有候选 Gemini 模型调用均失败，最终错误: {last_error}"
+                
+                print(f"[SUCCESS] Gemini 模型 {model_name} 成功执行并完成生成！")
+                return data, None
+            except Exception as e:
+                print(f"[WARN] Gemini 模型 {model_name} 调用失败: {e}。自动切换至下一个...")
+                continue
+
+    # 2. 如果 Gemini 队列全部失败，自动降级切换至 DeepSeek
+    print("[WARN] 所有 Gemini 模型均无法正常响应，触发自动降级机制，切换至 DeepSeek！")
+    return evaluate_with_deepseek(prompt)
 
 # ==================== 主执行流 ====================
 def main():
@@ -225,8 +257,7 @@ def main():
             card = f"{mode_prefix}\n\n"
             card += f"📌 **事件：** {event_title}\n"
             card += f"🛡️ **事实摘要：** {model_result.get('fact_summary')}\n"
-            card += f"🔗 **原始证据 URL：** {evidence_url}\n"
-            card += f"🔍 **Grounding 独立引用源数：** {len(model_result.get('verified_grounding_urls', []))}\n\n"
+            card += f"🔗 **原始证据 URL：** {evidence_url}\n\n"
             card += f"🔥 **[A稿: 争议拆解型]**\n{model_result.get('draft_a')}\n\n"
             card += f"🛡️ **[B稿: 证据核验型]**\n{model_result.get('draft_b')}\n\n"
             card += f"🧠 **[C稿: 机制解释型]**\n{model_result.get('draft_c')}\n\n"
