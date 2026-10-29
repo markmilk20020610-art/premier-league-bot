@@ -1,6 +1,8 @@
 import os
 import sys
 import json
+import html
+import re
 import datetime
 import requests
 import xml.etree.ElementTree as ET
@@ -18,12 +20,39 @@ RUN_MODE = os.environ.get("RUN_MODE", "scan") # scan 或 morning
 STATE_FILE = "state.json"
 LOG_FILE = "run_telemetry.log"
 
+# ==================== 极速与权威 RSS 监控矩阵 (含 X 顶级名记转换) ====================
 RSS_FEEDS = [
+    # 1. 顶级权威主流源 (Tier 1 金哨)
     "https://feeds.bbci.co.uk/sport/football/rss.xml",
     "https://www.skysports.com/rss/12040",
-    "https://www.premierleague.com/rss/news",
-    "https://theathletic.com/feed/"
+    "https://theathletic.com/feed/",
+
+    # 2. X (Twitter) 顶级名记与独家源 (通过 RSS 转换)
+    # David Ornstein (TA转会第一名记)
+    "https://rsshub.app/twitter/user/David_Ornstein",
+    # Fabrizio Romano (转会流量与 Here We Go)
+    "https://rsshub.app/twitter/user/FabrizioRomano",
+    # Matt Law (切尔西与英超重磅跟队)
+    "https://rsshub.app/twitter/user/Matt_Law_DT",
+    # Sam Lee (曼城跟队名记)
+    "https://rsshub.app/twitter/user/SamLee"
 ]
+
+# ==================== 名记监控降级映射 ====================
+# 说明：rsshub.app 公共实例已明确声明"仅供测试、不应用于生产"，
+# 会对云端 IP（含 GitHub Actions）返回 403，且 Twitter/X 路由被禁用（302 → google.com/404）。
+# 因此当上述 X 源不可用时，自动降级到 Google News RSS 检索该名记的相关报道，
+# 保证监控矩阵不空转、不静默丢源。
+X_FEED_FALLBACKS = {
+    "https://rsshub.app/twitter/user/David_Ornstein":
+        "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/FabrizioRomano":
+        "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/Matt_Law_DT":
+        "https://news.google.com/rss/search?q=%22Matt+Law%22+Chelsea+when:2d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/SamLee":
+        "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:2d&hl=en-US&gl=US&ceid=US:en",
+}
 
 client = None
 if GEMINI_API_KEY:
@@ -58,19 +87,68 @@ def log_telemetry(data):
     except Exception:
         pass
 
-# ==================== Telegram 推送 ====================
+# ==================== Telegram 推送（HTML 稳健模式） ====================
+_HTML_TAG_RE = re.compile(r"</?([a-zA-Z][a-zA-Z0-9]*)[^>]*>")
+
+
+def _open_tags(text):
+    """返回 text 末尾仍未闭合的标签栈，用于跨块时补闭合/补重开。"""
+    stack = []
+    for m in _HTML_TAG_RE.finditer(text):
+        name = m.group(1).lower()
+        if m.group(0).startswith("</"):
+            if stack and stack[-1] == name:
+                stack.pop()
+        else:
+            stack.append(name)
+    return stack
+
+
+def _split_html(text, limit=4000):
+    """按行聚合切分长消息；既不切断标签本身，也保证每块的标签自闭合（否则必 400）。"""
+    chunks, buf = [], ""
+    for line in text.split("\n"):
+        candidate = f"{buf}\n{line}" if buf else line
+        if len(candidate) <= limit:
+            buf = candidate
+            continue
+        if buf:
+            chunks.append(buf)
+            buf = ""
+        while len(line) > limit:
+            cut = limit
+            lt = line.rfind("<", 0, limit)
+            # 若 limit 之前有未闭合的 "<"，把切点回退到该 "<" 之前
+            if lt != -1 and ">" not in line[lt:limit]:
+                cut = lt
+            if cut <= 0:
+                cut = limit
+            piece, rest = line[:cut], line[cut:]
+            # 若切点落在 <code>...</code> 内部，补闭合到本块、补重开到下一块
+            opened = _open_tags(piece)
+            if opened:
+                piece += "".join(f"</{t}>" for t in reversed(opened))
+                rest = "".join(f"<{t}>" for t in opened) + rest
+            chunks.append(piece)
+            line = rest
+        buf = line
+    if buf:
+        chunks.append(buf)
+    return chunks
+
+
 def send_telegram(text):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("[WARN] Telegram 凭证缺失，跳过推送。")
         return False
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    chunks = [text[i:i+4000] for i in range(0, len(text), 4000)]
+    chunks = _split_html(text, 4000)
     success = True
     for chunk in chunks:
         payload = {
             "chat_id": TELEGRAM_CHAT_ID,
             "text": chunk,
-            "parse_mode": "Markdown",
+            "parse_mode": "HTML",  # 切为 HTML 模式，彻底远离 Markdown 语法崩溃
             "disable_web_page_preview": False
         }
         try:
@@ -84,6 +162,59 @@ def send_telegram(text):
     return success
 
 # ==================== RSS 抓取（带严格超时与安全解析） ====================
+def _parse_feed_items(content, source_url, limit=3):
+    """安全解析 RSS 内容，返回前 limit 条条目。节点缺失或文本为空时均使用兜底值。"""
+    items = []
+    root = ET.fromstring(content)
+    for item in root.findall(".//item")[:limit]:
+        title_elem = item.find("title")
+        title = title_elem.text if title_elem is not None and title_elem.text else "无标题"
+        link_elem = item.find("link")
+        link = link_elem.text if link_elem is not None and link_elem.text else source_url
+        desc_elem = item.find("description")
+        desc = desc_elem.text if desc_elem is not None and desc_elem.text else ""
+        items.append({"title": title, "link": link, "desc": desc, "source": source_url})
+    return items
+
+
+# ==================== 跨源去重（同一稿件被多源转述时只保留首次出现） ====================
+def _normalize_link(link):
+    """去除协议、查询参数、锚点与末尾斜杠，得到可比对的链接指纹。"""
+    key = (link or "").strip().lower()
+    key = key.split("#")[0].split("?")[0]
+    for prefix in ("https://", "http://", "www."):
+        if key.startswith(prefix):
+            key = key[len(prefix):]
+    return key.rstrip("/")
+
+
+def _normalize_title(title):
+    """去除 Google News 附加的 ' - 媒体名' 后缀与所有标点，只保留字母/数字/汉字。"""
+    text = (title or "").strip()
+    if " - " in text:
+        text = text.rsplit(" - ", 1)[0]
+    return "".join(ch for ch in text.lower() if ch.isalnum())
+
+
+def _dedupe_items(items):
+    """跨源去重：链接指纹或标题指纹命中即视为重复，保留先出现的条目。"""
+    seen_links, seen_titles, unique = set(), set(), []
+    for it in items:
+        link_key = _normalize_link(it.get("link"))
+        title_key = _normalize_title(it.get("title"))
+        if link_key and link_key in seen_links:
+            continue
+        # 过短标题（如 "Transfer news"）参与标题去重容易误杀，仅在足够长时启用
+        if len(title_key) >= 12 and title_key in seen_titles:
+            continue
+        if link_key:
+            seen_links.add(link_key)
+        if len(title_key) >= 12:
+            seen_titles.add(title_key)
+        unique.append(it)
+    return unique
+
+
 def fetch_rss_sources():
     rss_items = []
     source_status = {}
@@ -93,17 +224,30 @@ def fetch_rss_sources():
             resp = requests.get(url, headers=headers, timeout=(5, 10))
             source_status[url] = resp.status_code
             if resp.status_code == 200:
-                root = ET.fromstring(resp.content)
-                for item in root.findall(".//item")[:3]:
-                    title_elem = item.find("title")
-                    title = title_elem.text if title_elem is not None and title_elem.text else "无标题"
-                    link_elem = item.find("link")
-                    link = link_elem.text if link_elem is not None and link_elem.text else url
-                    desc_elem = item.find("description")
-                    desc = desc_elem.text if desc_elem is not None and desc_elem.text else ""
-                    rss_items.append({"title": title, "link": link, "desc": desc, "source": url})
+                rss_items.extend(_parse_feed_items(resp.content, url))
+                continue
         except Exception as e:
             source_status[url] = str(e)
+
+        # 主源不可用（403/302/超时/解析失败）时，尝试降级源
+        fallback_url = X_FEED_FALLBACKS.get(url)
+        if not fallback_url:
+            continue
+        try:
+            fb_resp = requests.get(fallback_url, headers=headers, timeout=(5, 10))
+            if fb_resp.status_code == 200:
+                fb_items = _parse_feed_items(fb_resp.content, url)
+                rss_items.extend(fb_items)
+                source_status[url] = f"FALLBACK_OK({fb_resp.status_code}, {len(fb_items)} items)"
+            else:
+                source_status[url] = f"FALLBACK_FAIL({fb_resp.status_code})"
+        except Exception as fb_err:
+            source_status[url] = f"FALLBACK_ERR: {fb_err}"
+
+    raw_count = len(rss_items)
+    rss_items = _dedupe_items(rss_items)
+    if raw_count != len(rss_items):
+        print(f"[INFO] 跨源去重：{raw_count} 条 → {len(rss_items)} 条（剔除 {raw_count - len(rss_items)} 条重复）")
     return rss_items, source_status
 
 # ==================== DeepSeek 兜底调用 ====================
@@ -198,10 +342,19 @@ def evaluate_with_gemini(raw_text, is_morning=False):
     {raw_text}
     
     当前任务模式：{mode_desc}
-    
+
+    【VAR 裁判评级标准（必须严格套用，并在 var_rating 字段给出对应等级）】
+    - Tier 1 金哨：官方/俱乐部官宣，或 Tier 1 名记（Ornstein、Romano 等）首发，且至少 2 个独立权威源交叉印证，并有可直接打开的原始报道链接。→ 证据链完整，可放心发布。
+    - Tier 2 闪电：单一权威源（BBC / Sky / The Athletic）报道，事件本身成立，但关键细节（转会费、合同年限、体检安排、是否已签约）仍存在出入或未经二次确认。→ 事实成立，细节待跟进。
+    - Tier 3 吃瓜：仅来自社交媒体传言、二手转述、聚合号搬运，无原始链接，或标题明显夸大、带节奏。→ 只能当话题聊，严禁作为事实陈述。
+    - 若现有资讯不足以判断真假，则 has_valid_news 必须为 false，且 var_rating 填 "Tier 3 吃瓜"。
+    - 评级必须给出理由支撑，不得为了凑 Tier 1 而无视证据缺口。
+
     请严格返回合法的纯 JSON 对象（不含markdown反引号），结构如下：
     {{
       "has_valid_news": true/false,
+      "var_rating": "Tier 1 金哨 / Tier 2 闪电 / Tier 3 吃瓜（三选一，原样填写）",
+      "var_reason": "一句话说明为什么给这个评级（20字以内）",
       "event_title": "核心事件标题",
       "fact_summary": "已核实的事实摘要",
       "evidence_url": "真实的原始报道链接",
@@ -267,17 +420,36 @@ def main():
         if evidence_url and evidence_url in processed_urls:
             print(f"[INFO] 依据 URL 去重拦截：[{evidence_url}] 已处理过。")
         else:
-            mode_prefix = "🌅 **【越位情报局·每日权威早报】**" if is_morning_report else "🚨 **【越位情报局·突发新闻核验审核】**"
+            mode_prefix = "🌅 <b>【越位情报局·每日权威早报】</b>" if is_morning_report else "🚨 <b>【越位情报局·突发新闻核验审核】</b>"
+
+            # 对大模型或 RSS 输出的不确定文本统一做 html.escape 安全过滤，
+            # 防止 < > & 等字符触发 Telegram HTTP 400。
+            # 注意：evidence_url 的原始值仍用于 state 去重，这里只做展示副本，避免污染持久化数据。
+            var_rating_h = html.escape(str(model_result.get("var_rating") or "⚡【闪电突袭·跟队独家】"))
+            event_title_h = html.escape(str(event_title or "未知事件"))
+            fact_summary_h = html.escape(str(model_result.get("fact_summary") or ""))
+            evidence_url_h = html.escape(str(evidence_url or ""))
+            draft_a_h = html.escape(str(model_result.get("draft_a") or ""))
+            draft_b_h = html.escape(str(model_result.get("draft_b") or ""))
+            draft_c_h = html.escape(str(model_result.get("draft_c") or ""))
+            cover_blueprint_h = html.escape(str(model_result.get("cover_blueprint") or ""))
+            image_prompt_h = html.escape(str(model_result.get("image_prompt") or ""))
+            banner_overlay_text_h = html.escape(str(model_result.get("banner_overlay_text") or ""))
+            var_reason_h = html.escape(str(model_result.get("var_reason") or "").strip())
+
             card = f"{mode_prefix}\n\n"
-            card += f"📌 **事件：** {event_title}\n"
-            card += f"🛡️ **事实摘要：** {model_result.get('fact_summary')}\n"
-            card += f"🔗 **原始证据 URL：** {evidence_url}\n\n"
-            card += f"🔥 **[A稿: 争议拆解]**\n{model_result.get('draft_a')}\n\n"
-            card += f"🛡️ **[B稿: 证据核验]**\n{model_result.get('draft_b')}\n\n"
-            card += f"🧠 **[C稿: 机制解释]**\n{model_result.get('draft_c')}\n\n"
-            card += f"🎨 **[封面指引]**\n{model_result.get('cover_blueprint')}\n\n"
-            card += f"🎭 **[漫画 Prompt]**\n`{model_result.get('image_prompt')}`\n"
-            card += f"🏷️ **[黄字标题]** {model_result.get('banner_overlay_text')}"
+            card += f"🏆 <b>VAR 评级：</b> {var_rating_h}\n"
+            if var_reason_h:
+                card += f"📋 <b>评级依据：</b> {var_reason_h}\n"
+            card += f"📌 <b>事件：</b> {event_title_h}\n"
+            card += f"🛡️ <b>事实摘要：</b> {fact_summary_h}\n"
+            card += f"🔗 <b>原始证据 URL：</b> {evidence_url_h}\n\n"
+            card += f"🔥 <b>[A稿: 争议拆解]</b>\n{draft_a_h}\n\n"
+            card += f"🛡️ <b>[B稿: 证据核验]</b>\n{draft_b_h}\n\n"
+            card += f"🧠 <b>[C稿: 机制解释]</b>\n{draft_c_h}\n\n"
+            card += f"🎨 <b>[封面指引]</b>\n{cover_blueprint_h}\n\n"
+            card += f"🎭 <b>[漫画 Prompt]</b>\n<code>{image_prompt_h}</code>\n"
+            card += f"🏷️ <b>[黄字标题]</b> {banner_overlay_text_h}"
             
             push_success = send_telegram(card)
             if push_success:
