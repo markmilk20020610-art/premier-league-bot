@@ -4,11 +4,12 @@ import json
 import datetime
 import requests
 import xml.etree.ElementTree as ET
+import concurrent.futures
 from google import genai
 from google.genai import types
 
 # ==================== 配置与初始化 ====================
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -26,7 +27,10 @@ RSS_FEEDS = [
 
 client = None
 if GEMINI_API_KEY:
-    client = genai.Client(api_key=GEMINI_API_KEY)
+    try:
+        client = genai.Client(api_key=GEMINI_API_KEY)
+    except Exception as e:
+        print(f"[WARN] 初始化 Gemini Client 失败: {e}")
 
 # ==================== 状态持久化管理 ====================
 def load_state():
@@ -79,19 +83,19 @@ def send_telegram(text):
             success = False
     return success
 
-# ==================== RSS 抓取 ====================
+# ==================== RSS 抓取（带严格超时） ====================
 def fetch_rss_sources():
     rss_items = []
     source_status = {}
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     for url in RSS_FEEDS:
         try:
-            resp = requests.get(url, headers=headers, timeout=8)
+            resp = requests.get(url, headers=headers, timeout=(5, 10))
             source_status[url] = resp.status_code
             if resp.status_code == 200:
                 root = ET.fromstring(resp.content)
                 for item in root.findall(".//item")[:3]:
-                    title = item.find("title").text if item.find("title") is not None else "无标题"
+                    title = item.find("title").text if item.find("title"] is not None else "无标题"
                     link = item.find("link").text if item.find("link") is not None else url
                     desc = item.find("description").text if item.find("description") is not None else ""
                     rss_items.append({"title": title, "link": link, "desc": desc, "source": url})
@@ -99,10 +103,9 @@ def fetch_rss_sources():
             source_status[url] = str(e)
     return rss_items, source_status
 
-# ==================== DeepSeek 兜底调用逻辑 ====================
+# ==================== DeepSeek 兜底调用 ====================
 def evaluate_with_deepseek(prompt):
     if not DEEPSEEK_API_KEY:
-        print("[WARN] 未配置 DEEPSEEK_API_KEY，跳过 DeepSeek 兜底调用。")
         return None, "未配置 DEEPSEEK_API_KEY"
     
     print("[INFO] 正在尝试使用 DeepSeek 兜底模型 (deepseek-chat)...")
@@ -121,7 +124,7 @@ def evaluate_with_deepseek(prompt):
     }
     
     try:
-        resp = requests.post(url, headers=headers, json=payload, timeout=20)
+        resp = requests.post(url, headers=headers, json=payload, timeout=25)
         if resp.status_code == 200:
             result_json = resp.json()
             text = result_json["choices"][0]["message"]["content"].strip()
@@ -134,90 +137,101 @@ def evaluate_with_deepseek(prompt):
             print("[SUCCESS] DeepSeek 模型成功响应并完成输出！")
             return data, None
         else:
-            return None, f"DeepSeek API 响应异常状态码: {resp.status_code}, 内容: {resp.text}"
+            return None, f"DeepSeek 响应异常: {resp.status_code}"
     except Exception as e:
-        return None, f"DeepSeek 请求过程抛出异常: {e}"
+        return None, f"DeepSeek 请求异常: {e}"
 
-# ==================== 多模型评估与降级重试主逻辑 ====================
+# ==================== 核心：单次 Gemini 调用（受控于超时线程） ====================
+def _call_single_gemini(model_name, prompt):
+    response = client.models.generate_content(
+        model=model_name,
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            tools=[types.Tool(google_search=types.GoogleSearch())],
+            response_mime_type="application/json",
+            temperature=0.2
+        )
+    )
+    
+    grounding_urls = []
+    if response.candidates and response.candidates[0].grounding_metadata:
+        gm = response.candidates[0].grounding_metadata
+        if hasattr(gm, 'grounding_chunks') and gm.grounding_chunks:
+            for chunk in gm.grounding_chunks:
+                if hasattr(chunk, 'web') and chunk.web and chunk.web.uri:
+                    grounding_urls.append(chunk.web.uri)
+    
+    text = response.text.strip()
+    if text.startswith("```json"):
+        text = text[7:]
+    if text.endswith("```"):
+        text = text[:-3]
+    
+    data = json.loads(text.strip())
+    if data.get("has_valid_news") and not grounding_urls:
+        data["has_valid_news"] = False
+        data["verification_status"] = "REJECTED_NO_GROUNDING"
+    else:
+        data["verified_grounding_urls"] = grounding_urls
+        data["verification_status"] = "VERIFIED_WITH_GROUNDING"
+    return data
+
+# ==================== 带 30 秒硬超时保护的评估主逻辑 ====================
 def evaluate_with_gemini(raw_text, is_morning=False):
     mode_desc = "每日权威早报汇总" if is_morning else "重大突发新闻速递"
     
     prompt = f"""
     你是一位严谨的体育新闻事实核验员，同时也是“越位情报局”的爆款内容导演与诙谐漫画编剧。
     
-    【最新事实防错映射表（必须严格遵守，绝对禁止使用旧信息）】
-    - 曼城 (Manchester City)：主教练为 Pep Guardiola（瓜迪奥拉）。
-    - 切尔西 (Chelsea)：主教练为 Enzo Maresca（马雷斯卡），所有权由 Clearlake Capital（清湖资本/埃格巴利 Eghbali）主导，伯利 (Todd Boehly) 已淡出日常管理。
-    - 曼联 (Manchester United)：主教练为 Rúben Amorim（阿莫林）。
-    - 利物浦 (Liverpool)：主教练为 Arne Slot（斯洛特）。
-    - 阿森纳 (Arsenal)：主教练为 Mikel Arteta（阿尔特塔）。
-    - 托特纳姆热刺 (Tottenham Hotspur)：主教练为 Ange Postecoglou（波斯特科格鲁）。
+    【最新事实防错映射表（必须严格遵守）】
+    - 曼城: Pep Guardiola（瓜迪奥拉）。
+    - 切尔西: Enzo Maresca（马雷斯卡），所有权由 Clearlake Capital（清湖资本/埃格巴利 Eghbali）主导。
+    - 曼联: Rúben Amorim（阿莫林）。
+    - 利物浦: Arne Slot（斯洛特）。
+    - 阿森纳: Mikel Arteta（阿尔特塔）。
+    - 托特纳姆热刺: Ange Postecoglou（波斯特科格鲁）。
 
-    请根据以下抓取到的 RSS 资讯，核对欧洲足坛的最新事实：
+    请根据以下 RSS 资讯核对最新事实：
     {raw_text}
     
     当前任务模式：{mode_desc}
     
-    请严格返回合法的 JSON 对象（不得包含 markdown 代码块反引号，仅返回纯 JSON 字符串），结构如下：
+    请严格返回合法的纯 JSON 对象（不含markdown反引号），结构如下：
     {{
       "has_valid_news": true/false,
       "event_title": "核心事件标题",
       "fact_summary": "已核实的事实摘要",
       "evidence_url": "真实的原始报道链接",
       "evidence_sources_count": 1,
-      "draft_a": "争议拆解型文案草稿",
-      "draft_b": "证据核验型文案草稿",
-      "draft_c": "机制解释型文案草稿",
-      "cover_blueprint": "P1封面设计指引",
-      "image_prompt": "专门给AI绘图模型用的英文Prompt（3D caricature style, 诙谐夸张漫画隐喻，包含人物标志性特征）",
-      "banner_overlay_text": "叠加在图片上的黄色高对比度标题（8字以内）"
+      "draft_a": "争议拆解型文案",
+      "draft_b": "证据核验型文案",
+      "draft_c": "机制解释型文案",
+      "cover_blueprint": "封面设计指引",
+      "image_prompt": "AI绘图英文Prompt（3D caricature style）",
+      "banner_overlay_text": "图片黄字标题（8字以内）"
     }}
-    
-    约束：如果未发现具有高信源支持的重大新闻，has_valid_news 必须设为 false。
     """
     
-    # 1. 优先调用 Gemini 候选模型队列
     if client:
         candidate_models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-8b']
         for model_name in candidate_models:
+            print(f"[INFO] 正在尝试使用模型: {model_name} (带 30秒 超时保护) ...")
             try:
-                print(f"[INFO] 正在尝试使用 Gemini 模型: {model_name} ...")
-                response = client.models.generate_content(
-                    model=model_name,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        tools=[types.Tool(google_search=types.GoogleSearch())],
-                        response_mime_type="application/json",
-                        temperature=0.2
-                    )
-                )
-                
-                grounding_urls = []
-                if response.candidates and response.candidates[0].grounding_metadata:
-                    gm = response.candidates[0].grounding_metadata
-                    if hasattr(gm, 'grounding_chunks') and gm.grounding_chunks:
-                        for chunk in gm.grounding_chunks:
-                            if hasattr(chunk, 'web') and chunk.web and chunk.web.uri:
-                                grounding_urls.append(chunk.web.uri)
-                
-                text = response.text.strip()
-                if text.startswith("```json"):
-                    text = text[7:]
-                if text.endswith("```"):
-                    text = text[:-3]
-                
-                data = json.loads(text.strip())
-                data["verified_grounding_urls"] = grounding_urls
-                data["verification_status"] = "VERIFIED_WITH_GROUNDING"
-                
-                print(f"[SUCCESS] Gemini 模型 {model_name} 成功执行并完成生成！")
-                return data, None
-            except Exception as e:
-                print(f"[WARN] Gemini 模型 {model_name} 调用失败: {e}。自动切换至下一个...")
+                # 使用线程池实现硬超时控制，防止网络卡死
+                with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                    future = executor.submit(_call_single_gemini, model_name, prompt)
+                    data = future.result(timeout=30) # 最多等 30 秒，超时直接抛出异常
+                    print(f"[SUCCESS] 模型 {model_name} 成功执行并完成生成！")
+                    return data, None
+            except concurrent.futures.TimeoutError:
+                print(f"[WARN] 模型 {model_name} 请求超时（超过30秒），主动切断并尝试下一个...")
                 continue
-
-    # 2. 如果 Gemini 队列全部失败，自动降级切换至 DeepSeek
-    print("[WARN] 所有 Gemini 模型均无法正常响应，触发自动降级机制，切换至 DeepSeek！")
+            except Exception as e:
+                print(f"[WARN] 模型 {model_name} 执行失败: {e}。切换下一个...")
+                continue
+                
+    # 均失败或超时，降级到 DeepSeek
+    print("[WARN] 所有 Gemini 尝试均失败或超时，触发自动降级，切换至 DeepSeek！")
     return evaluate_with_deepseek(prompt)
 
 # ==================== 主执行流 ====================
@@ -229,7 +243,7 @@ def main():
     is_morning_report = (RUN_MODE == "morning")
     
     if is_morning_report and state.get("last_morning_report_date") == today_str:
-        print("[INFO] 今日早报已发送过，跳过本次早报任务。")
+        print("[INFO] 今日早报已发送过，跳过。")
         log_telemetry({"start_time": start_time, "status": "SKIPPED_MORNING_ALREADY_SENT"})
         return
         
@@ -247,23 +261,20 @@ def main():
         evidence_url = model_result.get("evidence_url", "")
         
         processed_urls = state.get("processed_urls", [])
-        
         if evidence_url and evidence_url in processed_urls:
-            print(f"[INFO] 依据 URL/GUID 去重拦截：URL [{evidence_url}] 已经处理过，跳过推送。")
-        elif is_morning_report and state.get("last_morning_report_date") == today_str:
-            print("[INFO] 早报防重拦截：今日已发送。")
+            print(f"[INFO] 依据 URL 去重拦截：[{evidence_url}] 已处理过。")
         else:
             mode_prefix = "🌅 **【越位情报局·每日权威早报】**" if is_morning_report else "🚨 **【越位情报局·突发新闻核验审核】**"
             card = f"{mode_prefix}\n\n"
             card += f"📌 **事件：** {event_title}\n"
             card += f"🛡️ **事实摘要：** {model_result.get('fact_summary')}\n"
             card += f"🔗 **原始证据 URL：** {evidence_url}\n\n"
-            card += f"🔥 **[A稿: 争议拆解型]**\n{model_result.get('draft_a')}\n\n"
-            card += f"🛡️ **[B稿: 证据核验型]**\n{model_result.get('draft_b')}\n\n"
-            card += f"🧠 **[C稿: 机制解释型]**\n{model_result.get('draft_c')}\n\n"
+            card += f"🔥 **[A稿: 争议拆解]**\n{model_result.get('draft_a')}\n\n"
+            card += f"🛡️ **[B稿: 证据核验]**\n{model_result.get('draft_b')}\n\n"
+            card += f"🧠 **[C稿: 机制解释]**\n{model_result.get('draft_c')}\n\n"
             card += f"🎨 **[封面指引]**\n{model_result.get('cover_blueprint')}\n\n"
-            card += f"🎭 **[漫画梗图 Prompt]**\n`{model_result.get('image_prompt')}`\n"
-            card += f"🏷️ **[图片黄字标题]** {model_result.get('banner_overlay_text')}"
+            card += f"🎭 **[漫画 Prompt]**\n`{model_result.get('image_prompt')}`\n"
+            card += f"🏷️ **[黄字标题]** {model_result.get('banner_overlay_text')}"
             
             push_success = send_telegram(card)
             if push_success:
@@ -274,9 +285,9 @@ def main():
                     state["last_morning_report_date"] = today_str
                 state_updated = True
                 save_state(state)
-                print("[SUCCESS] 消息发送成功，状态已成功更新并保存。")
+                print("[SUCCESS] 消息发送成功！")
             else:
-                print("[ERROR] Telegram 发送失败，状态未提交，允许后续重试。")
+                print("[ERROR] Telegram 发送失败。")
     
     end_time = datetime.datetime.utcnow().isoformat()
     log_telemetry({
