@@ -83,7 +83,7 @@ def send_telegram(text):
             success = False
     return success
 
-# ==================== RSS 抓取（带严格超时） ====================
+# ==================== RSS 抓取（带严格超时与安全解析） ====================
 def fetch_rss_sources():
     rss_items = []
     source_status = {}
@@ -95,9 +95,12 @@ def fetch_rss_sources():
             if resp.status_code == 200:
                 root = ET.fromstring(resp.content)
                 for item in root.findall(".//item")[:3]:
-                    title = item.find("title").text if item.find("title"] is not None else "无标题"
-                    link = item.find("link").text if item.find("link") is not None else url
-                    desc = item.find("description").text if item.find("description") is not None else ""
+                    title_elem = item.find("title")
+                    title = title_elem.text if title_elem is not None and title_elem.text else "无标题"
+                    link_elem = item.find("link")
+                    link = link_elem.text if link_elem is not None and link_elem.text else url
+                    desc_elem = item.find("description")
+                    desc = desc_elem.text if desc_elem is not None and desc_elem.text else ""
                     rss_items.append({"title": title, "link": link, "desc": desc, "source": url})
         except Exception as e:
             source_status[url] = str(e)
