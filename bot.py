@@ -22,28 +22,31 @@ LOG_FILE = "run_telemetry.log"
 
 # ==================== 极速与权威 RSS 监控矩阵 (含 X 顶级名记转换) ====================
 RSS_FEEDS = [
-    # 1. 顶级权威主流源 (Tier 1 金哨)
+    # 顶级权威主流源 (Tier 1 金哨)
     "https://feeds.bbci.co.uk/sport/football/rss.xml",
     "https://www.skysports.com/rss/12040",
+    "https://www.premierleague.com/rss/news",
     "https://theathletic.com/feed/",
 
-    # 2. X (Twitter) 顶级名记与独家源 (通过 RSS 转换)
-    # David Ornstein (TA转会第一名记)
+    # 爆款爆料与八卦/财务/更衣室/裁判争议源 (Tier 3 吃瓜黄牌)
+    "https://www.dailymail.co.uk/sport/football/index.rss",  # 每日邮报 (专门捕捉豪门巨亏、更衣室爆料)
+    "https://www.thesun.co.uk/sport/football/feed/",        # 太阳报 (裁判争议、申诉、场外花边)
+
+    # X (Twitter) 顶级名记与独家源 (通过 RSSHub 开源桥接)
     "https://rsshub.app/twitter/user/David_Ornstein",
-    # Fabrizio Romano (转会流量与 Here We Go)
     "https://rsshub.app/twitter/user/FabrizioRomano",
-    # Matt Law (切尔西与英超重磅跟队)
     "https://rsshub.app/twitter/user/Matt_Law_DT",
-    # Sam Lee (曼城跟队名记)
     "https://rsshub.app/twitter/user/SamLee"
 ]
 
-# ==================== 名记监控降级映射 ====================
-# 说明：rsshub.app 公共实例已明确声明"仅供测试、不应用于生产"，
-# 会对云端 IP（含 GitHub Actions）返回 403，且 Twitter/X 路由被禁用（302 → google.com/404）。
-# 因此当上述 X 源不可用时，自动降级到 Google News RSS 检索该名记的相关报道，
-# 保证监控矩阵不空转、不静默丢源。
-X_FEED_FALLBACKS = {
+# ==================== 失效源自动降级映射 ====================
+# 实测结论（2026-10）：
+#   - rsshub.app 公共实例声明"仅供测试、不用于生产"，对云端 IP 返回 403，Twitter 路由被禁用（302 → google.com/404）
+#   - premierleague.com/rss/news 已下线，返回 404
+#   - theathletic.com/feed/ 返回 403（疑似 Cloudflare 风控），Google News 亦无可用索引，暂无降级方案
+# 因此主源不可用时自动切换到 Google News RSS，保证监控矩阵不空转、不静默丢源。
+FEED_FALLBACKS = {
+    # X 名记
     "https://rsshub.app/twitter/user/David_Ornstein":
         "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:2d&hl=en-US&gl=US&ceid=US:en",
     "https://rsshub.app/twitter/user/FabrizioRomano":
@@ -52,6 +55,9 @@ X_FEED_FALLBACKS = {
         "https://news.google.com/rss/search?q=%22Matt+Law%22+Chelsea+when:2d&hl=en-US&gl=US&ceid=US:en",
     "https://rsshub.app/twitter/user/SamLee":
         "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:2d&hl=en-US&gl=US&ceid=US:en",
+    # 英超官方（原 RSS 端点已 404，改用站点检索，含 Key Match Incidents Panel 裁判判罚公告）
+    "https://www.premierleague.com/rss/news":
+        "https://news.google.com/rss/search?q=site:premierleague.com+when:2d&hl=en-US&gl=US&ceid=US:en",
 }
 
 client = None
@@ -230,7 +236,7 @@ def fetch_rss_sources():
             source_status[url] = str(e)
 
         # 主源不可用（403/302/超时/解析失败）时，尝试降级源
-        fallback_url = X_FEED_FALLBACKS.get(url)
+        fallback_url = FEED_FALLBACKS.get(url)
         if not fallback_url:
             continue
         try:
@@ -343,17 +349,24 @@ def evaluate_with_gemini(raw_text, is_morning=False):
     
     当前任务模式：{mode_desc}
 
-    【VAR 裁判评级标准（必须严格套用，并在 var_rating 字段给出对应等级）】
-    - Tier 1 金哨：官方/俱乐部官宣，或 Tier 1 名记（Ornstein、Romano 等）首发，且至少 2 个独立权威源交叉印证，并有可直接打开的原始报道链接。→ 证据链完整，可放心发布。
-    - Tier 2 闪电：单一权威源（BBC / Sky / The Athletic）报道，事件本身成立，但关键细节（转会费、合同年限、体检安排、是否已签约）仍存在出入或未经二次确认。→ 事实成立，细节待跟进。
-    - Tier 3 吃瓜：仅来自社交媒体传言、二手转述、聚合号搬运，无原始链接，或标题明显夸大、带节奏。→ 只能当话题聊，严禁作为事实陈述。
-    - 若现有资讯不足以判断真假，则 has_valid_news 必须为 false，且 var_rating 填 "Tier 3 吃瓜"。
-    - 评级必须给出理由支撑，不得为了凑 Tier 1 而无视证据缺口。
+    【爆款流量感知指引（以下类型事件具备极高流量价值，必须优先提炼并认定为 valid_news）】
+    1. 裁判与判罚争议：红黄牌申诉驳回/生效（如道曼红牌申诉）、焦点战主裁判/VAR裁判指定、争议判罚报告。
+    2. 豪门财务与经营危机：巨额亏损（如曼联亏损数亿镑）、FFP/PSR财务违规风险、扣分警告。
+    3. 重大转会与更衣室突发：知名记者（Ornstein/Romano/邮报）的独家跟进与爆料。
+
+    【VAR 情报评级标准（必须严格套用，并在 var_rating 字段原样填写等级名）】
+    - ✨【金哨认证·绝对真理】(Tier 1)：官方公告、BBC、天空体育、英超官方。
+    - ⚡【闪电突袭·跟队独家】(Tier 2)：知名跟队记者或一线深度突发分析。
+    - 💛【吃瓜狂欢·黄牌警告】(Tier 3)：太阳报、每日邮报等爆料、财务亏损、裁判争议或话题炒作。
+
+    评级执行细则：
+    - 评级必须给出理由支撑，不得为了凑 Tier 1 而无视证据缺口；同一事件多个源说法冲突时，取其中最低等级。
+    - 若现有资讯不足以判断真假，则 has_valid_news 必须为 false，且 var_rating 填 "💛【吃瓜狂欢·黄牌警告】(Tier 3)"。
 
     请严格返回合法的纯 JSON 对象（不含markdown反引号），结构如下：
     {{
       "has_valid_news": true/false,
-      "var_rating": "Tier 1 金哨 / Tier 2 闪电 / Tier 3 吃瓜（三选一，原样填写）",
+      "var_rating": "✨【金哨认证·绝对真理】(Tier 1) / ⚡【闪电突袭·跟队独家】(Tier 2) / 💛【吃瓜狂欢·黄牌警告】(Tier 3)（三选一，原样填写）",
       "var_reason": "一句话说明为什么给这个评级（20字以内）",
       "event_title": "核心事件标题",
       "fact_summary": "已核实的事实摘要",
