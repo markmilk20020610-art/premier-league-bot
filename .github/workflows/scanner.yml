@@ -2,11 +2,13 @@ name: Yuewei Premier League Bot Scanner
 
 on:
   schedule:
-    # 突发新闻扫描：每 5 分钟一次（UTC，全天候）
-    # 注：GitHub 的 schedule 在高峰期会延迟 5~15 分钟甚至跳过，5 分钟粒度是为了
-    #     让「实际触发间隔」尽量落在 5~15 分钟内，而不是把间隔定死
-    - cron: '*/5 * * * *'
-    # 每日早报：UTC 22:00 = 北京时间次日 06:00
+    # ⚠️ 突发扫描已改为由 cron-job.org 外部调度（每 10 分钟调一次 workflow_dispatch）。
+    #    原因：① GitHub 自带 schedule 高峰期会延迟 5~15 分钟甚至跳过，不可靠；
+    #         ② 本仓库是 private，Actions 仅 2000 分钟/月，两套调度同时开会双份计费。
+    #    若哪天 cron-job.org 停了，把下面这行注释解开即可恢复 GitHub 自己的扫描：
+    # - cron: '*/10 * * * *'
+    #
+    # 每日早报：UTC 22:00 = 北京时间次日 06:00（一天一次，额度可忽略，保留在 GitHub）
     - cron: '0 22 * * *'
   workflow_dispatch:        # 支持在 GitHub 后台手动触发，可选运行模式
     inputs:
@@ -32,10 +34,12 @@ concurrency:
 jobs:
   # ==================== 突发新闻扫描（每 15 分钟） ====================
   scan:
-    # 用「不等于早报 cron」而不是精确匹配 */15，这样以后改扫描频率不会漏改这里
+    # 注意这里用的是「不等于 morning」而不是「等于 scan」：
+    # cron-job.org 若只发 workflow_dispatch 而没传 inputs.mode，mode 会是 null，
+    # 用精确匹配会导致两个 job 全不跑、workflow 空转。这样写能保证「不带 mode 就跑 scan」。
     if: >-
       (github.event_name == 'schedule' && github.event.schedule != '0 22 * * *') ||
-      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'scan')
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != 'morning' && github.event.inputs.mode != 'diagnose')
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
