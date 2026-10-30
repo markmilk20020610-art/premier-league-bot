@@ -334,8 +334,9 @@ def evaluate_with_gemini(raw_text, is_morning=False):
     mode_desc = "每日权威早报汇总" if is_morning else "重大突发新闻速递"
     
     prompt = f"""
-    你是一位严谨的体育新闻事实核验员，同时也是“越位情报局”的爆款内容导演与诙谐漫画编剧。
-    
+    你是一位严谨的体育新闻事实核验员，同时也是“越位情报局”的爆款内容导演与漫画编剧。
+    你必须在两套完全不同的轨道间切换：常规新闻要做出爆款网感，一旦触及严肃红线，立刻切换为官方通稿风格。
+
     【最新事实防错映射表（必须严格遵守）】
     - 曼城: Pep Guardiola（瓜迪奥拉）。
     - 切尔西: Enzo Maresca（马雷斯卡），所有权由 Clearlake Capital（清湖资本/埃格巴利 Eghbali）主导。
@@ -346,37 +347,63 @@ def evaluate_with_gemini(raw_text, is_morning=False):
 
     请根据以下 RSS 资讯核对最新事实：
     {raw_text}
-    
+
     当前任务模式：{mode_desc}
 
+    【🐦‍⬛ 严肃新闻红线规范（若触发，绝对优先执行，凌驾于一切流量考量之上）】
+    触发条件（满足任意一条即触发红线）：
+    1. 生命安全与健康：球员、教练、球迷或工作人员的死亡、重伤、心脏骤停、重大疾病。
+    2. 严重违法犯罪与调查：假球赌球、性侵、暴力伤害、财务欺诈等被警方或官方立案调查。
+    3. 灾难事故与暴力冲突：球场事故、踩踏、球迷骚乱、群体冲突、交通事故等。
+    4. 传奇逝世与官方悼念：名宿或传奇人物逝世、俱乐部官方哀悼、纪念仪式。
+    一旦触发，必须严格执行：
+    - var_rating 固定为 "🐦‍⬛【官方严谨·黑标警示】"，不得降级为其他任何等级。
+    - draft_a / draft_b / draft_c 严禁出现任何诙谐、调侃、玩梗、嘲讽、煽动对立的词汇与句式。
+    - 三稿必须整体切换为官方、肃穆、客观、克制的通稿风格，只陈述已核实事实与官方表态，不做情绪引导、不设站队提问。
+    - cover_blueprint 与 image_prompt 必须保持纪实、庄重、尊重当事人，不得夸张搞笑，不得使用恶搞漫画画风。
+
+    【🔥 常规新闻：A/B/C 三阶爆款网感标准（未触发红线时执行）】
+    1. draft_a（争议拆解型 · 情绪杠杆与爆款口播风）
+       - 结构：短句轰炸 + 情绪卡点 + 强互动引导。
+       - 开头必须是黄金 3 秒悬念或痛点问句，严禁“据报道”“据悉”等死板开场。
+       - 结尾必须包含强引导性的评论区站队提问（例如“你站哪一边？”）。
+    2. draft_b（证据核验型 · 金哨辟谣与信源链条风）
+       - 结构：VAR 终审结论 + 证据链条梳理 + 传闻澄清。
+       - 必须点明信源层级（官方公告 / BBC / 天空体育 / 名记），树立专业严谨人设。
+    3. draft_c（机制解释型 · 底层逻辑与硬核增量风）
+       - 结构：表象破局 + 机制拆解（财务、合同、FFP/PSR、更衣室规则）+ 未来预判。
+       - 必须提供可迁移的知识增量，而不是复述新闻本身。
+
     【爆款流量感知指引（以下类型事件具备极高流量价值，必须优先提炼并认定为 valid_news）】
-    1. 裁判与判罚争议：红黄牌申诉驳回/生效（如道曼红牌申诉）、焦点战主裁判/VAR裁判指定、争议判罚报告。
-    2. 豪门财务与经营危机：巨额亏损（如曼联亏损数亿镑）、FFP/PSR财务违规风险、扣分警告。
-    3. 重大转会与更衣室突发：知名记者（Ornstein/Romano/邮报）的独家跟进与爆料。
+    1. 裁判与判罚争议：红黄牌申诉驳回/生效（如道曼红牌申诉）、焦点战主裁判/VAR 裁判指定、争议判罚报告。
+    2. 豪门财务与经营危机：巨额亏损（如曼联亏损数亿镑）、FFP/PSR 财务违规风险、扣分警告。
+    3. 重大转会与更衣室突发：知名记者（Ornstein / Romano / 邮报）的独家跟进与爆料。
 
     【VAR 情报评级标准（必须严格套用，并在 var_rating 字段原样填写等级名）】
+    - 🐦‍⬛【官方严谨·黑标警示】：触发上述严肃新闻红线时使用，优先级最高。
     - ✨【金哨认证·绝对真理】(Tier 1)：官方公告、BBC、天空体育、英超官方。
     - ⚡【闪电突袭·跟队独家】(Tier 2)：知名跟队记者或一线深度突发分析。
     - 💛【吃瓜狂欢·黄牌警告】(Tier 3)：太阳报、每日邮报等爆料、财务亏损、裁判争议或话题炒作。
 
     评级执行细则：
+    - 红线判定优先于一切流量考量；触发红线时，即便事件同时具备极高流量价值，也必须使用黑标并切换严肃文风。
     - 评级必须给出理由支撑，不得为了凑 Tier 1 而无视证据缺口；同一事件多个源说法冲突时，取其中最低等级。
     - 若现有资讯不足以判断真假，则 has_valid_news 必须为 false，且 var_rating 填 "💛【吃瓜狂欢·黄牌警告】(Tier 3)"。
 
     请严格返回合法的纯 JSON 对象（不含markdown反引号），结构如下：
     {{
       "has_valid_news": true/false,
-      "var_rating": "✨【金哨认证·绝对真理】(Tier 1) / ⚡【闪电突袭·跟队独家】(Tier 2) / 💛【吃瓜狂欢·黄牌警告】(Tier 3)（三选一，原样填写）",
+      "var_rating": "🐦‍⬛【官方严谨·黑标警示】 / ✨【金哨认证·绝对真理】(Tier 1) / ⚡【闪电突袭·跟队独家】(Tier 2) / 💛【吃瓜狂欢·黄牌警告】(Tier 3)（四选一，原样填写）",
       "var_reason": "一句话说明为什么给这个评级（20字以内）",
       "event_title": "核心事件标题",
       "fact_summary": "已核实的事实摘要",
       "evidence_url": "真实的原始报道链接",
       "evidence_sources_count": 1,
-      "draft_a": "争议拆解型文案",
-      "draft_b": "证据核验型文案",
-      "draft_c": "机制解释型文案",
+      "draft_a": "争议拆解型文案（爆款口播风；触发红线时为严肃通稿）",
+      "draft_b": "证据核验型文案（信源链条风；触发红线时为严肃通稿）",
+      "draft_c": "机制解释型文案（硬核增量风；触发红线时为严肃通稿）",
       "cover_blueprint": "封面设计指引",
-      "image_prompt": "AI绘图英文Prompt（3D caricature style）",
+      "image_prompt": "AI绘图英文Prompt（常规用 3D caricature style；触发红线时为纪实庄重风格）",
       "banner_overlay_text": "图片黄字标题（8字以内）"
     }}
     """
@@ -433,7 +460,8 @@ def main():
         if evidence_url and evidence_url in processed_urls:
             print(f"[INFO] 依据 URL 去重拦截：[{evidence_url}] 已处理过。")
         else:
-            mode_prefix = "🌅 <b>【越位情报局·每日权威早报】</b>" if is_morning_report else "🚨 <b>【越位情报局·突发新闻核验审核】</b>"
+            # 黑标（严肃红线）走独立卡片样式：肃穆标题 + 分隔线，且不展示 A 稿
+            is_black_label = "黑标" in str(model_result.get("var_rating") or "")
 
             # 对大模型或 RSS 输出的不确定文本统一做 html.escape 安全过滤，
             # 防止 < > & 等字符触发 Telegram HTTP 400。
@@ -450,19 +478,35 @@ def main():
             banner_overlay_text_h = html.escape(str(model_result.get("banner_overlay_text") or ""))
             var_reason_h = html.escape(str(model_result.get("var_reason") or "").strip())
 
-            card = f"{mode_prefix}\n\n"
-            card += f"🏆 <b>VAR 评级：</b> {var_rating_h}\n"
-            if var_reason_h:
-                card += f"📋 <b>评级依据：</b> {var_reason_h}\n"
-            card += f"📌 <b>事件：</b> {event_title_h}\n"
-            card += f"🛡️ <b>事实摘要：</b> {fact_summary_h}\n"
-            card += f"🔗 <b>原始证据 URL：</b> {evidence_url_h}\n\n"
-            card += f"🔥 <b>[A稿: 争议拆解]</b>\n{draft_a_h}\n\n"
-            card += f"🛡️ <b>[B稿: 证据核验]</b>\n{draft_b_h}\n\n"
-            card += f"🧠 <b>[C稿: 机制解释]</b>\n{draft_c_h}\n\n"
-            card += f"🎨 <b>[封面指引]</b>\n{cover_blueprint_h}\n\n"
-            card += f"🎭 <b>[漫画 Prompt]</b>\n<code>{image_prompt_h}</code>\n"
-            card += f"🏷️ <b>[黄字标题]</b> {banner_overlay_text_h}"
+            if is_black_label:
+                # 严肃通报模板：肃穆标题 + 分隔线，只保留 B/C 稿，杜绝流量化表达
+                card = "🐦‍⬛ <b>【严肃通报 · 官方严谨·黑标警示】</b>\n"
+                card += "━━━━━━━━━━━━━━━\n"
+                if var_reason_h:
+                    card += f"📋 <b>评级依据：</b> {var_reason_h}\n"
+                card += f"📌 <b>事件：</b> {event_title_h}\n"
+                card += f"🛡️ <b>事实摘要：</b> {fact_summary_h}\n"
+                card += f"🔗 <b>原始证据 URL：</b> {evidence_url_h}\n\n"
+                card += f"🛡️ <b>[B稿: 证据核验]</b>\n{draft_b_h}\n\n"
+                card += f"🧠 <b>[C稿: 机制解释]</b>\n{draft_c_h}\n\n"
+                card += f"🎨 <b>[封面指引]</b>\n{cover_blueprint_h}\n\n"
+                card += f"🎭 <b>[绘图 Prompt]</b>\n<code>{image_prompt_h}</code>\n"
+                card += f"🏷️ <b>[标题]</b> {banner_overlay_text_h}"
+            else:
+                mode_prefix = "🌅 <b>【越位情报局·每日权威早报】</b>" if is_morning_report else "🚨 <b>【越位情报局·突发新闻核验审核】</b>"
+                card = f"{mode_prefix}\n\n"
+                card += f"🏆 <b>VAR 评级：</b> {var_rating_h}\n"
+                if var_reason_h:
+                    card += f"📋 <b>评级依据：</b> {var_reason_h}\n"
+                card += f"📌 <b>事件：</b> {event_title_h}\n"
+                card += f"🛡️ <b>事实摘要：</b> {fact_summary_h}\n"
+                card += f"🔗 <b>原始证据 URL：</b> {evidence_url_h}\n\n"
+                card += f"🔥 <b>[A稿: 争议拆解]</b>\n{draft_a_h}\n\n"
+                card += f"🛡️ <b>[B稿: 证据核验]</b>\n{draft_b_h}\n\n"
+                card += f"🧠 <b>[C稿: 机制解释]</b>\n{draft_c_h}\n\n"
+                card += f"🎨 <b>[封面指引]</b>\n{cover_blueprint_h}\n\n"
+                card += f"🎭 <b>[漫画 Prompt]</b>\n<code>{image_prompt_h}</code>\n"
+                card += f"🏷️ <b>[黄字标题]</b> {banner_overlay_text_h}"
             
             push_success = send_telegram(card)
             if push_success:
