@@ -20,33 +20,56 @@ RUN_MODE = os.environ.get("RUN_MODE", "scan") # scan 或 morning
 STATE_FILE = "state.json"
 LOG_FILE = "run_telemetry.log"
 
-# ==================== 极速与权威 RSS 监控矩阵 (含 X 顶级名记转换) ====================
+# ==================== 极速与权威 RSS 监控矩阵 (全明星情报网) ====================
 RSS_FEEDS = [
-    # 顶级权威主流源 (Tier 1 金哨)
+    # 1. 官方与裁判仲裁层 (Tier 1 金哨)
+    "https://www.thefa.com/rss",                       # 英足总（无原生 RSS，走站点检索降级）
+    "https://www.premierleague.com/rss/news",          # 英超官方（端点已下线，走站点检索降级）
+
+    # 2. 顶级权威主流媒体 (Tier 1 权威主流)
     "https://feeds.bbci.co.uk/sport/football/rss.xml",
     "https://www.skysports.com/rss/12040",
-    "https://www.premierleague.com/rss/news",
-    "https://theathletic.com/feed/",
+    "https://theathletic.com/feed/",                   # 403 Cloudflare 风控，无可用降级
 
-    # 爆款爆料与八卦/财务/更衣室/裁判争议源 (Tier 3 吃瓜黄牌)
-    "https://www.dailymail.co.uk/sport/football/index.rss",  # 每日邮报 (专门捕捉豪门巨亏、更衣室爆料)
-    "https://www.thesun.co.uk/sport/football/feed/",        # 太阳报 (裁判争议、申诉、场外花边)
+    # 3. 爆款爆料、八卦与财务舆论场 (Tier 3 吃瓜黄牌)
+    "https://www.dailymail.co.uk/sport/football/index.rss",
+    "https://www.thesun.co.uk/sport/football/feed/",   # 注意是 .co.uk；thesun.com 会 SSL 证书错误
 
-    # X (Twitter) 顶级名记与独家源 (通过 RSSHub 开源桥接)
+    # 4. 顶级名记与转会/跟队信源 (RSSHub 桥接)
     "https://rsshub.app/twitter/user/David_Ornstein",
     "https://rsshub.app/twitter/user/FabrizioRomano",
     "https://rsshub.app/twitter/user/Matt_Law_DT",
-    "https://rsshub.app/twitter/user/SamLee"
+    "https://rsshub.app/twitter/user/SamLee",
+
+    # 5. Big 6 豪门官方发布与动态 (RSSHub 桥接)
+    "https://rsshub.app/twitter/user/ManUtd",
+    "https://rsshub.app/twitter/user/ManCity",
+    "https://rsshub.app/twitter/user/Arsenal",
+    "https://rsshub.app/twitter/user/LFC",
+    "https://rsshub.app/twitter/user/ChelseaFC",
+    "https://rsshub.app/twitter/user/SpursOfficial",
 ]
 
 # ==================== 失效源自动降级映射 ====================
-# 实测结论（2026-10）：
-#   - rsshub.app 公共实例声明"仅供测试、不用于生产"，对云端 IP 返回 403，Twitter 路由被禁用（302 → google.com/404）
+# 实测结论（2026-10，全部真实请求验证过）：
+#   - rsshub.app 公共实例声明"仅供测试、不用于生产"，Twitter 路由已完全停用，统一返回 404
+#   - thefa.com 所有 /rss 路径均返回 200 + text/html（并非 feed），解析必然失败
 #   - premierleague.com/rss/news 已下线，返回 404
-#   - theathletic.com/feed/ 返回 403（疑似 Cloudflare 风控），Google News 亦无可用索引，暂无降级方案
-# 因此主源不可用时自动切换到 Google News RSS，保证监控矩阵不空转、不静默丢源。
+#   - theathletic.com/feed/ 返回 403（Cloudflare 风控），Google News 亦无索引，暂无降级方案
+#   - thesun.com 是错误域名（SSL 证书不匹配），正确为 thesun.co.uk
+# 因此主源不可用（非 200 或解析抛异常）时自动切换到 Google News RSS，保证矩阵不空转、不静默丢源。
 FEED_FALLBACKS = {
-    # X 名记
+    # 官方与裁判仲裁层
+    # thefa.com 无原生 RSS，且 site:thefa.com 会被业余联赛页面（Cheshire Girls Football League
+    # 之类）淹没。改用「The FA + statement/disciplinary」检索，实测能直接命中
+    # "Arsenal lose appeal against Dowman red card" 这类纪律与申诉事件。
+    "https://www.thefa.com/rss":
+        "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:7d&hl=en-US&gl=US&ceid=US:en",
+    # 加 /news 路径限定，避免被 FPL 选秀类内容占满；实测能抓到 PGMOL 判罚公告
+    "https://www.premierleague.com/rss/news":
+        "https://news.google.com/rss/search?q=site:premierleague.com/news+when:7d&hl=en-US&gl=US&ceid=US:en",
+
+    # 名记信源
     "https://rsshub.app/twitter/user/David_Ornstein":
         "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:2d&hl=en-US&gl=US&ceid=US:en",
     "https://rsshub.app/twitter/user/FabrizioRomano":
@@ -55,9 +78,20 @@ FEED_FALLBACKS = {
         "https://news.google.com/rss/search?q=%22Matt+Law%22+Chelsea+when:2d&hl=en-US&gl=US&ceid=US:en",
     "https://rsshub.app/twitter/user/SamLee":
         "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:2d&hl=en-US&gl=US&ceid=US:en",
-    # 英超官方（原 RSS 端点已 404，改用站点检索，含 Key Match Incidents Panel 裁判判罚公告）
-    "https://www.premierleague.com/rss/news":
-        "https://news.google.com/rss/search?q=site:premierleague.com+when:2d&hl=en-US&gl=US&ceid=US:en",
+
+    # Big 6 官方站：site: 限定后全是官网一手内容（team news / 伤情更新 / 官方声明）
+    "https://rsshub.app/twitter/user/ManUtd":
+        "https://news.google.com/rss/search?q=site:manutd.com+when:7d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/ManCity":
+        "https://news.google.com/rss/search?q=site:mancity.com+when:7d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/Arsenal":
+        "https://news.google.com/rss/search?q=site:arsenal.com+when:7d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/LFC":
+        "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:7d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/ChelseaFC":
+        "https://news.google.com/rss/search?q=site:chelseafc.com+when:7d&hl=en-US&gl=US&ceid=US:en",
+    "https://rsshub.app/twitter/user/SpursOfficial":
+        "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:7d&hl=en-US&gl=US&ceid=US:en",
 }
 
 client = None
@@ -168,17 +202,41 @@ def send_telegram(text):
     return success
 
 # ==================== RSS 抓取（带严格超时与安全解析） ====================
-def _parse_feed_items(content, source_url, limit=3):
-    """安全解析 RSS 内容，返回前 limit 条条目。节点缺失或文本为空时均使用兜底值。"""
+_TAG_STRIP_RE = re.compile(r"<[^>]+>")
+_WS_RE = re.compile(r"\s+")
+
+
+def _clean_text(text, limit=160):
+    """清洗 RSS 文本：剥 HTML 标签、反转义实体、压缩空白、按需截断。
+
+    部分源（每日邮报 / 太阳报）的 description 是整段 CDATA HTML，单条可达上千字符。
+    17 个源 × 10 条不做清洗时 raw_blob 会飙到 96K 字符（≈32K token），
+    既烧钱又容易撞免费层 TPM 限制，还会让模型忽略后半段素材。
+    """
+    if not text:
+        return ""
+    s = _TAG_STRIP_RE.sub(" ", text)
+    s = html.unescape(s)
+    s = _WS_RE.sub(" ", s).strip()
+    return s[:limit]
+
+
+def _parse_feed_items(content, source_url, limit=10):
+    """安全解析 RSS 内容，返回前 limit 条条目。节点缺失或文本为空时均使用兜底值。
+
+    limit 原为 3，实测会导致「素材池固化」：每个源长期只有前 3 条在轮转，
+    AI 反复挑中同一条 → evidence_url 命中 processed_urls → 被去重拦截 → 长时间静默。
+    放宽到 10 条后候选池从 ~27 条扩到 ~80 条，去重后仍能留下新鲜「次新」新闻。
+    """
     items = []
     root = ET.fromstring(content)
     for item in root.findall(".//item")[:limit]:
         title_elem = item.find("title")
-        title = title_elem.text if title_elem is not None and title_elem.text else "无标题"
+        title = _clean_text(title_elem.text, 140) if title_elem is not None and title_elem.text else "无标题"
         link_elem = item.find("link")
         link = link_elem.text if link_elem is not None and link_elem.text else source_url
         desc_elem = item.find("description")
-        desc = desc_elem.text if desc_elem is not None and desc_elem.text else ""
+        desc = _clean_text(desc_elem.text, 160) if desc_elem is not None and desc_elem.text else ""
         items.append({"title": title, "link": link, "desc": desc, "source": source_url})
     return items
 
@@ -230,8 +288,14 @@ def fetch_rss_sources():
             resp = requests.get(url, headers=headers, timeout=(5, 10))
             source_status[url] = resp.status_code
             if resp.status_code == 200:
-                rss_items.extend(_parse_feed_items(resp.content, url))
-                continue
+                parsed = _parse_feed_items(resp.content, url)
+                # 关键：有些站点（如 thefa.com/rss）返回 200 + 可被 XML 解析的 HTML，
+                # findall 得到 0 条却不抛异常。若不判空会直接 continue，导致该源永久空转、
+                # 且永远走不到降级分支。这里把「0 条」同样视为不可用。
+                if parsed:
+                    rss_items.extend(parsed)
+                    continue
+                source_status[url] = "200_EMPTY(0 items)"
         except Exception as e:
             source_status[url] = str(e)
 
@@ -243,8 +307,11 @@ def fetch_rss_sources():
             fb_resp = requests.get(fallback_url, headers=headers, timeout=(5, 10))
             if fb_resp.status_code == 200:
                 fb_items = _parse_feed_items(fb_resp.content, url)
-                rss_items.extend(fb_items)
-                source_status[url] = f"FALLBACK_OK({fb_resp.status_code}, {len(fb_items)} items)"
+                if fb_items:
+                    rss_items.extend(fb_items)
+                    source_status[url] = f"FALLBACK_OK({fb_resp.status_code}, {len(fb_items)} items)"
+                else:
+                    source_status[url] = "FALLBACK_EMPTY(0 items)"
             else:
                 source_status[url] = f"FALLBACK_FAIL({fb_resp.status_code})"
         except Exception as fb_err:
@@ -290,22 +357,51 @@ def evaluate_with_deepseek(prompt):
             print("[SUCCESS] DeepSeek 模型成功响应并完成输出！")
             return data, None
         else:
+            print(f"[ERROR] DeepSeek 调用失败原因: HTTP {resp.status_code} | 响应体前200字: {resp.text[:200]}")
             return None, f"DeepSeek 响应异常: {resp.status_code}"
     except Exception as e:
+        print(f"[ERROR] DeepSeek 调用失败原因: {type(e).__name__}: {e}")
         return None, f"DeepSeek 请求异常: {e}"
 
 # ==================== 核心：单次 Gemini 调用（受控于超时线程） ====================
-def _call_single_gemini(model_name, prompt):
-    response = client.models.generate_content(
-        model=model_name,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            tools=[types.Tool(google_search=types.GoogleSearch())],
-            response_mime_type="application/json",
-            temperature=0.2
-        )
+# HTTP 层超时（毫秒）：比线程池的 30 秒早 5 秒触发，让请求在 SDK 内部就被掐断，
+# 而不是等线程池超时后仍卡在 socket 上。旧版 SDK 不支持时自动回退。
+_HTTP_TIMEOUT_MS = 25000
+_HTTP_TIMEOUT_SUPPORTED = None  # None=未探测 / True=支持 / False=不支持
+
+
+def _build_gen_config():
+    """构造 GenerateContentConfig，并在 SDK 支持时为本次请求附加 HTTP 层超时。"""
+    global _HTTP_TIMEOUT_SUPPORTED
+    kwargs = dict(
+        tools=[types.Tool(google_search=types.GoogleSearch())],
+        response_mime_type="application/json",
+        temperature=0.2,
     )
-    
+    if _HTTP_TIMEOUT_SUPPORTED is not False:
+        try:
+            cfg = types.GenerateContentConfig(
+                **kwargs, http_options=types.HttpOptions(timeout=_HTTP_TIMEOUT_MS)
+            )
+            _HTTP_TIMEOUT_SUPPORTED = True
+            return cfg
+        except Exception as e:
+            _HTTP_TIMEOUT_SUPPORTED = False
+            print(f"[WARN] 当前 google-genai 版本不支持 HTTP 层超时，回退为仅线程池超时: {type(e).__name__}: {e}")
+    return types.GenerateContentConfig(**kwargs)
+
+
+def _call_single_gemini(model_name, prompt):
+    # 调用层异常单独归类，避免和后面的 JSON 解析失败混在一起看不出根因
+    try:
+        response = client.models.generate_content(
+            model=model_name,
+            contents=prompt,
+            config=_build_gen_config()
+        )
+    except Exception as e:
+        raise RuntimeError(f"[API_ERROR] {type(e).__name__}: {e}") from e
+
     grounding_urls = []
     if response.candidates and response.candidates[0].grounding_metadata:
         gm = response.candidates[0].grounding_metadata
@@ -313,14 +409,25 @@ def _call_single_gemini(model_name, prompt):
             for chunk in gm.grounding_chunks:
                 if hasattr(chunk, 'web') and chunk.web and chunk.web.uri:
                     grounding_urls.append(chunk.web.uri)
-    
-    text = response.text.strip()
+
+    # response.text 在候选为空 / 被安全策略拦截时会返回 None 甚至抛异常，这里统一兜成明确错误
+    try:
+        text = (response.text or "").strip()
+    except Exception as e:
+        raise RuntimeError(f"[NO_TEXT] 读取 response.text 失败: {type(e).__name__}: {e}") from e
+    if not text:
+        raise RuntimeError("[EMPTY_RESPONSE] 模型返回空文本（可能被安全策略/Recitation 拦截）")
+
     if text.startswith("```json"):
         text = text[7:]
     if text.endswith("```"):
         text = text[:-3]
-    
-    data = json.loads(text.strip())
+
+    try:
+        data = json.loads(text.strip())
+    except json.JSONDecodeError as je:
+        raise RuntimeError(f"[JSON_PARSE_ERROR] {je} | 原始响应前200字: {text[:200]}") from je
+
     if data.get("has_valid_news") and not grounding_urls:
         data["has_valid_news"] = False
         data["verification_status"] = "REJECTED_NO_GROUNDING"
@@ -375,9 +482,10 @@ def evaluate_with_gemini(raw_text, is_morning=False):
        - 必须提供可迁移的知识增量，而不是复述新闻本身。
 
     【爆款流量感知指引（以下类型事件具备极高流量价值，必须优先提炼并认定为 valid_news）】
-    1. 裁判与判罚争议：红黄牌申诉驳回/生效（如道曼红牌申诉）、焦点战主裁判/VAR 裁判指定、争议判罚报告。
+    1. 裁判与判罚争议：红黄牌申诉驳回/生效（如道曼红牌申诉）、焦点战主裁判/VAR 裁判指定、争议判罚报告、英足总/英超官方的纪律处分公告。
     2. 豪门财务与经营危机：巨额亏损（如曼联亏损数亿镑）、FFP/PSR 财务违规风险、扣分警告。
-    3. 重大转会与更衣室突发：知名记者（Ornstein / Romano / 邮报）的独家跟进与爆料。
+    3. 重大转会与更衣室突发：知名记者（Ornstein / Romano / 邮报）以及 Big 6 跟队记者的独家跟进与爆料。
+    4. 豪门官方发布：Big 6 官网/官推的伤情通报、首发名单、主帅表态、合同续约与转会官宣。
 
     【VAR 情报评级标准（必须严格套用，并在 var_rating 字段原样填写等级名）】
     - 🐦‍⬛【官方严谨·黑标警示】：触发上述严肃新闻红线时使用，优先级最高。
@@ -412,20 +520,30 @@ def evaluate_with_gemini(raw_text, is_morning=False):
         candidate_models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-8b']
         for model_name in candidate_models:
             print(f"[INFO] 正在尝试使用模型: {model_name} (带 30秒 超时保护) ...")
+            # 不使用 with：ThreadPoolExecutor.__exit__ 会 shutdown(wait=True)，
+            # 导致超时后仍阻塞等待线程真正结束，30 秒超时形同虚设。改为手动 wait=False。
+            executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+            future = None
             try:
-                # 使用线程池实现硬超时控制，防止网络卡死
-                with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-                    future = executor.submit(_call_single_gemini, model_name, prompt)
-                    data = future.result(timeout=30) # 最多等 30 秒，超时直接抛出异常
-                    print(f"[SUCCESS] 模型 {model_name} 成功执行并完成生成！")
-                    return data, None
+                future = executor.submit(_call_single_gemini, model_name, prompt)
+                data = future.result(timeout=30)  # 最多等 30 秒，超时直接抛出异常
             except concurrent.futures.TimeoutError:
-                print(f"[WARN] 模型 {model_name} 请求超时（超过30秒），主动切断并尝试下一个...")
+                if future is not None:
+                    future.cancel()
+                print(f"[ERROR] Gemini 调用失败原因: 模型 {model_name} 超过 30 秒未返回，已主动切断。")
+                print("[WARN] 切换下一个模型...")
                 continue
             except Exception as e:
-                print(f"[WARN] 模型 {model_name} 执行失败: {e}。切换下一个...")
+                print(f"[ERROR] Gemini 调用失败原因: {e}")
+                print(f"[WARN] 模型 {model_name} 执行失败，切换下一个...")
                 continue
-                
+            finally:
+                # wait=False：不等待后台线程收尾，避免超时后继续被卡住
+                executor.shutdown(wait=False)
+
+            print(f"[SUCCESS] 模型 {model_name} 成功执行并完成生成！")
+            return data, None
+
     # 均失败或超时，降级到 DeepSeek
     print("[WARN] 所有 Gemini 尝试均失败或超时，触发自动降级，切换至 DeepSeek！")
     return evaluate_with_deepseek(prompt)
