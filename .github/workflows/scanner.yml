@@ -16,6 +16,7 @@ on:
         options:
           - scan
           - morning
+          - diagnose
 
 # 回写 state.json 需要写权限，否则 git push 会静默失败 → 去重失效 → 每 15 分钟重复推送同一条
 permissions:
@@ -104,3 +105,40 @@ jobs:
           git commit -m "Auto-update bot state.json [skip ci]" || true
           git pull --rebase || true
           git push || true
+
+  # ==================== 手动诊断（只读，不推送、不改 state） ====================
+  # 触发方式：Actions → Run workflow → mode 选 diagnose
+  # 用途：长时间没收到推送时，一次性看清「抓取层 / 去重层 / 候选层」卡在哪
+  diagnose:
+    if: >-
+      github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'diagnose'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir requests google-genai
+
+      - name: Dump state.json
+        run: |
+          echo "=========== state.json ==========="
+          if [ -f state.json ]; then cat state.json; else echo "state.json 不存在（从未成功推送过）"; fi
+          echo "=================================="
+
+      - name: Run diagnose.py
+        run: python diagnose.py
+
+      - name: Dump telemetry tail
+        if: always()
+        run: |
+          echo "=========== run_telemetry.log (last 20) ==========="
+          if [ -f run_telemetry.log ]; then tail -n 20 run_telemetry.log; else echo "无 telemetry 日志"; fi
