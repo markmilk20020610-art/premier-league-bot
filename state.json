@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 71,
+        "calls": 72,
         "errors": 0,
-        "requests": 46
+        "requests": 47
       }
     },
-    "calls": 71,
+    "calls": 72,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 367509,
-    "output_tokens": 52360,
-    "requests": 46
+    "input_tokens": 373327,
+    "output_tokens": 52877,
+    "requests": 47
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -96,6 +96,33 @@
       "telegram_message_id": 19,
       "title": "切尔西vs曼联焦点战主裁判敲定：班克斯执法，TNT午间12:30开球",
       "updated_at": "2026-10-31T00:20:51.948581+00:00"
+    },
+    "2d0c18ebd560": {
+      "article_title": "Chelsea tickets and hospitality packages for Premier League matches at Stamford Bridge from just £155pp",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "321841512ecda345",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 28
+        }
+      ],
+      "created_at": "2026-10-31T09:50:36.403471+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "9ec6bfa468ae763e",
+      "event_id": "2d0c18ebd560",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 28,
+      "title": "切尔西斯坦福桥VIP观赛套餐155英镑起售",
+      "updated_at": "2026-10-31T09:50:36.933166+00:00"
     },
     "4116e6d3a07d": {
       "article_title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times",
@@ -219,9 +246,29 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T09:45:31.627455+00:00",
+  "last_scan_at": "2026-10-31T09:50:31.772078+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "MANCHESTER UTD fans can get unmissable ticket deals to watch the Red Devils in action at Old Trafford. Tickets to Old Tr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T09:50:31.774345+00:00",
+      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
+      "published": "2026-10-31T09:47:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd tickets plus hotels and VIP hospitality deals for Premier League and Champions League games at Old Trafford"
+    },
+    {
+      "desc": "CHELSEA fans can book a luxury VIP experience at Stamford Bridge at an unmissable price with this fantastic deal. Perfec",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T09:50:31.774371+00:00",
+      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
+      "published": "2026-10-31T09:45:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea tickets and hospitality packages for Premier League matches at Stamford Bridge from just £155pp"
+    },
     {
       "desc": "FOOTBALL fans can experience these unbeatable away-days to enjoy some of the biggest matches on Earth. Supporters can ex",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1371,7 +1418,8 @@
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw",
     "https://www.thesun.co.uk/sport/40844914/man-city-brighton-predictions-etihad",
     "https://www.skysports.com/f1/news/12040/13605836/max-verstappen-liam-lawson-receive-grid-penalties-for-unacceptable-practice-collision-at-mexico-city-grand-prix",
-    "https://www.thesun.co.uk/sport/40850634/sunsport-premier-league-efl-betting-picks"
+    "https://www.thesun.co.uk/sport/40850634/sunsport-premier-league-efl-betting-picks",
+    "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge"
   ],
   "schema_version": 3
 }
