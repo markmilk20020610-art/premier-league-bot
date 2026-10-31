@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 416,
+        "calls": 417,
         "errors": 0,
-        "requests": 416
+        "requests": 417
       }
     },
-    "calls": 416,
+    "calls": 417,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2508974,
-    "output_tokens": 267654,
-    "requests": 416
+    "input_tokens": 2515117,
+    "output_tokens": 268315,
+    "requests": 417
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T22:56:40.969084+00:00",
+  "last_scan_at": "2026-10-31T22:57:23.953085+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T22:57:23.956791+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13279313/fulham-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+      "published": "2026-10-31T22:51:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Fulham latest: We can beat anyone, says Arbeloa"
+    },
     {
       "desc": "Arsenal vs Slavia Prague Predicted Lineup: Saka Injured, Rice and Calafiori Doubts The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2420,16 +2430,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Go Inside Training before Liverpool showdown - Arsenal.com"
-    },
-    {
-      "desc": "Harry Kane and Kylian Mbappe were locked in a fierce race to be crowned the best player in the world and it was England ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-10-31T16:03:23.689670+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16254401/Journalist-include-Kylian-Mbappe-Ballon-dOr-voting.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-10-31T13:02:24+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Revealed: Scottish journalist did not include Kylian Mbappe in his Ballon d'Or voting - separately, investigation launched into suspicious b"
     }
   ],
   "processed_urls": [
