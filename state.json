@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 443,
+        "calls": 444,
         "errors": 0,
-        "requests": 443
+        "requests": 444
       }
     },
-    "calls": 443,
+    "calls": 444,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2678286,
-    "output_tokens": 286967,
-    "requests": 443
+    "input_tokens": 2684959,
+    "output_tokens": 287710,
+    "requests": 444
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,7 +928,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T23:23:20.416481+00:00",
+  "last_scan_at": "2026-10-31T23:24:26.206908+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1380,6 +1380,16 @@
       "publisher": "https://tickets.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
+      "desc": "How about Stat?: Pre-match stats as Eagles head to Spurs Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T23:24:26.212271+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOb3VSVXBWRjRWb2tVVDVKSzBHV1lTTU5xd2tKbWNkRzJRRVk2cDkxVWpwVDhlTVgxUWVBTEY2dmloNkQ2a2paNHJITlpKUnU4aGRTcUJyQnlGYUxJWlJ1UGgyYzhZVk1PSTF3SlA0WDd1aV8yQ05uVFJKRlhTRGVoMVBuWG1hTENWM29OdUp5Zzc0NlRhdlBkQ3BtVmozcjlvcWc?oc=5",
+      "published": "2026-10-31T19:20:39+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "How about Stat?: Pre-match stats as Eagles head to Spurs - Premier League"
     },
     {
       "desc": "AN EFL referee had a CRUTCH thrown at him as tempers flared at the end of the game. Oldham Athletic suffered a 1-0 loss ",
@@ -2420,16 +2430,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Coventry vs Sunderland team news LIVE!"
-    },
-    {
-      "desc": "Nottingham Forest's poor goalscoring run continued as poor finishing contributed to a 2-0 defeat at Brentford – who keep",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T16:58:24.240106+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13606092/brentford-2-0-nottingham-forest-oliver-glasners-side-put-in-another-concerning-performance-in-attack-as-bees-win",
-      "published": "2026-10-31T13:29:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Forest's scoring woes under Glasner continue as Brentford win easily"
     }
   ],
   "processed_urls": [
