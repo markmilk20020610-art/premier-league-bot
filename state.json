@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 93,
+        "calls": 94,
         "errors": 0,
-        "requests": 93
+        "requests": 94
       }
     },
-    "calls": 93,
+    "calls": 94,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 581503,
-    "output_tokens": 61149,
-    "requests": 93
+    "input_tokens": 587831,
+    "output_tokens": 62007,
+    "requests": 94
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -127,6 +127,33 @@
       "telegram_message_id": 19,
       "title": "切尔西vs曼联焦点战主裁判敲定：班克斯执法，TNT午间12:30开球",
       "updated_at": "2026-10-31T00:20:51.948581+00:00"
+    },
+    "244228d330dd": {
+      "article_title": "Romano reveals Man Utd top target to replace Carrick in 'crucial' sack update - 'a manager they love' - Football365",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "21fd850f6acb4847",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 51
+        }
+      ],
+      "created_at": "2026-10-31T17:34:31.977992+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e7bc6bfd1c054e8d",
+      "event_id": "244228d330dd",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSy03ZzJEbGVrNUNzVUU5WkhUS3NsN1VuUkZZSkNlTUM0cmR3OGEyb2x5eDVpNXplNnE1ZzFlR0FBXzdPa2xla0xjbXAxVTFuUW5zSEpybUNNb2FHYTlEQTltMlVZS2h4U0ptYVg2bTZaMHFGbzRGdDZfVW9fME95bTdDYjVrX21KNHhsd1pFYUpPQjV2Q01hLTNnZEVkSTJCX3REVFdONGV6bkJ1TjI4",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 51,
+      "title": "罗马诺爆料：曼联锁定卡里克继任者头号目标",
+      "updated_at": "2026-10-31T17:34:32.574287+00:00"
     },
     "2d0c18ebd560": {
       "article_title": "Chelsea tickets and hospitality packages for Premier League matches at Stamford Bridge from just £155pp",
@@ -712,7 +739,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:33:20.967270+00:00",
+  "last_scan_at": "2026-10-31T17:34:25.043360+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -824,6 +851,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Millwall ease past sorry Derby as Lisbie nets twice"
+    },
+    {
+      "desc": "Michael Skubala enjoyed the happiest of birthdays as Bristol City came from behind to stun Bolton 3-2 in the SkyBet Cham",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T17:34:25.045961+00:00",
+      "link": "https://www.skysports.com/football/bolton-wanderers-vs-bristol-city/report/560642",
+      "published": "2026-10-31T17:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Bristol City hit back late to stun Bolton"
     },
     {
       "desc": "WEREWOLF costumes are in short supply at this time of year - but James Trafford served up an even bigger Halloween howle",
@@ -2204,16 +2241,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Watch new FPL deadline live stream on YouTube on Saturday - Premier League"
-    },
-    {
-      "desc": "Alan Shearer discusses his love of Newcastle, almost continuing his managerial career and swapping the pitch for the com",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T06:30:47.949956+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwkg5l822k3no?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T06:23:58+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Shearer discusses scoring record, MOTD & a brush with Cardiff"
     }
   ],
   "processed_urls": [
@@ -2256,7 +2283,8 @@
     "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city",
     "https://www.thesun.co.uk/sport/40869821/nilson-angulo-escapes-red-card-hair-pull-sunderland-coventry",
     "https://www.thesun.co.uk/sport/40870435/james-trafford-horror-error-bournemouth-defeat",
-    "https://www.thesun.co.uk/sport/40870818/oliver-glasner-nottingham-forest-brentford-nikola-milenkovic"
+    "https://www.thesun.co.uk/sport/40870818/oliver-glasner-nottingham-forest-brentford-nikola-milenkovic",
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSy03ZzJEbGVrNUNzVUU5WkhUS3NsN1VuUkZZSkNlTUM0cmR3OGEyb2x5eDVpNXplNnE1ZzFlR0FBXzdPa2xla0xjbXAxVTFuUW5zSEpybUNNb2FHYTlEQTltMlVZS2h4U0ptYVg2bTZaMHFGbzRGdDZfVW9fME95bTdDYjVrX21KNHhsd1pFYUpPQjV2Q01hLTNnZEVkSTJCX3REVFdONGV6bkJ1TjI4"
   ],
   "schema_version": 3
 }
