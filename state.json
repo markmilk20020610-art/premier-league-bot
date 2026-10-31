@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 271,
+        "calls": 272,
         "errors": 0,
-        "requests": 271
+        "requests": 272
       }
     },
-    "calls": 271,
+    "calls": 272,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 1651076,
-    "output_tokens": 167182,
-    "requests": 271
+    "input_tokens": 1657224,
+    "output_tokens": 167805,
+    "requests": 272
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -820,7 +820,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T20:31:24.064912+00:00",
+  "last_scan_at": "2026-10-31T20:32:26.779418+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -952,6 +952,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Hurzeler: ‘Defence wins you battles and wins you championships’ - Premier League"
+    },
+    {
+      "desc": "City 0-1 Brighton: 2-minute highlights Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T20:32:26.783532+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVEVodG4zck9mQXcyeEZfM21vMWhUWTRpYWV5QmdyWW92d1c0V0xJajZkQWNabUhqWnAwQVI3Qkp2cmwwcFNiUVhyZkFvcnNtT2ZRSkZGa1VzZ183c2lZUE8xdHBjb1pITW5RaW8ybnhGbnJkckU3ZTNlV0Z4NkQ4ODBFTU9jN3JKLVE?oc=5",
+      "published": "2026-10-31T18:59:48+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City 0-1 Brighton: 2-minute highlights - Manchester City FC"
     },
     {
       "desc": "There is no more Mr Nice Guy at Nottingham Forest anymore, according to Oliver Glasner. The Austrian has said he will ch",
@@ -2312,16 +2322,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Ronald Araujo interview | Liverpool v Arsenal, 'room for improvement' and header tackle - Liverpool FC"
-    },
-    {
-      "desc": "TV info, team news, form guide: Chelsea v United Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T12:30:37.413952+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZktJM1pPd3ZpSHQzcWZ5eXZNSzhSR2U2WURoMTJrV0M2TTgwdHJDTWdKdnJQVF9TQ2NsNUlCd2o4b3luSGtrS2xuUnF1YVpWdV96OVA1eUNPc0ljSThUR3N2Z21NVXhGeVBTLW9YUEJOQjRNV3JUT3dYU1BZTGlWS1ZBelhDdGI3a01ueUlkWlZuQTZTSUl3?oc=5",
-      "published": "2026-10-31T09:54:09+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "TV info, team news, form guide: Chelsea v United - Manchester United"
     }
   ],
   "processed_urls": [
