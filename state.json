@@ -10,8 +10,8 @@
     "calls": 1,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 6532,
-    "output_tokens": 518,
+    "input_tokens": 6514,
+    "output_tokens": 603,
     "requests": 1
   },
   "circuit_breakers": {
@@ -20,6 +20,7 @@
   "events": {
     "02d6603fbef2": {
       "attempts": 1,
+      "chunks": [],
       "created_at": "2026-10-31T00:35:41.655392+00:00",
       "delivery_status": "COMMITTED",
       "event_fingerprint": "1647a3ee8dce1183",
@@ -33,6 +34,7 @@
     },
     "03a59f1553fa": {
       "attempts": 1,
+      "chunks": [],
       "created_at": "2026-10-31T00:10:44.391024+00:00",
       "delivery_status": "COMMITTED",
       "event_fingerprint": "06d5ca672e14792d",
@@ -46,6 +48,7 @@
     },
     "057fb4ed1242": {
       "attempts": 1,
+      "chunks": [],
       "created_at": "2026-10-31T00:39:06.452857+00:00",
       "delivery_status": "COMMITTED",
       "event_fingerprint": "0307a3bf98e63301",
@@ -86,6 +89,7 @@
     },
     "107c7f016595": {
       "attempts": 1,
+      "chunks": [],
       "created_at": "2026-10-31T00:20:51.302306+00:00",
       "delivery_status": "COMMITTED",
       "event_fingerprint": "065013539840d7ca",
@@ -315,6 +319,7 @@
     },
     "51d986cb8977": {
       "attempts": 1,
+      "chunks": [],
       "created_at": "2026-10-31T00:25:39.058557+00:00",
       "delivery_status": "COMMITTED",
       "event_fingerprint": "e04952b39ad3f689",
@@ -355,6 +360,7 @@
     },
     "9016883d39b5": {
       "attempts": 1,
+      "chunks": [],
       "created_at": "2026-10-31T00:15:53.815550+00:00",
       "delivery_status": "COMMITTED",
       "event_fingerprint": "d099453fac49d77f",
@@ -422,6 +428,7 @@
     },
     "c1ca9017032e": {
       "attempts": 1,
+      "chunks": [],
       "created_at": "2026-10-31T00:05:41.133162+00:00",
       "delivery_status": "COMMITTED",
       "event_fingerprint": "06d5ca672e14792d",
@@ -516,7 +523,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:01:27.333175+00:00",
+  "last_scan_at": "2026-10-31T16:01:56.930324+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
