@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 60,
+        "calls": 61,
         "errors": 0,
-        "requests": 35
+        "requests": 36
       }
     },
-    "calls": 60,
+    "calls": 61,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 311253,
-    "output_tokens": 44731,
-    "requests": 35
+    "input_tokens": 315898,
+    "output_tokens": 45414,
+    "requests": 36
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -219,9 +219,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T08:50:31.716891+00:00",
+  "last_scan_at": "2026-10-31T08:55:25.850365+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Having gone winless in your first six games and conceded goals at a rate of almost two a game, there are worse ways to r",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T08:55:25.852953+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13605752/alvaro-arbeloa-exclusive-fulham-head-coach-on-early-mistakes-seeing-out-games-and-getting-the-best-from-gonzalo-garcia",
+      "published": "2026-10-31T08:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Arbeloa: We've made mistakes but Fulham on right path"
+    },
     {
       "desc": "Man United should be embarrassed by Zion Suzuki after Fabrizio Romano reveal Football Insider",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
