@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 119,
+        "calls": 120,
         "errors": 0,
-        "requests": 94
+        "requests": 95
       }
     },
-    "calls": 119,
+    "calls": 120,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 655965,
-    "output_tokens": 83830,
-    "requests": 94
+    "input_tokens": 662030,
+    "output_tokens": 84453,
+    "requests": 95
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -327,9 +327,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T13:27:21.229527+00:00",
+  "last_scan_at": "2026-10-31T13:28:24.140200+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "LIONEL MESSI will NOT serve a one-match MLS ban... despite receiving his fifth yellow card of the season on Wednesday. T",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T13:28:24.143764+00:00",
+      "link": "https://www.thesun.co.uk/sport/40867774/lionel-messi-inter-miami-yellow-cards/",
+      "published": "2026-10-31T13:27:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Little-known MLS rule means Lionel Messi will NOT serve ban for five yellow cards"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -1752,15 +1762,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Key talking points from Sonia Bompastor's pre-Charlton press conference | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Alisson Becker omission from Brazil squad for November internationals explained Liverpool FC",
-      "first_seen": "2026-10-31T00:05:36.322654+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOc3FnU2NNVmdGYTNpR0NDamxRcVFYWjg0XzhpbUNkLXQ1dm4ydGhkOW5QZ0h2OTNCYnRkTUUxWGkwQzVNN1ZGUkRoY2hQZHFRaWNRZFppN1VhSjIwNUxQNjZvbFdqUVVpclVuRUVrNjBFWlhqQzZZWTV0VmQxWG9UUzA1Vml4OFQxY0tRc0pIV0JQaE9UT1Bj?oc=5",
-      "published": "2026-10-30T16:59:05+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Alisson Becker omission from Brazil squad for November internationals explained - Liverpool FC"
     }
   ],
   "processed_urls": [
