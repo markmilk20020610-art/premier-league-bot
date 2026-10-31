@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 103,
+        "calls": 104,
         "errors": 0,
-        "requests": 78
+        "requests": 79
       }
     },
-    "calls": 103,
+    "calls": 104,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 559725,
-    "output_tokens": 73441,
-    "requests": 78
+    "input_tokens": 566374,
+    "output_tokens": 74447,
+    "requests": 79
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -123,6 +123,33 @@
       "telegram_message_id": 28,
       "title": "切尔西斯坦福桥VIP观赛套餐155英镑起售",
       "updated_at": "2026-10-31T09:50:36.933166+00:00"
+    },
+    "33f12973508c": {
+      "article_title": "Fabrizio Romano rules out Fermin Lopez’s exit from Barcelona amid Man Utd rumours - Tribuna.com",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "9479badfee57f28f",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 31
+        }
+      ],
+      "created_at": "2026-10-31T12:30:45.009774+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "86f28a7ed1df9426",
+      "event_id": "33f12973508c",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmt2dWI3dnZMY2VvU2pHQmpHTE1jR1hmQ3ZqUzVPbGk5WXQxSm5CaXpyUVBZUjdLQVh0M2VJODhJRVFoRHhEZGdPanpzNEgwbWJNWkFqbTlhMXIwYjRXUEExLXFxcTVBZzlUTWFnMWxRWGZCV0ZwZmt5RVFwMHkyNU9kUjQ4ZDRXZWJPRnpoYzd5Y0ZEZzJCSUptdWNhZ1o3a0l2VlpaQkJIaGw3NjctVEFMQTFhQzBKVUtpVdIBwgFBVV95cUxNNDRsVW9yWHJHUmdtU3FHMnlVRkpkM3J3YmFJMWRJWmRvNV9Ycl9mWGl1c1RSYWNyYlNGTktWc1h2Z1ZnbENUMTJMMEFEN0JIc2ZUTG9rNjM2V3l3S3hPb2E4dGJRWVNZVnU2c1p1UVhmZkpnM0YzYldpU1hzZ0ZzdkR0MENyOHpsd1lualdiNmFCSVpOUDcta01lOUpVc1loSzdHc050LXBsYktTRWpXTnE0UXNZemR5N0g3NWxEMk9VZw",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 31,
+      "title": "罗马诺辟谣：巴萨无意出售费尔明·洛佩斯，曼联传闻不实",
+      "updated_at": "2026-10-31T12:30:46.421263+00:00"
     },
     "4116e6d3a07d": {
       "article_title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times",
@@ -300,9 +327,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T12:25:27.732172+00:00",
+  "last_scan_at": "2026-10-31T12:30:37.410090+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Fermín López decides to remain at Barcelona — Interia Sport UA.NEWS",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T12:30:37.413607+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTUhER0hnX01Dek5WeU9HYlpmUGdQeGlweFlZa092b0NKdzRhRDY4bWJiR3c4UDVaY0xSREFseXNldmRXcS1jVHNtdjVjWUttM1RPcGVMV0Q2YkJKZkRfWUlrNnRqUU8tZEJ0UHJIN0F0MzF1Q045VHN5WjFaU1BEYTgzYlpnUjdZbXhWbERFc0phNk5QTDQw?oc=5",
+      "published": "2026-10-31T12:29:26+00:00",
+      "publisher": "https://ua.news",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fermín López decides to remain at Barcelona — Interia Sport - UA.NEWS"
+    },
     {
       "desc": "NEWCASTLE legend and BBC pundit Alan Shearer has spilled the beans on a job he turned down after getting relegated with ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -422,6 +459,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Ronald Araujo interview | Liverpool v Arsenal, 'room for improvement' and header tackle - Liverpool FC"
+    },
+    {
+      "desc": "TV info, team news, form guide: Chelsea v United Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T12:30:37.413952+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZktJM1pPd3ZpSHQzcWZ5eXZNSzhSR2U2WURoMTJrV0M2TTgwdHJDTWdKdnJQVF9TQ2NsNUlCd2o4b3luSGtrS2xuUnF1YVpWdV96OVA1eUNPc0ljSThUR3N2Z21NVXhGeVBTLW9YUEJOQjRNV3JUT3dYU1BZTGlWS1ZBelhDdGI3a01ueUlkWlZuQTZTSUl3?oc=5",
+      "published": "2026-10-31T09:54:09+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "TV info, team news, form guide: Chelsea v United - Manchester United"
     },
     {
       "desc": "MANCHESTER UTD fans can get unmissable ticket deals to watch the Red Devils in action at Old Trafford. Tickets to Old Tr",
@@ -1695,7 +1742,8 @@
     "https://www.thesun.co.uk/sport/40850634/sunsport-premier-league-efl-betting-picks",
     "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge",
     "https://www.dailymail.com/sport/football/article-16251855/Cole-Palmer-Man-United-Chelsea-Xabi-Alonso.html",
-    "https://www.dailymail.com/sport/football/article-16248543/manchester-united-chelsea-combined-xi-carrick.html"
+    "https://www.dailymail.com/sport/football/article-16248543/manchester-united-chelsea-combined-xi-carrick.html",
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmt2dWI3dnZMY2VvU2pHQmpHTE1jR1hmQ3ZqUzVPbGk5WXQxSm5CaXpyUVBZUjdLQVh0M2VJODhJRVFoRHhEZGdPanpzNEgwbWJNWkFqbTlhMXIwYjRXUEExLXFxcTVBZzlUTWFnMWxRWGZCV0ZwZmt5RVFwMHkyNU9kUjQ4ZDRXZWJPRnpoYzd5Y0ZEZzJCSUptdWNhZ1o3a0l2VlpaQkJIaGw3NjctVEFMQTFhQzBKVUtpVdIBwgFBVV95cUxNNDRsVW9yWHJHUmdtU3FHMnlVRkpkM3J3YmFJMWRJWmRvNV9Ycl9mWGl1c1RSYWNyYlNGTktWc1h2Z1ZnbENUMTJMMEFEN0JIc2ZUTG9rNjM2V3l3S3hPb2E4dGJRWVNZVnU2c1p1UVhmZkpnM0YzYldpU1hzZ0ZzdkR0MENyOHpsd1lualdiNmFCSVpOUDcta01lOUpVc1loSzdHc050LXBsYktTRWpXTnE0UXNZemR5N0g3NWxEMk9VZw"
   ],
   "schema_version": 3
 }
