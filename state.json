@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 336,
+        "calls": 337,
         "errors": 0,
-        "requests": 336
+        "requests": 337
       }
     },
-    "calls": 336,
+    "calls": 337,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2030861,
-    "output_tokens": 211754,
-    "requests": 336
+    "input_tokens": 2036684,
+    "output_tokens": 212468,
+    "requests": 337
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -466,6 +466,33 @@
       "title": "热刺2-0十人水晶宫取三连胜，德泽尔比称球队氛围焕然一新",
       "updated_at": "2026-10-31T20:17:31.486801+00:00"
     },
+    "6e6439351ca0": {
+      "article_title": "'The same s*** situation' - ANGRY Glasner vows to change - or be sacked",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "6fa8f817aca39063",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 55
+        }
+      ],
+      "created_at": "2026-10-31T21:37:28.812551+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e05c3acac3acde70",
+      "event_id": "6e6439351ca0",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/football/news/12040/13606410/oliver-glasner-nottingham-forest-head-coach-reveals-anger-desire-to-change-growing-pattern-at-club-amid-poor-start-to-season",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 55,
+      "title": "格拉斯纳赛后暴怒开炮：要么改变，要么我被炒",
+      "updated_at": "2026-10-31T21:37:29.344664+00:00"
+    },
     "71e1de6387b1": {
       "article_title": "Brentford 2 Nottingham Forest 0: Pressure grows for Oliver Glasner as new club suffer fourth defeat in five outings",
       "attempts": 1,
@@ -820,9 +847,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T21:36:23.301075+00:00",
+  "last_scan_at": "2026-10-31T21:37:22.904654+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Nottingham Forest manager Oliver Glasner launched into an extraordinary rant after his team's 2-0 defeat at Brentford on",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-10-31T21:37:22.908120+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16255407/Angry-Oliver-Glasner-fumes-s-situation-explosive-rant-Nottingham-Forest-boss-warns-players-need-change-hell-sacked-hits-pattern-problems.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-31T21:30:23+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Angry Oliver Glasner fumes at 's*** situation' in explosive rant: Nottingham Forest boss warns players they need to change or he'll be sacke"
+    },
     {
       "desc": "Are Spurs finally finding elusive consistency under Roberto De Zerbi after a third successive Premier League win, asks c",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2312,16 +2349,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why is there only one Premier League match on Sunday?"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T11:40:40.259699+00:00",
-      "link": "https://www.skysports.com/football/stoke-city-vs-preston-north-end/live/560650",
-      "published": "2026-10-31T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Stoke City vs Preston LIVE!"
     }
   ],
   "processed_urls": [
@@ -2368,7 +2395,8 @@
     "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSy03ZzJEbGVrNUNzVUU5WkhUS3NsN1VuUkZZSkNlTUM0cmR3OGEyb2x5eDVpNXplNnE1ZzFlR0FBXzdPa2xla0xjbXAxVTFuUW5zSEpybUNNb2FHYTlEQTltMlVZS2h4U0ptYVg2bTZaMHFGbzRGdDZfVW9fME95bTdDYjVrX21KNHhsd1pFYUpPQjV2Q01hLTNnZEVkSTJCX3REVFdONGV6bkJ1TjI4",
     "https://www.thesun.co.uk/sport/40871116/jean-philippe-mateta-red-tottenham-horror-challenge",
     "https://www.thesun.co.uk/sport/40871382/jude-bellingham-jobe-bayern-dortmund-carney-chukwuemeka",
-    "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o"
+    "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o",
+    "https://www.skysports.com/football/news/12040/13606410/oliver-glasner-nottingham-forest-head-coach-reveals-anger-desire-to-change-growing-pattern-at-club-amid-poor-start-to-season"
   ],
   "schema_version": 3
 }
