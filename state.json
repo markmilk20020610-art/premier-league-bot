@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 131,
+        "calls": 132,
         "errors": 0,
-        "requests": 106
+        "requests": 107
       }
     },
-    "calls": 131,
+    "calls": 132,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 727944,
-    "output_tokens": 90708,
-    "requests": 106
+    "input_tokens": 733841,
+    "output_tokens": 91342,
+    "requests": 107
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -150,6 +150,33 @@
       "telegram_message_id": 31,
       "title": "罗马诺辟谣：巴萨无意出售费尔明·洛佩斯，曼联传闻不实",
       "updated_at": "2026-10-31T12:30:46.421263+00:00"
+    },
+    "34a5d6e7932f": {
+      "article_title": "Chelsea vs Manchester United - Premier League: Estevao and Matheus Cunha have goals ruled out for offside in a lively first half - with Red",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "37fd51c11755bd1f",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 32
+        }
+      ],
+      "created_at": "2026-10-31T13:40:35.723852+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3e0ca28f8c2b07ce",
+      "event_id": "34a5d6e7932f",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 32,
+      "title": "切尔西vs曼联上半场两粒进球因越位被吹",
+      "updated_at": "2026-10-31T13:40:36.304706+00:00"
     },
     "4116e6d3a07d": {
       "article_title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times",
@@ -327,9 +354,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T13:39:23.768415+00:00",
+  "last_scan_at": "2026-10-31T13:40:29.882019+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Chelsea's Premier League clash with Manchester Unite",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-10-31T13:40:29.885707+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-31T13:35:19+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Chelsea vs Manchester United - Premier League: Estevao and Matheus Cunha have goals ruled out for offside in a lively first half - with Red "
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -399,6 +436,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "U18s stretch unbeaten league run to eight games with victory over Burnley - Manchester City FC"
+    },
+    {
+      "desc": "TOM COLLOMOSSE: Before billionaires Nassef Sawiris and Wes Edens took control of Aston Villa in 2018, the club were star",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-10-31T13:40:29.885871+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16254393/aston-villa-jamie-carragher-legal-action.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-31T12:54:50+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Aston Villa threatening Jamie Carragher with legal action over 'insults' looks wild... but this is why club's billionaire owner Nassef Sawir"
     },
     {
       "desc": "JAMIE CARRAGHER has apologised to Aston Villa after being threatened with legal action by the club over his controversia",
@@ -1749,24 +1796,6 @@
       "publisher": "https://shop.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Golf - Man City Shop"
-    },
-    {
-      "desc": "Homewear Man City Shop",
-      "first_seen": "2026-10-31T00:05:36.322548+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rRDVOMGY1cDRGeXBmaTBObzloTTE5NGJWWHhqUUFsVVVRZ2dLRG1XNERIU0d2NnFDMFBMOHhIcUV0Q2VjemRFUElUTHVTMHRkUVR2WldkdXJ6RHRTX05yWUF3?oc=5",
-      "published": "2026-10-30T18:32:08+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Homewear - Man City Shop"
-    },
-    {
-      "desc": "Outerwear Man City Shop",
-      "first_seen": "2026-10-31T00:05:36.322565+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vUWVGRG9td3p6QU42RU5PZUstT0NyRFdUX3JlR2kzUzFvaXVKdGdDZ2hYWTVFa2xKVFQzcnc3MU5SSXMwTGV6UGJJQmZBUTZTUlJWckN3ZEVKcnh2UVM0LWNFZW51U1BaNnhocFN3?oc=5",
-      "published": "2026-10-30T18:31:59+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Outerwear - Man City Shop"
     }
   ],
   "processed_urls": [
@@ -1795,7 +1824,8 @@
     "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge",
     "https://www.dailymail.com/sport/football/article-16251855/Cole-Palmer-Man-United-Chelsea-Xabi-Alonso.html",
     "https://www.dailymail.com/sport/football/article-16248543/manchester-united-chelsea-combined-xi-carrick.html",
-    "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmt2dWI3dnZMY2VvU2pHQmpHTE1jR1hmQ3ZqUzVPbGk5WXQxSm5CaXpyUVBZUjdLQVh0M2VJODhJRVFoRHhEZGdPanpzNEgwbWJNWkFqbTlhMXIwYjRXUEExLXFxcTVBZzlUTWFnMWxRWGZCV0ZwZmt5RVFwMHkyNU9kUjQ4ZDRXZWJPRnpoYzd5Y0ZEZzJCSUptdWNhZ1o3a0l2VlpaQkJIaGw3NjctVEFMQTFhQzBKVUtpVdIBwgFBVV95cUxNNDRsVW9yWHJHUmdtU3FHMnlVRkpkM3J3YmFJMWRJWmRvNV9Ycl9mWGl1c1RSYWNyYlNGTktWc1h2Z1ZnbENUMTJMMEFEN0JIc2ZUTG9rNjM2V3l3S3hPb2E4dGJRWVNZVnU2c1p1UVhmZkpnM0YzYldpU1hzZ0ZzdkR0MENyOHpsd1lualdiNmFCSVpOUDcta01lOUpVc1loSzdHc050LXBsYktTRWpXTnE0UXNZemR5N0g3NWxEMk9VZw"
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmt2dWI3dnZMY2VvU2pHQmpHTE1jR1hmQ3ZqUzVPbGk5WXQxSm5CaXpyUVBZUjdLQVh0M2VJODhJRVFoRHhEZGdPanpzNEgwbWJNWkFqbTlhMXIwYjRXUEExLXFxcTVBZzlUTWFnMWxRWGZCV0ZwZmt5RVFwMHkyNU9kUjQ4ZDRXZWJPRnpoYzd5Y0ZEZzJCSUptdWNhZ1o3a0l2VlpaQkJIaGw3NjctVEFMQTFhQzBKVUtpVdIBwgFBVV95cUxNNDRsVW9yWHJHUmdtU3FHMnlVRkpkM3J3YmFJMWRJWmRvNV9Ycl9mWGl1c1RSYWNyYlNGTktWc1h2Z1ZnbENUMTJMMEFEN0JIc2ZUTG9rNjM2V3l3S3hPb2E4dGJRWVNZVnU2c1p1UVhmZkpnM0YzYldpU1hzZ0ZzdkR0MENyOHpsd1lualdiNmFCSVpOUDcta01lOUpVc1loSzdHc050LXBsYktTRWpXTnE0UXNZemR5N0g3NWxEMk9VZw",
+    "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html"
   ],
   "schema_version": 3
 }
