@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 77,
+        "calls": 78,
         "errors": 0,
-        "requests": 52
+        "requests": 53
       }
     },
-    "calls": 77,
+    "calls": 78,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 400092,
-    "output_tokens": 56257,
-    "requests": 52
+    "input_tokens": 405959,
+    "output_tokens": 56883,
+    "requests": 53
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -246,7 +246,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T10:15:52.101188+00:00",
+  "last_scan_at": "2026-10-31T10:20:37.691012+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -328,6 +328,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England’s haunted stadiums revealed including Stamford Bridge and former Premier League arena built on burial ground"
+    },
+    {
+      "desc": "Liverpool v Arsenal: Team news Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T10:20:37.692807+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JDQ29LaTcycnBCZUVFbU5aQjNzZHhIUU1GTW00cmlnN2lkYVBqWnBJdFBuYlVPUmVTeWx4cjlWSlRXMjZDVFpCTUo1aVB2RF8xUEV2XzFTMXRmUTJoME9Jd1lTTHpia3R3ZlIxZG1ZSDBRdGstN0ItblR3SUoxdHJ0cw?oc=5",
+      "published": "2026-10-31T09:18:03+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool v Arsenal: Team news - Liverpool FC"
     },
     {
       "desc": "Sofascore have put together a combined XI of the best-performing players from both squads, with average ratings from all",
