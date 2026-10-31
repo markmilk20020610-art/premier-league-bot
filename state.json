@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 283,
+        "calls": 284,
         "errors": 0,
-        "requests": 283
+        "requests": 284
       }
     },
-    "calls": 283,
+    "calls": 284,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 1724665,
-    "output_tokens": 174883,
-    "requests": 283
+    "input_tokens": 1730837,
+    "output_tokens": 175440,
+    "requests": 284
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -820,9 +820,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T20:43:20.205467+00:00",
+  "last_scan_at": "2026-10-31T20:44:23.112642+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Man City Player Ratings vs Brighton: Nunes Mistake Decides 1-0 The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T20:44:23.116258+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5sZFRnUlZuVjJLQjMzMU5LWnRyQUhBcWZ4SGliMHg5WXZTYm0ya3RTZjc1ckgyM0E3UWJoVGh3QWhUWWx2anBIcFBRMDdmdURSTG1zOTZpUFZ5VlkzVC1yY1cwSWZnOHMweUNFWUpCMXZucFluUHBOb0NaV1k?oc=5",
+      "published": "2026-10-31T20:41:32+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City Player Ratings vs Brighton: Nunes Mistake Decides 1-0 - The False 9"
+    },
     {
       "desc": "Goalkeeper Bart Verbruggen was the man of the moment on Saturday afternoon as he produced an impressive individual displ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2312,16 +2322,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Fantasy Show: Experts reveal GW9 teams - Premier League"
-    },
-    {
-      "desc": "Everything you need for Gameweek 9 of FPL with the latest tips and advice Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T14:43:28.770437+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSmNhemRKY0JkbU41SXNfNWdQWDZnZFpUWWw5ME5Kc3I0bjluUkU3dmNyaW9HdWZmTzlkWGFSOU5FaElqLWoxS0pGeTNTN3VCMzNxTlBKdUtLVFVLemUzOXVkRThJQndCcjFTWmZwMVJ0YmF1eFRaMjFmN1IzTm5XUmJBaWhBS0NzOWlPaGZYenVTcmJwa2NXc1lCeTJvZHRvWHdyOW1CQjdodm91bjFhNV81b0dJVm5DVkxr?oc=5",
-      "published": "2026-10-31T10:43:42+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Everything you need for Gameweek 9 of FPL with the latest tips and advice - Premier League"
     }
   ],
   "processed_urls": [
