@@ -2,20 +2,33 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 4912,
-    "output_tokens": 637
+    "input_tokens": 9955,
+    "output_tokens": 1347
   },
   "circuit_breakers": {
     "deepseek": {}
   },
   "events": {
+    "03a59f1553fa": {
+      "attempts": 1,
+      "created_at": "2026-10-31T00:10:44.391024+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "06d5ca672e14792d",
+      "event_id": "03a59f1553fa",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
+      "last_error": "",
+      "telegram_message_id": 17,
+      "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
+      "updated_at": "2026-10-31T00:10:45.160755+00:00"
+    },
     "c1ca9017032e": {
       "attempts": 1,
       "created_at": "2026-10-31T00:05:41.133162+00:00",
@@ -59,6 +72,15 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Chelsea vs Man Utd Referee: Bankes Reported, TNT 12.30pm Kick-off - The False 9"
+    },
+    {
+      "desc": "Who are the best replacements for Joao Pedro in FPL? Premier League",
+      "first_seen": "2026-10-31T00:10:38.622167+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSkJZbTJvaFMzSkpPX3pNYnR2Y0VEaExxb1hVMUhucnk5MHAtQ1RtVHVKd2oydGhNZDBZTzg5TDdPa0lwUnJLRFUtY1R5Q2JpbXVJS0h5UU5WQkZSQ1ZFMXFfaFg1T2dOT2lPdnpOTVo0V1hLVjhLY3FZaHRWeHdIZlV2R1VQcUtBQzZzUUhJa0xVYVp0My1nV3F3TTRpdw?oc=5",
+      "published": "2026-10-30T23:34:08+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Who are the best replacements for Joao Pedro in FPL? - Premier League"
     },
     {
       "desc": "The 34-year-old told Argentine journalist Gaston Edul's YouTube channel that he cried after seeing x-rays having feared ",
@@ -286,6 +308,15 @@
       "title": "Can Robinson work Hampden magic against McInnes' Rangers?"
     },
     {
+      "desc": "Fabrizio Romano reveals 'most appreciated' Man United candidate toreplace Michael Carrick Tribuna.com",
+      "first_seen": "2026-10-31T00:10:38.622658+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPR1o4NlZpZ045U25DMzF2NEF3ZktXVmpTNjlJS28yVlV4WkNQSFY2cUU4RVNlbnVZUnNNU2FTQlB2VHg3c2tXb1NlV0VkcERibkZULXdxQ0VtOHJtb2tNbk9admZxWC1xcHU2eGNBN2ZoMnlPbU03dmpkSk5vd2pMYVpYaTZmc3I1eVNKNlRaMWY3TEFhMjZIRFFmRnpQSnhZT0t1OVRTcjBQV2l5ZGdrdVpXV3ItdGttY09pWHB2YV9FUVNrYnfSAcsBQVVfeXFMTzNpTXlOdVIwN2JZRnlpWTBsUXdHR1BGQ3J4SG5tVnhMdS1WX2ZtTVZGTnFkZnhQUjF5YmlaT19ObEVUZlBiamRiV2owdkJsSHYyb0NXNEhtOFFXWE51TGU1X1hmOXJCUHZqMzRLcmNSdGlTMUFNc0RDVVFvUVAzWm14NnVVMVpfSVFnNjNMdl9ueUd4NTlIa2tmZUJxMk1Zbm5EaEVUcXhJaTlscFFvQ1JkREtNenE2SkIwc1RBaVl2YTZTUUg0c0tJNXc?oc=5",
+      "published": "2026-10-30T21:23:53+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals 'most appreciated' Man United candidate toreplace Michael Carrick - Tribuna.com"
+    },
+    {
       "desc": "U21s report: United 2 Monaco 3 Manchester United",
       "first_seen": "2026-10-31T00:05:36.321959+00:00",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVHBiYkhKQy16TXFET3VHYUlxd0tNa2lGZWZ3eF9SVnBabmVEOTZGMDdqWTZXb3pzZ013eGgyMFJYWEQtbThLUlBEYWxpaU9fRFZnbGxRZFBwd2kyd2NyMVlDclRTelVvYXVKd2pFMm1ZdU5oOVZSeFgyWU9UT1pSMUZCZDA?oc=5",
@@ -356,6 +387,15 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano confirms Man Utd striker hunt as £100m superstar linked - Football365"
+    },
+    {
+      "desc": "Fabrizio Romano confirmation sets scene for Liverpool, timeline to sign genius player Anfield Watch",
+      "first_seen": "2026-10-31T00:10:38.622802+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVV9wa1FlVTd2NHhadFgycmZnWVNwbklqR18zOWxaZ2lOb1U2RzhuRVM5WWdQZVpjQ2VoQ0x2dGlqVUhLc2lZYUtWNkdXRW9MeEVvOEpiS19TY0pIZzh1QWpaYmJLMXdpQ1lrYk1NQkE1VWNhSWRjdDZSaXUzbWVJQ3B6UDNpLWJPNXF3X25ZRGNwT3FnNkhXMnVxMlI5YWNOSEtLYnRaMlV6UER0c0g0MzJKVTkxQWw2QmEzZENzNURpcW4wTzRMYXd2bnduR2M?oc=5",
+      "published": "2026-10-30T20:30:20+00:00",
+      "publisher": "https://www.anfieldwatch.co.uk",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirmation sets scene for Liverpool, timeline to sign genius player - Anfield Watch"
     },
     {
       "desc": "",
@@ -583,6 +623,15 @@
       "title": "What Howe could bring to Man Utd - and what are the challenges?"
     },
     {
+      "desc": "Team news: Everton v United Women Manchester United",
+      "first_seen": "2026-10-31T00:10:38.623226+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYm9obGhhSDZmN2c5Rlo0NmtsVE9Qdy11cU5aTl85VGVISzcxNTZ0Z1ZXZUY0b2dTcWR1NHhKcklkQldUcGRCandnY1FHNy1EQmkxYno3d18wOVE0LWhYR3pNVDdkRWVKV2I0UF82U1lFV3RTT2FfOFRMSE90TkVuWg?oc=5",
+      "published": "2026-10-30T16:22:21+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Team news: Everton v United Women - Manchester United"
+    },
+    {
       "desc": "Chelsea fear Maxence Lacroix will have a lengthy lay-off having suffered a serious hamstring injury.",
       "first_seen": "2026-10-31T00:05:36.322739+00:00",
       "link": "https://www.bbc.co.uk/sport/football/articles/cmkgkpexjzneo?at_medium=RSS&at_campaign=rss",
@@ -613,7 +662,8 @@
     "https://www.thesun.co.uk/sport/40859069/man-utd-munich-air-disaster-memorial-medals-stolen-thieves/",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlhFdXFCdWNUZmo2Mi1sV191Q2pXWE9hbnVHN2N0ZGFxcWsxVUNvcjRyNVJldUluMHVYTUZUT3lxTGU1SDR0OG81a0tZY1NKbWV4ZjF5NlZ4RjR6VzlPcmZSREFNMHNrY3RmVVItQmcyRGpZTkg4dDFoU1h3by0yOERsekQ2aXV3V1pEN1FYM3NXTXk5dEthcVVTdWdTbEYyemZj?oc=5",
     "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o",
-    "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo"
+    "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
+    "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/"
   ],
   "schema_version": 2
 }
