@@ -2,20 +2,33 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 30270,
-    "output_tokens": 4133
+    "input_tokens": 35427,
+    "output_tokens": 4823
   },
   "circuit_breakers": {
     "deepseek": {}
   },
   "events": {
+    "02d6603fbef2": {
+      "attempts": 1,
+      "created_at": "2026-10-31T00:35:41.655392+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "1647a3ee8dce1183",
+      "event_id": "02d6603fbef2",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
+      "last_error": "",
+      "telegram_message_id": 21,
+      "title": "马丁内斯自曝手指重伤后无法复原：世界杯期间带伤作战如僵尸，看到X光片后痛哭",
+      "updated_at": "2026-10-31T00:35:42.517218+00:00"
+    },
     "03a59f1553fa": {
       "attempts": 1,
       "created_at": "2026-10-31T00:10:44.391024+00:00",
@@ -437,6 +450,15 @@
       "title": "Press conference | Every word: Andoni Iraola on injuries, Arsenal analysis, reaching 'another level' and more - Liverpool FC"
     },
     {
+      "desc": "Chelsea Jerseys Official Chelsea Store",
+      "first_seen": "2026-10-31T00:35:36.402517+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQWl1Zl9qS3ZlYzZRbEZxQVBRMkVEbi1zM3hKR0JoQmwxSnJKcW5GS3lxM0FkbmotSjB1SER2Mmp1aEZrUlVNLVBzc3g2UTFQamtES1prdTVKcnZkMmJiSW5KcXliV3JQU285T1ptOFlKNmFWV2hlVFVQNEZCRmtZOVNLWG1xWjBublBDbTV2MWVjZEpscTFQYTI1dGV1UXhMLVlNNGM2RFU3eHc1UWx4eTlxWlVpR3RMczl1NVhHcEc5Ulk?oc=5",
+      "published": "2026-10-30T20:38:01+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Jerseys - Official Chelsea Store"
+    },
+    {
       "desc": "Fabrizio Romano confirms Man Utd striker hunt as £100m superstar linked Football365",
       "first_seen": "2026-10-31T00:05:36.322155+00:00",
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW1jOFl2WFR0NV96MU9panZ6WGNJdmtOZTdUOFlBOENSc280Z29xWUZrQy1ZSXlNY191U0xockhPcXNmSnFCVjFGTmU4YzJtSHVfbEdUSHJyS2dqN2VVRUwzaUc4ME1NUW8xdVNMRXU3bENmcmoxQzdwMWViZXM5UmliNFY5UUtya3JxRmlTaFZQaW11ZVJWQi1Dc0xiMzNnRmUwVWlKTTlYbjEz?oc=5",
@@ -723,7 +745,8 @@
     "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
     "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html",
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
-    "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/"
+    "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
+    "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html"
   ],
   "schema_version": 2
 }
