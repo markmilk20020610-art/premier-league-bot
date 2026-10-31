@@ -37,11 +37,15 @@ on:
   # 【代码自检】push 到 main 时跑一次轻量校验：只查仓库卫生 + 跑测试，
   # 不抓取、不推送、不写 state.json。目的是让「提交了 pyc / 测试挂了」
   # 在 push 后一分钟内暴露，而不是等下一轮定时任务才发现。
-  # 只改文档（**.md）的提交不触发，省一次运行。
+  #
+  # 只改文档（**.md）或只回写 state.json 的提交不触发：
+  #   前者没必要，后者是机器人每轮都在做的事（而且 commit_state.sh 已带 [skip ci]），
+  #   两条叠加可以保证自检只在「真的改了代码」时跑。
   push:
     branches: [main]
     paths-ignore:
       - '**.md'
+      - 'state.json'
 
 # 默认只读；只有真正要回写 state.json 的 job 才临时提升为 write。
 # 这样 diagnose / watchdog 这类只读任务拿不到写权限，泄露风险面更小。

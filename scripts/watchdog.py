@@ -33,6 +33,13 @@ MAX_SCAN_AGE_HOURS = 3
 # 早报每天 06:00 北京时间；到 08:00 仍没发就算漏报
 MORNING_DEADLINE_HOUR_CN = 8
 
+# state.json 体积警戒线（V1.3 慢性问题）。
+# 实测：news_pool 占全文 81%（84 条 × 598 字节），正常体积 60~90KB。
+# 因为 state.json 每轮都会被提交，体积失控会直接放大 git 历史的增长
+# （实测每版 delta 只有 24B~1.5KB，年增约 15MB；一旦文件翻倍，年增也翻倍）。
+# 超过这条线基本只有两种原因：池子上限被改大，或事件表没被裁剪。
+MAX_STATE_KB = 250
+
 
 def _now():
     return datetime.datetime.now(datetime.timezone.utc)
@@ -56,8 +63,11 @@ def _looks_fresh_clone(state):
                 or state.get("news_pool") or state.get("last_scan_at"))
 
 
-def check(state, now=None):
-    """返回 (是否健康, [问题描述...], 诊断信息)。"""
+def check(state, now=None, state_bytes=None):
+    """返回 (是否健康, [问题描述...], 诊断信息)。
+
+    `state_bytes` 是 state.json 的磁盘体积（可选）：给了就顺带检查体积警戒线。
+    """
     now = now or _now()
     now_cn = now.astimezone(CN_TZ)
     today_cn = now_cn.strftime("%Y-%m-%d")
@@ -81,6 +91,12 @@ def check(state, now=None):
             problems.append(f"今日（北京 {today_cn}）早报尚未发送，"
                             f"最后发送日期为 {last_morning or '无'}")
 
+    # 体积警戒：state.json 每轮都会被提交进 git，体积失控会放大历史增长
+    if state_bytes and state_bytes > MAX_STATE_KB * 1024:
+        problems.append(f"state.json 已 {state_bytes / 1024:.0f}KB"
+                        f"（警戒线 {MAX_STATE_KB}KB）：新闻池或事件表可能失控，"
+                        f"会连带放大 git 历史增长")
+
     info = {
         "checked_at": now.isoformat(),
         "beijing_time": now_cn.strftime("%Y-%m-%d %H:%M"),
@@ -91,6 +107,8 @@ def check(state, now=None):
         "max_scan_age_hours": MAX_SCAN_AGE_HOURS,
         "morning_deadline_hour_cn": MORNING_DEADLINE_HOUR_CN,
         "fresh_clone": fresh_clone,
+        "state_kb": None if not state_bytes else round(state_bytes / 1024, 1),
+        "max_state_kb": MAX_STATE_KB,
     }
     return (not problems), problems, info
 
@@ -107,12 +125,20 @@ def load_state(path=None):
         return None
 
 
+def _state_bytes(path=None):
+    path = path or os.path.join(ROOT, "state.json")
+    try:
+        return os.path.getsize(path)
+    except OSError:
+        return None
+
+
 def main():
     as_json = "--json" in sys.argv
     state = load_state()
     if state is None:
         return 1
-    ok, problems, info = check(state)
+    ok, problems, info = check(state, state_bytes=_state_bytes())
 
     if as_json:
         print(json.dumps({"ok": ok, "problems": problems, **info}, ensure_ascii=False, indent=2))
@@ -120,6 +146,9 @@ def main():
         print(f"[INFO] 看门狗检查 | 北京时间 {info['beijing_time']}")
         print(f"[INFO] last_scan_at={info['last_scan_at']} "
               f"last_morning_report_date={info['last_morning_report_date']}")
+        if info.get("state_kb") is not None:
+            print(f"[INFO] state.json 体积 {info['state_kb']}KB"
+                  f"（警戒线 {info['max_state_kb']}KB）")
         for p in problems:
             print(f"[PROBLEM] {p}")
 

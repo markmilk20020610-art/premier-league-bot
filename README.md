@@ -52,7 +52,6 @@ RSS 矩阵（19 源，失败自动降级 Google News）
 关闭状态下不会构造 Gemini client，也不会产生任何 Gemini 请求。
 
 主要环境变量见 `AI_PROVIDER_REPORT.md` 第七节。常用几个：
-
 | 变量 | 默认 | 说明 |
 |---|---|---|
 | `AI_MAX_ARTICLES_PER_RUN` | 25 | 每轮送模型的文章上限 |
@@ -120,3 +119,30 @@ python scripts/smoke_run.py --quota   # 模拟配额耗尽
 - `circuit_breakers`：熔断状态
 
 **不要手工编辑**，格式损坏会导致去重记录全部失效（程序会直接拒绝启动）。
+
+## 文档索引
+
+| 文档 | 内容 |
+|---|---|
+| `AI_PROVIDER_REPORT.md` | 模型层设计、环境变量、熔断与预算 |
+| `docs/REPO_HEALTH.md` | 仓库体积与 state.json 膨胀的实测数据、警戒线、升级路径 |
+| `docs/reports/` | 各轮整改的执行报告（V1.2 第一~六批、V1.3 审计），保留「为什么这么改」的决策记录 |
+
+## 发布流程（重要）
+
+**不要用 GitHub 网页的「Add files via upload」**——它绕过 `.gitignore`，
+2026-10-31 的 `__pycache__/bot.cpython-313.pyc` 就是这样被提交进去的。
+
+正确做法：
+
+```bash
+cd D:/premier-league-bot          # 唯一有 .git 的工作副本
+bash scripts/publish.sh -m "fix: 说清改了什么" bot.py tests/xxx.py
+```
+
+`publish.sh` 会强制做完三件事才允许提交：索引里没有 `__pycache__` / `*.pyc`、
+快速测试全绿、只暂存你点名的文件（它**从不** `git add -A`）。
+加 `--dry-run` 可先预览。
+
+推送后 `verify` job 会自动跑一遍（`check_no_cache` + 快速测试 + 源码完整性），
+结果见 Actions 页面。

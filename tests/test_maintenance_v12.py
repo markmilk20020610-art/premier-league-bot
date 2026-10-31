@@ -377,6 +377,34 @@ class TestWatchdog(unittest.TestCase):
         self.assertFalse(ok)
         self.assertTrue(any("last_scan_at" in p for p in problems))
 
+    # ---- V1.3：state.json 体积警戒（慢性膨胀问题）----
+    def _healthy(self):
+        return {
+            "last_scan_at": (self.NOW - datetime.timedelta(minutes=20)).isoformat(),
+            "last_morning_report_date": "2026-03-01",
+        }
+
+    def test_oversized_state_is_alerted(self):
+        """state.json 每轮都会被提交进 git，体积失控必须变成可见告警而不是慢性病。"""
+        ok, problems, info = watchdog.check(self._healthy(), now=self.NOW,
+                                            state_bytes=300 * 1024)
+        self.assertFalse(ok)
+        self.assertTrue(any("KB" in p for p in problems), problems)
+        self.assertEqual(info["state_kb"], 300.0)
+        self.assertEqual(info["max_state_kb"], watchdog.MAX_STATE_KB)
+
+    def test_normal_state_size_is_fine(self):
+        ok, problems, info = watchdog.check(self._healthy(), now=self.NOW,
+                                            state_bytes=62 * 1024)
+        self.assertTrue(ok, problems)
+        self.assertEqual(info["state_kb"], 62.0)
+
+    def test_no_size_info_when_not_provided(self):
+        """没传体积时不能凭空报错，也不能伪造 state_kb。"""
+        ok, problems, info = watchdog.check(self._healthy(), now=self.NOW)
+        self.assertTrue(ok, problems)
+        self.assertIsNone(info["state_kb"])
+
     def test_main_exit_codes(self):
         with mock.patch.object(sys, "argv", ["watchdog.py"]), \
                 mock.patch.object(watchdog, "load_state", return_value={
