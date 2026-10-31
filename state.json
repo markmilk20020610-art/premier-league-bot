@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 90,
+        "calls": 91,
         "errors": 0,
-        "requests": 65
+        "requests": 66
       }
     },
-    "calls": 90,
+    "calls": 91,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 477440,
-    "output_tokens": 65693,
-    "requests": 65
+    "input_tokens": 483658,
+    "output_tokens": 66486,
+    "requests": 66
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -300,9 +300,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T11:20:31.574925+00:00",
+  "last_scan_at": "2026-10-31T11:25:26.478213+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "BBC Sport explores the plans for AC Milan and Inter's new stadium, and how powerful naming rights for new arenas can be",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T11:25:26.480520+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c84g15r12xn3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T11:18:53+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'We fell behind' - what does new San Siro deal mean for AC Milan and Inter?"
+    },
     {
       "desc": "CHELSEA fans will be jumping for joy after finding out that Cole Palmer has dodged a suspension for this afternoon's cla",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
