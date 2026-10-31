@@ -78,6 +78,9 @@ jobs:
           AI_PRIMARY_PROVIDER: "deepseek"
           AI_GEMINI_ENABLED: "false"
           AI_OPENAI_ENABLED: "false"
+          # 可信单一来源白名单（逗号分隔域名）。留空 = 单一来源一律不自动推送。
+          # 只有人工确认过的记者/机构域名才写进来；UNKNOWN 域名即使写了也不生效。
+          TRUSTED_SINGLE_SOURCES: ${{ vars.TRUSTED_SINGLE_SOURCES }}
         run: python bot.py
 
       - name: Commit state changes (if any)
@@ -122,6 +125,7 @@ jobs:
           AI_PRIMARY_PROVIDER: "deepseek"
           AI_GEMINI_ENABLED: "false"
           AI_OPENAI_ENABLED: "false"
+          TRUSTED_SINGLE_SOURCES: ${{ vars.TRUSTED_SINGLE_SOURCES }}
           # 手动勾选 force 时绕过日期锁；定时触发时该值为空 → 正常走锁
           FORCE_SUMMARY: ${{ github.event.inputs.force }}
         run: python bot.py
