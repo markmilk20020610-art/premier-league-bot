@@ -579,5 +579,133 @@ class TestTask4ConflictIgnoresSourceCount(unittest.TestCase):
         self.assertEqual(kind2, "claims")
 
 
+class TestP0_3ScoreAndCoordinateNames(unittest.TestCase):
+    """V1.3 P0-3：same_event 必须认出「比分差异」和「并列人名」。
+
+    审计实测发现两处漏判，后果都是同一个：把两条互不相关的报道算成
+    「同一事件的 2 个独立来源」，把 SINGLE_SOURCE 直接抬成多源印证并自动推送。
+    多源虚高比误拦严重——误拦只是少发，虚高是把错的发出去。
+    """
+
+    def build(self, url, title):
+        return ev.build_records([{"url": url, "title": title}])[0]
+
+    # ---------- 比分必须算关键数字 ----------
+    def test_score_is_a_key_number(self):
+        self.assertEqual(ev._key_numbers("Arsenal beat Chelsea 2-1 at Emirates"),
+                         {"score:2-1"})
+
+    def test_formation_is_not_a_score(self):
+        """4-3-3 是阵型，不是比分。"""
+        self.assertEqual(ev._key_numbers("Arsenal switch to 4-3-3 formation"), set())
+
+    def test_season_range_is_not_a_score(self):
+        """2024-25 是赛季区间，不是比分。"""
+        self.assertEqual(ev._key_numbers("Premier League 2024-25 season review"), set())
+
+    def test_chinese_score_is_a_key_number(self):
+        self.assertEqual(ev._key_numbers("阿森纳2比1切尔西"), {"score:2-1"})
+
+    def test_different_score_is_different_event(self):
+        a = self.build(BBC2, "Arsenal beat Chelsea 2-1 at Emirates")
+        b = self.build(SKY2, "Arsenal beat Chelsea 3-0 at Emirates")
+        ok, why = ev.same_event(a, b)
+        self.assertFalse(ok, "两场不同比分的比赛不得判为同一事件")
+        self.assertIn("关键数字不一致", why)
+
+    def test_same_score_is_same_event(self):
+        a = self.build(BBC2, "Arsenal beat Chelsea 2-1 at Emirates")
+        b = self.build(SKY2, "Arsenal beat Chelsea 2-1")
+        ok, why = ev.same_event(a, b)
+        self.assertTrue(ok, why)
+
+    def test_different_score_does_not_count_as_independent_sources(self):
+        """多源虚高的复现：两条不同比赛必须只剩 1 个来源。"""
+        a = self.build(BBC2, "Arsenal beat Chelsea 2-1 at Emirates")
+        b = self.build(SKY2, "Arsenal beat Chelsea 3-0 at Emirates")
+        self.assertEqual(len(ev.filter_related([a, b], a)), 1)
+
+    # ---------- 并列人名 / 无角色词的人名 ----------
+    def test_coordinate_names_are_extracted(self):
+        self.assertEqual(ev.person_names("Saka and Martinelli limp off"),
+                         {"saka", "martinelli"})
+
+    def test_comma_list_names_are_extracted(self):
+        self.assertIn("havertz", ev.person_names("Saka, Martinelli and Havertz limp off"))
+
+    def test_single_name_before_person_verb_is_extracted(self):
+        self.assertEqual(ev.person_names("Havertz limps off"), {"havertz"})
+
+    def test_venue_is_not_a_person(self):
+        """球场名同样是首字母大写，绝不能被当成人名——那会让同一场比赛
+        的两篇报道互相判成「人物主体不同」。"""
+        self.assertEqual(ev.person_names("Arsenal beat Chelsea at Emirates"), set())
+        self.assertEqual(ev.person_names("Arsenal win at Stamford Bridge"), set())
+
+    def test_different_injured_players_are_different_events(self):
+        a = self.build(BBC2, "Arsenal injury blow as Saka and Martinelli limp off")
+        b = self.build(SKY2, "Arsenal injury blow as Havertz limps off")
+        ok, why = ev.same_event(a, b)
+        self.assertFalse(ok, "同一支球队、不同球员的伤情不得判为同一事件")
+        self.assertIn("人物主体不同", why)
+        self.assertEqual(len(ev.filter_related([a, b], a)), 1)
+
+    def test_same_injured_players_same_event(self):
+        a = self.build(BBC2, "Arsenal injury blow as Saka and Martinelli limp off")
+        b = self.build(SKY2, "Arsenal blow as Saka and Martinelli limp off")
+        ok, why = ev.same_event(a, b)
+        self.assertTrue(ok, why)
+
+    def test_one_sided_missing_person_stays_permissive(self):
+        """只有一边抽得出人名时保持宽松：宁可少拦，也不能把真来源拦掉。"""
+        a = self.build(BBC2, "Arsenal injury blow as Saka and Martinelli limp off")
+        b = self.build(SKY2, "Arsenal injury blow as two players limp off")
+        ok, _why = ev.same_event(a, b)
+        self.assertTrue(ok)
+
+    def test_existing_negative_name_cases_unchanged(self):
+        """原来「不得抽出假人名」的断言不能被放松。"""
+        self.assertEqual(ev.person_names("Arsenal set to sign striker in January"), set())
+        self.assertEqual(ev.person_names("Arsenal lose appeal against Dowman red card"), set())
+
+    def test_club_abbreviation_is_not_a_person(self):
+        """Man Utd 不是人名。
+
+        如果两边都抽到 man / utd，人物比对就恒成立，「Man Utd 签 Gordon」与
+        「Man Utd 签 Olise」会被当成同一笔转会——这是 P0-3 检查被中和的典型路径。
+        """
+        self.assertEqual(ev.person_names("Man Utd agree deal to sign winger Anthony Gordon"),
+                         {"anthony", "gordon"})
+        a = self.build(BBC2, "Man Utd agree deal to sign winger Anthony Gordon")
+        b = self.build(SKY2, "Man Utd agree deal to sign winger Michael Olise")
+        ok, why = ev.same_event(a, b)
+        self.assertFalse(ok, "同一俱乐部、不同球员的转会不得判为同一事件")
+        self.assertIn("人物主体不同", why)
+
+    # ---------- 端到端 ----------
+    def test_different_injury_stays_single_source(self):
+        records = [
+            {"url": BBC2, "title": "Arsenal injury blow as Saka and Martinelli limp off"},
+            {"url": SKY2, "title": "Arsenal injury blow as Havertz limps off"},
+        ]
+        verdict = ev.evaluate(BBC2, records)
+        self.assertEqual(verdict["status"], ev.SINGLE_SOURCE)
+        self.assertNotEqual(verdict["status"], ev.MULTIPLE_INDEPENDENT_SOURCES)
+
+    def test_same_injury_becomes_multi_source(self):
+        """同一伤情的两篇报道仍必须能拿到多源印证，修复不能变成一律拦死。
+
+        这里刻意用两种不同措辞（相似度 0.44，高于相关线 0.30、低于转载线 0.80），
+        避免被当成「同一篇稿子转载」而只算 1 个来源。
+        """
+        records = [
+            {"url": BBC2, "title": "Arsenal injury blow as Saka and Martinelli limp off"},
+            {"url": SKY2, "title": "Arsenal sweat on Saka and Martinelli after both limp off"},
+        ]
+        verdict = ev.evaluate(BBC2, records)
+        self.assertEqual(verdict["status"], ev.MULTIPLE_INDEPENDENT_SOURCES)
+        self.assertTrue(ev.auto_push_allowed(verdict)[0])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

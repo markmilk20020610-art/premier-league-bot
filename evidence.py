@@ -233,6 +233,9 @@ EVENT_KEYWORDS = {
         "injury", "injuries", "injured", "hamstring", "knee", "ankle", "groin",
         "calf", "thigh", "surgery", "fitness", "knock", "setback", "crock",
         "scan", "rehab", "sidelined",
+        # V1.3 P0-3：英媒写伤情常用 "limp off / limped off"，没有 injury 这个词。
+        # 缺了它，这类标题连事件类型都判不出来，后面的人物比对也就无从谈起。
+        "limp", "limps", "limped", "limping",
     },
     "DISCIPLINE": {
         "ban", "bans", "banned", "suspension", "suspended", "disciplinary",
@@ -376,6 +379,9 @@ _NAME_STOP = set(_STOPWORDS) | set(CLUB_TOKENS) | {
     "win", "wins", "lose", "loses", "beat", "beats", "draw", "draws",
     "final", "semi", "round", "leg", "first", "second", "new", "old",
     "report", "reports", "update", "updates", "latest", "breaking", "exclusive",
+    # V1.3 P0-3：这几个词经常紧挨着人名出现，被「相邻大写词」规则误当人名。
+    # 一旦两边都含这些假人名，人物比对就恒成立，P0-3 的检查会被中和。
+    "man", "utd", "back", "out",
 }
 
 # 相邻大写词但明确不是人名的组合（机构 / 赛事 / 球场）
@@ -391,6 +397,9 @@ NON_PERSON_BIGRAMS = {
     ("leicester", "city"), ("west", "ham"), ("west", "brom"),
     ("queens", "park"), ("park", "rangers"), ("st", "james"),
     ("st", "mary"), ("emirates", "stadium"), ("stamford", "bridge"),
+    # V1.3 P0-3：缩写写法的俱乐部名。「Man Utd」「Man City」会被当成两个人名，
+    # 而两个人名一旦在两边都出现，人物比对就永远成立——等于把 P0-3 的检查废掉。
+    ("man", "utd"), ("man", "city"), ("man", "united"),
 }
 
 # 人名是事件核心的类型：这些类型下「主体不同」就是两件事
@@ -408,12 +417,40 @@ def _name_like(token):
     return token.lower() not in _NAME_STOP
 
 
+# 人物动作词：紧跟/紧邻人名的动词。"Havertz limps off" 里没有角色词（winger/striker），
+# 只有 limps 能说明前面的 Havertz 是球员。V1.3 P0-3 新增。
+PERSON_VERBS = {
+    # 伤情
+    "limp", "limps", "limped", "limping", "injured", "injures", "suffers",
+    "suffered", "sidelined", "doubtful", "fitness", "ruled",
+    # 处罚 / 任命
+    "banned", "bans", "suspended", "suspends", "sacked", "sacks", "axed",
+    "appointed", "appoints", "resigns", "resigned",
+    # 转会 / 合同
+    "agrees", "agreed", "snubs", "snubbed", "signs", "signed", "joins",
+    "joined", "leaves", "left", "returns", "returned", "want", "wants",
+    "eye", "eyes", "chase", "chases", "target", "targets", "hijack", "hijacks",
+    # 比赛表现
+    "scores", "scored", "strikes", "struck", "nets", "netted", "misses",
+    "missed", "faces", "facing", "starts", "started", "out", "fit", "back",
+}
+
+# 并列人名的连接词："Saka and Martinelli" / "Saka, Martinelli or Havertz"
+PERSON_CONNECTORS = {"and", "or", "plus"}
+
+
 def person_names(title):
     """抽取标题里的人物主体（球员 / 教练）。
 
-    两条路径：
+    四条路径（V1.3 P0-3 把后两条补上）：
       1. 角色词之后紧跟的连续大写词（"winger Michael Olise"）
       2. 相邻两个大写词，且不是已知机构/赛事组合（"Michael Olise"）
+      3. 并列人名：中间只夹一个连接词也算（"Saka and Martinelli"）
+      4. 无角色词的单人名：靠紧邻的人物动作词确认（"Havertz limps off"）
+
+    路径 3 / 4 是审计 P0-3 的修复点：缺了它们，"Saka and Martinelli limp off"
+    与 "Havertz limps off" 都抽不出人名，于是两条完全不同的伤情被当成
+    「同一事件的 2 个独立来源」，把 SINGLE_SOURCE 抬成多源印证并自动推送。
     """
     text = title or ""
     tokens = re.findall(r"[A-Za-z][A-Za-z'\-]*", text)
@@ -423,6 +460,7 @@ def person_names(title):
     n = len(tokens)
     found = set()
 
+    # 路径 1：角色词 / 签约词之后紧跟的连续大写词
     for i, lt in enumerate(low):
         if lt in ROLE_WORDS or lt in SIGN_WORDS:
             j, taken = i + 1, 0
@@ -433,20 +471,58 @@ def person_names(title):
                 j += 1
                 taken += 1
 
+    # 路径 2：相邻两个大写词
     for i in range(n - 1):
         if _name_like(tokens[i]) and _name_like(tokens[i + 1]):
             if (low[i], low[i + 1]) not in NON_PERSON_BIGRAMS:
                 found.add(low[i])
                 found.add(low[i + 1])
+
+    # 路径 3：并列人名——"Saka and Martinelli"。夹一个 and 就会把「相邻」打断，
+    # 结果是并列的球员一个都抽不出来。
+    for i in range(n - 2):
+        if low[i + 1] in PERSON_CONNECTORS:
+            if _name_like(tokens[i]) and _name_like(tokens[i + 2]):
+                found.add(low[i])
+                found.add(low[i + 2])
+
+    # 路径 4：没有角色词的单人名。只在「人名就是事件核心」的类型上启用，
+    # 且必须紧邻人物动作词，避免把 "Arsenal beat Chelsea at Emirates"
+    # 里的 Emirates 误判成球员（那会让同一场比赛的两篇报道互相判为不同事件）。
+    if primary_event_type(text) in PERSON_CENTRIC_TYPES:
+        for i in range(n):
+            if not _name_like(tokens[i]):
+                continue
+            if i + 1 < n and low[i + 1] in PERSON_VERBS:
+                found.add(low[i])
+            elif i > 0 and low[i - 1] in PERSON_VERBS:
+                found.add(low[i])
+
     return found
 
 
+# 带单位的关键数字：金额 / 年限 / 百分比
 _NUM_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(m|million|k|bn|billion|%|year|years|yr|yrs)\b")
+# 比分：2-1 / 3–0。前后各加一道边界，避免把阵型 4-3-3 和年份 2024-25 当成比分。
+_SCORE_RE = re.compile(r"(?<![\d\-–—])(\d{1,2})\s*[-–—]\s*(\d{1,2})(?!\s*[-–—]\s*\d)")
+# 中文比分：2比1
+_SCORE_ZH_RE = re.compile(r"(\d{1,2})\s*比\s*(\d{1,2})")
 
 
 def _key_numbers(title):
-    """抽取带单位的关键数字（金额/年限/百分比），用于发现「关键事实不一致」。"""
-    return {f"{m.group(1)}{m.group(2)[0]}" for m in _NUM_RE.finditer((title or "").lower())}
+    """抽取关键数字（比分 / 金额 / 年限 / 百分比），用于发现「关键事实不一致」。
+
+    V1.3 P0-3：原实现只认「数字 + 单位」，比分 2-1 抽不出来，于是
+    "Arsenal beat Chelsea 2-1" 与 "Arsenal beat Chelsea 3-0" 被当成同一事件。
+    两场不同的比赛互相作证，正是多源印证虚高的典型来源。
+    """
+    text = (title or "").lower()
+    found = {f"{m.group(1)}{m.group(2)[0]}" for m in _NUM_RE.finditer(text)}
+    for m in _SCORE_RE.finditer(text):
+        found.add(f"score:{m.group(1)}-{m.group(2)}")
+    for m in _SCORE_ZH_RE.finditer(text):
+        found.add(f"score:{m.group(1)}-{m.group(2)}")
+    return found
 
 
 # ==================== 证据记录 ====================
