@@ -707,5 +707,97 @@ class TestP0_3ScoreAndCoordinateNames(unittest.TestCase):
         self.assertTrue(ev.auto_push_allowed(verdict)[0])
 
 
+class TestP0_4ProgramSideClaims(unittest.TestCase):
+    """V1.3 P0-4：冲突必须由程序从记录里重建，模型 claim 只作线索。
+
+    以前 detect_conflict 只读模型给的 source_claims，等于让模型单方面决定
+    「这条新闻算不算冲突」。模型既可以编造冲突把正常新闻拦死，
+    也可以漏报冲突让矛盾内容发出去。现在改成程序先重建、模型只作线索。
+    """
+
+    AFFIRM = "Arsenal set to sign striker in January"
+    DENY = "Arsenal rule out January striker signing"
+
+    def test_stance_of(self):
+        self.assertIs(ev._stance_of(self.AFFIRM), True)
+        self.assertIs(ev._stance_of(self.DENY), False)
+        # 既没肯定也没否定的标题不得参与冲突判定
+        self.assertIsNone(ev._stance_of("Arsenal transfer news roundup"))
+        self.assertIsNone(ev._stance_of(""))
+
+    def test_rebuild_claims_shape(self):
+        records = ev.build_records([
+            {"url": BBC2, "title": self.AFFIRM},
+            {"url": SKY2, "title": self.DENY},
+        ])
+        claims = ev.rebuild_claims(records)
+        self.assertEqual(len(claims), 2)
+        self.assertEqual({c["claim_key"] for c in claims}, {"arsenal#TRANSFER"})
+        self.assertEqual({c["stance"] for c in claims}, {"supports", "denies"})
+
+    def test_rebuild_claims_skips_titles_without_subject_or_type(self):
+        records = ev.build_records([
+            {"url": BBC2, "title": "Premier League announce fixture changes"},
+        ])
+        self.assertEqual(ev.rebuild_claims(records), [])
+
+    def test_program_detects_conflict_without_any_model_claim(self):
+        """关键能力：模型一个字都没说，程序也能自己发现冲突。"""
+        records = [
+            {"url": BBC2, "title": self.AFFIRM},
+            {"url": SKY2, "title": self.DENY},
+        ]
+        verdict = ev.evaluate(BBC2, records)          # 注意：source_claims 为空
+        self.assertEqual(verdict["status"], ev.CONFLICTING)
+        self.assertIn("程序核验", verdict["reason"])
+        self.assertFalse(ev.auto_push_allowed(verdict)[0])
+
+    def test_program_conflict_needs_two_different_urls(self):
+        """同一篇稿子内部出现相反表述不算「两个来源打架」。"""
+        records = [
+            {"url": BBC2, "title": self.AFFIRM},
+            {"url": BBC2, "title": self.DENY},
+        ]
+        conflict, _reason, kind = ev.detect_conflict(None, False, records=records)
+        self.assertFalse(conflict, f"不应判冲突，实际 kind={kind}")
+
+    def test_cross_source_model_claim_is_only_a_clue(self):
+        """跨来源的模型 claim，程序核不实 → 不得判 CONFLICTING。"""
+        records = [
+            {"url": BBC2, "title": "Arsenal transfer news roundup"},
+            {"url": SKY2, "title": "Arsenal transfer news latest"},
+        ]
+        claims = [
+            {"claim_key": "sign_striker", "stance": "supports", "source": "bbc.co.uk"},
+            {"claim_key": "sign_striker", "stance": "denies", "source": "skysports.com"},
+        ]
+        verdict = ev.evaluate(BBC2, records, source_claims=claims)
+        self.assertNotEqual(verdict["status"], ev.CONFLICTING)
+        self.assertEqual(verdict["status"], ev.UNVERIFIED)
+        self.assertIn("保守拒绝", verdict["reason"])
+        self.assertFalse(ev.auto_push_allowed(verdict)[0])
+
+    def test_same_source_self_contradiction_still_hard_blocks(self):
+        """同一来源自相矛盾：证据链本身不可用，仍按硬冲突处理。"""
+        claims = [
+            {"claim_key": "appeal_upheld", "stance": "supports", "source": "thefa.com"},
+            {"claim_key": "appeal_upheld", "stance": "denies", "source": "thefa.com"},
+        ]
+        conflict, reason, kind = ev.detect_conflict(claims, False)
+        self.assertTrue(conflict)
+        self.assertEqual(kind, "claims")
+        self.assertIn("同一来源", reason)
+
+    def test_detect_conflict_kinds(self):
+        self.assertEqual(ev.detect_conflict([], False), (False, "", ""))
+        _c, _r, kind = ev.detect_conflict([], True)
+        self.assertEqual(kind, "model")
+        _c2, _r2, kind2 = ev.detect_conflict(None, False, records=[
+            {"url": BBC2, "title": self.AFFIRM},
+            {"url": SKY2, "title": self.DENY},
+        ])
+        self.assertEqual(kind2, "program")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

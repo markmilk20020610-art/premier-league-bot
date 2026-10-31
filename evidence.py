@@ -853,17 +853,101 @@ def independent_sources(records):
     ]
 
 
-def detect_conflict(source_claims, model_conflict_flag=False):
+# ==================== 程序侧 claim 重建（V1.3 P0-4） ====================
+# 模型给的 source_claims 是**模型自己的说法**，不是证据。V1.3 §6 要求：
+# 「模型自报冲突只能作线索，程序必须重新检查实际证据」。
+# 所以冲突判定改成两步：先用记录本身重建 claim（唯一能直接判 CONFLICTING 的路径），
+# 模型 claim 只保留两个用途——同源自相矛盾（证据链不可用）与线索（保守拒绝）。
+_NEGATION_RE = re.compile(
+    r"\b(?:deny|denies|denied|reject|rejects|rejected|snub|snubs|snubbed|"
+    r"dismiss|dismisses|dismissed|refuse|refuses|refused|"
+    r"unlikely|cancel|cancels|cancelled|canceled|"
+    r"collapse|collapses|collapsed|block|blocks|blocked|"
+    r"not|never|no|ends|ended)\b"
+    r"|\b(?:rule|rules|ruled|ruling|pull|pulls|pulled)\s+out\b"
+)
+
+# 肯定表述：只有明确写了「签下 / 达成 / 确认 / 受伤」这类断言才算肯定。
+# 缺了这道门，任何没有否定词的标题都会被当成肯定，制造大量假冲突。
+_AFFIRM_RE = re.compile(
+    r"\b(?:sign|signs|signed|signing|agree|agrees|agreed|deal|done|"
+    r"confirm|confirms|confirmed|complete|completes|completed|"
+    r"join|joins|joined|appoint|appoints|appointed|sack|sacks|sacked|"
+    r"ban|bans|banned|suspend|suspend|suspended|"
+    r"win|wins|won|beat|beats|injured|injury|suffer|suffers|suffered|"
+    r"limp|limps|limped|bid|bids|offer|offers|target|targets|want|wants|"
+    r"eye|eyes|set|close|closes|line|lining)\b"
+)
+
+
+def _stance_of(title):
+    """从标题判断立场：True=肯定，False=否定，None=看不出来。
+
+    看不出来就不参与冲突判定。宁可漏判一个真冲突，
+    也不能凭「没写否定词」就认定它是肯定表述。
+    """
+    text = (title or "").lower()
+    if not text:
+        return None
+    if _NEGATION_RE.search(text):
+        return False
+    if _AFFIRM_RE.search(text):
+        return True
+    return None
+
+
+def rebuild_claims(records):
+    """从真实记录重建结构化 claim（V1.3 P0-4）。
+
+    只做一件很窄的事：同一俱乐部主体 + 同一事件类型的报道里，
+    如果一条明确肯定、另一条明确否定，那就是程序能自己证明的冲突。
+    """
+    claims = []
+    for r in records or []:
+        title = r.get("title") or ""
+        subjects = event_subjects(title)
+        etype = _rec_type(r)
+        if not subjects or not etype:
+            continue
+        stance = _stance_of(title)
+        if stance is None:
+            continue
+        claims.append({
+            "claim_key": f"{'|'.join(sorted(subjects))}#{etype}",
+            "stance": "supports" if stance else "denies",
+            "source": r.get("domain") or "",
+            "url": r.get("url") or "",
+        })
+    return claims
+
+
+def detect_conflict(source_claims, model_conflict_flag=False, records=None):
     """判定来源间是否互相矛盾。返回 (是否冲突, 原因, 冲突来源)。
 
-    冲突来源有三种取值：
-      · "claims" —— 结构化事实里同一 claim_key 出现 supports / denies 两种立场。
-        这是**已验证的冲突**，与来源数量无关，哪怕只有 1 个来源也必须拦下。
-      · "model"  —— 模型自报 evidence_conflict。只是待核验线索，程序无法确证，
-        因此按「保守拒绝自动推送」处理，不直接判定为 CONFLICTING。
-      · ""       —— 未发现冲突。
+    冲突来源有四种取值：
+      · "program" —— 程序从记录本身重建出来的冲突：同一主体 + 同一事件类型下，
+        一条明确肯定、另一条明确否定（来自不同 URL）。这是**硬冲突**。
+      · "claims"  —— 模型给出的 claim 里，**同一个来源**对同一事实同时说 supports 和
+        denies。不管模型是否可信，这份证据链本身已经不可用，因此也按硬冲突处理。
+      · "model"   —— 模型自报冲突，或跨来源的模型 claim 而程序无法确证。
+        只是待核验线索，按「保守拒绝自动推送」处理，不判 CONFLICTING。
+      · ""        —— 未发现冲突。
     """
-    stances = {}
+    # ---- 第一步：程序侧重建（唯一能直接判 CONFLICTING 的路径） ----
+    grouped = {}
+    for claim in rebuild_claims(records):
+        grouped.setdefault(claim["claim_key"], []).append(claim)
+    for key, items in grouped.items():
+        stances = {c["stance"] for c in items}
+        urls = {c["url"] for c in items}
+        # 同一篇报道说了两遍不算冲突，必须是两篇不同的稿子在打架
+        if len(stances) == 2 and len(urls) >= 2:
+            return (True,
+                    f"程序核验：{key} 同时出现肯定与否定报道（{len(urls)} 篇）",
+                    "program")
+
+    # ---- 第二步：模型 claim 只用于发现「同源自相矛盾」 ----
+    by_key = {}
     for claim in source_claims or []:
         if not isinstance(claim, dict):
             continue
@@ -871,12 +955,26 @@ def detect_conflict(source_claims, model_conflict_flag=False):
         stance = (claim.get("stance") or "").strip().lower()
         if not key or stance not in ("supports", "denies"):
             continue
-        stances.setdefault(key, set()).add(stance)
-    for key, s in stances.items():
-        if len(s) > 1:
-            return True, f"同一事实出现相反表述：{key}", "claims"
+        src = (claim.get("source") or "").strip().lower()
+        by_key.setdefault(key, {}).setdefault(src, set()).add(stance)
+
+    for key, per_source in by_key.items():
+        for src, stances in per_source.items():
+            if len(stances) == 2:
+                who = src or "未署名来源"
+                return (True,
+                        f"同一来源对同一事实给出相反表述：{key}（{who}）",
+                        "claims")
+
+    # ---- 第三步：模型自报 / 跨来源 claim 只作线索 ----
     if model_conflict_flag:
         return True, "模型报告来源说法冲突，程序无法确证", "model"
+    cross_source = [k for k, per_source in by_key.items()
+                    if len({s for st in per_source.values() for s in st}) == 2]
+    if cross_source:
+        return (True,
+                f"模型称不同来源对同一事实说法相反：{cross_source[0]}，程序无法确证",
+                "model")
     return False, "", ""
 
 
@@ -977,11 +1075,12 @@ def evaluate(evidence_url, records, source_claims=None, model_conflict_flag=Fals
     def groups_for_count():
         return trusted if trusted else groups_all
 
-    # ---- V1.2 任务 4：冲突不看来源数量 ----
-    # 已验证的事实冲突（结构化 claim 里 supports / denies 并存）必须直接拦下，
-    # 哪怕只有一个来源、哪怕它来自官方域名。冲突未解决时绝不允许返回官方确认。
-    conflict, conflict_reason, conflict_kind = detect_conflict(source_claims, model_conflict_flag)
-    if conflict_kind == "claims":
+    # ---- V1.2 任务 4 / V1.3 P0-4：冲突不看来源数量 ----
+    # 程序先用记录本身重建 claim；只有程序核验出的冲突（program）与同源自相矛盾（claims）
+    # 才直接判 CONFLICTING。模型自报的冲突只是线索，走保守拒绝。
+    conflict, conflict_reason, conflict_kind = detect_conflict(
+        source_claims, model_conflict_flag, records=pool)
+    if conflict_kind in ("program", "claims"):
         return result(CONFLICTING, conflict_reason or "来源之间说法冲突",
                       True, groups_for_count(), sources, rejected_domains)
     if conflict_kind == "model":
