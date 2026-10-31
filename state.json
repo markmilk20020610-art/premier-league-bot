@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 346,
+        "calls": 347,
         "errors": 0,
-        "requests": 346
+        "requests": 347
       }
     },
-    "calls": 346,
+    "calls": 347,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2089841,
-    "output_tokens": 218948,
-    "requests": 346
+    "input_tokens": 2095809,
+    "output_tokens": 219626,
+    "requests": 347
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -847,9 +847,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T21:46:21.027953+00:00",
+  "last_scan_at": "2026-10-31T21:47:23.811325+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "HARRY KANE missed a penalty in his first game after winning the Ballon d’Or. The England icon thought he had made amends",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T21:47:23.814925+00:00",
+      "link": "https://www.thesun.co.uk/sport/40872497/harry-kane-bayern-fans-penalty-miss-ballon-dor/",
+      "published": "2026-10-31T21:46:38+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Harry Kane shows off Ballon d’Or trophy to adoring Bayern fans before England captain misses penalty in derby draw"
+    },
     {
       "desc": "Nottingham Forest manager Oliver Glasner launched into an extraordinary rant after his team's 2-0 defeat at Brentford on",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -2339,16 +2349,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "You can still pick an FPL Challenge team for GW9 - CLICK HERE! - Premier League"
-    },
-    {
-      "desc": "THIS Sunday is not so super with just one Premier League fixture scheduled. That said, it is a big one as champions Arse",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T11:35:29.976771+00:00",
-      "link": "https://www.thesun.co.uk/sport/40846252/why-one-premier-league-match-sunday/",
-      "published": "2026-10-31T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why is there only one Premier League match on Sunday?"
     }
   ],
   "processed_urls": [
