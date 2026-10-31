@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 186,
+        "calls": 187,
         "errors": 0,
-        "requests": 161
+        "requests": 162
       }
     },
-    "calls": 186,
+    "calls": 187,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 1071309,
-    "output_tokens": 122180,
-    "requests": 161
+    "input_tokens": 1077695,
+    "output_tokens": 122942,
+    "requests": 162
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -406,6 +406,33 @@
       "title": "邮报独家：曼联从未真正追求帕尔默，切尔西新约内幕曝光",
       "updated_at": "2026-10-31T10:55:32.255016+00:00"
     },
+    "e3b9ea7b7cd5": {
+      "article_title": "Man Utd player ratings: Fernandes fails to repay Carrick faith after returning to side with Martinez also disastrous",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "b8908ac9eb79c08e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 41
+        }
+      ],
+      "created_at": "2026-10-31T14:35:34.618218+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "2f815c6b63aada6b",
+      "event_id": "e3b9ea7b7cd5",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 41,
+      "title": "曼联37年来首次九场不胜，卡里克帅位岌岌可危",
+      "updated_at": "2026-10-31T14:35:35.341938+00:00"
+    },
     "f336c2fdca18": {
       "article_title": "Revealed: SIX Man United stars named in combined XI with Chelsea despite Michael Carrick's side's nightmare start - as stats boffins pick Ko",
       "attempts": 1,
@@ -435,9 +462,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T14:34:22.202530+00:00",
+  "last_scan_at": "2026-10-31T14:35:27.997944+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED made it nine games without a win for the first time in 37 years and their 2-0 defeat at Chelsea left M",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T14:35:28.001550+00:00",
+      "link": "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick/",
+      "published": "2026-10-31T14:34:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd player ratings: Fernandes fails to repay Carrick faith after returning to side with Martinez also disastrous"
+    },
     {
       "desc": "CHELSEA swept Manchester United aside 2-0 at Stamford Bridge to leave Michael Carrick on the brink of the sack. United t",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1878,15 +1915,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano reveals Man Utd top target to replace Carrick in 'crucial' sack update - 'a manager they love' - Football365"
-    },
-    {
-      "desc": "Everything you need for Gameweek 9 of FPL with the latest tips and advice Premier League",
-      "first_seen": "2026-10-31T00:05:36.322324+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSmNhemRKY0JkbU41SXNfNWdQWDZnZFpUWWw5ME5Kc3I0bjluUkU3dmNyaW9HdWZmTzlkWGFSOU5FaElqLWoxS0pGeTNTN3VCMzNxTlBKdUtLVFVLemUzOXVkRThJQndCcjFTWmZwMVJ0YmF1eFRaMjFmN1IzTm5XUmJBaWhBS0NzOWlPaGZYenVTcmJwa2NXc1lCeTJvZHRvWHdyOW1CQjdodm91bjFhNV81b0dJVm5DVkxr?oc=5",
-      "published": "2026-10-30T19:33:22+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Everything you need for Gameweek 9 of FPL with the latest tips and advice - Premier League"
     }
   ],
   "processed_urls": [
@@ -1919,7 +1947,8 @@
     "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html",
     "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick",
     "https://www.thesun.co.uk/sport/40868203/lisandro-martinez-red-card-chelsea",
-    "https://www.thesun.co.uk/sport/40868315/man-utd-fans-chelsea-michael-carrick-lisandro-martinez"
+    "https://www.thesun.co.uk/sport/40868315/man-utd-fans-chelsea-michael-carrick-lisandro-martinez",
+    "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick"
   ],
   "schema_version": 3
 }
