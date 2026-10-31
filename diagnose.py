@@ -141,6 +141,45 @@ else:
             print(f"  ✓ 读取成功：{size} 字节，本地修改时间 {mtime:%Y-%m-%d %H:%M:%S}")
             print(f"  · 已处理 URL 共 {len(processed)} 条（上限 200，超出后滚动淘汰最旧的）")
             print(f"  · 早报发送锁 last_morning_report_date = {last_morning or '(空)'}")
+            pool = st.get("news_pool", []) or []
+            print(f"  · 新闻池 news_pool 共 {len(pool)} 条（早报原料仓，保留 72h / 上限 150 条）")
+            if pool:
+                def _pool_ts(p):
+                    raw = p.get("published") or p.get("first_seen") or ""
+                    try:
+                        t = datetime.datetime.fromisoformat(raw)
+                    except Exception:
+                        return None
+                    return t if t.tzinfo else t.replace(tzinfo=datetime.timezone.utc)
+
+                now = datetime.datetime.now(datetime.timezone.utc)
+                for win in (24, 48, 72):
+                    n = sum(
+                        1 for p in pool
+                        if _pool_ts(p) is not None
+                        and (now - _pool_ts(p)).total_seconds() / 3600 <= win
+                    )
+                    print(f"      · 过去 {win}h 内可用：{n} 条")
+            else:
+                print("      ⚠ 池子是空的 → 早报会走「实时抓取 + Google News 兜底」，若仍为空则打印 [SKIP] NO_MATERIAL")
+
+            stats = st.get("ai_stats") or {}
+            if stats:
+                print(f"  · AI 统计（{stats.get('date') or '无日期'}）：调用 {stats.get('calls', 0)} 次 / "
+                      f"错误 {stats.get('errors', 0)} 次 / tokens "
+                      f"{stats.get('input_tokens', 0)}→{stats.get('output_tokens', 0)}")
+                for name, bucket in (stats.get("by_provider") or {}).items():
+                    print(f"      · {name}: 调用 {bucket.get('calls', 0)} 次，错误 {bucket.get('errors', 0)} 次")
+            else:
+                print("  · AI 统计：尚无记录（本次运行后会写入 ai_stats）")
+
+            breakers = st.get("circuit_breakers") or {}
+            active = {k: v for k, v in breakers.items() if v.get("open_until")}
+            if active:
+                for name, b in active.items():
+                    print(f"  · 熔断 {name}：至 {b['open_until']}（{b.get('error_type')}）")
+            else:
+                print("  · 熔断：无")
             if processed:
                 print("  · 最近 8 条已处理记录：")
                 for u in processed[-8:]:
