@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 11,
+        "calls": 12,
         "errors": 0,
-        "requests": 11
+        "requests": 12
       }
     },
-    "calls": 11,
+    "calls": 12,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 69429,
-    "output_tokens": 7127,
-    "requests": 11
+    "input_tokens": 75642,
+    "output_tokens": 8008,
+    "requests": 12
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -550,7 +550,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:11:27.222889+00:00",
+  "last_scan_at": "2026-10-31T16:12:24.394964+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -602,6 +602,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Tottenham vs Crystal Palace team news LIVE!"
+    },
+    {
+      "desc": "Manchester United extended their unbeaten run to 10 matches in all competitions but they failed to fire in a 0-0 Women's",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T16:12:24.398706+00:00",
+      "link": "https://www.skysports.com/football/everton-women-vs-manchester-united-women/report/575804",
+      "published": "2026-10-31T15:29:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd make it 10 games unbeaten in goalless draw at Everton"
     },
     {
       "desc": "The story took a dramatic turn on Friday night when Aston Villa released a club statement revealing the bombshell claim ",
@@ -2024,16 +2034,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Man United interested in Barcelona star Fermin Lopez as they look to bolster attack after Benjamin Sesko injury blow"
-    },
-    {
-      "desc": "Racing Bulls' Liam Lawson and Red Bull's Max Verstappen make contact during FP2 at the Mexico City GP.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T03:45:34.553813+00:00",
-      "link": "https://www.skysports.com/watch/video/13605977/mexico-city-gp-liam-lawson-fumes-at-max-verstappen-as-pair-tussle-during-p2",
-      "published": "2026-10-30T22:19:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'Every weekend!' - Lawson fumes at Verstappen as pair clash during P2!"
     }
   ],
   "processed_urls": [
