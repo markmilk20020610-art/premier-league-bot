@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 318,
+        "calls": 319,
         "errors": 0,
-        "requests": 318
+        "requests": 319
       }
     },
-    "calls": 318,
+    "calls": 319,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 1925567,
-    "output_tokens": 199354,
-    "requests": 318
+    "input_tokens": 1931417,
+    "output_tokens": 200000,
+    "requests": 319
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -820,9 +820,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T21:18:36.923080+00:00",
+  "last_scan_at": "2026-10-31T21:19:20.004795+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Are Spurs finally finding elusive consistency under Roberto De Zerbi after a third successive Premier League win, asks c",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T21:19:20.006967+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6n04v897qe4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T21:16:11+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Are De Zerbi's Spurs finding elusive consistency?"
+    },
     {
       "desc": "SWINDON goalkeeper Connor Ripley led his team to a big League Two victory over Rotherham thanks to manager Ian Holloway'",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2312,16 +2322,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "West Ham vs West Brom LIVE!"
-    },
-    {
-      "desc": "BBC Sport explores the plans for AC Milan and Inter's new stadium, and how powerful naming rights for new arenas can be",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T11:25:26.480520+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c84g15r12xn3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T11:18:53+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'We fell behind' - what does new San Siro deal mean for AC Milan and Inter?"
     }
   ],
   "processed_urls": [
