@@ -234,7 +234,10 @@ def _skip(code, detail, extra=None):
 
 def log_telemetry(data):
     # 脱敏后再落盘：遥测里会带 last_error，而 requests 的异常原文含 Bot Token
-    entry = f"[{datetime.datetime.utcnow().isoformat()}] {redact.sanitize(json.dumps(data, ensure_ascii=False))}\n"
+    # datetime.utcnow() 在 Python 3.12 起被标记弃用，改用带时区的 now() 后
+    # 去掉 tzinfo——产出的仍是「裸 UTC」，与历史日志逐字节一致。
+    stamp = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+    entry = f"[{stamp.isoformat()}] {redact.sanitize(json.dumps(data, ensure_ascii=False))}\n"
     print(entry.strip())
     try:
         with open(LOG_FILE, "a", encoding="utf-8") as f:

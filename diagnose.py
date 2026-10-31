@@ -105,7 +105,8 @@ ignore_state = "--no-state" in args
 args = [a for a in args if not a.startswith("--")]
 state_path = args[0] if args else os.path.join(HERE, "state.json")
 
-now_utc = datetime.datetime.utcnow()
+# utcnow() 在 Python 3.12 起弃用；去掉 tzinfo 后仍是裸 UTC，计算逻辑不变。
+now_utc = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
 now_bj = now_utc + datetime.timedelta(hours=8)
 
 print("=" * 68)
