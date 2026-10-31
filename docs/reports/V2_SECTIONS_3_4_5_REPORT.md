@@ -336,3 +336,53 @@ python tests/run_all.py
 **仍未完成**：真实比赛日的「我方检测时间 vs 对手时间」四列速度记录还需要
 `focus.yml` 连续跑满一场才能产出——本轮 dry-run 时我方尚未持续轮询，
 `first_detected_at` 晚于对手，因此**不宣称领先**（这正是纪律要求的正确行为）。
+
+### 7.6 生产环境实据（2026-10-31 14:13Z 起，连续运行）
+
+`focus.yml` 启动后 15 分钟，仓库里的 `focus_state.json` 已经能证明整条链路在工作：
+
+```
+ticks: 31          last_tick_at: 2026-10-31T14:29:00Z     # 31 拍 / 15 分钟 ≈ 30 秒一拍
+epl-20261031-bournemouth-leeds      裁判已推=True
+epl-20261031-coventry-sunderland    裁判已推=True
+epl-20261031-mancity-brighton       裁判已推=True  首发已推=[Brighton, Man City]
+                                    首次检测=14:14:00Z   对手最早=13:46:46Z(zhibo8)
+```
+
+**今晚的速度结论：不宣称领先。** 我们 14:14:00Z 检测到，直播吧 13:46:46Z 就发了，
+晚 27 分钟。原因不是机制不行，而是 **job 14:13:47 才被启动，而首发 13:45 左右就公布了**。
+`first_detected_at` 是「我们第一次看到的时刻」，系统没跑的时候它只能是启动时刻。
+
+**任命真实公布窗口**：13:50:38Z 时三场 `officials` 全为空，14:01:22Z 已齐全
+→ 官方裁判组的真实可见时刻落在 **T-70 ~ T-59 分钟**之间（不是提前一周）。
+football-data 提前约 9 天只给主裁，两者互补。
+
+**今晚的覆盖缺口（诚实记录）**：20:30 北京（12:30Z）的 Chelsea vs Man Utd 是 B 级，
+按 `MONITOR_POLICY` 只监控裁判、不抓首发。但它 12:30Z 就开球了，而 focus 14:13Z
+才启动，早已过了「开球后 30 分钟」的 post 窗口 → 这场连裁判报告也没赶上。
+这是**启动太晚**造成的覆盖缺口，不是分级规则的问题。
+
+### 7.7 「用户零操作」：让 scanner 当保姆
+
+原来要靠人工点 Run workflow、或让用户去 cron-job.org 加第二条任务。两条都依赖人。
+而 `scanner.yml` 已经被 cron-job.org 每分钟叫一次，于是让它顺手做一件事：
+
+```yaml
+- name: Keep focus watch alive
+  env:
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    GH_REPO: ${{ github.repository }}
+  run: python3 scripts/ensure_focus_running.py
+```
+
+判断规则：**只要后面没有 pending run 就补一个**。
+GitHub 的 concurrency 只保留「1 个运行中 + 1 个 pending」，所以始终留一个 pending，
+当前 job 一结束它就立刻接管，**零空档**。若等到「一个都不剩」才补，
+就会有最多 1 分钟的裸奔窗口——正好可能落在首发公布那一刻。
+
+能这么做的原因：`workflow_dispatch` 是 GitHub 明文规定的例外，
+**用 GITHUB_TOKEN 触发的 `workflow_dispatch` / `repository_dispatch` 会真的创建 run**
+（其它事件不会，那是防递归）。前提是 job 拿到 `permissions: actions: write`。
+
+实测：`Keep focus watch alive` 步骤 `completed/success`，并在 14:17:13Z 补出了
+pending run（id 41209419419）。当前稳态就是 1 running + 1 pending。
