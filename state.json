@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 267,
+        "calls": 268,
         "errors": 0,
-        "requests": 267
+        "requests": 268
       }
     },
-    "calls": 267,
+    "calls": 268,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 1626634,
-    "output_tokens": 164702,
-    "requests": 267
+    "input_tokens": 1632707,
+    "output_tokens": 165338,
+    "requests": 268
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -820,9 +820,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T20:27:18.594410+00:00",
+  "last_scan_at": "2026-10-31T20:28:24.395125+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Nottingham Forest head coach Oliver Glasner warns he will be the fifth sacking in just over a year by the club, unless r",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T20:28:24.398900+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvn067174knjo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T20:26:15+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Glasner fears he will be next Forest sacking if wins don't follow"
+    },
     {
       "desc": "Official Spurs Website Tottenham Hotspur",
       "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2312,16 +2322,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "TV info, team news, form guide: Chelsea v United - Manchester United"
-    },
-    {
-      "desc": "MANCHESTER UTD fans can get unmissable ticket deals to watch the Red Devils in action at Old Trafford. Tickets to Old Tr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T09:50:31.774345+00:00",
-      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
-      "published": "2026-10-31T09:47:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd tickets plus hotels and VIP hospitality deals for Premier League and Champions League games at Old Trafford"
     }
   ],
   "processed_urls": [
