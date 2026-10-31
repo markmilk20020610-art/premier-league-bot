@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 42,
+        "calls": 43,
         "errors": 0,
-        "requests": 42
+        "requests": 43
       }
     },
-    "calls": 42,
+    "calls": 43,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 263190,
-    "output_tokens": 31199,
-    "requests": 42
+    "input_tokens": 269441,
+    "output_tokens": 31988,
+    "requests": 43
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -577,9 +577,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:42:25.531525+00:00",
+  "last_scan_at": "2026-10-31T16:43:19.877590+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Manchester United defender Lisandro Martinez condemned for costly red card in 2-0 defeat to Chelsea at Stamford Bridge.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T16:43:19.881295+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckvg64xp1e1eo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T16:38:15+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Martinez's 'inexplicable' 83 seconds cost Man Utd and Carrick"
+    },
     {
       "desc": "Morgan Rogers swings the match in Chelsea's favour as Estevao Willian dazzles, making a mystery of his limited action un",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2058,16 +2068,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Leclerc seals Mexico City practice double as Hamilton suffers technical issue"
-    },
-    {
-      "desc": "Highlights from Friday's practice sessions at the Mexico City Grand Prix.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T03:45:34.553668+00:00",
-      "link": "https://www.skysports.com/watch/video/13606000/mexico-city-gp-max-verstappen-collides-with-liam-lawson-as-lewis-hamilton-suffers-failure-during-practice",
-      "published": "2026-10-30T23:10:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Mexico City Grand Prix | Practice highlights"
     }
   ],
   "processed_urls": [
