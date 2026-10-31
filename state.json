@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 28,
+        "calls": 29,
         "errors": 0,
-        "requests": 28
+        "requests": 29
       }
     },
-    "calls": 28,
+    "calls": 29,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 175580,
-    "output_tokens": 20138,
-    "requests": 28
+    "input_tokens": 181836,
+    "output_tokens": 20981,
+    "requests": 29
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -577,7 +577,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:28:21.598888+00:00",
+  "last_scan_at": "2026-10-31T16:29:23.212807+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -619,6 +619,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Lisandro Martinez's self-destruction sums up a broken Man United as Michael Carrick's future hangs by a thread - and there are still questio"
+    },
+    {
+      "desc": "Virgil van Dijk: What a fixture this is - Liverpool v Arsenal is always special Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:29:23.216340+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSUVEaWtpNFJ3WGRQcFoycExiaHRaVExuYW9Oc043cUlQOHlramJnRzJIQkFzamhraHVCWDdGcnJmQUM1Zl96RURkbGljMk56ZExzbjVVWGNxYTNTQmtPSUZJNDNpakJvb0tXLWl0ZFZfT3dMM3ZhY2tDbm1DQXVrelMzcnVXV243S3pWYXdWalZxRF8taGFVMHhDMUZ2S0duZzlEMy1PdmFwUkY4aVE?oc=5",
+      "published": "2026-10-31T15:57:51+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Virgil van Dijk: What a fixture this is - Liverpool v Arsenal is always special - Liverpool FC"
     },
     {
       "desc": "MICHAEL CARRICK suffered his third loss in a row on Saturday, but it was also his NINTH game without a win as Manchester",
@@ -2058,15 +2068,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Man Utd target Barcelona's Lopez - Saturday's gossip"
-    },
-    {
-      "desc": "Leicester moved to the top of the PREM table with a bonus-point 22-16 victory over Bristol at Ashton Gate in an error-ri",
-      "first_seen": "2026-10-31T00:05:36.321454+00:00",
-      "link": "https://www.skysports.com/rugby-union/bristol-vs-leicester/report/113851",
-      "published": "2026-10-30T23:08:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Leicester top table after victory over Bristol"
     }
   ],
   "processed_urls": [
