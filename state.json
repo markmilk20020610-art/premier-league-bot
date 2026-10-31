@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 192,
+        "calls": 193,
         "errors": 0,
-        "requests": 167
+        "requests": 168
       }
     },
-    "calls": 192,
+    "calls": 193,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 1109860,
-    "output_tokens": 126265,
-    "requests": 167
+    "input_tokens": 1116310,
+    "output_tokens": 126822,
+    "requests": 168
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -462,7 +462,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T14:40:32.048451+00:00",
+  "last_scan_at": "2026-10-31T14:41:31.745831+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -474,6 +474,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Rogers shines, 3/10 for sent-off Martinez - player ratings for Chelsea v Man Utd"
+    },
+    {
+      "desc": "Norwich launched a storming second half comeback to beat Watford 3-2 and make it back-to-back wins in the Sky Bet Champi",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T14:41:31.749434+00:00",
+      "link": "https://www.skysports.com/football/norwich-city-vs-watford/report/560647",
+      "published": "2026-10-31T14:35:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Norwich hit back to beat Watford in stunning comeback"
     },
     {
       "desc": "MANCHESTER UNITED made it nine games without a win for the first time in 37 years and their 2-0 defeat at Chelsea left M",
@@ -584,6 +594,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Coventry vs Sunderland team news LIVE!"
+    },
+    {
+      "desc": "Lisandro Martinez was sent off as Manchester United sunk to a 2-0 loss to Chelsea to plunge Michael Carrick further into",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T14:41:31.749674+00:00",
+      "link": "https://www.skysports.com/football/chelsea-vs-manchester-united/report/559527",
+      "published": "2026-10-31T13:28:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Martinez sent off as Man Utd implode against Chelsea"
     },
     {
       "desc": "LIONEL MESSI will NOT serve a one-match MLS ban... despite receiving his fifth yellow card of the season on Wednesday. T",
@@ -1899,24 +1919,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Training photos: Liverpool prepare for Premier League showdown with Arsenal - Liverpool FC"
-    },
-    {
-      "desc": "From mancity.com - Man City Shop Man City Shop",
-      "first_seen": "2026-10-31T00:05:36.322225+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPOFZWTnBFd0txdWVDeHM2U0dqUW1Wd19OLWtoRDRsSTNhdzhDYnRmTmtCSHdiMDkyZl81OFVyMlNqUTM0bFcwMmFTcnZYTUpwZ2owcHhXZEg5eU51M0dyWHlJVGwtZER2djVJekVsTk02aW9UcnVyYy14T2cycXVOdF93dWszaEtNVGdGcEV6NF9sX2pKbHJ1VUhxRjY1UnN0cjhfT1pVVzhOX1c0Y0p5QndYcC1MSEV2TUViSHBJNnc1Tnl0VW9LbV9pbHlzaHdTQmpDTC1kdENPSHkwRzZWeEduQTR0OWppdWpKUWx1em1oRkE0MkhHdzRB?oc=5",
-      "published": "2026-10-30T19:53:44+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "From mancity.com - Man City Shop - Man City Shop"
-    },
-    {
-      "desc": "EVERYONE might want to face Manchester United at the moment, but their trip to Chelsea spells serious danger for Xabi Al",
-      "first_seen": "2026-10-31T00:05:36.322251+00:00",
-      "link": "https://www.thesun.co.uk/sport/40863956/man-utd-chelsea-michael-carrick-troy-deeney/",
-      "published": "2026-10-30T19:48:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd couldn’t have asked for a better fixture than Chelsea away, Carrick won’t be the only one under the microscope"
     }
   ],
   "processed_urls": [
