@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 426,
+        "calls": 427,
         "errors": 0,
-        "requests": 426
+        "requests": 427
       }
     },
-    "calls": 426,
+    "calls": 427,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2570978,
-    "output_tokens": 274826,
-    "requests": 426
+    "input_tokens": 2576561,
+    "output_tokens": 275520,
+    "requests": 427
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T23:06:21.049545+00:00",
+  "last_scan_at": "2026-10-31T23:07:23.063608+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "What we learned from Saturday's matches Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T23:07:23.067145+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWnBTZ3p3Ql9ZOWpBM0ZMN0dqMWpUTnFBcXNBTnhIRW9OUzlOU1JWaTN4dUE3di04VlFRNG5ES0NuMUN0NzE4d0hHZ295bkxkcm8tWldvS25vTHYxQTNRVVM0MVhEM1B4ZzNlejNnYWdOeUdwU3U0amdTSkhURlJNSDFPc2JZcGY5Yi1fYQ?oc=5",
+      "published": "2026-10-31T23:04:08+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What we learned from Saturday's matches - Premier League"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -2420,16 +2430,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Ronald Araujo interview | Liverpool v Arsenal, 'room for improvement' and header tackle - Liverpool FC"
-    },
-    {
-      "desc": "Go Inside Training before Liverpool showdown Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T16:16:24.041373+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQckxDekxDMzN2S0pfYkN6T3JSR18xbWZjaDdoMXIzbDhKaVhTd1RXdFFSYlg3d0pyWU5BSWdOdVlvRURCYmZka1RMZHR4Umg4OEtpdnJZNmJwcjZ0UHFFSmZyQVM1RTl6bkNQU1RKTHhwdW9yblhzN19sNDZpQWthLUxLRjF5Z0VLbkt1dGlLWQ?oc=5",
-      "published": "2026-10-31T13:05:29+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Go Inside Training before Liverpool showdown - Arsenal.com"
     }
   ],
   "processed_urls": [
