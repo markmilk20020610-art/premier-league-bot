@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 101,
+        "calls": 102,
         "errors": 0,
-        "requests": 101
+        "requests": 102
       }
     },
-    "calls": 101,
+    "calls": 102,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 631453,
-    "output_tokens": 65952,
-    "requests": 101
+    "input_tokens": 637670,
+    "output_tokens": 66643,
+    "requests": 102
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -739,9 +739,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:41:21.066928+00:00",
+  "last_scan_at": "2026-10-31T17:42:25.236593+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Real Madrid head coach Jose Mourinho says the \"best thing is to keep your mouth shut\" but backs Kylian Mbappe following ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T17:42:25.240351+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck9dz2yned67o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T17:40:41+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Best thing is keep your mouth shut' - Mourinho on Mbappe-Mao row"
+    },
     {
       "desc": "APOLLONIA LLEWELLYN put in yet another stunning display for fans as she went braless in a see-through dress. The footy w",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1021,6 +1031,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "The best training snaps ahead of Anfield - Arsenal.com"
+    },
+    {
+      "desc": "Liverpool Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T17:42:25.240775+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWTVHbjJFTF8tdTRvVWdsUXVjWERmamE3OHd3eGtweWU4bUZTUkhiZ0xHUnk4UjdHTVhoV0lPaXJFYUFqMTBNNWdlZVk0MlctSkZlb2N4QTNxVVNBWXpOQzJJRnlVVjJxRmhDN3hDWVVwUDA3OU5PVnRqellmb04zTDRnRHN1V2ZvUk5Ob3VrejFHSEkxVUt4Qg?oc=5",
+      "published": "2026-10-31T16:16:17+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool - Liverpool FC"
     },
     {
       "desc": "PETER SCHMEICHEL slammed Lisandro Martinez after Manchester United's loss to Chelsea. The Argentine defender was given t",
@@ -2221,26 +2241,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "AC Milan versus Inter will be shown live on the BBC on Saturday - this is the story of the fixture's most iconic image.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T06:50:28.620481+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq99zlpzm87ro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T06:44:38+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "AC Milan v Inter and the tale of an iconic image"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T09:35:28.229632+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-10-31T06:43:24+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     }
   ],
   "processed_urls": [
