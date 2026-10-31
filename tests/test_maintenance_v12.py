@@ -162,7 +162,7 @@ class TestMorningScheduleContract(TempStateBase):
                 mock.patch.object(bot, "FORCE_SUMMARY", True), \
                 mock.patch.object(bot, "_pool_for_morning", return_value=[]), \
                 mock.patch.object(bot, "fetch_rss_sources", return_value=([], {})), \
-                mock.patch.object(bot, "_emergency_google_news_fetch", return_value=[]), \
+                mock.patch.object(bot, "_emergency_google_news_fetch", return_value=([], {})), \
                 mock.patch.object(bot, "_send_low_info_morning", return_value=0), \
                 contextlib.redirect_stdout(buf):
             rc = bot.run_morning_mode(state, bot._now_iso())

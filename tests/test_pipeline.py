@@ -2,6 +2,8 @@
 
 用桩替换外部依赖，但走的是 bot.py 里真实的 _finalize_result / run_scan_mode 逻辑。
 """
+import contextlib
+import io
 import json
 import os
 import shutil
@@ -18,6 +20,7 @@ _stubs.install()
 
 import bot  # noqa: E402
 import ai_provider as ai  # noqa: E402
+import evidence as ev  # noqa: E402
 import state_store as store  # noqa: E402
 
 BBC = "https://www.bbc.co.uk/sport/football/articles/c123"
@@ -563,7 +566,7 @@ class TestV12MorningEvidence(BotTestBase):
         pool = [self._pool_item(i, 30) for i in range(6)]
         self._seed(pool)
         with mock.patch.object(bot, "fetch_rss_sources", return_value=([], {})), \
-             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=[]), \
+             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=([], {})), \
              mock.patch.object(bot, "evaluate_summary") as m:
             rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
         self.assertFalse(m.called, "没有 24h 素材时不得调用模型")
@@ -612,7 +615,7 @@ class TestV12MorningEvidence(BotTestBase):
             return self._summary(), None
 
         with mock.patch.object(bot, "fetch_rss_sources", return_value=([], {})), \
-             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=[]), \
+             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=([], {})), \
              mock.patch.object(bot, "evaluate_summary", side_effect=fake_summary):
             bot.run_morning_mode(bot.load_state(), bot._now_iso())
 
@@ -685,6 +688,113 @@ class TestPoolPersistence(BotTestBase):
         self.assertEqual(len(self.sent), 0)
         pool = bot.load_state()["news_pool"]
         self.assertEqual(len(pool), 3)
+
+
+class TestV13MorningBlackoutAndRedLine(BotTestBase):
+    """V1.3 §8 两条裁决。
+
+    裁决 1：抓取全挂 ≠ 今天没新闻。前者必须报错退出，后者才发低情报量报告。
+    裁决 2：红线规则不能只挂在突发扫描上，早报必须走同一套判定。
+    """
+
+    def _pool_item(self, i, hours_ago=2, title=None, link=None, desc="d"):
+        import datetime
+        now = datetime.datetime.now(datetime.timezone.utc)
+        return {
+            "title": title or f"Arsenal transfer update number {i}",
+            "link": link or f"https://example.com/a{i}",
+            "desc": desc, "source": "s", "feed_origin": "s",
+            "published": (now - datetime.timedelta(hours=hours_ago)).isoformat(),
+            "first_seen": now.isoformat(),
+        }
+
+    def _seed(self, pool):
+        self.write_state({"processed_urls": [], "last_morning_report_date": "",
+                          "news_pool": pool})
+
+    # ---------- 裁决 1：抓取全挂必须报错 ----------
+    def test_all_sources_failed_is_error_not_low_info(self):
+        self._seed([])
+        live_status = {"https://a/rss": 500, "https://b/rss": "timed out",
+                       "https://c/rss": "403"}
+        emergency_status = {"https://news.google.com/rss/search?q=x": 503}
+        buf = io.StringIO()
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=([], live_status)), \
+             mock.patch.object(bot, "_emergency_google_news_fetch",
+                               return_value=([], emergency_status)), \
+             contextlib.redirect_stdout(buf):
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        out = buf.getvalue()
+        self.assertEqual(rc, 1, "所有抓取通道都挂了必须返回非零，让 Actions 变红")
+        self.assertEqual(self.sent, [], "抓取故障时不得发「低情报量的一天」——那是撒谎")
+        self.assertIn("Morning Source Blackout", out)
+
+    def test_all_sources_empty_is_low_info_not_blackout(self):
+        """所有源都正常响应但零条目 = 今天确实没新闻，必须发低情报量报告。"""
+        self._seed([])
+        live_status = {"https://a/rss": "200_EMPTY(0 items)",
+                       "https://b/rss": "200_EMPTY(0 items)"}
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=([], live_status)), \
+             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=([], {})), \
+             mock.patch.object(bot, "evaluate_summary") as m:
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 0)
+        self.assertFalse(m.called)
+        self.assertEqual(len(self.sent), 1)
+        self.assertIn("低情报量", self.sent[0])
+
+    def test_missing_status_never_triggers_blackout(self):
+        """拿不到抓取状态时不得凭空判定故障。"""
+        self._seed([])
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=([], {})), \
+             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=([], {})), \
+             mock.patch.object(bot, "evaluate_summary"):
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 0, "没有状态信息只能按「没新闻」处理，不能谎报故障")
+        self.assertEqual(len(self.sent), 1)
+
+    # ---------- 裁决 2：红线对早报生效 ----------
+    def test_red_line_blocks_single_source_morning_event(self):
+        pool = [self._pool_item(0, 2, title="Arsenal star dies in car accident")]
+        events, excluded = bot._build_morning_events(
+            bot._pool_for_morning({"news_pool": pool}))
+        self.assertEqual(events, [], "单一来源的死亡新闻不得进入早报事实列表")
+        self.assertEqual(len(excluded), 1)
+        self.assertEqual(excluded[0]["gate_code"], "BLACK_LABEL_EVIDENCE_INSUFFICIENT")
+
+    def test_red_line_allows_multi_source_morning_event(self):
+        """红线卡的是证据强度，不是话题本身：多源独立印证仍可进入早报。"""
+        pool = [
+            self._pool_item(0, 2, title="Arsenal star dies in car accident",
+                            link="https://www.bbc.co.uk/sport/a"),
+            self._pool_item(1, 2, title="Tributes paid as Arsenal star dies in crash",
+                            link="https://www.skysports.com/football/b"),
+        ]
+        events, excluded = bot._build_morning_events(
+            bot._pool_for_morning({"news_pool": pool}))
+        self.assertEqual(excluded, [], f"多源不该被红线拦住：{excluded}")
+        self.assertTrue(events, "多源独立印证的严肃新闻必须能进入早报")
+        self.assertTrue(all(e["status"] == "MULTIPLE_INDEPENDENT_SOURCES" for e in events))
+
+    def test_benign_single_source_still_allowed_in_morning(self):
+        """早报允许单一来源事件（卡片会标注未交叉验证），红线不能变成一刀切。"""
+        pool = [self._pool_item(0, 2, title="Arsenal transfer update on winger")]
+        events, _ = bot._build_morning_events(bot._pool_for_morning({"news_pool": pool}))
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0]["status"], "SINGLE_SOURCE")
+
+    def test_scan_path_shares_the_same_red_line_gate(self):
+        """突发路径与早报用的是同一个红线函数，不能各写一套。"""
+        verdict = ev.evaluate("https://www.bbc.co.uk/sport/a", [
+            {"url": "https://www.bbc.co.uk/sport/a",
+             "title": "Arsenal star dies in car accident"},
+        ])
+        # 白名单来源能过单源门，于是必然走到红线门——红线必须在那里拦住它
+        ok, why, code = bot._evidence_gates(
+            verdict, None, "Arsenal star dies in car accident", {"bbc.co.uk"})
+        self.assertFalse(ok)
+        self.assertEqual(code, "BLACK_LABEL_EVIDENCE_INSUFFICIENT")
+        self.assertIn("严肃议题", why)
 
 
 if __name__ == "__main__":

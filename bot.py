@@ -1100,9 +1100,14 @@ _SUMMARY_EMERGENCY_QUERIES = [
 
 
 def _emergency_google_news_fetch():
-    """早报专用紧急抓取：直接打 Google News RSS，返回条目列表（可能为空）。"""
+    """早报专用紧急抓取：直接打 Google News RSS。
+
+    返回 (items, status)，status 是 {query_url: 状态}，用于和 RSS 矩阵一起
+    判断「是不是所有抓取通道都挂了」（V1.3 §8 裁决 1）。
+    """
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
     items = []
+    status = {}
     for q in _SUMMARY_EMERGENCY_QUERIES:
         url = (
             "https://news.google.com/rss/search?q="
@@ -1113,13 +1118,16 @@ def _emergency_google_news_fetch():
             resp = requests.get(url, headers=headers, timeout=(5, 12))
             if resp.status_code != 200:
                 print(f"[WARN] 早报兜底抓取失败 HTTP {resp.status_code}: {q}")
+                status[url] = resp.status_code
                 continue
             got = _parse_feed_items(resp.content, url, limit=20)
             print(f"[INFO] 早报兜底抓取命中 {len(got)} 条：{q}")
+            status[url] = 200 if got else "200_EMPTY(0 items)"
             items.extend(got)
         except Exception as e:
             print(f"[WARN] 早报兜底抓取异常 {type(e).__name__}: {e} | {q}")
-    return _dedupe_items(items)
+            status[url] = str(e)
+    return _dedupe_items(items), status
 
 
 # ==================== 带 30 秒硬超时保护的评估主逻辑 ====================
@@ -1319,6 +1327,38 @@ _SOURCE_CLASS_LABEL = {
 }
 
 
+def _red_line_gate(verdict, rating_key, topic_text):
+    """红线闸门（突发扫描与早报共用，V1.3 §8 裁决 2）。
+
+    红线（死亡 / 重伤 / 重病 / 违法 / 重大事故）不是突发扫描的专属规则：
+    早报同样会把这类内容写成「已确认事实」交给模型汇总，
+    如果只在突发路径上设闸，早报就是一条绕开红线的通道。
+
+    注意这里**不含单源门**：早报允许单一来源事件进入汇总（卡片上会标注
+    「未经独立交叉验证」），而突发推送是逐条对外发稿，单源默认不发。
+    返回 (allowed, reason, code)。
+    """
+    # 模型自己写 var_rating=黑标 不能绕过这里：死亡/重伤/重病/违法/重大事故
+    # 必须有官方确认或多源独立印证，单一来源（哪怕可信）一律不发。
+    black_ok, black_why = ev.black_label_gate(rating_key, verdict, topic_text)
+    if not black_ok:
+        print(f"::warning title=Black Label Blocked::{black_why}")
+        return False, black_why, "BLACK_LABEL_EVIDENCE_INSUFFICIENT"
+    return True, "", ""
+
+
+def _evidence_gates(verdict, rating_key, topic_text, allowlist=None):
+    """突发推送的完整闸门：单源门 + 红线门。
+
+    早报不走这里，只走 _red_line_gate——两者共用同一份红线判定，
+    但单源门是「对外逐条发稿」才需要的约束。
+    """
+    allowed, why = ev.auto_push_allowed(verdict, allowlist)
+    if not allowed:
+        return False, why, "EVIDENCE_NOT_PUSHABLE"
+    return _red_line_gate(verdict, rating_key, topic_text)
+
+
 def _build_morning_events(pool):
     """给每条素材建立独立证据记录并逐条核验（V1.2 任务 5）。
 
@@ -1358,7 +1398,21 @@ def _build_morning_events(pool):
             "confirmed": verdict["status"] in (ev.OFFICIAL_CONFIRMED,
                                                ev.MULTIPLE_INDEPENDENT_SOURCES),
         }
-        (verified if ev.is_pushable(verdict["status"]) else excluded).append(entry)
+        # V1.3 §8 裁决 2：红线对早报同样生效。
+        # 早报没有模型给的 var_rating，所以 rating_key 传 None——
+        # 但只要标题/摘要触到严肃红线，black_label_gate 依然会按证据强度卡住。
+        pushable = ev.is_pushable(verdict["status"])
+        gate_ok, gate_why, gate_code = True, "", ""
+        if pushable:
+            gate_ok, gate_why, gate_code = _red_line_gate(
+                verdict, None, f"{entry['title']} {entry['desc']}")
+        entry["gate_code"] = gate_code
+        if pushable and gate_ok:
+            verified.append(entry)
+        else:
+            if pushable and not gate_ok:
+                entry["reason"] = f"{entry['reason']}；闸门拦截：{gate_why}"
+            excluded.append(entry)
 
     for i, e in enumerate(verified, 1):
         e["event_id"] = f"E{i:02d}"
@@ -1639,22 +1693,14 @@ def _finalize_result(data, extra_records=None, published_index=None):
             data["rating_downgraded"] = why
             print(f"[WARN] 评级复核降级：{why}")
 
-    # ---- 闸门一：状态门 + 单源门（V1.1 任务 4）----
-    # SINGLE_SOURCE 默认不推送；只有白名单内的可信单一来源才放行。
-    allowed, why = ev.auto_push_allowed(verdict, TRUSTED_SINGLE_SOURCES)
-    if not allowed:
-        return False, data, why, "EVIDENCE_NOT_PUSHABLE"
-
-    # ---- 闸门二：黑标证据门（V1.1 任务 5）----
-    # 模型自己写 var_rating=黑标 不能绕过这里：死亡/重伤/重病/违法/重大事故
-    # 必须有官方确认或多源独立印证，单一来源（哪怕可信）一律不发。
+    # ---- 闸门一 + 闸门二：状态门 / 单源门 / 黑标证据门（V1.1 任务 4、5）----
     # 只扫「事实部分」（事件标题 + 事实摘要），不扫 A/B/C 稿：
     # 评论稿里出现「警方」「调查」这类词往往是比喻或引申，扫进去会大面积误杀。
     topic_text = f"{data.get('event_title') or ''} {data.get('fact_summary') or ''}"
-    black_ok, black_why = ev.black_label_gate(rating_key, verdict, topic_text)
-    if not black_ok:
-        print(f"::warning title=Black Label Blocked::{black_why}")
-        return False, data, black_why, "BLACK_LABEL_EVIDENCE_INSUFFICIENT"
+    allowed, why, gate_code = _evidence_gates(
+        verdict, rating_key, topic_text, TRUSTED_SINGLE_SOURCES)
+    if not allowed:
+        return False, data, why, gate_code
 
     # ---- 闸门三：突发新闻 12h 硬时效（V1.2 任务 12）----
     # 证据文章自己的发布时间超过 12 小时 → 不管模型说得多炸，都不许当突发推出去。
@@ -1947,9 +1993,11 @@ def run_morning_mode(state, start_time):
     print(f"[INFO] 早报原料（state 新闻池 / 过去 {used_hours}h）：{len(pool)} 条")
 
     # ---- 第 2 步：不足则实时抓一轮（RSS 矩阵全量，并发）----
+    live_status = {}
+    emergency_status = {}
     if len(pool) < SUMMARY_MIN_MATERIALS:
         print(f"[WARN] 原料 {len(pool)} 条 < 阈值 {SUMMARY_MIN_MATERIALS} 条，触发实时抓取兜底…")
-        live_items, _status = fetch_rss_sources()
+        live_items, live_status = fetch_rss_sources()
         added = _merge_pool(state, live_items)
         pool = _pool_for_morning(state)
         src = f"state_pool+live(+{added})"
@@ -1960,11 +2008,42 @@ def run_morning_mode(state, start_time):
     # 抓回来的旧闻会在 _pool_for_morning 里被重新过滤掉。
     if len(pool) < SUMMARY_MIN_MATERIALS:
         print("[WARN] 池子仍不足，启动 Google News 紧急兜底抓取…")
-        emergency = _emergency_google_news_fetch()
+        emergency, emergency_status = _emergency_google_news_fetch()
         added = _merge_pool(state, emergency)
         pool = _pool_for_morning(state)
         src += f"+gnews(+{added})"
         print(f"[INFO] 紧急抓取并入 {added} 条，24h 原料现为 {len(pool)} 条")
+
+    # ---- 抓取健康度（V1.3 §8 裁决 1）----
+    # 早报以前把「所有源都挂了」和「今天真的没新闻」混为一谈，两者都发一张
+    # 「低情报量的一天」。前者是故障，必须报错退出让 Actions 变红；
+    # 后者是事实，发空报才对。这里把两者的判断分开。
+    health = _source_health({**live_status, **emergency_status})
+    if health["total"]:
+        print(f"[INFO] 抓取健康度：正常 {health['ok']} / 空响应 {health['degraded']} / "
+              f"失败 {health['failed']}（共 {health['total']}）")
+
+    # 判定「抓取故障」而不是「今天没新闻」：所有通道都失败（ok=0 且 degraded=0）。
+    # 只要有一个通道正常响应（哪怕 200 但零条目），就说明抓取链路是通的，
+    # 那属于「今天确实没新闻」，发空报才是诚实的。
+    if not pool and health["total"] and health["ok"] == 0 and health["degraded"] == 0:
+        print(f"::error title=Morning Source Blackout::"
+              f"{health['failed']}/{health['total']} 个抓取通道全部失败，新闻池为空。"
+              f"这是抓取故障，不是「今天没新闻」——不发低情报量报告，直接失败以便被发现")
+        log_telemetry({
+            "start_time": start_time,
+            "end_time": _now_iso(),
+            "run_mode": "morning",
+            "status": "FAILED_ALL_SOURCES",
+            "source_status": {**live_status, **emergency_status},
+            "source_health": health,
+            "pool_size": 0,
+            "window_hours": used_hours,
+        })
+        return 1
+    if health["failed"]:
+        print(f"::warning title=Partial Source Failure::"
+              f"{health['failed']}/{health['total']} 个抓取通道失败（其余正常）")
 
     # 池子有任何变化都先落盘，保证下次早报不用从零开始
     try:
