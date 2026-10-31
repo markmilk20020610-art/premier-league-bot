@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 153,
+        "calls": 154,
         "errors": 0,
-        "requests": 128
+        "requests": 129
       }
     },
-    "calls": 153,
+    "calls": 154,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 861761,
-    "output_tokens": 102982,
-    "requests": 128
+    "input_tokens": 868035,
+    "output_tokens": 103594,
+    "requests": 129
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -177,6 +177,33 @@
       "telegram_message_id": 32,
       "title": "切尔西vs曼联上半场两粒进球因越位被吹",
       "updated_at": "2026-10-31T13:40:36.304706+00:00"
+    },
+    "3a3e564ec6eb": {
+      "article_title": "Lisandro Martinez blanked by Michael Carrick as Man Utd star is sent off vs Chelsea for moment of madness",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "30017b89cd784bdb",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 34
+        }
+      ],
+      "created_at": "2026-10-31T14:02:28.402327+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3b46d373d1848f7f",
+      "event_id": "3a3e564ec6eb",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40868203/lisandro-martinez-red-card-chelsea",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 34,
+      "title": "利桑德罗·马丁内斯84秒两黄变一红，曼联客战切尔西少打一人",
+      "updated_at": "2026-10-31T14:02:29.019266+00:00"
     },
     "3d668757665a": {
       "article_title": "Man Utd target Julian Nagelsmann ‘considering taking over at European giants after being approached’",
@@ -381,9 +408,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T14:01:26.902219+00:00",
+  "last_scan_at": "2026-10-31T14:02:22.909003+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED defender Lisandro Martinez was blanked by Michael Carrick after conceding a penalty and receiving two ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T14:02:22.912566+00:00",
+      "link": "https://www.thesun.co.uk/sport/40868203/lisandro-martinez-red-card-chelsea/",
+      "published": "2026-10-31T14:00:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lisandro Martinez blanked by Michael Carrick as Man Utd star is sent off vs Chelsea for moment of madness"
+    },
     {
       "desc": "Jamie Carragher apologises for \"clumsy and wrong\" language when linking manager Unai Emery with becoming Manchester Unit",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -1818,15 +1855,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Emi Martinez’s hand permanently disfigured as Chelsea goalkeeper reveals incredible sacrifice to play in World Cup"
-    },
-    {
-      "desc": "LISANDRO MARTINEZ is being targeted for a free summer transfer by Atletico Madrid, according to reports. SunSport exclus",
-      "first_seen": "2026-10-31T00:05:36.322446+00:00",
-      "link": "https://www.thesun.co.uk/sport/40863476/atletico-target-lisandro-martinez-man-utd-transfer/",
-      "published": "2026-10-30T18:43:34+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Lisandro Martinez ‘to leave Man Utd with neither club or player wanting him to stay as Atletico join transfer race’"
     }
   ],
   "processed_urls": [
@@ -1857,7 +1885,8 @@
     "https://www.dailymail.com/sport/football/article-16248543/manchester-united-chelsea-combined-xi-carrick.html",
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmt2dWI3dnZMY2VvU2pHQmpHTE1jR1hmQ3ZqUzVPbGk5WXQxSm5CaXpyUVBZUjdLQVh0M2VJODhJRVFoRHhEZGdPanpzNEgwbWJNWkFqbTlhMXIwYjRXUEExLXFxcTVBZzlUTWFnMWxRWGZCV0ZwZmt5RVFwMHkyNU9kUjQ4ZDRXZWJPRnpoYzd5Y0ZEZzJCSUptdWNhZ1o3a0l2VlpaQkJIaGw3NjctVEFMQTFhQzBKVUtpVdIBwgFBVV95cUxNNDRsVW9yWHJHUmdtU3FHMnlVRkpkM3J3YmFJMWRJWmRvNV9Ycl9mWGl1c1RSYWNyYlNGTktWc1h2Z1ZnbENUMTJMMEFEN0JIc2ZUTG9rNjM2V3l3S3hPb2E4dGJRWVNZVnU2c1p1UVhmZkpnM0YzYldpU1hzZ0ZzdkR0MENyOHpsd1lualdiNmFCSVpOUDcta01lOUpVc1loSzdHc050LXBsYktTRWpXTnE0UXNZemR5N0g3NWxEMk9VZw",
     "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html",
-    "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick"
+    "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick",
+    "https://www.thesun.co.uk/sport/40868203/lisandro-martinez-red-card-chelsea"
   ],
   "schema_version": 3
 }
