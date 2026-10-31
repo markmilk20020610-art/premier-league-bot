@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 392,
+        "calls": 393,
         "errors": 0,
-        "requests": 392
+        "requests": 393
       }
     },
-    "calls": 392,
+    "calls": 393,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2362606,
-    "output_tokens": 250557,
-    "requests": 392
+    "input_tokens": 2368863,
+    "output_tokens": 251305,
+    "requests": 393
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,7 +928,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T22:32:28.094513+00:00",
+  "last_scan_at": "2026-10-31T22:33:28.813398+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1320,6 +1320,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Hurzeler: ‘Defence wins you battles and wins you championships’ - Premier League"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T22:33:28.817801+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMkQ2SWRjaUpaZEZmSlJwTzlsTV9zdzFnLTZFT2VuYVc1cVF1VE1TU0VGb1hUcEVlckpEZWFxbURVX1pUZ1RlOFJwdVJpNTAxZWh2MXVjbHNqdGpOQzJIdngtd1RnblJLdTJUS1dHaFJTRGdpUEN3Tk1qZUN1QlhGOHRkcERVSE5zNTVya1RKVE1jQUozN1hocDJMTkRJMnNIaWxsTnhQb01PM1VIQnc?oc=5",
+      "published": "2026-10-31T19:00:39+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
     },
     {
       "desc": "City 0-1 Brighton: 2-minute highlights Manchester City FC",
@@ -2420,16 +2430,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "U18s stretch unbeaten league run to eight games with victory over Burnley - Manchester City FC"
-    },
-    {
-      "desc": "TOM COLLOMOSSE: Before billionaires Nassef Sawiris and Wes Edens took control of Aston Villa in 2018, the club were star",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-10-31T13:40:29.885871+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16254393/aston-villa-jamie-carragher-legal-action.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-10-31T12:54:50+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Aston Villa threatening Jamie Carragher with legal action over 'insults' looks wild... but this is why club's billionaire owner Nassef Sawir"
     }
   ],
   "processed_urls": [
