@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 157,
+        "calls": 158,
         "errors": 0,
-        "requests": 132
+        "requests": 133
       }
     },
-    "calls": 157,
+    "calls": 158,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 886588,
-    "output_tokens": 105191,
-    "requests": 132
+    "input_tokens": 892803,
+    "output_tokens": 105776,
+    "requests": 133
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -408,7 +408,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T14:05:25.847030+00:00",
+  "last_scan_at": "2026-10-31T14:06:38.626439+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -600,6 +600,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "In-demand Spain star Martin talks future plans: 'This is my home'"
+    },
+    {
+      "desc": "Full match: Arsenal Women 3-0 Benfica Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T14:06:38.629279+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNDFHQ2hCd0pYMGFsYWVNbTVXNTFGaVdzeVUyTGNpWUQ4OFhvUkVfNW9jYVZ3Ulo1U09IQjZaUmk2cWhNOTRteWxxR1NIMWxEVmNfdHVPRUdUazJ2MWNQUldTSjBvRmVfM1p1ak5UMm9TbUgybnZaQUdLY08wczg5VlpaNi1tdw?oc=5",
+      "published": "2026-10-31T12:00:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Full match: Arsenal Women 3-0 Benfica - Arsenal.com"
     },
     {
       "desc": "United Women XI to face Everton Manchester United",
@@ -1846,15 +1856,6 @@
       "publisher": "https://tribuna.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Milan plan January transfer moves for Endrick and Goncalo Inacio - Fabrizio Romano - Tribuna.com"
-    },
-    {
-      "desc": "EMILIANO MARTINEZ has revealed how his hand is permanently disfigured and what he sacrificed to play at the World Cup. T",
-      "first_seen": "2026-10-31T00:05:36.322420+00:00",
-      "link": "https://www.thesun.co.uk/sport/40863263/emi-martinez-hand-disfigured-world-cup-sacrifice/",
-      "published": "2026-10-30T18:44:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Emi Martinez’s hand permanently disfigured as Chelsea goalkeeper reveals incredible sacrifice to play in World Cup"
     }
   ],
   "processed_urls": [
