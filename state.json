@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 69,
+        "calls": 70,
         "errors": 0,
-        "requests": 69
+        "requests": 70
       }
     },
-    "calls": 69,
+    "calls": 70,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 433251,
-    "output_tokens": 47309,
-    "requests": 69
+    "input_tokens": 436765,
+    "output_tokens": 48007,
+    "requests": 70
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -480,6 +480,33 @@
       "title": "热刺对阵水晶宫首发名单确认",
       "updated_at": "2026-10-31T16:24:29.982064+00:00"
     },
+    "9bcc0dc49802": {
+      "article_title": "James Trafford makes horror error as Leeds star and England No1 hopeful left red-faced in painful Bournemouth defeat",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "f197ab2e0e088ecf",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 49
+        }
+      ],
+      "created_at": "2026-10-31T17:10:57.796847+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "772ea0e41de1a669",
+      "event_id": "9bcc0dc49802",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40870435/james-trafford-horror-error-bournemouth-defeat",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 49,
+      "title": "利兹门将特拉福德低级失误送礼，伯恩茅斯笑纳大礼",
+      "updated_at": "2026-10-31T17:10:59.041457+00:00"
+    },
     "b03cd11506e7": {
       "article_title": "Verstappen, Lawson receive grid penalties after 'unacceptable' practice collision",
       "attempts": 1,
@@ -658,9 +685,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:09:27.144300+00:00",
+  "last_scan_at": "2026-10-31T17:10:51.296396+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "WEREWOLF costumes are in short supply at this time of year - but James Trafford served up an even bigger Halloween howle",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T17:10:51.300009+00:00",
+      "link": "https://www.thesun.co.uk/sport/40870435/james-trafford-horror-error-bournemouth-defeat/",
+      "published": "2026-10-31T17:09:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "James Trafford makes horror error as Leeds star and England No1 hopeful left red-faced in painful Bournemouth defeat"
+    },
     {
       "desc": "SUNDERLAND star Nilson Angulo avoided a red card despite pulling Coventry man Tatsuhiro Sakamoto's hair on Saturday afte",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2148,15 +2185,6 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times"
-    },
-    {
-      "desc": "ASTON Villa are taking legal action against TV pundit Jamie Carragher over his ‘unacceptable insults’. Villa co-owner an",
-      "first_seen": "2026-10-31T00:05:36.321305+00:00",
-      "link": "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
-      "published": "2026-10-30T23:55:49+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Aston Villa to SUE Jamie Carragher over ‘shut the f*** up’ comments about Man Utd as 37-word statement released"
     }
   ],
   "processed_urls": [
@@ -2197,7 +2225,8 @@
     "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw",
     "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches",
     "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city",
-    "https://www.thesun.co.uk/sport/40869821/nilson-angulo-escapes-red-card-hair-pull-sunderland-coventry"
+    "https://www.thesun.co.uk/sport/40869821/nilson-angulo-escapes-red-card-hair-pull-sunderland-coventry",
+    "https://www.thesun.co.uk/sport/40870435/james-trafford-horror-error-bournemouth-defeat"
   ],
   "schema_version": 3
 }
