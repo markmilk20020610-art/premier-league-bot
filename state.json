@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 72,
+        "calls": 73,
         "errors": 0,
-        "requests": 72
+        "requests": 73
       }
     },
-    "calls": 72,
+    "calls": 73,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 449345,
-    "output_tokens": 49032,
-    "requests": 72
+    "input_tokens": 455566,
+    "output_tokens": 49667,
+    "requests": 73
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -685,7 +685,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:12:34.261786+00:00",
+  "last_scan_at": "2026-10-31T17:13:18.814285+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1117,6 +1117,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Chelsea vs Manchester United - Premier League: Estevao and Matheus Cunha have goals ruled out for offside in a lively first half - with Red "
+    },
+    {
+      "desc": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T17:13:18.816571+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw?oc=5",
+      "published": "2026-10-31T13:34:00+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times"
     },
     {
       "desc": "",
@@ -2177,15 +2187,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Liverpool - Liverpool FC"
-    },
-    {
-      "desc": "Manchester City FC",
-      "first_seen": "2026-10-31T01:35:35.103896+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
-      "published": "2026-10-31T00:25:32+00:00",
-      "publisher": "https://login.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
     }
   ],
   "processed_urls": [
