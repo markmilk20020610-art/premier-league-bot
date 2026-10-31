@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 195,
+        "calls": 196,
         "errors": 0,
-        "requests": 170
+        "requests": 171
       }
     },
-    "calls": 195,
+    "calls": 196,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 1129278,
-    "output_tokens": 127824,
-    "requests": 170
+    "input_tokens": 1135796,
+    "output_tokens": 128384,
+    "requests": 171
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -462,7 +462,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T14:43:28.767403+00:00",
+  "last_scan_at": "2026-10-31T14:44:23.192674+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -894,6 +894,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Chelsea vs Man Utd team news LIVE!"
+    },
+    {
+      "desc": "Training photos: Liverpool prepare for Premier League showdown with Arsenal Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T14:44:23.196619+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV25ac0dvQ0lIcFJyaG80Yk0yaElyUHQxV2R4ajdoYVIzUHN2OTY2VDlyMW9kazdDSERvQTZLRlZtVVJIanBhV2premw1NkVkM1ZtanNmcUpLSU5YME5GZHV2RFRHSmN1QlZ1enM5NEQ0YzZOUzVtZUcyLWIzVzlhNTBHejhsaXRWLWFkY1h0YmtabnZsejN4V0NBQWd6djlfWi1SdVAzVWROVFU?oc=5",
+      "published": "2026-10-31T10:21:05+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Training photos: Liverpool prepare for Premier League showdown with Arsenal - Liverpool FC"
     },
     {
       "desc": "Ronald Araujo interview | Liverpool v Arsenal, 'room for improvement' and header tackle Liverpool FC",
@@ -1911,15 +1921,6 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "",
-      "first_seen": "2026-10-31T00:05:36.322175+00:00",
-      "link": "https://www.skysports.com/rugby-union/usa-women-vs-england/live/113218",
-      "published": "2026-10-30T20:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Jones: Red Roses will review North America tour - 'We're hungry to get better'"
     }
   ],
   "processed_urls": [
