@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 58,
+        "calls": 59,
         "errors": 0,
-        "requests": 33
+        "requests": 34
       }
     },
-    "calls": 58,
+    "calls": 59,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 301510,
-    "output_tokens": 43137,
-    "requests": 33
+    "input_tokens": 306650,
+    "output_tokens": 43865,
+    "requests": 34
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -56,6 +56,33 @@
       "telegram_message_id": 22,
       "title": "曼联帅位与转会传闻齐飞：卡里克回击内维尔，费尔明·洛佩斯进入引援名单",
       "updated_at": "2026-10-31T00:39:07.009865+00:00"
+    },
+    "07b8a6da5afe": {
+      "article_title": "Betting column: SunSport picks for Chelsea vs Man Utd, Liverpool vs Arsenal, plus rest of Premier League and EFL action",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "8f8b98a04d475ac7",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 27
+        }
+      ],
+      "created_at": "2026-10-31T08:45:37.533085+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "65ec8e64742b2323",
+      "event_id": "07b8a6da5afe",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40850634/sunsport-premier-league-efl-betting-picks",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 27,
+      "title": "切尔西vs曼联、利物浦vs阿森纳焦点战前瞻与投注情报",
+      "updated_at": "2026-10-31T08:45:38.192338+00:00"
     },
     "107c7f016595": {
       "attempts": 1,
@@ -192,7 +219,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T08:40:27.948395+00:00",
+  "last_scan_at": "2026-10-31T08:45:31.211091+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1203,7 +1230,8 @@
     "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html",
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw",
     "https://www.thesun.co.uk/sport/40844914/man-city-brighton-predictions-etihad",
-    "https://www.skysports.com/f1/news/12040/13605836/max-verstappen-liam-lawson-receive-grid-penalties-for-unacceptable-practice-collision-at-mexico-city-grand-prix"
+    "https://www.skysports.com/f1/news/12040/13605836/max-verstappen-liam-lawson-receive-grid-penalties-for-unacceptable-practice-collision-at-mexico-city-grand-prix",
+    "https://www.thesun.co.uk/sport/40850634/sunsport-premier-league-efl-betting-picks"
   ],
   "schema_version": 3
 }
