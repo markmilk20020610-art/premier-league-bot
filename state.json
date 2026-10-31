@@ -2,15 +2,15 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 9955,
-    "output_tokens": 1347
+    "input_tokens": 14921,
+    "output_tokens": 1956
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -28,6 +28,19 @@
       "telegram_message_id": 17,
       "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
       "updated_at": "2026-10-31T00:10:45.160755+00:00"
+    },
+    "9016883d39b5": {
+      "attempts": 1,
+      "created_at": "2026-10-31T00:15:53.815550+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "d099453fac49d77f",
+      "event_id": "9016883d39b5",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html",
+      "last_error": "",
+      "telegram_message_id": 18,
+      "title": "维拉威胁起诉卡拉格：称其言论建议埃梅里接替卡里克执教曼联",
+      "updated_at": "2026-10-31T00:15:54.364209+00:00"
     },
     "c1ca9017032e": {
       "attempts": 1,
@@ -90,6 +103,15 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Emiliano Martinez reveals his finger 'won't ever return' to normal after injury left him playing like a 'zombie' during World Cup: 'I cried "
+    },
+    {
+      "desc": "Man City v Brighton - 31 Oct 2026 Manchester City FC",
+      "first_seen": "2026-10-31T00:15:49.337283+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1INXU2cHBMMkdPN1RscmpqaEEzdml0QmhQWjhNQlFQTmw2S3AyNGp5VkJwRUlIZkJST0FuM2hSbEhCYUI4X2RxMWUtSW0xSUlXQnBCS0MyUUZEdVJ3UlljUEU3cFVfZUgwUU1GYmowUE4zWWhFU1lZ?oc=5",
+      "published": "2026-10-30T23:27:17+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City v Brighton - 31 Oct 2026 - Manchester City FC"
     },
     {
       "desc": "WEST Ham star Manor Solomon has been branded a “baby killer” by pro-Palestine activists for serving with the IDF. Thugs ",
@@ -663,7 +685,8 @@
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlhFdXFCdWNUZmo2Mi1sV191Q2pXWE9hbnVHN2N0ZGFxcWsxVUNvcjRyNVJldUluMHVYTUZUT3lxTGU1SDR0OG81a0tZY1NKbWV4ZjF5NlZ4RjR6VzlPcmZSREFNMHNrY3RmVVItQmcyRGpZTkg4dDFoU1h3by0yOERsekQ2aXV3V1pEN1FYM3NXTXk5dEthcVVTdWdTbEYyemZj?oc=5",
     "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o",
     "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
-    "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/"
+    "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
+    "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html"
   ],
   "schema_version": 2
 }
