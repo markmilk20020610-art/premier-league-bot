@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 53,
+        "calls": 54,
         "errors": 0,
-        "requests": 53
+        "requests": 54
       }
     },
-    "calls": 53,
+    "calls": 54,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 332955,
-    "output_tokens": 38273,
-    "requests": 53
+    "input_tokens": 339196,
+    "output_tokens": 38928,
+    "requests": 54
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -575,6 +575,33 @@
       "title": "曼联37年来首次九场不胜，卡里克帅位岌岌可危",
       "updated_at": "2026-10-31T14:35:35.341938+00:00"
     },
+    "eac80da6da92": {
+      "article_title": "Man City 0 Brighton 1: Enzo Maresca left frustrated as Arsenal regain title advantage and Seagulls go TWO points off top",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e7a0d9b23ef54273",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 47
+        }
+      ],
+      "created_at": "2026-10-31T16:54:26.438150+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "4b57b9a67212dc6a",
+      "event_id": "eac80da6da92",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 47,
+      "title": "曼城主场0-1爆冷负布莱顿，阿森纳重夺争冠优势",
+      "updated_at": "2026-10-31T16:54:27.073866+00:00"
+    },
     "f336c2fdca18": {
       "article_title": "Revealed: SIX Man United stars named in combined XI with Chelsea despite Michael Carrick's side's nightmare start - as stats boffins pick Ko",
       "attempts": 1,
@@ -604,9 +631,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:53:21.815355+00:00",
+  "last_scan_at": "2026-10-31T16:54:21.081880+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "BRIGHTON stunned Manchester City at the Etihad to go two points off the league leaders. Fabian Hurzeler's men took an ea",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T16:54:21.083892+00:00",
+      "link": "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city/",
+      "published": "2026-10-31T16:53:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man City 0 Brighton 1: Enzo Maresca left frustrated as Arsenal regain title advantage and Seagulls go TWO points off top"
+    },
     {
       "desc": "THE CHAMPIONSHIP match between Wolves and Cardiff was suddenly halted due to a medical emergency at the Molineux stands.",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -746,6 +783,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Kane beat Mbappe to Ballon d'Or by just 28 points"
+    },
+    {
+      "desc": "Manchester United manager Michael Carrick takes issue with his side's defending, particularly for the first goal they co",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T16:54:21.084079+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cqrlywrdjdzyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T15:13:43+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Carrick bemoans Man Utd defending in Chelsea loss"
     },
     {
       "desc": "Alonso makes four changes - See Chelsea's line-up Premier League",
@@ -2078,24 +2125,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Man City v Brighton - 31 Oct 2026 - Manchester City FC"
-    },
-    {
-      "desc": "WEST Ham star Manor Solomon has been branded a “baby killer” by pro-Palestine activists for serving with the IDF. Thugs ",
-      "first_seen": "2026-10-31T00:05:36.321388+00:00",
-      "link": "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
-      "published": "2026-10-30T23:25:55+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Israeli West Ham star Manor Solomon branded a ‘baby killer’ by pro-Palestine thugs over national service with the IDF"
-    },
-    {
-      "desc": "England's Red Roses responded to shock back-to-back defeats in Canada with a crushing 55-12 WXV Global Series victory ov",
-      "first_seen": "2026-10-31T00:05:36.321411+00:00",
-      "link": "https://www.skysports.com/rugby-union/usa-women-vs-england/report/113218",
-      "published": "2026-10-30T23:25:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Moloney-MacDonald stars as Red Roses return to winning ways with USA thrashing"
     }
   ],
   "processed_urls": [
@@ -2134,7 +2163,8 @@
     "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo",
     "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea",
     "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw",
-    "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches"
+    "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches",
+    "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city"
   ],
   "schema_version": 3
 }
