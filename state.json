@@ -10,7 +10,8 @@
     "date": "2026-10-31",
     "errors": 0,
     "input_tokens": 136280,
-    "output_tokens": 19669
+    "output_tokens": 19669,
+    "requests": 0
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -798,5 +799,5 @@
     "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
     "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html"
   ],
-  "schema_version": 2
+  "schema_version": 3
 }
