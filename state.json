@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 62,
+        "calls": 63,
         "errors": 0,
-        "requests": 62
+        "requests": 63
       }
     },
-    "calls": 62,
+    "calls": 63,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 389552,
-    "output_tokens": 43500,
-    "requests": 62
+    "input_tokens": 395732,
+    "output_tokens": 44065,
+    "requests": 63
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -385,6 +385,33 @@
       "title": "西汉姆联以色列球员所罗门遭亲巴勒斯坦人士辱骂为“婴儿杀手”",
       "updated_at": "2026-10-31T00:25:39.680813+00:00"
     },
+    "85b871108469": {
+      "article_title": "Angulo dodges VAR red after HAIR pull on Coventry’s Sakamoto as Sunderland sink further into relegation mire with loss",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d6308e4bb528909a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 48
+        }
+      ],
+      "created_at": "2026-10-31T17:03:27.866340+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "a0fb52aa7c9f0200",
+      "event_id": "85b871108469",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40869821/nilson-angulo-escapes-red-card-hair-pull-sunderland-coventry",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 48,
+      "title": "安古洛拽头发逃红牌，桑德兰保级泥潭更深",
+      "updated_at": "2026-10-31T17:03:29.274412+00:00"
+    },
     "8e90eaab6e7a": {
       "article_title": "Kane beat Mbappe to Ballon d'Or by just 28 points",
       "attempts": 1,
@@ -631,9 +658,29 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:02:22.878431+00:00",
+  "last_scan_at": "2026-10-31T17:03:22.661641+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "SUNDERLAND star Nilson Angulo avoided a red card despite pulling Coventry man Tatsuhiro Sakamoto's hair on Saturday afte",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T17:03:22.664507+00:00",
+      "link": "https://www.thesun.co.uk/sport/40869821/nilson-angulo-escapes-red-card-hair-pull-sunderland-coventry/",
+      "published": "2026-10-31T17:02:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Angulo dodges VAR red after HAIR pull on Coventry’s Sakamoto as Sunderland sink further into relegation mire with loss"
+    },
+    {
+      "desc": "Brighton stun Man City at the Etihad. Haaland kept quiet, and just how good are Hurzeler’s side? The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T17:03:22.664555+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPR0NNQXNMWDM1M0RndTlpNkgwQ0FQdzNicnVWTGJzLS1OQnZOSXo2YVNBLU5NZnBORkdqXzN4X2tBcGI0SG5leXNIRC1oMTVlZWhvOGhIZW54bWIzdVpVSVNLNzMxS0VEZmxpbjZWY0dhcXZoWTN0cG5hWEd1UTl4d0RLWUx4emhHcWQtbm5DVTRfUGhsRklxUGRrbldfeVZVWlE?oc=5",
+      "published": "2026-10-31T16:55:36+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Brighton stun Man City at the Etihad. Haaland kept quiet, and just how good are Hurzeler’s side? - The New York Times"
+    },
     {
       "desc": "MICHAEL CARRICK is confident he will remain in charge of Manchester United on Tuesday despite his nightmare run continui",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -793,6 +840,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Kane beat Mbappe to Ballon d'Or by just 28 points"
+    },
+    {
+      "desc": "Chelsea manager Xabi Alonso praises the performance and response of winger Estevao in his side's 2-0 win over struggling",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T17:03:22.664792+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cr5ynzdpjnn9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T15:20:53+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Alonso praises Estevao response to lack of gametime"
     },
     {
       "desc": "Manchester United manager Michael Carrick takes issue with his side's defending, particularly for the first goal they co",
@@ -2100,33 +2157,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Aston Villa to SUE Jamie Carragher over ‘shut the f*** up’ comments about Man Utd as 37-word statement released"
-    },
-    {
-      "desc": "Chelsea vs Man Utd Referee: Bankes Reported, TNT 12.30pm Kick-off The False 9",
-      "first_seen": "2026-10-31T00:05:36.321331+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3?oc=5",
-      "published": "2026-10-30T23:39:46+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Chelsea vs Man Utd Referee: Bankes Reported, TNT 12.30pm Kick-off - The False 9"
-    },
-    {
-      "desc": "Manchester City vs Manchester United Box Score - September 13, 2026 - The Athletic The New York Times",
-      "first_seen": "2026-10-31T00:30:56.493881+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONUNSV0tIQ21HVjNNLTc1UWpwcVpHTzhkZ3R6c01MS1lQX0t0T1o0NUlyXzNpVFRmTWdlQlhKemw0NjZ0enA1SnRnaERCLWwzQTFiTE9pNGxJdFVoRXc5aXZwc1dYRWRwTXJUX0dTNE5sN1BwLUhSeVBSa29PdWJhY25FalR4N2x0aWpUam5vOHNHb1hHSDBGa2dPQk1iR2xXOG9N?oc=5",
-      "published": "2026-10-30T23:36:38+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Manchester City vs Manchester United Box Score - September 13, 2026 - The Athletic - The New York Times"
-    },
-    {
-      "desc": "Who are the best replacements for Joao Pedro in FPL? Premier League",
-      "first_seen": "2026-10-31T00:10:38.622167+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSkJZbTJvaFMzSkpPX3pNYnR2Y0VEaExxb1hVMUhucnk5MHAtQ1RtVHVKd2oydGhNZDBZTzg5TDdPa0lwUnJLRFUtY1R5Q2JpbXVJS0h5UU5WQkZSQ1ZFMXFfaFg1T2dOT2lPdnpOTVo0V1hLVjhLY3FZaHRWeHdIZlV2R1VQcUtBQzZzUUhJa0xVYVp0My1nV3F3TTRpdw?oc=5",
-      "published": "2026-10-30T23:34:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who are the best replacements for Joao Pedro in FPL? - Premier League"
     }
   ],
   "processed_urls": [
@@ -2166,7 +2196,8 @@
     "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea",
     "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw",
     "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches",
-    "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city"
+    "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city",
+    "https://www.thesun.co.uk/sport/40869821/nilson-angulo-escapes-red-card-hair-pull-sunderland-coventry"
   ],
   "schema_version": 3
 }
