@@ -2,15 +2,15 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 109256,
-    "output_tokens": 16260
+    "input_tokens": 114532,
+    "output_tokens": 16884
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -111,6 +111,15 @@
   "last_morning_report_date": "2026-10-31",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Manchester City FC",
+      "first_seen": "2026-10-31T01:35:35.103896+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-10-31T00:25:32+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
     {
       "desc": "Television pundit Carragher believes Emery would be the ideal manager of Manchester United if they decided to sack Micha",
       "first_seen": "2026-10-31T00:05:36.321272+00:00",
