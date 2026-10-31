@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 111,
+        "calls": 112,
         "errors": 0,
-        "requests": 111
+        "requests": 112
       }
     },
-    "calls": 111,
+    "calls": 112,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 693174,
-    "output_tokens": 72453,
-    "requests": 111
+    "input_tokens": 699341,
+    "output_tokens": 73145,
+    "requests": 112
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -766,9 +766,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:51:23.888358+00:00",
+  "last_scan_at": "2026-10-31T17:52:26.778482+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Fantasy Premier League, Official Fantasy Football Game of the Premier League Fantasy Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T17:52:26.780320+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwNXRxQ3NWV0JROG5RV3AxLTNuTEw3RGMwTHRWRks3QTNZQk1HTVNOc2xDSkN5dWJKZjVFN1dwTWRxT2M2cGZKMlQ2UjRXWjhkV09WTXZ5Z2lSakdQZVZIMThwMXU0aFZRMGc?oc=5",
+      "published": "2026-10-31T17:51:15+00:00",
+      "publisher": "https://fantasy.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fantasy Premier League, Official Fantasy Football Game of the Premier League - Fantasy Premier League"
+    },
     {
       "desc": "JEAN-PHILLIPE MATETA saw a red card after a horror tackle that took out TWO Spurs players. The Crystal Palace forward wa",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2258,16 +2268,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Meet the Premier League's most-wanted boss on the rise: Fabian Hurzeler, 33, has Brighton flying after eventful summer - including SECOND ha"
-    },
-    {
-      "desc": "MANCHESTER CITY welcome Brighton to the Etihad for the second time in four days, with both sides looking to bounce back ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T07:05:27.120628+00:00",
-      "link": "https://www.thesun.co.uk/sport/40844914/man-city-brighton-predictions-etihad/",
-      "published": "2026-10-31T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City vs Brighton | Premier League predictions, preview and free bets for Etihad clash"
     }
   ],
   "processed_urls": [
