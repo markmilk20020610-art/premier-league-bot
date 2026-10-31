@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 152,
+        "calls": 153,
         "errors": 0,
-        "requests": 152
+        "requests": 153
       }
     },
-    "calls": 152,
+    "calls": 153,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 939956,
-    "output_tokens": 97603,
-    "requests": 152
+    "input_tokens": 945958,
+    "output_tokens": 98184,
+    "requests": 153
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -766,7 +766,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T18:32:33.111514+00:00",
+  "last_scan_at": "2026-10-31T18:33:29.206691+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1760,6 +1760,16 @@
       "title": "AllRed - Liverpool FC"
     },
     {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T18:33:29.210355+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-10-31T11:46:02+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
+    {
       "desc": "Xabi Alonso explains Jordan Henderson absence against Man United | News | Official Site Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-10-31T16:21:22.902166+00:00",
@@ -2258,16 +2268,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Watch City's Under-18 clash against Burnley live on CITY+ today - Manchester City FC"
-    },
-    {
-      "desc": "How Newton Heath’s FA Cup debut ended in disqualification United In Focus",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T14:15:31.988828+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa0E2UkdOUUNZNXZEY1ZPSVk5VmE2djJacl9uVmZzSnQ2R3c1NEhvZnZIVWVaSGFRVklOYVNyZ3o2a0ZLLU9RRWg4V3BrSUwzQUxKcGhFTl9FYnFqM3RURXBQSXpMQTJSdDlhdlNkOTNGdEpQbFdxU0ZGZnU2LVh5dXR0Q05YbFMxTDV6YWpDVkswT2Z6UjNET3pDcWlGQzQ?oc=5",
-      "published": "2026-10-31T08:00:00+00:00",
-      "publisher": "https://www.unitedinfocus.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "How Newton Heath’s FA Cup debut ended in disqualification - United In Focus"
     }
   ],
   "processed_urls": [
