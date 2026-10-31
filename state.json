@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 150792,
-    "output_tokens": 17058,
-    "requests": 24
+    "input_tokens": 156976,
+    "output_tokens": 17852,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -577,9 +577,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:24:24.612441+00:00",
+  "last_scan_at": "2026-10-31T16:25:34.443863+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "The best training snaps ahead of Anfield Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:25:34.447319+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQ09lRV9uMmNWcG5QUGRnU1U2U1otZ1dLZVhIc01KNEVCbjZabTV5OVQxZV9hT2pPOVItVUFGNUMzRGlNN25lbXZacWo4aWk5a2lnSW90cF9sbElRQjM4Y0dadTNmMjhjNW9faFljMHM0ZHd5UWRSY3k3d2NLSkVYMXpTbzEyTnRycEE?oc=5",
+      "published": "2026-10-31T16:20:20+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "The best training snaps ahead of Anfield - Arsenal.com"
+    },
     {
       "desc": "PETER SCHMEICHEL slammed Lisandro Martinez after Manchester United's loss to Chelsea. The Argentine defender was given t",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2056,15 +2066,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Villa to sue Carragher over 'unacceptable insults'"
-    },
-    {
-      "desc": "IT HAS allegedly been a week of “hard truths” at Manchester United. Six difficult days of airing out tensions, crunch ta",
-      "first_seen": "2026-10-31T00:05:36.321501+00:00",
-      "link": "https://www.thesun.co.uk/sport/40865039/man-utd-michael-carrick-jason-wilcox-omar-berrada/",
-      "published": "2026-10-30T22:56:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘It’s not always rosy’ – Michael Carrick reveals how talks with Wilcox and Berrada went amid horror Man Utd run"
     }
   ],
   "processed_urls": [
