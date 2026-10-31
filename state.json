@@ -2,15 +2,15 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 19828,
-    "output_tokens": 2783
+    "input_tokens": 24961,
+    "output_tokens": 3372
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -41,6 +41,19 @@
       "telegram_message_id": 19,
       "title": "切尔西vs曼联焦点战主裁判敲定：班克斯执法，TNT午间12:30开球",
       "updated_at": "2026-10-31T00:20:51.948581+00:00"
+    },
+    "51d986cb8977": {
+      "attempts": 1,
+      "created_at": "2026-10-31T00:25:39.058557+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e04952b39ad3f689",
+      "event_id": "51d986cb8977",
+      "evidence_status": "SINGLE_SOURCE",
+      "evidence_url": "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
+      "last_error": "",
+      "telegram_message_id": 20,
+      "title": "西汉姆联以色列球员所罗门遭亲巴勒斯坦人士辱骂为“婴儿杀手”",
+      "updated_at": "2026-10-31T00:25:39.680813+00:00"
     },
     "9016883d39b5": {
       "attempts": 1,
@@ -700,7 +713,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
     "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
     "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html",
-    "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3"
+    "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
+    "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/"
   ],
   "schema_version": 2
 }
