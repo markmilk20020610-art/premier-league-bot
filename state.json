@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 105,
+        "calls": 106,
         "errors": 0,
-        "requests": 80
+        "requests": 81
       }
     },
-    "calls": 105,
+    "calls": 106,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 572898,
-    "output_tokens": 75244,
-    "requests": 80
+    "input_tokens": 579091,
+    "output_tokens": 75877,
+    "requests": 81
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -327,9 +327,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T12:35:28.820418+00:00",
+  "last_scan_at": "2026-10-31T12:40:42.839678+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "JOE COLE has singled out FOUR English players who could follow Harry Kane by winning the Ballon d'Or. The Chelsea legend",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T12:40:42.843119+00:00",
+      "link": "https://www.thesun.co.uk/sport/40867337/joe-cole-ballon-dor-kane-bellingham-palmer-rogers/",
+      "published": "2026-10-31T12:36:37+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Joe Cole names four England stars who could win Ballon d’Or after Harry Kane ‘opens the door’ with 2026 triumph"
+    },
     {
       "desc": "Fermín López decides to remain at Barcelona — Interia Sport UA.NEWS",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -629,6 +639,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Everything you need to know about FPL GW9 in 100 seconds - Premier League"
+    },
+    {
+      "desc": "Barcelona reach decision on selling Fermin Lopez to Man Utd – Fabrizio Romano TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T12:40:42.843698+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVTlPcDloZnVVcV9xZWZGOXVwLWd3NUJvSjZPS2Z6Rk5NbkU5clpPQmhSRGhteWVsQmFTV0czeWNuc1ZJb3ZxQmJTWjlDQ3Y2WEJNWnkybzY1YV9QOXhIV1FEdFRhX0xmTk9LSTFHQU1PZF9fMFpGOHhvcm5KMUpvYW9zN2h3cmJzLU1LTmNEalU3YzYwYzl2WW54ZkxvRE1VYnI0dnBqc1VmcDI4UXQ0Qk1B?oc=5",
+      "published": "2026-10-31T08:49:56+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Barcelona reach decision on selling Fermin Lopez to Man Utd – Fabrizio Romano - TEAMtalk"
     },
     {
       "desc": "Having gone winless in your first six games and conceded goals at a rate of almost two a game, there are worse ways to r",
