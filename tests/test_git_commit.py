@@ -91,16 +91,23 @@ class GitCommitTest(unittest.TestCase):
         self.assertIn("无变化", r.stdout)
 
     # ---------- 3. 远端冲突（两个 clone 都改 state.json）----------
-    def test_remote_conflict_keeps_local_state(self):
+    def test_remote_conflict_merges_instead_of_overwriting(self):
+        """冲突时两边都是「刚跑出来的真相」，必须语义合并，谁都不许整份覆盖谁。
+
+        V1.2 第六批之前的旧行为是 `git merge -X ours`：B 推送后 A 刚记下的
+        「已处理」全部消失 → 下一轮重复推送。现在要求两边取并集。
+        """
         write_state(self.a, ["https://a/conflict"])
         self.assertEqual(self.run_script(self.a).returncode, 0)
 
         write_state(self.b, ["https://b/conflict"])
         r = self.run_script(self.b)
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
-        # 冲突后应保留本地（B）状态，而不是被远端覆盖
         self.assertIn("merge", r.stdout.lower())
-        self.assertEqual(read_remote(self.remote), {"processed_urls": ["https://b/conflict"]})
+
+        remote = read_remote(self.remote)["processed_urls"]
+        self.assertIn("https://b/conflict", remote, "本地（B）刚记下的不能丢")
+        self.assertIn("https://a/conflict", remote, "远端（A）记下的也不能丢，否则重复推送")
 
     # ---------- 4. 推送失败必须非 0 ----------
     def test_push_failure_returns_nonzero(self):

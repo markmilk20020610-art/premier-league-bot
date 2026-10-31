@@ -22,8 +22,12 @@ RSS 矩阵（19 源，失败自动降级 Google News）
 | `evidence.py` | 证据核验：五种证据状态、独立来源计算、评级复核 |
 | `schema.py` | 模型输出严格校验 |
 | `state_store.py` | 原子持久化 + 投递状态机 + 崩溃恢复 |
+| `redact.py` | 凭证脱敏：日志 / 注解 / state 里的 Token 一律打码 |
 | `diagnose.py` | 只读诊断脚本 |
-| `scripts/commit_state.sh` | 只提交 state.json 的 Git 回写脚本 |
+| `scripts/commit_state.sh` | 只提交 state.json 的 Git 回写脚本（语义合并，不整份覆盖） |
+| `scripts/merge_state.py` | state.json 语义合并：按投递进度取优、URL 取并集、日期锁取更晚 |
+| `scripts/watchdog.py` | 心跳看门狗：扫描/早报静默停摆时让 Actions 自己报红 |
+| `scripts/check_no_cache.sh` | 仓库卫生守卫：禁止提交 `__pycache__` / `*.pyc` |
 | `scripts/smoke_run.py` | 本地端到端冒烟（不消耗任何额度） |
 
 ## 部署
@@ -32,11 +36,15 @@ RSS 矩阵（19 源，失败自动降级 Google News）
    `GEMINI_API_KEY` 可留空（Gemini 默认关闭）。
 2. 调度：
    - 突发扫描由 cron-job.org 每 10 分钟调用 `workflow_dispatch`（不传 mode 即走 scan）；
-   - 每日早报走 GitHub 自带 `cron: '0 22 * * *'`（= 北京时间 06:00）。
+   - 每日早报走 GitHub 自带 `cron: '0 22 * * *'`（= 北京时间 06:00，中国无夏令时，全年固定 UTC+8）；
+   - 心跳看门狗 `cron: '0 23 * * *'`（= 北京 07:00）：扫描停超 3 小时、或 08:00 后当天早报仍未发，Job 直接报红。
+   - ⚠️ 早报时间契约：`cron` 与 `bot.py` 的 `MORNING_TARGET_HOUR_CN` 必须同时改，
+     `tests/test_maintenance_v12.py` 会解析 workflow 并断言二者对应，改一半就测试失败。
 3. 手动触发：Actions → Run workflow
    - `mode=scan` 跑一轮扫描
    - `mode=morning` 跑早报，可勾 `force` 绕过「今日已发」锁
    - `mode=diagnose` 只读诊断
+   - `mode=watchdog` 手动跑一次心跳检查
 
 ## 模型策略
 

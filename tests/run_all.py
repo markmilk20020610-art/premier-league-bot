@@ -22,6 +22,7 @@ MODULES = [
     "tests.test_delivery_v12",
     "tests.test_batch4_v12",
     "tests.test_batch5_v12",
+    "tests.test_maintenance_v12",
     "tests.test_git_commit",
 ]
 FAST_SKIP = {"tests.test_git_commit"}

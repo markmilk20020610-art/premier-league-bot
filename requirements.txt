@@ -1,2 +1,23 @@
-google-genai
-requests
+# =============================================================================
+# 生产依赖清单（版本已锁定）
+#
+# 为什么必须写死版本号：
+#   1. 本项目是「无人值守跑在 GitHub Actions 上」的机器人，依赖一旦被上游
+#      悄悄升级（哪怕只是 patch），行为变化只有等出事才知道 —— 而那时
+#      推送已经发到群里了。锁定版本 = 让 CI 的行为可复现。
+#   2. 不锁版本时 pip 每次都可能装到不同版本，线上失败无法在本地重现。
+#   3. 升级必须是一次显式动作：改这里的版本号 → 跑完整测试 → 再合并。
+#
+# 升级流程：
+#   python -m pip install -U google-genai requests
+#   python tests/run_all.py            # 必须全绿
+#   python scripts/smoke_run.py        # 两个冒烟场景都要过
+#   然后把新版本号写回本文件。
+# =============================================================================
+
+# Gemini 官方 SDK。当前生产策略里 AI_GEMINI_ENABLED=false（DeepSeek 唯一启用），
+# 但 ai_provider.py 保留 Gemini 实现，缺包时会降级为 DISABLED 而非崩溃。
+google-genai==2.34.0
+
+# HTTP 客户端：RSS 抓取 + Telegram Bot API + DeepSeek API 全靠它。
+requests==2.34.2

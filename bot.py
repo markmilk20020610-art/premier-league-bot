@@ -1130,13 +1130,13 @@ def evaluate_with_gemini(raw_text, is_morning=False, state=None):
     你是一位严谨的体育新闻事实核验员，同时也是“越位情报局”的爆款内容导演与漫画编剧。
     你必须在两套完全不同的轨道间切换：常规新闻要做出爆款网感，一旦触及严肃红线，立刻切换为官方通稿风格。
 
-    【最新事实防错映射表（必须严格遵守）】
-    - 曼城: Pep Guardiola（瓜迪奥拉）。
-    - 切尔西: Enzo Maresca（马雷斯卡），所有权由 Clearlake Capital（清湖资本/埃格巴利 Eghbali）主导。
-    - 曼联: Rúben Amorim（阿莫林）。
-    - 利物浦: Arne Slot（斯洛特）。
-    - 阿森纳: Mikel Arteta（阿尔特塔）。
-    - 托特纳姆热刺: Ange Postecoglou（波斯特科格鲁）。
+    【人事信息铁律（最高优先级，V1.2 第六批起不再内置任何主帅/老板映射表）】
+    - 教练、老板、管理层、体育总监的姓名与其所属俱乐部，**只能来自下方素材原文**。
+    - 素材里没写谁执教，就一律不许写；素材里没写老板是谁，就一律不许写。
+    - 严禁凭你自己的训练记忆补写任何人事信息。换帅是英超最高频的变动，
+      任何写死的「最新主帅名单」都会在几周内变成错误事实，然后被当成官方口径发出去。
+    - 若你的记忆与素材冲突，无条件以素材为准；素材本身存疑（如单一来源的换帅传闻），
+      按 SINGLE_SOURCE 处理，只能写「有报道称 / 待官宣」。
 
     请根据以下 RSS 资讯核对最新事实：
     {raw_text}
@@ -1415,13 +1415,12 @@ def build_summary_prompt(pool_blob, stats_line, event_blob=""):
     你的任务不是播报单条突发，而是把过去 24 小时的英超情报做一次「复盘式汇总」，
     写成一篇可以直接发布的小红书笔记。
 
-    【事实防错映射表（必须严格遵守）】
-    - 曼城: Pep Guardiola（瓜迪奥拉）。
-    - 切尔西: Enzo Maresca（马雷斯卡），所有权由 Clearlake Capital（清湖资本/埃格巴利 Egbahli）主导。
-    - 曼联: Rúben Amorim（阿莫林）。
-    - 利物浦: Arne Slot（斯洛特）。
-    - 阿森纳: Mikel Arteta（阿尔特塔）。
-    - 托特纳姆热刺: Ange Postecoglou（波斯特科格鲁）。
+    【人事信息铁律（最高优先级，V1.2 第六批起不再内置任何主帅/老板映射表）】
+    - 教练、老板、管理层、体育总监的姓名与其所属俱乐部，**只能来自下方已验证事件清单与情报池原文**。
+    - 清单和池子里没写谁执教，就一律不许写；没写老板是谁，就一律不许写。
+    - 严禁凭你自己的训练记忆补写任何人事信息 —— 早报是「复盘」，不是「知识问答」，
+      读者会默认这里的每一句都是当期真实发生的事。
+    - 若你的记忆与素材冲突，无条件以素材为准。
 
     【本次素材统计】
     {stats_line}
@@ -1837,6 +1836,28 @@ def _build_candidate_blob(candidates):
     return "\n".join(lines), used
 
 
+# 早报的目标时间：北京时间每天 06:00（V1.2 第六批）。
+# GitHub 的 cron 用的是 UTC，`0 22 * * *` = 北京次日 06:00，二者必须严格对应——
+# 这条对应关系写进常量并加了测试，避免以后有人「顺手」改 cron 而没人发现。
+MORNING_TARGET_HOUR_CN = 6
+MORNING_TARGET_MINUTE_CN = 0
+# 允许的调度漂移（分钟）。GitHub 自带 schedule 高峰期会延迟 5~15 分钟，
+# 超出这个范围就要在 Actions 上显式告警，而不是悄悄晚发。
+MORNING_SCHEDULE_TOLERANCE_MIN = 25
+
+
+def _cn_now():
+    return datetime.datetime.now(CN_TZ)
+
+
+def _morning_offset_minutes(now_cn=None):
+    """当前北京时间距离 06:00 差多少分钟（正数=晚于目标）。"""
+    now_cn = now_cn or _cn_now()
+    target = now_cn.replace(hour=MORNING_TARGET_HOUR_CN, minute=MORNING_TARGET_MINUTE_CN,
+                            second=0, microsecond=0)
+    return (now_cn - target).total_seconds() / 60.0
+
+
 # ==================== 主执行流 ====================
 def _send_low_info_morning(state, today_str, start_time, meta, reason):
     """低情报量报告（V1.2 任务 7）。
@@ -1897,7 +1918,18 @@ def run_morning_mode(state, start_time):
     """
     today_str = _cn_date_str()
     last_sent = state.get("last_morning_report_date") or ""
-    print(f"[INFO] 早报模式启动 | 北京时间 {today_str} | 上次发送 {last_sent or '无'} | FORCE_SUMMARY={FORCE_SUMMARY}")
+    now_cn = _cn_now()
+    offset = _morning_offset_minutes(now_cn)
+    print(f"[INFO] 早报模式启动 | 北京时间 {today_str} {now_cn.strftime('%H:%M')} "
+          f"| 目标 {MORNING_TARGET_HOUR_CN:02d}:{MORNING_TARGET_MINUTE_CN:02d} "
+          f"| 偏差 {offset:+.0f} 分钟 | 上次发送 {last_sent or '无'} | FORCE_SUMMARY={FORCE_SUMMARY}")
+
+    # V1.2 第六批：早报必须在北京时间 06:00 前后发出。GitHub 自带 schedule
+    # 高峰期会延迟 5~15 分钟，这段漂移我们改不了，但**必须让它可见**——
+    # 否则「今天 07:40 才收到早报」永远只能靠人肉发现。
+    if abs(offset) > MORNING_SCHEDULE_TOLERANCE_MIN and not FORCE_SUMMARY:
+        print(f"::warning title=Morning Off-Schedule::早报在 {now_cn.strftime('%H:%M')}（北京）触发，"
+              f"偏离目标 06:00 达 {offset:+.0f} 分钟（容忍 {MORNING_SCHEDULE_TOLERANCE_MIN} 分钟）")
 
     if last_sent == today_str and not FORCE_SUMMARY:
         _skip(
@@ -2150,6 +2182,9 @@ def run_scan_mode(state, start_time):
         print(f"::warning title=Partial Source Failure::"
               f"{health['failed']}/{health['total']} 个源抓取失败（其余正常）")
 
+    # 心跳时间戳（V1.2 第六批）：看门狗靠它判断「扫描是不是已经停了」。
+    state["last_scan_at"] = _now_iso()
+
     # 顺手把候选写进 24 小时新闻池，供次日早报做汇总原料。
     # 这一步即使本轮不推送也要做——旧版的问题正是「没推的新闻就彻底消失了」，
     # 早报自然无米下锅。
@@ -2178,6 +2213,10 @@ def run_scan_mode(state, start_time):
     if not candidates:
         # 没有新文章就不调用 AI —— 这是省额度最关键的一条
         _skip("NO_NEW_ARTICLE", "本轮没有未处理过的新文章，未调用任何 AI 接口")
+        try:
+            save_state(state)       # 心跳时间戳要落盘，否则看门狗会误判扫描已停
+        except store.StateError as e:
+            print(f"[WARN] 心跳落盘失败：{e}")
         log_telemetry({
             "start_time": start_time, "end_time": _now_iso(), "run_mode": "scan",
             "status": "SKIPPED_NO_NEW_ARTICLE", "discovered_count": discovered_count,
