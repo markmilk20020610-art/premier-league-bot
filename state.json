@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 83,
+        "calls": 84,
         "errors": 0,
-        "requests": 58
+        "requests": 59
       }
     },
-    "calls": 83,
+    "calls": 84,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 435211,
-    "output_tokens": 60347,
-    "requests": 58
+    "input_tokens": 441116,
+    "output_tokens": 61283,
+    "requests": 59
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -246,9 +246,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T10:45:27.767169+00:00",
+  "last_scan_at": "2026-10-31T10:50:27.876894+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Fantasy Show: Experts reveal GW9 teams Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T10:50:27.878473+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5BanRyZzhTbVVzS1JsYUNncjRZcWxHUU50UEJ2Q2pSY1R3TldaVTBKOHpEeEJobkZpdWY0cWtYQS1GVVhlMThVYzV4dEJpVVNvUWd5ZFdyUHEzZw?oc=5",
+      "published": "2026-10-31T10:44:57+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fantasy Show: Experts reveal GW9 teams - Premier League"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
