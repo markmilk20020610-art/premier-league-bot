@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 25427,
-    "output_tokens": 2768,
-    "requests": 4
+    "input_tokens": 31832,
+    "output_tokens": 3276,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -523,7 +523,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:04:20.873491+00:00",
+  "last_scan_at": "2026-10-31T16:05:29.649040+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -815,6 +815,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Little-known MLS rule means Lionel Messi will NOT serve ban for five yellow cards"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:05:29.652026+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-10-31T13:22:45+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "Arsenal Direct",
@@ -1996,15 +2006,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘That’s a new one’ – National League fixture postponed due to schedule clash with Bonfire Night"
-    },
-    {
-      "desc": "The top stories and transfer rumours from Saturday's newspapers...",
-      "first_seen": "2026-10-31T00:05:36.321636+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13605928/lisandro-martinez-wants-to-leave-man-utd-in-the-summer-with-atletico-madrid-interested-paper-talk",
-      "published": "2026-10-30T22:17:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Papers: Martinez seeking summer Man Utd departure"
     }
   ],
   "processed_urls": [
