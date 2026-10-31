@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 347,
+        "calls": 348,
         "errors": 0,
-        "requests": 347
+        "requests": 348
       }
     },
-    "calls": 347,
+    "calls": 348,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2095809,
-    "output_tokens": 219626,
-    "requests": 347
+    "input_tokens": 2101833,
+    "output_tokens": 220154,
+    "requests": 348
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -520,6 +520,33 @@
       "title": "布伦特福德2-0诺丁汉森林：格拉斯纳新东家五场四败，帅位压力陡增",
       "updated_at": "2026-10-31T17:21:28.754219+00:00"
     },
+    "77823818a9b0": {
+      "article_title": "Erling Haaland’s dad breaks silence on Man City guilty verdict and speaks out over son’s future amid relegation threat",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "6b224e2318dc51b2",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 56
+        }
+      ],
+      "created_at": "2026-10-31T21:48:29.017773+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "9e1ef5eff92b2601",
+      "event_id": "77823818a9b0",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40871591/haaland-dad-silence-man-city-verdict-erling-future",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 56,
+      "title": "哈兰德父亲首度回应曼城财务违规判决与儿子未来",
+      "updated_at": "2026-10-31T21:48:29.792545+00:00"
+    },
     "7df17ef8b703": {
       "article_title": "Jude Bellingham’s brother Jobe has goal vs Bayern disallowed as ex-Chelsea star boots goalie in the FACE",
       "attempts": 1,
@@ -847,7 +874,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T21:47:23.811325+00:00",
+  "last_scan_at": "2026-10-31T21:48:24.381574+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -859,6 +886,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Harry Kane shows off Ballon d’Or trophy to adoring Bayern fans before England captain misses penalty in derby draw"
+    },
+    {
+      "desc": "Liverpool vs Arsenal Head to Head: No Anfield League Win Since 2012/13 The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T21:48:24.385072+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9jcmJXMUpoZUNidFk2VlVWNHRLYW5VRFZGYnlsdXpfRGRiNm5CV0lRVGZuMUhVWDBmMDBhWEpNTzc0b24xQVYxVHFPdUpvQW03bHNzSXNVUGo5N1hSVnpPbldrczdIc2c4bjFsbENPWTBnOHRudkNN?oc=5",
+      "published": "2026-10-31T21:43:27+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Liverpool vs Arsenal Head to Head: No Anfield League Win Since 2012/13 - The False 9"
     },
     {
       "desc": "Nottingham Forest manager Oliver Glasner launched into an extraordinary rant after his team's 2-0 defeat at Brentford on",
@@ -2339,16 +2376,6 @@
       "publisher": "https://www.espn.com",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Transfer rumors, news: Man United to replace Fernandes with Fermin? - ESPN"
-    },
-    {
-      "desc": "You can still pick an FPL Challenge team for GW9 - CLICK HERE! Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T12:55:26.145085+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1PQV9yQmxDOXg0T25QajZ6cEd0T0pPdjc4UE83cjBoQXdieTBkRTR2ejZTRVlDRjc3b1FFaFI3Nk1qS0c3dXQ3cUFMZ3prdFZWNkpjYlhrb3I?oc=5",
-      "published": "2026-10-31T11:33:22+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "You can still pick an FPL Challenge team for GW9 - CLICK HERE! - Premier League"
     }
   ],
   "processed_urls": [
@@ -2396,7 +2423,8 @@
     "https://www.thesun.co.uk/sport/40871116/jean-philippe-mateta-red-tottenham-horror-challenge",
     "https://www.thesun.co.uk/sport/40871382/jude-bellingham-jobe-bayern-dortmund-carney-chukwuemeka",
     "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o",
-    "https://www.skysports.com/football/news/12040/13606410/oliver-glasner-nottingham-forest-head-coach-reveals-anger-desire-to-change-growing-pattern-at-club-amid-poor-start-to-season"
+    "https://www.skysports.com/football/news/12040/13606410/oliver-glasner-nottingham-forest-head-coach-reveals-anger-desire-to-change-growing-pattern-at-club-amid-poor-start-to-season",
+    "https://www.thesun.co.uk/sport/40871591/haaland-dad-silence-man-city-verdict-erling-future"
   ],
   "schema_version": 3
 }
