@@ -82,11 +82,29 @@ jobs:
       (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != 'morning' && github.event.inputs.mode != 'diagnose' && github.event.inputs.mode != 'watchdog')
     permissions:
       contents: write   # 仅本 job 需要回写 state.json
+      actions: write    # 需要它来 workflow_dispatch 拉起 focus.yml（见下一步）
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
       - name: Checkout repository
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   # v4
+
+      # ==================== 焦点战监控的「保姆」 ====================
+      # focus.yml 自己会连跑 5 小时 50 分，但总得有人把它叫起来。
+      # 依赖人工点按钮 / 让用户去 cron-job.org 加任务，都会因为「人忘了」而整晚失效。
+      # 本 workflow 已经被 cron-job.org 每分钟叫一次，顺手检查 focus 是否还有
+      # 「一个在跑 + 一个在等」，缺了就补一个 —— 用户零操作。
+      #
+      # 权限说明：workflow_dispatch 是 GitHub 明文规定的例外，用 GITHUB_TOKEN
+      # 触发的 workflow_dispatch 会真的创建新 run（其它事件不会，那是防递归）。
+      # 前提是 job 拿到 actions: write。
+      - name: Keep focus watch alive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        # 纯标准库，不依赖 requirements.txt，所以放在装依赖之前也能跑；
+        # 用 python3 而不是 python —— 后者在 ubuntu-latest 上不保证存在。
+        run: python3 scripts/ensure_focus_running.py
 
       - name: Set up Python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5

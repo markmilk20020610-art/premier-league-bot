@@ -30,6 +30,7 @@ MODULES = [
     "tests.test_pl_api",
     "tests.test_competitor_watch",
     "tests.test_focus_tick",
+    "tests.test_focus_keeper",
     "tests.test_git_commit",
 ]
 FAST_SKIP = {"tests.test_git_commit"}
