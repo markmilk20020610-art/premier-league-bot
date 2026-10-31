@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 146,
+        "calls": 147,
         "errors": 0,
-        "requests": 121
+        "requests": 122
       }
     },
-    "calls": 146,
+    "calls": 147,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 818175,
-    "output_tokens": 99170,
-    "requests": 121
+    "input_tokens": 824401,
+    "output_tokens": 99648,
+    "requests": 122
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -381,9 +381,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T13:54:27.941742+00:00",
+  "last_scan_at": "2026-10-31T13:55:24.748238+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Jamie Carragher apologises for \"clumsy and wrong\" language when linking manager Unai Emery with becoming Manchester Unit",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T13:55:24.750882+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqj6jp63k87zo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T13:51:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Carragher apologises to Villa for 'wrong' language"
+    },
     {
       "desc": "MANCHESTER UNITED target Julian Nagelsmann might not be available for much longer following a reported approach from Juv",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1816,15 +1826,6 @@
       "publisher": "https://sempremilan.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano: Defender an ‘absolute priority’ for Milan whilst Cardinale continues Endrick ‘obsession’ - SempreMilan"
-    },
-    {
-      "desc": "Scarves | Official Man City Store Man City Shop",
-      "first_seen": "2026-10-31T00:05:36.322492+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84SUhyd3VseVk0c1hDZDlxeDE0NGNLeDFQZU9RVDhocmZLTXU4RFV1WFRNMGY3c2huV0Viakktb0xPazlIbWxrVmtYVWk0dEVUMTBMSzlZeV82ZHZ0dHo1alUtWTZhbVlnRi1iTmo3b2RUNy1kckd6czZ2dw?oc=5",
-      "published": "2026-10-30T18:34:01+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Scarves | Official Man City Store - Man City Shop"
     }
   ],
   "processed_urls": [
