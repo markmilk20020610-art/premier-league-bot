@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 50815,
-    "output_tokens": 5040,
-    "requests": 8
+    "input_tokens": 56853,
+    "output_tokens": 5682,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -86,6 +86,33 @@
       "telegram_message_id": 27,
       "title": "切尔西vs曼联、利物浦vs阿森纳焦点战前瞻与投注情报",
       "updated_at": "2026-10-31T08:45:38.192338+00:00"
+    },
+    "0f14991e7d49": {
+      "article_title": "‘Absolute disgrace’ – Peter Schmeichel savages Martinez over Chelsea red card as Man Utd legend gasps ‘I have no words’",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "4a59dda46717da70",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 44
+        }
+      ],
+      "created_at": "2026-10-31T16:09:32.373355+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "de1a6a40bad7f7f3",
+      "event_id": "0f14991e7d49",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 44,
+      "title": "舒梅切尔怒斥马丁内斯红牌：绝对耻辱",
+      "updated_at": "2026-10-31T16:09:33.137204+00:00"
     },
     "107c7f016595": {
       "attempts": 1,
@@ -523,9 +550,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:08:26.003963+00:00",
+  "last_scan_at": "2026-10-31T16:09:26.794936+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "PETER SCHMEICHEL slammed Lisandro Martinez after Manchester United's loss to Chelsea. The Argentine defender was given t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T16:09:26.798478+00:00",
+      "link": "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea/",
+      "published": "2026-10-31T16:08:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Absolute disgrace’ – Peter Schmeichel savages Martinez over Chelsea red card as Man Utd legend gasps ‘I have no words’"
+    },
     {
       "desc": "IAN HERBERT AT STAMFORD BRIDGE: For a time, there seemed to be hope but it was crushed by the same fecklessness and mind",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -1997,15 +2034,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "'Every weekend!' - Lawson fumes at Verstappen as pair clash during P2!"
-    },
-    {
-      "desc": "NON-LEAGUE club Gateshead have been forced to postpone a National League game due to a scheduling conflict. Gateshead, w",
-      "first_seen": "2026-10-31T00:05:36.321617+00:00",
-      "link": "https://www.thesun.co.uk/sport/40864366/national-league-match-postponed-bonfire-night-gateshead-tamworth/",
-      "published": "2026-10-30T22:18:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘That’s a new one’ – National League fixture postponed due to schedule clash with Bonfire Night"
     }
   ],
   "processed_urls": [
@@ -2041,7 +2069,8 @@
     "https://www.thesun.co.uk/sport/40868315/man-utd-fans-chelsea-michael-carrick-lisandro-martinez",
     "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF",
-    "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo"
+    "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo",
+    "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea"
   ],
   "schema_version": 3
 }
