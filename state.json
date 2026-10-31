@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 473,
+        "calls": 474,
         "errors": 0,
-        "requests": 473
+        "requests": 474
       }
     },
-    "calls": 473,
+    "calls": 474,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2874062,
-    "output_tokens": 309315,
-    "requests": 473
+    "input_tokens": 2880793,
+    "output_tokens": 310065,
+    "requests": 474
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T23:53:20.857428+00:00",
+  "last_scan_at": "2026-10-31T23:54:25.773966+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Manchester United's current tally of nine points from seven games would not even get them 30 points if it was continued ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T23:54:25.777712+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c8g47wl06vkqo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T23:52:28+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Are Manchester United really at risk of a relegation scrap?"
+    },
     {
       "desc": "Clubs pay Remembrance Day tributes Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2420,16 +2430,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Chelsea vs Manchester United - Premier League: Estevao and Matheus Cunha have goals ruled out for offside in a lively first half - with Red "
-    },
-    {
-      "desc": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T17:13:18.816571+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw?oc=5",
-      "published": "2026-10-31T13:34:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times"
     }
   ],
   "processed_urls": [
