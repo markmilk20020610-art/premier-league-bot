@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 98,
+        "calls": 99,
         "errors": 0,
-        "requests": 73
+        "requests": 74
       }
     },
-    "calls": 98,
+    "calls": 99,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 527333,
-    "output_tokens": 70755,
-    "requests": 73
+    "input_tokens": 533563,
+    "output_tokens": 71408,
+    "requests": 74
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -300,9 +300,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T12:00:46.718855+00:00",
+  "last_scan_at": "2026-10-31T12:05:31.169818+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "NEWCASTLE legend and BBC pundit Alan Shearer has spilled the beans on a job he turned down after getting relegated with ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T12:05:31.172260+00:00",
+      "link": "https://www.thesun.co.uk/sport/40867021/alan-shearer-newcastle-manager-job-cardiff-city-bbc/",
+      "published": "2026-10-31T12:02:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Alan Shearer reveals he turned down Championship manager job before becoming BBC pundit on MOTD"
+    },
     {
       "desc": "THIS Sunday is not so super with just one Premier League fixture scheduled. That said, it is a big one as champions Arse",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -342,6 +352,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why is Cole Palmer not suspended for Chelsea vs Man Utd?"
+    },
+    {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T12:05:31.172355+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUU1ScFBFTkFIZzV0RjVOOTRRaG4zdVpHU0VEZVN5Nm9lcFEzVmdjbjg4Nm9rRUNvTnlXY0ZvMFF1a3Jab29zeWxhcm9kVE02eGlsQml2dVAxY0FzMDFHcURsdlNJdk1FaUg0MmdMdTZPa3Vib0JaZkoxb05aLTI1UG9TLTlSTDB5Y24xdTB4U19Rbm9lVUJjQkkwMkVON1E?oc=5",
+      "published": "2026-10-31T11:07:11+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
     },
     {
       "desc": "Well Done, FA: Football Is Finally Safe Gunners Town",
