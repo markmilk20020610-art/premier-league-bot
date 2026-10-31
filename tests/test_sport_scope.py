@@ -192,6 +192,64 @@ class TestFeedRegistry(unittest.TestCase):
         kept = bot._filter_items_by_sport(items, BBC_FEED)
         self.assertEqual(len(kept), 1, "已核实为足球专属的源不做逐条分类")
 
+    # ---- V2.0 §2.4：每个源必须带可追溯的实测证据 ----
+    def test_every_source_declares_verification_status(self):
+        """不允许「登记了但没人测过」的源存在。"""
+        for f in feeds.FEEDS:
+            self.assertIn(
+                f["verification_status"], feeds.VALID_VERIFICATION,
+                f"{f['source_id']} 的 verification_status 不在合法枚举内")
+
+    def test_verified_source_must_carry_date_and_evidence(self):
+        """声称测过就必须留下日期与当时的实测状态串，否则等于没测。"""
+        for f in feeds.FEEDS:
+            if f["verification_status"] == feeds.UNVERIFIED:
+                continue
+            self.assertRegex(
+                str(f["verified_at"]), r"^\d{4}-\d{2}-\d{2}$",
+                f"{f['source_id']} 缺少合法的 verified_at")
+            self.assertTrue(
+                str(f["verification_evidence"]).strip(),
+                f"{f['source_id']} 缺少 verification_evidence")
+
+    def test_unverified_source_cannot_be_enabled(self):
+        """未实测的源不得进入生产采集——白名单必须是「证明可用」而不是「没人反对」。"""
+        for f in feeds.FEEDS:
+            if f["verification_status"] == feeds.UNVERIFIED:
+                self.assertFalse(
+                    f["enabled"],
+                    f"{f['source_id']} 从未实测却 enabled=True")
+
+    def test_blocked_and_empty_sources_are_disabled(self):
+        for f in feeds.FEEDS:
+            if f["verification_status"] in (feeds.BLOCKED, feeds.DEGRADED_EMPTY):
+                self.assertFalse(
+                    f["enabled"],
+                    f"{f['source_id']} 实测不可用（{f['verification_status']}）却仍开启")
+
+    def test_rss_feeds_only_contains_usable_sources(self):
+        """采集列表里不允许出现「不可用」状态的源。"""
+        for url in bot.RSS_FEEDS:
+            self.assertIn(
+                feeds.verification_of(url), feeds.USABLE_VERIFICATION,
+                f"{url} 状态不可用却仍在采集列表")
+            self.assertTrue(feeds.is_usable(url), f"{url} 未通过可用性判定")
+
+    def test_validate_registry_catches_unverified_enabled(self):
+        """自检必须真的能拦住问题，而不是永远返回空列表。"""
+        bad = dict(feeds.FEEDS[0])
+        bad["verification_status"] = feeds.UNVERIFIED
+        bad["enabled"] = True
+        orig = feeds.FEEDS
+        try:
+            feeds.FEEDS = (bad,) + tuple(orig[1:])
+            problems = feeds.validate_registry()
+        finally:
+            feeds.FEEDS = orig
+        self.assertTrue(
+            any("从未实测" in p for p in problems),
+            f"自检未拦住 unverified+enabled：{problems}")
+
 
 # ==================== C. 新闻级过滤 ====================
 class TestNewsLevelFilter(unittest.TestCase):

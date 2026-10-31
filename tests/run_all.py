@@ -24,6 +24,10 @@ MODULES = [
     "tests.test_batch5_v12",
     "tests.test_maintenance_v12",
     "tests.test_sport_scope",
+    "tests.test_match_calendar",
+    "tests.test_referee_intel",
+    "tests.test_lineup_monitor",
+    "tests.test_pl_api",
     "tests.test_git_commit",
 ]
 FAST_SKIP = {"tests.test_git_commit"}

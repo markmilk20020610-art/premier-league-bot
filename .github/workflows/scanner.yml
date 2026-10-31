@@ -2,9 +2,19 @@ name: Yuewei Premier League Bot Scanner
 
 on:
   schedule:
-    # ⚠️ 突发扫描已改为由 cron-job.org 外部调度（每 10 分钟调一次 workflow_dispatch）。
-    #    原因：① GitHub 自带 schedule 高峰期会延迟 5~15 分钟甚至跳过，不可靠；
-    #         ② 本仓库是 private，Actions 仅 2000 分钟/月，两套调度同时开会双份计费。
+    # ⚠️ 突发扫描已改为由 cron-job.org 外部调度（workflow_dispatch）。
+    #    原因：GitHub 自带 schedule 高峰期会延迟 5~15 分钟甚至跳过，不可靠。
+    #
+    #    【2026-10-31 实测更正，见 docs/reports/AUDIT_SCHEDULER_5_4.md】
+    #    · cron-job.org 实际是「每 5 分钟」一次，不是早期注释写的 10 分钟。
+    #      88 个 dispatch 样本间隔中位 5.00 分钟、最大 5.35、零丢拍。
+    #    · 本仓库实际是 **public**（API 实测 visibility=public），
+    #      Actions 分钟数免费不限量。早期注释「private，仅 2000 分钟/月」
+    #      是过期信息，不要再据此限制调度频率。
+    #    · GitHub schedule 在这个仓库几乎不触发：全历史仅 7 条记录，
+    #      且 '0 22 * * *' 的早报曾延迟 207 分钟（22:00Z 排期 → 01:27Z 才跑）。
+    #      因此下面两条 cron 只能当「兜底」，不能当「准时」。
+    #
     #    若哪天 cron-job.org 停了，把下面这行注释解开即可恢复 GitHub 自己的扫描：
     # - cron: '*/10 * * * *'
     #
