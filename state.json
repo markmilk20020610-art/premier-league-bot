@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 470,
+        "calls": 471,
         "errors": 0,
-        "requests": 470
+        "requests": 471
       }
     },
-    "calls": 470,
+    "calls": 471,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2854040,
-    "output_tokens": 307068,
-    "requests": 470
+    "input_tokens": 2860694,
+    "output_tokens": 307784,
+    "requests": 471
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T23:50:39.408542+00:00",
+  "last_scan_at": "2026-10-31T23:51:23.077555+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Clubs pay Remembrance Day tributes Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T23:51:23.080340+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVzFEelJSUHY4dWZGWFRMU1A5SzlTSExzdlpJWk9HdVV4S1VvbTAzZVRtUmlFeUZlWUpWTUw5LTVCS0pWYWV6dURnOV9hRS1iU1NZbkFmd0dqZ003c3hPNmpWVk12UnBqU3hsUFEyRkV2bC1NY2xmUFp5MndkN3VwLV9GRFpoa3c?oc=5",
+      "published": "2026-10-31T23:44:08+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Clubs pay Remembrance Day tributes - Premier League"
+    },
     {
       "desc": "BRUNO FERNANDES could barely fight back the tears after applauding the travelling Man United fans following their loss t",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2420,16 +2430,6 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T13:33:30.447097+00:00",
-      "link": "https://www.skysports.com/football/manchester-city-vs-brighton-and-hove-albion/live/559531",
-      "published": "2026-10-31T13:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man City vs Brighton teams news LIVE!"
     }
   ],
   "processed_urls": [
