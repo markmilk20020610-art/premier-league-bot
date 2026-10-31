@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 430,
+        "calls": 431,
         "errors": 0,
-        "requests": 430
+        "requests": 431
       }
     },
-    "calls": 430,
+    "calls": 431,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2594854,
-    "output_tokens": 277761,
-    "requests": 430
+    "input_tokens": 2600437,
+    "output_tokens": 278411,
+    "requests": 431
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,7 +928,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T23:10:30.529265+00:00",
+  "last_scan_at": "2026-10-31T23:11:31.010808+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -940,6 +940,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "What we learned from Saturday's matches - Premier League"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T23:11:31.014470+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-10-31T23:01:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Aston Villa latest: Emery admits work to do ahead of Barcelona and Man Utd"
     },
     {
       "desc": "",
@@ -2420,16 +2430,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "FPL experts answer 10 KEY questions ahead of Gameweek 8 - Premier League"
-    },
-    {
-      "desc": "Ronald Araujo interview | Liverpool v Arsenal, 'room for improvement' and header tackle Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T20:35:25.334569+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYy1zc0V4ZVFCM29UN2hhZGY5VVV6MlE0OVVpdC1YRFNDUWdoMDVXc2F1cDM2ZVd5d1hDcy1vQmpuNkxhQXBld2ltcHRwM0JNYVk1LTVEbUNrcjNaNGFGdFRhRnBjSnIzVmZmcnl1cEoxcG1Oc3RVdy1GaEdLV1dHUGtfeDZmYTQ4WDdlZ1J0dGlzVFZFVDJJeXotQ2JxaDlwZXRCMEZxT2w1RXRxd0llY0JFZExFUQ?oc=5",
-      "published": "2026-10-31T13:14:30+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ronald Araujo interview | Liverpool v Arsenal, 'room for improvement' and header tackle - Liverpool FC"
     }
   ],
   "processed_urls": [
