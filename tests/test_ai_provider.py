@@ -316,5 +316,91 @@ class TestProviderInterface(unittest.TestCase):
         self.assertTrue(record["success"])
 
 
+class TestV13ErrorCategories(unittest.TestCase):
+    """V1.3 §13.2：错误分类必须能区分「prompt 太长」和「请求非法」。
+
+    以前上下文超限被归到 BAD_REQUEST，日志上看不出该裁素材还是该改代码，
+    运维只能靠猜。这里把它单独拆成 MODEL_CONTEXT_EXCEEDED。
+    """
+
+    CTX_BODY = ('{"error":{"message":"This model\'s maximum context length is '
+                '65536 tokens. However, you requested 90000 tokens."}}')
+
+    def test_context_overflow_is_classified_separately(self):
+        http = FakeHTTP([Resp(400, text=self.CTX_BODY)])
+        router = make_router(http=http)
+        res = router.analyze_news("p")
+        self.assertFalse(res.ok)
+        self.assertEqual(res.status, ai.MODEL_CONTEXT_EXCEEDED)
+        self.assertEqual(res.error_type, ai.MODEL_CONTEXT_EXCEEDED)
+
+    def test_generic_bad_request_stays_bad_request(self):
+        http = FakeHTTP([Resp(400, text='{"error":{"message":"invalid role field"}}')])
+        router = make_router(http=http)
+        res = router.analyze_news("p")
+        self.assertEqual(res.status, ai.BAD_REQUEST)
+
+    def test_context_overflow_is_not_retryable(self):
+        """同样的 prompt 再发一次必然再失败，重试纯属浪费。"""
+        self.assertNotIn(ai.MODEL_CONTEXT_EXCEEDED, ai.RETRYABLE)
+        self.assertIn(ai.RATE_LIMITED, ai.RETRYABLE)
+
+    def test_gemini_exception_is_classified(self):
+        class InvalidArgument(Exception):
+            code = 400
+
+        exc = InvalidArgument("input token count exceeds the maximum number of tokens")
+        self.assertEqual(ai.GeminiProvider._classify_exception(exc),
+                         ai.MODEL_CONTEXT_EXCEEDED)
+
+    def test_category_mapping(self):
+        self.assertEqual(ai.category_of(ai.MODEL_CONTEXT_EXCEEDED),
+                         "MODEL_CONTEXT_EXCEEDED")
+        self.assertEqual(ai.category_of(ai.QUOTA_EXHAUSTED), "API_BALANCE_INSUFFICIENT")
+        self.assertEqual(ai.category_of(ai.RATE_LIMITED), "API_RATE_LIMITED")
+        self.assertEqual(ai.category_of(ai.AUTH_FAILED), "API_AUTH_FAILED")
+        self.assertEqual(ai.category_of(ai.TIMEOUT), "API_TIMEOUT")
+        self.assertEqual(ai.category_of(ai.NETWORK_ERROR), "API_NETWORK_FAILED")
+        self.assertEqual(ai.category_of(ai.SERVER_ERROR), "API_SERVER_ERROR")
+        self.assertEqual(ai.category_of(ai.OK), "OK")
+        # 未知状态不得抛异常，一律归 MODEL_FAILED
+        self.assertEqual(ai.category_of("SOMETHING_NEW"), "MODEL_FAILED")
+
+    def test_record_carries_category(self):
+        http = FakeHTTP([Resp(400, text=self.CTX_BODY)])
+        router = make_router(http=http)
+        rec = router.analyze_news("p").to_record()
+        self.assertEqual(rec["category"], "MODEL_CONTEXT_EXCEEDED")
+
+
+class TestV13HealthCheckAccounting(unittest.TestCase):
+    """V1.3 §13.2：健康检查也是真打了一次 HTTP，必须计入用量账本。"""
+
+    def test_health_check_is_recorded(self):
+        state = {}
+        http = FakeHTTP([Resp(200, {"data": [{"id": "deepseek-chat"}]})])
+        router = make_router(state=state, http=http)
+        before = dict(state.get("ai_stats") or {})
+        report = router.health_check()
+        self.assertIn("deepseek", report)
+        self.assertEqual(report["deepseek"]["status"], ai.OK)
+        self.assertEqual(report["deepseek"]["category"], "OK")
+
+        stats = state["ai_stats"]
+        self.assertEqual(stats["calls"], int(before.get("calls") or 0) + 1,
+                         "健康检查必须计入 calls")
+        self.assertGreaterEqual(stats["requests"], 1,
+                                "健康检查必须计入真实 HTTP 请求数")
+
+    def test_health_check_reports_category_on_failure(self):
+        state = {}
+        http = FakeHTTP([Resp(401, {"error": "bad key"})])
+        router = make_router(state=state, http=http)
+        report = router.health_check()
+        self.assertEqual(report["deepseek"]["status"], ai.AUTH_FAILED)
+        self.assertEqual(report["deepseek"]["category"], "API_AUTH_FAILED")
+        self.assertEqual(state["ai_stats"]["errors"], 1)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

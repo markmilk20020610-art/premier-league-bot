@@ -38,10 +38,52 @@ PARSE_ERROR = "PARSE_ERROR"
 EMPTY_RESPONSE = "EMPTY_RESPONSE"
 DISABLED = "DISABLED"
 CIRCUIT_OPEN = "CIRCUIT_OPEN"
+# V1.3 §13.2：上下文超限以前被归到 BAD_REQUEST，导致「prompt 太长」和
+# 「请求本身非法」混在一起，日志上完全看不出该删素材还是该改代码。
+MODEL_CONTEXT_EXCEEDED = "MODEL_CONTEXT_EXCEEDED"
 # 历史状态：V1.3 起项目内部不再有「每日额度」这种停止条件，
 # 这个常量只保留给旧 state / 旧日志的兼容解析，任何代码都不得再返回它。
 LEGACY_BUDGET_EXCEEDED = "BUDGET_EXCEEDED"
 NO_PROVIDER = "NO_PROVIDER"
+
+# 对外类别映射（V1.3 §13.2）。内部状态名保持不变，避免牵动大量既有测试与旧日志；
+# 需要对外报错或做面板时用 category_of() 拿稳定的类别名。
+CATEGORY = {
+    OK: "OK",
+    RATE_LIMITED: "API_RATE_LIMITED",
+    AUTH_FAILED: "API_AUTH_FAILED",
+    QUOTA_EXHAUSTED: "API_BALANCE_INSUFFICIENT",
+    TIMEOUT: "API_TIMEOUT",
+    NETWORK_ERROR: "API_NETWORK_FAILED",
+    SERVER_ERROR: "API_SERVER_ERROR",
+    MODEL_CONTEXT_EXCEEDED: "MODEL_CONTEXT_EXCEEDED",
+    PARSE_ERROR: "MODEL_INVALID_RESPONSE",
+    EMPTY_RESPONSE: "MODEL_INVALID_RESPONSE",
+    BAD_REQUEST: "MODEL_INVALID_RESPONSE",
+    DISABLED: "MODEL_FAILED",
+    CIRCUIT_OPEN: "MODEL_FAILED",
+    NO_PROVIDER: "MODEL_FAILED",
+    LEGACY_BUDGET_EXCEEDED: "MODEL_FAILED",
+}
+
+# 上下文超限的特征词：各家的说法不一样，但都绕不开这几个关键词。
+_CONTEXT_MARKERS = (
+    "context length", "context_length", "maximum context", "max context",
+    "context window", "too many tokens", "reduce the length",
+    "input is too long", "prompt is too long", "string too long",
+    "exceeds the maximum", "token count exceeds", "too large for model",
+)
+
+
+def category_of(status):
+    """内部状态名 → 对外类别名。未知状态一律归 MODEL_FAILED，不抛异常。"""
+    return CATEGORY.get(status, "MODEL_FAILED")
+
+
+def looks_like_context_overflow(text):
+    """错误文本是否在说「上下文超限」。"""
+    lowered = str(text or "").lower()
+    return any(m in lowered for m in _CONTEXT_MARKERS)
 
 # 这些错误值得重试；其余重试无意义
 RETRYABLE = {RATE_LIMITED, SERVER_ERROR, TIMEOUT, NETWORK_ERROR}
@@ -177,6 +219,8 @@ class CallResult:
             "error_type": self.error_type,
             "error_message": self.error_message,
             "http_requests": self.http_requests,
+            # V1.3 §13.2：内部状态名保持稳定，对外看 category。
+            "category": category_of(self.status),
         }
 
     def __repr__(self):
@@ -436,6 +480,11 @@ class DeepSeekProvider(BaseProvider):
             return _result_error(self.name, self.model, AUTH_FAILED, body, started)
         if status_code >= 500:
             return _result_error(self.name, self.model, SERVER_ERROR, body, started)
+        # 400/413/422 里混着两种完全不同的故障，必须分开：
+        #   · 上下文超限 —— prompt 太长，应该裁素材 / 减候选，重试同样的内容必然再失败
+        #   · 其余 4xx    —— 请求本身非法，属于代码或参数问题
+        if looks_like_context_overflow(body):
+            return _result_error(self.name, self.model, MODEL_CONTEXT_EXCEEDED, body, started)
         return _result_error(self.name, self.model, BAD_REQUEST, body, started)
 
     def health_check(self):
@@ -601,6 +650,10 @@ class GeminiProvider(BaseProvider):
             code = None
         if "resource_exhausted" in text or "quota" in text:
             return QUOTA_EXHAUSTED
+        # Gemini 的上下文超限有时抛 InvalidArgument 而不是 400 响应体，
+        # 必须在这里也认出来，否则同样会被错判成 NETWORK_ERROR。
+        if looks_like_context_overflow(text):
+            return MODEL_CONTEXT_EXCEEDED
         if code == 429 or "429" in text:
             return QUOTA_EXHAUSTED if "quota" in text else RATE_LIMITED
         if code in (401, 403) or "permission" in text or "unauthenticated" in text:
@@ -758,7 +811,11 @@ class AIRouter:
                                 "remaining_minutes": breaker.remaining_minutes()}
                 continue
             res = provider.health_check()
-            report[name] = {"enabled": True, "status": res.status, "ok": res.ok}
+            # V1.3 §13.2：健康检查也是真打了一次 HTTP，必须计入用量账本。
+            # 以前它悄悄发请求却不记账，导致 requests 与实际出网次数对不上。
+            self._record(res)
+            report[name] = {"enabled": True, "status": res.status, "ok": res.ok,
+                            "category": category_of(res.status)}
         return report
 
     def _call(self, task, prompt, **kw):
