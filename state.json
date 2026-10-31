@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 460,
+        "calls": 461,
         "errors": 0,
-        "requests": 460
+        "requests": 461
       }
     },
-    "calls": 460,
+    "calls": 461,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2787393,
-    "output_tokens": 299711,
-    "requests": 460
+    "input_tokens": 2794092,
+    "output_tokens": 300469,
+    "requests": 461
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T23:40:31.625701+00:00",
+  "last_scan_at": "2026-10-31T23:41:19.795140+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "BRUNO FERNANDES could barely fight back the tears after applauding the travelling Man United fans following their loss t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T23:41:19.797259+00:00",
+      "link": "https://www.thesun.co.uk/sport/40873323/bruno-fernandes-emotional-fans-chelsea-defeat-man-united/",
+      "published": "2026-10-31T23:40:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Bruno Fernandes looks visibly emotional as he applauds fans after Man Utd’s defeat at Chelsea"
+    },
     {
       "desc": "Fernandes returned to the United side after being dropped for their loss against Bournemouth last week, when he was an u",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -2420,16 +2430,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Man City vs Brighton teams news LIVE!"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T13:33:30.447118+00:00",
-      "link": "https://www.skysports.com/football/bournemouth-vs-leeds-united/live/559525",
-      "published": "2026-10-31T13:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Bournemouth vs Leeds team news LIVE!"
     }
   ],
   "processed_urls": [
