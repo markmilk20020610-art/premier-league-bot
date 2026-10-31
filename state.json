@@ -2,15 +2,15 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 35427,
-    "output_tokens": 4823
+    "input_tokens": 41531,
+    "output_tokens": 5746
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -41,6 +41,19 @@
       "telegram_message_id": 17,
       "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
       "updated_at": "2026-10-31T00:10:45.160755+00:00"
+    },
+    "057fb4ed1242": {
+      "attempts": 1,
+      "created_at": "2026-10-31T00:39:06.452857+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "0307a3bf98e63301",
+      "event_id": "057fb4ed1242",
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html",
+      "last_error": "",
+      "telegram_message_id": 22,
+      "title": "曼联帅位与转会传闻齐飞：卡里克回击内维尔，费尔明·洛佩斯进入引援名单",
+      "updated_at": "2026-10-31T00:39:07.009865+00:00"
     },
     "107c7f016595": {
       "attempts": 1,
@@ -746,7 +759,8 @@
     "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html",
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
     "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
-    "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html"
+    "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
+    "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html"
   ],
   "schema_version": 2
 }
