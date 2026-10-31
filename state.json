@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 35,
+        "calls": 36,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 35,
+    "calls": 36,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 186041,
-    "output_tokens": 26219,
-    "requests": 10
+    "input_tokens": 191113,
+    "output_tokens": 26804,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -111,9 +111,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T06:45:30.511267+00:00",
+  "last_scan_at": "2026-10-31T06:50:28.618953+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "AC Milan versus Inter will be shown live on the BBC on Saturday - this is the story of the fixture's most iconic image.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T06:50:28.620481+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq99zlpzm87ro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T06:44:38+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "AC Milan v Inter and the tale of an iconic image"
+    },
     {
       "desc": "Alan Shearer discusses his love of Newcastle, almost continuing his managerial career and swapping the pitch for the com",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -342,6 +352,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Mexico City Grand Prix | Practice highlights"
+    },
+    {
+      "desc": "Manchester United target Barcelona's Fermin Lopez, Lisandro Martinez is attracting interest from the La Liga side, Arsen",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T06:50:28.620764+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck3r52vn758xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-30T23:08:16+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd target Barcelona's Lopez - Saturday's gossip"
     },
     {
       "desc": "Leicester moved to the top of the PREM table with a bonus-point 22-16 victory over Bristol at Ashton Gate in an error-ri",
