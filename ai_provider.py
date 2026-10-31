@@ -99,6 +99,12 @@ class AIConfig:
         self.retry_base_delay = _env_float("AI_RETRY_BASE_DELAY", 2.0)
         self.request_timeout = _env_int("AI_REQUEST_TIMEOUT", 30)
 
+        # 429 限流（V1.2 任务 16）
+        # 服务端给了 Retry-After 就按它等，但不能无限等——Actions 单步有超时，
+        # 等 300 秒不如直接失败、让下一轮再来。超过这个上限就 fail fast。
+        self.max_retry_wait = _env_float("AI_MAX_RETRY_WAIT", 60.0)
+        self.rate_limit_cooldown_min = _env_int("AI_RATE_LIMIT_COOLDOWN_MIN", 10)
+
         # 熔断冷却
         self.quota_cooldown_min = _env_int("AI_QUOTA_COOLDOWN_MIN", 120)
         self.gemini_quota_cooldown_min = _env_int("AI_GEMINI_QUOTA_COOLDOWN_MIN", 360)
@@ -133,7 +139,8 @@ class AIConfig:
 # ==================== 调用记录 ====================
 class CallResult:
     def __init__(self, ok, data=None, provider="", model="", error_type="", error_message="",
-                 status=OK, input_tokens=None, output_tokens=None, response_ms=0):
+                 status=OK, input_tokens=None, output_tokens=None, response_ms=0,
+                 http_requests=0, retry_after=None):
         self.ok = ok
         self.data = data
         self.provider = provider
@@ -144,6 +151,12 @@ class CallResult:
         self.input_tokens = input_tokens
         self.output_tokens = output_tokens
         self.response_ms = response_ms
+        # 这一次「逻辑调用」实际打了几次 HTTP 请求（含重试）。
+        # 统计口径必须是真实请求数：一次逻辑调用在 429/5xx 下可能打 3 次，
+        # 只记 1 次会让「今天调了几次」永远对不上服务商的用量面板。
+        self.http_requests = int(http_requests or 0)
+        # 服务端 429 时给的 Retry-After（秒）；None 表示没给或不是限流
+        self.retry_after = retry_after
         self.request_time = datetime.datetime.now(datetime.timezone.utc).isoformat()
 
     def to_record(self):
@@ -158,18 +171,52 @@ class CallResult:
             "success": self.ok,
             "error_type": self.error_type,
             "error_message": self.error_message,
+            "http_requests": self.http_requests,
         }
 
     def __repr__(self):
         return f"<CallResult {self.provider}/{self.model} ok={self.ok} status={self.status}>"
 
 
-def _result_error(provider, model, status, message, started):
+def _result_error(provider, model, status, message, started, http_requests=0, retry_after=None):
     return CallResult(
         False, None, provider, model,
         error_type=status, error_message=message, status=status,
         response_ms=int((time.time() - started) * 1000),
+        http_requests=http_requests, retry_after=retry_after,
     )
+
+
+def parse_retry_after(value):
+    """把 Retry-After 解析成秒数。
+
+    支持两种格式（RFC 7231）：
+      · 秒数            "120"
+      · HTTP 日期       "Wed, 21 Oct 2026 07:28:00 GMT"
+    解析不出来返回 None，交给指数退避兜底。
+    """
+    if value is None:
+        return None
+    text = str(value).strip()
+    if not text:
+        return None
+    try:
+        seconds = float(text)
+    except (TypeError, ValueError):
+        pass
+    else:
+        return max(0.0, seconds)
+    try:
+        import email.utils
+        dt = email.utils.parsedate_to_datetime(text)
+    except Exception:
+        return None
+    if dt is None:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    delta = (dt - datetime.datetime.now(datetime.timezone.utc)).total_seconds()
+    return max(0.0, delta)
 
 
 # ==================== 熔断器 ====================
@@ -292,25 +339,65 @@ class DeepSeekProvider(BaseProvider):
         headers = {"Content-Type": "application/json", "Authorization": f"Bearer {self.api_key}"}
 
         last = None
+        http_requests = 0
         for attempt in range(self.config.max_retries + 1):
             try:
+                http_requests += 1
                 resp = self.http.post(self.BASE_URL, headers=headers, json=payload,
                                       timeout=self.config.request_timeout)
             except Exception as e:
                 last = _result_error(self.name, self.model, TIMEOUT if "timeout" in type(e).__name__.lower()
-                                     else NETWORK_ERROR, f"{type(e).__name__}: {e}", started)
+                                     else NETWORK_ERROR, f"{type(e).__name__}: {e}", started,
+                                     http_requests=http_requests)
             else:
                 last = self._handle_response(resp, started)
+                last.http_requests = http_requests
                 if last.ok:
                     return last
 
             if last.status not in RETRYABLE:
                 return last
+
             if attempt < self.config.max_retries:
-                wait = self.config.retry_base_delay * (2 ** attempt)
-                print(f"[WARN] DeepSeek {last.status}，{wait:.0f}s 后重试（{attempt + 1}/{self.config.max_retries}）")
+                wait, source = self._retry_wait(last, attempt)
+                if wait is None:
+                    # 服务端要求的等待时间超过上限：等不起，直接失败交给下一轮。
+                    # 硬等 5 分钟只会让 Actions 这一步超时，反而更糟。
+                    print(f"[WARN] DeepSeek {last.status}，服务端要求等待 "
+                          f"{last.retry_after:.0f}s 超过上限 {self.config.max_retry_wait:.0f}s，"
+                          f"放弃重试（由下一轮处理）")
+                    return last
+                print(f"[WARN] DeepSeek {last.status}，{wait:.0f}s 后重试"
+                      f"（{attempt + 1}/{self.config.max_retries}，{source}）")
                 self.sleep(wait)
         return last
+
+    def _retry_wait(self, last, attempt):
+        """算出本次重试要等多久；返回 (秒数, 依据)。等不起时返回 (None, 原因)。
+
+        V1.2 任务 16：429 必须优先听服务端的 Retry-After。
+        旧实现一律用 2/4/8 秒指数退避——服务端说「120 秒后再来」，
+        我们 2 秒后就再敲一次门，除了把限流窗口越拉越长没有任何作用。
+        """
+        if last.status == RATE_LIMITED and last.retry_after is not None:
+            if last.retry_after > self.config.max_retry_wait:
+                return None, "retry-after 超上限"
+            return last.retry_after, "Retry-After"
+        wait = self.config.retry_base_delay * (2 ** attempt)
+        if wait > self.config.max_retry_wait:
+            return None, "退避超上限"
+        return wait, "指数退避"
+
+    @staticmethod
+    def _header(resp, name):
+        """安全读取响应头：桩/第三方库可能没有 headers 属性。"""
+        headers = getattr(resp, "headers", None)
+        if headers is None:
+            return None
+        try:
+            return headers.get(name)
+        except Exception:
+            return None
 
     def _handle_response(self, resp, started):
         status_code = getattr(resp, "status_code", 0)
@@ -337,7 +424,9 @@ class DeepSeekProvider(BaseProvider):
         if status_code == 402 or "insufficient balance" in lowered or "quota" in lowered:
             return _result_error(self.name, self.model, QUOTA_EXHAUSTED, body, started)
         if status_code == 429:
-            return _result_error(self.name, self.model, RATE_LIMITED, body, started)
+            retry_after = parse_retry_after(self._header(resp, "Retry-After"))
+            return _result_error(self.name, self.model, RATE_LIMITED, body, started,
+                                 retry_after=retry_after)
         if status_code in (401, 403):
             return _result_error(self.name, self.model, AUTH_FAILED, body, started)
         if status_code >= 500:
@@ -355,10 +444,14 @@ class DeepSeekProvider(BaseProvider):
                                  timeout=self.config.request_timeout)
             if getattr(resp, "status_code", 0) == 200:
                 return CallResult(True, None, self.name, self.model, status=OK,
-                                  response_ms=int((time.time() - started) * 1000))
-            return self._handle_response(resp, started)
+                                  response_ms=int((time.time() - started) * 1000),
+                                  http_requests=1)
+            res = self._handle_response(resp, started)
+            res.http_requests = 1
+            return res
         except Exception as e:
-            return _result_error(self.name, self.model, NETWORK_ERROR, f"{type(e).__name__}: {e}", started)
+            return _result_error(self.name, self.model, NETWORK_ERROR,
+                                 f"{type(e).__name__}: {e}", started, http_requests=1)
 
 
 # ==================== Gemini（保留接口，默认禁用） ====================
@@ -378,6 +471,7 @@ class GeminiProvider(BaseProvider):
         self._types = None
         self._model_index = 0
         self.call_count = 0          # 便于测试断言「禁用时零请求」
+        self._requests_this_call = 0
 
     @property
     def enabled(self):
@@ -415,6 +509,16 @@ class GeminiProvider(BaseProvider):
             return types.GenerateContentConfig(**kwargs)
 
     def generate_content(self, prompt, task="generate_content", **kw):
+        """对外入口：只负责把「这次调用打了几次真实请求」记到结果上。
+
+        V1.2 任务 15：统计口径必须是真实 HTTP 请求数，不是逻辑调用数。
+        """
+        self._requests_this_call = 0
+        res = self._generate(prompt, task=task, **kw)
+        res.http_requests = self._requests_this_call
+        return res
+
+    def _generate(self, prompt, task="generate_content", **kw):
         if not self.enabled:
             return CallResult(False, None, self.name, self.model, status=DISABLED,
                               error_type=DISABLED, error_message="Gemini 未启用")
@@ -424,6 +528,7 @@ class GeminiProvider(BaseProvider):
 
         started = time.time()
         self.call_count += 1
+        self._requests_this_call = 1
 
         def _invoke():
             return self._client.models.generate_content(
@@ -463,7 +568,14 @@ class GeminiProvider(BaseProvider):
             for chunk in (getattr(gm, "grounding_chunks", None) or []):
                 web = getattr(chunk, "web", None)
                 if web and getattr(web, "uri", None):
-                    records.append({"url": web.uri, "title": getattr(web, "title", "") or ""})
+                    # sdk=True 是「这条证据来自 SDK 工具元数据」的凭证。
+                    # bot._call_model 只认带这个标记的记录，模型在 JSON 文本里
+                    # 自己写的 grounding_records 没有标记，会被直接丢弃。
+                    records.append({
+                        "url": web.uri,
+                        "title": getattr(web, "title", "") or "",
+                        "sdk": True,
+                    })
         except Exception:
             pass
         data["grounding_records"] = records
@@ -538,26 +650,32 @@ class AIRouter:
             datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d")
         stats = self.state.get("ai_stats") or {}
         if stats.get("date") != today:
-            stats = {"date": today, "calls": 0, "errors": 0,
+            stats = {"date": today, "calls": 0, "errors": 0, "requests": 0,
                      "input_tokens": 0, "output_tokens": 0, "by_provider": {}}
             self.state["ai_stats"] = stats
+        stats.setdefault("requests", 0)     # 兼容旧 state
         return stats
 
     def _record(self, res):
         self.records.append(res)
         stats = self._stats()
         stats["calls"] += 1
+        # requests 才是「真正打出去几次 HTTP」；calls 是「几次逻辑调用」。
+        # 两者在重试时必然不等，只记 calls 会让账单和用量面板对不上。
+        stats["requests"] = int(stats.get("requests", 0)) + int(res.http_requests or 0)
         if not res.ok:
             stats["errors"] += 1
         stats["input_tokens"] += int(res.input_tokens or 0)
         stats["output_tokens"] += int(res.output_tokens or 0)
         bucket = stats.setdefault("by_provider", {}).setdefault(
-            res.provider or "unknown", {"calls": 0, "errors": 0})
-        bucket["calls"] += 1
+            res.provider or "unknown", {"calls": 0, "errors": 0, "requests": 0})
+        bucket["calls"] = int(bucket.get("calls", 0)) + 1
+        bucket["requests"] = int(bucket.get("requests", 0)) + int(res.http_requests or 0)
         if not res.ok:
-            bucket["errors"] += 1
+            bucket["errors"] = int(bucket.get("errors", 0)) + 1
         print(f"[AI] provider={res.provider} model={res.model} status={res.status} "
-              f"ok={res.ok} {res.response_ms}ms tokens={res.input_tokens}/{res.output_tokens}")
+              f"ok={res.ok} {res.response_ms}ms http={res.http_requests} "
+              f"tokens={res.input_tokens}/{res.output_tokens}")
 
     def budget_exceeded(self):
         stats = self._stats()
@@ -583,6 +701,16 @@ class AIRouter:
         elif res.status == AUTH_FAILED:
             breaker.trip(res.error_message, self.config.auth_cooldown_min, res.status)
             print(f"::error title=AI Auth Failed::{provider_name} 鉴权失败，停止调用并熔断 {self.config.auth_cooldown_min} 分钟")
+        elif res.status == RATE_LIMITED:
+            # V1.2 任务 16：429 不再「当普通失败继续每轮猛敲」。
+            # 服务端给了 Retry-After 就按它冷却，没给就用默认冷却时长。
+            cooldown = self.config.rate_limit_cooldown_min
+            if res.retry_after:
+                cooldown = max(1, int(round(res.retry_after / 60.0)) or 1)
+            breaker.trip(res.error_message, cooldown, res.status)
+            print(f"::warning title=AI Rate Limited::{provider_name} 429 限流"
+                  f"（Retry-After={res.retry_after if res.retry_after is not None else '未提供'}），"
+                  f"熔断 {cooldown} 分钟")
         elif res.status in (SERVER_ERROR, TIMEOUT, NETWORK_ERROR):
             if breaker.record_failure() >= self.config.server_error_threshold:
                 breaker.trip(res.error_message, self.config.server_cooldown_min, res.status)
@@ -654,11 +782,17 @@ class AIRouter:
 
 
 def stats_snapshot(state):
-    """给日志/诊断用的当日统计快照。"""
+    """给日志/诊断用的当日统计快照。
+
+    calls    —— 逻辑调用次数（一次 analyze_news 算一次）
+    requests —— 真实 HTTP 请求次数（含重试、含模型降级）
+    两者不等时，差额就是重试/降级打出去的额外请求。
+    """
     stats = (state or {}).get("ai_stats") or {}
     return {
         "date": stats.get("date"),
         "calls": stats.get("calls", 0),
+        "requests": stats.get("requests", 0),
         "errors": stats.get("errors", 0),
         "input_tokens": stats.get("input_tokens", 0),
         "output_tokens": stats.get("output_tokens", 0),

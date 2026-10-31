@@ -35,7 +35,31 @@ def install():
         def json(self):
             return {}
 
+    # 异常层次尽量贴近真实 requests：投递状态机要靠「连接超时 / 读超时」区分
+    # 「确定没送达」与「结果未知」，桩里全塞 Exception 就测不出这个区别。
+    class RequestException(Exception):
+        pass
+
+    class Timeout(RequestException):
+        pass
+
+    class ConnectTimeout(Timeout):
+        pass
+
+    class ReadTimeout(Timeout):
+        pass
+
+    class ConnectionError(RequestException):  # noqa: A001 - 故意同名
+        pass
+
     rq.get = lambda *a, **k: _Resp()
     rq.post = lambda *a, **k: _Resp()
-    rq.exceptions = T.SimpleNamespace(RequestException=Exception, Timeout=Exception)
+    rq.exceptions = T.SimpleNamespace(
+        RequestException=RequestException,
+        Timeout=Timeout,
+        ConnectTimeout=ConnectTimeout,
+        ReadTimeout=ReadTimeout,
+        ConnectionError=ConnectionError,
+        SSLError=RequestException,
+    )
     sys.modules["requests"] = rq

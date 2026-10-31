@@ -96,7 +96,17 @@ class TestSummarySchema(unittest.TestCase):
             "hook": "阿莫林的位置，比你想的更稳，也更危险。",
             "body": "【一】先说结论\n说人话就是：帅位暂时安全，但压力在累积。" * 3,
             "tags": "#英超 #曼联 #阿莫林",
-            "top_events": [{"rank": 1, "title": "曼联内部会议", "one_line": "高层讨论帅位"}],
+            # V1.2 任务 6：每个 top_event 必须能追溯到程序侧的已验证事件
+            "top_events": [{
+                "rank": 1,
+                "event_id": "E01",
+                "title": "曼联内部会议",
+                "one_line": "高层讨论帅位",
+                "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+                "source_urls": ["https://www.bbc.co.uk/sport/football/articles/c1"],
+                "published_at": "2026-10-30T22:00:00+00:00",
+                "attribution": "bbc.co.uk（一线媒体）",
+            }],
             "fact_check_note": "信息截至 10月31日 06:00",
             "cover_blueprint": "深色底 + 红色标题",
             "image_prompt": "3d caricature style manager under pressure",
@@ -118,6 +128,92 @@ class TestSummarySchema(unittest.TestCase):
         d["body"] = "太短"
         ok, errors, _ = schema.validate_summary(d)
         self.assertFalse(ok)
+
+
+class TestSummarySchemaV12(unittest.TestCase):
+    """V1.2 任务 6：top_event 必须可追溯到程序侧已验证事件。"""
+
+    def base(self):
+        return {
+            "has_valid_news": True,
+            "note_title": "标题",
+            "hook": "钩子一句话",
+            "body": "正文" * 40,
+            "tags": "#英超",
+            "top_events": [{
+                "rank": 1,
+                "event_id": "E01",
+                "title": "事件",
+                "one_line": "一句话",
+                "evidence_status": "OFFICIAL_CONFIRMED",
+                "source_urls": ["https://www.arsenal.com/news/x"],
+                "published_at": "2026-10-30T22:00:00+00:00",
+                "attribution": "arsenal.com（官方）",
+            }],
+            "fact_check_note": "截至 06:00",
+            "cover_blueprint": "深色底",
+            "image_prompt": "3d caricature style",
+            "banner_overlay_text": "标题",
+        }
+
+    def test_all_required_fields_present(self):
+        ok, errors, _ = schema.validate_summary(self.base(), allowed_event_ids={"E01"})
+        self.assertTrue(ok, errors)
+
+    def test_missing_event_id(self):
+        d = self.base()
+        d["top_events"][0].pop("event_id")
+        ok, errors, _ = schema.validate_summary(d)
+        self.assertFalse(ok)
+        self.assertIn("event_id", schema.describe_errors(errors))
+
+    def test_missing_evidence_status(self):
+        d = self.base()
+        d["top_events"][0].pop("evidence_status")
+        ok, _errors, _ = schema.validate_summary(d)
+        self.assertFalse(ok)
+
+    def test_illegal_evidence_status(self):
+        d = self.base()
+        d["top_events"][0]["evidence_status"] = "TOTALLY_CONFIRMED"
+        ok, _errors, _ = schema.validate_summary(d)
+        self.assertFalse(ok)
+
+    def test_missing_source_urls(self):
+        d = self.base()
+        d["top_events"][0]["source_urls"] = []
+        ok, _errors, _ = schema.validate_summary(d)
+        self.assertFalse(ok)
+
+    def test_illegal_source_url(self):
+        d = self.base()
+        d["top_events"][0]["source_urls"] = ["not-a-url"]
+        ok, _errors, _ = schema.validate_summary(d)
+        self.assertFalse(ok)
+
+    def test_missing_published_at(self):
+        d = self.base()
+        d["top_events"][0].pop("published_at")
+        ok, _errors, _ = schema.validate_summary(d)
+        self.assertFalse(ok)
+
+    def test_missing_attribution(self):
+        d = self.base()
+        d["top_events"][0].pop("attribution")
+        ok, _errors, _ = schema.validate_summary(d)
+        self.assertFalse(ok)
+
+    def test_event_id_outside_allowed_set(self):
+        """模型自己造了一条新闻池里不存在的事件 → 拒绝整篇早报。"""
+        d = self.base()
+        d["top_events"][0]["event_id"] = "E99"
+        ok, errors, _ = schema.validate_summary(d, allowed_event_ids={"E01", "E02"})
+        self.assertFalse(ok)
+        self.assertIn("不在已验证事件集合内", schema.describe_errors(errors))
+
+    def test_has_valid_news_false_short_circuits(self):
+        ok, errors, _ = schema.validate_summary({"has_valid_news": False})
+        self.assertTrue(ok, errors)
 
 
 if __name__ == "__main__":

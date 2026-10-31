@@ -91,7 +91,7 @@ class BotTestBase(unittest.TestCase):
         os.chdir(self.cwd)
         shutil.rmtree(self.dir, ignore_errors=True)
 
-    def _fake_send(self, text):
+    def _fake_send(self, text, *args, **kwargs):
         self.sent.append(text)
         return True, [4242], ""
 
@@ -195,6 +195,152 @@ class TestEvidenceGating(BotTestBase):
         with mock.patch.object(bot, "evaluate_with_gemini", return_value=(data, None)):
             bot.run_scan_mode(bot.load_state(), bot._now_iso())
         self.assertEqual(len(self.sent), 0)
+
+
+class TestV12SourceTrustBoundary(BotTestBase):
+    """V1.2 任务 1 / 2：来源信任边界必须落到主流程上。"""
+
+    def test_malicious_feed_publisher_cannot_confirm_official(self):
+        mal = "https://malicious.example/fake-liverpool-news"
+        item = self._item(0, title="Liverpool agree deal to sign winger Michael Olise")
+        item["link"] = mal
+        item["publisher"] = "https://www.liverpoolfc.com"   # RSS 自填的假发布方
+        item["source"] = "https://rsshub.app/test"          # 不可信 feed
+
+        data = base_result(
+            evidence_url=mal,
+            grounding_records=[],
+            event_title="利物浦签下奥利塞",
+            fact_summary="有消息称利物浦已谈妥奥利塞的转会。",
+        )
+        ok, finalized, reason, code = bot._finalize_result(data, [
+            {"url": mal, "title": item["title"],
+             "publisher": item["publisher"], "feed_origin": item["source"]},
+        ])
+        self.assertFalse(ok, "恶意 RSS 不得让这条新闻变成官方确认")
+        self.assertNotEqual(finalized["evidence_status"], "OFFICIAL_CONFIRMED")
+        self.assertEqual(code, "EVIDENCE_NOT_PUSHABLE")
+
+    def test_malicious_feed_does_not_push(self):
+        mal = "https://malicious.example/fake-liverpool-news"
+        item = self._item(0, title="Liverpool agree deal to sign winger Michael Olise")
+        item["link"] = mal
+        item["publisher"] = "https://www.liverpoolfc.com"
+        item["source"] = "https://rsshub.app/test"
+
+        data = base_result(evidence_url=mal, grounding_records=[])
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=([item], {})):
+            with mock.patch.object(bot, "evaluate_with_gemini", return_value=(data, None)):
+                rc = bot.run_scan_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 0)
+        self.assertEqual(len(self.sent), 0)
+        self.assertEqual(bot.load_state()["events"], {})
+
+    def test_deepseek_fabricated_grounding_is_stripped(self):
+        """provider != gemini 时，模型自报的 grounding / 证据字段必须被清空。"""
+        class FakeRouter:
+            def analyze_news(self, prompt, **kw):
+                return ai.CallResult(
+                    True,
+                    {
+                        "has_valid_news": True, "event_title": "t",
+                        "evidence_url": "https://www.liverpoolfc.com/news/olise-deal",
+                        "var_rating": "Tier 1",
+                        "grounding_records": [
+                            {"url": "https://www.liverpoolfc.com/news/olise-deal", "title": "官宣"},
+                            {"url": "https://www.thefa.com/x", "title": "FA"},
+                        ],
+                        "evidence_status": "OFFICIAL_CONFIRMED",
+                        "evidence_sources_count": 5,
+                        "source_class": "OFFICIAL",
+                    },
+                    "deepseek", "deepseek-chat",
+                )
+
+        with mock.patch.object(bot, "get_router", return_value=FakeRouter()):
+            data, err = bot.evaluate_with_gemini("blob", state={})
+
+        self.assertIsNone(err)
+        self.assertEqual(data["grounding_records"], [], "DeepSeek 不得提交 grounding 证据")
+        self.assertEqual(data["verification_status"], "DEEPSEEK_NO_GROUNDING")
+        self.assertNotIn("evidence_status", data)
+        self.assertNotIn("source_class", data, "模型无权给自己的信源打分")
+
+    def test_gemini_json_grounding_without_sdk_tag_is_rejected(self):
+        """即使 provider 声称是 gemini，没有 SDK 标记的 grounding 也不采信。"""
+        class FakeRouter:
+            def analyze_news(self, prompt, **kw):
+                return ai.CallResult(
+                    True,
+                    {
+                        "has_valid_news": True, "event_title": "t", "evidence_url": BBC,
+                        "grounding_records": [{"url": BBC, "title": "模型自己写的"}],
+                    },
+                    "gemini", "gemini-2.0-flash",
+                )
+
+        with mock.patch.object(bot, "get_router", return_value=FakeRouter()):
+            data, _ = bot.evaluate_with_gemini("blob", state={})
+        self.assertEqual(data["grounding_records"], [])
+        self.assertEqual(data["verification_status"], "GEMINI_NO_GROUNDING")
+
+    def test_gemini_sdk_grounding_is_accepted(self):
+        class FakeRouter:
+            def analyze_news(self, prompt, **kw):
+                return ai.CallResult(
+                    True,
+                    {
+                        "has_valid_news": True, "event_title": "t", "evidence_url": BBC,
+                        "grounding_records": [{"url": BBC, "title": "SDK 检索结果", "sdk": True}],
+                    },
+                    "gemini", "gemini-2.0-flash",
+                )
+
+        with mock.patch.object(bot, "get_router", return_value=FakeRouter()):
+            data, _ = bot.evaluate_with_gemini("blob", state={})
+        self.assertEqual(len(data["grounding_records"]), 1)
+        self.assertEqual(data["verification_status"], "GEMINI_GROUNDED")
+
+    def test_google_news_fallback_keeps_publisher_trusted(self):
+        """thefa.com/rss 走 Google News 降级时，publisher 元数据仍然可信。
+
+        回归点：降级抓取曾经把「逻辑来源」当成「实际 feed」，导致 Google News
+        返回的 publisher 被当成不可信，整条降级链路的证据能力归零。
+        """
+        gnews_xml = b"""<?xml version="1.0"?><rss version="2.0"><channel>
+        <item>
+          <title>FA statement on disciplinary matter</title>
+          <link>https://news.google.com/rss/articles/CBMiABC</link>
+          <pubDate>Fri, 30 Oct 2026 10:00:00 GMT</pubDate>
+          <source url="https://www.thefa.com">The FA</source>
+        </item>
+        </channel></rss>"""
+
+        class Resp:
+            def __init__(self, code, content=b""):
+                self.status_code = code
+                self.content = content
+
+        def fake_get(url, **kw):
+            if "news.google.com" in url:
+                return Resp(200, gnews_xml)
+            return Resp(404)
+
+        with mock.patch.object(bot.requests, "get", side_effect=fake_get):
+            src, items, status = bot._fetch_one_source("https://www.thefa.com/rss", {})
+
+        self.assertEqual(src, "https://www.thefa.com/rss")
+        self.assertTrue(status.startswith("FALLBACK_OK"), status)
+        self.assertEqual(len(items), 1)
+        self.assertTrue(items[0]["feed_origin"].startswith("https://news.google.com"),
+                        "feed_origin 必须是真实抓取地址，而不是逻辑来源")
+
+        built = bot.ev.build_records([{
+            "url": items[0]["link"], "title": items[0]["title"],
+            "publisher": items[0]["publisher"], "feed_origin": items[0]["feed_origin"],
+        }])[0]
+        self.assertTrue(built["publisher_trusted"])
+        self.assertEqual(built["source_class"], "OFFICIAL")
 
 
 class TestModelOutputNormalization(BotTestBase):
@@ -330,12 +476,13 @@ class TestMorningRegression(BotTestBase):
 
     def _summary(self):
         return {
-            "has_valid_news": True, "note_title": "标题", "hook": "钩子",
+            "has_valid_news": True, "note_title": "标题", "hook": "钩子一句话",
             "body": "正文" * 40, "tags": "#英超",
-            "top_events": [{"rank": 1, "title": "T", "one_line": "o",
-                            "var_rating": "Tier1", "time": "2小时前", "url": "https://e.com/0"}],
-            "fact_check_note": "截至 06:00", "cover_blueprint": "c",
-            "image_prompt": "p", "banner_overlay_text": "标题",
+            # V1.2 之后早报事件必须带 event_id（由程序分配的已验证事件编号），
+            # 其余证据字段由 _attach_summary_evidence 回填。
+            "top_events": [{"rank": 1, "event_id": "E01", "title": "测试事件", "one_line": "一句话"}],
+            "fact_check_note": "截至 06:00", "cover_blueprint": "深色底",
+            "image_prompt": "3d caricature style", "banner_overlay_text": "标题",
         }
 
     def test_morning_sets_date_lock_after_success(self):
@@ -364,6 +511,159 @@ class TestMorningRegression(BotTestBase):
              mock.patch.object(bot, "save_state", side_effect=fail):
             rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
         self.assertEqual(rc, 1, "早报已发但状态没存下来必须报错")
+
+
+class TestV12MorningEvidence(BotTestBase):
+    """V1.2 任务 5 / 6 / 7：早报逐条证据核验 + Schema 进主流程 + 24h 硬窗口。"""
+
+    def _pool_item(self, i, hours_ago, title=None, link=None):
+        import datetime
+        now = datetime.datetime.now(datetime.timezone.utc)
+        return {
+            "title": title or f"Arsenal transfer update number {i}",
+            "link": link or f"https://example.com/a{i}",
+            "desc": "d", "source": "s", "feed_origin": "s",
+            "published": (now - datetime.timedelta(hours=hours_ago)).isoformat(),
+            "first_seen": now.isoformat(),
+        }
+
+    def _summary(self):
+        return {
+            "has_valid_news": True, "note_title": "标题", "hook": "钩子一句话",
+            "body": "正文" * 40, "tags": "#英超",
+            "top_events": [{"rank": 1, "event_id": "E01", "title": "测试事件", "one_line": "一句话"}],
+            "fact_check_note": "截至 06:00", "cover_blueprint": "深色底",
+            "image_prompt": "3d caricature style", "banner_overlay_text": "标题",
+        }
+
+    def _seed(self, pool):
+        self.write_state({"processed_urls": [], "last_morning_report_date": "", "news_pool": pool})
+
+    # ---------- 任务 7：24 小时硬窗口 ----------
+    def test_23h_news_is_eligible(self):
+        kept = bot._pool_for_morning({"news_pool": [self._pool_item(0, 23)]})
+        self.assertEqual(len(kept), 1, "23 小时前的新闻应允许进入早报候选")
+
+    def test_25h_news_is_excluded(self):
+        kept = bot._pool_for_morning({"news_pool": [self._pool_item(0, 25)]})
+        self.assertEqual(kept, [], "25 小时前的新闻不得进入早报事实新闻")
+
+    def test_future_timestamp_is_rejected(self):
+        kept = bot._pool_for_morning({"news_pool": [self._pool_item(0, -3)]})
+        self.assertEqual(kept, [], "未来发布时间不得进入早报")
+
+    def test_unknown_publish_time_is_rejected(self):
+        item = self._pool_item(0, 2)
+        item["published"] = ""
+        kept = bot._pool_for_morning({"news_pool": [item]})
+        self.assertEqual(kept, [], "发布时间未知不得进入早报")
+
+    def test_window_is_not_relaxed_when_material_is_short(self):
+        """素材不足时不得把 48h/72h 旧闻混进正式事实新闻。"""
+        pool = [self._pool_item(i, 30) for i in range(6)]
+        self._seed(pool)
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=([], {})), \
+             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=[]), \
+             mock.patch.object(bot, "evaluate_summary") as m:
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        self.assertFalse(m.called, "没有 24h 素材时不得调用模型")
+        self.assertEqual(rc, 0)
+        self.assertEqual(len(self.sent), 1)
+        self.assertIn("低情报量", self.sent[0])
+
+    # ---------- 任务 5：逐条证据核验 ----------
+    def test_unverified_event_not_offered_to_model(self):
+        gnews = "https://news.google.com/rss/articles/CBMiX"   # 无 publisher → 聚合器
+        pool = [self._pool_item(0, 1, link=gnews)]
+        events, excluded = bot._build_morning_events(bot._pool_for_morning({"news_pool": pool}))
+        self.assertEqual(events, [], "未核验的素材不得进入可选事件列表")
+        self.assertEqual(len(excluded), 1)
+        self.assertEqual(excluded[0]["status"], "UNVERIFIED")
+
+    def test_single_source_event_marked_not_confirmed(self):
+        pool = [self._pool_item(0, 2)]
+        events, _ = bot._build_morning_events(bot._pool_for_morning({"news_pool": pool}))
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0]["event_id"], "E01")
+        self.assertEqual(events[0]["status"], "SINGLE_SOURCE")
+        self.assertFalse(events[0]["confirmed"], "单一来源不得标记为已确认")
+
+    def test_event_blob_lists_verified_events(self):
+        pool = [self._pool_item(0, 2)]
+        events, _ = bot._build_morning_events(bot._pool_for_morning({"news_pool": pool}))
+        blob = bot._morning_event_blob(events)
+        self.assertIn("[E01]", blob)
+        self.assertIn("SINGLE_SOURCE", blob)
+        self.assertIn("example.com", blob)
+
+    def test_unverified_news_never_reaches_prompt(self):
+        """未核验素材不得出现在喂给模型的任何文本里（任务 5.5）。"""
+        gnews = "https://news.google.com/rss/articles/CBMiX"
+        pool = [
+            self._pool_item(0, 2, title="Arsenal lose appeal against Dowman red card"),
+            self._pool_item(1, 1, title="Man City injury update ahead of derby", link=gnews),
+        ]
+        self._seed(pool)
+        captured = {}
+
+        def fake_summary(pool_blob, stats_line, event_blob="", state=None):
+            captured["pool_blob"] = pool_blob
+            captured["event_blob"] = event_blob
+            return self._summary(), None
+
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=([], {})), \
+             mock.patch.object(bot, "_emergency_google_news_fetch", return_value=[]), \
+             mock.patch.object(bot, "evaluate_summary", side_effect=fake_summary):
+            bot.run_morning_mode(bot.load_state(), bot._now_iso())
+
+        self.assertIn("Dowman", captured["pool_blob"])
+        self.assertNotIn("Man City", captured["pool_blob"], "未核验素材不得进入提示词")
+        self.assertNotIn("Man City", captured["event_blob"])
+
+    # ---------- 任务 5.7 / 任务 6：event_id 与 Schema ----------
+    def test_model_invented_event_id_is_rejected(self):
+        self._seed([self._pool_item(i, 2) for i in range(6)])
+        bad = self._summary()
+        bad["top_events"][0]["event_id"] = "E99"
+        with mock.patch.object(bot, "evaluate_summary", return_value=(bad, None)):
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 1, "模型编造 event_id 必须让 Job 失败")
+        self.assertEqual(len(self.sent), 0, "校验不通过不得推送")
+
+    def test_schema_failure_blocks_push(self):
+        self._seed([self._pool_item(i, 2) for i in range(6)])
+        bad = self._summary()
+        bad.pop("banner_overlay_text")
+        with mock.patch.object(bot, "evaluate_summary", return_value=(bad, None)):
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 1)
+        self.assertEqual(len(self.sent), 0)
+
+    def test_evidence_fields_are_filled_by_program(self):
+        """模型只给 event_id，证据字段由程序回填，模型自报的一律被覆盖。"""
+        self._seed([self._pool_item(i, 2) for i in range(6)])
+        data = self._summary()
+        data["top_events"][0]["evidence_status"] = "OFFICIAL_CONFIRMED"   # 模型瞎写
+        data["top_events"][0]["source_urls"] = ["https://evil.example/x"]
+        with mock.patch.object(bot, "evaluate_summary", return_value=(data, None)):
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 0)
+        self.assertEqual(len(self.sent), 1)
+        card = self.sent[0]
+        self.assertNotIn("官方确认", card, "程序算出的证据状态不能被模型覆盖")
+        self.assertIn("单一来源", card)
+        self.assertIn("example.com", card)
+        self.assertNotIn("evil.example", card, "模型自造的 URL 不得进入卡片")
+
+    def test_card_shows_evidence_and_source(self):
+        self._seed([self._pool_item(i, 2) for i in range(6)])
+        with mock.patch.object(bot, "evaluate_summary", return_value=(self._summary(), None)):
+            rc = bot.run_morning_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 0)
+        card = self.sent[0]
+        self.assertIn("🛡", card, "卡片必须显示证据状态")
+        self.assertIn("📰", card, "卡片必须显示来源")
+        self.assertIn("🔗", card, "卡片必须给出原始链接")
 
 
 class TestPoolPersistence(BotTestBase):

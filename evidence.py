@@ -23,6 +23,7 @@ CONFLICTING                   来源之间说法冲突
 """
 
 from urllib.parse import urlparse, urlunparse
+import hashlib
 import re
 
 # ==================== 证据状态 ====================
@@ -83,6 +84,47 @@ WIRE_DOMAINS = {
 }
 
 _MULTI_LABEL_SUFFIXES = ("co.uk", "org.uk", "ac.uk", "com.au", "co.jp", "com.br", "co.nz")
+
+# ==================== Feed 信任边界（V1.2 任务 1） ====================
+# RSS item 里的 <source url="..."> 是**发布方自己填的**，任何第三方 feed 都能写
+# 一个官方域名进来。因此只有「我们确认过会如实转述发布方」的 feed，
+# 才允许用它的 source 元数据去改写文章归属；其余 feed 一律以文章真实 URL 为准。
+TRUSTED_PUBLISHER_FEEDS = {
+    "news.google.com",     # Google News 的 <source> 来自其索引库，不是投稿方自填
+}
+
+
+def _host(url):
+    """取原始主机名（不做可注册域名归并）。
+
+    这里刻意不用 extract_domain：news.google.com 会被归并成 google.com，
+    那样任意 google.com 子域都能冒充 Google News feed，等于把白名单放开。
+    """
+    raw = (url or "").strip()
+    if not raw:
+        return ""
+    try:
+        host = urlparse(raw).netloc.lower()
+    except Exception:
+        return ""
+    host = host.split("@")[-1].split(":")[0]
+    return host[4:] if host.startswith("www.") else host
+
+
+def feed_trusts_publisher(feed_origin):
+    """这条 feed 的 <source> 元数据是否可信。"""
+    host = _host(feed_origin)
+    if not host:
+        return False
+    return any(host == f or host.endswith("." + f) for f in TRUSTED_PUBLISHER_FEEDS)
+
+
+def source_id_for(canonical):
+    """稳定的程序侧来源 ID：由规范化 URL 派生，模型无法伪造。"""
+    if not canonical:
+        return ""
+    return "src_" + hashlib.sha1(canonical.encode("utf-8")).hexdigest()[:12]
+
 
 
 def extract_domain(url):
@@ -168,6 +210,12 @@ def title_fingerprint(title):
 
 
 # ==================== 事件类型词典（V1.1 任务 1） ====================
+_STOPWORDS = {
+    "the", "a", "an", "of", "to", "in", "on", "for", "and", "or", "at", "by",
+    "with", "from", "as", "is", "are", "be", "after", "over", "into", "amid",
+    "news", "update", "latest", "live", "report", "says", "said",
+}
+
 # 同一家俱乐部的「转会」和「受伤」是两件事。只靠标题词重叠度区分不出来，
 # 必须显式识别事件类型，否则官方站上任何一条同俱乐部新闻都会被当成「官方确认」。
 EVENT_KEYWORDS = {
@@ -292,6 +340,107 @@ def event_subjects(title):
     return found
 
 
+# ==================== 人物实体（V1.2 任务 3） ====================
+# 没有 NER 可用，因此用「角色词 + 姓名位」的启发式：
+#   "…sign winger Michael Olise" 里 winger 后面的连续大写词就是球员主体。
+# 只在**人名是事件核心**的类型上启用比对，避免把 "Arsenal Star Suffers Injury"
+# 这类标题里的普通词误当人名。
+ROLE_WORDS = {
+    "winger", "striker", "forward", "midfielder", "defender", "goalkeeper",
+    "keeper", "fullback", "full-back", "centreback", "centre-back",
+    "leftback", "rightback", "boss", "manager", "coach", "skipper",
+    "captain", "signing", "capture", "ace",
+}
+SIGN_WORDS = {
+    "sign", "signs", "signing", "signed", "capture", "captures", "captured",
+    "recruit", "recruits", "unveil", "unveils", "appoint", "appoints",
+    "appointed", "sack", "sacks", "sacked", "hire", "hires", "hired",
+}
+
+# 人名位排除表：这些词即使首字母大写也不是人名
+_NAME_STOP = set(_STOPWORDS) | set(CLUB_TOKENS) | {
+    "deal", "deals", "talks", "move", "moves", "news", "club", "clubs", "team",
+    "teams", "squad", "season", "league", "cup", "game", "games", "match",
+    "matches", "injury", "injuries", "window", "loan", "fee", "bid", "bids",
+    "offer", "contract", "medical", "premier", "champions", "europa", "world",
+    "fa", "uefa", "fifa", "sky", "bbc", "espn", "sport", "sports", "football",
+    "united", "city", "town", "rovers", "county", "athletic", "wanderers",
+    "albion", "fc", "afc", "suffers", "suffered", "serious", "severe", "injury",
+    "signs", "signs", "joins", "joined", "wants", "eyes", "ready", "set",
+    "close", "closes", "eyes", "star", "stars", "ace", "ace", "boss",
+    "manager", "coach", "striker", "winger", "defender", "midfielder",
+    "goalkeeper", "keeper", "forward", "captain", "skipper", "january",
+    "february", "march", "april", "may", "june", "july", "august",
+    "september", "october", "november", "december", "monday", "tuesday",
+    "wednesday", "thursday", "friday", "saturday", "sunday", "face", "faces",
+    "win", "wins", "lose", "loses", "beat", "beats", "draw", "draws",
+    "final", "semi", "round", "leg", "first", "second", "new", "old",
+    "report", "reports", "update", "updates", "latest", "breaking", "exclusive",
+}
+
+# 相邻大写词但明确不是人名的组合（机构 / 赛事 / 球场）
+NON_PERSON_BIGRAMS = {
+    ("premier", "league"), ("fa", "cup"), ("carabao", "cup"),
+    ("champions", "league"), ("europa", "league"), ("world", "cup"),
+    ("sky", "sports"), ("old", "trafford"), ("transfer", "window"),
+    ("deadline", "day"), ("real", "madrid"), ("bayern", "munich"),
+    ("manchester", "united"), ("manchester", "city"), ("nottingham", "forest"),
+    ("crystal", "palace"), ("aston", "villa"), ("newcastle", "united"),
+    ("tottenham", "hotspur"), ("brighton", "hove"), ("hove", "albion"),
+    ("sheffield", "united"), ("sheffield", "wednesday"), ("leeds", "united"),
+    ("leicester", "city"), ("west", "ham"), ("west", "brom"),
+    ("queens", "park"), ("park", "rangers"), ("st", "james"),
+    ("st", "mary"), ("emirates", "stadium"), ("stamford", "bridge"),
+}
+
+# 人名是事件核心的类型：这些类型下「主体不同」就是两件事
+PERSON_CENTRIC_TYPES = {"TRANSFER", "CONTRACT", "APPOINTMENT", "DISCIPLINE", "INJURY"}
+
+
+def _name_like(token):
+    """是否像一个人名：首字母大写、纯字母、不在排除表里。"""
+    if not token or len(token) < 3:
+        return False
+    if not token[0].isupper():
+        return False
+    if not re.fullmatch(r"[A-Za-z'\-]+", token):
+        return False
+    return token.lower() not in _NAME_STOP
+
+
+def person_names(title):
+    """抽取标题里的人物主体（球员 / 教练）。
+
+    两条路径：
+      1. 角色词之后紧跟的连续大写词（"winger Michael Olise"）
+      2. 相邻两个大写词，且不是已知机构/赛事组合（"Michael Olise"）
+    """
+    text = title or ""
+    tokens = re.findall(r"[A-Za-z][A-Za-z'\-]*", text)
+    if not tokens:
+        return set()
+    low = [t.lower() for t in tokens]
+    n = len(tokens)
+    found = set()
+
+    for i, lt in enumerate(low):
+        if lt in ROLE_WORDS or lt in SIGN_WORDS:
+            j, taken = i + 1, 0
+            while j < n and taken < 2:
+                if not _name_like(tokens[j]):
+                    break
+                found.add(low[j])
+                j += 1
+                taken += 1
+
+    for i in range(n - 1):
+        if _name_like(tokens[i]) and _name_like(tokens[i + 1]):
+            if (low[i], low[i + 1]) not in NON_PERSON_BIGRAMS:
+                found.add(low[i])
+                found.add(low[i + 1])
+    return found
+
+
 _NUM_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(m|million|k|bn|billion|%|year|years|yr|yrs)\b")
 
 
@@ -305,24 +454,26 @@ def build_records(raw_records):
     """把原始记录规范化成可计算的证据条目。
 
     入参允许两种形态：
-      · [{"url": ..., "title": ..., "publisher": ..., "desc": ...}, ...]
+      · [{"url", "title", "publisher", "feed_origin", "desc"}, ...]
       · ["https://...", ...]                  纯 URL 列表
 
-    `publisher` 是 Google News RSS 的 <source url="...">，用来还原真实发布方域名。
-    没有它的话，所有走 Google News 降级的稿件都会被判成「聚合器链接不可作为证据」，
-    等于把整个降级矩阵的证据能力废掉。
-
-    `desc` 是 RSS 摘要，用于「同一篇稿子被改标题转载」的正文相似度判定。
+    `publisher` 是 RSS 的 <source url="...">，`feed_origin` 是这条记录来自哪个 feed。
+    **信任规则（V1.2 任务 1）**：
+      · 只有 TRUSTED_PUBLISHER_FEEDS 里的 feed 才能用 publisher 决定文章归属；
+      · 其余 feed 的 publisher 一律忽略，归属只看文章真实 URL；
+      · 两个域名都保留（url_domain / publisher_domain），便于事后审计；
+      · publisher 与 url 域名不一致、而 feed 又不可信时，标记 identity_conflict。
     """
     records, seen = [], set()
     for raw in raw_records or []:
         if isinstance(raw, str):
-            url, title, publisher, desc = raw, "", "", ""
+            url, title, publisher, desc, feed_origin = raw, "", "", "", ""
         elif isinstance(raw, dict):
             url = raw.get("url") or ""
             title = raw.get("title") or ""
             publisher = raw.get("publisher") or ""
             desc = raw.get("desc") or raw.get("description") or ""
+            feed_origin = raw.get("feed_origin") or raw.get("source") or ""
         else:
             continue
         canon = canonical_url(url)
@@ -332,14 +483,28 @@ def build_records(raw_records):
 
         url_domain = extract_domain(url)
         pub_domain = extract_domain(publisher) if publisher else ""
-        # 有发布方域名时以它为准（Google News 链接的真实来源），否则看链接本身
-        domain = pub_domain or url_domain
+        publisher_trusted = bool(pub_domain) and feed_trusts_publisher(feed_origin)
+
+        if publisher_trusted and pub_domain:
+            # 可信 feed（Google News）：publisher 才是真实发布方，文章链接只是跳转
+            domain = pub_domain
+            identity_conflict = False
+        else:
+            # 不可信 feed：归属只能看文章真实 URL
+            domain = url_domain or pub_domain
+            identity_conflict = bool(pub_domain) and bool(url_domain) and pub_domain != url_domain
+
         source_class = classify_source(domain)
         records.append({
             "url": url,
             "canonical": canon,
+            "source_id": source_id_for(canon),
             "domain": domain,
             "url_domain": url_domain,
+            "publisher_domain": pub_domain,
+            "publisher_trusted": publisher_trusted,
+            "identity_conflict": identity_conflict,
+            "feed_origin": feed_origin,
             "source_class": source_class,
             "title": (title or "").strip()[:200],
             "title_key": title_fingerprint(title),
@@ -347,15 +512,9 @@ def build_records(raw_records):
             "tokens": _tokens(title),
             "desc_tokens": _tokens(desc),
             "primary_type": primary_event_type(title),
+            "persons": person_names(title),
         })
     return records
-
-
-_STOPWORDS = {
-    "the", "a", "an", "of", "to", "in", "on", "for", "and", "or", "at", "by",
-    "with", "from", "as", "is", "are", "be", "after", "over", "into", "amid",
-    "news", "update", "latest", "live", "report", "says", "said",
-}
 
 
 def _tokens(text):
@@ -405,12 +564,61 @@ def _rec_type(record):
     return t if t is not None else primary_event_type(record.get("title"))
 
 
+def _rec_persons(record):
+    p = record.get("persons")
+    return p if p is not None else person_names(record.get("title"))
+
+
+# 动作词：用来判断两条标题是否共享「同一个动作事实」
+ACTION_WORDS = {
+    "agree", "agrees", "agreed", "sign", "signs", "signed", "signing",
+    "confirm", "confirms", "confirmed", "reject", "rejects", "rejected",
+    "sack", "sacks", "sacked", "appoint", "appoints", "appointed",
+    "ban", "bans", "banned", "suspend", "suspends", "suspended",
+    "lose", "loses", "lost", "win", "wins", "won", "beat", "beats",
+    "close", "closes", "closed", "complete", "completes", "completed",
+    "open", "opens", "opened", "suffer", "suffers", "suffered",
+    "rule", "rules", "ruled", "deny", "denies", "denied",
+    "announce", "announces", "announced", "join", "joins", "joined",
+    "leave", "leaves", "left", "return", "returns", "returned",
+    "arrest", "arrested", "charge", "charged", "die", "dies", "died",
+}
+
+
+def shared_key_facts(anchor, other):
+    """两条记录共享的「具体事实」：同一个人、同一个数字、同一个动作、同一个事件要素。
+
+    V1.2 任务 3 要求：关键事实缺失时，不得仅靠高标题相似度授予官方确认。
+    这里的返回值就是「关键事实是否对齐」的证据。
+    """
+    facts = set()
+    for name in _rec_persons(anchor) & _rec_persons(other):
+        facts.add(f"person:{name}")
+    for num in _key_numbers(anchor.get("title")) & _key_numbers(other.get("title")):
+        facts.add(f"num:{num}")
+
+    shared_tokens = _rec_tokens(anchor) & _rec_tokens(other)
+    for word in shared_tokens:
+        if word in ACTION_WORDS:
+            facts.add(f"action:{word}")
+
+    # 共享的「事件要素词」也算关键事实：红牌 / 申诉 / 伤情 / 转会费 …
+    # 只看动作词会漏掉「Dowman red card appeal」这类同义改写，导致真官方确认被误杀。
+    type_words = set()
+    for t in (_rec_type(anchor), _rec_type(other)):
+        if t:
+            type_words |= EVENT_KEYWORDS.get(t, set())
+    for word in shared_tokens & type_words:
+        facts.add(f"fact:{word}")
+    return facts
+
+
 def same_event(anchor, other):
     """判断两条记录是否在讲**同一件具体事件**。返回 (bool, 原因)。
 
-    这是 V1.1 任务 1 的核心：官方确认必须落在「同一件事」上，而不是
-    「同一个俱乐部 + 同一个官方域名」。四个维度都要过：
-      主体（哪家俱乐部/谁）· 事件类型（转会/伤情/纪律…）· 关键事实（金额等）· 标题相关度
+    这是 V1.1 任务 1 / V1.2 任务 3 的核心：官方确认必须落在「同一件事」上，
+    而不是「同一个俱乐部 + 同一个官方域名」。五个维度都要过：
+      主体（俱乐部）· 人物（球员/教练）· 事件类型 · 关键数字 · 标题相关度
     """
     if anchor is other:
         return True, "同一条记录"
@@ -431,11 +639,34 @@ def same_event(anchor, other):
     if sa and sb and not (sa & sb):
         return False, f"主体不同（{'/'.join(sorted(sa))} vs {'/'.join(sorted(sb))}）"
 
-    na, nb = _key_numbers(anchor.get("title")), _key_numbers(other.get("title"))
-    if na and nb and not (na & nb):
-        return False, f"关键数字不一致（{'/'.join(sorted(na))} vs {'/'.join(sorted(nb))}）"
+    # 人物主体：只在「人名就是事件核心」的类型上比对。
+    # "Liverpool 签下 Olise" 与 "Liverpool 签下 Gordon" 是两笔转会，不是同一件事。
+    na, nb = _rec_persons(anchor), _rec_persons(other)
+    if na and nb and not (na & nb) and (pa in PERSON_CENTRIC_TYPES or pb in PERSON_CENTRIC_TYPES):
+        return False, f"人物主体不同（{'/'.join(sorted(na))} vs {'/'.join(sorted(nb))}）"
+
+    qa, qb = _key_numbers(anchor.get("title")), _key_numbers(other.get("title"))
+    if qa and qb and not (qa & qb):
+        return False, f"关键数字不一致（{'/'.join(sorted(qa))} vs {'/'.join(sorted(qb))}）"
 
     return True, "主体 / 事件类型 / 关键事实一致"
+
+
+def official_confirmation_ok(anchor, other):
+    """官方确认的**加严**判定：不仅要是同一事件，还必须能对齐一条具体事实。
+
+    V1.2 任务 3：「关键事实缺失时，不得仅靠高标题相似度授予官方确认」。
+    标题长得像不等于同一件事——必须共享至少一个人物 / 数字 / 动作事实。
+    """
+    ok, why = same_event(anchor, other)
+    if not ok:
+        return False, why
+    if anchor is other:
+        return True, "同一记录"
+    facts = shared_key_facts(anchor, other)
+    if not facts:
+        return False, "标题相似但缺少可对齐的关键事实（人物/数字/动作），不予官方确认"
+    return True, f"关键事实一致（{', '.join(sorted(facts)[:3])}）"
 
 
 def filter_related(records, anchor):
@@ -547,13 +778,15 @@ def independent_sources(records):
 
 
 def detect_conflict(source_claims, model_conflict_flag=False):
-    """判定来源间是否互相矛盾。
+    """判定来源间是否互相矛盾。返回 (是否冲突, 原因, 冲突来源)。
 
-    只看结构化事实：同一 claim_key 下出现 supports / denies 两种 stance 即为冲突。
-    模型的 evidence_conflict 布尔值只能作为「加一条线索」，不能单独定案。
+    冲突来源有三种取值：
+      · "claims" —— 结构化事实里同一 claim_key 出现 supports / denies 两种立场。
+        这是**已验证的冲突**，与来源数量无关，哪怕只有 1 个来源也必须拦下。
+      · "model"  —— 模型自报 evidence_conflict。只是待核验线索，程序无法确证，
+        因此按「保守拒绝自动推送」处理，不直接判定为 CONFLICTING。
+      · ""       —— 未发现冲突。
     """
-    if model_conflict_flag:
-        return True, "模型报告来源说法冲突"
     stances = {}
     for claim in source_claims or []:
         if not isinstance(claim, dict):
@@ -565,8 +798,10 @@ def detect_conflict(source_claims, model_conflict_flag=False):
         stances.setdefault(key, set()).add(stance)
     for key, s in stances.items():
         if len(s) > 1:
-            return True, f"同一事实出现相反表述：{key}"
-    return False, ""
+            return True, f"同一事实出现相反表述：{key}", "claims"
+    if model_conflict_flag:
+        return True, "模型报告来源说法冲突，程序无法确证", "model"
+    return False, "", ""
 
 
 def evaluate(evidence_url, records, source_claims=None, model_conflict_flag=False):
@@ -630,11 +865,13 @@ def evaluate(evidence_url, records, source_claims=None, model_conflict_flag=Fals
     candidate_official = [
         r for r in records
         if r["source_class"] == "OFFICIAL"
+        and not r.get("identity_conflict")      # 身份存疑的记录不得充当官方确认
         and _report_similarity(anchor, r) >= RELATED_THRESHOLD
     ]
     confirmed_official, rejected_official = [], []
     for r in candidate_official:
-        ok_same, _why = same_event(anchor, r)
+        # 官方确认走加严判定：必须是同一事件，且能对齐至少一条具体事实
+        ok_same, _why = official_confirmation_ok(anchor, r)
         (confirmed_official if ok_same else rejected_official).append(r)
 
     # 指向别的事件的官方记录，不是本事件的证据，必须从证据池里剔除，
@@ -649,7 +886,14 @@ def evaluate(evidence_url, records, source_claims=None, model_conflict_flag=Fals
     # UNKNOWN 域名不得计入交叉印证：只有在完全没有可信来源时，才把它算作「1 个来源」
     count = len(trusted) if trusted else (1 if groups_all else 0)
     sources = [
-        {"domain": r["domain"], "source_class": r["source_class"], "url": r["url"]}
+        {
+            "source_id": r.get("source_id") or source_id_for(r["canonical"]),
+            "domain": r["domain"],
+            "url_domain": r.get("url_domain") or "",
+            "publisher_domain": r.get("publisher_domain") or "",
+            "source_class": r["source_class"],
+            "url": r["url"],
+        }
         for r in pool
     ]
     rejected_domains = sorted({r["domain"] for r in rejected_official})
@@ -657,9 +901,17 @@ def evaluate(evidence_url, records, source_claims=None, model_conflict_flag=Fals
     def groups_for_count():
         return trusted if trusted else groups_all
 
-    conflict, conflict_reason = detect_conflict(source_claims, model_conflict_flag)
-    if conflict and count >= 2:
+    # ---- V1.2 任务 4：冲突不看来源数量 ----
+    # 已验证的事实冲突（结构化 claim 里 supports / denies 并存）必须直接拦下，
+    # 哪怕只有一个来源、哪怕它来自官方域名。冲突未解决时绝不允许返回官方确认。
+    conflict, conflict_reason, conflict_kind = detect_conflict(source_claims, model_conflict_flag)
+    if conflict_kind == "claims":
         return result(CONFLICTING, conflict_reason or "来源之间说法冲突",
+                      True, groups_for_count(), sources, rejected_domains)
+    if conflict_kind == "model":
+        # 模型自报冲突只是线索，程序无法确证 → 保守拒绝自动推送
+        return result(UNVERIFIED,
+                      f"{conflict_reason}，无法由程序确证，保守拒绝自动推送",
                       True, groups_for_count(), sources, rejected_domains)
 
     if confirmed_official:

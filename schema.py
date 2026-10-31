@@ -104,8 +104,25 @@ def validate_scan(data):
 
 
 # ==================== 早报 Schema ====================
-def validate_summary(data):
-    """校验每日汇总输出。"""
+# V1.2 任务 6：每个 top_event 必须能追溯到程序侧的已验证事件。
+# 缺任何一项都说明模型在自己造事件，直接拒绝整篇早报。
+SUMMARY_EVENT_FIELDS = (
+    ("event_id", 1),        # 必须来自程序给出的 verified event_id 列表
+    ("title", 2),
+    ("one_line", 2),
+    ("evidence_status", 1),  # 程序覆盖，模型无权自报
+    ("attribution", 1),      # 来源名称 + 等级
+    ("published_at", 1),     # 原始发布时间
+)
+
+
+def validate_summary(data, allowed_event_ids=None):
+    """校验每日汇总输出。
+
+    `allowed_event_ids` 是程序算出的「已验证事件」集合（V1.2 任务 5/6）。
+    传入后，任何不在集合内的 event_id 都会被判为不合格——
+    这是防止模型「自己加一条新闻进早报」的最后一道门。
+    """
     errors = []
 
     if not isinstance(data, dict):
@@ -134,15 +151,33 @@ def validate_summary(data):
     events = data.get("top_events")
     if not isinstance(events, list) or not events:
         errors.append("top_events 必须是非空列表")
-    else:
-        for idx, item in enumerate(events, 1):
-            if not isinstance(item, dict):
-                errors.append(f"top_events 第 {idx} 项不是对象")
-                continue
-            if not _nonempty_str(item.get("title"), 2):
-                errors.append(f"top_events 第 {idx} 项缺少 title")
-            if not _nonempty_str(item.get("one_line"), 2):
-                errors.append(f"top_events 第 {idx} 项缺少 one_line")
+        return (len(errors) == 0), errors, data
+
+    allowed = set(allowed_event_ids) if allowed_event_ids is not None else None
+    for idx, item in enumerate(events, 1):
+        if not isinstance(item, dict):
+            errors.append(f"top_events 第 {idx} 项不是对象")
+            continue
+        for field, min_len in SUMMARY_EVENT_FIELDS:
+            if not _nonempty_str(item.get(field), min_len):
+                errors.append(f"top_events 第 {idx} 项缺少 {field}")
+
+        status = item.get("evidence_status")
+        if status and status not in ev.ALL_STATUSES:
+            errors.append(f"top_events 第 {idx} 项 evidence_status 不合法：{status!r}")
+
+        urls = item.get("source_urls")
+        if not isinstance(urls, list) or not urls:
+            errors.append(f"top_events 第 {idx} 项 source_urls 必须是非空列表")
+        else:
+            for u in urls:
+                if not _is_http_url(u):
+                    errors.append(f"top_events 第 {idx} 项 source_urls 含非法链接：{u!r}")
+                    break
+
+        eid = item.get("event_id")
+        if allowed is not None and _nonempty_str(eid, 1) and eid not in allowed:
+            errors.append(f"top_events 第 {idx} 项 event_id={eid!r} 不在已验证事件集合内")
 
     return (len(errors) == 0), errors, data
 

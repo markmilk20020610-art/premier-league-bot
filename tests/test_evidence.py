@@ -384,5 +384,200 @@ class TestTask5BlackLabelGate(unittest.TestCase):
             self.assertFalse(ev.auto_push_allowed({"status": status})[0])
 
 
+# ==================== V1.2 第一批验收 ====================
+MAL_ARTICLE = "https://malicious.example/fake-liverpool-news"
+RSSHUB_FEED = "https://rsshub.app/test"
+GNEWS_FEED = "https://news.google.com/rss/search?q=liverpool"
+LFC = "https://www.liverpoolfc.com/news/olise-deal"
+
+OLISE_TITLE = "Liverpool agree deal to sign winger Michael Olise"
+GORDON_TITLE = "Liverpool agree deal to sign winger Anthony Gordon"
+
+
+class TestTask1FeedTrustBoundary(unittest.TestCase):
+    """任务 1：第三方 RSS 不得用 <source url> 冒充官方来源。"""
+
+    def test_malicious_feed_cannot_claim_official(self):
+        records = [{
+            "url": MAL_ARTICLE,
+            "title": OLISE_TITLE,
+            "publisher": "https://www.liverpoolfc.com",
+            "feed_origin": RSSHUB_FEED,
+        }]
+        built = ev.build_records(records)[0]
+        self.assertNotEqual(built["source_class"], "OFFICIAL",
+                            "不可信 feed 的 source 元数据不得把文章升格为官方")
+        self.assertEqual(built["source_class"], "UNKNOWN")
+        self.assertEqual(built["url_domain"], "malicious.example")
+        self.assertEqual(built["publisher_domain"], "liverpoolfc.com")
+        self.assertFalse(built["publisher_trusted"])
+        self.assertTrue(built["identity_conflict"])
+
+        verdict = ev.evaluate(MAL_ARTICLE, records)
+        self.assertNotEqual(verdict["status"], ev.OFFICIAL_CONFIRMED)
+        self.assertFalse(ev.auto_push_allowed(verdict)[0])
+
+    def test_google_news_feed_may_use_source_metadata(self):
+        records = [{
+            "url": "https://news.google.com/rss/articles/CBMiX",
+            "title": OLISE_TITLE,
+            "publisher": "https://www.liverpoolfc.com",
+            "feed_origin": GNEWS_FEED,
+        }]
+        built = ev.build_records(records)[0]
+        self.assertEqual(built["source_class"], "OFFICIAL")
+        self.assertTrue(built["publisher_trusted"])
+        self.assertFalse(built["identity_conflict"])
+        self.assertEqual(built["domain"], "liverpoolfc.com")
+        self.assertEqual(built["url_domain"], "google.com")
+
+    def test_non_google_feed_publisher_is_ignored(self):
+        """直连 feed（bbc）自带的 publisher 即使写着官方域名也不采纳。"""
+        records = [{
+            "url": "https://www.bbc.co.uk/sport/football/articles/c1",
+            "title": OLISE_TITLE,
+            "publisher": "https://www.liverpoolfc.com",
+            "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+        }]
+        built = ev.build_records(records)[0]
+        self.assertEqual(built["domain"], "bbc.co.uk")
+        self.assertEqual(built["source_class"], "TIER1")
+        self.assertFalse(built["publisher_trusted"])
+
+    def test_matching_publisher_and_url_is_not_a_conflict(self):
+        records = [{
+            "url": "https://www.bbc.co.uk/sport/football/articles/c1",
+            "title": OLISE_TITLE,
+            "publisher": "https://www.bbc.co.uk",
+            "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+        }]
+        built = ev.build_records(records)[0]
+        self.assertFalse(built["identity_conflict"])
+        self.assertEqual(built["source_class"], "TIER1")
+
+    def test_spoofed_official_record_cannot_confirm_other_story(self):
+        """即使池子里混进一条冒充官方的记录，也不能让真新闻变成官方确认。"""
+        records = [
+            {"url": BBC2, "title": OLISE_TITLE,
+             "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml"},
+            {"url": MAL_ARTICLE, "title": OLISE_TITLE,
+             "publisher": "https://www.liverpoolfc.com", "feed_origin": RSSHUB_FEED},
+        ]
+        verdict = ev.evaluate(BBC2, records)
+        self.assertNotEqual(verdict["status"], ev.OFFICIAL_CONFIRMED)
+
+    def test_source_id_is_program_derived(self):
+        records = ev.build_records([{"url": BBC2, "title": OLISE_TITLE}])
+        self.assertTrue(records[0]["source_id"].startswith("src_"))
+        same = ev.build_records([{"url": BBC2 + "/", "title": "other"}])
+        self.assertEqual(records[0]["source_id"], same[0]["source_id"],
+                         "同一规范化 URL 必须得到同一个 source_id")
+
+
+class TestTask3EntityAwareSameEvent(unittest.TestCase):
+    """任务 3：same_event 必须识别球员/教练主体。"""
+
+    def build(self, url, title, **extra):
+        return ev.build_records([dict({"url": url, "title": title}, **extra)])[0]
+
+    def test_different_players_are_different_events(self):
+        a = self.build("https://www.bbc.co.uk/a", OLISE_TITLE)
+        b = self.build(LFC, GORDON_TITLE)
+        ok, why = ev.same_event(a, b)
+        self.assertFalse(ok, "同俱乐部不同球员的转会不得判为同一事件")
+        self.assertIn("人物主体不同", why)
+
+    def test_different_players_block_official_confirmation(self):
+        records = [
+            {"url": "https://www.bbc.co.uk/a", "title": OLISE_TITLE,
+             "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml"},
+            {"url": LFC, "title": GORDON_TITLE,
+             "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml"},
+        ]
+        verdict = ev.evaluate("https://www.bbc.co.uk/a", records)
+        self.assertNotEqual(verdict["status"], ev.OFFICIAL_CONFIRMED)
+        self.assertFalse(ev.auto_push_allowed(verdict)[0])
+
+    def test_same_player_different_event_is_not_merged(self):
+        """同一球员、不同事件：转会 vs 伤情，不能被合并。"""
+        a = self.build("https://www.bbc.co.uk/a", "Liverpool agree deal to sign winger Michael Olise")
+        b = self.build("https://www.bbc.co.uk/b",
+                       "Liverpool confirm winger Michael Olise suffers knee injury")
+        ok, why = ev.same_event(a, b)
+        self.assertFalse(ok)
+        self.assertIn("事件类型不同", why)
+
+    def test_same_player_same_event_is_merged(self):
+        """同一球员、同一事件的不同措辞：必须能认出来。"""
+        a = self.build("https://www.bbc.co.uk/a", OLISE_TITLE)
+        b = self.build(LFC, "Liverpool agree deal to sign winger Michael Olise from Crystal Palace")
+        ok, why = ev.same_event(a, b)
+        self.assertTrue(ok, why)
+
+    def test_person_names_extraction(self):
+        self.assertEqual(ev.person_names(OLISE_TITLE), {"michael", "olise"})
+        self.assertEqual(ev.person_names("Chelsea sack manager Mauricio Pochettino"),
+                         {"mauricio", "pochettino"})
+        # 普通标题不得抽出假人名
+        self.assertEqual(ev.person_names("Arsenal set to sign striker in January"), set())
+        self.assertEqual(ev.person_names("Arsenal lose appeal against Dowman red card"), set())
+
+    def test_official_confirmation_requires_shared_key_fact(self):
+        """标题像但没有可对齐的关键事实 → 不予官方确认。"""
+        a = self.build("https://www.bbc.co.uk/a", "Arsenal agree deal for striker as transfer talks advance")
+        b = self.build("https://www.arsenal.com/b", "Arsenal agree deal for striker after transfer talks")
+        ok, why = ev.official_confirmation_ok(a, b)
+        self.assertTrue(ok, why)
+        self.assertIn("关键事实一致", why)
+
+
+class TestTask4ConflictIgnoresSourceCount(unittest.TestCase):
+    """任务 4：已验证的事实冲突不得因为来源少而被忽略。"""
+
+    def test_single_official_source_with_internal_conflict(self):
+        records = [{"url": FA2, "title": "FA statement on disciplinary matter"}]
+        claims = [
+            {"claim_key": "appeal_upheld", "stance": "supports", "source": "thefa.com"},
+            {"claim_key": "appeal_upheld", "stance": "denies", "source": "thefa.com"},
+        ]
+        verdict = ev.evaluate(FA2, records, source_claims=claims)
+        self.assertEqual(verdict["status"], ev.CONFLICTING)
+        self.assertNotEqual(verdict["status"], ev.OFFICIAL_CONFIRMED)
+        self.assertFalse(ev.auto_push_allowed(verdict)[0])
+
+    def test_conflict_beats_multi_source(self):
+        records = [
+            {"url": BBC2, "title": "Arsenal set to sign striker in January"},
+            {"url": SKY2, "title": "Arsenal rule out January striker signing"},
+        ]
+        claims = [
+            {"claim_key": "sign_striker", "stance": "supports", "source": "bbc.co.uk"},
+            {"claim_key": "sign_striker", "stance": "denies", "source": "skysports.com"},
+        ]
+        verdict = ev.evaluate(BBC2, records, source_claims=claims)
+        self.assertEqual(verdict["status"], ev.CONFLICTING)
+        self.assertFalse(ev.auto_push_allowed(verdict)[0])
+
+    def test_model_reported_conflict_alone_blocks_push(self):
+        """模型自报冲突只是线索：程序无法确证 → 保守拒绝自动推送。"""
+        verdict = ev.evaluate(FA2, [{"url": FA2, "title": "FA statement on disciplinary matter"}],
+                              model_conflict_flag=True)
+        self.assertNotEqual(verdict["status"], ev.OFFICIAL_CONFIRMED)
+        self.assertFalse(ev.auto_push_allowed(verdict)[0])
+        self.assertIn("保守拒绝", verdict["reason"])
+
+    def test_detect_conflict_reports_source_of_conflict(self):
+        self.assertEqual(ev.detect_conflict([], False), (False, "", ""))
+        conflict, _reason, kind = ev.detect_conflict([], True)
+        self.assertTrue(conflict)
+        self.assertEqual(kind, "model")
+        conflict2, _r2, kind2 = ev.detect_conflict([
+            {"claim_key": "k", "stance": "supports"},
+            {"claim_key": "k", "stance": "denies"},
+        ], False)
+        self.assertTrue(conflict2)
+        self.assertEqual(kind2, "claims")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

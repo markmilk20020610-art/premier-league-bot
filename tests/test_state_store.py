@@ -110,7 +110,12 @@ class TestDeliveryStateMachine(unittest.TestCase):
         self.assertEqual(event["delivery_status"], store.COMMITTED)
 
     def test_recovery_uncertain_pending(self):
-        """卡在 PENDING_DELIVERY 且已尝试过 → 结果未知，不自动重发。"""
+        """卡在 PENDING_DELIVERY 且已尝试过 → 结果未知，不自动重发。
+
+        V1.2 任务 9 变更：这里原来断言 DELIVERY_FAILED，等于把「可能已送达」
+        谎报成「确定没送达」——下一轮按失败重投就会重复推送。断言强度不变
+        （仍然要求给出明确原因、仍然要求不再自动重发），只是状态更精确。
+        """
         event = store.record_event(self.state, "https://bbc.co.uk/b", "Chelsea news", "SINGLE_SOURCE")
         store.transition(event, store.VERIFIED)
         store.begin_delivery(event)      # attempts=1，随后进程被杀
@@ -118,8 +123,12 @@ class TestDeliveryStateMachine(unittest.TestCase):
         actions = store.recovery_actions(self.state)
         self.assertEqual(actions[0]["action"], "UNCERTAIN")
         store.apply_recovery(self.state)
-        self.assertEqual(event["delivery_status"], store.DELIVERY_FAILED)
+        self.assertEqual(event["delivery_status"], store.DELIVERY_UNCERTAIN)
         self.assertIn("送达结果未知", event["last_error"])
+        # 结果未知不得被当成「可重投」，也不得被当成「已处理完」
+        self.assertFalse(store.retry_due(event) and event["delivery_status"] == store.RETRYABLE_FAILURE)
+        self.assertTrue(store.blocks_rediscovery(event))
+        self.assertIn(event, store.uncertain_queue(self.state))
 
     def test_delivered_event_not_resurrected(self):
         event = store.record_event(self.state, "https://bbc.co.uk/c", "Spurs news", "SINGLE_SOURCE")

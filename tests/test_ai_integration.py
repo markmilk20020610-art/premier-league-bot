@@ -97,7 +97,7 @@ class IntegrationBase(unittest.TestCase):
         os.chdir(self.cwd)
         shutil.rmtree(self.dir, ignore_errors=True)
 
-    def _fake_send(self, text):
+    def _fake_send(self, text, *args, **kwargs):
         self.sent.append(text)
         return True, [1001], ""
 
@@ -286,6 +286,53 @@ class TestProgramSideEvidence(IntegrationBase):
         self.assertEqual(data["evidence_status"], "SINGLE_SOURCE",
                          "无关新闻不得算作交叉印证")
         self.assertFalse(ok, "单一来源默认不得自动推送")
+
+
+class TestV12GroundingSpoof(IntegrationBase):
+    """V1.2 任务 2：DeepSeek 不得提交 Grounding 证据（端到端，走真实 AIRouter）。"""
+
+    def test_deepseek_fabricated_grounding_cannot_confirm_official(self):
+        items = [self.item(0, title="Liverpool agree deal to sign winger Michael Olise",
+                           link="https://www.bbc.co.uk/sport/football/articles/c1")]
+        payload = analysis_payload(
+            event_title="利物浦官宣签下奥利塞",
+            evidence_url="https://www.liverpoolfc.com/news/olise-deal",
+        )
+        body = json.loads(payload["choices"][0]["message"]["content"])
+        # 模型伪造一组「官方 grounding」
+        body["grounding_records"] = [
+            {"url": "https://www.liverpoolfc.com/news/olise-deal", "title": "官方公告"},
+            {"url": "https://www.thefa.com/news/x", "title": "FA 声明"},
+        ]
+        body["evidence_status"] = "OFFICIAL_CONFIRMED"
+        payload["choices"][0]["message"]["content"] = json.dumps(body, ensure_ascii=False)
+
+        http = FakeHTTP([Resp(200, payload)])
+        self.install_router(http)
+
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=(items, {})):
+            rc = bot.run_scan_mode(bot.load_state(), bot._now_iso())
+
+        self.assertEqual(rc, 0)
+        self.assertEqual(len(self.sent), 0, "伪造 grounding 不得变成官方确认并推送")
+        self.assertEqual(bot.load_state()["events"], {})
+
+    def test_grounding_records_cleared_before_evidence(self):
+        items = [self.item(0)]
+        payload = analysis_payload(evidence_url="https://www.liverpoolfc.com/news/olise-deal")
+        body = json.loads(payload["choices"][0]["message"]["content"])
+        body["grounding_records"] = [
+            {"url": "https://www.liverpoolfc.com/news/olise-deal", "title": "官方公告"},
+        ]
+        payload["choices"][0]["message"]["content"] = json.dumps(body, ensure_ascii=False)
+
+        self.install_router(FakeHTTP([Resp(200, payload)]))
+        with mock.patch.object(bot, "fetch_rss_sources", return_value=(items, {})):
+            data, err = bot.evaluate_with_gemini("blob", state={})
+
+        self.assertIsNone(err)
+        self.assertEqual(data["grounding_records"], [])
+        self.assertEqual(data["verification_status"], "DEEPSEEK_NO_GROUNDING")
 
 
 if __name__ == "__main__":

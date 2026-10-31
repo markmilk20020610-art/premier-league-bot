@@ -89,28 +89,35 @@ def start_server():
 def fixture_items():
     import datetime
     now = datetime.datetime.now(datetime.timezone.utc)
+    # 每条素材自带「真实所属的 feed」。V1.2 任务 1 之后，只有白名单 feed
+    # （Google News）的 <source url> 才被采信，其余 feed 一律以文章 URL 定归属，
+    # 因此这里必须给每条素材配它自己的 feed，否则测的就不是真实链路。
     fixtures = [
         # 原始报道（evidence_url 指向这一条）
         ("Arsenal lose appeal against Dowman red card",
-         "https://www.bbc.co.uk/sport/football/articles/c0", "https://www.bbc.co.uk"),
+         "https://www.bbc.co.uk/sport/football/articles/c0", "https://www.bbc.co.uk",
+         "https://feeds.bbci.co.uk/sport/football/rss.xml"),
         # 同一篇稿的转载，标题几乎一致 → 应被判为同一来源
         ("Arsenal lose appeal against Dowman red card",
-         "https://www.dailymail.com/sport/article-1", "https://www.dailymail.com"),
+         "https://www.dailymail.com/sport/article-1", "https://www.dailymail.com",
+         "https://www.dailymail.com/sport/rss.xml"),
         # 另一家独立报道同一事件 → 应算第 2 个独立来源
         ("FA rejects Arsenal appeal over Dowman red card",
-         "https://www.skysports.com/football/news/1", "https://www.skysports.com"),
+         "https://www.skysports.com/football/news/1", "https://www.skysports.com",
+         "https://www.skysports.com/rss/12040"),
         # 无关新闻，不应参与该事件的交叉印证
         ("Chelsea injury update ahead of weekend fixture",
-         "https://www.chelseafc.com/news/1", "https://www.chelseafc.com"),
+         "https://www.chelseafc.com/news/1", "https://www.chelseafc.com",
+         "https://www.chelseafc.com/rss/news"),
     ]
     return [{
         "title": t,
         "link": link,
         "desc": "fixture description",
-        "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+        "source": feed,
         "publisher": publisher,
         "published": now,
-    } for t, link, publisher in fixtures]
+    } for t, link, publisher, feed in fixtures]
 
 
 def main():
