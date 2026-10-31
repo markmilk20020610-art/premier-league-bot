@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 23,
+        "calls": 24,
         "errors": 0,
-        "requests": 23
+        "requests": 24
       }
     },
-    "calls": 23,
+    "calls": 24,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 144561,
-    "output_tokens": 16504,
-    "requests": 23
+    "input_tokens": 150792,
+    "output_tokens": 17058,
+    "requests": 24
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -399,6 +399,33 @@
       "title": "维拉威胁起诉卡拉格：称其言论建议埃梅里接替卡里克执教曼联",
       "updated_at": "2026-10-31T00:15:54.364209+00:00"
     },
+    "92e81b710610": {
+      "article_title": "Confirmed line-ups: Spurs vs Crystal Palace - Tottenham Hotspur",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "5bd7346bb2771009",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 45
+        }
+      ],
+      "created_at": "2026-10-31T16:24:29.196403+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "5bc57fcc0616c74e",
+      "event_id": "92e81b710610",
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 45,
+      "title": "热刺对阵水晶宫首发名单确认",
+      "updated_at": "2026-10-31T16:24:29.982064+00:00"
+    },
     "b03cd11506e7": {
       "article_title": "Verstappen, Lawson receive grid penalties after 'unacceptable' practice collision",
       "attempts": 1,
@@ -550,7 +577,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:23:21.009606+00:00",
+  "last_scan_at": "2026-10-31T16:24:24.612441+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -562,6 +589,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘Absolute disgrace’ – Peter Schmeichel savages Martinez over Chelsea red card as Man Utd legend gasps ‘I have no words’"
+    },
+    {
+      "desc": "Confirmed line-ups: Spurs vs Crystal Palace Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:24:24.615993+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw?oc=5",
+      "published": "2026-10-31T16:06:39+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Confirmed line-ups: Spurs vs Crystal Palace - Tottenham Hotspur"
     },
     {
       "desc": "IAN HERBERT AT STAMFORD BRIDGE: For a time, there seemed to be hope but it was crushed by the same fecklessness and mind",
@@ -2028,15 +2065,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘It’s not always rosy’ – Michael Carrick reveals how talks with Wilcox and Berrada went amid horror Man Utd run"
-    },
-    {
-      "desc": "After a 1-1 draw in his first match as Glentoran manager, Duncan Ferguson speaks of his \"relief\" in a week filled with W",
-      "first_seen": "2026-10-31T00:05:36.321520+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cj5ynr23rg4ro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-30T22:52:32+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "From WiFi to 'relief' - how was Ferguson's Irish League debut?"
     }
   ],
   "processed_urls": [
@@ -2073,7 +2101,8 @@
     "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF",
     "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo",
-    "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea"
+    "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw"
   ],
   "schema_version": 3
 }
