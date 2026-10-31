@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 102,
+        "calls": 103,
         "errors": 0,
-        "requests": 77
+        "requests": 78
       }
     },
-    "calls": 102,
+    "calls": 103,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 553051,
-    "output_tokens": 72989,
-    "requests": 77
+    "input_tokens": 559725,
+    "output_tokens": 73441,
+    "requests": 78
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -300,7 +300,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T12:20:34.360794+00:00",
+  "last_scan_at": "2026-10-31T12:25:27.732172+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -322,6 +322,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "In-demand Spain star Martin talks future plans: 'This is my home'"
+    },
+    {
+      "desc": "United Women XI to face Everton Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T12:25:27.735563+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTU9zLXZEVi1EYnVrWWZRcGNodUFGSEh2VkJiVlVzZnFTQWV3RjFyMUFOTTQ3dVhjc0NLRzhjanJVRk1tM2N5V2tyamNVbl8wenBpMFdhOWdUQy1QQ0oyYmpzekNRdWhVSVZuOXZxU1B3OEJmZ2t5M2Q0OGkybzA4UTdaVDdiQQ?oc=5",
+      "published": "2026-10-31T11:58:41+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "United Women XI to face Everton - Manchester United"
     },
     {
       "desc": "THIS Sunday is not so super with just one Premier League fixture scheduled. That said, it is a big one as champions Arse",
