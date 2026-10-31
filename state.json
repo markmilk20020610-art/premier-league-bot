@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 68,
+        "calls": 69,
         "errors": 0,
-        "requests": 43
+        "requests": 44
       }
     },
-    "calls": 68,
+    "calls": 69,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 350890,
-    "output_tokens": 50325,
-    "requests": 43
+    "input_tokens": 356514,
+    "output_tokens": 51148,
+    "requests": 44
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -219,7 +219,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T09:30:35.450836+00:00",
+  "last_scan_at": "2026-10-31T09:35:28.226423+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -431,6 +431,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "AC Milan v Inter and the tale of an iconic image"
+    },
+    {
+      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T09:35:28.229632+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
+      "published": "2026-10-31T06:43:24+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     },
     {
       "desc": "Premier League Games on TV Today: Chelsea v Man Utd on TNT, Spurs on Sky The False 9",
