@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 202,
+        "calls": 203,
         "errors": 0,
-        "requests": 177
+        "requests": 178
       }
     },
-    "calls": 202,
+    "calls": 203,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 1175231,
-    "output_tokens": 131632,
-    "requests": 177
+    "input_tokens": 1181885,
+    "output_tokens": 132160,
+    "requests": 178
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -462,7 +462,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T14:50:30.782325+00:00",
+  "last_scan_at": "2026-10-31T14:51:21.957766+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -574,6 +574,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd target Julian Nagelsmann ‘considering taking over at European giants after being approached’"
+    },
+    {
+      "desc": "City make 10 changes - Haaland, Bouaddi and Nunes all start Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T14:51:21.959811+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF?oc=5",
+      "published": "2026-10-31T13:45:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City make 10 changes - Haaland, Bouaddi and Nunes all start - Manchester City FC"
     },
     {
       "desc": "Arsenal Team News vs Liverpool: Rice, Calafiori on Course, Saka Out The False 9",
@@ -1917,15 +1927,6 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd Transfer News Today: Fermin Lopez targeted as Romano confirms January signing - LiveScore"
-    },
-    {
-      "desc": "Liverpool FC",
-      "first_seen": "2026-10-31T00:05:36.322079+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-10-30T21:01:07+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
     }
   ],
   "processed_urls": [
