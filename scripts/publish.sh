@@ -22,7 +22,7 @@
 #   3. 跑快速测试：python tests/run_all.py --fast
 #   4. 暂存：只加你指定的路径，或 -u（只加已跟踪文件的修改），**从不 git add -A**
 #   5. 空提交检查 + 展示将要提交的清单
-#   6. commit + push（永不 force）
+#   6. commit + push（永不 force）；被机器人提交顶掉时自动 rebase 重试，最多 3 次
 # =============================================================================
 
 set -uo pipefail
@@ -149,7 +149,46 @@ SHA="$(git rev-parse --short HEAD)"
 echo "[OK] 已提交 $SHA"
 
 export GIT_TERMINAL_PROMPT=0 GCM_INTERACTIVE=never
-if ! git push origin "$BRANCH" 2>&1 | tail -3; then
+
+# 推送被拒（non-fast-forward）在这里是**常态**而不是异常：机器人每轮扫描都会往
+# main 提交一次 "Auto-update state.json [skip ci]"，本地很容易落后一两个提交。
+# 因此这里自动 fetch + rebase 后重试，最多 3 次。
+# 两条硬约束：永不 force push；rebase 冲突就整体放弃，把提交留在本地交给人处理。
+push_with_rebase() {
+  local attempt=1
+  local max=3
+  local out=""
+  local rc=0
+  while [ "$attempt" -le "$max" ]; do
+    # 刻意不用 `git push ... | tail`：管道的退出码是 tail 的，
+    # 只有在 pipefail 打开时才等于 git 的——不能把正确性寄托在调用方的 shell 选项上。
+    out="$(git push origin "$BRANCH" 2>&1)"
+    rc=$?
+    printf '%s\n' "$out" | tail -3
+    if [ "$rc" -eq 0 ]; then
+      return 0
+    fi
+    if [ "$attempt" -ge "$max" ]; then
+      return 1
+    fi
+    echo "[WARN] push 被拒（第 $attempt 次）：远端已被自动提交推进，rebase 后重试"
+    if ! git fetch --quiet origin "$BRANCH"; then
+      echo "[ERROR] git fetch 失败，无法自动 rebase"
+      return 1
+    fi
+    if ! git rebase "origin/$BRANCH" --quiet; then
+      git rebase --abort >/dev/null 2>&1 || true
+      echo "[ERROR] rebase 到 origin/$BRANCH 时冲突，已回滚 rebase"
+      return 1
+    fi
+    SHA="$(git rev-parse --short HEAD)"
+    echo "[INFO] rebase 完成，当前提交 $SHA"
+    attempt=$((attempt + 1))
+  done
+  return 1
+}
+
+if ! push_with_rebase; then
   fail "git push 失败；提交已保存在本地 $SHA，排查后手动 git push 即可"
 fi
 
