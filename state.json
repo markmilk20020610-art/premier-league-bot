@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 99,
+        "calls": 100,
         "errors": 0,
-        "requests": 99
+        "requests": 100
       }
     },
-    "calls": 99,
+    "calls": 100,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 619031,
-    "output_tokens": 64688,
-    "requests": 99
+    "input_tokens": 625206,
+    "output_tokens": 65359,
+    "requests": 100
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -739,7 +739,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:39:19.877722+00:00",
+  "last_scan_at": "2026-10-31T17:40:28.838173+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -881,6 +881,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "James Trafford makes horror error as Leeds star and England No1 hopeful left red-faced in painful Bournemouth defeat"
+    },
+    {
+      "desc": "Lukas Fadinger's late penalty brought Motherwell's seven-game winless run to an end and delivered three much-needed Scot",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T17:40:28.840269+00:00",
+      "link": "https://www.skysports.com/football/motherwell-vs-st-mirren/report/558403",
+      "published": "2026-10-31T17:08:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Fadinger's penalty downs St Mirren to end Motherwell's winless run"
     },
     {
       "desc": "SUNDERLAND star Nilson Angulo avoided a red card despite pulling Coventry man Tatsuhiro Sakamoto's hair on Saturday afte",
@@ -2231,16 +2241,6 @@
       "publisher": "https://ticketing.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
-    },
-    {
-      "desc": "Premier League Games on TV Today: Chelsea v Man Utd on TNT, Spurs on Sky The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T07:50:31.811695+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZ1NWTTFFX0hZVmVZY2FsRWhibTdvbXRfU2cxMVpYWmtqQjVBQ1VLbGQzLTl1SWRGeUFMd3VEZXRRLXdRWE5aZ0ExVlFwMVdGWTFOMVlTc1IzcTJLYW1hYVhUV3NSX243eDJEWHB5ZXk5ME1FdVZrSWZzY0l3V2g5U3RPU1A?oc=5",
-      "published": "2026-10-31T06:41:33+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Premier League Games on TV Today: Chelsea v Man Utd on TNT, Spurs on Sky - The False 9"
     }
   ],
   "processed_urls": [
