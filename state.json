@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 37,
+        "calls": 38,
         "errors": 0,
-        "requests": 12
+        "requests": 13
       }
     },
-    "calls": 37,
+    "calls": 38,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 196429,
-    "output_tokens": 27356,
-    "requests": 12
+    "input_tokens": 201644,
+    "output_tokens": 28193,
+    "requests": 13
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -70,6 +70,33 @@
       "title": "切尔西vs曼联焦点战主裁判敲定：班克斯执法，TNT午间12:30开球",
       "updated_at": "2026-10-31T00:20:51.948581+00:00"
     },
+    "4116e6d3a07d": {
+      "article_title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "b3f287f31db812c2",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 24
+        }
+      ],
+      "created_at": "2026-10-31T07:00:54.101396+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "1da836daad7f80e2",
+      "event_id": "4116e6d3a07d",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 24,
+      "title": "阿斯顿维拉拟对卡拉格提起法律诉讼，指控其言论构成“不可接受的侮辱”",
+      "updated_at": "2026-10-31T07:00:54.836824+00:00"
+    },
     "51d986cb8977": {
       "attempts": 1,
       "created_at": "2026-10-31T00:25:39.058557+00:00",
@@ -111,9 +138,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T06:55:27.922857+00:00",
+  "last_scan_at": "2026-10-31T07:00:47.343811+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T07:00:47.345998+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6x2qr8dj81vo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T06:54:52+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
     {
       "desc": "AC Milan versus Inter will be shown live on the BBC on Saturday - this is the story of the fixture's most iconic image.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -203,6 +240,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Verstappen, Lawson receive grid penalties after 'unacceptable' practice collision"
+    },
+    {
+      "desc": "Spurs Dart Flights 3-Pack Set I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T07:00:47.346192+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRkVFdC1rWkdLTllFSUs1SEtMZXRKdE9pUDRiUWNsRmQwdUlIUENpTG9TZG0tUXNFUVRvSS1Fc0x0ci11dlFyRU1vMm54bEhGcXNCMGtvOG5ib2tsTllsOEcwX1ROSnUxSWtYWXEyWTdaZ0JqRmtRd1dCS0xlQnNQT0llWlp6WmpZNnJkQw?oc=5",
+      "published": "2026-10-31T02:21:48+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Dart Flights 3-Pack Set I Spurs - Tottenham Hotspur"
     },
     {
       "desc": "Liverpool vs Arsenal Referee: Andy Madley, VAR Attwell, 4.30pm Sunday The False 9",
@@ -979,7 +1026,8 @@
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
     "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
     "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
-    "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html"
+    "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw"
   ],
   "schema_version": 3
 }
