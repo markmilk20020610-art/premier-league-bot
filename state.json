@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 85,
+        "calls": 86,
         "errors": 0,
-        "requests": 85
+        "requests": 86
       }
     },
-    "calls": 85,
+    "calls": 86,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 531343,
-    "output_tokens": 56454,
-    "requests": 85
+    "input_tokens": 537582,
+    "output_tokens": 57028,
+    "requests": 86
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -712,9 +712,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:25:27.519779+00:00",
+  "last_scan_at": "2026-10-31T17:26:21.765633+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T17:26:21.769274+00:00",
+      "link": "https://www.skysports.com/football/rangers-vs-aberdeen/558404",
+      "published": "2026-10-31T17:25:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "SLC semis: Rangers vs Aberdeen - latest score"
+    },
     {
       "desc": "Hull showed fight to avoid another fright and pick up a fifth Premier League draw in seven winless games. It looked to b",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2204,16 +2214,6 @@
       "publisher": "https://sports.yahoo.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano names the elite tactician “most appreciated” by the Man United board, he is a serial winner - Yahoo Sports"
-    },
-    {
-      "desc": "Šeško dedicated to his recovery Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T11:50:29.150613+00:00",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5nTFlqRTFiMVRFSzhWc0xSLUR4OEJqWFRSLW00dlZYamtTaGctWkEzbkh4VFJheHZueWhQVlRvcUVCaWZDS2pvYUNlOHh4dU9PSWpCblBHaldrY0VMandNSjBCQkJCQ2RhYm91Q21WQQ?oc=5",
-      "published": "2026-10-31T05:30:51+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Šeško dedicated to his recovery - Manchester United"
     }
   ],
   "processed_urls": [
