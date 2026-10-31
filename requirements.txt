@@ -13,6 +13,12 @@
 #   python tests/run_all.py            # 必须全绿
 #   python scripts/smoke_run.py        # 两个冒烟场景都要过
 #   然后把新版本号写回本文件。
+#
+# ⚠️ 改版本号前必须核对 PyPI 上的 requires_python 与 CI 的解释器版本一致：
+#    google-genai 2.x 要求 Python >= 3.11，而 CI 曾经用的是 3.10，
+#    结果 pip install 直接失败、整个 Job 红叉（2026-10-31 实际发生过）。
+#    现在 CI 用 3.12（见 .github/workflows/scanner.yml），本地开发用 3.13。
+#    verify job 每次 push 都会真跑一次 pip install，装不上会立刻暴露。
 # =============================================================================
 
 # Gemini 官方 SDK。当前生产策略里 AI_GEMINI_ENABLED=false（DeepSeek 唯一启用），
