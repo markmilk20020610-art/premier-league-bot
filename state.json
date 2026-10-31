@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 44,
+        "calls": 45,
         "errors": 0,
-        "requests": 44
+        "requests": 45
       }
     },
-    "calls": 44,
+    "calls": 45,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 275697,
-    "output_tokens": 32840,
-    "requests": 44
+    "input_tokens": 281948,
+    "output_tokens": 33606,
+    "requests": 45
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -317,6 +317,33 @@
       "title": "阿斯顿维拉拟对卡拉格提起法律诉讼，指控其言论构成“不可接受的侮辱”",
       "updated_at": "2026-10-31T07:00:54.836824+00:00"
     },
+    "432fd43bba3d": {
+      "article_title": "Worst run for 42 years but Carrick not expecting Man Utd sack before Roma",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "5caed614a9a3f59a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 46
+        }
+      ],
+      "created_at": "2026-10-31T16:45:37.750474+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "b28c4729ef9c7bb8",
+      "event_id": "432fd43bba3d",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 46,
+      "title": "曼联42年最差无胜绩，卡里克仍不下课？罗马诺曝新帅目标",
+      "updated_at": "2026-10-31T16:45:38.303518+00:00"
+    },
     "4817db9d90ca": {
       "article_title": "Fuming Man Utd fans storm out of Stamford Bridge early after second half COLLAPSE against Chelsea",
       "attempts": 1,
@@ -577,7 +604,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:44:22.997911+00:00",
+  "last_scan_at": "2026-10-31T16:45:31.394430+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -2105,7 +2132,8 @@
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF",
     "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo",
     "https://www.thesun.co.uk/sport/40869380/peter-schmeichel-savages-martinez-red-card-chelsea",
-    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw"
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlN3WjBQbmdvMDNGdEtYSU5fNU5UWHhOUXBuMmx0UnAwX1lzSlpyNFNCZFY5V3RWZkVTQzc4N25PdG4tU1ZYajc1VEwwSkZUVUJaX3NTSldwSVlLMzdrWjBrd0FyaDRFc3RfcEZZUlBocGZZdURPV3pfRTJNdnN0Z3Fla3JVb2VkYTgtTG1DYU5ZSzdkNVFwQWNCbGRZMDhSUjBnSmpDQkhBWDFCRUVCUExDVEU4dw",
+    "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches"
   ],
   "schema_version": 3
 }
