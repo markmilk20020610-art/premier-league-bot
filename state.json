@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 80,
+        "calls": 81,
         "errors": 0,
-        "requests": 80
+        "requests": 81
       }
     },
-    "calls": 80,
+    "calls": 81,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 499610,
-    "output_tokens": 53384,
-    "requests": 80
+    "input_tokens": 505903,
+    "output_tokens": 54143,
+    "requests": 81
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -385,6 +385,33 @@
       "title": "西汉姆联以色列球员所罗门遭亲巴勒斯坦人士辱骂为“婴儿杀手”",
       "updated_at": "2026-10-31T00:25:39.680813+00:00"
     },
+    "71e1de6387b1": {
+      "article_title": "Brentford 2 Nottingham Forest 0: Pressure grows for Oliver Glasner as new club suffer fourth defeat in five outings",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "6b08844d8d573c1c",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 50
+        }
+      ],
+      "created_at": "2026-10-31T17:21:28.125344+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e8b23cab83214599",
+      "event_id": "71e1de6387b1",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40870818/oliver-glasner-nottingham-forest-brentford-nikola-milenkovic",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 50,
+      "title": "布伦特福德2-0诺丁汉森林：格拉斯纳新东家五场四败，帅位压力陡增",
+      "updated_at": "2026-10-31T17:21:28.754219+00:00"
+    },
     "85b871108469": {
       "article_title": "Angulo dodges VAR red after HAIR pull on Coventry’s Sakamoto as Sunderland sink further into relegation mire with loss",
       "attempts": 1,
@@ -685,9 +712,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:20:33.814562+00:00",
+  "last_scan_at": "2026-10-31T17:21:22.143475+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "NIKOLA MILENKOVIC became only the sixth different Forest player to score a Premier League goal this season - but sadly i",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T17:21:22.147073+00:00",
+      "link": "https://www.thesun.co.uk/sport/40870818/oliver-glasner-nottingham-forest-brentford-nikola-milenkovic/",
+      "published": "2026-10-31T17:20:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Brentford 2 Nottingham Forest 0: Pressure grows for Oliver Glasner as new club suffer fourth defeat in five outings"
+    },
     {
       "desc": "FREE TO WATCH: Highlights from Chelsea’s match against Manchester United in the Premier League.",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -2177,16 +2214,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Jordan Henderson on 'big moments' and playing alongside Moises Caicedo | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Chelsea vs Man Utd Team News: Palmer Back, Pedro and Sesko Out The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T03:45:34.553473+00:00",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1mWFdVdG1oZjB1ZTNrcmdwT3NBcjV1QkVSZXZrTGNSSWpwRm1lek9McEJoUGRFeDk2emxmbzRja251SlN6MllUYjlJMVpYcXdMdkFxcnhSV3ZSbmNHLURpRElwYjhnTFlSamw0a3NOak4?oc=5",
-      "published": "2026-10-31T03:39:35+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Chelsea vs Man Utd Team News: Palmer Back, Pedro and Sesko Out - The False 9"
     }
   ],
   "processed_urls": [
@@ -2228,7 +2255,8 @@
     "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches",
     "https://www.thesun.co.uk/sport/40870231/enzo-maresca-frustrated-arsenal-brighton-city",
     "https://www.thesun.co.uk/sport/40869821/nilson-angulo-escapes-red-card-hair-pull-sunderland-coventry",
-    "https://www.thesun.co.uk/sport/40870435/james-trafford-horror-error-bournemouth-defeat"
+    "https://www.thesun.co.uk/sport/40870435/james-trafford-horror-error-bournemouth-defeat",
+    "https://www.thesun.co.uk/sport/40870818/oliver-glasner-nottingham-forest-brentford-nikola-milenkovic"
   ],
   "schema_version": 3
 }
