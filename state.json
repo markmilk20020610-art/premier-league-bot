@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 22,
+        "calls": 23,
         "errors": 0,
-        "requests": 22
+        "requests": 23
       }
     },
-    "calls": 22,
+    "calls": 23,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 138408,
-    "output_tokens": 15633,
-    "requests": 22
+    "input_tokens": 144561,
+    "output_tokens": 16504,
+    "requests": 23
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -550,7 +550,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:22:25.068245+00:00",
+  "last_scan_at": "2026-10-31T16:23:21.009606+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -732,6 +732,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea 2 Man Utd 0: Michael Carrick on brink as Lisandro Martinez sent off and Red Devils implode in latest humiliation"
+    },
+    {
+      "desc": "Match report: Chelsea 2-0 Manchester United | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:23:21.011861+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTkUwSGFqbmloMFFCN2cxOTlQSnBtYXJVY3o3dERwYjQzdzBDUl96SFhZRTdzd1JLbFJiYXpKMzZMc2h6dVV5RThBZFdFMDd2R0k4RnRIWkt5SXB5cXlNcDg1eEZMRW9YYWk1dm5BbVI3ZGxBdkkyaFRFNnRjb3JtcFQwMFlaOUVtcENZMA?oc=5",
+      "published": "2026-10-31T14:30:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Match report: Chelsea 2-0 Manchester United | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "A VAR review was recommended and Martinez, who was in the headlines earlier this month for calling out the United hierar",
@@ -2027,15 +2037,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "From WiFi to 'relief' - how was Ferguson's Irish League debut?"
-    },
-    {
-      "desc": "Canelo Alvarez and Christian Mbilli both made the weight for their WBC super-middleweight world title fight on Saturday ",
-      "first_seen": "2026-10-31T00:05:36.321543+00:00",
-      "link": "https://www.skysports.com/boxing/news/12040/13605983/canelo-alvarez-and-christian-mbilli-make-weight-for-wbc-super-middleweight-world-championship-fight-in-riyadh",
-      "published": "2026-10-30T22:45:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Canelo and Mbilli make weight for world title fight in Riyadh"
     }
   ],
   "processed_urls": [
