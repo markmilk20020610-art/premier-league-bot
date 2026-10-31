@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 256,
+        "calls": 257,
         "errors": 0,
-        "requests": 256
+        "requests": 257
       }
     },
-    "calls": 256,
+    "calls": 257,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 1559603,
-    "output_tokens": 157944,
-    "requests": 256
+    "input_tokens": 1565672,
+    "output_tokens": 158679,
+    "requests": 257
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -439,6 +439,33 @@
       "title": "西汉姆联以色列球员所罗门遭亲巴勒斯坦人士辱骂为“婴儿杀手”",
       "updated_at": "2026-10-31T00:25:39.680813+00:00"
     },
+    "5261a8f93a76": {
+      "article_title": "Tottenham mood 'totally different' - De Zerbi",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "a0b2a453374db3c9",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 54
+        }
+      ],
+      "created_at": "2026-10-31T20:17:30.979671+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "58fe355d6d735521",
+      "event_id": "5261a8f93a76",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 54,
+      "title": "热刺2-0十人水晶宫取三连胜，德泽尔比称球队氛围焕然一新",
+      "updated_at": "2026-10-31T20:17:31.486801+00:00"
+    },
     "71e1de6387b1": {
       "article_title": "Brentford 2 Nottingham Forest 0: Pressure grows for Oliver Glasner as new club suffer fourth defeat in five outings",
       "attempts": 1,
@@ -793,9 +820,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T20:16:33.223886+00:00",
+  "last_scan_at": "2026-10-31T20:17:25.025161+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Tottenham manager Roberto De Zerbi said the mood at the club is \"totally different\" after picking up a third straight le",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T20:17:25.028909+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T20:13:33+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Tottenham mood 'totally different' - De Zerbi"
+    },
     {
       "desc": "Sunderland were last season's surprise package in the Premier League, but this time they are struggling after Coventry h",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -885,6 +922,16 @@
       "publisher": "https://fantasy.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "View Latest Gameweek Points - Fantasy Premier League"
+    },
+    {
+      "desc": "Hurzeler: ‘Defence wins you battles and wins you championships’ Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T20:17:25.029131+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUmFIMGdGdGx5Y2JmOGVNbTM1SlE3T2RSYlVoUVQ3enRPUHBZenBOdVBabUlzTkk0Vi1FMG85aUVibWZBWExoVEJYeDc4bkNyYXdFZlVVX2xDY0FPMHhsY1NGOUE1akhkNEM5OFc2RDhRbVVwSE1LVzhSNTVyNkVSUjdyUlZGLUJ0d0lsZnk5TUNuZTliaWRodHJZWUdXNi1EOUZZTzVRc3JEdw?oc=5",
+      "published": "2026-10-31T19:04:38+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Hurzeler: ‘Defence wins you battles and wins you championships’ - Premier League"
     },
     {
       "desc": "There is no more Mr Nice Guy at Nottingham Forest anymore, according to Oliver Glasner. The Austrian has said he will ch",
@@ -2275,26 +2322,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Cole Palmer and Man United unpacked: The truth about Old Trafford links, why he really got a new Chelsea deal, Xabi Alonso's 'emotional cont"
-    },
-    {
-      "desc": "CHELSEA fans can book a luxury VIP experience at Stamford Bridge at an unmissable price with this fantastic deal. Perfec",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T09:50:31.774371+00:00",
-      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
-      "published": "2026-10-31T09:45:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea tickets and hospitality packages for Premier League matches at Stamford Bridge from just £155pp"
-    },
-    {
-      "desc": "FOOTBALL fans can experience these unbeatable away-days to enjoy some of the biggest matches on Earth. Supporters can ex",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T09:45:31.630876+00:00",
-      "link": "https://www.thesun.co.uk/sport/40226584/travel-real-madrid-barcelona-bayern-munich-champions-league/",
-      "published": "2026-10-31T09:45:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "European football trips to see Real Madrid, Barcelona, PSG and Bayern Munich games live from just £189pp"
     }
   ],
   "processed_urls": [
@@ -2340,7 +2367,8 @@
     "https://www.thesun.co.uk/sport/40870818/oliver-glasner-nottingham-forest-brentford-nikola-milenkovic",
     "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSy03ZzJEbGVrNUNzVUU5WkhUS3NsN1VuUkZZSkNlTUM0cmR3OGEyb2x5eDVpNXplNnE1ZzFlR0FBXzdPa2xla0xjbXAxVTFuUW5zSEpybUNNb2FHYTlEQTltMlVZS2h4U0ptYVg2bTZaMHFGbzRGdDZfVW9fME95bTdDYjVrX21KNHhsd1pFYUpPQjV2Q01hLTNnZEVkSTJCX3REVFdONGV6bkJ1TjI4",
     "https://www.thesun.co.uk/sport/40871116/jean-philippe-mateta-red-tottenham-horror-challenge",
-    "https://www.thesun.co.uk/sport/40871382/jude-bellingham-jobe-bayern-dortmund-carney-chukwuemeka"
+    "https://www.thesun.co.uk/sport/40871382/jude-bellingham-jobe-bayern-dortmund-carney-chukwuemeka",
+    "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o"
   ],
   "schema_version": 3
 }
