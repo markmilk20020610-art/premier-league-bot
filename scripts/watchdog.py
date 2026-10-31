@@ -28,8 +28,14 @@ sys.path.insert(0, ROOT)
 
 CN_TZ = datetime.timezone(datetime.timedelta(hours=8))
 
-# 扫描由 cron-job.org 每 10 分钟触发；超过这个时长没有任何扫描 = 调度已停
-MAX_SCAN_AGE_HOURS = 3
+# 扫描由 cron-job.org 触发（当前 5 分钟一次，目标 1 分钟）。
+# 超过这个时长没有任何扫描 = 调度已停。
+#
+# 2026-10-31 从 3 小时收紧到 30 分钟：3 小时的阈值意味着「调度停了 3 小时」才会喊，
+# 而那时早报早就错过了。改成 30 分钟后，只要连续 6 个 5 分钟周期没有心跳就会暴露。
+# 可用环境变量覆盖，方便演练或临时放宽。
+MAX_SCAN_AGE_MINUTES = int(os.environ.get("WATCHDOG_MAX_SCAN_AGE_MINUTES") or 30)
+MAX_SCAN_AGE_HOURS = MAX_SCAN_AGE_MINUTES / 60.0
 # 早报每天 06:00 北京时间；到 08:00 仍没发就算漏报
 MORNING_DEADLINE_HOUR_CN = 8
 
@@ -82,8 +88,8 @@ def check(state, now=None, state_bytes=None):
     else:
         scan_age_h = (now - last_scan).total_seconds() / 3600.0
         if scan_age_h > MAX_SCAN_AGE_HOURS:
-            problems.append(f"最近一次扫描在 {scan_age_h:.1f} 小时前"
-                            f"（上限 {MAX_SCAN_AGE_HOURS}h），调度可能已停")
+            problems.append(f"最近一次扫描在 {scan_age_h * 60:.0f} 分钟前"
+                            f"（上限 {MAX_SCAN_AGE_MINUTES} 分钟），调度可能已停")
 
     last_morning = (state.get("last_morning_report_date") or "").strip()
     if now_cn.hour >= MORNING_DEADLINE_HOUR_CN and last_morning != today_cn:
@@ -104,7 +110,8 @@ def check(state, now=None, state_bytes=None):
         "scan_age_hours": None if scan_age_h is None else round(scan_age_h, 2),
         "last_morning_report_date": last_morning,
         "today_cn": today_cn,
-        "max_scan_age_hours": MAX_SCAN_AGE_HOURS,
+        "max_scan_age_hours": round(MAX_SCAN_AGE_HOURS, 3),
+        "max_scan_age_minutes": MAX_SCAN_AGE_MINUTES,
         "morning_deadline_hour_cn": MORNING_DEADLINE_HOUR_CN,
         "fresh_clone": fresh_clone,
         "state_kb": None if not state_bytes else round(state_bytes / 1024, 1),

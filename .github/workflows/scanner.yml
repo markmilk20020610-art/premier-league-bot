@@ -15,8 +15,12 @@ on:
     #      且 '0 22 * * *' 的早报曾延迟 207 分钟（22:00Z 排期 → 01:27Z 才跑）。
     #      因此下面两条 cron 只能当「兜底」，不能当「准时」。
     #
-    #    若哪天 cron-job.org 停了，把下面这行注释解开即可恢复 GitHub 自己的扫描：
-    # - cron: '*/10 * * * *'
+    # 【三层调度冗余】详见 deploy/cloudflare-worker/README.md
+    #   主：cron-job.org（每分钟）—— 唯一真正准时的
+    #   备：Cloudflare Worker 外部看门狗（每分钟读 state.json，心跳断了就补触发）
+    #   兜底：下面这条 GitHub schedule
+    #   多重触发不会重复推送：concurrency 串行化 + state 去重。
+    - cron: '*/5 * * * *'
     #
     # 【早报时间契约】必须与 bot.py 的 MORNING_TARGET_HOUR_CN = 6 严格对应：
     #     UTC 22:00 == 北京 次日 06:00（中国无夏令时，全年固定 UTC+8）

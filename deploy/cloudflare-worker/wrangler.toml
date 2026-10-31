@@ -1,0 +1,18 @@
+name = "yuewei-oversight"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# 每分钟醒一次。免费额度下 Cron Triggers 的最小粒度就是 1 分钟。
+[triggers]
+crons = ["* * * * *"]
+
+[vars]
+REPO = "markmilk20020610-art/premier-league-bot"
+WORKFLOW_FILE = "scanner.yml"
+# 主调度器（cron-job.org）每 1 分钟一次；超过 6 分钟没心跳就认为它挂了
+FAILOVER_MINUTES = "6"
+# 超过 20 分钟没心跳，额外发 Telegram 告警
+ALERT_MINUTES = "20"
+
+# 密钥不要写在这里，用 `wrangler secret put` 注入：
+#   GITHUB_TOKEN / TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
