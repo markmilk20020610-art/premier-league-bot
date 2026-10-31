@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 245,
+        "calls": 246,
         "errors": 0,
-        "requests": 245
+        "requests": 246
       }
     },
-    "calls": 245,
+    "calls": 246,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 1493590,
-    "output_tokens": 151249,
-    "requests": 245
+    "input_tokens": 1499596,
+    "output_tokens": 151915,
+    "requests": 246
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -793,9 +793,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T20:05:35.504657+00:00",
+  "last_scan_at": "2026-10-31T20:06:32.972107+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Sunderland were last season's surprise package in the Premier League, but this time they are struggling after Coventry h",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T20:06:32.974869+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmrry892zpkro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T20:03:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Sunderland's paradox - San Siro trip amid relegation battle"
+    },
     {
       "desc": "THOMAS FRANK did not win another Premier League game as Spurs boss the last time Archie Gray scored the decisive goal ag",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1035,6 +1045,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Hull 2 Ipswich 2: Oli McBurnie and Julio Enciso on target again as plucky pair trade timely blows to share points"
+    },
+    {
+      "desc": "'The team spirit was immense' | Video | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T20:06:32.975261+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOM1hxYzktblNiUWlHdHNKemljckFwYm0zMDkwWVhKeVhjZXUxT1dFZENYaHVSZVhlTGYxLXoxUHA4SVZZaGtxeGZRMUg1NUJqLTRmNV92UVhobTItejdzemxPX21Qd1NMM2s1Y19XMndQX0JRZ0l3dDlOZ0JzZXk0aXVfMG55ZkJ1NEdheDNNT3BhMFNRZ21KU1p2Z2NtWFBPMEE?oc=5",
+      "published": "2026-10-31T17:22:08+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "'The team spirit was immense' | Video | Official Site - Chelsea Football Club"
     },
     {
       "desc": "NIKOLA MILENKOVIC became only the sixth different Forest player to score a Premier League goal this season - but sadly i",
@@ -2275,26 +2295,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Football Wags’ sexiest Halloween costumes from Lara Croft to swashbuckling pirate and Messi’s wife as a witch"
-    },
-    {
-      "desc": "Fallon Sherrock says she has \"overcome the hate\" after beating Luke Littler to win the second-biggest prize in darts his",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T09:55:25.504489+00:00",
-      "link": "https://www.skysports.com/darts/news/12040/13606055/beat-luke-littler-fallon-sherrock-delighted-to-overcome-the-hate-and-beat-littler-in-one-off-leg-to-claim-501k-prize",
-      "published": "2026-10-31T09:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Sherrock 'happy to overcome hate' after lucrative Littler win"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T14:52:31.276943+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-10-31T09:25:39+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
     }
   ],
   "processed_urls": [
