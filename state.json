@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 181,
+        "calls": 182,
         "errors": 0,
-        "requests": 156
+        "requests": 157
       }
     },
-    "calls": 181,
+    "calls": 182,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 1039073,
-    "output_tokens": 119221,
-    "requests": 156
+    "input_tokens": 1045532,
+    "output_tokens": 119804,
+    "requests": 157
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -435,9 +435,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T14:29:24.997779+00:00",
+  "last_scan_at": "2026-10-31T14:30:39.394397+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "CHELSEA swept Manchester United aside 2-0 at Stamford Bridge to leave Michael Carrick on the brink of the sack. United t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T14:30:39.398257+00:00",
+      "link": "https://www.thesun.co.uk/sport/40868068/chelsea-beat-man-utd-rogers-palmer-lisandro-martinez-carrick/",
+      "published": "2026-10-31T14:30:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea 2 Man Utd 0: Michael Carrick on brink as Lisandro Martinez sent off and Red Devils implode in latest humiliation"
+    },
     {
       "desc": "MANCHESTER UNITED fans walked away from Chelsea en masse before the full-time whistle following another disastrous displ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1876,15 +1886,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "'We're not in Disneyland!': Mikel Arteta fires warning at Arsenal wonderboy Max Dowman, 16, after red card - and says it's not his first off"
-    },
-    {
-      "desc": "Inside Training: Watch Liverpool's work on Friday for Anfield clash with Arsenal Liverpool FC",
-      "first_seen": "2026-10-31T00:05:36.322371+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb0g3VzVaT2JzQl9peU5JcHNIUzB4N2NmT04tSTkzM0JYU0NQMk1uYjRtYWhheVBKVDlVQ2QzMWJuUnROVS01eVhvYXpOWWFTX1VuWXFDWUpWd3k0VVI1VFBMaUlUblpxaVZuMW9nRER2cHB1MUc5bUp6NTlFbW0zb28wVVhTQnBRdWJzYUFfQjVwZXl4OG42RjBaWVJFM2tMb2R0ZUFrNA?oc=5",
-      "published": "2026-10-30T19:11:48+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Inside Training: Watch Liverpool's work on Friday for Anfield clash with Arsenal - Liverpool FC"
     }
   ],
   "processed_urls": [
