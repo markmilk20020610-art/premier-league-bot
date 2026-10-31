@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 66,
+        "calls": 67,
         "errors": 0,
-        "requests": 41
+        "requests": 42
       }
     },
-    "calls": 66,
+    "calls": 67,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 339795,
-    "output_tokens": 48798,
-    "requests": 41
+    "input_tokens": 345287,
+    "output_tokens": 49622,
+    "requests": 42
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -219,9 +219,29 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T09:20:29.130186+00:00",
+  "last_scan_at": "2026-10-31T09:25:28.014418+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Mikel Arteta makes bold Anfield vow ahead of Liverpool clash DaveOCKOP",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T09:25:28.017185+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcS0wUUVBRlJlQjJoUk9JaGJFNHlpc3FzdVpVYWlqaFgteVYtcTBoWDlFZjg1OWdrcjV2dXRZZFRrU3owWTk0OUhFN3ZhRjJzZndUVGJBWDdOZXRXRlVubEFuSy1mcTlmNFF0bHNFSEpRbllEYXEycUZlS1BicUozTkFqU2ZCbGtGX2NONzk0Q1NQTVMtV2QtTlFLb3BPWldo?oc=5",
+      "published": "2026-10-31T09:21:23+00:00",
+      "publisher": "https://www.daveockop.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Mikel Arteta makes bold Anfield vow ahead of Liverpool clash - DaveOCKOP"
+    },
+    {
+      "desc": "IT's that time of year again when we celebrate all things spooky. Halloween season is upon us, which means we'll be extr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T09:25:28.017223+00:00",
+      "link": "https://www.thesun.co.uk/sport/40839072/englands-haunted-stadiums-stamford-bridge/",
+      "published": "2026-10-31T09:19:45+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England’s haunted stadiums revealed including Stamford Bridge and former Premier League arena built on burial ground"
+    },
     {
       "desc": "JAMIE CARRAGHER has admitted he shouldn't have blasted Aston Villa fans after becoming embroiled in a social media storm",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
