@@ -34,6 +34,15 @@ on:
         default: false
         type: boolean
 
+  # 【代码自检】push 到 main 时跑一次轻量校验：只查仓库卫生 + 跑测试，
+  # 不抓取、不推送、不写 state.json。目的是让「提交了 pyc / 测试挂了」
+  # 在 push 后一分钟内暴露，而不是等下一轮定时任务才发现。
+  # 只改文档（**.md）的提交不触发，省一次运行。
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+
 # 默认只读；只有真正要回写 state.json 的 job 才临时提升为 write。
 # 这样 diagnose / watchdog 这类只读任务拿不到写权限，泄露风险面更小。
 permissions:
@@ -212,3 +221,44 @@ jobs:
         run: |
           echo "=========== run_telemetry.log (last 20) ==========="
           if [ -f run_telemetry.log ]; then tail -n 20 run_telemetry.log; else echo "无 telemetry 日志"; fi
+
+  # ==================== 代码自检（push 到 main 触发） ====================
+  # 只做两件事：仓库卫生守卫 + 快速测试。不碰网络、不碰 Telegram、不写 state.json，
+  # 所以它拿只读权限就够了，也永远不会因为模型/网络问题变红。
+  #
+  # 注意：workflow 级的 concurrency 会把它和 scan/morning 串起来。
+  # 这是有意为之——push 时多半正好有人刚跑过扫描，串行比并发安全；
+  # 代价是极端情况下自检要等一轮扫描跑完（≤6 分钟）。
+  verify:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   # v4
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Guard against committed caches
+        run: bash scripts/check_no_cache.sh
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip --quiet
+          pip install --timeout 60 --retries 5 -r requirements.txt
+
+      - name: Run fast tests
+        # --fast 跳过 test_git_commit（它要建真实 git 仓库，约 50s），其余全跑
+        run: python tests/run_all.py --fast
+
+      - name: Confirm source files are intact
+        # 防「清理缓存时顺手把源码删了」这类事故：几个核心文件必须在
+        run: |
+          for f in bot.py ai_provider.py evidence.py schema.py state_store.py redact.py; do
+            test -s "$f" || { echo "::error title=Source File Missing::$f 不存在或为空"; exit 1; }
+          done
+          echo "::notice title=Sources Intact::核心源码文件齐全"

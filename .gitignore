@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ===== 越位情报局：运行时产物 =====
+# 说明：state.json 例外——它必须被跟踪，因为 Actions 每轮要把状态回写进仓库。
+# 但下面这些是纯本地产物，绝不能进仓库。
+# 注意：.gitignore 不支持行内注释，注释只能单独成行，否则 # 会被当成模式的一部分。
+
+# 运行日志（上面的 *.log 已覆盖，这里显式写出来防止有人误解）
+run_telemetry.log
+
+# merge_state.py 原子写用的临时文件
+*.merge.tmp
+
+# commit_state.sh 拉下来的远端 state 临时副本
+.state-remote.json
