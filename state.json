@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 370,
+        "calls": 371,
         "errors": 0,
-        "requests": 370
+        "requests": 371
       }
     },
-    "calls": 370,
+    "calls": 371,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2231935,
-    "output_tokens": 235417,
-    "requests": 370
+    "input_tokens": 2238121,
+    "output_tokens": 236036,
+    "requests": 371
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -424,6 +424,33 @@
       "telegram_message_id": 35,
       "title": "曼联球迷客场惨败切尔西提前大规模离场",
       "updated_at": "2026-10-31T14:13:26.440427+00:00"
+    },
+    "4b4a82393cb3": {
+      "article_title": "Man Utd fans aim X-rated chant at Sir Jim Ratcliffe during Chelsea defeat as Jason Wilcox ‘called every name under sun’",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e9374816aeb6d6bd",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 57
+        }
+      ],
+      "created_at": "2026-10-31T22:11:29.207698+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "2c23c5b5b95f357c",
+      "event_id": "4b4a82393cb3",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40872763/man-utd-fans-abuse-jim-ratcliffe-wilcox-chelsea",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 57,
+      "title": "曼联球迷在切尔西一役高唱辱骂拉特克利夫与威尔科克斯",
+      "updated_at": "2026-10-31T22:11:29.975510+00:00"
     },
     "51d986cb8977": {
       "attempts": 1,
@@ -874,9 +901,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T22:10:48.758132+00:00",
+  "last_scan_at": "2026-10-31T22:11:22.883781+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "HATRED, mischief and the hairdryer were thrown at the board. Manchester United’s travelling army went to Stamford Bridge",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T22:11:22.886515+00:00",
+      "link": "https://www.thesun.co.uk/sport/40872763/man-utd-fans-abuse-jim-ratcliffe-wilcox-chelsea/",
+      "published": "2026-10-31T22:11:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd fans aim X-rated chant at Sir Jim Ratcliffe during Chelsea defeat as Jason Wilcox ‘called every name under sun’"
+    },
     {
       "desc": "HARRY KANE missed a penalty in his first game after winning the Ballon d’Or. The England icon thought he had made amends",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2366,16 +2403,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Xabi Alonso explains Jordan Henderson absence against Man United | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Chelsea LED Watch with Silicone Strap Official Chelsea Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T16:03:23.689839+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOai02WFRTV0RlZUl3LUUtcnFwTk16YVF4TThVUDNlTVFWelFzQktndllJNUl3djFBdTlJT1hSdG5hdWdwem1lc2RFMF9aTGJ1S2V3ZUo0aWJOTWZhY0xySHRhMnRjMWdicTNqX1dfcDIyNEtoZkR3LWRJUnVORURLYWNiNElKUEZlRjhSemxOMVNGR3N0Q0t1RDI2Zzd3bzZQX29UMnNCUFozMDlPMjdLd2hCRVFHZDBSc0hjUFBLRE90NHJBb29NMVQ2cnJxZi1aSldDdzNCNG9Sdl9FcjA1MThUT0ZmYkJ0Vk9vVF9DTQ?oc=5",
-      "published": "2026-10-31T11:41:43+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea LED Watch with Silicone Strap - Official Chelsea Store"
     }
   ],
   "processed_urls": [
@@ -2424,7 +2451,8 @@
     "https://www.thesun.co.uk/sport/40871382/jude-bellingham-jobe-bayern-dortmund-carney-chukwuemeka",
     "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o",
     "https://www.skysports.com/football/news/12040/13606410/oliver-glasner-nottingham-forest-head-coach-reveals-anger-desire-to-change-growing-pattern-at-club-amid-poor-start-to-season",
-    "https://www.thesun.co.uk/sport/40871591/haaland-dad-silence-man-city-verdict-erling-future"
+    "https://www.thesun.co.uk/sport/40871591/haaland-dad-silence-man-city-verdict-erling-future",
+    "https://www.thesun.co.uk/sport/40872763/man-utd-fans-abuse-jim-ratcliffe-wilcox-chelsea"
   ],
   "schema_version": 3
 }
