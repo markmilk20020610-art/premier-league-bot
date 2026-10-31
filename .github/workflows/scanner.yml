@@ -21,10 +21,16 @@ on:
           - scan
           - morning
           - diagnose
+      force:
+        description: '强制补发早报：勾选后忽略「今日已发」日期锁（仅 morning 模式生效）'
+        required: false
+        default: false
+        type: boolean
 
-# 回写 state.json 需要写权限，否则 git push 会静默失败 → 去重失效 → 每 15 分钟重复推送同一条
+# 默认只读；只有真正要回写 state.json 的 job 才临时提升为 write。
+# 这样 diagnose 这类只读任务拿不到写权限，泄露风险面更小。
 permissions:
-  contents: write
+  contents: read
 
 # 早报与扫描可能同时触发（22:00 恰好也是 */15 的整点），串行化避免 state.json 写冲突
 concurrency:
@@ -40,6 +46,8 @@ jobs:
     if: >-
       (github.event_name == 'schedule' && github.event.schedule != '0 22 * * *') ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != 'morning' && github.event.inputs.mode != 'diagnose')
+    permissions:
+      contents: write   # 仅本 job 需要回写 state.json
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
@@ -66,22 +74,25 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           RUN_MODE: "scan"
+          # 模型策略：DeepSeek 唯一启用，Gemini 接口保留但关闭，OpenAI 未接入
+          AI_PRIMARY_PROVIDER: "deepseek"
+          AI_GEMINI_ENABLED: "false"
+          AI_OPENAI_ENABLED: "false"
         run: python bot.py
 
       - name: Commit state changes (if any)
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add state.json || true
-          git commit -m "Auto-update bot state.json [skip ci]" || true
-          git pull --rebase || true
-          git push || true
+        # 关键 Git 操作失败必须让 Job 失败：不再用 || true 掩盖。
+        # 即便上一步失败也要尝试回写（新闻池要保住），所以保留 always()。
+        if: always()
+        run: bash scripts/commit_state.sh state.json 3
 
   # ==================== 每日早报（北京时间 06:00） ====================
   morning:
     if: >-
       (github.event_name == 'schedule' && github.event.schedule == '0 22 * * *') ||
       (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'morning')
+    permissions:
+      contents: write   # 仅本 job 需要回写 state.json
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -108,16 +119,18 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           RUN_MODE: "morning"   # 明确指定为早报模式
+          AI_PRIMARY_PROVIDER: "deepseek"
+          AI_GEMINI_ENABLED: "false"
+          AI_OPENAI_ENABLED: "false"
+          # 手动勾选 force 时绕过日期锁；定时触发时该值为空 → 正常走锁
+          FORCE_SUMMARY: ${{ github.event.inputs.force }}
         run: python bot.py
 
       - name: Commit state changes (if any)
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add state.json || true
-          git commit -m "Auto-update bot state.json [skip ci]" || true
-          git pull --rebase || true
-          git push || true
+        # 关键 Git 操作失败必须让 Job 失败：不再用 || true 掩盖。
+        # 即便上一步失败也要尝试回写（新闻池要保住），所以保留 always()。
+        if: always()
+        run: bash scripts/commit_state.sh state.json 3
 
   # ==================== 手动诊断（只读，不推送、不改 state） ====================
   # 触发方式：Actions → Run workflow → mode 选 diagnose
