@@ -50,18 +50,28 @@ RSS 矩阵（19 源，失败自动降级 Google News）
 | `AI_MAX_ARTICLES_PER_RUN` | 25 | 每轮送模型的文章上限 |
 | `AI_MAX_CALLS_PER_DAY` | 60 | 每日调用上限，超出直接暂停 |
 | `AI_QUOTA_COOLDOWN_MIN` | 120 | 配额耗尽后的熔断时长 |
+| `TRUSTED_SINGLE_SOURCES` | 空 | 可信单一来源白名单（逗号分隔域名）。空 = 单一来源一律不推送 |
 
 ## 证据状态
 
 | 状态 | 含义 | 自动推送 |
 |---|---|---|
-| `OFFICIAL_CONFIRMED` | 官方渠道确认 | 是 |
-| `MULTIPLE_INDEPENDENT_SOURCES` | 2 个以上独立来源 | 是 |
-| `SINGLE_SOURCE` | 单一来源（评级会降档） | 是 |
-| `UNVERIFIED` | 无证据 / 证据对不上 | 否 |
+| `OFFICIAL_CONFIRMED` | 官方渠道确认**同一件具体事件** | 是 |
+| `MULTIPLE_INDEPENDENT_SOURCES` | 2 个以上**可识别域名的**独立来源 | 是 |
+| `SINGLE_SOURCE` | 单一来源 | **默认否**，仅白名单域名可推，且必须标注「未经独立交叉验证」 |
+| `UNVERIFIED` | 无证据 / 证据对不上 / 官方指向别的事件 | 否 |
 | `CONFLICTING` | 来源说法冲突 | 否 |
 
 证据由程序计算，模型自报的 `evidence_status`、`evidence_sources_count` 一律被覆盖。
+
+补充规则（V1.1 第一批）：
+
+- 官方确认要求主体 / 事件类型 / 关键数字 / 标题相关度四项同时对上；
+  官方域名报道了**另一件事**时，该记录被剔除并降级为 `UNVERIFIED`。
+- 无法识别身份的域名（UNKNOWN）**不计入**交叉印证，再多也最多算 1 个来源。
+- 同一篇通稿被多家转载、同一家通讯社的多条稿，只算 1 个来源。
+- 黑标 / 死亡 / 重伤 / 重病 / 违法 / 重大事故必须有官方确认或多源印证才发；
+  模型自己写 `var_rating=黑标` 不能绕过这条。
 
 ## 测试
 

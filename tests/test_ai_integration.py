@@ -101,10 +101,10 @@ class IntegrationBase(unittest.TestCase):
         self.sent.append(text)
         return True, [1001], ""
 
-    def item(self, i, title=None):
+    def item(self, i, title=None, link=None):
         return {
             "title": title or f"Arsenal transfer news number {i}",
-            "link": f"https://example.com/news/{i}",
+            "link": link or f"https://example.com/news/{i}",
             "desc": "desc",
             "source": "s",
             "published": datetime.datetime.now(datetime.timezone.utc),
@@ -222,12 +222,29 @@ class Test07UnverifiedNotPushed(IntegrationBase):
 
 
 class TestProgramSideEvidence(IntegrationBase):
-    """DeepSeek 没有 grounding，证据必须由程序从抓到的原始报道里算出来。"""
+    """DeepSeek 没有 grounding，证据必须由程序从抓到的原始报道里算出来。
+
+    注意素材链接必须用真实可识别域名：V1.1 任务 2 之后，UNKNOWN 域名不再计入
+    交叉印证（example.com 属于 UNKNOWN），用假域名测不出「多源」这一分支。
+    """
+
+    def verdict_for(self, items, evidence_url):
+        """直接走真实 _finalize_result，拿到证据判定与推送闸门结果。"""
+        payload = analysis_payload(evidence_url=evidence_url)
+        body = json.loads(payload["choices"][0]["message"]["content"])
+        program = [
+            {"url": it["link"], "title": it["title"], "desc": it.get("desc")}
+            for it in items
+        ]
+        ok, data, reason, code = bot._finalize_result(body, program)
+        return ok, data, reason, code
 
     def test_deepseek_result_verified_by_program_evidence(self):
         items = [
-            self.item(0, title="Arsenal lose appeal against Dowman red card"),
-            self.item(1, title="FA rejects Arsenal appeal over Dowman red card"),
+            self.item(0, title="Arsenal lose appeal against Dowman red card",
+                      link="https://www.bbc.co.uk/sport/football/articles/c123"),
+            self.item(1, title="FA rejects Arsenal appeal over Dowman dismissal",
+                      link="https://www.skysports.com/football/news/11095/arsenal"),
         ]
         http = FakeHTTP([Resp(200, analysis_payload(evidence_url=items[0]["link"]))])
         self.install_router(http)
@@ -242,35 +259,33 @@ class TestProgramSideEvidence(IntegrationBase):
         self.assertEqual(event["evidence_status"], "MULTIPLE_INDEPENDENT_SOURCES")
 
     def test_reprint_is_single_source(self):
+        # 同一篇稿被 BBC 与天空体育同时转载：标题一致 → 只能算 1 个来源
         items = [
-            self.item(0, title="Arsenal lose appeal against Dowman red card"),
-            self.item(1, title="Arsenal lose appeal against Dowman red card"),
+            self.item(0, title="Arsenal lose appeal against Dowman red card",
+                      link="https://www.bbc.co.uk/sport/football/articles/c123"),
+            self.item(1, title="Arsenal lose appeal against Dowman red card",
+                      link="https://www.skysports.com/football/news/11095/arsenal"),
         ]
-        http = FakeHTTP([Resp(200, analysis_payload(evidence_url=items[0]["link"]))])
-        self.install_router(http)
-
-        with mock.patch.object(bot, "fetch_rss_sources", return_value=(items, {})):
-            bot.run_scan_mode(bot.load_state(), bot._now_iso())
-
-        # 两条其实是同一篇稿（标题一致），只能算单一来源
-        event = list(bot.load_state()["events"].values())[0]
-        self.assertEqual(event["evidence_status"], "SINGLE_SOURCE")
+        ok, data, reason, code = self.verdict_for(items, items[0]["link"])
+        self.assertEqual(data["evidence_status"], "SINGLE_SOURCE")
+        # V1.1 任务 4：单一来源默认不得自动推送
+        self.assertFalse(ok)
+        self.assertEqual(code, "EVIDENCE_NOT_PUSHABLE")
+        self.assertIn("单一来源", reason)
 
     def test_unrelated_pool_does_not_inflate_sources(self):
         items = [
-            self.item(0, title="Arsenal lose appeal against Dowman red card"),
-            self.item(1, title="Chelsea announce new shirt sponsor"),
-            self.item(2, title="Liverpool confirm stadium expansion plans"),
+            self.item(0, title="Arsenal lose appeal against Dowman red card",
+                      link="https://www.bbc.co.uk/sport/football/articles/c123"),
+            self.item(1, title="Chelsea announce new shirt sponsor",
+                      link="https://www.skysports.com/football/news/11095/chelsea"),
+            self.item(2, title="Liverpool confirm stadium expansion plans",
+                      link="https://www.theguardian.com/football/liverpool-stadium"),
         ]
-        http = FakeHTTP([Resp(200, analysis_payload(evidence_url=items[0]["link"]))])
-        self.install_router(http)
-
-        with mock.patch.object(bot, "fetch_rss_sources", return_value=(items, {})):
-            bot.run_scan_mode(bot.load_state(), bot._now_iso())
-
-        event = list(bot.load_state()["events"].values())[0]
-        self.assertEqual(event["evidence_status"], "SINGLE_SOURCE",
+        ok, data, reason, code = self.verdict_for(items, items[0]["link"])
+        self.assertEqual(data["evidence_status"], "SINGLE_SOURCE",
                          "无关新闻不得算作交叉印证")
+        self.assertFalse(ok, "单一来源默认不得自动推送")
 
 
 if __name__ == "__main__":

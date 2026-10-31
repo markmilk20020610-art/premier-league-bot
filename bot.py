@@ -46,6 +46,16 @@ SUMMARY_MAX_MATERIALS = 40     # 喂给模型的素材上限，避免 token 爆�
 POOL_RETENTION_HOURS = 72      # state.json 里新闻池的保留时长
 POOL_MAX_ITEMS = 150           # 新闻池条目上限，控制 state.json 体积
 
+# 可信单一来源白名单（V1.1 任务 4）。
+# SINGLE_SOURCE 默认不自动推送；只有这里列出的域名（经人工确认的记者/机构）才放行，
+# 且推送时必须在卡片上标注「未经独立交叉验证」并给出原始来源名与 URL。
+# 注意：UNKNOWN 域名即使写进这里也不会生效——evidence.single_source_allowed() 会拒绝。
+TRUSTED_SINGLE_SOURCES = {
+    d.strip().lower()
+    for d in os.environ.get("TRUSTED_SINGLE_SOURCES", "").split(",")
+    if d.strip()
+}
+
 STATE_FILE = "state.json"
 LOG_FILE = "run_telemetry.log"
 
@@ -1017,6 +1027,9 @@ def _finalize_result(data, extra_records=None):
     data["evidence_sources_count"] = verdict["count"]
     data["evidence_reason"] = verdict["reason"]
     print(f"[INFO] 证据核验：{verdict['status']} | 独立来源 {verdict['count']} 个 | {verdict['reason']}")
+    if verdict.get("official_rejected"):
+        print("::warning title=Official Source Rejected::"
+              f"官方域名 {','.join(verdict['official_rejected'])} 报道的不是同一事件，已排除，不计入官方确认")
 
     rating_key = out_schema.normalize_rating(data.get("var_rating"))
     if rating_key:
@@ -1027,8 +1040,28 @@ def _finalize_result(data, extra_records=None):
             data["rating_downgraded"] = why
             print(f"[WARN] 评级复核降级：{why}")
 
-    if not ev.is_pushable(verdict["status"]):
-        return False, data, f"证据状态 {verdict['status']}（{verdict['reason']}），不得自动推送", "EVIDENCE_NOT_PUSHABLE"
+    # ---- 闸门一：状态门 + 单源门（V1.1 任务 4）----
+    # SINGLE_SOURCE 默认不推送；只有白名单内的可信单一来源才放行。
+    allowed, why = ev.auto_push_allowed(verdict, TRUSTED_SINGLE_SOURCES)
+    if not allowed:
+        return False, data, why, "EVIDENCE_NOT_PUSHABLE"
+
+    # ---- 闸门二：黑标证据门（V1.1 任务 5）----
+    # 模型自己写 var_rating=黑标 不能绕过这里：死亡/重伤/重病/违法/重大事故
+    # 必须有官方确认或多源独立印证，单一来源（哪怕可信）一律不发。
+    # 只扫「事实部分」（事件标题 + 事实摘要），不扫 A/B/C 稿：
+    # 评论稿里出现「警方」「调查」这类词往往是比喻或引申，扫进去会大面积误杀。
+    topic_text = f"{data.get('event_title') or ''} {data.get('fact_summary') or ''}"
+    black_ok, black_why = ev.black_label_gate(rating_key, verdict, topic_text)
+    if not black_ok:
+        print(f"::warning title=Black Label Blocked::{black_why}")
+        return False, data, black_why, "BLACK_LABEL_EVIDENCE_INSUFFICIENT"
+
+    # 单一来源放行时，卡片上必须带免责标注与原始来源，避免读者误以为已交叉验证
+    note = ev.single_source_note(verdict)
+    if note:
+        data["single_source_note"] = note
+        print(f"[WARN] 单一来源推送：{note['source_name']} · {note['note']}")
 
     ok, errors, data = out_schema.validate_scan(data)
     if not ok:
@@ -1305,12 +1338,14 @@ def run_scan_mode(state, start_time):
         # 程序侧证据：本轮候选 + 过去 24h 新闻池里的原始报道。
         # 模型只能「指认」哪一篇是原始报道，能不能算已核验由这里算。
         program_records = [
-            {"url": it.get("link"), "title": it.get("title"), "publisher": it.get("publisher")}
+            {"url": it.get("link"), "title": it.get("title"),
+             "publisher": it.get("publisher"), "desc": it.get("desc")}
             for it in candidates
         ]
         for it in _pool_recent(state, 24):
             program_records.append(
-                {"url": it.get("link"), "title": it.get("title"), "publisher": it.get("publisher")}
+                {"url": it.get("link"), "title": it.get("title"),
+                 "publisher": it.get("publisher"), "desc": it.get("desc")}
             )
         ok, model_result, reason, code = _finalize_result(model_result, program_records)
         if not ok:
@@ -1381,6 +1416,18 @@ def run_scan_mode(state, start_time):
                 card += f"🎨 <b>[封面指引]</b>\n{cover_blueprint_h}\n\n"
                 card += f"🎭 <b>[漫画 Prompt]</b>\n<code>{image_prompt_h}</code>\n"
                 card += f"🏷️ <b>[黄字标题]</b> {banner_overlay_text_h}"
+
+            # 单一来源放行时必须显式免责：读者不能误以为这条已经过交叉验证。
+            # 同时给出原始来源名与 URL，让人能自己去点开原文判断。
+            ss_note = model_result.get("single_source_note") or {}
+            if ss_note:
+                card += (
+                    f"\n\n⚠️ <b>信源提示：</b>本条为单一来源"
+                    f"（{html.escape(str(ss_note.get('source_name') or '未知'))}），"
+                    f"{html.escape(str(ss_note.get('note') or '未经独立交叉验证'))}"
+                )
+                if ss_note.get("url"):
+                    card += f"\n🔗 <b>原始来源：</b>{html.escape(str(ss_note['url']))}"
 
             # ---- 投递状态机 ----
             # 顺序刻意如此：先落盘 PENDING_DELIVERY（含 attempts+1）→ 再发 → 记 DELIVERED → 记 COMMITTED。

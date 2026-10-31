@@ -24,6 +24,12 @@ BBC = "https://www.bbc.co.uk/sport/football/articles/c123"
 SKY = "https://www.skysports.com/football/news/11095/arsenal"
 SUN = "https://www.thesun.co.uk/sport/football/12345/arsenal"
 
+# 默认素材故意给「两家独立报道同一件事」：
+# V1.1 任务 4 之后 SINGLE_SOURCE 默认不再自动推送，若仍用单条 grounding，
+# 下面这些投递状态机测试就全都走不到推送分支，测的就不是状态机了。
+BBC_TITLE = "Arsenal lose appeal against Dowman red card"
+SKY_TITLE = "FA rejects Arsenal appeal over Dowman dismissal"
+
 
 def base_result(**over):
     data = {
@@ -40,7 +46,10 @@ def base_result(**over):
         "cover_blueprint": "深色底 + 红色警示条",
         "image_prompt": "3d caricature style referee holding a red card",
         "banner_overlay_text": "申诉窗口",
-        "grounding_records": [{"url": BBC, "title": "Arsenal appeal red card"}],
+        "grounding_records": [
+            {"url": BBC, "title": BBC_TITLE},
+            {"url": SKY, "title": SKY_TITLE},
+        ],
         "verification_status": "GEMINI_GROUNDED",
     }
     data.update(over)
@@ -119,7 +128,8 @@ class TestEvidenceGating(BotTestBase):
             bot.run_scan_mode(bot.load_state(), bot._now_iso())
         self.assertEqual(len(self.sent), 0, "CONFLICTING 不得自动推送")
 
-    def test_single_source_is_pushed_but_rating_capped(self):
+    def test_single_low_trust_source_is_blocked_by_default(self):
+        """V1.1 任务 4：单一低可信来源默认不得自动推送。"""
         data = base_result(
             var_rating="✨【金哨认证·绝对真理】(Tier 1)",
             evidence_url=SUN,
@@ -128,8 +138,44 @@ class TestEvidenceGating(BotTestBase):
         with mock.patch.object(bot, "evaluate_with_gemini", return_value=(data, None)):
             rc = bot.run_scan_mode(bot.load_state(), bot._now_iso())
         self.assertEqual(rc, 0)
+        self.assertEqual(len(self.sent), 0, "单一来源默认不得自动推送")
+        self.assertEqual(bot.load_state()["events"], {}, "被拦下的内容不应产生投递记录")
+
+    def test_single_source_is_pushed_but_rating_capped(self):
+        """白名单内的可信单一来源可以推，但必须降级到 Tier 3 并显式标注未经交叉验证。
+
+        原用例（V1.0）假设「单一来源一律推送」，V1.1 任务 4 改为「默认不推、白名单例外」。
+        原断言（Tier 3 降级）在此完整保留，另加免责标注断言。
+        """
+        data = base_result(
+            var_rating="✨【金哨认证·绝对真理】(Tier 1)",
+            evidence_url=SUN,
+            grounding_records=[{"url": SUN, "title": "Arsenal ready to bid 60m"}],
+        )
+        with mock.patch.object(bot, "TRUSTED_SINGLE_SOURCES", {"thesun.co.uk"}):
+            with mock.patch.object(bot, "evaluate_with_gemini", return_value=(data, None)):
+                rc = bot.run_scan_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(rc, 0)
         self.assertEqual(len(self.sent), 1)
         self.assertIn("Tier 3", self.sent[0], "单一小报来源必须被降级到 Tier 3")
+        self.assertIn("未经独立交叉验证", self.sent[0], "单一来源必须显式标注未经交叉验证")
+        self.assertIn(SUN, self.sent[0], "单一来源必须给出原始来源 URL")
+
+    def test_black_label_blocked_without_strict_evidence(self):
+        """V1.1 任务 5：单一低可信站点报道球员重伤 → 不得自动生成黑标快讯。"""
+        data = base_result(
+            var_rating="🐦‍⬛【严肃通报·黑标警示】(黑标)",
+            event_title="阿森纳球员训练中受重伤",
+            fact_summary="有消息称阿森纳一名球员在训练中膝盖重伤，可能赛季报销。",
+            evidence_url=SUN,
+            grounding_records=[
+                {"url": SUN, "title": "Arsenal star suffers serious knee injury in training"},
+            ],
+        )
+        with mock.patch.object(bot, "TRUSTED_SINGLE_SOURCES", {"thesun.co.uk"}):
+            with mock.patch.object(bot, "evaluate_with_gemini", return_value=(data, None)):
+                bot.run_scan_mode(bot.load_state(), bot._now_iso())
+        self.assertEqual(len(self.sent), 0, "黑标议题证据不足时一律不得自动推送")
 
     def test_schema_invalid_blocks_push(self):
         data = base_result()
