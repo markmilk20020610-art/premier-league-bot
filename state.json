@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 106,
+        "calls": 107,
         "errors": 0,
-        "requests": 106
+        "requests": 107
       }
     },
-    "calls": 106,
+    "calls": 107,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 662375,
-    "output_tokens": 69180,
-    "requests": 106
+    "input_tokens": 668627,
+    "output_tokens": 69796,
+    "requests": 107
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -739,7 +739,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:46:23.590933+00:00",
+  "last_scan_at": "2026-10-31T17:47:23.575947+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1341,6 +1341,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "City make 10 changes - Haaland, Bouaddi and Nunes all start - Manchester City FC"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Man Utd striker hunt as £100m superstar linked Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T17:47:23.578471+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW1jOFl2WFR0NV96MU9panZ6WGNJdmtOZTdUOFlBOENSc280Z29xWUZrQy1ZSXlNY191U0xockhPcXNmSnFCVjFGTmU4YzJtSHVfbEdUSHJyS2dqN2VVRUwzaUc4ME1NUW8xdVNMRXU3bENmcmoxQzdwMWViZXM5UmliNFY5UUtya3JxRmlTaFZQaW11ZVJWQi1Dc0xiMzNnRmUwVWlKTTlYbjEz?oc=5",
+      "published": "2026-10-31T13:43:43+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Man Utd striker hunt as £100m superstar linked - Football365"
     },
     {
       "desc": "Arsenal Team News vs Liverpool: Rice, Calafiori on Course, Saka Out The False 9",
@@ -2231,16 +2241,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea vs Manchester United: Get £50 in free bets, plus our Bet Builder tips | Sky Bet"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T07:00:47.345998+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6x2qr8dj81vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T06:54:52+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
     }
   ],
   "processed_urls": [
