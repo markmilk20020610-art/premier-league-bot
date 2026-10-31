@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 134,
+        "calls": 135,
         "errors": 0,
-        "requests": 109
+        "requests": 110
       }
     },
-    "calls": 134,
+    "calls": 135,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 745908,
-    "output_tokens": 92532,
-    "requests": 109
+    "input_tokens": 751893,
+    "output_tokens": 93093,
+    "requests": 110
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -354,9 +354,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T13:42:22.012683+00:00",
+  "last_scan_at": "2026-10-31T13:43:24.025791+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Arsenal Team News vs Liverpool: Rice, Calafiori on Course, Saka Out The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T13:43:24.029347+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04OG9ERUhPcFh4aWNCb0pYNnhUVC1MdEVyazZlNDZsbmxVTG85bDdFaFJWeEIzRG9nOG5kMEpUTzl4WTRUUzV6UE1pQzlsMml0SFl3Z0lMNWgxdGEwbHEyekJaUkgtbGFnMEUwT2VkSFN2OW8?oc=5",
+      "published": "2026-10-31T13:40:07+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal Team News vs Liverpool: Rice, Calafiori on Course, Saka Out - The False 9"
+    },
     {
       "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Chelsea's Premier League clash with Manchester Unite",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -1787,15 +1797,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Predicted line-ups for Premier League teams in Matchweek 9 - Premier League"
-    },
-    {
-      "desc": "Golf Man City Shop",
-      "first_seen": "2026-10-31T00:05:36.322531+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CSl82ZHB4MW9jRVlURHM1S2dSNXUtQ1YtTWRaeWI3Y18zc3RuWjAwYjFhVnFEY3hDSjU0LTk4c2lLOUY2UFJHcXRoY1V6U2dJUFprQXlsT2gtQWFvY2RpUXh6VXlCSTZNZEE?oc=5",
-      "published": "2026-10-30T18:32:16+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Golf - Man City Shop"
     }
   ],
   "processed_urls": [
