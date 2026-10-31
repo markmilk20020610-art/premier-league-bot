@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 94782,
-    "output_tokens": 10112,
-    "requests": 15
+    "input_tokens": 100932,
+    "output_tokens": 10971,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -550,7 +550,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:15:28.970412+00:00",
+  "last_scan_at": "2026-10-31T16:16:24.037247+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -902,6 +902,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Hull City vs Ipswich team news LIVE!"
+    },
+    {
+      "desc": "Go Inside Training before Liverpool showdown Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:16:24.041373+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQckxDekxDMzN2S0pfYkN6T3JSR18xbWZjaDdoMXIzbDhKaVhTd1RXdFFSYlg3d0pyWU5BSWdOdVlvRURCYmZka1RMZHR4Umg4OEtpdnJZNmJwcjZ0UHFFSmZyQVM1RTl6bkNQU1RKTHhwdW9yblhzN19sNDZpQWthLUxLRjF5Z0VLbkt1dGlLWQ?oc=5",
+      "published": "2026-10-31T13:05:29+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Go Inside Training before Liverpool showdown - Arsenal.com"
     },
     {
       "desc": "Harry Kane and Kylian Mbappe were locked in a fierce race to be crowned the best player in the world and it was England ",
@@ -2025,15 +2035,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Michael Carrick hits back at Gary Neville after his former Man United team-mate accused players of being unprofessional - and opens up on cr"
-    },
-    {
-      "desc": "Manchester United have shown an interest in Barcelona's attacking midfielder Fermin Lopez as they look to add to their g",
-      "first_seen": "2026-10-31T00:05:36.321593+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16253817/Barcelona-star-Fermin-Lopez-Man-Uniteds-radar-Dominic-Calvert-Lewin-discusses-new-Leeds-deal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-10-30T22:21:27+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United interested in Barcelona star Fermin Lopez as they look to bolster attack after Benjamin Sesko injury blow"
     }
   ],
   "processed_urls": [
