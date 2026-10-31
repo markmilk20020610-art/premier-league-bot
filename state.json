@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 138,
+        "calls": 139,
         "errors": 0,
-        "requests": 113
+        "requests": 114
       }
     },
-    "calls": 138,
+    "calls": 139,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 769615,
-    "output_tokens": 94656,
-    "requests": 113
+    "input_tokens": 775647,
+    "output_tokens": 95398,
+    "requests": 114
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -177,6 +177,33 @@
       "telegram_message_id": 32,
       "title": "切尔西vs曼联上半场两粒进球因越位被吹",
       "updated_at": "2026-10-31T13:40:36.304706+00:00"
+    },
+    "3d668757665a": {
+      "article_title": "Man Utd target Julian Nagelsmann ‘considering taking over at European giants after being approached’",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "b7273c3eed38380a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 33
+        }
+      ],
+      "created_at": "2026-10-31T13:47:28.978634+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "1fb6e82f623975db",
+      "event_id": "3d668757665a",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 33,
+      "title": "纳格尔斯曼被曝考虑接掌尤文，曼联目标或落空",
+      "updated_at": "2026-10-31T13:47:29.610142+00:00"
     },
     "4116e6d3a07d": {
       "article_title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times",
@@ -354,9 +381,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T13:46:23.308632+00:00",
+  "last_scan_at": "2026-10-31T13:47:22.631854+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED target Julian Nagelsmann might not be available for much longer following a reported approach from Juv",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T13:47:22.635442+00:00",
+      "link": "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick/",
+      "published": "2026-10-31T13:46:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd target Julian Nagelsmann ‘considering taking over at European giants after being approached’"
+    },
     {
       "desc": "Arsenal Team News vs Liverpool: Rice, Calafiori on Course, Saka Out The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -1788,15 +1825,6 @@
       "publisher": "https://shop.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Scarves | Official Man City Store - Man City Shop"
-    },
-    {
-      "desc": "Predicted line-ups for Premier League teams in Matchweek 9 Premier League",
-      "first_seen": "2026-10-31T00:05:36.322514+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdXZITGlnZkZLT3N4dGlLWXIxMG9sSjY3RWNrNWdvdU1qNWtVVlZHb3B3UmcyUk54S25pcjROa0NQM0tYQ0JTVjM0UXhLSlVNc2c0WnF3OEg5Vi1vSUVLOF8xcHlvUjJZcl9oWDlwYjhiRy1VX1B2RFdoazVpWnR2bkpJUV9xVmhhZEtrRkRiNk4wMUV5TG5Eck5oeWRUbW1HQW5VWEtTcw?oc=5",
-      "published": "2026-10-30T18:33:06+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Predicted line-ups for Premier League teams in Matchweek 9 - Premier League"
     }
   ],
   "processed_urls": [
@@ -1826,7 +1854,8 @@
     "https://www.dailymail.com/sport/football/article-16251855/Cole-Palmer-Man-United-Chelsea-Xabi-Alonso.html",
     "https://www.dailymail.com/sport/football/article-16248543/manchester-united-chelsea-combined-xi-carrick.html",
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmt2dWI3dnZMY2VvU2pHQmpHTE1jR1hmQ3ZqUzVPbGk5WXQxSm5CaXpyUVBZUjdLQVh0M2VJODhJRVFoRHhEZGdPanpzNEgwbWJNWkFqbTlhMXIwYjRXUEExLXFxcTVBZzlUTWFnMWxRWGZCV0ZwZmt5RVFwMHkyNU9kUjQ4ZDRXZWJPRnpoYzd5Y0ZEZzJCSUptdWNhZ1o3a0l2VlpaQkJIaGw3NjctVEFMQTFhQzBKVUtpVdIBwgFBVV95cUxNNDRsVW9yWHJHUmdtU3FHMnlVRkpkM3J3YmFJMWRJWmRvNV9Ycl9mWGl1c1RSYWNyYlNGTktWc1h2Z1ZnbENUMTJMMEFEN0JIc2ZUTG9rNjM2V3l3S3hPb2E4dGJRWVNZVnU2c1p1UVhmZkpnM0YzYldpU1hzZ0ZzdkR0MENyOHpsd1lualdiNmFCSVpOUDcta01lOUpVc1loSzdHc050LXBsYktTRWpXTnE0UXNZemR5N0g3NWxEMk9VZw",
-    "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html"
+    "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html",
+    "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick"
   ],
   "schema_version": 3
 }
