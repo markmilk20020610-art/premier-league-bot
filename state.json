@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 234,
+        "calls": 235,
         "errors": 0,
-        "requests": 209
+        "requests": 210
       }
     },
-    "calls": 234,
+    "calls": 235,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 1380853,
-    "output_tokens": 150947,
-    "requests": 209
+    "input_tokens": 1387348,
+    "output_tokens": 151506,
+    "requests": 210
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -326,6 +326,33 @@
       "title": "西汉姆联以色列球员所罗门遭亲巴勒斯坦人士辱骂为“婴儿杀手”",
       "updated_at": "2026-10-31T00:25:39.680813+00:00"
     },
+    "8e90eaab6e7a": {
+      "article_title": "Kane beat Mbappe to Ballon d'Or by just 28 points",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "c70bae4f83991892",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 43
+        }
+      ],
+      "created_at": "2026-10-31T15:23:35.845818+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e30116dffbf56664",
+      "event_id": "8e90eaab6e7a",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 43,
+      "title": "凯恩以28分优势险胜姆巴佩夺金球奖",
+      "updated_at": "2026-10-31T15:23:36.513394+00:00"
+    },
     "9016883d39b5": {
       "attempts": 1,
       "created_at": "2026-10-31T00:15:53.815550+00:00",
@@ -489,9 +516,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T15:22:26.029086+00:00",
+  "last_scan_at": "2026-10-31T15:23:30.497085+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Voting figures show Harry Kane beat second-placed Kylian Mbappe to the men's Ballon d'Or by one of the tightest winning ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-10-31T15:23:30.499606+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-31T15:21:24+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Kane beat Mbappe to Ballon d'Or by just 28 points"
+    },
     {
       "desc": "CHELSEA swept Man Utd aside to return to winning ways at Stamford Bridge. The Blues entered the match having endured sig",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1947,15 +1984,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "U21s report: United 2 Monaco 3 - Manchester United"
-    },
-    {
-      "desc": "Lionel Messi to Newell’s in 2027? Fabrizio Romano Reveals the Latest on His Future Pasión Fútbol",
-      "first_seen": "2026-10-31T00:05:36.322008+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNN1h2Ri1VZGRhb1F1aFhFbG54WEdmRXNSTUNXeWxVMnlVZy0wOHBid29Dcy1FbU9xSW5pZmFDQjlZMmt4Y284a3VidnZZQ2FhQ1dDY3g4aHlHeFJWeWxnX0lVM05OS3pBb2VRcGg0N2xuRDdFbkNxa2M5THB3bG5lU0VmQ0xJcURIUUVkalBuaERXb0lONXItR2NjbWYwMThENUhqMkxvbFB2dW42OEF5U1U1TWsxTWpvcnZ5TThXdHJTNnFzeDl2eF9hMFRlTWp6OFHSAdIBQVVfeXFMTTdYdkYtVWRkYW9RdWhYRWxueFhHZkVzUk1DV3lsVTJ5VWctMDhwYndvQ3MtRW1PcUluaWZhQ0I5WTJreGNvOGt1YnZ2WUNhYUNXQ2N4OGh5R3hSVnlsZ19JVTNOTkt6QW9lUXBoNDdsbkQ3RW5DcWtjOUxwd2xuZVNFZkNMSXFESFFFZGpQbmhEV29JTjVyLUdjY21mMDE4RDVIajJMb2xQdnVuNjhBeVNVNU1rMU1qb3J2eU04V3RyUzZxc3g5dnhfYTBUZU1qejhR?oc=5",
-      "published": "2026-10-30T21:17:07+00:00",
-      "publisher": "https://www.pasionfutbol.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Lionel Messi to Newell’s in 2027? Fabrizio Romano Reveals the Latest on His Future - Pasión Fútbol"
     }
   ],
   "processed_urls": [
@@ -1990,7 +2018,8 @@
     "https://www.thesun.co.uk/sport/40868203/lisandro-martinez-red-card-chelsea",
     "https://www.thesun.co.uk/sport/40868315/man-utd-fans-chelsea-michael-carrick-lisandro-martinez",
     "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF"
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF",
+    "https://www.bbc.co.uk/sport/football/articles/c6073yeg52xeo"
   ],
   "schema_version": 3
 }
