@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 89,
+        "calls": 90,
         "errors": 0,
-        "requests": 64
+        "requests": 65
       }
     },
-    "calls": 89,
+    "calls": 90,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 471444,
-    "output_tokens": 65008,
-    "requests": 64
+    "input_tokens": 477440,
+    "output_tokens": 65693,
+    "requests": 65
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -270,10 +270,37 @@
       "telegram_message_id": 29,
       "title": "邮报独家：曼联从未真正追求帕尔默，切尔西新约内幕曝光",
       "updated_at": "2026-10-31T10:55:32.255016+00:00"
+    },
+    "f336c2fdca18": {
+      "article_title": "Revealed: SIX Man United stars named in combined XI with Chelsea despite Michael Carrick's side's nightmare start - as stats boffins pick Ko",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "4fd2b79e109d19b8",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 30
+        }
+      ],
+      "created_at": "2026-10-31T11:20:37.518390+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "707b916204a946c1",
+      "event_id": "f336c2fdca18",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16248543/manchester-united-chelsea-combined-xi-carrick.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 30,
+      "title": "曼联切尔西联合最佳阵：红魔6人入选引争议",
+      "updated_at": "2026-10-31T11:20:38.057660+00:00"
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T11:15:35.270994+00:00",
+  "last_scan_at": "2026-10-31T11:20:31.574925+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1557,7 +1584,8 @@
     "https://www.skysports.com/f1/news/12040/13605836/max-verstappen-liam-lawson-receive-grid-penalties-for-unacceptable-practice-collision-at-mexico-city-grand-prix",
     "https://www.thesun.co.uk/sport/40850634/sunsport-premier-league-efl-betting-picks",
     "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge",
-    "https://www.dailymail.com/sport/football/article-16251855/Cole-Palmer-Man-United-Chelsea-Xabi-Alonso.html"
+    "https://www.dailymail.com/sport/football/article-16251855/Cole-Palmer-Man-United-Chelsea-Xabi-Alonso.html",
+    "https://www.dailymail.com/sport/football/article-16248543/manchester-united-chelsea-combined-xi-carrick.html"
   ],
   "schema_version": 3
 }
