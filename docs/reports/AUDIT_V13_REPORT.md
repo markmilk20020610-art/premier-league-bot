@@ -440,6 +440,26 @@ by_provider.deepseek.calls = 25                ✅ 单一 provider
 第三阶段（Token 机制重构 + 历史账本 + 费用）、第四阶段（P1 可靠性）、
 第五阶段（全量测试 + 真实 Actions 运行）依次推进。
 
+### 13.1 执行完成记录（第二阶段的 3~8 步已全部落地）
+
+| 步 | 状态 | 提交 | 落地要点 |
+|---|---|---|---|
+| 1 | ✅ 已完成 | `1755362` | 删除每日额度闸门；`usage_snapshot()` 只监控；生产已验证累计 161,688 token 仍正常调用 |
+| 2 | ⏸ 推迟到第三阶段 | — | 逐请求账本属于 Token 机制重构，与 P0 安全修复不同批 |
+| 3 | ✅ 已完成 | `4ba167f` | 比分 `2-1` / `2比1` 入关键数字（排除 `4-3-3`、`2024-25`）；并列人名 `Saka and Martinelli`；无角色词单人名靠动作词确认；清掉 `Man Utd` 等假人名（假人名会中和人物比对） |
+| 4 | ✅ 已完成 | `1e221ae` | `rebuild_claims()` 从记录重建 claim；冲突分 `program` / `claims` / `model` 三级；模型一个字不说程序也能发现冲突；同 URL 两条不算两个来源打架 |
+| 5 | ✅ 已完成 | `92cfa9c` | `Morning Source Blackout`（`ok=0 且 degraded=0` 才判故障，200 零条目仍算「今天没新闻」）；抽出 `_red_line_gate()` 供突发与早报共用 |
+| 6 | ✅ 已完成 | `0c303af` | `MODEL_CONTEXT_EXCEEDED` 独立分类（不进 `RETRYABLE`）；`category_of()` 对外映射；`health_check` 计入 `calls`/`requests`/`errors` |
+| 7 | ✅ 已完成 | `e1e29b1` | 素材包进 `<<<UNTRUSTED_RSS_DATA_BEGIN>>>` 边界块；伪造边界符被中和；突发与早报两条提示词都生效 |
+| 8 | ✅ 已完成 | `3f8b524` | `utcnow()` → `now(timezone.utc).replace(tzinfo=None)`，裸 UTC 格式逐字节不变 |
+
+配套：`scripts/publish.sh` 增加推送被拒自动 rebase 重试（`ba7427f`、`d1d841d`），
+已用临时仓库实测「被拒→rebase→成功」与「冲突→回滚无残留」两条路径。
+
+测试基线：283（fast）→ **334**，全部通过；新增用例均为收紧判定，未删除或放宽任何既有断言。
+真实数据体检：新闻池 86 条中程序侧冲突 0 例、红线误拦 0 例，无过度拦截。
+
+
 ---
 
 ## 14. 本次审计明确不做的事
@@ -448,8 +468,11 @@ by_provider.deepseek.calls = 25                ✅ 单一 provider
 2. 不重命名 `DELIVERY_FAILED` / 现有 AI 状态常量（无收益，且有兼容成本）；
 3. 不清零历史 `ai_stats`；
 4. 不因为「取消 Token 上限」而放宽 `AI_MAX_ARTICLES_PER_RUN=25` 等单轮技术限制；
-5. 不声称任何线上验证——本项目至今**没有**真实 GitHub Actions 运行记录，
-   所有结论仅限本地可复现证据。
+5. ~~不声称任何线上验证~~ **此条已失效并更正**：仓库已接上真实 GitHub Actions
+   （`schedule` 早报 + 看门狗、`workflow_dispatch`、`push` 触发的 `verify` job），
+   2026-10-31 当天多次真实运行均 `success`；P0-1 的「超 150k 仍调用」结论即来自
+   `workflow_dispatch` 的真实生产运行，不再是纯本地推断。
+   仍然成立的纪律：**不得用本地测试结果冒充线上验证**，两者必须分开陈述。
 
 ---
 
