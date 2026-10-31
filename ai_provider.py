@@ -38,7 +38,9 @@ PARSE_ERROR = "PARSE_ERROR"
 EMPTY_RESPONSE = "EMPTY_RESPONSE"
 DISABLED = "DISABLED"
 CIRCUIT_OPEN = "CIRCUIT_OPEN"
-BUDGET_EXCEEDED = "BUDGET_EXCEEDED"
+# 历史状态：V1.3 起项目内部不再有「每日额度」这种停止条件，
+# 这个常量只保留给旧 state / 旧日志的兼容解析，任何代码都不得再返回它。
+LEGACY_BUDGET_EXCEEDED = "BUDGET_EXCEEDED"
 NO_PROVIDER = "NO_PROVIDER"
 
 # 这些错误值得重试；其余重试无意义
@@ -112,11 +114,14 @@ class AIConfig:
         self.server_error_threshold = _env_int("AI_SERVER_ERROR_THRESHOLD", 3)
         self.server_cooldown_min = _env_int("AI_SERVER_COOLDOWN_MIN", 10)
 
-        # 每轮与每日预算
+        # 每轮预算（注意：这是**单轮**上限，属于技术安全限制，不是每日额度）
         self.max_articles_per_run = _env_int("AI_MAX_ARTICLES_PER_RUN", 25)
         self.max_input_chars = _env_int("AI_MAX_INPUT_CHARS", 20000)
-        self.max_calls_per_day = _env_int("AI_MAX_CALLS_PER_DAY", 60)
-        self.max_tokens_per_day = _env_int("AI_MAX_TOKENS_PER_DAY", 150000)
+        # ⚠️ V1.3 §2.1：这里原来有 max_calls_per_day / max_tokens_per_day 两个
+        # 「每日额度」配置，已彻底删除。理由见 docs/REPO_HEALTH.md 与
+        # AI_PROVIDER_REPORT.md：它们是纯粹的记账数字，却会让整个 Job 变红，
+        # 生产上表现为「跑满一轮就把自己锁死到次日」。
+        # Token / 调用次数只用于监控（AIRouter.usage_snapshot），不参与停止判断。
 
         # 输出长度（控制长文，省 token）
         self.max_output_tokens = {
@@ -677,14 +682,29 @@ class AIRouter:
               f"ok={res.ok} {res.response_ms}ms http={res.http_requests} "
               f"tokens={res.input_tokens}/{res.output_tokens}")
 
-    def budget_exceeded(self):
+    def usage_snapshot(self):
+        """当日用量快照。**只用于监控，不参与任何停止判断**（V1.3 §2.3）。
+
+        V1.3 之前这里叫 `budget_exceeded()`：累计 token / 调用次数达到阈值就
+        直接返回 BUDGET_EXCEEDED、一次 HTTP 都不发，然后被 bot.py 判成
+        MODEL_FAILED → exit 1。生产上表现为「每天跑满 25 条候选就把自己锁死
+        到次日零点」，而 25 × 6.2k ≈ 156k 恰好大于 150k 的上限。
+
+        Token 是成本和效率指标，不是程序停止条件。真正该停止的情况只有：
+        服务商返回余额不足 / 鉴权失败 / 限流，以及熔断器的冷却窗口。
+        """
         stats = self._stats()
-        if stats["calls"] >= self.config.max_calls_per_day:
-            return True, f"今日调用次数已达上限 {self.config.max_calls_per_day}"
-        used = stats["input_tokens"] + stats["output_tokens"]
-        if used >= self.config.max_tokens_per_day:
-            return True, f"今日 token 已用 {used}，达到上限 {self.config.max_tokens_per_day}"
-        return False, ""
+        input_tokens = int(stats.get("input_tokens") or 0)
+        output_tokens = int(stats.get("output_tokens") or 0)
+        return {
+            "date": stats.get("date"),
+            "calls": int(stats.get("calls") or 0),
+            "requests": int(stats.get("requests") or 0),
+            "errors": int(stats.get("errors") or 0),
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+            "total_tokens": input_tokens + output_tokens,
+        }
 
     # ---------- 熔断 ----------
     def _breaker(self, provider_name):
@@ -742,12 +762,12 @@ class AIRouter:
         return report
 
     def _call(self, task, prompt, **kw):
-        exceeded, why = self.budget_exceeded()
-        if exceeded:
-            print(f"::warning title=AI Budget Exceeded::{why}，本轮暂停 AI 调用")
-            return CallResult(False, None, "router", "-", status=BUDGET_EXCEEDED,
-                              error_type=BUDGET_EXCEEDED, error_message=why)
-
+        # ⚠️ V1.3 §2.1：这里**故意**没有任何「每日额度」判断。
+        # 历史教训：原来的 budget_exceeded() 会在累计 token 达到 150k 时
+        # 直接返回 BUDGET_EXCEEDED，一次 HTTP 都不发，然后被 bot.py 判成
+        # MODEL_FAILED → exit 1 → Actions 红叉，且要等到北京时间零点才恢复。
+        # 现在停止只由三件事决定：服务商真实返回（402/429/401/5xx）、
+        # 熔断器冷却窗口、以及单轮候选数量上限（AI_MAX_ARTICLES_PER_RUN）。
         tried = []
         for name in self.config.provider_order():
             provider = self.providers.get(name)

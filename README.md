@@ -54,10 +54,17 @@ RSS 矩阵（19 源，失败自动降级 Google News）
 主要环境变量见 `AI_PROVIDER_REPORT.md` 第七节。常用几个：
 | 变量 | 默认 | 说明 |
 |---|---|---|
-| `AI_MAX_ARTICLES_PER_RUN` | 25 | 每轮送模型的文章上限 |
-| `AI_MAX_CALLS_PER_DAY` | 60 | 每日调用上限，超出直接暂停 |
-| `AI_QUOTA_COOLDOWN_MIN` | 120 | 配额耗尽后的熔断时长 |
+| `AI_MAX_ARTICLES_PER_RUN` | 25 | **单轮**送模型的文章上限（技术安全限制，不是每日额度） |
+| `AI_MAX_INPUT_CHARS` | 20000 | 单次请求的 prompt 字符上限 |
+| `AI_QUOTA_COOLDOWN_MIN` | 120 | 服务商配额耗尽后的熔断时长 |
 | `TRUSTED_SINGLE_SOURCES` | 空 | 可信单一来源白名单（逗号分隔域名）。空 = 单一来源一律不推送 |
+
+> **V1.3 起没有「每日 Token / 每日调用次数 / 每日费用」上限。**
+> 原来的 `AI_MAX_CALLS_PER_DAY`（60）和 `AI_MAX_TOKENS_PER_DAY`（150000）已彻底删除。
+> 理由：它们只是记账数字，却会把整个 Job 判成失败——生产上表现为「跑满一轮就锁死到次日零点」。
+> Token 与调用次数只用于监控（`AIRouter.usage_snapshot()`），不参与任何停止判断。
+> 真正会停下来的只有：服务商返回余额不足 / 鉴权失败 / 限流 / 5xx、熔断器冷却窗口、
+> 以及单轮候选数量上限。
 
 ## 证据状态
 

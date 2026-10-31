@@ -119,7 +119,7 @@ records = ev.build_records(raw_records)
               ┌────────────────────────────────────┐
               │ 3. 闸门：AIRouter                  │
               │   · 候选为空 → 不调用，直接退出      │
-              │   · 今日预算用尽 → BUDGET_EXCEEDED │
+              │   · （无每日额度闸门，V1.3 已删）  │
               │   · 熔断中 → CIRCUIT_OPEN，零请求   │
               │   · Gemini 未启用 → 不进候选队列    │
               └───────────────┬────────────────────┘
@@ -177,7 +177,7 @@ OK
 | 鉴权失败 | 401 | 不重试，熔断 1440 分钟 + `::error::` | `test_auth_failure_stops_immediately` |
 | 服务端错误 | 503 | 每轮重试，连续 3 轮熔断 10 分钟 | `test_server_error_retries_then_opens` |
 | 返回非法 JSON | 200 | `PARSE_ERROR`，不推送 | `test_provider_failure_returns_status` |
-| 预算耗尽 | — | 不发请求，返回 `BUDGET_EXCEEDED` | `test_daily_call_budget_blocks_without_http` |
+| 每日额度耗尽 | — | **V1.3 起不存在**：不再有每日 token / 次数上限，`BUDGET_EXCEEDED` 已从状态机移除 | `test_huge_ledger_still_calls_provider` |
 
 ---
 
@@ -255,8 +255,11 @@ AI 调用次数：1     Telegram 收到：0 条
 · 熔断：无
 ```
 
-默认预算：`AI_MAX_CALLS_PER_DAY=60`、`AI_MAX_TOKENS_PER_DAY=150000`，
-超出后本轮直接返回 `BUDGET_EXCEEDED` 并打黄色告警，不再请求接口。
+**V1.3 起没有任何每日额度上限。** 原来的 `AI_MAX_CALLS_PER_DAY=60`、
+`AI_MAX_TOKENS_PER_DAY=150000` 已彻底删除：它们只是记账数字，却会在达到阈值时
+一次 HTTP 都不发、直接返回 `BUDGET_EXCEEDED`，然后被 bot.py 判成 `MODEL_FAILED`
+→ `exit 1`，生产上表现为「跑满一轮就锁死到次日零点」。
+Token 与调用次数现在只用于监控（`AIRouter.usage_snapshot()`），不参与停止判断。
 
 ---
 
@@ -271,8 +274,6 @@ AI 调用次数：1     Telegram 收到：0 条
 | `AI_RETRY_BASE_DELAY` | `2` | 退避基数（秒），指数增长 |
 | `AI_MAX_ARTICLES_PER_RUN` | `25` | 每轮送模型的文章上限 |
 | `AI_MAX_INPUT_CHARS` | `20000` | 素材字符预算 |
-| `AI_MAX_CALLS_PER_DAY` | `60` | 每日调用上限 |
-| `AI_MAX_TOKENS_PER_DAY` | `150000` | 每日 token 上限 |
 | `AI_QUOTA_COOLDOWN_MIN` | `120` | DeepSeek 配额熔断时长 |
 | `AI_GEMINI_QUOTA_COOLDOWN_MIN` | `360` | Gemini 配额熔断时长 |
 | `AI_AUTH_COOLDOWN_MIN` | `1440` | 鉴权失败熔断时长 |

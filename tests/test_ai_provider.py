@@ -199,16 +199,71 @@ class Test06GeminiBreaker(unittest.TestCase):
 
 # ==================== 预算与统计 ====================
 class TestBudgetAndStats(unittest.TestCase):
-    def test_daily_call_budget_blocks_without_http(self):
-        state = {}
-        http = FakeHTTP([Resp(200, ok_payload())])
-        router = make_router(state=state, http=http, max_calls_per_day=2)
-        router.analyze_news("p")
-        router.analyze_news("p")
+    """V1.3 §17 A1–A7：项目内部不得再有任何每日额度限制。
+
+    全部用模拟账本验证，不消耗任何真实 Token。
+    """
+
+    @staticmethod
+    def _today_cn():
+        import datetime
+        return datetime.datetime.now(datetime.timezone.utc).astimezone(
+            datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d")
+
+    def _state_with_usage(self, total_tokens, calls=5000):
+        return {"ai_stats": {
+            "date": self._today_cn(),
+            "calls": calls, "errors": 0, "requests": calls,
+            "input_tokens": total_tokens // 2,
+            "output_tokens": total_tokens // 2,
+            "by_provider": {"deepseek": {"calls": calls, "errors": 0, "requests": calls}},
+        }}
+
+    def test_huge_ledger_still_calls_provider(self):
+        """累计 15 万 / 100 万 / 1000 万 / 1 亿 token，都必须照常发请求。
+
+        这是 V1.3 最核心的一条：Token 是成本和效率指标，不是程序停止条件。
+        旧实现到 150,000 就返回 BUDGET_EXCEEDED 且一次 HTTP 都不发，
+        生产上表现为「跑满一轮就锁死到次日零点」。
+        """
+        for total in (150_000, 1_000_000, 10_000_000, 100_000_000):
+            with self.subTest(total_tokens=total):
+                http = FakeHTTP([Resp(200, ok_payload())])
+                router = make_router(state=self._state_with_usage(total), http=http)
+                res = router.analyze_news("p")
+                self.assertTrue(res.ok, f"{total} token 的账本不应阻止调用，实际 {res.status}")
+                self.assertEqual(len(http.calls), 1, "必须真的发出 HTTP 请求")
+
+    def test_no_daily_cap_fields_in_config(self):
+        """§17 A5/A6：不得存在任何每日 Token / 每日请求次数字段（含改名后的隐藏字段）。"""
+        cfg = ai.AIConfig()
+        for name in ("max_calls_per_day", "max_tokens_per_day", "daily_budget",
+                     "daily_token_limit", "max_daily_tokens", "max_token_usage",
+                     "daily_request_limit", "budget_guard"):
+            self.assertFalse(hasattr(cfg, name), f"配置里仍有每日额度字段：{name}")
+
+    def test_no_budget_gate_method(self):
+        """§17 A5：预算闸门函数本身必须消失，防止有人再把它接回调用链。"""
+        router = make_router(state={})
+        self.assertFalse(hasattr(router, "budget_exceeded"))
+
+    def test_router_never_returns_budget_status(self):
+        """§17 A7：路由器不得再产出 BUDGET_EXCEEDED 这种「项目内部额度」状态。"""
+        state = self._state_with_usage(100_000_000)
+        http = FakeHTTP([Resp(402, text="Insufficient Balance")])
+        router = make_router(state=state, http=http)
         res = router.analyze_news("p")
-        self.assertEqual(res.status, ai.BUDGET_EXCEEDED)
-        self.assertEqual(len(http.calls), 2, "预算用尽后不得再发请求")
-        self.assertEqual(router._stats()["calls"], 2, "被预算拦下的请求不计入实际调用数")
+        # 402 是**服务商真实限制**，必须如实分类，而不是伪装成内部预算
+        self.assertEqual(res.status, ai.QUOTA_EXHAUSTED)
+        self.assertNotEqual(res.status, ai.LEGACY_BUDGET_EXCEEDED)
+
+    def test_usage_snapshot_is_monitoring_only(self):
+        """§2.3：用量只做监控，快照必须能读到真实累计值。"""
+        router = make_router(state=self._state_with_usage(1_000_000, calls=7))
+        snap = router.usage_snapshot()
+        self.assertEqual(snap["calls"], 7)
+        self.assertEqual(snap["total_tokens"], 1_000_000)
+        self.assertEqual(snap["date"], self._today_cn())
 
     def test_stats_recorded_per_provider_and_tokens(self):
         state = {}
