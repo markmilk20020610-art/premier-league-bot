@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 258,
+        "calls": 259,
         "errors": 0,
-        "requests": 258
+        "requests": 259
       }
     },
-    "calls": 258,
+    "calls": 259,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 1571750,
-    "output_tokens": 159352,
-    "requests": 258
+    "input_tokens": 1577828,
+    "output_tokens": 159919,
+    "requests": 259
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -820,9 +820,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T20:18:33.628658+00:00",
+  "last_scan_at": "2026-10-31T20:19:26.439080+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Official Spurs Website Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T20:19:26.441567+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQUhVeGZoaFd0MC1tcUE1UDVYVTZtV2VPQnR2LWI5ZVZIS0x4NnBMRVRZVUFyY0dZM1dqa0RPMmxSUm41ci03RHB0ZElsUHBUYXZzZ2tMbGRDVWxQQ29vdk5xZEtFc3loNXJRaEVvVlNVVFl4WU5OT1lrWFBZUGY1SFR3?oc=5",
+      "published": "2026-10-31T20:17:57+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Official Spurs Website - Tottenham Hotspur"
+    },
     {
       "desc": "Tottenham manager Roberto De Zerbi said the mood at the club is \"totally different\" after picking up a third straight le",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2312,16 +2322,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd tickets plus hotels and VIP hospitality deals for Premier League and Champions League games at Old Trafford"
-    },
-    {
-      "desc": "Despite the speculation snowballing in the second half of last season - and it was as if there had been an explosion at ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-10-31T09:55:25.504391+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16251855/Cole-Palmer-Man-United-Chelsea-Xabi-Alonso.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-10-31T09:46:04+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Cole Palmer and Man United unpacked: The truth about Old Trafford links, why he really got a new Chelsea deal, Xabi Alonso's 'emotional cont"
     }
   ],
   "processed_urls": [
