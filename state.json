@@ -1,4 +1,606 @@
 {
+  "ai_stats": {
+    "by_provider": {
+      "deepseek": {
+        "calls": 1,
+        "errors": 0
+      }
+    },
+    "calls": 1,
+    "date": "2026-10-31",
+    "errors": 0,
+    "input_tokens": 4912,
+    "output_tokens": 637
+  },
+  "circuit_breakers": {
+    "deepseek": {}
+  },
+  "events": {
+    "c1ca9017032e": {
+      "attempts": 1,
+      "created_at": "2026-10-31T00:05:41.133162+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "06d5ca672e14792d",
+      "event_id": "c1ca9017032e",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
+      "last_error": "",
+      "telegram_message_id": 16,
+      "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
+      "updated_at": "2026-10-31T00:05:41.886537+00:00"
+    }
+  },
+  "last_morning_report_date": "",
+  "last_summary_sent_at": "",
+  "news_pool": [
+    {
+      "desc": "Television pundit Carragher believes Emery would be the ideal manager of Manchester United if they decided to sack Micha",
+      "first_seen": "2026-10-31T00:05:36.321272+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-30T23:57:04+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Aston Villa threaten legal action against Jamie Carragher after pundit claimed Unai Emery should replace Michael Carrick at Man United and t"
+    },
+    {
+      "desc": "ASTON Villa are taking legal action against TV pundit Jamie Carragher over his ‘unacceptable insults’. Villa co-owner an",
+      "first_seen": "2026-10-31T00:05:36.321305+00:00",
+      "link": "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
+      "published": "2026-10-30T23:55:49+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Aston Villa to SUE Jamie Carragher over ‘shut the f*** up’ comments about Man Utd as 37-word statement released"
+    },
+    {
+      "desc": "Chelsea vs Man Utd Referee: Bankes Reported, TNT 12.30pm Kick-off The False 9",
+      "first_seen": "2026-10-31T00:05:36.321331+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3?oc=5",
+      "published": "2026-10-30T23:39:46+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Chelsea vs Man Utd Referee: Bankes Reported, TNT 12.30pm Kick-off - The False 9"
+    },
+    {
+      "desc": "The 34-year-old told Argentine journalist Gaston Edul's YouTube channel that he cried after seeing x-rays having feared ",
+      "first_seen": "2026-10-31T00:05:36.321361+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-30T23:33:53+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Emiliano Martinez reveals his finger 'won't ever return' to normal after injury left him playing like a 'zombie' during World Cup: 'I cried "
+    },
+    {
+      "desc": "WEST Ham star Manor Solomon has been branded a “baby killer” by pro-Palestine activists for serving with the IDF. Thugs ",
+      "first_seen": "2026-10-31T00:05:36.321388+00:00",
+      "link": "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
+      "published": "2026-10-30T23:25:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Israeli West Ham star Manor Solomon branded a ‘baby killer’ by pro-Palestine thugs over national service with the IDF"
+    },
+    {
+      "desc": "England's Red Roses responded to shock back-to-back defeats in Canada with a crushing 55-12 WXV Global Series victory ov",
+      "first_seen": "2026-10-31T00:05:36.321411+00:00",
+      "link": "https://www.skysports.com/rugby-union/usa-women-vs-england/report/113218",
+      "published": "2026-10-30T23:25:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Moloney-MacDonald stars as Red Roses return to winning ways with USA thrashing"
+    },
+    {
+      "desc": "Charles Leclerc completed a Friday practice double at the Mexico City Grand Prix but Ferrari's strong showing was dampen",
+      "first_seen": "2026-10-31T00:05:36.321434+00:00",
+      "link": "https://www.skysports.com/f1/news/12040/13605831/mexico-city-gp-charles-leclerc-completes-friday-practice-double-as-ferrari-team-mate-lewis-hamilton-suffers-technical-failure",
+      "published": "2026-10-30T23:10:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Leclerc seals Mexico City practice double as Hamilton suffers technical issue"
+    },
+    {
+      "desc": "Leicester moved to the top of the PREM table with a bonus-point 22-16 victory over Bristol at Ashton Gate in an error-ri",
+      "first_seen": "2026-10-31T00:05:36.321454+00:00",
+      "link": "https://www.skysports.com/rugby-union/bristol-vs-leicester/report/113851",
+      "published": "2026-10-30T23:08:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Leicester top table after victory over Bristol"
+    },
+    {
+      "desc": "Aston Villa say they will initiate legal action against Jamie Carragher over what the club branded as \"unacceptable insu",
+      "first_seen": "2026-10-31T00:05:36.321475+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-30T23:05:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Villa to sue Carragher over 'unacceptable insults'"
+    },
+    {
+      "desc": "IT HAS allegedly been a week of “hard truths” at Manchester United. Six difficult days of airing out tensions, crunch ta",
+      "first_seen": "2026-10-31T00:05:36.321501+00:00",
+      "link": "https://www.thesun.co.uk/sport/40865039/man-utd-michael-carrick-jason-wilcox-omar-berrada/",
+      "published": "2026-10-30T22:56:25+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘It’s not always rosy’ – Michael Carrick reveals how talks with Wilcox and Berrada went amid horror Man Utd run"
+    },
+    {
+      "desc": "After a 1-1 draw in his first match as Glentoran manager, Duncan Ferguson speaks of his \"relief\" in a week filled with W",
+      "first_seen": "2026-10-31T00:05:36.321520+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj5ynr23rg4ro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-30T22:52:32+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "From WiFi to 'relief' - how was Ferguson's Irish League debut?"
+    },
+    {
+      "desc": "Canelo Alvarez and Christian Mbilli both made the weight for their WBC super-middleweight world title fight on Saturday ",
+      "first_seen": "2026-10-31T00:05:36.321543+00:00",
+      "link": "https://www.skysports.com/boxing/news/12040/13605983/canelo-alvarez-and-christian-mbilli-make-weight-for-wbc-super-middleweight-world-championship-fight-in-riyadh",
+      "published": "2026-10-30T22:45:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Canelo and Mbilli make weight for world title fight in Riyadh"
+    },
+    {
+      "desc": "CHRIS WHEELER: Michael Carrick has rejected claims that his Manchester United stars have been unprofessional, and vowed ",
+      "first_seen": "2026-10-31T00:05:36.321568+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-30T22:30:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Michael Carrick hits back at Gary Neville after his former Man United team-mate accused players of being unprofessional - and opens up on cr"
+    },
+    {
+      "desc": "Manchester United have shown an interest in Barcelona's attacking midfielder Fermin Lopez as they look to add to their g",
+      "first_seen": "2026-10-31T00:05:36.321593+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16253817/Barcelona-star-Fermin-Lopez-Man-Uniteds-radar-Dominic-Calvert-Lewin-discusses-new-Leeds-deal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-30T22:21:27+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United interested in Barcelona star Fermin Lopez as they look to bolster attack after Benjamin Sesko injury blow"
+    },
+    {
+      "desc": "NON-LEAGUE club Gateshead have been forced to postpone a National League game due to a scheduling conflict. Gateshead, w",
+      "first_seen": "2026-10-31T00:05:36.321617+00:00",
+      "link": "https://www.thesun.co.uk/sport/40864366/national-league-match-postponed-bonfire-night-gateshead-tamworth/",
+      "published": "2026-10-30T22:18:32+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘That’s a new one’ – National League fixture postponed due to schedule clash with Bonfire Night"
+    },
+    {
+      "desc": "The top stories and transfer rumours from Saturday's newspapers...",
+      "first_seen": "2026-10-31T00:05:36.321636+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13605928/lisandro-martinez-wants-to-leave-man-utd-in-the-summer-with-atletico-madrid-interested-paper-talk",
+      "published": "2026-10-30T22:17:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Martinez seeking summer Man Utd departure"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "first_seen": "2026-10-31T00:05:36.321656+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-10-30T22:04:55+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
+      "desc": "Sheffield United shook off a 44-year hoodoo by beating Wrexham 1-0 in the Championship, winning against the Welsh side i",
+      "first_seen": "2026-10-31T00:05:36.321680+00:00",
+      "link": "https://www.skysports.com/football/sheffield-united-vs-wrexham/report/560648",
+      "published": "2026-10-30T22:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Sheff Utd win first league game against Wrexham in 44 years"
+    },
+    {
+      "desc": "Sun Goddess confirmed herself as a two-year-old out of the ordinary with a clear-cut win Breeders' Cup Juvenile Fillies ",
+      "first_seen": "2026-10-31T00:05:36.321700+00:00",
+      "link": "https://www.skysports.com/racing/news/12040/13605969/breeders-cup-sun-goddess-in-class-of-her-own-with-juvenile-fillies-turf-win-at-keeneland-as-libertango-takes-juvenile-turf-sprint",
+      "published": "2026-10-30T21:58:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Brilliant Sun Goddess in class of her own at Breeders' Cup"
+    },
+    {
+      "desc": "Fallon Sherrock did indeed beat Luke Littler at the live 'Beat Luke Littler' event in Manchester, winning a prize of £50",
+      "first_seen": "2026-10-31T00:05:36.321723+00:00",
+      "link": "https://www.skysports.com/darts/news/12040/13605916/beat-luke-littler-fallon-sherrock-wins-one-off-leg-to-defeat-the-nuke-and-take-501000-prize",
+      "published": "2026-10-30T21:55:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Sherrock wins leg to beat Littler and claim £501,000 prize"
+    },
+    {
+      "desc": "Manchester United",
+      "first_seen": "2026-10-31T00:05:36.321742+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMkQ2SWRjaUpaZEZmSlJwTzlsTV9zdzFnLTZFT2VuYVc1cVF1VE1TU0VGb1hUcEVlckpEZWFxbURVX1pUZ1RlOFJwdVJpNTAxZWh2MXVjbHNqdGpOQzJIdngtd1RnblJLdTJUS1dHaFJTRGdpUEN3Tk1qZUN1QlhGOHRkcERVSE5zNTVya1RKVE1jQUozN1hocDJMTkRJMnNIaWxsTnhQb01PM1VIQnc?oc=5",
+      "published": "2026-10-30T21:53:51+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
+    },
+    {
+      "desc": "TOMMY CONWAY experienced the darkest fortnight of his career when two of his biggest footballing dreams were ripped away",
+      "first_seen": "2026-10-31T00:05:36.321768+00:00",
+      "link": "https://www.thesun.co.uk/sport/40861438/tommy-conway-injury-middlesbrough-scotland/",
+      "published": "2026-10-30T21:51:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘I sat with mum in tears after two biggest dreams were ripped away,’ reveals Middlesbrough & Scotland star Tommy Conway"
+    },
+    {
+      "desc": "Fantasy Show: What to do with Joao Pedro? Premier League",
+      "first_seen": "2026-10-31T00:05:36.321789+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcnFuS1VyUnNhTDNxVnpxZ05ZUElxUXNiTWR0X055SHhmcGp5VHNuUVVSMkxqWjlFV0NXeWlSSlp5bWtjY3NKTm9ZQmRvNkdHSzNoX0swYnRqM3ZqbEFNd0Z0Qjgwd2dsR0JlUGtuVm41TWw2U005V2JBckVBVXNqaXBmVEh4MnRPQzJ6ZWtIUQ?oc=5",
+      "published": "2026-10-30T21:49:27+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fantasy Show: What to do with Joao Pedro? - Premier League"
+    },
+    {
+      "desc": "FPL GW10 Tips: Arsenal Face Hull, Haaland Visits Forest, Early Picks The False 9",
+      "first_seen": "2026-10-31T00:05:36.321811+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSUVfVWhTSXpHTXRDLWRybFlQSnI3dlAwRXJfMUxMMFJ2OFZsN3ZBOHZCbWdqVzNSbU5TYnNxZ29qekJTQ29TeFlmZVJtY3M2UWpCUzZQSmZ0U1FXU0dtSEN1Z0FpLXRyMklRTUo0V3dMM0JNMGNzZHYyUDQ0TnNZYTJUQQ?oc=5",
+      "published": "2026-10-30T21:41:29+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "FPL GW10 Tips: Arsenal Face Hull, Haaland Visits Forest, Early Picks - The False 9"
+    },
+    {
+      "desc": "A full breakdown of the results has now been revealed, with Kane topping the vote by receiving 1,055 points from an inte",
+      "first_seen": "2026-10-31T00:05:36.321837+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16253543/Harry-Kane-beat-Kylian-Mbappe-Ballon-dOr-results-revealed.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-30T21:33:10+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Harry Kane beat Kylian Mbappe to the Ballon d'Or by one of the smallest margins EVER: Full results are revealed after England captain's triu"
+    },
+    {
+      "desc": "",
+      "first_seen": "2026-10-31T00:05:36.321858+00:00",
+      "link": "https://www.skysports.com/f1/live-blog/12040/13605426/f1-mexico-city-gp-live-friday-practice-updates-results-stream-highlights-from-formula-1-race-weekend",
+      "published": "2026-10-30T21:32:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Mexico City GP: Verstappen, Lawson summoned by stewards after collision LIVE!"
+    },
+    {
+      "desc": "SOME people in football believe the answer to every problem is another competition, another tournament, another round of",
+      "first_seen": "2026-10-31T00:05:36.321884+00:00",
+      "link": "https://www.thesun.co.uk/sport/40864647/fleetwood-arsenal-fixtures-karren-brady/",
+      "published": "2026-10-30T21:31:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Fleetwood’s epic win over Arsenal was something football’s elite could never manufacture with a bloated fixture list"
+    },
+    {
+      "desc": "Under-pressure Aberdeen manager Stephen Robinson has an excellent record in Hampden semi-finals. But is Saturday's meeti",
+      "first_seen": "2026-10-31T00:05:36.321906+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwx281x2p28do?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-30T21:26:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Can Robinson work Hampden magic against McInnes' Rangers?"
+    },
+    {
+      "desc": "U21s report: United 2 Monaco 3 Manchester United",
+      "first_seen": "2026-10-31T00:05:36.321959+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVHBiYkhKQy16TXFET3VHYUlxd0tNa2lGZWZ3eF9SVnBabmVEOTZGMDdqWTZXb3pzZ013eGgyMFJYWEQtbThLUlBEYWxpaU9fRFZnbGxRZFBwd2kyd2NyMVlDclRTelVvYXVKd2pFMm1ZdU5oOVZSeFgyWU9UT1pSMUZCZDA?oc=5",
+      "published": "2026-10-30T21:18:26+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "U21s report: United 2 Monaco 3 - Manchester United"
+    },
+    {
+      "desc": "Lionel Messi to Newell’s in 2027? Fabrizio Romano Reveals the Latest on His Future Pasión Fútbol",
+      "first_seen": "2026-10-31T00:05:36.322008+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNN1h2Ri1VZGRhb1F1aFhFbG54WEdmRXNSTUNXeWxVMnlVZy0wOHBid29Dcy1FbU9xSW5pZmFDQjlZMmt4Y284a3VidnZZQ2FhQ1dDY3g4aHlHeFJWeWxnX0lVM05OS3pBb2VRcGg0N2xuRDdFbkNxa2M5THB3bG5lU0VmQ0xJcURIUUVkalBuaERXb0lONXItR2NjbWYwMThENUhqMkxvbFB2dW42OEF5U1U1TWsxTWpvcnZ5TThXdHJTNnFzeDl2eF9hMFRlTWp6OFHSAdIBQVVfeXFMTTdYdkYtVWRkYW9RdWhYRWxueFhHZkVzUk1DV3lsVTJ5VWctMDhwYndvQ3MtRW1PcUluaWZhQ0I5WTJreGNvOGt1YnZ2WUNhYUNXQ2N4OGh5R3hSVnlsZ19JVTNOTkt6QW9lUXBoNDdsbkQ3RW5DcWtjOUxwd2xuZVNFZkNMSXFESFFFZGpQbmhEV29JTjVyLUdjY21mMDE4RDVIajJMb2xQdnVuNjhBeVNVNU1rMU1qb3J2eU04V3RyUzZxc3g5dnhfYTBUZU1qejhR?oc=5",
+      "published": "2026-10-30T21:17:07+00:00",
+      "publisher": "https://www.pasionfutbol.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Lionel Messi to Newell’s in 2027? Fabrizio Romano Reveals the Latest on His Future - Pasión Fútbol"
+    },
+    {
+      "desc": "Fabrizio Romano names manager Man Utd want to replace Michael Carrick - it's NOT Eddie Howe TEAMtalk",
+      "first_seen": "2026-10-31T00:05:36.322035+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaXBLWUhUNHpCd0JPS1pIaVh5S28wWnA5eHVFQzNYUEFkaU9CMTZSZ0hpY1daQV9URUFZSWppcHRjYXVPQVNQLS1vV3JEcWRyU3Q0OE5jMDRjcXJTem9VMWtTYnZuTVdCcEF0N1hONDBsQ1BkQkRiSDBiY2dieXZQNks4VEN5bGFkMGJ0dDN5akZncGlpSDJVdmhNMWZoU1p1QVJGNlFFRQ?oc=5",
+      "published": "2026-10-30T21:16:49+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano names manager Man Utd want to replace Michael Carrick - it's NOT Eddie Howe - TEAMtalk"
+    },
+    {
+      "desc": "Man Utd Transfer News Today: Fermin Lopez targeted as Romano confirms January signing LiveScore",
+      "first_seen": "2026-10-31T00:05:36.322060+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQTFUtVGU3RXNRekNsSmlfcWtDZU1mVEhjc0UwNEEwRWQ3X0M2QzJsUUl1a1hlWGg5WHk2Q2ZTN0s3dFlNT05Ya1hUcml3RmVXVmpHMXZoWXFkd0xpVm5xczVKVHI5TWJJWktVaGQ4OC1GeXdpaXJ6bTFpcC01M25TcE9RNkpYSWp1c2wtUmpmbTdjWTVIUmszNUJKLW9TRHdWRWdFT3FCZXdBdnZiVW14LWV1Sm1xYi1CX1plNkFyY0dlaVRDV1IyS1ZqVnQ1MlAzWEF1X0hxTnlQTEFxTm1mclZPRWJQYmtCcERuSXhpc184VGc?oc=5",
+      "published": "2026-10-30T21:13:10+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd Transfer News Today: Fermin Lopez targeted as Romano confirms January signing - LiveScore"
+    },
+    {
+      "desc": "Liverpool FC",
+      "first_seen": "2026-10-31T00:05:36.322079+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
+      "published": "2026-10-30T21:01:07+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "- Liverpool FC"
+    },
+    {
+      "desc": "MANCHESTER UNITED'S flops were BOOED on their train down to London ahead of their clash with Chelsea, according to repor",
+      "first_seen": "2026-10-31T00:05:36.322104+00:00",
+      "link": "https://www.thesun.co.uk/sport/40864459/man-utd-flops-booed-train-london-carrick-cheered/",
+      "published": "2026-10-30T20:56:05+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd flops ‘booed by train passengers as Carrick CHEERED’ on shambolic journey to Chelsea clash"
+    },
+    {
+      "desc": "Press conference | Every word: Andoni Iraola on injuries, Arsenal analysis, reaching 'another level' and more Liverpool ",
+      "first_seen": "2026-10-31T00:05:36.322131+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNm1VQzlLVnNmWlgxUTUyZzFoUnJJOGNMWV9EWnpoOXl1TlVULUwxdFRKS0F5SmNaSFJKOVhtRTZNV1hCX25NMWZNMXBMUXdMTjA2ZVpQNXN2T1YxS3ZOUHgycXo5LVV5NVJBamlaVUNDOTY3YXFPb0RQaktyODFjWlRYSFA4SUdabXZOMFhKTTZGNjI0elc0b1Rha09tdG9vakg0S1FuYmpiX25nZWVB?oc=5",
+      "published": "2026-10-30T20:38:06+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Press conference | Every word: Andoni Iraola on injuries, Arsenal analysis, reaching 'another level' and more - Liverpool FC"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Man Utd striker hunt as £100m superstar linked Football365",
+      "first_seen": "2026-10-31T00:05:36.322155+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW1jOFl2WFR0NV96MU9panZ6WGNJdmtOZTdUOFlBOENSc280Z29xWUZrQy1ZSXlNY191U0xockhPcXNmSnFCVjFGTmU4YzJtSHVfbEdUSHJyS2dqN2VVRUwzaUc4ME1NUW8xdVNMRXU3bENmcmoxQzdwMWViZXM5UmliNFY5UUtya3JxRmlTaFZQaW11ZVJWQi1Dc0xiMzNnRmUwVWlKTTlYbjEz?oc=5",
+      "published": "2026-10-30T20:37:27+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Man Utd striker hunt as £100m superstar linked - Football365"
+    },
+    {
+      "desc": "",
+      "first_seen": "2026-10-31T00:05:36.322175+00:00",
+      "link": "https://www.skysports.com/rugby-union/usa-women-vs-england/live/113218",
+      "published": "2026-10-30T20:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Jones: Red Roses will review North America tour - 'We're hungry to get better'"
+    },
+    {
+      "desc": "Training photos: Liverpool prepare for Premier League showdown with Arsenal Liverpool FC",
+      "first_seen": "2026-10-31T00:05:36.322203+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPV25ac0dvQ0lIcFJyaG80Yk0yaElyUHQxV2R4ajdoYVIzUHN2OTY2VDlyMW9kazdDSERvQTZLRlZtVVJIanBhV2premw1NkVkM1ZtanNmcUpLSU5YME5GZHV2RFRHSmN1QlZ1enM5NEQ0YzZOUzVtZUcyLWIzVzlhNTBHejhsaXRWLWFkY1h0YmtabnZsejN4V0NBQWd6djlfWi1SdVAzVWROVFU?oc=5",
+      "published": "2026-10-30T19:57:51+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Training photos: Liverpool prepare for Premier League showdown with Arsenal - Liverpool FC"
+    },
+    {
+      "desc": "From mancity.com - Man City Shop Man City Shop",
+      "first_seen": "2026-10-31T00:05:36.322225+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPOFZWTnBFd0txdWVDeHM2U0dqUW1Wd19OLWtoRDRsSTNhdzhDYnRmTmtCSHdiMDkyZl81OFVyMlNqUTM0bFcwMmFTcnZYTUpwZ2owcHhXZEg5eU51M0dyWHlJVGwtZER2djVJekVsTk02aW9UcnVyYy14T2cycXVOdF93dWszaEtNVGdGcEV6NF9sX2pKbHJ1VUhxRjY1UnN0cjhfT1pVVzhOX1c0Y0p5QndYcC1MSEV2TUViSHBJNnc1Tnl0VW9LbV9pbHlzaHdTQmpDTC1kdENPSHkwRzZWeEduQTR0OWppdWpKUWx1em1oRkE0MkhHdzRB?oc=5",
+      "published": "2026-10-30T19:53:44+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "From mancity.com - Man City Shop - Man City Shop"
+    },
+    {
+      "desc": "EVERYONE might want to face Manchester United at the moment, but their trip to Chelsea spells serious danger for Xabi Al",
+      "first_seen": "2026-10-31T00:05:36.322251+00:00",
+      "link": "https://www.thesun.co.uk/sport/40863956/man-utd-chelsea-michael-carrick-troy-deeney/",
+      "published": "2026-10-30T19:48:33+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd couldn’t have asked for a better fixture than Chelsea away, Carrick won’t be the only one under the microscope"
+    },
+    {
+      "desc": "The Red Devils captain raised eyebrows when he questioned his manager's tactics after their side's 4-1 defeat by Como in",
+      "first_seen": "2026-10-31T00:05:36.322275+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16253455/Bruno-Fernandes-Man-United-legacy.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-30T19:47:53+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Bruno Fernandes has 'TARNISHED' his Man United legacy after his public criticism of Michael Carrick - and peace talks might be 'papering ove"
+    },
+    {
+      "desc": "Romano reveals Man Utd top target to replace Carrick in 'crucial' sack update - 'a manager they love' Football365",
+      "first_seen": "2026-10-31T00:05:36.322301+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSy03ZzJEbGVrNUNzVUU5WkhUS3NsN1VuUkZZSkNlTUM0cmR3OGEyb2x5eDVpNXplNnE1ZzFlR0FBXzdPa2xla0xjbXAxVTFuUW5zSEpybUNNb2FHYTlEQTltMlVZS2h4U0ptYVg2bTZaMHFGbzRGdDZfVW9fME95bTdDYjVrX21KNHhsd1pFYUpPQjV2Q01hLTNnZEVkSTJCX3REVFdONGV6bkJ1TjI4?oc=5",
+      "published": "2026-10-30T19:39:37+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano reveals Man Utd top target to replace Carrick in 'crucial' sack update - 'a manager they love' - Football365"
+    },
+    {
+      "desc": "Everything you need for Gameweek 9 of FPL with the latest tips and advice Premier League",
+      "first_seen": "2026-10-31T00:05:36.322324+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSmNhemRKY0JkbU41SXNfNWdQWDZnZFpUWWw5ME5Kc3I0bjluUkU3dmNyaW9HdWZmTzlkWGFSOU5FaElqLWoxS0pGeTNTN3VCMzNxTlBKdUtLVFVLemUzOXVkRThJQndCcjFTWmZwMVJ0YmF1eFRaMjFmN1IzTm5XUmJBaWhBS0NzOWlPaGZYenVTcmJwa2NXc1lCeTJvZHRvWHdyOW1CQjdodm91bjFhNV81b0dJVm5DVkxr?oc=5",
+      "published": "2026-10-30T19:33:22+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Everything you need for Gameweek 9 of FPL with the latest tips and advice - Premier League"
+    },
+    {
+      "desc": "Dowman reacted to a heavy challenge in the Carabao Cup on Tuesday night and was sent off for the second time this month,",
+      "first_seen": "2026-10-31T00:05:36.322349+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16252717/Were-not-Disneyland-Mikel-Arteta-warns-Max-Dowman-16-year-olds-red-card-against-Fleetwood-admits-dont-win-p-off.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-10-30T19:26:10+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'We're not in Disneyland!': Mikel Arteta fires warning at Arsenal wonderboy Max Dowman, 16, after red card - and says it's not his first off"
+    },
+    {
+      "desc": "Inside Training: Watch Liverpool's work on Friday for Anfield clash with Arsenal Liverpool FC",
+      "first_seen": "2026-10-31T00:05:36.322371+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNb0g3VzVaT2JzQl9peU5JcHNIUzB4N2NmT04tSTkzM0JYU0NQMk1uYjRtYWhheVBKVDlVQ2QzMWJuUnROVS01eVhvYXpOWWFTX1VuWXFDWUpWd3k0VVI1VFBMaUlUblpxaVZuMW9nRER2cHB1MUc5bUp6NTlFbW0zb28wVVhTQnBRdWJzYUFfQjVwZXl4OG42RjBaWVJFM2tMb2R0ZUFrNA?oc=5",
+      "published": "2026-10-30T19:11:48+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Inside Training: Watch Liverpool's work on Friday for Anfield clash with Arsenal - Liverpool FC"
+    },
+    {
+      "desc": "Liverpool v Arsenal: TV channels, live audio commentary, highlights guide and more Liverpool FC",
+      "first_seen": "2026-10-31T00:05:36.322394+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMmlJWW4xVm03SjFBd1Nia1lOVkVya3ZBekg3WDVjaDlCVTFqbmhZQ3NBVElBZjFnZXhEYW43R2VTZENKNW9Md05OTUxod3BFVE16Qkc4X0RRT21Yd0FjUnFsalVtWVRNR2R4UzExOUhLdXRwN0F0enhlMkx1SG9qOUgzMlFXSDlWQXhVSWFEelVSMXBnSXp2OE04WDdYWGdQRldzdExR?oc=5",
+      "published": "2026-10-30T19:04:22+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool v Arsenal: TV channels, live audio commentary, highlights guide and more - Liverpool FC"
+    },
+    {
+      "desc": "EMILIANO MARTINEZ has revealed how his hand is permanently disfigured and what he sacrificed to play at the World Cup. T",
+      "first_seen": "2026-10-31T00:05:36.322420+00:00",
+      "link": "https://www.thesun.co.uk/sport/40863263/emi-martinez-hand-disfigured-world-cup-sacrifice/",
+      "published": "2026-10-30T18:44:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Emi Martinez’s hand permanently disfigured as Chelsea goalkeeper reveals incredible sacrifice to play in World Cup"
+    },
+    {
+      "desc": "LISANDRO MARTINEZ is being targeted for a free summer transfer by Atletico Madrid, according to reports. SunSport exclus",
+      "first_seen": "2026-10-31T00:05:36.322446+00:00",
+      "link": "https://www.thesun.co.uk/sport/40863476/atletico-target-lisandro-martinez-man-utd-transfer/",
+      "published": "2026-10-30T18:43:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lisandro Martinez ‘to leave Man Utd with neither club or player wanting him to stay as Atletico join transfer race’"
+    },
+    {
+      "desc": "Romano: Defender an ‘absolute priority’ for Milan whilst Cardinale continues Endrick ‘obsession’ SempreMilan",
+      "first_seen": "2026-10-31T00:05:36.322472+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOUFfbFF0Nlg2NDJVdm5tQTJVa21ZTnpSVE96WGFRQmU5Vk5Oa29kR2gtUE1RS0ZLZEdaYmJHOENUYXpDazNKOGl5emV5NW1Nek1YY2RjX3dtVjVVLTY3ZFh6d2NSUnZOdWs4VzlMNUpvc2VQdGZTOGJrNWtCSzctdtIBhgFBVV95cUxNZ29XTmZ0M21seVktczRDZllxOURMc2ltSDVnUU41d3VNTnUtbWp1ZTdmeVo0ZVAyZFJjRzNUeXJuX3c4NXpkZjVjN1lYY1p5ejkyWWRmMmo1RldZcVJWXzlyQ1Y0TWdNQjAzZVJqZGtKWXpfS1ZIS1czZXZpSmQ3NDc3ZnNWUQ?oc=5",
+      "published": "2026-10-30T18:39:37+00:00",
+      "publisher": "https://sempremilan.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Defender an ‘absolute priority’ for Milan whilst Cardinale continues Endrick ‘obsession’ - SempreMilan"
+    },
+    {
+      "desc": "Scarves | Official Man City Store Man City Shop",
+      "first_seen": "2026-10-31T00:05:36.322492+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84SUhyd3VseVk0c1hDZDlxeDE0NGNLeDFQZU9RVDhocmZLTXU4RFV1WFRNMGY3c2huV0Viakktb0xPazlIbWxrVmtYVWk0dEVUMTBMSzlZeV82ZHZ0dHo1alUtWTZhbVlnRi1iTmo3b2RUNy1kckd6czZ2dw?oc=5",
+      "published": "2026-10-30T18:34:01+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Scarves | Official Man City Store - Man City Shop"
+    },
+    {
+      "desc": "Predicted line-ups for Premier League teams in Matchweek 9 Premier League",
+      "first_seen": "2026-10-31T00:05:36.322514+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdXZITGlnZkZLT3N4dGlLWXIxMG9sSjY3RWNrNWdvdU1qNWtVVlZHb3B3UmcyUk54S25pcjROa0NQM0tYQ0JTVjM0UXhLSlVNc2c0WnF3OEg5Vi1vSUVLOF8xcHlvUjJZcl9oWDlwYjhiRy1VX1B2RFdoazVpWnR2bkpJUV9xVmhhZEtrRkRiNk4wMUV5TG5Eck5oeWRUbW1HQW5VWEtTcw?oc=5",
+      "published": "2026-10-30T18:33:06+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Predicted line-ups for Premier League teams in Matchweek 9 - Premier League"
+    },
+    {
+      "desc": "Golf Man City Shop",
+      "first_seen": "2026-10-31T00:05:36.322531+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CSl82ZHB4MW9jRVlURHM1S2dSNXUtQ1YtTWRaeWI3Y18zc3RuWjAwYjFhVnFEY3hDSjU0LTk4c2lLOUY2UFJHcXRoY1V6U2dJUFprQXlsT2gtQWFvY2RpUXh6VXlCSTZNZEE?oc=5",
+      "published": "2026-10-30T18:32:16+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Golf - Man City Shop"
+    },
+    {
+      "desc": "Homewear Man City Shop",
+      "first_seen": "2026-10-31T00:05:36.322548+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rRDVOMGY1cDRGeXBmaTBObzloTTE5NGJWWHhqUUFsVVVRZ2dLRG1XNERIU0d2NnFDMFBMOHhIcUV0Q2VjemRFUElUTHVTMHRkUVR2WldkdXJ6RHRTX05yWUF3?oc=5",
+      "published": "2026-10-30T18:32:08+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Homewear - Man City Shop"
+    },
+    {
+      "desc": "Outerwear Man City Shop",
+      "first_seen": "2026-10-31T00:05:36.322565+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vUWVGRG9td3p6QU42RU5PZUstT0NyRFdUX3JlR2kzUzFvaXVKdGdDZ2hYWTVFa2xKVFQzcnc3MU5SSXMwTGV6UGJJQmZBUTZTUlJWckN3ZEVKcnh2UVM0LWNFZW51U1BaNnhocFN3?oc=5",
+      "published": "2026-10-30T18:31:59+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Outerwear - Man City Shop"
+    },
+    {
+      "desc": "What now for the City Football Group project? - The Athletic The New York Times",
+      "first_seen": "2026-10-31T00:05:36.322585+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOT0hEdWg2OHdhVWRVTmlwWEE5a3RoVFIybWhmczBtaV9UMUo2WXlKUE9zM1ZWT1ZEa1Myc3dyMkxRbmhCamp4WHBaSG1RRnI3cmk2b0FqSHFZYWlYX19vNVZTek5FdlJVNTI5RDduc19fVVhzS1VQVElNZk0xN2pnRnBfMUpkZXZ1?oc=5",
+      "published": "2026-10-30T17:54:52+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "What now for the City Football Group project? - The Athletic - The New York Times"
+    },
+    {
+      "desc": "The Africa Cup of Nations will remain on a two-year cycle after the Confederation of African Football performed a U-turn",
+      "first_seen": "2026-10-31T00:05:36.322605+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm3el25ez88yo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-30T17:33:02+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Why has Caf abandoned plans to hold Afcon every four years?"
+    },
+    {
+      "desc": "Key talking points from Sonia Bompastor's pre-Charlton press conference | News | Official Site Chelsea Football Club",
+      "first_seen": "2026-10-31T00:05:36.322628+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNXZYcTRNMlZpZHpiU0doNjA4X05hbmtjNkRZbUFkVHN6MGZoOE1VVUc0YXlRVTUtYXdxZkwxaEtLX2E2Y1l0STZkMXhEVVVCblhpaE1EVE1KS1p0REh6ckt6aXJjNlAxUmdqNm1NWk9Oc3hMRGtOd2NPSzgxNVBSSUpTczAwTC1PZXdyMzgwanBKMUVUSUxncVZrWWxWTk5mTlR3d0xtU1JQV3JiSTBXUEZR?oc=5",
+      "published": "2026-10-30T17:15:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Key talking points from Sonia Bompastor's pre-Charlton press conference | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Alisson Becker omission from Brazil squad for November internationals explained Liverpool FC",
+      "first_seen": "2026-10-31T00:05:36.322654+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOc3FnU2NNVmdGYTNpR0NDamxRcVFYWjg0XzhpbUNkLXQ1dm4ydGhkOW5QZ0h2OTNCYnRkTUUxWGkwQzVNN1ZGUkRoY2hQZHFRaWNRZFppN1VhSjIwNUxQNjZvbFdqUVVpclVuRUVrNjBFWlhqQzZZWTV0VmQxWG9UUzA1Vml4OFQxY0tRc0pIV0JQaE9UT1Bj?oc=5",
+      "published": "2026-10-30T16:59:05+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Alisson Becker omission from Brazil squad for November internationals explained - Liverpool FC"
+    },
+    {
+      "desc": "Fantasy Show: Watch the Gameweek 9 episode Premier League",
+      "first_seen": "2026-10-31T00:05:36.322675+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONi1Qd2FySERMR2JKVU1vMHduQnRXcHBwSVhSNGdJeDlmSnZaQVNnZDljdm56RjVqb1FHVEdjMWNxRHdxN1ZDSnZZMllPNGdtRUp6Mi1seGs0SEJUM0l1a1dfZUhoc1lpaTBDU3NfVWJIVjVTSmVjaHhVZnNKN3dnWmtJcVMtUEFiaDRJbzF0a3c?oc=5",
+      "published": "2026-10-30T16:53:06+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fantasy Show: Watch the Gameweek 9 episode - Premier League"
+    },
+    {
+      "desc": "Bompastor Press Conference 🎙️ | Video | Official Site Chelsea Football Club",
+      "first_seen": "2026-10-31T00:05:36.322698+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1oYXgzbzdZd3RpOXZ6WDZfdE5mMW8zdmYtejFVUGg3S3MwQnF1MEVKMEFxbHdEZ0phd25aaUdPZnFXQmNMYlJXTDJ1Zlpnem5YcmNwUC0wLWJTd1lWOTlhcWxIRXM0bGdRV0EwUDh0c2JoVlJZTmllOGNn?oc=5",
+      "published": "2026-10-30T16:31:23+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Bompastor Press Conference 🎙️ | Video | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Eddie Howe is being linked with the Manchester United job, but what are some of the considerations for him and the club?",
+      "first_seen": "2026-10-31T00:05:36.322718+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cr74pd99vwq3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-30T16:27:13+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "What Howe could bring to Man Utd - and what are the challenges?"
+    },
+    {
+      "desc": "Chelsea fear Maxence Lacroix will have a lengthy lay-off having suffered a serious hamstring injury.",
+      "first_seen": "2026-10-31T00:05:36.322739+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmkgkpexjzneo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-10-30T16:21:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Fears Chelsea's Lacroix could be out until January"
+    },
+    {
+      "desc": "Futures Premier League",
+      "first_seen": "2026-10-31T00:05:36.322757+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1OUVA2SU40eXdQMWtlWkg4YWJnNURldFQ0em9IbTB4Z2FYa3ZLd3htODQ5Q3BqbGVqc3pZSkljemR1cmMtb1pxU1Y2TXNIYWN3VUE?oc=5",
+      "published": "2026-10-30T16:16:28+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Futures - Premier League"
+    }
+  ],
   "processed_urls": [
     "https://www.bbc.co.uk/sport/football/articles/crly062vd0z7o?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/cjvgx0ek6rz2o?at_medium=RSS&at_campaign=rss",
@@ -10,7 +612,8 @@
     "https://www.dailymail.com/sport/football/article-16250391/Jack-Grealish-DROPPED-Everton-club-discipline.html",
     "https://www.thesun.co.uk/sport/40859069/man-utd-munich-air-disaster-memorial-medals-stolen-thieves/",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlhFdXFCdWNUZmo2Mi1sV191Q2pXWE9hbnVHN2N0ZGFxcWsxVUNvcjRyNVJldUluMHVYTUZUT3lxTGU1SDR0OG81a0tZY1NKbWV4ZjF5NlZ4RjR6VzlPcmZSREFNMHNrY3RmVVItQmcyRGpZTkg4dDFoU1h3by0yOERsekQ2aXV3V1pEN1FYM3NXTXk5dEthcVVTdWdTbEYyemZj?oc=5",
-    "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o"
+    "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o",
+    "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo"
   ],
-  "last_morning_report_date": ""
+  "schema_version": 2
 }
