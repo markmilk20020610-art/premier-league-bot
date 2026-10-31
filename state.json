@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 92,
+        "calls": 93,
         "errors": 0,
-        "requests": 67
+        "requests": 68
       }
     },
-    "calls": 92,
+    "calls": 93,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 490145,
-    "output_tokens": 67174,
-    "requests": 67
+    "input_tokens": 495991,
+    "output_tokens": 67835,
+    "requests": 68
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -300,9 +300,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T11:30:40.006460+00:00",
+  "last_scan_at": "2026-10-31T11:35:29.974633+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "THIS Sunday is not so super with just one Premier League fixture scheduled. That said, it is a big one as champions Arse",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-10-31T11:35:29.976771+00:00",
+      "link": "https://www.thesun.co.uk/sport/40846252/why-one-premier-league-match-sunday/",
+      "published": "2026-10-31T11:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why is there only one Premier League match on Sunday?"
+    },
     {
       "desc": "BBC Sport explores the plans for AC Milan and Inter's new stadium, and how powerful naming rights for new arenas can be",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
