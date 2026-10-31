@@ -343,3 +343,49 @@ SPORT_OTHER / SPORT_UNKNOWN
 ---
 
 **本报告为第一阶段产物，未修改任何代码。**
+
+---
+
+## 九、第二阶段实施记录（已按裁决落地）
+
+裁决结果：`12040` **保留并标 `mixed_sport`**；R4 **同批修**；先修 F1 领域过滤。
+
+### 9.1 新增模块
+
+| 文件 | 内容 |
+|---|---|
+| `sport_scope.py` | 领域枚举（Football / Formula 1 / … / Unknown / Conflict）、三级取证、`classify_sport()`、`reject_reason()` |
+| `feed_registry.py` | 19 个源的登记表（`source_id` / `feed_url` / `publisher` / `domain` / `sport_category` / `source_scope` / `enabled`）、`RSS_FEEDS` 派生、`validate_registry()` 自检 |
+
+### 9.2 改动点
+
+**A 领域白名单**：`ALLOWED_CATEGORIES = {Football}`，其余（含 `Unknown` / `Conflict`）一律拒绝。
+
+**B 来源级过滤**：`bot.RSS_FEEDS` 改为从 `feed_registry` 派生。`skysports.com/rss/12040` 标为 `mixed_sport`（`sport_category=OTHER`，`validate_registry` 禁止 `mixed_sport` 声称自己是 Football）。未登记源整源丢弃并打 `::warning title=UnregisteredFeed::`。
+
+**C 新闻级过滤**：`bot._filter_items_by_sport()` 在 `fetch_rss_sources()` 与早报 Google 兜底两处生效。`football_only` 源直接放行，`mixed_sport` 源逐条分类。判定含三级取证：URL 路径 / 足球专属域名 → 赛事术语（权重 2）→ 人名（权重 1），阈值 2；足球与其他项目同时检出 → `Conflict`。
+
+**D 推送硬校验**：新增 `bot._sport_check()` / `_sport_gate()`，在 `_finalize_result()`（突发）与 `_build_morning_events()`（早报）两处生效，拒绝码 `OUT_OF_SCOPE_SPORT`，日志打 `::warning title=OutOfScopeSport::`。`_sport_evidence()` 优先取证据文章的**英文原文标题与真实发布方域名**，而不是模型写的中文 `event_title`。
+
+**E 评级独立性**：`build_records()` 增加 `sport_category` / `sport_reason` 字段，与 `source_class`（权威度）、`evidence_status`（事实）分开存储；`enforce_rating()` 增加 `sport_category` 参数，非足球最高 Tier 3。
+
+**R4 同域假多源**：`independent_sources()` 增加「同一发布方的多篇稿子合并为 1 个来源」。只合并单域名组，不动转载组（bbc + dailymail + mirror 转载仍是 1 个来源）。
+
+**提示词**：突发与早报提示词都加了「⚽ 足球领域边界」段，输出 schema 增加 `sport` 字段（仅作线索）。
+
+### 9.3 验证结果
+
+| 项 | 结果 |
+|---|---|
+| 全量测试 | **365 全绿**（334 既有 + 31 新增），无删除、无放宽断言 |
+| 事故复现 | 同一份生产 state 重放：`MULTIPLE_INDEPENDENT_SOURCES` → `SINGLE_SOURCE`（R4 生效），`sport_gate` → `OUT_OF_SCOPE_SPORT` |
+| 端到端 | 采集层被绕过时（mock fetch 直接塞入 F1），`run_scan_mode` 仍 0 条推送、0 条事件，日志 `[SKIP] OUT_OF_SCOPE_SPORT` |
+| 真实池误杀 | 137 条中 121 条足球**全部保留**，16 条非足球**全部拦下**（F1 6 / 橄榄球 3 / 飞镖 2 / 高尔夫 2 / 拳击 1 / 赛马 1 / 冲突 1），**零误杀** |
+| 早报通道 | 飞镖 Sherrock 原本会进早报候选，现已拦下 |
+| 冒烟 | `smoke_run.py` 与 `--quota` 两个场景均通过 |
+
+### 9.4 未做
+
+- 历史 `message_id = 26` 未撤回（按裁决交由人工决定）。
+- `11095` 未接入（按裁决保留 `12040` + 逐条分类）。
+

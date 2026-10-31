@@ -6,9 +6,12 @@
 
 ```
 RSS 矩阵（19 源，失败自动降级 Google News）
+  → 来源登记表（sport_category / source_scope，未登记不采集）
+  → 领域过滤（综合体育源逐条分类，非足球丢弃）
   → 候选治理（URL 规范化 / 去重 / 过滤已处理 / 事件指纹）
   → AI 分析（DeepSeek 唯一启用，Gemini 接口保留但关闭）
   → 证据核验（程序算：独立来源、转载合并、冲突识别）
+  → 领域硬校验（非 Football 一律拒绝，早报同样生效）
   → Schema 校验
   → Telegram 推送 → 投递状态机 → state.json 回写
 ```
@@ -20,6 +23,8 @@ RSS 矩阵（19 源，失败自动降级 Google News）
 | `bot.py` | 主流程：抓取、候选治理、卡片渲染、推送、早报 |
 | `ai_provider.py` | 模型调用统一入口：Provider、熔断、预算、调用统计 |
 | `evidence.py` | 证据核验：五种证据状态、独立来源计算、评级复核 |
+| `feed_registry.py` | 来源登记表：每个 feed 的 sport_category / source_scope / enabled |
+| `sport_scope.py` | 足球领域边界：URL 路径 + 赛事名 + 人名三级取证，输出 sport_category |
 | `schema.py` | 模型输出严格校验 |
 | `state_store.py` | 原子持久化 + 投递状态机 + 崩溃恢复 |
 | `redact.py` | 凭证脱敏：日志 / 注解 / state 里的 Token 一律打码 |
@@ -86,6 +91,34 @@ RSS 矩阵（19 源，失败自动降级 Google News）
 - 同一篇通稿被多家转载、同一家通讯社的多条稿，只算 1 个来源。
 - 黑标 / 死亡 / 重伤 / 重病 / 违法 / 重大事故必须有官方确认或多源印证才发；
   模型自己写 `var_rating=黑标` 不能绕过这条。
+
+## 足球领域边界
+
+**Sports ≠ Football。** 综合体育媒体（Sky Sports / BBC / ESPN）发的 F1 稿子
+仍然是 F1 稿子，不能因为「来源权威」就进足球推送流程。
+
+领域判定由 `sport_scope.py` 在程序侧完成，三级取证：
+
+1. **URL 路径**（`/f1/`、`/sport/football/`）或**足球专属域名**（`arsenal.com`）
+2. **赛事 / 组织 / 技术术语**（`Grand Prix`、`Premier League`、`PGA`）—— 权重 2
+3. **运动员 / 俱乐部名**（`Verstappen`、`Arsenal`）—— 权重 1
+
+同一项目得分 ≥ 2 算检出。足球与其他项目**同时检出 → 判冲突并拒绝**，
+不能凭标题里出现俱乐部名放行。什么都没检出 → `Unknown`，同样拒绝。
+
+三道防线：
+
+| 层 | 位置 | 行为 |
+|---|---|---|
+| 来源级 | `feed_registry.py` | 每个 feed 登记 `sport_category` / `source_scope`；未登记不采集；`mixed_sport` 必须逐条分类 |
+| 采集级 | `bot._filter_items_by_sport()` | 综合体育源的非足球条目在入池前丢弃 |
+| 推送级 | `bot._sport_gate()` | 突发与早报都校验，非 Football 一律拒绝（`OUT_OF_SCOPE_SPORT`） |
+
+模型可以在输出里申报 `sport`，但那只作线索：**程序判定优先，申报成 Football 不改变结果**。
+
+评级独立性：`source_class`（媒体权威度）、`evidence_status`（事实证据）、
+`sport_category`（领域）三个维度分开存储。媒体知名度只影响评级**上限**，
+不直接授予等级——只有一家一线权威媒体时最高 Tier 2，拿不到 Tier 1。
 
 ## 测试
 

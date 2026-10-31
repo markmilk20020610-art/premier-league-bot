@@ -26,6 +26,8 @@ from urllib.parse import urlparse, urlunparse
 import hashlib
 import re
 
+import sport_scope
+
 # ==================== 证据状态 ====================
 OFFICIAL_CONFIRMED = "OFFICIAL_CONFIRMED"
 MULTIPLE_INDEPENDENT_SOURCES = "MULTIPLE_INDEPENDENT_SOURCES"
@@ -571,6 +573,10 @@ def build_records(raw_records):
             identity_conflict = bool(pub_domain) and bool(url_domain) and pub_domain != url_domain
 
         source_class = classify_source(domain)
+        # 领域与来源权威度是**两个正交维度**（V1.3 §F1 审计 E）：
+        # source_class 回答「媒体是谁」，sport_category 回答「写的是哪个项目」。
+        # 以前只有前者，于是 skysports.com 下的 F1 稿子照样拿到 TIER1。
+        sport_verdict = sport_scope.classify_sport(title, desc, url)
         records.append({
             "url": url,
             "canonical": canon,
@@ -582,6 +588,8 @@ def build_records(raw_records):
             "identity_conflict": identity_conflict,
             "feed_origin": feed_origin,
             "source_class": source_class,
+            "sport_category": sport_verdict.category,
+            "sport_reason": sport_verdict.reason,
             "title": (title or "").strip()[:200],
             "title_key": title_fingerprint(title),
             "desc": (desc or "").strip()[:400],
@@ -840,6 +848,29 @@ def independent_sources(records):
             target = {"key": key, "domains": set(), "sample": r, "trusted": True}
             buckets.append(target)
         target["domains"].add(r.get("domain") or "")
+
+    # ---- V1.3 §F1 审计 R4：同一发布方的多篇稿子只算 1 个来源 ----
+    # 以前只按「文章」聚类：Sky Sports 的 news 稿与 live-blog 讲同一件事，
+    # 但两篇措辞不同、相似度不到转载阈值，于是成了两个「独立来源」，
+    # 把 SINGLE_SOURCE 抬成 MULTIPLE_INDEPENDENT_SOURCES 并自动推送。
+    # 实测全池 38 条多源判定里有 8 条（21%）属于这种「同一家媒体自证」。
+    #
+    # 「独立来源」必须是**独立的发布方**，不是**独立的文章**。
+    # 这里只合并「单域名组」，不动转载组：bbc + dailymail + mirror 转载同一篇稿
+    # 仍然是 1 个来源（已有逻辑），不会被拆开，也不会被重复计数。
+    merged, single_domain_seen = [], {}
+    for b in buckets:
+        doms = {d for d in b["domains"] if d}
+        if len(doms) == 1:
+            dom = next(iter(doms))
+            if dom in single_domain_seen:
+                tgt = single_domain_seen[dom]
+                tgt["domains"] |= b["domains"]
+                tgt["trusted"] = tgt["trusted"] or b["trusted"]
+                continue
+            single_domain_seen[dom] = b
+        merged.append(b)
+    buckets = merged
 
     for b in buckets:
         # 只要组里有一个可识别的域名，这组就算「可信来源组」；
@@ -1272,14 +1303,23 @@ def status_label(status):
 
 
 # ==================== 评级复核（阶段 4.1 的程序侧兜底） ====================
-def max_allowed_rating_key(status, source_classes):
+def max_allowed_rating_key(status, source_classes, sport_category=None):
     """返回程序允许的最高评级 key（只降不升）。
 
+    - 非足球领域 → 最多 Tier 3（V1.3 §F1 审计 E）
+      领域不对的内容不存在「多权威」的问题，它根本不该出现在足球频道里。
+      这一条是兜底：正常情况下 sport_gate 已经把它拦在推送之前。
     - 未核验 / 冲突 → 最多 Tier 3
     - 单一来源（低可信 / 未识别 / 无来源）→ 最多 Tier 3
     - 单一来源（一线权威）→ 最多 Tier 2
     - 多源 / 官方 → 不限制（由模型按素材判断）
+
+    注意「一线权威」只影响**上限**，不直接授予等级：
+    `skysports.com` 是 TIER1 域名，但只有一条 Sky 稿子时仍被压到 Tier 2，
+    拿不到 Tier 1。媒体知名度不等于事实核验等级。
     """
+    if sport_category is not None and sport_category != sport_scope.FOOTBALL:
+        return "Tier 3"
     if status in (UNVERIFIED, CONFLICTING):
         return "Tier 3"
     if status == SINGLE_SOURCE:
@@ -1290,7 +1330,7 @@ def max_allowed_rating_key(status, source_classes):
     return None
 
 
-def enforce_rating(rating_key, status, source_classes):
+def enforce_rating(rating_key, status, source_classes, sport_category=None):
     """把模型给的评级压到程序允许的上限，返回 (最终 key, 是否被降级, 原因)。
 
     黑标是「严肃红线」的内容安全标记，不是可信度分级，任何情况下都不降级，
@@ -1299,7 +1339,7 @@ def enforce_rating(rating_key, status, source_classes):
     """
     if rating_key == "黑标":
         return rating_key, False, ""
-    limit = max_allowed_rating_key(status, source_classes)
+    limit = max_allowed_rating_key(status, source_classes, sport_category)
     order = {"Tier 1": 1, "Tier 2": 2, "Tier 3": 3, "黑标": 0}
     if not limit or not rating_key:
         return rating_key, False, ""

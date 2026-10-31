@@ -75,8 +75,13 @@ def base_result(**over):
 # ==================== 任务 12：突发新闻 12h 硬时效 ====================
 class TestTask12BreakingFreshness(unittest.TestCase):
     def _fetch(self, items, feeds=None):
-        """跑真实 fetch_rss_sources，只把单源抓取换成桩。"""
-        feeds = feeds or ["https://feed.test/rss"]
+        """跑真实 fetch_rss_sources，只把单源抓取换成桩。
+
+        V1.3 §F1 审计 B 之后，未在 feed_registry 登记的源会被整源丢弃
+        （未登记 = 不得采集）。所以这里必须用一个**真实登记过**的足球源地址，
+        否则测的就不是时效过滤，而是「源被领域登记表拦掉」。
+        """
+        feeds = feeds or ["https://feeds.bbci.co.uk/sport/football/rss.xml"]
         with mock.patch.object(bot, "RSS_FEEDS", feeds), \
                 mock.patch.object(bot, "_fetch_one_source",
                                   side_effect=lambda u, h: (u, list(items), 200)):
