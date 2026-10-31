@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 26,
+        "calls": 27,
         "errors": 0,
-        "requests": 26
+        "requests": 27
       }
     },
-    "calls": 26,
+    "calls": 27,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 163160,
-    "output_tokens": 18739,
-    "requests": 26
+    "input_tokens": 169370,
+    "output_tokens": 19375,
+    "requests": 27
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -577,7 +577,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:26:23.586041+00:00",
+  "last_scan_at": "2026-10-31T16:27:20.597869+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -719,6 +719,16 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "De Zerbi on when Tosin, Bergvall, Mudryk and Savio could return - Tottenham Hotspur"
+    },
+    {
+      "desc": "Michael Carrick expects to remain in charge of Manchester United despite the 2-0 defeat at Chelsea confirming the club's",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T16:27:20.599983+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13606140/man-utd-boss-michael-carrick-expects-to-remain-in-charge-vs-roma-despite-winless-run-stretching-to-nine-matches",
+      "published": "2026-10-31T14:42:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Worst run for 42 years but Carrick not expecting Man Utd sack before Roma"
     },
     {
       "desc": "Player ratings as Morgan Rogers and Cole Palmer score second-half goals in Chelsea's home win over Manchester United, wh",
@@ -2057,15 +2067,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Leicester top table after victory over Bristol"
-    },
-    {
-      "desc": "Aston Villa say they will initiate legal action against Jamie Carragher over what the club branded as \"unacceptable insu",
-      "first_seen": "2026-10-31T00:05:36.321475+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-30T23:05:45+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Villa to sue Carragher over 'unacceptable insults'"
     }
   ],
   "processed_urls": [
