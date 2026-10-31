@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 91,
+        "calls": 92,
         "errors": 0,
-        "requests": 91
+        "requests": 92
       }
     },
-    "calls": 91,
+    "calls": 92,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 568964,
-    "output_tokens": 59808,
-    "requests": 91
+    "input_tokens": 575216,
+    "output_tokens": 60411,
+    "requests": 92
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -712,7 +712,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T17:31:21.982946+00:00",
+  "last_scan_at": "2026-10-31T17:32:23.191320+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -814,6 +814,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Lankshear scores twice in Boro win"
+    },
+    {
+      "desc": "Kyrell Lisbie scored twice in the early stages as Millwall eased to a 4-1 victory against struggling Derby at The Den in",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-10-31T17:32:23.193965+00:00",
+      "link": "https://www.skysports.com/football/millwall-vs-derby-county/report/560646",
+      "published": "2026-10-31T17:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Millwall ease past sorry Derby as Lisbie nets twice"
     },
     {
       "desc": "WEREWOLF costumes are in short supply at this time of year - but James Trafford served up an even bigger Halloween howle",
@@ -2204,16 +2214,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Shearer discusses scoring record, MOTD & a brush with Cardiff"
-    },
-    {
-      "desc": "MANCHESTER CITY welcome Brighton back to the Etihad, just a few days after putting them out the Carabao Cup on penalties",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T06:00:51.521318+00:00",
-      "link": "https://www.thesun.co.uk/sport/40845642/man-city-brighton-free-bets-talksport/",
-      "published": "2026-10-31T06:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City vs Brighton: Bet £10+ on football and get up to £30 in free bets | talkSPORT BET"
     }
   ],
   "processed_urls": [
