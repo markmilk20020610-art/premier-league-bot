@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 125912,
-    "output_tokens": 13977,
-    "requests": 20
+    "input_tokens": 132160,
+    "output_tokens": 14823,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -550,7 +550,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:20:33.220430+00:00",
+  "last_scan_at": "2026-10-31T16:21:22.899819+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1072,6 +1072,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "AllRed - Liverpool FC"
+    },
+    {
+      "desc": "Xabi Alonso explains Jordan Henderson absence against Man United | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:21:22.902166+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNWWh5dzlPVzNMM19jS1hYZDNRNXFybHdkWG1kbEs2T2dsbjMtX2JXTzV5TElsd2lScEdtbWZUWVNIenBVdmMyUlg0NFhKWXFpdXBaZVA3NDl6X1kydC1ZRzBxX0NPblhuaW40NGhxRWN3dVpVQktXWmZqN1ZhZy1faQ?oc=5",
+      "published": "2026-10-31T11:45:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Xabi Alonso explains Jordan Henderson absence against Man United | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "Chelsea LED Watch with Silicone Strap Official Chelsea Store",
@@ -2026,15 +2036,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Canelo and Mbilli make weight for world title fight in Riyadh"
-    },
-    {
-      "desc": "CHRIS WHEELER: Michael Carrick has rejected claims that his Manchester United stars have been unprofessional, and vowed ",
-      "first_seen": "2026-10-31T00:05:36.321568+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-10-30T22:30:46+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Michael Carrick hits back at Gary Neville after his former Man United team-mate accused players of being unprofessional - and opens up on cr"
     }
   ],
   "processed_urls": [
