@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 381,
+        "calls": 382,
         "errors": 0,
-        "requests": 381
+        "requests": 382
       }
     },
-    "calls": 381,
+    "calls": 382,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 2297014,
-    "output_tokens": 243237,
-    "requests": 381
+    "input_tokens": 2302969,
+    "output_tokens": 243910,
+    "requests": 382
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -696,6 +696,33 @@
       "title": "热刺对阵水晶宫首发名单确认",
       "updated_at": "2026-10-31T16:24:29.982064+00:00"
     },
+    "9342c8ee0be4": {
+      "article_title": "Aston Villa 1 Fulham 1: Zion Suzuki makes huge blunder and John McGinn misses penalty as Emery train halted by Arbeola",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "abae6a9ff0e8d1a3",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 58
+        }
+      ],
+      "created_at": "2026-10-31T22:22:28.275313+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "18dded0ff55663df",
+      "event_id": "9342c8ee0be4",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40872725/zion-suzuki-aston-villa-draw-by-fulham-result",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 58,
+      "title": "阿斯顿维拉1-1富勒姆：铃木彩艳乌龙送礼，麦金失点",
+      "updated_at": "2026-10-31T22:22:28.881729+00:00"
+    },
     "9bcc0dc49802": {
       "article_title": "James Trafford makes horror error as Leeds star and England No1 hopeful left red-faced in painful Bournemouth defeat",
       "attempts": 1,
@@ -901,7 +928,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T22:21:22.340761+00:00",
+  "last_scan_at": "2026-10-31T22:22:22.562565+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -2452,7 +2479,8 @@
     "https://www.bbc.co.uk/sport/football/videos/c9203ymmn1m3o",
     "https://www.skysports.com/football/news/12040/13606410/oliver-glasner-nottingham-forest-head-coach-reveals-anger-desire-to-change-growing-pattern-at-club-amid-poor-start-to-season",
     "https://www.thesun.co.uk/sport/40871591/haaland-dad-silence-man-city-verdict-erling-future",
-    "https://www.thesun.co.uk/sport/40872763/man-utd-fans-abuse-jim-ratcliffe-wilcox-chelsea"
+    "https://www.thesun.co.uk/sport/40872763/man-utd-fans-abuse-jim-ratcliffe-wilcox-chelsea",
+    "https://www.thesun.co.uk/sport/40872725/zion-suzuki-aston-villa-draw-by-fulham-result"
   ],
   "schema_version": 3
 }
