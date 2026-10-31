@@ -98,9 +98,11 @@ jobs:
           while [ "$(date +%s)" -lt "$END" ]; do
             TICK=$((TICK + 1))
             echo "----- tick #$TICK @ $(date -u '+%H:%M:%SZ') -----"
+            T0=$(date +%s)
             if ! python scripts/focus_tick.py; then
               echo "::warning title=Focus Tick Failed::第 $TICK 拍失败，继续下一拍"
             fi
+            ELAPSED=$(( $(date +%s) - T0 ))
 
             INTERVAL=$(cat .focus_interval 2>/dev/null || echo "$DEFAULT_INTERVAL")
             case "$INTERVAL" in
@@ -109,6 +111,13 @@ jobs:
             # 夹在 [30, 300]：小于 30 秒等于自己往封禁上撞，大于 300 秒会错过首发。
             [ "$INTERVAL" -lt 30 ] && INTERVAL=30
             [ "$INTERVAL" -gt 300 ] && INTERVAL=300
+
+            # 扣掉本拍耗时再睡。每拍要起一个 Python 进程（import bot 约 2.5s）
+            # 再打几个 HTTP，不扣的话「配置 30 秒」实际会变成 45 秒，
+            # 临界窗口的 30 秒就成了纸面数字。
+            SLEEP_LEFT=$(( INTERVAL - ELAPSED ))
+            [ "$SLEEP_LEFT" -lt 5 ] && SLEEP_LEFT=5
+            echo "本拍耗时 ${ELAPSED}s，目标周期 ${INTERVAL}s，睡 ${SLEEP_LEFT}s"
 
             # 每 15 分钟把焦点状态回写一次（含已推送指纹，防止重启后重复推送）。
             # 不每拍都提交：5 小时会攒出几百个提交，把 git 历史搞脏。
@@ -122,7 +131,7 @@ jobs:
             # 睡到下一拍；同时避免最后一拍睡过头
             REMAIN=$(( END - $(date +%s) ))
             [ "$REMAIN" -le 0 ] && break
-            SLEEP=$(( REMAIN < INTERVAL ? REMAIN : INTERVAL ))
+            SLEEP=$(( REMAIN < SLEEP_LEFT ? REMAIN : SLEEP_LEFT ))
             sleep "$SLEEP"
           done
 

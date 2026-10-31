@@ -900,6 +900,12 @@ class TestWorkflowFile(unittest.TestCase):
         # 不能有行首的 INTERVAL=<数字> 硬编码（DEFAULT_INTERVAL=45 与夹取语句不算）
         self.assertIsNone(re.search(r"^\s*INTERVAL=\d+", self.src, re.MULTILINE))
 
+    def test_sleep_subtracts_tick_duration(self):
+        """不扣本拍耗时的话，配置 30 秒实际会变成 45 秒（import bot 就要 2.5s）。"""
+        self.assertIn("ELAPSED=", self.src)
+        self.assertIn("SLEEP_LEFT=$(( INTERVAL - ELAPSED ))", self.src)
+        self.assertIn("SLEEP=$(( REMAIN < SLEEP_LEFT ? REMAIN : SLEEP_LEFT ))", self.src)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
