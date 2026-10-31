@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 54,
+        "calls": 55,
         "errors": 0,
-        "requests": 54
+        "requests": 55
       }
     },
-    "calls": 54,
+    "calls": 55,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 339196,
-    "output_tokens": 38928,
-    "requests": 54
+    "input_tokens": 345546,
+    "output_tokens": 39533,
+    "requests": 55
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -631,7 +631,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T16:54:21.081880+00:00",
+  "last_scan_at": "2026-10-31T16:55:29.402241+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -1083,6 +1083,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Hull City vs Ipswich team news LIVE!"
+    },
+    {
+      "desc": "FPL experts answer 10 KEY questions ahead of Gameweek 8 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T16:55:29.406476+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQR2lQbER2RW5BX3czUTk5LUs1SVg5T05QTjd3SjNDXzlMN1ZUaHM5aDRSbTFsblMxaDY0Z1BJVjB1UDBuVXNvWmIzejVtN0FOYXFwYWtBN0xxMzI5MjdkOFdIT3hpYmI3SDFBSmgyelFpSDZ0LUNWaWp4dHF3Rl9WbFM3VEwxZUpXcjlFQ0FaaGk4VzNpeG8xQUhaN1ZITG5NTGNJ?oc=5",
+      "published": "2026-10-31T13:16:05+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "FPL experts answer 10 KEY questions ahead of Gameweek 8 - Premier League"
     },
     {
       "desc": "Go Inside Training before Liverpool showdown Arsenal.com",
@@ -2116,15 +2126,6 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Brentford vs Chelsea Box Score - September 18, 2026 - The Athletic - The New York Times"
-    },
-    {
-      "desc": "Man City v Brighton - 31 Oct 2026 Manchester City FC",
-      "first_seen": "2026-10-31T00:15:49.337283+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1INXU2cHBMMkdPN1RscmpqaEEzdml0QmhQWjhNQlFQTmw2S3AyNGp5VkJwRUlIZkJST0FuM2hSbEhCYUI4X2RxMWUtSW0xSUlXQnBCS0MyUUZEdVJ3UlljUEU3cFVfZUgwUU1GYmowUE4zWWhFU1lZ?oc=5",
-      "published": "2026-10-30T23:27:17+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Man City v Brighton - 31 Oct 2026 - Manchester City FC"
     }
   ],
   "processed_urls": [
