@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 160,
+        "calls": 161,
         "errors": 0,
-        "requests": 160
+        "requests": 161
       }
     },
-    "calls": 160,
+    "calls": 161,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 988347,
-    "output_tokens": 102536,
-    "requests": 160
+    "input_tokens": 994447,
+    "output_tokens": 103048,
+    "requests": 161
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -766,9 +766,19 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T18:40:31.828967+00:00",
+  "last_scan_at": "2026-10-31T18:41:22.569097+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
+    {
+      "desc": "Jackson and Joao Pedro break all-time transfer RECORDS in FPL Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T18:41:22.572854+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSG95SmM4LVdkc3FLYzRqMldyWUlFdEZ5YlVKSHlTc3pDSGkzUGhBVWU4THR2UGxSQk1TSjgzdW0xSEVfWkpjSTFWQjNYVmdUQlNSdElZc0ZYd2toT0NUUDJ6SGhLelRMUExFOWJ0TEVrSm1tVnNpV05hM0tIa0dsVXE1MVhmT0h3STlfU3F1WUdzV0J3YXdYT3NyT3FpUUZTOGlVdnRCNElUMTk3?oc=5",
+      "published": "2026-10-31T18:40:17+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Jackson and Joao Pedro break all-time transfer RECORDS in FPL - Premier League"
+    },
     {
       "desc": "Chelsea or Man Utd? Fabrizio Romano drops Fermin Lopez update FootballTransfers.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2258,16 +2268,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Tottenham vs Crystal Palace: Our 13/1 bet builder tip, plus get £50 in free bets | Paddy Power"
-    },
-    {
-      "desc": "Andrew Novak caught up to the lead with an eagle and pulled away with three birdies on his last four holes Friday to mat",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T08:25:32.424676+00:00",
-      "link": "https://www.skysports.com/golf/news/12040/13606024/mexico-open-andrew-novak-pulls-three-shots-clear-following-late-surge-on-friday-as-hawaiian-sensation-kihei-akina-shines",
-      "published": "2026-10-31T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Novak pulls three shots clear in Mexico as Hawaiian sensation Akina shines"
     }
   ],
   "processed_urls": [
