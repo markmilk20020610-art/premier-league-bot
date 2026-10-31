@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 225,
+        "calls": 226,
         "errors": 0,
-        "requests": 200
+        "requests": 201
       }
     },
-    "calls": 225,
+    "calls": 226,
     "date": "2026-10-31",
     "errors": 0,
-    "input_tokens": 1325393,
-    "output_tokens": 143880,
-    "requests": 200
+    "input_tokens": 1331805,
+    "output_tokens": 144563,
+    "requests": 201
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -123,6 +123,33 @@
       "telegram_message_id": 28,
       "title": "切尔西斯坦福桥VIP观赛套餐155英镑起售",
       "updated_at": "2026-10-31T09:50:36.933166+00:00"
+    },
+    "3330481a2341": {
+      "article_title": "City make 10 changes - Haaland, Bouaddi and Nunes all start - Manchester City FC",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e4f06a02b8d1f623",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 42
+        }
+      ],
+      "created_at": "2026-10-31T15:14:31.987804+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "cb173d06d763fff1",
+      "event_id": "3330481a2341",
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 42,
+      "title": "曼城大幅轮换10人，哈兰德领衔首发",
+      "updated_at": "2026-10-31T15:14:32.621594+00:00"
     },
     "33f12973508c": {
       "article_title": "Fabrizio Romano rules out Fermin Lopez’s exit from Barcelona amid Man Utd rumours - Tribuna.com",
@@ -462,7 +489,7 @@
     }
   },
   "last_morning_report_date": "2026-10-31",
-  "last_scan_at": "2026-10-31T15:13:42.330890+00:00",
+  "last_scan_at": "2026-10-31T15:14:26.279794+00:00",
   "last_summary_sent_at": "2026-10-31T01:28:06.768669+00:00",
   "news_pool": [
     {
@@ -474,6 +501,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea player ratings: Morgan Rogers lights up Stamford Bridge with wonder goal but Wes Fofana dismal vs Man Utd"
+    },
+    {
+      "desc": "De Zerbi on when Tosin, Bergvall, Mudryk and Savio could return Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-10-31T15:14:26.283330+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYklhZl9kQWVhOThNa2FJSEFUMk9FampTS2tuU1lsdVpQdWRuMlU5NnZRWmZsaWhoaEhkT1Bpdm0zcVpzZG5XUlBxZER0czZfNU5hbFVWdGl2WkRHQlBfbjR0YlZkQTcxclh0UXhINHQ3T3VzczlScUdRaVFVUXZMdTlIeEZTa3l2UGVXTXVJV19vU0JVX1lLclkzTEtZT181VGJEMHpWZEZwN3c?oc=5",
+      "published": "2026-10-31T14:43:12+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "De Zerbi on when Tosin, Bergvall, Mudryk and Savio could return - Tottenham Hotspur"
     },
     {
       "desc": "Player ratings as Morgan Rogers and Cole Palmer score second-half goals in Chelsea's home win over Manchester United, wh",
@@ -1919,15 +1956,6 @@
       "publisher": "https://www.pasionfutbol.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Lionel Messi to Newell’s in 2027? Fabrizio Romano Reveals the Latest on His Future - Pasión Fútbol"
-    },
-    {
-      "desc": "Fabrizio Romano names manager Man Utd want to replace Michael Carrick - it's NOT Eddie Howe TEAMtalk",
-      "first_seen": "2026-10-31T00:05:36.322035+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaXBLWUhUNHpCd0JPS1pIaVh5S28wWnA5eHVFQzNYUEFkaU9CMTZSZ0hpY1daQV9URUFZSWppcHRjYXVPQVNQLS1vV3JEcWRyU3Q0OE5jMDRjcXJTem9VMWtTYnZuTVdCcEF0N1hONDBsQ1BkQkRiSDBiY2dieXZQNks4VEN5bGFkMGJ0dDN5akZncGlpSDJVdmhNMWZoU1p1QVJGNlFFRQ?oc=5",
-      "published": "2026-10-30T21:16:49+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano names manager Man Utd want to replace Michael Carrick - it's NOT Eddie Howe - TEAMtalk"
     }
   ],
   "processed_urls": [
@@ -1961,7 +1989,8 @@
     "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick",
     "https://www.thesun.co.uk/sport/40868203/lisandro-martinez-red-card-chelsea",
     "https://www.thesun.co.uk/sport/40868315/man-utd-fans-chelsea-michael-carrick-lisandro-martinez",
-    "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick"
+    "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick",
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlYtZkdCcDRCZ19ZYVpnU0dzUFRydHNsZmgwVE1iY1hMdThWNkVGLVNCT3dQcXhvUEVaZ1NEcHBkcGVtYUhQQ096N2NqZmQ1dW96SU5CSDh2N2VWS2JGYTFQQ0NHc0k5ZXU1dEN5bTh3azloSi1wWHVfMEpmVEF5d0pvQU1WYWxVVnQ2S3ZpWGk1MUZjUWtfZ0xXcUZRYTY2LVRF"
   ],
   "schema_version": 3
 }
