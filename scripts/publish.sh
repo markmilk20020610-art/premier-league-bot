@@ -176,7 +176,7 @@ push_with_rebase() {
       echo "[ERROR] git fetch 失败，无法自动 rebase"
       return 1
     fi
-    if ! git rebase "origin/$BRANCH" --quiet; then
+    if ! git rebase --autostash "origin/$BRANCH" --quiet; then
       git rebase --abort >/dev/null 2>&1 || true
       echo "[ERROR] rebase 到 origin/$BRANCH 时冲突，已回滚 rebase"
       return 1
