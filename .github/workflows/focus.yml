@@ -1,0 +1,130 @@
+name: Yuewei Focus Watch (焦点战首发监控)
+
+# =============================================================================
+# 为什么是一个「跑 5 小时 50 分钟的循环 job」，而不是每分钟 dispatch 一次
+# =============================================================================
+# 原来所有调度都依赖 cron-job.org 每分钟调 workflow_dispatch。它一停，全停。
+# 而外部看门狗（Cloudflare Worker）需要额外注册账号，运维成本高。
+#
+# GitHub Actions 的单 job 最长可以跑 6 小时，public 仓库不计分钟数。
+# 于是这里换一个思路：**把调度做进 job 内部**——
+#
+#     一次启动 → 自己按 focus_config 的节拍 tick → 连续工作 5 小时 50 分
+#                （预热 120s / 提频 60s / 临界 30s / 空闲 300s）
+#
+# 效果：
+#   · cron-job.org 从「每分钟必须成功」降级为「每 6 小时成功一次即可」；
+#   · 即使 cron-job.org 完全挂掉，只要它挂之前把 job 叫起来过，
+#     监控还能自己撑近 6 小时；
+#   · 再叠加 GitHub 自己的 schedule 兜底，实际已经不存在单点。
+#
+# =============================================================================
+# 为什么用独立 workflow + 独立 concurrency group
+# =============================================================================
+# scanner.yml 的 concurrency 是工作流级的，会让所有 job 串行。这个 job 要跑
+# 近 6 小时，如果挂在 scanner.yml 里，会把新闻扫描彻底堵死。
+# 所以：独立文件、独立 group、cancel-in-progress: false（让它跑完）。
+# =============================================================================
+
+on:
+  schedule:
+    # 兜底：GitHub 自己的 schedule 极不准（实测 3 天 7 次），
+    # 但「每 6 小时能成功叫醒一次」它还是做得到的。
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: '本次循环跑多少小时（默认 5.8，GitHub 上限 6）'
+        required: false
+        default: '5.8'
+
+permissions:
+  # 顶层给只读，真正需要写的 job 单独提权（与 scanner.yml 一致）。
+  # ⚠️ 忘了给 job 级 write，commit_state.sh 的 push 会被 GITHUB_TOKEN 拒绝，
+  # 状态回写全部失败——而循环本身还在跑，看起来「一切正常」。
+  contents: read
+
+concurrency:
+  # 独立 group：绝不与 scanner.yml 的 scan/morning 抢锁
+  group: focus-watch
+  cancel-in-progress: false
+
+jobs:
+  focus:
+    permissions:
+      contents: write       # 仅本 job 需要回写 focus_state.json
+    runs-on: ubuntu-latest
+    # 留 10 分钟余量，避免踩到 6 小时硬上限被强杀
+    timeout-minutes: 355
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   # v4
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065   # v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Guard against committed caches
+        run: bash scripts/check_no_cache.sh
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip --quiet
+          pip install --timeout 60 --retries 5 -r requirements.txt
+
+      - name: Focus watch loop
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FOCUS_HOURS: ${{ github.event.inputs.hours || '5.8' }}
+        run: |
+          set -uo pipefail
+          HOURS="${FOCUS_HOURS:-5.8}"
+          END=$(( $(date +%s) + $(python -c "print(int(float('$HOURS')*3600))") ))
+          echo "循环截止：$(date -u -d @$END '+%Y-%m-%d %H:%M:%SZ')"
+
+          # 每一拍都是独立进程：某一拍崩了不影响下一拍。
+          # 睡多久**由 tick 决定**（它把值写进 .focus_interval），而不是在这里写死：
+          # focus_config 里临界窗口是 30 秒、预热 120 秒、空闲 300 秒，
+          # shell 写死一个数会让这份配置彻底失效。这里的 45 只是读不到文件时的兜底。
+          DEFAULT_INTERVAL=45
+          TICK=0
+          LAST_COMMIT=$(date +%s)
+
+          while [ "$(date +%s)" -lt "$END" ]; do
+            TICK=$((TICK + 1))
+            echo "----- tick #$TICK @ $(date -u '+%H:%M:%SZ') -----"
+            if ! python scripts/focus_tick.py; then
+              echo "::warning title=Focus Tick Failed::第 $TICK 拍失败，继续下一拍"
+            fi
+
+            INTERVAL=$(cat .focus_interval 2>/dev/null || echo "$DEFAULT_INTERVAL")
+            case "$INTERVAL" in
+              ''|*[!0-9]*) INTERVAL=$DEFAULT_INTERVAL ;;
+            esac
+            # 夹在 [30, 300]：小于 30 秒等于自己往封禁上撞，大于 300 秒会错过首发。
+            [ "$INTERVAL" -lt 30 ] && INTERVAL=30
+            [ "$INTERVAL" -gt 300 ] && INTERVAL=300
+
+            # 每 15 分钟把焦点状态回写一次（含已推送指纹，防止重启后重复推送）。
+            # 不每拍都提交：5 小时会攒出几百个提交，把 git 历史搞脏。
+            NOW=$(date +%s)
+            if [ $((NOW - LAST_COMMIT)) -ge 900 ]; then
+              bash scripts/commit_state.sh focus_state.json 3 || \
+                echo "::warning title=Focus State Commit Failed::状态未回写，重启后可能重复推送一次"
+              LAST_COMMIT=$NOW
+            fi
+
+            # 睡到下一拍；同时避免最后一拍睡过头
+            REMAIN=$(( END - $(date +%s) ))
+            [ "$REMAIN" -le 0 ] && break
+            SLEEP=$(( REMAIN < INTERVAL ? REMAIN : INTERVAL ))
+            sleep "$SLEEP"
+          done
+
+          echo "循环结束，共 $TICK 拍"
+          bash scripts/commit_state.sh focus_state.json 3 || true

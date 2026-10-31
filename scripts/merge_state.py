@@ -21,6 +21,9 @@ news_pool         按链接取并集，按发布时间倒序截断。
 时间戳            取更晚的 ISO 时间。
 ai_stats          同一天取 calls 更多的那份（不累加，累加会重复计数）。
 circuit_breakers  按 provider 取 open_until 更晚的那份。
+focus             焦点战子树：referee_pushed 取或、lineup_pushed 取并集、
+                  first_seen 取更早、competitor 取对手时间更早的那份。
+                  原则是「宁可多推一次，不能漏推」。
 
 用法：
     python scripts/merge_state.py <本地 state.json> <远端 state.json>
@@ -144,6 +147,69 @@ def _later(a, b):
     return a if a >= b else b
 
 
+# =============================================================================
+# focus_state.json 的语义合并
+# =============================================================================
+# 焦点战 job 用独立文件（focus_state.json），但走的是同一个 commit_state.sh，
+# rebase 失败时也会进这里。若不处理 `focus` 键，merge() 的 `out = dict(local)`
+# 会把远端的整棵焦点子树静默丢掉——重启后重复推送一次。
+#
+# 合并原则只有一条：**宁可多推一次，也不能漏推**。
+#   referee_pushed  取或（任一侧推过就算推过）
+#   lineup_pushed   取并集；同队不同指纹时保留本地，最坏结果是重推一次
+#   first_seen      取更早的（这才是「我方首次检测时间」的真相）
+#   competitor      取对手时间更早的那份（更保守，不会虚报领先）
+#   *_at / ticks    取更晚 / 更大
+def _merge_focus(local, remote):
+    a, b = local or {}, remote or {}
+    if not a:
+        return dict(b)
+    if not b:
+        return dict(a)
+
+    out = dict(a)
+    out["calendar_at"] = _later(a.get("calendar_at"), b.get("calendar_at"))
+    out["official_at"] = _later(a.get("official_at"), b.get("official_at"))
+    out["competitor_at"] = _later(a.get("competitor_at"), b.get("competitor_at"))
+    out["last_tick_at"] = _later(a.get("last_tick_at"), b.get("last_tick_at"))
+    out["ticks"] = max(int(a.get("ticks") or 0), int(b.get("ticks") or 0))
+
+    # 日历与官方赛程：谁更新用谁（时间戳已经比过了）
+    for key, stamp in (("calendar", "calendar_at"), ("official_fixtures", "official_at")):
+        if (b.get(stamp) or "") > (a.get(stamp) or "") and b.get(key) is not None:
+            out[key] = b[key]
+
+    matches = dict(a.get("matches") or {})
+    for mid, rms in (b.get("matches") or {}).items():
+        cur = matches.get(mid)
+        if not isinstance(cur, dict) or not isinstance(rms, dict):
+            matches.setdefault(mid, rms)
+            continue
+        merged = dict(cur)
+        merged["referee_pushed"] = bool(cur.get("referee_pushed")
+                                       or rms.get("referee_pushed"))
+        lp = dict(rms.get("lineup_pushed") or {})
+        lp.update(cur.get("lineup_pushed") or {})     # 本地优先
+        merged["lineup_pushed"] = lp
+        fs = dict(rms.get("first_seen") or {})
+        for team, ts in (cur.get("first_seen") or {}).items():
+            fs[team] = min(ts, fs[team]) if team in fs else ts
+        merged["first_seen"] = fs
+        op = dict(rms.get("official_published_at") or {})
+        op.update(cur.get("official_published_at") or {})
+        merged["official_published_at"] = op
+        c1, c2 = cur.get("competitor") or {}, rms.get("competitor") or {}
+        if not c1:
+            merged["competitor"] = c2
+        elif c2:
+            t1 = str(c1.get("competitors_seen_at") or "9999")
+            t2 = str(c2.get("competitors_seen_at") or "9999")
+            merged["competitor"] = c1 if t1 <= t2 else c2
+        matches[mid] = merged
+    out["matches"] = matches
+    return out
+
+
 def _merge_ai_stats(a, b):
     a, b = a or {}, b or {}
     if not a:
@@ -197,6 +263,8 @@ def merge(local, remote):
                                               remote.get("circuit_breakers"))
     out["schema_version"] = max(int(local.get("schema_version") or 0),
                                 int(remote.get("schema_version") or 0))
+    if local.get("focus") or remote.get("focus"):
+        out["focus"] = _merge_focus(local.get("focus"), remote.get("focus"))
     return out
 
 

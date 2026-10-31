@@ -150,6 +150,45 @@ class TestTeamNames(unittest.TestCase):
         self.assertEqual(mc.display_team("Spurs"), "Tottenham")
         self.assertEqual(mc.display_team("Tottenham"), "Tottenham")
 
+    def test_official_api_names_all_map_to_source_names(self):
+        """英超官方接口的 20 个队名必须全部能 join 到赛程源的写法。
+
+        这不是锦上添花：`_fixture_for` 靠 canon 相等去把我们的 match 映射到
+        官方 fixture_id。只要有一队对不上，那队的焦点战就**静默**拿不到裁判
+        和首发——不报错、不告警，只是永远没有内容。
+
+        实测踩过的坑：官方写 `Brighton & Hove Albion`，源里写 `Brighton`。
+        """
+        pairs = [
+            ("Arsenal", "Arsenal"),
+            ("Aston Villa", "Aston Villa"),
+            ("Bournemouth", "Bournemouth"),
+            ("Brentford", "Brentford"),
+            ("Brighton & Hove Albion", "Brighton"),
+            ("Chelsea", "Chelsea"),
+            ("Coventry City", "Coventry"),
+            ("Crystal Palace", "Crystal Palace"),
+            ("Everton", "Everton"),
+            ("Fulham", "Fulham"),
+            ("Hull City", "Hull"),
+            ("Ipswich Town", "Ipswich"),
+            ("Leeds United", "Leeds"),
+            ("Liverpool", "Liverpool"),
+            ("Manchester City", "Man City"),
+            ("Manchester United", "Man Utd"),
+            ("Newcastle United", "Newcastle"),
+            ("Nottingham Forest", "Nott'm Forest"),
+            ("Sunderland", "Sunderland"),
+            ("Tottenham Hotspur", "Spurs"),
+        ]
+        for official, source in pairs:
+            self.assertEqual(mc.canon_team(official), mc.canon_team(source),
+                             f"官方名 {official!r} 与源名 {source!r} 归不到一起")
+
+    def test_ampersand_is_normalised(self):
+        self.assertEqual(mc.canon_team("Brighton & Hove Albion"), "brighton")
+        self.assertEqual(mc.canon_team("Brighton&Hove Albion"), "brighton")
+
 
 # =============================================================================
 # C. 积分榜自算

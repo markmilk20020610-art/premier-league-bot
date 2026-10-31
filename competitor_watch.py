@@ -164,6 +164,12 @@ _HUPU_LINK_RE = re.compile(r'"link":"(?P<link>https?://[^"]+)"')
 _HUPU_TITLE_RE = re.compile(r'"title":"(?P<title>(?:[^"\\]|\\.)*)"')
 _HUPU_ADD_RE = re.compile(r'"addTime":(?P<ts>\d{9,11})')
 
+# 懂球帝文章页上显示的是「发布于 2026-10-31 21:49」（北京时间）。
+# 列表接口的 published_at 实测会偏早：同一篇文章列表给 20:24、页面显示 21:49，
+# 差 85 分钟。不校正就会误判「对手比我们快一个半小时」——速度证明直接失效。
+_DQD_PAGE_TIME_RE = re.compile(
+    r"发布于\s*(?P<t>\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}(?::\d{2})?)")
+
 
 def parse_hupu(html, now=None):
     """虎扑足球首页内嵌 JSON → 条目列表。
@@ -371,6 +377,46 @@ def _resolve_zhibo8(item, now, transport):
     return ""
 
 
+def verify_published_at(item, now, transport=None):
+    """用文章页上显示的时间校正列表接口给的时间。
+
+    为什么必须校正：实测 2026-10-31 曼城 vs 布莱顿，懂球帝列表接口给 20:24（北京），
+    文章页写「发布于 21:49」。列表时间偏早 85 分钟，直接拿来对比就会得出
+    「对手比我们快一个半小时」的假结论——而我们真正只是晚了 6 分钟。
+
+    只在能读到页面时间、且新时间通过合理性检查时才替换；否则原样返回，
+    并在 `time_correction` 里说明用了哪个来源。
+    """
+    url = item.get("url") or ""
+    if not url or item.get("source_id") != SOURCE_DONGQIUDI:
+        return item
+    try:
+        code, body = (transport or http_get)(url)
+    except Exception:                       # noqa: BLE001
+        return item
+    if code != 200 or not body:
+        return item
+    m = _DQD_PAGE_TIME_RE.search(body)
+    if not m:
+        return item
+    raw = m.group("t")
+    if len(raw) == 16:                      # 只有分钟，补秒
+        raw += ":00"
+    ts = beijing_to_utc(raw)
+    if not is_plausible(ts, now):
+        return item
+    page_ts = ts.strftime("%Y-%m-%dT%H:%M:%SZ")
+    if page_ts == item.get("published_at"):
+        out = dict(item)
+        out["time_correction"] = "list_ok"
+        return out
+    out = dict(item)
+    out["published_at_list"] = item.get("published_at")
+    out["published_at"] = page_ts
+    out["time_correction"] = "page_overrides_list"
+    return out
+
+
 def earliest_competitor_time(news_items, home, away, now, **kw):
     """本场最早的对手首发发布时间（供 speed_proof 使用）。
 
@@ -383,8 +429,12 @@ def earliest_competitor_time(news_items, home, away, now, **kw):
 # =============================================================================
 # 五、与速度证明对接
 # =============================================================================
-def competitor_speed_record(news_items, home, away, now, **kw):
-    """生成给 `lineup_monitor.speed_proof` 用的对照信息（含来源与证据）。"""
+def competitor_speed_record(news_items, home, away, now, verify_top=2, **kw):
+    """生成给 `lineup_monitor.speed_proof` 用的对照信息（含来源与证据）。
+
+    `verify_top` 条最早的候选会额外请求一次文章页校正时间——只校正最靠前的几条，
+    因为只有它们可能成为「对手最早时间」，多请求没有收益还会招限流。
+    """
     hits = find_lineup_mentions(news_items, home, away, now, **kw)
     if not hits:
         return {
@@ -394,7 +444,23 @@ def competitor_speed_record(news_items, home, away, now, **kw):
             "evidence_count": 0,
             "note": "未采集到任何对手的首发发布时间，不得宣称领先",
         }
+
+    transport = kw.get("transport")
+    corrected = 0
+    for i in range(min(verify_top, len(hits))):
+        before = hits[i]["published_at"]
+        hits[i] = verify_published_at(hits[i], now, transport)
+        if hits[i]["published_at"] != before:
+            corrected += 1
+    if corrected:
+        hits.sort(key=lambda x: x["published_at"])
+
     first = hits[0]
+    note = (f"最早由 {SOURCES[first['source_id']]['name']} 于 "
+            f"{first['published_at']} 发布（共 {len(hits)} 条匹配）")
+    if first.get("time_correction") == "page_overrides_list":
+        note += (f"；列表接口原报 {first.get('published_at_list')}，"
+                 f"已按文章页时间校正")
     return {
         "competitors_seen_at": first["published_at"],
         "competitor_source": first["source_id"],
@@ -402,8 +468,8 @@ def competitor_speed_record(news_items, home, away, now, **kw):
         "competitor_url": first.get("url", ""),
         "evidence_count": len(hits),
         "all_sources": sorted({h["source_id"] for h in hits}),
-        "note": (f"最早由 {SOURCES[first['source_id']]['name']} 于 "
-                 f"{first['published_at']} 发布（共 {len(hits)} 条匹配）"),
+        "time_corrected": corrected,
+        "note": note,
     }
 
 

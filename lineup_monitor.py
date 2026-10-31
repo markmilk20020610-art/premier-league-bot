@@ -264,9 +264,17 @@ def validate_lineup(record, opponent=None, squad=None, previous_confirmed=None):
         add("V1", "block", f"首发 {len(players)} 人，应为 11 人")
 
     # V2 阵型
-    ok, why = _formation_ok(formation, groups)
-    if not ok:
-        add("V2", "block" if len(players) == 11 else "warn", why)
+    # 实测：官方接口刚公布首发的头几分钟只有 11 个名字，`formation` 是空的
+    # （2026-10-31 Man City vs Brighton，T-55 时 lineup 齐全但无阵型）。
+    # 这时把 V2 判成 block 就等于「明明拿到了官方 11 人却不许发」，
+    # 用户看到的反而是「待核验」——比实际掌握的信息更差。
+    # 所以：缺阵型 = warn（照发名单，只是不写阵型）；阵型有值但不自洽 = block。
+    if not formation:
+        add("V2", "warn", "官方未提供阵型，本次不展示阵型")
+    else:
+        ok, why = _formation_ok(formation, groups)
+        if not ok:
+            add("V2", "block", why)
 
     # V3 姓名格式
     bad = [p for p in players

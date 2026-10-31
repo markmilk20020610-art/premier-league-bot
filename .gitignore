@@ -230,5 +230,14 @@ run_telemetry.log
 # merge_state.py 原子写用的临时文件
 *.merge.tmp
 
+# focus_tick.py 写给 shell 循环的「下一拍睡多久」，每次 tick 都变，
+# 属于运行时信号而不是状态，不该进仓库。
+.focus_interval
+
+# 焦点战监控的本地缓存（380 场官方赛程 + 焦点日历，实测 176KB）。
+# 只在同一个 6 小时 job 内有效，进仓库会每天灌 3.5MB 的 git 对象。
+.focus_cache.json
+.focus_cache.json.tmp
+
 # commit_state.sh 拉下来的远端 state 临时副本
 .state-remote.json

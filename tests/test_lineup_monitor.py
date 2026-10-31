@@ -163,6 +163,28 @@ class TestNineValidations(unittest.TestCase):
         probs = lm.validate_lineup(rec(formation="4-3-2"))
         self.assertIn("V2", codes(probs))
 
+    def test_v2_missing_formation_is_warn_not_block(self):
+        """官方刚公布首发的头几分钟没有 formation 字段。
+
+        实测 2026-10-31 曼城 vs 布莱顿：T-55 时 11 人齐全但 formation 为空。
+        这时把 V2 判成 block，等于「拿到了官方 11 人却不许发」，
+        用户看到的反而是「待核验」，比我们实际掌握的信息还差。
+        """
+        probs = lm.validate_lineup(rec(formation=""))
+        v2 = [p for p in probs if p["code"] == "V2"]
+        self.assertTrue(v2)
+        self.assertEqual(v2[0]["level"], "warn")
+        self.assertEqual([p for p in probs if p["level"] == "block"], [])
+        self.assertEqual(lm.decide_status(1, True, probs), lm.ST_CONFIRMED)
+        self.assertEqual(lm.decide_action(lm.ST_CONFIRMED, probs, True,
+                                          "https://x"), lm.ACT_PUBLISH_CONFIRMED)
+
+    def test_v2_inconsistent_formation_still_blocks(self):
+        """阵型有值但和分组人数对不上，才是真的不可信。"""
+        probs = lm.validate_lineup(rec(formation="3-4-3"))
+        v2 = [p for p in probs if p["code"] == "V2"]
+        self.assertEqual(v2[0]["level"], "block")
+
     def test_v3_bad_names(self):
         players = list(lm.parse_starting_xi(XI)["players"])
         players[3] = "GK"

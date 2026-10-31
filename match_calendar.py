@@ -190,12 +190,17 @@ TEAM_ALIASES = {
 
 
 def canon_team(name):
-    """归一化队名（小写、去多余空格）。未收录的名字原样小写返回。
+    """归一化队名（小写、去多余空格、& → and）。未收录的名字原样小写返回。
 
     刻意**不做模糊匹配**：猜错一个队名会让整场比赛的档案挂到错误的对手上，
     宁可保留原名让它 join 不上、在数据质量里报出来。
+
+    `& → and` 是实测必需：英超官方接口写 `Brighton & Hove Albion`，
+    而 fixturedownload / football-data 写 `Brighton`。不做这一步，
+    布莱顿的比赛永远匹配不上官方场次，裁判与首发监控直接静默失效。
     """
     n = re.sub(r"\s+", " ", (name or "").strip()).lower()
+    n = re.sub(r"\s*&\s*", " and ", n)
     return TEAM_ALIASES.get(n, n)
 
 

@@ -67,6 +67,21 @@ def http_get_json(url, timeout=20):
         return r.status, json.loads(r.read().decode("utf-8"))
 
 
+def _get_json(url, transport=None, timeout=20):
+    """统一取 JSON。
+
+    `transport` 遵循本项目其它模块的约定：`(url) -> (status, text)`，
+    text 是**字符串**（不是已解析的对象）。这样测试里可以塞假传输，
+    不必真的联网。传 None 时退回 urllib 实现。
+    """
+    if transport is None:
+        return http_get_json(url, timeout=timeout)
+    status, text = transport(url)
+    if status != 200:
+        raise RuntimeError(f"HTTP {status}: {url}")
+    return status, json.loads(text)
+
+
 def _ms_to_utc(ms):
     """毫秒时间戳 → naive UTC datetime（与项目其它模块保持一致，不用 aware）。"""
     return datetime.datetime.fromtimestamp(
@@ -108,8 +123,9 @@ def parse_fixture_list(payload):
     return out
 
 
-def fetch_fixtures(comp_season=COMP_SEASON_2026_27, timeout=20):
-    status, payload = http_get_json(fixtures_url(comp_season), timeout=timeout)
+def fetch_fixtures(comp_season=COMP_SEASON_2026_27, timeout=20, transport=None):
+    status, payload = _get_json(fixtures_url(comp_season), transport=transport,
+                               timeout=timeout)
     return parse_fixture_list(payload)
 
 
@@ -192,8 +208,9 @@ def parse_fixture_detail(payload):
     }
 
 
-def fetch_fixture_detail(fixture_id, timeout=20):
-    status, payload = http_get_json(fixture_url(fixture_id), timeout=timeout)
+def fetch_fixture_detail(fixture_id, timeout=20, transport=None):
+    status, payload = _get_json(fixture_url(fixture_id), transport=transport,
+                               timeout=timeout)
     return parse_fixture_detail(payload)
 
 

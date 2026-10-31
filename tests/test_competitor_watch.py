@@ -300,5 +300,89 @@ class TestFetch(unittest.TestCase):
             self.assertEqual(cw.validate_news_item(it), [])
 
 
+# =============================================================================
+# G. 列表时间 vs 文章页时间
+# =============================================================================
+# 实测 2026-10-31 曼城 vs 布莱顿：懂球帝列表接口给「20:24」，文章页写「发布于 21:49」。
+# 列表时间偏早 85 分钟。不校正就会得出「对手比我们快一个半小时」的假结论。
+DQD_PAGE = (
+    '<div class="news-detail"><span>发布于 2026-10-31 21:49</span>'
+    "<p>北京时间10月31日23:00，赛前双方公布首发：</p></div>"
+)
+
+
+# 这一组用 14:00 作为「现在」：文章页写 21:49 北京（13:49Z），
+# 用文件顶部的 NOW=13:00 会让它变成「未来时间」而被合理性检查正确拒绝。
+NOW2 = datetime.datetime(2026, 10, 31, 14, 0)
+
+
+class TestTimeCorrection(unittest.TestCase):
+    def _item(self, published_at="2026-10-31T12:24:05Z"):
+        return {
+            "source_id": cw.SOURCE_DONGQIUDI,
+            "title": "曼城vs布莱顿：哈兰德、多库先发",
+            "url": "https://www.dongqiudi.com/article/9",
+            "published_at": published_at,
+            "precision": "second",
+        }
+
+    def test_page_time_overrides_list_time(self):
+        t = transport({self._item()["url"]: (200, DQD_PAGE)})
+        out = cw.verify_published_at(self._item(), NOW2, t)
+        # 21:49 北京 = 13:49Z
+        self.assertEqual(out["published_at"], "2026-10-31T13:49:00Z")
+        self.assertEqual(out["published_at_list"], "2026-10-31T12:24:05Z")
+        self.assertEqual(out["time_correction"], "page_overrides_list")
+
+    def test_page_unavailable_keeps_list_time(self):
+        out = cw.verify_published_at(self._item(), NOW2, transport({}))
+        self.assertEqual(out["published_at"], "2026-10-31T12:24:05Z")
+        self.assertNotIn("time_correction", out)
+
+    def test_implausible_page_time_is_rejected(self):
+        """页面上出现 2030 年这类脏时间时，宁可保留列表时间，也不能采用。"""
+        bad = '<span>发布于 2030-10-31 21:49</span>'
+        t = transport({self._item()["url"]: (200, bad)})
+        out = cw.verify_published_at(self._item(), NOW2, t)
+        self.assertEqual(out["published_at"], "2026-10-31T12:24:05Z")
+
+    def test_non_dongqiudi_is_not_fetched(self):
+        item = {"source_id": cw.SOURCE_HUPU, "title": "首发", "url": "https://bbs.hupu.com/1",
+                "published_at": "2026-10-31T11:16:12Z", "precision": "second"}
+        calls = []
+
+        def t(url, timeout=20, headers=None):
+            calls.append(url)
+            return 200, DQD_PAGE
+        out = cw.verify_published_at(item, NOW2, t)
+        self.assertEqual(calls, [], "虎扑的列表时间已用 addTime 交叉校验过，不必再抓页面")
+        self.assertEqual(out["published_at"], "2026-10-31T11:16:12Z")
+
+    def test_record_resorts_after_correction(self):
+        """校正后最早的那条可能换人，必须重新排序再取。"""
+        items = [
+            {"source_id": cw.SOURCE_DONGQIUDI, "title": "曼城vs布莱顿首发：哈兰德先发",
+             "url": "https://www.dongqiudi.com/article/9",
+             "published_at": "2026-10-31T12:24:05Z", "precision": "second"},
+            {"source_id": cw.SOURCE_HUPU, "title": "曼城vs布莱顿首发：多库先发",
+             "url": "https://bbs.hupu.com/1",
+             "published_at": "2026-10-31T13:30:00Z", "precision": "second"},
+        ]
+        t = transport({items[0]["url"]: (200, DQD_PAGE)})
+        rec = cw.competitor_speed_record(items, "Man City", "Brighton", NOW2, transport=t)
+        self.assertEqual(rec["competitors_seen_at"], "2026-10-31T13:30:00Z")
+        self.assertEqual(rec["competitor_source"], cw.SOURCE_HUPU)
+
+    def test_record_notes_the_correction(self):
+        items = [{"source_id": cw.SOURCE_DONGQIUDI,
+                  "title": "曼城vs布莱顿首发：哈兰德先发",
+                  "url": "https://www.dongqiudi.com/article/9",
+                  "published_at": "2026-10-31T12:24:05Z", "precision": "second"}]
+        t = transport({items[0]["url"]: (200, DQD_PAGE)})
+        rec = cw.competitor_speed_record(items, "Man City", "Brighton", NOW2, transport=t)
+        self.assertEqual(rec["time_corrected"], 1)
+        self.assertIn("已按文章页时间校正", rec["note"])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
