@@ -24,6 +24,9 @@ circuit_breakers  按 provider 取 open_until 更晚的那份。
 focus             焦点战子树：referee_pushed 取或、lineup_pushed 取并集、
                   first_seen 取更早、competitor 取对手时间更早的那份。
                   原则是「宁可多推一次，不能漏推」。
+morning_delivery  早报分段账本：跨天取更晚那天；同一天原文一致时分段取并集
+                  （已送达永不降级）；原文不一致时整份取进度更靠前的那份。
+                  原则是「宁可少发一段，也不能重复发一段」。
 
 用法：
     python scripts/merge_state.py <本地 state.json> <远端 state.json>
@@ -210,6 +213,52 @@ def _merge_focus(local, remote):
     return out
 
 
+def _merge_morning_delivery(a, b):
+    """早报分段投递账本的语义合并（V2.2 P0）。
+
+    为什么必须单独处理：`merge()` 是 `out = dict(local)` 起手，只显式合并已知键。
+    如果不认识 `morning_delivery`，远端刚记下的「第 1 段已送达」会被本地那份
+    更旧的记录盖掉 → 下一轮把第 1 段再发一次。
+
+    合并原则：**宁可少发一段，也不能重复发一段**（重复对读者是可见的打扰，
+    少一段至少还能在下一次续上）。
+      · 日期不同 → 取更晚那天（今天盖过昨天）
+      · 同一天但原文不同 → 两边的分段布局不可混用，整份取「已送达段更多」的那份
+      · 同一天且原文一致 → 分段取并集（已送达的永不降级），计数取大，时间取晚
+    """
+    a, b = a or {}, b or {}
+    if not a:
+        return dict(b)
+    if not b:
+        return dict(a)
+
+    da, db = a.get("date") or "", b.get("date") or ""
+    if da != db:
+        return dict(a if da > db else b)
+
+    if (a.get("pending_text") or "") != (b.get("pending_text") or ""):
+        # 原文不同 = 两次生成出来的卡片不一样，分段哈希对不上。
+        # 混着合并会让「第 1 段来自旧文、第 2 段来自新文」，读者看到的是半截拼接。
+        def progress(rec):
+            done = [c for c in (rec.get("chunks") or [])
+                    if isinstance(c, dict)
+                    and c.get("delivery_status") == "DELIVERED"
+                    and c.get("telegram_message_id")]
+            return (len(done), rec.get("updated_at") or "")
+        return dict(a if progress(a) >= progress(b) else b)
+
+    out = dict(a)
+    out["chunks"] = _merge_chunks(a.get("chunks"), b.get("chunks"))
+    out["attempts"] = max(int(a.get("attempts") or 0), int(b.get("attempts") or 0))
+    out["updated_at"] = _later(a.get("updated_at"), b.get("updated_at"))
+    # 状态取更「靠前」的那份：DELIVERED 优先，其次部分送达
+    rank = {"DELIVERED": 4, "PARTIALLY_DELIVERED": 3, "DELIVERING": 2,
+            "DELIVERY_FAILED": 1, "": 0}
+    sa, sb = rank.get(a.get("status") or "", 0), rank.get(b.get("status") or "", 0)
+    out["status"] = a.get("status") if sa >= sb else b.get("status")
+    return out
+
+
 def _merge_ai_stats(a, b):
     a, b = a or {}, b or {}
     if not a:
@@ -265,6 +314,10 @@ def merge(local, remote):
                                 int(remote.get("schema_version") or 0))
     if local.get("focus") or remote.get("focus"):
         out["focus"] = _merge_focus(local.get("focus"), remote.get("focus"))
+    # V2.2 P0：早报分段账本。不显式合并就会被本地那份更旧的记录盖掉。
+    if local.get("morning_delivery") or remote.get("morning_delivery"):
+        out["morning_delivery"] = _merge_morning_delivery(
+            local.get("morning_delivery"), remote.get("morning_delivery"))
     return out
 
 

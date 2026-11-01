@@ -67,6 +67,12 @@ TRUSTED_SINGLE_SOURCES = {
 STATE_FILE = "state.json"
 LOG_FILE = "run_telemetry.log"
 
+# 早报分段投递账本在 state.json 里的键名（V2.2 P0）。
+# 为什么不复用 state["events"]：events 是「新闻去重表」，按 evidence_url 建键、
+# 超过 200 条会被裁剪。早报不是新闻事件，混进去会污染去重判定，
+# 还可能被裁剪掉，导致「已送达段落」的记忆丢失 → 第二天整条重发。
+MORNING_DELIVERY_KEY = "morning_delivery"
+
 # 这些 AI 状态属于「自愈型」：已经用 warning 注解报过，下一轮会自动重试。
 # 把它们也判成 Job 失败，只会让真正需要人干预的故障被红叉淹没（V1.2 任务 17）。
 SELF_HEALING_AI_STATUSES = {ai.QUOTA_EXHAUSTED, ai.RATE_LIMITED, ai.CIRCUIT_OPEN}
@@ -2065,6 +2071,151 @@ def _morning_offset_minutes(now_cn=None):
     return (now_cn - target).total_seconds() / 60.0
 
 
+# ==================== 早报分段投递账本（V2.2 P0） ====================
+# 修的是什么
+# ----------
+# 早报原来走 `send_telegram(card)` → `send_telegram_ex(text)`（chunk_records=None）。
+# 分段能力本身是有的，但**分段结果从不落盘**，于是：
+#   1. 一张早报被切成 3 段、第 2 段失败 → 系统只知道「整体失败」，
+#      不知道第 1 段已经在群里了；下一轮整条重发，用户收到重复内容。
+#   2. 失败时 `last_morning_report_date` 不写（这点原本是对的），
+#      于是每次触发都从第 1 段重来，永远发不完就永远重发。
+#   3. 进程在「发完最后一段」和「写日期锁」之间被杀 → 同样整条重发。
+#
+# 现在改成与突发新闻同一条路径：`send_telegram_ex(text, prior_chunks, report)`
+# + `store.record_chunks()`，并且**先落盘再发送**。
+#
+# 三条不变式（改这个函数前先读这三条）
+# ----------------------------------
+#   · 已确认送达的段，永不重发（靠 chunk_index + chunk_hash 双重匹配）；
+#   · 只有全部分段送达，才允许写 `last_morning_report_date`；
+#   · 卡片原文必须跨运行沿用（pending_text），否则模型重写一遍导致哈希变化，
+#     断点续传直接失效，退化成整条重发。
+def _morning_delivery_record(state, today_str):
+    """取当日早报的投递记录；跨天则作废重建。
+
+    跨天必须作废：昨天的分段布局（段数、每段哈希）与今天毫无关系，
+    硬套上去只会让 `_split_html` 的段数比对失败，然后整条重发。
+    """
+    rec = state.get(MORNING_DELIVERY_KEY)
+    if not isinstance(rec, dict) or rec.get("date") != today_str:
+        rec = {
+            "date": today_str,
+            "chunks": [],
+            "pending_text": "",
+            "attempts": 0,
+            "status": "",
+            "updated_at": "",
+        }
+        state[MORNING_DELIVERY_KEY] = rec
+    return rec
+
+
+def _deliver_morning(state, card, today_str, force=False):
+    """推送早报并逐段记账。返回 (是否全部送达, 分段汇总, 最后错误)。
+
+    与 `_deliver_card` 的区别：早报不是 state["events"] 里的事件，
+    所以账本放在 `state["morning_delivery"]`，但分段结构与复用逻辑完全一致。
+
+    force=True（FORCE_SUMMARY 人工强制补发）时**清空当日账本整份重发**：
+    账本的存在意义是「别把已经在群里的段落再发一遍」，而人工强制补发的
+    诉求恰恰是「不管发过没发过，再来一份」。两者冲突时必须让人的指令赢，
+    否则 FORCE_SUMMARY 会变成「记账显示已推送、群里什么都没有」。
+    """
+    rec = _morning_delivery_record(state, today_str)
+
+    prior_chunks = rec.get("chunks") or []
+    stored_text = rec.get("pending_text") or ""
+    if force:
+        if prior_chunks:
+            print("[INFO] FORCE_SUMMARY 强制补发：清空当日投递账本，整份重发")
+        rec["chunks"] = []
+        rec["pending_text"] = card
+        rec["attempts"] = 0
+        prior_chunks, stored_text = [], card
+    elif prior_chunks and stored_text:
+        # 上一次没发完。必须沿用当时的原文续传：卡片是模型重新生成的，
+        # 重写一遍哪怕只差一个空格，分段哈希就对不上，只能整条重发。
+        if stored_text != card:
+            print("[INFO] 沿用上次未发完的早报原文续传（保证分段一致，避免重复发送）")
+        card = stored_text
+    else:
+        rec["pending_text"] = card
+        rec["chunks"] = []
+
+    rec["attempts"] = int(rec.get("attempts") or 0) + 1
+    rec["status"] = "DELIVERING"
+    rec["updated_at"] = _now_iso()
+
+    # 先落盘再发送：万一下一秒进程被杀，下次仍能凭 chunks + pending_text 接着发。
+    # 这里失败不阻断发送（发出去比记账重要），但必须让人看见。
+    try:
+        save_state(state)
+    except store.StateError as e:
+        print(f"[WARN] 早报发送前落盘失败，本次断点续传能力受限：{e}")
+        print("::warning title=State Write Failed::早报发送前的投递状态未能写入")
+
+    chunk_report = []
+    ok, message_ids, send_err = send_telegram_ex(card, prior_chunks, chunk_report)
+
+    if chunk_report:
+        store.record_chunks(rec, chunk_report)
+    else:
+        # 凭证缺失、或发送层被测试桩替换时没有分段明细：
+        # 补一条单段记录，保证 state 里始终能看出「发了没发」。
+        store.record_chunks(rec, [{
+            "chunk_index": 1,
+            "chunk_total": 1,
+            "delivery_status": (store.CHUNK_DELIVERED if ok
+                                else store.CHUNK_RETRYABLE),
+            "telegram_message_id": message_ids[0] if message_ids else None,
+            "attempts": 1,
+            "last_error": "" if ok else send_err,
+        }])
+
+    summary = store.delivery_summary(rec)
+    if ok and summary["all_delivered"]:
+        rec["status"] = "DELIVERED"
+    elif summary["partial"]:
+        rec["status"] = "PARTIALLY_DELIVERED"
+    else:
+        rec["status"] = "DELIVERY_FAILED"
+    rec["updated_at"] = _now_iso()
+
+    # 分段结果必须落盘：不落盘，下一轮就不知道哪几段已经在群里了。
+    try:
+        save_state(state)
+    except store.StateError as e:
+        print(f"[ERROR] 早报分段结果落盘失败，下一轮可能重复发送已送达段落：{e}")
+        print("::error title=State Write Failed::早报分段投递结果未能写入 state.json")
+
+    if summary["partial"]:
+        rest = (summary["failed_indexes"] + summary["pending_indexes"]
+                + summary["not_attempted_indexes"])
+        print(f"::warning title=Partial Delivery::早报共 {summary['total']} 段，"
+              f"已送达第 {summary['delivered_indexes']} 段"
+              f"（message_id={summary['delivered_message_ids']}），未送达第 {rest} 段")
+
+    return (ok and summary["all_delivered"]), summary, send_err
+
+
+def _lock_morning_sent(state, today_str, what):
+    """全部送达后才写日期锁。写盘失败必须报错——否则明天会重发一次。
+
+    返回 True 表示锁已确认落盘。
+    """
+    state["last_morning_report_date"] = today_str
+    state["last_summary_sent_at"] = _now_iso()
+    try:
+        save_state(state)
+    except store.StateError as e:
+        print(f"[ERROR] {what}已发送，但日期锁落盘失败：{e}")
+        print("::error title=State Write Failed After Delivery::"
+              f"{what}已送达但 state.json 未写入，明日可能重复发送")
+        return False
+    return True
+
+
 # ==================== 主执行流 ====================
 def _send_low_info_morning(state, today_str, start_time, meta, reason):
     """低情报量报告（V1.2 任务 7）。
@@ -2084,23 +2235,19 @@ def _send_low_info_morning(state, today_str, start_time, meta, reason):
     card += "本号只推送经过证据核验的内容：官方确认、多源独立印证，或明确标注的单一来源。\n"
     card += "未核验与来源冲突的内容不会进入早报。"
 
-    push_success = send_telegram(card)
+    push_success, summary, send_err = _deliver_morning(
+        state, card, today_str, force=FORCE_SUMMARY)
     state_updated = False
     if push_success:
-        state["last_morning_report_date"] = today_str
-        state["last_summary_sent_at"] = _now_iso()
-        try:
-            save_state(state)
-            state_updated = True
-        except store.StateError as e:
-            print(f"[ERROR] 低情报量报告已发送，但日期锁落盘失败：{e}")
-            print("::error title=State Write Failed After Delivery::早报已送达但 state.json 未写入")
+        state_updated = _lock_morning_sent(state, today_str, "低情报量报告")
+        if not state_updated:
             return 1
-        print(f"[SUCCESS] 低情报量报告已推送 | {today_str}")
+        print(f"[SUCCESS] 低情报量报告已推送 | {today_str} | 分段 {summary['total']} 段全部送达")
         print(f"::notice title=Morning Report Sent::{today_str} 低情报量报告已推送（{reason}）")
     else:
-        print("[ERROR] 低情报量报告推送失败，日期锁未写入，下次触发会自动重试。")
-        print("::error title=Morning Report Push Failed::Telegram 推送失败，state 未更新")
+        print(f"[ERROR] 低情报量报告未完整送达（{len(summary['delivered_indexes'])}/"
+              f"{summary['total']} 段），日期锁未写入，下次触发会续传剩余段落 | {send_err}")
+        print("::error title=Morning Report Push Failed::Telegram 推送未完成，state 未锁定")
 
     log_telemetry({
         "start_time": start_time,
@@ -2284,24 +2431,21 @@ def run_morning_mode(state, start_time):
 
     meta["events_by_id"] = {e["event_id"]: e for e in verified}
     card = _build_summary_card(result, meta)
-    push_success = send_telegram(card)
+    push_success, summary, send_err = _deliver_morning(
+        state, card, today_str, force=FORCE_SUMMARY)
 
     state_updated = False
     if push_success:
-        state["last_morning_report_date"] = today_str
-        state["last_summary_sent_at"] = _now_iso()
-        try:
-            save_state(state)
-            state_updated = True      # 只有确认落盘成功才算更新
-        except store.StateError as e:
-            print(f"[ERROR] 早报已发送，但日期锁落盘失败：{e}")
-            print("::error title=State Write Failed After Delivery::早报已送达但 state.json 未写入，明日可能重复发送")
+        state_updated = _lock_morning_sent(state, today_str, "早报")
+        if not state_updated:
             return 1
-        print(f"[SUCCESS] 早报已推送 | {today_str} | 原料 {len(pool)} 条 | 窗口 {used_hours}h")
+        print(f"[SUCCESS] 早报已推送 | {today_str} | 原料 {len(pool)} 条 | 窗口 {used_hours}h "
+              f"| 分段 {summary['total']} 段全部送达")
         print(f"::notice title=Morning Report Sent::{today_str} 早报已推送，素材 {len(pool)} 条")
     else:
-        print("[ERROR] 早报推送失败，日期锁未写入，下次触发会自动重试。")
-        print("::error title=Morning Report Push Failed::Telegram 推送失败，state 未更新")
+        print(f"[ERROR] 早报未完整送达（已送达第 {summary['delivered_indexes']} 段 / "
+              f"共 {summary['total']} 段），日期锁未写入，下次触发会续传剩余段落 | {send_err}")
+        print("::error title=Morning Report Push Failed::Telegram 推送未完成，state 未锁定")
 
     log_telemetry({
         "start_time": start_time,

@@ -20,6 +20,7 @@ MODULES = [
     "tests.test_ai_integration",
     "tests.test_pipeline",
     "tests.test_delivery_v12",
+    "tests.test_morning_delivery",
     "tests.test_batch4_v12",
     "tests.test_batch5_v12",
     "tests.test_maintenance_v12",
