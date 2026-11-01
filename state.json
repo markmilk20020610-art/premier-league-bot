@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 748,
+        "calls": 749,
         "errors": 0,
-        "requests": 748
+        "requests": 749
       }
     },
-    "calls": 748,
+    "calls": 749,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 4608471,
-    "output_tokens": 510478,
-    "requests": 748
+    "input_tokens": 4614387,
+    "output_tokens": 511176,
+    "requests": 749
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -955,9 +955,19 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T04:29:19.596501+00:00",
+  "last_scan_at": "2026-11-01T04:30:37.957997+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
+    {
+      "desc": "Kluivert hails 'amazing' feeling as Bournemouth extend winning run Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T04:30:37.961839+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdy1EMmJWZ2JkMW12SWFGZzY1cV82YS10MG1WR09keEhkQ2FCZ0QzaFFVY0tzWGtZSlo4OUo5dWIwWGZsMkY2a0R0SGdsS2ZuT29DSXNfY0JFcUVpYlNtRktndXFhMjlCWTNxQkZMdWloYTdaU2dRZkM0ZFNEV1NwMklUSXc0b3QwY0MyVlhMZUZfdGlFTEFYS1RLdWpfQk0?oc=5",
+      "published": "2026-11-01T03:49:41+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Kluivert hails 'amazing' feeling as Bournemouth extend winning run - Premier League"
+    },
     {
       "desc": "Chelsea Football Kits Official Chelsea Store",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2447,16 +2457,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "West Ham United U18 v Chelsea U18 | Match | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "MANCHESTER UNITED fans walked away from Chelsea en masse before the full-time whistle following another disastrous displ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T14:11:22.035601+00:00",
-      "link": "https://www.thesun.co.uk/sport/40868315/man-utd-fans-chelsea-michael-carrick-lisandro-martinez/",
-      "published": "2026-10-31T14:10:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd fans leave Chelsea clash EARLY as Michael Carrick’s side are run ragged at Stamford Bridge"
     }
   ],
   "processed_urls": [
