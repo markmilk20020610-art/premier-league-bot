@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 938,
+        "calls": 939,
         "errors": 0,
-        "requests": 938
+        "requests": 939
       }
     },
-    "calls": 938,
+    "calls": 939,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 5563485,
-    "output_tokens": 647058,
-    "requests": 938
+    "input_tokens": 5568011,
+    "output_tokens": 647705,
+    "requests": 939
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -955,9 +955,29 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T07:40:32.725000+00:00",
+  "last_scan_at": "2026-11-01T07:41:20.370034+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
+    {
+      "desc": "LIVERPOOL welcome Arsenal to Anfield this afternoon for a mouth-watering Premier League contest. Such a big game needs a",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-01T07:41:20.372183+00:00",
+      "link": "https://www.thesun.co.uk/sport/40856039/alexander-isak-offer-liverpool-arsenal-sky-bet/",
+      "published": "2026-11-01T07:40:20+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool vs Arsenal: Get 50/1 for Alexander Isak to have 1+ shot with Sky Bet"
+    },
+    {
+      "desc": "Liverpool fans are finding joy at Anfield again with a feel-good factor around the club before the visit of reigning cha",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-01T07:41:20.372205+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckzd6217j7pgo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-01T07:38:15+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Anfield, intensity, rotation - how Iraola is improving Liverpool"
+    },
     {
       "desc": "LIVERPOOL host Arsenal for a massive Super Sunday clash this week, just days after contrasting League Cup fortunes. To m",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2437,26 +2457,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Stoke see off dreadful Preston"
-    },
-    {
-      "desc": "August Priske scored twice as Birmingham bounced back from defeat at Cardiff to beat Lincoln 3-1 in the Sky Bet Champion",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T14:48:24.803826+00:00",
-      "link": "https://www.skysports.com/football/lincoln-city-vs-birmingham-city/report/560644",
-      "published": "2026-10-31T14:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Birmingham back to winning ways as Priske scores twice"
-    },
-    {
-      "desc": "MANCHESTER UNITED made it nine games without a win for the first time in 37 years and their 2-0 defeat at Chelsea left M",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T14:35:28.001550+00:00",
-      "link": "https://www.thesun.co.uk/sport/40867594/man-utd-ratings-fernandes-martinez-fail-carrick/",
-      "published": "2026-10-31T14:34:17+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd player ratings: Fernandes fails to repay Carrick faith after returning to side with Martinez also disastrous"
     }
   ],
   "processed_urls": [
