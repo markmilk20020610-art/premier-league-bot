@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 956,
+        "calls": 957,
         "errors": 0,
-        "requests": 956
+        "requests": 957
       }
     },
-    "calls": 956,
+    "calls": 957,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 5647004,
-    "output_tokens": 658696,
-    "requests": 956
+    "input_tokens": 5651707,
+    "output_tokens": 659372,
+    "requests": 957
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -955,7 +955,7 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T07:58:21.636832+00:00",
+  "last_scan_at": "2026-11-01T07:59:24.070115+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
     {
@@ -1067,6 +1067,16 @@
       "publisher": "https://store.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Chelsea Football Kits - Official Chelsea Store"
+    },
+    {
+      "desc": "Brighton Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T07:59:24.073122+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVURkc0EwRzVtQUdmdFpPQXJhczhaSXEySDQxV3ZFdThweVpPREV1ZTNmUGU5VVZNc0dlTXdpc1VwZHlmbVFNRWt5bU9rR09VMnd6aTNYTEVndGF3eDJpamIwVm1keGNESXpwUFpWT2J4akF4SDQ1QjY4TkVmbmVmZzBUWFNjNk4xRDltcEpwakh5SjNGaFhWV2RRMmpkZUk?oc=5",
+      "published": "2026-11-01T01:48:08+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Brighton - Manchester City FC"
     },
     {
       "desc": "From mancity.com - Man City Shop Man City Shop",
@@ -2447,16 +2457,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Rogers shines, 3/10 for sent-off Martinez - player ratings for Chelsea v Man Utd"
-    },
-    {
-      "desc": "Norwich launched a storming second half comeback to beat Watford 3-2 and make it back-to-back wins in the Sky Bet Champi",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T14:41:31.749434+00:00",
-      "link": "https://www.skysports.com/football/norwich-city-vs-watford/report/560647",
-      "published": "2026-10-31T14:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Norwich hit back to beat Watford in stunning comeback"
     }
   ],
   "processed_urls": [
