@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-02",
     "errors": 0,
-    "input_tokens": 6275,
-    "output_tokens": 804,
-    "requests": 1
+    "input_tokens": 12428,
+    "output_tokens": 1597,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -682,6 +682,33 @@
       "title": "安古洛拽头发逃红牌，桑德兰保级泥潭更深",
       "updated_at": "2026-10-31T17:03:29.274412+00:00"
     },
+    "85dd32d34a8e": {
+      "article_title": "'My beautiful boy deserves to be remembered with love, not hate': Bradley Lowery's mum issues heartbreaking statement to condemn 'cruel' Cov",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d23dd6fd28ec253a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 65
+        }
+      ],
+      "created_at": "2026-11-01T16:28:15.842354+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "1acf1a23ba234935",
+      "event_id": "85dd32d34a8e",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16256525/My-beautiful-boy-deserves-remembered-love-not-hate-Bradley-Lowerys-mum-issues-heartbreaking-statement-condemn-cruel-Coventry-fan-used-late-sons-photo-taunt-Sunderland-fans.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 65,
+      "title": "考文垂球迷用已故桑德兰小球迷布拉德利·洛厄里照片嘲讽对手，其母发声明谴责",
+      "updated_at": "2026-11-01T16:28:17.628283+00:00"
+    },
     "8e90eaab6e7a": {
       "article_title": "Kane beat Mbappe to Ballon d'Or by just 28 points",
       "attempts": 1,
@@ -982,9 +1009,59 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T16:00:46.109158+00:00",
+  "last_scan_at": "2026-11-01T16:28:09.870433+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
+    {
+      "desc": "OLE GUNNAR SOLSKJAER claims Michael Carrick has the “devil” in him to turn it around at Manchester United. Red Devils le",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-01T16:28:09.873963+00:00",
+      "link": "https://www.thesun.co.uk/sport/40876215/ole-gunnar-solskjaer-man-utd-michael-carrick/",
+      "published": "2026-11-01T16:23:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "I have unfinished business, says Solskjaer as he opens up on Man Utd job – but backs ‘devil’ Carrick to turn it around"
+    },
+    {
+      "desc": "CHELSEA fans have been left with \"goosebumps\" after a brilliant video showing Cole Palmer and Eden Hazard sharing a mome",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-01T16:28:09.873998+00:00",
+      "link": "https://www.thesun.co.uk/sport/40876252/chelsea-fans-react-cole-palmer-eden-hazard-manchester-united/",
+      "published": "2026-11-01T16:21:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea fans ‘get goosebumps’ after amazing video of Cole Palmer and Eden Hazard at Stamford Bridge emerges"
+    },
+    {
+      "desc": "Baby Christmas Jumpers Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T16:28:09.874089+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBiaWFPOFktTWZublJLTUR3YXhlT2dqeVlibzhzVFdrY2hOMEVtQnpXYlZ5QnFmOXN1NF9SRzIyYjBGaDRFT3J5aUVyU2Q0OVl6YXhmRWtYU2NNcW1sTmhVT083MGZDRk5RY1VHZVRMVXlVWWs?oc=5",
+      "published": "2026-11-01T16:15:14+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Baby Christmas Jumpers - Liverpool FC"
+    },
+    {
+      "desc": "FORMER Champions League semi-finalists CSKA Sofia have re-opened their incredible £40million renovated stadium. The Balg",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-01T16:28:09.874150+00:00",
+      "link": "https://www.thesun.co.uk/sport/40876027/cska-sofia-champions-league-reopen-40million-stadium-three-years/",
+      "published": "2026-11-01T16:04:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former Champions League semi-finalists reopen incredible £40million renovated stadium after three years"
+    },
+    {
+      "desc": "Manchester United’s preferred Michael Carrick replacement revealed by Fabrizio Romano Lente Desportiva",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T16:28:09.874182+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdDdaOE5zR0plNGVhdm9VMDQ4MUd0REk4M3RzcEZMczhHN3Z4b3dlcnJXWmJxa0lYT1ZlemhDVDZoeTR0ZUhiNTJGQkVrT0JDaTR4XzNHSkFRcDZKUlIyV2FKU25MRklSdXU1TTRxakxyeGpLTXRtdnBkRXdtX09tR0tublpLT3d1d3M2bEY1bHNMRjYyd0ctSGhYT1htZXQ5UEE3WXdHTmpZN3JhVWpUeXR3MA?oc=5",
+      "published": "2026-11-01T16:00:00+00:00",
+      "publisher": "https://lentedesportiva.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Manchester United’s preferred Michael Carrick replacement revealed by Fabrizio Romano - Lente Desportiva"
+    },
     {
       "desc": "Follow Daily Mail Sport's live coverage for the latest updates as Liverpool host defending champions Arsenal at Anfield ",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -1274,6 +1351,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal tickets plus VIP hospitality to Premier League and Champions League games at The Emirates"
+    },
+    {
+      "desc": "Liverpool Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T16:28:09.874840+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWTVHbjJFTF8tdTRvVWdsUXVjWERmamE3OHd3eGtweWU4bUZTUkhiZ0xHUnk4UjdHTVhoV0lPaXJFYUFqMTBNNWdlZVk0MlctSkZlb2N4QTNxVVNBWXpOQzJJRnlVVjJxRmhDN3hDWVVwUDA3OU5PVnRqellmb04zTDRnRHN1V2ZvUk5Ob3VrejFHSEkxVUt4Qg?oc=5",
+      "published": "2026-11-01T13:27:44+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool - Liverpool FC"
+    },
+    {
+      "desc": "Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T16:28:09.874866+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
+      "published": "2026-11-01T13:27:27+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "- Liverpool FC"
     },
     {
       "desc": "MAKE no mistake, Manchester United are on a collision course towards relegation. And it doesn't matter who the manager i",
@@ -2414,76 +2511,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "'Best thing is keep your mouth shut' - Mourinho on Mbappe-Mao row"
-    },
-    {
-      "desc": "APOLLONIA LLEWELLYN put in yet another stunning display for fans as she went braless in a see-through dress. The footy w",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T17:36:24.273361+00:00",
-      "link": "https://www.thesun.co.uk/sport/40869758/apollonia-llewellyn-braless-see-through-dress/",
-      "published": "2026-10-31T17:36:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘The perfect girl’ – Apollonia Llewellyn goes braless in see-through dress as she leaves little to the imagination"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T17:26:21.769274+00:00",
-      "link": "https://www.skysports.com/football/rangers-vs-aberdeen/558404",
-      "published": "2026-10-31T17:25:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "SLC semis: Rangers vs Aberdeen - latest score"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T19:32:25.261609+00:00",
-      "link": "https://www.skysports.com/football/rangers-vs-aberdeen/teams/558404",
-      "published": "2026-10-31T17:25:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "SLC semis: Rangers 1-0 Aberdeen - Full Time"
-    },
-    {
-      "desc": "Hull showed fight to avoid another fright and pick up a fifth Premier League draw in seven winless games. It looked to b",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T17:25:27.522643+00:00",
-      "link": "https://www.thesun.co.uk/sport/40870804/oli-mcburnie-julio-enciso-hull-ipswich-draw-result/",
-      "published": "2026-10-31T17:24:47+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Hull 2 Ipswich 2: Oli McBurnie and Julio Enciso on target again as plucky pair trade timely blows to share points"
-    },
-    {
-      "desc": "'The team spirit was immense' | Video | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T20:06:32.975261+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOM1hxYzktblNiUWlHdHNKemljckFwYm0zMDkwWVhKeVhjZXUxT1dFZENYaHVSZVhlTGYxLXoxUHA4SVZZaGtxeGZRMUg1NUJqLTRmNV92UVhobTItejdzemxPX21Qd1NMM2s1Y19XMndQX0JRZ0l3dDlOZ0JzZXk0aXVfMG55ZkJ1NEdheDNNT3BhMFNRZ21KU1p2Z2NtWFBPMEE?oc=5",
-      "published": "2026-10-31T17:22:08+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "'The team spirit was immense' | Video | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "NIKOLA MILENKOVIC became only the sixth different Forest player to score a Premier League goal this season - but sadly i",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T17:21:22.147073+00:00",
-      "link": "https://www.thesun.co.uk/sport/40870818/oliver-glasner-nottingham-forest-brentford-nikola-milenkovic/",
-      "published": "2026-10-31T17:20:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Brentford 2 Nottingham Forest 0: Pressure grows for Oliver Glasner as new club suffer fourth defeat in five outings"
-    },
-    {
-      "desc": "FREE TO WATCH: Highlights from Chelsea’s match against Manchester United in the Premier League.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T17:16:23.014026+00:00",
-      "link": "https://www.skysports.com/watch/video/13606146/chelsea-2-0-manchester-united-premier-league-highlights",
-      "published": "2026-10-31T17:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Chelsea capitalise on second-half implosion to defeat 10-man Man Utd"
     }
   ],
   "processed_urls": [
@@ -2536,7 +2563,8 @@
     "https://www.thesun.co.uk/sport/40872763/man-utd-fans-abuse-jim-ratcliffe-wilcox-chelsea",
     "https://www.thesun.co.uk/sport/40872725/zion-suzuki-aston-villa-draw-by-fulham-result",
     "https://www.dailymail.com/sport/football/article-16255259/Bruno-Fernandes-TEARS-Man-United.html",
-    "https://www.thesun.co.uk/sport/40873943/bayern-munich-borussia-dortmund-fans-fight-kane-ballon-dor"
+    "https://www.thesun.co.uk/sport/40873943/bayern-munich-borussia-dortmund-fans-fight-kane-ballon-dor",
+    "https://www.dailymail.com/sport/football/article-16256525/My-beautiful-boy-deserves-remembered-love-not-hate-Bradley-Lowerys-mum-issues-heartbreaking-statement-condemn-cruel-Coventry-fan-used-late-sons-photo-taunt-Sunderland-fans.html"
   ],
   "schema_version": 3
 }
