@@ -3,7 +3,7 @@
   "circuit_breakers": {},
   "events": {},
   "focus": {
-    "last_tick_at": "2026-11-01T15:04:17Z",
+    "last_tick_at": "2026-11-01T15:19:47Z",
     "matches": {
       "epl-20261031-bournemouth-leeds": {
         "appointment_seen_at": "2026-10-31T14:14:00Z",
@@ -55,15 +55,26 @@
       "epl-20261101-liverpool-arsenal": {
         "appointment_seen_at": "",
         "appointment_seen_lead_minutes": null,
-        "competitor": {},
-        "competitor_at": "2026-11-01T15:04:17Z",
+        "competitor": {
+          "all_sources": [
+            "hupu"
+          ],
+          "competitor_source": "hupu",
+          "competitor_title": "剑南春首发-利物浦vs阿森纳：措利斯PK加克波，尼奥尼出战",
+          "competitor_url": "https://bbs.hupu.com/643542261.html",
+          "competitors_seen_at": "2026-11-01T15:16:07Z",
+          "evidence_count": 1,
+          "note": "最早由 虎扑 于 2026-11-01T15:16:07Z 发布（共 1 条匹配）",
+          "time_corrected": 0
+        },
+        "competitor_at": "2026-11-01T15:18:17Z",
         "first_seen": {},
         "lineup_pushed": {},
         "official_published_at": {},
         "referee_pushed": false
       }
     },
-    "ticks": 315
+    "ticks": 335
   },
   "last_morning_report_date": "",
   "last_scan_at": "",
