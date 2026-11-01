@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 699,
+        "calls": 700,
         "errors": 0,
-        "requests": 699
+        "requests": 700
       }
     },
-    "calls": 699,
+    "calls": 700,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 4332171,
-    "output_tokens": 475109,
-    "requests": 699
+    "input_tokens": 4338153,
+    "output_tokens": 475941,
+    "requests": 700
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T03:40:32.343468+00:00",
+  "last_scan_at": "2026-11-01T03:41:21.491295+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
+    {
+      "desc": "Chelsea Football Kits Official Chelsea Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T03:41:21.494971+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNWVh5bm1JWGlYLVRtdjk1RjZ1RkNOT19tV3lmU3RPRUFhZ1B5ZllXbHdYTW1mQllCQmlPYjBWUkpOUS15TXB0YnN3M0xhb2FkMTRXblFRbnhGU1RrYzlKblJyM0ItdTVpLU50R2w5MmE4LTRXcjZ3S2hOSjlONUFWTDNCYTdVUFl5NHNiQ1FSUXU3ZTludWducnZvcHB0ZExCcGZfSjRCdERrd3NiSXNVeTlUaExEbFc5RHE1dkpfdGRGRVlWMmF6Wml5VGJMMnpwaU1nX0s2bjZfWlNVZTJuLW5RUVlDYnVTaVljaU5sbjYycTFaZEc4TDJjdS1aQmY5ZFA0U0tQSkhtSkk?oc=5",
+      "published": "2026-11-01T02:45:46+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Football Kits - Official Chelsea Store"
+    },
     {
       "desc": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ The New York Times",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2420,16 +2430,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd fans leave Chelsea clash EARLY as Michael Carrick’s side are run ragged at Stamford Bridge"
-    },
-    {
-      "desc": "Chelsea FC / Manchester United - Premier League - Stamford Bridge, London Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T19:03:25.439702+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNm5VS2dTdFZhUEdrRy1vWTU4M3M2a2d6dkw0OHVkWUdoeXF5aERnVUx0R0g1SThHTVQzME5kZHBWbThKWjZYV20yMlNCdW5wRFozZnJJb1JXeENLWE5ETXY4bXZySVZjNjJ6TGlDNGNNV0VReUpDa3VpVUR2N1NpYVZCQjZqR1NfTEUyRWRtVl9PckNtZkRDZEdqSTBsT28?oc=5",
-      "published": "2026-10-31T14:02:53+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Chelsea FC / Manchester United - Premier League - Stamford Bridge, London - Manchester United"
     }
   ],
   "processed_urls": [
