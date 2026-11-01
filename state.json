@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 593,
+        "calls": 594,
         "errors": 0,
-        "requests": 593
+        "requests": 594
       }
     },
-    "calls": 593,
+    "calls": 594,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 3660455,
-    "output_tokens": 397103,
-    "requests": 593
+    "input_tokens": 3666937,
+    "output_tokens": 397886,
+    "requests": 594
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,7 +928,7 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T01:53:22.979474+00:00",
+  "last_scan_at": "2026-11-01T01:54:20.823321+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
     {
@@ -1460,6 +1460,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "How about Stat?: Pre-match stats as Eagles head to Spurs - Premier League"
+    },
+    {
+      "desc": "Arsenal away days: The stories behind the supporters Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T01:54:20.825658+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbTh6SnczcGxQZkxIUVRfQUcyWWl3RzdUX3NaTXNZYWkwN29ZRFI4Um1QTEpPazctZXoycjc0Z0ZvSEZhYkIzRGJmbHNEREg0WGxUaTJNY2lwb19peVJFczZZQktqS2JISV9fSGRSczRqeEhBMkE4SW1kbElVQnZwd3Q5SFJKcG1XRnlWeW1ZUGF4blBUSnpaSw?oc=5",
+      "published": "2026-10-31T19:12:19+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal away days: The stories behind the supporters - Arsenal.com"
     },
     {
       "desc": "AN EFL referee had a CRUTCH thrown at him as tempers flared at the end of the game. Oldham Athletic suffered a 1-0 loss ",
@@ -2420,16 +2430,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Lisandro Martinez blanked by Michael Carrick as Man Utd star is sent off vs Chelsea for moment of madness"
-    },
-    {
-      "desc": "Jamie Carragher apologises for \"clumsy and wrong\" language when linking manager Unai Emery with becoming Manchester Unit",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T13:55:24.750882+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqj6jp63k87zo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T13:51:00+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Carragher apologises to Villa for 'wrong' language"
     }
   ],
   "processed_urls": [
