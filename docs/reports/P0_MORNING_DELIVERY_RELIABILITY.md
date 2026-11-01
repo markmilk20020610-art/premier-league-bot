@@ -13,12 +13,16 @@
 | 2 | 使用可靠的分段发送状态 | ✅ 已实现 | 新增 `state["morning_delivery"]` 账本，逐段落 `chunk_index` + `chunk_hash` + `telegram_message_id` |
 | 3 | 全部分段成功后才提交完成状态 | ✅ 已实现 | `_lock_morning_sent()` 只在 `summary["all_delivered"]` 为真时调用 |
 | 4 | 部分失败可恢复 | ✅ 已验证 | 5 个故障场景端到端演练，第 2 轮均能续传成功 |
-| 5 | 已成功分段不得重发 | ✅ 已验证 | 续传日志实测输出「分块 1/3 上次已送达（message_id=9001），本次跳过不重发」 |
+| 5 | 已成功分段不得重发 | ✅ 已验证（有例外，见 §6.3） | 续传日志实测输出「分块 1/3 上次已送达（message_id=9001），本次跳过不重发」。**仅限「已确认送达」的段；`DELIVERY_UNCERTAIN` 的段仍可能重发一次** |
 | 6 | 不得因失败错误锁定当天 | ✅ 已验证 | 失败时 `last_morning_report_date` 保持空值，4 类失败均覆盖 |
 | 7 | 保留日期锁与跨运行持久化 | ✅ 未改 | `MORNING_ALREADY_SENT` 入口检查原样保留，账本落盘走 `save_state` |
 | 8 | 测试中断 / 429 / 超时 / 部分成功 | ✅ 全覆盖 | 33 例新增测试，其中 5 类故障 + 3 类中断 |
 
 **测试结果：663 例全绿（630 基线 + 33 新增），0 失败 0 错误。**
+
+> **必须读的限定**：本报告不宣称「绝对不会重复发送」。
+> 已**确认送达**的段不会重发；但 Telegram 返回读超时、无法判断到底发没发出去时
+> （`DELIVERY_UNCERTAIN`），该段会被重发一次。这是既有设计的有意取舍，详见 §6.3。
 
 ---
 
@@ -64,7 +68,7 @@ MORNING_DELIVERY_KEY = "morning_delivery"
 
 **三条不变式**（写在代码注释里，改这个函数前必须先读）：
 
-- 已确认送达的段永不重发（靠 `chunk_index` + `chunk_hash` 双重匹配）；
+- 已确认送达的段永不重发（靠 `chunk_index` + `chunk_hash` 双重匹配）——注意「已确认」三个字：状态为 `DELIVERY_UNCERTAIN` 的段仍会重发，见 §6.3；
 - 只有全部分段送达，才允许写 `last_morning_report_date`；
 - 卡片原文必须跨运行沿用（`pending_text`），否则模型重写一遍导致哈希变化，断点续传直接失效。
 
@@ -177,7 +181,17 @@ MORNING_DELIVERY_KEY = "morning_delivery"
 
 ## 七、回滚方案
 
-改动集中在 3 个文件，无数据库、无外部依赖、无 schema 迁移。
+**代码改动涉及 4 个文件**，无数据库、无外部依赖、无 schema 迁移。
+
+| 文件 | 类型 | 说明 |
+|---|---|---|
+| `bot.py` | 改 | 账本常量 + 3 个新函数 + 2 处调用点 |
+| `scripts/merge_state.py` | 改 | `_merge_morning_delivery()` 并入 `merge()` |
+| `tests/run_all.py` | 改 | 登记新测试模块 |
+| `tests/test_morning_delivery.py` | 新增 | 33 例回归测试 |
+
+此外随同一提交入库 2 份文档（`docs/reports/P0_MORNING_DELIVERY_RELIABILITY.md`、
+`docs/reports/AUDIT_V22_SCHEDULING_XHS.md`），不含任何可执行代码。
 
 ```bash
 git revert <P0 merge commit>     # 或直接不合并本分支
@@ -195,17 +209,45 @@ Ran 33 tests in 0.812s
 OK
 
 $ python tests/run_all.py
-Ran 663 tests in 49.285s
+Ran 663 tests in 93.064s
 OK
 ============================================================
-模块数 20 | 用例 663 | 失败 0 | 错误 0 | 耗时 49.3s
+模块数 20 | 用例 663 | 失败 0 | 错误 0 | 耗时 93.1s
 ============================================================
 ```
 
 ---
 
-## 九、等待批准
+## 九、合并前检查记录（9 项）
 
-P0 已完成并通过全部验收项，**未进入生产集成**（分支未合并 main）。
+检查时间：2026-11-01 09:50 北京时间 ｜ 目标 `main` ｜ P0 分支 `p0-morning-chunk-ledger`
 
-下一步 P1（小红书内容包生产流程：`xhs_templates.py` / `xhs_state.py` / `xhs_pack.py` / `schema.validate_xhs_package()`）需批准后开始。
+| # | 检查项 | 结果 | 实测 |
+|---|---|---|---|
+| 1 | P0 提交 parent SHA 是否等于预期基线 | **PASS** | `296d86a^` = `85a4a233dad17207fd70ee936f0dc032853a7e1a` |
+| 2 | `git diff main...p0-morning-chunk-ledger` | **PASS** | 6 文件，+1847 / −24 |
+| 3 | 改动是否只涉及 4 个代码文件 | **PASS（含 2 份文档）** | 代码 4 个：`bot.py` / `scripts/merge_state.py` / `tests/run_all.py` / `tests/test_morning_delivery.py`；另 2 份 `.md` 报告，无代码 |
+| 4 | 是否含 API Key / Token / 密码 / 个人数据 | **PASS** | Telegram token 形态、GitHub PAT、`sk-` 密钥、私钥块均 0 命中；唯一赋值是测试桩 `TEST_TOKEN` / `TEST_CHAT` |
+| 5 | `bot.py` 行尾是否保持 CRLF | **PASS** | 4 个文件均 CRLF，裸 LF 全部为 0（`bot.py` 2884/2884） |
+| 6 | `send_telegram()` / `send_telegram_ex()` / `_deliver_card()` 是否被改 | **PASS** | 三函数逐字比对 main 与 p0，长度与内容完全一致（5544 / 336 / 2991 字符）。`bot.py` 全部 24 行删除均落在 `_send_low_info_morning` 与 `run_morning_mode` 内 |
+| 7 | `python tests/run_all.py` | **PASS** | 20 模块，93.1s |
+| 8 | 663 例 / 0 失败 / 0 错误 | **PASS** | 663 / 0 / 0 |
+| 9 | 远程 main 是否仍是预期基线、有无并行提交 | **见说明** | `origin/main` = `498b2b2`，比 `85a4a23` 前进 **58 个提交，全部为 `Auto-update state.json [skip ci]`，只改 `state.json`**，零代码改动、零人工提交 |
+
+### 关于第 9 项
+
+远程 main 无法保持在 `85a4a23`：机器人每轮扫描都会回写 `state.json` 并自动提交（实测间隔 60±3 秒）。这是系统固有行为，任何时刻检查都会看到 main 已前进。
+
+判定依据是**第 9 项的实际目的——确认没有并行的人工/代码提交**，而非字面的 SHA 相等：
+
+- 58 个提交全部来自 `GitHub Action` 账号，提交信息均为 `Auto-update state.json [skip ci]`
+- 改动文件只有 `state.json` 一个
+- P0 分支**没有**修改 `state.json`，因此合并时该文件不产生冲突，合并后保留 main 的最新版本
+
+结论：无并行代码提交，合并不会覆盖任何人的工作。
+
+---
+
+## 十、状态
+
+P0 已完成并通过合并前检查，等待合并授权。
