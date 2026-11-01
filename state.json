@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 531,
+        "calls": 532,
         "errors": 0,
-        "requests": 531
+        "requests": 532
       }
     },
-    "calls": 531,
+    "calls": 532,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 3252738,
-    "output_tokens": 352095,
-    "requests": 531
+    "input_tokens": 3259377,
+    "output_tokens": 352760,
+    "requests": 532
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T00:51:23.294210+00:00",
+  "last_scan_at": "2026-11-01T00:52:22.717522+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
+    {
+      "desc": "Everton January striker hunt hit by Friedkin loans claim premierleaguenewsnow.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T00:52:22.722435+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWFlHcWZEOWNlMnltQTN4OFdCUWFwVmhVWThFXzJxVUNFcFU5MnRyMEJSVVkwc0JKUjc0RmdRSmNzTXlidzlZRWJYZTFEZFdQbmZSTjFQVzkwTUc3ay11YlF0TW5EbkRQbWR4T2cxUzY3VVN2RHVuR0lHTHVLYmNKXzRqMWpRUEt2ZEh5Y2lBNzdPR0F1VWlZX18zRThubjA?oc=5",
+      "published": "2026-11-01T00:16:03+00:00",
+      "publisher": "https://premierleaguenewsnow.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Everton January striker hunt hit by Friedkin loans claim - premierleaguenewsnow.com"
+    },
     {
       "desc": "Manchester United's current tally of nine points from seven games would not even get them 30 points if it was continued ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2420,16 +2430,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano confirms Man Utd striker hunt as £100m superstar linked - Football365"
-    },
-    {
-      "desc": "Arsenal Team News vs Liverpool: Rice, Calafiori on Course, Saka Out The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T13:43:24.029347+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04OG9ERUhPcFh4aWNCb0pYNnhUVC1MdEVyazZlNDZsbmxVTG85bDdFaFJWeEIzRG9nOG5kMEpUTzl4WTRUUzV6UE1pQzlsMml0SFl3Z0lMNWgxdGEwbHEyekJaUkgtbGFnMEUwT2VkSFN2OW8?oc=5",
-      "published": "2026-10-31T13:40:07+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal Team News vs Liverpool: Rice, Calafiori on Course, Saka Out - The False 9"
     }
   ],
   "processed_urls": [
