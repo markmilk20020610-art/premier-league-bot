@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 709,
+        "calls": 710,
         "errors": 0,
-        "requests": 709
+        "requests": 710
       }
     },
-    "calls": 709,
+    "calls": 710,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 4389800,
-    "output_tokens": 482449,
-    "requests": 709
+    "input_tokens": 4395010,
+    "output_tokens": 482994,
+    "requests": 710
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -154,6 +154,33 @@
       "telegram_message_id": 52,
       "title": "马特塔开场12分钟飞铲连伤两名热刺球员被直红罚下",
       "updated_at": "2026-10-31T17:49:37.157534+00:00"
+    },
+    "229678fb085a": {
+      "article_title": "Bruno Fernandes holds back TEARS after Man United beaten by Chelsea: Captain appears emotional as return to squad after public criticism of",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "8239adbf94d52c08",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 60
+        }
+      ],
+      "created_at": "2026-11-01T03:51:26.945463+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "c4a6b1d7287421c6",
+      "event_id": "229678fb085a",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16255259/Bruno-Fernandes-TEARS-Man-United.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 60,
+      "title": "布鲁诺·费尔南德斯曼联惨败切尔西后情绪失控",
+      "updated_at": "2026-11-01T03:51:27.578002+00:00"
     },
     "244228d330dd": {
       "article_title": "Romano reveals Man Utd top target to replace Carrick in 'crucial' sack update - 'a manager they love' - Football365",
@@ -928,7 +955,7 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T03:50:32.457629+00:00",
+  "last_scan_at": "2026-11-01T03:51:22.283807+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
     {
@@ -2480,7 +2507,8 @@
     "https://www.skysports.com/football/news/12040/13606410/oliver-glasner-nottingham-forest-head-coach-reveals-anger-desire-to-change-growing-pattern-at-club-amid-poor-start-to-season",
     "https://www.thesun.co.uk/sport/40871591/haaland-dad-silence-man-city-verdict-erling-future",
     "https://www.thesun.co.uk/sport/40872763/man-utd-fans-abuse-jim-ratcliffe-wilcox-chelsea",
-    "https://www.thesun.co.uk/sport/40872725/zion-suzuki-aston-villa-draw-by-fulham-result"
+    "https://www.thesun.co.uk/sport/40872725/zion-suzuki-aston-villa-draw-by-fulham-result",
+    "https://www.dailymail.com/sport/football/article-16255259/Bruno-Fernandes-TEARS-Man-United.html"
   ],
   "schema_version": 3
 }
