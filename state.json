@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 959,
+        "calls": 960,
         "errors": 0,
-        "requests": 959
+        "requests": 960
       }
     },
-    "calls": 959,
+    "calls": 960,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 5661787,
-    "output_tokens": 660501,
-    "requests": 959
+    "input_tokens": 5666699,
+    "output_tokens": 661092,
+    "requests": 960
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -955,9 +955,19 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T08:01:31.778702+00:00",
+  "last_scan_at": "2026-11-01T08:02:31.768299+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
+    {
+      "desc": "ARSENAL make the trip to face Liverpool in a massive Premier League game, looking to bounce back from midweek humiliatio",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-01T08:02:31.771823+00:00",
+      "link": "https://www.thesun.co.uk/sport/40845769/liverpool-arsenal-predictions-free-bets/",
+      "published": "2026-11-01T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool vs Arsenal | Premier League predictions, preview and free bets for huge Super Sunday showdown"
+    },
     {
       "desc": "LIVERPOOL welcome Arsenal to Anfield this afternoon for a mouth-watering Premier League contest. Such a big game needs a",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2447,16 +2457,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd: Romano reveals Barcelona decision on selling Fermin to Red Devils - Football365"
-    },
-    {
-      "desc": "Player ratings as Morgan Rogers and Cole Palmer score second-half goals in Chelsea's home win over Manchester United, wh",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T14:38:23.614856+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c3j47prvlz04o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T14:35:50+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Rogers shines, 3/10 for sent-off Martinez - player ratings for Chelsea v Man Utd"
     }
   ],
   "processed_urls": [
