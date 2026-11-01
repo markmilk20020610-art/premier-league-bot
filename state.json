@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 601,
+        "calls": 602,
         "errors": 0,
-        "requests": 601
+        "requests": 602
       }
     },
-    "calls": 601,
+    "calls": 602,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 3710604,
-    "output_tokens": 402914,
-    "requests": 601
+    "input_tokens": 3717291,
+    "output_tokens": 403636,
+    "requests": 602
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,9 +928,19 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T02:01:22.325353+00:00",
+  "last_scan_at": "2026-11-01T02:02:21.855004+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
+    {
+      "desc": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T02:02:21.858821+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw?oc=5",
+      "published": "2026-11-01T00:30:00+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times"
+    },
     {
       "desc": "Everton January striker hunt hit by Friedkin loans claim premierleaguenewsnow.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2420,16 +2430,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Chelsea FC / Manchester United - Premier League - Stamford Bridge, London - Manchester United"
-    },
-    {
-      "desc": "MANCHESTER UNITED defender Lisandro Martinez was blanked by Michael Carrick after conceding a penalty and receiving two ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T14:02:22.912566+00:00",
-      "link": "https://www.thesun.co.uk/sport/40868203/lisandro-martinez-red-card-chelsea/",
-      "published": "2026-10-31T14:00:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Lisandro Martinez blanked by Michael Carrick as Man Utd star is sent off vs Chelsea for moment of madness"
     }
   ],
   "processed_urls": [
