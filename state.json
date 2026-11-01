@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 582,
+        "calls": 583,
         "errors": 0,
-        "requests": 582
+        "requests": 583
       }
     },
-    "calls": 582,
+    "calls": 583,
     "date": "2026-11-01",
     "errors": 0,
-    "input_tokens": 3588540,
-    "output_tokens": 389295,
-    "requests": 582
+    "input_tokens": 3595098,
+    "output_tokens": 390010,
+    "requests": 583
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -928,7 +928,7 @@
     }
   },
   "last_morning_report_date": "2026-11-01",
-  "last_scan_at": "2026-11-01T01:42:25.076301+00:00",
+  "last_scan_at": "2026-11-01T01:43:28.985134+00:00",
   "last_summary_sent_at": "2026-11-01T00:49:24.564417+00:00",
   "news_pool": [
     {
@@ -1440,6 +1440,16 @@
       "publisher": "https://tickets.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
+      "desc": "Victory secured against 10-man Palace Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-01T01:43:28.989641+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcElDM2hQa0prOFZzOVlhV285SWY3V3dFMmVBS0ZSM1B5N3QwWkF1bjgtQzdjLVhmQWxTbEdYTVQtaFJGSkpNR2sza1huWFg1aV94d3p0TW5QVEVIYkpJeFJnbWh1SG1DUVAtdzZKM3lrV0VucVYtdVVMQVBXMGJ0c0tEQlNTdUVBMHRv?oc=5",
+      "published": "2026-10-31T19:28:44+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Victory secured against 10-man Palace - Tottenham Hotspur"
     },
     {
       "desc": "How about Stat?: Pre-match stats as Eagles head to Spurs Premier League",
@@ -2420,16 +2430,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Carragher apologises to Villa for 'wrong' language"
-    },
-    {
-      "desc": "MANCHESTER UNITED target Julian Nagelsmann might not be available for much longer following a reported approach from Juv",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T13:47:22.635442+00:00",
-      "link": "https://www.thesun.co.uk/sport/40867752/man-utd-julian-nagelsmann-juventus-job-michael-carrick/",
-      "published": "2026-10-31T13:46:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd target Julian Nagelsmann ‘considering taking over at European giants after being approached’"
     }
   ],
   "processed_urls": [
