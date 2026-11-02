@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-02",
     "errors": 0,
-    "input_tokens": 35156,
-    "output_tokens": 4569,
-    "requests": 5
+    "input_tokens": 42104,
+    "output_tokens": 5387,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1009,7 +1009,7 @@
     }
   },
   "last_morning_report_date": "2026-11-02",
-  "last_scan_at": "2026-11-01T23:57:15.701885+00:00",
+  "last_scan_at": "2026-11-02T04:00:49.120755+00:00",
   "last_summary_sent_at": "2026-11-02T01:22:03.906748+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1031,6 +1031,76 @@
   },
   "news_pool": [
     {
+      "desc": "Semenyo FPL GW10: Sell or Hold at £8.2m While Out With Knee Injury The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123443+00:00",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1Jbm9ncThvT1BVUk9kWnVBbW5xSUM5ZUpZbzQwclBrWWZadkZZWnhxRUF6WWpOdVNhTS16NE1LaExicFBrME1SUVMtdTVNeURCZFAyYXZGRzZCUkw0X0lVWHdyRmswR1hpZzJ2V2xEOTczdw?oc=5",
+      "published": "2026-11-02T03:54:17+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Semenyo FPL GW10: Sell or Hold at £8.2m While Out With Knee Injury - The False 9"
+    },
+    {
+      "desc": "Ivan Toney emerges as surprise Manchester United target amid striker concerns Business Upturn",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123471+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQYndreFNnWnBDeTVPVHFDRjVJSVlERVgzWkV0U3hTZVgyX1VCUDRsZ1lJWno2QXhMLUhGbXFhNldEaENNaUFFWVFHajc0WWZidHNmWUZrMDZMQnBEeS0xcXFDb05oM3VpRGpzakZTcUlKNE1tM1ROUnVCTk9pZUJYdFNrN2hsZWt2VDRPWGhyaEdjTmZtMTkyZEpsWnhrQ0hBT0U1Uk9faWszSmhhR2dOVVd0c3pmLXpFcWk2cEJubVJlY3VIb1MzUHdRLTNGTl9v?oc=5",
+      "published": "2026-11-02T02:51:12+00:00",
+      "publisher": "https://businessupturn.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ivan Toney emerges as surprise Manchester United target amid striker concerns - Business Upturn"
+    },
+    {
+      "desc": "'Why does he have to complain?': Van Dijk's penalty claim sparks debate after Arsenal win Business Upturn",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123494+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPVmp2emlTWEFDdDgxbHJsa0hfUXdKendvenhVOWFONHVVcnh6SUxnWUQyd3lub3dTNWRPNXI1WlF5Y2hMc19WN2k3WXVvUFl6OEJRRVJtcXAyNDlxVHNFdDFCY2Y2TnA2R2M2WHFmTEF1ZFVMcUxDWURYMzBRbFpsOVNLaHdCQVlpem55VDZFU0FmODdYM3ozQWZ5Wk9fWDhBOFJoLTN2NWdnZXVTcDZ6SjRTOEwwZm1sblAydlhsQkZtLVdUYThFNzE1SDNKeU5rZVZIMDZmRzV1aU9FMXdtdA?oc=5",
+      "published": "2026-11-02T02:36:10+00:00",
+      "publisher": "https://www.businessupturn.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "'Why does he have to complain?': Van Dijk's penalty claim sparks debate after Arsenal win - Business Upturn"
+    },
+    {
+      "desc": "Lacroix Injury Update: No Official Return Date as Reports Warn of Months Out The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123515+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE92S2t2d2l1cnlyU1F6NzFoaW00SEplX09LQzY5UktrZ3FLSmw3SVEta0VIZVpHTF9zZTF3bmNONWNJWFI1WVFGWGNRS3BIdUQ5QUhkaXpvVmFiNHpOZWV1NXdqMlEyazA?oc=5",
+      "published": "2026-11-02T01:38:17+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Lacroix Injury Update: No Official Return Date as Reports Warn of Months Out - The False 9"
+    },
+    {
+      "desc": "Spurs Gnomes Set of 2 I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123546+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPTUxXQU1zRGdvZE5FRExKZTFJWWJLaVJJX1JUYW9ralQwM1o5XzZuald0MVR1VjVyRTBRa25PUkdBZEhuUS1GcllhbnN3d1owZ2RYNDY5SlhTeW9yVUFSeEtWNVdJNkdpT3Y3cTBRTmNpMXpsbUQ4OFNjV25LWVlqRDZn?oc=5",
+      "published": "2026-11-02T00:48:53+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Gnomes Set of 2 I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Havertz converts decisive Anfield goal Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123577+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSk9EaFpFdTQtUWpaak5tOHpidnlYRWtRZHpXQi1MZE05ZW95VTNyZkFiTHRQVERmOHJ1ZkkwRE5sV042bEhVc1lVNkZDcXpVQnB0MTdZTU01UXB5bG5hcklRTmxxZnRhby0yZXJ0MkVwYVBlR3dsY0t2WmF3d1lHTGllTklOZnBJ?oc=5",
+      "published": "2026-11-02T00:01:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Havertz converts decisive Anfield goal - Arsenal.com"
+    },
+    {
+      "desc": "BBC Sport's Kelly Cates, Danny Murphy and Micah Richards discuss Liverpool's denied penalty claim for a pull on Alexande",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-02T04:00:49.123601+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cw7vpy99y606o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-02T00:00:03+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Were Arsenal 'lucky' not to concede penalty at Liverpool?"
+    },
+    {
       "desc": "IAN LADYMAN: Here's a tip for the meddlers at the International Football Association Board. Meddle somewhere that needs ",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-01T23:57:15.704563+00:00",
@@ -1039,6 +1109,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Gabriel and Mac Allister's cheating is not just embarrassing, it's malevolent and wicked... players need the threat of red cards for such di"
+    },
+    {
+      "desc": "Man United not directly speaking to other coaches behind Michael Carrick's back - David Ornstein Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123647+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVVEtYXd2eVA5NmVrZXkyNUNKYkxxT0I0Z1A1X0pOSXkwRExEdE10bDRfOXAzbkJwLWRITC1Wa1hyeE5UTEdsQVVLWWlXUmhOQTFlM1U1TnNtdGV5M3puZUc3UzdxWklmZHRmU2VWNnUzdElVSnBCdzdOaTdGUnVONTg2WjhFR1g4MEpDTVVfZ2lLR0dEcWdPV1NhTi1HaG4zT1lnWHJJdmNvdm5lbTVxVXBrWFhnV19TS3lqcENJNk8tRGgtaEgxdtIBzgFBVV95cUxQTVc0alBzSDJMV3JDQTF4Wk5kck83ZUlUNmNZeWRfci1OMHM1YmpsTW9xVHpid1hUVUI3OGlROWxGTG5pdEVMRDg4b3h3SDVTTGVGSkYzQTVEWXJ5NktURFU0aGV2dWMyOGFaNzF1bDI0TWp5OUIyVzNqWG9YTzZ2MDZENVFhdmRmbHE3YWJJNXhqYUs4NkY1ODltLV9fUkJhTFZaMThWQ0NxT3k4ekJuS2VyZXU1NXQ1R3BsNTdfTjUwNC01VWUwaWFjZzlqUQ?oc=5",
+      "published": "2026-11-01T23:29:52+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man United not directly speaking to other coaches behind Michael Carrick's back - David Ornstein - Tribuna.com"
     },
     {
       "desc": "Alejandro Balde could leave Barcelona, sparking interest from Manchester United, Liverpool shortlist want Murillo and Ni",
@@ -1071,6 +1151,16 @@
       "title": "Rice relishing title race 'anxiety' after win at Liverpool"
     },
     {
+      "desc": "POLY CAMO Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123759+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1HQXlCdDNSamdNNWtnQVhvMkxlQ2s5amdHbDZMT1VCTjNGanNBVG1zeXM0dEJNMnc0dmgtaWViS05JOGdobTRIOWlzSzRheUliWWZFbGV3eDZIRHRiVGxzOTJUcWVyVTItOVBHclVR?oc=5",
+      "published": "2026-11-01T22:47:23+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "POLY CAMO - Man City Shop"
+    },
+    {
       "desc": "Gifts Under 10 Man City Shop",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-01T23:57:15.704665+00:00",
@@ -1079,6 +1169,16 @@
       "publisher": "https://shop.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Gifts Under 10 - Man City Shop"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123777+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-01T22:30:48+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "PIERO HINCAPIE appeared to aim a cheeky dig at Virgil van Dijk after Arsenal beat Liverpool 1-0. Kai Havertz's 13th minu",
@@ -1111,6 +1211,16 @@
       "title": "Here we go! Paulo Fonseca leaves Lyon to return home - Dailysports"
     },
     {
+      "desc": "Jose Mourinho drools over Alexander-Arnold ‘masterclass’ as Liverpool chances shattered TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123857+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeTdVVHJWaUdMTVlsTW5CbE51cFhyTnBKNDJ0cHRaajYzZTl3UzVIaDJtczhUMjRuWFdMZ01vNWZCaE9jekl3Yk9wNVBHaDhTSXc4LXhlMUp6ZVR1dXlsZHJiOGIwNVJnNjU5ZzNGQ3RFeDBvLTVMdW5vRzJwV1gwUmU5UEdNTTA2NmQ3OFNCbDhXTDB0Snc3Ry1qSWZ3WWxCRU5DUUREUUxORjg?oc=5",
+      "published": "2026-11-01T21:49:44+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Jose Mourinho drools over Alexander-Arnold ‘masterclass’ as Liverpool chances shattered - TEAMtalk"
+    },
+    {
       "desc": "JAMIE CARRAGHER launched a scathing attack on Alexis Mac Allister after trying to get Noni Madueke sent off. The Argenti",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-01T23:57:15.704769+00:00",
@@ -1119,6 +1229,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘Embarrassing’ – Carragher blasts Mac Allister for ‘joke’ falling theatrics vs Arsenal and demands ‘this has to stop’"
+    },
+    {
+      "desc": "Watch: Gabriel and Konsa's defensive MASTERCLASS Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123891+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPY25Rb2x1NXU5bFh2YWlpZXRhSHBjQzhLQ0JHMWxvZXpCWlJCdlVkdGdBZ2RwM21ZMkVFUm5IOTF6c2oweUhNS19kNllkZzdMMFliR1RpWnFrbUlSRjU5WGlCMUZnZHBWTWlNUTcxMnFpY0RTcDRVbGV2ZVNIMjdxV2F6Z1Y0N3Z5dWRzcmNKLXBQLWRlQWZz?oc=5",
+      "published": "2026-11-01T21:45:33+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch: Gabriel and Konsa's defensive MASTERCLASS - Premier League"
     },
     {
       "desc": "My Account | Tickets - Man City Manchester City FC",
@@ -1159,6 +1279,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘He doesn’t know how to shoot’ – Heartwarming moment Mbappe comforts young fan struck in face by teammate’s wayward shot"
+    },
+    {
+      "desc": "Highlights: Liverpool 0-1 Arsenal Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.123964+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCcmx5b2pIdG12Rm96RWRBUC1BVFRXazhTZzQ2RlFUdFpPNFp5NGJMTk1VcUNGTGt0bHhLZXVic21YckI2Q1JWMEhkcjA5SmJLRkRHWlNxNm13XzI2LVdaRGx2OE9SQnhSRzhOWXVCRkZWTjFXNkJJUk5NTkNHX2c?oc=5",
+      "published": "2026-11-01T20:51:17+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Highlights: Liverpool 0-1 Arsenal - Arsenal.com"
     },
     {
       "desc": "Arteta on a proud day for the club Arsenal.com",
@@ -1241,6 +1371,16 @@
       "title": "Watch: Bundesliga highlights - matchday eight"
     },
     {
+      "desc": "Man United plan imminent talks with Lisandro Martinez over future decison - Fabrizio Romano Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.124088+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNmREaTl5bjFNc01MMV9na2I1X1JmYjNLNmdwcnZYaXRLZ0ZOeWdodHA5OUVvNXhuQVh2REZRYUJ2ak1kemhqQTlLeS1wVWFxZEd2TGFsQm1XcFFXSnFuN3BWcy1mNjU1dmJWY3JfaGc4aVZSSWVzNW5qZFgwRmdQd1hlZTFCbzhHS2ZPdHRsMVJObFlCb1RDeFplaFFLYXlzcVlpLS1nVFJMdVQyamVlMzVwZHdrSlV4ellrZVprMVM2UGR3bnZFY9IBzgFBVV95cUxNX1pTNTRHbGpwOV9FbmF2NmxZZGl5cnhSZjRKbG5nOFY5bFZjU09BbUpZdGdrM3ItVFhpay12cFhoX09mLW5UX0FKZFoxR0FzdnNrRDJhSURYREpuU0dpYjB5bk9zOERNOVA4VTdJeVkwc0I0cVpWZ21fTlVnQnpjdF9aR1J3Ykt1VzZERmNFMWg5cW1ocGg2RVRVa0pxMERaU0xvY05SSl9iWWxVYm85NzlZNVJYZHdVX3E2eGhtMVF3TDJlS2NsTmtwR2xYUQ?oc=5",
+      "published": "2026-11-01T20:16:58+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man United plan imminent talks with Lisandro Martinez over future decison - Fabrizio Romano - Tribuna.com"
+    },
+    {
       "desc": "Arsenal bounce back from the low of defeat at League Two Fleetwood to secure their first win in 14 years at Anfield - an",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-01T20:45:53.124907+00:00",
@@ -1299,6 +1439,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Isak non-penalty and Madueke-Mac Allister 'headbutt' show good and bad of VAR"
+    },
+    {
+      "desc": "Official Spurs Website Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T04:00:49.124185+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORlVGX2M2MXVjSGRVcTlqeG5HMDVRY1R3TXpGOGF6QWN6WVV3c04yNlVxZ2JTelllRXdzeWtZSkpBQW9NZjBiRHJXaEE5bE52Z2ZmY18zdjh0cmx4UnJzZVFvRVlhMzZ1c2dKU1pDczRPYTJwTHhtTkJRNTRHZGtrY1V3?oc=5",
+      "published": "2026-11-01T20:02:06+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Official Spurs Website - Tottenham Hotspur"
     },
     {
       "desc": "David Ornstein reveals Manchester United players were reason for Michael Carrick not being sacked centredevils",
@@ -2379,156 +2529,6 @@
       "publisher": "https://shop.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "From mancity.com - Man City Shop - Man City Shop"
-    },
-    {
-      "desc": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-01T02:02:21.858821+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw?oc=5",
-      "published": "2026-11-01T00:30:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times"
-    },
-    {
-      "desc": "Everton January striker hunt hit by Friedkin loans claim premierleaguenewsnow.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-01T00:52:22.722435+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWFlHcWZEOWNlMnltQTN4OFdCUWFwVmhVWThFXzJxVUNFcFU5MnRyMEJSVVkwc0JKUjc0RmdRSmNzTXlidzlZRWJYZTFEZFdQbmZSTjFQVzkwTUc3ay11YlF0TW5EbkRQbWR4T2cxUzY3VVN2RHVuR0lHTHVLYmNKXzRqMWpRUEt2ZEh5Y2lBNzdPR0F1VWlZX18zRThubjA?oc=5",
-      "published": "2026-11-01T00:16:03+00:00",
-      "publisher": "https://premierleaguenewsnow.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Everton January striker hunt hit by Friedkin loans claim - premierleaguenewsnow.com"
-    },
-    {
-      "desc": "Manchester United's current tally of nine points from seven games would not even get them 30 points if it was continued ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T23:54:25.777712+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c8g47wl06vkqo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T23:52:28+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Are Manchester United really at risk of a relegation scrap?"
-    },
-    {
-      "desc": "Clubs pay Remembrance Day tributes Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T23:51:23.080340+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVzFEelJSUHY4dWZGWFRMU1A5SzlTSExzdlpJWk9HdVV4S1VvbTAzZVRtUmlFeUZlWUpWTUw5LTVCS0pWYWV6dURnOV9hRS1iU1NZbkFmd0dqZ003c3hPNmpWVk12UnBqU3hsUFEyRkV2bC1NY2xmUFp5MndkN3VwLV9GRFpoa3c?oc=5",
-      "published": "2026-10-31T23:44:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Clubs pay Remembrance Day tributes - Premier League"
-    },
-    {
-      "desc": "BRUNO FERNANDES could barely fight back the tears after applauding the travelling Man United fans following their loss t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T23:41:19.797259+00:00",
-      "link": "https://www.thesun.co.uk/sport/40873323/bruno-fernandes-emotional-fans-chelsea-defeat-man-united/",
-      "published": "2026-10-31T23:40:36+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Bruno Fernandes looks visibly emotional as he applauds fans after Man Utd’s defeat at Chelsea"
-    },
-    {
-      "desc": "Fernandes returned to the United side after being dropped for their loss against Bournemouth last week, when he was an u",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-10-31T23:17:22.546632+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16255259/Bruno-Fernandes-TEARS-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-10-31T23:15:38+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Bruno Fernandes holds back TEARS after Man United beaten by Chelsea: Captain appears emotional as return to squad after public criticism of "
-    },
-    {
-      "desc": "Aston Villa might have had an apology from Jamie Carragher but Unai Emery's men found Fulham far more awkward opponents ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-10-31T23:17:22.546683+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16249197/Aston-Villa-Fulham-harder-opponents-Jamie-Carragher-London-fought-earn-1-1-draw-writes-TOM-COLLOMOSSE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-10-31T23:14:35+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Why you can't blame Aston Villa chiefs for fighting back at Jamie Carragher as Fulham refuse to follow pundit in backing down as they earn d"
-    },
-    {
-      "desc": "What we learned from Saturday's matches Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T23:07:23.067145+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWnBTZ3p3Ql9ZOWpBM0ZMN0dqMWpUTnFBcXNBTnhIRW9OUzlOU1JWaTN4dUE3di04VlFRNG5ES0NuMUN0NzE4d0hHZ295bkxkcm8tWldvS25vTHYxQTNRVVM0MVhEM1B4ZzNlejNnYWdOeUdwU3U0amdTSkhURlJNSDFPc2JZcGY5Yi1fYQ?oc=5",
-      "published": "2026-10-31T23:04:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "What we learned from Saturday's matches - Premier League"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T23:11:31.014470+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-10-31T23:01:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Aston Villa latest: Emery admits work to do ahead of Barcelona and Man Utd"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-10-31T22:57:23.956791+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13279313/fulham-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-      "published": "2026-10-31T22:51:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Fulham latest: We can beat anyone, says Arbeloa"
-    },
-    {
-      "desc": "Arsenal vs Slavia Prague Predicted Lineup: Saka Injured, Rice and Calafiori Doubts The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-10-31T22:44:21.426667+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVFNUNDJlWmZTUndiUlBQVTZDaHNzeGNFTkRlOUZSSkNhOUxDQTNwZC1lMGFpODFQczByU1BHbnh2Y0s0Nnh1Rm56YXRDTXN3TVRxbWJlRVdnNzVTVGExSzhHV2tlZG9FZFJxOGdYVVBmNFpxY0Q0TG0tZW5RbDNtazlR?oc=5",
-      "published": "2026-10-31T22:42:04+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal vs Slavia Prague Predicted Lineup: Saka Injured, Rice and Calafiori Doubts - The False 9"
-    },
-    {
-      "desc": "Lisandro Martinez is sent off for Manchester United as they suffer a 2-0 defeat against Chelsea at Stamford Bridge to pi",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T22:32:28.098279+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/ckn8w20nn9g7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T22:30:16+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Chelsea beat 10-man Man Utd to pile more pressure on Carrick"
-    },
-    {
-      "desc": "Brighton pick up their first away league victory at Manchester City after winning 1-0 at the Etihad to condemn City to b",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T22:32:28.098321+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cqx28l2gdepxo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T22:30:05+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Brighton pick up first away league victory over Man City to go third"
-    },
-    {
-      "desc": "DECLAN RICE will become the latest Arsenal star to sign a new long-term deal. Rice, 27, who faces Liverpool at Anfield o",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-10-31T22:30:38.405959+00:00",
-      "link": "https://www.thesun.co.uk/sport/40872451/declan-rice-new-contract-arsenal-bukayo-saka-arteta/",
-      "published": "2026-10-31T22:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Declan Rice to sign incredible £18million-a-year Arsenal deal… but will still be earning LESS than Mikel Arteta"
-    },
-    {
-      "desc": "Frank Lampard's Coventry City lift themselves out of the relegation zone after beating struggling Sunderland, who remain",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-10-31T22:32:28.098414+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cm93zv0zkjqlo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-10-31T22:29:50+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Coventry out of bottom three after win over struggling Sunderland"
     }
   ],
   "processed_urls": [
