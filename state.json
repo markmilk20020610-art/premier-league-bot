@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-02",
     "errors": 0,
-    "input_tokens": 42104,
-    "output_tokens": 5387,
-    "requests": 6
+    "input_tokens": 47543,
+    "output_tokens": 6300,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -926,6 +926,33 @@
       "title": "邮报独家：曼联从未真正追求帕尔默，切尔西新约内幕曝光",
       "updated_at": "2026-10-31T10:55:32.255016+00:00"
     },
+    "e357fd1c5c59": {
+      "article_title": "Were Arsenal 'lucky' not to concede penalty at Liverpool?",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "9d91fa8dc2d3a442",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 67
+        }
+      ],
+      "created_at": "2026-11-02T05:36:26.183003+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "6ad545079cc40200",
+      "event_id": "e357fd1c5c59",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/videos/cw7vpy99y606o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 67,
+      "title": "利物浦点球争议持续发酵：范戴克开炮，卡拉格怒批麦卡利斯特假摔",
+      "updated_at": "2026-11-02T05:36:26.746165+00:00"
+    },
     "e3b9ea7b7cd5": {
       "article_title": "Man Utd player ratings: Fernandes fails to repay Carrick faith after returning to side with Martinez also disastrous",
       "attempts": 1,
@@ -1009,7 +1036,7 @@
     }
   },
   "last_morning_report_date": "2026-11-02",
-  "last_scan_at": "2026-11-02T04:00:49.120755+00:00",
+  "last_scan_at": "2026-11-02T05:36:18.013829+00:00",
   "last_summary_sent_at": "2026-11-02T01:22:03.906748+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1059,6 +1086,26 @@
       "publisher": "https://www.businessupturn.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "'Why does he have to complain?': Van Dijk's penalty claim sparks debate after Arsenal win - Business Upturn"
+    },
+    {
+      "desc": "Sporting Lisbon turn to Paulo Fonseca in immediate managerial shake-up Business Upturn",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T05:36:18.017560+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVzlONnltb1BIb1N4ZVRuTzV3SXpFa21vYXZuNHQxcEhKOWpZZUR3N2p6RDdtcHhNQW9LQzNmTktFMWtzZXVadnVoX0tHNWpXSzd2cjhlcHc5eTJUenotenJuVnE3Y2hpTnhfY1o4ZXNZYnFhWXlHeks1M0lCOHpJc2k3cEx3eGxsT0s2dVlJcm9XVW05SEUxem1tZzMwS1UwRmNXZGFfVHNUM0ktYldwYkF1SWRELXZBWlE?oc=5",
+      "published": "2026-11-02T02:31:09+00:00",
+      "publisher": "https://www.businessupturn.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Sporting Lisbon turn to Paulo Fonseca in immediate managerial shake-up - Business Upturn"
+    },
+    {
+      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-02T05:36:18.017595+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
+      "published": "2026-11-02T02:04:36+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     },
     {
       "desc": "Lacroix Injury Update: No Official Return Date as Reports Warn of Months Out The False 9",
@@ -2509,26 +2556,6 @@
       "publisher": "https://store.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Chelsea Football Kits - Official Chelsea Store"
-    },
-    {
-      "desc": "Brighton Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-01T07:59:24.073122+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOVURkc0EwRzVtQUdmdFpPQXJhczhaSXEySDQxV3ZFdThweVpPREV1ZTNmUGU5VVZNc0dlTXdpc1VwZHlmbVFNRWt5bU9rR09VMnd6aTNYTEVndGF3eDJpamIwVm1keGNESXpwUFpWT2J4akF4SDQ1QjY4TkVmbmVmZzBUWFNjNk4xRDltcEpwakh5SjNGaFhWV2RRMmpkZUk?oc=5",
-      "published": "2026-11-01T01:48:08+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Brighton - Manchester City FC"
-    },
-    {
-      "desc": "From mancity.com - Man City Shop Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-01T07:34:25.899479+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPOFZWTnBFd0txdWVDeHM2U0dqUW1Wd19OLWtoRDRsSTNhdzhDYnRmTmtCSHdiMDkyZl81OFVyMlNqUTM0bFcwMmFTcnZYTUpwZ2owcHhXZEg5eU51M0dyWHlJVGwtZER2djVJekVsTk02aW9UcnVyYy14T2cycXVOdF93dWszaEtNVGdGcEV6NF9sX2pKbHJ1VUhxRjY1UnN0cjhfT1pVVzhOX1c0Y0p5QndYcC1MSEV2TUViSHBJNnc1Tnl0VW9LbV9pbHlzaHdTQmpDTC1kdENPSHkwRzZWeEduQTR0OWppdWpKUWx1em1oRkE0MkhHdzRB?oc=5",
-      "published": "2026-11-01T00:35:32+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "From mancity.com - Man City Shop - Man City Shop"
     }
   ],
   "processed_urls": [
@@ -2582,7 +2609,8 @@
     "https://www.thesun.co.uk/sport/40872725/zion-suzuki-aston-villa-draw-by-fulham-result",
     "https://www.dailymail.com/sport/football/article-16255259/Bruno-Fernandes-TEARS-Man-United.html",
     "https://www.thesun.co.uk/sport/40873943/bayern-munich-borussia-dortmund-fans-fight-kane-ballon-dor",
-    "https://www.dailymail.com/sport/football/article-16256525/My-beautiful-boy-deserves-remembered-love-not-hate-Bradley-Lowerys-mum-issues-heartbreaking-statement-condemn-cruel-Coventry-fan-used-late-sons-photo-taunt-Sunderland-fans.html"
+    "https://www.dailymail.com/sport/football/article-16256525/My-beautiful-boy-deserves-remembered-love-not-hate-Bradley-Lowerys-mum-issues-heartbreaking-statement-condemn-cruel-Coventry-fan-used-late-sons-photo-taunt-Sunderland-fans.html",
+    "https://www.bbc.co.uk/sport/football/videos/cw7vpy99y606o"
   ],
   "schema_version": 3
 }
