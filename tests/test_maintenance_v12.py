@@ -30,6 +30,7 @@ import state_store as store  # noqa: E402
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import merge_state  # noqa: E402
 import watchdog  # noqa: E402
+import ensure_morning_running  # noqa: E402
 
 WORKFLOW = os.path.join(ROOT, ".github", "workflows", "scanner.yml")
 REQUIREMENTS = os.path.join(ROOT, "requirements.txt")
@@ -171,6 +172,41 @@ class TestMorningScheduleContract(TempStateBase):
         self.assertNotIn("Morning Off-Schedule", out)
         self.assertIn("FORCE_SUMMARY", out)
 
+
+# =============================================================================
+# 一之二、早报补触发接线（ensure_morning_running.py）
+# =============================================================================
+class TestMorningKeeperWiring(unittest.TestCase):
+    """光有 cron 不够：GitHub schedule 在本仓库实测漂移 3~5 小时。
+
+    真正让早报落在 06:00 的是 scan job 每 5 分钟跑一次的补触发脚本。
+    这里只锁三件事：常量一致、真的接线、只在窗口内动手。
+    """
+
+    def test_target_constant_matches_bot(self):
+        self.assertEqual(ensure_morning_running.MORNING_TARGET_HOUR_CN,
+                         bot.MORNING_TARGET_HOUR_CN,
+                         "脚本要能在装依赖前跑，常量是复制的——必须与 bot.py 相等")
+        self.assertEqual(ensure_morning_running.MORNING_TARGET_MINUTE_CN,
+                         bot.MORNING_TARGET_MINUTE_CN)
+
+    def test_wired_into_scan_job(self):
+        text = workflow_text()
+        block = text.split("scan:", 1)[1].split("morning:", 1)[0]
+        self.assertIn("scripts/ensure_morning_running.py", block,
+                      "补触发脚本必须在 scan job 里被调用，否则等于没有")
+        self.assertIn("actions: write", block, "没有 actions: write，dispatch 会被 403")
+
+    def test_decide_window(self):
+        def at(h, m=0):
+            return datetime.datetime(2026, 11, 2, h, m, tzinfo=CN_TZ)
+
+        self.assertFalse(ensure_morning_running.decide(at(5, 55), "2026-11-01")[0],
+                         "未到 06:00 不得提前触发")
+        self.assertTrue(ensure_morning_running.decide(at(6, 5), "2026-11-01")[0],
+                        "06:00 之后仍未发应补触发")
+        self.assertFalse(ensure_morning_running.decide(at(6, 26), "2026-11-01")[0],
+                         "超过 06:20 补发窗口就停手，交给看门狗")
 
 # =============================================================================
 # 二、GitHub Actions 供应链固定
@@ -355,8 +391,8 @@ class TestWatchdog(unittest.TestCase):
         self.assertTrue(any("早报" in p for p in problems))
 
     def test_morning_not_yet_due_is_fine(self):
-        """北京 07:00 时早报本来就还没到截止时间，不能误报。"""
-        early = datetime.datetime(2026, 2, 28, 23, 0, tzinfo=datetime.timezone.utc)  # 北京 07:00
+        """北京 06:00 时早报本来就还没到截止时间，不能误报。"""
+        early = datetime.datetime(2026, 2, 28, 22, 0, tzinfo=datetime.timezone.utc)  # 北京 06:00
         state = {
             "last_scan_at": (early - datetime.timedelta(minutes=5)).isoformat(),
             "last_morning_report_date": "2026-02-28",

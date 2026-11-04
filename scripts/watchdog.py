@@ -36,8 +36,12 @@ CN_TZ = datetime.timezone(datetime.timedelta(hours=8))
 # 可用环境变量覆盖，方便演练或临时放宽。
 MAX_SCAN_AGE_MINUTES = int(os.environ.get("WATCHDOG_MAX_SCAN_AGE_MINUTES") or 30)
 MAX_SCAN_AGE_HOURS = MAX_SCAN_AGE_MINUTES / 60.0
-# 早报每天 06:00 北京时间；到 08:00 仍没发就算漏报
-MORNING_DEADLINE_HOUR_CN = 8
+# 早报每天 06:00 北京时间；到 07:00 仍没发就算漏报。
+#
+# 必须 <= 看门狗自己的 cron 时刻（scanner.yml 里是 '0 23 * * *' = 北京 07:00）。
+# 原来写 8 的时候，07:00 那次运行 `now.hour >= 8` 为 False，
+# 早报检查被整段跳过 —— 看门狗白跑一趟，永远发现不了早报漏发。
+MORNING_DEADLINE_HOUR_CN = 7
 
 # state.json 体积警戒线（V1.3 慢性问题）。
 # 实测：news_pool 占全文 81%（84 条 × 598 字节），正常体积 60~90KB。

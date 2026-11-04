@@ -42,7 +42,12 @@ RSS 矩阵（19 源，失败自动降级 Google News）
 2. 调度：
    - 突发扫描由 cron-job.org 每 10 分钟调用 `workflow_dispatch`（不传 mode 即走 scan）；
    - 每日早报走 GitHub 自带 `cron: '0 22 * * *'`（= 北京时间 06:00，中国无夏令时，全年固定 UTC+8）；
-   - 心跳看门狗 `cron: '0 23 * * *'`（= 北京 07:00）：扫描停超 3 小时、或 08:00 后当天早报仍未发，Job 直接报红。
+     ⚠️ **cron 只是兜底**：本仓库的 GitHub schedule 实测漂移 3~5 小时（长期落在 09:22 / 11:22 / 10:00）。
+     真正保证 06:00 送达的是 scan job 里的 `scripts/ensure_morning_running.py`：
+     每 5 分钟检查一次「今天 06:00 的早报发了没」，未发则在 06:00~06:20 内补一次
+     `mode=morning` 的 dispatch（最多 5 次，不是无限重试）。
+   - 心跳看门狗 `cron: '0 23 * * *'`（= 北京 07:00）：扫描停超 30 分钟、或 07:00 后当天早报仍未发，Job 直接报红。
+     （07:00 是 `watchdog.py` 里 `MORNING_DEADLINE_HOUR_CN` 的判定起点，早于此触发只会误报。）
    - ⚠️ 早报时间契约：`cron` 与 `bot.py` 的 `MORNING_TARGET_HOUR_CN` 必须同时改，
      `tests/test_maintenance_v12.py` 会解析 workflow 并断言二者对应，改一半就测试失败。
 3. 手动触发：Actions → Run workflow

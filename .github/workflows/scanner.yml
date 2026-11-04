@@ -106,6 +106,22 @@ jobs:
         # 用 python3 而不是 python —— 后者在 ubuntu-latest 上不保证存在。
         run: python3 scripts/ensure_focus_running.py
 
+      # ==================== 早报的「保姆」 ====================
+      # 早报的唯一定时触发源是上面的 GitHub schedule，而它在这个仓库实测极不准
+      # （全历史仅 7 条记录，'0 22 * * *' 曾延迟 207 分钟；state.json 里
+      #  last_summary_sent_at 长期落在北京 09:22 / 11:22 / 10:00，比 06:00 晚 3~5 小时）。
+      #
+      # 所以让每 5 分钟一次的 scan 顺手检查「今天 06:00 的早报发了没」，没发就补一次。
+      # 这是早报能真正落在 06:00 的唯一保障——**光有 cron 不够**。
+      #
+      # 不会重复推送：本脚本只在 06:00~06:20 动手（最多 5 次），
+      # 并且 bot.py 的 last_morning_report_date 日期锁是最后一道闸。
+      - name: Keep morning report alive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: python3 scripts/ensure_morning_running.py
+
       - name: Set up Python
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
         with:
