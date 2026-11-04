@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-04",
     "errors": 0,
-    "input_tokens": 29756,
-    "output_tokens": 3111,
-    "requests": 4
+    "input_tokens": 35788,
+    "output_tokens": 3597,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -953,6 +953,33 @@
       "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
       "updated_at": "2026-10-31T00:05:41.886537+00:00"
     },
+    "c82dc290ae10": {
+      "article_title": "Football world mourns Tenerife striker De Miguel",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "4e8b3d380d9429c4",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 73
+        }
+      ],
+      "created_at": "2026-11-04T03:19:39.375321+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "b22ad30180e87822",
+      "event_id": "c82dc290ae10",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c6djv011mzlyo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 73,
+      "title": "足球界悼念特内里费前锋德米格尔",
+      "updated_at": "2026-11-04T03:19:40.034155+00:00"
+    },
     "cf9dc3bb8487": {
       "article_title": "Furious Matthias Jaissle accuses his Newcastle stars of IGNORING his gameplan against Everton... and relying on long balls against his wishe",
       "attempts": 1,
@@ -1117,7 +1144,7 @@
     }
   },
   "last_morning_report_date": "2026-11-04",
-  "last_scan_at": "2026-11-03T23:39:17.750958+00:00",
+  "last_scan_at": "2026-11-04T03:19:35.689175+00:00",
   "last_summary_sent_at": "2026-11-04T02:00:21.581396+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1138,6 +1165,76 @@
     "updated_at": "2026-11-04T02:00:21.572762+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Everton players raging with Jack Grealish, permanent move in doubt TheHardTackle.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-04T03:19:35.690998+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOei1LZERGWEdWYUJmOVdqYXBRWFpLTmFrdXR1ZVZNaHpQdVpIZGpEVHc3YmdMWHM3Ml9uZHhUcGlIS2dyWkFCNWhfOUMzRlY1eDYzTXl5ZEU2aHNyUnltMFlmZXJNTG1ZbDVqZ2NBNEJuc29Id3VBTkJWSkQyVTZNM3BBWkNpMENaTGNPbG5sTC1LX2ZIMVlDZFNpbGlEVExTQ3hoa2ZscUpWSm5LRlpUOGdLbkdwT1J00gG-AUFVX3lxTE1sZFlCTXo1bG9NdThPY09DV29WUHczSmM4dkRQTmxFRzJvbWVaX3BOcEp5ZURyMmE4YVJrS1BZNmxMR29fempmOEFjcFZxUWpQNnlJYW1Eb3htS1g5QnljZGpDNW4tY1NGZnRBcDlaOURqNVoxMUFGXzkwMWhZelBTYV9CTmMyNWhyRm9HbEQwVzI4enRpR1JEMnVRcWh4UDA5di0wNk1SN0M1ZUxyMFRMbk5RWmlfN0czaHV4REE?oc=5",
+      "published": "2026-11-04T02:03:43+00:00",
+      "publisher": "https://thehardtackle.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Everton players raging with Jack Grealish, permanent move in doubt - TheHardTackle.com"
+    },
+    {
+      "desc": "CHRIS WHEELER: Cunha watched the end of the game sat on an advertising board rather than going to the dressing-room, and",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-04T03:19:35.691036+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16263721/Michael-Carrick-Matheus-Cunha-tunnel-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-04T01:12:31+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Michael Carrick steps in to escort red-carded Matheus Cunha down the tunnel after Man United match-winner tried to celebrate Roma victory"
+    },
+    {
+      "desc": "At 2-0 down Michael Carrick's position as Manchester United head coach looked terminal - but will the win over Roma prov",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-04T03:19:35.691091+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6q8n98y4023o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-04T00:27:37+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "A half-time speech, a retaken penalty - and a win to save Carrick's job?"
+    },
+    {
+      "desc": "Aston Villa boss Unai Emery says his team have \"work to do\" to reach Barcelona's level after a 3-0 Champions League defe",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-04T03:19:35.691108+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cjwy9496qe7ko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-03T23:58:22+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Emery takes positives, but Villa 'have work to do' to reach Barca level"
+    },
+    {
+      "desc": "Baleba injury confirmed Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-04T03:19:35.691121+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NbHdVMThzTmhPOTAxY2RXdjVtUkQ3cmNlWlE0cUlOV1B1bFNuWHNxamk3QUFERDRaNkI4eGZJTm1yMWVGMU1oaFBjSFpZWmlMZGtJaERiWTlNZmVCX0dMbldwUlpOQzhVTlFULUxwVHYtX294VDdWOW9uRlY?oc=5",
+      "published": "2026-11-03T23:47:08+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Baleba injury confirmed - Manchester United"
+    },
+    {
+      "desc": "Carrick: This place does incredible things Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-04T03:19:35.691133+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcHFxbmYyY3BmdmF6ek5SVFVJTC05NDB5MVpTSVAybXVNU2xYaDBxcGFUQU0xc1M3c2EyZXR5dEVVeWl0SGtpRThEUHZucW9ydVVYQ3pSVEJoSWlURVJGWGpuOVZXWWF4NnVfLWh6Y1c0RV92c0M4cG9jMlpIY1IyTFBvQXJwQ1E?oc=5",
+      "published": "2026-11-03T23:43:07+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Carrick: This place does incredible things - Manchester United"
+    },
+    {
+      "desc": "Tributes were paid across Tuesday's Champions League fixtures to Tenerife striker Jesus de Miguel, who died following co",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-04T03:19:35.691148+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6djv011mzlyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-03T23:37:12+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Football world mourns Tenerife striker De Miguel"
+    },
     {
       "desc": "Follow Daily Mail Sport's live coverage for the latest updates as Manchester United host Roma in the Champions League, p",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -1297,6 +1394,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Gabby Logan forced to apologise as Bruno Fernandes swears on live TV after Man Utd’s epic comeback win over Roma"
+    },
+    {
+      "desc": "Premier League Kicks Cup 2026 'empowers us as footballers' Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-04T03:19:35.691271+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcC0wVkZqbUlVMDZScnBUcldDUElwcnhXeEdKbjhhektrWm45LWtmRHcxc3FGX1pLQ3d4TWI2VEcydEhJS0JrUFFQbjNqM1VoU3J3c1JfdkVFWDZWOE9IZkFoX2tLUXhwMHZ4MVlKb1pyeTJwakg3eG5TWTBvVS1tRlc5cktEaDNfTEp1d0NCZEw1MVNIS3d3?oc=5",
+      "published": "2026-11-03T22:13:05+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Premier League Kicks Cup 2026 'empowers us as footballers' - Premier League"
     },
     {
       "desc": "Slavia vs Arsenal Predicted Lineups and Team News: Saka Out The False 9",
@@ -1497,6 +1604,16 @@
       "publisher": "https://dailysports.net",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Deal collapses! Sérgio Conceição makes shocking U-turn on Fenerbahce move - Dailysports"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-04T03:19:35.691465+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-03T19:50:24+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "Manchester United",
@@ -2547,96 +2664,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "COMING UP: Open Training - Manchester City FC"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-03T11:22:58.071931+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-03T10:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Liverpool latest: Gravenberch out of Fenerbahce trip"
-    },
-    {
-      "desc": "Manchester United goalkeeper Dermot Mee and Portsmouth's Eoin Kenny are handed their first Northern Ireland call-ups for",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-03T11:22:58.071959+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwkg5dl4d3l8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-03T10:07:54+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Mee and Kenny handed first Northern Ireland call-ups"
-    },
-    {
-      "desc": "Malaysia Receives First FA-50M Light Combat Jet From South Korea The Defense Post",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-03T11:22:58.071985+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE4zWTBsU1F6MHFrLXNvQmRhT194YUlFS3Z3RUpnaTItdlRQZEtpYno3eHk3cFltZUdnVDhPS1h0VlRsWmpKUGQwLUpSa19wMUowTDVsbmhzSjFWSUxLM0lfVnR1Wk1rSks3TnlaVmNXS1pTZ9IBckFVX3lxTE4zWTBsU1F6MHFrLXNvQmRhT194YUlFS3Z3RUpnaTItdlRQZEtpYno3eHk3cFltZUdnVDhPS1h0VlRsWmpKUGQwLUpSa19wMUowTDVsbmhzSjFWSUxLM0lfVnR1Wk1rSks3TnlaVmNXS1pTZw?oc=5",
-      "published": "2026-11-03T10:05:09+00:00",
-      "publisher": "https://thedefensepost.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Malaysia Receives First FA-50M Light Combat Jet From South Korea - The Defense Post"
-    },
-    {
-      "desc": "SPANISH footballer Jesus de Miguel has tragically passed away at the age of 30 following a collision on Sunday. Tenerife",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-03T11:22:58.072009+00:00",
-      "link": "https://www.thesun.co.uk/sport/40891383/who-jesus-de-miguel-what-cause-of-death/",
-      "published": "2026-11-03T10:01:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Who was Jesus de Miguel and what was the Tenerife striker’s cause of death?"
-    },
-    {
-      "desc": "The Peterborough United historian on why the FA Cup has lost its magic Peterborough Telegraph",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-03T11:22:58.072034+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNWdwSTFpb2I5LUNJZU5qY1NUem5IMjh3SEo5WXhSVGJ1YW0yZ2pzOXhPaUtJQmxwVlJhYWxfLU1Cd1lQNW1hYTcxYkwtLUVRblZLMXdWVTAtWEZVd1RGVjBERzkwdUJoaktlNmhWSk9tUWpwQjJ2b3FEQ0F5TER5UUplT1h2NkR5bDRtT1BVS0YtSVc1cHRDVjZ1SGVIM205aVZjdW9ERDVRTVpuNUg0TzViaWJTbVRVN0Q5RHVZVXNma2x3WUE3U3FyOUs3S2t5RUpJQ2ZrbWNmOUhqQy1jOWpySQ?oc=5",
-      "published": "2026-11-03T10:00:00+00:00",
-      "publisher": "https://www.peterboroughtoday.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "The Peterborough United historian on why the FA Cup has lost its magic - Peterborough Telegraph"
-    },
-    {
-      "desc": "Watch City's Under-18 Premier League Cup clash with Burnley live on CITY+ Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-03T11:22:58.072058+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV0sxMENuNWxKVHhrUnhjTUFUajBBTXpOTTBGbHlIMWR2eU1hUzVvcGYxcC05eEpwS0Flc2oyMjJBOGdySE5vc3pNU011YzlvWWJGcDN5Z2pRSEx5ZlJrdjc4MnZQX0xmbEo2a1pEWmdPbXFQSVpMdUlVc0lPTmpmSTVfU3g0aC15bWVUb21RTGJnWTA1OHl2TlRWcGNIUnF5NkE?oc=5",
-      "published": "2026-11-03T10:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Watch City's Under-18 Premier League Cup clash with Burnley live on CITY+ - Manchester City FC"
-    },
-    {
-      "desc": "SATURDAY 7 NOVEMBER: Burnley v City - Under-18 Premier League Cup Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-03T16:01:00.104412+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUU02OE1BWHNCZXpCcjV0X0RWN1dUR194ZUJDTUJndndvQzJiRkQzZXpfU1BmaWcydTRXUDR1R1J6cVBUYkpseXd6dUpVU25Dd1NacWxtR2owakJqOFoyY1Vwckt3eDJnUDlPc05SVHFWajZIYVFsaFNRdTlwR3JiS293RHYxc2ZhRGkwRC02OHhkY3R3ZGc?oc=5",
-      "published": "2026-11-03T10:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "SATURDAY 7 NOVEMBER: Burnley v City - Under-18 Premier League Cup - Manchester City FC"
-    },
-    {
-      "desc": "Tenerife striker Jesus de Miguel died ‌on Tuesday at the age of 30, a ‌day after suffering a cardiac arrest following ​a",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-03T11:22:58.072078+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13607401/tenerife-striker-jesus-de-miguel-dies-after-cardiac-arrest-following-collision-during-a-match",
-      "published": "2026-11-03T09:55:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Tenerife striker dies following collision during match"
-    },
-    {
-      "desc": "Liverpool name 22-man squad for Champions League trip to Fenerbahce Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-03T11:22:58.072101+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTkxwRzljNVBGS1RfSEl2Zkk1bWFldXBWVEV6RHJSMUFFaDRDTldJdGw2Wm9xdjRUN0dqY3VNS25tWms1ajI3cS1xaUJjMjc5R19Dd2N2ZlFFV09fOG1LSUhTZWJRWDJzWUd1SHdTNVZ5dDlpTzJNYUtlOFhocUVZMndOcWpTSEJ6YnQ5OHBwWEUydVZLTjhwazBkR0xWSjdqaHc?oc=5",
-      "published": "2026-11-03T09:47:27+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool name 22-man squad for Champions League trip to Fenerbahce - Liverpool FC"
     }
   ],
   "processed_urls": [
@@ -2694,7 +2721,8 @@
     "https://www.bbc.co.uk/sport/football/videos/cw7vpy99y606o",
     "https://www.thesun.co.uk/sport/40885006/jack-grealish-out-everton-newcastle-boozy-nights",
     "https://www.dailymail.com/sport/football/article-16260423/Matthias-Jaissle-accuses-Newcastle-stars-ignoring-gameplan-against-Everton-relying-long-balls-against-wishes.html",
-    "https://www.thesun.co.uk/sport/40893573/spanish-fa-postpones-matches-jesus-de-miguel-death"
+    "https://www.thesun.co.uk/sport/40893573/spanish-fa-postpones-matches-jesus-de-miguel-death",
+    "https://www.bbc.co.uk/sport/football/articles/c6djv011mzlyo"
   ],
   "schema_version": 3
 }
