@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-05",
     "errors": 0,
-    "input_tokens": 35037,
-    "output_tokens": 3814,
-    "requests": 5
+    "input_tokens": 40733,
+    "output_tokens": 4549,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1225,7 +1225,7 @@
     }
   },
   "last_morning_report_date": "2026-11-05",
-  "last_scan_at": "2026-11-05T04:00:51.114357+00:00",
+  "last_scan_at": "2026-11-05T06:18:08.819514+00:00",
   "last_summary_sent_at": "2026-11-05T02:03:09.195570+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1247,6 +1247,66 @@
   },
   "news_pool": [
     {
+      "desc": "MANCHESTER CITY are looking to bounce back from league defeat last time out when heading to Nottingham Forest in Saturda",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-05T06:18:08.823470+00:00",
+      "link": "https://www.thesun.co.uk/sport/40897368/nottingham-forest-man-city-free-bets-boyle-sports/",
+      "published": "2026-11-05T06:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Nottingham Forest vs Man City: Get £30 free bets + 50% Bet Builder boost | BOYLE Sports"
+    },
+    {
+      "desc": "FPL GW10 Fixture Difficulty: Best Clean Sheet Chances The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.823510+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNekxZV2ZGVkZiOTc2Q1g4dC05cU9KZnZ4VHlJYXcxM2Q4TkRpTngwWU1YUXBtbzl5VG5rQzllMng5TTRsV002ekI0VFMxeXh4ZmFGTmNUOTdnT292LTZhY3d4b1M2Tld2eUp4RWwzeUpmQlJrblluOFc1VDZ3ZjRBcDJJcldmQzdveHQ2WG8xV0FkTER4SVY0RWRPWV9uVXM?oc=5",
+      "published": "2026-11-05T05:18:29+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "FPL GW10 Fixture Difficulty: Best Clean Sheet Chances - The False 9"
+    },
+    {
+      "desc": "Winter Shop Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.823538+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeDZVSFp2T2cwdUs3RTJsT0VQQW11cnFSQmQxNVNhdkN6QzZpZF9ldmVYRjJVWERmanNPMWM1bGdoV3g0NGJFN1JtRHpsMmd5YWpXdFVrQ3FwMWhwUmpHREVjempzZ2daeFFNaXpEWHBSY1Z6VFRIcTZMc3lfU3VET01IdzQ4SmpKSlpsWElQQUZwbkp0SmYxZ2cyTlc?oc=5",
+      "published": "2026-11-05T04:47:35+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Winter Shop - Tottenham Hotspur"
+    },
+    {
+      "desc": "Gifting Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.823562+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbkE4WHQxbUd2cFBmQTZyWVNTeHduWDJId0tEN3BSdGdLcURaYUNQOXhIeVNxdGE5bnpTaU10akpyRVprcjFqWXN2WWRRNVZ6VTJqNE5sa1BjYTBRMThGRWZ2QnYzck1PWGNRdnBLOVFYSlFHZFlGYWNwcU5IeHFlZ0lpRkk2VmhTM0d0WDhSMTFHQ2VmZzlLSkw3NVNhQQ?oc=5",
+      "published": "2026-11-05T04:47:35+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Gifting - Tottenham Hotspur"
+    },
+    {
+      "desc": "Essentials Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.823587+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdUpnbC1Xa2p3TEdERWxZQmJoOHZWbmE5SUhkX2pUa1hnTndOQlQtdm1oMEVlaWdwaVZLNEwzVk5CWS1wS2FaWVhfZEstSFB4VzYyekFDRERHV24ySnJyMi1sVlctWmZBSVEwTWF1UDZmdTVhekMwcUUyNkVMV2pTSE4tRU5EbUF5ZmxzY0dqM2tubDBhczFnY3labUpUZUM0T3c?oc=5",
+      "published": "2026-11-05T04:47:33+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Essentials - Tottenham Hotspur"
+    },
+    {
+      "desc": "South Korea Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.823612+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53SVlRemsyZ2w5YmtLR2JfZHYtM2MtSHpQZGdjX2E2WWhTWWFwLUh0ZHBtQzd2Z0tEZmlCbGZMV0l0OGV2Z3NZaDBYSGhoaWVNOTVQcTctOUx0V1Y0OHZhTkNVM045bjFxSmFYM3EyX1o?oc=5",
+      "published": "2026-11-05T04:47:31+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "South Korea - Tottenham Hotspur"
+    },
+    {
       "desc": "The Scout’s FPL Gameweek 10 transfer radar Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-05T04:00:51.118391+00:00",
@@ -1255,6 +1315,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "The Scout’s FPL Gameweek 10 transfer radar - Premier League"
+    },
+    {
+      "desc": "Match report: Liverpool beaten by Fenerbahce in Champions League Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.823672+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTEVxRURSQWItODRqT3JVSG0xSFJnM3ZSenJyNU5WeFVsNExkTTloWmZOUU51VUtKcXQxRWlYRXRhZHUzVF9LYkVWaDY5c2xPZnQtU1JxOFVUWGgwSXpTb0ZIRWprZjU0NGZaOTZhbU5qVG1wR2ZmbmFyTDRkT0xOWU1VN2FGRGtFbUVV?oc=5",
+      "published": "2026-11-05T01:19:14+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Match report: Liverpool beaten by Fenerbahce in Champions League - Liverpool FC"
     },
     {
       "desc": "Man City Player Ratings vs Leipzig: Anderson 8, Donnarumma 4 The False 9",
@@ -1385,6 +1455,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal ‘flops’ enjoy huge night as Noni Madueke shows he should be in England squad while Gyokeres gets key goal"
+    },
+    {
+      "desc": "2-minute highlights: RB Leipzig 1-2 City - UEFA Youth League Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.824005+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeHM1RDhrTjZfdVI4a0FzdmdFdzFoUzg1RkNfbjhTLVZlZV9BR1NhcnFpNjl6N0hTa3o5MnNlMGVuVnp6MDI2S2c0OGNBYmdEVFpJSDRtQVZYM3hOOGVmbzNYbHU2Ml9HXzlCN25NT1R0ZDUySlg2dkpvYkh3RlRmNHVsM1pHQkNWcE4yRzYyR1YzdTBUSkcwTEZtOWphbmhYZkphU2V0Qm96MDg?oc=5",
+      "published": "2026-11-04T23:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "2-minute highlights: RB Leipzig 1-2 City - UEFA Youth League - Manchester City FC"
+    },
+    {
+      "desc": "Haaland in awe of 'amazing' Anderson Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T06:18:08.824032+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdzhsVzc4akZqUjZJN0oyQlh6blJpTUI4ZTNGZmpRZlRtV1hQY1UxdHlvTVZIUXNYQkU5Q0x6NzlxRDROSEItNko5SDNNcjBkdHR2bURndVF1endOUDE1V2xnWDVWOG5NbFhyX3JmNTNCcHltUUk1elhHR1ducGVjQXlMa21yemwwMWI4Ykp3?oc=5",
+      "published": "2026-11-04T23:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Haaland in awe of 'amazing' Anderson - Manchester City FC"
     },
     {
       "desc": "Anastasios Douvikas scores a hat-trick as Como produce a stunning 9-1 away win over Lens on match day four, recording th",
@@ -2655,96 +2745,6 @@
       "publisher": "https://thesun.my",
       "source": "https://www.thefa.com/rss",
       "title": "Sultan Ibrahim Stadium named as 2026/2027 FA Cup final venue – MFL - The Sun Malaysia"
-    },
-    {
-      "desc": "Report: Liverpool will wait until 2027 before opening talks with star anfieldindex.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541230+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVXl4NFZtWGdyQlBjdmFlSjBfckllYllWSHA1TU51YjR4U3RWTWZncDJzUXN0amVoR3RDbGJyb3N0c09XalNpdExvNW5OUlVTZlNBQVJTaE1TclU4SEkxb1N0b2F0VUU0RjZjb0piSEt0ZXQ1TVB2dnZZby00MS1WNWgtUmNCckJscDB6ZVVfSjhHQkVBeGhNTm9ORTdETEhDcEczOXlxaw?oc=5",
-      "published": "2026-11-04T10:53:08+00:00",
-      "publisher": "https://anfieldindex.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Report: Liverpool will wait until 2027 before opening talks with star - anfieldindex.com"
-    },
-    {
-      "desc": "RAYAN CHERKI (£5.7m) is currently the most transferred-out player ahead of Gameweek 10. This is an extraordinary turn of",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-04T11:16:05.541247+00:00",
-      "link": "https://www.thesun.co.uk/sport/40908639/enzo-maresca-rayan-cherki-minutes-fantasy-premier-league/",
-      "published": "2026-11-04T10:50:30+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Enzo Maresca forcing Dream Team bosses to abandon game’s second-best midfielder"
-    },
-    {
-      "desc": "Jamie O'Hara believes that Manchester United have not hit a turning point despite the impressive 3-2 comeback against Ro",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-04T11:16:05.541261+00:00",
-      "link": "https://www.skysports.com/watch/video/13607870/jamie-oharas-brutal-assessment-of-man-utd-despite-roma-win-theyre-not-good-enough",
-      "published": "2026-11-04T10:41:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'They're not good enough!' - O'Hara's brutal assessment of Man Utd despite Roma win"
-    },
-    {
-      "desc": "FA issues statement after referee was reportedly assaulted at Sunday League game Rotherham Advertiser",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541279+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcVNDWkI0NmZiaU5tb0N1dS1IS1MxT3hockxBdzh3RlFUQ0hSa2NWMVpsVWFJR3d3TG1pN1dseF9BZ2FLUTQ0Z1ZVWjl3dzFTWmFpMUtNdEZfMHZqRzNWa0FJcVo5WWkxR2hqaFhsY3ZDQ1FLX3JXaElJU2lkZFk4b1AzcTVpTGZKQ29aQmVXSFozd052WUluRTJMRTRJcnJYQUlSYklrblJ2bUV3QUpWVUJ5bVhpZXJMS0lXbUdpRHN1WXEzeVZNTnp0YzVqQk95bzVV?oc=5",
-      "published": "2026-11-04T10:38:00+00:00",
-      "publisher": "https://www.rotherhamadvertiser.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA issues statement after referee was reportedly assaulted at Sunday League game - Rotherham Advertiser"
-    },
-    {
-      "desc": "Harry Wilson is back in Wales' squad for their Nations League matches against Norway and Portugal, while goalkeeper Joe ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-04T11:16:05.541300+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwly4ee53mgyo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-04T10:30:19+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Wilson returns as Wales call up uncapped Duncan"
-    },
-    {
-      "desc": "Lavia on Hazard: ‘I could see in his eyes he was happy for me’ | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541319+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQU2xWRGxILXJmR2lWSFYwNzFYV1BGOU10SnR5WlFLRWZ4eGY0MlpuTURfMnpIRWNLdk1DcXNaMXM1NHJuS3RncFhOUnZqanYtOWJRTW1JTUhXd1M2SXQyTlZPMWs2TDNPR05sRUw4NU1TY0xacHpseGpsbjQ4N21pZkdNeXNSdDJhMTAyVWF4bHhpVUFDeWdwa3prMTZFM1ppUGdv?oc=5",
-      "published": "2026-11-04T10:30:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Lavia on Hazard: ‘I could see in his eyes he was happy for me’ | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Premier League Match Round 8 - Key Match Incidents Panel outcomes Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541336+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMG1qV28yYTduS0h4dy0xbERJNERJcXR4T0hBbWtHOXNwUWQxc21tY3lUaF9mWnB2aDVUZF9hWG5sS3dwVnlyVDN5REhLYUlsNF9LRHpDa2JoUHpxLV9QOTBLMzhJZzJqNHpKYWxSUTRRaGJsZ2dadWxJRi1EcTBscEhEd3RMT1dVWEpz?oc=5",
-      "published": "2026-11-04T10:29:23+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League Match Round 8 - Key Match Incidents Panel outcomes - Premier League"
-    },
-    {
-      "desc": "Romano reveals the ‘clear favourites’ to sign Man Utd wantaway who will leave in January LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541369+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOYUJNUVVrZE8yUncxLWpacHRBenVaUTVVLXFEdFJDWWxoRElyOHdwVGt5WGZMd1JjVDZtaW5iYVJScXc5VGpkRVhxdmdTSkc2aFIzY19NQUtpd09Jb0k2X05RSDZnTmdQajQxVmZaZDFQejZDMGZCb0EzZmtTYTF5VnM2dTVLSzJGcmNqS3Y1RlhUS3JwR045bGV6QVBqazdHWG81NzBxSGg2SnpuNUpaNjJmanV6ZmtENkVKLXg5VjY5SmZMV0J3SVI0eGlyY0s0YXRyYjdQSlVXZkp0ODh6YmphOTU2aXRqZ3pv?oc=5",
-      "published": "2026-11-04T10:22:55+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano reveals the ‘clear favourites’ to sign Man Utd wantaway who will leave in January - LiveScore"
-    },
-    {
-      "desc": "KOBBIE MAINOO was all smiles after receiving a special shirt from Champions League legend Clarence Seedorf following Man",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-04T11:16:05.541387+00:00",
-      "link": "https://www.thesun.co.uk/sport/40908374/kobbie-mainoo-champions-league-shirt-man-utd/",
-      "published": "2026-11-04T10:21:30+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Kobbie Mainoo can’t stop smiling as he is given Champions League legend’s shirt after Man Utd win over Roma"
     }
   ],
   "processed_urls": [
