@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-05",
     "errors": 0,
-    "input_tokens": 28979,
-    "output_tokens": 3181,
-    "requests": 4
+    "input_tokens": 35037,
+    "output_tokens": 3814,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1225,7 +1225,7 @@
     }
   },
   "last_morning_report_date": "2026-11-05",
-  "last_scan_at": "2026-11-04T23:57:32.176577+00:00",
+  "last_scan_at": "2026-11-05T04:00:51.114357+00:00",
   "last_summary_sent_at": "2026-11-05T02:03:09.195570+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1247,6 +1247,36 @@
   },
   "news_pool": [
     {
+      "desc": "The Scout’s FPL Gameweek 10 transfer radar Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.118391+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObGJ2aExJOUtzWWM4OEtfNVc5UTc5THVKWjJGNENZVzBFaXIyZWpqY0U0WWFiVDU2bk5rdmZ1ZlpiaXNESVp1VF9rS2JtUmVwX2QtNl9GVlVZanRsR0N0WEFYTUpZdDRVTGUycUkxMmtSa0xtUl9tWG8yV3c4TGM3SUN6NVAtMkFLRXp0Rno1S0Y?oc=5",
+      "published": "2026-11-05T03:28:14+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "The Scout’s FPL Gameweek 10 transfer radar - Premier League"
+    },
+    {
+      "desc": "Man City Player Ratings vs Leipzig: Anderson 8, Donnarumma 4 The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.118538+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjdXg0RFVvc01GWkhQclY0cU9SZEtIMWM0Nzh2Y2t1V3ZLZVJNZERIc0xXTmRKRWw4MFFDSE1TTnlkczNRSU5sY1NiT1hQbG1xZTZGbXRENEVtVjBMV0w1SHFMVThCY1pzRVBaMFpqQ1FkTzBi?oc=5",
+      "published": "2026-11-05T00:01:40+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City Player Ratings vs Leipzig: Anderson 8, Donnarumma 4 - The False 9"
+    },
+    {
+      "desc": "Arsenal Player Ratings vs Slavia Prague: Gyokeres 8, Rice 8 The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.118583+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9TUkpqZlZYMUJUQW1UR0pMZW1aY2dCY2N6dDMya0xSMkp4Q0tieGd6T05xdy1rdlN6OTEyZm92UzNfMmVSRExsVXBxU05VMzdRcTc0ZEp2UGl1bFRWWmNKejd2ZFBrSzQxTm9sNmk1ZlBxaF9UcXBrRV82MA?oc=5",
+      "published": "2026-11-05T00:01:08+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal Player Ratings vs Slavia Prague: Gyokeres 8, Rice 8 - The False 9"
+    },
+    {
       "desc": "Goalscoring Como playmaker Nico Paz paid his respects to Tenerife striker Jesus de Miguel, following his death on Tuesda",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-04T23:57:32.180533+00:00",
@@ -1255,6 +1285,36 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Como star pays touching tribute to Spanish footballer killed in fatal collision with goalkeeper as Cesc Fabregas' rampant side score NINE in"
+    },
+    {
+      "desc": "Every word from Arteta's post-Slavia Prague presser Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.118626+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2RGUU1kUVFYZWlWNmpDUDBUdzJ1VGY0RTctM1BWeFB4d3NUcGI5Tm5DbUc1cUhZcE1FdGV6d2pZX0lRbWZMY0ZKcUFtY1NfTXpCV0dNY1p4b19YUjV4Yy1WZWRQUlo3cUlCTzdSVkh0RVoxWFlfZkZZbWI1ME9pcHcxUE1zdnBaUjMzaDNKc2N3Z2FIS3hz?oc=5",
+      "published": "2026-11-04T23:36:49+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Every word from Arteta's post-Slavia Prague presser - Arsenal.com"
+    },
+    {
+      "desc": "Goalscorer Gyokeres feeling good after Slavia win Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.118665+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeE1hbkhidEFDYWxGNWZpVUxHN1JfLU9PUDR2SU5STHRtalNGMUtJSzVkTFROWmNJXzdyT0VrUlBRdzZxRE1zM3BQMTNJWUVmRjRmOXlCU3dZRzZ5MHJRb2lzbk9BZVhPbXJKQzdKYkhERkVqSk5Ka0dpeGk5YlAyQzZVVXEwTTBnQ00zY09qUkVmUTI2VGc?oc=5",
+      "published": "2026-11-04T23:24:48+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Goalscorer Gyokeres feeling good after Slavia win - Arsenal.com"
+    },
+    {
+      "desc": "Arteta reflects on two very different halves in Prague Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.118692+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSVN2eER1MC1Jd3A3V1RBazlQb0MxZW5CMWl1RDVmTGp1Q2RZTldnblctaVR4Q05KaUg5VlR0UXRIcU55MVI5TXpDRzZxbk02aHc0Q0R2WlZFNnRfOFI0cF9YYUZ5UXo0NF8yQkFUaldCNEtiLVBlMXZaZE1HNG9rTlEzLXVJQjR3WE1nRlhvUHlDSTVxa1BWRWpxSlg?oc=5",
+      "published": "2026-11-04T23:23:50+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arteta reflects on two very different halves in Prague - Arsenal.com"
     },
     {
       "desc": "A world record of 43 players and eight members of staff were sent off during an under-20 championship match between Uber",
@@ -1305,6 +1365,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Man City are not a team in Enzo Maresca's ideal image yet - their imperfections are clear as win at Leipzig shows they're learning on the jo"
+    },
+    {
+      "desc": "Baleba injury confirmed Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.118840+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NbHdVMThzTmhPOTAxY2RXdjVtUkQ3cmNlWlE0cUlOV1B1bFNuWHNxamk3QUFERDRaNkI4eGZJTm1yMWVGMU1oaFBjSFpZWmlMZGtJaERiWTlNZmVCX0dMbldwUlpOQzhVTlFULUxwVHYtX294VDdWOW9uRlY?oc=5",
+      "published": "2026-11-04T23:11:10+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Baleba injury confirmed - Manchester United"
     },
     {
       "desc": "ARSENAL had Noni Madueke and Viktor Gyokeres to thank as they earned a hard-fought win over Slavia Prague. The two strug",
@@ -1395,6 +1465,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Haaland scores winner as Man City beat Leipzig"
+    },
+    {
+      "desc": "Report: Slavia Prague 1-2 Arsenal Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.119093+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5WVEJTYWlmeFEyZXhld1Vjdlh4aVRHeEpSS0E3Z0t5SW9jRjhvY2d4Mm1BTmNUbVJoVnJhSWRmcjRMeldwTnJMUW01VldWMUkycFFtaUxFQmJqVTZEbFMydk00QTNLZVJVeEtNNFF0b0YxeXhMaS1Well2d09fWlE?oc=5",
+      "published": "2026-11-04T22:13:30+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Report: Slavia Prague 1-2 Arsenal - Arsenal.com"
     },
     {
       "desc": "Gyokeres Scored and Set Up Another in Prague, and Arteta Now Faces a Striker Decision The False 9",
@@ -1527,6 +1607,16 @@
       "title": "Slavia Prague 1 Arsenal 2: Gyokeres and Madueke keep Gunners on course for top-eight finish as Arteta rings the changes"
     },
     {
+      "desc": "Manager Unai Emery is in line for a new contract with Aston Villa, Trey Nyoni to stay with Liverpool and Leeds target Ha",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-05T04:00:51.119363+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwkgjv582vj0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-04T21:41:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Emery in line for new Villa deal - Thursday's gossip"
+    },
+    {
       "desc": "Leipzig Manchester City FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-04T23:57:32.181418+00:00",
@@ -1625,6 +1715,16 @@
       "publisher": "https://tickets.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "- Manchester United"
+    },
+    {
+      "desc": "Man Utd: Romano on Carrick lasting international break has us rooting for Red Devils vs Aston Villa Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-05T04:00:51.119617+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTFBnR29MMWFxMTRMQml5bGFMVTZISkpqcGEyeVRMS2dxZGxBTTE1bkZOS25MRTgtSDBmVWhfRHJ5bnI4RnJvZTRIemZKU1RBYVBsWVVkeE9SSHVyZ2xTRTJXOGc5QjQ2TTFqa0NNamI5aFpVOU44MkJSeXYtWEt6NU5naC1faWdjb0tiaURraHotN0p6bG84Nmc5b2ZfUQ?oc=5",
+      "published": "2026-11-04T20:19:58+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd: Romano on Carrick lasting international break has us rooting for Red Devils vs Aston Villa - Football365"
     },
     {
       "desc": "The Guinness Book of World Records have confirmed that the game saw the most dismissals, with 43 players and eight membe",
@@ -2645,106 +2745,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Kobbie Mainoo can’t stop smiling as he is given Champions League legend’s shirt after Man Utd win over Roma"
-    },
-    {
-      "desc": "Odegaard to Bayern: How He Fits Kompany's Attack The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541420+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTjBLdjVyTFVnc0l0dFI3WjJqSGIzMHQxUEJOV3V0ZDF4Wmx2NmczazRyQnIzU1hDbjRPeUhEWTBaSWtxTE1jX3lSZmc1WnJPRlJDU2JyZjV0ZWI3bm1rNnYxQkgxXy1sNnlXZmVYdnBqVGZWbUFHWlpQSUlFZ2EtWmdTcF8?oc=5",
-      "published": "2026-11-04T10:12:50+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Odegaard to Bayern: How He Fits Kompany's Attack - The False 9"
-    },
-    {
-      "desc": "West Ham confirm the appointment of former midfielder Scott Parker as their head coach on a two-and-a-half-year deal.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-04T11:16:05.541438+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq3dj37m1kddo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-04T10:03:25+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "West Ham confirm Parker as boss"
-    },
-    {
-      "desc": "Declan Rice is quietly proving to his doubters that he is clearly not a centre back Pain in the Arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541457+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVjRYb1VCN196S25PU3J1dFh5czU2M1UyX1lBNllVZ3pock9xWHRLM1pOY3VFZG5LRk52TC1TR3FLelhSbTJkckNFQkpmSEkzVEVFNC1LTi1sX3d4NHBGTl9TYmVfdHhCaHdqbTF3TUpIMHhGTGVsSlg1eEpibFZZaHo5TC05YU1mY25RSjBuVnkwQng0LWhKNmhTRDBKT0REamtJc3gyeU1XR1kwR2k5Q2tn?oc=5",
-      "published": "2026-11-04T10:00:00+00:00",
-      "publisher": "https://paininthearsenal.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Declan Rice is quietly proving to his doubters that he is clearly not a centre back - Pain in the Arsenal"
-    },
-    {
-      "desc": "Chelsea and Linglong Tire bring The Famous CFC back to China | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T11:16:05.541474+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbVJaMGR1bFA0WmZHd1dzY0dQMVc0SERqcUpYVTlfYnFCQXRaQ05XUFBKUGJHYW9DS3dySU9ERHhxczU3bTFXbW9iUFlBTHlHX3RmQm1Qb1ctZVQ3dzhKNWtDYkFEZmVLWm5qUVlBY3hjNnREaXBUT2E0ekZja1Q5LTE4Wk1CRHhZX3hyZXFzVHZlVmh3SGZ6eFBHWmFjWWN4bEx1eXlySXJZU0k4Vm1V?oc=5",
-      "published": "2026-11-04T10:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea and Linglong Tire bring The Famous CFC back to China | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "POLICE investigating the death of CD Tenerife footballer Jesus de Miguel are probing the emergency medical response, as ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-04T11:16:05.541492+00:00",
-      "link": "https://www.thesun.co.uk/sport/40908018/jesus-de-miguel-death-probe-police-medical-response/",
-      "published": "2026-11-04T09:56:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Police investigating Jesus de Miguel’s death probing emergency medical response with questions over key issues"
-    },
-    {
-      "desc": "REAL MADRID are edging closer to signing teenage prodigy JJ Gabriel from Manchester United. Gabriel, 16, has secured a C",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-04T11:16:05.541509+00:00",
-      "link": "https://www.thesun.co.uk/sport/40908742/man-utd-jj-gabriel-passport-real-madrid-transfer/",
-      "published": "2026-11-04T09:56:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Wantaway Man Utd wonderkid JJ Gabriel, 16, secures Cypriot passport as he closes in on dream Real Madrid transfer"
-    },
-    {
-      "desc": "Ellie Carpenter has become a surprise star for Chelsea this season after a strong start to the Women's Super League camp",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-04T11:16:05.541527+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cw0k0mr7n1l8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-04T09:55:26+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How Carpenter has become Chelsea's surprise star"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-04T16:01:05.177104+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qY1N2dUdHZjUyd2NnWWZBNnBoV1JuQ3YxM0hReUNXOUlTSUZSZ3F0S1plOWh5WFd6ejdhNEM4Zy1rRktnOVlVV2dYN0tNWlRQaTNiTENmUW0wQksxaWREU2d1VXhhb0tV?oc=5",
-      "published": "2026-11-04T09:53:05+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "ANDORRA centre-back Lautaro Spatz has penned an open letter following the tragic death of Jesus de Miguel. De Miguel, 30",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-04T11:16:05.541555+00:00",
-      "link": "https://www.thesun.co.uk/sport/40907803/andorra-player-reveals-tragedy-left-keeper-broken/",
-      "published": "2026-11-04T09:48:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Footballer who witnessed Jesus de Miguel’s sickening collision reveals tragedy has left keeper and team ‘broken’"
-    },
-    {
-      "desc": "JESUS DE MIGUEL's partner and daughter were in the stands for the late footballer's ill-fated final match. The Spaniard ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-04T11:16:05.541572+00:00",
-      "link": "https://www.thesun.co.uk/sport/40908161/jesus-de-miguel-dead-wife-daughter-jesus-owono/",
-      "published": "2026-11-04T09:43:29+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tragic footballer Jesus de Miguel’s partner and daughter were in stands when he suffered horror collision"
     }
   ],
   "processed_urls": [
