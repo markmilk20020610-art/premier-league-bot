@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-07",
     "errors": 0,
-    "input_tokens": 5940,
-    "output_tokens": 610,
-    "requests": 1
+    "input_tokens": 11981,
+    "output_tokens": 1142,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1279,7 +1279,7 @@
     }
   },
   "last_morning_report_date": "2026-11-06",
-  "last_scan_at": "2026-11-06T16:01:03.236282+00:00",
+  "last_scan_at": "2026-11-06T16:12:57.745165+00:00",
   "last_summary_sent_at": "2026-11-06T02:05:04.251937+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1300,6 +1300,16 @@
     "updated_at": "2026-11-06T02:05:04.242921+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Arsenal vs Hull Predicted Lineups and Team News: Gyokeres Leads, Saka Out The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-06T16:12:57.747730+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE04MG44NzlHaGVxOFdIaGVFcWJ3VzM2TnZYNWRsdmR3bUJfX3VTRHJKZ1FOT0Y0bUdlVjJXV3gyMVR1NFAtMXhkZkJtSGphckR2ckp2dDNBelFxWUl3bUZsNVVfYjVCczE3S1ZxU3MxVlNkUWFsWjZr?oc=5",
+      "published": "2026-11-06T16:00:22+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal vs Hull Predicted Lineups and Team News: Gyokeres Leads, Saka Out - The False 9"
+    },
     {
       "desc": "LIVERPOOL cult hero Divock Origi has swapped his football boots for books after enrolling at Harvard University just fiv",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1571,6 +1581,16 @@
       "title": "Footballer scores AFTER being KO’d as goalkeeper boots ball straight into her head before it flies into net"
     },
     {
+      "desc": "Ryan Gravenberch fitness latest Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-06T16:12:57.748187+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNWNUbUZxb2xtUnZ2SXQtanlRLXhrLVlERDhWLW5RNjljZHJhVl9jaEdvNFRYcEVISnBWM1JzSHJJVFI0allrb05yRkY0OE5RNTgxOWdzdC0wdGdkWWpvUk9CenVMY0ZkcWZsVGdpZjNydWhyN1dPYWFtQmJ4MnBZUi1IU0I4Tnp3RE5sUl81dw?oc=5",
+      "published": "2026-11-06T14:05:31+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ryan Gravenberch fitness latest - Liverpool FC"
+    },
+    {
       "desc": "Who is the best FPL captain for Gameweek 10? Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-06T16:01:03.238896+00:00",
@@ -1639,6 +1659,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Smith nominated for WSL Goal of the Month - Arsenal.com"
+    },
+    {
+      "desc": "Everything you need for Gameweek 10 of FPL with the latest tips and advice Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-06T16:12:57.748299+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQnFZaXlxeHJucWUyQWhfNWhtaFQzbGNjLXNlVWVnendMWEJfV2pIM0I5MEd3QS1QNlBuLVV1ZjdjNGJmbm5MY29yaFA1ajY5b2V3MHBQU3dseEFwY010c0Z3U1Fldi1PUlpfTkJ0eUhjVV9sUE1FdlVrUnU0S2tVd0J6OHRzSlpYOHRTeThKSFRqY09mUUltQ2VyNE1MVUtDX0ppY0l1RTFMcHJXdHRyc0ZXTzNpdGRaT2dQMg?oc=5",
+      "published": "2026-11-06T13:24:53+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Everything you need for Gameweek 10 of FPL with the latest tips and advice - Premier League"
     },
     {
       "desc": "It is 40 years ago today since Manchester United appointed Sir Alex Ferguson as manager and ushered in the most successf",
@@ -1821,6 +1851,16 @@
       "title": "Cole Palmer left out of England squad, Josh King and Jobe Bellingham included - The Athletic - The New York Times"
     },
     {
+      "desc": "Cornelia Kapocs voted Liverpool FC Women's Player of the Month Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-06T16:12:57.748582+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNS01eTFqLVk2MVZwQUdfOEhwRFo1N0lPODdkRkNBWFFHUXhhdDBRT0pyQ29Gd0hhVnhWU2p1MkpISWhzUjkxcVJpUmhTRUlnaFBhTXhZOFBFWWpZdWxNZ1JoNEotSzByZjUtNFc3bjc3N0htZ0RUMGQ3akstZnlvNm5BckRnTEdORHhfQ201QmticDRmdExOZA?oc=5",
+      "published": "2026-11-06T11:02:36+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Cornelia Kapocs voted Liverpool FC Women's Player of the Month - Liverpool FC"
+    },
+    {
       "desc": "Buy Man Utd x adidas LFSTLR Range Manchester United Store",
       "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-06T16:01:03.239337+00:00",
@@ -1909,6 +1949,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "\"Nice one\" - LFC uses annual Christmas campaign to deliver football's biggest ever 'thank you' to fans - Liverpool FC"
+    },
+    {
+      "desc": "Virgil van Dijk: Everyone is disappointed - we cannot lose in that manner Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-06T16:12:57.748721+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOEZ5OWMxeTV0YVdiVzZ3YmdzUHVWLTZPSmpVYU4xdEVHVm1MMWlGS1h4bklfVHR2Z3FVMzZNU0loVTRkMzdCSHB4QXQ2dGpDQ3REY0Zidlc2dFdtaWxXWkZtbm5HX3NDbEVnV180aXBiYzdNWjhSUEJtWElMZVYyQjFnQlJldGx3NFNCMm92SFI5T1BudzYzTHMtM2xQN0lwa3ZJbFVn?oc=5",
+      "published": "2026-11-06T09:12:58+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Virgil van Dijk: Everyone is disappointed - we cannot lose in that manner - Liverpool FC"
     },
     {
       "desc": "Man Utd ‘looking at’ deal for Prem striker after Romano confirms January transfer Football365",
@@ -2749,56 +2799,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Vote now: What was Liverpool's Goal of the Month in October? - Liverpool FC"
-    },
-    {
-      "desc": "Pro deal for Sandiford Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-05T21:15:47.410690+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaE90OWxrWXJRbVdlbVc2dW9hQVltWTRxSnRnQ1RlbjJSd2hqSjhaU0k5Qlh5M185ZDI4RlBfa1BSaFM2M1Rsbl9XZGZxcVI5cTkxTTcteGJrSHJVOUNKaUJPVlB2aU1fcEI0QmhoaTdZVTd2SGFCR21mU2hkZmxQaWhB?oc=5",
-      "published": "2026-11-05T14:55:19+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Pro deal for Sandiford - Tottenham Hotspur"
-    },
-    {
-      "desc": "Romano: Man Utd’s ‘ideal’ Carrick replacement is in ‘very advanced’ contract talks utdreport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-05T21:15:47.410719+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOMzAwMHp6eERLNHlreE5IdFh3R3RhdUJBZmZfdWZIcVJabGg4VmZ1Y0tXZlM1Y2FUMGs5ZGhYVUFxZjg2MlJ4a2x0V1RadnhuSFRlc29IZ2lJUmhReFFtd0F5dUpaYTNSOW9rUkhJY2pFN1U5eWpYbEZlbFVEakg1Ui12STZGQ0JHdnfSAY8BQVVfeXFMUHNwSldmc3BmMUxqTGhSMHUxUUxhOGJhazBjeXFaNURDOWVCZEZzWk1WX2k1VGwwZFNlZEFOcU5KeXhGTWdmbTR3Znp2NzAxWkhGcjBKRWI3XzQ4NmM5MDhjdjJmMkRuWVRoUG91SXl3SzV6ZE9nV21YWW81TnhTdnRJd09SUlZlMlRsQTZtQWc?oc=5",
-      "published": "2026-11-05T14:50:14+00:00",
-      "publisher": "https://utdreport.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano: Man Utd’s ‘ideal’ Carrick replacement is in ‘very advanced’ contract talks - utdreport"
-    },
-    {
-      "desc": "UD ALMERIA will donate all money raised by ticket sales for their game against Tenerife to the family of Jesus de Miguel",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-05T14:49:22.693359+00:00",
-      "link": "https://www.thesun.co.uk/sport/40927342/cristiano-ronaldo-ud-almeria-jesus-de-miguel-tribute/",
-      "published": "2026-11-05T14:47:46+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Cristiano Ronaldo’s club to donate all ticket sales to tragic Jesus de Miguel’s family and invite them as VIP guests"
-    },
-    {
-      "desc": "VOTE for October 2026's Premier League award winners Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-05T14:49:22.693392+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOV242cWt5QjNkdjlyTk5rRmgySDItTkFqR3BPU2RjdEw4VWtzbzdzT0ZkUFU1Uld2Qy02RWxqZm81SVZHa2JHQU1INllULXpSSEcxOHpvMEd3TDByemptMEo0Q0JSVWJNcnlVRmJyZV8tUXBiTHc5dklGdEtRT3ByalVnQVJRNGJ1bnB6YmNaQzAtUGJuNDdKamxkRDRCQQ?oc=5",
-      "published": "2026-11-05T14:46:15+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "VOTE for October 2026's Premier League award winners - Premier League"
-    },
-    {
-      "desc": "Harry Kane's new deal at Bayern Munich may end his Premier League career but offers fresh hope he can lead England to gl",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-05T21:15:47.410749+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm93zvzzl33zo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-05T14:44:34+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "What new Kane deal means for England and the Premier League record"
     }
   ],
   "processed_urls": [
