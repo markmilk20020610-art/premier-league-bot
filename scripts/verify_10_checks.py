@@ -17,6 +17,7 @@ import content_type as ct
 import evidence as ev
 import event_aggregate as ea
 import importance as imp
+import review_store
 import state_store as store
 
 RESULTS = []
@@ -123,6 +124,9 @@ def ctype_of(it):
 
 
 def main():
+    # 审核链路必须显式注入私有存储：bot.py 不提供「自动兜底到内存」的路径，
+    # 存储缺失时必须 fail-closed（入队失败、拒绝状态迁移）。
+    bot.set_review_store(review_store.LocalReviewStore(":memory:"))
     full_pool = mkpool([RONALDO_TITLES, PL_TITLES, FOREIGN_TITLES, PROMO_TITLES])
     state = {"events": {}, "news_pool": []}
     ordered, morning_events, stats = bot._events_for_morning(state, pool=full_pool)
@@ -240,7 +244,7 @@ def main():
         "evidence_status": ev.UNVERIFIED,
         "evidence_refs": [{"url": "https://www.bbc.co.uk/x", "title": "x"}],
     }, "E4 级 S 事件")
-    bot.decline_review(st2, "ev_x", "editor")
+    bot.decline_review(st2, rec2["review_ref"], "editor")
     blocked_declined = store.blocks_rediscovery(rec2)
     check(8, "已推送事件不能重复发送",
           blocked_committed and blocked_declined,
@@ -258,7 +262,7 @@ def main():
     not_pushed = (rec3.get("delivery_status") == store.PENDING_REVIEW
                   and rec3.get("telegram_message_id") is None)
     status_at_enqueue = rec3.get("delivery_status")
-    approve_rec = bot.approve_review(st3, "ev_e4s", "editor_01")
+    approve_rec = bot.approve_review(st3, rec3["review_ref"], "editor_01")
     cred_kept = approve_rec["review_cred"] == "E4"
     check(9, "E4 级 S 事件不能绕过人工审核状态",
           route == "REVIEW" and not_pushed and cred_kept,

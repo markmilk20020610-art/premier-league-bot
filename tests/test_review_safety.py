@@ -72,10 +72,11 @@ class TestSecondSourceMustBeIndependent(_ReviewStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
+        # P0 之后公开键是随机值，业务侧统一用 opaque 句柄定位
+        self.ref = enqueue(self.state)["review_ref"]
 
     def test_two_different_publishers_exit(self):
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://www.bbc.co.uk/sport/a", TITLE),
             ("https://www.skysports.com/football/b", ALT_TITLE),
         ]))
@@ -84,7 +85,7 @@ class TestSecondSourceMustBeIndependent(_ReviewStoreCase):
 
     def test_unknown_domains_do_not_count(self):
         # 未识别域名的组 trusted=False，不能充当「独立来源」
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://randomblog1.example/x", TITLE),
             ("https://randomblog2.example/y", ALT_TITLE),
         ]))
@@ -92,13 +93,13 @@ class TestSecondSourceMustBeIndependent(_ReviewStoreCase):
 
     def test_aggregator_does_not_count(self):
         # 聚合器本身不是来源
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://news.google.com/rss/articles/abc", TITLE),
         ]))
         self.assertIsNone(rec)
 
     def test_still_pending_after_failed_check(self):
-        bot.recheck_review(self.state, "ev_s", rows([
+        bot.recheck_review(self.state, self.ref, rows([
             ("https://randomblog1.example/x", TITLE),
         ]))
         self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
@@ -108,7 +109,7 @@ class TestSecondSourceMustBeIndependent(_ReviewStoreCase):
         # ⚠️ P0：但公开 state 里**不能**留下任何「检查过了但没退出」的痕迹。
         # 旧版写 review_last_check + review_status，那等于告诉所有访问公开仓库的人
         # 「我们手上有一条未核实的独家，而且还在查」。
-        stub = self.state["events"]["ev_s"]
+        stub = store.find_review_stub(self.state, self.ref)
         self.assertNotIn("review_last_check", stub)
         self.assertNotIn("review_status", stub)
         self.assertNotIn("title", stub)
@@ -122,10 +123,11 @@ class TestReprintCannotTriggerExit(_ReviewStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
+        # P0 之后公开键是随机值，业务侧统一用 opaque 句柄定位
+        self.ref = enqueue(self.state)["review_ref"]
 
     def test_three_outlets_same_article_no_exit(self):
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://www.bbc.co.uk/sport/r1", TITLE),
             ("https://www.mirror.co.uk/sport/r2", TITLE),
             ("https://www.dailymail.co.uk/sport/r3", TITLE),
@@ -146,7 +148,7 @@ class TestReprintCannotTriggerExit(_ReviewStoreCase):
 
     def test_wire_copy_counts_once(self):
         # 通讯社通稿被多家转载只算 1 个来源
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://www.reuters.com/sports/soccer/w1", TITLE),
             ("https://www.bbc.co.uk/sport/w2", TITLE),
             ("https://www.skysports.com/football/w3", TITLE),
@@ -160,23 +162,24 @@ class TestCredRecomputedNotDeclared(_ReviewStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
+        # P0 之后公开键是随机值，业务侧统一用 opaque 句柄定位
+        self.ref = enqueue(self.state)["review_ref"]
 
     def test_caller_cannot_pass_status(self):
         # 旧签名第二个位置参数是 evidence_status，传字符串必须无效
         self.assertIsNone(bot.recheck_review(
-            self.state, "ev_s", ev.MULTIPLE_INDEPENDENT_SOURCES))
+            self.state, self.ref, ev.MULTIPLE_INDEPENDENT_SOURCES))
         self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
 
     def test_caller_cannot_fake_rows(self):
         # 只能追加「证据行」，等级由 evidence.evaluate 重算
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://www.bbc.co.uk/sport/a", TITLE),
         ]))
         self.assertIsNone(rec, "只有一个独立发布方时不该退出")
 
     def test_exit_evidence_is_computed_value(self):
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://www.bbc.co.uk/sport/a", TITLE),
             ("https://www.skysports.com/football/b", ALT_TITLE),
         ]))
@@ -185,7 +188,7 @@ class TestCredRecomputedNotDeclared(_ReviewStoreCase):
                        ev.OFFICIAL_CONFIRMED))
 
     def test_official_domain_exits_as_official(self):
-        rec = bot.recheck_review(self.state, "ev_s", rows([
+        rec = bot.recheck_review(self.state, self.ref, rows([
             ("https://www.manutd.com/news/official",
              "Ronaldo retires from international football"),
         ]))
@@ -198,26 +201,27 @@ class TestE4SurvivesApproval(_ReviewStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
+        # P0 之后公开键是随机值，业务侧统一用 opaque 句柄定位
+        self.ref = enqueue(self.state)["review_ref"]
 
     def test_cred_unchanged(self):
-        rec = bot.approve_review(self.state, "ev_s", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         self.assertEqual(rec["review_cred"], "E4")
         self.assertEqual(rec["publish_cred"], "E4")
         self.assertTrue(rec["cred_unchanged_by_approval"])
 
     def test_not_marked_confirmed(self):
-        rec = bot.approve_review(self.state, "ev_s", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         self.assertFalse(rec["publish_is_confirmed"])
 
     def test_evidence_status_untouched(self):
-        before = self.state["events"]["ev_s"].get("evidence_status")
-        bot.approve_review(self.state, "ev_s", "editor_01")
-        self.assertEqual(self.state["events"]["ev_s"].get("evidence_status"),
+        before = store.find_review_stub(self.state, self.ref).get("evidence_status")
+        bot.approve_review(self.state, self.ref, "editor_01")
+        self.assertEqual(store.find_review_stub(self.state, self.ref).get("evidence_status"),
                          before)
 
     def test_log_records_cred_after_equals_before(self):
-        rec = bot.approve_review(self.state, "ev_s", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         last = rec["review_log"][-1]
         self.assertEqual(last["prev_cred"], last["cred_after"])
 
@@ -228,27 +232,28 @@ class TestAttributedKeepsUnverifiedNote(_ReviewStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
+        # P0 之后公开键是随机值，业务侧统一用 opaque 句柄定位
+        self.ref = enqueue(self.state)["review_ref"]
 
     def test_publish_mode_is_attributed(self):
-        rec = bot.approve_review(self.state, "ev_s", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         self.assertEqual(rec["publish_mode"], "ATTRIBUTED")
 
     def test_unverified_note_present(self):
-        rec = bot.approve_review(self.state, "ev_s", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         note = rec.get("unverified_note") or ""
         self.assertTrue(note)
         self.assertIn("独立来源", note)
 
     def test_note_names_the_source(self):
-        rec = bot.approve_review(self.state, "ev_s", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         self.assertIn("thesun.co.uk", rec["unverified_note"])
 
     def test_note_survives_serialization(self):
         # 提示必须落在**内容层**，不能只落在状态层：
         # 状态机记住了 E4，但正文没有一句「尚未获得第二个独立来源印证」，
         # 读者看到的仍是一条语气笃定的独家。
-        rec = bot.approve_review(self.state, "ev_s", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         payload = {
             "title": rec.get("title"),
             "publish_mode": rec.get("publish_mode"),
@@ -284,11 +289,11 @@ class TestE4SNotSentAsFact(_ReviewStoreCase):
 
     def test_approval_requires_explicit_transition(self):
         state = {"events": {}}
-        enqueue(state)
+        ref = enqueue(state)["review_ref"]
         # 没有 approve/decline 就永远停在 PENDING_REVIEW，不存在「自动过期放行」
         for _ in range(3):
-            self.assertIsNone(bot.recheck_review(state, "ev_s"))
-        self.assertEqual(state["events"]["ev_s"]["delivery_status"],
+            self.assertIsNone(bot.recheck_review(state, ref))
+        self.assertEqual(store.find_review_stub(state, ref)["delivery_status"],
                          store.PENDING_REVIEW)
 
     def test_e4_a_level_not_gated_but_not_confirmed(self):
@@ -312,10 +317,11 @@ class TestSignatureIsSafe(_ReviewStoreCase):
 
     def test_exit_requires_rows(self):
         state = {"events": {}}
-        enqueue(state, refs=[])
-        state["events"]["ev_s"]["evidence_refs"] = []
-        state["events"]["ev_s"]["evidence_url"] = ""
-        self.assertIsNone(bot.recheck_review(state, "ev_s"))
+        ref = enqueue(state, refs=[])["review_ref"]
+        stub = store.find_review_stub(state, ref)
+        stub["evidence_refs"] = []
+        stub["evidence_url"] = ""
+        self.assertIsNone(bot.recheck_review(state, ref))
 
 
 if __name__ == "__main__":

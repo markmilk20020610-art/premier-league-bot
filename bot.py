@@ -1478,6 +1478,50 @@ def _review_store_entries(client, review_ref):
         return []
 
 
+def _decide_private_or_raise(client, review_ref, action, operator_id, note, label):
+    """在推进**公开**状态之前，先把审核决定落到**私有**存储。
+
+    这是 fail-closed 的唯一实现点。三种不成立的情形都必须 raise，绝不允许
+    「私有那边没记上、公开这边已经前进」：
+
+      1. 客户端缺失 —— 旧实现写的是 `if client is not None and review_ref:`，
+         两个条件缺任意一个就**整段跳过**，然后照常 `store.transition(...)`。
+         结果是公开 state 显示「已批准 / 已拒绝」，而私有存储里根本没有这条
+         决定，事后无法追溯是谁在什么时候批的，也无法解释为什么发了。
+      2. review_ref 为空 —— 没有句柄，私有存储无法定位这条记录。同上，
+         旧实现会静默跳过。
+      3. 存储返回任何错误 —— 旧实现只捕获 `ReviewConflict`（「已经有人决过
+         了」这种业务冲突）。其余异常（HTTP 5xx、连接中断、协议解析失败）
+         会直接穿透。穿透本身不算最坏，最坏的是它让调用方很容易用
+         `try/except` 包一层变成「私有失败、公开成功」。
+
+    顺序不能反：先私有、后公开。反过来的话，公开状态一旦前进，私有存储失败
+    就再也补不回来了——公开 state 已经是「已批准」，重放私有 decide 也会
+    因为公开记录不在 PENDING_REVIEW 而被拒。
+    """
+    if client is None:
+        raise store.StateError(
+            "{}被拒：私有审核存储未配置（REVIEW_STORE_URL / REVIEW_SERVICE_KEY），"
+            "无法记录审核决定，公开状态保持不变".format(label))
+    if not review_ref:
+        raise store.StateError(
+            "{}被拒：审核记录缺少 review_ref，无法在私有存储中定位，"
+            "公开状态保持不变".format(label))
+    try:
+        client.decide(review_ref, action, operator_id, note)
+    except review_store.ReviewConflict as e:
+        raise store.StateError("{}被拒：{}".format(label, e))
+    except review_store.ReviewStoreError as e:
+        raise store.StateError(
+            "{}被拒：私有审核存储错误（{}），公开状态保持不变".format(label, e))
+    except Exception as e:  # noqa: BLE001 —— fail-closed 要求兜住一切
+        # 兜底不是为了掩盖问题：异常类型与消息原样带出，只是**不允许**
+        # 它变成「公开状态已前进」。
+        raise store.StateError(
+            "{}被拒：私有审核存储异常（{}: {}），公开状态保持不变".format(
+                label, type(e).__name__, e))
+
+
 def _review_payload_of(client, review_ref):
     """只读地取回完整 payload（不认领、不改状态）。"""
     if client is None or not review_ref:
@@ -1591,6 +1635,10 @@ def _review_view(rec, payload=None, entries=None, private=None, **extra):
     articles = payload.get("articles") or []
     view = dict(rec or {})
     view.update({
+        # event_id 只存在于**视图**里（来自私有 payload）。
+        # 公开 stub 里没有它——那是 URL 的哈希前缀，写进去就等于公开
+        # 「哪一条正在被压着」。视图不落盘，所以这里可以放心带。
+        "event_id": payload.get("event_id") or view.get("event_id") or "",
         "title": payload.get("title") or "",
         "fact_summary": payload.get("fact_summary") or "",
         "evidence_url": (payload.get("urls") or [""])[0] if payload.get("urls") else "",
@@ -1624,10 +1672,20 @@ def _enqueue_review(state, event, reason, now=None):
 
     现在：
       1. 完整 payload → 私有审核存储（Cloudflare SQLite Durable Object）
-      2. 公开 state   → 只有 {event_id, delivery_status, review_ref, 时间戳}
-      3. 私有存储不可用 → **挂起且不公开**，绝不退回写 state.json
+      2. 公开 state   → 只有 {随机 id, delivery_status, review_ref, 时间戳}
+      3. 私有存储不可用 → **什么都不写**，绝不退回写 state.json
+
+    第 2 条里的「随机 id」是 PR #1 审查 P0 的修复。旧实现用
+    `event_id = sha1(cleaned_url)[:12]` 当公开键，而这个函数的输入——新闻池
+    里的 URL——本身就是公开的。任何人拿公开 URL 算一次 SHA-1 前 12 位，就能
+    在 state["events"] 里精确匹配到「哪一条被挂起」。泄露的不是内容，是
+    「哪一条」，而那恰恰是最值钱的部分。现在公开键是随机的，算不出来。
+
+    第 3 条也随之收紧：以前存储不可用时仍会写一条 review_ref 为空的 stub，
+    那条 stub 既无法处理、又占着公开位置；现在干脆不写——没有私有记录，
+    就不该有公开痕迹，下一轮自然重试。
     """
-    eid = _review_event_id(event)
+    eid = _review_event_id(event)          # 只进私有 payload，绝不进公开 state
     if not eid:
         return None
 
@@ -1636,29 +1694,62 @@ def _enqueue_review(state, event, reason, now=None):
     payload = _build_review_payload(event, reason, first_seen)
 
     client = review_store_client()
-    review_ref = ""
     if client is None:
         print("::error title=Review Store Missing::私有审核存储未配置"
               "（REVIEW_STORE_URL + REVIEW_SERVICE_KEY），"
               "E4 事件已挂起：不公开、不入库、等待人工处理")
-    else:
-        try:
-            res = client.enqueue(payload)
-            review_ref = (res or {}).get("review_ref") or ""
-        except review_store.ReviewStoreError as e:
-            print("::error title=Review Store Failed::私有审核存储不可用：{}".format(e))
-            print("::error title=Review Store Failed::E4 事件已挂起，绝不写入公开 state.json")
+        return None
 
-    rec = store.record_review_stub(state, eid, review_ref, store.PENDING_REVIEW, enqueued_at)
+    try:
+        res = client.enqueue(payload) or {}
+    except review_store.ReviewStoreError as e:
+        print("::error title=Review Store Failed::私有审核存储不可用：{}".format(e))
+        print("::error title=Review Store Failed::E4 事件已挂起，绝不写入公开 state.json")
+        return None
+
+    review_ref = res.get("review_ref") or ""
     if not review_ref:
-        rec["last_error"] = "review_store_unavailable"
+        print("::error title=Review Store Failed::私有审核存储没有返回 review_ref，"
+              "该事件本轮不入队（下一轮重试）")
+        return None
+
+    # 公开侧：同一个 review_ref 只允许有一条 stub。
+    # 去重由私有存储的 ux_review_active 唯一索引保证——重复入队时它返回
+    # duplicate=true 和**同一个** ref，于是这里命中已有 stub，不会再长一条。
+    #
+    # 公开键用独立的随机值而不是复用 review_ref：句柄要进 Telegram 的
+    # callback_data、要给运维看，把它同时当状态字典的键会让两个标识绑死，
+    # 将来想轮换其中任何一个都得改另一处。
+    rec = store.find_review_stub(state, review_ref)
+    if rec is None:
+        rec = store.record_review_stub(
+            state, store.new_review_public_id(), review_ref,
+            store.PENDING_REVIEW, enqueued_at)
+    else:
+        rec["delivery_status"] = store.PENDING_REVIEW
+        rec["updated_at"] = _now_iso()
 
     entries = _review_store_entries(client, review_ref)
     if not entries:
-        # 存储不可用时也要让人看见「这条被挂起了」，用合成日志表达
         entries = [{"at": enqueued_at, "action": "ENQUEUED", "actor": "system",
-                    "detail": "review_store_unavailable" if not review_ref else ""}]
-    return _review_view(rec, payload, entries)
+                    "detail": ""}]
+    view = _review_view(rec, payload, entries)
+    # duplicate 只用于「别再给审核群发一遍卡片」，不进公开 state
+    view["_duplicate"] = bool(res.get("duplicate"))
+    return view
+
+
+def _find_review_rec(state, key):
+    """按「公开键」或「审核句柄」找一条审核记录。
+
+    P0 之后公开键是随机的，业务侧稳定可用的索引只剩 review_ref，
+    所以两个都认——调用方不需要知道记录当初是用哪种键落盘的。
+    """
+    events = state.get("events") or {}
+    rec = events.get(key) if isinstance(events, dict) else None
+    if isinstance(rec, dict):
+        return rec
+    return store.find_review_stub(state, key)
 
 
 def approve_review(state, event_id, operator_id, note=""):
@@ -1670,7 +1761,7 @@ def approve_review(state, event_id, operator_id, note=""):
     公开 state 只发生一次状态迁移（PENDING_REVIEW → PENDING_DELIVERY）；
     审核人、备注、publish_mode 等全部留在私有存储与返回视图里。
     """
-    rec = (state.get("events") or {}).get(event_id)
+    rec = _find_review_rec(state, event_id)
     if not rec:
         raise store.StateError("审核记录不存在: {}".format(event_id))
     if rec.get("delivery_status") != store.PENDING_REVIEW:
@@ -1679,11 +1770,9 @@ def approve_review(state, event_id, operator_id, note=""):
 
     review_ref = rec.get("review_ref") or ""
     client = review_store_client()
-    if client is not None and review_ref:
-        try:
-            client.decide(review_ref, "approve", operator_id, note)
-        except review_store.ReviewConflict as e:
-            raise store.StateError("批准被拒：{}".format(e))
+    # fail-closed：客户端缺失 / review_ref 为空 / 存储任何错误 → 直接 raise，
+    # 绝不静默跳过私有 decide 再改公开状态。详见 _decide_private_or_raise。
+    _decide_private_or_raise(client, review_ref, "approve", operator_id, note, "批准")
 
     store.transition(rec, store.PENDING_DELIVERY)
     payload = _review_payload_of(client, review_ref)
@@ -1697,7 +1786,7 @@ def approve_review(state, event_id, operator_id, note=""):
 
 def decline_review(state, event_id, operator_id, note=""):
     """人工拒绝：仅存档。进终态 REVIEW_DECLINED，不再重复入队。"""
-    rec = (state.get("events") or {}).get(event_id)
+    rec = _find_review_rec(state, event_id)
     if not rec:
         raise store.StateError("审核记录不存在: {}".format(event_id))
     if rec.get("delivery_status") != store.PENDING_REVIEW:
@@ -1706,11 +1795,8 @@ def decline_review(state, event_id, operator_id, note=""):
 
     review_ref = rec.get("review_ref") or ""
     client = review_store_client()
-    if client is not None and review_ref:
-        try:
-            client.decide(review_ref, "decline", operator_id, note)
-        except review_store.ReviewConflict as e:
-            raise store.StateError("拒绝被拒：{}".format(e))
+    # 同 approve_review：私有决定不成立就不许迁移公开状态。
+    _decide_private_or_raise(client, review_ref, "decline", operator_id, note, "拒绝")
 
     store.transition(rec, store.REVIEW_DECLINED)
     payload = _review_payload_of(client, review_ref)
@@ -2004,11 +2090,59 @@ def _apply_delivery_outcome(rec, ok, report, error):
     return store.RETRYABLE_FAILURE
 
 
-def _public_stub_of(state, event_id):
-    rec = (state.get("events") or {}).get(event_id)
+def _public_stub_of(state, review_ref, event_id=""):
+    """按 opaque 句柄找公开 stub；找不到再退回按事件 id 找。
+
+    优先用 review_ref 是因为 P0 之后公开键是随机的，事件 id 在公开侧
+    已经不存在了。保留 event_id 回退只为兼容历史 state（迁移前的记录）。
+    """
+    rec = store.find_review_stub(state, review_ref)
+    if rec is None and event_id:
+        rec = (state.get("events") or {}).get(event_id)
     if not rec:
-        raise store.StateError("公开 state 里没有该事件的审核标记: {}".format(event_id))
+        raise store.StateError("公开 state 里没有该事件的审核标记: {}".format(
+            review_ref or event_id))
     return rec
+
+
+def _mark_public_uncertain(state, review_ref, client=None, reason=""):
+    """把对应的公开 stub 标成「结果未知」，并说明为什么必须这么做。
+
+    私有存储说「租约过期、结果未知」，如果公开 state 还写着 PENDING_DELIVERY，
+    下一次扫描就会把它当成「还没发」继续推进——同一个判断错误只是换了个位置
+    重演。`DELIVERY_UNCERTAIN` 在 `blocks_rediscovery()` 里返回 True，
+    既不会重复入队，也不会被当成「干净的待发」。
+
+    公开 state 可能还停在 PENDING_REVIEW：上一次执行在 `save_state` 之前就断了。
+    真实顺序是「已进投递队列 → 结果未知」，这里按这个顺序补齐，不跳过状态机。
+    """
+    rec = store.find_review_stub(state, review_ref)
+    if rec is None and client is not None and review_ref:
+        try:
+            got = client.get(review_ref) or {}
+            eid = got.get("event_id") or ""
+            rec = (state.get("events") or {}).get(eid) if eid else None
+        except review_store.ReviewStoreError:
+            rec = None
+    if rec is None:
+        print("::warning title=Review Stub Missing::"
+              "私有记录 {} 在公开 state 中找不到对应 stub，无法标记结果未知".format(
+                  review_ref or "(空)"))
+        return False
+    if rec.get("delivery_status") in (store.DELIVERY_UNCERTAIN, store.COMMITTED,
+                                      store.DELIVERED, store.REVIEW_DECLINED):
+        return True
+    try:
+        if rec.get("delivery_status") == store.PENDING_REVIEW:
+            store.transition(rec, store.PENDING_DELIVERY)
+        store.transition(rec, store.DELIVERY_UNCERTAIN,
+                         last_error=(reason or "")[:300])
+        return True
+    except store.StateError as e:
+        print("::warning title=Public State Not Marked::"
+              "公开状态无法标为结果未知（当前 {}）：{}".format(
+                  rec.get("delivery_status"), e))
+        return False
 
 
 def execute_review_decision(state, review_ref, post=None):
@@ -2028,6 +2162,15 @@ def execute_review_decision(state, review_ref, post=None):
 
     try:
         claim = client.claim(review_ref)
+    except review_store.ReviewNeedsManual as e:
+        # 租约过期：上一位执行者的消息**可能已经发出去了**。
+        # 这里必须停下来等人，绝不重试——重试就是第二次公开推送。
+        reason = str(e)
+        print("::warning title=Review Needs Manual::{}".format(reason))
+        _mark_public_uncertain(state, review_ref, client, reason)
+        return {"status": "NEEDS_MANUAL", "reason": reason,
+                "delivery_status": store.DELIVERY_UNCERTAIN,
+                "recovery": "人工核对后调用 release(review_ref, operator_id, note) 放行"}
     except review_store.ReviewConflict as e:
         return {"status": "CLAIMED_BY_OTHER", "reason": str(e)}
     except review_store.ReviewStoreError as e:
@@ -2045,7 +2188,7 @@ def execute_review_decision(state, review_ref, post=None):
     # ---- 拒绝：只改状态，绝不投递 ----
     if action == "decline":
         out = _finish_quietly(client, review_ref, token, review_store.DECLINED)
-        rec = (state.get("events") or {}).get(event_id)
+        rec = store.find_review_stub(state, review_ref)
         if rec and rec.get("delivery_status") == store.PENDING_REVIEW:
             store.transition(rec, store.REVIEW_DECLINED)
         return {"status": store.REVIEW_DECLINED, "reason": "已拒绝并存档",
@@ -2053,7 +2196,7 @@ def execute_review_decision(state, review_ref, post=None):
                 "finish_ok": out}
 
     # ---- 批准：公开 stub 先进入投递队列 ----
-    rec = _public_stub_of(state, event_id)
+    rec = _public_stub_of(state, review_ref, event_id)
     if rec.get("delivery_status") == store.PENDING_REVIEW:
         store.transition(rec, store.PENDING_DELIVERY)
     if not _resume_pending_delivery(rec):
@@ -2171,7 +2314,7 @@ def recheck_review(state, event_id, extra_rows=None):
 
     返回退出后的记录；没退出（不在队列 / 证据未达标）返回 None。
     """
-    rec = (state.get("events") or {}).get(event_id)
+    rec = _find_review_rec(state, event_id)
     if not rec or rec.get("delivery_status") != store.PENDING_REVIEW:
         return None
 
@@ -4007,14 +4150,20 @@ def run_scan_mode(state, start_time):
                         print("::error title=State Write Failed::"
                               "待审记录未能写入 state.json")
                         return 1
-                    print(f"[INFO] 转人工审核：{scan_event['event_id']} | "
-                          f"{scan_level} 级 / {scan_cred} | {route_reason}")
+                    # 日志里**不能**打印 event_id：它是 sha1(url)[:12]，而
+                    # GitHub Actions 的日志是公开的。打出来就等于把「哪一条
+                    # 被压着」写进了另一个公开渠道，state.json 那边白改了。
+                    print(f"[INFO] 转人工审核：{rec.get('review_ref') if rec else '(no-ref)'} "
+                          f"| {scan_level} 级 / {scan_cred} | {route_reason}")
                     print("::notice title=Pending Review::"
                           "该事件未公开推送，已进入内部待审队列")
                     # A2：落盘成功后才发审核卡片。
                     # 顺序不能反——先发卡片再落盘，一旦落盘失败，
                     # 按钮就指向一条不存在的记录，点下去只会报「记录不存在」。
-                    if rec is not None:
+                    # `_duplicate` 表示这条事件早就在队列里了（私有存储的
+                    # 唯一索引命中了旧记录），此时**不再**重发卡片，
+                    # 否则同一篇文章每轮扫描都会往审核群刷一遍。
+                    if rec is not None and not rec.get("_duplicate"):
                         # 卡片正文来自私有 payload（rec 是视图，含私有元数据），
                         # review_ref 是私有存储句柄，也是按钮里唯一带的东西。
                         card_mid = send_review_card(rec, rec.get("review_ref") or "")
@@ -4027,7 +4176,9 @@ def run_scan_mode(state, start_time):
                     log_telemetry({
                         "start_time": start_time, "end_time": _now_iso(),
                         "run_mode": "scan", "status": "PENDING_REVIEW",
-                        "event_id": scan_event["event_id"],
+                        # 同样不能写 event_id：遥测会被打印到公开的 Actions 日志。
+                        # 句柄是随机的，能定位记录但不泄露是哪一条。
+                        "review_ref": (rec or {}).get("review_ref") or "",
                         "importance": scan_level, "cred": scan_cred,
                         "review_reason": route_reason,
                     })

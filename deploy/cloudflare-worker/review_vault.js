@@ -94,10 +94,16 @@ export const SQL = {
   claim: `UPDATE review
           SET status='claimed', claim_token=?, claim_at=?, claim_expires_at=?,
               attempts=attempts+1, updated_at=?
-          WHERE review_ref=? AND (
-              status IN ('decided','failed')
-              OR (status='claimed' AND claim_expires_at IS NOT NULL AND claim_expires_at < ?)
-          )`,
+          WHERE review_ref=? AND status IN ('decided','failed')`,
+  // 租约过期 = 上一位执行者「可能已经发出去了」。只能转人工，不能落回可认领。
+  reapExpired: `UPDATE review
+                SET status='needs_manual', claim_token=NULL, last_error=?, updated_at=?
+                WHERE review_ref=? AND status='claimed'
+                  AND claim_expires_at IS NOT NULL AND claim_expires_at < ?`,
+  // 人工核对后的显式放行：needs_manual → decided
+  release: `UPDATE review
+            SET status='decided', last_error=?, updated_at=?
+            WHERE review_ref=? AND status='needs_manual'`,
   finishClaimed: `UPDATE review
                   SET status=?, message_ids=?, last_error=?, claim_token=NULL, updated_at=?
                   WHERE review_ref=? AND status='claimed' AND claim_token=?`,
@@ -122,6 +128,14 @@ export const SQL = {
 const ACTIONS = ["approve", "decline"];
 const CLAIM_TTL_SECONDS = 900;
 const VALID_OUTCOMES = ["delivered", "needs_manual", "failed", "declined"];
+
+/**
+ * 租约过期时写进 last_error 的固定文案，与 review_store.py 的
+ * LEASE_EXPIRED_ERROR 保持一致——运维按这句话检索日志。
+ */
+const LEASE_EXPIRED_ERROR =
+  "认领租约已过期：上一位执行者的投递结果未知（消息可能已经发出），" +
+  "已转入人工核对，不会自动重发";
 
 function nowIso(ms) {
   return new Date(ms == null ? Date.now() : ms).toISOString();
@@ -152,9 +166,13 @@ function jsonRes(obj, status = 200) {
   });
 }
 
-/** 错误响应：`conflict: true` 让客户端区分「状态冲突」与「服务不可用」 */
-function errRes(message, status = 400, conflict = false) {
-  return jsonRes({ ok: false, error: message, conflict }, status);
+/** 错误响应：`conflict: true` 让客户端区分「状态冲突」与「服务不可用」
+ *  `extra` 用于附加机器可读标记（例如 needs_manual），不影响既有调用点。
+ */
+function errRes(message, status = 400, conflict = false, extra = null) {
+  const body = { ok: false, error: message, conflict };
+  if (extra) Object.assign(body, extra);
+  return jsonRes(body, status);
 }
 
 /**
@@ -205,7 +223,7 @@ export class Vault {
         return jsonRes({ ok: true, faults: this.sql.exec(SQL.faultList).toArray() });
       }
 
-      const m = path.match(/^\/review\/([0-9a-f]{8,64})\/(state|payload|decide|claim|finish|exit|log)$/);
+      const m = path.match(/^\/review\/([0-9a-f]{8,64})\/(state|payload|decide|claim|finish|exit|release|log)$/);
       if (m) {
         const [, ref, op] = m;
         if (op === "state" && request.method === "GET") return this.getState(ref);
@@ -222,6 +240,7 @@ export class Vault {
         if (op === "claim") return this.claim(ref, body);
         if (op === "finish") return this.finish(ref, body);
         if (op === "exit") return this.exitReview(ref, body);
+        if (op === "release") return this.release(ref, body);
         if (op === "log") return jsonRes({ ok: true, entries: this.logEntries(ref) });
       }
       return errRes("not_found", 404);
@@ -313,14 +332,42 @@ export class Vault {
     return jsonRes({ ok: true, review_ref: ref, status: "decided", action });
   }
 
+  /**
+   * 一次性认领：decided/failed → claimed。
+   *
+   * **租约过期不再自动重新认领**（PR #1 审查 P1）。旧 SQL 里的
+   * `OR (status='claimed' AND claim_expires_at < ?)` 等于说「上一任超时了，
+   * 换你上」。但投递不是可回滚的动作：
+   *
+   *     Telegram 发送成功 → 进程被杀 → 租约过期 → 另一个 job 认领 → 重复推送
+   *
+   * 发送与 finish 回写不可能原子，所以「租约过期」只说明**结果未知**。
+   * 现在的处理：过期先原子地转 needs_manual，再返回 needs_manual 错误，
+   * 绝不签发 claim_token。人工核对后用 /release 显式放行。
+   *
+   * failed 的重试机制原样保留——那是「明确没发出去」，重发不会重复。
+   */
   claim(ref, body) {
     const ttl = Number(body.ttl) > 0 ? Number(body.ttl) : CLAIM_TTL_SECONDS;
     const token = randomRef();
     const now = nowIso();
-    const cur = this.sql.exec(SQL.claim, token, now, isoIn(ttl), now, ref, now);
+    // 第一步：过期租约 → needs_manual。放在同一次请求里，避免两个 job
+    // 同时看到「已过期」而一个转人工、一个抢走。
+    const reaped = this.sql.exec(SQL.reapExpired, LEASE_EXPIRED_ERROR, now, ref, now);
+    if (reaped.rowsWritten === 1) {
+      this.log(ref, "LEASE_EXPIRED", "system", LEASE_EXPIRED_ERROR);
+      return errRes(LEASE_EXPIRED_ERROR, 409, true, { needs_manual: true, status: "needs_manual" });
+    }
+    const cur = this.sql.exec(SQL.claim, token, now, isoIn(ttl), now, ref);
     if (cur.rowsWritten !== 1) {
       const row = this.sql.exec(SQL.getReview, ref).toArray()[0];
       if (!row) return errRes("审核记录不存在", 404, true);
+      // needs_manual 的记录不许被「再认领一次」蒙混过去
+      if (row.status === "needs_manual") {
+        return errRes(
+          "该记录处于人工核对状态（needs_manual），必须由人工放行后才能重新投递",
+          409, true, { needs_manual: true, status: "needs_manual" });
+      }
       return errRes(
         "无法认领（当前状态 " + row.status + "），可能已被另一名审核人或另一个 job 接手",
         409, true);
@@ -336,6 +383,29 @@ export class Vault {
       claim_token: token,
       attempts: row.attempts,
     });
+  }
+
+  /**
+   * 人工核对后的显式放行：needs_manual → decided。
+   *
+   * 这是过期认领唯一的复活通道。必须带 operator_id——放行必须有人负责，
+   * 否则 needs_manual 就变成「谁都能一键重发」的橡皮图章。
+   */
+  release(ref, body) {
+    const operator = String(body.operator_id || "").trim();
+    if (!operator) return errRes("release 必须带 operator_id（放行必须有人负责）");
+    const note = String(body.note || "").slice(0, 200);
+    const detail = operator + ": " + note;
+    const cur = this.sql.exec(SQL.release, detail, nowIso(), ref);
+    if (cur.rowsWritten !== 1) {
+      const row = this.sql.exec(SQL.getReview, ref).toArray()[0];
+      if (!row) return errRes("审核记录不存在", 404, true);
+      return errRes(
+        "该记录不在 needs_manual 状态（当前 " + row.status + "），无需放行",
+        409, true);
+    }
+    this.log(ref, "RELEASED:manual", operator, note);
+    return jsonRes({ ok: true, review_ref: ref, status: "decided" });
   }
 
   finish(ref, body) {

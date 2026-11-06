@@ -287,6 +287,44 @@ async function seedReview(env, eventId = "abcdef123456", extra = {}) {
   return out.body.review_ref;
 }
 
+/**
+ * 直接打 DO（跳过 Worker 的 /internal 前缀与鉴权链）。
+ * P1 的租约过期场景需要直接操作存储，走 Worker 那层够不着。
+ */
+function vaultCall(v, path, body, method = "POST") {
+  return v.fetch(new Request("https://v" + path, {
+    method,
+    headers: { "content-type": "application/json", "X-Service-Key": SERVICE_KEY },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  })).then((r) => r.json());
+}
+
+/** 直接往指定 DO 实例里入队一条审核记录，返回 review_ref */
+async function seedDirect(v, eventId) {
+  const out = await vaultCall(v, "/review/enqueue", { payload: {
+    event_id: eventId,
+    title: "某队主帅即将下课（未证实）",
+    fact_summary: "据某小报报道，某队主帅将在 48 小时内被解雇。",
+    articles: [{ title: "Boss to be sacked", url: "https://example.com/secret-article" }],
+    urls: ["https://example.com/secret-article"],
+    publishers: ["example.com"],
+    importance: "S",
+    cred: "E4",
+  } });
+  return out.review_ref;
+}
+
+/**
+ * 把租约推到过去，模拟「进程在 Telegram 发送成功后、finish 回写前被杀，
+ * 时间过了 TTL」。review_vault.js 用真实 Date.now()，所以这里也用真实时间
+ * 往前推，而不是用测试里的假时钟 NOW。
+ */
+function expireLease(v, ref) {
+  const past = new Date(Date.now() - 60 * 1000).toISOString();
+  v._db.prepare("UPDATE review SET claim_expires_at = ? WHERE review_ref = ?")
+    .run(past, ref);
+}
+
 /* ==========================================================================
  * A3：Telegram webhook 校验链
  * ==========================================================================*/
@@ -932,6 +970,220 @@ async function testVault() {
     const noDurable = await internal(baseEnv({ VAULT: undefined }),
       "/internal/review/enqueue", { body: { payload: { event_id: "x" } } });
     eq("C-10 无 DO 绑定时拒绝（不退回公开存储）", noDurable.status, 503);
+  }
+
+  /* 40. ★★ P1：claim 租约过期后不得自动重复投递
+   *
+   * 这是 PR #1 审查发现的第二个缺陷。旧 SQL 里有：
+   *
+   *     OR (status='claimed' AND claim_expires_at < ?)
+   *
+   * 语义是「上一任超时了，换你上」。但投递不是可回滚的动作：
+   *
+   *     取到 claim → Telegram 发送成功 → 进程被杀 → 租约过期
+   *                                              → 另一个 job 认领 → 重复推送
+   *
+   * 发送与 finish 回写不可能构成一个原子事务，所以「租约过期」只说明
+   * **结果未知**，不说明**没发出去**。下面这组断言完整复现这条时间线。
+   */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const v = makeVault(env, ":memory:");
+    env.VAULT = makeNamespace(v);
+    const call = (p, body, method) => vaultCall(v, p, body, method);
+
+    const ref = await seedDirect(v, "eeee11112222");
+    await call(`/review/${ref}/decide`, { action: "approve", operator_id: "111" });
+
+    // ① 成功取得 claim
+    const c1 = await call(`/review/${ref}/claim`, {});
+    eq("C-11a 首次认领成功", c1.ok, true);
+    check("C-11a 拿到一次性 claim_token", !!c1.claim_token, c1.claim_token);
+
+    // ② 模拟 Telegram 已发送成功（消息真的出去了，但我们不 finish）
+    // ③ 模拟进程在 finish 回写前中断 —— 什么都不做，就是断点
+    const mid = await call(`/review/${ref}/state`, undefined, "GET");
+    eq("C-11a 中断后状态停在 claimed", mid.status, "claimed");
+
+    // ④ 把租约推进到过期
+    expireLease(v, ref);
+
+    // ⑤ 新任务不能自动重新发送
+    const c2 = await call(`/review/${ref}/claim`, {});
+    eq("C-11a 过期后不能重新认领", c2.ok, false);
+    check("C-11a 过期认领不签发 claim_token", !c2.claim_token, c2.claim_token);
+    eq("C-11a 过期认领标记 needs_manual", c2.needs_manual, true);
+
+    // ⑥ 状态进入人工核查
+    const after = await call(`/review/${ref}/state`, undefined, "GET");
+    eq("C-11a 状态转为 needs_manual", after.status, "needs_manual");
+    check("C-11a last_error 记录租约过期",
+      String(after.last_error || "").includes("租约"), after.last_error);
+    eq("C-11a claim_token 已被清空（旧 token 无法再 finish）", after.claim_token || "", "");
+
+    // 旧 token 不能再用来完成投递（进程即使活过来也回写不了）
+    const late = await call(`/review/${ref}/finish`,
+      { claim_token: c1.claim_token, outcome: "delivered", message_ids: ["1"] });
+    eq("C-11a 过期后旧 token 无法回写 delivered", late.ok, false);
+
+    // 日志里必须留下这次「被迫转人工」的痕迹
+    const log = await call(`/review/${ref}/log`, undefined, "GET");
+    check("C-11a 日志记录 LEASE_EXPIRED",
+      (log.entries || []).some((e) => e.action === "LEASE_EXPIRED"),
+      JSON.stringify((log.entries || []).map((e) => e.action)));
+  }
+
+  /* 41. ★★ P1：needs_manual 是「停下来等人」，不是「过一会儿再试」 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const v = makeVault(env, ":memory:");
+    env.VAULT = makeNamespace(v);
+    const call = (p, body, method) => vaultCall(v, p, body, method);
+    const ref = await seedDirect(v, "eeee22223333");
+    await call(`/review/${ref}/decide`, { action: "approve", operator_id: "111" });
+    await call(`/review/${ref}/claim`, {});
+    expireLease(v, ref);
+    await call(`/review/${ref}/claim`, {});          // 转 needs_manual
+
+    // 反复认领都只会得到 needs_manual，永远不会拿到 token
+    for (let i = 0; i < 3; i += 1) {
+      const again = await call(`/review/${ref}/claim`, {});
+      eq(`C-11b 第 ${i + 1} 次重复认领仍被拒`, again.ok, false);
+      eq(`C-11b 第 ${i + 1} 次仍标记 needs_manual`, again.needs_manual, true);
+      check(`C-11b 第 ${i + 1} 次仍不签发 token`, !again.claim_token, again.claim_token);
+    }
+    const st = await call(`/review/${ref}/state`, undefined, "GET");
+    eq("C-11b 反复认领后状态仍是 needs_manual", st.status, "needs_manual");
+    check("C-11b 尝试次数没有把记录推回可认领",
+      st.status !== "decided" && st.status !== "claimed", st.status);
+  }
+
+  /* 42. ★★ P1：恢复必须显式，且必须有人签名 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const v = makeVault(env, ":memory:");
+    env.VAULT = makeNamespace(v);
+    const call = (p, body, method) => vaultCall(v, p, body, method);
+    const ref = await seedDirect(v, "eeee33334444");
+    await call(`/review/${ref}/decide`, { action: "approve", operator_id: "111" });
+    await call(`/review/${ref}/claim`, {});
+    expireLease(v, ref);
+    await call(`/review/${ref}/claim`, {});          // → needs_manual
+
+    // 没有 operator_id 的放行必须被拒（否则 needs_manual 就是橡皮图章）
+    const anon = await call(`/review/${ref}/release`, { note: "看着像没发出去" });
+    eq("C-11c 无 operator_id 的放行被拒", anon.ok, false);
+    const still = await call(`/review/${ref}/state`, undefined, "GET");
+    eq("C-11c 被拒的放行不改变状态", still.status, "needs_manual");
+
+    // 对非 needs_manual 记录放行也要被拒（不能当万能钥匙）
+    const other = await seedDirect(v, "eeee44445555");
+    const wrong = await call(`/review/${other}/release`, { operator_id: "111" });
+    eq("C-11c 对 pending 记录放行被拒", wrong.ok, false);
+
+    // 显式放行 → decided → 可以重新认领
+    const ok = await call(`/review/${ref}/release`,
+      { operator_id: "editor_01", note: "已核对频道无该消息" });
+    eq("C-11c 带签名的放行成功", ok.ok, true);
+    eq("C-11c 放行后回到 decided", ok.status, "decided");
+    const re = await call(`/review/${ref}/claim`, {});
+    eq("C-11c 放行后可以重新认领", re.ok, true);
+    check("C-11c 重新认领拿到新 token", !!re.claim_token, re.claim_token);
+
+    const log = await call(`/review/${ref}/log`, undefined, "GET");
+    const rel = (log.entries || []).find((e) => e.action === "RELEASED:manual");
+    check("C-11c 日志记录放行人", !!rel && rel.actor === "editor_01", JSON.stringify(rel));
+  }
+
+  /* 43. ★★ P1：确定性失败（failed）的重试机制必须保留
+   *
+   * 与「结果未知」相对的另一端：failed 是「明确没发出去」（HTTP 400/401），
+   * 重发不会造成重复。加固不能把这条正常重试路径一起堵死。
+   */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const v = makeVault(env, ":memory:");
+    env.VAULT = makeNamespace(v);
+    const call = (p, body, method) => vaultCall(v, p, body, method);
+    const ref = await seedDirect(v, "eeee55556666");
+    await call(`/review/${ref}/decide`, { action: "approve", operator_id: "111" });
+
+    const c1 = await call(`/review/${ref}/claim`, {});
+    eq("C-11d 首次认领成功", c1.ok, true);
+    // 确定性失败：明确知道没发出去
+    const f1 = await call(`/review/${ref}/finish`,
+      { claim_token: c1.claim_token, outcome: "failed", error: "HTTP 400 格式错误" });
+    eq("C-11d 确定性失败可以回写", f1.ok, true);
+    eq("C-11d 状态为 failed", f1.status, "failed");
+
+    // failed 允许重新认领（这是合理重试，不是重复投递）
+    const c2 = await call(`/review/${ref}/claim`, {});
+    eq("C-11d failed 可以重新认领", c2.ok, true);
+    check("C-11d 重试拿到新 token", !!c2.claim_token, c2.claim_token);
+    check("C-11d 新 token 与旧 token 不同",
+      c2.claim_token !== c1.claim_token, c2.claim_token);
+
+    const st = await call(`/review/${ref}/state`, undefined, "GET");
+    eq("C-11d attempts 已累加", st.attempts, 2);
+  }
+
+  /* 44. ★★ P1：needs_manual 与 failed 的语义必须互不污染 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const v = makeVault(env, ":memory:");
+    env.VAULT = makeNamespace(v);
+    const call = (p, body, method) => vaultCall(v, p, body, method);
+
+    // failed：可以重试
+    const a = await seedDirect(v, "eeee66667777");
+    await call(`/review/${a}/decide`, { action: "approve", operator_id: "111" });
+    const ca = await call(`/review/${a}/claim`, {});
+    await call(`/review/${a}/finish`,
+      { claim_token: ca.claim_token, outcome: "failed", error: "HTTP 400" });
+    const ca2 = await call(`/review/${a}/claim`, {});
+    eq("C-11e failed 可重试", ca2.ok, true);
+
+    // needs_manual：不可重试
+    const b = await seedDirect(v, "eeee77778888");
+    await call(`/review/${b}/decide`, { action: "approve", operator_id: "111" });
+    await call(`/review/${b}/claim`, {});
+    expireLease(v, b);
+    await call(`/review/${b}/claim`, {});
+    const cb = await call(`/review/${b}/claim`, {});
+    eq("C-11e needs_manual 不可重试", cb.ok, false);
+    eq("C-11e needs_manual 明确标记", cb.needs_manual, true);
+    check("C-11e failed 的响应不带 needs_manual",
+      !ca2.needs_manual && ca2.ok === true, JSON.stringify(ca2));
+  }
+
+  /* 45. ★★ P1：跨实例（重启）后过期租约同样不能自动重认领 */
+  resetRoutes();
+  {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "vault-"));
+    const dbPath = path.join(dir, "vault.db");
+    const env1 = baseEnv();
+    const v1 = makeVault(env1, dbPath);
+    env1.VAULT = makeNamespace(v1);
+    const ref = await seedDirect(v1, "eeee88889999");
+    await vaultCall(v1, `/review/${ref}/decide`, { action: "approve", operator_id: "111" });
+    const c1 = await vaultCall(v1, `/review/${ref}/claim`, {});
+    eq("C-11f 实例一认领成功", c1.ok, true);
+    expireLease(v1, ref);
+
+    // 「重启」：同一份持久化存储上新建 DO 实例
+    const env2 = baseEnv();
+    const v2 = makeVault(env2, dbPath);
+    env2.VAULT = makeNamespace(v2);
+    const c2 = await vaultCall(v2, `/review/${ref}/claim`, {});
+    eq("C-11f 重启后不能自动重新认领", c2.ok, false);
+    eq("C-11f 重启后标记 needs_manual", c2.needs_manual, true);
+    const st = await vaultCall(v2, `/review/${ref}/state`, undefined, "GET");
+    eq("C-11f 重启后状态是 needs_manual", st.status, "needs_manual");
   }
 }
 

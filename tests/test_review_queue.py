@@ -138,41 +138,43 @@ class TestApprove(_ReviewStoreCase):
         super().setUp()
         self.state = {"events": {}}
         self.evt = make_event()
-        bot._enqueue_review(self.state, self.evt, "E4 级 S 事件")
+        # P0 之后公开键是随机的，业务侧统一用 opaque 句柄定位记录
+        self.ref = bot._enqueue_review(
+            self.state, self.evt, "E4 级 S 事件")["review_ref"]
 
     def test_approve_moves_to_delivery(self):
-        rec = bot.approve_review(self.state, "ev_test", "editor_01", "确认措辞")
+        rec = bot.approve_review(self.state, self.ref, "editor_01", "确认措辞")
         self.assertEqual(rec["delivery_status"], store.PENDING_DELIVERY)
         self.assertEqual(rec["review_status"], "APPROVED")
 
     def test_approve_does_not_change_cred(self):
-        rec = bot.approve_review(self.state, "ev_test", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         # 人工批准 ≠ 事实核验完成
         self.assertEqual(rec["review_cred"], "E4")
         self.assertTrue(rec["cred_unchanged_by_approval"])
 
     def test_approve_forces_attributed_wording(self):
-        rec = bot.approve_review(self.state, "ev_test", "editor_01")
+        rec = bot.approve_review(self.state, self.ref, "editor_01")
         self.assertEqual(rec["publish_mode"], "ATTRIBUTED")
 
     def test_approve_logged(self):
-        rec = bot.approve_review(self.state, "ev_test", "editor_01", "ok")
+        rec = bot.approve_review(self.state, self.ref, "editor_01", "ok")
         last = rec["review_log"][-1]
         self.assertEqual(last["action"], "APPROVED")
         self.assertEqual(last["operator_id"], "editor_01")
         self.assertEqual(last["cred_after"], last["prev_cred"])
 
     def test_approve_twice_rejected(self):
-        bot.approve_review(self.state, "ev_test", "editor_01")
+        bot.approve_review(self.state, self.ref, "editor_01")
         with self.assertRaises(store.StateError):
-            bot.approve_review(self.state, "ev_test", "editor_01")
+            bot.approve_review(self.state, self.ref, "editor_01")
 
     def test_approve_unknown_rejected(self):
         with self.assertRaises(store.StateError):
             bot.approve_review(self.state, "nope", "editor_01")
 
     def test_no_longer_pending(self):
-        bot.approve_review(self.state, "ev_test", "editor_01")
+        bot.approve_review(self.state, self.ref, "editor_01")
         self.assertEqual(bot.list_pending_reviews(self.state), [])
 
 
@@ -180,32 +182,33 @@ class TestDecline(_ReviewStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        bot._enqueue_review(self.state, make_event(), "E4 级 S 事件")
+        self.ref = bot._enqueue_review(
+            self.state, make_event(), "E4 级 S 事件")["review_ref"]
 
     def test_decline_terminal(self):
-        rec = bot.decline_review(self.state, "ev_test", "editor_01", "不采信")
+        rec = bot.decline_review(self.state, self.ref, "editor_01", "不采信")
         self.assertEqual(rec["delivery_status"], store.REVIEW_DECLINED)
         self.assertEqual(rec["review_status"], "DECLINED")
 
     def test_decline_not_marked_as_failure(self):
-        rec = bot.decline_review(self.state, "ev_test", "editor_01")
+        rec = bot.decline_review(self.state, self.ref, "editor_01")
         # 复用 DELIVERY_FAILED 会让失败率指标失真、watchdog 误重试
         self.assertNotEqual(rec["delivery_status"], store.DELIVERY_FAILED)
 
     def test_declined_is_terminal(self):
-        bot.decline_review(self.state, "ev_test", "editor_01")
-        rec = self.state["events"]["ev_test"]
+        bot.decline_review(self.state, self.ref, "editor_01")
+        rec = store.find_review_stub(self.state, self.ref)
         with self.assertRaises(store.StateError):
             store.transition(rec, store.PENDING_DELIVERY)
 
     def test_declined_blocks_requeue(self):
-        rec = bot.decline_review(self.state, "ev_test", "editor_01")
+        rec = bot.decline_review(self.state, self.ref, "editor_01")
         self.assertTrue(store.blocks_rediscovery(rec))
 
     def test_cannot_approve_after_decline(self):
-        bot.decline_review(self.state, "ev_test", "editor_01")
+        bot.decline_review(self.state, self.ref, "editor_01")
         with self.assertRaises(store.StateError):
-            bot.approve_review(self.state, "ev_test", "editor_01")
+            bot.approve_review(self.state, self.ref, "editor_01")
 
 
 class TestAutoExitOnSecondSource(_ReviewStoreCase):
@@ -220,14 +223,15 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
         super().setUp()
         self.state = {"events": {}}
         # 初始只有一条低可信来源，判 E4 入队
-        bot._enqueue_review(self.state, make_event(), "E4 级 S 事件")
+        self.ref = bot._enqueue_review(
+            self.state, make_event(), "E4 级 S 事件")["review_ref"]
 
     def _rows(self, pairs):
         return [{"url": u, "title": t} for u, t in pairs]
 
     def test_stays_when_still_e4(self):
         # 只有原记录里那一条，证据没变 → 继续待审
-        self.assertIsNone(bot.recheck_review(self.state, "ev_test"))
+        self.assertIsNone(bot.recheck_review(self.state, self.ref))
         self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
 
     def test_reprint_does_not_exit(self):
@@ -238,7 +242,7 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
             ("https://www.mirror.co.uk/sport/r2",
              "Ronaldo retires from Portugal duty"),
         ])
-        self.assertIsNone(bot.recheck_review(self.state, "ev_test", rows))
+        self.assertIsNone(bot.recheck_review(self.state, self.ref, rows))
         self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
 
     def test_same_publisher_two_pieces_does_not_exit(self):
@@ -246,20 +250,20 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
         # 必须用一个只有单一域名的记录来测，否则初始记录里的
         # thesun + dailymail 会凑成第二个「发布方」，把结论带偏。
         state = {"events": {}}
-        bot._enqueue_review(state, {
+        ref = bot._enqueue_review(state, {
             "event_id": "ev_sky", "title": "Ronaldo retires from Portugal duty",
             "importance": "S", "cred": "E4", "content_type": "BREAKING_NEWS",
             "evidence_status": ev.UNVERIFIED,
             "evidence_refs": [{"url": "https://www.skysports.com/news/s0",
                                "title": "Ronaldo retires from Portugal duty"}],
-        }, "E4 级 S 事件")
+        }, "E4 级 S 事件")["review_ref"]
         rows = self._rows([
             ("https://www.skysports.com/news/s1",
              "Ronaldo retires from Portugal duty"),
             ("https://www.skysports.com/live-blog/s2",
              "Ronaldo calls time on Portugal career"),
         ])
-        self.assertIsNone(bot.recheck_review(state, "ev_sky", rows))
+        self.assertIsNone(bot.recheck_review(state, ref, rows))
         self.assertEqual(len(bot.list_pending_reviews(state)), 1)
 
     def test_two_independent_publishers_exits(self):
@@ -269,7 +273,7 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
             ("https://www.skysports.com/football/i2",
              "Ronaldo announces international retirement on Instagram"),
         ])
-        rec = bot.recheck_review(self.state, "ev_test", rows)
+        rec = bot.recheck_review(self.state, self.ref, rows)
         self.assertIsNotNone(rec)
         self.assertEqual(rec["delivery_status"], store.PENDING_DELIVERY)
         self.assertEqual(rec["review_status"], "AUTO_EXITED")
@@ -281,7 +285,7 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
             ("https://www.manutd.com/news/official",
              "Ronaldo retires from international football"),
         ])
-        rec = bot.recheck_review(self.state, "ev_test", rows)
+        rec = bot.recheck_review(self.state, self.ref, rows)
         self.assertIsNotNone(rec)
         self.assertEqual(rec["review_exit_evidence"], ev.OFFICIAL_CONFIRMED)
 
@@ -289,7 +293,7 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
         # 早期签名是 recheck_review(state, id, evidence_status)。
         # 传一个状态字符串必须**无效**——不能凭声明退出。
         self.assertIsNone(
-            bot.recheck_review(self.state, "ev_test",
+            bot.recheck_review(self.state, self.ref,
                                ev.MULTIPLE_INDEPENDENT_SOURCES))
         self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
 
@@ -300,7 +304,7 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
             ("https://www.skysports.com/football/i2",
              "Ronaldo announces international retirement on Instagram"),
         ])
-        bot.recheck_review(self.state, "ev_test", rows)
+        bot.recheck_review(self.state, self.ref, rows)
         self.assertEqual(bot.list_pending_reviews(self.state), [])
 
     def test_exit_logged(self):
@@ -310,21 +314,21 @@ class TestAutoExitOnSecondSource(_ReviewStoreCase):
             ("https://www.skysports.com/football/i2",
              "Ronaldo announces international retirement on Instagram"),
         ])
-        rec = bot.recheck_review(self.state, "ev_test", rows)
+        rec = bot.recheck_review(self.state, self.ref, rows)
         self.assertEqual(rec["review_log"][-1]["action"], "AUTO_EXITED")
 
     def test_unknown_event_ignored(self):
         self.assertIsNone(bot.recheck_review(self.state, "nope"))
 
     def test_not_pending_ignored(self):
-        bot.approve_review(self.state, "ev_test", "editor_01")
+        bot.approve_review(self.state, self.ref, "editor_01")
         rows = self._rows([
             ("https://www.bbc.co.uk/sport/i1",
              "Ronaldo retires from Portugal duty"),
             ("https://www.skysports.com/football/i2",
              "Ronaldo announces international retirement on Instagram"),
         ])
-        self.assertIsNone(bot.recheck_review(self.state, "ev_test", rows))
+        self.assertIsNone(bot.recheck_review(self.state, self.ref, rows))
 
 
 class TestStateMachineSeparation(_ReviewStoreCase):

@@ -49,6 +49,10 @@ MODULES = [
     "tests.test_merch_vs_news",      # P0-1：商品页 vs 解雇新闻对抗
     # ---- V1.1 P0 安全补充：审核数据脱离公开 state.json ----
     "tests.test_review_privacy_v11",  # 十项安全测试 + Python↔Worker 契约
+    # ---- PR #1 安全审查整改（P0 / P1 / P2）----
+    "tests.test_news_pool_privacy",   # P0：新闻池与审核状态的关联泄露
+    "tests.test_review_lease_expiry", # P1：claim 租约过期不得自动重发
+    "tests.test_review_fail_closed",  # P2：approve/decline fail-closed
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 
@@ -68,7 +72,8 @@ def main():
 
     print("\n" + "=" * 60)
     print(f"模块数 {len(modules)} | 用例 {result.testsRun} | "
-          f"失败 {len(result.failures)} | 错误 {len(result.errors)} | 耗时 {elapsed:.1f}s")
+          f"失败 {len(result.failures)} | 错误 {len(result.errors)} | "
+          f"跳过 {len(result.skipped)} | 耗时 {elapsed:.1f}s")
     print("=" * 60)
     return 0 if result.wasSuccessful() else 1
 

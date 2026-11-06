@@ -70,6 +70,23 @@ class ReviewConflict(ReviewStoreError):
     """状态冲突：已被他人认领、已决定、或已处于终态。"""
 
 
+class ReviewNeedsManual(ReviewStoreError):
+    """投递结果未知，必须人工核对，**绝不自动重发**。
+
+    与 `ReviewConflict` 的区别是「谁的错」：
+      · ReviewConflict   —— 这次操作本来就不该发生（已决、已被认领、已终态）
+      · ReviewNeedsManual —— 上一位执行者的结果不可知（租约过期、发送超时），
+                            再发一次可能造成重复公开推送
+
+    调用方必须把它当成「停下来等人」，而不是「重试一下试试」。
+    """
+
+
+LEASE_EXPIRED_ERROR = (
+    "认领租约已过期：上一位执行者的投递结果未知（消息可能已经发出），"
+    "已转入人工核对，不会自动重发")
+
+
 # ==================== SQL（与 review_vault.js 必须逐句对应） ====================
 SCHEMA = (
     """
@@ -131,10 +148,23 @@ SQL_CLAIM = """
 UPDATE review
 SET status='claimed', claim_token=?, claim_at=?, claim_expires_at=?,
     attempts=attempts+1, updated_at=?
-WHERE review_ref=? AND (
-    status IN ('decided','failed')
-    OR (status='claimed' AND claim_expires_at IS NOT NULL AND claim_expires_at < ?)
-)
+WHERE review_ref=? AND status IN ('decided','failed')
+"""
+
+# 租约过期 = 上一位执行者「可能已经发出去了」。这里**只能**转人工，
+# 绝不能让它落回可认领状态。
+SQL_REAP_EXPIRED = """
+UPDATE review
+SET status='needs_manual', claim_token=NULL, last_error=?, updated_at=?
+WHERE review_ref=? AND status='claimed'
+  AND claim_expires_at IS NOT NULL AND claim_expires_at < ?
+"""
+
+# 人工核对后的显式放行：needs_manual → decided，重新进入可认领。
+SQL_RELEASE = """
+UPDATE review
+SET status='decided', last_error=?, updated_at=?
+WHERE review_ref=? AND status='needs_manual'
 """
 
 SQL_FINISH_CLAIMED = """
@@ -299,20 +329,62 @@ class LocalReviewStore:
         """一次性认领：decided/failed → claimed，发一次性 claim_token。
 
         旧按钮重放拿不到第二次 claim：status 已经不是 decided 了。
+
+        **租约过期不再自动重新认领**（PR #1 审查 P1）。旧 SQL 里有一句
+        `OR (status='claimed' AND claim_expires_at < ?)`，语义是「上一任超时
+        了，换你上」。可投递不是一个能回滚的动作：
+
+            Telegram 发送成功  →  进程被杀  →  租约过期  →  另一个 job 认领
+                                                                  ↓
+                                                            重复公开推送
+
+        发送与 finish 回写不可能构成一个原子事务，所以「租约过期」这个事实
+        只能说明**结果未知**，不能说明**没发出去**。现在的处理：
+          · 过期 → 本方法先把它原子地转成 needs_manual（落 last_error）
+          · 然后抛 ReviewNeedsManual，绝不返回可用的 claim_token
+          · 人工核对后调用 release() 显式放行，才回到 decided 可认领
+
+        确定性失败（failed）的重试机制原样保留：那类失败是「明确没发出去」，
+        重发不会造成重复。
         """
         token = secrets.token_hex(16)
         now = _now_iso()
+        expired = False
+        claimed_ok = False
+        row = None
         with self._tx():
-            cur = self._conn.execute(SQL_CLAIM, (token, now, _iso_in(ttl), now,
-                                                 review_ref, now))
-            if cur.rowcount != 1:
+            # 第一步：过期租约 → needs_manual。与认领在同一个事务里，
+            # 避免「两个人同时看到过期、一个转人工一个抢走」。
+            reaped = self._conn.execute(
+                SQL_REAP_EXPIRED, (LEASE_EXPIRED_ERROR, now, review_ref, now))
+            if reaped.rowcount == 1:
+                expired = True
                 row = self._conn.execute(SQL_GET, (review_ref,)).fetchone()
-                if not row:
-                    raise ReviewConflict("审核记录不存在: {}".format(review_ref))
-                raise ReviewConflict(
-                    "无法认领（当前状态 {}），可能已被另一名审核人或另一个 job 接手".format(
-                        row["status"]))
-            row = self._conn.execute(SQL_GET, (review_ref,)).fetchone()
+            else:
+                cur = self._conn.execute(
+                    SQL_CLAIM, (token, now, _iso_in(ttl), now, review_ref))
+                claimed_ok = cur.rowcount == 1
+                row = self._conn.execute(SQL_GET, (review_ref,)).fetchone()
+
+        # 事务已提交（含 needs_manual 那一步），下面才允许抛异常。
+        # 反过来在 with 里抛，_Tx 会回滚——人工核查状态就白写了。
+        if expired:
+            self._log(review_ref, "LEASE_EXPIRED", "system", LEASE_EXPIRED_ERROR)
+            raise ReviewNeedsManual(LEASE_EXPIRED_ERROR)
+        if not claimed_ok:
+            if not row:
+                raise ReviewConflict("审核记录不存在: {}".format(review_ref))
+            # needs_manual 必须继续报 needs_manual，不能退化成普通冲突——
+            # 否则调用方会把「等人核对」误读成「有人正在发」，从而另找路径重试。
+            # 这一分支与 review_vault.js 的 claim() 逐句对应。
+            if row["status"] == NEEDS_MANUAL:
+                raise ReviewNeedsManual(
+                    "该记录处于人工核对状态（needs_manual），"
+                    "必须由人工放行后才能重新投递")
+            raise ReviewConflict(
+                "无法认领（当前状态 {}），可能已被另一名审核人或另一个 job 接手".format(
+                    row["status"]))
+
         self._log(review_ref, "CLAIMED", "action-run", "token=" + token[:8] + "…")
         return {
             "review_ref": review_ref,
@@ -322,6 +394,27 @@ class LocalReviewStore:
             "claim_token": token,
             "attempts": row["attempts"],
         }
+
+    def release(self, review_ref, operator_id, note=""):
+        """人工核对后显式放行：needs_manual → decided。
+
+        这是「过期认领」唯一的复活通道，必须有人签名。没有它，needs_manual
+        就是死档；有了它，复活这件事在日志里留得下 operator 与理由。
+        """
+        if not (operator_id or "").strip():
+            raise ReviewStoreError("release 必须带 operator_id（放行必须有人负责）")
+        detail = "{}: {}".format(operator_id, (note or "")[:200])
+        with self._tx():
+            cur = self._conn.execute(SQL_RELEASE, (detail, _now_iso(), review_ref))
+            if cur.rowcount != 1:
+                row = self._conn.execute(SQL_GET, (review_ref,)).fetchone()
+                if not row:
+                    raise ReviewConflict("审核记录不存在: {}".format(review_ref))
+                raise ReviewConflict(
+                    "该记录不在 needs_manual 状态（当前 {}），无需放行".format(
+                        row["status"]))
+        self._log(review_ref, "RELEASED:manual", operator_id, note or "")
+        return {"review_ref": review_ref, "status": DECIDED}
 
     def finish(self, review_ref, claim_token, outcome, message_ids=None, error=""):
         """回传投递结果。**只有 Telegram 真的成功才允许 outcome=delivered。**
@@ -428,9 +521,20 @@ class HttpReviewStore:
         except urllib.error.HTTPError as exc:
             detail = ""
             try:
-                detail = exc.read().decode("utf-8")[:300]
+                detail = exc.read().decode("utf-8")[:2000]
             except Exception:                              # noqa: BLE001
                 pass
+            # DO 的 4xx 响应体里带机器可读标记（conflict / needs_manual）。
+            # 必须**在这里**就把它们交回 `_call` 统一映射：409 既可能是
+            # 「别人正在发」，也可能是「租约过期、结果未知」，两者对调用方的
+            # 要求完全相反（前者换条路，后者停下来等人）。一律当成
+            # ReviewConflict 会把「必须人工核对」误读成「重试一下试试」。
+            try:
+                parsed = json.loads(detail) if detail.strip() else None
+            except Exception:                              # noqa: BLE001
+                parsed = None
+            if isinstance(parsed, dict) and parsed.get("ok") is False:
+                return parsed
             if exc.code in (404, 409):
                 raise ReviewConflict("私有审核存储拒绝: HTTP {} {}".format(exc.code, detail))
             raise ReviewStoreError("私有审核存储不可用: HTTP {} {}".format(exc.code, detail))
@@ -446,6 +550,10 @@ class HttpReviewStore:
         out = self._transport(path, method=method, payload=payload) or {}
         if out.get("ok") is False:
             err = out.get("error") or "unknown"
+            # 顺序有意义：needs_manual 也是 conflict，但语义完全不同——
+            # 「结果未知、必须人工核对」不能退化成「重试一下」。
+            if out.get("needs_manual"):
+                raise ReviewNeedsManual(err)
             if out.get("conflict"):
                 raise ReviewConflict(err)
             raise ReviewStoreError(err)
@@ -481,6 +589,10 @@ class HttpReviewStore:
     def exit_review(self, review_ref, reason=""):
         return self._call("/internal/review/{}/exit".format(review_ref), "POST",
                           {"reason": reason})
+
+    def release(self, review_ref, operator_id, note=""):
+        return self._call("/internal/review/{}/release".format(review_ref), "POST",
+                          {"operator_id": operator_id, "note": note})
 
     def log(self, review_ref):
         return (self._call("/internal/review/{}/log".format(review_ref)) or {}).get("entries") or []

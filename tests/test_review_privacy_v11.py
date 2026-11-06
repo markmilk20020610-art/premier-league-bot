@@ -138,7 +138,9 @@ class TestReviewRecordNeverEntersPublicState(_PrivateStoreCase):
         super().setUp()
         self.state = {"events": {}}
         self.view = enqueue(self.state)
-        self.stub = self.state["events"][EVENT_ID]
+        # P0 之后公开键是随机值，只能靠 opaque 句柄定位（这正是修复目的）
+        self.stub = store.find_review_stub(self.state, self.view["review_ref"])
+        self.assertIsNotNone(self.stub, "入队后公开侧必须有一条可定位的 stub")
 
     def test_stub_only_has_whitelisted_keys(self):
         extra = sorted(set(self.stub.keys()) - set(store.REVIEW_STUB_ALLOWED))
@@ -303,8 +305,7 @@ class TestDuplicateApprovalOnlyOnceSucceeds(_PrivateStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
-        self.ref = self.state["events"][EVENT_ID]["review_ref"]
+        self.ref = enqueue(self.state)["review_ref"]
 
     def test_second_decide_conflicts(self):
         self.client.decide(self.ref, "approve", "editor_01")
@@ -312,9 +313,9 @@ class TestDuplicateApprovalOnlyOnceSucceeds(_PrivateStoreCase):
             self.client.decide(self.ref, "approve", "editor_02")
 
     def test_second_approve_raises_state_error(self):
-        bot.approve_review(self.state, EVENT_ID, "editor_01")
+        bot.approve_review(self.state, self.ref, "editor_01")
         with self.assertRaises(store.StateError):
-            bot.approve_review(self.state, EVENT_ID, "editor_02")
+            bot.approve_review(self.state, self.ref, "editor_02")
 
     def test_decide_after_claim_conflicts(self):
         self.client.decide(self.ref, "approve", "editor_01")
@@ -414,9 +415,9 @@ class TestConcurrentApproveDeclineOnlyOneWins(_PrivateStoreCase):
     def test_public_stub_never_ends_in_two_states(self):
         state = {"events": {}}
         enqueue(state, eid="ev_race_pub")
-        ref = state["events"]["ev_race_pub"]["review_ref"]
+        ref = enqueue(state, eid="ev_race_pub")["review_ref"]
         self._race(ref)
-        self.assertEqual(state["events"]["ev_race_pub"]["delivery_status"],
+        self.assertEqual(store.find_review_stub(state, ref)["delivery_status"],
                          store.PENDING_REVIEW,
                          "私有存储的决定不会自动改写公开状态")
 
@@ -430,8 +431,7 @@ class TestCallbackReplayCannotApproveAgain(_PrivateStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
-        self.ref = self.state["events"][EVENT_ID]["review_ref"]
+        self.ref = enqueue(self.state)["review_ref"]
 
     def _callback(self, action=bot.REVIEW_ACTION_APPROVE, **kw):
         return bot.encode_review_callback(self.ref, action, secret=SECRET, **kw)
@@ -556,6 +556,8 @@ class TestHttpClientRouteContract(unittest.TestCase):
         self.client.claim(ref)
         self.client.finish(ref, "token", review_store.DELIVERED)
         self.client.exit_review(ref, "第二个独立来源")
+        # PR #1 P1：租约过期后唯一的人工放行通道，必须也在路由契约里
+        self.client.release(ref, "editor_01", "已核对频道无该消息")
         self.client.log(ref)
         return list(self.calls)
 
@@ -610,8 +612,7 @@ class TestActionsLogDoesNotLeakPayload(_PrivateStoreCase):
         bot.STATE_FILE = os.path.join(self.tmp, "state.json")
         bot.LOG_FILE = os.path.join(self.tmp, "run_telemetry.log")
         self.state = {"events": {}}
-        enqueue(self.state)
-        self.ref = self.state["events"][EVENT_ID]["review_ref"]
+        self.ref = enqueue(self.state)["review_ref"]
 
     def tearDown(self):
         bot.STATE_FILE, bot.LOG_FILE = self._saved_paths
@@ -631,7 +632,7 @@ class TestActionsLogDoesNotLeakPayload(_PrivateStoreCase):
         self.assertIn("title_len", out)
 
     def test_execute_decision_prints_only_redacted(self):
-        bot.approve_review(self.state, EVENT_ID, "editor_01")
+        bot.approve_review(self.state, self.ref, "editor_01")
         buf = io.StringIO()
         with mock.patch.object(bot, "_post_telegram_once",
                                return_value=(True, bot.TG_OK, "OK", 777)), \
@@ -643,7 +644,7 @@ class TestActionsLogDoesNotLeakPayload(_PrivateStoreCase):
         self.assertIn("title_len", log)
 
     def test_run_review_action_mode_logs_and_state_are_clean(self):
-        bot.approve_review(self.state, EVENT_ID, "editor_01")
+        bot.approve_review(self.state, self.ref, "editor_01")
         bot.save_state(self.state)
         os.environ["REVIEW_ID"] = self.ref
         buf = io.StringIO()
@@ -684,8 +685,7 @@ class TestPrivateStatePersistsAcrossRestart(_PrivateStoreCase):
         self.client = review_store.LocalReviewStore(self.db)
         bot.set_review_store(self.client)
         self.state = {"events": {}}
-        enqueue(self.state)
-        self.ref = self.state["events"][EVENT_ID]["review_ref"]
+        self.ref = enqueue(self.state)["review_ref"]
 
     def _restart(self):
         """模拟 Worker 重启：关掉旧连接，在同一份持久化存储上新建客户端。"""
@@ -741,7 +741,7 @@ class TestPrivateStatePersistsAcrossRestart(_PrivateStoreCase):
         view = bot.list_pending_reviews(self.state)[0]
         self.assertEqual(view["title"], TITLE)
         self.assertEqual(view["review_status"], "PENDING")
-        self.assertNotIn("title", self.state["events"][EVENT_ID])
+        self.assertNotIn("title", store.find_review_stub(self.state, self.ref))
 
 
 # =============================================================================
@@ -757,9 +757,8 @@ class TestTelegramSuccessBeforeStateMigration(_PrivateStoreCase):
     def setUp(self):
         super().setUp()
         self.state = {"events": {}}
-        enqueue(self.state)
-        self.ref = self.state["events"][EVENT_ID]["review_ref"]
-        bot.approve_review(self.state, EVENT_ID, "editor_01")
+        self.ref = enqueue(self.state)["review_ref"]
+        bot.approve_review(self.state, self.ref, "editor_01")
 
     def _post(self, ok, kind, reason, mid):
         return mock.patch.object(bot, "_post_telegram_once",
@@ -811,9 +810,8 @@ class TestTelegramSuccessBeforeStateMigration(_PrivateStoreCase):
     def test_decline_never_sends(self):
         # 换一条独立事件做拒绝，避免与上面的批准路径互相干扰
         state = {"events": {}}
-        enqueue(state, eid="ev_decline")
-        ref = state["events"]["ev_decline"]["review_ref"]
-        bot.decline_review(state, "ev_decline", "editor_01")
+        ref = enqueue(state, eid="ev_decline")["review_ref"]
+        bot.decline_review(state, ref, "editor_01")
         with self._post(True, bot.TG_OK, "OK", 1) as post:
             out = bot.execute_review_decision(state, ref)
         self.assertEqual(out["status"], store.REVIEW_DECLINED)
