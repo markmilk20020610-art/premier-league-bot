@@ -8,13 +8,19 @@
 
 设计原则
 --------
-1. **豁免先于推广判定**（顺序不可颠倒）。俱乐部所有权变更、财务危机、
-   重大赞助变化里天然带商业词（deal / sponsor / stake / sale），如果先跑
-   PROMOTION 规则，这些真正重要的新闻会被当成广告删掉。所以先判豁免。
+1. **顺序固定，不可颠倒**：
+       结构性重要事件 → 必要豁免 → 商品推广 → 其他类型
+   俱乐部所有权变更、财务危机、重大赞助变化里天然带商业词（deal / sponsor /
+   stake / sale），如果先跑 PROMOTION 规则，这些真正重要的新闻会被当成广告删掉；
+   反过来，商品页如果晚于「事件类型映射」判定，就会因为标题里的
+   sack / manager 被定型成治理新闻（V1.0 P0-1 的真实事故）。
+   两头都要防，所以豁免在推广之前、推广在类型映射之前。
 2. **宁可漏判，不可误删**。判定失败一律回落到 OTHER；OTHER 不是「过滤」，
    而是「不因内容类型被排除」。删错一条重大新闻的代价，远大于多留一条广告。
 3. **可解释**。每次判定都返回 rule_id 与命中词，便于回溯「为什么这条被降级」。
 4. **确定性、零 AI 调用**。纯正则 + 词表，不增加任何模型成本。
+5. **内容类型与来源可信度互相独立**。OFFICIAL_CONFIRMED 只说明「来源可信」，
+   不改变「这条值不值得占名额」——官方商店的商品页依然是商品页。
 
 对外只暴露两个函数：
     classify(title, desc="", event_type="") -> dict
@@ -136,6 +142,65 @@ _PROMO_PATTERNS = (
     (re.compile(r"(官方商店|官方商城|球衣|战袍|纪念品|周边|促销|折扣|"
                 r"会员|抽奖|投票|预售|购买|限时|新品)"), 2),
 )
+
+
+# ---------- 商品页硬特征（V1.0 P0-1） ----------
+# 为什么加权不够：商品页标题**短、无动词、商业词密度低**。
+# 「Arsenal Kids Christmas Sack - Arsenal Direct」原本只命中 christmas（2 分），
+# 够不到阈值 4，于是落到第 4 层按事件类型映射 —— 而 Sack 又被判成 APPOINTMENT，
+# 最终成了 A 级俱乐部治理新闻。阈值型规则对这类标题天生失效：它不是"分不够"，
+# 是"没有分可加"。所以这里改成**特征即结论**，不参与计分。
+#
+# 但不能只凭单个名词定罪（否则「Plaque unveiled to honour captain」这种
+# 真新闻会被误杀），必须同时满足"商品名词 + 商品页形态"。
+_MERCH_NOUN = re.compile(
+    r"\b(christmas\s+sack|santa\s+hat|stocking\s+filler|advent\s+calendar|"
+    r"decoration|decorations|ornament|ornaments|bauble|baubles|"
+    r"plaque|plaques|mug|mugs|keyring|keyrings|varsity\s+jacket|"
+    r"gift\s+set|bobble\s+hat)\b",
+    re.I,
+)
+# 这些组合本身就是商品名，不需要再要商店语境
+_INHERENT_MERCH = re.compile(
+    r"\b(christmas\s+sack|santa\s+hat|stocking\s+filler|advent\s+calendar|"
+    r"(christmas|festive)\s+decoration|varsity\s+jacket|gift\s+set)\b",
+    re.I,
+)
+# 商店/购物语境
+_STORE_CONTEXT = re.compile(
+    r"\b(club\s+shop|club\s+store|official\s+store|online\s+store|"
+    r"megastore|merchandise|merch)\b",
+    re.I,
+)
+# 俱乐部官方商店的命名：Arsenal Direct / United Direct …
+_CLUB_STORE_SUFFIX = re.compile(r"\b[A-Z][A-Za-z&\.]*\s+Direct\b")
+# 商品列表页格式：「商品名 - 品牌」
+_LISTING_SHAPE = re.compile(r"\s[-–—]\s*[A-Z]")
+
+
+def _merch_page(title):
+    """判断标题是不是商品页。返回命中的特征名，空串表示不是。
+
+    判定顺序（从严到宽）：
+      1. 俱乐部官方商店命名（Arsenal Direct）—— 出现即商品页
+      2. 本身即商品名的组合（christmas sack / santa hat / varsity jacket）
+      3. 商品名词 + 商店语境（plaque + official store）
+      4. 商品名词 + 列表页格式（… - 品牌）
+    只命中商品名词而没有上面任一形态的，**不判商品页**——
+    「Plaque unveiled at stadium to honour former captain」是真新闻。
+    """
+    if _CLUB_STORE_SUFFIX.search(title):
+        return "CLUB_STORE_SUFFIX"
+    if not _MERCH_NOUN.search(title):
+        return ""
+    if _INHERENT_MERCH.search(title):
+        return "INHERENT_MERCH"
+    if _STORE_CONTEXT.search(title):
+        return "STORE_CONTEXT"
+    if _LISTING_SHAPE.search(title):
+        return "LISTING_SHAPE"
+    return ""
+
 
 # 出现这些词时，即使命中推广词也不判 PROMOTION（说明是新闻而非推销）
 # 刻意不含 sign/signed：英媒促销常用「win a signed shirt」，把它当新闻信号
@@ -289,6 +354,23 @@ def classify(title, desc="", event_type=""):
             )
 
     # ---- 第 2 层：PROMOTION ----
+    # 2a. 商品页硬特征：命中即判 PROMOTION。
+    #     不参与计分（商品页标题短、商业词密度低，永远凑不够阈值），
+    #     也不受「新闻信号否决」约束（商品页偶尔带 confirm/available 这类词，
+    #     但一条商品页不会因为出现 confirm 就变成新闻）。
+    #     位置必须在第 4 层「按事件类型映射」之前——否则 Sack 一旦被判成
+    #     APPOINTMENT，商品页就会被定型成 CLUB_GOVERNANCE，治理新闻的通道
+    #     反而成了广告的通道。
+    merch = _merch_page(head)
+    if merch:
+        return _out(
+            PROMOTION, 0.95, "PROMOTION_MERCH_PAGE",
+            [f"命中商品页特征 {merch}，判为商品推广；"
+             f"商品页优先于事件类型映射，不参与治理新闻判定"],
+            [merch.lower()],
+        )
+
+    # 2b. 加权计分（兜底：非标准格式的商品推广）
     score, words = _first_hit(_PROMO_PATTERNS, head)
     desc_score, desc_words = _first_hit(_PROMO_PATTERNS, desc)
     # 摘要里的推广词只按半权计入，避免描述里顺口提到「球衣」就被判广告

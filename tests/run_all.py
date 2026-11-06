@@ -45,6 +45,8 @@ MODULES = [
     "tests.test_review_safety",      # 第 3 项：E4 审核安全检查
     "tests.test_importance_switch",  # 第 4 项：IMPORTANCE_SORT 双模式
     "tests.test_cross_type_blind",   # 第 5 项：跨事件类型盲测
+    # ---- V1.0 P0-1 阻断缺陷修复 ----
+    "tests.test_merch_vs_news",      # P0-1：商品页 vs 解雇新闻对抗
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 
