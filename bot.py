@@ -2,6 +2,8 @@ import os
 import sys
 import json
 import html
+import hmac
+import base64
 import re
 import time
 import hashlib
@@ -31,6 +33,25 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 # 允许指向自建反代/本地 mock，默认官方地址
 TELEGRAM_API_BASE = os.environ.get("TELEGRAM_API_BASE", "https://api.telegram.org")
 RUN_MODE = os.environ.get("RUN_MODE", "scan") # scan 或 morning
+
+# ==================== V1.0 生产硬化：E4 人工审核配置 ====================
+# 审核通知必须发到**独立的私有群**，绝不能默认公共频道就是审核群。
+# 没配 TELEGRAM_REVIEW_CHAT_ID 时，审核通知一律不发（宁可没人收到，
+# 也不能把「待审」消息扔进公共频道——那等于把未证实的消息公开出去）。
+TELEGRAM_REVIEW_CHAT_ID = os.environ.get("TELEGRAM_REVIEW_CHAT_ID", "").strip()
+
+# 允许点击「批准/拒绝」的 Telegram User ID 白名单，逗号分隔。
+# 为空 = 谁都不能批（默认拒绝，不是默认允许）。
+REVIEW_OPERATOR_IDS = frozenset(
+    x.strip() for x in os.environ.get("REVIEW_OPERATOR_IDS", "").split(",") if x.strip()
+)
+
+# 回调数据 HMAC 签名密钥。只凭 event_id 接受批准指令等于「任何人拿到
+# event_id 就能发布新闻」，所以按钮里带的是签名而不是裸 ID。
+REVIEW_CALLBACK_HMAC_SECRET = os.environ.get("REVIEW_CALLBACK_HMAC_SECRET", "")
+
+# 回调数据有效期（秒）。旧按钮重放要挡在签名校验之后、状态校验之前。
+REVIEW_CALLBACK_TTL_SECONDS = int(os.environ.get("REVIEW_CALLBACK_TTL_SECONDS", "86400"))
 
 # 手动强制补发早报：绕过 last_morning_report_date 日期锁。
 # 三种触发方式（任一即可）：环境变量 FORCE_SUMMARY=true / 命令行 --force / 命令行 -f
@@ -1346,11 +1367,90 @@ def _review_event_id(event):
     return event.get("event_id") or event.get("event_fingerprint") or ""
 
 
+def _review_publisher(refs, fallback_url=""):
+    """发布方：优先用证据里登记的域名，其次从 URL 里抠。"""
+    for r in refs or []:
+        if not isinstance(r, dict):
+            continue
+        for key in ("domain", "publisher", "source"):
+            val = (r.get(key) or "").strip()
+            if val:
+                return val
+    url = fallback_url or (refs[0].get("url") if refs and isinstance(refs[0], dict) else "")
+    return ev.extract_domain(url) if url else ""
+
+
+def _build_review_payload(event, reason, first_seen_at=None):
+    """构造人工审核所需的**完整快照**（V1.0 硬化 A1）。
+
+    为什么必须存快照而不是「审核时再去查」：
+      · 审核可能发生在几小时之后，那时的 news_pool 早被覆盖；
+      · 原始报道标题/URL 是「归因措辞」的唯一依据，丢了就只能编；
+      · 批准后要重新拼一条完整的中文消息，没有事实摘要就拼不出来。
+
+    为什么单独放 `review_payload` 而不写回原始字段：
+      审核快照是**审核流程的内部状态**，与「这条新闻抓到了什么」是两件事。
+      覆盖原字段会让去重、证据重算、自动退出全部读到被改写过的数据。
+    """
+    refs = [r for r in (event.get("evidence_refs") or []) if isinstance(r, dict)]
+    primary_url = event.get("evidence_url") or (refs[0].get("url") if refs else "")
+
+    articles = []
+    seen = set()
+    for r in refs:
+        url = (r.get("url") or "").strip()
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        articles.append({
+            "title": (r.get("title") or "")[:200],
+            "url": url,
+            "publisher": r.get("domain") or r.get("publisher") or ev.extract_domain(url) or "",
+            "added_at": r.get("added_at") or "",
+        })
+    if primary_url and primary_url not in seen:
+        articles.append({
+            "title": (event.get("article_title") or event.get("title") or "")[:200],
+            "url": primary_url,
+            "publisher": ev.extract_domain(primary_url) or "",
+            "added_at": first_seen_at or "",
+        })
+
+    return {
+        "schema": 1,
+        "event_id": _review_event_id(event),
+        # 事件标题用模型改写后的中文标题；原始英文标题在 articles 里逐条保留
+        "title": (event.get("title") or "")[:200],
+        "fact_summary": (event.get("fact_summary") or "")[:2000],
+        "articles": articles,
+        "urls": [a["url"] for a in articles],
+        "publishers": sorted({a["publisher"] for a in articles if a["publisher"]}),
+        "first_seen_at": first_seen_at or _now_iso(),
+        "importance": event.get("importance") or "",
+        "cred": event.get("cred") or "",
+        "event_type": event.get("event_type") or "",
+        "content_type": event.get("content_type") or "",
+        "review_reason": reason or "",
+        "evidence": [
+            {
+                "url": a["url"],
+                "title": a["title"],
+                "domain": a["publisher"],
+                "source_class": "",
+            }
+            for a in articles
+        ],
+    }
+
+
 def _enqueue_review(state, event, reason, now=None):
     """把事件写入私有待审记录，投递状态置 PENDING_REVIEW。
 
     刻意不落任何「公开可见」的地方：不发 Telegram、不写推送队列。
     人工审核队列是内部状态，泄露它的存在本身就是风险。
+
+    V1.0 硬化 A1：额外落一份完整的 `review_payload` 快照。
+    没有它，审核通过后只能凭 event_id 去 news_pool 里翻——而那时池子早换了。
     """
     eid = _review_event_id(event)
     if not eid:
@@ -1373,13 +1473,20 @@ def _enqueue_review(state, event, reason, now=None):
                                article_title=r.get("title") or "")
     if rec.get("delivery_status") == store.VERIFIED:
         store.transition(rec, store.PENDING_REVIEW)
+
+    enqueued_at = _now_iso()
+    # 首次采集时间：优先沿用记录创建时间，其次用本次入队时间。
+    # 不能用「审核时间」冒充——那会把一条躺了 6 小时的事件说成刚发生。
+    first_seen = rec.get("created_at") or enqueued_at
+
     rec["review_reason"] = reason
     rec["review_importance"] = event.get("importance")
     rec["review_cred"] = event.get("cred")
-    rec["review_enqueued_at"] = _now_iso()
+    rec["review_enqueued_at"] = enqueued_at
     rec["review_status"] = "PENDING"
+    rec["review_payload"] = _build_review_payload(event, reason, first_seen)
     rec.setdefault("review_log", []).append({
-        "at": _now_iso(), "action": "ENQUEUED", "operator_id": "system",
+        "at": enqueued_at, "action": "ENQUEUED", "operator_id": "system",
         "reason": reason, "prev_cred": event.get("cred"),
     })
     return rec
@@ -1458,6 +1565,456 @@ def list_pending_reviews(state):
     """待审队列（内部使用，不得外发）。"""
     return [e for e in (state.get("events") or {}).values()
             if e.get("delivery_status") == store.PENDING_REVIEW]
+
+
+# ==================== V1.0 硬化 A2：私有审核通知 ====================
+# 三条铁律：
+#   1. 待审消息**只**发 TELEGRAM_REVIEW_CHAT_ID，绝不回落到公共频道。
+#      没配就宁可不发——把「未证实」的消息扔进公共频道，等于直接违规发布。
+#   2. 按钮里带的是**签名**，不是裸 event_id。只凭 ID 接受批准，意味着
+#      任何人拿到 ID 就能发布新闻。
+#   3. 卡片上不出现任何「已确认」字样。E4 的事实状态就是「未证实」，
+#      审核人看到的第一眼必须是这个。
+REVIEW_CALLBACK_VERSION = "v1"
+REVIEW_ACTION_APPROVE = "a"
+REVIEW_ACTION_DECLINE = "d"
+
+
+def _review_callback_sig(event_id, action, exp, secret=None):
+    """回调签名：HMAC-SHA256(version|action|event_id|exp)，取前 20 位十六进制。
+
+    把 exp 一起签进去，签名本身就携带了有效期——
+    否则攻击者可以改 exp 来延长旧按钮的寿命。
+    """
+    key = (secret if secret is not None else REVIEW_CALLBACK_HMAC_SECRET) or ""
+    msg = "{}|{}|{}|{}".format(REVIEW_CALLBACK_VERSION, action, event_id, exp).encode("utf-8")
+    return hmac.new(key.encode("utf-8"), msg, hashlib.sha256).hexdigest()[:20]
+
+
+def encode_review_callback(event_id, action, ttl=None, now_ts=None, secret=None):
+    """生成按钮 callback_data。Telegram 限制 64 字节，这里控制在 50 以内。"""
+    if action not in (REVIEW_ACTION_APPROVE, REVIEW_ACTION_DECLINE):
+        raise ValueError("非法审核动作: {}".format(action))
+    ttl = REVIEW_CALLBACK_TTL_SECONDS if ttl is None else ttl
+    exp = int((now_ts if now_ts is not None else time.time()) + ttl)
+    sig = _review_callback_sig(event_id, action, exp, secret)
+    return "{}:{}:{}:{}:{}".format(REVIEW_CALLBACK_VERSION, action, event_id, exp, sig)
+
+
+def verify_review_callback(data, now_ts=None, secret=None):
+    """校验并解析 callback_data，返回 (ok, action, event_id, reason)。
+
+    校验顺序刻意是「格式 → 签名 → 有效期」：
+    先验签再判有效期，否则过期判断会被伪造数据牵着走。
+    签名用 compare_digest 做常数时间比较，避免时序侧信道。
+    """
+    if not data or not isinstance(data, str):
+        return False, "", "", "回调数据为空"
+    parts = data.split(":")
+    if len(parts) != 5:
+        return False, "", "", "回调数据格式错误"
+    ver, action, event_id, exp_s, sig = parts
+    if ver != REVIEW_CALLBACK_VERSION:
+        return False, "", "", "回调数据版本不支持: {}".format(ver)
+    if action not in (REVIEW_ACTION_APPROVE, REVIEW_ACTION_DECLINE):
+        return False, "", "", "未知审核动作: {}".format(action)
+    try:
+        exp = int(exp_s)
+    except (TypeError, ValueError):
+        return False, "", "", "有效期字段非法"
+    want = _review_callback_sig(event_id, action, exp, secret)
+    if not hmac.compare_digest(want, sig):
+        return False, "", "", "签名校验失败"
+    now = int(now_ts if now_ts is not None else time.time())
+    if now > exp:
+        return False, "", "", "按钮已过期（重放被拒）"
+    return True, action, event_id, ""
+
+
+def _review_card_text(rec):
+    """中文审核卡片。刻意不出现「已确认 / 官宣」等字样。"""
+    p = rec.get("review_payload") or {}
+    title = p.get("title") or rec.get("title") or "(无标题)"
+    summary = (p.get("fact_summary") or "").strip()
+    if len(summary) > 600:
+        summary = summary[:600] + "…"
+    urls = p.get("urls") or ([rec.get("evidence_url")] if rec.get("evidence_url") else [])
+    publishers = p.get("publishers") or []
+    source = "、".join(publishers[:3]) if publishers else "（来源未登记）"
+    first_seen = p.get("first_seen_at") or rec.get("created_at") or ""
+
+    lines = [
+        "🔒 <b>待审事件 · E4 未证实</b>",
+        "",
+        "<b>{}</b>".format(html.escape(str(title))),
+        "",
+    ]
+    if summary:
+        lines += ["📝 <b>事实摘要</b>：{}".format(html.escape(summary)), ""]
+    lines += [
+        "🏷 重要性：<b>{}</b> 级".format(html.escape(str(p.get("importance") or "?"))),
+        "🔎 可信度：<b>E4 · 未证实</b>（单一来源，未获第二个独立来源印证）",
+        "📂 编辑分类：{}".format(html.escape(str(p.get("content_type") or "未判定"))),
+        "🧩 事件类型：{}".format(html.escape(str(p.get("event_type") or "未判定"))),
+        "📰 来源：{}".format(html.escape(source)),
+        "🕒 首次采集：{}".format(html.escape(str(first_seen))),
+        "",
+    ]
+    for i, u in enumerate(urls[:3], 1):
+        lines.append("🔗 原文{}：{}".format(i, html.escape(str(u))))
+    lines += [
+        "",
+        "❓ <b>送审原因</b>：{}".format(
+            html.escape(str(rec.get("review_reason") or "证据不足"))),
+        "",
+        "⚠️ 本条<b>尚未获得第二个独立来源印证</b>。批准后将以"
+        "「据 {} 报道」的归属措辞发布，<b>不会</b>标注为已确认事实。".format(
+            html.escape(source)),
+        "",
+        "事件 ID：<code>{}</code>".format(html.escape(str(rec.get("event_id") or ""))),
+    ]
+    return "\n".join(lines)
+
+
+def _review_keyboard(event_id):
+    """批准 / 拒绝两个按钮。配置缺失时返回 None（不发未签名按钮）。"""
+    if not REVIEW_CALLBACK_HMAC_SECRET:
+        return None
+    approve = encode_review_callback(event_id, REVIEW_ACTION_APPROVE)
+    decline = encode_review_callback(event_id, REVIEW_ACTION_DECLINE)
+    return {
+        "inline_keyboard": [[
+            {"text": "✅ 批准发布", "callback_data": approve},
+            {"text": "🗄 拒绝并存档", "callback_data": decline},
+        ]]
+    }
+
+
+def send_review_card(rec, post=None):
+    """把审核卡片发到**私有审核群**，返回 message_id（失败返回 None）。
+
+    绝不回落到 TELEGRAM_CHAT_ID。缺配置时明确报错并不发，
+    让运维看见「审核通道没配好」，而不是让一条未证实消息悄悄流向公共频道。
+    """
+    post = post or _post_telegram_once
+    if not TELEGRAM_BOT_TOKEN:
+        print("[WARN] 未配置 TELEGRAM_BOT_TOKEN，审核通知未发送")
+        return None
+    if not TELEGRAM_REVIEW_CHAT_ID:
+        print("[WARN] 未配置 TELEGRAM_REVIEW_CHAT_ID，审核通知未发送"
+              "（不会回落到公共频道）")
+        print("::warning title=Review Chat Missing::"
+              "TELEGRAM_REVIEW_CHAT_ID 未配置，待审事件只在 state 里等待人工处理")
+        return None
+
+    event_id = rec.get("event_id") or ""
+    keyboard = _review_keyboard(event_id)
+    text = _review_card_text(rec)
+    if keyboard is None:
+        print("::error title=Review Signing Key Missing::"
+              "REVIEW_CALLBACK_HMAC_SECRET 未配置，审核卡片将不带按钮"
+              "（拒绝发送未签名按钮）")
+        text += "\n\n⚠️ <i>审核按钮不可用：REVIEW_CALLBACK_HMAC_SECRET 未配置。</i>"
+
+    payload = {
+        "chat_id": TELEGRAM_REVIEW_CHAT_ID,
+        "text": text,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": True,
+    }
+    if keyboard is not None:
+        payload["reply_markup"] = keyboard
+
+    url = "{}/bot{}/sendMessage".format(TELEGRAM_API_BASE, TELEGRAM_BOT_TOKEN)
+    ok, kind, reason, mid = post(url, payload)
+    if not ok:
+        print("::error title=Review Card Failed::审核卡片发送失败 | {}".format(reason))
+        return None
+    rec["review_card_message_id"] = mid
+    rec["review_card_chat_id"] = TELEGRAM_REVIEW_CHAT_ID
+    rec["review_card_sent_at"] = _now_iso()
+    return mid
+
+
+def clear_review_buttons(rec, post=None, note=""):
+    """操作完成后移除按钮，避免旧卡片被再次点击。
+
+    幂等：没有 message_id 或配置缺失时静默返回 False。
+    """
+    post = post or _post_telegram_once
+    mid = rec.get("review_card_message_id")
+    chat_id = rec.get("review_card_chat_id") or TELEGRAM_REVIEW_CHAT_ID
+    if not (TELEGRAM_BOT_TOKEN and mid and chat_id):
+        return False
+    url = "{}/bot{}/editMessageReplyMarkup".format(TELEGRAM_API_BASE, TELEGRAM_BOT_TOKEN)
+    ok, _kind, reason, _mid = post(url, {
+        "chat_id": chat_id,
+        "message_id": mid,
+        "reply_markup": {"inline_keyboard": []},
+    })
+    if not ok:
+        # 卡片可能已被人工删除或超过 48 小时不可编辑——不是致命错误
+        print("[WARN] 移除审核按钮失败（可忽略）：{}".format(reason))
+        return False
+    if note:
+        send_review_status(chat_id, note, post=post)
+    return True
+
+
+def send_review_status(chat_id, text, post=None):
+    """审核群里的短状态消息（批准/拒绝结果）。只发私有群。"""
+    post = post or _post_telegram_once
+    if not (TELEGRAM_BOT_TOKEN and chat_id):
+        return False
+    url = "{}/bot{}/sendMessage".format(TELEGRAM_API_BASE, TELEGRAM_BOT_TOKEN)
+    ok, _kind, _reason, _mid = post(url, {
+        "chat_id": chat_id, "text": text, "parse_mode": "HTML",
+        "disable_web_page_preview": True,
+    })
+    return ok
+
+
+# ==================== V1.0 硬化 A5/A6：批准后的真实投递 ====================
+# 「批准」不是「投递成功」。这两件事必须分开记账：
+#   批准 = 状态从 PENDING_REVIEW 走到 PENDING_DELIVERY（人可以撤回判断）
+#   投递 = 真的发出去了，且每一段都有 message_id
+# 把两者合成一步，会在「批准了但发送失败」时留下一条既没发出、又不在待审队列的
+# 幽灵事件——既不会被重试，也不会被人工发现。
+REVIEW_CLAIM_TTL_SECONDS = 900
+
+
+def _review_source_label(payload, rec):
+    publishers = payload.get("publishers") or []
+    if publishers:
+        return "、".join(publishers[:2])
+    return ev.extract_domain(rec.get("evidence_url") or "") or "单一来源"
+
+
+def _review_publish_text(rec):
+    """按审核快照拼中文正文。全程使用归属措辞，不出现确定语气。"""
+    p = rec.get("review_payload") or {}
+    title = (p.get("title") or rec.get("title") or "（无标题）").strip()
+    summary = (p.get("fact_summary") or "").strip()
+    source = _review_source_label(p, rec)
+    urls = p.get("urls") or ([rec.get("evidence_url")] if rec.get("evidence_url") else [])
+    note = rec.get("unverified_note") or (
+        "该消息尚未获得第二个独立来源印证，不得表述为已确认事实")
+
+    lines = ["📌 <b>{}</b>".format(html.escape(title)), ""]
+    if summary:
+        lines += ["据 {} 报道：{}".format(html.escape(source), html.escape(summary)), ""]
+    else:
+        lines += ["据 {} 报道。".format(html.escape(source)), ""]
+    for u in urls[:2]:
+        lines.append("🔗 原文：{}".format(html.escape(str(u))))
+    lines += ["", "⚠️ {}".format(html.escape(note))]
+    return "\n".join(lines)
+
+
+def _claim_review(rec, operator_id, now_ts=None, ttl=None):
+    """抢占审核记录，防止两个 job 同时投递同一事件。
+
+    这不是唯一防线——scanner.yml 的 workflow 级 concurrency 会先把并发的
+    run 串行化。这里是第二道：即使串行化失效（例如两个不同 workflow 同时跑），
+    后到者也会看到未过期的 claim 而主动退出。
+
+    返回 (ok, reason)。
+    """
+    ttl = REVIEW_CLAIM_TTL_SECONDS if ttl is None else ttl
+    now = int(now_ts if now_ts is not None else time.time())
+    claim = rec.get("review_claim") or {}
+    if claim and claim.get("token"):
+        try:
+            age = now - int(claim.get("at_ts") or 0)
+        except (TypeError, ValueError):
+            age = ttl + 1
+        if age < ttl and claim.get("operator") != operator_id:
+            return False, "另一名审核人正在处理（{}，{} 秒前）".format(
+                claim.get("operator"), age)
+    rec["review_claim"] = {
+        "token": hashlib.sha1("{}-{}-{}".format(
+            rec.get("event_id"), operator_id, now).encode("utf-8")).hexdigest()[:12],
+        "operator": operator_id,
+        "at_ts": now,
+        "at": _now_iso(),
+    }
+    return True, ""
+
+
+def _release_review_claim(rec):
+    rec["review_claim"] = {}
+
+
+def _resume_pending_delivery(rec):
+    """把可重试的中间状态推回 PENDING_DELIVERY，准备发送。
+
+    状态机不允许 RETRYABLE_FAILURE / DELIVERY_FAILED 直接跳 DELIVERED，
+    所以必须先回到 PENDING_DELIVERY。DELIVERY_UNCERTAIN **不在**这里——
+    「可能已经发出去了」绝不能自动重发，否则就是重复公开投递。
+    """
+    status = rec.get("delivery_status")
+    if status == store.PENDING_DELIVERY:
+        return True
+    if status in (store.RETRYABLE_FAILURE, store.DELIVERY_FAILED):
+        store.transition(rec, store.PENDING_DELIVERY)
+        return True
+    return False
+
+
+def _apply_delivery_outcome(rec, ok, report, error):
+    """按分段结果推进状态机。三态必须区分，不许合并。"""
+    statuses = [r.get("delivery_status") for r in (report or [])]
+    any_uncertain = store.CHUNK_UNCERTAIN in statuses
+    any_failed = any(s in (store.CHUNK_FAILED,) for s in statuses)
+    all_delivered = bool(statuses) and all(
+        s == store.CHUNK_DELIVERED for s in statuses)
+
+    if ok and all_delivered:
+        store.transition(rec, store.DELIVERED)
+        store.transition(rec, store.COMMITTED)
+        return store.COMMITTED
+    if any_uncertain:
+        store.transition(rec, store.DELIVERY_UNCERTAIN)
+        return store.DELIVERY_UNCERTAIN
+    if any_failed:
+        store.transition(rec, store.DELIVERY_FAILED, last_error=(error or "")[:300])
+        return store.DELIVERY_FAILED
+    store.transition(rec, store.RETRYABLE_FAILURE, last_error=(error or "")[:300])
+    return store.RETRYABLE_FAILURE
+
+
+def deliver_approved_review(state, event_id, operator_id, note="",
+                            post=None, now_ts=None):
+    """批准并真正投递一条待审事件。返回结果字典（含 status / reason）。
+
+    幂等保证（A6）：
+      · 已 COMMITTED / DELIVERED        → 直接返回 ALREADY_DELIVERED，不重发
+      · DELIVERY_UNCERTAIN              → 返回 NEEDS_MANUAL，不自动重发
+      · 已被他人 claim                  → 返回 CLAIMED_BY_OTHER
+      · 已 REVIEW_DECLINED              → 返回 DECLINED，绝不公开
+      · 分段层面：已送达且哈希一致的段会被 send_telegram_ex 跳过，不重发
+    """
+    rec = (state.get("events") or {}).get(event_id)
+    if not rec:
+        return {"status": "NOT_FOUND", "reason": "审核记录不存在"}
+
+    status = rec.get("delivery_status")
+    if status in (store.COMMITTED, store.DELIVERED):
+        return {"status": "ALREADY_DELIVERED",
+                "reason": "该事件已投递完成，未重复发送",
+                "delivery_status": status}
+    if status == store.DELIVERY_UNCERTAIN:
+        return {"status": "NEEDS_MANUAL",
+                "reason": "上次投递结果未知（可能已送达），不自动重发，请人工核对",
+                "delivery_status": status}
+    if status == store.REVIEW_DECLINED:
+        return {"status": "DECLINED",
+                "reason": "该事件已被拒绝存档，不得公开投递",
+                "delivery_status": status}
+
+    ok_claim, claim_reason = _claim_review(rec, operator_id, now_ts)
+    if not ok_claim:
+        return {"status": "CLAIMED_BY_OTHER", "reason": claim_reason,
+                "delivery_status": status}
+
+    try:
+        # ---- 第一步：批准（状态迁移即「认领」）----
+        if status == store.PENDING_REVIEW:
+            approve_review(state, event_id, operator_id, note)
+            status = rec.get("delivery_status")
+
+        # ---- 第二步：回到可发送状态 ----
+        if not _resume_pending_delivery(rec):
+            _release_review_claim(rec)
+            return {"status": "BAD_STATE",
+                    "reason": "记录状态 {} 不允许投递".format(
+                        rec.get("delivery_status")),
+                    "delivery_status": rec.get("delivery_status")}
+
+        # ---- 第三步：拼正文并发送（复用既有分段记账）----
+        text = _review_publish_text(rec)
+        rec["pending_text"] = text
+        report = []
+        send_ok, message_ids, error = send_telegram_ex(
+            text, chunk_records=rec.get("chunks"), report=report)
+        store.record_chunks(rec, report)
+        rec["attempts"] = int(rec.get("attempts") or 0) + sum(
+            int(r.get("attempts") or 0) for r in report)
+        if message_ids:
+            rec["telegram_message_id"] = message_ids[-1]
+
+        # ---- 第四步：按结果推进状态机 ----
+        final = _apply_delivery_outcome(rec, send_ok, report, error)
+        rec["review_delivered_at"] = _now_iso()
+        rec["review_delivery_status"] = final
+        rec.setdefault("review_log", []).append({
+            "at": _now_iso(), "action": "DELIVERY_ATTEMPT",
+            "operator_id": operator_id,
+            "result": final,
+            "message_ids": message_ids,
+            "error": (error or "")[:200],
+        })
+        return {"status": final,
+                "reason": "投递完成" if final == store.COMMITTED else (error or "投递未完成"),
+                "delivery_status": final,
+                "message_ids": message_ids,
+                "publish_mode": rec.get("publish_mode"),
+                "publish_is_confirmed": rec.get("publish_is_confirmed"),
+                "unverified_note": rec.get("unverified_note")}
+    finally:
+        _release_review_claim(rec)
+
+
+def decline_review_and_archive(state, event_id, operator_id, note="", post=None):
+    """拒绝并存档。只改状态，绝不公开投递。"""
+    rec = (state.get("events") or {}).get(event_id)
+    if not rec:
+        return {"status": "NOT_FOUND", "reason": "审核记录不存在"}
+    status = rec.get("delivery_status")
+    if status in (store.REVIEW_DECLINED, store.COMMITTED, store.DELIVERED):
+        return {"status": "ALREADY_FINAL",
+                "reason": "该事件已处于终态，未重复处理",
+                "delivery_status": status}
+    if status != store.PENDING_REVIEW:
+        return {"status": "BAD_STATE",
+                "reason": "记录不在待审状态（当前 {}）".format(status),
+                "delivery_status": status}
+    decline_review(state, event_id, operator_id, note)
+    return {"status": store.REVIEW_DECLINED, "reason": "已拒绝并存档",
+            "delivery_status": store.REVIEW_DECLINED}
+
+
+def review_action(state, event_id, action, operator_id, note="", post=None):
+    """review_action 工作流的入口：分发到批准或拒绝。
+
+    校验顺序（任何一步失败都不产生副作用）：
+      1. 动作合法
+      2. 操作人在白名单内
+      3. 事件存在
+      4. 事件处于 PENDING_REVIEW 或「已批准但未投递完」的可恢复状态
+    """
+    if action not in (REVIEW_ACTION_APPROVE, REVIEW_ACTION_DECLINE):
+        return {"status": "BAD_ACTION", "reason": "未知动作: {}".format(action)}
+    if not operator_id or operator_id not in REVIEW_OPERATOR_IDS:
+        return {"status": "UNAUTHORIZED",
+                "reason": "操作人 {} 不在 REVIEW_OPERATOR_IDS 白名单".format(operator_id)}
+
+    if action == REVIEW_ACTION_APPROVE:
+        out = deliver_approved_review(state, event_id, operator_id, note, post=post)
+    else:
+        out = decline_review_and_archive(state, event_id, operator_id, note, post=post)
+
+    rec = (state.get("events") or {}).get(event_id)
+    if rec:
+        chat = rec.get("review_card_chat_id") or TELEGRAM_REVIEW_CHAT_ID
+        clear_review_buttons(
+            rec, post=post,
+            note="{} 事件 <code>{}</code>：{}".format(
+                "✅ 已批准" if action == REVIEW_ACTION_APPROVE else "🗄 已拒绝",
+                html.escape(event_id), html.escape(out.get("reason") or "")))
+        if chat:
+            out["review_chat_id"] = chat
+    return out
 
 
 def _review_rows(rec):
@@ -3317,7 +3874,12 @@ def run_scan_mode(state, start_time):
                     "importance": scan_level,
                     "cred": scan_cred,
                     "content_type": scan_ct["content_type"],
+                    "event_type": scan_et,
+                    # 事实摘要进审核快照：批准后要凭它拼中文消息，
+                    # 而那时的 news_pool 早已被下一轮覆盖。
+                    "fact_summary": model_result.get("fact_summary") or "",
                     "evidence_status": model_result.get("evidence_status"),
+                    "evidence_url": evidence_url,
                     "evidence_refs": [{"url": evidence_url,
                                        "title": article_title}],
                 }
@@ -3335,6 +3897,18 @@ def run_scan_mode(state, start_time):
                           f"{scan_level} 级 / {scan_cred} | {route_reason}")
                     print("::notice title=Pending Review::"
                           "该事件未公开推送，已进入内部待审队列")
+                    # A2：落盘成功后才发审核卡片。
+                    # 顺序不能反——先发卡片再落盘，一旦落盘失败，
+                    # 按钮就指向一条不存在的记录，点下去只会报「记录不存在」。
+                    if rec is not None:
+                        card_mid = send_review_card(rec)
+                        if card_mid:
+                            print(f"[INFO] 审核卡片已发送到私有审核群"
+                                  f"（message_id={card_mid}）")
+                            try:
+                                save_state(state)
+                            except store.StateError as e:
+                                print(f"[WARN] 审核卡片 message_id 落盘失败：{e}")
                     log_telemetry({
                         "start_time": start_time, "end_time": _now_iso(),
                         "run_mode": "scan", "status": "PENDING_REVIEW",
@@ -3512,6 +4086,63 @@ def run_scan_mode(state, start_time):
     return exit_code
 
 
+def run_review_action_mode(state, start_time):
+    """人工审核回调的执行体（A4）。只处理审核：不采集、不早报、不 focus。
+
+    为什么单独一个 mode 而不是塞进 scan：
+      审核回调是**外部事件驱动**的，而 scan 是**定时驱动**的。混在一起会让
+      「点了一次批准」触发一轮完整抓取，既浪费又可能引入新事件。
+
+    退出码约定：
+      0 —— 动作已生效，或处于「幂等空转」（已投递/已拒绝/已被他人认领）
+      1 —— 参数非法、越权、状态不符、或投递失败（需要人看见）
+    """
+    event_id = (os.environ.get("REVIEW_EVENT_ID") or "").strip()
+    action = (os.environ.get("REVIEW_ACTION") or "").strip()
+    operator = (os.environ.get("REVIEW_OPERATOR_ID") or "").strip()
+    note = (os.environ.get("REVIEW_NOTE") or "").strip()
+
+    print("[INFO] 人工审核执行 | event={} | action={} | operator={}".format(
+        event_id, action, operator or "(空)"))
+
+    if not event_id or not action:
+        print("::error title=Review Action Missing::缺少 REVIEW_EVENT_ID 或 REVIEW_ACTION")
+        return 1
+
+    out = review_action(state, event_id, action, operator, note)
+    status = out.get("status") or ""
+
+    try:
+        save_state(state)
+    except store.StateError as e:
+        print(f"[ERROR] 审核结果落盘失败：{e}")
+        print("::error title=State Write Failed::审核结果未能写入 state.json")
+        return 1
+
+    print("[INFO] 结果 | status={} | {}".format(status, out.get("reason") or ""))
+    if out.get("message_ids"):
+        print("[INFO] message_ids={}".format(out["message_ids"]))
+
+    log_telemetry({
+        "start_time": start_time, "end_time": _now_iso(),
+        "run_mode": "review_action", "status": status,
+        "event_id": event_id, "action": action,
+        "operator_id": operator,
+    })
+
+    ok_statuses = {
+        store.COMMITTED, store.REVIEW_DECLINED,
+        "ALREADY_DELIVERED", "ALREADY_FINAL", "NEEDS_MANUAL",
+        "CLAIMED_BY_OTHER",
+    }
+    if status in ok_statuses:
+        print("::notice title=Review Action::{}".format(status))
+        return 0
+    print("::error title=Review Action Failed::{} | {}".format(
+        status, out.get("reason") or ""))
+    return 1
+
+
 def main():
     start_time = _now_iso()
 
@@ -3548,6 +4179,8 @@ def main():
     except store.StateError as e:
         print(f"[WARN] 状态恢复失败，继续本次运行：{e}")
 
+    if RUN_MODE == "review_action":
+        return run_review_action_mode(state, start_time)
     if RUN_MODE == "morning":
         return run_morning_mode(state, start_time)
     return run_scan_mode(state, start_time)

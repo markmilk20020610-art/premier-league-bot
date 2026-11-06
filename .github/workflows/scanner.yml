@@ -33,7 +33,7 @@ on:
   workflow_dispatch:        # 支持在 GitHub 后台手动触发，可选运行模式
     inputs:
       mode:
-        description: '运行模式（scan=突发扫描 / morning=早报汇总 / diagnose=诊断 / watchdog=心跳检查 / verify=代码自检，只跑测试，不抓取不推送不写 state）'
+        description: '运行模式（scan=突发扫描 / morning=早报汇总 / diagnose=诊断 / watchdog=心跳检查 / verify=代码自检 / review_action=E4人工审核回调）'
         required: true
         default: 'scan'
         type: choice
@@ -45,11 +45,36 @@ on:
           # verify 只跑 verify job（轻量自检），供功能分支在不合并、不部署的前提下
           # 拿到真实线上 CI 结果。除 verify 外所有 job 在 mode=verify 下必须跳过。
           - verify
+          # review_action 只跑人工审核回调：读 state → 二次校验 → approve/decline。
+          # 不采集、不早报、不 focus。同样必须在 scan 的否定式条件里显式排除。
+          - review_action
       force:
         description: '强制补发早报：勾选后忽略「今日已发」日期锁（仅 morning 模式生效）'
         required: false
         default: false
         type: boolean
+      # ---- 以下四项仅 mode=review_action 使用 ----
+      # 由 Cloudflare Worker 在验证 Telegram 回调后传入；人工排查时也可手动填。
+      review_event_id:
+        description: '【review_action】待审事件 ID'
+        required: false
+        default: ''
+      review_action:
+        description: '【review_action】批准发布 / 拒绝并存档'
+        required: false
+        default: 'approve'
+        type: choice
+        options:
+          - approve
+          - decline
+      review_operator_id:
+        description: '【review_action】操作人 Telegram User ID（必须命中 REVIEW_OPERATOR_IDS）'
+        required: false
+        default: ''
+      review_note:
+        description: '【review_action】审核备注（可选）'
+        required: false
+        default: ''
 
   # 【代码自检】push 到 main 时跑一次轻量校验：只查仓库卫生 + 跑测试，
   # 不抓取、不推送、不写 state.json。目的是让「提交了 pyc / 测试挂了」
@@ -83,10 +108,10 @@ jobs:
     #
     # ⚠️ 这个条件是否定式的，新增任何 mode 都必须在这里显式排除，
     #    否则新模式会「漏」进 scan —— 而 scan 会真实抓取、真实 Telegram 推送、
-    #    真实回写 state.json。mode=verify 就是这样加的（见下行 != 'verify'）。
+    #    真实回写 state.json。mode=verify / mode=review_action 都是这样加的。
     if: >-
       (github.event_name == 'schedule' && github.event.schedule != '0 22 * * *' && github.event.schedule != '0 23 * * *') ||
-      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != 'morning' && github.event.inputs.mode != 'diagnose' && github.event.inputs.mode != 'watchdog' && github.event.inputs.mode != 'verify')
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != 'morning' && github.event.inputs.mode != 'diagnose' && github.event.inputs.mode != 'watchdog' && github.event.inputs.mode != 'verify' && github.event.inputs.mode != 'review_action')
     permissions:
       contents: write   # 仅本 job 需要回写 state.json
       actions: write    # 需要它来 workflow_dispatch 拉起 focus.yml（见下一步）
@@ -280,6 +305,71 @@ jobs:
         run: |
           echo "=========== run_telemetry.log (last 20) ==========="
           if [ -f run_telemetry.log ]; then tail -n 20 run_telemetry.log; else echo "无 telemetry 日志"; fi
+
+  # ==================== E4 人工审核回调（仅 workflow_dispatch + mode=review_action） ====================
+  # 链路：Telegram 私有审核群按钮 → Cloudflare Worker 校验（Webhook Secret /
+  #       操作人白名单 / 审核 Chat / HMAC 签名）→ workflow_dispatch(mode=review_action)
+  #       → 本 job → bot.py 读 state → 二次校验 → approve_review / decline_review
+  #
+  # 本 job 的职责边界（刻意的收窄，不是遗漏）：
+  #   · 不跑 RSS 采集 —— 审核是「已经抓到并判定为 E4+S」的事后动作
+  #   · 不跑早报     —— 与 06:00 的 morning 完全无关
+  #   · 不跑 focus   —— 不拉起任何子 workflow
+  #   · permissions 只有 contents: write，且仅用于把 state.json 写回仓库；
+  #     没有 actions: write，所以它在物理上无法 dispatch 别的 workflow。
+  #
+  # 之所以必须是一个独立 job 而不是塞进 scan：scan 的 if 是否定式条件，
+  # 且 scan 会真实抓取 + 真实推送 + 真实回写 state。审核回调误入 scan
+  # 等于「点一下按钮就顺手发一轮新闻」，这是不可接受的副作用。
+  review_action:
+    if: >-
+      github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'review_action'
+    permissions:
+      contents: write   # 仅用于 state.json 持久化（消息 id / attempts / delivery_status）
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   # v4
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Guard against committed caches
+        run: bash scripts/check_no_cache.sh
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip --quiet
+          pip install --timeout 60 --retries 5 -r requirements.txt
+
+      # 入参全部来自 Worker 的 workflow_dispatch，已在 Worker 侧做过一次校验；
+      # 这里仍由 bot.py 再做一次「操作人白名单 + 状态机可恢复」的二次校验。
+      # 双重校验不是冗余：Worker 的密钥可能轮换，而 state 只有仓库这边权威。
+      - name: Run bot.py (Review Action Mode)
+        env:
+          RUN_MODE: "review_action"
+          REVIEW_EVENT_ID: ${{ github.event.inputs.review_event_id }}
+          REVIEW_ACTION: ${{ github.event.inputs.review_action }}
+          REVIEW_OPERATOR_ID: ${{ github.event.inputs.review_operator_id }}
+          REVIEW_NOTE: ${{ github.event.inputs.review_note }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # 审核群与公共频道必须分开：不设默认回落到公共频道，
+          # 否则「内部审核」会在公开频道里直播。
+          TELEGRAM_REVIEW_CHAT_ID: ${{ secrets.TELEGRAM_REVIEW_CHAT_ID }}
+          REVIEW_OPERATOR_IDS: ${{ secrets.REVIEW_OPERATOR_IDS }}
+          REVIEW_CALLBACK_HMAC_SECRET: ${{ secrets.REVIEW_CALLBACK_HMAC_SECRET }}
+        run: python bot.py
+
+      # 即便上一步失败也要回写：投递结果未知（DELIVERY_UNCERTAIN）必须落盘，
+      # 否则下一轮会把「可能已经发出去」的事件当成「没发过」再发一遍。
+      - name: Commit state changes (if any)
+        if: always()
+        run: bash scripts/commit_state.sh state.json 3
 
   # ==================== 代码自检（push 到 main 触发） ====================
   # 只做两件事：仓库卫生守卫 + 快速测试。不碰网络、不碰 Telegram、不写 state.json，
