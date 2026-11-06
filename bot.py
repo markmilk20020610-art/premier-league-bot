@@ -1462,10 +1462,41 @@ def review_store_client():
     return _REVIEW_STORE
 
 
+# 审核 stub 在公开侧没有标题（P0 的代价：标题本身就是「哪一条」），
+# 但「同一事件」判定需要标题。折中办法是按句柄临时取一次，只在内存里用，
+# 不写回 state。缓存按 review_ref 存：标题不会变，一条记录只需取一次。
+_REVIEW_TITLE_CACHE = {}
+
+
+def _review_title_of(review_ref):
+    """按句柄从私有库取回审核事件的标题，只用于运行时的同事件判定。
+
+    取不到就返回空串，由调用方跳过这条记录——宁可漏判一次同事件，也不能用猜的。
+    """
+    ref = review_ref or ""
+    if not ref:
+        return ""
+    if ref in _REVIEW_TITLE_CACHE:
+        return _REVIEW_TITLE_CACHE[ref]
+    client = review_store_client()
+    if client is None:
+        return ""
+    try:
+        payload = client.peek_payload(ref) or {}
+    except review_store.ReviewStoreError:
+        return ""
+    title = payload.get("title") or ""
+    if title:
+        _REVIEW_TITLE_CACHE[ref] = title
+    return title
+
+
 def set_review_store(client):
     """注入存储后端（测试与本地模拟用）。传 None 可复位。"""
     global _REVIEW_STORE
     _REVIEW_STORE = client
+    # 同时清空标题缓存：换了后端，旧缓存就是另一个库的事了。
+    _REVIEW_TITLE_CACHE.clear()
 
 
 def _review_store_entries(client, review_ref):
@@ -1751,6 +1782,36 @@ def _find_review_rec(state, key):
         return rec
     return store.find_review_stub(state, key)
 
+
+def _locate_review_by_event_id(state, client, event_id):
+    """拿着**原始 event_id** 去找对应的公开审核 stub。
+
+    P0 把公开键改成随机值之后，`state["events"]` 的键与 event_id 再无关系，
+    公开结构里也不再有 event_id 字段。于是「事件 id → 审核记录」这条链只剩
+    私有存储能走：`review` 表的 event_id 是业务主键，`find_active()` 按它
+    反查 review_ref，再回公开 state 用句柄定位 stub。
+
+    这是**自动退出审核**的必经之路：第二个独立来源到达时，调用方手里只有
+    事件 id，没有句柄。
+
+    任何一步失败都返回 None，让调用方按「没有待退出的审核」处理。
+    宁可让记录留在队列里等人工，也不能因为查不到就当成「可以发」。
+
+    日志里不能出现 event_id：它是 sha1(url)[:12]，
+    而 GitHub Actions 日志是公开的。
+    """
+    if not event_id or client is None:
+        return None
+    try:
+        got = client.find_active(event_id) or {}
+    except review_store.ReviewStoreError as e:
+        print("::warning title=Review Lookup Failed::"
+              "私有审核存储按事件反查失败：{}".format(e))
+        return None
+    review_ref = got.get("review_ref") or ""
+    if not review_ref:
+        return None
+    return store.find_review_stub(state, review_ref)
 
 def approve_review(state, event_id, operator_id, note=""):
     """人工批准：进投递队列，但**不改变可信度等级**。
@@ -2314,12 +2375,16 @@ def recheck_review(state, event_id, extra_rows=None):
 
     返回退出后的记录；没退出（不在队列 / 证据未达标）返回 None。
     """
+    client = review_store_client()
     rec = _find_review_rec(state, event_id)
+    if rec is None:
+        # 公开键随机化之后，调用方手里只有原始 event_id 时，公开 state 里是查不到的。
+        # 走私有库的 by-event 索引拿到 review_ref，再回公开 state 定位 stub。
+        rec = _locate_review_by_event_id(state, client, event_id)
     if not rec or rec.get("delivery_status") != store.PENDING_REVIEW:
         return None
 
     review_ref = rec.get("review_ref") or ""
-    client = review_store_client()
     payload = _review_payload_of(client, review_ref)
 
     rows = _review_rows(payload)
@@ -2377,10 +2442,17 @@ def _exit_review_if_upgraded(state, same_event, extra_rows=None):
         return False
     if same_event.get("delivery_status") != store.PENDING_REVIEW:
         return False
-    rec = recheck_review(state, same_event.get("event_id"), extra_rows)
+    # P0 之后公开键是随机值，审核 stub 里**没有** event_id 字段（白名单已移除），
+    # 所以 `same_event.get("event_id")` 在审核事件上恒为 None。旧代码正是拿它
+    # 去查，等于每次都查空——自动退出审核从来没生效过。
+    # 句柄（review_ref）才是 stub 上稳定存在的索引，优先用它；
+    # 保留 event_id 回退是为了兼容迁移前落盘的旧记录。
+    key = same_event.get("review_ref") or same_event.get("event_id") or ""
+    rec = recheck_review(state, key, extra_rows)
     if not rec:
         return False
-    print(f"[INFO] 审核自动退出：{rec.get('event_id')} | "
+    # 日志里不能打 event_id（= sha1(url)[:12]，Actions 日志公开）。
+    print(f"[INFO] 审核自动退出：{rec.get('review_ref') or '(no-ref)'} | "
           f"{rec.get('review_exit_reason')}")
     print("::notice title=Review Auto Exited::"
           "第二独立来源到达，该事件已退出人工审核，本轮按正常流程推送")
@@ -3291,6 +3363,16 @@ BLOCKING_DELIVERY_STATUSES = (
     store.COMMITTED, store.DELIVERED, store.PENDING_DELIVERY, store.DELIVERY_UNCERTAIN,
 )
 
+# 主流程去重用的状态集：在「已投递 / 在途」之外**额外包含「在审」**。
+#
+# 为什么两处不能合并：
+#   · 候选过滤（_prepare_ai_candidates）只拦已投递的重复报道，省 AI token；
+#     在审事件的新报道**必须放行**——它可能就是触发
+#     自动退出的第二个独立来源。
+#   · 主流程去重必须把在审事件也认出来，否则 _exit_review_if_upgraded
+#     永远收不到 same_event。
+DEDUPE_DELIVERY_STATUSES = BLOCKING_DELIVERY_STATUSES + (store.PENDING_REVIEW,)
+
 
 def _event_probe(title, url=""):
     """把一条事件/候选包装成 same_event() 能吃的记录结构。"""
@@ -3335,6 +3417,12 @@ def _find_same_event(state, title, url="", statuses=None):
         if (event.get("updated_at") or "") < cutoff:
             continue
         other_title = event.get("article_title") or event.get("title")
+        if not other_title and store.is_review_record(event):
+            # 审核 stub 在公开侧没有标题，按句柄临时取一次。
+            # 取不到就跳过：没有标题就没法判定同事件，猜是不行的。
+            other_title = _review_title_of(event.get("review_ref") or "")
+            if not other_title:
+                continue
         if _number_conflict(title, other_title):
             continue
         ok, _why = ev.same_event(anchor, _event_probe(other_title, event.get("evidence_url")))
@@ -4096,7 +4184,7 @@ def run_scan_mode(state, start_time):
         # 历史 state 里存的是未清洗（或旧规则清洗）的原始 URL，这里统一展开后再比对
         processed_keys = _processed_sets(processed_urls)
         same_event = _find_same_event(state, article_title, evidence_url,
-                                      statuses=BLOCKING_DELIVERY_STATUSES)
+                                      statuses=DEDUPE_DELIVERY_STATUSES)
         if _matches_processed(evidence_url, processed_keys):
             _skip("URL_DEDUPED", f"依据 URL 去重拦截：[{evidence_key}] 已处理过")
         elif same_event is not None and not _exit_review_if_upgraded(

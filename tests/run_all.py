@@ -53,6 +53,8 @@ MODULES = [
     "tests.test_news_pool_privacy",   # P0：新闻池与审核状态的关联泄露
     "tests.test_review_lease_expiry", # P1：claim 租约过期不得自动重发
     "tests.test_review_fail_closed",  # P2：approve/decline fail-closed
+    # ---- 第二轮审查：自动退出审核调用链（生产路径，非直接传 review_ref）----
+    "tests.test_review_exit_chain",
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 

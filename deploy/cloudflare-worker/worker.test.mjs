@@ -867,6 +867,14 @@ async function testVault() {
     const byEvent = await internal(env, "/internal/review/by-event",
       { body: { event_id: "ffff11112222" } });
     eq("C-6 按事件查询能命中", byEvent.body.review_ref, r1);
+    // Python 的 `HttpReviewStore.find_active()` 直接读这两个字段，
+    // 少一个就会变成「查得到 ref 但 found=false」的静默失败。
+    eq("C-6 按事件查询返回 found", byEvent.body.found, true);
+    eq("C-6 按事件查询返回状态", byEvent.body.status, "pending");
+    const miss = await internal(env, "/internal/review/by-event",
+      { body: { event_id: "000000000000" } });
+    eq("C-6 未知事件 found 为 false", miss.body.found, false);
+    eq("C-6 未知事件 review_ref 为空", miss.body.review_ref, "");
   }
 
   /* 36. ★ 私有状态持久化：enqueue 之后状态可查、日志完整 */

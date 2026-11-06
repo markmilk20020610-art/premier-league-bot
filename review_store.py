@@ -273,6 +273,26 @@ class LocalReviewStore:
         self._log(ref, "ENQUEUED", "system", "event_id=" + event_id)
         return {"review_ref": ref, "status": PENDING, "duplicate": False}
 
+    def find_active(self, event_id):
+        """按 **event_id** 反查在审记录的句柄（只读，不改任何状态）。
+
+        为什么需要它：公开 state 里的审核键已经改成随机值（PR #1 P0），
+        原始 event_id 不再出现在公开结构里，于是「拿着事件 id 找审核记录」
+        这条路断了——而自动退出审核（第二独立来源到达）正是这么调用的。
+        私有库里 event_id 一直是业务主键（`ux_review_active`），这里只是把
+        已有的索引暴露成一个只读查询，不新增表、不新增字段。
+
+        与 `enqueue` 的去重查询共用同一条 SQL：两边对「什么算在审」的判定
+        必须完全一致，否则会出现「入队说重复、反查却说没有」的撕裂。
+        """
+        empty = {"found": False, "review_ref": "", "status": ""}
+        if not event_id:
+            return empty
+        row = self._conn.execute(SQL_FIND_ACTIVE, (event_id,)).fetchone()
+        if not row:
+            return empty
+        return {"found": True, "review_ref": row["review_ref"], "status": row["status"]}
+
     def get(self, review_ref):
         row = self._conn.execute(SQL_GET, (review_ref,)).fetchone()
         if not row:
@@ -565,6 +585,17 @@ class HttpReviewStore:
 
     def get(self, review_ref):
         return self._call("/internal/review/{}/state".format(review_ref))
+
+    def find_active(self, event_id):
+        """按 event_id 反查句柄。DO 侧 `/review/by-event` 早就有了，这里只是补客户端。
+
+        返回形状与 `LocalReviewStore.find_active` 保持一致，调用方不必区分后端。
+        """
+        out = self._call("/internal/review/by-event", "POST",
+                         {"event_id": event_id or ""}) or {}
+        return {"found": bool(out.get("found")),
+                "review_ref": out.get("review_ref") or "",
+                "status": out.get("status") or ""}
 
     def peek(self, review_ref):
         return self.get(review_ref)

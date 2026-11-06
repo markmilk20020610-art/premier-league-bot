@@ -288,15 +288,45 @@ def _public_url_strings(state):
 
 
 def _non_event_structure_violations(state):
-    """新闻池等**非 events** 结构里不得出现审核私有字段。"""
+    """新闻池、S 溢出位等**非 events** 结构里不得出现审核私有字段。
+
+    `s_overflow` 是嵌套结构（bucket → {urls: [...], ...}），只查顶层等于
+    漏掉里层：审核 payload 一旦被顺手塞进溢出位，公开仓库里就多一份
+    「待审内容快照」——那比 id 泄露更严重，泄露的是正文本身。
+    """
     out = []
     for item in state.get("news_pool") or []:
-        if not isinstance(item, dict):
-            continue
-        for key in PUBLIC_REVIEW_FORBIDDEN:
-            if key in item:
-                out.append("news_pool: 含私有字段 {}".format(key))
+        if isinstance(item, dict):
+            for key in PUBLIC_REVIEW_FORBIDDEN:
+                if key in item:
+                    out.append("news_pool: 含私有字段 {}".format(key))
+    buckets = state.get("s_overflow") or {}
+    if isinstance(buckets, dict):
+        for name, bucket in buckets.items():
+            for path, node in _walk_dicts(bucket, "s_overflow.{}".format(name)):
+                for key in PUBLIC_REVIEW_FORBIDDEN:
+                    if key in node:
+                        out.append("{}: 含私有字段 {}".format(path, key))
     return out
+
+
+def _walk_dicts(node, path, depth=0):
+    """递归产出嵌套结构里的 (路径, dict)，只走 dict / list 两种容器。
+
+    深度上限是防御畸形数据，不是为了限制正常结构：state 里最深的
+    `s_overflow.<bucket>.urls[i]` 才三层。
+    """
+    if depth > 4:
+        return
+    if isinstance(node, dict):
+        yield path, node
+        for key, val in node.items():
+            for found in _walk_dicts(val, "{}.{}".format(path, key), depth + 1):
+                yield found
+    elif isinstance(node, list):
+        for idx, val in enumerate(node):
+            for found in _walk_dicts(val, "{}[{}]".format(path, idx), depth + 1):
+                yield found
 
 
 def _review_id_link_violations(state):
@@ -311,9 +341,14 @@ def _review_id_link_violations(state):
     随机值（`new_review_public_id`），这里再加一道断言：只要「审核记录的 id」
     和「某个公开 URL 的派生 id」撞上，就拒绝落盘。
 
-    多算两种 URL 变体（原样 / 去掉 query 与 fragment），因为攻击者会按
-    `clean_url` 的规则先清洗再算——不覆盖变体的话，这道守卫会被一个 `?utm_source`
-    绕过。
+    多算三种 URL 变体，因为攻击者会按 `clean_url` 的规则先清洗再算——
+    不覆盖变体的话，这道守卫会被一个 `?utm_source` 绕过：
+
+        原样            https://a.com/x?utm=1#frag
+        去 fragment     https://a.com/x?utm=1
+        去 query        https://a.com/x
+        两者都去        https://a.com/x   ← 顺序反过来时（x#frag?utm=1）
+                                            只有这一种才拿得到真正的路径
     """
     out = []
     events = state.get("events") or {}
@@ -327,7 +362,10 @@ def _review_id_link_violations(state):
         return out
     seen = set()
     for raw in _public_url_strings(state):
-        for variant in (raw, raw.split("#", 1)[0], raw.split("?", 1)[0]):
+        for variant in (raw,
+                        raw.split("#", 1)[0],
+                        raw.split("?", 1)[0],
+                        raw.split("#", 1)[0].split("?", 1)[0]):
             if not variant or variant in seen:
                 continue
             seen.add(variant)
