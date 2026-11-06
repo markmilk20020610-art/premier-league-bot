@@ -13,8 +13,11 @@ import concurrent.futures
 from urllib.parse import urlparse, urlunparse, quote, parse_qs, urlencode
 
 import ai_provider as ai
+import content_type as ctype
+import event_aggregate as evagg
 import evidence as ev
 import feed_registry as feeds
+import importance as imp
 import redact
 import schema as out_schema
 import sport_scope as sport
@@ -53,6 +56,28 @@ SUMMARY_MAX_MATERIALS = 40     # 喂给模型的素材上限，避免 token 爆�
 FUTURE_SKEW_TOLERANCE_MIN = 5
 POOL_RETENTION_HOURS = 72      # state.json 里新闻池的保留时长（池子可以留旧闻，早报不许用）
 POOL_MAX_ITEMS = 150           # 新闻池条目上限，控制 state.json 体积
+
+# ==================== V1.0 事件级早报排序 ====================
+# 开关默认关闭。关闭时**完全走原有路径**（_pool_for_morning + 按发布时间排序），
+# 新逻辑一行都不执行——这是「任何新功能关闭后必须恢复原有选材路径」的落地方式。
+# 验收通过后再由用户决定是否默认开启。
+IMPORTANCE_SORT = os.environ.get("IMPORTANCE_SORT", "0").strip().lower() in (
+    "1", "true", "yes", "y", "on")
+
+# GLOBAL_EVENT_LINE 每日早报专属名额：2 个。
+# 这是**保留位**，不是强制填充配额——没有达标事件时允许空置。
+# 空着不是失败；为了填满而把 B 级事件写成 A 级才是失败。
+GLOBAL_EVENT_SLOTS = 2
+
+# S 级即时推送软上限：3 条/日。
+# 软上限 ≠ 硬闸门：第 4 条及以上真正达到 S 级标准的**独立事件**照常推送，
+# 不得降级、不得推迟、不得静默丢弃；但必须落盘留痕（state["s_overflow"]）。
+S_PUSH_SOFT_CAP = 3
+
+# 同一事件最多送几条原文给模型。
+# 设上限的理由：C 罗退役 10 条报道会把 40 个素材名额吃掉 1/4。
+# 但也不能只送 1 条——证据体系需要多个独立来源才能给出 E2。
+MORNING_MAX_ARTICLES_PER_EVENT = 3
 
 # 可信单一来源白名单（V1.1 任务 4）。
 # SINGLE_SOURCE 默认不自动推送；只有这里列出的域名（经人工确认的记者/机构）才放行，
@@ -1114,6 +1139,343 @@ def _pool_for_morning(state):
               f"{dropped['unknown']} 条 / 超过 {SUMMARY_WINDOW_HOURS}h {dropped['stale']} 条 → "
               f"保留 {len(out)} 条")
     return out
+
+
+# ==================== V1.0 事件级早报候选（任务 3 + 任务 4） ====================
+def _events_for_morning(state, pool=None):
+    """事件级早报候选：把报道聚成事件，按重要性排序并分配业务线名额。
+
+    与 `_pool_for_morning` 的关系是**叠加**，不是替换：
+    开关 `IMPORTANCE_SORT` 关闭时本函数根本不会被调用，原有按发布时间排序的
+    路径一行都不执行。这是「关闭开关必须恢复原有选材路径」的落地方式。
+
+    返回 (ordered_pool, events, stats)：
+      ordered_pool —— 已按事件优先级排好序、且每个事件最多取
+                      MORNING_MAX_ARTICLES_PER_EVENT 条的素材列表，
+                      可直接喂给既有的 _build_morning_events
+      events       —— 完整事件列表（含证据引用、重要性、可信度）
+      stats        —— 聚合统计 + 名额分配报告
+    """
+    pool = list(pool) if pool is not None else _pool_for_morning(state)
+    events, agg_stats = evagg.build_events(pool)
+    selected, slot_report = _select_morning_events(events)
+
+    ordered = []
+    for e in selected:
+        # 同一事件只取前 N 条原文：既保证证据体系能看到多个独立来源，
+        # 又不让一件事把 40 个名额吃光。
+        for it in e["members"][:MORNING_MAX_ARTICLES_PER_EVENT]:
+            item = dict(it)
+            item["_event_id"] = e["event_id"]
+            item["_importance"] = e["importance"]
+            item["_content_type"] = e["content_type"]
+            item["_scope"] = e["scope"]
+            ordered.append(item)
+
+    stats = dict(agg_stats)
+    stats.update(slot_report)
+    print(f"[INFO] 事件聚合：{agg_stats['input']} 条素材 → {agg_stats['events']} 个事件"
+          f"（合并 {agg_stats['merged']} 条）→ 入选 {len(selected)} 个事件 / "
+          f"{len(ordered)} 条素材")
+    print(f"[INFO] 名额分配：S 级 {slot_report['s_count']} / A 线 {slot_report['a_line_count']} / "
+          f"GLOBAL_EVENT_LINE 保留位 {slot_report['global_slots_used']}（空置 "
+          f"{slot_report['global_slots_empty']}） / 低价值排除 {slot_report['low_value_excluded']}")
+    if slot_report["global_slots_used"] == 0:
+        print("[INFO] " + slot_report["global_line_note"])
+    return ordered, events, stats
+
+
+def _select_morning_events(events, budget=None):
+    """按重要性分配早报名额，返回 (入选事件, 名额报告)。
+
+    顺序严格固定，这就是「C 级与普通 PROMOTION 不得挤占 S/A 级」的实现：
+      1. S 级事件           —— 不受保留位限制，全部入选
+      2. A 线的 A 级事件    —— 英超主线
+      3. GLOBAL_EVENT_LINE  —— 最多 2 个保留位，**允许空置**
+      4. B 级事件
+      5. C 级事件           —— 只填剩余名额，永远排在最后
+
+    第 3 步的「允许空置」不是宽容，是要求：没有达标事件就空着，
+    绝不为了填满而把 B 级写成 A 级、或把英超事件改标成全球线。
+
+    低价值内容（PROMOTION / GOSSIP）**整体不进候选池**，不是「排在最后」。
+    原因：名额富余时「排在最后」等于「照样入选」。实测 40 个名额只用掉 29 个时，
+    8 条商品推广全部进池——「排在最后」在有空位时没有任何约束力。
+    早报是事实新闻摘要，广告与八卦在任何情况下都不属于它。
+    这一点与 _review_route 对低价值内容返回 ARCHIVE 保持一致。
+    """
+    budget = budget or SUMMARY_MAX_MATERIALS
+    per_event = MORNING_MAX_ARTICLES_PER_EVENT
+    selected, used = [], 0
+
+    def take(event):
+        nonlocal used
+        cost = min(max(1, len(event.get("members") or [])), per_event)
+        if used + cost > budget:
+            return False
+        selected.append(event)
+        used += cost
+        return True
+
+    s_events = [e for e in events if e["importance"] == imp.S]
+    a_line_a = [e for e in events
+                if e["importance"] == imp.A and e["scope"] == imp.A_LINE]
+    g_line_a = [e for e in events
+                if e["importance"] == imp.A and e["scope"] == imp.GLOBAL_EVENT_LINE]
+    b_events = [e for e in events if e["importance"] == imp.B]
+    # C 级里剔除低价值内容；剩下的是「值得发但不够重要」的（如非英超常规赛果）
+    low_value = [e for e in events if ctype.is_low_value(e["content_type"])]
+    c_events = [e for e in events if e["importance"] == imp.C
+                and not ctype.is_low_value(e["content_type"])]
+
+    for e in s_events:
+        take(e)
+
+    for e in a_line_a:
+        take(e)
+
+    g_used = 0
+    for e in g_line_a:
+        if g_used >= GLOBAL_EVENT_SLOTS:
+            break
+        if take(e):
+            g_used += 1
+
+    for e in b_events:
+        take(e)
+
+    for e in c_events:
+        take(e)
+
+    report = {
+        "s_count": sum(1 for e in selected if e["importance"] == imp.S),
+        "a_line_count": sum(1 for e in selected if e["scope"] == imp.A_LINE),
+        "global_slots_reserved": GLOBAL_EVENT_SLOTS,
+        "global_slots_used": g_used,
+        "global_slots_empty": GLOBAL_EVENT_SLOTS - g_used,
+        "global_line_eligible": len(g_line_a),
+        "low_value_excluded": len(low_value),
+        "low_value_selected": sum(1 for e in selected
+                                  if ctype.is_low_value(e["content_type"])),
+        "events_selected": len(selected),
+        "article_budget": budget,
+        "articles_used": used,
+    }
+    if g_used == 0:
+        report["global_line_note"] = (
+            "今日无达标 GLOBAL_EVENT_LINE 事件，{} 个保留位空置".format(GLOBAL_EVENT_SLOTS))
+    else:
+        report["global_line_note"] = (
+            "GLOBAL_EVENT_LINE 使用 {} 个保留位，空置 {} 个".format(
+                g_used, GLOBAL_EVENT_SLOTS - g_used))
+    return selected, report
+
+
+# ==================== V1.0 S 级软上限 ====================
+def _apply_s_soft_cap(state, s_events, today=None):
+    """S 级每日软上限：3 条。第 4 条起**照常推送**，只加标注并留痕。
+
+    返回 (带标注的事件列表, 当日溢出记录)。
+
+    三条硬约束（缺一即违规）：
+      · 不得降级——不能把第 4 条标成 A 级绕开上限
+      · 不得推迟——不能留到次日早报当旧闻
+      · 不得丢弃——不能直接不推
+    因此本函数**不返回任何「被拦下」的事件**，只做计数与标注。
+
+    同一事件的重复进展不计入多条：聚合层已经把进展合成一个事件，
+    这里再按 event_id 去重，双保险。
+    """
+    today = today or _cn_now().strftime("%Y-%m-%d")
+    buckets = state.setdefault("s_overflow", {})
+    if not isinstance(buckets, dict):
+        buckets = {}
+        state["s_overflow"] = buckets
+    bucket = buckets.get(today)
+    if not isinstance(bucket, dict) or not isinstance(bucket.get("events"), list):
+        bucket = {"date": today, "count": 0, "events": []}
+        buckets[today] = bucket
+
+    out = []
+    for e in s_events:
+        eid = e.get("event_id")
+        if eid and eid in bucket["events"]:
+            # 同一事件再次出现（后续进展）：不重复计数，但仍要推
+            out.append(dict(e, s_push_note="", s_push_index=bucket["events"].index(eid) + 1))
+            continue
+        bucket["count"] += 1
+        if eid:
+            bucket["events"].append(eid)
+        note = ""
+        if bucket["count"] > S_PUSH_SOFT_CAP:
+            note = "今日第 {} 条 S 级事件".format(bucket["count"])
+        out.append(dict(e, s_push_note=note, s_push_index=bucket["count"]))
+
+    # 只保留最近 7 天，避免 state.json 无限增长
+    if len(buckets) > 7:
+        keep = sorted(buckets.keys())[-7:]
+        state["s_overflow"] = {k: buckets[k] for k in keep}
+    return out, bucket
+
+
+# ==================== V1.0 E4 级 S 事件：人工审核拦截 ====================
+# 本阶段只做「可靠的状态拦截 + 私有待审记录」。
+# Telegram 内联按钮与完整审核界面属后续独立任务——按任务书要求，
+# 不得用不安全的临时接口代替（例如把审批动作做成一个 HTTP 端点）。
+def _review_route(event):
+    """出口路由：返回 (route, reason)。route ∈ {"PUSH", "REVIEW", "ARCHIVE"}。
+
+    顺序：低价值先出局，再看是否送审。
+    反过来写（先判 REVIEW）会让一条 E4+S 的推广/八卦去占用人工审核的时间——
+    审核人力是稀缺资源，只能花在「可能是真新闻但证据不够」的事情上。
+    """
+    if ctype.is_low_value(event.get("content_type")):
+        return "ARCHIVE", "低价值内容（推广/八卦），不占用推送名额"
+    if event.get("importance") == imp.S and event.get("cred") == "E4":
+        return "REVIEW", ("E4 级 S 事件：重要性高但证据不足，"
+                          "不得公开推送为确定事实，转 PENDING_REVIEW")
+    return "PUSH", ""
+
+
+def _review_event_id(event):
+    """审核记录的稳定 ID：优先用事件 ID，退化为指纹。"""
+    return event.get("event_id") or event.get("event_fingerprint") or ""
+
+
+def _enqueue_review(state, event, reason, now=None):
+    """把事件写入私有待审记录，投递状态置 PENDING_REVIEW。
+
+    刻意不落任何「公开可见」的地方：不发 Telegram、不写推送队列。
+    人工审核队列是内部状态，泄露它的存在本身就是风险。
+    """
+    eid = _review_event_id(event)
+    if not eid:
+        return None
+    refs = event.get("evidence_refs") or []
+    primary = refs[0].get("url") if refs and isinstance(refs[0], dict) else ""
+    rec = store.record_event(
+        state, primary or "", event.get("title") or "",
+        event.get("evidence_status") or ev.UNVERIFIED,
+        delivery_status=store.VERIFIED,
+        event_id=eid,
+        article_title=(refs[0].get("title") if refs and isinstance(refs[0], dict) else ""),
+    )
+    # 补登记全部证据引用
+    for r in refs:
+        if isinstance(r, dict) and r.get("url"):
+            store.record_event(state, r["url"], event.get("title") or "",
+                               event.get("evidence_status") or ev.UNVERIFIED,
+                               delivery_status=store.VERIFIED, event_id=eid,
+                               article_title=r.get("title") or "")
+    if rec.get("delivery_status") == store.VERIFIED:
+        store.transition(rec, store.PENDING_REVIEW)
+    rec["review_reason"] = reason
+    rec["review_importance"] = event.get("importance")
+    rec["review_cred"] = event.get("cred")
+    rec["review_enqueued_at"] = _now_iso()
+    rec["review_status"] = "PENDING"
+    rec.setdefault("review_log", []).append({
+        "at": _now_iso(), "action": "ENQUEUED", "operator_id": "system",
+        "reason": reason, "prev_cred": event.get("cred"),
+    })
+    return rec
+
+
+def approve_review(state, event_id, operator_id, note=""):
+    """人工批准：进投递队列，但**不改变可信度等级**。
+
+    「人工批准 ≠ 事实核验完成」。审核人确认的是「这条可以按归属措辞发出去」，
+    不是「这条是真的」。把 cred 从 E4 改成 E1 是最危险的误用——
+    它会让一条单一低可信来源的消息在系统里变成「官方确认」。
+    """
+    rec = (state.get("events") or {}).get(event_id)
+    if not rec:
+        raise store.StateError("审核记录不存在: {}".format(event_id))
+    if rec.get("delivery_status") != store.PENDING_REVIEW:
+        raise store.StateError("该记录不在待审状态: {}（当前 {}）".format(
+            event_id, rec.get("delivery_status")))
+    store.transition(rec, store.PENDING_DELIVERY)
+    rec["review_status"] = "APPROVED"
+    rec["review_operator"] = operator_id
+    rec["review_note"] = note
+    rec["review_decided_at"] = _now_iso()
+    rec["publish_mode"] = "ATTRIBUTED"   # 只能「据 X 报道」，不得用确定语气
+    rec.setdefault("review_log", []).append({
+        "at": _now_iso(), "action": "APPROVED", "operator_id": operator_id,
+        "note": note, "prev_cred": rec.get("review_cred"), "cred_after": rec.get("review_cred"),
+    })
+    # 显式声明：cred 不因人工批准而改变
+    rec["cred_unchanged_by_approval"] = True
+    return rec
+
+
+def decline_review(state, event_id, operator_id, note=""):
+    """人工拒绝：仅存档。进终态 REVIEW_DECLINED，不再重复入队。"""
+    rec = (state.get("events") or {}).get(event_id)
+    if not rec:
+        raise store.StateError("审核记录不存在: {}".format(event_id))
+    if rec.get("delivery_status") != store.PENDING_REVIEW:
+        raise store.StateError("该记录不在待审状态: {}（当前 {}）".format(
+            event_id, rec.get("delivery_status")))
+    store.transition(rec, store.REVIEW_DECLINED)
+    rec["review_status"] = "DECLINED"
+    rec["review_operator"] = operator_id
+    rec["review_note"] = note
+    rec["review_decided_at"] = _now_iso()
+    rec.setdefault("review_log", []).append({
+        "at": _now_iso(), "action": "DECLINED", "operator_id": operator_id, "note": note,
+    })
+    return rec
+
+
+def list_pending_reviews(state):
+    """待审队列（内部使用，不得外发）。"""
+    return [e for e in (state.get("events") or {}).values()
+            if e.get("delivery_status") == store.PENDING_REVIEW]
+
+
+def recheck_review(state, event_id, evidence_status):
+    """第二独立来源到达时，自动退出审核队列。
+
+    审核队列存在的意义是「证据不足时先别公开出去」，不是「让它在队列里烂掉」。
+    当同一事件的证据等级从 E4 升到 E3/E2/E1，送审的前提已经消失，
+    必须自动退出、回到正常投递流程——否则一条真新闻会因为「第一次被抓到时
+    只有一家媒体报道」被永久卡住，等一个可能永远不会来的人工操作。
+
+    返回退出后的记录；没退出（不在队列 / 证据未升级）返回 None。
+    """
+    rec = (state.get("events") or {}).get(event_id)
+    if not rec or rec.get("delivery_status") != store.PENDING_REVIEW:
+        return None
+    if evidence_status in (ev.UNVERIFIED, ev.CONFLICTING, None, ""):
+        # 还是 E4：证据没变好，继续等人工
+        return None
+    store.transition(rec, store.PENDING_DELIVERY)
+    rec["review_status"] = "AUTO_EXITED"
+    rec["review_exit_reason"] = (
+        "第二独立来源到达，证据等级升为 {}，送审前提消失".format(evidence_status))
+    rec["review_exited_at"] = _now_iso()
+    rec.setdefault("review_log", []).append({
+        "at": _now_iso(), "action": "AUTO_EXITED", "operator_id": "system",
+        "evidence_status": evidence_status,
+    })
+    return rec
+
+
+def _exit_review_if_upgraded(state, same_event, evidence_status):
+    """去重分支里的钩子：命中待审事件且证据升级 → 退出审核，本轮继续推送。"""
+    if not same_event or not IMPORTANCE_SORT:
+        return False
+    if same_event.get("delivery_status") != store.PENDING_REVIEW:
+        return False
+    rec = recheck_review(state, same_event.get("event_id"), evidence_status)
+    if not rec:
+        return False
+    print(f"[INFO] 审核自动退出：{rec.get('event_id')} | "
+          f"{rec.get('review_exit_reason')}")
+    print("::notice title=Review Auto Exited::"
+          "第二独立来源到达，该事件已退出人工审核，本轮按正常流程推送")
+    return True
 
 
 # 早报兜底专用：直接查 Google News，不依赖 RSS 是否还留着昨天的条目。
@@ -2368,6 +2730,32 @@ def run_morning_mode(state, start_time):
         "degraded": None,
     }
 
+    # ---- 第 3.5 步：事件级排序（V1.0，受 IMPORTANCE_SORT 开关控制）----
+    # 开关关闭时这一段完全不执行，pool 保持原样，后续流程与旧版逐字节等价。
+    event_stats = None
+    if IMPORTANCE_SORT:
+        ordered_pool, morning_events, event_stats = _events_for_morning(state, pool)
+        if ordered_pool:
+            pool = ordered_pool
+            meta["importance_sort"] = True
+            meta["event_stats"] = {
+                k: v for k, v in event_stats.items()
+                if isinstance(v, (int, float, str, bool))
+            }
+            meta["global_line_note"] = event_stats.get("global_line_note", "")
+            # S 级软上限：只计数与标注，不拦任何事件
+            s_events = [e for e in morning_events if e["importance"] == imp.S]
+            if s_events:
+                capped, bucket = _apply_s_soft_cap(state, s_events)
+                meta["s_push_count"] = bucket.get("count", 0)
+                overflow = [e for e in capped if e.get("s_push_note")]
+                if overflow:
+                    print(f"[WARN] S 级超出软上限 {S_PUSH_SOFT_CAP} 条，"
+                          f"今日第 {bucket['count']} 条仍照常推送（不降级/不推迟/不丢弃）")
+                    meta["s_overflow_notes"] = [e["s_push_note"] for e in overflow]
+        else:
+            print("[WARN] 事件级排序未产出候选，回退到原按时间排序路径")
+
     # ---- 第 4 步：逐条证据核验（V1.2 任务 5）----
     verified, excluded = _build_morning_events(pool)
     print(f"[INFO] 早报证据核验：{len(pool)} 条素材 → 通过 {len(verified)} 条、"
@@ -2683,12 +3071,77 @@ def run_scan_mode(state, start_time):
                                       statuses=BLOCKING_DELIVERY_STATUSES)
         if _matches_processed(evidence_url, processed_keys):
             _skip("URL_DEDUPED", f"依据 URL 去重拦截：[{evidence_key}] 已处理过")
-        elif same_event is not None:
+        elif same_event is not None and not _exit_review_if_upgraded(
+                state, same_event, model_result.get("evidence_status")):
             # 同一件事换了一家媒体报道：URL 不同，但事件已经推过了（V1.2 任务 14）
             _skip("EVENT_DEDUPED",
                   f"事件级去重拦截：与已投递事件 {same_event.get('event_id')} "
                   f"（{same_event.get('article_title') or same_event.get('title')}）是同一件事")
         else:
+            # ---- V1.0：E4 级 S 事件转人工审核（T13）----
+            # 必须在拼卡片之前判断：既然不打算发，就不该先拼一条「随时能发出去」
+            # 的卡片，否则后续任何人复用 card 变量，拦截都形同虚设。
+            # 受 IMPORTANCE_SORT 开关控制，关闭时这一段不执行，与旧版逐字节等价。
+            if IMPORTANCE_SORT:
+                scan_et = ev.primary_event_type(article_title)
+                scan_ct = ctype.classify(
+                    article_title, model_result.get("fact_summary") or "",
+                    event_type=scan_et)
+                scan_cred = evagg._cred_from_status(
+                    model_result.get("evidence_status"))
+                # 准入看「这件事够不够大」，不看「现在有几家媒体」：
+                # 证据不足正是要送审的原因。真实等级仍按 assess() 另算，
+                # 只用于推送与排序，不参与这里的准入。
+                scan_level = imp.significance(
+                    article_title, model_result.get("fact_summary") or "",
+                    event_type=scan_et,
+                    content_type=scan_ct["content_type"])
+                scan_event = {
+                    "event_id": store.event_id_for(
+                        evidence_key or evidence_url, event_title),
+                    "title": article_title,
+                    "importance": scan_level,
+                    "cred": scan_cred,
+                    "content_type": scan_ct["content_type"],
+                    "evidence_status": model_result.get("evidence_status"),
+                    "evidence_refs": [{"url": evidence_url,
+                                       "title": article_title}],
+                }
+                route, route_reason = _review_route(scan_event)
+                if route == "REVIEW":
+                    rec = _enqueue_review(state, scan_event, route_reason)
+                    try:
+                        save_state(state)
+                    except store.StateError as e:
+                        print(f"[ERROR] 审核队列落盘失败：{e}")
+                        print("::error title=State Write Failed::"
+                              "待审记录未能写入 state.json")
+                        return 1
+                    print(f"[INFO] 转人工审核：{scan_event['event_id']} | "
+                          f"{scan_level} 级 / {scan_cred} | {route_reason}")
+                    print("::notice title=Pending Review::"
+                          "该事件未公开推送，已进入内部待审队列")
+                    log_telemetry({
+                        "start_time": start_time, "end_time": _now_iso(),
+                        "run_mode": "scan", "status": "PENDING_REVIEW",
+                        "event_id": scan_event["event_id"],
+                        "importance": scan_level, "cred": scan_cred,
+                        "review_reason": route_reason,
+                    })
+                    return 0
+                if route == "ARCHIVE":
+                    _skip("LOW_VALUE_ARCHIVED", route_reason)
+                    try:
+                        save_state(state)
+                    except store.StateError as e:
+                        print(f"[WARN] 归档状态落盘失败：{e}")
+                    log_telemetry({
+                        "start_time": start_time, "end_time": _now_iso(),
+                        "run_mode": "scan", "status": "SKIPPED_LOW_VALUE",
+                        "content_type": scan_ct["content_type"],
+                    })
+                    return 0
+
             # 黑标（严肃红线）走独立卡片样式：肃穆标题 + 分隔线，且不展示 A 稿
             is_black_label = "黑标" in str(model_result.get("var_rating") or "")
 
@@ -2768,7 +3221,13 @@ def run_scan_mode(state, start_time):
                 event_id=(reusable or {}).get("event_id"),
                 article_title=article_title,
             )
-            store.begin_delivery(event)
+            # 自动退出审核的记录已经是 PENDING_DELIVERY，不能再走一次 begin_delivery
+            # （PENDING_DELIVERY → PENDING_DELIVERY 不是合法迁移，会抛 StateError）。
+            # 这种记录只需补计一次投递尝试。
+            if event.get("delivery_status") == store.PENDING_DELIVERY:
+                event["attempts"] = int(event.get("attempts", 0)) + 1
+            else:
+                store.begin_delivery(event)
             try:
                 save_state(state)
             except store.StateError as e:

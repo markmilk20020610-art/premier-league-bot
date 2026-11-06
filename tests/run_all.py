@@ -33,6 +33,13 @@ MODULES = [
     "tests.test_focus_tick",
     "tests.test_focus_keeper",
     "tests.test_git_commit",
+    # ---- V1.0 核心修复（任务 1—4 + 三个已批准参数）----
+    "tests.test_content_type",       # 任务 1：内容类型
+    "tests.test_importance",         # 任务 2：重要性分级
+    "tests.test_event_aggregation",  # 任务 4：事件聚合与证据累积
+    "tests.test_morning_ranking",    # 任务 3：早报排序 + T11 保留位空置
+    "tests.test_multi_event_push",   # T12：S 级软上限
+    "tests.test_review_queue",       # T13：E4 级 S 事件人工审核
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 

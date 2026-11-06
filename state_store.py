@@ -20,7 +20,7 @@ import datetime
 
 import redact
 
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 4
 
 # ==================== 投递状态机 ====================
 DISCOVERED = "DISCOVERED"
@@ -37,10 +37,23 @@ DELIVERY_FAILED = "DELIVERY_FAILED"
 RETRYABLE_FAILURE = "RETRYABLE_FAILURE"
 DELIVERY_UNCERTAIN = "DELIVERY_UNCERTAIN"
 
+# V1.0：E4 级 S 事件必须人工审核，不得直接公开推送。
+# 这两个状态属于**投递状态机**，不是推送状态机——它拦的是「能不能进投递管道」，
+# 而 push_state 只管「是否已经露给用户」。混用会导致「待审」与「已推」写进
+# 同一个字段，回滚时无法区分。
+PENDING_REVIEW = "PENDING_REVIEW"
+# 审核人选择「仅存档」。刻意不复用 DELIVERY_FAILED：
+# 后者会让失败率指标失真，也会让 watchdog 误以为需要重试。
+REVIEW_DECLINED = "REVIEW_DECLINED"
+
 # 允许的状态迁移。COMMITTED 是终态。
 _TRANSITIONS = {
     DISCOVERED: {VERIFIED, DELIVERY_FAILED},
-    VERIFIED: {PENDING_DELIVERY, DELIVERY_FAILED},
+    # V1.0：E4 + S 的条目从 VERIFIED 转 PENDING_REVIEW，而不是直接进投递队列
+    VERIFIED: {PENDING_DELIVERY, DELIVERY_FAILED, PENDING_REVIEW},
+    # 审核通过 → 进投递队列；审核拒绝 → 终态存档
+    PENDING_REVIEW: {PENDING_DELIVERY, REVIEW_DECLINED},
+    REVIEW_DECLINED: set(),
     PENDING_DELIVERY: {DELIVERED, RETRYABLE_FAILURE, DELIVERY_UNCERTAIN, DELIVERY_FAILED},
     # 可重试失败：下一轮重新进入投递队列；重试期间也可能退化成「结果未知」
     RETRYABLE_FAILURE: {PENDING_DELIVERY, DELIVERY_UNCERTAIN, DELIVERY_FAILED},
@@ -86,7 +99,45 @@ def _default_state():
         "last_morning_report_date": "",
         "last_summary_sent_at": "",
         "events": {},
+        # V1.0：S 级软上限的溢出记录。软上限不是硬闸门——第 4 条及以上真正
+        # 达到 S 级标准的独立事件照常推送，但必须落盘留痕，不能静默丢弃。
+        "s_overflow": {},
     }
+
+
+def _migrate_events(state):
+    """幂等迁移：把 evidence_url 扩展为 evidence_refs（V1.0 任务 4）。
+
+    迁移规则：
+      · 已有 evidence_refs 的，只补齐缺失的 evidence_url 条目；
+      · 没有 evidence_refs 的，用 evidence_url 建一条；
+      · evidence_url 本身**不删除**——旧代码仍在读它，删了就是破坏兼容。
+
+    幂等性：反复执行结果一致，不会产生重复条目。
+    """
+    events = state.get("events")
+    if not isinstance(events, dict):
+        return 0
+    migrated = 0
+    for event in events.values():
+        if not isinstance(event, dict):
+            continue
+        refs = event.get("evidence_refs")
+        if not isinstance(refs, list):
+            refs = []
+            event["evidence_refs"] = refs
+            migrated += 1
+        known = {r.get("url") for r in refs if isinstance(r, dict)}
+        primary = (event.get("evidence_url") or "").strip()
+        if primary and primary not in known:
+            refs.append({
+                "url": primary,
+                "title": (event.get("article_title") or "")[:200],
+                "added_at": event.get("created_at") or "",
+                "origin": "migrated_from_evidence_url",
+            })
+            migrated += 1
+    return migrated
 
 
 def ensure_shape(state):
@@ -103,6 +154,9 @@ def ensure_shape(state):
         state["news_pool"] = []
     if not isinstance(state.get("events"), dict):
         state["events"] = {}
+    if not isinstance(state.get("s_overflow"), dict):
+        state["s_overflow"] = {}
+    _migrate_events(state)
     state["schema_version"] = SCHEMA_VERSION
     return state
 
@@ -190,7 +244,8 @@ def _prune_events(state, keep=200):
         return
     pinned = {
         eid for eid, e in events.items()
-        if e.get("delivery_status") in (RETRYABLE_FAILURE, DELIVERY_UNCERTAIN, PENDING_DELIVERY)
+        if e.get("delivery_status") in (RETRYABLE_FAILURE, DELIVERY_UNCERTAIN,
+                                        PENDING_DELIVERY, PENDING_REVIEW)
     }
     ordered = sorted(events.items(), key=lambda kv: kv[1].get("updated_at", ""), reverse=True)
     kept, dropped = {}, 0
@@ -230,6 +285,14 @@ def record_event(state, evidence_url, title, evidence_status, delivery_status=DI
             "event_id": eid,
             "event_fingerprint": event_fingerprint(title, evidence_url),
             "evidence_url": evidence_url or "",
+            # V1.0 任务 4：一个事件对应多条证据引用。evidence_url 保留为
+            # 「主证据」，evidence_refs 记录全部证据，二者不互相替代。
+            "evidence_refs": ([{
+                "url": evidence_url,
+                "title": (article_title or "")[:200],
+                "added_at": now,
+                "origin": "created",
+            }] if evidence_url else []),
             "article_title": (article_title or "")[:200],
             "evidence_status": evidence_status,
             "delivery_status": delivery_status,
@@ -254,6 +317,21 @@ def record_event(state, evidence_url, title, evidence_status, delivery_status=DI
             event["article_title"] = article_title[:200]
         if not event.get("evidence_url") and evidence_url:
             event["evidence_url"] = evidence_url
+        # 追加新证据（幂等：同一 URL 不重复登记）。
+        # 旧实现只在 evidence_url 为空时补一次，导致「事件后来获得第二来源」
+        # 这件事在 state 里完全无法体现，可信度升级也就无从判断。
+        if evidence_url:
+            refs = event.get("evidence_refs")
+            if not isinstance(refs, list):
+                refs = []
+                event["evidence_refs"] = refs
+            if not any((r or {}).get("url") == evidence_url for r in refs):
+                refs.append({
+                    "url": evidence_url,
+                    "title": (article_title or "")[:200],
+                    "added_at": now,
+                    "origin": "appended",
+                })
     return event
 
 
@@ -344,7 +422,11 @@ def blocks_rediscovery(event, now=None):
     才算「处理过了」**。失败的要重新排队。
     """
     status = event.get("delivery_status")
-    if status in (COMMITTED, DELIVERED, PENDING_DELIVERY, DELIVERY_UNCERTAIN):
+    if status in (COMMITTED, DELIVERED, PENDING_DELIVERY, DELIVERY_UNCERTAIN,
+                  PENDING_REVIEW, REVIEW_DECLINED):
+        # PENDING_REVIEW：已在人工审核队列里，不能因为「又抓到一条」就重复入队。
+        # REVIEW_DECLINED：审核人已经明确拒绝存档，再放回候选会形成
+        # 「抓到 → 送审 → 拒绝 → 再抓到」的死循环。
         return True
     if status == RETRYABLE_FAILURE:
         return not retry_due(event, now)

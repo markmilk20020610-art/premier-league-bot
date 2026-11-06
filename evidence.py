@@ -243,6 +243,9 @@ EVENT_KEYWORDS = {
         "ban", "bans", "banned", "suspension", "suspended", "disciplinary",
         "charge", "charges", "appeal", "appeals", "misconduct", "red", "card",
         "fine", "fined", "tribunal",
+        # V1.0：扣分是纪律处罚里影响最大的一类，此前完全没有词覆盖，
+        # 「Everton points deduction」只能判出 ""，类型比对直接失效。
+        "deduction", "deductions", "breach", "sanction", "sanctions",
     },
     "MATCH": {
         "win", "wins", "won", "lose", "loses", "lost", "draw", "draws", "defeat",
@@ -262,6 +265,48 @@ EVENT_KEYWORDS = {
         "illness", "cancer", "hospital", "hospitalised", "hospitalized",
         "intensive", "condition",
     },
+    # ==================== V1.0 核心修复：补齐缺失的事件类型 ====================
+    # 为什么必须补：实测 C 罗国家队退役的 10 条标题里，9 条判不出类型，
+    # 1 条因为含 "manager" 被误判成 APPOINTMENT。判不出类型，后面的人物比对、
+    # 事件聚合、重要性分级全部失效——不是「判得不准」，是「根本没判」。
+    #
+    # 命名说明：任务书里的 DISCIPLINARY 在本文件中对应既有的 DISCIPLINE
+    # （第 242 行）。为不破坏既有调用方与历史 state.json，保留 DISCIPLINE 作为
+    # 规范名，DISCIPLINARY 仅作为 content_type 侧的语义别名，不在此重复定义。
+    "RETIREMENT": {
+        "retire", "retires", "retired", "retiring", "retirement",
+        "retirements", "farewell", "swansong",
+    },
+    "PLAYER_CAREER": {
+        "career", "careers", "legacy", "testimonial", "era", "milestone",
+        "journeyman", "spell",
+    },
+    "NATIONAL_TEAM": {
+        "international", "internationals", "caps", "capped", "qualifier",
+        "qualifiers", "callup", "nationals",
+    },
+    "CLUB_OWNERSHIP": {
+        "owner", "owners", "ownership", "takeover", "takeovers", "stake",
+        "stakes", "consortium", "buyout", "acquisition", "investor",
+        "investors", "shareholder", "administration", "insolvency",
+        "insolvent", "bankrupt", "bankruptcy", "receivership", "liquidation",
+    },
+    "GOVERNANCE": {
+        "governance", "board", "chairman", "chairwoman", "ceo", "director",
+        "directors", "hierarchy", "structure", "policy", "regulation",
+        "regulations", "charter",
+    },
+    "SPONSORSHIP": {
+        "sponsor", "sponsors", "sponsorship", "kitdeal", "namingrights",
+    },
+    "MATCH_FIXING": {
+        "fixing", "matchfixing", "spotfixing", "bribery", "corruption",
+        "syndicate", "betting", "rigging",
+    },
+    "SAFETY_WELFARE": {
+        "crush", "stampede", "collapse", "evacuation", "casualties",
+        "casualty", "safety", "welfare", "concussion", "cardiac",
+    },
 }
 
 # 中文标题走子串匹配（中文没有空格分词）
@@ -275,6 +320,15 @@ EVENT_KEYWORDS_ZH = {
     "DEATH": ("去世", "逝世", "离世", "哀悼", "葬礼"),
     "LEGAL": ("被捕", "起诉", "法院", "警方", "判刑", "调查", "指控"),
     "ILLNESS": ("重病", "癌症", "住院", "病危"),
+    # V1.0 新增类型的中文词
+    "RETIREMENT": ("退役", "挂靴", "宣布退役", "结束职业生涯"),
+    "PLAYER_CAREER": ("职业生涯", "生涯", "告别战", "里程碑"),
+    "NATIONAL_TEAM": ("国家队", "国脚", "为国出战", "国家队生涯"),
+    "CLUB_OWNERSHIP": ("收购", "股权", "所有权", "控股", "破产", "托管", "接管"),
+    "GOVERNANCE": ("管理层", "董事会", "主席", "治理", "架构", "章程"),
+    "SPONSORSHIP": ("赞助", "胸前广告", "冠名"),
+    "MATCH_FIXING": ("假球", "操纵比赛", "赌球", "行贿", "腐败"),
+    "SAFETY_WELFARE": ("踩踏", "坍塌", "安全事故", "脑震荡", "心脏"),
 }
 
 # 俱乐部主体词表。只放**无歧义**的写法：united / city / town 这类后缀太泛，
