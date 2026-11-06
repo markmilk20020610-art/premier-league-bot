@@ -17,6 +17,7 @@ sys.path.insert(0, ROOT)
 
 import bot
 import evidence as ev
+import review_store
 import state_store as store
 
 
@@ -36,7 +37,25 @@ def make_event(eid="ev_test", importance="S", cred="E4",
     }
 
 
-class TestReviewRoute(unittest.TestCase):
+
+class _ReviewStoreCase(unittest.TestCase):
+    """每个用例一份全新的内存私有审核存储。
+
+    P0 之后完整审核资料（标题/摘要/证据/审核人/日志）只存在于私有存储，
+    公开 state.json 里只剩 opaque review_ref 与状态。
+    测试必须**显式注入**后端——bot.py 绝不提供「自动兜底到内存」的路径，
+    否则生产里存储没配好时会静默变成「看起来入队成功、实际什么都没存」。
+    """
+
+    def setUp(self):
+        super().setUp()
+        bot.set_review_store(review_store.LocalReviewStore(":memory:"))
+
+    def tearDown(self):
+        bot.set_review_store(None)
+        super().tearDown()
+
+class TestReviewRoute(_ReviewStoreCase):
     def test_e4_s_goes_to_review(self):
         route, reason = bot._review_route(make_event())
         self.assertEqual(route, "REVIEW")
@@ -63,8 +82,9 @@ class TestReviewRoute(unittest.TestCase):
         self.assertEqual(route, "ARCHIVE")
 
 
-class TestEnqueue(unittest.TestCase):
+class TestEnqueue(_ReviewStoreCase):
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         self.evt = make_event()
 
@@ -113,8 +133,9 @@ class TestEnqueue(unittest.TestCase):
         self.assertTrue(store.blocks_rediscovery(rec))
 
 
-class TestApprove(unittest.TestCase):
+class TestApprove(_ReviewStoreCase):
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         self.evt = make_event()
         bot._enqueue_review(self.state, self.evt, "E4 级 S 事件")
@@ -155,8 +176,9 @@ class TestApprove(unittest.TestCase):
         self.assertEqual(bot.list_pending_reviews(self.state), [])
 
 
-class TestDecline(unittest.TestCase):
+class TestDecline(_ReviewStoreCase):
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         bot._enqueue_review(self.state, make_event(), "E4 级 S 事件")
 
@@ -186,7 +208,7 @@ class TestDecline(unittest.TestCase):
             bot.approve_review(self.state, "ev_test", "editor_01")
 
 
-class TestAutoExitOnSecondSource(unittest.TestCase):
+class TestAutoExitOnSecondSource(_ReviewStoreCase):
     """第二**独立**来源到达 → 自动退出审核。
 
     注意签名：`recheck_review` 不接受「证据等级」参数。
@@ -195,6 +217,7 @@ class TestAutoExitOnSecondSource(unittest.TestCase):
     """
 
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         # 初始只有一条低可信来源，判 E4 入队
         bot._enqueue_review(self.state, make_event(), "E4 级 S 事件")
@@ -304,7 +327,7 @@ class TestAutoExitOnSecondSource(unittest.TestCase):
         self.assertIsNone(bot.recheck_review(self.state, "ev_test", rows))
 
 
-class TestStateMachineSeparation(unittest.TestCase):
+class TestStateMachineSeparation(_ReviewStoreCase):
     """delivery_status 与 push_state 是两个状态机，不得混用。"""
 
     def test_pending_review_is_not_a_push_state(self):
@@ -324,7 +347,7 @@ class TestStateMachineSeparation(unittest.TestCase):
         self.assertGreaterEqual(store.SCHEMA_VERSION, 4)
 
 
-class TestSignificanceAdmission(unittest.TestCase):
+class TestSignificanceAdmission(_ReviewStoreCase):
     """准入看「够不够大」，不看「现在有几家媒体」。"""
 
     def test_single_source_mega_event_still_admitted(self):

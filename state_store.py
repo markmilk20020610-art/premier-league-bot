@@ -86,6 +86,179 @@ class StateError(RuntimeError):
     """state.json 读写失败。必须向上冒泡，不允许被 except: pass 吃掉。"""
 
 
+# =============================================================================
+# V1.1 P0：公开 state.json 的审核数据隔离
+# =============================================================================
+# 背景：本仓库是 **Public**，state.json 被 git 跟踪，scanner.yml 每轮都会提交它。
+# 因此 state.json 里的每一个字节都是公开的。而 E4 待审事件恰恰是
+# 「未公开报道、单一来源、尚未核实」的内容——把它写进 state.json
+# 等于把「我们手上有一条未核实的独家」连同标题、摘要、原始链接一起公开。
+#
+# 规则（不是建议，是硬约束）：
+#   · 审核记录在公开 state.json 里只允许存在 REVIEW_STUB_ALLOWED 里的字段；
+#   · 完整 review_payload 只存在于私有审核存储（Cloudflare SQLite Durable Object）；
+#   · save_state_atomic 在落盘前会做一次守卫，发现越界直接抛 StateError。
+REVIEW_STATUSES = frozenset({PENDING_REVIEW, REVIEW_DECLINED})
+
+# 白名单：审核记录在公开 state.json 里**唯一允许**出现的字段。
+# 全部是不含新闻内容的运行状态：opaque ID、状态、时间戳、重试计数。
+REVIEW_STUB_ALLOWED = frozenset({
+    "event_id",            # 12 位 URL 哈希，opaque，不含新闻内容
+    "delivery_status",
+    "review_ref",          # 私有存储的 opaque 句柄
+    "review_enqueued_at",
+    "review_delivery_status",
+    "review_delivered_at",
+    "created_at",
+    "updated_at",
+    "attempts",
+    "last_error",          # 只放错误码/短描述，由调用方保证不含正文
+    "next_retry_at",
+    "chunks",              # 审核 stub 永远是空列表
+    "pending_text",        # 审核 stub 永远是空串
+    "telegram_message_id",
+    "redacted",            # 标记「这条已被迁移清理过」
+})
+
+# 黑名单：任何记录（不论状态）都不允许携带这些字段。
+# 白名单管「审核记录」，黑名单管「已投递但仍残留审核快照」的历史记录。
+PUBLIC_REVIEW_FORBIDDEN = (
+    "review_payload",
+    "review_reason",
+    "review_cred",
+    "review_importance",
+    "review_status",
+    "review_log",
+    "review_claim",
+    "review_operator",
+    "review_note",
+    "review_card_message_id",
+    "review_card_chat_id",
+    "review_card_sent_at",
+    "review_card_text",
+    "publish_mode",
+    "publish_cred",
+    "publish_is_confirmed",
+    "unverified_note",
+    "fact_summary",
+)
+
+
+def is_review_record(event):
+    """这条记录是不是审核记录（待审或已拒绝存档）。"""
+    return (event or {}).get("delivery_status") in REVIEW_STATUSES
+
+
+def record_review_stub(state, event_id, review_ref, delivery_status=PENDING_REVIEW,
+                       review_enqueued_at=None):
+    """在公开 state.json 里登记一条**最小化**审核标记。
+
+    只写 opaque ID + 状态 + 句柄 + 时间，绝不写标题/摘要/证据/审核意见。
+    去重仍然有效：event_id 还在，blocks_rediscovery / _prune_events 照常工作。
+
+    为什么不干脆不写：不写的话，同一事件被再次抓到时无法判断「已经在审了」，
+    会反复向私有存储入队、反复给审核群发卡片。
+    """
+    events = state.setdefault("events", {})
+    now = _now_iso()
+    event = events.get(event_id)
+    if event is None:
+        event = {
+            "event_id": event_id,
+            "delivery_status": delivery_status,
+            "review_ref": review_ref,
+            "review_enqueued_at": review_enqueued_at or now,
+            "created_at": now,
+            "updated_at": now,
+            "attempts": 0,
+            "last_error": "",
+            "next_retry_at": "",
+            "chunks": [],
+            "pending_text": "",
+            "telegram_message_id": None,
+        }
+        events[event_id] = event
+        _prune_events(state)
+        return event
+    event["delivery_status"] = delivery_status
+    event["review_ref"] = review_ref
+    event["review_enqueued_at"] = review_enqueued_at or event.get("review_enqueued_at") or now
+    event["updated_at"] = now
+    return event
+
+
+def public_review_violations(state):
+    """返回公开 state.json 里所有越界的审核资料（空列表 = 干净）。
+
+    两类检查：
+      1. 任何记录携带黑名单字段 → 越界（历史遗留的审核快照）；
+      2. 审核记录出现白名单之外的字段 → 越界（标题、摘要、证据都会落在这里）。
+    """
+    out = []
+    events = state.get("events") or {}
+    if not isinstance(events, dict):
+        return out
+    for eid, event in events.items():
+        if not isinstance(event, dict):
+            continue
+        for key in PUBLIC_REVIEW_FORBIDDEN:
+            if key in event:
+                out.append("{}: 含私有字段 {}".format(eid, key))
+        if is_review_record(event):
+            extra = sorted(set(event.keys()) - REVIEW_STUB_ALLOWED)
+            if extra:
+                out.append("{}: 审核记录含非白名单字段 {}".format(eid, ", ".join(extra)))
+    return out
+
+
+def scrub_review_records(state):
+    """迁移：把历史遗留的公开审核资料清理干净。返回被清理的记录数。
+
+    刻意**只动审核相关的东西**：
+      · 审核记录 → 只保留白名单字段（event_id / 状态 / 时间戳 全部保留，
+        所以去重状态不会被破坏）；
+      · 已投递记录 → 只删 review_* 等私有字段，已公开的标题与链接保持原样
+        （它们本来就发到 Telegram 了，删掉反而破坏审计）。
+
+    幂等：重复执行不会产生任何变化。
+    """
+    events = state.get("events") or {}
+    if not isinstance(events, dict):
+        return 0
+    touched = 0
+    for eid, event in events.items():
+        if not isinstance(event, dict):
+            continue
+        changed = False
+        if is_review_record(event):
+            kept = {k: v for k, v in event.items() if k in REVIEW_STUB_ALLOWED}
+            if set(kept.keys()) != set(event.keys()):
+                changed = True
+            # 审核记录里的 chunks/pending_text 只允许是空值
+            if kept.get("chunks"):
+                kept["chunks"] = []
+                changed = True
+            if kept.get("pending_text"):
+                kept["pending_text"] = ""
+                changed = True
+            kept.setdefault("event_id", eid)
+            kept.setdefault("delivery_status", event.get("delivery_status"))
+            kept.setdefault("review_ref", event.get("review_ref") or "")
+            if changed:
+                kept["redacted"] = True
+                events[eid] = kept
+                touched += 1
+        else:
+            for key in PUBLIC_REVIEW_FORBIDDEN:
+                if key in event:
+                    event.pop(key, None)
+                    changed = True
+            if changed:
+                touched += 1
+    return touched
+
+
+
 def _now_iso():
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
@@ -157,6 +330,9 @@ def ensure_shape(state):
     if not isinstance(state.get("s_overflow"), dict):
         state["s_overflow"] = {}
     _migrate_events(state)
+    # V1.1 P0：载入即迁移。历史版本把完整审核快照写进了公开 state.json，
+    # 这里在读取时清掉，保证「下一次提交出去的 state.json 是干净的」。
+    scrub_review_records(state)
     state["schema_version"] = SCHEMA_VERSION
     return state
 
@@ -174,7 +350,18 @@ def load_state(path="state.json"):
 
 
 def save_state_atomic(state, path="state.json"):
-    """原子写入 + 回读校验。任何一步失败都抛 StateError。"""
+    """原子写入 + 回读校验。任何一步失败都抛 StateError。
+
+    V1.1 P0：落盘前做一次「公开安全」守卫。本仓库是 Public，state.json 一旦
+    提交就等于公开发布，所以宁可让整轮运行失败，也不能把审核资料写出去。
+    守卫放在这里而不是只放在调用方，是因为调用方会变、这里不会。
+    """
+    violations = public_review_violations(state)
+    if violations:
+        raise StateError(
+            "拒绝写入公开 state.json：检测到审核私有资料（共 {} 处）。"
+            "完整审核内容只能存在于私有审核存储。首批：{}".format(
+                len(violations), "; ".join(violations[:5])))
     try:
         payload = json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True)
     except Exception as e:

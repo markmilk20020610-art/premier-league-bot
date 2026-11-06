@@ -21,6 +21,7 @@ sys.path.insert(0, ROOT)
 import bot
 import evidence as ev
 import importance as imp
+import review_store
 import state_store as store
 
 TITLE = "Ronaldo retires from Portugal duty"
@@ -47,10 +48,29 @@ def rows(pairs):
     return [{"url": u, "title": t} for u, t in pairs]
 
 
-class TestSecondSourceMustBeIndependent(unittest.TestCase):
+
+class _ReviewStoreCase(unittest.TestCase):
+    """每个用例一份全新的内存私有审核存储。
+
+    P0 之后完整审核资料（标题/摘要/证据/审核人/日志）只存在于私有存储，
+    公开 state.json 里只剩 opaque review_ref 与状态。
+    测试必须**显式注入**后端——bot.py 绝不提供「自动兜底到内存」的路径，
+    否则生产里存储没配好时会静默变成「看起来入队成功、实际什么都没存」。
+    """
+
+    def setUp(self):
+        super().setUp()
+        bot.set_review_store(review_store.LocalReviewStore(":memory:"))
+
+    def tearDown(self):
+        bot.set_review_store(None)
+        super().tearDown()
+
+class TestSecondSourceMustBeIndependent(_ReviewStoreCase):
     """第 1 条：第二来源必须真正独立。"""
 
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         enqueue(self.state)
 
@@ -82,15 +102,25 @@ class TestSecondSourceMustBeIndependent(unittest.TestCase):
             ("https://randomblog1.example/x", TITLE),
         ]))
         self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
-        rec = self.state["events"]["ev_s"]
-        self.assertEqual(rec["review_status"], "PENDING")
-        self.assertIn("未达退出条件", rec["review_last_check"]["note"])
+        # 视图里仍然是 PENDING（这是内存里的判断结果）
+        view = bot.list_pending_reviews(self.state)[0]
+        self.assertEqual(view["review_status"], "PENDING")
+        # ⚠️ P0：但公开 state 里**不能**留下任何「检查过了但没退出」的痕迹。
+        # 旧版写 review_last_check + review_status，那等于告诉所有访问公开仓库的人
+        # 「我们手上有一条未核实的独家，而且还在查」。
+        stub = self.state["events"]["ev_s"]
+        self.assertNotIn("review_last_check", stub)
+        self.assertNotIn("review_status", stub)
+        self.assertNotIn("title", stub)
+        self.assertNotIn("evidence_url", stub)
+        self.assertEqual(store.public_review_violations(self.state), [])
 
 
-class TestReprintCannotTriggerExit(unittest.TestCase):
+class TestReprintCannotTriggerExit(_ReviewStoreCase):
     """第 2 条：转载不能触发自动退出。"""
 
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         enqueue(self.state)
 
@@ -124,10 +154,11 @@ class TestReprintCannotTriggerExit(unittest.TestCase):
         self.assertIsNone(rec)
 
 
-class TestCredRecomputedNotDeclared(unittest.TestCase):
+class TestCredRecomputedNotDeclared(_ReviewStoreCase):
     """第 3 条：可信度必须根据独立来源和现有规则重新计算。"""
 
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         enqueue(self.state)
 
@@ -161,10 +192,11 @@ class TestCredRecomputedNotDeclared(unittest.TestCase):
         self.assertEqual(rec["review_exit_evidence"], ev.OFFICIAL_CONFIRMED)
 
 
-class TestE4SurvivesApproval(unittest.TestCase):
+class TestE4SurvivesApproval(_ReviewStoreCase):
     """第 4 条：E4 状态不能因人工批准而改变。"""
 
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         enqueue(self.state)
 
@@ -190,10 +222,11 @@ class TestE4SurvivesApproval(unittest.TestCase):
         self.assertEqual(last["prev_cred"], last["cred_after"])
 
 
-class TestAttributedKeepsUnverifiedNote(unittest.TestCase):
+class TestAttributedKeepsUnverifiedNote(_ReviewStoreCase):
     """第 5 条：ATTRIBUTED 发布必须保留未证实提示。"""
 
     def setUp(self):
+        super().setUp()
         self.state = {"events": {}}
         enqueue(self.state)
 
@@ -227,7 +260,7 @@ class TestAttributedKeepsUnverifiedNote(unittest.TestCase):
         self.assertTrue(payload["note"])
 
 
-class TestE4SNotSentAsFact(unittest.TestCase):
+class TestE4SNotSentAsFact(_ReviewStoreCase):
     """第 6 条：E4 级 S 事件不得自动作为确定事实发送。"""
 
     def test_route_to_review_not_push(self):
@@ -269,7 +302,7 @@ class TestE4SNotSentAsFact(unittest.TestCase):
         self.assertTrue(note, "单一来源放行时必须带免责标注")
 
 
-class TestSignatureIsSafe(unittest.TestCase):
+class TestSignatureIsSafe(_ReviewStoreCase):
     """签名层面的回归防线：防止有人把 evidence_status 参数加回来。"""
 
     def test_second_param_is_not_a_status(self):

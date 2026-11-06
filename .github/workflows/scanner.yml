@@ -53,26 +53,18 @@ on:
         required: false
         default: false
         type: boolean
-      # ---- 以下四项仅 mode=review_action 使用 ----
-      # 由 Cloudflare Worker 在验证 Telegram 回调后传入；人工排查时也可手动填。
-      review_event_id:
-        description: '【review_action】待审事件 ID'
-        required: false
-        default: ''
-      review_action:
-        description: '【review_action】批准发布 / 拒绝并存档'
-        required: false
-        default: 'approve'
-        type: choice
-        options:
-          - approve
-          - decline
-      review_operator_id:
-        description: '【review_action】操作人 Telegram User ID（必须命中 REVIEW_OPERATOR_IDS）'
-        required: false
-        default: ''
-      review_note:
-        description: '【review_action】审核备注（可选）'
+      # ---- 仅 mode=review_action 使用 ----
+      #
+      # ⚠️ 这里**只能**放一个 opaque 句柄。
+      # 本仓库是 Public，workflow_dispatch 的 inputs 会显示在 Actions 页面上，
+      # 因此以下内容一律禁止出现在这里：
+      #   · 新闻正文 / 事实摘要 / 原始报道标题与链接
+      #   · 审核意见 / 审核人 Telegram ID
+      #   · HMAC 签名 / 可重复使用的操作令牌 / 私有审核密钥
+      # 完整 payload 由 Action 用 REVIEW_SERVICE_KEY 从 Worker 的
+      # /internal/review/<id>/claim 一次性换取，且 claim 只能成功一次。
+      review_id:
+        description: '【review_action】审核句柄（opaque，不含任何新闻内容）'
         required: false
         default: ''
 
@@ -184,6 +176,12 @@ jobs:
           # 可信单一来源白名单（逗号分隔域名）。留空 = 单一来源一律不自动推送。
           # 只有人工确认过的记者/机构域名才写进来；UNKNOWN 域名即使写了也不生效。
           TRUSTED_SINGLE_SOURCES: ${{ vars.TRUSTED_SINGLE_SOURCES }}
+          # E4+S 事件的完整审核资料只写这里，绝不写进 state.json。
+          # 未配置时 bot.py 会把该事件挂起（不公开），而不是退回公开存储。
+          REVIEW_STORE_URL: ${{ secrets.REVIEW_STORE_URL }}
+          REVIEW_SERVICE_KEY: ${{ secrets.REVIEW_SERVICE_KEY }}
+          TELEGRAM_REVIEW_CHAT_ID: ${{ secrets.TELEGRAM_REVIEW_CHAT_ID }}
+          REVIEW_CALLBACK_HMAC_SECRET: ${{ secrets.REVIEW_CALLBACK_HMAC_SECRET }}
         run: python bot.py
 
       - name: Commit state changes (if any)
@@ -352,17 +350,18 @@ jobs:
       - name: Run bot.py (Review Action Mode)
         env:
           RUN_MODE: "review_action"
-          REVIEW_EVENT_ID: ${{ github.event.inputs.review_event_id }}
-          REVIEW_ACTION: ${{ github.event.inputs.review_action }}
-          REVIEW_OPERATOR_ID: ${{ github.event.inputs.review_operator_id }}
-          REVIEW_NOTE: ${{ github.event.inputs.review_note }}
+          # 只传 opaque 句柄。决定（approve/decline）与操作人身份都在私有存储里，
+          # 由 Webhook 在人工点击按钮时登记，Action 无权伪造。
+          REVIEW_ID: ${{ github.event.inputs.review_id }}
+          # 私有审核存储的服务认证：与 Worker secret INTERNAL_SERVICE_KEY 同值。
+          # 它是 Action 拿到完整 payload 的唯一凭据。
+          REVIEW_STORE_URL: ${{ secrets.REVIEW_STORE_URL }}
+          REVIEW_SERVICE_KEY: ${{ secrets.REVIEW_SERVICE_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           # 审核群与公共频道必须分开：不设默认回落到公共频道，
           # 否则「内部审核」会在公开频道里直播。
           TELEGRAM_REVIEW_CHAT_ID: ${{ secrets.TELEGRAM_REVIEW_CHAT_ID }}
-          REVIEW_OPERATOR_IDS: ${{ secrets.REVIEW_OPERATOR_IDS }}
-          REVIEW_CALLBACK_HMAC_SECRET: ${{ secrets.REVIEW_CALLBACK_HMAC_SECRET }}
         run: python bot.py
 
       # 即便上一步失败也要回写：投递结果未知（DELIVERY_UNCERTAIN）必须落盘，

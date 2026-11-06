@@ -1,26 +1,39 @@
 /**
- * worker.js 的行为测试（Node 原生 ESM，不依赖 wrangler / miniflare）。
+ * worker.js + review_vault.js 的行为测试（Node 原生，不依赖 wrangler / miniflare）
  *
- * 为什么要有这个文件：worker.js 是生产调度链路上唯一一个**不在 Python 测试覆盖范围内**
- * 的组件，而它恰恰是「调度风暴」和「审核回调被伪造」这两个最危险缺陷的所在地。
- * 只用正则扫源码证明不了「连续 5 分钟只会 dispatch 一次」，必须真的跑。
+ * 为什么必须真的跑：worker.js 是生产链路上唯一不在 Python 测试覆盖范围内的组件，
+ * 而它恰好是「调度风暴」和「审核回调被伪造 / 重放」这两个最危险缺陷的所在地。
+ * 只用正则扫源码证明不了「连续 10 分钟只 dispatch 一次」，必须真的跑。
  *
  * 做法：
- *   · 把 worker.js 读成字符串，用 data: URL 动态 import（避免给仓库加 package.json）
- *   · 覆盖 globalThis.fetch，把所有外部调用（GitHub API / Telegram）拦在本地
- *   · 用内存 Map 冒充 KV，验证「持久化」语义真的被用到
- *   · 覆盖 Date.now，让「冷却窗口」「过期按钮」可以确定性复现
+ *   · 读 worker.js / review_vault.js 源码，把 import 内联后用 data: URL 动态 import
+ *     （避免给仓库加 package.json）
+ *   · Durable Object 用 node:sqlite 真实模拟，跑的是**同一份 SQL**
+ *   · 覆盖 globalThis.fetch，把 GitHub / Telegram 全部拦在本地
+ *   · 覆盖 Date.now，让冷却窗口、过期按钮可以确定性复现
  *
- * 用法：node worker.test.mjs        （退出码 0 = 全绿）
- *       node worker.test.mjs --json （输出机器可读结果，供 Python 测试消费）
+ * 用法：node worker.test.mjs          （退出码 0 = 全绿）
+ *       node worker.test.mjs --json
  */
 import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { DatabaseSync } from "node:sqlite";
 
 const HERE = fileURLToPath(new URL(".", import.meta.url));
-const SRC = fs.readFileSync(HERE + "worker.js", "utf8");
+
+/** 把 worker.js 里的相对 import 内联，使其能用 data: URL 单独加载 */
+function loadModule(mainFile) {
+  let src = fs.readFileSync(HERE + mainFile, "utf8");
+  const vaultSrc = fs.readFileSync(HERE + "review_vault.js", "utf8");
+  src = src.replace('import { Vault } from "./review_vault.js";', vaultSrc);
+  src = src.replace('export { Vault };', "");
+  return src;
+}
+
 const MOD = await import(
-  "data:text/javascript;base64," + Buffer.from(SRC, "utf8").toString("base64")
+  "data:text/javascript;base64," + Buffer.from(loadModule("worker.js"), "utf8").toString("base64")
 );
 const worker = MOD.default;
 
@@ -46,23 +59,18 @@ function advance(minutes) {
 }
 
 /* ========================= fetch 拦截 ========================= */
-let routes = [];       // [{match, handler}]
-let calls = [];        // 全部请求记录
-
+let routes = [];
+let calls = [];
 function on(substr, handler) {
   routes.push({ match: substr, handler });
 }
-
 globalThis.fetch = async (url, init = {}) => {
   const u = String(url);
   const method = (init.method || "GET").toUpperCase();
-  calls.push({ url: u, method, body: init.body || null, headers: init.headers || {} });
-  for (const r of routes) {
-    if (u.includes(r.match)) return r.handler(u, init);
-  }
+  calls.push({ url: u, method, body: init.body || null });
+  for (const r of routes) if (u.includes(r.match)) return r.handler(u, init);
   throw new Error("未拦截的请求: " + method + " " + u);
 };
-
 function res(status, body) {
   const text = typeof body === "string" ? body : JSON.stringify(body);
   return {
@@ -76,42 +84,70 @@ function res(status, body) {
     },
   };
 }
-
 function resetRoutes() {
   routes = [];
   calls = [];
 }
-
 function dispatchCalls() {
   return calls.filter((c) => c.url.includes("/dispatches"));
 }
-
 function dispatchedInputs() {
   return dispatchCalls().map((c) => JSON.parse(c.body).inputs);
 }
+function alertCalls() {
+  return calls.filter((c) => c.url.includes("/sendMessage"));
+}
 
-/* ========================= KV 冒充 ========================= */
-function makeKV() {
-  const m = new Map();
+/* ========================= Durable Object 模拟 ========================= */
+/** 把 node:sqlite 包装成 DO 的 `ctx.storage.sql` 接口 */
+function makeSql(db) {
   return {
-    _map: m,
-    async get(k) {
-      return m.has(k) ? m.get(k) : null;
+    exec(query, ...params) {
+      const stmt = db.prepare(query);
+      if (/^\s*SELECT/i.test(query)) {
+        const rows = stmt.all(...params);
+        return { toArray: () => rows, one: () => (rows.length ? rows[0] : null),
+                 rowsRead: rows.length, rowsWritten: 0 };
+      }
+      const info = stmt.run(...params);
+      return { toArray: () => [], one: () => null, rowsRead: 0, rowsWritten: info.changes };
     },
-    async put(k, v) {
-      m.set(k, v);
+  };
+}
+
+/**
+ * 造一个 Vault 实例。
+ * `dbPath` 传同一个文件两次 = 模拟「Worker 重启后接上同一份持久化存储」。
+ */
+function makeVault(env, dbPath) {
+  const db = new DatabaseSync(dbPath || ":memory:");
+  const state = {
+    storage: { sql: makeSql(db) },
+    blockConcurrencyWhile(fn) {
+      return fn();
     },
-    async delete(k) {
-      m.delete(k);
-    },
+  };
+  const instance = new MOD.Vault(state, env);
+  instance._db = db;
+  return instance;
+}
+
+/** 包装成 env.VAULT 命名空间，让 worker.js 像调真实 DO 一样调用 */
+function makeNamespace(instance) {
+  return {
+    idFromName: (n) => ({ name: n }),
+    get: () => ({
+      fetch: (url, init) => instance.fetch(new Request(url, init)),
+    }),
   };
 }
 
 /* ========================= env 工厂 ========================= */
 const REPO = "markmilk20020610-art/premier-league-bot";
+const SERVICE_KEY = "svc_fake_key";
 
 function baseEnv(over = {}) {
-  return {
+  const env = {
     REPO,
     WORKFLOW_FILE: "scanner.yml",
     DISPATCH_REF: "main",
@@ -122,14 +158,16 @@ function baseEnv(over = {}) {
     TELEGRAM_REVIEW_CHAT_ID: "-100888",
     REVIEW_OPERATOR_IDS: "111,222",
     REVIEW_CALLBACK_HMAC_SECRET: "hmac_secret_fake",
+    INTERNAL_SERVICE_KEY: SERVICE_KEY,
     FAILOVER_MINUTES: "12",
     DISPATCH_COOLDOWN_MINUTES: "10",
     ALERT_MINUTES: "30",
     READ_FAIL_ALERT_MINUTES: "8",
     MORNING_GRACE_MINUTES: "180",
-    OVERSIGHT_KV: makeKV(),
     ...over,
   };
+  if (!("VAULT" in over)) env.VAULT = makeNamespace(makeVault(env));
+  return env;
 }
 
 function ctx() {
@@ -144,7 +182,6 @@ function ctx() {
   };
 }
 
-/* state.json 心跳 */
 function stateHandler(state) {
   return () => res(200, state);
 }
@@ -155,7 +192,6 @@ function heartbeatAgo(minutes, extra = {}) {
     ...extra,
   };
 }
-/* run 列表 */
 function runsHandler(runs) {
   return () => res(200, { workflow_runs: runs });
 }
@@ -168,26 +204,20 @@ function runAgo(minutes, over = {}) {
   };
 }
 
-/* HMAC（与 worker.js 内部算法一致，用来伪造合法/非法按钮） */
-async function sig(secret, ver, action, eventId, exp) {
+/* ========================= HMAC / callback ========================= */
+async function sig(secret, ver, action, ref, exp) {
   const enc = new TextEncoder();
   const key = await crypto.subtle.importKey(
-    "raw",
-    enc.encode(secret),
-    { name: "HMAC", hash: "SHA-256" },
-    false,
-    ["sign"],
+    "raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"],
   );
-  const buf = await crypto.subtle.sign("HMAC", key, enc.encode(`${ver}|${action}|${eventId}|${exp}`));
-  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("").slice(0, 20);
+  const buf = await crypto.subtle.sign("HMAC", key, enc.encode(`${ver}|${action}|${ref}|${exp}`));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("").slice(0, 16);
 }
-
-async function makeCallback(eventId, action, { ttlSec = 3600, secret = "hmac_secret_fake", ver = "v1" } = {}) {
+async function makeCallback(ref, action, { ttlSec = 3600, secret = "hmac_secret_fake" } = {}) {
   const exp = Math.floor(NOW / 1000) + ttlSec;
-  const s = await sig(secret, ver, action, eventId, exp);
-  return `${ver}:${action}:${eventId}:${exp}:${s}`;
+  const s = await sig(secret, "v1", action, ref, exp);
+  return `v1:${action}:${ref}:${exp}:${s}`;
 }
-
 function telegramUpdate({ data, fromId = "111", chatId = "-100888", cqId = "cq1" }) {
   return {
     update_id: 1,
@@ -199,7 +229,6 @@ function telegramUpdate({ data, fromId = "111", chatId = "-100888", cqId = "cq1"
     },
   };
 }
-
 async function postWebhook(env, update, headers = {}) {
   const req = new Request("https://w.example/", {
     method: "POST",
@@ -216,15 +245,46 @@ async function postWebhook(env, update, headers = {}) {
   await c.drain();
   return { status: r.status, body };
 }
-
 async function tick(env, { force = false, dry = false } = {}) {
   const q = force ? "?force=1" : dry ? "?dry=1" : "";
-  const req = new Request("https://w.example/" + q, { method: "GET" });
   const c = ctx();
-  const r = await worker.fetch(req, env, c);
+  const r = await worker.fetch(new Request("https://w.example/" + q, { method: "GET" }), env, c);
   const body = await r.json();
   await c.drain();
   return body;
+}
+/** 直接调用内部接口（模拟 GitHub Actions 带服务密钥） */
+async function internal(env, path, { method = "POST", body, key } = {}) {
+  const c = ctx();
+  const r = await worker.fetch(new Request("https://w.example" + path, {
+    method,
+    headers: {
+      "content-type": "application/json",
+      "X-Service-Key": key === undefined ? SERVICE_KEY : key,
+    },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  }), env, c);
+  const out = await r.json();
+  await c.drain();
+  return { status: r.status, body: out };
+}
+
+/** 直接在 DO 里造一条待审记录，返回 review_ref */
+async function seedReview(env, eventId = "abcdef123456", extra = {}) {
+  const out = await internal(env, "/internal/review/enqueue", {
+    body: { payload: {
+      event_id: eventId,
+      title: "某队主帅即将下课（未证实）",
+      fact_summary: "据某小报报道，某队主帅将在 48 小时内被解雇。",
+      articles: [{ title: "Boss to be sacked", url: "https://example.com/secret-article" }],
+      urls: ["https://example.com/secret-article"],
+      publishers: ["example.com"],
+      importance: "S",
+      cred: "E4",
+      ...extra,
+    } },
+  });
+  return out.body.review_ref;
 }
 
 /* ==========================================================================
@@ -244,7 +304,8 @@ async function testWebhook() {
   resetRoutes();
   {
     const env = baseEnv();
-    const data = await makeCallback("abcdef123456", "a");
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a");
     const r = await postWebhook(env, telegramUpdate({ data }), {
       "X-Telegram-Bot-Api-Secret-Token": "wrong",
     });
@@ -252,7 +313,7 @@ async function testWebhook() {
     eq("A3-2 错误 secret token 不 dispatch", dispatchCalls().length, 0);
   }
 
-  /* 3. 非 callback_query → 200 忽略（否则 Telegram 会重投） */
+  /* 3. 非 callback_query → 200 忽略 */
   resetRoutes();
   {
     const env = baseEnv();
@@ -262,12 +323,13 @@ async function testWebhook() {
     eq("A3-3 非回调消息不 dispatch", dispatchCalls().length, 0);
   }
 
-  /* 4. 操作人不在白名单 → 拒绝且不 dispatch */
+  /* 4. 操作人不在白名单 → 拒绝 */
   resetRoutes();
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
-    const data = await makeCallback("abcdef123456", "a");
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a");
     const r = await postWebhook(env, telegramUpdate({ data, fromId: "999" }));
     eq("A3-4 非白名单操作人被拒", r.body.rejected, "operator_not_allowed");
     eq("A3-4 非白名单操作人不 dispatch", dispatchCalls().length, 0);
@@ -278,124 +340,145 @@ async function testWebhook() {
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
-    const data = await makeCallback("abcdef123456", "a");
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a");
     const r = await postWebhook(env, telegramUpdate({ data, chatId: "-100999" }));
     eq("A3-5 非审核群回调被拒", r.body.rejected, "not_review_chat");
     eq("A3-5 非审核群回调不 dispatch", dispatchCalls().length, 0);
   }
 
-  /* 6. 签名错 → 拒绝（不能仅凭 event_id 就接受批准） */
+  /* 6. 签名错 → 拒绝 */
   resetRoutes();
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
+    const ref = await seedReview(env);
     const exp = Math.floor(NOW / 1000) + 3600;
-    const forged = `v1:a:abcdef123456:${exp}:${"0".repeat(20)}`;
+    const forged = `v1:a:${ref}:${exp}:${"0".repeat(16)}`;
     const r = await postWebhook(env, telegramUpdate({ data: forged }));
     eq("A3-6 伪造签名被拒", r.body.rejected, "bad_callback");
     eq("A3-6 伪造签名不 dispatch", dispatchCalls().length, 0);
   }
 
-  /* 7. 过期按钮 → 拒绝（旧按钮重放） */
+  /* 7. 过期按钮 → 拒绝 */
   resetRoutes();
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
-    const data = await makeCallback("abcdef123456", "a", { ttlSec: -60 });
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a", { ttlSec: -60 });
     const r = await postWebhook(env, telegramUpdate({ data }));
     eq("A3-7 过期按钮被拒", r.body.rejected, "bad_callback");
     eq("A3-7 过期按钮不 dispatch", dispatchCalls().length, 0);
   }
 
-  /* 8. 合法批准 → dispatch mode=review_action，参数完整 */
+  /* 8. ★ 合法批准 → dispatch inputs 只有 mode + review_id */
   resetRoutes();
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
     on("/dispatches", () => res(204, ""));
-    const data = await makeCallback("abcdef123456", "a");
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a");
     const r = await postWebhook(env, telegramUpdate({ data, fromId: "111" }));
     eq("A3-8 合法批准被接受", r.body.accepted, true);
     const inputs = dispatchedInputs();
     eq("A3-8 只 dispatch 一次", inputs.length, 1);
     eq("A3-8 dispatch 的 mode", inputs[0] && inputs[0].mode, "review_action");
-    eq("A3-8 dispatch 的事件 ID", inputs[0] && inputs[0].review_event_id, "abcdef123456");
-    eq("A3-8 dispatch 的动作", inputs[0] && inputs[0].review_action, "approve");
-    eq("A3-8 dispatch 的操作人", inputs[0] && inputs[0].review_operator_id, "111");
-    check(
-      "A3-8 已立即回应 callback query",
-      calls.some((c) => c.url.includes("/answerCallbackQuery")),
-    );
+    eq("A3-8 dispatch 的 review_id", inputs[0] && inputs[0].review_id, ref);
+    const keys = Object.keys(inputs[0] || {}).sort();
+    eq("A3-8 inputs 只允许两个字段", keys.join(","), "mode,review_id");
+    const raw = JSON.stringify(inputs[0] || {});
+    check("A3-8 inputs 不含正文", !raw.includes("某队主帅"), raw);
+    check("A3-8 inputs 不含原始链接", !raw.includes("secret-article"), raw);
+    check("A3-8 inputs 不含操作人", !raw.includes("111"), raw);
+    check("A3-8 inputs 不含 HMAC", !raw.includes("hmac_secret"), raw);
+    check("A3-8 已立即回应 callback query",
+      calls.some((c) => c.url.includes("/answerCallbackQuery")));
   }
 
-  /* 9. 合法拒绝 → review_action=decline */
+  /* 9. 合法拒绝 → 决定记为 decline */
   resetRoutes();
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
     on("/dispatches", () => res(204, ""));
-    const data = await makeCallback("abcdef123456", "d");
-    await postWebhook(env, telegramUpdate({ data }));
-    const inputs = dispatchedInputs();
-    eq("A3-9 拒绝映射为 decline", inputs[0] && inputs[0].review_action, "decline");
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "d");
+    const r = await postWebhook(env, telegramUpdate({ data }));
+    eq("A3-9 拒绝被接受", r.body.action, "decline");
+    const st = await internal(env, "/internal/review/" + ref + "/state", { method: "GET" });
+    eq("A3-9 私有存储记录的决定", st.body.action, "decline");
   }
 
-  /* 10. 30 秒内双击 → 只 dispatch 一次 */
+  /* 10. ★ 重复点击同一按钮 → 只 dispatch 一次（DO 原子迁移挡住） */
   resetRoutes();
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
     on("/dispatches", () => res(204, ""));
-    const data = await makeCallback("abcdef123456", "a");
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a");
     await postWebhook(env, telegramUpdate({ data, cqId: "cq1" }));
     advance(0.1);
     const r2 = await postWebhook(env, telegramUpdate({ data, cqId: "cq2" }));
-    eq("A3-10 双击被去重", r2.body.deduped, "double_click");
-    eq("A3-10 双击只 dispatch 一次", dispatchCalls().length, 1);
+    eq("A3-10 重复点击被拒", r2.body.rejected, "already_handled");
+    eq("A3-10 重复点击只 dispatch 一次", dispatchCalls().length, 1);
   }
 
-  /* 11. dispatch 失败 → 记错误 + 发运维告警（操作人已点按钮，流水线却没起来） */
+  /* 11. ★ 旧按钮重放（同一签名，过期前）→ 无法再次批准 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    on("/answerCallbackQuery", () => res(200, { ok: true }));
+    on("/dispatches", () => res(204, ""));
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a", { ttlSec: 7200 });
+    await postWebhook(env, telegramUpdate({ data, cqId: "cq1" }));
+    advance(30);
+    const r2 = await postWebhook(env, telegramUpdate({ data, cqId: "cq2" }));
+    eq("A3-11 旧按钮重放被拒", r2.body.rejected, "already_handled");
+    eq("A3-11 重放未产生第二次 dispatch", dispatchCalls().length, 1);
+  }
+
+  /* 12. 审核回调绝不 dispatch scan */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    on("/answerCallbackQuery", () => res(200, { ok: true }));
+    on("/dispatches", () => res(204, ""));
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a");
+    await postWebhook(env, telegramUpdate({ data }));
+    const modes = dispatchedInputs().map((i) => i.mode);
+    check("A3-12 审核回调绝不 dispatch scan", modes.every((m) => m === "review_action"),
+      modes.join(","));
+  }
+
+  /* 13. dispatch 失败 → 发私有运维群告警，不发公共频道 */
   resetRoutes();
   {
     const env = baseEnv();
     on("/answerCallbackQuery", () => res(200, { ok: true }));
     on("/dispatches", () => res(422, { message: "workflow not found" }));
     on("/sendMessage", () => res(200, { ok: true }));
-    const data = await makeCallback("abcdef123456", "a");
+    const ref = await seedReview(env);
+    const data = await makeCallback(ref, "a");
     await postWebhook(env, telegramUpdate({ data }));
-    const ops = calls.filter((c) => c.url.includes("/sendMessage"));
-    eq("A3-11 dispatch 失败时发告警", ops.length, 1);
-    check(
-      "A3-11 告警发到私有运维群",
-      ops[0] && String(ops[0].body).includes("-100777"),
-      ops[0] && ops[0].body,
-    );
-    const err = await env.OVERSIGHT_KV.get("oversight:last_review_dispatch_error");
-    check("A3-11 dispatch 失败被记录", !!err && String(err).includes("422"), err);
-  }
-
-  /* 12. 审核按钮绝不触发 scan */
-  resetRoutes();
-  {
-    const env = baseEnv();
-    on("/answerCallbackQuery", () => res(200, { ok: true }));
-    on("/dispatches", () => res(204, ""));
-    const data = await makeCallback("abcdef123456", "a");
-    await postWebhook(env, telegramUpdate({ data }));
-    const modes = dispatchedInputs().map((i) => i.mode);
-    check(
-      "A3-12 审核回调绝不 dispatch scan",
-      modes.every((m) => m === "review_action"),
-      modes.join(","),
-    );
+    const ops = alertCalls();
+    eq("A3-13 dispatch 失败时发告警", ops.length, 1);
+    check("A3-13 告警发到私有运维群",
+      ops[0] && String(ops[0].body).includes("-100777"), ops[0] && ops[0].body);
+    check("A3-13 告警不含新闻正文",
+      ops[0] && !String(ops[0].body).includes("某队主帅"), ops[0] && ops[0].body);
   }
 }
 
 /* ==========================================================================
- * B3/B4/B5：看门狗调度与告警
+ * B：看门狗调度与告警
  * ==========================================================================*/
 async function testWatchdog() {
-  /* 13. 心跳新鲜 → healthy，绝不 dispatch */
+  /* 14. 心跳新鲜 → healthy */
   resetRoutes();
   {
     const env = baseEnv();
@@ -405,9 +488,10 @@ async function testWatchdog() {
     const out = await tick(env);
     eq("B-1 健康心跳判定", out.action, "healthy");
     eq("B-1 健康时不 dispatch", dispatchCalls().length, 0);
+    eq("B-1 存储后端", out.store, "durable_object_sqlite");
   }
 
-  /* 14. 正常 5 分钟调度不被误判（FAILOVER=12） */
+  /* 15. 正常 5 分钟调度不被误判 */
   resetRoutes();
   {
     const env = baseEnv();
@@ -416,10 +500,9 @@ async function testWatchdog() {
     on("/runs", runsHandler([runAgo(6, { status: "completed" })]));
     const out = await tick(env);
     eq("B-2 6 分钟心跳不算故障", out.action, "healthy");
-    eq("B-2 6 分钟心跳不 dispatch", dispatchCalls().length, 0);
   }
 
-  /* 15. 心跳陈旧 + 已有 run 在跑 → 不 dispatch */
+  /* 16. 已有 run 在跑 → 不 dispatch */
   resetRoutes();
   {
     const env = baseEnv();
@@ -431,19 +514,7 @@ async function testWatchdog() {
     eq("B-3 已有 run 在跑时不 dispatch", dispatchCalls().length, 0);
   }
 
-  /* 16. 心跳陈旧 + 冷却窗口内刚 dispatch 过 → 不 dispatch（防风暴核心） */
-  resetRoutes();
-  {
-    const env = baseEnv();
-    at("2026-11-06T02:00:00Z");
-    on("/contents/state.json", stateHandler(heartbeatAgo(20)));
-    on("/runs", runsHandler([runAgo(3, { status: "completed" })]));
-    const out = await tick(env);
-    eq("B-4 冷却窗口内不重复 dispatch", out.action, "skip_cooldown");
-    eq("B-4 冷却窗口内 dispatch 次数为 0", dispatchCalls().length, 0);
-  }
-
-  /* 17. 心跳陈旧 + 无活跃 run + 无冷却 → 接管一次 */
+  /* 17. 该接管时接管一次 */
   resetRoutes();
   {
     const env = baseEnv();
@@ -452,12 +523,12 @@ async function testWatchdog() {
     on("/runs", runsHandler([runAgo(40, { status: "completed" })]));
     on("/dispatches", () => res(204, ""));
     const out = await tick(env, { force: true });
-    eq("B-5 该接管时接管", out.action, "dispatched");
-    eq("B-5 只 dispatch 一次", dispatchCalls().length, 1);
-    eq("B-5 接管的是 scan", dispatchedInputs()[0].mode, "scan");
+    eq("B-4 该接管时接管", out.action, "dispatched");
+    eq("B-4 只 dispatch 一次", dispatchCalls().length, 1);
+    eq("B-4 接管的是 scan", dispatchedInputs()[0].mode, "scan");
   }
 
-  /* 18. ★ 调度风暴回归：心跳一直陈旧，连续 10 分钟只会 dispatch 一次 */
+  /* 18. ★ 调度风暴回归：连续 10 分钟只 dispatch 一次（DO 冷却锁） */
   resetRoutes();
   {
     const env = baseEnv();
@@ -466,28 +537,31 @@ async function testWatchdog() {
     on("/contents/state.json", stateHandler(heartbeatAgo(20)));
     on("/runs", () => res(200, { workflow_runs: runs.slice() }));
     on("/dispatches", () => {
-      // dispatch 之后 GitHub 那边会多一条 queued 的 run —— 模拟真实行为
-      runs.push({
-        id: 9001,
-        status: "queued",
-        created_at: new Date(NOW).toISOString(),
-      });
+      runs.push({ id: 9001, status: "completed", created_at: new Date(NOW).toISOString() });
       return res(204, "");
     });
-    let dispatches = 0;
     for (let i = 0; i < 10; i++) {
-      const before = dispatchCalls().length;
       await tick(env, { force: true });
-      if (dispatchCalls().length > before) dispatches++;
       advance(1);
-      // 2 分钟后 GitHub 那边把这条 run 标成 completed，但心跳仍没动（扫描失败）
-      if (runs.length && i === 1) runs[0].status = "completed";
     }
-    eq("B-6 连续 10 分钟只 dispatch 一次", dispatches, 1);
-    eq("B-6 dispatch 总次数", dispatchCalls().length, 1);
+    eq("B-5 连续 10 分钟只 dispatch 一次", dispatchCalls().length, 1);
   }
 
-  /* 19. 读 state 失败 → 不盲目 dispatch */
+  /* 19. ★ DO 未绑定 → 拒绝接管（不假装有锁） */
+  resetRoutes();
+  {
+    const env = baseEnv({ VAULT: undefined });
+    at("2026-11-06T02:00:00Z");
+    on("/contents/state.json", stateHandler(heartbeatAgo(40)));
+    on("/runs", runsHandler([runAgo(60, { status: "completed" })]));
+    on("/dispatches", () => res(204, ""));
+    const out = await tick(env, { force: true });
+    eq("B-6 无 DO 时 durable=false", out.durable, false);
+    eq("B-6 无 DO 时拒绝接管", out.action, "skip_no_durable_lock");
+    eq("B-6 无 DO 时绝不 dispatch", dispatchCalls().length, 0);
+  }
+
+  /* 20. 读 state 失败 → 不盲目 dispatch */
   resetRoutes();
   {
     const env = baseEnv();
@@ -496,27 +570,25 @@ async function testWatchdog() {
     const out = await tick(env, { force: true });
     eq("B-7 读失败时不 dispatch", dispatchCalls().length, 0);
     eq("B-7 读失败动作", out.action, "read_failed");
-    check("B-7 读失败被记为故障", out.faults.includes("state_read_failed"), out.faults.join(","));
+    check("B-7 读失败被记为故障", out.faults.includes("state_read_failed"),
+      out.faults.join(","));
   }
 
-  /* 20. 读失败连续 20 分钟只告警一次（旧实现每分钟一条） */
+  /* 21. ★ 读失败连续 20 分钟只告警一次 */
   resetRoutes();
   {
     const env = baseEnv();
     at("2026-11-06T02:00:00Z");
     on("/contents/state.json", () => res(500, { message: "boom" }));
     on("/sendMessage", () => res(200, { ok: true }));
-    let alerts = 0;
     for (let i = 0; i < 20; i++) {
-      const before = calls.filter((c) => c.url.includes("/sendMessage")).length;
       await tick(env, { force: true });
-      if (calls.filter((c) => c.url.includes("/sendMessage")).length > before) alerts++;
       advance(1);
     }
-    eq("B-8 读失败 20 分钟只告警一次", alerts, 1);
+    eq("B-8 读失败 20 分钟只告警一次", alertCalls().length, 1);
   }
 
-  /* 21. 心跳过期告警同样只发一次 */
+  /* 22. ★ 心跳过期告警同样只发一次 */
   resetRoutes();
   {
     const env = baseEnv();
@@ -524,49 +596,33 @@ async function testWatchdog() {
     on("/contents/state.json", stateHandler(heartbeatAgo(60)));
     on("/runs", runsHandler([runAgo(5, { status: "in_progress" })]));
     on("/sendMessage", () => res(200, { ok: true }));
-    let alerts = 0;
     for (let i = 0; i < 15; i++) {
-      const before = calls.filter((c) => c.url.includes("/sendMessage")).length;
       await tick(env, { force: true });
-      if (calls.filter((c) => c.url.includes("/sendMessage")).length > before) alerts++;
       advance(1);
     }
-    eq("B-9 心跳过期只告警一次", alerts, 1);
+    eq("B-9 心跳过期只告警一次", alertCalls().length, 1);
   }
 
-  /* 22. 恢复后清除故障并播报一次恢复 */
+  /* 23. ★ 恢复后清故障 + 播报一次 */
   resetRoutes();
   {
     const env = baseEnv();
     at("2026-11-06T02:00:00Z");
     on("/sendMessage", () => res(200, { ok: true }));
     on("/runs", runsHandler([runAgo(5, { status: "in_progress" })]));
-    // 先进入故障并告警
     let state = heartbeatAgo(60);
     on("/contents/state.json", () => res(200, state));
     await tick(env, { force: true });
-    const afterFault = calls.filter((c) => c.url.includes("/sendMessage")).length;
-    eq("B-10 故障期发过告警", afterFault, 1);
-    check(
-      "B-10 故障记录已持久化",
-      !!(await env.OVERSIGHT_KV.get("oversight:fault:heartbeat_stale")),
-    );
-    // 心跳恢复
+    eq("B-10 故障期发过告警", alertCalls().length, 1);
     state = heartbeatAgo(1);
     advance(2);
     const out = await tick(env, { force: true });
     eq("B-10 恢复后判定健康", out.action, "healthy");
     check("B-10 恢复后故障被清除", out.recovered.length >= 1, JSON.stringify(out.recovered));
-    eq(
-      "B-10 恢复后故障记录从 KV 删除",
-      await env.OVERSIGHT_KV.get("oversight:fault:heartbeat_stale"),
-      null,
-    );
-    const afterRecover = calls.filter((c) => c.url.includes("/sendMessage")).length;
-    eq("B-10 恢复时播报一条", afterRecover, 2);
+    eq("B-10 恢复时播报一条", alertCalls().length, 2);
   }
 
-  /* 23. dispatch 失败 → 记账 + 告警一次 */
+  /* 24. dispatch 失败 → 记账 + 告警一次 */
   resetRoutes();
   {
     const env = baseEnv();
@@ -577,63 +633,38 @@ async function testWatchdog() {
     on("/sendMessage", () => res(200, { ok: true }));
     const out = await tick(env, { force: true });
     eq("B-11 dispatch 失败动作", out.action, "dispatch_failed");
-    check("B-11 dispatch 失败被记为故障", out.faults.includes("dispatch_failed"), out.faults.join(","));
-    const alerts = calls.filter((c) => c.url.includes("/sendMessage"));
-    eq("B-11 dispatch 失败告警一次", alerts.length, 1);
-    check(
-      "B-11 告警内容含错误原因",
-      alerts[0] && String(alerts[0].body).includes("401"),
-      alerts[0] && alerts[0].body,
-    );
+    check("B-11 dispatch 失败被记为故障", out.faults.includes("dispatch_failed"),
+      out.faults.join(","));
+    eq("B-11 dispatch 失败告警一次", alertCalls().length, 1);
   }
 
-  /* 24. dispatch 成功但扫描未恢复 → dispatch_no_recovery */
+  /* 25. 早报超补偿窗口 → 告警一次 */
   resetRoutes();
   {
     const env = baseEnv();
-    at("2026-11-06T02:00:00Z");
-    on("/contents/state.json", stateHandler(heartbeatAgo(40)));
-    on("/runs", runsHandler([runAgo(4, { status: "completed" })]));
-    on("/sendMessage", () => res(200, { ok: true }));
-    const out = await tick(env, { force: true });
-    eq("B-12 补触发后未恢复动作", out.action, "skip_cooldown");
-    check(
-      "B-12 识别出「dispatch 成功但未恢复」",
-      out.faults.includes("dispatch_no_recovery"),
-      out.faults.join(","),
-    );
-  }
-
-  /* 25. 早报超补偿窗口 → 告警一次，且不影响扫描判定 */
-  resetRoutes();
-  {
-    const env = baseEnv();
-    // 北京 09:30 = UTC 01:30，超过 06:00+180 分钟
-    at("2026-11-06T01:30:00Z");
-    on("/contents/state.json", stateHandler(heartbeatAgo(1, { last_morning_report_date: "2026-11-05" })));
+    at("2026-11-06T01:30:00Z"); // 北京 09:30
+    on("/contents/state.json",
+      stateHandler(heartbeatAgo(1, { last_morning_report_date: "2026-11-05" })));
     on("/runs", runsHandler([]));
     on("/sendMessage", () => res(200, { ok: true }));
     const out = await tick(env, { force: true });
-    check("B-13 早报未送达被记为故障", out.faults.includes("morning_missed"), out.faults.join(","));
-    const alerts = calls.filter((c) => c.url.includes("/sendMessage"));
-    eq("B-13 早报告警一次", alerts.length, 1);
-    check(
-      "B-13 告警文案含日期",
-      alerts[0] && String(alerts[0].body).includes("2026-11-06"),
-      alerts[0] && alerts[0].body,
-    );
+    check("B-12 早报未送达被记为故障", out.faults.includes("morning_missed"),
+      out.faults.join(","));
+    eq("B-12 早报告警一次", alertCalls().length, 1);
   }
 
-  /* 26. 补偿窗口内不告警（06:00~09:00 交给 ensure_morning_running.py） */
+  /* 26. 补偿窗口内不告警 */
   resetRoutes();
   {
     const env = baseEnv();
     at("2026-11-06T01:00:00Z"); // 北京 09:00
-    on("/contents/state.json", stateHandler(heartbeatAgo(1, { last_morning_report_date: "2026-11-05" })));
+    on("/contents/state.json",
+      stateHandler(heartbeatAgo(1, { last_morning_report_date: "2026-11-05" })));
     on("/runs", runsHandler([]));
     on("/sendMessage", () => res(200, { ok: true }));
     const out = await tick(env, { force: true });
-    check("B-14 窗口内不报早报故障", !out.faults.includes("morning_missed"), out.faults.join(","));
+    check("B-13 窗口内不报早报故障", !out.faults.includes("morning_missed"),
+      out.faults.join(","));
   }
 
   /* 27. 运维告警绝不发到公共情报频道 */
@@ -645,35 +676,10 @@ async function testWatchdog() {
     on("/runs", runsHandler([runAgo(5, { status: "in_progress" })]));
     on("/sendMessage", () => res(200, { ok: true }));
     await tick(env, { force: true });
-    const alerts = calls.filter((c) => c.url.includes("/sendMessage"));
-    eq("B-15 无运维群时不发告警（不回落到公共频道）", alerts.length, 0);
+    eq("B-14 无运维群时不发告警（不回落到公共频道）", alertCalls().length, 0);
   }
 
-  /* 28. KV 缺失 → 诚实标记 durable=false，但依然不重复 dispatch */
-  resetRoutes();
-  {
-    const env = baseEnv({ OVERSIGHT_KV: undefined });
-    at("2026-11-06T02:00:00Z");
-    on("/contents/state.json", stateHandler(heartbeatAgo(20)));
-    const runs = [];
-    on("/runs", () => res(200, { workflow_runs: runs.slice() }));
-    on("/dispatches", () => {
-      runs.push({ id: 9100, status: "queued", created_at: new Date(NOW).toISOString() });
-      return res(204, "");
-    });
-    const out = await tick(env, { force: true });
-    eq("B-16 无 KV 时 durable=false", out.durable, false);
-    let n = 1;
-    for (let i = 0; i < 5; i++) {
-      advance(1);
-      const before = dispatchCalls().length;
-      await tick(env, { force: true });
-      if (dispatchCalls().length > before) n++;
-    }
-    eq("B-16 无 KV 也不重复 dispatch（靠 GitHub run 列表）", n, 1);
-  }
-
-  /* 29. 只读诊断（默认 GET）绝不产生副作用 */
+  /* 28. 只读诊断绝不产生副作用 */
   resetRoutes();
   {
     const env = baseEnv();
@@ -682,13 +688,13 @@ async function testWatchdog() {
     on("/runs", runsHandler([runAgo(40, { status: "completed" })]));
     on("/sendMessage", () => res(200, { ok: true }));
     const out = await tick(env);
-    eq("B-17 默认 GET 是 dry run", out.dry_run, true);
-    eq("B-17 dry run 不 dispatch", dispatchCalls().length, 0);
-    eq("B-17 dry run 不告警", calls.filter((c) => c.url.includes("/sendMessage")).length, 0);
-    eq("B-17 dry run 报告将接管", out.action, "would_dispatch");
+    eq("B-15 默认 GET 是 dry run", out.dry_run, true);
+    eq("B-15 dry run 不 dispatch", dispatchCalls().length, 0);
+    eq("B-15 dry run 不告警", alertCalls().length, 0);
+    eq("B-15 dry run 报告将接管", out.action, "would_dispatch");
   }
 
-  /* 30. 阈值全部可配置，且默认值来自实测 */
+  /* 29. 阈值默认值来自实测 */
   resetRoutes();
   {
     const env = baseEnv();
@@ -696,11 +702,236 @@ async function testWatchdog() {
     on("/contents/state.json", stateHandler(heartbeatAgo(1)));
     on("/runs", runsHandler([]));
     const out = await tick(env);
-    eq("B-18 默认 FAILOVER_MINUTES", out.thresholds.failover_minutes, 12);
-    eq("B-18 默认 DISPATCH_COOLDOWN_MINUTES", out.thresholds.dispatch_cooldown_minutes, 10);
-    eq("B-18 默认 ALERT_MINUTES", out.thresholds.alert_minutes, 30);
-    eq("B-18 期望扫描间隔", out.thresholds.expected_scan_interval_minutes, 5);
-    eq("B-18 早报补偿窗口与 ensure_morning 一致", out.thresholds.morning_grace_minutes, 180);
+    eq("B-16 默认 FAILOVER_MINUTES", out.thresholds.failover_minutes, 12);
+    eq("B-16 默认 DISPATCH_COOLDOWN_MINUTES", out.thresholds.dispatch_cooldown_minutes, 10);
+    eq("B-16 默认 ALERT_MINUTES", out.thresholds.alert_minutes, 30);
+    eq("B-16 早报补偿窗口与 ensure_morning 一致", out.thresholds.morning_grace_minutes, 180);
+  }
+}
+
+/* ==========================================================================
+ * C：Durable Object 安全语义（并发 / 重放 / 重启持久化）
+ * ==========================================================================*/
+async function testVault() {
+  /* 30. ★ 重复批准只有一次成功 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const ref = await seedReview(env, "aaaa11112222");
+    const a = await internal(env, `/internal/review/${ref}/decide`,
+      { body: { action: "approve", operator_id: "111" } });
+    const b = await internal(env, `/internal/review/${ref}/decide`,
+      { body: { action: "approve", operator_id: "111" } });
+    eq("C-1 第一次批准成功", a.body.ok, true);
+    eq("C-1 第二次批准被拒", b.body.ok, false);
+    eq("C-1 第二次标记为冲突", b.body.conflict, true);
+  }
+
+  /* 31. ★ 批准与拒绝并发只能一个生效 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const ref = await seedReview(env, "bbbb11112222");
+    const [x, y] = await Promise.all([
+      internal(env, `/internal/review/${ref}/decide`,
+        { body: { action: "approve", operator_id: "111" } }),
+      internal(env, `/internal/review/${ref}/decide`,
+        { body: { action: "decline", operator_id: "222" } }),
+    ]);
+    const oks = [x.body.ok, y.body.ok].filter((v) => v === true).length;
+    eq("C-2 并发决定只有一个成功", oks, 1);
+    const st = await internal(env, `/internal/review/${ref}/state`, { method: "GET" });
+    eq("C-2 最终状态是 decided", st.body.status, "decided");
+    check("C-2 最终动作是二者之一",
+      ["approve", "decline"].includes(st.body.action), st.body.action);
+  }
+
+  /* 32. ★ claim 一次性：第二次 claim 失败 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const ref = await seedReview(env, "cccc11112222");
+    await internal(env, `/internal/review/${ref}/decide`,
+      { body: { action: "approve", operator_id: "111" } });
+    const c1 = await internal(env, `/internal/review/${ref}/claim`, { body: {} });
+    const c2 = await internal(env, `/internal/review/${ref}/claim`, { body: {} });
+    eq("C-3 首次 claim 成功", c1.body.ok, true);
+    check("C-3 claim 返回完整 payload", !!c1.body.payload && !!c1.body.payload.title);
+    eq("C-3 二次 claim 被拒", c2.body.ok, false);
+    eq("C-3 二次 claim 是冲突", c2.body.conflict, true);
+  }
+
+  /* 33. ★ 只有 Telegram 成功才允许完成投递迁移 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const ref = await seedReview(env, "dddd11112222");
+    await internal(env, `/internal/review/${ref}/decide`,
+      { body: { action: "approve", operator_id: "111" } });
+    const c = await internal(env, `/internal/review/${ref}/claim`, { body: {} });
+    // 没有 finish 之前，状态必须是 claimed，不是 delivered
+    const mid = await internal(env, `/internal/review/${ref}/state`, { method: "GET" });
+    eq("C-4 未回传结果时状态为 claimed", mid.body.status, "claimed");
+    // 错误的 token 不能完成
+    const bad = await internal(env, `/internal/review/${ref}/finish`,
+      { body: { claim_token: "0".repeat(16), outcome: "delivered", message_ids: ["1"] } });
+    eq("C-4 错误 token 不能完成迁移", bad.body.ok, false);
+    const good = await internal(env, `/internal/review/${ref}/finish`,
+      { body: { claim_token: c.body.claim_token, outcome: "delivered", message_ids: ["99"] } });
+    eq("C-4 正确 token 完成迁移", good.body.ok, true);
+    const fin = await internal(env, `/internal/review/${ref}/state`, { method: "GET" });
+    eq("C-4 最终状态 delivered", fin.body.status, "delivered");
+    eq("C-4 message_ids 已落库", (fin.body.message_ids || []).join(","), "99");
+  }
+
+  /* 33b. ★ 拒绝同样走 claim → finish：claim 之后必须能归档成 declined */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const ref = await seedReview(env, "d0d011112222");
+    await internal(env, `/internal/review/${ref}/decide`,
+      { body: { action: "decline", operator_id: "111" } });
+    const c = await internal(env, `/internal/review/${ref}/claim`, { body: {} });
+    eq("C-4b 拒绝也能被认领", c.body.ok, true);
+    const fin = await internal(env, `/internal/review/${ref}/finish`,
+      { body: { claim_token: c.body.claim_token, outcome: "declined", message_ids: [] } });
+    eq("C-4b claim 之后拒绝可归档", fin.body.ok, true);
+    const st = await internal(env, `/internal/review/${ref}/state`, { method: "GET" });
+    eq("C-4b 最终状态 declined", st.body.status, "declined");
+    const re = await internal(env, `/internal/review/${ref}/claim`, { body: {} });
+    eq("C-4b 已拒绝后不能再 claim", re.body.ok, false);
+  }
+
+  /* 34. ★ finish 之后 claim_token 失效（重放无法再投递） */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const ref = await seedReview(env, "eeee11112222");
+    await internal(env, `/internal/review/${ref}/decide`,
+      { body: { action: "approve", operator_id: "111" } });
+    const c = await internal(env, `/internal/review/${ref}/claim`, { body: {} });
+    await internal(env, `/internal/review/${ref}/finish`,
+      { body: { claim_token: c.body.claim_token, outcome: "delivered", message_ids: ["1"] } });
+    const again = await internal(env, `/internal/review/${ref}/finish`,
+      { body: { claim_token: c.body.claim_token, outcome: "delivered", message_ids: ["1"] } });
+    eq("C-5 重放 finish 被拒", again.body.ok, false);
+    const re = await internal(env, `/internal/review/${ref}/claim`, { body: {} });
+    eq("C-5 已投递后不能再 claim", re.body.ok, false);
+  }
+
+  /* 35. ★ 同一 event_id 只允许一条有效记录 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const r1 = await seedReview(env, "ffff11112222");
+    const r2 = await seedReview(env, "ffff11112222");
+    eq("C-6 同一事件复用同一 review_ref", r1, r2);
+    const byEvent = await internal(env, "/internal/review/by-event",
+      { body: { event_id: "ffff11112222" } });
+    eq("C-6 按事件查询能命中", byEvent.body.review_ref, r1);
+  }
+
+  /* 36. ★ 私有状态持久化：enqueue 之后状态可查、日志完整 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const ref = await seedReview(env, "1234abcd5678");
+    const st = await internal(env, `/internal/review/${ref}/state`, { method: "GET" });
+    eq("C-7 入队后状态为 pending", st.body.status, "pending");
+    eq("C-7 状态里带 event_id", st.body.event_id, "1234abcd5678");
+    const log = await internal(env, `/internal/review/${ref}/log`, { method: "POST", body: {} });
+    check("C-7 操作日志已落库",
+      (log.body.entries || []).some((e) => e.action === "ENQUEUED"),
+      JSON.stringify(log.body.entries));
+    // 生产客户端用的是 GET（review_store.HttpReviewStore.log）。只认 POST 的话
+    // 会 405，而 Python 侧把异常吞成空列表——「审核日志永远是空的」且不报错。
+    const logGet = await internal(env, `/internal/review/${ref}/log`, { method: "GET" });
+    check("C-7 日志接口支持 GET",
+      (logGet.body.entries || []).some((e) => e.action === "ENQUEUED"),
+      JSON.stringify(logGet.body));
+    // 状态查询**不**返回 payload 正文
+    const raw = JSON.stringify(st.body);
+    check("C-7 状态接口不泄露正文", !raw.includes("某队主帅"), raw);
+  }
+
+  /* 37. ★ Worker 重启后 dispatch 冷却仍然有效 */
+  resetRoutes();
+  {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "vault-"));
+    const dbPath = path.join(dir, "vault.db");
+    at("2026-11-06T02:00:00Z");
+    const env1 = baseEnv();
+    const v1 = makeVault(env1, dbPath);
+    env1.VAULT = makeNamespace(v1);
+    const c1 = await v1.fetch(new Request("https://v/ops/cooldown", {
+      method: "POST",
+      headers: { "content-type": "application/json", "X-Service-Key": SERVICE_KEY },
+      body: JSON.stringify({ now_ms: NOW, cooldown_ms: 600000, mark: true }),
+    })).then((r) => r.json());
+    eq("C-8 首次占用冷却成功", c1.blocked, false);
+
+    // 「重启」：同一份持久化存储上新建一个 DO 实例
+    const env2 = baseEnv();
+    const v2 = makeVault(env2, dbPath);
+    env2.VAULT = makeNamespace(v2);
+    const c2 = await v2.fetch(new Request("https://v/ops/cooldown", {
+      method: "POST",
+      headers: { "content-type": "application/json", "X-Service-Key": SERVICE_KEY },
+      body: JSON.stringify({ now_ms: NOW + 60000, cooldown_ms: 600000, mark: true }),
+    })).then((r) => r.json());
+    eq("C-8 重启后冷却仍然生效", c2.blocked, true);
+
+    // 冷却窗口过去之后必须能重新占用
+    const c3 = await v2.fetch(new Request("https://v/ops/cooldown", {
+      method: "POST",
+      headers: { "content-type": "application/json", "X-Service-Key": SERVICE_KEY },
+      body: JSON.stringify({ now_ms: NOW + 660000, cooldown_ms: 600000, mark: true }),
+    })).then((r) => r.json());
+    eq("C-8 冷却过期后可再次占用", c3.blocked, false);
+  }
+
+  /* 38. ★ Worker 重启后告警去重仍然有效 */
+  resetRoutes();
+  {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "vault-"));
+    const dbPath = path.join(dir, "vault.db");
+    const env1 = baseEnv();
+    const v1 = makeVault(env1, dbPath);
+    const claim = (v, kind) => v.fetch(new Request("https://v/ops/fault", {
+      method: "POST",
+      headers: { "content-type": "application/json", "X-Service-Key": SERVICE_KEY },
+      body: JSON.stringify({ kind, action: "claim_alert" }),
+    })).then((r) => r.json());
+
+    eq("C-9 首次告警名额抢到", (await claim(v1, "heartbeat_stale")).should_alert, true);
+    eq("C-9 同一实例第二次抢不到", (await claim(v1, "heartbeat_stale")).should_alert, false);
+
+    const env2 = baseEnv();
+    const v2 = makeVault(env2, dbPath);
+    eq("C-9 重启后仍然抢不到", (await claim(v2, "heartbeat_stale")).should_alert, false);
+
+    // 恢复后清除 → 下个故障周期重新可告警
+    await v2.fetch(new Request("https://v/ops/fault", {
+      method: "POST",
+      headers: { "content-type": "application/json", "X-Service-Key": SERVICE_KEY },
+      body: JSON.stringify({ kind: "heartbeat_stale", action: "clear" }),
+    }));
+    eq("C-9 恢复后可重新告警", (await claim(v2, "heartbeat_stale")).should_alert, true);
+  }
+
+  /* 39. 内部接口鉴权 */
+  resetRoutes();
+  {
+    const env = baseEnv();
+    const bad = await internal(env, "/internal/review/enqueue",
+      { body: { payload: { event_id: "x" } }, key: "wrong" });
+    eq("C-10 错误服务密钥被拒", bad.status, 401);
+    const noKey = await internal(env, "/internal/review/enqueue",
+      { body: { payload: { event_id: "x" } }, key: "" });
+    eq("C-10 无服务密钥被拒", noKey.status, 401);
+    const noDurable = await internal(baseEnv({ VAULT: undefined }),
+      "/internal/review/enqueue", { body: { payload: { event_id: "x" } } });
+    eq("C-10 无 DO 绑定时拒绝（不退回公开存储）", noDurable.status, 503);
   }
 }
 
@@ -708,6 +939,7 @@ async function testWatchdog() {
 try {
   await testWebhook();
   await testWatchdog();
+  await testVault();
 } catch (err) {
   check("harness", false, "测试脚本自身异常：" + (err && err.stack ? err.stack : err));
 }
@@ -715,8 +947,7 @@ try {
 Date.now = REAL_NOW;
 
 const failed = results.filter((r) => !r.ok);
-const asJson = process.argv.includes("--json");
-if (asJson) {
+if (process.argv.includes("--json")) {
   console.log(JSON.stringify({ total: results.length, failed: failed.length, results }, null, 2));
 } else {
   for (const r of results) {

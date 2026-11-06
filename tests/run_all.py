@@ -47,6 +47,8 @@ MODULES = [
     "tests.test_cross_type_blind",   # 第 5 项：跨事件类型盲测
     # ---- V1.0 P0-1 阻断缺陷修复 ----
     "tests.test_merch_vs_news",      # P0-1：商品页 vs 解雇新闻对抗
+    # ---- V1.1 P0 安全补充：审核数据脱离公开 state.json ----
+    "tests.test_review_privacy_v11",  # 十项安全测试 + Python↔Worker 契约
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 
