@@ -33,7 +33,7 @@ on:
   workflow_dispatch:        # 支持在 GitHub 后台手动触发，可选运行模式
     inputs:
       mode:
-        description: '运行模式（scan=突发扫描 / morning=早报汇总 / diagnose=诊断 / watchdog=心跳检查）'
+        description: '运行模式（scan=突发扫描 / morning=早报汇总 / diagnose=诊断 / watchdog=心跳检查 / verify=代码自检，只跑测试，不抓取不推送不写 state）'
         required: true
         default: 'scan'
         type: choice
@@ -42,6 +42,9 @@ on:
           - morning
           - diagnose
           - watchdog
+          # verify 只跑 verify job（轻量自检），供功能分支在不合并、不部署的前提下
+          # 拿到真实线上 CI 结果。除 verify 外所有 job 在 mode=verify 下必须跳过。
+          - verify
       force:
         description: '强制补发早报：勾选后忽略「今日已发」日期锁（仅 morning 模式生效）'
         required: false
@@ -77,9 +80,13 @@ jobs:
     # 注意这里用的是「不等于 morning」而不是「等于 scan」：
     # cron-job.org 若只发 workflow_dispatch 而没传 inputs.mode，mode 会是 null，
     # 用精确匹配会导致两个 job 全不跑、workflow 空转。这样写能保证「不带 mode 就跑 scan」。
+    #
+    # ⚠️ 这个条件是否定式的，新增任何 mode 都必须在这里显式排除，
+    #    否则新模式会「漏」进 scan —— 而 scan 会真实抓取、真实 Telegram 推送、
+    #    真实回写 state.json。mode=verify 就是这样加的（见下行 != 'verify'）。
     if: >-
       (github.event_name == 'schedule' && github.event.schedule != '0 22 * * *' && github.event.schedule != '0 23 * * *') ||
-      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != 'morning' && github.event.inputs.mode != 'diagnose' && github.event.inputs.mode != 'watchdog')
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode != 'morning' && github.event.inputs.mode != 'diagnose' && github.event.inputs.mode != 'watchdog' && github.event.inputs.mode != 'verify')
     permissions:
       contents: write   # 仅本 job 需要回写 state.json
       actions: write    # 需要它来 workflow_dispatch 拉起 focus.yml（见下一步）
@@ -282,7 +289,14 @@ jobs:
   # 这是有意为之——push 时多半正好有人刚跑过扫描，串行比并发安全；
   # 代价是极端情况下自检要等一轮扫描跑完（≤6 分钟）。
   verify:
-    if: github.event_name == 'push'
+    # 两条触发路径，语义完全等价，都是「只跑测试」：
+    #   1. push 到 main（原行为，未改动）——触发条件在文件顶部的 push: 里限定
+    #   2. workflow_dispatch + mode=verify ——供功能分支在不合并、不部署的前提下
+    #      拿到真实线上 CI 结果
+    # 本 job 没有 contents: write，不碰 state.json、不碰 Telegram、不抓取。
+    if: >-
+      github.event_name == 'push' ||
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.mode == 'verify')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
