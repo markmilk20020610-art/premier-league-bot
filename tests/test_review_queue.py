@@ -187,43 +187,121 @@ class TestDecline(unittest.TestCase):
 
 
 class TestAutoExitOnSecondSource(unittest.TestCase):
-    """第二独立来源到达 → 自动退出审核。"""
+    """第二**独立**来源到达 → 自动退出审核。
+
+    注意签名：`recheck_review` 不接受「证据等级」参数。
+    调用方只能追加证据行，结论由程序按现有规则重算——
+    否则「抓到第二条的人」可以自己声明 E2 把 E4 送出去。
+    """
 
     def setUp(self):
         self.state = {"events": {}}
+        # 初始只有一条低可信来源，判 E4 入队
         bot._enqueue_review(self.state, make_event(), "E4 级 S 事件")
 
+    def _rows(self, pairs):
+        return [{"url": u, "title": t} for u, t in pairs]
+
     def test_stays_when_still_e4(self):
-        self.assertIsNone(
-            bot.recheck_review(self.state, "ev_test", ev.UNVERIFIED))
-        self.assertIsNone(
-            bot.recheck_review(self.state, "ev_test", ev.CONFLICTING))
+        # 只有原记录里那一条，证据没变 → 继续待审
+        self.assertIsNone(bot.recheck_review(self.state, "ev_test"))
         self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
 
-    def test_exits_when_evidence_upgrades(self):
-        rec = bot.recheck_review(self.state, "ev_test",
-                                 ev.MULTIPLE_INDEPENDENT_SOURCES)
+    def test_reprint_does_not_exit(self):
+        # 3 家媒体转载同一篇稿 → 1 个独立发布方 → 不得退出
+        rows = self._rows([
+            ("https://www.bbc.co.uk/sport/r1",
+             "Ronaldo retires from Portugal duty"),
+            ("https://www.mirror.co.uk/sport/r2",
+             "Ronaldo retires from Portugal duty"),
+        ])
+        self.assertIsNone(bot.recheck_review(self.state, "ev_test", rows))
+        self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
+
+    def test_same_publisher_two_pieces_does_not_exit(self):
+        # 同一家媒体的两篇稿只算 1 个独立发布方。
+        # 必须用一个只有单一域名的记录来测，否则初始记录里的
+        # thesun + dailymail 会凑成第二个「发布方」，把结论带偏。
+        state = {"events": {}}
+        bot._enqueue_review(state, {
+            "event_id": "ev_sky", "title": "Ronaldo retires from Portugal duty",
+            "importance": "S", "cred": "E4", "content_type": "BREAKING_NEWS",
+            "evidence_status": ev.UNVERIFIED,
+            "evidence_refs": [{"url": "https://www.skysports.com/news/s0",
+                               "title": "Ronaldo retires from Portugal duty"}],
+        }, "E4 级 S 事件")
+        rows = self._rows([
+            ("https://www.skysports.com/news/s1",
+             "Ronaldo retires from Portugal duty"),
+            ("https://www.skysports.com/live-blog/s2",
+             "Ronaldo calls time on Portugal career"),
+        ])
+        self.assertIsNone(bot.recheck_review(state, "ev_sky", rows))
+        self.assertEqual(len(bot.list_pending_reviews(state)), 1)
+
+    def test_two_independent_publishers_exits(self):
+        rows = self._rows([
+            ("https://www.bbc.co.uk/sport/i1",
+             "Ronaldo retires from Portugal duty"),
+            ("https://www.skysports.com/football/i2",
+             "Ronaldo announces international retirement on Instagram"),
+        ])
+        rec = bot.recheck_review(self.state, "ev_test", rows)
         self.assertIsNotNone(rec)
         self.assertEqual(rec["delivery_status"], store.PENDING_DELIVERY)
         self.assertEqual(rec["review_status"], "AUTO_EXITED")
-        self.assertIn("第二独立来源", rec["review_exit_reason"])
+        self.assertGreaterEqual(rec["review_exit_groups"], 2)
+        self.assertIn("独立来源", rec["review_exit_reason"])
+
+    def test_official_confirmation_exits_alone(self):
+        rows = self._rows([
+            ("https://www.manutd.com/news/official",
+             "Ronaldo retires from international football"),
+        ])
+        rec = bot.recheck_review(self.state, "ev_test", rows)
+        self.assertIsNotNone(rec)
+        self.assertEqual(rec["review_exit_evidence"], ev.OFFICIAL_CONFIRMED)
+
+    def test_caller_cannot_forge_status(self):
+        # 早期签名是 recheck_review(state, id, evidence_status)。
+        # 传一个状态字符串必须**无效**——不能凭声明退出。
+        self.assertIsNone(
+            bot.recheck_review(self.state, "ev_test",
+                               ev.MULTIPLE_INDEPENDENT_SOURCES))
+        self.assertEqual(len(bot.list_pending_reviews(self.state)), 1)
 
     def test_exit_leaves_queue(self):
-        bot.recheck_review(self.state, "ev_test", ev.SINGLE_SOURCE)
+        rows = self._rows([
+            ("https://www.bbc.co.uk/sport/i1",
+             "Ronaldo retires from Portugal duty"),
+            ("https://www.skysports.com/football/i2",
+             "Ronaldo announces international retirement on Instagram"),
+        ])
+        bot.recheck_review(self.state, "ev_test", rows)
         self.assertEqual(bot.list_pending_reviews(self.state), [])
 
     def test_exit_logged(self):
-        rec = bot.recheck_review(self.state, "ev_test", ev.SINGLE_SOURCE)
+        rows = self._rows([
+            ("https://www.bbc.co.uk/sport/i1",
+             "Ronaldo retires from Portugal duty"),
+            ("https://www.skysports.com/football/i2",
+             "Ronaldo announces international retirement on Instagram"),
+        ])
+        rec = bot.recheck_review(self.state, "ev_test", rows)
         self.assertEqual(rec["review_log"][-1]["action"], "AUTO_EXITED")
 
     def test_unknown_event_ignored(self):
-        self.assertIsNone(bot.recheck_review(self.state, "nope",
-                                            ev.SINGLE_SOURCE))
+        self.assertIsNone(bot.recheck_review(self.state, "nope"))
 
     def test_not_pending_ignored(self):
         bot.approve_review(self.state, "ev_test", "editor_01")
-        self.assertIsNone(bot.recheck_review(self.state, "ev_test",
-                                             ev.SINGLE_SOURCE))
+        rows = self._rows([
+            ("https://www.bbc.co.uk/sport/i1",
+             "Ronaldo retires from Portugal duty"),
+            ("https://www.skysports.com/football/i2",
+             "Ronaldo announces international retirement on Instagram"),
+        ])
+        self.assertIsNone(bot.recheck_review(self.state, "ev_test", rows))
 
 
 class TestStateMachineSeparation(unittest.TestCase):

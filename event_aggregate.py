@@ -129,6 +129,62 @@ def _hours_between(a, b):
     return abs((a - b).total_seconds()) / 3600.0
 
 
+# 俱乐部识别：用于「是不是两家不同俱乐部」的硬冲突判定。
+# 为什么不复用 evidence.CLUB_TOKENS：
+#   · 它存的是 "westham" 这种无空格形式，标题写「West Ham」时抽不出来；
+#   · 它刻意排除了 united / city（为了「同一主体」比对不把曼联曼城混为一谈），
+#     但硬冲突需要的是「能不能确定是两家不同俱乐部」，取舍方向相反。
+# 所以这里单独维护一份，只服务于冲突判定，不改变 event_subjects 的既有语义。
+_CLUB_PATTERNS = (
+    (r"west\s+ham", "westham"),
+    (r"manchester\s+united|man\s+utd|man\s+united", "manutd"),
+    (r"manchester\s+city|man\s+city", "mancity"),
+    (r"newcastle(\s+united)?", "newcastle"),
+    (r"nottingham\s+forest", "forest"),
+    (r"aston\s+villa", "astonvilla"),
+    (r"crystal\s+palace", "palace"),
+    (r"sheffield\s+united", "sheffieldutd"),
+    (r"tottenham(\s+hotspur)?", "tottenham"),
+    (r"wolverhampton|wolves", "wolves"),
+    (r"brighton", "brighton"),
+    (r"everton", "everton"),
+    (r"chelsea", "chelsea"),
+    (r"arsenal", "arsenal"),
+    (r"liverpool", "liverpool"),
+    (r"fulham", "fulham"),
+    (r"brentford", "brentford"),
+    (r"bournemouth", "bournemouth"),
+    (r"burnley", "burnley"),
+    (r"leeds", "leeds"),
+    (r"leicester", "leicester"),
+    (r"sunderland", "sunderland"),
+    (r"ipswich", "ipswich"),
+    (r"southampton", "southampton"),
+    (r"luton", "luton"),
+    (r"real\s+madrid", "realmadrid"),
+    (r"barcelona", "barcelona"),
+    (r"bayern(\s+munich)?", "bayern"),
+    (r"juventus", "juventus"),
+    (r"napoli", "napoli"),
+    (r"psg|paris\s+saint-?germain", "psg"),
+    (r"dortmund", "dortmund"),
+    (r"ajax", "ajax"),
+    (r"benfica", "benfica"),
+    (r"porto", "porto"),
+)
+_CLUB_RX = tuple((re.compile(r"\b" + p + r"\b", re.I), k) for p, k in _CLUB_PATTERNS)
+
+
+def _clubs(title):
+    """抽取标题里的俱乐部键。一词多队（如 "Manchester derby"）会返回多个。"""
+    text = title or ""
+    out = set()
+    for rx, key in _CLUB_RX:
+        if rx.search(text):
+            out.add(key)
+    return out
+
+
 # 句首/虚词的常见大写词：不算专有名词
 _NON_NAME_CAPS = {
     "the", "a", "an", "in", "on", "at", "for", "and", "but", "or", "nor",
@@ -175,7 +231,13 @@ def _hard_conflict(a, b, sim=None):
       4. 关键数字冲突（比分 2-0 vs 3-1，双方都有数字且无交集）
       5. 低价值内容与新闻事件不同类——广告/八卦绝不并入新闻事件
 
-    第 5 类来自一次实测中的错误合并：`same_event` 把
+    第 3 类在盲测里补强过一次。原实现依赖 `evidence.event_subjects`，
+    而它的词表存的是 "westham" 这种无空格形式，标题写「West Ham」时抽不出主体，
+    于是「West Ham 解雇 Lopetegui」和「Wolves 解雇 Lopetegui」主体维度双双为空、
+    冲突检测失效，同一名教练在两支球队被解雇被判成同一件事（盲测里 3 对误合并）。
+    现在改用本模块自己的 `_clubs()`，多词俱乐部名也能认出来。
+
+    第 5 类来自另一次实测中的错误合并：`same_event` 把
     「Ronaldo retires from international football - Manchester United」
     与「Manchester United memberships on sale now with 20% off」判成同一事件，
     理由是「主体 / 事件类型 / 关键事实一致」——因为后者根本没有事件类型，
@@ -202,6 +264,11 @@ def _hard_conflict(a, b, sim=None):
         reasons.append("主体不同（{} vs {}）".format(
             "/".join(sorted(sa)[:3]), "/".join(sorted(sb)[:3])))
 
+    cla, clb = a["clubs"], b["clubs"]
+    if cla and clb and not (cla & clb):
+        reasons.append("俱乐部不同（{} vs {}）".format(
+            "/".join(sorted(cla)[:3]), "/".join(sorted(clb)[:3])))
+
     ka, kb = a["numbers"], b["numbers"]
     if ka and kb and not (ka & kb):
         reasons.append("关键数字冲突（{} vs {}）".format(
@@ -213,6 +280,43 @@ def _hard_conflict(a, b, sim=None):
         reasons.append("低价值内容与新闻事件不同类（{} vs {}）".format(ca, cb))
 
     return bool(reasons), "；".join(reasons)
+
+
+def _same_protagonist(a, b):
+    """同一主角的两种写法：一方抽出了人名，另一方只有这个姓氏。
+
+    「Luka Modric announces retirement from Croatia duty」能抽出 {luka, modric}；
+    「Modric retires from international football after 18 years」只有句首的 Modric，
+    `person_names()` 抽不出来（没有角色词），专有名词里倒是有。
+    两条标题的 jaccard 只有 0.09，复合规则进不来，于是同一件事被拆成两簇——
+    这是盲测里唯一剩下的误拆分。
+
+    安全边界（三条「与」关系，缺一不合并）：
+      · 必须同事件族 ——「Modric 退役」与「Modric 出任教练」族不同，不会合并
+      · 必须时间窗内 —— 跨天的同名事件更可能是两轮独立事件
+      · 必须无硬冲突 —— 俱乐部不同（摩德里奇在热刺 vs 在皇马退役）照样拦
+
+    刻意不做「同一个人就合并」的宽泛规则：那会把「某队签下 A」和
+    「A 续约」并成一件事，而续约与转会本来就是两个族。
+    """
+    fa, fb = a["family"], b["family"]
+    if not fa or fa != fb:
+        return False, "类型族不同（{} vs {}）".format(fa or "-", fb or "-")
+
+    shared = (a["persons"] & b["nouns"]) | (b["persons"] & a["nouns"])
+    if not shared:
+        return False, "无共同主角"
+
+    hours = _hours_between(a["ts"], b["ts"])
+    if hours is not None and hours > COMPOSITE_WINDOW_HOURS:
+        return False, "时间跨度 {:.1f}h 超过 {}h".format(
+            hours, COMPOSITE_WINDOW_HOURS)
+
+    conflict, why = _hard_conflict(a, b)
+    if conflict:
+        return False, "硬冲突：" + why
+    return True, "同一主角（{}）+ 同族（{}）".format(
+        "/".join(sorted(shared)[:2]), fa)
 
 
 def _composite_same(a, b, sim):
@@ -249,7 +353,8 @@ def _link(a, b):
       1. URL / 指纹 —— 硬同一，直接合并
       2. 硬冲突    —— **绝对否决**，先于任何语义规则
       3. same_event —— 既有五维判定
-      4. 复合规则  —— 补 same_event 的类型族盲区
+      4. 同一主角  —— 补人名抽取不对称造成的误拆分
+      5. 复合规则  —— 补 same_event 的类型族盲区
 
     第 2 步必须在第 3 步之前：`same_event` 本身会把「C 罗退役」和
     「梅西退役」判成同一事件（两条标题的人名都抽不出来，人物维度是空集，
@@ -267,6 +372,9 @@ def _link(a, b):
     ok, why = ev.same_event(a["record"], b["record"])
     if ok:
         return True, "same_event：" + why
+    ok_p, why_p = _same_protagonist(a, b)
+    if ok_p:
+        return True, "same_event 未命中（{}）→ {}".format(why, why_p)
     sim = ev._jaccard(a["tokens"], b["tokens"])
     ok2, why2 = _composite_same(a, b, sim)
     if ok2:
@@ -296,6 +404,7 @@ def _prep(item):
         "persons": ev.person_names(title),
         "nouns": _proper_nouns(title),
         "subjects": ev.event_subjects(title),
+        "clubs": _clubs(title),
         "numbers": ev._key_numbers(title),
         "ts": _parse_ts(item.get("published")),
         "record": {"canonical": canonical, "title": title},

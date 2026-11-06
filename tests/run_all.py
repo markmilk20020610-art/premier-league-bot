@@ -40,6 +40,11 @@ MODULES = [
     "tests.test_morning_ranking",    # 任务 3：早报排序 + T11 保留位空置
     "tests.test_multi_event_push",   # T12：S 级软上限
     "tests.test_review_queue",       # T13：E4 级 S 事件人工审核
+    # ---- V1.0 发布前验收补强（第 2—5 项）----
+    "tests.test_event_slot",         # 第 2 项：事件名额与证据名额分离
+    "tests.test_review_safety",      # 第 3 项：E4 审核安全检查
+    "tests.test_importance_switch",  # 第 4 项：IMPORTANCE_SORT 双模式
+    "tests.test_cross_type_blind",   # 第 5 项：跨事件类型盲测
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 
