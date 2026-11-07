@@ -29,6 +29,7 @@
   · 同一事件不会反复入队（去重靠私有存储的唯一索引）
   · 公开序列化结果里没有任何「URL → 审核标记」的可重算路径
 """
+import datetime
 import json
 import os
 import shutil
@@ -61,7 +62,9 @@ def rss_item(url=RSS_URL, title=RSS_TITLE, desc=RSS_DESC, source="The Sun"):
         "source": source,
         "feed_origin": source,
         "publisher": "thesun.co.uk",
-        "published": "2026-11-05T20:00:00+00:00",
+        # 必须是相对当前时间的时间戳：`_pool_recent(state, 24)` 按 24h 窗口过滤，
+        # 写死日期会在 24 小时后开始永久失败（夹具本身的时间炸弹）。
+        "published": datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=2),
     }
 
 

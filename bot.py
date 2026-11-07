@@ -3417,7 +3417,10 @@ def _find_same_event(state, title, url="", statuses=None):
         if (event.get("updated_at") or "") < cutoff:
             continue
         other_title = event.get("article_title") or event.get("title")
-        if not other_title and store.is_review_record(event):
+        if not other_title and event.get("review_ref"):
+            # 这里刻意不用 is_review_record()：审核退出后记录状态会变成
+            # PENDING_DELIVERY / COMMITTED，不再属于「审核状态」，但它**仍然代表同一件事**。
+            # 去重必须能认出它，否则退出后同事件会被当成新事件重新入队、重复推送。
             # 审核 stub 在公开侧没有标题，按句柄临时取一次。
             # 取不到就跳过：没有标题就没法判定同事件，猜是不行的。
             other_title = _review_title_of(event.get("review_ref") or "")
@@ -4354,15 +4357,28 @@ def run_scan_mode(state, start_time):
             # 同一件事如果已经有一条未完结的记录（可重试失败 / 确定性失败），
             # 复用它的 event_id，别让同一件事在 state 里长出第二条记录。
             reusable = _find_same_event(state, article_title, evidence_url)
-            event = store.record_event(
-                state,
-                evidence_key or evidence_url,
-                event_title,
-                model_result["evidence_status"],
-                store.VERIFIED,
-                event_id=(reusable or {}).get("event_id"),
-                article_title=article_title,
-            )
+            # 审核 stub 退出后必须**继续复用它的随机公开键**。
+            # 它已经由 recheck_review 推到 PENDING_DELIVERY；如果这里再调
+            # record_event(event_id=None)，会因为 stub 上没有 event_id 而新建一条
+            # sha1(url)[:12] 记录 —— 原 stub 从此停在 PENDING_DELIVERY 永不推进，
+            # 同一件事在 state 里分裂成两条。
+            #
+            # 也不能把 stub 的键当 event_id 传给 record_event：那条路径会写回
+            # title / article_title / evidence_url / evidence_refs，正是 P0 禁止
+            # 出现在公开审核记录里的字段。所以直接复用它。
+            reused_review_stub = bool((reusable or {}).get("review_ref"))
+            if reused_review_stub:
+                event = reusable
+            else:
+                event = store.record_event(
+                    state,
+                    evidence_key or evidence_url,
+                    event_title,
+                    model_result["evidence_status"],
+                    store.VERIFIED,
+                    event_id=(reusable or {}).get("event_id"),
+                    article_title=article_title,
+                )
             # 自动退出审核的记录已经是 PENDING_DELIVERY，不能再走一次 begin_delivery
             # （PENDING_DELIVERY → PENDING_DELIVERY 不是合法迁移，会抛 StateError）。
             # 这种记录只需补计一次投递尝试。
@@ -4414,6 +4430,11 @@ def run_scan_mode(state, start_time):
                 # 先确保 DELIVERED 已落盘，再推 COMMITTED：
                 # 万一这次写失败，下次启动的 recovery 会看到 DELIVERED 自动补提交，而不是重发。
                 store.transition(event, store.COMMITTED)
+                if reused_review_stub:
+                    # 投递完成后清掉续传正文：卡片全文含中文标题与事实摘要，
+                    # 留在一条曾经是审核 stub 的记录里，等于把 P0 刚藏起来的内容
+                    # 又写回公开侧。
+                    event["pending_text"] = ""
                 try:
                     save_state(state)
                 except store.StateError as e:
