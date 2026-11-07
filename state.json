@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-07",
     "errors": 0,
-    "input_tokens": 47965,
-    "output_tokens": 5265,
-    "requests": 7
+    "input_tokens": 54476,
+    "output_tokens": 5872,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -993,6 +993,33 @@
       "title": "维斯塔潘与劳森练习赛碰撞双双被罚退后一位发车",
       "updated_at": "2026-10-31T08:25:37.579593+00:00"
     },
+    "b1a43bd5df08": {
+      "article_title": "‘What’s the point’ – Leeds vs Spurs rocked by VAR controversy as Mateus Fernandes appears to get away with handball",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "5be70f45e7db2ae9",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 83
+        }
+      ],
+      "created_at": "2026-11-07T14:06:11.259187+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "cbeb018feee5384e",
+      "event_id": "b1a43bd5df08",
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40947625/mateus-fernandes-var-handball-controversy-leeds-spurs",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 83,
+      "title": "利兹联vs热刺VAR手球争议：费尔南德斯逃点",
+      "updated_at": "2026-11-07T14:06:11.832220+00:00"
+    },
     "b43df05294ae": {
       "article_title": "Como star pays touching tribute to Spanish footballer killed in fatal collision with goalkeeper as Cesc Fabregas' rampant side score NINE in",
       "attempts": 1,
@@ -1279,7 +1306,7 @@
     }
   },
   "last_morning_report_date": "2026-11-07",
-  "last_scan_at": "2026-11-07T07:12:26.325333+00:00",
+  "last_scan_at": "2026-11-07T14:06:05.654578+00:00",
   "last_summary_sent_at": "2026-11-07T01:43:01.122450+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1300,6 +1327,446 @@
     "updated_at": "2026-11-07T01:43:01.113267+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Follow Daily Mail Sport's live coverage of Leeds vs Tottenham, before Arsenal take on Hull and Man City travel to Nottin",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-07T14:06:05.658285+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16268025/Leeds-vs-Tottenham-Premier-League-Roberto-Zerbis-travel-fortress-Elland-Road-Daniel-Farkes-unbeaten-EIGHT-games-home.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-07T13:58:41+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Leeds vs Tottenham: Hosts make fast start to second half after surviving controversial red card call as Daniel Farke's side look to extend i"
+    },
+    {
+      "desc": "Team news: Arteta makes six changes for visit of Hull City Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658321+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPd1Jab3E5dWVTLWo2MVgwZVJsVkRaREpmNm9Gc29MZnpWUkpSbGl4WXE3MUFqRUl4WVctWWFzdnYtc2NWX0V2alY0V2d3UzB0UXBGQ3NVamI5ejB5MHdIREJ5UUlBdFFUd05LNW8wQU5vUjREMkFWTFEwQUEyOG9aWnJXYzdYcnpmaERiVEE4a05BVmdndXJTcGkzZzI2V09Y?oc=5",
+      "published": "2026-11-07T13:49:02+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Team news: Arteta makes six changes for visit of Hull City - Arsenal.com"
+    },
+    {
+      "desc": "EX-EFL star Eliot Richards has beaten testicular cancer for the second time. The Welsh midfielder, 35, began his career ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.658379+00:00",
+      "link": "https://www.thesun.co.uk/sport/40947962/eliot-richards-cancer-battle-social-media-welsh-premier-league/",
+      "published": "2026-11-07T13:36:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former EFL star Eliot Richards beats cancer for second time as he issues emotional update after undergoing surgery"
+    },
+    {
+      "desc": "ROBERTO DE ZERBI was left raging after Leeds defender Jayden Bogle escaped a red card for a tackle which forced Tottenha",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.658418+00:00",
+      "link": "https://www.thesun.co.uk/sport/40948169/roberto-de-zerbi-furious-mathys-tel-injury-leeds-tottenham/",
+      "published": "2026-11-07T13:25:31+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Roberto De Zerbi left furious as Mathys Tel forced off injured after extremely controversial VAR decision wasn’t given"
+    },
+    {
+      "desc": "SIR ALEX FERGUSON has revealed his late wife Cathy saved his life after collapsing at home. The legendary Manchester Uni",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.658448+00:00",
+      "link": "https://www.thesun.co.uk/sport/40947591/sir-alex-ferguson-wife-cathy-saved-life-man-utd/",
+      "published": "2026-11-07T13:21:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Sir Alex Ferguson admits late wife Cathy saved his life otherwise ‘ref in the sky might have blown final whistle for me’"
+    },
+    {
+      "desc": "Real Madrid-bound JJ Gabriel dreams to win the Ballon d'Or NewsBytes",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658479+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWHY5VjZldWRpbXVjRnhWOVBTQzdCbUZRaUR6ZG1LU0NzYzhuSTZ4UmlSTGNTUWV4dlRKVFdrcktNeG5FWThiMGRxRXU3QUp3WklrbUE3QnNGWDFvR2s5RnZkRDdvZkJYbTlyQTJJanNsNDhpaVJXQVpQQUkxMkN0dldrUkQ0Yk1KRkx4X1M2UU1JWXVpZGZQMA?oc=5",
+      "published": "2026-11-07T13:11:18+00:00",
+      "publisher": "https://www.newsbytesapp.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Real Madrid-bound JJ Gabriel dreams to win the Ballon d'Or - NewsBytes"
+    },
+    {
+      "desc": "SPURS fans can book tickets with VIP hospitality at the Tottenham Stadium from just £135 per person. Robert de Zerbi's T",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.658507+00:00",
+      "link": "https://www.thesun.co.uk/sport/39228834/tottenham-hotspur-premier-league-ticket-hotel-packages/",
+      "published": "2026-11-07T13:04:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Tottenham Hotspur ticket and hospitality packages for all Premier League matches from only £135 per person"
+    },
+    {
+      "desc": "LEEDS fans can get their hands on the best seats in the house to see their team at Elland Road this season. The club's o",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.658532+00:00",
+      "link": "https://www.thesun.co.uk/sport/39786485/leeds-united-ticket-hotel-packages-premier-league/",
+      "published": "2026-11-07T13:02:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Leeds United tickets and hotel deals for all Premier League games at Elland Road this season"
+    },
+    {
+      "desc": "City Under-18s bow out of Premier League Cup following Burnley defeat Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658561+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU0pleGl4ZHhSUG5HVmk3aHo1YTB0ZXJFdWVVRVdiRlcwV0lYa1BnUnRLdHlqWDNDQUxvMVN6ZmlJT3lpeUhQQWF5YzZCQU9YeWVGTHlzMGRwbGpocW1HanlZU1lpWE8ySGRicU1ISm54WHVmRExiSW9tTjZZOGxnZ205SEFDUTU2TjZvVWxBVlBXOTJuYi1OMUp2YjliZEJtV1E?oc=5",
+      "published": "2026-11-07T13:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City Under-18s bow out of Premier League Cup following Burnley defeat - Manchester City FC"
+    },
+    {
+      "desc": "FANS lost their minds after Leeds were denied an early penalty against Tottenham. Spurs' £85million midfielder Matheus F",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.658589+00:00",
+      "link": "https://www.thesun.co.uk/sport/40947625/mateus-fernandes-var-handball-controversy-leeds-spurs/",
+      "published": "2026-11-07T12:44:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘What’s the point’ – Leeds vs Spurs rocked by VAR controversy as Mateus Fernandes appears to get away with handball"
+    },
+    {
+      "desc": "Video - Lacey & Tielemans Start: Man Utd Predicted XI vs Aston Villa roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658616+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNUVp5NDNXdUZlM1JXd2VaZzdGQVpGeDRaZEpRLUd2Vi1BTDA3SUp0TkZSdmx4dVFhY0tBUVM1N0tpWWQ4TGZ5MzNoRGx6Q1M5WW05b1JDMVBlWkFqVEhfSkNDWjRPekhKcjlhdVZrQ0FrSlBpU0s2b0ppWnozZEZFWVBlcFRaSzh1ZFRZa1VtV1NpSENwWmpZVy0yY1ZTNDNsdXdHd2dyaVRhNzkxOFRPSEs5RE0wRFI1Z1NJWms0bXRiWFFGUlJ5ZWFWZDE?oc=5",
+      "published": "2026-11-07T12:29:05+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Video - Lacey & Tielemans Start: Man Utd Predicted XI vs Aston Villa - roundtable.io"
+    },
+    {
+      "desc": "Manchester United forward JJ Gabriel says his \"dream is to win the Ballon d'Or\", as he closes in on a move to Real Madri",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-07T14:06:05.658649+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmy4x9yq3xg3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-07T12:25:14+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "My dream is to win Ballon d'Or - Gabriel"
+    },
+    {
+      "desc": "Saka Is Out for Weeks, and Madueke Has Started Playing Himself Into Arsenal’s Right Wing The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658679+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRF9ubDJQUmlpTnNESmNYd3pwWU5URlkyRUtFTUNwUVFEUEU0UjRlRFpfTURhRGQ2R1JSWm13d0dqR0liWnZrRTJxdTcxdXFOd05PZjdZVXJfcXRNRHNXamlRdmhXMFlnU08xVmFWS0JmSEwyZTZiOXAtS2Q2QkxEeQ?oc=5",
+      "published": "2026-11-07T12:12:54+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Saka Is Out for Weeks, and Madueke Has Started Playing Himself Into Arsenal’s Right Wing - The False 9"
+    },
+    {
+      "desc": "Track Order - Chelsea Store Official Chelsea Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658704+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tZVAtOG1XSExLdm1Hc1hKNjBVbkdJLTVRSmJ1LVhMcG53MURxZTlXb0xXUGdQSVFyMXcyZ040QnJXd2YtbXRoTHY3SWNXYW1r?oc=5",
+      "published": "2026-11-07T12:00:52+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Track Order - Chelsea Store - Official Chelsea Store"
+    },
+    {
+      "desc": "CD TENERIFE have made a promise about the family of late player Jesus de Miguel after his tragic death. Majority shareho",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.658731+00:00",
+      "link": "https://www.thesun.co.uk/sport/40947138/jesus-de-miguel-club-promise-footballer-family-tenerife/",
+      "published": "2026-11-07T11:58:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Jesus de Miguel’s club make promise about tragic footballer’s girlfriend and baby girl after shocking on-pitch accident"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-07T14:06:05.658773+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "published": "2026-11-07T11:42:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Transfer Centre LIVE! Gabriel gives interview ahead of Real Madrid move"
+    },
+    {
+      "desc": "Troubled club blames 14-player shortage for match postponement Yahoo",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658799+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaUtqN3ZKQVlmUTU4VjZlX2ZuMDh4TWx4MVIzT1Z4OU1VTGc4UEM3ZkJuQXFMMzAyeXFYcUNmWmFvTTJHZHBlSTMtV3UxaGxtNVFlWXhXX0M1SGVxMlg5QTVENmhsaXA1WTR0MkZwNGJxQzhGQTZ4Nl93djUwd3FzMV91ZVk?oc=5",
+      "published": "2026-11-07T11:38:03+00:00",
+      "publisher": "https://uk.sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Troubled club blames 14-player shortage for match postponement - Yahoo"
+    },
+    {
+      "desc": "Van Dijk Clock Is Ticking: Liverpool Captain’s Contract Talks Won’t Start Until 2027 Thick Accent – Football",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658828+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYUMzRmt2M2lGdjR1WmxtSVVvSmdxdTl1WUx4M0hhSmt0LXBmbmRRWk1rcFF2aFNBeV9VMWM0eUVTR2NtaGVYSm1aUFJsOEtHTFlfVElIWjN4ZkdaektSclk5SVBSTGdTNDFaT1FFMGQ5Y1ppVFk2bXpXX01wU3pFcV9YVW1vMjlITzBrRHNJN2lvQnFfaU82eTMwVU5oM1VXN3ZlZ201bGtsRlcxakd1aUJHTDdqTEpmalRnYUtR?oc=5",
+      "published": "2026-11-07T11:29:20+00:00",
+      "publisher": "https://www.thickaccent.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Van Dijk Clock Is Ticking: Liverpool Captain’s Contract Talks Won’t Start Until 2027 - Thick Accent – Football"
+    },
+    {
+      "desc": "Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658887+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOd2lBalpLZENXNDk0WlRDNWNvdkZPQ3pOYk5CQmozREhxdEVwTUFKcTR0Z2RicjBSV3d2cVVabHZtSDc4bzIwNUdua3laMWYwUkRlS05TejBnbURtMFNPMmN2QmtNT2xBOWJ2YzZXa2IwNFFfcHRoNnNtUGFjd3REV2MxRWx3eHBrTm43RFpLUzNGZFVUY1B0MFBzNlNOdw?oc=5",
+      "published": "2026-11-07T11:20:09+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City - Manchester City FC"
+    },
+    {
+      "desc": "Video - How To Watch Man Utd vs Aston Villa: Kick-Off Time, TV Channel, Injury Latest roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658915+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMEF5OE9LbzJCT0JGVkk5WUl6aGcxeDg1V2hYQWJvbkhpemdDX1Z1VmFLaUZOQ0NYekM1cEV1ZERYblVlbVliRGVpMi1RQlBFaEVYUUcwQmRDVDFnbE1EQUhvTmRaVzNtS3JscHc5ekN3MktIcnBKdU54UEd0Zkw5TTk4YUlZYVQ4MGFDVThJRzZwdndYYkd6WDItTDg4bG9GTTJETDhxZlRnR1I1SjRfOV8tSlpOUnVKSUZXVVk2RmJjMHRyNUxYTFVNTUc2S214enhybDhoeXNSYlpEM1FSYWVNTQ?oc=5",
+      "published": "2026-11-07T11:19:01+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Video - How To Watch Man Utd vs Aston Villa: Kick-Off Time, TV Channel, Injury Latest - roundtable.io"
+    },
+    {
+      "desc": "Manchester United starlet JJ Gabriel has revealed his ambition to win the Ballon d'Or as he dropped the clearest hint ye",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-07T14:06:05.658954+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16273757/Man-United-prodigy-JJ-Gabriel-shares-lofty-Ballon-dOr-ambitions-closes-Real-Madrid-move.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-07T11:09:41+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'I want to win the Ballon d'Or': JJ Gabriel sets out his lofty ambitions as Man United wonderkid, 16, closes in on move to Real Madrid after"
+    },
+    {
+      "desc": "Grace Fisk signs new contract with LFC Women Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.658980+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOWxkOWY4OUR6OHV6X19Eb285azhNMHBDUGlCalJBQ1FrZmhubjFIVTR2N21rNnRvaS1GWUZhNVRSRW9MWUI0U1g1TVFFVXN3V3NuMEJOdkJlRDYzQVhoNGNfT2kzU1V3bUlrZlhUajJZNDdKVmMxa1NOeUhCMmlQZw?oc=5",
+      "published": "2026-11-07T11:00:18+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Grace Fisk signs new contract with LFC Women - Liverpool FC"
+    },
+    {
+      "desc": "DILETTA LEOTTA put on another stunning display as she posed for fans on Instagram. The 33-year-old DAZN presenter regula",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.659007+00:00",
+      "link": "https://www.thesun.co.uk/sport/40946980/diletta-leotta-stuns-fans-leggy-display/",
+      "published": "2026-11-07T10:57:31+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Diletta Leotta puts on incredible leggy display as glamorous DAZN presenter called ‘absolutely stunning’ by fans"
+    },
+    {
+      "desc": "EXCLUSIVE INTERVIEW: The FA Cup cast its spell upon the Savages while they were grocery shopping. Reading's Charlie was ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-07T14:06:05.659062+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16268453/robbie-savage-charlie-fa-cup-peterborough-reading.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-07T10:57:20+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'People keep telling me it's great I'm managing against my son... it's not - it's horrible': Peterborough boss ROBBIE SAVAGE and Reading sta"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-07T14:06:05.659099+00:00",
+      "link": "https://www.skysports.com/football/leeds-united-vs-tottenham-hotspur/live/559540",
+      "published": "2026-11-07T10:55:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Bogle escapes red with Leeds on top vs Spurs LIVE!"
+    },
+    {
+      "desc": "Confirmed line-ups: Leeds vs Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659149+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVDBNMmJIUnNEQ0NPaTlMRm0tSjdmMl9CeHpfX3J4VWZxQWdKTHZVNjdEazZ2U0pCLTVKT1dxNEhtWmVZMmE5VTgwaXRTZ09kbFVfdzZnZEl6eXJGYlNSTHQtSGVFQ25GSzZaajJCemY2UjN4OUQ4MmlTZUUtM3d1V3BiSWZFekdiU1cyOGtwQTQwa1hSamxPVk5xQ2pwbkhZNnQzYzNUOGZ4RW1WdnJ1WXpXaHV4Zw?oc=5",
+      "published": "2026-11-07T10:47:14+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Confirmed line-ups: Leeds vs Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Fabrizio Romano reveals Arsenal striker plan amid interest in £42m Serie A star Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659186+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBtRFF4Yk1vdGc3ZGVaNURzVUtEUWdHNEU3eXRib3ItX1Jrb2pRM0VrNGlnMi0tcnh1cWs4Y1JaM2FfYnVFYl9ockJnSHZubVUxaFZXeEZydmpBY0l0UTFjb3d6azd4N21zZjRob1dnTnRUZk1JQmw3dTJmNGRjUQ?oc=5",
+      "published": "2026-11-07T10:40:06+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Arsenal striker plan amid interest in £42m Serie A star - Football365"
+    },
+    {
+      "desc": "Preview: Plymouth Parkway vs Berkhamsted - prediction, team news, lineups Sports Mole",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659215+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVFdNNVdLdlNicEhoTHNTdkJlTGtBZ0ljRXlTaUVUaTNIeUZITHBLVUpNTE0tNjhUVTV4WU54NGhucHlPelQ2akpRQVpCNHhxQXRCME05ZExXclNnQUM4Vk81ek91ZnBuUVAwZHVKZHo0cEZyU0VGNk1ZR1Z4aWdKdUxLU2t6X1E3LTlpcWlGX1lhTEkxVEdGMnBxNzA5SFZLRmNsWmNGb1NnQVBhRXlhYkxSZUhjeVR3Z3AzZHptU3JOOVNDS2h1SzgxOW1HUGFaYWc?oc=5",
+      "published": "2026-11-07T10:34:44+00:00",
+      "publisher": "https://www.sportsmole.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Preview: Plymouth Parkway vs Berkhamsted - prediction, team news, lineups - Sports Mole"
+    },
+    {
+      "desc": "NEWCASTLE star Amar Dedic has broken his silence on his shocking bow and arrow controversy. The footballer sparked a pol",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.659242+00:00",
+      "link": "https://www.thesun.co.uk/sport/40946792/amar-dedic-breaks-silence-police-bow-arrows-newcastle-bosnia/",
+      "published": "2026-11-07T10:12:31+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Newcastle ace Amar Dedic breaks silence on bow and arrow incident in hilarious fashion after being questioned by police"
+    },
+    {
+      "desc": "Matchweek 10 VAR decisions explained Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659267+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTFVMQ1diTE81YVI3akROdDJRWll5QlVZU1hDd1pEc0E4VV9LYmJJSUY2Y2x5eGtxU0Zfdmdoc1VEc25yRFF6QVFoS2tWTXUtM29udlkxUmhoU1lRb2tYM3lzVUJyMFJuZnNSS1JLOXNCQ1FpU1hGMWJ5RmJ4UVBmLTE4SGxQdkU1dUE?oc=5",
+      "published": "2026-11-07T10:01:37+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Matchweek 10 VAR decisions explained - Premier League"
+    },
+    {
+      "desc": "Trafford or Pickford? Why did James leave Man City? And why choose Leeds United?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-07T14:06:05.659297+00:00",
+      "link": "https://www.bbc.co.uk/sounds/play/p0pln6dk?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-07T10:00:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Football Daily"
+    },
+    {
+      "desc": "Alonso wants Chelsea focused on the pitch, not the table | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659325+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLUd4OFdWcmstalZrVDVCcTdZNV9TNnpUZVNvUEh5Z1lyTDVYZ0g0azA1SjdVTHJ6Y3VmN2RSYVRYYXZXNE1jX1luQnM2T2diWW51cEVtWkJpcUk5T2hkVER4SjRhUEh6bFNUWl81MDhXdVlfVEh0VWpVdVBtR0RHZDR3a1E0M0t3bW9XYzFPMS1LWjhtOTYzOHloS0JQUQ?oc=5",
+      "published": "2026-11-07T10:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Alonso wants Chelsea focused on the pitch, not the table | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Liverpool dream in tatters as Romano confirms ‘next mission’ at Bayern Munich after Kane Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659386+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSExhTFFCUV9ETk9oVkhVdVlNdzlpWTFuaTMzOEJxMHJmSklCanhxaXRXTDBYbnduRmU2a2VYSUhBZjFKY3JZbHhLREdaVXIyM1JBSGQxVlhUcXRoMWxXbVJTeFpRdTFaQmFZeWNWSFdOMW9xTUNPQ2tzYl90NFNLUGRTb25Udk1MUGlzMHROQ1g2VUpGXzVDUk9vU2R3TDJ5UDU3MFZRVHM?oc=5",
+      "published": "2026-11-07T09:53:52+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Liverpool dream in tatters as Romano confirms ‘next mission’ at Bayern Munich after Kane - Football365"
+    },
+    {
+      "desc": "Is Lacey ready to start against Villa? Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659420+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbVppeVdzTDNlbGc3UUdlSDFsWjBNYzhHQnRrVXRiVjZHeEhuY0lSeU41TjRqZXdKYnFNQ0s4a2pGWms0VmladkhISDMxUXNmZE5rTUFRU00tOHlueXB3TzU5c1NxYmZwcXBRRm14amxBTDRpd1ZESXJuRmpFV3FWLVFVY0dTdw?oc=5",
+      "published": "2026-11-07T09:52:04+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Is Lacey ready to start against Villa? - Manchester United"
+    },
+    {
+      "desc": "Legendary Chelsea defender Branislav Ivanovic's insane private trophy room has gone viral after a fan posted a tour of t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-07T14:06:05.659461+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16262771/Inside-insane-trophy-room-Chelsea-legend-Branislav-Ivanovic-Framed-pictures-42-goals-ring-Didier-Drogba-LED-football-pitch.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-07T09:50:37+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside the insane trophy room of Chelsea legend Branislav Ivanovic: Framed pictures of his 42 goals, a ring from Didier Drogba... and an LED"
+    },
+    {
+      "desc": "LIONESSES icon Mary Earps has revealed the name of her baby boy in a heartwarming social media post. The former England ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-07T14:06:05.659490+00:00",
+      "link": "https://www.thesun.co.uk/sport/40946556/mary-earps-reveals-baby-name-xander-kitty-forrest/",
+      "published": "2026-11-07T09:47:29+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mary Earps reveals baby name after starting ‘greatest adventure’ with partner Kitty as they welcome boy into the world"
+    },
+    {
+      "desc": "Maguire reveals regular chats with Sir Alex Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659533+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaWgxeVppdC1jUkV2RkJrWVotX0tvel9CXzZ2T0lLN1VjVjlVeXdteUVfZWZxVi1pMkg3MF9Yb3JKLVVVdHJ0QmoxTlVWdHF1c1JCTHAtVUx6Zm0xdEJvNjFxTDVOanl3R3hnY0podU13ZWdBdjYyUnhUT1lMSnpfMHMwbDMxeHhvSmYxY2RjeENHNm8?oc=5",
+      "published": "2026-11-07T09:03:19+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Maguire reveals regular chats with Sir Alex - Manchester United"
+    },
+    {
+      "desc": "Watch Under-18 Premier League Cup clash with Burnley live on CITY+ today Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659559+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV0sxMENuNWxKVHhrUnhjTUFUajBBTXpOTTBGbHlIMWR2eU1hUzVvcGYxcC05eEpwS0Flc2oyMjJBOGdySE5vc3pNU011YzlvWWJGcDN5Z2pRSEx5ZlJrdjc4MnZQX0xmbEo2a1pEWmdPbXFQSVpMdUlVc0lPTmpmSTVfU3g0aC15bWVUb21RTGJnWTA1OHl2TlRWcGNIUnF5NkE?oc=5",
+      "published": "2026-11-07T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Watch Under-18 Premier League Cup clash with Burnley live on CITY+ today - Manchester City FC"
+    },
+    {
+      "desc": "WATCH TODAY: Burnley v City - Under-18 Premier League Cup Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659584+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUU02OE1BWHNCZXpCcjV0X0RWN1dUR194ZUJDTUJndndvQzJiRkQzZXpfU1BmaWcydTRXUDR1R1J6cVBUYkpseXd6dUpVU25Dd1NacWxtR2owakJqOFoyY1Vwckt3eDJnUDlPc05SVHFWajZIYVFsaFNRdTlwR3JiS293RHYxc2ZhRGkwRC02OHhkY3R3ZGc?oc=5",
+      "published": "2026-11-07T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "WATCH TODAY: Burnley v City - Under-18 Premier League Cup - Manchester City FC"
+    },
+    {
+      "desc": "The opposition lowdown: Crystal Palace Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659607+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQzFsMjhJRC1Ia0RTRExKZUNzVFUybXhvQUFvY0RudDQwNkRCeFhVcWVVMUQxR2hKcGxLOTNiNl80cHhuanVPM0VhQkdobkF6UzFvVEx5Vy16bFJtUW1ESmtwbG9iT2FhcXd0dnB4VElDenJzd1F3Y1o3OEN2TWJpcjBwRFpfT3o4Tmt2cVNR?oc=5",
+      "published": "2026-11-07T08:50:57+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "The opposition lowdown: Crystal Palace - Liverpool FC"
+    },
+    {
+      "desc": "Crystal Palace v Liverpool: Team news Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659630+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWUtjNFRsWE1MXzA2NHZpMnZQYXI4SmxTNm1pRllxZGJBanhqTGJUeXp6STBxSEJaRllZN0g5blA1Vl82bFNPR01BU2hHQUcwenRSMF9RWlpTNENDMWlwX0pvV05VRWhYY1otR01OZEloMTkzdlU1a285cWRHcjBnZmdtVHNnaUloNmc?oc=5",
+      "published": "2026-11-07T08:26:49+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Crystal Palace v Liverpool: Team news - Liverpool FC"
+    },
+    {
+      "desc": "Ipswich team news: Sasa Lukic in contention to start Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659655+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcHJLZ2NlQm5iM1g5elBBa09kam5IUkRGTUh0T1kybDVsYWQzTFlleXduR2RlaUZZSTl3WFBMdmV1Q3hhSnR1Y2Q1TzZxZHg3M2JEOEZJRi1mNVJ5bi1TVkMyNjFZbG1udkV0VEJyOWFzU08yTDIxemJMMGpZZUR4ZGo2WGVGSEJXcE5yMDhNT1NHdTFqNlctOXBwUTZ2QQ?oc=5",
+      "published": "2026-11-07T07:38:50+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Ipswich team news: Sasa Lukic in contention to start - Premier League"
+    },
+    {
+      "desc": "Why does tragedy abuse remain a problem in football? BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T14:06:05.659678+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE03aFBRM1lmb0pIbHl0bk5pa2o2X092eDNaT3o5UE5RRXhNQVFEdVEzRWtKSTBrdGFIN2xabDRpbVRtN09WUkZTaV83elZPV1QzQlF6UmdxeW1WQndmMUE?oc=5",
+      "published": "2026-11-07T07:19:01+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Why does tragedy abuse remain a problem in football? - BBC"
+    },
+    {
+      "desc": "James Trafford says not playing for Manchester City last season was \"horrendous\" and left him with no choice but to leav",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-07T14:06:05.659708+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckly00wq495zo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-07T07:16:37+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "I left Man City for my mental wellbeing - Trafford"
+    },
     {
       "desc": "ARSENAL are looking to maintain top spot heading into the international break when hosting Hull on Saturday. Brand-new P",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -1359,6 +1826,16 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano bombshell: ‘World-class’ Man Utd star ‘expected to leave’ in June - LiveScore"
+    },
+    {
+      "desc": "Southend United's heroes remember their famous victory against Manchester United 20 years on.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-07T14:06:05.659783+00:00",
+      "link": "https://www.bbc.co.uk/news/articles/cwm266zkz8ggo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-07T06:22:41+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Can we play you every week? The day Southend toppled Man United"
     },
     {
       "desc": "Arsenal News Today: Saka Out for Weeks, Konsa Fit and Saliba France Talks (7 November) The False 9",
@@ -2349,456 +2826,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Footballer scores AFTER being KO’d as goalkeeper boots ball straight into her head before it flies into net"
-    },
-    {
-      "desc": "Ryan Gravenberch fitness latest Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:12:57.748187+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNWNUbUZxb2xtUnZ2SXQtanlRLXhrLVlERDhWLW5RNjljZHJhVl9jaEdvNFRYcEVISnBWM1JzSHJJVFI0allrb05yRkY0OE5RNTgxOWdzdC0wdGdkWWpvUk9CenVMY0ZkcWZsVGdpZjNydWhyN1dPYWFtQmJ4MnBZUi1IU0I4Tnp3RE5sUl81dw?oc=5",
-      "published": "2026-11-06T14:05:31+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ryan Gravenberch fitness latest - Liverpool FC"
-    },
-    {
-      "desc": "Who is the best FPL captain for Gameweek 10? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.238896+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB5azl6c2pZMUJkT1FpN3IwUVljbFllaGYyNkdxTjRkSmVSendRanBUMEpDdDY1WDJScFVrWVBSdW9BWXdzdzRNbkpOT0hqRWJVRWJ4a3BMczk?oc=5",
-      "published": "2026-11-06T13:58:30+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who is the best FPL captain for Gameweek 10? - Premier League"
-    },
-    {
-      "desc": "BILLERICAY TOWN supremo Danny Scopes has made a shock move into international management - after being named as Sealand'",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-06T16:01:03.238910+00:00",
-      "link": "https://www.thesun.co.uk/sport/40938544/non-league-billericay-danny-scopes-appointed-sealand-manager/",
-      "published": "2026-11-06T13:49:39+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Non-league manager gets shock new international job in charge of principality with population of ONE"
-    },
-    {
-      "desc": "MANCHESTER UNITED midfielder Carlos Baleba will be sidelined until next month with a hamstring injury. Baleba was forced",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-06T16:01:03.238924+00:00",
-      "link": "https://www.thesun.co.uk/sport/40939139/man-utd-carlos-baleba-injury-michael-carrick/",
-      "published": "2026-11-06T13:47:59+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd suffer Carlos Baleba injury blow as Michael Carrick reveals how long star will be out for"
-    },
-    {
-      "desc": "Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.238937+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
-      "published": "2026-11-06T13:46:32+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Celtic and Hearts return to Scottish Premiership action with contrasting European fortunes, so what are the key talking ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-06T21:33:42.318255+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq78ppm5ge80o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-06T13:44:22+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Talking points as Premiership prepares for international break"
-    },
-    {
-      "desc": "Arsenal 47 Matchday Navy Cap Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T21:33:42.318270+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLXg3dXB4THlEOGEtOU9RWDhWd1VUWldzZ2libktXbm1vYll3Z2tjdTNQUVBhRURGTFFqaGNLTFM2UEJiOTNQWGxnY2VxZFNCc004SEYwejA3Q3otWmVjWkZja0M0R29YS1lwRmMwWHFybXRUVjRPSzdSeGJTbHlnUFNCa2J1cEdyXzVpYWtTZV9KQzlrRmZ1TklPekdhYTdFRWZmVk4zTVVGUQ?oc=5",
-      "published": "2026-11-06T13:42:41+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal 47 Matchday Navy Cap - Arsenal Direct"
-    },
-    {
-      "desc": "JESUS OWONO has been left devastated following his tragic collision with Jesus de Miguel, which saw the footballer die a",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-06T16:01:03.238953+00:00",
-      "link": "https://www.thesun.co.uk/sport/40937062/jesus-owono-jesus-de-miguel-andorra/",
-      "published": "2026-11-06T13:39:53+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Distraught keeper Jesus Owono ‘locked in his house’ following tragic Jesus de Miguel incident as counselling offered"
-    },
-    {
-      "desc": "Daily Mail Sport revealed on Tuesday that Defoe is in talks to join Robinson's backroom staff at League One strugglers B",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-06T16:01:03.238973+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16271587/New-Bromley-boss-Karl-Robinson-heaps-praise-megastar-Jermain-Defoe-Premier-League-legend-talks-dugout-return-walking-Woking.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-06T13:39:04+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "New Bromley boss Karl Robinson heaps praise on 'megastar' Jermain Defoe - with Premier League legend in talks over dugout return after walki"
-    },
-    {
-      "desc": "Smith nominated for WSL Goal of the Month Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.238987+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdXptbGVxdHBRVm5FUWRLMDB2VjRqeU9KanhuVHNTM1pJcEVFQUFOZDZlM3JuZTNtV25KMG1Ha1YzUk1YazQyMTBneXl3ZnhTTmJNblJKX0F0Q0tiTWt4RllZcVhzdXdqM0tpTUJpRHdsVGhoQWVIRFhVNl92QUJxRk1IQl96WE9vc1Q4?oc=5",
-      "published": "2026-11-06T13:36:21+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Smith nominated for WSL Goal of the Month - Arsenal.com"
-    },
-    {
-      "desc": "Everything you need for Gameweek 10 of FPL with the latest tips and advice Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:12:57.748299+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQnFZaXlxeHJucWUyQWhfNWhtaFQzbGNjLXNlVWVnendMWEJfV2pIM0I5MEd3QS1QNlBuLVV1ZjdjNGJmbm5MY29yaFA1ajY5b2V3MHBQU3dseEFwY010c0Z3U1Fldi1PUlpfTkJ0eUhjVV9sUE1FdlVrUnU0S2tVd0J6OHRzSlpYOHRTeThKSFRqY09mUUltQ2VyNE1MVUtDX0ppY0l1RTFMcHJXdHRyc0ZXTzNpdGRaT2dQMg?oc=5",
-      "published": "2026-11-06T13:24:53+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Everything you need for Gameweek 10 of FPL with the latest tips and advice - Premier League"
-    },
-    {
-      "desc": "It is 40 years ago today since Manchester United appointed Sir Alex Ferguson as manager and ushered in the most successf",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-06T16:01:03.239015+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16271005/man-united-poach-sir-alex-ferguson.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-06T13:07:38+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United's secret plot to poach Sir Alex Ferguson from Aberdeen, 40 years on - from phone calls with a fake Scottish accent to clandestine"
-    },
-    {
-      "desc": "Thomas Tuchel has urged England fans to end their vendetta against Ben White.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-06T16:01:03.239033+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16271653/Thomas-Tuchel-tells-England-fans-stop-booing-Ben-White.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-06T13:03:12+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Thomas Tuchel tells England fans to stop booing Ben White - insisting Arsenal star's exile and World Cup walk-out after row with Steve Holla"
-    },
-    {
-      "desc": "Fabrizio Romano Reveals Chelsea’s Ironclad Stance on Wonderkid Estevao Thick Accent – Football",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239050+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbnRRRnR1aXFJa01kMTNxVnVqQ0NyenozeUhfYVRiZ2FzZmJvSkppbkV6MmxYZURmYzdyRnpVbDgxSUJiU2pyMExIZ3hiUnE2akdaZXgxMWJSX2phSVB5SUY2VWtxbldGM0txWWNZa2dMSnRqR09QWTZOekpkYktBV1hORnVvY1hxVFIxSGJlRWFpRUhLcWhpLU16ZS1kQlVsT1UzTTZ3V2N2Z3RHdlE?oc=5",
-      "published": "2026-11-06T12:36:54+00:00",
-      "publisher": "https://www.thickaccent.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Reveals Chelsea’s Ironclad Stance on Wonderkid Estevao - Thick Accent – Football"
-    },
-    {
-      "desc": "Predicted line-ups for Premier League teams in Matchweek 10 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239064+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM19aWWxVNU9kb0ptWkE5TDNsY0x2eW5nNXEzYkp5cGtodUh2X2xWQkw2SGZlQkJRXzBaUm5XTGxlNVEyRUMxcENlNWZ2TGlXcERRTDJhM0tPTzhTMjBXTEFZVkNtVThMb3ZsVGtLR0t4ZGxMWFZSWXNKMEN5VTVZQWlybk9JMDJyQ21hdXFUOTI4TU9MSVNoOHl1QkRval9ENDNsRmtmMl8?oc=5",
-      "published": "2026-11-06T12:35:13+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Predicted line-ups for Premier League teams in Matchweek 10 - Premier League"
-    },
-    {
-      "desc": "Cole Palmer: People don't realise how good Romeo Lavia is | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239078+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVkFYSjh5TFZLVlV3SGlQWjVfSDE2VklielF6Z2MwTGFSSXQ4alRMQ1FCVjVPdXBESnNtellYTHdJd3FIeEp4Rld4cFJ2eTlBNHN1Z283OW12WWE0YndXU0lTWUVEVzJSZWQxZi1pbl9LVzY3NmVrclIzVFF0ekRIM0tnRW1GTGhqdDlxYVhDcjJQUG5jYUdvVVhJYVNnZw?oc=5",
-      "published": "2026-11-06T12:34:33+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Cole Palmer: People don't realise how good Romeo Lavia is | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "VOTE: Adobe Express Creative Moment of the Month Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239090+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY1dWeTVWU0hISW9zNmkxWDZ5M3pIOGZYSF81VGI4N3V4RVZvbkUxVHYyczNXTUI1LVhPZlE4dm5pS2t3eF9uQXBqbTBCeHJ6WnNFcnh4NDBtUFhOM1I0ZUJGZFRFVHRVVlV0bmJxRWpFUDB4YnRwNlFHY0xZRG83OWRGRVg5N3RoV2hlcjRHcWowTDcxTllveQ?oc=5",
-      "published": "2026-11-06T12:33:45+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "VOTE: Adobe Express Creative Moment of the Month - Premier League"
-    },
-    {
-      "desc": "How a 1930 win over Hull changed our history forever Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239103+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQ1o1eW5XeGtuX1JvV18xakhJSmRZMTFjdHZBSkotaDdTdzR5WFEzVHB1U2lLeV9lNjJhdnhSSVBtbGM1NkdWQWszTmVaS2w4QVotbTRLQUNhaTc1YURWNDVCUUI2QWdZUmJuMExpeUdtbkVzSE9NZUZjb1V5eENOSWpCcWlod3lPd0lSN3VjamtjUWVtdTdrZUJ4Y091dw?oc=5",
-      "published": "2026-11-06T12:31:17+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "How a 1930 win over Hull changed our history forever - Arsenal.com"
-    },
-    {
-      "desc": "Internationals: Mikey Moore receives maiden England Under-21s call-up Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239127+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWnA3S2w0MXdYUkVOZUZBbHpEd0ttc2lLb1JkTkNfMVV4SXFDZldKYnpxTnl5Y2RLdWVyYWY5Z2dBZFhZRE0yUm8zVTN0a3UyMDVFUjMzZ1lvbENycXZoa29NcURlYnRfYVdIX1RPSFZraUU0djhkZ2QtcTNRUWdBOFFETHJqc3l3WnQ2cnJqc255UEZzWldDU1BEeEIzZ1JKWUtiQk5KbU9RTlozOWZpX1hreHQ?oc=5",
-      "published": "2026-11-06T12:15:11+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Internationals: Mikey Moore receives maiden England Under-21s call-up - Tottenham Hotspur"
-    },
-    {
-      "desc": "Five Gunners called up to England squad Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239150+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQVM2LVFzMWRPaFNUSnItdkNLTzZ1VlQ2OXVkejJPTDNaNl84V004MVdNY1pFWjZJTjVzcEhuVjJodEZBTmZQc1lKSmVYdnhTTjhLb1ZCVWhnU3hBeHQwU1VOLU9RX3NudWpvdW1nemJCUTNnZmYxbVIxUEM2OUZVUFRKSDlRMHo0?oc=5",
-      "published": "2026-11-06T12:06:04+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Five Gunners called up to England squad - Arsenal.com"
-    },
-    {
-      "desc": "Ronald Araujo wins Liverpool's Player of the Month award for October Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239175+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUFVRUEhLNDJFc0k2NVJrQ29fMkhBcTl5N3pCZ3Nyb2VIYnY4MUlBRXYtdjlWVUpPY3hfdXJKQkcyY1BKd19RclBOTUQzY282RmM2dWtqUlJHS3JRM0xuZzVkX3lYbEtYUEJXOWxXcWI3UF93ay1aOFdkVklaaVF2NVNmMDF0by1yNzB0clh1dlVSOWdIa0I3SmFSVEVYYmhz?oc=5",
-      "published": "2026-11-06T12:02:24+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ronald Araujo wins Liverpool's Player of the Month award for October - Liverpool FC"
-    },
-    {
-      "desc": "Tottenham fans calling on club to trade Mudryk for another player Ukrainian News Agency",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239192+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObXF5RGpsQWNNUDJMazd3SkVvTzlVNy1jSDIzOVZTbzFiUFd2MVBFLTQtRUl4S1VpMVZ1WnlzTVFKTGhWN1NrVHd3V1lZTFZPMWFNSGJfNlUyYUpiQjBvb0lSNFZ6QWhwSUcyT1ZqWWNYVkhpY1NNeWk4M0NzUHVYelFvMUFqVFVWOVJJU0NhVWFhWnVpbEJfMEd2cVVyUlZnYmdMb1NiNjFINTFpRzNJ0gG0AUFVX3lxTFBuV1lseXhoaHVuQVhHWTF4bUtad2dBdlczcWhxYVBYVllBOVNGMlNBV2tYV2RlUWlwNFQ5NGRBMndfNEJObWFaMlBpT3lBY2hxVGdmVUJRLW15ZVlvelZjeEVvY2MzbVZ3ZVZFOGwzSGtWNk1BeWRTVmRwRC0tdlUySmdmaGVRelBIUEpaNnlzbHVZb2RUcERUNWxjWGJBVVBKRFFjVlVBSUJJTXZULS1naUk3Uw?oc=5",
-      "published": "2026-11-06T12:00:27+00:00",
-      "publisher": "https://ukranews.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Tottenham fans calling on club to trade Mudryk for another player - Ukrainian News Agency"
-    },
-    {
-      "desc": "As Elliot Anderson returns to Nottingham Forest after his £116m move to Manchester City, has he lived up to the price ta",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-06T16:01:03.239211+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqde8w0k2pz1o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-06T12:00:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Has Anderson lived up to the hype after Man City move?"
-    },
-    {
-      "desc": "England manager Thomas Tuchel says Cole Palmer \"misses too many chances to impress\" after not selecting the Chelsea forw",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-06T16:01:03.239228+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9kgjjdg30r4o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-06T11:59:37+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Palmer misses too many chances to impress - Tuchel"
-    },
-    {
-      "desc": "Wolves legend Conor Coady retires as a player at the age of 33 after a 503-game, eight-club career, which began at Liver",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-06T16:01:03.239265+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckgj99yjpnqzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-06T11:29:51+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Wolves legend and ex-England defender Coady retires"
-    },
-    {
-      "desc": "Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239278+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
-      "published": "2026-11-06T11:21:54+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "- Arsenal Direct"
-    },
-    {
-      "desc": "Newcastle United defender Amar Dedic is at the centre of a police investigation after being spotted carrying a bow and a",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-06T16:01:03.239295+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmpwggy2gz0eo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-06T11:16:07+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Newcastle's Dedic stopped by police after being spotted with bow and arrows"
-    },
-    {
-      "desc": "Conor Coady announces retirement from football Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239309+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNNk5QTVo2YW10M3dRd3J1N2doWUlVUzhESkIyTlhJenVMZWlSY21KNDlKNnI5ZXktc3k0UWxlUU02QldFNTN1VWcyQ2dJOG1Oc2kwaHFDOXdfNGhibHZ1LUFaZFBfNlVxNVlaZmx5bTdEQ19qdkJ1bkdyZDdqdDVILXJuQ0t6UQ?oc=5",
-      "published": "2026-11-06T11:09:40+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Conor Coady announces retirement from football - Liverpool FC"
-    },
-    {
-      "desc": "Cole Palmer left out of England squad, Josh King and Jobe Bellingham included - The Athletic The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239325+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQS2VZemJoU1cyX2luWG1QN0JZVVdPaEFaSUVfdHp2a1MyajNTclBvaG5uZHQyOXJldEhEdnBUYWhrMm1LOXp0T3k0TVFNQmpJcXdycGNiT3RzRXFHNnRnYlVaZndYeDQtZXoxQjJDd1RSeTBMeTYteHNrSzdMRm5oYS1xRU4xUTRMMVAzTThfVkQ?oc=5",
-      "published": "2026-11-06T11:03:19+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Cole Palmer left out of England squad, Josh King and Jobe Bellingham included - The Athletic - The New York Times"
-    },
-    {
-      "desc": "Cornelia Kapocs voted Liverpool FC Women's Player of the Month Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:12:57.748582+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNS01eTFqLVk2MVZwQUdfOEhwRFo1N0lPODdkRkNBWFFHUXhhdDBRT0pyQ29Gd0hhVnhWU2p1MkpISWhzUjkxcVJpUmhTRUlnaFBhTXhZOFBFWWpZdWxNZ1JoNEotSzByZjUtNFc3bjc3N0htZ0RUMGQ3akstZnlvNm5BckRnTEdORHhfQ201QmticDRmdExOZA?oc=5",
-      "published": "2026-11-06T11:02:36+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Cornelia Kapocs voted Liverpool FC Women's Player of the Month - Liverpool FC"
-    },
-    {
-      "desc": "Buy Man Utd x adidas LFSTLR Range Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239337+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTFhGRDB1akdieTVKaDhsWDc5Szc4NlhBalJyM3F4MU5KWU8wN1JZWHhOVmh4S3NOVGpzVU9MMjJUVFFwQndpR2cxeV96NWF3NTVMdzE5YXpkTDBKR0xxN0J3TGlXMWMxQWE4R0hnRUpCUFZlcnFuTzhmTUFSanpFX2JhQThrbjd2QkE?oc=5",
-      "published": "2026-11-06T10:52:04+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Man Utd x adidas LFSTLR Range - Manchester United Store"
-    },
-    {
-      "desc": "Why Arsenal failed with Dowman red card appeal as FA release statement London Evening Standard",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239351+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaWJMRVFfMC1MRVRGTDhzeTRnVjdVYUNpMm8ycm9RMTlld3hNNmllMFk3M1FLTlI5SFpteW43VGF0YmY1QzZ6YUhIZVp1a0FoMEZScC1xVlRjZUVIQl9DOEFXWnFvekIzR0hyLVZOMnpQRDdHaC00NVNWLWVvRGJKaWI3UVNDUTgzTXlDalgtdDZQV3V2b0xZaWNZLTQ5UmJocjQ1ZkVB?oc=5",
-      "published": "2026-11-06T10:37:40+00:00",
-      "publisher": "https://www.standard.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Why Arsenal failed with Dowman red card appeal as FA release statement - London Evening Standard"
-    },
-    {
-      "desc": "Classic WSL goals against Liverpool Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239365+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWEJ5TERiWFhGV01nNVZ2MDFrUGtPcW0wVEdGTmowVmFfMUlERGRfd2tZdkF4d0ZvT01kMFBabXJCMU1weXNvVml2Z0dVOUo4RnFhNkpsSXkyNUM0aU5ObHQ3YWZkdHBoSXhXbURQcDRJN2Izc2NTT1F6c3VoNXVTZWR0Yks?oc=5",
-      "published": "2026-11-06T10:31:22+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Classic WSL goals against Liverpool - Arsenal.com"
-    },
-    {
-      "desc": "Goalkeeper Jesus Owono's doting mum has rushed to Andorra to comfort him as he endures the 'hardest days of his life' fo",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-06T16:01:03.239387+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268581/jesus-owono-collision-tenerife-striker-death.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-06T10:29:17+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mum rushes to goalkeeper in Spanish football's killer collision: Jesus Owono suffering 'hardest days of his life' and being comforted after "
-    },
-    {
-      "desc": "Napoli sit eighth in Serie A under new manager Massimiliano Allegri - just two seasons after winning the title under Ant",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-06T16:01:03.239408+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16270911/kevin-bruyne-napoli-serie-a.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-06T10:08:17+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'Why are you speaking? F*** off!': Kevin De Bruyne at centre of Napoli dressing room meltdown as 'divided' squad lurches towards 'disaster'."
-    },
-    {
-      "desc": "Crystal Palace Predicted Lineup vs Liverpool: Nketiah Starts The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239431+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPREdtX1BrYko3V1F1X21SbVFjLUZDbDFBSWpDUVZCNkY2bFZQS0s4bFJ2M1RCelJjVE1JY25rOXVtTTVYTGFKaWo1LWhkSjROQjlPV3kxcUpxcUR4bF9MNGVIRUpMd1Z0N1dualpOV29KYVVLbGc4NDdISWtYZ1VYdTFFYjNXU0pxNW1CWkt0WVo5czJJNnc?oc=5",
-      "published": "2026-11-06T10:05:43+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Crystal Palace Predicted Lineup vs Liverpool: Nketiah Starts - The False 9"
-    },
-    {
-      "desc": "Inside Training: Locking in for Liverpool Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239443+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWktCUGpEMFZnMUVXZ0d3Y2pXai1jTkVMZjlnRVlxYWM2TTZqTDk4TlZBbzZwWkpCQ3g2d2xYMmJlb3ptSWVuQ0ZraWpTUENfNU1waHp2WUl6V2g4bkowTXJ0RzA5TFdzbWRvLWZ6aG9kaEpKeFhuTFRFZ1gtcGRqVzNsc3M0WWVrX01J?oc=5",
-      "published": "2026-11-06T09:59:39+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Inside Training: Locking in for Liverpool - Arsenal.com"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239455+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUl9MT0VVU2liRlpsTHpGb2lVVFNzUndJcV90WVk5bnRieG5abVY3Q0JLZHRPSGZudVZpOVJIc1hodXpHYjhfMUg2T3Q5M3Rrc2kxUGdYTWNCZ2hyOUU3UzBnZFRqWUM5d1RzbUJ0MDl5NkNwWEdXN0N6STFUTGQ3dUd3?oc=5",
-      "published": "2026-11-06T09:56:09+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "\"Nice one\" - LFC uses annual Christmas campaign to deliver football's biggest ever 'thank you' to fans Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239469+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNWmhxSUM2Z25pbU1TdE02RUxSV2dYT19jUkJFZnFQUmNXOHVlTlVVMEo0SllNak5jQ1p6OWZKNGNuQmpTNjM5clc2b0QycV9oZm5qQmZNLS1haVlVc1pMTlUtNFEzRnA5MmlEQV9Ic00zTHdaOTdrOXp4eVN6d2EyajZBVC1vV2tMdG5MRGc1UDdjcG52Wk5GenVMRzhadVVIRXc?oc=5",
-      "published": "2026-11-06T09:12:58+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "\"Nice one\" - LFC uses annual Christmas campaign to deliver football's biggest ever 'thank you' to fans - Liverpool FC"
-    },
-    {
-      "desc": "Virgil van Dijk: Everyone is disappointed - we cannot lose in that manner Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:12:57.748721+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOEZ5OWMxeTV0YVdiVzZ3YmdzUHVWLTZPSmpVYU4xdEVHVm1MMWlGS1h4bklfVHR2Z3FVMzZNU0loVTRkMzdCSHB4QXQ2dGpDQ3REY0Zidlc2dFdtaWxXWkZtbm5HX3NDbEVnV180aXBiYzdNWjhSUEJtWElMZVYyQjFnQlJldGx3NFNCMm92SFI5T1BudzYzTHMtM2xQN0lwa3ZJbFVn?oc=5",
-      "published": "2026-11-06T09:12:58+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Virgil van Dijk: Everyone is disappointed - we cannot lose in that manner - Liverpool FC"
-    },
-    {
-      "desc": "Man Utd ‘looking at’ deal for Prem striker after Romano confirms January transfer Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T16:01:03.239485+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNHlCaW5ydDFIbFVXTWV5Q0xieVA1QVA1TDdlM0lheUxmS0Y2RzhVVDUwenZwT3ljeVpPa0VHdXlHX3hGNXZjRURkT1h3NDVualdZYy1mTVdPTElPdUZxTGhYZ1RIUmM3dlY5Yllrems5UEc0WGpHTU5RUks5Z3RPYlRrd3F1UW1laFNlOWxmOUdxUWNVT0FqMHlSWmp3NkhnS2twNlln?oc=5",
-      "published": "2026-11-06T09:11:50+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd ‘looking at’ deal for Prem striker after Romano confirms January transfer - Football365"
-    },
-    {
-      "desc": "Coventry City could move 11th in the Premier League with victory at Everton on Friday as Frank Lampard returns to the To",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-06T08:30:25.721449+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cr20w943gvl5o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-06T08:11:03+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Lampard looks for Coventry progress as belief grows"
-    },
-    {
-      "desc": "As Pierre Sage waited to receive the Coupe de France trophy as the victorious manager of RC Lens last May, he turned to ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-06T08:30:25.721477+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13607192/pierre-sage-under-pressure-how-crystal-palace-and-last-seasons-ligue-1-manager-of-the-year-are-both-suffering",
-      "published": "2026-11-06T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "What's gone wrong so quickly at Crystal Palace?"
-    },
-    {
-      "desc": "FRENCH minnows Valenciennes saw their season plunge to a new embarrassing low point - after being brutally trolled by th",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-06T08:30:25.721501+00:00",
-      "link": "https://www.thesun.co.uk/sport/40933854/valenciennes-fans-taunt-team-clown-music-orleans/",
-      "published": "2026-11-06T07:06:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Fuming fans taunt their own team with CLOWN MUSIC in middle of French clash"
-    },
-    {
-      "desc": "Man Utd dealt major Emery blow as Romano reveals ‘advanced talks’ FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T08:30:25.721529+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPU2FTb0lIVVRHS0NFQjE0ZkwzNDNDUVhFWFlTQ0lFS3ptZ1VKS0xaV0wzdlpWUlNKNkt3MFZXVnhHX2xXbjNXSmd0cXI3Z0lJQW1HbktWRWdsYXZuSnZsdnFveFJldERFUzBmZkp3TnVKR3QtSVZZY1pwOHQ4VTN1a29KbzJYbmliYU9QQjNmZDR0WUdwZVR1c1VZUEl1b2RMdkY2Q3VJaFBleUFNNDBWNUs0YVdIYTRiZTladW9XRTRuYmhCVlBBaVI1MVQ0dWpIU05nTFV4aDZnVmJRYjlUSA?oc=5",
-      "published": "2026-11-06T07:02:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd dealt major Emery blow as Romano reveals ‘advanced talks’ - FootballTransfers.com"
     }
   ],
   "processed_urls": [
@@ -2862,7 +2889,8 @@
     "https://www.dailymail.com/sport/football/article-16264843/jj-gabriel-real-madrid-transfer.html",
     "https://www.dailymail.com/sport/football/article-16266567/Como-star-pays-touching-tribute-Spanish-footballer-killed-fatal-collision-goalkeeper-Cesc-Fabregas-rampant-score-NINE-Champions-League-thrashing-Lens.html",
     "https://www.bbc.co.uk/sport/football/articles/cr62y4yj39veo",
-    "https://www.thesun.co.uk/sport/40933148/leicester-city-eva-elfie-porn-star-ambassador-bc-game"
+    "https://www.thesun.co.uk/sport/40933148/leicester-city-eva-elfie-porn-star-ambassador-bc-game",
+    "https://www.thesun.co.uk/sport/40947625/mateus-fernandes-var-handball-controversy-leeds-spurs"
   ],
   "schema_version": 3
 }
