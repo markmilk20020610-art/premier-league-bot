@@ -55,6 +55,8 @@ MODULES = [
     "tests.test_review_fail_closed",  # P2：approve/decline fail-closed
     # ---- 第二轮审查：自动退出审核调用链（生产路径，非直接传 review_ref）----
     "tests.test_review_exit_chain",
+    # ---- 最终合并审核整改（P1-A 自动退出 fail-closed / P1-B 合并路径隐私守卫）----
+    "tests.test_merge_state_privacy",
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 

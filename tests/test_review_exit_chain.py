@@ -1091,5 +1091,120 @@ class TestRecoveryAfterCommitFailure(_ScanModeFixture):
             store.COMMITTED)
 
 
+# ============================================================================
+# P1-A：自动退出审核的 fail-closed 缺口
+# ============================================================================
+class TestAutoExitFailClosed(_ChainCase):
+    """`recheck_review()` 不得在私有侧不成立时推进公开状态。
+
+    审查发现的原缺陷：
+
+        if client is not None and review_ref:
+            try:
+                client.exit_review(review_ref, reason)
+            except ...
+        store.transition(rec, store.PENDING_DELIVERY)      # ← 无条件执行
+
+    `client is None`（没配 REVIEW_STORE_URL / REVIEW_SERVICE_KEY）或
+    `review_ref` 为空时，`exit_review` 整段被跳过，而公开 stub 照样迁到
+    PENDING_DELIVERY。等于「私有审核存储没配好」= 绕过人工审核的快速通道：
+    新抓到的 RSS 凑够两个独立来源，就能把一条从没被私有库存过的事件
+    直接推进投递管道。
+
+    为什么既有用例没发现
+    --------------------
+    `TestRawEventIdLookup::test_store_missing_fails_safe` 走的是「原始 event_id →
+    私有库 by-event 索引」这条路，client 为 None 时**在更前面就查不到记录**、
+    直接 return None，根本走不到 `transition`。真正的缺口在另一条入口：
+    调用方手里有公开 stub 键（或 review_ref）时，`_find_review_rec()` 一查即中，
+    于是「跳过私有退出 + 照常迁移」才会发生。本类只走这条入口。
+    """
+
+    # ---- 辅助 ----
+
+    def stub_key(self):
+        """公开 state 里审核 stub 的键（随机 id，不是原始 event_id）。"""
+        stub = self.stub()
+        self.assertIsNotNone(stub, "前置条件：审核 stub 必须存在")
+        for key, rec in (self.state.get("events") or {}).items():
+            if rec is stub:
+                return key
+        self.fail("找不到审核 stub 的公开键")
+
+    def assert_still_pending(self):
+        """私有侧没退成 → 公开与私有都必须原地不动。"""
+        self.assertEqual(
+            self.stub()["delivery_status"], store.PENDING_REVIEW,
+            "私有审核记录没有真正退出，公开状态不得离开 PENDING_REVIEW")
+        self.assertEqual(
+            self.private_status(), review_store.PENDING,
+            "私有记录本身也不得被改动")
+        self.assertEqual(
+            store.public_review_violations(self.state), [],
+            "失败路径同样不得往公开 state 里写审核资料")
+
+    def _exploding_client(self, exc):
+        """把真实客户端包一层，只让 exit_review 抛异常。"""
+        real = self.client
+
+        class Wrapped:
+            def __getattr__(self, name):
+                return getattr(real, name)
+
+            def exit_review(self, review_ref, reason=""):
+                raise exc
+
+        return Wrapped()
+
+    # ---- 用例 ----
+
+    def test_1_missing_client_does_not_exit(self):
+        """client=None + 两条独立来源 → 不迁移、不报告成功。
+
+        这是 P1-A 的主用例：证据确实已经够了（extra_rows 是两个独立域名），
+        但私有审核存储不可用，所以**一条都不许动**。
+        """
+        bot.set_review_store(None)
+        view = bot.recheck_review(self.state, self.stub_key(), second_source_rows())
+        self.assertIsNone(view, "私有审核存储不可用时不得报告「自动退出成功」")
+        self.assert_still_pending()
+
+    def test_2_missing_review_ref_does_not_exit(self):
+        """stub 缺 review_ref → 无法在私有库定位，拒绝自动退出。"""
+        key = self.stub_key()
+        self.state["events"][key]["review_ref"] = ""
+        view = bot.recheck_review(self.state, key, second_source_rows())
+        self.assertIsNone(view, "缺少 review_ref 时不得报告「自动退出成功」")
+        self.assertEqual(self.state["events"][key]["delivery_status"],
+                         store.PENDING_REVIEW)
+        self.assertEqual(self.private_status(), review_store.PENDING)
+
+    def test_3_exit_store_error_does_not_touch_public_state(self):
+        """exit_review 抛 ReviewStoreError（业务/HTTP 错误）→ 公开不动。"""
+        bot.set_review_store(
+            self._exploding_client(review_store.ReviewStoreError("HTTP 503")))
+        view = bot.recheck_review(self.state, self.stub_key(), second_source_rows())
+        self.assertIsNone(view)
+        self.assert_still_pending()
+
+    def test_4_exit_unexpected_error_does_not_touch_public_state(self):
+        """exit_review 抛非 ReviewStoreError（连接重置等）→ 公开同样不动。
+
+        旧实现只捕获 ReviewStoreError，其余异常会穿透调用方；调用方外面
+        通常包着 try/except，结果就是「私有失败、公开已前进」。
+        """
+        bot.set_review_store(self._exploding_client(RuntimeError("connection reset")))
+        view = bot.recheck_review(self.state, self.stub_key(), second_source_rows())
+        self.assertIsNone(view, "非预期异常也不得让公开状态前进")
+        self.assert_still_pending()
+
+    def test_5_normal_exit_still_works(self):
+        """正常路径不受守卫影响：私有退出成功 → 公开迁移。"""
+        view = bot.recheck_review(self.state, self.stub_key(), second_source_rows())
+        self.assertIsNotNone(view, "守卫不得误伤正常的自动退出")
+        self.assertEqual(self.stub()["delivery_status"], store.PENDING_DELIVERY)
+        self.assertEqual(self.private_status(), review_store.EXITED)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

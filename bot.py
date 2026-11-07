@@ -2385,6 +2385,21 @@ def recheck_review(state, event_id, extra_rows=None):
         return None
 
     review_ref = rec.get("review_ref") or ""
+    # ---- fail-closed：自动退出必须建立在「私有记录真的被退出了」之上 ----
+    # 旧实现写的是 `if client is not None and review_ref:`：两个条件缺任意一个
+    # 就整段跳过 exit_review，然后照样把公开 stub 迁到 PENDING_DELIVERY。
+    # 也就是说「私有审核存储没配好」反而变成了一条绕过人工审核的快速通道 ——
+    # 只要新抓到的 RSS 凑够两个独立来源，就能把一条从没被私有库存过的
+    # 事件直接推进投递管道。这里把两个条件都改成硬失败。
+    if client is None:
+        print("::error title=Review Exit Blocked::私有审核存储未配置"
+              "（REVIEW_STORE_URL / REVIEW_SERVICE_KEY），拒绝自动退出审核；"
+              "公开状态保持 PENDING_REVIEW")
+        return None
+    if not review_ref:
+        print("::error title=Review Exit Blocked::审核记录缺少 review_ref，"
+              "无法在私有存储中定位，拒绝自动退出审核；公开状态保持 PENDING_REVIEW")
+        return None
     payload = _review_payload_of(client, review_ref)
 
     rows = _review_rows(payload)
@@ -2413,13 +2428,18 @@ def recheck_review(state, event_id, extra_rows=None):
     # ---- 达标：先退出私有记录，再改公开 stub ----
     reason = "{}，证据等级 {}（独立发布方 {} 组），送审前提消失".format(
         "获得官方确认" if official else "出现第二个独立来源", status, independent)
-    if client is not None and review_ref:
-        try:
-            client.exit_review(review_ref, reason)
-        except review_store.ReviewStoreError as e:
-            # 私有存储退出失败就不能改公开状态，否则两边不一致
-            print("::error title=Review Exit Failed::私有审核记录退出失败：{}".format(e))
-            return None
+    try:
+        client.exit_review(review_ref, reason)
+    except review_store.ReviewStoreError as e:
+        # 私有存储退出失败就不能改公开状态，否则两边不一致
+        print("::error title=Review Exit Failed::私有审核记录退出失败：{}".format(e))
+        return None
+    except Exception as e:  # noqa: BLE001 —— fail-closed 要求兜住一切异常
+        # 与 _decide_private_or_raise 同一原则：异常类型原样带出，但**不允许**
+        # 它变成「私有没退、公开已经前进」。
+        print("::error title=Review Exit Failed::私有审核记录退出异常"
+              "（{}: {}），公开状态保持 PENDING_REVIEW".format(type(e).__name__, e))
+        return None
 
     store.transition(rec, store.PENDING_DELIVERY)
     entries = _review_store_entries(client, review_ref)
