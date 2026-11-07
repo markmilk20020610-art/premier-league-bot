@@ -696,6 +696,155 @@ class TestRunScanModeEndToEnd(_ScanModeFixture):
                          "原始英文标题不得出现在公开 state 的任何位置")
 
 
+class TestDeclinedStubNotReused(_ScanModeFixture):
+    """F-P1-1：人工拒绝是终态，自动扫描不得覆盖，更不得把它撞崩。
+
+    修复前的缺陷链（三段，已逐段复现）：
+      ① `reused_review_stub = bool(reusable.get("review_ref"))` —— 只看句柄在不在；
+      ② 拒绝后的 stub 仍然带 `review_ref`，于是被判为「可复用」；
+      ③ `store.begin_delivery()` 执行 `REVIEW_DECLINED -> PENDING_DELIVERY`，
+         迁移表里这是非法迁移 → `StateError` → 穿出 `run_scan_mode()`（无 try）
+         → 整轮扫描崩溃，最长持续到 168h 去重窗口过期。
+
+    修复后要求：既不投递、也不新建记录、更不重建 sha1 键。
+    """
+
+    def setUp(self):
+        super().setUp()
+        # 用**真实生产函数**拒绝，而不是手工把字段改成 REVIEW_DECLINED：
+        # 私有 decide + 公开 transition 的顺序本身也是被测行为的一部分。
+        bot.decline_review(self.state, self.review_ref, "operator-1", "不采用")
+        self.assertEqual(self.stub()["delivery_status"], store.REVIEW_DECLINED,
+                         "前置条件：公开 stub 必须已是 REVIEW_DECLINED")
+
+        # 盯住 begin_delivery：修复要求「任何情况下都不得让它被调用」。
+        # 只记录再调真实函数，不替换行为——否则「没崩」可能只是因为它被架空了。
+        self.begin_calls = []
+        real_begin = store.begin_delivery
+
+        def spy_begin(event):
+            self.begin_calls.append(dict(event))
+            return real_begin(event)
+
+        self._patch(store, "begin_delivery", spy_begin)
+        self.seen_finds = []
+
+    def assert_decline_respected(self):
+        """四条硬断言：不发送、不迁移、不新增记录、公开侧干净。"""
+        self.assertEqual(self.telegram_calls, [], "拒绝后不得发送 Telegram 消息")
+        self.assertEqual(self.begin_calls, [], "拒绝后不得调用 begin_delivery()")
+        self.assertEqual(set(self.state.get("events") or {}), {self.stub_key},
+                         "不得新增事件记录（尤其不得重建 sha1(url)[:12] 键）")
+        self.assertEqual(self.stub()["delivery_status"], store.REVIEW_DECLINED,
+                         "公开 stub 必须仍是 REVIEW_DECLINED")
+        self.assertEqual(store.public_review_violations(self.state), [],
+                         "公开 state 不得因此出现审核私有资料")
+        # 私有侧也不得被重新入队
+        self.assertEqual(self.client.get(self.review_ref)["status"],
+                         review_store.DECIDED, "私有记录不得被重新入队")
+        self.assertEqual(self.client.get(self.review_ref)["action"], "decline")
+
+    def test_1_same_event_reappears_is_not_delivered(self):
+        """测试 1：人工拒绝后，同一事件原样再出现一次。
+
+        刻意沿用夹具里的两条独立来源（BBC + Sky）：证据闸门必须先放行，
+        否则流程停在 `EVIDENCE_NOT_PUSHABLE`，根本走不到同事件比对，
+        测试会因为「没认出来所以没发」而假绿。
+        """
+        code = self.run_scan()
+        self.assertEqual(code, 0, "拒绝后的跳过必须是正常退出，不能崩溃")
+
+        self.assert_decline_respected()
+
+        # 命中的确实是那条被拒绝的记录（而不是「没认出来所以碰巧没发」）
+        hits = [f for f in self.seen_finds if f["hit"]]
+        self.assertTrue(hits, "必须把再次出现的事件识别为已存在的同事件")
+        self.assertTrue(all(f["hit_status"] == store.REVIEW_DECLINED for f in hits),
+                        "命中的状态必须是 REVIEW_DECLINED")
+
+    def test_2_new_source_same_event_still_respects_decline(self):
+        """测试 2：人工拒绝后出现**新来源**（不同 URL、同事件），仍不得绕过拒绝。"""
+        espn_url = "https://www.espn.com/soccer/ronaldo-arsenal"
+        espn_title = "Ronaldo to join Arsenal as clubs reach agreement"
+
+        # 前置：用生产判定函数确认这确实是同一事件，不靠猜
+        ok, why = ev.same_event(
+            bot._event_probe(ORIGINAL_TITLE, ORIGINAL_URL),
+            bot._event_probe(espn_title, espn_url))
+        self.assertTrue(ok, "ESPN 报道应判为同一事件：{}".format(why))
+
+        # 新来源 + 一条已有的独立来源：保证能过证据闸门（MULTIPLE_INDEPENDENT_SOURCES）
+        self.rss_items = [
+            {"title": espn_title, "link": espn_url, "desc": "d",
+             "source": "ESPN", "feed_origin": "ESPN",
+             "publisher": "espn.com", "published": self.now},
+            {"title": RSS_TITLE_B, "link": RSS_URL_B, "desc": "d",
+             "source": "Sky", "feed_origin": "Sky",
+             "publisher": "skysports.com", "published": self.now},
+        ]
+        self._patch(bot, "evaluate_with_gemini",
+                    lambda blob, is_morning=False, state=None:
+                    (model_result_for(espn_url, espn_title), ""))
+
+        code = self.run_scan()
+        self.assertEqual(code, 0)
+        self.assert_decline_respected()
+
+        # 关键：新来源必须被拿去做过同事件比对，且命中那条被拒绝的记录。
+        # 否则「没发」可能只是因为候选阶段就把它丢了，而不是尊重了拒绝决定。
+        espn_finds = [f for f in self.seen_finds if f["title"] == espn_title]
+        self.assertTrue(espn_finds, "新来源没有参与同事件比对")
+        self.assertTrue(
+            any(f["hit"] and f["hit_status"] == store.REVIEW_DECLINED
+                for f in espn_finds),
+            "新来源必须被识别为「已被人工拒绝的同一事件」")
+        self.assertEqual(len(self.state.get("events") or {}), 1, "不得重复创建审核 stub")
+
+
+class TestDeclinedFixDoesNotChangeNormalFlow(_ScanModeFixture):
+    """反向验证：修复只针对 REVIEW_DECLINED，正常退出与批准链路必须一字不变。"""
+
+    def test_3_normal_exit_still_delivers_and_reuses_stub(self):
+        """测试 3：PENDING_REVIEW + 第二个独立来源 → 照常退出审核并复用随机键。"""
+        code = self.run_scan()
+        self.assertEqual(code, 0)
+        self.assertEqual(len(self.telegram_calls), 1, "正常退出后必须照常投递")
+        self.assertEqual(set(self.state.get("events") or {}), {self.stub_key},
+                         "必须复用原随机 stub 键，不得新建 sha1 记录")
+        self.assertEqual(self.state["events"][self.stub_key]["delivery_status"],
+                         store.COMMITTED)
+        self.assertEqual(self.client.get(self.review_ref)["status"],
+                         review_store.EXITED, "私有记录应为 EXITED")
+
+    def test_4_approved_event_still_delivers(self):
+        """测试 4：APPROVED 事件的投递链（claim → 发送 → finish）保持不变。"""
+        bot.approve_review(self.state, self.review_ref, "operator-1", "可以发")
+        self.assertEqual(self.stub()["delivery_status"], store.PENDING_DELIVERY,
+                         "批准后公开 stub 应进入 PENDING_DELIVERY")
+
+        # 审核投递走的是 chunk_records= 关键字 + report 出参，
+        # 与 scan 的 `_deliver_card` 桩签名不同，必须单独桩，否则测的不是真链路。
+        def approve_send(text, chunk_records=None, report=None):
+            self.telegram_calls.append(text)
+            if report is not None:
+                report.append({
+                    "chunk_index": 1, "chunk_total": 1, "chunk_hash": "",
+                    "delivery_status": store.CHUNK_DELIVERED,
+                    "telegram_message_id": "777", "attempts": 1, "last_error": "",
+                })
+            return True, ["777"], ""
+
+        self._patch(bot, "send_telegram_ex", approve_send)
+
+        out = bot.execute_review_decision(self.state, self.review_ref)
+        self.assertEqual(out["status"], store.COMMITTED)
+        self.assertEqual(len(self.telegram_calls), 1, "批准后必须且只能发一次")
+        self.assertEqual(self.state["events"][self.stub_key]["delivery_status"],
+                         store.COMMITTED)
+        self.assertEqual(self.client.get(self.review_ref)["status"],
+                         review_store.DELIVERED)
+
+
 class TestHttpFindActive(unittest.TestCase):
     """`HttpReviewStore.find_active()` 的解析契约。
 

@@ -3371,7 +3371,20 @@ BLOCKING_DELIVERY_STATUSES = (
 #     自动退出的第二个独立来源。
 #   · 主流程去重必须把在审事件也认出来，否则 _exit_review_if_upgraded
 #     永远收不到 same_event。
-DEDUPE_DELIVERY_STATUSES = BLOCKING_DELIVERY_STATUSES + (store.PENDING_REVIEW,)
+# 允许「复用原记录继续投递」的状态：审核 stub 退出后是 PENDING_DELIVERY，
+# 普通记录投递失败后是 RETRYABLE_FAILURE / DELIVERY_FAILED。
+# REVIEW_DECLINED 刻意不在其中 —— 它是人工终态，拒绝决定不得被自动流程覆盖。
+_REUSABLE_STUB_STATUSES = (
+    store.PENDING_DELIVERY, store.RETRYABLE_FAILURE, store.DELIVERY_FAILED,
+)
+
+DEDUPE_DELIVERY_STATUSES = BLOCKING_DELIVERY_STATUSES + (
+    store.PENDING_REVIEW,
+    # 人工拒绝是终态：同一事件再次出现时必须在这里就被认出来并跳过。
+    # 漏掉它会掉进「复用记录 → begin_delivery」的非法迁移
+    # （REVIEW_DECLINED -> PENDING_DELIVERY），整轮扫描直接抛 StateError。
+    store.REVIEW_DECLINED,
+)
 
 
 def _event_probe(title, url=""):
@@ -4357,6 +4370,20 @@ def run_scan_mode(state, start_time):
             # 同一件事如果已经有一条未完结的记录（可重试失败 / 确定性失败），
             # 复用它的 event_id，别让同一件事在 state 里长出第二条记录。
             reusable = _find_same_event(state, article_title, evidence_url)
+            # 人工拒绝是**终态**：拒绝决定不允许被自动扫描覆盖。
+            # 这里必须显式拦一道，因为下面两条路都会违反它：
+            #   · 当作可复用记录 → begin_delivery 触发 REVIEW_DECLINED ->
+            #     PENDING_DELIVERY 的非法迁移（StateError 会穿出 run_scan_mode）；
+            #   · 当作不可复用 → record_event 重建一条 sha1(url)[:12] 记录，
+            #     等于换个键把拒绝决定绕过去。
+            # 正常路径下主流程去重（DEDUPE_DELIVERY_STATUSES）已经拦住它，
+            # 这里是纵深防御：将来若有人改窄那个集合，也不会退化成崩溃或绕过。
+            if (reusable or {}).get("delivery_status") == store.REVIEW_DECLINED:
+                _skip("REVIEW_DECLINED",
+                      "该事件已被人工拒绝存档，不自动重新投递"
+                      "（如需重审，须由人工显式重新开启，当前无此机制）",
+                      extra={"run_mode": "scan"})
+                return 0
             # 审核 stub 退出后必须**继续复用它的随机公开键**。
             # 它已经由 recheck_review 推到 PENDING_DELIVERY；如果这里再调
             # record_event(event_id=None)，会因为 stub 上没有 event_id 而新建一条
@@ -4366,7 +4393,11 @@ def run_scan_mode(state, start_time):
             # 也不能把 stub 的键当 event_id 传给 record_event：那条路径会写回
             # title / article_title / evidence_url / evidence_refs，正是 P0 禁止
             # 出现在公开审核记录里的字段。所以直接复用它。
-            reused_review_stub = bool((reusable or {}).get("review_ref"))
+            # 不能只看 review_ref 是否存在：REVIEW_DECLINED 也带句柄，
+            # 而它是人工终态。只有「已退出审核、正在投递 / 待重试」才可复用。
+            reused_review_stub = (
+                bool((reusable or {}).get("review_ref"))
+                and reusable.get("delivery_status") in _REUSABLE_STUB_STATUSES)
             if reused_review_stub:
                 event = reusable
             else:
