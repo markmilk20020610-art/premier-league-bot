@@ -14,13 +14,14 @@
 
 import json
 import os
+import secrets
 import tempfile
 import hashlib
 import datetime
 
 import redact
 
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 4
 
 # ==================== 投递状态机 ====================
 DISCOVERED = "DISCOVERED"
@@ -37,10 +38,23 @@ DELIVERY_FAILED = "DELIVERY_FAILED"
 RETRYABLE_FAILURE = "RETRYABLE_FAILURE"
 DELIVERY_UNCERTAIN = "DELIVERY_UNCERTAIN"
 
+# V1.0：E4 级 S 事件必须人工审核，不得直接公开推送。
+# 这两个状态属于**投递状态机**，不是推送状态机——它拦的是「能不能进投递管道」，
+# 而 push_state 只管「是否已经露给用户」。混用会导致「待审」与「已推」写进
+# 同一个字段，回滚时无法区分。
+PENDING_REVIEW = "PENDING_REVIEW"
+# 审核人选择「仅存档」。刻意不复用 DELIVERY_FAILED：
+# 后者会让失败率指标失真，也会让 watchdog 误以为需要重试。
+REVIEW_DECLINED = "REVIEW_DECLINED"
+
 # 允许的状态迁移。COMMITTED 是终态。
 _TRANSITIONS = {
     DISCOVERED: {VERIFIED, DELIVERY_FAILED},
-    VERIFIED: {PENDING_DELIVERY, DELIVERY_FAILED},
+    # V1.0：E4 + S 的条目从 VERIFIED 转 PENDING_REVIEW，而不是直接进投递队列
+    VERIFIED: {PENDING_DELIVERY, DELIVERY_FAILED, PENDING_REVIEW},
+    # 审核通过 → 进投递队列；审核拒绝 → 终态存档
+    PENDING_REVIEW: {PENDING_DELIVERY, REVIEW_DECLINED},
+    REVIEW_DECLINED: set(),
     PENDING_DELIVERY: {DELIVERED, RETRYABLE_FAILURE, DELIVERY_UNCERTAIN, DELIVERY_FAILED},
     # 可重试失败：下一轮重新进入投递队列；重试期间也可能退化成「结果未知」
     RETRYABLE_FAILURE: {PENDING_DELIVERY, DELIVERY_UNCERTAIN, DELIVERY_FAILED},
@@ -73,6 +87,361 @@ class StateError(RuntimeError):
     """state.json 读写失败。必须向上冒泡，不允许被 except: pass 吃掉。"""
 
 
+# =============================================================================
+# V1.1 P0：公开 state.json 的审核数据隔离
+# =============================================================================
+# 背景：本仓库是 **Public**，state.json 被 git 跟踪，scanner.yml 每轮都会提交它。
+# 因此 state.json 里的每一个字节都是公开的。而 E4 待审事件恰恰是
+# 「未公开报道、单一来源、尚未核实」的内容——把它写进 state.json
+# 等于把「我们手上有一条未核实的独家」连同标题、摘要、原始链接一起公开。
+#
+# 规则（不是建议，是硬约束）：
+#   · 审核记录在公开 state.json 里只允许存在 REVIEW_STUB_ALLOWED 里的字段；
+#   · 完整 review_payload 只存在于私有审核存储（Cloudflare SQLite Durable Object）；
+#   · save_state_atomic 在落盘前会做一次守卫，发现越界直接抛 StateError。
+REVIEW_STATUSES = frozenset({PENDING_REVIEW, REVIEW_DECLINED})
+
+# 白名单：审核记录在公开 state.json 里**唯一允许**出现的字段。
+# 全部是不含新闻内容的运行状态：opaque ID、状态、时间戳、重试计数。
+REVIEW_STUB_ALLOWED = frozenset({
+    # 注意：这里**故意没有** "event_id"。
+    # `event_id = sha1(cleaned_url)[:12]`，任何人都能拿公开新闻池里的 URL
+    # 自己算一遍，然后在 state["events"] 里精确匹配到「哪一条正在被压着」。
+    # 那是比 payload 泄露更隐蔽的侧信道：不需要看到内容，只需要「哪一条被挂起」
+    # 这个事实本身就泄露了「我们手上有未核实的独家」。详见 new_review_public_id()。
+    "delivery_status",
+    "review_ref",          # 私有存储的 opaque 句柄
+    "review_enqueued_at",
+    "review_delivery_status",
+    "review_delivered_at",
+    "created_at",
+    "updated_at",
+    "attempts",
+    "last_error",          # 只放错误码/短描述，由调用方保证不含正文
+    "next_retry_at",
+    "chunks",              # 审核 stub 永远是空列表
+    "pending_text",        # 审核 stub 永远是空串
+    "telegram_message_id",
+    "redacted",            # 标记「这条已被迁移清理过」
+})
+
+# 黑名单：任何记录（不论状态）都不允许携带这些字段。
+# 白名单管「审核记录」，黑名单管「已投递但仍残留审核快照」的历史记录。
+PUBLIC_REVIEW_FORBIDDEN = (
+    "review_payload",
+    "review_reason",
+    "review_cred",
+    "review_importance",
+    "review_status",
+    "review_log",
+    "review_claim",
+    "review_operator",
+    "review_note",
+    "review_card_message_id",
+    "review_card_chat_id",
+    "review_card_sent_at",
+    "review_card_text",
+    "publish_mode",
+    "publish_cred",
+    "publish_is_confirmed",
+    "unverified_note",
+    "fact_summary",
+)
+
+
+def is_review_record(event):
+    """这条记录是不是审核记录（待审或已拒绝存档）。"""
+    return (event or {}).get("delivery_status") in REVIEW_STATUSES
+
+
+def new_review_public_id():
+    """公开侧审核记录的唯一标识。**必须随机**，不得由新闻 URL / 标题派生。
+
+    这是 PR #1 审查 P0 的核心修复点。原来的做法是拿 `event_id_for(url)` 当
+    公开键，而 `event_id_for` 就是 `sha1(cleaned_url)[:12]`——一个纯函数，
+    输入是**已经公开**的新闻池 URL。于是：
+
+        公开新闻池里的 URL  →  自己算一遍 sha1[:12]  →  在 state["events"]
+                                                       里精确匹配到
+                                                       delivery_status=PENDING_REVIEW
+
+    等于公开宣布「这条我们抓到了但压着没发」。泄露的不是内容，是「哪一条」，
+    而这恰恰是最值钱的部分。
+
+    为什么不能靠「把审核事件的新闻池条目删掉」解决：
+      · 新闻池每轮都提交，URL 在**上一版 commit 里已经公开**，删掉只是让它
+        「消失」——diff 里凭空少一条，比哈希撞上还显眼；
+      · 而且删除会连带毁掉早报素材。
+
+    所以正确的修法是让**公开 id 与 URL 之间不存在任何可计算的映射**：
+    随机值，谁也算不出来，攻击者只能看到「有一条记录在审」，看不到是哪条。
+
+    去重不受影响：同一事件是否已入队由**私有存储**按 `event_id` 判
+    （`review` 表上 `ux_review_active` 唯一索引），公开侧不需要、也不应该
+    再保存那个可推导的 id。
+    """
+    return "rv" + secrets.token_hex(8)
+
+
+def find_review_stub(state, review_ref):
+    """按 opaque 句柄找公开 stub。
+
+    公开键是随机的，所以「按事件 id 找」不再成立；句柄是唯一稳定的索引，
+    而它本来就是审核动作唯一需要的东西（按钮里也只带它）。
+    """
+    if not review_ref:
+        return None
+    for event in (state.get("events") or {}).values():
+        if isinstance(event, dict) and (event.get("review_ref") or "") == review_ref:
+            return event
+    return None
+
+
+def record_review_stub(state, public_id, review_ref, delivery_status=PENDING_REVIEW,
+                       review_enqueued_at=None):
+    """在公开 state.json 里登记一条**最小化**审核标记。
+
+    只写 opaque 随机 ID + 状态 + 句柄 + 时间，绝不写标题/摘要/证据/审核意见，
+    也绝不写任何由 URL 派生的 id（见 `new_review_public_id`）。
+
+    为什么不干脆不写：不写的话，公开侧就完全看不出「有一条在审」，而
+    `blocks_rediscovery` / `_prune_events` 也就没有载体。写了但写的是随机值，
+    才是「既保留状态机、又不泄露哪一条」的唯一解。
+    """
+    events = state.setdefault("events", {})
+    now = _now_iso()
+    event = events.get(public_id)
+    if event is None:
+        event = {
+            "delivery_status": delivery_status,
+            "review_ref": review_ref,
+            "review_enqueued_at": review_enqueued_at or now,
+            "created_at": now,
+            "updated_at": now,
+            "attempts": 0,
+            "last_error": "",
+            "next_retry_at": "",
+            "chunks": [],
+            "pending_text": "",
+            "telegram_message_id": None,
+        }
+        events[public_id] = event
+        _prune_events(state)
+        return event
+    event["delivery_status"] = delivery_status
+    event["review_ref"] = review_ref
+    event["review_enqueued_at"] = review_enqueued_at or event.get("review_enqueued_at") or now
+    event["updated_at"] = now
+    return event
+
+
+def public_review_violations(state):
+    """返回公开 state.json 里所有越界的审核资料（空列表 = 干净）。
+
+    四类检查：
+      1. 任何记录携带黑名单字段 → 越界（历史遗留的审核快照）；
+      2. 审核记录出现白名单之外的字段 → 越界（标题、摘要、证据都会落在这里）；
+      3. 新闻池 / 已处理 URL / S 溢出位里出现审核私有字段 → 越界
+         （PR #1 审查 P0：这三个结构以前完全没被检查过）；
+      4. **关联检查**：审核记录的公开 id 不得等于任何公开 URL 的派生 id。
+         这一条是 P0 的回归守卫——它直接断言「URL → id → 审核记录」这条链断开。
+    """
+    out = []
+    events = state.get("events") or {}
+    if not isinstance(events, dict):
+        return out
+    for eid, event in events.items():
+        if not isinstance(event, dict):
+            continue
+        for key in PUBLIC_REVIEW_FORBIDDEN:
+            if key in event:
+                out.append("{}: 含私有字段 {}".format(eid, key))
+        if is_review_record(event):
+            extra = sorted(set(event.keys()) - REVIEW_STUB_ALLOWED)
+            if extra:
+                out.append("{}: 审核记录含非白名单字段 {}".format(eid, ", ".join(extra)))
+    out.extend(_non_event_structure_violations(state))
+    out.extend(_review_id_link_violations(state))
+    return out
+
+
+def _public_url_strings(state):
+    """收集公开 state.json 里出现的所有 URL 字符串（攻击者能直接拿到的输入）。"""
+    urls = []
+    for item in state.get("news_pool") or []:
+        if isinstance(item, dict):
+            for key in ("link", "url", "desc"):
+                val = item.get(key)
+                if isinstance(val, str) and val:
+                    urls.append(val)
+    for val in state.get("processed_urls") or []:
+        if isinstance(val, str) and val:
+            urls.append(val)
+    buckets = state.get("s_overflow") or {}
+    if isinstance(buckets, dict):
+        for bucket in buckets.values():
+            if isinstance(bucket, dict):
+                for val in bucket.get("urls") or []:
+                    if isinstance(val, str) and val:
+                        urls.append(val)
+    return urls
+
+
+def _non_event_structure_violations(state):
+    """新闻池、S 溢出位等**非 events** 结构里不得出现审核私有字段。
+
+    `s_overflow` 是嵌套结构（bucket → {urls: [...], ...}），只查顶层等于
+    漏掉里层：审核 payload 一旦被顺手塞进溢出位，公开仓库里就多一份
+    「待审内容快照」——那比 id 泄露更严重，泄露的是正文本身。
+    """
+    out = []
+    for item in state.get("news_pool") or []:
+        if isinstance(item, dict):
+            for key in PUBLIC_REVIEW_FORBIDDEN:
+                if key in item:
+                    out.append("news_pool: 含私有字段 {}".format(key))
+    buckets = state.get("s_overflow") or {}
+    if isinstance(buckets, dict):
+        for name, bucket in buckets.items():
+            for path, node in _walk_dicts(bucket, "s_overflow.{}".format(name)):
+                for key in PUBLIC_REVIEW_FORBIDDEN:
+                    if key in node:
+                        out.append("{}: 含私有字段 {}".format(path, key))
+    return out
+
+
+def _walk_dicts(node, path, depth=0):
+    """递归产出嵌套结构里的 (路径, dict)，只走 dict / list 两种容器。
+
+    深度上限是防御畸形数据，不是为了限制正常结构：state 里最深的
+    `s_overflow.<bucket>.urls[i]` 才三层。
+    """
+    if depth > 4:
+        return
+    if isinstance(node, dict):
+        yield path, node
+        for key, val in node.items():
+            for found in _walk_dicts(val, "{}.{}".format(path, key), depth + 1):
+                yield found
+    elif isinstance(node, list):
+        for idx, val in enumerate(node):
+            for found in _walk_dicts(val, "{}[{}]".format(path, idx), depth + 1):
+                yield found
+
+
+def _review_id_link_violations(state):
+    """审核记录的公开 id 不得与任何公开 URL 的派生 id 相同。
+
+    这就是 PR #1 审查发现的那条侧信道：
+
+        event_id = sha1(cleaned_url)[:12]
+
+    输入是**已经公开**的新闻池 URL，所以任何人都能自己算一遍，然后在
+    state["events"] 里精确匹配到「哪一条正在被压着」。修复是让公开 id 变成
+    随机值（`new_review_public_id`），这里再加一道断言：只要「审核记录的 id」
+    和「某个公开 URL 的派生 id」撞上，就拒绝落盘。
+
+    多算三种 URL 变体，因为攻击者会按 `clean_url` 的规则先清洗再算——
+    不覆盖变体的话，这道守卫会被一个 `?utm_source` 绕过：
+
+        原样            https://a.com/x?utm=1#frag
+        去 fragment     https://a.com/x?utm=1
+        去 query        https://a.com/x
+        两者都去        https://a.com/x   ← 顺序反过来时（x#frag?utm=1）
+                                            只有这一种才拿得到真正的路径
+    """
+    out = []
+    events = state.get("events") or {}
+    if not isinstance(events, dict):
+        return out
+    review_ids = set()
+    for eid, rec in events.items():
+        if isinstance(rec, dict) and is_review_record(rec):
+            review_ids.add(str(eid))
+    if not review_ids:
+        return out
+    seen = set()
+    for raw in _public_url_strings(state):
+        for variant in (raw,
+                        raw.split("#", 1)[0],
+                        raw.split("?", 1)[0],
+                        raw.split("#", 1)[0].split("?", 1)[0]):
+            if not variant or variant in seen:
+                continue
+            seen.add(variant)
+            derived = event_id_for(variant)
+            if derived in review_ids:
+                out.append(
+                    "关联泄露：公开 URL 的派生 id {} 命中审核记录（可反推哪一条在审）".format(
+                        derived))
+    return out
+
+
+def _looks_like_derived_id(key):
+    """这个公开键看起来是不是 `event_id_for()` 的产物（12 位小写十六进制）。
+
+    无法区分「随机撞成 12 位十六进制」与「sha1 前缀」，所以一律按危险处理：
+    迁移时换成随机键。宁可多换一次（去重靠私有存储，不受影响），
+    也不能留下一条能被 URL 反推的记录。
+    """
+    key = str(key or "")
+    return len(key) == 12 and all(c in "0123456789abcdef" for c in key)
+
+
+def scrub_review_records(state):
+    """迁移：把历史遗留的公开审核资料清理干净。返回被清理的记录数。
+
+    刻意**只动审核相关的东西**：
+      · 审核记录 → 只保留白名单字段，并把「由 URL 派生的公开键」换成随机键；
+      · 已投递记录 → 只删 review_* 等私有字段，已公开的标题与链接保持原样
+        （它们本来就发到 Telegram 了，删掉反而破坏审计）。
+
+    幂等：重复执行不会产生任何变化。
+    """
+    events = state.get("events") or {}
+    if not isinstance(events, dict):
+        return 0
+    touched = 0
+    rekey = {}
+    for eid, event in list(events.items()):
+        if not isinstance(event, dict):
+            continue
+        changed = False
+        if is_review_record(event):
+            kept = {k: v for k, v in event.items() if k in REVIEW_STUB_ALLOWED}
+            if set(kept.keys()) != set(event.keys()):
+                changed = True
+            # 审核记录里的 chunks/pending_text 只允许是空值
+            if kept.get("chunks"):
+                kept["chunks"] = []
+                changed = True
+            if kept.get("pending_text"):
+                kept["pending_text"] = ""
+                changed = True
+            kept.setdefault("delivery_status", event.get("delivery_status"))
+            kept.setdefault("review_ref", event.get("review_ref") or "")
+            # PR #1 P0：历史版本的键是 sha1(url)[:12]，必须换掉。
+            # 只换键，不动 review_ref——审核动作靠句柄定位，与键无关。
+            if _looks_like_derived_id(eid):
+                rekey[eid] = new_review_public_id()
+                changed = True
+            if changed:
+                kept["redacted"] = True
+                events[eid] = kept
+                touched += 1
+        else:
+            for key in PUBLIC_REVIEW_FORBIDDEN:
+                if key in event:
+                    event.pop(key, None)
+                    changed = True
+            if changed:
+                touched += 1
+    for old_key, new_key in rekey.items():
+        events[new_key] = events.pop(old_key)
+    return touched
+
+
+
 def _now_iso():
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
 
@@ -86,7 +455,50 @@ def _default_state():
         "last_morning_report_date": "",
         "last_summary_sent_at": "",
         "events": {},
+        # V1.0：S 级软上限的溢出记录。软上限不是硬闸门——第 4 条及以上真正
+        # 达到 S 级标准的独立事件照常推送，但必须落盘留痕，不能静默丢弃。
+        "s_overflow": {},
     }
+
+
+def _migrate_events(state):
+    """幂等迁移：把 evidence_url 扩展为 evidence_refs（V1.0 任务 4）。
+
+    迁移规则：
+      · 已有 evidence_refs 的，只补齐缺失的 evidence_url 条目；
+      · 没有 evidence_refs 的，用 evidence_url 建一条；
+      · evidence_url 本身**不删除**——旧代码仍在读它，删了就是破坏兼容。
+
+    幂等性：反复执行结果一致，不会产生重复条目。
+    """
+    events = state.get("events")
+    if not isinstance(events, dict):
+        return 0
+    migrated = 0
+    for event in events.values():
+        if not isinstance(event, dict):
+            continue
+        # 审核记录不走这个迁移：它的证据只存在于私有存储，公开 stub 里
+        # 不允许出现 evidence_refs。硬加进去只会被 scrub 立刻删掉，
+        # 每轮读盘都白改一次文件。
+        if is_review_record(event):
+            continue
+        refs = event.get("evidence_refs")
+        if not isinstance(refs, list):
+            refs = []
+            event["evidence_refs"] = refs
+            migrated += 1
+        known = {r.get("url") for r in refs if isinstance(r, dict)}
+        primary = (event.get("evidence_url") or "").strip()
+        if primary and primary not in known:
+            refs.append({
+                "url": primary,
+                "title": (event.get("article_title") or "")[:200],
+                "added_at": event.get("created_at") or "",
+                "origin": "migrated_from_evidence_url",
+            })
+            migrated += 1
+    return migrated
 
 
 def ensure_shape(state):
@@ -103,6 +515,12 @@ def ensure_shape(state):
         state["news_pool"] = []
     if not isinstance(state.get("events"), dict):
         state["events"] = {}
+    if not isinstance(state.get("s_overflow"), dict):
+        state["s_overflow"] = {}
+    _migrate_events(state)
+    # V1.1 P0：载入即迁移。历史版本把完整审核快照写进了公开 state.json，
+    # 这里在读取时清掉，保证「下一次提交出去的 state.json 是干净的」。
+    scrub_review_records(state)
     state["schema_version"] = SCHEMA_VERSION
     return state
 
@@ -120,7 +538,18 @@ def load_state(path="state.json"):
 
 
 def save_state_atomic(state, path="state.json"):
-    """原子写入 + 回读校验。任何一步失败都抛 StateError。"""
+    """原子写入 + 回读校验。任何一步失败都抛 StateError。
+
+    V1.1 P0：落盘前做一次「公开安全」守卫。本仓库是 Public，state.json 一旦
+    提交就等于公开发布，所以宁可让整轮运行失败，也不能把审核资料写出去。
+    守卫放在这里而不是只放在调用方，是因为调用方会变、这里不会。
+    """
+    violations = public_review_violations(state)
+    if violations:
+        raise StateError(
+            "拒绝写入公开 state.json：检测到审核私有资料（共 {} 处）。"
+            "完整审核内容只能存在于私有审核存储。首批：{}".format(
+                len(violations), "; ".join(violations[:5])))
     try:
         payload = json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True)
     except Exception as e:
@@ -190,7 +619,8 @@ def _prune_events(state, keep=200):
         return
     pinned = {
         eid for eid, e in events.items()
-        if e.get("delivery_status") in (RETRYABLE_FAILURE, DELIVERY_UNCERTAIN, PENDING_DELIVERY)
+        if e.get("delivery_status") in (RETRYABLE_FAILURE, DELIVERY_UNCERTAIN,
+                                        PENDING_DELIVERY, PENDING_REVIEW)
     }
     ordered = sorted(events.items(), key=lambda kv: kv[1].get("updated_at", ""), reverse=True)
     kept, dropped = {}, 0
@@ -230,6 +660,14 @@ def record_event(state, evidence_url, title, evidence_status, delivery_status=DI
             "event_id": eid,
             "event_fingerprint": event_fingerprint(title, evidence_url),
             "evidence_url": evidence_url or "",
+            # V1.0 任务 4：一个事件对应多条证据引用。evidence_url 保留为
+            # 「主证据」，evidence_refs 记录全部证据，二者不互相替代。
+            "evidence_refs": ([{
+                "url": evidence_url,
+                "title": (article_title or "")[:200],
+                "added_at": now,
+                "origin": "created",
+            }] if evidence_url else []),
             "article_title": (article_title or "")[:200],
             "evidence_status": evidence_status,
             "delivery_status": delivery_status,
@@ -254,6 +692,21 @@ def record_event(state, evidence_url, title, evidence_status, delivery_status=DI
             event["article_title"] = article_title[:200]
         if not event.get("evidence_url") and evidence_url:
             event["evidence_url"] = evidence_url
+        # 追加新证据（幂等：同一 URL 不重复登记）。
+        # 旧实现只在 evidence_url 为空时补一次，导致「事件后来获得第二来源」
+        # 这件事在 state 里完全无法体现，可信度升级也就无从判断。
+        if evidence_url:
+            refs = event.get("evidence_refs")
+            if not isinstance(refs, list):
+                refs = []
+                event["evidence_refs"] = refs
+            if not any((r or {}).get("url") == evidence_url for r in refs):
+                refs.append({
+                    "url": evidence_url,
+                    "title": (article_title or "")[:200],
+                    "added_at": now,
+                    "origin": "appended",
+                })
     return event
 
 
@@ -344,7 +797,11 @@ def blocks_rediscovery(event, now=None):
     才算「处理过了」**。失败的要重新排队。
     """
     status = event.get("delivery_status")
-    if status in (COMMITTED, DELIVERED, PENDING_DELIVERY, DELIVERY_UNCERTAIN):
+    if status in (COMMITTED, DELIVERED, PENDING_DELIVERY, DELIVERY_UNCERTAIN,
+                  PENDING_REVIEW, REVIEW_DECLINED):
+        # PENDING_REVIEW：已在人工审核队列里，不能因为「又抓到一条」就重复入队。
+        # REVIEW_DECLINED：审核人已经明确拒绝存档，再放回候选会形成
+        # 「抓到 → 送审 → 拒绝 → 再抓到」的死循环。
         return True
     if status == RETRYABLE_FAILURE:
         return not retry_due(event, now)

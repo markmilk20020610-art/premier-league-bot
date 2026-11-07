@@ -243,6 +243,9 @@ EVENT_KEYWORDS = {
         "ban", "bans", "banned", "suspension", "suspended", "disciplinary",
         "charge", "charges", "appeal", "appeals", "misconduct", "red", "card",
         "fine", "fined", "tribunal",
+        # V1.0：扣分是纪律处罚里影响最大的一类，此前完全没有词覆盖，
+        # 「Everton points deduction」只能判出 ""，类型比对直接失效。
+        "deduction", "deductions", "breach", "sanction", "sanctions",
     },
     "MATCH": {
         "win", "wins", "won", "lose", "loses", "lost", "draw", "draws", "defeat",
@@ -250,8 +253,14 @@ EVENT_KEYWORDS = {
         "comeback", "highlights", "fixture", "clash", "derby",
     },
     "APPOINTMENT": {
-        "appoint", "appointed", "manager", "coach", "sacked", "sack", "resign",
-        "resigns", "interim", "replace", "replaces", "dugout", "boss",
+        "appoint", "appointed", "appoints", "manager", "coach", "sacked",
+        "sack", "sacks", "sacking", "resign", "resigns", "resigned", "interim",
+        "replace", "replaces", "dugout", "boss",
+        # V1.0 P0-1：补齐英媒写换帅最常用的两个说法。
+        # 这两个词同时是「球员离队」的常用词，因此列入 _AMBIGUOUS_MANAGER，
+        # 只有在管理层语境下才计入（见 _managerial_context）。
+        "departure", "departures", "dismiss", "dismisses", "dismissed",
+        "dismissal",
     },
     "DEATH": {"dies", "died", "death", "dead", "funeral", "tribute", "mourning"},
     "LEGAL": {
@@ -261,6 +270,48 @@ EVENT_KEYWORDS = {
     "ILLNESS": {
         "illness", "cancer", "hospital", "hospitalised", "hospitalized",
         "intensive", "condition",
+    },
+    # ==================== V1.0 核心修复：补齐缺失的事件类型 ====================
+    # 为什么必须补：实测 C 罗国家队退役的 10 条标题里，9 条判不出类型，
+    # 1 条因为含 "manager" 被误判成 APPOINTMENT。判不出类型，后面的人物比对、
+    # 事件聚合、重要性分级全部失效——不是「判得不准」，是「根本没判」。
+    #
+    # 命名说明：任务书里的 DISCIPLINARY 在本文件中对应既有的 DISCIPLINE
+    # （第 242 行）。为不破坏既有调用方与历史 state.json，保留 DISCIPLINE 作为
+    # 规范名，DISCIPLINARY 仅作为 content_type 侧的语义别名，不在此重复定义。
+    "RETIREMENT": {
+        "retire", "retires", "retired", "retiring", "retirement",
+        "retirements", "farewell", "swansong",
+    },
+    "PLAYER_CAREER": {
+        "career", "careers", "legacy", "testimonial", "era", "milestone",
+        "journeyman", "spell",
+    },
+    "NATIONAL_TEAM": {
+        "international", "internationals", "caps", "capped", "qualifier",
+        "qualifiers", "callup", "nationals",
+    },
+    "CLUB_OWNERSHIP": {
+        "owner", "owners", "ownership", "takeover", "takeovers", "stake",
+        "stakes", "consortium", "buyout", "acquisition", "investor",
+        "investors", "shareholder", "administration", "insolvency",
+        "insolvent", "bankrupt", "bankruptcy", "receivership", "liquidation",
+    },
+    "GOVERNANCE": {
+        "governance", "board", "chairman", "chairwoman", "ceo", "director",
+        "directors", "hierarchy", "structure", "policy", "regulation",
+        "regulations", "charter",
+    },
+    "SPONSORSHIP": {
+        "sponsor", "sponsors", "sponsorship", "kitdeal", "namingrights",
+    },
+    "MATCH_FIXING": {
+        "fixing", "matchfixing", "spotfixing", "bribery", "corruption",
+        "syndicate", "betting", "rigging",
+    },
+    "SAFETY_WELFARE": {
+        "crush", "stampede", "collapse", "evacuation", "casualties",
+        "casualty", "safety", "welfare", "concussion", "cardiac",
     },
 }
 
@@ -275,6 +326,15 @@ EVENT_KEYWORDS_ZH = {
     "DEATH": ("去世", "逝世", "离世", "哀悼", "葬礼"),
     "LEGAL": ("被捕", "起诉", "法院", "警方", "判刑", "调查", "指控"),
     "ILLNESS": ("重病", "癌症", "住院", "病危"),
+    # V1.0 新增类型的中文词
+    "RETIREMENT": ("退役", "挂靴", "宣布退役", "结束职业生涯"),
+    "PLAYER_CAREER": ("职业生涯", "生涯", "告别战", "里程碑"),
+    "NATIONAL_TEAM": ("国家队", "国脚", "为国出战", "国家队生涯"),
+    "CLUB_OWNERSHIP": ("收购", "股权", "所有权", "控股", "破产", "托管", "接管"),
+    "GOVERNANCE": ("管理层", "董事会", "主席", "治理", "架构", "章程"),
+    "SPONSORSHIP": ("赞助", "胸前广告", "冠名"),
+    "MATCH_FIXING": ("假球", "操纵比赛", "赌球", "行贿", "腐败"),
+    "SAFETY_WELFARE": ("踩踏", "坍塌", "安全事故", "脑震荡", "心脏"),
 }
 
 # 俱乐部主体词表。只放**无歧义**的写法：united / city / town 这类后缀太泛，
@@ -289,6 +349,138 @@ CLUB_TOKENS = {
 }
 
 
+# ==================== 多义词消歧（V1.0 P0-1） ====================
+# 背景：`sack` 一个词同时是「解雇」和「袋子」。实测一条
+# 「Arsenal Kids Christmas Sack - Arsenal Direct」（阿森纳官方商店的圣诞袜袋）
+# 因为命中 sack 被判成 APPOINTMENT，再经 A_PL_GOVERNANCE 抬成 A 级俱乐部治理
+# 新闻，以 OFFICIAL_CONFIRMED 身份进了早报。
+#
+# 处理方式不是删词，而是**给多义词加语境条件**：
+#   · 有主教练/管理层职位词 → 算解雇
+#   · 有紧邻的人名（sack Julen Lopetegui / Lopetegui departure）→ 算解雇
+#   · 有商品语境（Christmas / Santa / gift / 商店）→ 名词用法，不算解雇
+#   · 其余 → 宁可不判，也不把名词当解雇
+_AMBIGUOUS_MANAGER = frozenset({
+    "sack", "sacks", "sacked", "sacking",
+    "departure", "departures", "dismiss", "dismisses", "dismissed", "dismissal",
+})
+
+_MANAGER_ROLE = re.compile(
+    r"\b(manager|managers|boss|head\s+coach|coach|coaches|gaffer|dugout|"
+    r"caretaker|interim|sporting\s+director|technical\s+director|"
+    r"director\s+of\s+football)\b",
+    re.I,
+)
+
+# "sack Julen Lopetegui" / "sacked Erik ten Hag"：解雇词后紧跟人名
+_MANAGER_NAME_AFTER = re.compile(
+    r"\b(?:sack|sacks|sacked|sacking|dismiss|dismisses|dismissed)\s+"
+    r"((?:[A-Z][\w'’\-]+\s*){1,3})"
+)
+# "Lopetegui departure" / "Ten Hag's exit"：人名后跟离任词
+_MANAGER_NAME_BEFORE = re.compile(
+    r"\b((?:[A-Z][\w'’\-]+\s*){1,3})(?:'s|’s)?\s+(?:departure|exit|sacking|dismissal)\b"
+)
+# "parts company with Lopetegui"：短语后跟人名
+_MANAGER_NAME_AFTER_PHRASE = re.compile(
+    r"\bpart(?:s|ed)?\s+company\s+with\s+((?:[A-Z][\w'’\-]+\s*){1,3})"
+)
+
+# 商品语境：命中即认定 sack 是「袋子」而不是「解雇」
+_MERCH_CONTEXT = re.compile(
+    r"\b(christmas|santa|xmas|gift|gifts|stocking|advent|festive|"
+    r"merchandise|merch|decoration|decorations|ornament|plaque|bauble|"
+    r"club\s+shop|club\s+store|official\s+store|online\s+store|megastore)\b",
+    re.I,
+)
+
+# 这些人名位捕获到的其实是品牌/品类/职务/普通名词，不是具体的人。
+# 方向是**宁可少判**：漏掉一个名字只是少一次 APPOINTMENT，
+# 把「Player departure」「Steward dismissal」当成人名，就会把球员离队
+# 和场上罚下误判成换帅。
+_NOT_A_PERSON = frozenset({
+    "direct", "official", "store", "shop", "club", "clubs", "christmas",
+    "santa", "kids", "home", "away", "third", "new", "the", "and",
+    "player", "players", "team", "teams", "squad", "star", "stars",
+    "skipper", "captain", "winger", "striker", "defender", "keeper",
+    "goalkeeper", "midfielder", "forward", "boss", "manager", "coach",
+    "head", "steward", "referee", "official", "board", "chairman",
+    "owner", "owners", "fans", "fan", "supporters", "staff", "medical",
+    "update", "latest", "report", "exclusive", "breaking", "confirmed",
+    "statement", "news", "transfer", "window", "contract", "deal",
+    "season", "match", "game", "cup", "league", "premier", "football",
+    "sport", "sports", "first", "next", "last", "another", "his", "her",
+})
+
+# 明确表达「离任」的短语（分词取不到，只能整句匹配）
+_APPOINTMENT_PHRASES = (
+    re.compile(r"\bpart(?:s|ed)?\s+company\s+with\b", re.I),
+    re.compile(r"\bstep(?:s|ped)?\s+down\s+as\b", re.I),
+)
+
+# 明确的任免动作动词。带这类动词的标题，APPOINTMENT 权重高于
+# derby / defeat / win 这类「场景词」——「Everton sack Sean Dyche after derby
+# defeat」是换帅新闻，不是德比战报，但 defeat 和 derby 各计 1 分会把它压成 MATCH。
+_MANAGER_ACTION = re.compile(
+    r"\b(sack|sacks|sacked|sacking|dismiss|dismisses|dismissed|"
+    r"appoint|appoints|appointed|resign|resigns|resigned)\b|"
+    r"\bpart(?:s|ed)?\s+company\s+with\b",
+    re.I,
+)
+
+
+# 常见假朋友短语：先归一化再分词，否则会污染事件类型。
+#   「in charge」= 在位/执教，不是「指控」。实测
+#   「Lopetegui leaves West Ham after seven months in charge」被判成 DISCIPLINE，
+#   于是一次换帅被推到纪律族，和同簇的其它报道分家。
+_FALSE_FRIENDS = (
+    (re.compile(r"\bin\s+charge\b", re.I), "in the dugout"),
+    (re.compile(r"\bcharge\s+of\s+(the\s+)?(team|squad|transfers|recruitment)\b",
+                re.I), r"running the \2"),
+)
+
+
+# 「dismiss」的第二个义项：驳回、淡化。
+#   「Arteta dismisses Isak penalty furore」= 阿尔特塔淡化点球争议，
+#   和「解雇」毫无关系。实测这条把一整个 Arsenal 赛前事件从
+#   COMPETITIVE_NEWS 拉成了 CLUB_GOVERNANCE。
+# 判别方式：dismiss 后面跟的是**抽象名词**（争议、说法、传闻）而不是人。
+# 注意顺序：先看职位词，有「manager / head coach」就一定是任免语境，
+# 不会被「after claims of ...」这类从句误伤。
+_DISMISS_ABSTRACT = re.compile(
+    r"\bdismiss(?:es|ed|ing|al)?\b"
+    r"(?:\s+[\w'’\-]+){0,4}?\s+"
+    r"(furore|furores|claims?|talk|speculation|suggestions?|criticism|"
+    r"fears?|concerns?|worries|rumours?|rumors?|questions?|notion|"
+    r"possibility|chatter|noise|hype|row|controversy|comparisons?|"
+    r"links?|reports?|stories|story)\b",
+    re.I,
+)
+
+
+def _managerial_context(title):
+    """标题里的解雇类词是否处于「主教练/管理层」语境。"""
+    text = title or ""
+    if _MERCH_CONTEXT.search(text):
+        return False
+    # 有职位词 → 一定是任免语境。这一条必须排在抽象名词判定之前，
+    # 否则「dismissed head coach after claims of misconduct」会被误判成驳回。
+    if _MANAGER_ROLE.search(text):
+        return True
+    # 没有职位词，而 dismiss 的宾语是抽象名词 → 驳回/淡化，不是解雇
+    if _DISMISS_ABSTRACT.search(text):
+        return False
+    for rx in (_MANAGER_NAME_AFTER, _MANAGER_NAME_BEFORE,
+               _MANAGER_NAME_AFTER_PHRASE):
+        m = rx.search(text)
+        if not m:
+            continue
+        first = re.split(r"\s+", m.group(1).strip())[0].lower().strip("'’-")
+        if first and first not in CLUB_TOKENS and first not in _NOT_A_PERSON:
+            return True
+    return False
+
+
 def _token_list(text):
     """保序分词（用于定位事件类型词出现的先后）。"""
     raw = (text or "").lower()
@@ -300,10 +492,20 @@ def _event_hits(title):
     text = (title or "").lower()
     if not text:
         return {}
+    for rx, repl in _FALSE_FRIENDS:
+        text = rx.sub(repl, text)
     toks = _token_list(text)
+    managerial = _managerial_context(title)
     hits = {}
     for etype, kws in EVENT_KEYWORDS.items():
-        positions = [i for i, t in enumerate(toks) if t in kws]
+        positions = []
+        for i, t in enumerate(toks):
+            if t not in kws:
+                continue
+            # 多义词消歧：没有管理层语境时，sack / departure 一律按名词处理
+            if etype == "APPOINTMENT" and t in _AMBIGUOUS_MANAGER and not managerial:
+                continue
+            positions.append(i)
         count = len(positions)
         first = positions[0] if positions else None
         for zh in EVENT_KEYWORDS_ZH.get(etype, ()):
@@ -312,6 +514,17 @@ def _event_hits(title):
                 count += n
                 pos = text.find(zh)
                 first = pos if first is None else min(first, pos)
+        # 「part company with」「step down as」这类短语分词取不到，单独补。
+        # 同样要求管理层语境，避免「球员与俱乐部解约」被当成换帅。
+        if etype == "APPOINTMENT" and managerial:
+            for rx in _APPOINTMENT_PHRASES:
+                m = rx.search(text)
+                if m:
+                    count += 1
+                    first = m.start() if first is None else min(first, m.start())
+            # 明确的任免动作动词 +1：压过 derby / defeat 这类场景词
+            if _MANAGER_ACTION.search(text):
+                count += 1
         if count:
             hits[etype] = (count, first if first is not None else 10 ** 6)
     return hits

@@ -33,6 +33,30 @@ MODULES = [
     "tests.test_focus_tick",
     "tests.test_focus_keeper",
     "tests.test_git_commit",
+    # ---- V1.0 核心修复（任务 1—4 + 三个已批准参数）----
+    "tests.test_content_type",       # 任务 1：内容类型
+    "tests.test_importance",         # 任务 2：重要性分级
+    "tests.test_event_aggregation",  # 任务 4：事件聚合与证据累积
+    "tests.test_morning_ranking",    # 任务 3：早报排序 + T11 保留位空置
+    "tests.test_multi_event_push",   # T12：S 级软上限
+    "tests.test_review_queue",       # T13：E4 级 S 事件人工审核
+    # ---- V1.0 发布前验收补强（第 2—5 项）----
+    "tests.test_event_slot",         # 第 2 项：事件名额与证据名额分离
+    "tests.test_review_safety",      # 第 3 项：E4 审核安全检查
+    "tests.test_importance_switch",  # 第 4 项：IMPORTANCE_SORT 双模式
+    "tests.test_cross_type_blind",   # 第 5 项：跨事件类型盲测
+    # ---- V1.0 P0-1 阻断缺陷修复 ----
+    "tests.test_merch_vs_news",      # P0-1：商品页 vs 解雇新闻对抗
+    # ---- V1.1 P0 安全补充：审核数据脱离公开 state.json ----
+    "tests.test_review_privacy_v11",  # 十项安全测试 + Python↔Worker 契约
+    # ---- PR #1 安全审查整改（P0 / P1 / P2）----
+    "tests.test_news_pool_privacy",   # P0：新闻池与审核状态的关联泄露
+    "tests.test_review_lease_expiry", # P1：claim 租约过期不得自动重发
+    "tests.test_review_fail_closed",  # P2：approve/decline fail-closed
+    # ---- 第二轮审查：自动退出审核调用链（生产路径，非直接传 review_ref）----
+    "tests.test_review_exit_chain",
+    # ---- 最终合并审核整改（P1-A 自动退出 fail-closed / P1-B 合并路径隐私守卫）----
+    "tests.test_merge_state_privacy",
 ]
 FAST_SKIP = {"tests.test_git_commit"}
 
@@ -52,7 +76,8 @@ def main():
 
     print("\n" + "=" * 60)
     print(f"模块数 {len(modules)} | 用例 {result.testsRun} | "
-          f"失败 {len(result.failures)} | 错误 {len(result.errors)} | 耗时 {elapsed:.1f}s")
+          f"失败 {len(result.failures)} | 错误 {len(result.errors)} | "
+          f"跳过 {len(result.skipped)} | 耗时 {elapsed:.1f}s")
     print("=" * 60)
     return 0 if result.wasSuccessful() else 1
 

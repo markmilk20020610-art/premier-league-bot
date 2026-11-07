@@ -19,14 +19,24 @@
 
 ## 为什么不会重复推送
 
-三道锁，任何一道生效都不会出现第二条早报：
+四道锁，任何一道生效都不会出现第二条早报：
 
-  1. **本脚本的补发窗口**：只在 06:00 ~ 06:20（北京时间）之间动手，
-     最多 5 次尝试（scan 每 5 分钟一次），窗口一过就交给 07:00 的看门狗报红。
+  1. **本脚本的补发窗口**：只在 06:00 ~ 09:00（北京时间）之间动手。
+     180 分钟窗口 ÷ 5 分钟一次 scan = 最多 36 次尝试，窗口一过就停手。
      这不是「无限重试」——是有明确上限的有限重试。
-  2. **API 去重**：已经有 `in_progress` / `queued` 的 scanner run 就不再补。
-  3. **bot.py 的日期锁**：`last_morning_report_date == 今天` 直接 `MORNING_ALREADY_SENT`，
-     即使前两道全失效，也不会发第二条。
+  2. **自我排除**：本脚本自己就跑在某一条 scan run 里，那条 run 的状态恒为
+     `in_progress`。若不排除，本脚本 100% 自我阻塞、永远不补发（这是修掉的真缺陷，
+     见 `_blocking_runs`）。用 `GITHUB_RUN_ID` 精确排除自己，不靠猜。
+  3. **API 去重**：已经有**目标时刻之后创建的** `in_progress` / `queued` run 就不再补。
+  4. **bot.py 的日期锁**：`last_morning_report_date == 今天` 直接 `MORNING_ALREADY_SENT`，
+     即使前三道全失效，也不会发第二条。
+
+## 为什么窗口从 20 分钟放宽到 180 分钟
+
+20 分钟的窗口只有 4 次机会，而 scan 本身要跑 1~3 分钟，再叠上
+GitHub 的排队与 API 抖动，实测经常整段窗口都在「已有 run 在跑」里空转过去。
+用户明确要求 06:00 正常触发、06:26 / 07:57 / 08:59 都能补上、09:01 不再补，
+180 分钟正好是 06:00 + 3 小时，与 09:00 的边界一致。
 
 ## 权限
 
@@ -59,8 +69,15 @@ MORNING_TARGET_HOUR_CN = 6
 MORNING_TARGET_MINUTE_CN = 0
 
 # 补发窗口：目标时刻之后多少分钟内允许补触发。
-# 5 分钟一次 scan → 最多 5 次尝试，超过就停手，避免「模型挂了就无限重试」。
-RETRY_BAND_MINUTES = 20
+#
+# 20 → 180（B1）。理由：
+#   · 20 分钟只有 4 次机会，而 scan 自己就要跑 1~3 分钟，再叠上排队与 API 抖动，
+#     实测整段窗口经常都在「已有 run 在跑」里空转过去，早报照样迟到；
+#   · 用户要求的行为边界很明确：06:00 正常触发，06:26 / 07:57 / 08:59 都要能补上，
+#     09:01 不再补 —— 正好是 06:00 + 180 分钟；
+#   · 放宽窗口不会造成重复推送：bot.py 的 last_morning_report_date 日期锁是最后一道闸，
+#     窗口内每多试一次，只是多一次「查到已发就退出」的空转。
+RETRY_BAND_MINUTES = 180
 
 # 这些状态算「已经在队列里」，不必再补
 ACTIVE_STATUSES = ("queued", "waiting", "pending", "requested", "in_progress")
@@ -113,7 +130,60 @@ def target_of(now_cn):
                           second=0, microsecond=0)
 
 
-def decide(now_cn, last_morning_date, runs=None):
+def _parse_iso(raw):
+    """把 GitHub 的 ISO 时间戳解析成 aware datetime；失败返回 None。"""
+    if not raw:
+        return None
+    txt = str(raw).strip()
+    if txt.endswith("Z"):
+        txt = txt[:-1] + "+00:00"
+    try:
+        dt = datetime.datetime.fromisoformat(txt)
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=datetime.timezone.utc)
+    return dt
+
+
+def _blocking_runs(runs, target, current_run_id=None):
+    """返回真正会阻塞补触发的 run 列表。
+
+    B2 修的就是这里。旧实现把**所有** ACTIVE_STATUSES 的 run 都当成阻塞，
+    而本脚本自己就跑在一条 scan run 里——那条 run 的状态恒为 in_progress，
+    于是「永远至少有一个 active run」，`decide()` 100% 返回 False，
+    早报补偿功能从头到尾一次都没生效过。
+
+    三条排除规则，全部由程序按 API 字段判定，不靠猜测：
+      1. **排除自己**：run id == GITHUB_RUN_ID。这是最关键的修正。
+      2. **排除目标时刻之前创建的 run**：06:00 之前创建并仍在跑的 run 只可能是
+         普通扫描，不可能是今天的早报补触发，不该拦住早报。
+      3. **排除已结束的 run**：只认 ACTIVE_STATUSES，completed/failure 不拦。
+
+    注意一个诚实的局限：GitHub 的 run 列表 API **不返回 workflow_dispatch 的 inputs**，
+    所以无法直接判断「这条 run 是不是 mode=morning」。因此规则 2 采取保守口径——
+    06:00 之后创建的活跃 run 一律视为「可能是早报」而选择等待。
+    代价是偶尔多等一轮（5 分钟），收益是绝不会重复触发早报。
+    180 分钟的窗口给足了 36 轮机会，这个代价可以忽略。
+    """
+    target_utc = target.astimezone(datetime.timezone.utc)
+    blocking = []
+    for r in runs or []:
+        if not isinstance(r, dict):
+            continue
+        rid = str(r.get("id") or "")
+        if current_run_id and rid == str(current_run_id):
+            continue                       # 规则 1：不能自己拦自己
+        if (r.get("status") or "") not in ACTIVE_STATUSES:
+            continue                       # 规则 3：已结束的不算
+        created = _parse_iso(r.get("created_at") or r.get("run_started_at"))
+        if created is not None and created < target_utc:
+            continue                       # 规则 2：目标时刻之前的 run 与早报无关
+        blocking.append(r)
+    return blocking
+
+
+def decide(now_cn, last_morning_date, runs=None, current_run_id=None):
     """返回 (should_dispatch, reason)。纯函数，方便测试。"""
     today = now_cn.strftime("%Y-%m-%d")
     target = target_of(now_cn)
@@ -126,17 +196,19 @@ def decide(now_cn, last_morning_date, runs=None):
                        f"（北京 {now_cn.strftime('%H:%M')}）")
     if drift_min > RETRY_BAND_MINUTES:
         return False, (f"已过补发窗口：漂移 {drift_min:.0f} 分钟 > {RETRY_BAND_MINUTES} 分钟，"
-                       f"不再重试，交给 07:00 的看门狗报红")
+                       f"不再重试，交给看门狗报红")
 
-    active = [r for r in (runs or []) if (r.get("status") or "") in ACTIVE_STATUSES]
-    if active:
-        return False, f"已有 {len(active)} 条 scanner run 在跑/排队，等它们出结果"
+    blocking = _blocking_runs(runs, target, current_run_id)
+    if blocking:
+        return False, (f"已有 {len(blocking)} 条与早报相关的 run 在跑/排队"
+                       f"（已排除当前 run {current_run_id or '-'}），等它们出结果")
 
     return True, (f"北京 {now_cn.strftime('%H:%M')}，今日（{today}）早报未发送，"
                   f"补触发 morning（漂移 {drift_min:+.0f} 分钟）")
 
 
-def ensure(token, repo, transport=None, now=None, last_morning_date=None, dry_run=False):
+def ensure(token, repo, transport=None, now=None, last_morning_date=None,
+           dry_run=False, current_run_id=None):
     """主逻辑。返回 (ok, message)。任何异常都不抛出。"""
     transport = transport or _request
     now_cn = beijing_now(now)
@@ -151,7 +223,7 @@ def ensure(token, repo, transport=None, now=None, last_morning_date=None, dry_ru
         return False, f"查询运行列表失败 {type(exc).__name__}: {exc}"
 
     runs = (data or {}).get("workflow_runs") or []
-    should, reason = decide(now_cn, last_morning_date, runs)
+    should, reason = decide(now_cn, last_morning_date, runs, current_run_id)
     if not should:
         return True, f"跳过：{reason}"
     if dry_run:
@@ -166,6 +238,15 @@ def ensure(token, repo, transport=None, now=None, last_morning_date=None, dry_ru
     return True, f"已触发：{reason}"
 
 
+def current_run_id_from_env():
+    """当前 GitHub Actions run 的 id。本地运行时为空串。
+
+    `GITHUB_RUN_ID` 是 GitHub 内置环境变量，在 job 的每一步都存在，
+    所以不需要额外传参，也不存在「猜一个 id 出来」的可能。
+    """
+    return str(os.environ.get("GITHUB_RUN_ID") or "").strip()
+
+
 def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
     dry_run = "--dry-run" in argv
@@ -174,10 +255,11 @@ def main(argv=None):
     if not token or not repo:
         print("[INFO] 没有 GH_TOKEN / GH_REPO，跳过（本地运行属正常）")
         return 0
-    ok, msg = ensure(token, repo, dry_run=dry_run)
-    print(f"[{'OK' if ok else 'WARN'}] {msg}")
+    run_id = current_run_id_from_env()
+    ok, msg = ensure(token, repo, dry_run=dry_run, current_run_id=run_id)
+    print(f"[{'OK' if ok else 'WARN'}] 当前 run={run_id or '-'} | {msg}")
     # 补触发失败不该让整个扫描 job 变红——新闻扫描比这个重要，
-    # 而且 5 分钟后还会再试（窗口内最多 5 次）。
+    # 而且 5 分钟后还会再试（窗口内最多 36 次）。
     return 0
 
 
