@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-07",
     "errors": 0,
-    "input_tokens": 37368,
-    "output_tokens": 3728,
-    "requests": 5
+    "input_tokens": 43466,
+    "output_tokens": 4525,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1279,7 +1279,7 @@
     }
   },
   "last_morning_report_date": "2026-11-07",
-  "last_scan_at": "2026-11-07T01:10:25.733229+00:00",
+  "last_scan_at": "2026-11-07T04:00:49.687700+00:00",
   "last_summary_sent_at": "2026-11-07T01:43:01.122450+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1301,6 +1301,26 @@
   },
   "news_pool": [
     {
+      "desc": "Arsenal FC Official Website Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T04:00:49.690490+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MWlhFUDFIeHAyZkZFV1JNbmZVN0h0M0h1N0I1TGVkRU5WRTZIV3Y4VzBEbUoyTWFnMWlWbFBQa0lWMTRWcEVNWmxSdUl2OW5NaHMybzBBektONDd1UG5oX2ZuVUZ4RnE3cEh3S3JfTkwwRzJmeDBnNENXX3YxZkU?oc=5",
+      "published": "2026-11-07T03:15:19+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal FC Official Website - Arsenal.com"
+    },
+    {
+      "desc": "From Parma to Palace: Clubs that won European trophies without ever claiming a league title LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T04:00:49.690519+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQN0Z3Rl9WM1FrZFB4aFI0VjhWQmh3S1p2UEQ1RHZCSWxYY0lKVk5jaUFydk9aVVZfZHc4M2xyd2hGZmlZcVJaTHJsWGtlOFY2VlVfS0FiRkFBNm85Y1JaZE80ZjI0Vi1qVmdDRER0RGU4RHdGZkJCYVIxdmZMLUstaUMzMklEaWE2ejV0VlJJczd3MGVaVjYzV3ZVWENObTZxcnlCbFlIdy1hTGRqVjhXdklVS19OLTBURDI5UVIyUzR2a242UWdTX2JwV0xiOWdkay1pekYwZmx0WkFvS1hFYjQ2dS1Fdnp5MjdPQw?oc=5",
+      "published": "2026-11-07T01:45:30+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "From Parma to Palace: Clubs that won European trophies without ever claiming a league title - LiveScore"
+    },
+    {
       "desc": "🪔GALA DEEPAVALI GW10! Fantasy Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-07T01:10:25.736665+00:00",
@@ -1311,6 +1331,16 @@
       "title": "🪔GALA DEEPAVALI GW10! - Fantasy Premier League"
     },
     {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T04:00:49.690538+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
+      "published": "2026-11-07T00:12:14+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
+    },
+    {
       "desc": "Kiernan Dewsbury-Hall responds to his England omission by scoring a stunning goal to inspire Everton's 3-1 comeback vict",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-07T01:10:25.736726+00:00",
@@ -1319,6 +1349,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "England 'disappointment' fuels Dewsbury-Hall's Everton heroics"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T04:00:49.690610+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-06T23:50:01+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "MICHAEL PLANT AT THE HILL DICKNSON STADIUM: Maybe Everton should request to play under the lights every week. It certain",
@@ -1389,6 +1429,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea youngster, 19, gets shock international call-up by former Blues boss despite never playing in the Premier League"
+    },
+    {
+      "desc": "Man City v West Ham - 7 Nov 2026 Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T04:00:49.690743+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9LeC1IVXJLeHh2UXJlN1lpdmtsTFV4bHlnZEV6MXpQTGFmaC0tR0FCdC15TDAtZ1J2eUFMLUZNS2M3alJvaTdDdDFXUWxOMlN5VS1CMWloNXpZZGwwdnYycjRjOFNCQkFNOEpIVFo5bVFjdDI2TktPNg?oc=5",
+      "published": "2026-11-06T22:42:19+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City v West Ham - 7 Nov 2026 - Manchester City FC"
     },
     {
       "desc": "One of Thomas Tuchel's favourite analogies when it comes to the development of his England team is that of a train leavi",
@@ -1551,6 +1601,16 @@
       "title": "- Liverpool FC"
     },
     {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T04:00:49.691011+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-06T20:46:31+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
+    {
       "desc": "Tavernier to Arsenal: How He Transforms Arteta's 4-3-3 The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-06T21:33:42.317237+00:00",
@@ -1609,6 +1669,16 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd: Striker signing expected to go through and major star leaving – Fabrizio Romano - Football365"
+    },
+    {
+      "desc": "FPL Challenge: Expert reveals their Gameweek 10 team Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-07T04:00:49.691072+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZ3hrbUVYS3RRajhMTDZ3R1FLY3ZZVlhmQWVwdnlRa2I2eERoV3c5MC14MHFHczdFVC1yOTFFSXJlZEhkNm1vamsxSk1XNml5WVRONVhJb3NNcnNqcXFEUGNwTWg2YnotdnUxbjJrZW5nYWFwb242Ny1na0xjWWk5TEdodjhtX1RlSU5mMmFBV29keGp6SEtiTHhMWlpOQQ?oc=5",
+      "published": "2026-11-06T20:03:30+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "FPL Challenge: Expert reveals their Gameweek 10 team - Premier League"
     },
     {
       "desc": "Premier League: Leeds United goalkeeper James Trafford on mental health challenges BBC",
@@ -2729,76 +2799,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Real Madrid, Barcelona, Man Utd games with UEFA Champions League tickets and official packages from just £100pp"
-    },
-    {
-      "desc": "Premier League launches video streaming service in Singapore Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T08:30:25.721804+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EVk9TcFNSbEVMWmd3UjZFeFBMVE15bEVBNVZ0T0pCRWZuem1LNDlnRklKMDFobFMxQzVvdlZ2NGVzOERJYmxvUTdQSDdna1ZhaW1KUFJFZlM?oc=5",
-      "published": "2026-11-06T00:45:20+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League launches video streaming service in Singapore - Premier League"
-    },
-    {
-      "desc": "Socceroos still waiting for World Cup payment from FA ABC News & Headlines – Australian Broadcasting Corporation",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T01:38:30.671205+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdUYyVm9VM1hVZWRRU3h3S1FOQXktemRyeG1GVWVGME9iN2xEOXhfd2p0aFh3WGlHUXJkajRaODVvTzhPMUdLVkdOMDVZUmlUellMcXYxV2ZzUWNxNmpSTDR2VkZkc2c4Sy1sOFJVRGtNNVAxZWQwU3Y1N0MtRFNDVHZWbFB4STlSNWVzZi00U1FXX0diQkVkSlZ5V0d5aWlyRmFXTg?oc=5",
-      "published": "2026-11-06T00:33:45+00:00",
-      "publisher": "https://www.abc.net.au",
-      "source": "https://www.thefa.com/rss",
-      "title": "Socceroos still waiting for World Cup payment from FA - ABC News & Headlines – Australian Broadcasting Corporation"
-    },
-    {
-      "desc": "'A little setback' - Farke's injury update on Calvert-Lewin Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-06T04:00:48.139723+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1yc1lKV0FpYnN6REtoazRtM2tpTDlBdTVtR3ZpVkpfS2dSZFNCaC1nRDFyaGZTZVFSeklyTzlOWDlseW12MExnNkhSRW5sOTdaY0dNSTJfaHk?oc=5",
-      "published": "2026-11-06T00:28:15+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "'A little setback' - Farke's injury update on Calvert-Lewin - Premier League"
-    },
-    {
-      "desc": "Martin O'Neill has previously said he is unsure of his best team, but it is now obvious that Camilo Duran is Celtic's be",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-06T01:38:30.671224+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwd099ez7z4yo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-06T00:10:28+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Duran & Osmand spark Celtic into life - but where does that leave Hogh?"
-    },
-    {
-      "desc": "Ruben Amorim savaged his AC Milan side for their 'awful' attitude and performance in losing to Hungarian minnows Ferencv",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-06T01:38:30.671245+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16269809/Ruben-Amorim-AC-Milan-Europa-League-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-06T00:04:48+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Ruben Amorim rips into his AC Milan players after embarrassing Europa League defeat: Ex-Man United boss hits out at team's attitude and crit"
-    },
-    {
-      "desc": "ALAN SHEARER says Jack Grealish has similarities to Paul Gascoigne after the \"loveable rogue\" was dropped by Everton. Th",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-06T01:38:30.671276+00:00",
-      "link": "https://www.thesun.co.uk/sport/40933474/alan-shearer-jack-grealish-england-career-everton-dropped/",
-      "published": "2026-11-05T23:59:31+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Jack Grealish’s England career was over ‘a long time ago’ with star having a ‘Gazza stroke’, says Alan Shearer"
-    },
-    {
-      "desc": "Sunderland's unbeaten start to their first European campaign in 53 years was brought to an abrupt end by Dinamo Zagreb t",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-06T01:38:30.671296+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16267989/Bournemouth-Crystal-Palace-Sunderland-Brighton-Europa-League-Conference-League.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-05T23:40:10+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Pressure mounts on under-fire Regis Le Bris as Sunderland lose again, Bournemouth's super-subs preserve their flawless start, Pierre Sage is"
     }
   ],
   "processed_urls": [
