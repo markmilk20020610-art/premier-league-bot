@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 121,
+        "calls": 122,
         "errors": 0,
-        "requests": 121
+        "requests": 122
       }
     },
-    "calls": 121,
+    "calls": 122,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 735716,
-    "output_tokens": 72693,
-    "requests": 121
+    "input_tokens": 742063,
+    "output_tokens": 73428,
+    "requests": 122
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1480,6 +1480,41 @@
       "title": "曼城主场再战布莱顿：四天内二番战，两队均欲止颓",
       "updated_at": "2026-10-31T07:25:31.214794+00:00"
     },
+    "b9ec85637e51": {
+      "article_title": "‘I don’t believe it’ – Moment Berbatov puts his head in hands after learning Man Utd have dropped into relegation zone",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "4c0c640f9cbcf848",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 86
+        }
+      ],
+      "created_at": "2026-11-08T11:00:59.421060+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "828e9a50c82d05a4",
+      "event_id": "b9ec85637e51",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T11:00:59.421060+00:00",
+          "origin": "created",
+          "title": "‘I don’t believe it’ – Moment Berbatov puts his head in hands after learning Man Utd have dropped into relegation zone",
+          "url": "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 86,
+      "title": "贝尔巴托夫震惊曼联跌入降级区，卡里克帅位无保证",
+      "updated_at": "2026-11-08T11:01:00.753547+00:00"
+    },
     "c1ca9017032e": {
       "attempts": 1,
       "chunks": [],
@@ -1749,7 +1784,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T10:55:28.513554+00:00",
+  "last_scan_at": "2026-11-08T11:00:52.390320+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1805,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "DIMITAR BERBATOV was in disbelief as his former club Manchester United dropped into the relegation zone on Saturday. A r",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T11:00:52.393004+00:00",
+      "link": "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick/",
+      "published": "2026-11-08T10:59:31+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘I don’t believe it’ – Moment Berbatov puts his head in hands after learning Man Utd have dropped into relegation zone"
+    },
     {
       "desc": "Romano confirms “serious possibility” of Liverpool player leaving the club in 2027 LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3259,16 +3304,6 @@
       "publisher": "https://shop.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Sandro Tonali Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "ROBERT PIRES has become a dad for the fourth time as he has welcomed a new baby girl. The 53-year-old former Arsenal win",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T16:00:58.184008+00:00",
-      "link": "https://www.thesun.co.uk/sport/40949680/arsenal-robert-pires-53-dad-fourth-baby-girl/",
-      "published": "2026-11-07T15:49:47+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal legend Robert Pires, 53, becomes dad for fourth time with new partner, two years after split from wife"
     }
   ],
   "processed_urls": [
@@ -3334,7 +3369,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cr62y4yj39veo",
     "https://www.thesun.co.uk/sport/40933148/leicester-city-eva-elfie-porn-star-ambassador-bc-game",
     "https://www.thesun.co.uk/sport/40947625/mateus-fernandes-var-handball-controversy-leeds-spurs",
-    "https://www.thesun.co.uk/sport/40954486/tottenham-complaint-jayden-bogle-red-card-mathys-tel-injury"
+    "https://www.thesun.co.uk/sport/40954486/tottenham-complaint-jayden-bogle-red-card-mathys-tel-injury",
+    "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick"
   ],
   "s_overflow": {},
   "schema_version": 4
