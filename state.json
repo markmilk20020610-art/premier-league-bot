@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 160,
+        "calls": 161,
         "errors": 1,
-        "requests": 160
+        "requests": 161
       }
     },
-    "calls": 160,
+    "calls": 161,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 989920,
-    "output_tokens": 95039,
-    "requests": 160
+    "input_tokens": 996745,
+    "output_tokens": 95706,
+    "requests": 161
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1889,7 +1889,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T14:10:37.144084+00:00",
+  "last_scan_at": "2026-11-08T14:15:33.934511+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1910,6 +1910,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "REAL MADRID boss Jose Mourinho had some interesting words for Valencia gaffer Javier Aguirre following Los Blancos' 3-0 ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T14:15:33.938385+00:00",
+      "link": "https://www.thesun.co.uk/sport/40958405/jose-mourinho-brutal-valencia-boss-real-madrid/",
+      "published": "2026-11-08T14:10:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘My players are much better than yours’ – Jose Mourinho’s brutal words to Valencia boss after Real Madrid beat them 3-0"
+    },
     {
       "desc": "A DERBY in the Netherlands was postponed on just an hour's notice after fans stopped a team bus from travelling to the s",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3399,16 +3409,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Secrets of Zion Suzuki’s stunning rise from turning Man Utd down to masterminding 70m long throws"
-    },
-    {
-      "desc": "Tottenham are to issue a formal complaint over the decision not to show a red card to Leeds defender Jayden Bogle after ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T22:22:12.734490+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16274599/Furious-Tottenham-set-complain-authorities-Jayden-Bogle-escapes-red-card-Leeds-1-0-win-Elland-Road.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T19:17:07+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Furious Tottenham set to complain to authorities after Jayden Bogle escapes red card in Leeds' 1-0 win at Elland Road"
     }
   ],
   "processed_urls": [
