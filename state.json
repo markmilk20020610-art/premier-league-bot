@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 91,
+        "calls": 92,
         "errors": 0,
-        "requests": 91
+        "requests": 92
       }
     },
-    "calls": 91,
+    "calls": 92,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 560741,
-    "output_tokens": 60156,
-    "requests": 91
+    "input_tokens": 567014,
+    "output_tokens": 60920,
+    "requests": 92
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2027,6 +2027,41 @@
       "title": "卡里克未获曼联留任保证，帅位悬于维拉一战",
       "updated_at": "2026-11-08T11:20:47.263146+00:00"
     },
+    "d60aad727d8c": {
+      "article_title": "Manchester United book Michael Carrick sack decision meeting - inkl",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "02bddc88069973e5",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 102
+        }
+      ],
+      "created_at": "2026-11-08T23:40:49.984914+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "5bfa8161504ba323",
+      "event_id": "d60aad727d8c",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T23:40:49.984914+00:00",
+          "origin": "created",
+          "title": "Manchester United book Michael Carrick sack decision meeting - inkl",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEMtZ01BcEd4emZpd2ZMbVpMMWVaSjYwcTFLbnJWWEdneUNRQkZXdklHdVEtY3RFdzJhQTRXZG5jUjNydGpwV3RHQ1o4Rm1oMWZwUXVHTzh0bW5fYk5HV3VsWTJqWklnd3llNlNoa2xnTWo1MWVVX0ZCdTQxeUZOQWtRYlRBV0owU25HNkh6NA"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEMtZ01BcEd4emZpd2ZMbVpMMWVaSjYwcTFLbnJWWEdneUNRQkZXdklHdVEtY3RFdzJhQTRXZG5jUjNydGpwV3RHQ1o4Rm1oMWZwUXVHTzh0bW5fYk5HV3VsWTJqWklnd3llNlNoa2xnTWo1MWVVX0ZCdTQxeUZOQWtRYlRBV0owU25HNkh6NA",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 102,
+      "title": "曼联为卡里克安排解雇决定会议",
+      "updated_at": "2026-11-08T23:40:50.622616+00:00"
+    },
     "dd13e9d267b9": {
       "article_title": "Acting legend shares first pic from Sir Alex Ferguson 40th anniversary dinner with Man Utd icon surrounded by ex-stars",
       "attempts": 1,
@@ -2274,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-08T23:35:30.908744+00:00",
+  "last_scan_at": "2026-11-08T23:40:43.178093+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2814,6 +2849,16 @@
       "publisher": "https://tickets.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
+      "desc": "Al3yala league Fantasy Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T23:40:43.182983+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05OEd6UEM1V1ZpeERwbGNLWDBNcUJNRllad0RWY3djdlE2QjM3THRhcU5nX3ZLcWpKX1NhdTNubVo4MnVEYVk2eGN1U0pEajFhNTQxMzV3Z2NMUThTeDFyRGFTQTEzOVNRU05VYlE4R0Y?oc=5",
+      "published": "2026-11-08T18:14:51+00:00",
+      "publisher": "https://fantasy.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Al3yala league - Fantasy Premier League"
     },
     {
       "desc": "XABI ALONSO slammed his Chelsea defenders after Brian Brobbey pounded them into submission at Sunderland. Levi Colwill w",
@@ -3784,16 +3829,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Sunderland - Chelsea Football Club"
-    },
-    {
-      "desc": "Under 18s - 5 - Premier League 2 Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T15:15:30.943735+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNR09VMTdOOWtEcDJPRHZfMmdzZEkzZEpRblQtWDBWbkpITWlWRzhTV0R4d285aEVXelBnRmVyTzFoeTVQRFZJNlRlRHh2U09lWXJacm43SDZHR2JSd1BrdFNLdFl5Qlhtd05VVTZEdmdsLTMzb1lFRWl6WHEweGxFNy1LMmdZNlM5bTNfSklVVVBmbXR5QUhQZA?oc=5",
-      "published": "2026-11-08T13:39:44+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Under 18s - 5 - Premier League 2 - Liverpool FC"
     }
   ],
   "processed_urls": [
@@ -3874,7 +3909,8 @@
     "https://www.thesun.co.uk/sport/40962137/man-utd-jaydan-kamason-wipes-out-linesman-under-21",
     "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo",
     "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage",
-    "https://www.bbc.co.uk/sport/football/articles/c623dpeey3e4o"
+    "https://www.bbc.co.uk/sport/football/articles/c623dpeey3e4o",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEMtZ01BcEd4emZpd2ZMbVpMMWVaSjYwcTFLbnJWWEdneUNRQkZXdklHdVEtY3RFdzJhQTRXZG5jUjNydGpwV3RHQ1o4Rm1oMWZwUXVHTzh0bW5fYk5HV3VsWTJqWklnd3llNlNoa2xnTWo1MWVVX0ZCdTQxeUZOQWtRYlRBV0owU25HNkh6NA"
   ],
   "s_overflow": {},
   "schema_version": 4
