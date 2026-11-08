@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 33,
+        "calls": 34,
         "errors": 0,
-        "requests": 33
+        "requests": 34
       }
     },
-    "calls": 33,
+    "calls": 34,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 211676,
-    "output_tokens": 19666,
-    "requests": 33
+    "input_tokens": 218211,
+    "output_tokens": 20304,
+    "requests": 34
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T03:40:35.602083+00:00",
+  "last_scan_at": "2026-11-08T03:45:39.709416+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2039,6 +2039,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Commentators haven't the foggiest idea what's going on: Thick mist ruins FA Cup clash for TV viewers - and fans use phone torches to see the"
+    },
+    {
+      "desc": "Michael Onyike Videos & Best Moments Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T03:45:39.713719+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBRX1VsWjFUWVRqTHU4QkFNVVR1d0xCWjRmWUJ5N0xUZmN2YXhPSTZEVWZMUkNoRFZBdGlhRnZxY19LclBRcU8yZTFVdTZPWlBjMnd2NGVQdmhoemx1TmtNbE85eEgyT2VRQzJiVW9GTzRPSm15UjFn?oc=5",
+      "published": "2026-11-07T21:21:17+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Michael Onyike Videos & Best Moments - Premier League"
     },
     {
       "desc": "TENERIFE have pledged to financially support Jesus de Miguel's one-year-old daughter until she turns 18. De Miguel tragi",
@@ -3259,16 +3269,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Transfer Centre LIVE! Gabriel gives interview ahead of Real Madrid move"
-    },
-    {
-      "desc": "Troubled club blames 14-player shortage for match postponement Yahoo",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T14:06:05.658799+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaUtqN3ZKQVlmUTU4VjZlX2ZuMDh4TWx4MVIzT1Z4OU1VTGc4UEM3ZkJuQXFMMzAyeXFYcUNmWmFvTTJHZHBlSTMtV3UxaGxtNVFlWXhXX0M1SGVxMlg5QTVENmhsaXA1WTR0MkZwNGJxQzhGQTZ4Nl93djUwd3FzMV91ZVk?oc=5",
-      "published": "2026-11-07T11:38:03+00:00",
-      "publisher": "https://uk.sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Troubled club blames 14-player shortage for match postponement - Yahoo"
     }
   ],
   "processed_urls": [
