@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 34,
+        "calls": 35,
         "errors": 0,
-        "requests": 34
+        "requests": 35
       }
     },
-    "calls": 34,
+    "calls": 35,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 201514,
-    "output_tokens": 21783,
-    "requests": 34
+    "input_tokens": 207318,
+    "output_tokens": 22488,
+    "requests": 35
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1038,6 +1038,41 @@
       "title": "哈兰德父亲首度回应曼城财务违规判决与儿子未来",
       "updated_at": "2026-10-31T21:48:29.792545+00:00"
     },
+    "7a1974303495": {
+      "article_title": "Unai Emery storms down Old Trafford tunnel before full-time as Aston Villa blow two-goal lead",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "42c988497a89025a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 93
+        }
+      ],
+      "created_at": "2026-11-08T18:50:48.129796+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "b56b506ff3e40a38",
+      "event_id": "7a1974303495",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T18:50:48.129796+00:00",
+          "origin": "created",
+          "title": "Unai Emery storms down Old Trafford tunnel before full-time as Aston Villa blow two-goal lead",
+          "url": "https://www.thesun.co.uk/sport/40961724/unai-emery-storms-tunnel-aston-villa-united"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40961724/unai-emery-storms-tunnel-aston-villa-united",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 93,
+      "title": "埃梅里在老特拉福德终场前愤然离场，维拉两球领先遭曼联绝平",
+      "updated_at": "2026-11-08T18:50:48.759424+00:00"
+    },
     "7df17ef8b703": {
       "article_title": "Jude Bellingham’s brother Jobe has goal vs Bayern disallowed as ex-Chelsea star boots goalie in the FACE",
       "attempts": 1,
@@ -1994,7 +2029,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T18:45:33.234515+00:00",
+  "last_scan_at": "2026-11-08T18:50:41.623362+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2015,6 +2050,26 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Man Utd fight back from two goals down twice in 4-4 draw with Aston Villa - but who did well and who didn't in player ra",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T18:50:41.627020+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwj34k7k54veo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T18:46:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Dorgu makes dramatic impact - Man Utd v Aston Villa ratings"
+    },
+    {
+      "desc": "MANCHESTER UNITED are officially the worst defensive team in Europe after shipping four goals at home to Aston Villa. Un",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T18:50:41.627057+00:00",
+      "link": "https://www.thesun.co.uk/sport/40961413/man-utd-worst-defence-europe-aston-villa-carrick/",
+      "published": "2026-11-08T18:45:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd officially become the worst defensive team in Europe this season with horror show against Aston Villa"
+    },
     {
       "desc": "UNAI EMERY could not bear to watch the final moments of Aston Villa's clash with Manchester united after a heartbreaking",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3494,26 +3549,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Man City latest: Maresca hopeful international break can help ailing City"
-    },
-    {
-      "desc": "In a decision that ushered in the most successful period in United's history, Ferguson was poached from Scottish club Ab",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-08T09:10:38.903397+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16275767/manchester-united-legends-sir-alex-ferguson.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-08T09:03:32+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Manchester Re-United! Legends join forces to toast Sir Alex Ferguson on 40th anniversary of his appointment at Old Trafford"
-    },
-    {
-      "desc": "Fabrizio Romano transfer news: Madrid signing confirmed, Spurs Paz bid, Ngumoha panic FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T09:10:38.903424+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPYnFsRHR2Z21pR2dZdVN4cEtBQ2xtZDdnS1lOVzAzWWhoU2xGUVM1Y0V0cUR1WVFyb1VEMHZqV0I1MHdVbDVCSzhhVW5zRm14STkzRGpTZVRlUVFFSWh1THl5ZDh1WURmRlQ3SlpiRllSaGZkQ3NkbWZ1anBsbzFIUVFDQ21TUmRsVUwtaEJYVDNTc19odFhjNFVodUFxV2dMMjhVMXBkVEZaTkFyYzJsS29yc1dpVk96RTRIMHkxRWkxVlVyZXdPTWxvT2ZqNjFSZ1dvOVNLelZhVDh3alpXQVQ2SE5TZmNucFFTMUt3M3c?oc=5",
-      "published": "2026-11-08T09:02:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano transfer news: Madrid signing confirmed, Spurs Paz bid, Ngumoha panic - FootballTransfers.com"
     }
   ],
   "processed_urls": [
@@ -3586,7 +3621,8 @@
     "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0",
     "https://www.thesun.co.uk/sport/40958869/granit-xhaka-forced-off-sunderland-chelsea-injury",
     "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee",
-    "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o"
+    "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o",
+    "https://www.thesun.co.uk/sport/40961724/unai-emery-storms-tunnel-aston-villa-united"
   ],
   "s_overflow": {},
   "schema_version": 4
