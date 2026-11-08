@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 178,
+        "calls": 179,
         "errors": 1,
-        "requests": 178
+        "requests": 179
       }
     },
-    "calls": 178,
+    "calls": 179,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 1105233,
-    "output_tokens": 107367,
-    "requests": 178
+    "input_tokens": 1111495,
+    "output_tokens": 107900,
+    "requests": 179
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1924,7 +1924,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T15:35:30.766456+00:00",
+  "last_scan_at": "2026-11-08T15:40:41.595187+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1945,6 +1945,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Stockport goalkeeper Luca Ashby-Hammond is given a straight red card after a challenge on the edge of the box and from t",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T15:40:41.598180+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c64g1n4w70p9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T15:31:43+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Dreamland!' - Cray score brilliant free-kick as Stockport down to 10"
+    },
     {
       "desc": "MANCHESTER UNITED host Aston Villa this afternoon in a blockbuster Super Sunday clash - but fans are wondering why Mathe",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3434,16 +3444,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Man City's slump cannot be excused by guilty verdict: Too many blunders, too much arm waving and football problems are piling up after 3-1 d"
-    },
-    {
-      "desc": "Nottingham Forest 3 Manchester City 1: Stunning goals from Delap and Cherki, but how bad were City? The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T22:22:12.734122+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR1FzbTdoQnVxZ1pQMVo4SWJZN0wxZER3QnNQeFEySldJYTQzWmI4S0VMUk1zNUdtNFp5SFBIb2VMdVFGb0hQaFJ1VC1uekdZLWJ2VEdiSDdKajU2ZXhRRmczVXZwSnBvNEhCNzZLZTZmWTItRk5yX0w5d1NDRzllblVYT1hhV3JqQ01FYXpzaFdONGJvVEhuN28xWFAzcWFKQ1hLSzhXeVhjekR6?oc=5",
-      "published": "2026-11-07T21:43:58+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Nottingham Forest 3 Manchester City 1: Stunning goals from Delap and Cherki, but how bad were City? - The New York Times"
     }
   ],
   "processed_urls": [
