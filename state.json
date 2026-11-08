@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 64,
+        "calls": 65,
         "errors": 0,
-        "requests": 64
+        "requests": 65
       }
     },
-    "calls": 64,
+    "calls": 65,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 387494,
-    "output_tokens": 40139,
-    "requests": 64
+    "input_tokens": 393920,
+    "output_tokens": 40684,
+    "requests": 65
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -805,6 +805,41 @@
       "telegram_message_id": 35,
       "title": "曼联球迷客场惨败切尔西提前大规模离场",
       "updated_at": "2026-10-31T14:13:26.440427+00:00"
+    },
+    "4acaf5bb3b9e": {
+      "article_title": "Palace consider replacing Sage with Frank among contenders",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "7a65c5fa764253c1",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 100
+        }
+      ],
+      "created_at": "2026-11-08T21:25:33.343260+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ca37f08ffdc912e1",
+      "event_id": "4acaf5bb3b9e",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T21:25:33.343260+00:00",
+          "origin": "created",
+          "title": "Palace consider replacing Sage with Frank among contenders",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c623dpeey3e4o"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c623dpeey3e4o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 100,
+      "title": "水晶宫主帅Pierre Sage帅位告急，Thomas Frank成候选",
+      "updated_at": "2026-11-08T21:25:33.876220+00:00"
     },
     "4b4a82393cb3": {
       "article_title": "Man Utd fans aim X-rated chant at Sir Jim Ratcliffe during Chelsea defeat as Jason Wilcox ‘called every name under sun’",
@@ -2239,7 +2274,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T21:20:32.544753+00:00",
+  "last_scan_at": "2026-11-08T21:25:28.571493+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2281,6 +2316,26 @@
       "title": "‘This just can’t go on’ – Gary Neville fears Man Utd ‘causing themselves emotional damage’ with post-match antics"
     },
     {
+      "desc": "Defiant Michael Carrick insists he will not quit as Manchester United head coach despite their Premier League season goi",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-08T21:25:28.575318+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16276537/Its-not-going-happen-no-fire-Michael-Carrick-insists-not-quit-Man-United-head-coach-spiky-interview-4-4-draw-Aston-Villa-leaves-relegation-zone.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-08T21:08:31+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Michael Carrick clashes with Sky Sports reporter in spiky interview over his future: Man United boss expects to continue despite club being "
+    },
+    {
+      "desc": "Palace have won just two of their ten league matches this season, with Sunday's 3-1 defeat to Liverpool leaving them at ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-08T21:25:28.575367+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16276657/Crystal-Palace-set-SACK-Pierre-Sage-Thomas-Frank-leads-race-replace-struggling-French-boss-club-bottom-Premier-League.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-08T21:07:51+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Crystal Palace set to SACK Pierre Sage: Thomas Frank leads race to replace struggling French boss with club bottom of the Premier League"
+    },
+    {
       "desc": "Crystal Palace manager Pierre Sage is in serious danger of losing his job, with Thomas Frank among the contenders to rep",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-08T20:55:29.410911+00:00",
@@ -2309,6 +2364,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Michael Carrick in tense exchange with Sky Sports reporter as he’s asked whether he would resign as Man Utd manager"
+    },
+    {
+      "desc": "Carrick explains Maguire change Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T21:25:28.575501+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOREtUdzBlMlZDSFVJaWJVMGJzYzZIU1BvSEZKQU14VDNMamZZQWlLTnBQRU5MLVhES3h3REhsUWdEd2k3Qk5Qa0xmNlFQeERtZGhtZFk2dFlzSFlaV3g4ZElaTHFVWU94QS1LYmpoWnBVZEtrNjVBeXFGOXdVVVJXWTF3?oc=5",
+      "published": "2026-11-08T20:32:17+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Carrick explains Maguire change - Manchester United"
     },
     {
       "desc": "Iraola's Reaction | Alisson performance, Wirtz & Isak goals | Crystal Palace 1-3 Liverpool Liverpool FC",
@@ -3729,36 +3794,6 @@
       "publisher": "https://roundtable.io",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Video - Michael Carrick Makes Roma \"Best\" Claim Ahead Of Man Utd vs Aston Villa - roundtable.io"
-    },
-    {
-      "desc": "Nottingham Forest 3 Manchester City 1: Stunning goals from Delap and Cherki, but how bad were City? The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T17:30:41.070507+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR1FzbTdoQnVxZ1pQMVo4SWJZN0wxZER3QnNQeFEySldJYTQzWmI4S0VMUk1zNUdtNFp5SFBIb2VMdVFGb0hQaFJ1VC1uekdZLWJ2VEdiSDdKajU2ZXhRRmczVXZwSnBvNEhCNzZLZTZmWTItRk5yX0w5d1NDRzllblVYT1hhV3JqQ01FYXpzaFdONGJvVEhuN28xWFAzcWFKQ1hLSzhXeVhjekR6?oc=5",
-      "published": "2026-11-08T13:04:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Nottingham Forest 3 Manchester City 1: Stunning goals from Delap and Cherki, but how bad were City? - The New York Times"
-    },
-    {
-      "desc": "Vote now | Crystal Palace v Liverpool - Carlsberg Player of the Match Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T12:55:26.145687+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaEtyOTh5dUk0QkoxRzlFODdsNnZTZTE0Qk15TjJ1NGptTXBremd1RnFqeWZ4dUhpZ0ZRNnZ5QU43akpqRjkyVV9JY0NZOUhKeC0yeGRlRDhVSWFvOWtBTjUwXzhzTWtscmlSQXZJemJqZ0hrSFA4a29RY3BzMjBBRXJYS05KWVhNUUZBdTJlUkI0QQ?oc=5",
-      "published": "2026-11-08T12:53:05+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Vote now | Crystal Palace v Liverpool - Carlsberg Player of the Match - Liverpool FC"
-    },
-    {
-      "desc": "Team news: Confirmed Liverpool line-up v Crystal Palace Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T12:50:32.129003+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0?oc=5",
-      "published": "2026-11-08T12:47:30+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Team news: Confirmed Liverpool line-up v Crystal Palace - Liverpool FC"
     }
   ],
   "processed_urls": [
@@ -3838,7 +3873,8 @@
     "https://www.thesun.co.uk/sport/40962244/chelsea-sunderland-morgan-rogers-referee",
     "https://www.thesun.co.uk/sport/40962137/man-utd-jaydan-kamason-wipes-out-linesman-under-21",
     "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo",
-    "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage"
+    "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage",
+    "https://www.bbc.co.uk/sport/football/articles/c623dpeey3e4o"
   ],
   "s_overflow": {},
   "schema_version": 4
