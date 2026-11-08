@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 177,
+        "calls": 178,
         "errors": 1,
-        "requests": 177
+        "requests": 178
       }
     },
-    "calls": 177,
+    "calls": 178,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 1099117,
-    "output_tokens": 106706,
-    "requests": 177
+    "input_tokens": 1105233,
+    "output_tokens": 107367,
+    "requests": 178
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1924,7 +1924,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T15:30:43.107622+00:00",
+  "last_scan_at": "2026-11-08T15:35:30.766456+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1945,6 +1945,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED host Aston Villa this afternoon in a blockbuster Super Sunday clash - but fans are wondering why Mathe",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T15:35:30.770205+00:00",
+      "link": "https://www.thesun.co.uk/sport/40930783/why-matheus-cunha-not-suspended-man-utd-aston-villa/",
+      "published": "2026-11-08T15:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why is Matheus Cunha not suspended for Man Utd vs Aston Villa?"
+    },
     {
       "desc": "A FAN has been rushed to hospital after several people fell through a collapsed stand during a football match in Norway.",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2094,6 +2104,16 @@
       "publisher": "https://tribuna.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Manchester United have no clear plan for Michael Carrick's future - David Ornstein - Tribuna.com"
+    },
+    {
+      "desc": "Chengdu Rongcheng lose their final four matches of the season to give up a 12-point lead and throw away the Chinese Supe",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T15:35:30.770573+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq2d698j5gxgo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T14:41:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Chengdu blow 12-point lead to miss out on Chinese title on final day"
     },
     {
       "desc": "IGOR THIAGO has been sent off early against Brighton, as Brentford's task looks increasingly difficult. He was dismissed",
@@ -3424,26 +3444,6 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Nottingham Forest 3 Manchester City 1: Stunning goals from Delap and Cherki, but how bad were City? - The New York Times"
-    },
-    {
-      "desc": "Oliver Glasner's celebrations and two goals for Liam Delap bode well for a Nottingham Forest team looking to kick on aft",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T22:22:12.734137+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cvy0red8yl69o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T21:42:59+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Glasner glee and Delap double - win could be lift-off for Forest"
-    },
-    {
-      "desc": "ROBBIE SAVAGE'S son Charlie delivered a brutal blow to his dad in a sensational first round 5-0 FA Cup tie. Reading led ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T22:22:12.734166+00:00",
-      "link": "https://www.thesun.co.uk/sport/40955270/charlie-savage-scores-fa-cup-clash/",
-      "published": "2026-11-07T21:31:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Robbie Savage’s son Charlie scores as Peterborough capitulate in father vs son FA Cup clash"
     }
   ],
   "processed_urls": [
