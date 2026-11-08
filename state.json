@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 119,
+        "calls": 120,
         "errors": 0,
-        "requests": 119
+        "requests": 120
       }
     },
-    "calls": 119,
+    "calls": 120,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 723100,
-    "output_tokens": 71252,
-    "requests": 119
+    "input_tokens": 729324,
+    "output_tokens": 71932,
+    "requests": 120
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T10:45:32.838335+00:00",
+  "last_scan_at": "2026-11-08T10:50:33.552179+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Romano confirms “serious possibility” of Liverpool player leaving the club in 2027 LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T10:50:33.555973+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPY0gxR2hTQlhXWHAzRnBLNEpwVTFZQjlaQ3psOUJMVGJKbEE0elVpQkd2QzUyOWZkbnpUSWdMMmhENkhIOFV2V1ZPczhUZmNZeUt5TFptQlJZVFM5c1h4aW1JcHUwTEhobV9WWWpLNWVWdHhRbUprR29URFFySWM3blRJbjYzbjhmeVRuUHFqTm03Y1hkbnM5Z0VXMFhRQUdhb1ZaMDViTklGcVhELXl1cmxST3hSTktDdHFXWDJiS3N3ZWlKbVhBTW5Hb0x0RGFPYUtUbGhmNnFyUW5RTlQ1eXB5YkJlc2Fv?oc=5",
+      "published": "2026-11-08T10:46:38+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano confirms “serious possibility” of Liverpool player leaving the club in 2027 - LiveScore"
+    },
     {
       "desc": "Why Arsenal failed with Dowman red card appeal as FA release statement London Evening Standard",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3259,16 +3269,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Wrexham's Hollywood owners Ryan Reynolds and Rob McElhenney jet in to watch clash with Wolves after surprise exit of club's CEO - and catch "
-    },
-    {
-      "desc": "Roberto’s latest on Mathys Tel’s injury from Elland Road Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T18:44:14.050955+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRXhmNU1uUXZnSlpfRlpHVzZKQzZsRlVDb1EzUVZsZVJiWWFQb3o4azFqRll2MU05NjNVX3BSTVl0QnhJWXpvd1V0NmFFWTZGdmw5NEt4b0VwXzRRZ0t2ekFpRlRBdC15YnBOTlZrOVlqT2EwdFVmMlhuZUZWeW1hNkJLcXB2U1Uxd0dYU2wyRFJ3N3JiWFR1VTloZ29WVWtFR1E?oc=5",
-      "published": "2026-11-07T15:39:48+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Roberto’s latest on Mathys Tel’s injury from Elland Road - Tottenham Hotspur"
     }
   ],
   "processed_urls": [
