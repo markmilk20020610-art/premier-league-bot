@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 156,
+        "calls": 157,
         "errors": 1,
-        "requests": 156
+        "requests": 157
       }
     },
-    "calls": 156,
+    "calls": 157,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 964924,
-    "output_tokens": 92632,
-    "requests": 156
+    "input_tokens": 971810,
+    "output_tokens": 93200,
+    "requests": 157
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1889,7 +1889,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T13:50:36.121156+00:00",
+  "last_scan_at": "2026-11-08T13:55:36.831946+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1910,6 +1910,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ROSARIO CENTRAL fans fled onto the pitch when they thought they had won the title - only to find out Boca Juniors had sn",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T13:55:36.835666+00:00",
+      "link": "https://www.thesun.co.uk/sport/40958200/rosario-central-celebrate-title-boca-juniors-break-hearts/",
+      "published": "2026-11-08T13:55:11+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Argentine side wildly celebrate title… only to discover rivals Boca have scored 96TH MIN winner to break their hearts"
+    },
     {
       "desc": "Follow Daily Mail Sport's live coverage of all FOUR 2pm Premier League games - including Crystal Palace vs Liverpool and",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -1969,6 +1979,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Liverpool targeting Netherlands starter after Fabrizio Romano’s ‘serious’ update - TEAMtalk"
+    },
+    {
+      "desc": "Russo strikes at Anfield Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T13:55:36.835876+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZT3d6RXFPN19uMndqY2N5b3FtS3dTck82MmF1bjlPbGRYWk5rUmFHaGNlcy0zLXk2czJ4cEtra2ZZb1NubFE4YmhwcGdESUU2WXJic2xYb2FsY2M2WkxYM0wxdGRDdUt0UlpuSFVvQjM3X29FS0E?oc=5",
+      "published": "2026-11-08T12:45:05+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Russo strikes at Anfield - Arsenal.com"
     },
     {
       "desc": "Confirmed Chelsea line up vs Sunderland | News | Official Site Chelsea Football Club",
@@ -2239,6 +2259,16 @@
       "publisher": "https://www.standard.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Why Arsenal failed with Dowman red card appeal as FA release statement - London Evening Standard"
+    },
+    {
+      "desc": "Toby Lock's MK Dons player ratings after the FA Cup win over Swindon Milton Keynes Citizen",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T13:55:36.836369+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSXpaNzNTREJwLXhkYklrWnNKUDhzZWh5R1d5TXRBVGNsYnZrRVl1Rl9jV0pIbk9nejNGUGdVTS04Y2dJSHF3RHgwM0RYaGxUbHNzaEpQektUZnVSNl93UGI1bFRsbTl4VHBCSGxyUlhRTHZpRW1pR0pqZHpYMDQyZ0dnMUFXRDdpNkRVZF9iT0gwLV9iQk1sOVhNa29odWgtbVo2VHdSOTRDbjVTbkZCNEljWGNwRmw0ZWl0czRwZ0ZfOURGMXlEVw?oc=5",
+      "published": "2026-11-08T10:30:00+00:00",
+      "publisher": "https://www.miltonkeynes.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Toby Lock's MK Dons player ratings after the FA Cup win over Swindon - Milton Keynes Citizen"
     },
     {
       "desc": "",
@@ -3379,36 +3409,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Arteta – ‘We can still do much better’ - Arsenal.com"
-    },
-    {
-      "desc": "Video - Man Utd Make January Striker Plan Amid Benjamin Šeško Injury Issues roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T22:22:12.734581+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTmZpUng2bXpocU5jVGNtX2JuSTZicXBVcFZmOXAtT2UxRXJ0dmlidnRlSExvRGFINVB0TW1Sc2hPMm1xZFhCTENmeVZTWWRvNWF5UDlrbzRxTnFDb1J2YVZpdzV2QXlMTXZWZ2lOLVE1WHVDZjIxUzZCY2x4YWdSbVgxU3dweTR4bXlfNmZqbnA4UHVLSEI2TnIwU2VKd3FzdmdnNlFYX0g2bURqZk9zNlY2RnNDZ2xCaUxxX091c1FjN2Q3WG10enZqdldOeTNhM2xDckM2OEl2Zw?oc=5",
-      "published": "2026-11-07T18:44:07+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Video - Man Utd Make January Striker Plan Amid Benjamin Šeško Injury Issues - roundtable.io"
-    },
-    {
-      "desc": "Matchweek 10 VAR decisions explained Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T02:03:36.270976+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNa0xMdVRBamc2U09MVzRzcGNkNEN0dUp3ODZMb25oQ1pHVHhxcGlBY2NZNlVRMk9qb3hUQmRKSG1lWUZSUWlmWmF3MHh0X2NsTUNHT0VxRjZwYWpkZEZ3c3pGSDFmdDdteUU5TXV0anM4R25keWJRczczSWlNOUV0b0E3Z2xMZGZuZkE?oc=5",
-      "published": "2026-11-07T18:43:02+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Matchweek 10 VAR decisions explained - Premier League"
-    },
-    {
-      "desc": "Gabriel on latest victory and clean sheet Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T22:22:12.734601+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNmNFamx4enNiQm5uV1ZVSzdCZUEwSXZET1BhbEZZbXM2R3dNQkZMTXFBNE1ORDU1Y0k5eTlOVm9aVnJZMjViSnRMM2l1MmtXS2d2V29rWEluQVViZHNYbGJBM0VjQVZITGZLUk9WOU9VYjZuUnQzQTdIUGJHMGZyVXVaN0xyQmlPNzFYdg?oc=5",
-      "published": "2026-11-07T18:36:24+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Gabriel on latest victory and clean sheet - Arsenal.com"
     }
   ],
   "processed_urls": [
