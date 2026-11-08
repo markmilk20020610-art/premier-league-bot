@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 63,
+        "calls": 64,
         "errors": 0,
-        "requests": 63
+        "requests": 64
       }
     },
-    "calls": 63,
+    "calls": 64,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 381133,
-    "output_tokens": 39406,
-    "requests": 63
+    "input_tokens": 387494,
+    "output_tokens": 40139,
+    "requests": 64
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -83,6 +83,41 @@
       "telegram_message_id": 22,
       "title": "曼联帅位与转会传闻齐飞：卡里克回击内维尔，费尔明·洛佩斯进入引援名单",
       "updated_at": "2026-10-31T00:39:07.009865+00:00"
+    },
+    "07108e930de1": {
+      "article_title": "Crystal Palace ‘ready to sack Pierre Sage’ after woeful start to season with two immediate frontrunners to replace him",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "ffced79f22c1efa4",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 99
+        }
+      ],
+      "created_at": "2026-11-08T21:20:38.853508+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3dfea6ffb8817e67",
+      "event_id": "07108e930de1",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T21:20:38.853508+00:00",
+          "origin": "created",
+          "title": "Crystal Palace ‘ready to sack Pierre Sage’ after woeful start to season with two immediate frontrunners to replace him",
+          "url": "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 99,
+      "title": "水晶宫考虑解雇皮埃尔·萨热，托马斯·弗兰克成候选",
+      "updated_at": "2026-11-08T21:20:39.462003+00:00"
     },
     "07b8a6da5afe": {
       "article_title": "Betting column: SunSport picks for Chelsea vs Man Utd, Liverpool vs Arsenal, plus rest of Premier League and EFL action",
@@ -2204,7 +2239,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T21:15:36.136832+00:00",
+  "last_scan_at": "2026-11-08T21:20:32.544753+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3802,7 +3837,8 @@
     "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa",
     "https://www.thesun.co.uk/sport/40962244/chelsea-sunderland-morgan-rogers-referee",
     "https://www.thesun.co.uk/sport/40962137/man-utd-jaydan-kamason-wipes-out-linesman-under-21",
-    "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo"
+    "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo",
+    "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage"
   ],
   "s_overflow": {},
   "schema_version": 4
