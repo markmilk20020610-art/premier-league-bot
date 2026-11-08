@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 176,
+        "calls": 177,
         "errors": 1,
-        "requests": 176
+        "requests": 177
       }
     },
-    "calls": 176,
+    "calls": 177,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 1093140,
-    "output_tokens": 106098,
-    "requests": 176
+    "input_tokens": 1099117,
+    "output_tokens": 106706,
+    "requests": 177
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1924,7 +1924,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T15:25:33.322185+00:00",
+  "last_scan_at": "2026-11-08T15:30:43.107622+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1945,6 +1945,26 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "A FAN has been rushed to hospital after several people fell through a collapsed stand during a football match in Norway.",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T15:30:43.111713+00:00",
+      "link": "https://www.thesun.co.uk/sport/40959528/champions-league-stand-collapse-injures-fans/",
+      "published": "2026-11-08T15:26:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Fan rushed to hospital as five injured after stand COLLAPSES during game involving Champions League side"
+    },
+    {
+      "desc": "AFC WIMBLEDON’S £87million takeover bid has collapsed at the 11th hour. Britain’s most famous fan-owned club remains in ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T15:30:43.111748+00:00",
+      "link": "https://www.thesun.co.uk/sport/40959491/afc-wimbledon-takeover-ryan-bertrand/",
+      "published": "2026-11-08T15:25:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former Chelsea star Ryan Bertrand’s £87million takeover bid to buy EFL club collapses as main backer disappears"
+    },
     {
       "desc": "Man Utd: Ornstein reveals whether INEOS will sack Carrick if Red Devils suffer ‘disastrous result’ vs Aston Villa Footba",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3424,26 +3444,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Robbie Savage’s son Charlie scores as Peterborough capitulate in father vs son FA Cup clash"
-    },
-    {
-      "desc": "'Peak FA Cup', was the verdict from TV viewers watching (or trying to watch) the clash between Notts County and Altrinch",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T22:22:12.734190+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16274723/FA-Cup-fog-mist-TNT-Sports.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T21:27:47+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Commentators haven't the foggiest idea what's going on: Thick mist ruins FA Cup clash for TV viewers - and fans use phone torches to see the"
-    },
-    {
-      "desc": "Michael Onyike Videos & Best Moments Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T03:45:39.713719+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBRX1VsWjFUWVRqTHU4QkFNVVR1d0xCWjRmWUJ5N0xUZmN2YXhPSTZEVWZMUkNoRFZBdGlhRnZxY19LclBRcU8yZTFVdTZPWlBjMnd2NGVQdmhoemx1TmtNbE85eEgyT2VRQzJiVW9GTzRPSm15UjFn?oc=5",
-      "published": "2026-11-07T21:21:17+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Michael Onyike Videos & Best Moments - Premier League"
     }
   ],
   "processed_urls": [
