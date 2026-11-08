@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 30532,
-    "output_tokens": 3693,
-    "requests": 5
+    "input_tokens": 36527,
+    "output_tokens": 4360,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1959,7 +1959,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T16:20:39.856046+00:00",
+  "last_scan_at": "2026-11-08T16:25:27.903221+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1981,6 +1981,26 @@
   },
   "news_pool": [
     {
+      "desc": "Enzo Le Fee's penalty is the difference as Sunderland climb off the bottom of the table but how did the players rate aga",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T16:25:27.905901+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T16:13:36+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Brobbey wins Colwill battle - player ratings for Sunderland's win over Chelsea"
+    },
+    {
+      "desc": "Matchweek 10 VAR decisions explained Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T16:25:27.905926+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNa0xMdVRBamc2U09MVzRzcGNkNEN0dUp3ODZMb25oQ1pHVHhxcGlBY2NZNlVRMk9qb3hUQmRKSG1lWUZSUWlmWmF3MHh0X2NsTUNHT0VxRjZwYWpkZEZ3c3pGSDFmdDdteUU5TXV0anM4R25keWJRczczSWlNOUV0b0E3Z2xMZGZuZkE?oc=5",
+      "published": "2026-11-08T16:07:30+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Matchweek 10 VAR decisions explained - Premier League"
+    },
+    {
       "desc": "FREE TO WATCH: Highlights from Ipswich Town’s match against Bournemouth in the Premier League.",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-08T16:15:33.328036+00:00",
@@ -1989,6 +2009,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Bournemouth claim eighth win in a row despite late Ipswich scare"
+    },
+    {
+      "desc": "How Crystal Palace and Liverpool's players rated following their Premier League match.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T16:25:27.905949+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqkgjm2dlpv6o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T16:04:18+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who was back to his best? Player ratings for Crystal Palace v Liverpool"
     },
     {
       "desc": "ROCK bottom Sunderland stunned Chelsea at the Stadium of Light after a controversial penalty decision broke Blues hearts",
@@ -2019,6 +2049,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Brighton beat 10-man Brentford to leapfrog Man City into second"
+    },
+    {
+      "desc": "Bournemouth made it eight wins in a row in all competitions as they continued their charge up the Premier League table w",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T16:25:27.906009+00:00",
+      "link": "https://www.skysports.com/football/ipswich-town-vs-bournemouth/report/559539",
+      "published": "2026-11-08T16:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Bournemouth win at Ipswich to record eight straight victories"
     },
     {
       "desc": "DIEGO Gomez set up a one-man goal-of-the-season competition to help send the Seagulls soaring into second spot. Brighton",
@@ -3439,46 +3479,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "'The worst conditions in my 35-year career' - commentating in the FA Cup fog"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T07:00:46.530248+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-08T00:12:14+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "Odegaard tucks home welcome winner against Hull Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T01:40:15.518944+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZ3RuQjN2T0F4UU9iUnBKQUdaRkZuN3FhV1hhZTZaS0h4cXlrS3BHT1V3Nm5VYVRTV1dlQ2pDdmtYbVozZElZVXVJR2p3WDYtWVBRLXZYX1BWYXZ1RUdhT3VERG1ydmI0cE0ySGtKeXJjRFRyTXFmVnlfVWFkSno0WERRSzRVbV92Tnk1MGlkaVZYSjBi?oc=5",
-      "published": "2026-11-08T00:01:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Odegaard tucks home welcome winner against Hull - Arsenal.com"
-    },
-    {
-      "desc": "Highlights | Arsenal 1-0 Hull | extended Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T01:40:15.518962+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMDdPRTNSRVNodkhJdVd2M0FhSUc2dWw4aktwWno2OVJiZUp2bVBZNkhNblRfakNuME02VTVYZTd6Rm54b3l2OHNlcmNYS0Y5OVZGblFjSTVOOFRzV1R1b2w1V0dzY2Jfemhra2h6YU1NVHhrdXZEbzhyZTZEU3BzRDdZejVJUQ?oc=5",
-      "published": "2026-11-08T00:00:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Highlights | Arsenal 1-0 Hull | extended - Arsenal.com"
-    },
-    {
-      "desc": "Extraordinary scenes as fog descends on 'farcical' FA Cup tie ABC News & Headlines – Australian Broadcasting Corporation",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T02:07:25.505204+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOektLU2FrZkFycC1DelZ5b2F5blY5VzBBVGQ5TXdRSDhFaUxjeVV0ZWpCNnMzUVBQMFhQU0tNZmRhRjNQMlNISTJna0VJRFd5NFlPM2o2NDlQZWh4ajVITVRWOXo5c3ZFU1puMXJWM3JIaFBSRzRwR0loME8xdXFjM21jOE5xVktjS3BIY21NNktnaUZ6eFFtZw?oc=5",
-      "published": "2026-11-07T23:57:15+00:00",
-      "publisher": "https://www.abc.net.au",
-      "source": "https://www.thefa.com/rss",
-      "title": "Extraordinary scenes as fog descends on 'farcical' FA Cup tie - ABC News & Headlines – Australian Broadcasting Corporation"
     }
   ],
   "processed_urls": [
