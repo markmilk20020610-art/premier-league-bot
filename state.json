@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 155,
+        "calls": 156,
         "errors": 1,
-        "requests": 155
+        "requests": 156
       }
     },
-    "calls": 155,
+    "calls": 156,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 957862,
-    "output_tokens": 92036,
-    "requests": 155
+    "input_tokens": 964924,
+    "output_tokens": 92632,
+    "requests": 156
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1889,7 +1889,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T13:45:33.253761+00:00",
+  "last_scan_at": "2026-11-08T13:50:36.121156+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1999,6 +1999,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Sunderland vs Chelsea LIVE!"
+    },
+    {
+      "desc": "When is the FA Cup second round draw and what number are MK Dons? Milton Keynes Citizen",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T13:50:36.124658+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdExoWWZoRkp4SzYxYnNGX2tGTHVmc0YtNkNiSTFJa1otNWpQTDZSRE5WNGRvaFFxaWlnYWxTVjUxczNSM3VuUDVIbVNWdGZyOUZiYXA1V0lyZ3hYSjIyaUpKbzVUZDU2a1Zrd3BRVlhXWHJIZFgtb01KVE92YllSVWJoZ2hPemdXV2RMREsyTUstWHBucHVSQlBCTzhIWkFiRXhHUy1rUGlnWmxteXpIQmFzTE5qc2JzdER6MmRTTGZ3dG1h?oc=5",
+      "published": "2026-11-08T12:30:00+00:00",
+      "publisher": "https://www.miltonkeynes.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "When is the FA Cup second round draw and what number are MK Dons? - Milton Keynes Citizen"
     },
     {
       "desc": "Fabrizio Romano delivers verdict on Arsenal and Barcelona defender swap as January rumours emerge https://aftv.co.uk/",
@@ -3399,16 +3409,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Gabriel on latest victory and clean sheet - Arsenal.com"
-    },
-    {
-      "desc": "MANCHESTER UNITED legend Ryan Giggs has told departing JJ Gabriel life in the first team of a major club as a teenager w",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T18:44:14.049808+00:00",
-      "link": "https://www.thesun.co.uk/sport/40953705/ryan-giggs-warns-jj-gabriel-man-utd-exit-dowman/",
-      "published": "2026-11-07T18:36:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ryan Giggs fires warning to JJ Gabriel with Man Utd wonderkid, 16, braced to quit Old Trafford and join Real Madrid"
     }
   ],
   "processed_urls": [
