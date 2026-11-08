@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 43,
+        "calls": 44,
         "errors": 0,
-        "requests": 43
+        "requests": 44
       }
     },
-    "calls": 43,
+    "calls": 44,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 255815,
-    "output_tokens": 27438,
-    "requests": 43
+    "input_tokens": 262189,
+    "output_tokens": 28075,
+    "requests": 44
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2064,7 +2064,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T19:30:56.989013+00:00",
+  "last_scan_at": "2026-11-08T19:40:37.250510+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2085,6 +2085,36 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "JOSHUA ZIRKZEE offered Diogo Dalot a huge hug after the Old Trafford crowd cheered him off the pitch. The Red Devils wen",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T19:40:37.253137+00:00",
+      "link": "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa/",
+      "published": "2026-11-08T19:39:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Joshua Zirkzee shows true colours with gesture to Diogo Dalot after Man Utd fans cheer him being substituted"
+    },
+    {
+      "desc": "Aston Villa manager Unai Emery was a frustrated figure after his side surrendered a two goal lead against Manchester Uni",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T19:40:37.253166+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c9dr812v01lzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T19:39:24+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Frustrated and disappointed' - Emery on Man Utd draw"
+    },
+    {
+      "desc": "AN FA CUP match was interrupted by a large brawl after a manager pushed his head into an opposition player. Oldham were ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T19:40:37.253187+00:00",
+      "link": "https://www.thesun.co.uk/sport/40962219/fa-cup-manager-mellon-headbutts-player-brawl/",
+      "published": "2026-11-08T19:37:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "FA Cup clash descends into major brawl as manager sent off for HEADBUTTING rival player and pulled away"
+    },
     {
       "desc": "After moving up to second in the Premier League, could Brighton really be Arsenal's main title challengers?",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2876,6 +2906,16 @@
       "title": "Men’s November international break: Who’s playing when? - Manchester City FC"
     },
     {
+      "desc": "Gallery: 25 photos from our Anfield success Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T19:40:37.253911+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNmI4WmdVb1A0ZU5hMjh4Z3ZRdWJWdmVFZlFnNG1iaFN4S2xSRTlvM0l4TFVwUHFtc1R6Z2ZXQ3pyN2NubnRlWllzSjQyQ3NJSENtTkFzd0QxbTg5R192U2VwLTZTcmpJOW8ycnNyRGluSlJrYW9CTmNld2JlRnhmTDV2ejd5dURWVHd2NA?oc=5",
+      "published": "2026-11-08T14:55:33+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Gallery: 25 photos from our Anfield success - Arsenal.com"
+    },
+    {
       "desc": "UNDER-PRESSURE Michael Carrick is seeking a crucial win as he looks to lead Manchester United to back-to-back wins befor",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-08T14:55:28.344016+00:00",
@@ -3544,46 +3584,6 @@
       "publisher": "https://www.standard.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Why Arsenal failed with Dowman red card appeal as FA release statement - London Evening Standard"
-    },
-    {
-      "desc": "Toby Lock's MK Dons player ratings after the FA Cup win over Swindon Milton Keynes Citizen",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T13:55:36.836369+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSXpaNzNTREJwLXhkYklrWnNKUDhzZWh5R1d5TXRBVGNsYnZrRVl1Rl9jV0pIbk9nejNGUGdVTS04Y2dJSHF3RHgwM0RYaGxUbHNzaEpQektUZnVSNl93UGI1bFRsbTl4VHBCSGxyUlhRTHZpRW1pR0pqZHpYMDQyZ0dnMUFXRDdpNkRVZF9iT0gwLV9iQk1sOVhNa29odWgtbVo2VHdSOTRDbjVTbkZCNEljWGNwRmw0ZWl0czRwZ0ZfOURGMXlEVw?oc=5",
-      "published": "2026-11-08T10:30:00+00:00",
-      "publisher": "https://www.miltonkeynes.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Toby Lock's MK Dons player ratings after the FA Cup win over Swindon - Milton Keynes Citizen"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-08T10:35:30.654627+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-08T10:24:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man Utd latest: Carrick given no assurances over future beyond Villa match"
-    },
-    {
-      "desc": "Liverpool transfer news: Rio Ngumoha contract talks progressing amid Bayern interest Dave.Sport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T10:30:41.919938+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ2tqYXVaXzl5bG83Ul9FVi1GMUhOcmdPUE5YNW9JaHppcWJnVTA5aGlpLXdmazF0VGpPNlRVRFN5Z3E2OW52Q2QteDNFVzM5SDNnSzcwc2hRME5lZE9RS0VKbE9rZzk2ZzdRR1M4UXpCS0l3ODlHby14b1N6cnYwckl3?oc=5",
-      "published": "2026-11-08T10:20:11+00:00",
-      "publisher": "https://dave.sport",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool transfer news: Rio Ngumoha contract talks progressing amid Bayern interest - Dave.Sport"
-    },
-    {
-      "desc": "Rangers made it 12 games without defeat in all competitions with a 2-0 win at St Mirren on Saturday, but Ibrox legend Kr",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-08T10:20:29.961742+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6dxw1k2x4kno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-08T10:10:27+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Is there something missing despite Rangers' impressive form?"
     }
   ],
   "processed_urls": [
