@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 65995,
-    "output_tokens": 6450,
-    "requests": 10
+    "input_tokens": 72324,
+    "output_tokens": 7098,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1714,7 +1714,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T02:07:25.501244+00:00",
+  "last_scan_at": "2026-11-08T02:08:26.354118+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1794,6 +1794,16 @@
       "publisher": "https://www.abc.net.au",
       "source": "https://www.thefa.com/rss",
       "title": "Extraordinary scenes as fog descends on 'farcical' FA Cup tie - ABC News & Headlines – Australian Broadcasting Corporation"
+    },
+    {
+      "desc": "Nicolò Savona Nottingham Forest Defender, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T02:08:26.356865+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5rMzB6QUltb3lkV0ZGNmFSekxSMlgwY25BMUdIT01ydFZ1ZnJpYXd3V2JOak5ham1Kc1JPcllKOUxtZDRwSUJBV1h0anFMSVdCcnV4aXBKTzdVSEhPQXJwS3ZPUlNIVFUyOU96Uk9KczlWWUxFVDZpRQ?oc=5",
+      "published": "2026-11-07T23:10:20+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Nicolò Savona Nottingham Forest Defender, Profile & Stats - Premier League"
     },
     {
       "desc": "CHRIS WHEELER: Michael Carrick has not been given any guarantees over his future as Manchester United head coach beyond ",
@@ -3224,16 +3234,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "'I want to win the Ballon d'Or': JJ Gabriel sets out his lofty ambitions as Man United wonderkid, 16, closes in on move to Real Madrid after"
-    },
-    {
-      "desc": "Grace Fisk signs new contract with LFC Women Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T14:06:05.658980+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOWxkOWY4OUR6OHV6X19Eb285azhNMHBDUGlCalJBQ1FrZmhubjFIVTR2N21rNnRvaS1GWUZhNVRSRW9MWUI0U1g1TVFFVXN3V3NuMEJOdkJlRDYzQVhoNGNfT2kzU1V3bUlrZlhUajJZNDdKVmMxa1NOeUhCMmlQZw?oc=5",
-      "published": "2026-11-07T11:00:18+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Grace Fisk signs new contract with LFC Women - Liverpool FC"
     }
   ],
   "processed_urls": [
