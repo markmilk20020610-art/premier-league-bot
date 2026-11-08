@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 113,
+        "calls": 114,
         "errors": 0,
-        "requests": 113
+        "requests": 114
       }
     },
-    "calls": 113,
+    "calls": 114,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 686764,
-    "output_tokens": 67400,
-    "requests": 113
+    "input_tokens": 692767,
+    "output_tokens": 68110,
+    "requests": 114
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T10:15:32.408193+00:00",
+  "last_scan_at": "2026-11-08T10:20:29.959836+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Rangers made it 12 games without defeat in all competitions with a 2-0 win at St Mirren on Saturday, but Ibrox legend Kr",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T10:20:29.961742+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6dxw1k2x4kno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T10:10:27+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Is there something missing despite Rangers' impressive form?"
+    },
     {
       "desc": "Roma continue monitoring Gittens as January reinforcement Yahoo Sports",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3259,16 +3269,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Leeds latest: Farke says 'butterfly' Bogle is 'softest player' in PL"
-    },
-    {
-      "desc": "ALLAN SAINT-MAXIMIN sensationally snubbed a huge £22million offer to sell his free-to-play card game. The former Newcast",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T16:00:58.184172+00:00",
-      "link": "https://www.thesun.co.uk/sport/40948999/allan-saint-maximin-saudi-wage-revealed-helios-game-newcastle/",
-      "published": "2026-11-07T15:14:30+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Newcastle star Allan Saint-Maximin reveals how much he earned in Saudi Arabia after rejecting £22m for his board game"
     }
   ],
   "processed_urls": [
