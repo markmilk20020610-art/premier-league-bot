@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 95,
+        "calls": 96,
         "errors": 0,
-        "requests": 95
+        "requests": 96
       }
     },
-    "calls": 95,
+    "calls": 96,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 579885,
-    "output_tokens": 55040,
-    "requests": 95
+    "input_tokens": 585535,
+    "output_tokens": 55674,
+    "requests": 96
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T08:45:33.801726+00:00",
+  "last_scan_at": "2026-11-08T08:50:33.500745+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Liverpool: Fabrizio Romano drops bombshell on Rio Ngumoha joining Bayern Munich TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T08:50:33.504086+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOWhFc1RlN215TTZFLXV1aUxjLWx2RkFBclM1UXdId2xVYlZGanF4dExybVJEeEpiSy03bFlFc2VyQW1xRXhiYjdUbE92eEx5amFMRzlWWlNuUi1NS0ZRN3J0RU1UdDRrNDZHWDNGaml5WE1UN0xobWxJSUxESUFNVjUydjBES2xmUERFQ2U5SjdLRWZUSlF3RDh6ZkNwUmxLLXc?oc=5",
+      "published": "2026-11-08T08:47:51+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Liverpool: Fabrizio Romano drops bombshell on Rio Ngumoha joining Bayern Munich - TEAMtalk"
+    },
     {
       "desc": "Fabrizio Romano lifts the lid on Liverpool’s Alisson decision DaveOCKOP",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3259,16 +3269,6 @@
       "publisher": "https://www.salisburyjournal.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "FA Cup Round 1 FT: Salisbury hit Sholing for six to move into second round - Salisbury Journal"
-    },
-    {
-      "desc": "مباريات بريميرليج تحت 18 عامًا 2026/27 والأرشيف Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T22:22:12.734878+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYlQxOTNHbDU5eDBHYkUwR0F2eVg5a0dlbkczdEdocnM0UWd6bE9ESldKR3FXMHhobzVzNnowcEV1SEpGSFZCaHJJUHVzTmhSZFpJbWtsbF8zd0R4b2hlTHVuR0pJX0hlVU1XWHV6dUh5ZndrUWpHc1FhTGs1a3hhaEpRZ1hZWmFNd0xHUA?oc=5",
-      "published": "2026-11-07T14:26:29+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "مباريات بريميرليج تحت 18 عامًا 2026/27 والأرشيف - Premier League"
     }
   ],
   "processed_urls": [
