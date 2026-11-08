@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 117,
+        "calls": 118,
         "errors": 0,
-        "requests": 117
+        "requests": 118
       }
     },
-    "calls": 117,
+    "calls": 118,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 710863,
-    "output_tokens": 69872,
-    "requests": 117
+    "input_tokens": 716949,
+    "output_tokens": 70472,
+    "requests": 118
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T10:35:30.651559+00:00",
+  "last_scan_at": "2026-11-08T10:40:31.670554+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Why Arsenal failed with Dowman red card appeal as FA release statement London Evening Standard",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T10:40:31.673853+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaWJMRVFfMC1MRVRGTDhzeTRnVjdVYUNpMm8ycm9RMTlld3hNNmllMFk3M1FLTlI5SFpteW43VGF0YmY1QzZ6YUhIZVp1a0FoMEZScC1xVlRjZUVIQl9DOEFXWnFvekIzR0hyLVZOMnpQRDdHaC00NVNWLWVvRGJKaWI3UVNDUTgzTXlDalgtdDZQV3V2b0xZaWNZLTQ5UmJocjQ1ZkVB?oc=5",
+      "published": "2026-11-08T10:38:47+00:00",
+      "publisher": "https://www.standard.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Why Arsenal failed with Dowman red card appeal as FA release statement - London Evening Standard"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -3259,16 +3269,6 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Roberto’s latest on Mathys Tel’s injury from Elland Road - Tottenham Hotspur"
-    },
-    {
-      "desc": "TOM COLLOMOSSE: For teams who aim no higher than upper mid-table, it is time to dream. For the wealthiest who usually lo",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T16:00:58.184088+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268011/tottenham-leeds-zerbi-elland-road.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T15:39:43+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Tottenham are proof that a truckload of NFL and Beyonce cash is no use if you don't spend it properly, writes TOM COLLOMOSSE - after Roberto"
     }
   ],
   "processed_urls": [
