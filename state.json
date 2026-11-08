@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 100,
+        "calls": 101,
         "errors": 0,
-        "requests": 100
+        "requests": 101
       }
     },
-    "calls": 100,
+    "calls": 101,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 608050,
-    "output_tokens": 58323,
-    "requests": 100
+    "input_tokens": 613938,
+    "output_tokens": 59109,
+    "requests": 101
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T09:10:38.900721+00:00",
+  "last_scan_at": "2026-11-08T09:15:40.188583+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T09:15:40.192386+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-11-08T09:07:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man City latest: Maresca hopeful international break can help ailing City"
+    },
     {
       "desc": "In a decision that ushered in the most successful period in United's history, Ferguson was poached from Scottish club Ab",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -1799,6 +1809,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Palace vs Liverpool: Get 11/4 on BTTS, Alexander Isak shot on target and Adam Wharton 1+ foul | Betfred"
+    },
+    {
+      "desc": "Inter Milan v City: Kick-off time, team news and TV information Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T09:15:40.192514+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNd3hrbVlBNFFGZ19xYmFLdV90U0NZZGVlOVplRV9nUTBhWmlxaGt1WWtNS284NmRnb1dpWlE5OTRUako5VUpJbmVxTmwzQ3p2cUhsSVQ1TTRzVXFHZHNQY0lycEZJMlgyYnNzQVhCOHFTYmlWcjh2Z1JmeEZnanlfT1pVaTRHSlhYUUdSS2s0Vm0?oc=5",
+      "published": "2026-11-08T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Inter Milan v City: Kick-off time, team news and TV information - Manchester City FC"
     },
     {
       "desc": "Liverpool: Fabrizio Romano drops bombshell on Rio Ngumoha joining Bayern Munich TEAMtalk",
@@ -3249,26 +3269,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Injured Welsh replaced by Porteous in Scotland squad"
-    },
-    {
-      "desc": "U18s report: United 0 Wolves 2 Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T18:44:14.051064+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPb1J6cDJ0aUZ2eEVUNERfWk9kQWpXY05yRTBCSlJ3NnM3ZHNBX3dYdW9kZ0U5UDR1UXhwUUtSOTE2dzRsV0Z4Z2hMc3lPM2VkdWZkUDhjWEt2TjdoSHk3RThpbUZSbFJiTjVhZ180VVVBQ1BlSjJOX3hHYzdIUUg1U1hnbnhncVotQWdR?oc=5",
-      "published": "2026-11-07T14:43:11+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "U18s report: United 0 Wolves 2 - Manchester United"
-    },
-    {
-      "desc": "How Leeds United and Tottenham Hotspurs' players rated in their Premier League match.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T16:00:58.184337+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq70p2w3j00jo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T14:35:23+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Okafor the difference despite Van Hecke defiance - Leeds v Spurs ratings"
     }
   ],
   "processed_urls": [
