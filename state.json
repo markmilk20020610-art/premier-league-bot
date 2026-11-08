@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 115,
+        "calls": 116,
         "errors": 0,
-        "requests": 115
+        "requests": 116
       }
     },
-    "calls": 115,
+    "calls": 116,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 698863,
-    "output_tokens": 68702,
-    "requests": 115
+    "input_tokens": 704933,
+    "output_tokens": 69335,
+    "requests": 116
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T10:25:26.423086+00:00",
+  "last_scan_at": "2026-11-08T10:30:41.915958+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Liverpool transfer news: Rio Ngumoha contract talks progressing amid Bayern interest Dave.Sport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T10:30:41.919938+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQ2tqYXVaXzl5bG83Ul9FVi1GMUhOcmdPUE5YNW9JaHppcWJnVTA5aGlpLXdmazF0VGpPNlRVRFN5Z3E2OW52Q2QteDNFVzM5SDNnSzcwc2hRME5lZE9RS0VKbE9rZzk2ZzdRR1M4UXpCS0l3ODlHby14b1N6cnYwckl3?oc=5",
+      "published": "2026-11-08T10:20:11+00:00",
+      "publisher": "https://dave.sport",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Liverpool transfer news: Rio Ngumoha contract talks progressing amid Bayern interest - Dave.Sport"
+    },
     {
       "desc": "Rangers made it 12 games without defeat in all competitions with a 2-0 win at St Mirren on Saturday, but Ibrox legend Kr",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3259,16 +3269,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "N Forest - Manchester City FC"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-07T16:00:58.184141+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13353569/leeds-united-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-07T15:24:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Leeds latest: Farke says 'butterfly' Bogle is 'softest player' in PL"
     }
   ],
   "processed_urls": [
