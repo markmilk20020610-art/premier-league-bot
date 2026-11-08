@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 70,
+        "calls": 71,
         "errors": 0,
-        "requests": 70
+        "requests": 71
       }
     },
-    "calls": 70,
+    "calls": 71,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 426125,
-    "output_tokens": 44639,
-    "requests": 70
+    "input_tokens": 432634,
+    "output_tokens": 45625,
+    "requests": 71
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2274,7 +2274,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T21:50:35.128296+00:00",
+  "last_scan_at": "2026-11-08T21:55:27.193597+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2295,6 +2295,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "It was a Premier League classic at Old Trafford but what as Man Utd's 4-4 draw with Aston Villa done to Michael Carrick'",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T21:55:27.196555+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cked3qjw1q4xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T21:50:05+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Bizarre & thrilling theatre as Carrick's Man Utd future still in limbo"
+    },
     {
       "desc": "THE chaos that comes with Manchester United surpassed all expectations as the final whistle blew in their 4-4 draw with ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3784,16 +3794,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Premier League: Liverpool search for win at Crystal Palace after back-to-back defeats, while Chelsea visit struggling Sunderland - plus two "
-    },
-    {
-      "desc": "When is FA Cup second round draw? Ball numbers, time and how to watch The Independent",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T13:20:34.157016+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSUtWMVJjNWxxdzk4SmFsYmxSSEJGaXBDRGVfNjBRMGNiNU00SmZ2WlFhZUFrMmZwMHJ4clZtVHFfX0U3Y003VWFGalpWcm9VUURNRUNKZklqTTdKbWJXcm54d21RcUNuUlZVZDhZQ3RkZU9BY2lNbWszODlpaHZoR2kzOUZqY1Zjb3hadnd1b1I5enRXU3dzNnVSZXExQWhEZWY0?oc=5",
-      "published": "2026-11-08T13:13:00+00:00",
-      "publisher": "https://www.independent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "When is FA Cup second round draw? Ball numbers, time and how to watch - The Independent"
     }
   ],
   "processed_urls": [
