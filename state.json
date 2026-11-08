@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 47,
+        "calls": 48,
         "errors": 0,
-        "requests": 47
+        "requests": 48
       }
     },
-    "calls": 47,
+    "calls": 48,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 280265,
-    "output_tokens": 29700,
-    "requests": 47
+    "input_tokens": 286237,
+    "output_tokens": 30297,
+    "requests": 48
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -280,6 +280,41 @@
       "telegram_message_id": 52,
       "title": "马特塔开场12分钟飞铲连伤两名热刺球员被直红罚下",
       "updated_at": "2026-10-31T17:49:37.157534+00:00"
+    },
+    "1ad0bba61ac6": {
+      "article_title": "Joshua Zirkzee shows true colours with gesture to Diogo Dalot after Man Utd fans cheer him being substituted",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "982f80c6308740d3",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 95
+        }
+      ],
+      "created_at": "2026-11-08T20:00:56.429070+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "578d941abe7e263c",
+      "event_id": "1ad0bba61ac6",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T20:00:56.429070+00:00",
+          "origin": "created",
+          "title": "Joshua Zirkzee shows true colours with gesture to Diogo Dalot after Man Utd fans cheer him being substituted",
+          "url": "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 95,
+      "title": "曼联4-4维拉：齐尔克泽被嘘后拥抱达洛特",
+      "updated_at": "2026-11-08T20:00:57.027080+00:00"
     },
     "229678fb085a": {
       "article_title": "Bruno Fernandes holds back TEARS after Man United beaten by Chelsea: Captain appears emotional as return to squad after public criticism of",
@@ -2064,7 +2099,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T19:55:31.639449+00:00",
+  "last_scan_at": "2026-11-08T20:00:51.365854+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2085,6 +2120,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Where does Manchester United 4-4 Aston Villa rank among the Premier League's greatest games?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T20:00:51.369563+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cy47wj05xgqo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T19:55:44+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Where does Man United 4-4 Aston Villa rank among best Premier League games?"
+    },
     {
       "desc": "With 10 games gone in the Premier League season, BBC Sport looks at what history tells us we can read into the table at ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3574,16 +3619,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘I don’t believe it’ – Moment Berbatov puts his head in hands after learning Man Utd have dropped into relegation zone"
-    },
-    {
-      "desc": "Under 18s - 2026 - Europa League Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T15:55:29.303233+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSGNOc29DMFpmQmpTS3Q2Z2JDbF9NdWJ2N3p6RkRJWFhyak5QWXd0aW43Qk1TS0dHRGVURVlsRnVNZHhGR09TSGxzOHNfa3ZOVUlkQm9DZFNnZVl4akFtc1Z5TDQ3U2xSbGZzSThUQ2xxWURXbGZScHF6RTR5UUtUc2RvVQ?oc=5",
-      "published": "2026-11-08T10:58:54+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Under 18s - 2026 - Europa League - Liverpool FC"
     }
   ],
   "processed_urls": [
@@ -3658,7 +3693,8 @@
     "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee",
     "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o",
     "https://www.thesun.co.uk/sport/40961724/unai-emery-storms-tunnel-aston-villa-united",
-    "https://www.thesun.co.uk/sport/40960305/man-utd-ratings-aston-villa-dalot-carrick"
+    "https://www.thesun.co.uk/sport/40960305/man-utd-ratings-aston-villa-dalot-carrick",
+    "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa"
   ],
   "s_overflow": {},
   "schema_version": 4
