@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 171,
+        "calls": 172,
         "errors": 1,
-        "requests": 171
+        "requests": 172
       }
     },
-    "calls": 171,
+    "calls": 172,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 1062326,
-    "output_tokens": 102639,
-    "requests": 171
+    "input_tokens": 1068615,
+    "output_tokens": 103337,
+    "requests": 172
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1924,7 +1924,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T15:00:48.573878+00:00",
+  "last_scan_at": "2026-11-08T15:05:32.691013+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1945,6 +1945,36 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "David Ornstein reveals Man Utd Michael Carrick sack plan if Aston Villa win at Old Trafford TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T15:05:32.693626+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWE1kMExnVkNQMFg0VW9URzlVYlRFZ2VPaGFBenkzclRjZy1jMjVVN05UWld3NmZDZTRDU0VIcGh3djVEX3IzT210VDRRZklhZXloUWI0SzlISmEtbG0zdDMyTlNCM0Z1a2xJUmdHMEdPUkRhUTRtRzduajRFZXd0YjZ5aDdqbGt0MnB1TFl2ZEVMdlBqVWNjTg?oc=5",
+      "published": "2026-11-08T15:00:45+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein reveals Man Utd Michael Carrick sack plan if Aston Villa win at Old Trafford - TEAMtalk"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T15:05:32.693676+00:00",
+      "link": "https://www.skysports.com/football/manchester-united-vs-aston-villa/live/559541",
+      "published": "2026-11-08T15:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd vs Aston Villa team news LIVE!"
+    },
+    {
+      "desc": "Men’s November international break: Who’s playing when? Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T15:05:32.693698+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeS1zRk5XRGVtX3Bzd09FZTFtdHFGdWx4NWxMZHMzaDExWUlVTXJPQzZtMTZ0TWVrY0tUNHRiel9pZDJnTWkxU25xcFV0UkZ4MTRaWm5HcDZKZTVKa1ZjeVJpQ3hMVVRqT1hwb3Y3SEZjOVJ1UE0yd2JkcExpNmdPVEpUb1g5blhnSWdJeFVhcw?oc=5",
+      "published": "2026-11-08T15:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Men’s November international break: Who’s playing when? - Manchester City FC"
+    },
     {
       "desc": "UNDER-PRESSURE Michael Carrick is seeking a crucial win as he looks to lead Manchester United to back-to-back wins befor",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2344,6 +2374,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Best of the action: Forest v Man City photo gallery - Premier League"
+    },
+    {
+      "desc": "Eva names line-up for Villa Park visit Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T15:05:32.694171+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNalVGa1dfTVotY2hXek1hVjRkbnh3VFo0d2NtR1llcDdOSTdGZ043VkdNVlBPc01lY19GMzZ4ZUFuSUNVcTlEX1lQOWtoUFR4bktIbmNWdVV3Mmt3aFB1YlZFZ1hCQ3NLakRxbEgwOWZ1TWNEWGFkdlRxZXAwRVdzLUxQSlN5cHZMMmpJ?oc=5",
+      "published": "2026-11-08T11:03:52+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Eva names line-up for Villa Park visit - Manchester United"
     },
     {
       "desc": "Romano confirms Liverpool could lose ‘crucial’ player after ‘€15m deal agreed’ in May FootballTransfers.com",
@@ -3404,46 +3444,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Martin Odegaard sends Arsenal six clear at the top: The stylists and aesthetes will moan - but Mikel Arteta can rest easy over the internati"
-    },
-    {
-      "desc": "Maresca: We did not produce the intensity required until it was too late Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T01:40:15.519301+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMkFwX1RmUzFHMzl4c2U5RzJXZi0zYWJRYi1kdjJSR3hfX3h6OHZhaGdIQXdILXg2dzZkM096MDNoZFpzZjJFU213bE9wVlExeEp5ZFRaT3VuUzhlYXA4VFhESFdKY3ZpU2YzQ0NTWnlkeWNOM09fSDVxcXdYZy1rX0JjLTBncXZYWmlDRjJsdW9CNXROUXc2OGdXYXBYNHM?oc=5",
-      "published": "2026-11-07T20:12:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Maresca: We did not produce the intensity required until it was too late - Manchester City FC"
-    },
-    {
-      "desc": "Liam Delap scores a superb double as Nottingham Forest stun Manchester City 3-1 for their first Premier League win at th",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T22:22:12.734315+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/crp3gewxj77eo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T20:02:25+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Delap double inspires Forest to stunning win over Man City"
-    },
-    {
-      "desc": "Rodrigo Muniz scores his first goal since the opening day of last season as Fulham deny Newcastle and head coach Matthia",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T22:22:12.734332+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cm2d69p2x3g7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T19:59:37+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Muniz strike denies Newcastle and Jaissle much-needed win"
-    },
-    {
-      "desc": "Noah Okafor scores the only goal of the game to give Leeds United their first win since the 14th of September, as Totten",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T22:22:12.734345+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/ckz7x4jlypq3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T19:59:34+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Leeds beat Spurs to end five-game winless run"
     }
   ],
   "processed_urls": [
