@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 146,
+        "calls": 147,
         "errors": 1,
-        "requests": 146
+        "requests": 147
       }
     },
-    "calls": 146,
+    "calls": 147,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 896484,
-    "output_tokens": 86759,
-    "requests": 146
+    "input_tokens": 903370,
+    "output_tokens": 87327,
+    "requests": 147
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1572,6 +1572,41 @@
       "title": "足球界悼念特内里费前锋德米格尔",
       "updated_at": "2026-11-04T03:19:40.034155+00:00"
     },
+    "cc47a30ce573": {
+      "article_title": "Team news: Confirmed Liverpool line-up v Crystal Palace - Liverpool FC",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e215514379b605ea",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 89
+        }
+      ],
+      "created_at": "2026-11-08T13:05:34.996043+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "d100160ab6aa525b",
+      "event_id": "cc47a30ce573",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T13:05:34.996043+00:00",
+          "origin": "created",
+          "title": "Team news: Confirmed Liverpool line-up v Crystal Palace - Liverpool FC",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 89,
+      "title": "利物浦客战水晶宫首发名单官方确认",
+      "updated_at": "2026-11-08T13:05:35.638314+00:00"
+    },
     "cf9dc3bb8487": {
       "article_title": "Furious Matthias Jaissle accuses his Newcastle stars of IGNORING his gameplan against Everton... and relying on long balls against his wishe",
       "attempts": 1,
@@ -1854,7 +1889,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T13:00:50.675470+00:00",
+  "last_scan_at": "2026-11-08T13:05:29.132787+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3442,7 +3477,8 @@
     "https://www.thesun.co.uk/sport/40954486/tottenham-complaint-jayden-bogle-red-card-mathys-tel-injury",
     "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick",
     "https://www.thesun.co.uk/sport/40957362/sir-alex-ferguson-anniversary-dinner-man-utd-james-nesbitt",
-    "https://www.skysports.com/football/live-blog/12040/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts"
+    "https://www.skysports.com/football/live-blog/12040/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0"
   ],
   "s_overflow": {},
   "schema_version": 4
