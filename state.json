@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 116,
+        "calls": 117,
         "errors": 0,
-        "requests": 116
+        "requests": 117
       }
     },
-    "calls": 116,
+    "calls": 117,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 704933,
-    "output_tokens": 69335,
-    "requests": 116
+    "input_tokens": 710863,
+    "output_tokens": 69872,
+    "requests": 117
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T10:30:41.915958+00:00",
+  "last_scan_at": "2026-11-08T10:35:30.651559+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T10:35:30.654627+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-11-08T10:24:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd latest: Carrick given no assurances over future beyond Villa match"
+    },
     {
       "desc": "Liverpool transfer news: Rio Ngumoha contract talks progressing amid Bayern interest Dave.Sport",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3259,16 +3269,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Tottenham are proof that a truckload of NFL and Beyonce cash is no use if you don't spend it properly, writes TOM COLLOMOSSE - after Roberto"
-    },
-    {
-      "desc": "N Forest Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T16:00:58.184115+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONXZfSXl1WGlha2Q0d0RPdWRyVnJ3NzdlLTlnUzd1bk5mcDdXNlV1bDBCLTAyRlpCcDFPcndUbDFGX1J4Wjk4Z0RXZGlQcWs2R1k5aUdNZ2RVQ2FXRmZjM3d4eWRBTU83SVhRbWwzWE9LcVBsaTlzTlR5Wk5LSUx6aFBHbV8wSDltOFAzaXh6OUYxMnVQbmlmSHBDZkYzUQ?oc=5",
-      "published": "2026-11-07T15:30:43+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "N Forest - Manchester City FC"
     }
   ],
   "processed_urls": [
