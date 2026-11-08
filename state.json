@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 123,
+        "calls": 124,
         "errors": 0,
-        "requests": 123
+        "requests": 124
       }
     },
-    "calls": 123,
+    "calls": 124,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 748581,
-    "output_tokens": 73975,
-    "requests": 123
+    "input_tokens": 755155,
+    "output_tokens": 74776,
+    "requests": 124
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1607,6 +1607,41 @@
       "title": "纽卡主帅Jaissle怒斥球员无视战术布置",
       "updated_at": "2026-11-03T03:40:52.424800+00:00"
     },
+    "dd13e9d267b9": {
+      "article_title": "Acting legend shares first pic from Sir Alex Ferguson 40th anniversary dinner with Man Utd icon surrounded by ex-stars",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "fa49487efacdda8e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 87
+        }
+      ],
+      "created_at": "2026-11-08T11:10:48.343840+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "b43e1ca8fc72dee1",
+      "event_id": "dd13e9d267b9",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T11:10:48.343840+00:00",
+          "origin": "created",
+          "title": "Acting legend shares first pic from Sir Alex Ferguson 40th anniversary dinner with Man Utd icon surrounded by ex-stars",
+          "url": "https://www.thesun.co.uk/sport/40957362/sir-alex-ferguson-anniversary-dinner-man-utd-james-nesbitt"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40957362/sir-alex-ferguson-anniversary-dinner-man-utd-james-nesbitt",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 87,
+      "title": "弗格森执教曼联40周年纪念晚宴众星云集",
+      "updated_at": "2026-11-08T11:10:49.012621+00:00"
+    },
     "de7d361bdd27": {
       "article_title": "Cole Palmer and Man United unpacked: The truth about Old Trafford links, why he really got a new Chelsea deal, Xabi Alonso's 'emotional cont",
       "attempts": 1,
@@ -1784,7 +1819,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T11:05:29.886037+00:00",
+  "last_scan_at": "2026-11-08T11:10:41.442331+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1805,6 +1840,26 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ACTOR James Nesbitt has given Manchester United fans a first glimpse at who jetted in to celebrate 40 years since Sir Al",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T11:10:41.444236+00:00",
+      "link": "https://www.thesun.co.uk/sport/40957362/sir-alex-ferguson-anniversary-dinner-man-utd-james-nesbitt/",
+      "published": "2026-11-08T11:06:21+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Acting legend shares first pic from Sir Alex Ferguson 40th anniversary dinner with Man Utd icon surrounded by ex-stars"
+    },
+    {
+      "desc": "Romano confirms Liverpool could lose ‘crucial’ player after ‘€15m deal agreed’ in May FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T11:10:41.444256+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQnM5UGN5eGRvd0RKR3l4SFRwTWVOeG45c1V2cmhyYzRabFR5VDkwV21HWDFJcm1tbW9YODFJRUplTzh3UFJuSF9pZVpJZHNLbVJLZ2ZPb1FnRnFneENoZHE0RUQtZV9TV1RjWXVXNE1rNHl6YzZpMHIzZ1FLNmgxLWFnVmMwbk5EeHRTRXNOSmE0M2JWM0tUa1BpcEJ0RlFZOGFsMVVSTGZrQTRpQzBhcVpZZC0xU01QeFdwSlE4RndJaGh5RkpNRHZwQWZFVnZpMGhFQ3pfQVRVWkJUQ21feS0yUWVxd3pRRHU1TmNlclc0dw?oc=5",
+      "published": "2026-11-08T11:03:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano confirms Liverpool could lose ‘crucial’ player after ‘€15m deal agreed’ in May - FootballTransfers.com"
+    },
     {
       "desc": "De Zerbi offers latest on Tel's ‘bad injury on the ankle’ Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3284,26 +3339,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Alonso on Lavia’s ‘brain for the team’ and his next step | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "SOUTHAMPTON ace Keven Schlotterbeck received oxygen on the pitch in a dramatic Championship clash against Preston at Dee",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T16:00:58.183881+00:00",
-      "link": "https://www.thesun.co.uk/sport/40950109/keven-schlotterbeck-oxygen-pitch-injury-preston-southampton-championship/",
-      "published": "2026-11-07T15:56:47+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Southampton star Keven Schlotterbeck given oxygen on pitch after suffering nasty injury in Preston clash"
-    },
-    {
-      "desc": "TRURO CITY'S sixth tier clash at Folkestone Invicta was postponed following a medical incident involving one of their pl",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T16:00:58.183919+00:00",
-      "link": "https://www.thesun.co.uk/sport/40951054/truro-city-folkstone-match-postponed/",
-      "published": "2026-11-07T15:53:38+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Non-league clash postponed after ex-Nottingham Forest academy starlet suffers medical emergency and rushed to hospital"
     }
   ],
   "processed_urls": [
@@ -3370,7 +3405,8 @@
     "https://www.thesun.co.uk/sport/40933148/leicester-city-eva-elfie-porn-star-ambassador-bc-game",
     "https://www.thesun.co.uk/sport/40947625/mateus-fernandes-var-handball-controversy-leeds-spurs",
     "https://www.thesun.co.uk/sport/40954486/tottenham-complaint-jayden-bogle-red-card-mathys-tel-injury",
-    "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick"
+    "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick",
+    "https://www.thesun.co.uk/sport/40957362/sir-alex-ferguson-anniversary-dinner-man-utd-james-nesbitt"
   ],
   "s_overflow": {},
   "schema_version": 4
