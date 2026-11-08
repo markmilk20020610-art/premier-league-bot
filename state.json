@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 58,
+        "calls": 59,
         "errors": 0,
-        "requests": 58
+        "requests": 59
       }
     },
-    "calls": 58,
+    "calls": 59,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 348882,
-    "output_tokens": 36474,
-    "requests": 58
+    "input_tokens": 355353,
+    "output_tokens": 37069,
+    "requests": 59
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2204,7 +2204,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T20:50:34.906207+00:00",
+  "last_scan_at": "2026-11-08T20:55:29.407161+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2225,6 +2225,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Crystal Palace manager Pierre Sage is in serious danger of losing his job, with Thomas Frank among the contenders to rep",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T20:55:29.410911+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c623dpeey3e4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T20:49:40+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Palace consider replacing Sage with Frank among contenders"
+    },
     {
       "desc": "MICHAEL CARRICK has warned Manchester United supporters to “be careful” with how they treat players after Diogo Dalot wa",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3714,16 +3724,6 @@
       "publisher": "https://roundtable.io",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Video - Manchester United Identify Serie A Star As Potential Top Target - roundtable.io"
-    },
-    {
-      "desc": "Manchester City spent £320million on overhauling their midfield over the summer. In doing so, they twice broke their own",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-08T13:20:34.157243+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16275851/Man-City-asking-writes-JACK-GAUGHAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-08T12:04:49+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "This is how Enzo Maresca's tactics have left Elliot Anderson exposed with too much to do, writes JACK GAUGHAN... and why £125m Enzo Fernande"
     }
   ],
   "processed_urls": [
