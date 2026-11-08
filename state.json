@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 144,
+        "calls": 145,
         "errors": 1,
-        "requests": 144
+        "requests": 145
       }
     },
-    "calls": 144,
+    "calls": 145,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 882775,
-    "output_tokens": 85521,
-    "requests": 144
+    "input_tokens": 889568,
+    "output_tokens": 86151,
+    "requests": 145
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1854,7 +1854,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T12:50:32.126410+00:00",
+  "last_scan_at": "2026-11-08T12:55:26.143022+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1875,6 +1875,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Vote now | Crystal Palace v Liverpool - Carlsberg Player of the Match Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T12:55:26.145687+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaEtyOTh5dUk0QkoxRzlFODdsNnZTZTE0Qk15TjJ1NGptTXBremd1RnFqeWZ4dUhpZ0ZRNnZ5QU43akpqRjkyVV9JY0NZOUhKeC0yeGRlRDhVSWFvOWtBTjUwXzhzTWtscmlSQXZJemJqZ0hrSFA4a29RY3BzMjBBRXJYS05KWVhNUUZBdTJlUkI0QQ?oc=5",
+      "published": "2026-11-08T12:53:05+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Vote now | Crystal Palace v Liverpool - Carlsberg Player of the Match - Liverpool FC"
+    },
     {
       "desc": "Team news: Confirmed Liverpool line-up v Crystal Palace Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2274,6 +2284,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Inter Milan v City: Kick-off time, team news and TV information - Manchester City FC"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T12:55:26.146202+00:00",
+      "link": "https://www.skysports.com/football/ipswich-town-vs-bournemouth/live/559539",
+      "published": "2026-11-08T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Scott returns from injury as sub for Bournemouth at Ipswich LIVE!"
     },
     {
       "desc": "Liverpool: Fabrizio Romano drops bombshell on Rio Ngumoha joining Bayern Munich TEAMtalk",
@@ -3354,26 +3374,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Powell and Phillips star as Bradford put seven past Marine"
-    },
-    {
-      "desc": "FRANKIE RAYMOND says spearheading Cray Wanderers to a stunning win over Stockport would be the highlight of his career -",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T18:44:14.050111+00:00",
-      "link": "https://www.thesun.co.uk/sport/40931342/frankie-raymond-cray-wanderers-stockport-fa-cup-giant-killing/",
-      "published": "2026-11-07T18:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Part-time builders, gym owners & teachers eyeing massive FA Cup giant-killing in minnows’ biggest ever match live on BBC"
-    },
-    {
-      "desc": "Report: Arsenal 1-0 Hull City Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T18:44:14.050136+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1oZDF4QVZFeFVxT3Y3MUtLcU5uRGNLSWM1aURKbGxLZUFyZGp5N19rZDU3cDhpeVd0dU1JX29kbUw0dEtvU1EtUVFNVTNPNGtUaUdiUk1UTW9nYVRpRkt0b3VjVlNmbjFLdVJSYmhlbmpxeVFoLWZIY2Fn?oc=5",
-      "published": "2026-11-07T17:41:20+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Report: Arsenal 1-0 Hull City - Arsenal.com"
     }
   ],
   "processed_urls": [
