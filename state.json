@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 47931,
-    "output_tokens": 5751,
-    "requests": 8
+    "input_tokens": 53687,
+    "output_tokens": 6367,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1959,7 +1959,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T16:35:31.238275+00:00",
+  "last_scan_at": "2026-11-08T16:40:30.746067+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2179,6 +2179,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why is Matheus Cunha not suspended for Man Utd vs Aston Villa?"
+    },
+    {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T16:40:30.748333+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ZVjFKQmw3RmJzc1c0TzgtUFo1WlpmVFl3TXRtT2NaNXdNWjRYV3lZV3Q4X1RFTm5ySnpWajlldUF4QlctX2RoaXI1YVRLZTZkYUxJa2szWHNjbmU3bTBNR205cF84d2M2LWRzNjEyYXJHOWpvNWQteXh3?oc=5",
+      "published": "2026-11-08T15:27:26+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
     },
     {
       "desc": "A FAN has been rushed to hospital after several people fell through a collapsed stand during a football match in Norway.",
@@ -3469,16 +3479,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Ayoni Santos Matches - Premier League"
-    },
-    {
-      "desc": "Guehi Injury Update and Return Date: Off at Half-Time, No Date Given The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T02:40:36.331905+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1JWGtDV3hvZVBVMko4U0tJcHpjRXhMUGQyRTgxNmZtSkxOWlVLeW1Ya01ueHhCX083OTNMN2JVRVZtekd3X0tVdHc0bTNNaXphY1ktd1hjWFlWcy1ndXhPbFRGV2IyZ25TNDZtQS1FUEx5ZHk0akdLUUJXSQ?oc=5",
-      "published": "2026-11-08T02:30:44+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Guehi Injury Update and Return Date: Off at Half-Time, No Date Given - The False 9"
     }
   ],
   "processed_urls": [
