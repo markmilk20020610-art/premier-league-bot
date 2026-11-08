@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 148,
+        "calls": 149,
         "errors": 1,
-        "requests": 148
+        "requests": 149
       }
     },
-    "calls": 148,
+    "calls": 149,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 910244,
-    "output_tokens": 87935,
-    "requests": 148
+    "input_tokens": 916990,
+    "output_tokens": 88443,
+    "requests": 149
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1889,7 +1889,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T13:10:31.848333+00:00",
+  "last_scan_at": "2026-11-08T13:15:37.273941+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1910,6 +1910,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "A VALENCIA player snapped while taking part in one of the league's controversial half-time interviews. The La Liga side ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T13:15:37.276650+00:00",
+      "link": "https://www.thesun.co.uk/sport/40957979/valencia-maffeo-melts-down-half-time-interview/",
+      "published": "2026-11-08T13:11:08+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Valencia star loses it during half-time interview calling it ‘s***’ live on air… but looks to make amends after match"
+    },
     {
       "desc": "Vote now | Crystal Palace v Liverpool - Carlsberg Player of the Match Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3399,16 +3409,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Title race hots up before Chelsea v Man City showdown"
-    },
-    {
-      "desc": "'Sir Alex? He is the boss of every coach!' Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T02:03:36.271022+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZjJMVzRQRUZpUTdDcnF3d3Q2U0JIUXpBdTNLYXRiTHAxWk5ZRlM4LXZKeGJwRzVNd2ZmUm8wXzRuTVhzX0dYQmFvVkh4ZHpIQkxKUE5Ed2h2U09QaUgtUWxfRmcyMlhDU2hSeV9FdHRkeENkMjlETFlGRXNQTk9qYWt0TEtwVjFoS2ctSkRpX0hyRVho?oc=5",
-      "published": "2026-11-07T18:23:51+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "'Sir Alex? He is the boss of every coach!' - Manchester United"
     }
   ],
   "processed_urls": [
