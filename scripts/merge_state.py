@@ -28,6 +28,13 @@ morning_delivery  早报分段账本：跨天取更晚那天；同一天原文�
                   （已送达永不降级）；原文不一致时整份取进度更靠前的那份。
                   原则是「宁可少发一段，也不能重复发一段」。
 
+审核隐私          合并结果落盘前必须通过 state_store.public_review_violations，
+                  与 save_state_atomic 是同一套判定（PR #1 审查 P1-B：
+                  这条路径以前完全没调用它）。审核记录只保留白名单字段，
+                  绝不把 article_title / evidence_url 补回审核记录；
+                  REVIEW_DECLINED 不被任何自动投递状态覆盖；遇到无法
+                  安全裁决的矛盾抛 MergeConflict 中止，不写盘（fail-closed）。
+
 用法：
     python scripts/merge_state.py <本地 state.json> <远端 state.json>
 
@@ -38,17 +45,43 @@ import json
 import os
 import sys
 
+# 复用公开 state 的隐私守卫。合并脚本写的是**公开** state.json，判定规则
+# 必须和 state_store.save_state_atomic 同源，否则「落盘前拦截」形同虚设。
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+
+import state_store  # noqa: E402
+
 # 投递进度排序：数字越大表示越「靠后」，冲突时保留更大的
+# V1.0：审核闸门两个状态必须显式列出。以前缺失 → _rank() 返回 -1，
+# 「人工拒绝」比 DISCOVERED 还小，冲突时会被普通投递状态静默覆盖，
+# 等于自动重发一条被明确拒绝的内容。
 STATUS_RANK = {
     "DISCOVERED": 0,
     "VERIFIED": 1,
-    "PENDING_DELIVERY": 2,
-    "RETRYABLE_FAILURE": 2,
-    "DELIVERY_FAILED": 3,
-    "DELIVERY_UNCERTAIN": 4,
-    "DELIVERED": 5,
-    "COMMITTED": 6,
+    # 已进人工队列：比「已核实」靠后，但还没获准进投递管道
+    "PENDING_REVIEW": 2,
+    "PENDING_DELIVERY": 3,
+    "RETRYABLE_FAILURE": 3,
+    "DELIVERY_FAILED": 4,
+    "DELIVERY_UNCERTAIN": 5,
+    "DELIVERED": 6,
+    "COMMITTED": 7,
+    # 人工拒绝是终态，排最末：任何自动投递状态都不得覆盖它
+    "REVIEW_DECLINED": 8,
 }
+
+
+class MergeConflict(RuntimeError):
+    """两份 state 的审核状态矛盾，无法安全自动裁决。
+
+    fail-closed 的含义：抛出 → main() 返回非 0 → commit_state.sh 的
+    merge_with_remote 返回 1 → 本轮不写盘、不提交，Job 变红等人来看。
+    绝不「挑一个看起来更合理的状态」写下去——那可能让一条被人工拒绝的
+    内容重新进入投递队列，或让一条已送达的记录回到待投递。
+    """
+
 
 POOL_MAX_ITEMS = 150
 PROCESSED_MAX = 200
@@ -90,28 +123,130 @@ def _merge_chunks(a, b):
     return [merged[k] for k in sorted(merged)]
 
 
-def _merge_event(a, b):
-    winner = _better_event(a, b)
-    loser = b if winner is a else a
-    out = dict(winner)
-    out["chunks"] = _merge_chunks((a or {}).get("chunks"), (b or {}).get("chunks"))
-    # message_id / last_error 只要有一侧确认过就保留
-    if not out.get("telegram_message_id"):
-        for src in (a, b):
-            if src and src.get("telegram_message_id"):
-                out["telegram_message_id"] = src["telegram_message_id"]
-                break
-    if not out.get("article_title"):
-        for src in (a, b):
-            if src and src.get("article_title"):
-                out["article_title"] = src["article_title"]
-                break
-    if not out.get("evidence_url"):
-        for src in (a, b):
-            if src and src.get("evidence_url"):
-                out["evidence_url"] = src["evidence_url"]
-                break
+# 真实送达证据：只有这两种状态**且**带 Telegram 回执，才算「消息确实出去了」。
+_DELIVERED_EVIDENCE = ("DELIVERED", "COMMITTED")
+
+
+def _status_of(event):
+    return (event or {}).get("delivery_status")
+
+
+def _resolve_status(a, b):
+    """裁决两份同 ID 事件的投递状态（P1-B 的冲突规则）。
+
+    审核两个状态不能交给 STATUS_RANK 盲目比大小，否则「拒绝」会被
+    「待投递」当成进度更低而覆盖掉。规则如下：
+
+    1. 一侧是 REVIEW_DECLINED（人工终态）
+       · 另一侧**没有**真实送达证据 → 保留 REVIEW_DECLINED。
+         PENDING_DELIVERY / RETRYABLE_FAILURE / DELIVERY_FAILED /
+         DELIVERY_UNCERTAIN / DISCOVERED / VERIFIED / PENDING_REVIEW 全部让位。
+       · 另一侧**有**真实送达证据（DELIVERED/COMMITTED + message_id）
+         → 「人说不发，但消息确实出去了」，这是矛盾，抛 MergeConflict 停下。
+         静默选任一边都有害：选拒绝会让已发出的记录回到待投递（重复推送），
+         选送达会让拒绝决定消失（绕过人工决定）。
+
+    2. 一侧是 PENDING_REVIEW（人工闸门）
+       · 另一侧是「已过闸」的投递状态（PENDING_DELIVERY 及之后）→ 取后者。
+         状态推进本身就是批准凭据：审核通过的唯一表现就是
+         PENDING_REVIEW → PENDING_DELIVERY，没有别的记录方式。
+       · 另一侧只是 DISCOVERED / VERIFIED → 保留 PENDING_REVIEW，闸门更严。
+
+    3. 其余情况按 STATUS_RANK 取更靠后的；同级保留本地（a）。
+    """
+    sa, sb = _status_of(a), _status_of(b)
+    if sa is None:
+        return sb
+    if sb is None:
+        return sa
+    if sa == sb:
+        return sa
+
+    declined = state_store.REVIEW_DECLINED
+    if declined in (sa, sb):
+        other, other_status = (b, sb) if sa == declined else (a, sa)
+        if (other_status in _DELIVERED_EVIDENCE
+                and (other or {}).get("telegram_message_id")):
+            raise MergeConflict(
+                "一边是人工拒绝（{}），另一边是已真实送达（{}，message_id={}）".format(
+                    declined, other_status, (other or {}).get("telegram_message_id")))
+        return declined
+
+    pending = state_store.PENDING_REVIEW
+    if pending in (sa, sb):
+        other_status = sb if sa == pending else sa
+        if _rank({"delivery_status": other_status}) > _rank({"delivery_status": pending}):
+            return other_status
+        return pending
+
+    ra, rb = _rank(a), _rank(b)
+    if ra != rb:
+        return sa if ra > rb else sb
+    return sa
+
+
+def _sanitize_event(event, status=None):
+    """保证单条事件符合公开 state 的审核隐私约束。
+
+    P1-B 的第二条缺陷就在这个函数要挡住的地方：`_merge_event` 原来会把
+    另一侧的 `article_title` / `evidence_url` 补回**审核记录**，等于用一次
+    合并把「哪条新闻在审」重新写回公开仓库。
+
+    规则与 state_store.scrub_review_records 保持一致：
+      · 审核记录 → 只保留 REVIEW_STUB_ALLOWED 白名单字段，
+        chunks / pending_text 强制清空（stub 里它们永远是空的）；
+      · 其他记录 → 删掉黑名单里的审核私有字段，已公开的标题与链接保持原样
+        （它们本来就发出去了，删掉反而破坏审计）。
+    """
+    out = dict(event or {})
+    status = status if status is not None else out.get("delivery_status")
+    if status in state_store.REVIEW_STATUSES:
+        out = {k: v for k, v in out.items() if k in state_store.REVIEW_STUB_ALLOWED}
+        out["delivery_status"] = status
+        out["chunks"] = []
+        out["pending_text"] = ""
+        return out
+    for key in state_store.PUBLIC_REVIEW_FORBIDDEN:
+        out.pop(key, None)
     return out
+
+
+def _merge_event(a, b):
+    a = a if isinstance(a, dict) else None
+    b = b if isinstance(b, dict) else None
+    if a is None:
+        return _sanitize_event(dict(b or {}))
+    if b is None:
+        return _sanitize_event(dict(a or {}))
+
+    status = _resolve_status(a, b)      # 冲突在这里 fail-closed（抛 MergeConflict）
+    winner = _better_event(a, b)
+    if status == state_store.REVIEW_DECLINED and _status_of(winner) != status:
+        # 拒绝是终态：元数据取「带着拒绝的那份」，别让另一侧把 review_ref 冲掉
+        winner = a if _status_of(a) == status else b
+
+    out = dict(winner)
+    out["delivery_status"] = status
+    out["chunks"] = _merge_chunks((a or {}).get("chunks"), (b or {}).get("chunks"))
+
+    if status not in state_store.REVIEW_STATUSES:
+        # message_id / last_error 只要有一侧确认过就保留
+        if not out.get("telegram_message_id"):
+            for src in (a, b):
+                if src and src.get("telegram_message_id"):
+                    out["telegram_message_id"] = src["telegram_message_id"]
+                    break
+        if not out.get("article_title"):
+            for src in (a, b):
+                if src and src.get("article_title"):
+                    out["article_title"] = src["article_title"]
+                    break
+        if not out.get("evidence_url"):
+            for src in (a, b):
+                if src and src.get("evidence_url"):
+                    out["evidence_url"] = src["evidence_url"]
+                    break
+    return _sanitize_event(out, status)
 
 
 def _pool_key(item):
@@ -280,18 +415,45 @@ def _merge_breakers(a, b):
     return a
 
 
+def _sanitize_events(events):
+    """逐条清理 events 字典；非 dict 的畸形值原样保留。"""
+    if not isinstance(events, dict):
+        return events
+    return {
+        eid: (_sanitize_event(rec) if isinstance(rec, dict) else rec)
+        for eid, rec in events.items()
+    }
+
+
+def _sanitize_state(state):
+    """整份 state 的事件级清理（只动 events，其余结构原样保留）。
+
+    早退路径（一侧缺失）也必须过一遍：`merge()` 是公开函数，调用方拿到的
+    结果不能「取决于有没有真的走合并逻辑」才干净。
+    """
+    out = dict(state or {})
+    if isinstance(out.get("events"), dict):
+        out["events"] = _sanitize_events(out["events"])
+    return out
+
+
 def merge(local, remote):
     """把远端 state 合并进本地 state，返回新字典。"""
     if not local:
-        return dict(remote or {})
+        return _sanitize_state(remote)
     if not remote:
-        return dict(local)
+        return _sanitize_state(local)
 
     out = dict(local)
 
-    events = dict(remote.get("events") or {})
+    # 远端独有的记录不会进 _merge_event，必须在这里先清一遍
+    events = dict(_sanitize_events(remote.get("events") or {}) or {})
     for eid, event in (local.get("events") or {}).items():
-        events[eid] = _merge_event(event, events.get(eid))
+        try:
+            events[eid] = _merge_event(event, events.get(eid))
+        except MergeConflict as e:
+            # 补上事件 id，否则报错只告诉你「有冲突」，不告诉你哪一条
+            raise MergeConflict("事件 {}：{}".format(eid, e)) from e
     out["events"] = events
 
     urls, seen = [], set()
@@ -332,6 +494,58 @@ def _load(path):
         return None
 
 
+def _structure_violations(state):
+    """落盘前的结构 fail-closed 校验。
+
+    `public_review_violations()` 也会把「events 结构异常」判成违规，但它
+    只能在拿到 state 之后检查；合并逻辑在它之前就要对 events 调 `.items()`，
+    结构一坏就直接抛 AttributeError（进程照样非 0 退出，但那是一段
+    traceback，不是一条可读的拒绝判定）。这里提前挡住。
+    """
+    if not isinstance(state, dict):
+        return ["state 根节点不是 JSON 对象（实际 {}）".format(type(state).__name__)]
+    events = state.get("events") or {}
+    if not isinstance(events, dict):
+        return ["events 结构异常（期望 dict，实际 {}），无法做事件级合并"
+                .format(type(events).__name__)]
+    return []
+
+
+def _write_checked(merged, local_path):
+    """落盘前的统一守卫：清理 + 校验 + 原子写入。
+
+    校验用 state_store.public_review_violations——和 save_state_atomic
+    完全同一套判定，不另写一份「差不多的」检查（两份规则迟早会分叉）。
+    返回 False 表示**没有写盘**，调用方必须让进程非 0 退出。
+    """
+    problems = _structure_violations(merged)
+    if problems:
+        print("[ERROR] 合并结果结构异常，拒绝写入 {}：".format(local_path))
+        for item in problems:
+            print("        - {}".format(item))
+        return False
+
+    try:
+        state_store.scrub_review_records(merged)
+    except Exception as e:  # noqa: BLE001 —— 清理失败也必须 fail-closed
+        print("[ERROR] 审核字段清理失败，拒绝写入：{}: {}".format(type(e).__name__, e))
+        return False
+
+    violations = state_store.public_review_violations(merged)
+    if violations:
+        print("[ERROR] 合并结果未通过审核隐私检查，拒绝写入 {}（共 {} 处）：".format(
+            local_path, len(violations)))
+        for item in violations[:10]:
+            print("        - {}".format(item))
+        return False
+
+    tmp = local_path + ".merge.tmp"
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(merged, f, ensure_ascii=False, indent=2, sort_keys=True)
+    os.replace(tmp, local_path)
+    return True
+
+
 def main():
     if len(sys.argv) < 3:
         print(__doc__)
@@ -342,19 +556,40 @@ def main():
     if local is None and remote is None:
         print("[ERROR] 本地与远端 state 都不可读，放弃合并")
         return 1
+
+    # 结构 fail-closed：events 不是 dict 时，合并逻辑会在 .items() 上抛
+    # AttributeError，隐私守卫也拿不到可逐条校验的对象。先挡住，让拒绝
+    # 来自一条明确判定而不是一段 traceback。
+    for label, data in (("本地", local), ("远端", remote)):
+        if data is None:
+            continue
+        problems = _structure_violations(data)
+        if problems:
+            print("[ERROR] {} state 结构异常，拒绝合并（fail-closed，未写入任何文件）：".format(label))
+            for item in problems:
+                print("        - {}".format(item))
+            return 1
+
+    # 两条早退路径同样要过隐私守卫：最终留在磁盘上的就是这一份。
     if remote is None:
         print("[INFO] 远端没有 state.json，保留本地")
+        if not _write_checked(dict(local), local_path):
+            return 1
         return 0
+
     if local is None:
         print("[INFO] 本地没有 state.json，采用远端")
-        merged = remote
+        merged = dict(remote)
     else:
-        merged = merge(local, remote)
+        try:
+            merged = merge(local, remote)
+        except MergeConflict as e:
+            print("[ERROR] 合并中止（fail-closed，未写入任何文件）：{}".format(e))
+            return 1
 
-    tmp = local_path + ".merge.tmp"
-    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(merged, f, ensure_ascii=False, indent=2, sort_keys=True)
-    os.replace(tmp, local_path)
+    if not _write_checked(merged, local_path):
+        return 1
+
     print(f"[SUCCESS] state 已合并：events={len(merged.get('events') or {})} "
           f"processed={len(merged.get('processed_urls') or [])} "
           f"pool={len(merged.get('news_pool') or [])} "

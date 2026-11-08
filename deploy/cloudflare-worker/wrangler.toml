@@ -3,16 +3,64 @@ main = "worker.js"
 compatibility_date = "2026-10-01"
 
 # 每分钟醒一次。免费额度下 Cron Triggers 的最小粒度就是 1 分钟。
+# 注意：唤醒频率 ≠ dispatch 频率。是否真的补触发由心跳年龄 + DO 里的冷却锁共同决定，
+# 每分钟醒只是为了「故障一发生就能在 1 分钟内被看见」，不是为了每分钟 dispatch。
 [triggers]
 crons = ["* * * * *"]
 
 [vars]
 REPO = "markmilk20020610-art/premier-league-bot"
 WORKFLOW_FILE = "scanner.yml"
-# 主调度器（cron-job.org）每 1 分钟一次；超过 6 分钟没心跳就认为它挂了
-FAILOVER_MINUTES = "6"
-# 超过 20 分钟没心跳，额外发 Telegram 告警
-ALERT_MINUTES = "20"
+# 只在功能分支上验证时才改成 feat/xxx；生产必须是 main
+DISPATCH_REF = "main"
 
+# ---------------------------------------------------------------------------
+# 阈值校准依据（B4）：仓库 state.json 的 394 个历史 last_scan_at 间隔实测
+#   p50 = 1.01 分钟、p90 = 1.29 分钟（93.4% 的间隔 ≤ 2 分钟）
+#   其余 6.6% 为 20~511 分钟的真实停摆
+# 正常节奏是 1 分钟（cron-job.org），5 分钟是 GitHub schedule 的兜底。
+# ---------------------------------------------------------------------------
+EXPECTED_SCAN_INTERVAL_MINUTES = "5"
+# 12 = 兜底间隔 5 + scan job 超时 6 + 1 分钟余量。
+# 健康运行时远程可见的最大心跳年龄约 11 分钟，正常调度绝不会被误判。
+FAILOVER_MINUTES = "12"
+# 接管后的冷却窗口，存进 Durable Object，Worker 重启不丢。
+DISPATCH_COOLDOWN_MINUTES = "10"
+# 必须 > FAILOVER + COOLDOWN（12+10=22），保证「先经历至少一次接管失败」才惊动人。
+ALERT_MINUTES = "30"
+# 连续读不到 state.json 多少分钟才告警。躲过 GitHub API 抖动。
+READ_FAIL_ALERT_MINUTES = "8"
+# 早报补偿窗口，必须与 scripts/ensure_morning_running.py 的 RETRY_BAND_MINUTES 一致。
+MORNING_GRACE_MINUTES = "180"
+
+# ---------------------------------------------------------------------------
+# Durable Object：私有审核金库 + 调度锁
+#
+# 用 SQLite 存储后端（new_sqlite_classes），这是 Workers Free 计划可用的那一种；
+# 键值存储后端（new_classes）需要付费计划。
+#
+# ⚠️ 部署前必须先在 Cloudflare 账号上确认 SQLite-backed Durable Objects 可用。
+#    确认方法见 deploy/cloudflare-worker/README.md「部署前核查」一节。
+#    如果不可用：**不要**升级付费计划，也不要退回 KV 或公开 state.json——
+#    此时 Worker 会拒绝一切审核操作与接管动作（fail-closed），
+#    并在响应里报 durable_object_not_bound。
+# ---------------------------------------------------------------------------
+[[durable_objects.bindings]]
+name = "VAULT"
+class_name = "Vault"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Vault"]
+
+# ---------------------------------------------------------------------------
 # 密钥不要写在这里，用 `wrangler secret put` 注入：
-#   GITHUB_TOKEN / TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID
+#   GITHUB_TOKEN                    PAT：actions:write + contents:read
+#   TELEGRAM_BOT_TOKEN
+#   TELEGRAM_OPS_CHAT_ID            私有运维群（不要用公共情报频道）
+#   TELEGRAM_WEBHOOK_SECRET         setWebhook 的 secret_token，校验 POST 来源
+#   TELEGRAM_REVIEW_CHAT_ID         私有审核群
+#   REVIEW_OPERATOR_IDS             逗号分隔的 Telegram User ID 白名单
+#   REVIEW_CALLBACK_HMAC_SECRET     必须与 GitHub Secret 同值，否则按钮签名验不过
+#   INTERNAL_SERVICE_KEY            必须与 GitHub Secret REVIEW_SERVICE_KEY 同值
+# ---------------------------------------------------------------------------

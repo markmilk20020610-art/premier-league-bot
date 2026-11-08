@@ -205,8 +205,131 @@ class TestMorningKeeperWiring(unittest.TestCase):
                          "未到 06:00 不得提前触发")
         self.assertTrue(ensure_morning_running.decide(at(6, 5), "2026-11-01")[0],
                         "06:00 之后仍未发应补触发")
-        self.assertFalse(ensure_morning_running.decide(at(6, 26), "2026-11-01")[0],
-                         "超过 06:20 补发窗口就停手，交给看门狗")
+
+    def test_retry_band_is_180_minutes(self):
+        """B1：补偿窗口 20 → 180 分钟。"""
+        self.assertEqual(ensure_morning_running.RETRY_BAND_MINUTES, 180,
+                         "补偿窗口必须是 180 分钟（06:00~09:00）")
+
+    def test_window_boundaries_match_user_spec(self):
+        """用户点名的四个时刻：06:00 正常、06:26 / 07:57 / 08:59 可补、09:01 不再补。"""
+        def at(h, m=0):
+            return datetime.datetime(2026, 11, 2, h, m, tzinfo=CN_TZ)
+
+        for h, m in [(6, 0), (6, 26), (7, 57), (8, 59)]:
+            self.assertTrue(
+                ensure_morning_running.decide(at(h, m), "2026-11-01")[0],
+                f"北京 {h:02d}:{m:02d} 仍在补偿窗口内，应当补触发")
+        self.assertFalse(ensure_morning_running.decide(at(9, 1), "2026-11-01")[0],
+                         "09:01 已过 180 分钟窗口，必须停手")
+
+    def test_today_already_sent_never_retriggers(self):
+        """今日已送达 → 任何时刻都不再补，包括窗口正中间。"""
+        def at(h, m=0):
+            return datetime.datetime(2026, 11, 2, h, m, tzinfo=CN_TZ)
+        for h, m in [(6, 5), (7, 57), (8, 59)]:
+            self.assertFalse(
+                ensure_morning_running.decide(at(h, m), "2026-11-02")[0],
+                "日期锁优先于补偿窗口")
+
+    def test_current_run_does_not_block_itself(self):
+        """B2 核心：scan run 自己永远 in_progress，绝不能拦自己。
+
+        这是修掉的真缺陷——旧实现把「所有 active run」当阻塞，
+        而本脚本就跑在一条 in_progress 的 scan run 里，于是永远不补发。
+        """
+        now = datetime.datetime(2026, 11, 2, 6, 26, tzinfo=CN_TZ)
+        target = ensure_morning_running.target_of(now)
+        # 刻意让 created_at 落在目标时刻之后：这样唯一的放行理由就是「排除自己」，
+        # 而不是被「目标时刻之前的 run 与早报无关」那条规则顺手放过。
+        created = (target + datetime.timedelta(minutes=1)).astimezone(
+            datetime.timezone.utc).isoformat().replace("+00:00", "Z")
+        runs = [
+            {"id": 9001, "status": "in_progress", "created_at": created,
+             "event": "workflow_dispatch"},
+        ]
+        ok, reason = ensure_morning_running.decide(
+            now, "2026-11-01", runs, current_run_id="9001")
+        self.assertTrue(ok, f"当前 run 不能阻止自己检查早报，实际：{reason}")
+
+        # 同一个 run，如果不传 current_run_id（模拟旧行为），就会被自己拦住
+        blocked, _ = ensure_morning_running.decide(now, "2026-11-01", runs)
+        self.assertFalse(blocked, "不排除自己时必然自我阻塞——这正是被修掉的缺陷")
+
+    def test_other_active_run_still_blocks(self):
+        """B2 的另一半：别的 run 在跑，仍要防重复。"""
+        now = datetime.datetime(2026, 11, 2, 6, 26, tzinfo=CN_TZ)
+        target = ensure_morning_running.target_of(now)
+        created = (target + datetime.timedelta(minutes=2)).astimezone(
+            datetime.timezone.utc).isoformat().replace("+00:00", "Z")
+        runs = [
+            {"id": 9001, "status": "in_progress", "created_at": created},
+            {"id": 9002, "status": "queued", "created_at": created},
+        ]
+        ok, reason = ensure_morning_running.decide(
+            now, "2026-11-01", runs, current_run_id="9999")
+        self.assertFalse(ok, "目标时刻之后还有 2 条活跃 run，应当等待")
+        self.assertIn("2", reason)
+
+    def test_run_created_before_target_does_not_block(self):
+        """06:00 之前创建的活跃 run 只可能是普通扫描，不该拦早报。"""
+        now = datetime.datetime(2026, 11, 2, 6, 26, tzinfo=CN_TZ)
+        target = ensure_morning_running.target_of(now)
+        created = (target - datetime.timedelta(minutes=40)).astimezone(
+            datetime.timezone.utc).isoformat().replace("+00:00", "Z")
+        runs = [{"id": 8001, "status": "in_progress", "created_at": created}]
+        ok, _ = ensure_morning_running.decide(
+            now, "2026-11-01", runs, current_run_id="9001")
+        self.assertTrue(ok, "目标时刻之前的 run 与早报无关，不应阻塞")
+
+    def test_completed_run_does_not_block(self):
+        """已结束的 run 不拦。"""
+        now = datetime.datetime(2026, 11, 2, 7, 57, tzinfo=CN_TZ)
+        target = ensure_morning_running.target_of(now)
+        created = (target + datetime.timedelta(minutes=5)).astimezone(
+            datetime.timezone.utc).isoformat().replace("+00:00", "Z")
+        runs = [{"id": 7001, "status": "completed", "created_at": created}]
+        ok, _ = ensure_morning_running.decide(
+            now, "2026-11-01", runs, current_run_id="9001")
+        self.assertTrue(ok, "completed 的 run 不该阻塞补触发")
+
+    def test_current_run_id_read_from_github_env(self):
+        """GITHUB_RUN_ID 是 GitHub 内置变量，不需要额外传参、也不需要猜。"""
+        old = os.environ.get("GITHUB_RUN_ID")
+        try:
+            os.environ["GITHUB_RUN_ID"] = "123456789"
+            self.assertEqual(ensure_morning_running.current_run_id_from_env(), "123456789")
+            os.environ.pop("GITHUB_RUN_ID", None)
+            self.assertEqual(ensure_morning_running.current_run_id_from_env(), "",
+                             "本地运行时为空串，不能崩")
+        finally:
+            if old is None:
+                os.environ.pop("GITHUB_RUN_ID", None)
+            else:
+                os.environ["GITHUB_RUN_ID"] = old
+
+    def test_ensure_passes_current_run_id_through(self):
+        """接线：ensure() 必须把 current_run_id 一路传给 decide()。"""
+        calls = []
+
+        def fake_transport(url, token, method="GET", payload=None):
+            calls.append((url, method, payload))
+            if "dispatches" in url:
+                return {}
+            return {"workflow_runs": [
+                {"id": 9001, "status": "in_progress", "created_at": "2026-11-01T21:58:00Z"},
+            ]}
+
+        now = datetime.datetime(2026, 11, 2, 6, 26, tzinfo=CN_TZ).astimezone(
+            datetime.timezone.utc)
+        ok, msg = ensure_morning_running.ensure(
+            "t", "o/r", transport=fake_transport, now=now,
+            last_morning_date="2026-11-01", current_run_id="9001")
+        self.assertTrue(ok)
+        self.assertIn("已触发", msg, f"排除自己后应当补触发，实际：{msg}")
+        self.assertTrue(any("dispatches" in u for u, _m, _p in calls),
+                        "必须真的发出 dispatch 请求")
+
 
 # =============================================================================
 # 二、GitHub Actions 供应链固定

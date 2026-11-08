@@ -2,6 +2,8 @@ import os
 import sys
 import json
 import html
+import hmac
+import base64
 import re
 import time
 import hashlib
@@ -13,9 +15,13 @@ import concurrent.futures
 from urllib.parse import urlparse, urlunparse, quote, parse_qs, urlencode
 
 import ai_provider as ai
+import content_type as ctype
+import event_aggregate as evagg
 import evidence as ev
 import feed_registry as feeds
+import importance as imp
 import redact
+import review_store
 import schema as out_schema
 import sport_scope as sport
 import state_store as store
@@ -28,6 +34,25 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 # 允许指向自建反代/本地 mock，默认官方地址
 TELEGRAM_API_BASE = os.environ.get("TELEGRAM_API_BASE", "https://api.telegram.org")
 RUN_MODE = os.environ.get("RUN_MODE", "scan") # scan 或 morning
+
+# ==================== V1.0 生产硬化：E4 人工审核配置 ====================
+# 审核通知必须发到**独立的私有群**，绝不能默认公共频道就是审核群。
+# 没配 TELEGRAM_REVIEW_CHAT_ID 时，审核通知一律不发（宁可没人收到，
+# 也不能把「待审」消息扔进公共频道——那等于把未证实的消息公开出去）。
+TELEGRAM_REVIEW_CHAT_ID = os.environ.get("TELEGRAM_REVIEW_CHAT_ID", "").strip()
+
+# 允许点击「批准/拒绝」的 Telegram User ID 白名单，逗号分隔。
+# 为空 = 谁都不能批（默认拒绝，不是默认允许）。
+REVIEW_OPERATOR_IDS = frozenset(
+    x.strip() for x in os.environ.get("REVIEW_OPERATOR_IDS", "").split(",") if x.strip()
+)
+
+# 回调数据 HMAC 签名密钥。只凭 event_id 接受批准指令等于「任何人拿到
+# event_id 就能发布新闻」，所以按钮里带的是签名而不是裸 ID。
+REVIEW_CALLBACK_HMAC_SECRET = os.environ.get("REVIEW_CALLBACK_HMAC_SECRET", "")
+
+# 回调数据有效期（秒）。旧按钮重放要挡在签名校验之后、状态校验之前。
+REVIEW_CALLBACK_TTL_SECONDS = int(os.environ.get("REVIEW_CALLBACK_TTL_SECONDS", "86400"))
 
 # 手动强制补发早报：绕过 last_morning_report_date 日期锁。
 # 三种触发方式（任一即可）：环境变量 FORCE_SUMMARY=true / 命令行 --force / 命令行 -f
@@ -53,6 +78,28 @@ SUMMARY_MAX_MATERIALS = 40     # 喂给模型的素材上限，避免 token 爆�
 FUTURE_SKEW_TOLERANCE_MIN = 5
 POOL_RETENTION_HOURS = 72      # state.json 里新闻池的保留时长（池子可以留旧闻，早报不许用）
 POOL_MAX_ITEMS = 150           # 新闻池条目上限，控制 state.json 体积
+
+# ==================== V1.0 事件级早报排序 ====================
+# 开关默认关闭。关闭时**完全走原有路径**（_pool_for_morning + 按发布时间排序），
+# 新逻辑一行都不执行——这是「任何新功能关闭后必须恢复原有选材路径」的落地方式。
+# 验收通过后再由用户决定是否默认开启。
+IMPORTANCE_SORT = os.environ.get("IMPORTANCE_SORT", "0").strip().lower() in (
+    "1", "true", "yes", "y", "on")
+
+# GLOBAL_EVENT_LINE 每日早报专属名额：2 个。
+# 这是**保留位**，不是强制填充配额——没有达标事件时允许空置。
+# 空着不是失败；为了填满而把 B 级事件写成 A 级才是失败。
+GLOBAL_EVENT_SLOTS = 2
+
+# S 级即时推送软上限：3 条/日。
+# 软上限 ≠ 硬闸门：第 4 条及以上真正达到 S 级标准的**独立事件**照常推送，
+# 不得降级、不得推迟、不得静默丢弃；但必须落盘留痕（state["s_overflow"]）。
+S_PUSH_SOFT_CAP = 3
+
+# 同一事件最多送几条原文给模型。
+# 设上限的理由：C 罗退役 10 条报道会把 40 个素材名额吃掉 1/4。
+# 但也不能只送 1 条——证据体系需要多个独立来源才能给出 E2。
+MORNING_MAX_ARTICLES_PER_EVENT = 3
 
 # 可信单一来源白名单（V1.1 任务 4）。
 # SINGLE_SOURCE 默认不自动推送；只有这里列出的域名（经人工确认的记者/机构）才放行，
@@ -1116,6 +1163,1322 @@ def _pool_for_morning(state):
     return out
 
 
+# ==================== V1.0 事件级早报候选（任务 3 + 任务 4） ====================
+def _events_for_morning(state, pool=None):
+    """事件级早报候选：把报道聚成事件，按重要性排序并分配业务线名额。
+
+    与 `_pool_for_morning` 的关系是**叠加**，不是替换：
+    开关 `IMPORTANCE_SORT` 关闭时本函数根本不会被调用，原有按发布时间排序的
+    路径一行都不执行。这是「关闭开关必须恢复原有选材路径」的落地方式。
+
+    返回 (ordered_pool, events, stats)：
+      ordered_pool —— 已按事件优先级排好序、且每个事件最多取
+                      MORNING_MAX_ARTICLES_PER_EVENT 条的素材列表，
+                      可直接喂给既有的 _build_morning_events
+      events       —— 完整事件列表（含证据引用、重要性、可信度）
+      stats        —— 聚合统计 + 名额分配报告
+    """
+    pool = list(pool) if pool is not None else _pool_for_morning(state)
+    events, agg_stats = evagg.build_events(pool)
+    selected, slot_report = _select_morning_events(events)
+
+    ordered = []
+    for e in selected:
+        # 同一事件只取前 N 条原文：既保证证据体系能看到多个独立来源，
+        # 又不让一件事把 40 个名额吃光。
+        for it in e["members"][:MORNING_MAX_ARTICLES_PER_EVENT]:
+            item = dict(it)
+            item["_event_id"] = e["event_id"]
+            # 事件级展示标题：下游序列化要用它，而不是某一条报道的标题。
+            # 三条证据各自标题不同（官宣 / 评论 / 花絮），模型看到三个标题
+            # 就会以为是三件事——事件标题必须在聚合层就定下来，往下传。
+            item["_event_title"] = e["title"]
+            item["_importance"] = e["importance"]
+            item["_content_type"] = e["content_type"]
+            item["_scope"] = e["scope"]
+            ordered.append(item)
+
+    stats = dict(agg_stats)
+    stats.update(slot_report)
+    print(f"[INFO] 事件聚合：{agg_stats['input']} 条素材 → {agg_stats['events']} 个事件"
+          f"（合并 {agg_stats['merged']} 条）→ 入选 {len(selected)} 个事件 / "
+          f"{len(ordered)} 条素材")
+    print(f"[INFO] 名额分配：S 级 {slot_report['s_count']} / A 线 {slot_report['a_line_count']} / "
+          f"GLOBAL_EVENT_LINE 保留位 {slot_report['global_slots_used']}（空置 "
+          f"{slot_report['global_slots_empty']}） / 低价值排除 {slot_report['low_value_excluded']}")
+    if slot_report["global_slots_used"] == 0:
+        print("[INFO] " + slot_report["global_line_note"])
+    return ordered, events, stats
+
+
+def _select_morning_events(events, budget=None):
+    """按重要性分配早报名额，返回 (入选事件, 名额报告)。
+
+    顺序严格固定，这就是「C 级与普通 PROMOTION 不得挤占 S/A 级」的实现：
+      1. S 级事件           —— 不受保留位限制，全部入选
+      2. A 线的 A 级事件    —— 英超主线
+      3. GLOBAL_EVENT_LINE  —— 最多 2 个保留位，**允许空置**
+      4. B 级事件
+      5. C 级事件           —— 只填剩余名额，永远排在最后
+
+    第 3 步的「允许空置」不是宽容，是要求：没有达标事件就空着，
+    绝不为了填满而把 B 级写成 A 级、或把英超事件改标成全球线。
+
+    低价值内容（PROMOTION / GOSSIP）**整体不进候选池**，不是「排在最后」。
+    原因：名额富余时「排在最后」等于「照样入选」。实测 40 个名额只用掉 29 个时，
+    8 条商品推广全部进池——「排在最后」在有空位时没有任何约束力。
+    早报是事实新闻摘要，广告与八卦在任何情况下都不属于它。
+    这一点与 _review_route 对低价值内容返回 ARCHIVE 保持一致。
+    """
+    budget = budget or SUMMARY_MAX_MATERIALS
+    per_event = MORNING_MAX_ARTICLES_PER_EVENT
+    selected, used = [], 0
+
+    def take(event):
+        nonlocal used
+        cost = min(max(1, len(event.get("members") or [])), per_event)
+        if used + cost > budget:
+            return False
+        selected.append(event)
+        used += cost
+        return True
+
+    s_events = [e for e in events if e["importance"] == imp.S]
+    a_line_a = [e for e in events
+                if e["importance"] == imp.A and e["scope"] == imp.A_LINE]
+    g_line_a = [e for e in events
+                if e["importance"] == imp.A and e["scope"] == imp.GLOBAL_EVENT_LINE]
+    b_events = [e for e in events if e["importance"] == imp.B]
+    # C 级里剔除低价值内容；剩下的是「值得发但不够重要」的（如非英超常规赛果）
+    low_value = [e for e in events if ctype.is_low_value(e["content_type"])]
+    c_events = [e for e in events if e["importance"] == imp.C
+                and not ctype.is_low_value(e["content_type"])]
+
+    for e in s_events:
+        take(e)
+
+    for e in a_line_a:
+        take(e)
+
+    g_used = 0
+    for e in g_line_a:
+        if g_used >= GLOBAL_EVENT_SLOTS:
+            break
+        if take(e):
+            g_used += 1
+
+    for e in b_events:
+        take(e)
+
+    for e in c_events:
+        take(e)
+
+    report = {
+        "s_count": sum(1 for e in selected if e["importance"] == imp.S),
+        "a_line_count": sum(1 for e in selected if e["scope"] == imp.A_LINE),
+        "global_slots_reserved": GLOBAL_EVENT_SLOTS,
+        "global_slots_used": g_used,
+        "global_slots_empty": GLOBAL_EVENT_SLOTS - g_used,
+        "global_line_eligible": len(g_line_a),
+        "low_value_excluded": len(low_value),
+        "low_value_selected": sum(1 for e in selected
+                                  if ctype.is_low_value(e["content_type"])),
+        "events_selected": len(selected),
+        "article_budget": budget,
+        "articles_used": used,
+    }
+    if g_used == 0:
+        report["global_line_note"] = (
+            "今日无达标 GLOBAL_EVENT_LINE 事件，{} 个保留位空置".format(GLOBAL_EVENT_SLOTS))
+    else:
+        report["global_line_note"] = (
+            "GLOBAL_EVENT_LINE 使用 {} 个保留位，空置 {} 个".format(
+                g_used, GLOBAL_EVENT_SLOTS - g_used))
+    return selected, report
+
+
+# ==================== V1.0 S 级软上限 ====================
+def _apply_s_soft_cap(state, s_events, today=None):
+    """S 级每日软上限：3 条。第 4 条起**照常推送**，只加标注并留痕。
+
+    返回 (带标注的事件列表, 当日溢出记录)。
+
+    三条硬约束（缺一即违规）：
+      · 不得降级——不能把第 4 条标成 A 级绕开上限
+      · 不得推迟——不能留到次日早报当旧闻
+      · 不得丢弃——不能直接不推
+    因此本函数**不返回任何「被拦下」的事件**，只做计数与标注。
+
+    同一事件的重复进展不计入多条：聚合层已经把进展合成一个事件，
+    这里再按 event_id 去重，双保险。
+    """
+    today = today or _cn_now().strftime("%Y-%m-%d")
+    buckets = state.setdefault("s_overflow", {})
+    if not isinstance(buckets, dict):
+        buckets = {}
+        state["s_overflow"] = buckets
+    bucket = buckets.get(today)
+    if not isinstance(bucket, dict) or not isinstance(bucket.get("events"), list):
+        bucket = {"date": today, "count": 0, "events": []}
+        buckets[today] = bucket
+
+    out = []
+    for e in s_events:
+        eid = e.get("event_id")
+        if eid and eid in bucket["events"]:
+            # 同一事件再次出现（后续进展）：不重复计数，但仍要推
+            out.append(dict(e, s_push_note="", s_push_index=bucket["events"].index(eid) + 1))
+            continue
+        bucket["count"] += 1
+        if eid:
+            bucket["events"].append(eid)
+        note = ""
+        if bucket["count"] > S_PUSH_SOFT_CAP:
+            note = "今日第 {} 条 S 级事件".format(bucket["count"])
+        out.append(dict(e, s_push_note=note, s_push_index=bucket["count"]))
+
+    # 只保留最近 7 天，避免 state.json 无限增长
+    if len(buckets) > 7:
+        keep = sorted(buckets.keys())[-7:]
+        state["s_overflow"] = {k: buckets[k] for k in keep}
+    return out, bucket
+
+
+# ==================== V1.0 E4 级 S 事件：人工审核拦截 ====================
+# 本阶段只做「可靠的状态拦截 + 私有待审记录」。
+# Telegram 内联按钮与完整审核界面属后续独立任务——按任务书要求，
+# 不得用不安全的临时接口代替（例如把审批动作做成一个 HTTP 端点）。
+def _review_route(event):
+    """出口路由：返回 (route, reason)。route ∈ {"PUSH", "REVIEW", "ARCHIVE"}。
+
+    顺序：低价值先出局，再看是否送审。
+    反过来写（先判 REVIEW）会让一条 E4+S 的推广/八卦去占用人工审核的时间——
+    审核人力是稀缺资源，只能花在「可能是真新闻但证据不够」的事情上。
+    """
+    if ctype.is_low_value(event.get("content_type")):
+        return "ARCHIVE", "低价值内容（推广/八卦），不占用推送名额"
+    if event.get("importance") == imp.S and event.get("cred") == "E4":
+        return "REVIEW", ("E4 级 S 事件：重要性高但证据不足，"
+                          "不得公开推送为确定事实，转 PENDING_REVIEW")
+    return "PUSH", ""
+
+
+def _review_event_id(event):
+    """审核记录的稳定 ID：优先用事件 ID，退化为指纹。"""
+    return event.get("event_id") or event.get("event_fingerprint") or ""
+
+
+def _review_publisher(refs, fallback_url=""):
+    """发布方：优先用证据里登记的域名，其次从 URL 里抠。"""
+    for r in refs or []:
+        if not isinstance(r, dict):
+            continue
+        for key in ("domain", "publisher", "source"):
+            val = (r.get(key) or "").strip()
+            if val:
+                return val
+    url = fallback_url or (refs[0].get("url") if refs and isinstance(refs[0], dict) else "")
+    return ev.extract_domain(url) if url else ""
+
+
+def _build_review_payload(event, reason, first_seen_at=None):
+    """构造人工审核所需的**完整快照**（V1.0 硬化 A1）。
+
+    为什么必须存快照而不是「审核时再去查」：
+      · 审核可能发生在几小时之后，那时的 news_pool 早被覆盖；
+      · 原始报道标题/URL 是「归因措辞」的唯一依据，丢了就只能编；
+      · 批准后要重新拼一条完整的中文消息，没有事实摘要就拼不出来。
+
+    为什么单独放 `review_payload` 而不写回原始字段：
+      审核快照是**审核流程的内部状态**，与「这条新闻抓到了什么」是两件事。
+      覆盖原字段会让去重、证据重算、自动退出全部读到被改写过的数据。
+    """
+    refs = [r for r in (event.get("evidence_refs") or []) if isinstance(r, dict)]
+    primary_url = event.get("evidence_url") or (refs[0].get("url") if refs else "")
+
+    articles = []
+    seen = set()
+    for r in refs:
+        url = (r.get("url") or "").strip()
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        articles.append({
+            "title": (r.get("title") or "")[:200],
+            "url": url,
+            "publisher": r.get("domain") or r.get("publisher") or ev.extract_domain(url) or "",
+            "added_at": r.get("added_at") or "",
+        })
+    if primary_url and primary_url not in seen:
+        articles.append({
+            "title": (event.get("article_title") or event.get("title") or "")[:200],
+            "url": primary_url,
+            "publisher": ev.extract_domain(primary_url) or "",
+            "added_at": first_seen_at or "",
+        })
+
+    return {
+        "schema": 1,
+        "event_id": _review_event_id(event),
+        # 事件标题用模型改写后的中文标题；原始英文标题在 articles 里逐条保留
+        "title": (event.get("title") or "")[:200],
+        "fact_summary": (event.get("fact_summary") or "")[:2000],
+        "articles": articles,
+        "urls": [a["url"] for a in articles],
+        "publishers": sorted({a["publisher"] for a in articles if a["publisher"]}),
+        "first_seen_at": first_seen_at or _now_iso(),
+        "importance": event.get("importance") or "",
+        "cred": event.get("cred") or "",
+        "event_type": event.get("event_type") or "",
+        "content_type": event.get("content_type") or "",
+        "review_reason": reason or "",
+        "evidence": [
+            {
+                "url": a["url"],
+                "title": a["title"],
+                "domain": a["publisher"],
+                "source_class": "",
+            }
+            for a in articles
+        ],
+    }
+
+
+# ==================== V1.1 P0：私有审核存储句柄 ====================
+# 完整审核资料（标题、摘要、证据、审核人、操作日志）只允许存在于私有存储。
+# 公开 state.json 里只留 opaque review_ref + 状态（state_store.record_review_stub）。
+_REVIEW_STORE = None
+
+
+def review_store_client():
+    """惰性装配私有审核存储。返回 None = 未配置。
+
+    调用方**必须**把 None 当成「审核通道不可用」处理：
+    E4 事件挂起、不公开、不退回写 state.json。
+    """
+    global _REVIEW_STORE
+    if _REVIEW_STORE is None:
+        _REVIEW_STORE = review_store.from_env()
+    return _REVIEW_STORE
+
+
+# 审核 stub 在公开侧没有标题（P0 的代价：标题本身就是「哪一条」），
+# 但「同一事件」判定需要标题。折中办法是按句柄临时取一次，只在内存里用，
+# 不写回 state。缓存按 review_ref 存：标题不会变，一条记录只需取一次。
+_REVIEW_TITLE_CACHE = {}
+
+
+def _review_title_of(review_ref):
+    """按句柄从私有库取回审核事件的标题，只用于运行时的同事件判定。
+
+    取不到就返回空串，由调用方跳过这条记录——宁可漏判一次同事件，也不能用猜的。
+    """
+    ref = review_ref or ""
+    if not ref:
+        return ""
+    if ref in _REVIEW_TITLE_CACHE:
+        return _REVIEW_TITLE_CACHE[ref]
+    client = review_store_client()
+    if client is None:
+        return ""
+    try:
+        payload = client.peek_payload(ref) or {}
+    except review_store.ReviewStoreError:
+        return ""
+    title = payload.get("title") or ""
+    if title:
+        _REVIEW_TITLE_CACHE[ref] = title
+    return title
+
+
+def set_review_store(client):
+    """注入存储后端（测试与本地模拟用）。传 None 可复位。"""
+    global _REVIEW_STORE
+    _REVIEW_STORE = client
+    # 同时清空标题缓存：换了后端，旧缓存就是另一个库的事了。
+    _REVIEW_TITLE_CACHE.clear()
+
+
+def _review_store_entries(client, review_ref):
+    """取私有存储的操作日志；不可用时返回空列表。"""
+    if client is None or not review_ref:
+        return []
+    try:
+        return client.log(review_ref) or []
+    except review_store.ReviewStoreError:
+        return []
+
+
+def _decide_private_or_raise(client, review_ref, action, operator_id, note, label):
+    """在推进**公开**状态之前，先把审核决定落到**私有**存储。
+
+    这是 fail-closed 的唯一实现点。三种不成立的情形都必须 raise，绝不允许
+    「私有那边没记上、公开这边已经前进」：
+
+      1. 客户端缺失 —— 旧实现写的是 `if client is not None and review_ref:`，
+         两个条件缺任意一个就**整段跳过**，然后照常 `store.transition(...)`。
+         结果是公开 state 显示「已批准 / 已拒绝」，而私有存储里根本没有这条
+         决定，事后无法追溯是谁在什么时候批的，也无法解释为什么发了。
+      2. review_ref 为空 —— 没有句柄，私有存储无法定位这条记录。同上，
+         旧实现会静默跳过。
+      3. 存储返回任何错误 —— 旧实现只捕获 `ReviewConflict`（「已经有人决过
+         了」这种业务冲突）。其余异常（HTTP 5xx、连接中断、协议解析失败）
+         会直接穿透。穿透本身不算最坏，最坏的是它让调用方很容易用
+         `try/except` 包一层变成「私有失败、公开成功」。
+
+    顺序不能反：先私有、后公开。反过来的话，公开状态一旦前进，私有存储失败
+    就再也补不回来了——公开 state 已经是「已批准」，重放私有 decide 也会
+    因为公开记录不在 PENDING_REVIEW 而被拒。
+    """
+    if client is None:
+        raise store.StateError(
+            "{}被拒：私有审核存储未配置（REVIEW_STORE_URL / REVIEW_SERVICE_KEY），"
+            "无法记录审核决定，公开状态保持不变".format(label))
+    if not review_ref:
+        raise store.StateError(
+            "{}被拒：审核记录缺少 review_ref，无法在私有存储中定位，"
+            "公开状态保持不变".format(label))
+    try:
+        client.decide(review_ref, action, operator_id, note)
+    except review_store.ReviewConflict as e:
+        raise store.StateError("{}被拒：{}".format(label, e))
+    except review_store.ReviewStoreError as e:
+        raise store.StateError(
+            "{}被拒：私有审核存储错误（{}），公开状态保持不变".format(label, e))
+    except Exception as e:  # noqa: BLE001 —— fail-closed 要求兜住一切
+        # 兜底不是为了掩盖问题：异常类型与消息原样带出，只是**不允许**
+        # 它变成「公开状态已前进」。
+        raise store.StateError(
+            "{}被拒：私有审核存储异常（{}: {}），公开状态保持不变".format(
+                label, type(e).__name__, e))
+
+
+def _review_payload_of(client, review_ref):
+    """只读地取回完整 payload（不认领、不改状态）。"""
+    if client is None or not review_ref:
+        return {}
+    try:
+        return client.peek_payload(review_ref) or {}
+    except review_store.ReviewStoreError:
+        return {}
+
+
+def _review_source_label(payload, rec=None):
+    publishers = (payload or {}).get("publishers") or []
+    if publishers:
+        return "、".join(publishers[:2])
+    urls = (payload or {}).get("urls") or []
+    if urls:
+        return ev.extract_domain(urls[0]) or "单一来源"
+    return "单一来源"
+
+
+def _review_publish_attributes(payload):
+    """批准后必须成立的四条铁律。**计算出来，不落公开 state**。
+
+      · publish_mode = ATTRIBUTED  —— 只能「据 X 报道」，不得用确定语气
+      · publish_cred = E4          —— 可信度原样带出，下游不得当成已确认
+      · publish_is_confirmed=False —— 人工批准 ≠ 事实核验完成
+      · unverified_note 非空       —— 未证实提示必须跟着内容一起走
+
+    第三项最容易漏：状态机记住了 E4，但正文里没有一句「尚未获得第二个独立来源
+    印证」，读者看到的就是一条语气笃定的独家。
+    """
+    payload = payload or {}
+    cred = payload.get("cred") or "E4"
+    source = _review_source_label(payload)
+    return {
+        "publish_mode": "ATTRIBUTED",
+        "publish_cred": cred,
+        "publish_is_confirmed": False,
+        "unverified_note": (
+            "据 {} 报道，该消息尚未获得第二个独立来源印证，不得表述为已确认事实"
+            .format(source)
+        ),
+    }
+
+
+_REVIEW_LOG_LABELS = {
+    "ENQUEUED": "ENQUEUED",
+    "DECIDED:approve": "APPROVED",
+    "DECIDED:decline": "DECLINED",
+    "EXITED": "AUTO_EXITED",
+    "CLAIMED": "CLAIMED",
+    "FINISH:delivered": "DELIVERED",
+    "FINISH:needs_manual": "NEEDS_MANUAL",
+    "FINISH:failed": "DELIVERY_FAILED",
+    "FINISH:declined": "DECLINED",
+}
+
+
+def _review_log_view(entries, payload):
+    """把私有存储的日志翻译成对外视图里的 review_log。
+
+    私有存储保持通用（只有 action/actor/detail 三列），
+    「APPROVED / AUTO_EXITED」这类业务语义在这里还原。
+    """
+    cred = (payload or {}).get("cred") or "E4"
+    out = []
+    for e in entries or []:
+        raw = str(e.get("action") or "")
+        item = {
+            "at": e.get("at") or "",
+            "action": _REVIEW_LOG_LABELS.get(raw, raw),
+            "operator_id": e.get("actor") or "",
+            "note": e.get("detail") or "",
+        }
+        if item["action"] in ("APPROVED", "DECLINED", "AUTO_EXITED"):
+            item["prev_cred"] = cred
+            item["cred_after"] = cred
+        out.append(item)
+    return out
+
+
+def _review_status_label(rec, private_status, action=""):
+    """审核状态标签。优先看私有存储（权威），退化看公开 stub。"""
+    if private_status == review_store.EXITED:
+        return "AUTO_EXITED"
+    if private_status == review_store.DECLINED:
+        return "DECLINED"
+    if private_status in (review_store.DELIVERED,):
+        return "APPROVED"
+    if private_status in (review_store.DECIDED, review_store.CLAIMED):
+        return "APPROVED" if action == "approve" else "DECLINED"
+    if private_status in (review_store.NEEDS_MANUAL, review_store.FAILED):
+        return "APPROVED"
+    status = (rec or {}).get("delivery_status")
+    if status == store.PENDING_REVIEW:
+        return "PENDING"
+    if status == store.REVIEW_DECLINED:
+        return "DECLINED"
+    return "APPROVED"
+
+
+def _review_view(rec, payload=None, entries=None, private=None, **extra):
+    """构造「审核视图」：公开 stub ∪ 私有元数据。
+
+    ⚠️ 这个视图**只用于内存中展示与判断，绝不写回 state.json**。
+    它是 P0 的核心抽象：调用方（含测试、卡片渲染、审核日志）看到的仍是完整信息，
+    而落盘的只有 stub。把两者混在一起，就是最初那个泄漏缺陷的成因。
+    """
+    payload = payload or {}
+    private = private or {}
+    articles = payload.get("articles") or []
+    view = dict(rec or {})
+    view.update({
+        # event_id 只存在于**视图**里（来自私有 payload）。
+        # 公开 stub 里没有它——那是 URL 的哈希前缀，写进去就等于公开
+        # 「哪一条正在被压着」。视图不落盘，所以这里可以放心带。
+        "event_id": payload.get("event_id") or view.get("event_id") or "",
+        "title": payload.get("title") or "",
+        "fact_summary": payload.get("fact_summary") or "",
+        "evidence_url": (payload.get("urls") or [""])[0] if payload.get("urls") else "",
+        "evidence_refs": [
+            {"url": a.get("url") or "", "title": a.get("title") or "",
+             "domain": a.get("publisher") or "", "publisher": a.get("publisher") or ""}
+            for a in articles if isinstance(a, dict)
+        ],
+        "review_importance": payload.get("importance") or "",
+        "review_cred": payload.get("cred") or "",
+        "review_reason": payload.get("review_reason") or "",
+        "review_operator": private.get("operator_id") or "",
+        "review_status": _review_status_label(rec, private.get("status"),
+                                              private.get("action") or ""),
+        "review_log": _review_log_view(entries, payload),
+    })
+    view.update(_review_publish_attributes(payload))
+    view["cred_unchanged_by_approval"] = view["review_status"] in (
+        "APPROVED", "AUTO_EXITED")
+    view.update(extra)
+    return view
+
+
+def _enqueue_review(state, event, reason, now=None):
+    """把事件送进**私有**审核队列，公开 state 只留最小化 stub。
+
+    P0 的核心改动就在这里。旧实现把完整 `review_payload`（标题、事实摘要、
+    原始报道标题与 URL、证据组合、审核意见、审核人）写进 `state["events"]`，
+    而本仓库是 Public 且 state.json 每轮都被提交——等于把「我们手上有一条
+    未核实的独家」连同证据一起公开发布。
+
+    现在：
+      1. 完整 payload → 私有审核存储（Cloudflare SQLite Durable Object）
+      2. 公开 state   → 只有 {随机 id, delivery_status, review_ref, 时间戳}
+      3. 私有存储不可用 → **什么都不写**，绝不退回写 state.json
+
+    第 2 条里的「随机 id」是 PR #1 审查 P0 的修复。旧实现用
+    `event_id = sha1(cleaned_url)[:12]` 当公开键，而这个函数的输入——新闻池
+    里的 URL——本身就是公开的。任何人拿公开 URL 算一次 SHA-1 前 12 位，就能
+    在 state["events"] 里精确匹配到「哪一条被挂起」。泄露的不是内容，是
+    「哪一条」，而那恰恰是最值钱的部分。现在公开键是随机的，算不出来。
+
+    第 3 条也随之收紧：以前存储不可用时仍会写一条 review_ref 为空的 stub，
+    那条 stub 既无法处理、又占着公开位置；现在干脆不写——没有私有记录，
+    就不该有公开痕迹，下一轮自然重试。
+    """
+    eid = _review_event_id(event)          # 只进私有 payload，绝不进公开 state
+    if not eid:
+        return None
+
+    enqueued_at = _now_iso()
+    first_seen = event.get("created_at") or enqueued_at
+    payload = _build_review_payload(event, reason, first_seen)
+
+    client = review_store_client()
+    if client is None:
+        print("::error title=Review Store Missing::私有审核存储未配置"
+              "（REVIEW_STORE_URL + REVIEW_SERVICE_KEY），"
+              "E4 事件已挂起：不公开、不入库、等待人工处理")
+        return None
+
+    try:
+        res = client.enqueue(payload) or {}
+    except review_store.ReviewStoreError as e:
+        print("::error title=Review Store Failed::私有审核存储不可用：{}".format(e))
+        print("::error title=Review Store Failed::E4 事件已挂起，绝不写入公开 state.json")
+        return None
+
+    review_ref = res.get("review_ref") or ""
+    if not review_ref:
+        print("::error title=Review Store Failed::私有审核存储没有返回 review_ref，"
+              "该事件本轮不入队（下一轮重试）")
+        return None
+
+    # 公开侧：同一个 review_ref 只允许有一条 stub。
+    # 去重由私有存储的 ux_review_active 唯一索引保证——重复入队时它返回
+    # duplicate=true 和**同一个** ref，于是这里命中已有 stub，不会再长一条。
+    #
+    # 公开键用独立的随机值而不是复用 review_ref：句柄要进 Telegram 的
+    # callback_data、要给运维看，把它同时当状态字典的键会让两个标识绑死，
+    # 将来想轮换其中任何一个都得改另一处。
+    rec = store.find_review_stub(state, review_ref)
+    if rec is None:
+        rec = store.record_review_stub(
+            state, store.new_review_public_id(), review_ref,
+            store.PENDING_REVIEW, enqueued_at)
+    else:
+        rec["delivery_status"] = store.PENDING_REVIEW
+        rec["updated_at"] = _now_iso()
+
+    entries = _review_store_entries(client, review_ref)
+    if not entries:
+        entries = [{"at": enqueued_at, "action": "ENQUEUED", "actor": "system",
+                    "detail": ""}]
+    view = _review_view(rec, payload, entries)
+    # duplicate 只用于「别再给审核群发一遍卡片」，不进公开 state
+    view["_duplicate"] = bool(res.get("duplicate"))
+    return view
+
+
+def _find_review_rec(state, key):
+    """按「公开键」或「审核句柄」找一条审核记录。
+
+    P0 之后公开键是随机的，业务侧稳定可用的索引只剩 review_ref，
+    所以两个都认——调用方不需要知道记录当初是用哪种键落盘的。
+    """
+    events = state.get("events") or {}
+    rec = events.get(key) if isinstance(events, dict) else None
+    if isinstance(rec, dict):
+        return rec
+    return store.find_review_stub(state, key)
+
+
+def _locate_review_by_event_id(state, client, event_id):
+    """拿着**原始 event_id** 去找对应的公开审核 stub。
+
+    P0 把公开键改成随机值之后，`state["events"]` 的键与 event_id 再无关系，
+    公开结构里也不再有 event_id 字段。于是「事件 id → 审核记录」这条链只剩
+    私有存储能走：`review` 表的 event_id 是业务主键，`find_active()` 按它
+    反查 review_ref，再回公开 state 用句柄定位 stub。
+
+    这是**自动退出审核**的必经之路：第二个独立来源到达时，调用方手里只有
+    事件 id，没有句柄。
+
+    任何一步失败都返回 None，让调用方按「没有待退出的审核」处理。
+    宁可让记录留在队列里等人工，也不能因为查不到就当成「可以发」。
+
+    日志里不能出现 event_id：它是 sha1(url)[:12]，
+    而 GitHub Actions 日志是公开的。
+    """
+    if not event_id or client is None:
+        return None
+    try:
+        got = client.find_active(event_id) or {}
+    except review_store.ReviewStoreError as e:
+        print("::warning title=Review Lookup Failed::"
+              "私有审核存储按事件反查失败：{}".format(e))
+        return None
+    review_ref = got.get("review_ref") or ""
+    if not review_ref:
+        return None
+    return store.find_review_stub(state, review_ref)
+
+def approve_review(state, event_id, operator_id, note=""):
+    """人工批准：进投递队列，但**不改变可信度等级**。
+
+    「人工批准 ≠ 事实核验完成」。审核人确认的是「这条可以按归属措辞发出去」，
+    不是「这条是真的」。把 cred 从 E4 改成 E1 是最危险的误用。
+
+    公开 state 只发生一次状态迁移（PENDING_REVIEW → PENDING_DELIVERY）；
+    审核人、备注、publish_mode 等全部留在私有存储与返回视图里。
+    """
+    rec = _find_review_rec(state, event_id)
+    if not rec:
+        raise store.StateError("审核记录不存在: {}".format(event_id))
+    if rec.get("delivery_status") != store.PENDING_REVIEW:
+        raise store.StateError("该记录不在待审状态: {}（当前 {}）".format(
+            event_id, rec.get("delivery_status")))
+
+    review_ref = rec.get("review_ref") or ""
+    client = review_store_client()
+    # fail-closed：客户端缺失 / review_ref 为空 / 存储任何错误 → 直接 raise，
+    # 绝不静默跳过私有 decide 再改公开状态。详见 _decide_private_or_raise。
+    _decide_private_or_raise(client, review_ref, "approve", operator_id, note, "批准")
+
+    store.transition(rec, store.PENDING_DELIVERY)
+    payload = _review_payload_of(client, review_ref)
+    entries = _review_store_entries(client, review_ref)
+    if not entries:
+        entries = [{"at": _now_iso(), "action": "DECIDED:approve",
+                    "actor": operator_id, "detail": note}]
+    return _review_view(rec, payload, entries,
+                        private={"status": review_store.DECIDED, "action": "approve"})
+
+
+def decline_review(state, event_id, operator_id, note=""):
+    """人工拒绝：仅存档。进终态 REVIEW_DECLINED，不再重复入队。"""
+    rec = _find_review_rec(state, event_id)
+    if not rec:
+        raise store.StateError("审核记录不存在: {}".format(event_id))
+    if rec.get("delivery_status") != store.PENDING_REVIEW:
+        raise store.StateError("该记录不在待审状态: {}（当前 {}）".format(
+            event_id, rec.get("delivery_status")))
+
+    review_ref = rec.get("review_ref") or ""
+    client = review_store_client()
+    # 同 approve_review：私有决定不成立就不许迁移公开状态。
+    _decide_private_or_raise(client, review_ref, "decline", operator_id, note, "拒绝")
+
+    store.transition(rec, store.REVIEW_DECLINED)
+    payload = _review_payload_of(client, review_ref)
+    entries = _review_store_entries(client, review_ref)
+    if not entries:
+        entries = [{"at": _now_iso(), "action": "DECIDED:decline",
+                    "actor": operator_id, "detail": note}]
+    return _review_view(rec, payload, entries,
+                        private={"status": review_store.DECLINED, "action": "decline"})
+
+
+def list_pending_reviews(state):
+    """待审队列（内部使用，不得外发）。
+
+    返回的是视图（含私有元数据），但 state 里存的仍只是 stub。
+    """
+    out = []
+    client = review_store_client()
+    for rec in (state.get("events") or {}).values():
+        if rec.get("delivery_status") != store.PENDING_REVIEW:
+            continue
+        ref = rec.get("review_ref") or ""
+        out.append(_review_view(rec, _review_payload_of(client, ref),
+                                _review_store_entries(client, ref)))
+    return out
+
+
+# ==================== V1.0 硬化 A2：私有审核通知 ====================
+# 三条铁律：
+#   1. 待审消息**只**发 TELEGRAM_REVIEW_CHAT_ID，绝不回落到公共频道。
+#      没配就宁可不发——把「未证实」的消息扔进公共频道，等于直接违规发布。
+#   2. 按钮里带的是**签名**，不是裸 event_id。只凭 ID 接受批准，意味着
+#      任何人拿到 ID 就能发布新闻。
+#   3. 卡片上不出现任何「已确认」字样。E4 的事实状态就是「未证实」，
+#      审核人看到的第一眼必须是这个。
+REVIEW_CALLBACK_VERSION = "v1"
+REVIEW_ACTION_APPROVE = "a"
+REVIEW_ACTION_DECLINE = "d"
+
+
+def _review_callback_sig(review_ref, action, exp, secret=None):
+    """回调签名：HMAC-SHA256(version|action|review_ref|exp)，取前 16 位十六进制。
+
+    把 exp 一起签进去，签名本身就携带了有效期——
+    否则攻击者可以改 exp 来延长旧按钮的寿命。
+
+    为什么是 review_ref 而不是 event_id：
+      event_id 是 URL 哈希，攻击者拿到候选 URL 就能算出来，于是「知道 ID」
+      等于「能点按钮」。review_ref 是私有存储生成的 8 字节随机值，
+      不可推算；再加上 HMAC 绑定，伪造一个能通过验签的 ref 不可行。
+
+    为什么只取 16 位：Telegram 对 callback_data 有 64 字节硬上限，
+    "v1:a:<ref16>:<exp10>:<sig16>" 正好 49 字节。Worker 侧必须用同一算法。
+    """
+    key = (secret if secret is not None else REVIEW_CALLBACK_HMAC_SECRET) or ""
+    msg = "{}|{}|{}|{}".format(REVIEW_CALLBACK_VERSION, action, review_ref, exp).encode("utf-8")
+    return hmac.new(key.encode("utf-8"), msg, hashlib.sha256).hexdigest()[:16]
+
+
+def encode_review_callback(review_ref, action, ttl=None, now_ts=None, secret=None):
+    """生成按钮 callback_data。Telegram 限制 64 字节，这里控制在 50 以内。"""
+    if action not in (REVIEW_ACTION_APPROVE, REVIEW_ACTION_DECLINE):
+        raise ValueError("非法审核动作: {}".format(action))
+    ttl = REVIEW_CALLBACK_TTL_SECONDS if ttl is None else ttl
+    exp = int((now_ts if now_ts is not None else time.time()) + ttl)
+    sig = _review_callback_sig(review_ref, action, exp, secret)
+    return "{}:{}:{}:{}:{}".format(REVIEW_CALLBACK_VERSION, action, review_ref, exp, sig)
+
+
+def verify_review_callback(data, now_ts=None, secret=None):
+    """校验并解析 callback_data，返回 (ok, action, review_ref, reason)。
+
+    生产路径上这一步由 Cloudflare Worker 执行（worker.js 的 verifyCallbackData），
+    这里保留同一份实现，用于本地自检与「两边算法是否一致」的契约测试。
+
+    校验顺序刻意是「格式 → 签名 → 有效期」：
+    先验签再判有效期，否则过期判断会被伪造数据牵着走。
+    """
+    if not data or not isinstance(data, str):
+        return False, "", "", "回调数据为空"
+    parts = data.split(":")
+    if len(parts) != 5:
+        return False, "", "", "回调数据格式错误"
+    ver, action, review_ref, exp_s, sig = parts
+    if ver != REVIEW_CALLBACK_VERSION:
+        return False, "", "", "回调数据版本不支持: {}".format(ver)
+    if action not in (REVIEW_ACTION_APPROVE, REVIEW_ACTION_DECLINE):
+        return False, "", "", "未知审核动作: {}".format(action)
+    if not re.fullmatch(r"[0-9a-f]{8,32}", review_ref or ""):
+        return False, "", "", "审核句柄格式非法"
+    try:
+        exp = int(exp_s)
+    except (TypeError, ValueError):
+        return False, "", "", "有效期字段非法"
+    want = _review_callback_sig(review_ref, action, exp, secret)
+    if not hmac.compare_digest(want, sig):
+        return False, "", "", "签名校验失败"
+    now = int(now_ts if now_ts is not None else time.time())
+    if now > exp:
+        return False, "", "", "按钮已过期（重放被拒）"
+    return True, action, review_ref, ""
+
+
+def _review_card_text(payload, review_ref):
+    """中文审核卡片。刻意不出现「已确认 / 官宣」等字样。
+
+    入参是**私有 payload**，不是公开 state 记录——卡片本来就只发私有审核群。
+    """
+    p = payload or {}
+    title = p.get("title") or "(无标题)"
+    summary = (p.get("fact_summary") or "").strip()
+    if len(summary) > 600:
+        summary = summary[:600] + "…"
+    urls = p.get("urls") or []
+    publishers = p.get("publishers") or []
+    source = "、".join(publishers[:3]) if publishers else "（来源未登记）"
+    first_seen = p.get("first_seen_at") or ""
+
+    lines = [
+        "🔒 <b>待审事件 · E4 未证实</b>",
+        "",
+        "<b>{}</b>".format(html.escape(str(title))),
+        "",
+    ]
+    if summary:
+        lines += ["📝 <b>事实摘要</b>：{}".format(html.escape(summary)), ""]
+    lines += [
+        "🏷 重要性：<b>{}</b> 级".format(html.escape(str(p.get("importance") or "?"))),
+        "🔎 可信度：<b>E4 · 未证实</b>（单一来源，未获第二个独立来源印证）",
+        "📂 编辑分类：{}".format(html.escape(str(p.get("content_type") or "未判定"))),
+        "🧩 事件类型：{}".format(html.escape(str(p.get("event_type") or "未判定"))),
+        "📰 来源：{}".format(html.escape(source)),
+        "🕒 首次采集：{}".format(html.escape(str(first_seen))),
+        "",
+    ]
+    for i, u in enumerate(urls[:3], 1):
+        lines.append("🔗 原文{}：{}".format(i, html.escape(str(u))))
+    lines += [
+        "",
+        "❓ <b>送审原因</b>：{}".format(
+            html.escape(str(p.get("review_reason") or "证据不足"))),
+        "",
+        "⚠️ 本条<b>尚未获得第二个独立来源印证</b>。批准后将以"
+        "「据 {} 报道」的归属措辞发布，<b>不会</b>标注为已确认事实。".format(
+            html.escape(source)),
+        "",
+        "审核句柄：<code>{}</code>".format(html.escape(str(review_ref or ""))),
+    ]
+    return "\n".join(lines)
+
+
+def _review_keyboard(review_ref):
+    """批准 / 拒绝两个按钮。配置缺失时返回 None（不发未签名按钮）。"""
+    if not REVIEW_CALLBACK_HMAC_SECRET:
+        return None
+    approve = encode_review_callback(review_ref, REVIEW_ACTION_APPROVE)
+    decline = encode_review_callback(review_ref, REVIEW_ACTION_DECLINE)
+    return {
+        "inline_keyboard": [[
+            {"text": "✅ 批准发布", "callback_data": approve},
+            {"text": "🗄 拒绝并存档", "callback_data": decline},
+        ]]
+    }
+
+
+def send_review_card(payload, review_ref, post=None):
+    """把审核卡片发到**私有审核群**，返回 message_id（失败返回 None）。
+
+    绝不回落到 TELEGRAM_CHAT_ID。缺配置时明确报错并不发，
+    让运维看见「审核通道没配好」，而不是让一条未证实消息悄悄流向公共频道。
+
+    注意：卡片正文来自**私有 payload**，它从未进入 state.json，
+    所以即使这张卡片被截图，也和公开仓库无关。
+    """
+    post = post or _post_telegram_once
+    if not TELEGRAM_BOT_TOKEN:
+        print("[WARN] 未配置 TELEGRAM_BOT_TOKEN，审核通知未发送")
+        return None
+    if not TELEGRAM_REVIEW_CHAT_ID:
+        print("[WARN] 未配置 TELEGRAM_REVIEW_CHAT_ID，审核通知未发送"
+              "（不会回落到公共频道）")
+        print("::warning title=Review Chat Missing::"
+              "TELEGRAM_REVIEW_CHAT_ID 未配置，待审事件只在私有存储里等待人工处理")
+        return None
+
+    keyboard = _review_keyboard(review_ref)
+    text = _review_card_text(payload, review_ref)
+    if keyboard is None:
+        print("::error title=Review Signing Key Missing::"
+              "REVIEW_CALLBACK_HMAC_SECRET 未配置，审核卡片将不带按钮"
+              "（拒绝发送未签名按钮）")
+        text += "\n\n⚠️ <i>审核按钮不可用：REVIEW_CALLBACK_HMAC_SECRET 未配置。</i>"
+
+    payload_body = {
+        "chat_id": TELEGRAM_REVIEW_CHAT_ID,
+        "text": text,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": True,
+    }
+    if keyboard is not None:
+        payload_body["reply_markup"] = keyboard
+
+    url = "{}/bot{}/sendMessage".format(TELEGRAM_API_BASE, TELEGRAM_BOT_TOKEN)
+    ok, kind, reason, mid = post(url, payload_body)
+    if not ok:
+        print("::error title=Review Card Failed::审核卡片发送失败 | {}".format(reason))
+        return None
+    return mid
+
+
+def send_review_status(text, post=None):
+    """审核群里的短状态消息。只发私有群，且**不得包含新闻正文**。"""
+    post = post or _post_telegram_once
+    if not (TELEGRAM_BOT_TOKEN and TELEGRAM_REVIEW_CHAT_ID):
+        return False
+    url = "{}/bot{}/sendMessage".format(TELEGRAM_API_BASE, TELEGRAM_BOT_TOKEN)
+    ok, _kind, _reason, _mid = post(url, {
+        "chat_id": TELEGRAM_REVIEW_CHAT_ID, "text": text, "parse_mode": "HTML",
+        "disable_web_page_preview": True,
+    })
+    return ok
+
+
+# ==================== V1.1 P0：批准后的真实投递 ====================
+# 「批准」不是「投递成功」。这两件事必须分开记账：
+#   批准 = 私有存储里 pending → decided（人可以撤回判断）
+#   投递 = 真的发出去了，且每一段都有 message_id
+# 把两者合成一步，会在「批准了但发送失败」时留下一条既没发出、又不在待审队列的
+# 幽灵事件——既不会被重试，也不会被人工发现。
+REVIEW_CLAIM_TTL_SECONDS = 900
+
+
+def _review_publish_text(payload):
+    """按**私有 payload** 拼中文正文。全程使用归属措辞，不出现确定语气。
+
+    正文只在内存里拼、直接发给 Telegram，绝不写进 state.json，也绝不打印。
+    """
+    p = payload or {}
+    title = (p.get("title") or "（无标题）").strip()
+    summary = (p.get("fact_summary") or "").strip()
+    source = _review_source_label(p)
+    urls = p.get("urls") or []
+    note = _review_publish_attributes(p)["unverified_note"]
+
+    lines = ["📌 <b>{}</b>".format(html.escape(title)), ""]
+    if summary:
+        lines += ["据 {} 报道：{}".format(html.escape(source), html.escape(summary)), ""]
+    else:
+        lines += ["据 {} 报道。".format(html.escape(source)), ""]
+    for u in urls[:2]:
+        lines.append("🔗 原文：{}".format(html.escape(str(u))))
+    lines += ["", "⚠️ {}".format(html.escape(note))]
+    return "\n".join(lines)
+
+
+def _resume_pending_delivery(rec):
+    """把可重试的中间状态推回 PENDING_DELIVERY，准备发送。
+
+    状态机不允许 RETRYABLE_FAILURE / DELIVERY_FAILED 直接跳 DELIVERED，
+    所以必须先回到 PENDING_DELIVERY。DELIVERY_UNCERTAIN **不在**这里——
+    「可能已经发出去了」绝不能自动重发，否则就是重复公开投递。
+    """
+    status = rec.get("delivery_status")
+    if status == store.PENDING_DELIVERY:
+        return True
+    if status in (store.RETRYABLE_FAILURE, store.DELIVERY_FAILED):
+        store.transition(rec, store.PENDING_DELIVERY)
+        return True
+    return False
+
+
+def _apply_delivery_outcome(rec, ok, report, error):
+    """按分段结果推进状态机。三态必须区分，不许合并。"""
+    statuses = [r.get("delivery_status") for r in (report or [])]
+    any_uncertain = store.CHUNK_UNCERTAIN in statuses
+    any_failed = any(s in (store.CHUNK_FAILED,) for s in statuses)
+    all_delivered = bool(statuses) and all(
+        s == store.CHUNK_DELIVERED for s in statuses)
+
+    if ok and all_delivered:
+        store.transition(rec, store.DELIVERED)
+        store.transition(rec, store.COMMITTED)
+        return store.COMMITTED
+    if any_uncertain:
+        store.transition(rec, store.DELIVERY_UNCERTAIN)
+        return store.DELIVERY_UNCERTAIN
+    if any_failed:
+        store.transition(rec, store.DELIVERY_FAILED, last_error=(error or "")[:300])
+        return store.DELIVERY_FAILED
+    store.transition(rec, store.RETRYABLE_FAILURE, last_error=(error or "")[:300])
+    return store.RETRYABLE_FAILURE
+
+
+def _public_stub_of(state, review_ref, event_id=""):
+    """按 opaque 句柄找公开 stub；找不到再退回按事件 id 找。
+
+    优先用 review_ref 是因为 P0 之后公开键是随机的，事件 id 在公开侧
+    已经不存在了。保留 event_id 回退只为兼容历史 state（迁移前的记录）。
+    """
+    rec = store.find_review_stub(state, review_ref)
+    if rec is None and event_id:
+        rec = (state.get("events") or {}).get(event_id)
+    if not rec:
+        raise store.StateError("公开 state 里没有该事件的审核标记: {}".format(
+            review_ref or event_id))
+    return rec
+
+
+def _mark_public_uncertain(state, review_ref, client=None, reason=""):
+    """把对应的公开 stub 标成「结果未知」，并说明为什么必须这么做。
+
+    私有存储说「租约过期、结果未知」，如果公开 state 还写着 PENDING_DELIVERY，
+    下一次扫描就会把它当成「还没发」继续推进——同一个判断错误只是换了个位置
+    重演。`DELIVERY_UNCERTAIN` 在 `blocks_rediscovery()` 里返回 True，
+    既不会重复入队，也不会被当成「干净的待发」。
+
+    公开 state 可能还停在 PENDING_REVIEW：上一次执行在 `save_state` 之前就断了。
+    真实顺序是「已进投递队列 → 结果未知」，这里按这个顺序补齐，不跳过状态机。
+    """
+    rec = store.find_review_stub(state, review_ref)
+    if rec is None and client is not None and review_ref:
+        try:
+            got = client.get(review_ref) or {}
+            eid = got.get("event_id") or ""
+            rec = (state.get("events") or {}).get(eid) if eid else None
+        except review_store.ReviewStoreError:
+            rec = None
+    if rec is None:
+        print("::warning title=Review Stub Missing::"
+              "私有记录 {} 在公开 state 中找不到对应 stub，无法标记结果未知".format(
+                  review_ref or "(空)"))
+        return False
+    if rec.get("delivery_status") in (store.DELIVERY_UNCERTAIN, store.COMMITTED,
+                                      store.DELIVERED, store.REVIEW_DECLINED):
+        return True
+    try:
+        if rec.get("delivery_status") == store.PENDING_REVIEW:
+            store.transition(rec, store.PENDING_DELIVERY)
+        store.transition(rec, store.DELIVERY_UNCERTAIN,
+                         last_error=(reason or "")[:300])
+        return True
+    except store.StateError as e:
+        print("::warning title=Public State Not Marked::"
+              "公开状态无法标为结果未知（当前 {}）：{}".format(
+                  rec.get("delivery_status"), e))
+        return False
+
+
+def execute_review_decision(state, review_ref, post=None):
+    """执行一条已决定的审核记录：认领 → 投递/存档 → 回写结果。
+
+    幂等保证（全部由私有存储的原子迁移提供）：
+      · 已被他人认领 / 已投递 / 已拒绝 → claim 直接失败，不会重复公开投递
+      · 旧按钮重放 → 状态已离开 pending/decided，decide 失败
+      · 重复 finish → claim_token 已清空，失败
+
+    三态必须区分：确定失败、结果未知、已送达。
+    """
+    client = review_store_client()
+    if client is None:
+        return {"status": "STORE_UNAVAILABLE",
+                "reason": "私有审核存储未配置（REVIEW_STORE_URL + REVIEW_SERVICE_KEY）"}
+
+    try:
+        claim = client.claim(review_ref)
+    except review_store.ReviewNeedsManual as e:
+        # 租约过期：上一位执行者的消息**可能已经发出去了**。
+        # 这里必须停下来等人，绝不重试——重试就是第二次公开推送。
+        reason = str(e)
+        print("::warning title=Review Needs Manual::{}".format(reason))
+        _mark_public_uncertain(state, review_ref, client, reason)
+        return {"status": "NEEDS_MANUAL", "reason": reason,
+                "delivery_status": store.DELIVERY_UNCERTAIN,
+                "recovery": "人工核对后调用 release(review_ref, operator_id, note) 放行"}
+    except review_store.ReviewConflict as e:
+        return {"status": "CLAIMED_BY_OTHER", "reason": str(e)}
+    except review_store.ReviewStoreError as e:
+        return {"status": "STORE_ERROR", "reason": str(e)}
+
+    action = claim.get("action") or ""
+    payload = claim.get("payload") or {}
+    token = claim.get("claim_token") or ""
+    event_id = claim.get("event_id") or payload.get("event_id") or ""
+
+    print("[INFO] 审核认领成功 | ref={} | action={} | attempts={} | payload={}".format(
+        review_ref, action, claim.get("attempts"),
+        review_store.redact_payload_for_log(payload)))
+
+    # ---- 拒绝：只改状态，绝不投递 ----
+    if action == "decline":
+        out = _finish_quietly(client, review_ref, token, review_store.DECLINED)
+        rec = store.find_review_stub(state, review_ref)
+        if rec and rec.get("delivery_status") == store.PENDING_REVIEW:
+            store.transition(rec, store.REVIEW_DECLINED)
+        return {"status": store.REVIEW_DECLINED, "reason": "已拒绝并存档",
+                "delivery_status": store.REVIEW_DECLINED,
+                "finish_ok": out}
+
+    # ---- 批准：公开 stub 先进入投递队列 ----
+    rec = _public_stub_of(state, review_ref, event_id)
+    if rec.get("delivery_status") == store.PENDING_REVIEW:
+        store.transition(rec, store.PENDING_DELIVERY)
+    if not _resume_pending_delivery(rec):
+        client.finish(review_ref, token, review_store.FAILED,
+                      error="公开状态 {} 不允许投递".format(rec.get("delivery_status")))
+        return {"status": "BAD_STATE",
+                "reason": "记录状态 {} 不允许投递".format(rec.get("delivery_status"))}
+
+    # ---- 拼正文并发送（正文只在内存，不落盘、不打印）----
+    text = _review_publish_text(payload)
+    report = []
+    send_ok, message_ids, error = send_telegram_ex(
+        text, chunk_records=rec.get("chunks"), report=report)
+    store.record_chunks(rec, report)
+    rec["attempts"] = int(rec.get("attempts") or 0) + sum(
+        int(r.get("attempts") or 0) for r in report)
+    if message_ids:
+        rec["telegram_message_id"] = message_ids[-1]
+
+    final = _apply_delivery_outcome(rec, send_ok, report, error)
+
+    # ---- 关键顺序：**先确认发送结果，再迁移私有审核状态** ----
+    # 反过来的话，「Telegram 失败但私有状态已 delivered」会让这条永远不再重试，
+    # 而读者一条都没收到。
+    outcome = {
+        store.COMMITTED: review_store.DELIVERED,
+        store.DELIVERY_UNCERTAIN: review_store.NEEDS_MANUAL,
+        store.DELIVERY_FAILED: review_store.FAILED,
+    }.get(final, review_store.FAILED)
+    finish_ok = _finish_quietly(client, review_ref, token, outcome,
+                               message_ids=message_ids, error=error)
+
+    return {"status": final, "reason": "投递完成" if final == store.COMMITTED
+            else (error or "投递未完成"),
+            "delivery_status": final, "message_ids": message_ids,
+            "publish_mode": "ATTRIBUTED",
+            "publish_cred": payload.get("cred") or "E4",
+            "publish_is_confirmed": False,
+            "unverified_note": _review_publish_attributes(payload)["unverified_note"],
+            "finish_ok": finish_ok}
+
+
+def _finish_quietly(client, review_ref, token, outcome, message_ids=None, error=""):
+    """把结果回写私有存储。失败不抛出，但要如实返回 False 让人看见。"""
+    try:
+        client.finish(review_ref, token, outcome,
+                      message_ids=message_ids, error=error or "")
+        return True
+    except review_store.ReviewStoreError as e:
+        print("::error title=Review Finish Failed::私有审核状态回写失败：{}".format(e))
+        return False
+
+
+def review_action(state, review_ref, post=None):
+    """review_action 工作流的入口。
+
+    与旧版的区别：不再接收 operator_id / action / note——
+    这三样都在私有存储里，由 Webhook 在人工点击时登记。
+    Action 只拿到一个 opaque review_ref，无权也无能力伪造决定。
+    """
+    if not review_ref or not re.fullmatch(r"[0-9a-f]{8,32}", review_ref):
+        return {"status": "BAD_REF", "reason": "审核句柄格式非法"}
+    return execute_review_decision(state, review_ref, post=post)
+
+
+def _review_rows(payload):
+    """私有 payload 里登记过的全部证据链接，转成 build_records 需要的行。
+
+    P0 之后公开 state 里已经没有 evidence_refs 了——证据只存在于私有存储。
+    所以自动退出审核时必须从 payload 取，而不是从 state 记录里取。
+    """
+    rows = []
+    for a in (payload or {}).get("articles") or []:
+        if isinstance(a, dict) and a.get("url"):
+            rows.append({"url": a["url"],
+                         "title": a.get("title") or "",
+                         "publisher": a.get("publisher") or ""})
+    return rows
+
+
+# 退出审核的两种情形。刻意**不含** SINGLE_SOURCE（E3）单独成立的情况：
+# 「有一个来源了」并没有解决「没有第二个独立来源」这个送审原因。
+_OFFICIAL_STATUSES = frozenset({ev.OFFICIAL_CONFIRMED})
+_INDEPENDENT_STATUSES = frozenset({ev.SINGLE_SOURCE,
+                                   ev.MULTIPLE_INDEPENDENT_SOURCES})
+
+
+def recheck_review(state, event_id, extra_rows=None):
+    """重新计算证据，达标的自动退出审核队列。
+
+    审核队列存在的意义是「证据不足时先别公开出去」，不是「让它在队列里烂掉」。
+    当同一事件真的出现了第二个**独立**来源，送审前提消失，必须自动退出——
+    否则一条真新闻会因为「第一次被抓到时只有一家媒体报道」被永久卡住。
+
+    三条硬要求（缺一即失去安全意义）：
+
+    1. **不信任调用方传进来的状态。** 早期版本签名是
+       `recheck_review(state, event_id, evidence_status)`，谁调用谁说了算。
+       那等于让「抓到第二条的人」自己决定证据等级——只要他传个 E2 就能
+       把一条 E4 送出去。现在改为拿审核记录里登记的证据**重新算**，
+       调用方只能追加新证据，不能声明结论。
+
+    2. **必须是独立来源，转载不算。** 判定走 `evidence.independent_sources`：
+       通讯社通稿无论被多少家转载只算 1 组，同一家媒体的多篇稿也只算 1 组。
+       3 家转载同一篇稿 → 1 组 → **不会**触发退出。
+       这是「转载不能触发自动退出」的实现位置。
+
+    3. **退出条件看「独立发布方数量」，不看「报道条数」。**
+       实测：两家真正独立的媒体（BBC + 太阳报，标题措辞不同）在既有证据引擎里
+       只判到 SINGLE_SOURCE——因为 `evaluate` 的 E2 门槛更严，需要 3 家。
+       如果退出条件写成「必须 E2」，那么「第二来源到达」这件事永远不会触发退出，
+       队列就会一直等到人工。所以这里按 `independent_groups >= 2` 判定，
+       并且要求状态不是 E4（E4 说明连第一条本身都不可信）。
+       官方确认（E1）单独成立即可退出，不需要凑够两家媒体。
+
+    返回退出后的记录；没退出（不在队列 / 证据未达标）返回 None。
+    """
+    client = review_store_client()
+    rec = _find_review_rec(state, event_id)
+    if rec is None:
+        # 公开键随机化之后，调用方手里只有原始 event_id 时，公开 state 里是查不到的。
+        # 走私有库的 by-event 索引拿到 review_ref，再回公开 state 定位 stub。
+        rec = _locate_review_by_event_id(state, client, event_id)
+    if not rec or rec.get("delivery_status") != store.PENDING_REVIEW:
+        return None
+
+    review_ref = rec.get("review_ref") or ""
+    # ---- fail-closed：自动退出必须建立在「私有记录真的被退出了」之上 ----
+    # 旧实现写的是 `if client is not None and review_ref:`：两个条件缺任意一个
+    # 就整段跳过 exit_review，然后照样把公开 stub 迁到 PENDING_DELIVERY。
+    # 也就是说「私有审核存储没配好」反而变成了一条绕过人工审核的快速通道 ——
+    # 只要新抓到的 RSS 凑够两个独立来源，就能把一条从没被私有库存过的
+    # 事件直接推进投递管道。这里把两个条件都改成硬失败。
+    if client is None:
+        print("::error title=Review Exit Blocked::私有审核存储未配置"
+              "（REVIEW_STORE_URL / REVIEW_SERVICE_KEY），拒绝自动退出审核；"
+              "公开状态保持 PENDING_REVIEW")
+        return None
+    if not review_ref:
+        print("::error title=Review Exit Blocked::审核记录缺少 review_ref，"
+              "无法在私有存储中定位，拒绝自动退出审核；公开状态保持 PENDING_REVIEW")
+        return None
+    payload = _review_payload_of(client, review_ref)
+
+    rows = _review_rows(payload)
+    for r in extra_rows or []:
+        if isinstance(r, dict) and r.get("url"):
+            rows.append(r)
+    if not rows:
+        return None
+
+    records = ev.build_records(rows)
+    if not records:
+        return None
+    verdict = ev.evaluate(records[0].get("url") or "", records)
+    status = verdict.get("status")
+    groups = ev.independent_sources(records)
+    independent = len([g for g in groups if g.get("trusted", True)])
+
+    official = status in _OFFICIAL_STATUSES
+    multi_independent = (independent >= 2) and (status in _INDEPENDENT_STATUSES)
+    if not (official or multi_independent):
+        # 未达标：什么都不写。
+        # 旧版会写 review_last_check（「我们查了但没退出」的内部痕迹），
+        # 那份痕迹同样不该出现在公开仓库里。
+        return None
+
+    # ---- 达标：先退出私有记录，再改公开 stub ----
+    reason = "{}，证据等级 {}（独立发布方 {} 组），送审前提消失".format(
+        "获得官方确认" if official else "出现第二个独立来源", status, independent)
+    try:
+        client.exit_review(review_ref, reason)
+    except review_store.ReviewStoreError as e:
+        # 私有存储退出失败就不能改公开状态，否则两边不一致
+        print("::error title=Review Exit Failed::私有审核记录退出失败：{}".format(e))
+        return None
+    except Exception as e:  # noqa: BLE001 —— fail-closed 要求兜住一切异常
+        # 与 _decide_private_or_raise 同一原则：异常类型原样带出，但**不允许**
+        # 它变成「私有没退、公开已经前进」。
+        print("::error title=Review Exit Failed::私有审核记录退出异常"
+              "（{}: {}），公开状态保持 PENDING_REVIEW".format(type(e).__name__, e))
+        return None
+
+    store.transition(rec, store.PENDING_DELIVERY)
+    entries = _review_store_entries(client, review_ref)
+    if not entries:
+        entries = [{"at": _now_iso(), "action": "EXITED", "actor": "system",
+                    "detail": reason}]
+    return _review_view(
+        rec, payload, entries,
+        private={"status": review_store.EXITED},
+        review_exit_reason=reason,
+        review_exited_at=_now_iso(),
+        review_exit_evidence=status,
+        review_exit_groups=independent,
+    )
+
+
+def _exit_review_if_upgraded(state, same_event, extra_rows=None):
+    """去重分支里的钩子：命中待审事件且证据升级 → 退出审核，本轮继续推送。"""
+    if not same_event or not IMPORTANCE_SORT:
+        return False
+    if same_event.get("delivery_status") != store.PENDING_REVIEW:
+        return False
+    # P0 之后公开键是随机值，审核 stub 里**没有** event_id 字段（白名单已移除），
+    # 所以 `same_event.get("event_id")` 在审核事件上恒为 None。旧代码正是拿它
+    # 去查，等于每次都查空——自动退出审核从来没生效过。
+    # 句柄（review_ref）才是 stub 上稳定存在的索引，优先用它；
+    # 保留 event_id 回退是为了兼容迁移前落盘的旧记录。
+    key = same_event.get("review_ref") or same_event.get("event_id") or ""
+    rec = recheck_review(state, key, extra_rows)
+    if not rec:
+        return False
+    # 日志里不能打 event_id（= sha1(url)[:12]，Actions 日志公开）。
+    print(f"[INFO] 审核自动退出：{rec.get('review_ref') or '(no-ref)'} | "
+          f"{rec.get('review_exit_reason')}")
+    print("::notice title=Review Auto Exited::"
+          "第二独立来源到达，该事件已退出人工审核，本轮按正常流程推送")
+    return True
+
+
 # 早报兜底专用：直接查 Google News，不依赖 RSS 是否还留着昨天的条目。
 # 池子空的时候这是最后一道防线，宁可多抓一轮，也不要空手而归。
 _SUMMARY_EMERGENCY_QUERIES = [
@@ -1373,18 +2736,182 @@ def _age_text(age):
     return f"{age:.0f}小时前"
 
 
+def _group_morning_pool(pool):
+    """把早报素材按事件分组，保持原有顺序。
+
+    分组键是 `_events_for_morning` 打上的 `_event_id`。
+    没有 `_event_id` 的条目（`IMPORTANCE_SORT` 关闭时的旧路径）各自成组——
+    旧路径下「一条素材 = 一个事件」，分组不改变任何行为，输出与旧版一致。
+
+    这是「事件名额」与「证据名额」分离的落点：
+      · 名额 = 组数（一个事件一个名额）
+      · 证据 = 组内条目数（最多 MORNING_MAX_ARTICLES_PER_EVENT 条）
+    两者在数据结构上就是两个字段，不靠约定维持。
+    """
+    groups, order = {}, []
+    for idx, it in enumerate(pool):
+        key = it.get("_event_id") or "single:{}".format(idx)
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(it)
+    return [(k, groups[k]) for k in order]
+
+
+def _build_morning_events(pool):
+    """按**事件**建立证据记录并逐条核验（V1.2 任务 5 + V1.0 任务 2）。
+
+    返回 (verified, excluded)：
+      · verified —— 通过核验、可以进入早报事实列表的事件，已分配 event_id
+      · excluded —— 未核验 / 冲突，一律不得写成已确认事实
+
+    关键改动：**一个事件一个条目**，多条原始报道挂在 `sources` / `urls` 上。
+    旧实现按「素材」逐条建条目，于是同一件事的 3 条证据被编成 E01/E02/E03，
+    模型看到三个标题不同的条目，很自然地当成三件事分别介绍一遍。
+    名额层面虽然已经只占 3 条素材，但「模型看到的是三条重复事件」这个
+    验收要求没被满足——问题不在名额，在序列化。
+
+    每条素材仍要独立跑一次 evaluate：早报是「多条事件汇总」，
+    不能像突发扫描那样只核验一条。
+    """
+    grouped = _group_morning_pool(pool[:SUMMARY_MAX_MATERIALS])
+    flat = [it for _key, items in grouped for it in items]
+    records = ev.build_records([
+        {"url": it.get("link"), "title": it.get("title"),
+         "publisher": it.get("publisher"), "desc": it.get("desc"),
+         "feed_origin": it.get("feed_origin") or it.get("source")}
+        for it in flat
+    ])
+    by_canon = {r["canonical"]: r for r in records}
+
+    verified, excluded = [], []
+    for _key, items in grouped:
+        members = []
+        for it in items:
+            canon = ev.canonical_url(it.get("link"))
+            rec = by_canon.get(canon)
+            if rec is None:
+                continue
+            members.append((it, rec))
+        if not members:
+            continue
+
+        primary_it, primary_rec = members[0]
+        # 证据等级按**整个事件**算：evaluate 会在同一事件的记录里找交叉印证，
+        # 所以 3 家独立媒体报道同一件事 → E2，而不是三条 E3。
+        verdict = ev.evaluate(primary_it.get("link"), records)
+
+        urls, sources = [], []
+        for it, rec in members:
+            link = it.get("link") or ""
+            if link and link not in urls:
+                urls.append(link)
+            sources.append({
+                "url": link,
+                "title": it.get("title") or "",
+                "domain": rec["domain"],
+                "source_class": rec["source_class"],
+                "published_at": it.get("published") or "",
+            })
+
+        entry = {
+            # 事件标题优先用聚合层定下的那个；旧路径没有该字段，回落到素材标题
+            "title": primary_it.get("_event_title") or primary_it.get("title") or "",
+            "url": primary_it.get("link") or "",
+            # 来源链接**完整保留**，不只是第一条
+            "urls": urls,
+            "sources": sources,
+            "article_count": len(members),
+            "desc": primary_it.get("desc") or "",
+            "domain": primary_rec["domain"],
+            "source_class": primary_rec["source_class"],
+            "source_id": primary_rec["source_id"],
+            "age_hours": primary_it.get("_age"),
+            "published_at": primary_it.get("published") or "",
+            "status": verdict["status"],
+            "reason": verdict["reason"],
+            "confirmed": verdict["status"] in (ev.OFFICIAL_CONFIRMED,
+                                               ev.MULTIPLE_INDEPENDENT_SOURCES),
+        }
+        # 事件级判定字段：有则带上，没有（旧路径）就不带
+        for src, dst in (("_event_id", "agg_event_id"),
+                         ("_importance", "importance"),
+                         ("_content_type", "content_type"),
+                         ("_scope", "scope")):
+            if primary_it.get(src) is not None:
+                entry[dst] = primary_it.get(src)
+
+        # V1.3 §8 裁决 2：红线对早报同样生效。
+        # 早报没有模型给的 var_rating，所以 rating_key 传 None——
+        # 但只要标题/摘要触到严肃红线，black_label_gate 依然会按证据强度卡住。
+        # 事件级：**任一成员**触红线即整组拦截。同一件事的报道里只要有一条
+        # 提到「去世/重伤」，这件事就不该被当成普通资讯汇总出去。
+        #
+        # V1.3 §F1 审计 D：领域校验在红线之前。早报是从新闻池里翻旧账的，
+        # 池子里可能还留着修复前采集的非足球条目（F1 / 飞镖 / 高尔夫），
+        # 不在这里拦一遍，早报就是第二条污染通道。
+        pushable = ev.is_pushable(verdict["status"])
+        gate_ok, gate_why, gate_code = True, "", ""
+        sport_ok_any = False
+        first_fail = None
+        for it, rec in members:
+            sv, ok_one, why_one, code_one = _sport_check(
+                it.get("title") or "", it.get("desc") or "",
+                it.get("link") or "", domain=rec["domain"])
+            if ok_one:
+                # 只要有一条报道明确属于足球，这件事就是足球事件。
+                # 事件级判定不能取「任一成员失败即整组否决」：同一件事的三条报道里
+                # 常有一条 URL 缺频道信息、标题又没写队名，按「任一失败」会把
+                # 真新闻整组丢掉——那是「误删」，方向错了。
+                # 跨项目混编不会因此漏网：不同项目的事件过不了聚合层的硬冲突。
+                sport_ok_any = True
+                entry["sport_category"] = sv.category
+                break
+            if first_fail is None:
+                first_fail = (sv, why_one, code_one)
+        if not sport_ok_any and first_fail is not None:
+            sv, why_one, code_one = first_fail
+            entry["sport_category"] = sv.category
+            gate_ok, gate_why, gate_code = False, why_one, code_one
+        if gate_ok and pushable:
+            probe = " ".join(
+                "{} {}".format(it.get("title") or "", it.get("desc") or "")
+                for it, _rec in members)
+            gate_ok, gate_why, gate_code = _red_line_gate(verdict, None, probe)
+        entry["gate_code"] = gate_code
+        if pushable and gate_ok:
+            verified.append(entry)
+        else:
+            if pushable and not gate_ok:
+                entry["reason"] = f"{entry['reason']}；闸门拦截：{gate_why}"
+            excluded.append(entry)
+
+    for i, e in enumerate(verified, 1):
+        e["event_id"] = f"E{i:02d}"
+    return verified, excluded
+
+
 def _build_verified_blob(events):
     """喂给模型的素材清单：**只**包含通过证据核验的事件。
 
     V1.2 任务 5.5 要求模型只能从已验证事件里选。原实现把整个新闻池塞进去，
     模型完全可以在 body 里写一条未核验的新闻——清单外内容必须根本不给它看到。
+
+    V1.0：一个事件一行。多条证据在行内用「另见」列出，全部 URL 都保留，
+    模型看到的是「一件事 + 几篇报道」，而不是「几件事」。
     """
     lines = []
     for e in events:
-        lines.append(
-            f"- [{e['title']}]({e['url']}) [{_age_text(e['age_hours'])}] "
+        urls = e.get("urls") or [e.get("url") or ""]
+        line = (
+            f"- [{e['title']}]({urls[0]}) [{_age_text(e['age_hours'])}] "
             f"证据={e['status']}：{e.get('desc') or ''}"
         )
+        extra = [u for u in urls[1:] if u]
+        if extra:
+            line += "（同一事件的另 {} 篇报道：{}）".format(
+                len(extra), "、".join(extra))
+        lines.append(line)
     return "\n".join(lines)
 
 
@@ -1486,83 +3013,24 @@ def _evidence_gates(verdict, rating_key, topic_text, allowlist=None):
     return _red_line_gate(verdict, rating_key, topic_text)
 
 
-def _build_morning_events(pool):
-    """给每条素材建立独立证据记录并逐条核验（V1.2 任务 5）。
-
-    返回 (verified, excluded)：
-      · verified —— 通过核验、可以进入早报事实列表的事件，已分配 event_id
-      · excluded —— 未核验 / 冲突，一律不得写成已确认事实
-
-    注意每条素材都要独立跑一次 evaluate：早报是「多条事件汇总」，
-    不能像突发扫描那样只核验一条。
-    """
-    records = ev.build_records([
-        {"url": it.get("link"), "title": it.get("title"),
-         "publisher": it.get("publisher"), "desc": it.get("desc"),
-         "feed_origin": it.get("feed_origin") or it.get("source")}
-        for it in pool[:SUMMARY_MAX_MATERIALS]
-    ])
-    by_canon = {r["canonical"]: r for r in records}
-
-    verified, excluded = [], []
-    for it in pool[:SUMMARY_MAX_MATERIALS]:
-        canon = ev.canonical_url(it.get("link"))
-        rec = by_canon.get(canon)
-        if rec is None:
-            continue
-        verdict = ev.evaluate(it.get("link"), records)
-        entry = {
-            "title": it.get("title") or "",
-            "url": it.get("link") or "",
-            "desc": it.get("desc") or "",
-            "domain": rec["domain"],
-            "source_class": rec["source_class"],
-            "source_id": rec["source_id"],
-            "age_hours": it.get("_age"),
-            "published_at": it.get("published") or "",
-            "status": verdict["status"],
-            "reason": verdict["reason"],
-            "confirmed": verdict["status"] in (ev.OFFICIAL_CONFIRMED,
-                                               ev.MULTIPLE_INDEPENDENT_SOURCES),
-        }
-        # V1.3 §8 裁决 2：红线对早报同样生效。
-        # 早报没有模型给的 var_rating，所以 rating_key 传 None——
-        # 但只要标题/摘要触到严肃红线，black_label_gate 依然会按证据强度卡住。
-        #
-        # V1.3 §F1 审计 D：领域校验在红线之前。早报是从新闻池里翻旧账的，
-        # 池子里可能还留着修复前采集的非足球条目（F1 / 飞镖 / 高尔夫），
-        # 不在这里拦一遍，早报就是第二条污染通道。
-        pushable = ev.is_pushable(verdict["status"])
-        gate_ok, gate_why, gate_code = True, "", ""
-        sport_verdict, sport_ok, sport_why, sport_code = _sport_check(
-            entry["title"], entry["desc"], entry["url"], domain=entry["domain"])
-        entry["sport_category"] = sport_verdict.category
-        if not sport_ok:
-            gate_ok, gate_why, gate_code = False, sport_why, sport_code
-        elif pushable:
-            gate_ok, gate_why, gate_code = _red_line_gate(
-                verdict, None, f"{entry['title']} {entry['desc']}")
-        entry["gate_code"] = gate_code
-        if pushable and gate_ok:
-            verified.append(entry)
-        else:
-            if pushable and not gate_ok:
-                entry["reason"] = f"{entry['reason']}；闸门拦截：{gate_why}"
-            excluded.append(entry)
-
-    for i, e in enumerate(verified, 1):
-        e["event_id"] = f"E{i:02d}"
-    return verified, excluded
-
-
 def _morning_event_blob(events):
-    """喂给模型的「已验证事件清单」。模型只能从这里挑 event_id。"""
+    """喂给模型的「已验证事件清单」。模型只能从这里挑 event_id。
+
+    V1.0：一个事件一行，行尾列出**全部**来源链接。
+    旧实现一条素材一行，同一件事的三条证据会占三行、三个 event_id，
+    模型据此写出「三件事」——名额没超，但读者看到的是重复介绍。
+    """
     lines = []
     for e in events:
+        urls = e.get("urls") or [e.get("url") or ""]
+        extra = [u for u in urls[1:] if u]
+        suffix = ""
+        if extra:
+            suffix = " | 另见 {} 篇：{}".format(len(extra), " ".join(extra))
         lines.append(
             f"[{e['event_id']}] 证据={e['status']} | {_age_text(e['age_hours'])} | "
             f"{e['domain']}（{_SOURCE_CLASS_LABEL.get(e['source_class'], e['source_class'])}） | "
-            f"{e['title']} | {e['url']}"
+            f"{e['title']} | {urls[0]}{suffix}"
         )
     return "\n".join(lines)
 
@@ -1573,9 +3041,14 @@ def _attach_summary_evidence(result, events):
     V1.2 任务 5.6：模型不能自行制造 source_id / URL / evidence_status。
     因此 evidence_status、source_urls、published_at、attribution 全部由这里覆盖，
     模型只负责「挑哪几条」和「怎么写」。
+
+    V1.0：`source_urls` 是**该事件的全部证据链接**，不是第一条。
+    同时拒绝同一 event_id 出现两次——一个事件在早报里只能介绍一次，
+    模型重复选了同一条要当作错误暴露出来，而不是静默去重后照常发。
     """
     by_id = {e["event_id"]: e for e in events}
     errors = []
+    seen = set()
     items = result.get("top_events")
     if not isinstance(items, list):
         return False, ["top_events 不是列表"]
@@ -1589,8 +3062,14 @@ def _attach_summary_evidence(result, events):
         if evt is None:
             errors.append(f"top_events 第 {idx} 项 event_id={eid!r} 不在已验证事件集合内")
             continue
+        if eid in seen:
+            errors.append(f"top_events 第 {idx} 项 event_id={eid} 重复，同一事件只能介绍一次")
+            continue
+        seen.add(eid)
         item["evidence_status"] = evt["status"]
-        item["source_urls"] = [evt["url"]]
+        # 全部证据链接都带上；urls 为空时退回主链接，保证永远至少有一条
+        item["source_urls"] = list(evt.get("urls") or [evt.get("url") or ""])
+        item["source_count"] = int(evt.get("article_count") or 1)
         item["published_at"] = evt["published_at"] or _age_text(evt["age_hours"])
         item["attribution"] = (
             f"{evt['domain']}（{_SOURCE_CLASS_LABEL.get(evt['source_class'], evt['source_class'])}）"
@@ -1725,8 +3204,11 @@ def _build_summary_card(result, meta):
             if line.strip():
                 card += line + "\n"
             urls = item.get("source_urls") or []
-            if urls:
-                card += f"   🔗 {esc(urls[0])}\n"
+            # 来源链接完整保留：同一事件的多篇证据逐条列出，不只给第一条。
+            # 读者要能自己去核对「这件事到底几家媒体在报」。
+            for u in urls[:MORNING_MAX_ARTICLES_PER_EVENT]:
+                if u:
+                    card += f"   🔗 {esc(u)}\n"
     card += "━━━━━━━━━━━━━━━\n"
     card += "📝 <b>[小红书笔记 · 可直接复制]</b>\n\n"
     card += f"<b>【标题】</b>{esc(result.get('note_title'))}\n\n"
@@ -1901,6 +3383,29 @@ BLOCKING_DELIVERY_STATUSES = (
     store.COMMITTED, store.DELIVERED, store.PENDING_DELIVERY, store.DELIVERY_UNCERTAIN,
 )
 
+# 主流程去重用的状态集：在「已投递 / 在途」之外**额外包含「在审」**。
+#
+# 为什么两处不能合并：
+#   · 候选过滤（_prepare_ai_candidates）只拦已投递的重复报道，省 AI token；
+#     在审事件的新报道**必须放行**——它可能就是触发
+#     自动退出的第二个独立来源。
+#   · 主流程去重必须把在审事件也认出来，否则 _exit_review_if_upgraded
+#     永远收不到 same_event。
+# 允许「复用原记录继续投递」的状态：审核 stub 退出后是 PENDING_DELIVERY，
+# 普通记录投递失败后是 RETRYABLE_FAILURE / DELIVERY_FAILED。
+# REVIEW_DECLINED 刻意不在其中 —— 它是人工终态，拒绝决定不得被自动流程覆盖。
+_REUSABLE_STUB_STATUSES = (
+    store.PENDING_DELIVERY, store.RETRYABLE_FAILURE, store.DELIVERY_FAILED,
+)
+
+DEDUPE_DELIVERY_STATUSES = BLOCKING_DELIVERY_STATUSES + (
+    store.PENDING_REVIEW,
+    # 人工拒绝是终态：同一事件再次出现时必须在这里就被认出来并跳过。
+    # 漏掉它会掉进「复用记录 → begin_delivery」的非法迁移
+    # （REVIEW_DECLINED -> PENDING_DELIVERY），整轮扫描直接抛 StateError。
+    store.REVIEW_DECLINED,
+)
+
 
 def _event_probe(title, url=""):
     """把一条事件/候选包装成 same_event() 能吃的记录结构。"""
@@ -1945,6 +3450,15 @@ def _find_same_event(state, title, url="", statuses=None):
         if (event.get("updated_at") or "") < cutoff:
             continue
         other_title = event.get("article_title") or event.get("title")
+        if not other_title and event.get("review_ref"):
+            # 这里刻意不用 is_review_record()：审核退出后记录状态会变成
+            # PENDING_DELIVERY / COMMITTED，不再属于「审核状态」，但它**仍然代表同一件事**。
+            # 去重必须能认出它，否则退出后同事件会被当成新事件重新入队、重复推送。
+            # 审核 stub 在公开侧没有标题，按句柄临时取一次。
+            # 取不到就跳过：没有标题就没法判定同事件，猜是不行的。
+            other_title = _review_title_of(event.get("review_ref") or "")
+            if not other_title:
+                continue
         if _number_conflict(title, other_title):
             continue
         ok, _why = ev.same_event(anchor, _event_probe(other_title, event.get("evidence_url")))
@@ -2368,6 +3882,32 @@ def run_morning_mode(state, start_time):
         "degraded": None,
     }
 
+    # ---- 第 3.5 步：事件级排序（V1.0，受 IMPORTANCE_SORT 开关控制）----
+    # 开关关闭时这一段完全不执行，pool 保持原样，后续流程与旧版逐字节等价。
+    event_stats = None
+    if IMPORTANCE_SORT:
+        ordered_pool, morning_events, event_stats = _events_for_morning(state, pool)
+        if ordered_pool:
+            pool = ordered_pool
+            meta["importance_sort"] = True
+            meta["event_stats"] = {
+                k: v for k, v in event_stats.items()
+                if isinstance(v, (int, float, str, bool))
+            }
+            meta["global_line_note"] = event_stats.get("global_line_note", "")
+            # S 级软上限：只计数与标注，不拦任何事件
+            s_events = [e for e in morning_events if e["importance"] == imp.S]
+            if s_events:
+                capped, bucket = _apply_s_soft_cap(state, s_events)
+                meta["s_push_count"] = bucket.get("count", 0)
+                overflow = [e for e in capped if e.get("s_push_note")]
+                if overflow:
+                    print(f"[WARN] S 级超出软上限 {S_PUSH_SOFT_CAP} 条，"
+                          f"今日第 {bucket['count']} 条仍照常推送（不降级/不推迟/不丢弃）")
+                    meta["s_overflow_notes"] = [e["s_push_note"] for e in overflow]
+        else:
+            print("[WARN] 事件级排序未产出候选，回退到原按时间排序路径")
+
     # ---- 第 4 步：逐条证据核验（V1.2 任务 5）----
     verified, excluded = _build_morning_events(pool)
     print(f"[INFO] 早报证据核验：{len(pool)} 条素材 → 通过 {len(verified)} 条、"
@@ -2680,15 +4220,106 @@ def run_scan_mode(state, start_time):
         # 历史 state 里存的是未清洗（或旧规则清洗）的原始 URL，这里统一展开后再比对
         processed_keys = _processed_sets(processed_urls)
         same_event = _find_same_event(state, article_title, evidence_url,
-                                      statuses=BLOCKING_DELIVERY_STATUSES)
+                                      statuses=DEDUPE_DELIVERY_STATUSES)
         if _matches_processed(evidence_url, processed_keys):
             _skip("URL_DEDUPED", f"依据 URL 去重拦截：[{evidence_key}] 已处理过")
-        elif same_event is not None:
+        elif same_event is not None and not _exit_review_if_upgraded(
+                state, same_event, program_records):
             # 同一件事换了一家媒体报道：URL 不同，但事件已经推过了（V1.2 任务 14）
             _skip("EVENT_DEDUPED",
                   f"事件级去重拦截：与已投递事件 {same_event.get('event_id')} "
                   f"（{same_event.get('article_title') or same_event.get('title')}）是同一件事")
         else:
+            # ---- V1.0：E4 级 S 事件转人工审核（T13）----
+            # 必须在拼卡片之前判断：既然不打算发，就不该先拼一条「随时能发出去」
+            # 的卡片，否则后续任何人复用 card 变量，拦截都形同虚设。
+            # 受 IMPORTANCE_SORT 开关控制，关闭时这一段不执行，与旧版逐字节等价。
+            if IMPORTANCE_SORT:
+                scan_et = ev.primary_event_type(article_title)
+                scan_ct = ctype.classify(
+                    article_title, model_result.get("fact_summary") or "",
+                    event_type=scan_et)
+                scan_cred = evagg._cred_from_status(
+                    model_result.get("evidence_status"))
+                # 准入看「这件事够不够大」，不看「现在有几家媒体」：
+                # 证据不足正是要送审的原因。真实等级仍按 assess() 另算，
+                # 只用于推送与排序，不参与这里的准入。
+                scan_level = imp.significance(
+                    article_title, model_result.get("fact_summary") or "",
+                    event_type=scan_et,
+                    content_type=scan_ct["content_type"])
+                scan_event = {
+                    "event_id": store.event_id_for(
+                        evidence_key or evidence_url, event_title),
+                    "title": article_title,
+                    "importance": scan_level,
+                    "cred": scan_cred,
+                    "content_type": scan_ct["content_type"],
+                    "event_type": scan_et,
+                    # 事实摘要进审核快照：批准后要凭它拼中文消息，
+                    # 而那时的 news_pool 早已被下一轮覆盖。
+                    "fact_summary": model_result.get("fact_summary") or "",
+                    "evidence_status": model_result.get("evidence_status"),
+                    "evidence_url": evidence_url,
+                    "evidence_refs": [{"url": evidence_url,
+                                       "title": article_title}],
+                }
+                route, route_reason = _review_route(scan_event)
+                if route == "REVIEW":
+                    rec = _enqueue_review(state, scan_event, route_reason)
+                    try:
+                        save_state(state)
+                    except store.StateError as e:
+                        print(f"[ERROR] 审核队列落盘失败：{e}")
+                        print("::error title=State Write Failed::"
+                              "待审记录未能写入 state.json")
+                        return 1
+                    # 日志里**不能**打印 event_id：它是 sha1(url)[:12]，而
+                    # GitHub Actions 的日志是公开的。打出来就等于把「哪一条
+                    # 被压着」写进了另一个公开渠道，state.json 那边白改了。
+                    print(f"[INFO] 转人工审核：{rec.get('review_ref') if rec else '(no-ref)'} "
+                          f"| {scan_level} 级 / {scan_cred} | {route_reason}")
+                    print("::notice title=Pending Review::"
+                          "该事件未公开推送，已进入内部待审队列")
+                    # A2：落盘成功后才发审核卡片。
+                    # 顺序不能反——先发卡片再落盘，一旦落盘失败，
+                    # 按钮就指向一条不存在的记录，点下去只会报「记录不存在」。
+                    # `_duplicate` 表示这条事件早就在队列里了（私有存储的
+                    # 唯一索引命中了旧记录），此时**不再**重发卡片，
+                    # 否则同一篇文章每轮扫描都会往审核群刷一遍。
+                    if rec is not None and not rec.get("_duplicate"):
+                        # 卡片正文来自私有 payload（rec 是视图，含私有元数据），
+                        # review_ref 是私有存储句柄，也是按钮里唯一带的东西。
+                        card_mid = send_review_card(rec, rec.get("review_ref") or "")
+                        if card_mid:
+                            print(f"[INFO] 审核卡片已发送到私有审核群"
+                                  f"（message_id={card_mid}）")
+                        # 注意：message_id 不进 state.json。
+                        # 按钮由 Worker 在受理回调后立刻抹掉（它手上就有 message_id），
+                        # 所以公开仓库里不需要、也不允许留下这个字段。
+                    log_telemetry({
+                        "start_time": start_time, "end_time": _now_iso(),
+                        "run_mode": "scan", "status": "PENDING_REVIEW",
+                        # 同样不能写 event_id：遥测会被打印到公开的 Actions 日志。
+                        # 句柄是随机的，能定位记录但不泄露是哪一条。
+                        "review_ref": (rec or {}).get("review_ref") or "",
+                        "importance": scan_level, "cred": scan_cred,
+                        "review_reason": route_reason,
+                    })
+                    return 0
+                if route == "ARCHIVE":
+                    _skip("LOW_VALUE_ARCHIVED", route_reason)
+                    try:
+                        save_state(state)
+                    except store.StateError as e:
+                        print(f"[WARN] 归档状态落盘失败：{e}")
+                    log_telemetry({
+                        "start_time": start_time, "end_time": _now_iso(),
+                        "run_mode": "scan", "status": "SKIPPED_LOW_VALUE",
+                        "content_type": scan_ct["content_type"],
+                    })
+                    return 0
+
             # 黑标（严肃红线）走独立卡片样式：肃穆标题 + 分隔线，且不展示 A 稿
             is_black_label = "黑标" in str(model_result.get("var_rating") or "")
 
@@ -2759,16 +4390,53 @@ def run_scan_mode(state, start_time):
             # 同一件事如果已经有一条未完结的记录（可重试失败 / 确定性失败），
             # 复用它的 event_id，别让同一件事在 state 里长出第二条记录。
             reusable = _find_same_event(state, article_title, evidence_url)
-            event = store.record_event(
-                state,
-                evidence_key or evidence_url,
-                event_title,
-                model_result["evidence_status"],
-                store.VERIFIED,
-                event_id=(reusable or {}).get("event_id"),
-                article_title=article_title,
-            )
-            store.begin_delivery(event)
+            # 人工拒绝是**终态**：拒绝决定不允许被自动扫描覆盖。
+            # 这里必须显式拦一道，因为下面两条路都会违反它：
+            #   · 当作可复用记录 → begin_delivery 触发 REVIEW_DECLINED ->
+            #     PENDING_DELIVERY 的非法迁移（StateError 会穿出 run_scan_mode）；
+            #   · 当作不可复用 → record_event 重建一条 sha1(url)[:12] 记录，
+            #     等于换个键把拒绝决定绕过去。
+            # 正常路径下主流程去重（DEDUPE_DELIVERY_STATUSES）已经拦住它，
+            # 这里是纵深防御：将来若有人改窄那个集合，也不会退化成崩溃或绕过。
+            if (reusable or {}).get("delivery_status") == store.REVIEW_DECLINED:
+                _skip("REVIEW_DECLINED",
+                      "该事件已被人工拒绝存档，不自动重新投递"
+                      "（如需重审，须由人工显式重新开启，当前无此机制）",
+                      extra={"run_mode": "scan"})
+                return 0
+            # 审核 stub 退出后必须**继续复用它的随机公开键**。
+            # 它已经由 recheck_review 推到 PENDING_DELIVERY；如果这里再调
+            # record_event(event_id=None)，会因为 stub 上没有 event_id 而新建一条
+            # sha1(url)[:12] 记录 —— 原 stub 从此停在 PENDING_DELIVERY 永不推进，
+            # 同一件事在 state 里分裂成两条。
+            #
+            # 也不能把 stub 的键当 event_id 传给 record_event：那条路径会写回
+            # title / article_title / evidence_url / evidence_refs，正是 P0 禁止
+            # 出现在公开审核记录里的字段。所以直接复用它。
+            # 不能只看 review_ref 是否存在：REVIEW_DECLINED 也带句柄，
+            # 而它是人工终态。只有「已退出审核、正在投递 / 待重试」才可复用。
+            reused_review_stub = (
+                bool((reusable or {}).get("review_ref"))
+                and reusable.get("delivery_status") in _REUSABLE_STUB_STATUSES)
+            if reused_review_stub:
+                event = reusable
+            else:
+                event = store.record_event(
+                    state,
+                    evidence_key or evidence_url,
+                    event_title,
+                    model_result["evidence_status"],
+                    store.VERIFIED,
+                    event_id=(reusable or {}).get("event_id"),
+                    article_title=article_title,
+                )
+            # 自动退出审核的记录已经是 PENDING_DELIVERY，不能再走一次 begin_delivery
+            # （PENDING_DELIVERY → PENDING_DELIVERY 不是合法迁移，会抛 StateError）。
+            # 这种记录只需补计一次投递尝试。
+            if event.get("delivery_status") == store.PENDING_DELIVERY:
+                event["attempts"] = int(event.get("attempts", 0)) + 1
+            else:
+                store.begin_delivery(event)
             try:
                 save_state(state)
             except store.StateError as e:
@@ -2813,6 +4481,11 @@ def run_scan_mode(state, start_time):
                 # 先确保 DELIVERED 已落盘，再推 COMMITTED：
                 # 万一这次写失败，下次启动的 recovery 会看到 DELIVERED 自动补提交，而不是重发。
                 store.transition(event, store.COMMITTED)
+                if reused_review_stub:
+                    # 投递完成后清掉续传正文：卡片全文含中文标题与事实摘要，
+                    # 留在一条曾经是审核 stub 的记录里，等于把 P0 刚藏起来的内容
+                    # 又写回公开侧。
+                    event["pending_text"] = ""
                 try:
                     save_state(state)
                 except store.StateError as e:
@@ -2837,6 +4510,64 @@ def run_scan_mode(state, start_time):
         "exit_code": exit_code,
     })
     return exit_code
+
+
+def run_review_action_mode(state, start_time):
+    """人工审核回调的执行体（A4）。只处理审核：不采集、不早报、不 focus。
+
+    为什么单独一个 mode 而不是塞进 scan：
+      审核回调是**外部事件驱动**的，而 scan 是**定时驱动**的。混在一起会让
+      「点了一次批准」触发一轮完整抓取，既浪费又可能引入新事件。
+
+    退出码约定：
+      0 —— 动作已生效，或处于「幂等空转」（已投递/已拒绝/已被他人认领）
+      1 —— 参数非法、越权、状态不符、或投递失败（需要人看见）
+    """
+    review_ref = (os.environ.get("REVIEW_ID") or "").strip()
+
+    print("[INFO] 人工审核执行 | review_ref={}".format(review_ref or "(空)"))
+
+    if not review_ref:
+        print("::error title=Review Action Missing::缺少 REVIEW_ID"
+              "（workflow_dispatch 只允许携带 opaque review_id）")
+        return 1
+
+    out = review_action(state, review_ref)
+    status = out.get("status") or ""
+
+    try:
+        save_state(state)
+    except store.StateError as e:
+        print(f"[ERROR] 审核结果落盘失败：{e}")
+        print("::error title=State Write Failed::审核结果未能写入 state.json")
+        return 1
+
+    # ⚠️ 日志里只允许出现状态与 message_id。
+    # 正文、摘要、原始链接、审核人一律不打印——GitHub Actions 的日志是公开的。
+    print("[INFO] 结果 | status={} | {}".format(status, out.get("reason") or ""))
+    if out.get("message_ids"):
+        print("[INFO] message_ids={}".format(out["message_ids"]))
+    if out.get("finish_ok") is False:
+        print("::error title=Review Finish Failed::"
+              "消息可能已发出，但私有审核状态回写失败，需人工核对")
+
+    log_telemetry({
+        "start_time": start_time, "end_time": _now_iso(),
+        "run_mode": "review_action", "status": status,
+        "review_ref": review_ref,
+    })
+
+    ok_statuses = {
+        store.COMMITTED, store.REVIEW_DECLINED,
+        "ALREADY_DELIVERED", "ALREADY_FINAL", "NEEDS_MANUAL",
+        "CLAIMED_BY_OTHER",
+    }
+    if status in ok_statuses:
+        print("::notice title=Review Action::{}".format(status))
+        return 0
+    print("::error title=Review Action Failed::{} | {}".format(
+        status, out.get("reason") or ""))
+    return 1
 
 
 def main():
@@ -2875,6 +4606,8 @@ def main():
     except store.StateError as e:
         print(f"[WARN] 状态恢复失败，继续本次运行：{e}")
 
+    if RUN_MODE == "review_action":
+        return run_review_action_mode(state, start_time)
     if RUN_MODE == "morning":
         return run_morning_mode(state, start_time)
     return run_scan_mode(state, start_time)
