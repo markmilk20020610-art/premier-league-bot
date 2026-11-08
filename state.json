@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 172,
+        "calls": 173,
         "errors": 1,
-        "requests": 172
+        "requests": 173
       }
     },
-    "calls": 172,
+    "calls": 173,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 1068615,
-    "output_tokens": 103337,
-    "requests": 172
+    "input_tokens": 1074763,
+    "output_tokens": 104018,
+    "requests": 173
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1924,7 +1924,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T15:05:32.691013+00:00",
+  "last_scan_at": "2026-11-08T15:10:31.453415+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1945,6 +1945,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Manchester City defender Marc Guehi will undergo a scan on a hip complaint on Sunday to determine whether he can report ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T15:10:31.456043+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmwyq8x6nx5lo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T15:03:01+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "England await Guehi scan results after injury concern"
+    },
     {
       "desc": "David Ornstein reveals Man Utd Michael Carrick sack plan if Aston Villa win at Old Trafford TEAMtalk",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2044,6 +2054,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Granit Xhaka forced off after just THREE MINUTES in Sunderland vs Chelsea clash and heads straight down tunnel"
+    },
+    {
+      "desc": "Fabrizio Romano reveals Liverpool’s position on Alisson’s future Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T15:10:31.456183+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOampyZUZraU11cFZZYkFzLVB4aGZDWGRTdzB1dzZYYXB0WjhGSUZHU3NwM2x0aWRQeXlxdVZfaXlQRGI5ejB5LVRtX2FnMk42WU5HWFVhRnpLWGg4eTNtSVhXQ0sxNzdra2NZNmtGVDFwa0Q2Y0tpQnRKQ2xGeHdwVGpSUmNFclQ2eHhmTGRpVkRjQzFySktjWDNzcnlXN0lZX0I3dNIBqgFBVV95cUxOTG5JN0dRcjlqNTN4UGU0MFp1MmJRUnFMZXgxY0NfXzBmeGpQNy1uNTBhOEFVSF9OYmhwRUg2WEIzTFk1eUdsa3ExOW1OempIV1VpZENwYVpLQW1PcTBqcGd4UUR2TTBhbzctQ2ZWNm5sblltT1hRMFlVX2wySXpXNDR2TWtCVUZiWF80T1c5VFJhUEZrWjZZQ3ByYmJWQnRUem41SWVXWlBJQQ?oc=5",
+      "published": "2026-11-08T14:20:34+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Liverpool’s position on Alisson’s future - Tribuna.com"
     },
     {
       "desc": "REAL MADRID boss Jose Mourinho had some interesting words for Valencia gaffer Javier Aguirre following Los Blancos' 3-0 ",
@@ -3424,26 +3444,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "What we learned from Saturday's Premier League matches - Premier League"
-    },
-    {
-      "desc": "CRAIG HOPE: Just when Newcastle looked set for victory after Jacob Murphy had borrowed Amar Dedic's bow to arrow them in",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T22:22:12.734270+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268035/Sloppy-defending-wasteful-finishing-leaves-Newcastle-rueing-missed-opportunity-Fulham-HOPE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T20:20:00+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Much-improved Newcastle stop the rot with a 1-1 draw at Fulham - but 'slapstick' defending and wasteful finishing will leave Matthias Jaissl"
-    },
-    {
-      "desc": "RIATH AL-SAMARRAI AT THE EMIRATES: Arsenal are building a wall around their precious trophy with ugly bricks. While the ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T22:22:12.734287+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268031/arsenal-martin-odegaard-hull-city-premier-league.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T20:19:24+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Martin Odegaard sends Arsenal six clear at the top: The stylists and aesthetes will moan - but Mikel Arteta can rest easy over the internati"
     }
   ],
   "processed_urls": [
