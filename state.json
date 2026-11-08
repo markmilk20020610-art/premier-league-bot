@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 101,
+        "calls": 102,
         "errors": 0,
-        "requests": 101
+        "requests": 102
       }
     },
-    "calls": 101,
+    "calls": 102,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 613938,
-    "output_tokens": 59109,
-    "requests": 101
+    "input_tokens": 619972,
+    "output_tokens": 59806,
+    "requests": 102
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T09:15:40.188583+00:00",
+  "last_scan_at": "2026-11-08T09:20:34.777101+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,26 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Liverpool: ‘Serious possibility’ icon LEAVES in summer- Fabrizio Romano TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T09:20:34.779018+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQmptTXJTSHJia0NnZXVPUXFHTHZ6SVY0bEhydHZWWkl6LW04NGxSTm91b1Npc2FnQ2V1ODZtcFFBR3NMd2N4dkxqTG51eFR2VEpfOUQyM1dsdDhZbHh0X0VoOWVibS1sZlBybS1FWWkwTExmeWNrVEhzbU1KTm8zUUFGaWxoLUExYW1Xb2RSdE8zRXd2OGkyQ1MzbU1JZHFH?oc=5",
+      "published": "2026-11-08T09:16:41+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Liverpool: ‘Serious possibility’ icon LEAVES in summer- Fabrizio Romano - TEAMtalk"
+    },
+    {
+      "desc": "Tottenham Hotspur U21 v Chelsea U21 | Match | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T09:20:34.779037+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNVBTczNaVzJlek5GWmV6bkZ0Tl93RXQ0U0ZOOHcwaTBLdDdfZGIwVFlSVXMtZkZxWDZmOFlvaUV3cVZSYUc4Vy1PMExMNTdkOW5pVUstX0xyMHlzeGtTMHhLQzR5eUdwZ2ljZkR2TmhxVXctZDNKUVVJcDZ6YjRNZkVzaklfbFNsaDNuSUs5eWRaOEhrQlBmWjlIeW55RkJmbHVVb0htM2ZrbTR2a1psa1FBN0c?oc=5",
+      "published": "2026-11-08T09:10:47+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Tottenham Hotspur U21 v Chelsea U21 | Match | Official Site - Chelsea Football Club"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -2029,6 +2049,16 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "What is going wrong for Man City? What are we to make of Tottenham? - The New York Times"
+    },
+    {
+      "desc": "Player ratings as fresh-faced Oxford United bow out of FA Cup against Stevenage Oxford Mail",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T09:20:34.779348+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOb2M2eDFjd2dpWDcwVzhpSDRseC1pLVdMeDdXWHIyaUNCcUxhMDdraXFtc0dFV3RTbXRGX0dXdnc0Tkhia3BnOWpJRWkyVjQ0WFJoUDlKSm1rWHRLX0tVQ3hXTGZ4Ym1IbUxhYXRGSW43VjJaUUlsTVBPYU5kcG1qTndMb2hyZDRaU1Fza2UwaWRQczhvQkx0Q0J4ZWx0QQ?oc=5",
+      "published": "2026-11-08T05:00:00+00:00",
+      "publisher": "https://www.oxfordmail.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Player ratings as fresh-faced Oxford United bow out of FA Cup against Stevenage - Oxford Mail"
     },
     {
       "desc": "Sergio Agüero Manchester City Forward, Profile & Stats Premier League",
@@ -3239,36 +3269,6 @@
       "publisher": "https://shop.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Omar Marmoush Men's Stadium Premier League Tottenham Hotspur Away Shirt 2026/27 I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Micky van de Ven Youth Stadium Premier League Tottenham Hotspur Away Shirt 2026/27 I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-07T18:44:14.051040+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYmJWVVpEcmZQTFRXTGhrelBxTEZkMnhtdGp4U2NETGdDMDE0M2NPbVNRX2kwT083alVTUDBaaTJGVXJEMFZSMEpyQ3NlTmJNZC1JeXVZU0dpUFdkRjhMYkoxbXlmVU9nbm1abFpNY2VuLW41MTIyNEZrMTltTEFEVWFOUUl2d1ZxOE9XbEFBNjJCWlNla3FkSjkydkhCSHJUY1hBRG12MmlPV3FLMmdfNF9vVkIzaFVaUUtUX3FVU29COURHNGdxa0RGVWlmeWJ5aElkTERR?oc=5",
-      "published": "2026-11-07T14:49:40+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Micky van de Ven Youth Stadium Premier League Tottenham Hotspur Away Shirt 2026/27 I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "MANCHESTER UNITED fans are planning at least two protests against the club's embattled owners during Sunday's clash with",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T16:00:58.184281+00:00",
-      "link": "https://www.thesun.co.uk/sport/40948416/man-utd-fans-protest-aston-villa/",
-      "published": "2026-11-07T14:48:55+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd fans to hold protest at Aston Villa clash and vow to leave Old Trafford in 21st minute"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-07T16:00:58.184304+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13551944/scotland-football-news-live-updates-schedule-and-analysis-of-steve-clarkes-side",
-      "published": "2026-11-07T14:48:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Injured Welsh replaced by Porteous in Scotland squad"
     }
   ],
   "processed_urls": [
