@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 89,
+        "calls": 90,
         "errors": 0,
-        "requests": 89
+        "requests": 90
       }
     },
-    "calls": 89,
+    "calls": 90,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 548876,
-    "output_tokens": 51351,
-    "requests": 89
+    "input_tokens": 554493,
+    "output_tokens": 52204,
+    "requests": 90
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T08:15:32.698543+00:00",
+  "last_scan_at": "2026-11-08T08:20:34.108533+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1909,6 +1909,16 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "What is going wrong for Man City? What are we to make of Tottenham? - The New York Times"
+    },
+    {
+      "desc": "Sergio Agüero Manchester City Forward, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T08:20:34.111395+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE04Y2w4cUtUNEpVVmVVYm54QUlJZlVTb010T3pSYmx5Z0VOUVRoMk1MQ0E2bi01Y3ZSaUJSMFlXSkg5bnRhcHRzUUR3bTJjRy1maGFMQ2dvQXNnZlRfUkdsd2YxUkJSQjBTYlhhS0JtX2VRaW1lSUE?oc=5",
+      "published": "2026-11-08T04:54:24+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Sergio Agüero Manchester City Forward, Profile & Stats - Premier League"
     },
     {
       "desc": "Cédric Kipré Ipswich Town U21 Defender, Profile & Stats Premier League",
@@ -3259,16 +3269,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Liverpool lining up move for 17-year-old Bundesliga playmaker - Liverpool FC"
-    },
-    {
-      "desc": "Follow Daily Mail Sport's live coverage of Leeds vs Tottenham, before Arsenal take on Hull and Man City travel to Nottin",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T14:06:05.658285+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268025/Leeds-vs-Tottenham-Premier-League-Roberto-Zerbis-travel-fortress-Elland-Road-Daniel-Farkes-unbeaten-EIGHT-games-home.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T13:58:41+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Leeds vs Tottenham: Hosts make fast start to second half after surviving controversial red card call as Daniel Farke's side look to extend i"
     }
   ],
   "processed_urls": [
