@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 62,
+        "calls": 63,
         "errors": 0,
-        "requests": 62
+        "requests": 63
       }
     },
-    "calls": 62,
+    "calls": 63,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 374774,
-    "output_tokens": 38798,
-    "requests": 62
+    "input_tokens": 381133,
+    "output_tokens": 39406,
+    "requests": 63
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2204,7 +2204,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T21:10:33.319671+00:00",
+  "last_scan_at": "2026-11-08T21:15:36.136832+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2225,6 +2225,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CRYSTAL PALACE are reportedly ready to SACK manager Pierre Sage after just 16 games in charge. The Frenchman’s future is",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T21:15:36.138699+00:00",
+      "link": "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage/",
+      "published": "2026-11-08T21:12:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Crystal Palace ‘ready to sack Pierre Sage’ after woeful start to season with two immediate frontrunners to replace him"
+    },
     {
       "desc": "GARY NEVILLE revealed his brutal worries concerning Michael Carrick's Manchester United after their 4-4 Aston Villa draw",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2466,6 +2476,16 @@
       "title": "Are 'outstanding' Brighton now Arsenal's main title challengers?"
     },
     {
+      "desc": "Manchester United / Aston Villa FC - Premier League - Old Trafford, Manchester Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T21:15:36.138919+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa2VyWUJBdGE0Mzg4Qm9YYVBfQ1pTb0pXbjBOem9XcWR3WnZlVkozTWthNUs1VEF5VW9kMndiYzRUUzQ1bU5kYmZCR2o4ZG15TldCVlNiWThDUG51bkJKNEJoYXQ4dW1JVnhrN2JKdTAzWjhuVWU3ZXlFbGZhRTBQQjJrUFZzZjFQaWhiQWJmcm8xU2pTRUJkc0dWNk9sd05ta3FINA?oc=5",
+      "published": "2026-11-08T19:23:32+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Manchester United / Aston Villa FC - Premier League - Old Trafford, Manchester - Manchester United"
+    },
+    {
       "desc": "Manchester United head coach Michael Carrick admits his side \"made it hard on themselves\" after they twice came back fro",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-08T19:15:36.217632+00:00",
@@ -2624,6 +2644,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "This is how Enzo Maresca's tactics have left Elliot Anderson exposed with too much to do, writes JACK GAUGHAN... and why £125m Enzo Fernande"
+    },
+    {
+      "desc": "Highlights: Liverpool 1-2 Arsenal Women Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T21:15:36.139045+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYW96NVdzNlpobXZTS2Rnb3o2SWQyUlpzQkFlRnV2aDZwQTE3emlzbldhd0dudUxHckxCM0ZEbEFiekREXzNFbnQ3YmNNeHhtclBJWUc5YlgyRFpSYXVMaXNZRDNieENnQjBJRF9oT2pmWGJqUk56SzUxQkRwMEM0MFp3OVBoQXc?oc=5",
+      "published": "2026-11-08T18:06:49+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Highlights: Liverpool 1-2 Arsenal Women - Arsenal.com"
     },
     {
       "desc": "Crystal Palace 1-3 Liverpool: Watch free highlights Liverpool FC",
@@ -3694,36 +3724,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Team news: Confirmed Liverpool line-up v Crystal Palace - Liverpool FC"
-    },
-    {
-      "desc": "Liverpool targeting Netherlands starter after Fabrizio Romano’s ‘serious’ update TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T13:00:50.678178+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTlE4d2QwTTc0UkhtcnJCd3FERDJ4cEctN0tTal90djFyMXJxRXhJbEgydkFNQ3FvUkNsOF91cHdXYmVPYlpUbUJkN1ZsZmNkR1hic201czhXYUtyYWxWVUJhdWUweVhWVU9kQTE5a2N5LWZsZ3ExRk1mdFVHb1RkSjhUeDlEMHlxVk9naFNMU3pCTUNTWV9NQXFuc1NKTTZRb3ptQ1ZXWUZDbHFmR1VoLUhWbGtCYTU1T01QcUxRNGdoY2lacUxudEE5SQ?oc=5",
-      "published": "2026-11-08T12:45:17+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool targeting Netherlands starter after Fabrizio Romano’s ‘serious’ update - TEAMtalk"
-    },
-    {
-      "desc": "Russo strikes at Anfield Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T13:55:36.835876+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZT3d6RXFPN19uMndqY2N5b3FtS3dTck82MmF1bjlPbGRYWk5rUmFHaGNlcy0zLXk2czJ4cEtra2ZZb1NubFE4YmhwcGdESUU2WXJic2xYb2FsY2M2WkxYM0wxdGRDdUt0UlpuSFVvQjM3X29FS0E?oc=5",
-      "published": "2026-11-08T12:45:05+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Russo strikes at Anfield - Arsenal.com"
-    },
-    {
-      "desc": "Confirmed Chelsea line up vs Sunderland | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T13:00:50.678202+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQblVtbk4ySU0xazRISnY3VHhwdk91QkZpX2d3MWtwUG9NOUZ4RTR3dmpNVzFWeGtnYkpENkxrU2FBZXZZdjBvbE5HQkhtRTFlSEdQOTNlQnMxdnpRWDZrSlBXMVRqMnJITnYyUkNvcGtpMk1wYlVSQlFCYUJPanBwRVdaWEtUWUFfbnJ0UVZ4dVJLZw?oc=5",
-      "published": "2026-11-08T12:45:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Confirmed Chelsea line up vs Sunderland | News | Official Site - Chelsea Football Club"
     }
   ],
   "processed_urls": [
