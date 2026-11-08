@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 48,
+        "calls": 49,
         "errors": 0,
-        "requests": 48
+        "requests": 49
       }
     },
-    "calls": 48,
+    "calls": 49,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 286237,
-    "output_tokens": 30297,
-    "requests": 48
+    "input_tokens": 292149,
+    "output_tokens": 30986,
+    "requests": 49
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2096,10 +2096,45 @@
       "telegram_message_id": 30,
       "title": "曼联切尔西联合最佳阵：红魔6人入选引争议",
       "updated_at": "2026-10-31T11:20:38.057660+00:00"
+    },
+    "fb01c8970fbe": {
+      "article_title": "Fans furious at missed Morgan Rogers incident in Chelsea defeat to Sunderland and ask ‘why did VAR not review this’",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "a8be9c621f97551e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 96
+        }
+      ],
+      "created_at": "2026-11-08T20:05:41.326153+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "9c9806efe0e4a393",
+      "event_id": "fb01c8970fbe",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T20:05:41.326153+00:00",
+          "origin": "created",
+          "title": "Fans furious at missed Morgan Rogers incident in Chelsea defeat to Sunderland and ask ‘why did VAR not review this’",
+          "url": "https://www.thesun.co.uk/sport/40962244/chelsea-sunderland-morgan-rogers-referee"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40962244/chelsea-sunderland-morgan-rogers-referee",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 96,
+      "title": "切尔西球迷怒斥摩根·罗杰斯逃红：VAR为何不介入？",
+      "updated_at": "2026-11-08T20:05:42.127072+00:00"
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T20:00:51.365854+00:00",
+  "last_scan_at": "2026-11-08T20:05:34.896140+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2120,6 +2155,66 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "FANS fumed that Morgan Rogers should have been sent off against Sunderland after footage emerged of the Chelsea star app",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T20:05:34.898945+00:00",
+      "link": "https://www.thesun.co.uk/sport/40962244/chelsea-sunderland-morgan-rogers-referee/",
+      "published": "2026-11-08T20:04:50+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Fans furious at missed Morgan Rogers incident in Chelsea defeat to Sunderland and ask ‘why did VAR not review this’"
+    },
+    {
+      "desc": "Manchester United twice come back from two goals down to earn a point against Aston Villa in an eight-goal thriller at O",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T20:05:34.898982+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T20:01:16+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd score twice in stoppage-time to share points in eight-goal thriller"
+    },
+    {
+      "desc": "Diego Gomez's long-range strike fires Brighton to a 2-0 over Brentford, who saw Igor Thiago be shown a straight red card",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T20:05:34.899009+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cry836l4q56po?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T20:00:21+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Brighton breeze past ten-man Brentford to move up to second"
+    },
+    {
+      "desc": "Evanilson scores for the fifth Premier League game in a row as Bournemouth's impressive winning streak continued with a ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T20:05:34.899052+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cmx23rll2w0qo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T19:59:53+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Bournemouth continue winning streak with Ipswich win"
+    },
+    {
+      "desc": "Liverpool see off Crystal Palace 3-1 at Selhurst Park as Pierre Sage's side suffer their fourth defeat in a row in the P",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T20:05:34.899076+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c5djv1mn7gj8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T19:58:46+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Liverpool dispatch Palace to pile pressure on Sage"
+    },
+    {
+      "desc": "Sunderland held on to their first Premier League win since August as Enzo le Fee's penalty help the hosts sink Chelsea a",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T20:05:34.899097+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c64g1nj4v4rmo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T19:58:31+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Struggling Sunderland beat Chelsea to move off bottom of Premier League"
+    },
     {
       "desc": "Where does Manchester United 4-4 Aston Villa rank among the Premier League's greatest games?",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2619,6 +2714,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Renée: \"Bodies on the line, passion for the shirt\" - Arsenal.com"
+    },
+    {
+      "desc": "Fox: \"If you give the ball to Less, she's going to score\" Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T20:05:34.899681+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZW0ySi14dzBDdks1TWg5MFYtY3U5VnB0U3JsemtKV1BMdzN5TUk4WnhWdGFjemktbkU0RUt4VEpLYzh3bG9FbzFQMUtZUUpuMHM0cUNZaktfcHN3WFI2RWhxTDNaMGcxS0EtRHRfSk0xVlYzRVc5OXplNGZRLU5LeU9XeDdTekZDeTN1OE05S0hRT2RpQ3VVV25B?oc=5",
+      "published": "2026-11-08T16:29:56+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Fox: \"If you give the ball to Less, she's going to score\" - Arsenal.com"
     },
     {
       "desc": "MAN UNITED fans can get unmissable ticket deals to watch the Red Devils in action at Old Trafford this season. Tickets t",
@@ -3549,76 +3654,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Eva names line-up for Villa Park visit - Manchester United"
-    },
-    {
-      "desc": "Romano confirms Liverpool could lose ‘crucial’ player after ‘€15m deal agreed’ in May FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T11:10:41.444256+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQnM5UGN5eGRvd0RKR3l4SFRwTWVOeG45c1V2cmhyYzRabFR5VDkwV21HWDFJcm1tbW9YODFJRUplTzh3UFJuSF9pZVpJZHNLbVJLZ2ZPb1FnRnFneENoZHE0RUQtZV9TV1RjWXVXNE1rNHl6YzZpMHIzZ1FLNmgxLWFnVmMwbk5EeHRTRXNOSmE0M2JWM0tUa1BpcEJ0RlFZOGFsMVVSTGZrQTRpQzBhcVpZZC0xU01QeFdwSlE4RndJaGh5RkpNRHZwQWZFVnZpMGhFQ3pfQVRVWkJUQ21feS0yUWVxd3pRRHU1TmNlclc0dw?oc=5",
-      "published": "2026-11-08T11:03:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano confirms Liverpool could lose ‘crucial’ player after ‘€15m deal agreed’ in May - FootballTransfers.com"
-    },
-    {
-      "desc": "Team news: Three changes at Anfield Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T12:10:36.929459+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM2YxaE9HQkpNTzJ4b0xjUUxZRHpUR3hPM252WjN4WVBjR1l1Yy1yYmRla2VpS0RuY0M5LUU0NlRpUVJjX3VjdUpjSDE4aUxQZjFOZHU5R2o5aUJxb2I1SVV0VG5sY2M4N3Q5SFlZT0FEZ016Q1ltdllRS28xVWUtZXRn?oc=5",
-      "published": "2026-11-08T11:02:37+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Team news: Three changes at Anfield - Arsenal.com"
-    },
-    {
-      "desc": "De Zerbi offers latest on Tel's ‘bad injury on the ankle’ Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T11:05:29.888002+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTFRMLWJMNlpGZ0ZwZnNmc05KdDd2Z1dxQU9ZTG5KYkp1eUM3d195d2J5RHN1YkNSYzNSQWZrbElLazVYZS1meGV4ZXJjZkJsZW1EVU1hX05DdmlLTzlEUUpRekhWSTVpbC1uVXhIYXZQYlVsOEc1WWxUT0VodnFnYmFVWTBxTks3ZVFUMzFGX2tveWhCUE16aXB3?oc=5",
-      "published": "2026-11-08T11:01:49+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "De Zerbi offers latest on Tel's ‘bad injury on the ankle’ - Premier League"
-    },
-    {
-      "desc": "Watch: Arbeloa on late draw and extending unbeaten run Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T11:05:29.888018+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQjEzWUxwd1hiRGRaWE1FZWlHRy1qR1pGUXpZeUJydHJUVl9hTmllT3B6cXY3RXE1Ym9WNml6X185cUxJaWFqV212VHpGa1lxNUE4ZWctUTVkVzRYUkVzZEtHX3hYU2E4MXRVdVZjVVdQN3BtUmhNaXVtMG0wQVpiNkxiTnpoWWpkTUV5bWlEa21fbENNMUZSeDRoNzRmU09q?oc=5",
-      "published": "2026-11-08T11:01:49+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch: Arbeloa on late draw and extending unbeaten run - Premier League"
-    },
-    {
-      "desc": "Watch: Doku reflects on frustrating Forest defeat Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T11:50:35.783387+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNl9HOGJsQURrWG1tVGhRREVqN3N3SE1qT1V0cU84Y255eHl1RVYxMEVKV2xiUFZvUzZVLUJ6MHJXb1Q5UWh6OGVJbVZKWWdHUm1VRWhfWmdRMTlVREoyMVh0Nmd4blYtajNhbHo5UEJ3M0MyNUZVcVBxSHRPVm54OTBSVVVLd21YcV9oVGh6T3B0aHJpZmVhZUJR?oc=5",
-      "published": "2026-11-08T11:01:49+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch: Doku reflects on frustrating Forest defeat - Premier League"
-    },
-    {
-      "desc": "Arteta: We try to score perfect goals when we need more chaos Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T13:00:50.678404+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWHMzZ0xFMXJoRWtlMkhmcHdGWkpPVkFtZzh4R3o1eUZIdWd6aHUxbV9GWTZkTWR5bkNQYWdaZnJ3U1dnR0VmZTFpTEJaMC1GSUhvbXNRckZoN1lIQ0g3dXN3TFlkdFlGektXeXhiTldtdGFWbEVwYzdYSTNsSFpPa09mQmt0bXh4WkFtODhCbEVSaXZpLVU1bE1NTDJZYmN0MlB1dVdkSQ?oc=5",
-      "published": "2026-11-08T11:00:58+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Arteta: We try to score perfect goals when we need more chaos - Premier League"
-    },
-    {
-      "desc": "DIMITAR BERBATOV was in disbelief as his former club Manchester United dropped into the relegation zone on Saturday. A r",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T11:00:52.393004+00:00",
-      "link": "https://www.thesun.co.uk/sport/40957455/dimitar-berbatov-man-utd-relegation-aston-villa-michael-carrick/",
-      "published": "2026-11-08T10:59:31+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘I don’t believe it’ – Moment Berbatov puts his head in hands after learning Man Utd have dropped into relegation zone"
     }
   ],
   "processed_urls": [
@@ -3694,7 +3729,8 @@
     "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o",
     "https://www.thesun.co.uk/sport/40961724/unai-emery-storms-tunnel-aston-villa-united",
     "https://www.thesun.co.uk/sport/40960305/man-utd-ratings-aston-villa-dalot-carrick",
-    "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa"
+    "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa",
+    "https://www.thesun.co.uk/sport/40962244/chelsea-sunderland-morgan-rogers-referee"
   ],
   "s_overflow": {},
   "schema_version": 4
