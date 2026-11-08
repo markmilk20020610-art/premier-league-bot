@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 141,
+        "calls": 142,
         "errors": 0,
-        "requests": 141
+        "requests": 142
       }
     },
-    "calls": 141,
+    "calls": 142,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 869629,
-    "output_tokens": 84436,
-    "requests": 141
+    "input_tokens": 876259,
+    "output_tokens": 84992,
+    "requests": 142
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1854,7 +1854,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T12:35:36.366691+00:00",
+  "last_scan_at": "2026-11-08T12:40:37.099137+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1875,6 +1875,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T12:40:37.102893+00:00",
+      "link": "https://www.skysports.com/football/sunderland-vs-chelsea/live/559543",
+      "published": "2026-11-08T12:33:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Sunderland vs Chelsea LIVE!"
+    },
     {
       "desc": "Fabrizio Romano delivers verdict on Arsenal and Barcelona defender swap as January rumours emerge https://aftv.co.uk/",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3364,16 +3374,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Spanish football pays emotional tribute to Jesus de Miguel after tragic striker died following collision with goalkeeper"
-    },
-    {
-      "desc": "National League Kidderminster shock League One Doncaster to progress to the second round of the FA Cup.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T18:44:14.050219+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/ck9dz7l6exx3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T17:23:20+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Highlights: Non-league Kidderminster shock League One Doncaster"
     }
   ],
   "processed_urls": [
