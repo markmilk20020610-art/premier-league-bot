@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 47115,
-    "output_tokens": 4549,
-    "requests": 7
+    "input_tokens": 53435,
+    "output_tokens": 5112,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1714,7 +1714,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T02:04:24.876416+00:00",
+  "last_scan_at": "2026-11-08T02:05:29.167303+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1884,6 +1884,16 @@
       "publisher": "https://www.peterboroughtoday.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Peterborough United were outclassed and humiliated as they lost in the first round of the FA Cup for the first time in 21 years - Peterborou"
+    },
+    {
+      "desc": "Dylan McEvoy Videos & Best Moments Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T02:05:29.171699+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9IbndaemxRMm5peUN4VE5SNV9XR2RjQ19IUFNIUHB2N1FubExXRUFHN0pkYjR5ZVI5a283bGZDc01aYzRUUkJMX3NjM2x4MHBZeW84X29LYkpJeG9mbm9tU2VDQy1GcEUzb093ekY3czlVZE9z?oc=5",
+      "published": "2026-11-07T22:07:44+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Dylan McEvoy Videos & Best Moments - Premier League"
     },
     {
       "desc": "Highlights of the day's games, including pacesetters Arsenal and Man City.",
@@ -3224,16 +3234,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Diletta Leotta puts on incredible leggy display as glamorous DAZN presenter called ‘absolutely stunning’ by fans"
-    },
-    {
-      "desc": "EXCLUSIVE INTERVIEW: The FA Cup cast its spell upon the Savages while they were grocery shopping. Reading's Charlie was ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T14:06:05.659062+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268453/robbie-savage-charlie-fa-cup-peterborough-reading.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T10:57:20+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'People keep telling me it's great I'm managing against my son... it's not - it's horrible': Peterborough boss ROBBIE SAVAGE and Reading sta"
     }
   ],
   "processed_urls": [
