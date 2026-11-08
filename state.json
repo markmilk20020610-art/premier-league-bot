@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 61,
+        "calls": 62,
         "errors": 0,
-        "requests": 61
+        "requests": 62
       }
     },
-    "calls": 61,
+    "calls": 62,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 392705,
-    "output_tokens": 35317,
-    "requests": 61
+    "input_tokens": 398892,
+    "output_tokens": 35829,
+    "requests": 62
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T06:00:50.812892+00:00",
+  "last_scan_at": "2026-11-08T06:05:29.559976+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CHELSEA head to bottom-of-the-pile Sunderland on Sunday in the final league matches before the international break. Bran",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T06:05:29.562046+00:00",
+      "link": "https://www.thesun.co.uk/sport/40915368/sunderland-chelsea-bet-builder-tip-paddy-power/",
+      "published": "2026-11-08T06:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Sunderland vs Chelsea: Our 7/1 bet builder tip, plus get £50 in free bets | Paddy Power"
+    },
     {
       "desc": "Guehi Injury Update and Return Date: Off at Half-Time, No Date Given The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3259,16 +3269,6 @@
       "publisher": "https://store.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Track Order - Chelsea Store - Official Chelsea Store"
-    },
-    {
-      "desc": "CD TENERIFE have made a promise about the family of late player Jesus de Miguel after his tragic death. Majority shareho",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T14:06:05.658731+00:00",
-      "link": "https://www.thesun.co.uk/sport/40947138/jesus-de-miguel-club-promise-footballer-family-tenerife/",
-      "published": "2026-11-07T11:58:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Jesus de Miguel’s club make promise about tragic footballer’s girlfriend and baby girl after shocking on-pitch accident"
     }
   ],
   "processed_urls": [
