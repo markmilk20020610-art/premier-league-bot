@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 87,
+        "calls": 88,
         "errors": 0,
-        "requests": 87
+        "requests": 88
       }
     },
-    "calls": 87,
+    "calls": 88,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 537613,
-    "output_tokens": 49889,
-    "requests": 87
+    "input_tokens": 543331,
+    "output_tokens": 50567,
+    "requests": 88
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T08:05:29.948928+00:00",
+  "last_scan_at": "2026-11-08T08:10:33.338578+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1909,6 +1909,16 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "What is going wrong for Man City? What are we to make of Tottenham? - The New York Times"
+    },
+    {
+      "desc": "Cédric Kipré Ipswich Town U21 Defender, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T08:10:33.342756+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4ycVJzZ3IzRElqOEJqQUFHUGEwczM4aFNacm1wZlRrUEI3a2hKOEpyM1czWTNCaFlfSnltT0NLWWFqZWsza2xTZzIyTXhQQ0ZfcmFnYTVCS0dRd0NaNUNjWHRzbEJYbHM4SDEtclA5anNwZkMyZm44?oc=5",
+      "published": "2026-11-08T04:45:33+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Cédric Kipré Ipswich Town U21 Defender, Profile & Stats - Premier League"
     },
     {
       "desc": "Ayoni Santos Matches Premier League",
@@ -3259,16 +3269,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Leeds vs Tottenham: Hosts make fast start to second half after surviving controversial red card call as Daniel Farke's side look to extend i"
-    },
-    {
-      "desc": "Swansea City centre-back Stephen Welsh drops out the Scotland squad for their forthcoming Nations League double-header a",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T16:00:58.184643+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxyvrdyzrvgro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T13:57:46+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Scotland lose Welsh and call up Porteous"
     }
   ],
   "processed_urls": [
