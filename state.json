@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 133,
+        "calls": 134,
         "errors": 0,
-        "requests": 133
+        "requests": 134
       }
     },
-    "calls": 133,
+    "calls": 134,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 815215,
-    "output_tokens": 80066,
-    "requests": 133
+    "input_tokens": 822068,
+    "output_tokens": 80615,
+    "requests": 134
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1854,7 +1854,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T11:55:30.778178+00:00",
+  "last_scan_at": "2026-11-08T12:00:48.219929+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1875,6 +1875,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Fulham striker Rodrigo Muniz, who scored for his side in a 1-1 draw against Newcastle United, speaks of the struggles he",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T12:00:48.222666+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmq8nl4w3e8eo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T11:56:01+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Last season difficult with injury and miscarriage - Muniz"
+    },
     {
       "desc": "The centre forward, speaking with club media after the Craven Cottage game, spoke candidly of the difficulties he has fa",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -3364,16 +3374,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal 1 Hull 0: Martin Odegaard saves the day after Tigers frustrate champions and controversial penalty decision"
-    },
-    {
-      "desc": "AFTER six qualifying rounds, we have reached the first round proper of the FA Cup! Clubs from League One and Two are now",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T18:44:14.050540+00:00",
-      "link": "https://www.thesun.co.uk/sport/40929445/fa-cup-1st-round-extra-time-penalties/",
-      "published": "2026-11-07T16:54:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Do FA Cup 1st round ties go to extra-time or straight to penalties?"
     }
   ],
   "processed_urls": [
