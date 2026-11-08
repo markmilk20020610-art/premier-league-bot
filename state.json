@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 135,
+        "calls": 136,
         "errors": 0,
-        "requests": 135
+        "requests": 136
       }
     },
-    "calls": 135,
+    "calls": 136,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 829080,
-    "output_tokens": 81165,
-    "requests": 135
+    "input_tokens": 835789,
+    "output_tokens": 81718,
+    "requests": 136
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1854,7 +1854,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T12:05:27.065940+00:00",
+  "last_scan_at": "2026-11-08T12:10:36.925381+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1926,6 +1926,16 @@
       "title": "Acting legend shares first pic from Sir Alex Ferguson 40th anniversary dinner with Man Utd icon surrounded by ex-stars"
     },
     {
+      "desc": "Best of the action: Forest v Man City photo gallery Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T12:10:36.929393+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVm1fbTVPLWlwYlQ1TFV4SjlCY0JVWF8wNnN3VTBZQ0tiN1RIYXBTVVVKTUhPM1JlTWxJWWlIbEVRYjJjVXpBRk5uc2FwRFVSb3Z2aFhvb2t3S0V4dlRwemFxQVZkZW5mdzdqSk1DRElxTk9lYXR6R1lWRG9oRjhoTWFmUlRWRV9GZEY2eU5CUnBEWVBvWUU2QU81YTM?oc=5",
+      "published": "2026-11-08T11:03:54+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Best of the action: Forest v Man City photo gallery - Premier League"
+    },
+    {
       "desc": "Romano confirms Liverpool could lose ‘crucial’ player after ‘€15m deal agreed’ in May FootballTransfers.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-08T11:10:41.444256+00:00",
@@ -1934,6 +1944,16 @@
       "publisher": "https://www.footballtransfers.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano confirms Liverpool could lose ‘crucial’ player after ‘€15m deal agreed’ in May - FootballTransfers.com"
+    },
+    {
+      "desc": "Team news: Three changes at Anfield Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T12:10:36.929459+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNM2YxaE9HQkpNTzJ4b0xjUUxZRHpUR3hPM252WjN4WVBjR1l1Yy1yYmRla2VpS0RuY0M5LUU0NlRpUVJjX3VjdUpjSDE4aUxQZjFOZHU5R2o5aUJxb2I1SVV0VG5sY2M4N3Q5SFlZT0FEZ016Q1ltdllRS28xVWUtZXRn?oc=5",
+      "published": "2026-11-08T11:02:37+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Team news: Three changes at Anfield - Arsenal.com"
     },
     {
       "desc": "De Zerbi offers latest on Tel's ‘bad injury on the ankle’ Premier League",
@@ -3354,26 +3374,6 @@
       "publisher": "https://www.miltonkeynes.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Unconvincing Dons do enough to see off Swindon in the FA Cup - Milton Keynes Citizen"
-    },
-    {
-      "desc": "How Arsenal and Hull City's players rated following their Premier League match at Emirates Stadium.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-07T18:44:14.050405+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq62yp4lg831o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-07T17:00:38+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Goal caps eye-catching Odegaard display - player ratings for Arsenal v Hull"
-    },
-    {
-      "desc": "Truro City's match against Folkestone Invicta has been abandoned due to a medical emergency after a footballer collapsed",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T18:44:14.050441+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16274291/Non-league-footballer-collapses-warm-rushed-hospital-match-abandoned.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T16:56:56+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Non-league footballer collapses in warm-up and rushed to hospital as match is abandoned"
     }
   ],
   "processed_urls": [
