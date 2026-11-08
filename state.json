@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 142,
-        "errors": 0,
-        "requests": 142
+        "calls": 143,
+        "errors": 1,
+        "requests": 143
       }
     },
-    "calls": 142,
+    "calls": 143,
     "date": "2026-11-08",
-    "errors": 0,
+    "errors": 1,
     "input_tokens": 876259,
     "output_tokens": 84992,
-    "requests": 142
+    "requests": 143
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1854,7 +1854,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T12:40:37.099137+00:00",
+  "last_scan_at": "2026-11-08T12:45:42.348717+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1875,6 +1875,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "EIDUR GUDJOHNSEN was a two-time Premier League champion with Chelsea - and now his son is making waves in the EFL. Andri",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T12:45:42.351970+00:00",
+      "link": "https://www.thesun.co.uk/sport/40957717/chelsea-eidur-gudjohnsen-son-andri-europe-lethal-striker-blackburn/",
+      "published": "2026-11-08T12:41:54+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea legend’s son is Europe’s most lethal striker with conversion rate DOUBLE Haaland and 10 goals from 20 shots"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -3364,16 +3374,6 @@
       "publisher": "https://onefootball.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano UPDATE On Rio Ngumoha's Liverpool Future - OneFootball"
-    },
-    {
-      "desc": "SPANISH football paid an emotional tribute to Jesus de Miguel as LaLiga returned for the first time since the striker's ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T18:44:14.050188+00:00",
-      "link": "https://www.thesun.co.uk/sport/40949929/jesus-de-miguel-dead-tribute/",
-      "published": "2026-11-07T17:29:36+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Spanish football pays emotional tribute to Jesus de Miguel after tragic striker died following collision with goalkeeper"
     }
   ],
   "processed_urls": [
