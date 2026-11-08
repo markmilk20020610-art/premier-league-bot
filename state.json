@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 59797,
-    "output_tokens": 5796,
-    "requests": 9
+    "input_tokens": 65995,
+    "output_tokens": 6450,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1714,7 +1714,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T02:06:23.642680+00:00",
+  "last_scan_at": "2026-11-08T02:07:25.501244+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1784,6 +1784,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Highlights | Arsenal 1-0 Hull | extended - Arsenal.com"
+    },
+    {
+      "desc": "Extraordinary scenes as fog descends on 'farcical' FA Cup tie ABC News & Headlines – Australian Broadcasting Corporation",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T02:07:25.505204+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOektLU2FrZkFycC1DelZ5b2F5blY5VzBBVGQ5TXdRSDhFaUxjeVV0ZWpCNnMzUVBQMFhQU0tNZmRhRjNQMlNISTJna0VJRFd5NFlPM2o2NDlQZWh4ajVITVRWOXo5c3ZFU1puMXJWM3JIaFBSRzRwR0loME8xdXFjM21jOE5xVktjS3BIY21NNktnaUZ6eFFtZw?oc=5",
+      "published": "2026-11-07T23:57:15+00:00",
+      "publisher": "https://www.abc.net.au",
+      "source": "https://www.thefa.com/rss",
+      "title": "Extraordinary scenes as fog descends on 'farcical' FA Cup tie - ABC News & Headlines – Australian Broadcasting Corporation"
     },
     {
       "desc": "CHRIS WHEELER: Michael Carrick has not been given any guarantees over his future as Manchester United head coach beyond ",
@@ -3224,16 +3234,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Grace Fisk signs new contract with LFC Women - Liverpool FC"
-    },
-    {
-      "desc": "DILETTA LEOTTA put on another stunning display as she posed for fans on Instagram. The 33-year-old DAZN presenter regula",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T14:06:05.659007+00:00",
-      "link": "https://www.thesun.co.uk/sport/40946980/diletta-leotta-stuns-fans-leggy-display/",
-      "published": "2026-11-07T10:57:31+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Diletta Leotta puts on incredible leggy display as glamorous DAZN presenter called ‘absolutely stunning’ by fans"
     }
   ],
   "processed_urls": [
