@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 109,
+        "calls": 110,
         "errors": 0,
-        "requests": 109
+        "requests": 110
       }
     },
-    "calls": 109,
+    "calls": 110,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 662368,
-    "output_tokens": 64802,
-    "requests": 109
+    "input_tokens": 668609,
+    "output_tokens": 65427,
+    "requests": 110
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1749,7 +1749,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T09:55:33.918331+00:00",
+  "last_scan_at": "2026-11-08T10:00:52.207054+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1770,6 +1770,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Romano clarifies the speculation regarding Conte's… | Yalla Shoot YSscores",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T10:00:52.210833+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb296eDN0OURDN1lqd0hZSG1IUnpVQTVxaXlUWlRiZUFkYTkwdkNNZ01VQWgydkRnZ204MzJ0NThqVFYyRmlRM3FiV2JtNm9NOG1LeFVoVy1WclcyM1NNeERKMGs0OGpqRXBvTVUzSVZZdHlaMGVhX04zZ25ya1ZIdGhvWmxzMjJ1NjlpdmRodkxLVTZEcEo4a3BKQUpaQmxtMDdmZXBPZURPMDAt?oc=5",
+      "published": "2026-11-08T09:59:02+00:00",
+      "publisher": "https://www.ysscores.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano clarifies the speculation regarding Conte's… | Yalla Shoot - YSscores"
+    },
     {
       "desc": "Liverpool: ‘Serious possibility’ icon LEAVES in summer- Fabrizio Romano TEAMtalk",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3259,16 +3269,6 @@
       "publisher": "https://www.oxfordmail.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Youthful Oxford United limp out of FA Cup against full strength Stevenage - Oxford Mail"
-    },
-    {
-      "desc": "ARSENAL supporters can watch the Premier League champions take on the finest teams in Europe from the best seats in The ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-07T16:00:58.184223+00:00",
-      "link": "https://www.thesun.co.uk/sport/39227637/arsenal-premier-league-champions-ticket-hotel-deal/",
-      "published": "2026-11-07T14:55:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal tickets plus hospitality packages to Premier League and Champions League games at The Emirates"
     }
   ],
   "processed_urls": [
