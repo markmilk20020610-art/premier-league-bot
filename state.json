@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 179,
+        "calls": 180,
         "errors": 1,
-        "requests": 179
+        "requests": 180
       }
     },
-    "calls": 179,
+    "calls": 180,
     "date": "2026-11-08",
     "errors": 1,
-    "input_tokens": 1111495,
-    "output_tokens": 107900,
-    "requests": 179
+    "input_tokens": 1117767,
+    "output_tokens": 108447,
+    "requests": 180
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1924,7 +1924,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T15:40:41.595187+00:00",
+  "last_scan_at": "2026-11-08T15:45:35.374548+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1945,6 +1945,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MATCH OF THE DAY regular Stephen Warnock has been left fuming after being the victim of a hit-and-run. He ranted on Inst",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T15:45:35.378057+00:00",
+      "link": "https://www.thesun.co.uk/sport/40958827/match-of-the-day-pundit-stephen-warnock-car-crash/",
+      "published": "2026-11-08T15:40:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Match of the Day pundit ‘fuming’ as car damaged in car park by ‘absolute k***head driver’ who he’s now hunting down"
+    },
     {
       "desc": "Stockport goalkeeper Luca Ashby-Hammond is given a straight red card after a challenge on the edge of the box and from t",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3434,16 +3444,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Match of the Day"
-    },
-    {
-      "desc": "JACK GAUGHAN AT THE CITY GROUND: This run will not be about the verdicts. This cannot be about the verdicts. Footballers",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T22:22:12.734105+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268037/Man-Citys-sinking-form-excused-115-charges-errors-arm-waving-epidemic-individual-mistakes-football-problems-writes-JACK-GAUGHAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T21:47:59+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man City's slump cannot be excused by guilty verdict: Too many blunders, too much arm waving and football problems are piling up after 3-1 d"
     }
   ],
   "processed_urls": [
