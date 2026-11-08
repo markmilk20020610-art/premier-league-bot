@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 18357,
-    "output_tokens": 2072,
-    "requests": 3
+    "input_tokens": 24491,
+    "output_tokens": 2748,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1959,7 +1959,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T16:10:37.084368+00:00",
+  "last_scan_at": "2026-11-08T16:15:33.325997+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1980,6 +1980,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "FREE TO WATCH: Highlights from Ipswich Town’s match against Bournemouth in the Premier League.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T16:15:33.328036+00:00",
+      "link": "https://www.skysports.com/watch/video/13609784/ipswich-town-1-2-bournemouth-premier-league-highlights",
+      "published": "2026-11-08T16:06:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Bournemouth claim eighth win in a row despite late Ipswich scare"
+    },
     {
       "desc": "ROCK bottom Sunderland stunned Chelsea at the Stadium of Light after a controversial penalty decision broke Blues hearts",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3469,16 +3479,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Nicolò Savona Nottingham Forest Defender, Profile & Stats - Premier League"
-    },
-    {
-      "desc": "CHRIS WHEELER: Michael Carrick has not been given any guarantees over his future as Manchester United head coach beyond ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-08T01:40:15.518989+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16273951/Michael-Carrick-reveals-club-bosses-not-told-charge-week-Man-United-languishing-relegation-zone-ahead-Aston-Villa-clash.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T22:44:51+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Michael Carrick reveals club bosses have not told him if he will still have a job next week, with Man United languishing in relegation zone "
     }
   ],
   "processed_urls": [
