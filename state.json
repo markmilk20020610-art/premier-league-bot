@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 60,
+        "calls": 61,
         "errors": 0,
-        "requests": 60
+        "requests": 61
       }
     },
-    "calls": 60,
+    "calls": 61,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 361885,
-    "output_tokens": 37558,
-    "requests": 60
+    "input_tokens": 368395,
+    "output_tokens": 38290,
+    "requests": 61
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2204,7 +2204,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T21:00:49.573159+00:00",
+  "last_scan_at": "2026-11-08T21:05:29.152611+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2294,6 +2294,16 @@
       "publisher": "https://www.peterboroughtoday.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "You thought Reading result was embarrassing? Believe me there have been much worse FA Cup displays by Peterborough United - Peterborough Tel"
+    },
+    {
+      "desc": "What we learned from Sunday's Premier League matches Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T21:05:29.156580+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYlZvR0pGYVIwY2ZlUzNOM1ZzUG9kOVAxTGJySGMwZzlINl96WmtwdzNuQzdVUkFUX2xJVU8yTUZTQjVMZUh4Ty1aWmxwY3o1cDJhV2VtWV9GM0NjU1c3MWFvVkdTVmRReTNCblEwX1J6Z0E0RzZTNnFPRjRRLWFhTXZVN2syNlkzdGc?oc=5",
+      "published": "2026-11-08T20:13:53+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What we learned from Sunday's Premier League matches - Premier League"
     },
     {
       "desc": "FANS fumed that Morgan Rogers should have been sent off against Sunderland after footage emerged of the Chelsea star app",
@@ -3714,16 +3724,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Sunderland vs Chelsea LIVE!"
-    },
-    {
-      "desc": "When is the FA Cup second round draw and what number are MK Dons? Milton Keynes Citizen",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T13:50:36.124658+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdExoWWZoRkp4SzYxYnNGX2tGTHVmc0YtNkNiSTFJa1otNWpQTDZSRE5WNGRvaFFxaWlnYWxTVjUxczNSM3VuUDVIbVNWdGZyOUZiYXA1V0lyZ3hYSjIyaUpKbzVUZDU2a1Zrd3BRVlhXWHJIZFgtb01KVE92YllSVWJoZ2hPemdXV2RMREsyTUstWHBucHVSQlBCTzhIWkFiRXhHUy1rUGlnWmxteXpIQmFzTE5qc2JzdER6MmRTTGZ3dG1h?oc=5",
-      "published": "2026-11-08T12:30:00+00:00",
-      "publisher": "https://www.miltonkeynes.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "When is the FA Cup second round draw and what number are MK Dons? - Milton Keynes Citizen"
     }
   ],
   "processed_urls": [
