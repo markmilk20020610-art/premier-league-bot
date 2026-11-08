@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 42,
+        "calls": 43,
         "errors": 0,
-        "requests": 42
+        "requests": 43
       }
     },
-    "calls": 42,
+    "calls": 43,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 249575,
-    "output_tokens": 26906,
-    "requests": 42
+    "input_tokens": 255869,
+    "output_tokens": 27544,
+    "requests": 43
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2064,7 +2064,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T19:25:32.494136+00:00",
+  "last_scan_at": "2026-11-08T19:30:29.784521+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2085,6 +2085,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "After moving up to second in the Premier League, could Brighton really be Arsenal's main title challengers?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-08T19:30:29.788129+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cjx23rwxdn64o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-08T19:24:36+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Are 'outstanding' Brighton now Arsenal's main title challengers?"
+    },
     {
       "desc": "Manchester United head coach Michael Carrick admits his side \"made it hard on themselves\" after they twice came back fro",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3574,16 +3584,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Is there something missing despite Rangers' impressive form?"
-    },
-    {
-      "desc": "Under 18s - 2016 - J.League World Challenge Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T12:35:36.371314+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTmE1X2d5Z3JySUswOXZTVG5GZS04UFItYmhPZ092Mm5fTTNrSHBDeXBsZzRqSVd5cW1pVjJ4eXRESENBUV92c2JBUjVzYnZ2Tkh6V2ZKLXk1UXFpMmdremJudG1kaDFqM2JEbTBUMTdCMmlZcWxpaFpUU3JncWdibTRoTDUyVmgwVjZ3?oc=5",
-      "published": "2026-11-08T10:01:19+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Under 18s - 2016 - J.League World Challenge - Liverpool FC"
     }
   ],
   "processed_urls": [
