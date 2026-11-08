@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 6269,
-    "output_tokens": 539,
-    "requests": 1
+    "input_tokens": 12207,
+    "output_tokens": 1392,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1340,6 +1340,41 @@
       "title": "利兹门将特拉福德低级失误送礼，伯恩茅斯笑纳大礼",
       "updated_at": "2026-10-31T17:10:59.041457+00:00"
     },
+    "ab0b6fd30956": {
+      "article_title": "Sunderland 1 Chelsea 0: Brobbey’s controversial penalty incident sees Blues go into international break on losing run",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "fffdf08ac90f4eac",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 91
+        }
+      ],
+      "created_at": "2026-11-08T16:05:40.208762+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "287fda5b2324ecaa",
+      "event_id": "ab0b6fd30956",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T16:05:40.208762+00:00",
+          "origin": "created",
+          "title": "Sunderland 1 Chelsea 0: Brobbey’s controversial penalty incident sees Blues go into international break on losing run",
+          "url": "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 91,
+      "title": "桑德兰争议点球1-0绝杀切尔西，蓝军国际比赛日前遭遇连败",
+      "updated_at": "2026-11-08T16:05:41.022508+00:00"
+    },
     "b03cd11506e7": {
       "article_title": "Verstappen, Lawson receive grid penalties after 'unacceptable' practice collision",
       "attempts": 1,
@@ -1924,7 +1959,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T16:00:53.466816+00:00",
+  "last_scan_at": "2026-11-08T16:05:31.652346+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1945,6 +1980,36 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ROCK bottom Sunderland stunned Chelsea at the Stadium of Light after a controversial penalty decision broke Blues hearts",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T16:05:31.655991+00:00",
+      "link": "https://www.thesun.co.uk/sport/40958747/chelsea-ratings-morgan-rogers-struggles-pep-chavarria-shines/",
+      "published": "2026-11-08T16:04:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea ratings: Morgan Rogers struggles leading the line as Pep Chavarria a bright spark in otherwise toothless attack"
+    },
+    {
+      "desc": "SUNDERLAND won their first league game since August after beating Chelsea 1-0 at the Stadium of Light. The home side wer",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T16:05:31.656060+00:00",
+      "link": "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee/",
+      "published": "2026-11-08T16:02:11+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Sunderland 1 Chelsea 0: Brobbey’s controversial penalty incident sees Blues go into international break on losing run"
+    },
+    {
+      "desc": "Brighton leapfrogged Man City into second place in the Premier League table with a 2-0 win over 10-man Brentford.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-08T16:05:31.656122+00:00",
+      "link": "https://www.skysports.com/football/brighton-and-hove-albion-vs-brentford/report/559535",
+      "published": "2026-11-08T16:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Brighton beat 10-man Brentford to leapfrog Man City into second"
+    },
     {
       "desc": "DIEGO Gomez set up a one-man goal-of-the-season competition to help send the Seagulls soaring into second spot. Brighton",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2124,6 +2189,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd vs Aston Villa LIVE: United look to build on crucial Champions League win as Carrick fights to keep job"
+    },
+    {
+      "desc": "Renée reacts after 2-1 win at Anfield Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T16:05:31.656539+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQaHI5ZHdFaFJSVkpOdFBHbTBpM3VieE9Ecm1zYjg5cHVzRnl6dGZubjU2dHNnNExFMnk4WmppMWxmWDliaUZjVGs5Q1haNEQwaXJQQXNMb0RkZ2VITGVCcm44LUhGb1dhekpDaktEQUdWV3NKNTVReHQtY1lkV2NpdVU5T1NqZkk?oc=5",
+      "published": "2026-11-08T14:50:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Renée reacts after 2-1 win at Anfield - Arsenal.com"
     },
     {
       "desc": "ED STILL has been brutally sacked by Belgian strugglers RAAL La Louviere - just six months after Watford wielded the axe",
@@ -3404,46 +3479,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Michael Carrick reveals club bosses have not told him if he will still have a job next week, with Man United languishing in relegation zone "
-    },
-    {
-      "desc": "Maresca provides injury update on Gvardiol and Guehi Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T01:40:15.519005+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1SVXVUeTU4YVAyTmpPSFNOVWl4bGVmTGZWTHF1UEFxWHMtTXpkUnVhcmZTaHN3TmZQVFdYNkhZTTd5blB4Y2ZlenFMUDNhanFoWndVYnc0Zkk?oc=5",
-      "published": "2026-11-07T22:44:14+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Maresca provides injury update on Gvardiol and Guehi - Premier League"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T01:40:15.519020+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5pa1owUnpzNzd2Z3I1MUN6RVh5N1J2N19wVnNtOUR3WUNuWENWd3JfZWtOb2tMYlBPd3V1a1lTemJuZ1lWS1JFZXNZb3VtOFNYQUxIWTRzeU8yVF9jOWJ6ZUFjOWN2QUVFZ1ljNFJqYk1wcHFOQkF6SFFB?oc=5",
-      "published": "2026-11-07T22:39:46+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "REAL MADRID'S clash with Valencia was temporarily halted following a medical emergency in the stands. The match referee ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T01:40:15.519039+00:00",
-      "link": "https://www.thesun.co.uk/sport/40955834/valencia-real-madrid-suspended-stretcher/",
-      "published": "2026-11-07T22:33:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Valencia vs Real Madrid suspended as players carry stretcher across pitch after medical emergency in stands"
-    },
-    {
-      "desc": "MICHAEL CARRICK has not been told he is certain to be in charge of Manchester United after their Premier League fixture ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T01:40:15.519058+00:00",
-      "link": "https://www.thesun.co.uk/sport/40950241/michael-carrick-unsure-man-utd-future-aston-villa/",
-      "published": "2026-11-07T22:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Michael Carrick has no idea whether he’ll still be Man Utd boss after Aston Villa clash with sacking season approaching"
     }
   ],
   "processed_urls": [
@@ -3514,7 +3549,8 @@
     "https://www.thesun.co.uk/sport/40957362/sir-alex-ferguson-anniversary-dinner-man-utd-james-nesbitt",
     "https://www.skysports.com/football/live-blog/12040/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
     "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0",
-    "https://www.thesun.co.uk/sport/40958869/granit-xhaka-forced-off-sunderland-chelsea-injury"
+    "https://www.thesun.co.uk/sport/40958869/granit-xhaka-forced-off-sunderland-chelsea-injury",
+    "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee"
   ],
   "s_overflow": {},
   "schema_version": 4
