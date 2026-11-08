@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 52,
+        "calls": 53,
         "errors": 0,
-        "requests": 52
+        "requests": 53
       }
     },
-    "calls": 52,
+    "calls": 53,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 310716,
-    "output_tokens": 32814,
-    "requests": 52
+    "input_tokens": 316946,
+    "output_tokens": 33444,
+    "requests": 53
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -967,6 +967,41 @@
       "telegram_message_id": 68,
       "title": "格拉利什连续落选埃弗顿名单，纪律风波持续发酵",
       "updated_at": "2026-11-02T16:00:59.609747+00:00"
+    },
+    "5bc8b4d5f9a5": {
+      "article_title": "Man Utd score twice in stoppage time to share points in eight-goal thriller",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "1153f7918d1ae974",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 98
+        }
+      ],
+      "created_at": "2026-11-08T20:25:33.811771+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "df3a2c4907d445f9",
+      "event_id": "5bc8b4d5f9a5",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T20:25:33.811771+00:00",
+          "origin": "created",
+          "title": "Man Utd score twice in stoppage time to share points in eight-goal thriller",
+          "url": "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 98,
+      "title": "曼联补时两球绝平维拉，八球大战战平",
+      "updated_at": "2026-11-08T20:25:34.427610+00:00"
     },
     "68d6afe5a9be": {
       "article_title": "West Ham confirm Parker as boss",
@@ -2169,7 +2204,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T20:20:37.477750+00:00",
+  "last_scan_at": "2026-11-08T20:25:27.669684+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3766,7 +3801,8 @@
     "https://www.thesun.co.uk/sport/40960305/man-utd-ratings-aston-villa-dalot-carrick",
     "https://www.thesun.co.uk/sport/40961879/joshua-zirkzee-gesture-diogo-dalot-manchester-united-aston-villa",
     "https://www.thesun.co.uk/sport/40962244/chelsea-sunderland-morgan-rogers-referee",
-    "https://www.thesun.co.uk/sport/40962137/man-utd-jaydan-kamason-wipes-out-linesman-under-21"
+    "https://www.thesun.co.uk/sport/40962137/man-utd-jaydan-kamason-wipes-out-linesman-under-21",
+    "https://www.bbc.co.uk/sport/football/videos/cqj6jldpl2gyo"
   ],
   "s_overflow": {},
   "schema_version": 4
