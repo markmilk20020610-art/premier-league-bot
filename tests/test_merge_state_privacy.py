@@ -346,5 +346,109 @@ class TestMergeSemanticsPreserved(unittest.TestCase):
             store.DELIVERED)
 
 
+# ============================================================================
+# 四、P1-C：events 结构异常不得成为隐私守卫的免检通道
+# ============================================================================
+class TestMalformedEventsStructure(_MergeBase):
+    """`events` 是非空非 dict 时，隐私检查不能被整体跳过。
+
+    原缺陷（`state_store.public_review_violations`）：
+
+        events = state.get("events") or {}
+        if not isinstance(events, dict):
+            return out          # ← 直接返回空列表，后面三项检查全被跳过
+
+    于是这样一份 state：
+
+        {"events": ["https://example.com/leak"],
+         "s_overflow": {"bucket": {"item": {"review_payload": {...}}}}}
+
+    会被判成「干净」：函数返回 []，`save_state_atomic` 照常落盘、
+    `merge_state` 照常写文件。`s_overflow` 里那份审核快照就这么进了公开仓库。
+
+    修法有两层，本类各钉一遍：
+      · `public_review_violations()` 把结构异常本身记成违规，并**继续**跑
+        后面的检查（这一层同时覆盖 bot 的落盘路径）；
+      · `merge_state._structure_violations()` 在合并之前挡住，让拒绝是一条
+        明确判定，而不是 `.items()` 抛出来的一段 traceback。
+    """
+
+    LEAKY = {
+        "events": ["https://example.com/leak"],
+        "s_overflow": {"bucket": {"item": {"review_payload": {"title": TITLE}}}},
+    }
+
+    def test_1_guard_reports_structure_and_keeps_checking(self):
+        """隐私守卫必须同时报出「结构异常」和 s_overflow 里的越界。"""
+        violations = store.public_review_violations(self.LEAKY)
+        self.assertTrue(violations, "非 dict 的 events 让整个隐私检查被跳过了")
+        joined = " | ".join(violations)
+        self.assertIn("events", joined, "必须明确指出 events 结构异常")
+        self.assertIn("review_payload", joined,
+                      "s_overflow 里的审核私有字段不得因为 events 坏掉就被跳过")
+
+    def test_2_save_state_atomic_rejects_malformed_events(self):
+        """bot 的落盘路径用的是同一处守卫，同样必须拒绝。"""
+        path = os.path.join(self.tmp, "state.json")
+        with self.assertRaises(store.StateError):
+            store.save_state_atomic(self.LEAKY, path)
+        self.assertFalse(os.path.exists(path), "被拒绝时不得留下文件")
+
+    def test_3_merge_refuses_to_write(self):
+        """端到端：本地坏结构 → 拒绝写盘，原文件逐字节不变。"""
+        local = dict(self.LEAKY)
+        remote = {"events": {}, "news_pool": []}
+        rc, path, out = self.run_cli(local, remote)
+        self.assertEqual(rc, 1, "events 结构异常时合并不得返回成功")
+        self.assertIn("结构异常", out)
+        self.assertEqual(json.loads(read(path)), local, "被拒绝时文件必须逐字节不变")
+        self.assertFalse(os.path.exists(path + ".merge.tmp"), "不得留下临时文件")
+
+    def test_4_remote_malformed_also_refused(self):
+        """远端坏结构同样拒绝，不能只看本地那一份。"""
+        local = {"events": {}, "news_pool": []}
+        remote = dict(self.LEAKY)
+        rc, path, out = self.run_cli(local, remote)
+        self.assertEqual(rc, 1)
+        self.assertIn("远端", out)
+        self.assertEqual(json.loads(read(path)), local)
+
+    def test_5_early_return_path_also_refused(self):
+        """早退路径（远端缺失）也不得把坏结构原样写回。"""
+        local = dict(self.LEAKY)
+        rc, path, out = self.run_cli(local, None)
+        self.assertEqual(rc, 1, "远端缺失时也不能放过坏结构")
+        self.assertIn("结构异常", out)
+        self.assertEqual(json.loads(read(path)), local)
+
+    def test_6_empty_events_list_still_tolerated(self):
+        """空 list 是旧版 state 的常见形态，按「没有事件」处理，不算违规。"""
+        self.assertEqual(store.public_review_violations({"events": []}), [])
+        self.assertEqual(merge_state._structure_violations({"events": []}), [])
+
+    def test_7_normal_structure_unaffected(self):
+        """正常结构的合法 state 不受影响：照常合并、落盘、隐私检查通过。"""
+        local = {
+            "events": {"e1": {"delivery_status": store.DELIVERED,
+                              "telegram_message_id": 21,
+                              "article_title": TITLE}},
+            "news_pool": [{"link": "https://a/1", "published": "2026-03-01T01:00:00"}],
+            "last_morning_report_date": "2026-03-01",
+        }
+        remote = {
+            "events": {"e1": {"delivery_status": store.DELIVERED,
+                              "telegram_message_id": 21}},
+            "news_pool": [{"link": "https://a/2", "published": "2026-03-01T02:00:00"}],
+            "last_morning_report_date": "2026-03-01",
+        }
+        rc, path, out = self.run_cli(local, remote)
+        self.assertEqual(rc, 0, out)
+        data = json.loads(read(path))
+        self.assertEqual(store.public_review_violations(data), [])
+        self.assertEqual(len(data["news_pool"]), 2, "新闻池照常取并集")
+        self.assertEqual(data["events"]["e1"]["delivery_status"], store.DELIVERED)
+        self.assertEqual(data["last_morning_report_date"], "2026-03-01")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -238,7 +238,9 @@ def record_review_stub(state, public_id, review_ref, delivery_status=PENDING_REV
 def public_review_violations(state):
     """返回公开 state.json 里所有越界的审核资料（空列表 = 干净）。
 
-    四类检查：
+    五类检查：
+      0. **events 结构本身**：不是 dict 就判违规。结构一坏，逐条校验做不了；
+         此时若返回「干净」，等于给坏 state 开了一条免检通道（P1-C）。
       1. 任何记录携带黑名单字段 → 越界（历史遗留的审核快照）；
       2. 审核记录出现白名单之外的字段 → 越界（标题、摘要、证据都会落在这里）；
       3. 新闻池 / 已处理 URL / S 溢出位里出现审核私有字段 → 越界
@@ -247,9 +249,17 @@ def public_review_violations(state):
          这一条是 P0 的回归守卫——它直接断言「URL → id → 审核记录」这条链断开。
     """
     out = []
+    # 保留 `or {}` 的宽容：缺省 / None / 空 list 都按「没有事件」处理
+    # （旧版 state 常见形态）。只有**非空且不是 dict** 才判结构异常。
     events = state.get("events") or {}
     if not isinstance(events, dict):
-        return out
+        # P1-C：旧实现是 `if not isinstance(events, dict): return out`。
+        # 一份坏掉的 events（例如非空 list）会让函数直接返回「干净」，
+        # 后面的 s_overflow / news_pool / 关联检查**全部被跳过** ——
+        # 坏结构因此成了隐私守卫的免检通道。这里记一条违规后继续往下走。
+        out.append("events: 结构异常（期望 dict，实际 {}），无法校验审核隐私"
+                   .format(type(events).__name__))
+        events = {}
     for eid, event in events.items():
         if not isinstance(event, dict):
             continue

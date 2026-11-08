@@ -494,6 +494,23 @@ def _load(path):
         return None
 
 
+def _structure_violations(state):
+    """落盘前的结构 fail-closed 校验。
+
+    `public_review_violations()` 也会把「events 结构异常」判成违规，但它
+    只能在拿到 state 之后检查；合并逻辑在它之前就要对 events 调 `.items()`，
+    结构一坏就直接抛 AttributeError（进程照样非 0 退出，但那是一段
+    traceback，不是一条可读的拒绝判定）。这里提前挡住。
+    """
+    if not isinstance(state, dict):
+        return ["state 根节点不是 JSON 对象（实际 {}）".format(type(state).__name__)]
+    events = state.get("events") or {}
+    if not isinstance(events, dict):
+        return ["events 结构异常（期望 dict，实际 {}），无法做事件级合并"
+                .format(type(events).__name__)]
+    return []
+
+
 def _write_checked(merged, local_path):
     """落盘前的统一守卫：清理 + 校验 + 原子写入。
 
@@ -501,6 +518,13 @@ def _write_checked(merged, local_path):
     完全同一套判定，不另写一份「差不多的」检查（两份规则迟早会分叉）。
     返回 False 表示**没有写盘**，调用方必须让进程非 0 退出。
     """
+    problems = _structure_violations(merged)
+    if problems:
+        print("[ERROR] 合并结果结构异常，拒绝写入 {}：".format(local_path))
+        for item in problems:
+            print("        - {}".format(item))
+        return False
+
     try:
         state_store.scrub_review_records(merged)
     except Exception as e:  # noqa: BLE001 —— 清理失败也必须 fail-closed
@@ -532,6 +556,19 @@ def main():
     if local is None and remote is None:
         print("[ERROR] 本地与远端 state 都不可读，放弃合并")
         return 1
+
+    # 结构 fail-closed：events 不是 dict 时，合并逻辑会在 .items() 上抛
+    # AttributeError，隐私守卫也拿不到可逐条校验的对象。先挡住，让拒绝
+    # 来自一条明确判定而不是一段 traceback。
+    for label, data in (("本地", local), ("远端", remote)):
+        if data is None:
+            continue
+        problems = _structure_violations(data)
+        if problems:
+            print("[ERROR] {} state 结构异常，拒绝合并（fail-closed，未写入任何文件）：".format(label))
+            for item in problems:
+                print("        - {}".format(item))
+            return 1
 
     # 两条早退路径同样要过隐私守卫：最终留在磁盘上的就是这一份。
     if remote is None:
