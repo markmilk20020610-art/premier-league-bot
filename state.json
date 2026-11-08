@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 53687,
-    "output_tokens": 6367,
-    "requests": 9
+    "input_tokens": 59559,
+    "output_tokens": 7161,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1143,6 +1143,41 @@
       "title": "考文垂球迷用已故桑德兰小球迷布拉德利·洛厄里照片嘲讽对手，其母发声明谴责",
       "updated_at": "2026-11-01T16:28:17.628283+00:00"
     },
+    "87e71252c4ef": {
+      "article_title": "Brobbey wins Colwill battle - player ratings for Sunderland's win over Chelsea",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d26d040825279169",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 92
+        }
+      ],
+      "created_at": "2026-11-08T16:45:46.423862+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "1f952f33adc3d4df",
+      "event_id": "87e71252c4ef",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-08T16:45:46.423862+00:00",
+          "origin": "created",
+          "title": "Brobbey wins Colwill battle - player ratings for Sunderland's win over Chelsea",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 92,
+      "title": "桑德兰争议点球绝杀切尔西，蓝军进攻哑火引质疑",
+      "updated_at": "2026-11-08T16:45:47.233446+00:00"
+    },
     "8e90eaab6e7a": {
       "article_title": "Kane beat Mbappe to Ballon d'Or by just 28 points",
       "attempts": 1,
@@ -1959,7 +1994,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T16:40:30.746067+00:00",
+  "last_scan_at": "2026-11-08T16:45:39.862318+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1980,6 +2015,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED chiefs Omar Berrada and Jason Wilcox were left seething after going 2-0 down against Aston Villa in th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-08T16:45:39.865416+00:00",
+      "link": "https://www.thesun.co.uk/sport/40960606/omar-berrada-jason-wilcox-senne-lammens-man-utd-villa/",
+      "published": "2026-11-08T16:41:20+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd go 2-0 down vs Villa inside 5 minutes after Lammens howlers leaving Berrada and Wilcox with faces like thunder"
+    },
     {
       "desc": "MAN UNITED fans can get unmissable ticket deals to watch the Red Devils in action at Old Trafford this season. Tickets t",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2469,6 +2514,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Argentine side wildly celebrate title… only to discover rivals Boca have scored 96TH MIN winner to break their hearts"
+    },
+    {
+      "desc": "Sunderland Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T16:45:39.866102+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZTNSZE5fWUxUQWd1d1hKODhkSnlmWGhYZ2ZrTjM3UGx2MEdRbmRGbW1VNDA5V2lDUGFEcE9vTWxxbjJQSlpyb09GS19qM0dGYlRUQXg2TEJ2SG1YVkNIc01FX3NSSVFSMXg2LWtBREFOcGtQVXNCSkhTMGgtMUM0UGtZZjA0N0VmN3hJMnU5WVNwVHBW?oc=5",
+      "published": "2026-11-08T13:44:22+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Sunderland - Chelsea Football Club"
     },
     {
       "desc": "Under 18s - 5 - Premier League 2 Liverpool FC",
@@ -3459,26 +3514,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Cédric Kipré Ipswich Town U21 Defender, Profile & Stats - Premier League"
-    },
-    {
-      "desc": "International Eagles: Hopcroft scores on Ireland debut Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T09:35:28.391954+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNV3dsVXBqR3hiZzhnbTY1UXF0ZzVnQVFPeUJoalFVU3pkTkUxVWZReWgyNVZvUURqSUxPRVdsMTN2c1E0WXFpZVFZNk4xQmdndHFtQTF0SEJaa2tVUmhoYUwzcDJyOU5xU2JHYVR3OUFXTG1ITm9felNXWmhpYVNZYlNzZ0hLaHlNYVBpM2szUEpibXVSWUg3MUtIdVR0NW5p?oc=5",
-      "published": "2026-11-08T04:02:09+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "International Eagles: Hopcroft scores on Ireland debut - Premier League"
-    },
-    {
-      "desc": "Ayoni Santos Matches Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T06:40:35.618367+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAzVlJWMG5pM29EdzlqRFozVmxnTC1pX0tmZ0ZMS1JpMi1CU1I1Y3dzdXZYdk5EdzRTOVF4T05NbVNlU3ZqVFNieEFwSzFwQVRlM3hJNVB5Y01TZmxEMTg0QVlXb2xVekxqN1ZlbnpvVGg0SzJ6cEdr?oc=5",
-      "published": "2026-11-08T03:00:03+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Ayoni Santos Matches - Premier League"
     }
   ],
   "processed_urls": [
@@ -3550,7 +3585,8 @@
     "https://www.skysports.com/football/live-blog/12040/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
     "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0",
     "https://www.thesun.co.uk/sport/40958869/granit-xhaka-forced-off-sunderland-chelsea-injury",
-    "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee"
+    "https://www.thesun.co.uk/sport/40959448/sunderland-beat-chelsea-enzo-le-fee",
+    "https://www.bbc.co.uk/sport/football/articles/c94g1n4pzev3o"
   ],
   "s_overflow": {},
   "schema_version": 4
