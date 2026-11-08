@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-08",
     "errors": 0,
-    "input_tokens": 129582,
-    "output_tokens": 12377,
-    "requests": 20
+    "input_tokens": 135931,
+    "output_tokens": 12834,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1714,7 +1714,7 @@
     }
   },
   "last_morning_report_date": "2026-11-08",
-  "last_scan_at": "2026-11-08T02:35:34.713841+00:00",
+  "last_scan_at": "2026-11-08T02:40:36.328109+00:00",
   "last_summary_sent_at": "2026-11-08T01:12:33.265322+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -1735,6 +1735,16 @@
     "updated_at": "2026-11-08T01:12:33.255686+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Guehi Injury Update and Return Date: Off at Half-Time, No Date Given The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-08T02:40:36.331905+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1JWGtDV3hvZVBVMko4U0tJcHpjRXhMUGQyRTgxNmZtSkxOWlVLeW1Ya01ueHhCX083OTNMN2JVRVZtekd3X0tVdHc0bTNNaXphY1ktd1hjWFlWcy1ndXhPbFRGV2IyZ25TNDZtQS1FUEx5ZHk0akdLUUJXSQ?oc=5",
+      "published": "2026-11-08T02:30:44+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Guehi Injury Update and Return Date: Off at Half-Time, No Date Given - The False 9"
+    },
     {
       "desc": "Ex-Manchester United great Dimitar Berbatov has said that his former side deserve to be in the relegation zone.",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -3224,16 +3234,6 @@
       "publisher": "https://roundtable.io",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Video - How To Watch Man Utd vs Aston Villa: Kick-Off Time, TV Channel, Injury Latest - roundtable.io"
-    },
-    {
-      "desc": "Manchester United starlet JJ Gabriel has revealed his ambition to win the Ballon d'Or as he dropped the clearest hint ye",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-07T14:06:05.658954+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16273757/Man-United-prodigy-JJ-Gabriel-shares-lofty-Ballon-dOr-ambitions-closes-Real-Madrid-move.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-07T11:09:41+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'I want to win the Ballon d'Or': JJ Gabriel sets out his lofty ambitions as Man United wonderkid, 16, closes in on move to Real Madrid after"
     }
   ],
   "processed_urls": [
