@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 215,
+        "calls": 216,
         "errors": 0,
-        "requests": 215
+        "requests": 216
       }
     },
-    "calls": 215,
+    "calls": 216,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1192569,
-    "output_tokens": 141614,
-    "requests": 215
+    "input_tokens": 1198289,
+    "output_tokens": 142251,
+    "requests": 216
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2344,7 +2344,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T09:50:44.943133+00:00",
+  "last_scan_at": "2026-11-09T09:55:40.362426+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2365,6 +2365,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Michael Carrick sack: Fabrizio Romano reveals decision Man Utd just made TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T09:55:40.365560+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcXlibXExcERoZThMbGxrdXpkaURZRnVCS055X1IwY2QzNmJ6aWtfVTMtNlJJMGlMSHVVcjRYWFVjMEtVWUlGeDdyTnczdThiZktfelUyakhlbzFLV2J0N0ZjR3JUd2l4VUtuQ0xRdEVNN2ZmOWh6eGdsUXpTclQ5V3J5TUNVei1RTnFJWkRkMnlKN1FsTWNXSkNpQU9rRF9tNTlzVkR0NFU5bVA1aG1udk5pUlY?oc=5",
+      "published": "2026-11-09T09:52:15+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Michael Carrick sack: Fabrizio Romano reveals decision Man Utd just made - TEAMtalk"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -3854,16 +3864,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Match of the Day pundit ‘fuming’ as car damaged in car park by ‘absolute k***head driver’ who he’s now hunting down"
-    },
-    {
-      "desc": "Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T20:15:32.974695+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
-      "published": "2026-11-08T15:37:55+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Tickets - Man City - Manchester City FC"
     }
   ],
   "processed_urls": [
