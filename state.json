@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 182,
+        "calls": 183,
         "errors": 0,
-        "requests": 182
+        "requests": 183
       }
     },
-    "calls": 182,
+    "calls": 183,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1028991,
-    "output_tokens": 119284,
-    "requests": 182
+    "input_tokens": 1034640,
+    "output_tokens": 119876,
+    "requests": 183
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T07:05:29.927575+00:00",
+  "last_scan_at": "2026-11-09T07:10:40.698243+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2330,6 +2330,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MIKEL ARTETA was filmed kicking a chair in the Arsenal dugout following some \"nonchalant\" play from his team against Hul",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T07:10:40.701009+00:00",
+      "link": "https://www.thesun.co.uk/sport/40963703/mikel-arteta-fury-chair-kick-arsenal/",
+      "published": "2026-11-09T07:06:23+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Unseen footage shows furious Mikel Arteta kicking chair after Arsenal star’s ‘nonchalant casual play’ against Hull"
+    },
     {
       "desc": "David Ornstein Reveals What Tottenham Are Making Clear About Signing a Striker roundtable.io",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3819,16 +3829,6 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "David Ornstein reveals Man Utd Michael Carrick sack plan if Aston Villa win at Old Trafford - TEAMtalk"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-08T15:05:32.693676+00:00",
-      "link": "https://www.skysports.com/football/manchester-united-vs-aston-villa/live/559541",
-      "published": "2026-11-08T15:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man Utd vs Aston Villa team news LIVE!"
     }
   ],
   "processed_urls": [
