@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 121,
+        "calls": 122,
         "errors": 0,
-        "requests": 121
+        "requests": 122
       }
     },
-    "calls": 121,
+    "calls": 122,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 747444,
-    "output_tokens": 79053,
-    "requests": 121
+    "input_tokens": 752780,
+    "output_tokens": 79735,
+    "requests": 122
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T02:05:27.648326+00:00",
+  "last_scan_at": "2026-11-09T02:10:40.741981+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2330,6 +2330,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Wimborne Town 2-0 Crawley Town: Magpies deliver huge FA Cup shock The Non-League Football Paper",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T02:10:40.745866+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQbC1NZUswMWhhZ2hzb0FqRkNwME41Y2E3OE5zVnZSbWdKUEhWUGoxZ3NlYVlMcC1FZHdON2ItTU56dEo4VG1xc0F1Z2xaU0tnNXFiUnlNLXBuNmtnalhBTEpuSWZSYjdmRzZkMXY4bWNEQTQ0M1NkS1dWbU00dkh0U2dIY0owVVZRZjFUcjA3NVM3V1RMRFVXUm9IbTZoUG9CNG5JdlZ6ajA2bEFNNnhHMk1zWVJubUhKS2JxblVPX085TzczYzYzdVlJTkJOLTdvTTcwbUVWdFZyN1lBNUtBbjV5ZW1xeUQ1SFRiMnVEWTBXeDdPcDR6ejVTYUJTZWRJTnY0TGhHbnBSR3Vx?oc=5",
+      "published": "2026-11-08T23:39:08+00:00",
+      "publisher": "https://www.thenonleaguefootballpaper.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Wimborne Town 2-0 Crawley Town: Magpies deliver huge FA Cup shock - The Non-League Football Paper"
+    },
     {
       "desc": "Manager headbutts player and gets red card in FA Cup drama that starts huge brawl AOL.co.uk",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3819,16 +3829,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘My players are much better than yours’ – Jose Mourinho’s brutal words to Valencia boss after Real Madrid beat them 3-0"
-    },
-    {
-      "desc": "A DERBY in the Netherlands was postponed on just an hour's notice after fans stopped a team bus from travelling to the s",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T14:10:37.147499+00:00",
-      "link": "https://www.thesun.co.uk/sport/40958308/fans-block-bus-match-postponed-vitesse/",
-      "published": "2026-11-08T14:07:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Match postponed an hour before kick-off as furious fans block team bus from heading to stadium"
     }
   ],
   "processed_urls": [
