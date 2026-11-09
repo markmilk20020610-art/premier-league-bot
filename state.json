@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 195,
+        "calls": 196,
         "errors": 0,
-        "requests": 195
+        "requests": 196
       }
     },
-    "calls": 195,
+    "calls": 196,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1091671,
-    "output_tokens": 128103,
-    "requests": 195
+    "input_tokens": 1096330,
+    "output_tokens": 128814,
+    "requests": 196
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T08:10:39.717096+00:00",
+  "last_scan_at": "2026-11-09T08:15:36.611400+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2330,6 +2330,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Man Utd: Romano, Whitwell deliver huge Carrick sack updates – ‘That’s very clear’ Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T08:15:36.615357+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcEl0LVcwWmZYMVVjWUhfUWh1S2w3dkNxaUVsQVUzekdfcGRtMHhWZV8zeUlkbDBBRUYtbGdXMndrcEJyMWhRS1o4bThwVVlIWWpDWF9IVE85cXFDUUVTVTRjYVVGWHhXV3MzSmNUOUoyTGpfRnFsSEhuMnZiZ21zZGxDNA?oc=5",
+      "published": "2026-11-09T08:09:46+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd: Romano, Whitwell deliver huge Carrick sack updates – ‘That’s very clear’ - Football365"
+    },
     {
       "desc": "A Dutch second-tier match between Vitesse Arnhem and De Graafschap was called off after away team supporters blocked the",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3819,16 +3829,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Man Utd: Ornstein reveals whether INEOS will sack Carrick if Red Devils suffer ‘disastrous result’ vs Aston Villa - Football365"
-    },
-    {
-      "desc": "Wirtz ends 12-game PL goal drought to double Liverpool’s lead over Palace.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-08T15:25:33.326029+00:00",
-      "link": "https://www.skysports.com/watch/video/13609757/goal-f-wirtz-54-crystal-palace-0-2-liverpool",
-      "published": "2026-11-08T15:19:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Wirtz ends 12-game PL goal drought to double Liverpool’s lead over Palace"
     }
   ],
   "processed_urls": [
