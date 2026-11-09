@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 213,
+        "calls": 214,
         "errors": 0,
-        "requests": 213
+        "requests": 214
       }
     },
-    "calls": 213,
+    "calls": 214,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1181461,
-    "output_tokens": 140120,
-    "requests": 213
+    "input_tokens": 1187015,
+    "output_tokens": 140853,
+    "requests": 214
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2344,7 +2344,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T09:40:33.424991+00:00",
+  "last_scan_at": "2026-11-09T09:45:33.306359+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2365,6 +2365,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-09T09:45:33.310102+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13607213/harry-kane-is-bayern-munichs-assist-king-barcelona-win-at-atletico-madrid-and-inter-close-gap-on-lazio-all-in-the-euro-debrief",
+      "published": "2026-11-09T09:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Euro Debrief: Kane has become the king of assists"
+    },
     {
       "desc": "FOREST GREEN owner Dale Vince has apologised after the club failed to mark Remembrance Day. The National League club's f",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3854,16 +3864,6 @@
       "publisher": "https://tickets.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "What is going wrong for Manchester City? What are we to make of Tottenham? The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T17:10:35.543121+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ0gzVVRaTTMweXdVeUZ2X3A1d0RTamVaY2duUVJaLWNyc1Q4VGw3b20zMVZpVHpTSklHOXRKVUd1WFdhSVNxaldydWQyUTZSUy1NdXBvajE4cFNJNkFTdTQwMmN4YXlWZktBbkNhbTJPYWtfX3ZYeWNmY2xZc0pXNG9VLUFxLURwVXlvNExSNXR4R1g0VDZv?oc=5",
-      "published": "2026-11-08T15:34:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "What is going wrong for Manchester City? What are we to make of Tottenham? - The New York Times"
     }
   ],
   "processed_urls": [
