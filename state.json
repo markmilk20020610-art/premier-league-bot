@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 199,
+        "calls": 200,
         "errors": 0,
-        "requests": 199
+        "requests": 200
       }
     },
-    "calls": 199,
+    "calls": 200,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1109930,
-    "output_tokens": 130704,
-    "requests": 199
+    "input_tokens": 1114514,
+    "output_tokens": 131363,
+    "requests": 200
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T08:30:40.491937+00:00",
+  "last_scan_at": "2026-11-09T08:35:32.476829+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2330,6 +2330,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "THE draw for the second round of the FA Cup is tonight. Over the weekend, Leicester beat Oxford City 4-2, non-league Wim",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T08:35:32.480582+00:00",
+      "link": "https://www.thesun.co.uk/sport/40898605/fa-cup-2nd-round-draw-start-time-live-stream-ball-numbers/",
+      "published": "2026-11-09T08:33:37+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "When is FA Cup 2nd round draw? Start time, TV channel, live stream and ball numbers for next stage"
+    },
     {
       "desc": "FANS have urged Manchester United to appoint Javier Hernandez following his passionate speech before the club's Premier ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3819,16 +3829,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Carrick selects side to face Aston Villa - Manchester United"
-    },
-    {
-      "desc": "A FAN has been rushed to hospital after several people fell through a collapsed stand during a football match in Norway.",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T15:30:43.111713+00:00",
-      "link": "https://www.thesun.co.uk/sport/40959528/champions-league-stand-collapse-injures-fans/",
-      "published": "2026-11-08T15:26:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Fan rushed to hospital as five injured after stand COLLAPSES during game involving Champions League side"
     }
   ],
   "processed_urls": [
