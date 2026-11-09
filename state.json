@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 244,
+        "calls": 245,
         "errors": 0,
-        "requests": 244
+        "requests": 245
       }
     },
-    "calls": 244,
+    "calls": 245,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1379546,
-    "output_tokens": 161208,
-    "requests": 244
+    "input_tokens": 1385656,
+    "output_tokens": 161789,
+    "requests": 245
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -700,6 +700,41 @@
       "telegram_message_id": 90,
       "title": "扎卡开场3分钟伤退，桑德兰vs切尔西突发变故",
       "updated_at": "2026-11-08T14:25:33.228282+00:00"
+    },
+    "3664e5895767": {
+      "article_title": "Xabi Alonso was brought in to end the chaos at Chelsea and he is failing. PLUS: Football's most vanilla pundit gives out-of-his-depth Michae",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "75e27bf5d89e3d17",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 105
+        }
+      ],
+      "created_at": "2026-11-09T13:01:06.923499+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "69cd59a3774c3e94",
+      "event_id": "3664e5895767",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-09T13:01:06.923499+00:00",
+          "origin": "created",
+          "title": "Xabi Alonso was brought in to end the chaos at Chelsea and he is failing. PLUS: Football's most vanilla pundit gives out-of-his-depth Michae",
+          "url": "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 105,
+      "title": "阿隆索执教切尔西陷混乱，名记批其失败",
+      "updated_at": "2026-11-09T13:01:08.017631+00:00"
     },
     "3a3e564ec6eb": {
       "article_title": "Lisandro Martinez blanked by Michael Carrick as Man Utd star is sent off vs Chelsea for moment of madness",
@@ -2379,7 +2414,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T12:10:34.009120+00:00",
+  "last_scan_at": "2026-11-09T13:01:01.035422+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2400,6 +2435,46 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CRYSTAL PALACE have sacked Pierre Sage after just five months following their 3-1 defeat to Liverpool. The Eagles only h",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T13:01:01.038988+00:00",
+      "link": "https://www.thesun.co.uk/sport/40963801/pierre-sage-sacked-crystal-palace-thomas-frank/",
+      "published": "2026-11-09T12:57:21+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Crystal Palace SACK Pierre Sage with former BBC pundit favourite to replace Frenchman at Premier League basement club"
+    },
+    {
+      "desc": "Chelsea warn staff to be careful about revealing team news through Fantasy Premier League after Joao Pedro's injury appe",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T13:01:01.039092+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c98rzr51rlvpo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T12:41:23+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Chelsea staff warned over Fantasy Premier League use"
+    },
+    {
+      "desc": "Ex-Colchester United midfielder taken to hospital after collapse Colchester Gazette",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T13:01:01.039124+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWmpXMlN5VVZ4dmM3c1VpNXJNazZ4bzN3V0hqMXBfZlhlX1h3elQya29Ickk5aHBsaFQ1eGVEZ2k5NFhHR2dIemZiTHJRNG4yZ3Y2UC1MTDFqMUYwTUxHaTJaMTA0WEh1dU9UcTlBSDdTbGZKajJxNFo1aGM2THVka195ZXpMWEpOS2ZOVGJtMk1kZllORTNjUEszYWxzZHdEYnhvamljOW9ua3VwdC14eVlzd1k?oc=5",
+      "published": "2026-11-09T12:31:40+00:00",
+      "publisher": "https://www.gazette-news.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Ex-Colchester United midfielder taken to hospital after collapse - Colchester Gazette"
+    },
+    {
+      "desc": "STOCKPORT goalkeeper Oliver Whatmuff left fans stunned with his tiny shin pads. The Manchester City loanee, 19, was in F",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T13:01:01.039152+00:00",
+      "link": "https://www.thesun.co.uk/sport/40965828/stockport-fa-cup-oliver-whatmuff-shin-pads/",
+      "published": "2026-11-09T12:19:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Goalkeeper’s tiny shin pads mistaken for ‘slice of CHEESE’ as fans demand ‘automatic red card’"
+    },
     {
       "desc": "ROY KEANE’S daughter Leah made a rare appearance at Manchester United yesterday… to cheer on Aston Villa against her dad",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2491,6 +2566,16 @@
       "title": "Tributes paid to former Bury FC striker Darren Beckford following death at 59 - The Bury Times"
     },
     {
+      "desc": "The manager of seventh-tier Berkhamsted says his players will be barred from the \"distraction\" of the FA Cup second roun",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T13:01:01.039371+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6j9k910l1ryo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T11:45:08+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Berkhamsted players banned from watching FA Cup draw"
+    },
+    {
       "desc": "Declan Rice has opened up about reducing his use of social media - citing the mental toll it can have.",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-09T12:10:34.011486+00:00",
@@ -2511,6 +2596,26 @@
       "title": "Bizarre moment Emery goes completely silent and gives reporter death stare in explosive interview after Man Utd draw"
     },
     {
+      "desc": "Le Bris issues Xhaka injury update Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T13:01:01.039446+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQb2tsQWNPdmp4Y3g3MjdvaXRTRzdUUDVDeGZkY0NFVkZmaUxmVjF0dGQyM0ZlaFh3X3dhNDZscF9ORHVfRzhydWlfem9nQW1VMGR2djFpaV96SW9HSE9FR19QOEd5aWJWYUZlRTNuczU4TUlhODlmaHBaaG9lN1lDQmtfTGNteTg?oc=5",
+      "published": "2026-11-09T11:35:31+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Le Bris issues Xhaka injury update - Premier League"
+    },
+    {
+      "desc": "Liverpool up to fourth after win at Palace Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T13:01:01.039471+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbmZxZDZpMklJZVNIV0pkZzlzUmlXeHdJRmJ2WjgzOEx2a21jbGpTcGNKTUp3YUtKVjZ6b2JYRUFLbF9XVV9LcmJIOGdBanZ0blFldGhyaHh1Y092dWdSTTZHRTI1eDlEeVgtTzBSZ204a0RveTFLV2RCbDhWWUJhNkFyZ3NDY3djcm1TQ255ejBQdw?oc=5",
+      "published": "2026-11-09T11:33:33+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Liverpool up to fourth after win at Palace - Premier League"
+    },
+    {
       "desc": "لو بريس يكشف آخر تطورات إصابة تشاكا Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-09T11:35:39.500446+00:00",
@@ -2529,6 +2634,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Wirtz hails 'efficient' Liverpool after win at Palace - Premier League"
+    },
+    {
+      "desc": "Le Fee reacts to Sunderland's win over Chelsea Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T13:01:01.039495+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRDFMNmVRNGw4MHdJYTAwT2pqZUJmQ1RQLTM1MGZJc1ZTdmx6bkNCSExmME1hcU5oX0lMMW1HYlBORnlFVkV0d1RwRlN1TTN1MlZIeGJrNlJnYjcxSlVJRl83bHl0MGVoNzJTRmp1V2RMSUhGRWNEM1F0MVpRTzBmWllKMEItSFY4aDJabk96SlpaRGtJWFE?oc=5",
+      "published": "2026-11-09T11:33:32+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Le Fee reacts to Sunderland's win over Chelsea - Premier League"
     },
     {
       "desc": "It is as you were at the top of the Scottish Premiership heading into the second international break, but Falkirk's incr",
@@ -2579,6 +2694,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Thierno Barry shines brightest in Gameweek 10 to punish doubtful Dream Team bosses"
+    },
+    {
+      "desc": "Wimborne boss hails FA Cup run as 'incredible reward' BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T13:01:01.039603+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1VcEdhcHlkYnRJSDlrVGhzVGpYUlNFU2gyd0FEVXN6aVZ1RVVvVUlpOW93YWRfb1V6cW01OFpoU3BVdmhuaEtFN29DMS1UXzFaczE2Um5CS01kZllNbXc?oc=5",
+      "published": "2026-11-09T11:08:52+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Wimborne boss hails FA Cup run as 'incredible reward' - BBC"
     },
     {
       "desc": "Bayern Munich honorary president Uli Hoeness questions whether forward Jamal Musiala will ever \"regain the performance l",
@@ -2829,6 +2954,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "40 years Gala Dinner: Best moments - Manchester City FC"
+    },
+    {
+      "desc": "Chelsea and Liverpool make contact over €60m-rated Brentford star Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T13:01:01.039977+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPS0VuZC0wWW9tcWNwdHJqeXd3YVJOTmo3MHhFc3RuZXVsMDJzcW9LSWFjSkVOUjdwTWlKSVlWOGZtMlhqbGxYSlhKbDVNTmFpRHg5SHg3a3lJbVZwU21VWkZreFlJdnlQV3pGUG96UTVmcGNmM294eERmaHp0YnhudnR4RnBLd3l3aDF1TUNmT3Y?oc=5",
+      "published": "2026-11-09T08:52:10+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Chelsea and Liverpool make contact over €60m-rated Brentford star - Liverpool FC"
     },
     {
       "desc": "When is FA Cup second round draw? Ball numbers, time and how to watch The Independent",
@@ -3799,106 +3934,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Russo double gives Arsenal win over Liverpool at Anfield"
-    },
-    {
-      "desc": "🪔GALA DEEPAVALI GW10! Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T19:00:48.294626+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tX2pBV2FsQjNRZ0lWODdkeFVURDBrb1RocWtzN3ZCWE05cFNJUWxiUkJSOWhkb1U5ZHdGQkk3bFhneVJ6azFqRHh3aDM2anlyOHRwZnJqaFplLUl5SWRaZV93TllYalo2MW9YbThkMzJoZw?oc=5",
-      "published": "2026-11-08T17:44:24+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "🪔GALA DEEPAVALI GW10! - Fantasy Premier League"
-    },
-    {
-      "desc": "FORMER Manchester City star Darren Beckford has died aged 59. The ex-striker came through City's academy before a journe",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T17:45:35.510453+00:00",
-      "link": "https://www.thesun.co.uk/sport/40959848/darren-beckford-dies-man-city-tributes/",
-      "published": "2026-11-08T17:42:27+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Darren Beckford dead at 59: Tragedy as former Man City, Norwich and Port Vale star dies as tributes pour in"
-    },
-    {
-      "desc": "Carrick: There's some character in that dressing room Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T05:30:49.868994+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQTZqWl9IOGR5UFRiMDQ4QzN0cUxmVXBnbXNDQ0tfX1hlZkFzMlREVVB4NG9BYmxnZ3hNcjUydzdhd1lXMmc1TGtoaXUtVFRuWXhtMVJhTDljSjd5TllScktZeXBqTy1XdWFGVVkxZE9aMVowX0tHZ0JXQTNRQzh3eHJmNlMwcTNuLUVMUzE4cE93MFVLSFJXcWRnZw?oc=5",
-      "published": "2026-11-08T17:41:05+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Carrick: There's some character in that dressing room - Manchester United"
-    },
-    {
-      "desc": "Andoni Iraola press conference | Every word after Crystal Palace 1-3 Liverpool Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T23:10:34.080584+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNVZrQ3J5b2Q5SXZwTmM0WWtxOEt2emNiVlpYMUhORFFNb3VGclZsOTVzMmtTM0NPWEs0eURHV0lFNEk5YWY1eHIwN055ZWtNaGVmZVJrUnFwTmFnajFOOExRYW5QTGFjZXF6Y3NHZ3FMNUpjX1g1ZThJZGpWcWxPTWZ3eHNLcGp1UGVvYml6eWc0U0tiZ2w4T3BWS1lESU5ndG1fTkhVaU1TUnQ2ZldXcGJB?oc=5",
-      "published": "2026-11-08T17:40:54+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Andoni Iraola press conference | Every word after Crystal Palace 1-3 Liverpool - Liverpool FC"
-    },
-    {
-      "desc": "League One Stockport County survive a scare to beat Isthmian League side Cray Wanderers 3-2 after extra time in the FA C",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-08T17:55:32.885798+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cqj9km408d38o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-08T17:39:15+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "10-man Stockport come from behind to survive huge scare at Cray"
-    },
-    {
-      "desc": "Bryson DeChambeau issues statement on LIV Golf after league scraps reboot plans and files for bankruptcy Mansfield Radio",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T19:15:36.218176+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQS1U0emJKSk1rNlZickVsUjZjLVdoek5oM1ZVV1RQQm0wWHV6WG5lNVpqU1ByemthRVB3QUVsXzZMU0c2cS1yNUIxTTd1LWxTZEtRUV9nQlpBOEZaZGwyYmw0dldwd2gxdVRaWV9kOGxCcVdxMjd2RkVNWkUxNVFTU3pmUzRVU3NVZDdmYmdvOEE1bXZ2U1FncjhiRVBiSUduTGtxWm4tOGhZSVNUZVBQdGQ5ckFlZkNlTW1lN3ppVk5USDl4QUxoVnh1bElvXzNveGtpSmtsQkRXQlAxUHlkNGJvVlBpVnhPS0M3a0drbnBQaFM1QmRYYTQ0TzVFam9LeGpoeElMbnFSdEJQZWc?oc=5",
-      "published": "2026-11-08T17:37:29+00:00",
-      "publisher": "https://www.mansfieldradio.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Bryson DeChambeau issues statement on LIV Golf after league scraps reboot plans and files for bankruptcy - Mansfield Radio"
-    },
-    {
-      "desc": "'Sir Alex? He is the boss of every coach!' Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T20:50:34.910781+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZjJMVzRQRUZpUTdDcnF3d3Q2U0JIUXpBdTNLYXRiTHAxWk5ZRlM4LXZKeGJwRzVNd2ZmUm8wXzRuTVhzX0dYQmFvVkh4ZHpIQkxKUE5Ed2h2U09QaUgtUWxfRmcyMlhDU2hSeV9FdHRkeENkMjlETFlGRXNQTk9qYWt0TEtwVjFoS2ctSkRpX0hyRVho?oc=5",
-      "published": "2026-11-08T17:30:26+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "'Sir Alex? He is the boss of every coach!' - Manchester United"
-    },
-    {
-      "desc": "TOTTENHAM HOTSPUR have announced the death of former goalkeeper Barry Daines aged 75. The Essex-born stopper joined the ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T17:30:41.069976+00:00",
-      "link": "https://www.thesun.co.uk/sport/40960799/barry-daines-tottenham-hero-dies/",
-      "published": "2026-11-08T17:26:51+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Barry Daines dead at 75: Tottenham cult hero who was legendary understudy passes away as tributes pour in"
-    },
-    {
-      "desc": "Leeds United 1-0 Spurs | Key Highlights | 2026/27 Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T17:45:35.510671+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPclY3b1N1TGJXTnQwanBiRGtsbkpNX1NvUFB6ejVwLThqS1phcUh0dkhCWDAwUUpBNHJGMWVma0JwUGZMRWVYbURNN29ldjRtN0dSRS14NUhBWkwtbG9BT0Fwa1N0SXZsaXNTZ1g2UG93dks3b1RhQzhoV2JDRkF3VWp3?oc=5",
-      "published": "2026-11-08T17:26:10+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Leeds United 1-0 Spurs | Key Highlights | 2026/27 - Tottenham Hotspur"
-    },
-    {
-      "desc": "WILLIAM SALIBA stepped up his comeback by playing 45 minutes for Arsenal’s Under-21s. The France star, 25, has been out ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T17:25:30.992386+00:00",
-      "link": "https://www.thesun.co.uk/sport/40960942/arsenal-william-saliba-max-dowman-u21s/",
-      "published": "2026-11-08T17:21:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "William Saliba steps up Arsenal comeback in 5-1 win for u21s as unstoppable Max Dowman steals the show"
     }
   ],
   "processed_urls": [
@@ -3982,7 +4017,8 @@
     "https://www.bbc.co.uk/sport/football/articles/c623dpeey3e4o",
     "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEMtZ01BcEd4emZpd2ZMbVpMMWVaSjYwcTFLbnJWWEdneUNRQkZXdklHdVEtY3RFdzJhQTRXZG5jUjNydGpwV3RHQ1o4Rm1oMWZwUXVHTzh0bW5fYk5HV3VsWTJqWklnd3llNlNoa2xnTWo1MWVVX0ZCdTQxeUZOQWtRYlRBV0owU25HNkh6NA",
     "https://www.thesun.co.uk/sport/40964075/forest-green-owner-dale-vince-remembrance-day-mistake",
-    "https://www.thesun.co.uk/sport/40966075/unai-emery-interview-man-utd-sky-sports-video"
+    "https://www.thesun.co.uk/sport/40966075/unai-emery-interview-man-utd-sky-sports-video",
+    "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html"
   ],
   "s_overflow": {},
   "schema_version": 4
