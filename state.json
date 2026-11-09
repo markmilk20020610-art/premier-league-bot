@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 188,
+        "calls": 189,
         "errors": 0,
-        "requests": 188
+        "requests": 189
       }
     },
-    "calls": 188,
+    "calls": 189,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1060225,
-    "output_tokens": 123200,
-    "requests": 188
+    "input_tokens": 1065613,
+    "output_tokens": 123886,
+    "requests": 189
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T07:35:28.215920+00:00",
+  "last_scan_at": "2026-11-09T07:40:31.216272+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2330,6 +2330,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Arsenal Players on International Duty: White Returns, Saka Out (9 November) thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T07:40:31.219056+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPaXZlSFJ1Mkw5RFA4c2ZMWjJEcTdLTVo2QzA3S3dSLWxKWkN5WUtES2xpNW4zWlpnUlg3SVdnWC1EbjhiUnV1Y0VvMzdaam5DZUZmRlBLbEYxaVhvT0tvQ0g1cGk3NW9BZVRYOV9hdEJhd0V2ZEU4aE5sdG9PXzY5eGRoLUhkaVU?oc=5",
+      "published": "2026-11-09T07:33:57+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal Players on International Duty: White Returns, Saka Out (9 November) - thefalse9.com"
+    },
     {
       "desc": "MIKEL ARTETA was filmed kicking a chair in the Arsenal dugout following some \"nonchalant\" play from his team against Hul",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3819,16 +3829,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "England await Guehi scan results after injury concern"
-    },
-    {
-      "desc": "David Ornstein reveals Man Utd Michael Carrick sack plan if Aston Villa win at Old Trafford TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T15:05:32.693626+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWE1kMExnVkNQMFg0VW9URzlVYlRFZ2VPaGFBenkzclRjZy1jMjVVN05UWld3NmZDZTRDU0VIcGh3djVEX3IzT210VDRRZklhZXloUWI0SzlISmEtbG0zdDMyTlNCM0Z1a2xJUmdHMEdPUkRhUTRtRzduajRFZXd0YjZ5aDdqbGt0MnB1TFl2ZEVMdlBqVWNjTg?oc=5",
-      "published": "2026-11-08T15:00:45+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein reveals Man Utd Michael Carrick sack plan if Aston Villa win at Old Trafford - TEAMtalk"
     }
   ],
   "processed_urls": [
