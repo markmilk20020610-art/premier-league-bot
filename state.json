@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 246,
+        "calls": 247,
         "errors": 0,
-        "requests": 246
+        "requests": 247
       }
     },
-    "calls": 246,
+    "calls": 247,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1389839,
-    "output_tokens": 162467,
-    "requests": 246
+    "input_tokens": 1396005,
+    "output_tokens": 163175,
+    "requests": 247
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2342,6 +2342,41 @@
       "title": "曼城主场0-1爆冷负布莱顿，阿森纳重夺争冠优势",
       "updated_at": "2026-10-31T16:54:27.073866+00:00"
     },
+    "eb66726bfabd": {
+      "article_title": "Man Utd hit new low in relegation zone after 10 games as dismal record post-Sir Alex Ferguson is revealed",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "dd6cc2f74411b154",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 106
+        }
+      ],
+      "created_at": "2026-11-09T15:01:03.068854+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "024dd5250ed1e097",
+      "event_id": "eb66726bfabd",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-09T15:01:03.068854+00:00",
+          "origin": "created",
+          "title": "Man Utd hit new low in relegation zone after 10 games as dismal record post-Sir Alex Ferguson is revealed",
+          "url": "https://www.thesun.co.uk/sport/40967824/man-utd-hit-relegation-zone-low-points"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40967824/man-utd-hit-relegation-zone-low-points",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 106,
+      "title": "曼联10轮仅8分跌入降级区，创后弗格森时代新低",
+      "updated_at": "2026-11-09T15:01:03.728515+00:00"
+    },
     "f336c2fdca18": {
       "article_title": "Revealed: SIX Man United stars named in combined XI with Chelsea despite Michael Carrick's side's nightmare start - as stats boffins pick Ko",
       "attempts": 1,
@@ -2414,7 +2449,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T14:01:12.577537+00:00",
+  "last_scan_at": "2026-11-09T15:00:55.480980+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2436,6 +2471,126 @@
   },
   "news_pool": [
     {
+      "desc": "Finding a way: Stats behind our 1-0 victories Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.484704+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWDJYRVNqLUVfcHhWQ2VaSVpfZ2RHZVdVSEpNUjZXTmR3cTlWZXRWbFd0QTFpaDdYUllacjBYNDRaT3dNTzgxeDBQbE0yaUd6Tmo2WlVKLU94eDJnTEs2Rml3M0p3RmdMcGx4bEVJRE5RbEdSbjRmWmFLb2ZKblRpZFhQOWExaXYtejhvcmZUZw?oc=5",
+      "published": "2026-11-09T15:00:03+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Finding a way: Stats behind our 1-0 victories - Arsenal.com"
+    },
+    {
+      "desc": "2026/27 ePremier League registrations open with bigger prize pool Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.484741+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ1p4Z1BsSUtqd3ZtSDU0SzNCQUtsN3ZxSFl5UjBjTHRYLVBzZV9YM2E1WTMzUVhRMUljaGpEdU16eEhuTVA1eTRxSUFjLXVYbldDdFVQdk5mZHlmb2tDeERSM1F1ODJ5VFJjVHBxbmpnRlZWWjMxU0lyLWRyczB4SlNETi1oN2FSMHJlZkwxNlpfT2hiWnJEQ194Nkd5WXAzNGVQWnJCcFltMHNzbW5n?oc=5",
+      "published": "2026-11-09T14:58:25+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "2026/27 ePremier League registrations open with bigger prize pool - Premier League"
+    },
+    {
+      "desc": "Lucy Bronze is one of five England players named in the Fifpro Women's World 11.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T15:00:55.484774+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmkgeg2z4dlwo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T14:55:32+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Bronze named in World 11 for record ninth time"
+    },
+    {
+      "desc": "GREMIO hope to complete a deal that will see them finally own their Arena do Gremio home in Porto Alegre. The Brazilian ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T15:00:55.484801+00:00",
+      "link": "https://www.thesun.co.uk/sport/40969030/gremio-stadium-ronaldinho-brazil-football/",
+      "published": "2026-11-09T14:42:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former world champions agree stadium swap with Ronaldinho’s old club to take over 55,225-seater ground"
+    },
+    {
+      "desc": "Barcelona target 24-year-old Arsenal ace but Fabrizio Romano delivers transfer verdict LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.484830+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVm9PMG1FSlNPZEc1Y2czY3VhOGVmZmdhelVYbXFxa09DR3dobEp6NDZ0UFNodUpzOHA0Sjg2TTRRdi1GTnRPV2ZHVjlnV0h6cWhocXA3YUdmTUVQRFNncGVzdzVyLW5seTZ0cTcwOXNsUUtBYm9qOWtlNlB2ZEdSNWRNZUlObGlTdFlWRzB6NGtCaUZZbG9MY3V4a1NoRGZFdUM3bjNrVkFYb1ZJLUozcEEwVUlPQ3VUSG9mRnBFSEZnVzBxYkZxN2FHeHlCbG5hOXNmek4xeTRvYnd6RjE3WG1SVUdWQWlzTDFSdmtISnA?oc=5",
+      "published": "2026-11-09T14:40:04+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Barcelona target 24-year-old Arsenal ace but Fabrizio Romano delivers transfer verdict - LiveScore"
+    },
+    {
+      "desc": "ROY KEANE has been tipped as a shock candidate to replace Michael Carrick at Manchester United. The Red Devils’ hierarch",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T15:00:55.484857+00:00",
+      "link": "https://www.thesun.co.uk/sport/40969404/roy-keane-man-utd-next-manager-michael-carrick-replacement/",
+      "published": "2026-11-09T14:38:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Roy Keane tipped for Man Utd job to ‘ruffle some feathers’ as ex-Prem manager says ‘it’s a no-brainer to bring him back’"
+    },
+    {
+      "desc": "Almost every game had a controversial VAR decision in the Premier League this weekend. But how many might go down as err",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T15:00:55.484886+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6n9r93dnr9do?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T14:34:19+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Incident-by-incident: Was it a bad weekend for VAR?"
+    },
+    {
+      "desc": "MANCHESTER UNITED have hit a new low. The Red Devils find themselves in the relegation zone ahead of the international b",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T15:00:55.484911+00:00",
+      "link": "https://www.thesun.co.uk/sport/40967824/man-utd-hit-relegation-zone-low-points/",
+      "published": "2026-11-09T14:28:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd hit new low in relegation zone after 10 games as dismal record post-Sir Alex Ferguson is revealed"
+    },
+    {
+      "desc": "MARLI SALMON has been promoted to England’s Under-19 squad for the first time. Salmon, 17, had initially received a call",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T15:00:55.484933+00:00",
+      "link": "https://www.thesun.co.uk/sport/40968909/marli-salmon-england-u19-squad-promotion-arsenal/",
+      "published": "2026-11-09T14:22:19+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal star gets England boost despite suffering nightmare in Fleetwood Carabao Cup clash"
+    },
+    {
+      "desc": "Olivia Smith wins Emirates Goal of the Month Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.484957+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMzVfajJ6WGc1REpsbC1ibnFpaUIycWJFMlg4ckZqYlVza2RKTm9wYi1xWnFtMktZbTZvdC1UemdTYjY1OFVfRXM3T05Ta0ZTaVpZeWwwQ0NHaXRYMUc4SW15bHlHOGZhSzloVFN2VzQ2UHQtaUQ4VmpfUEI5NUFRWUR0eEZ4TzBtZXFzX2xWYw?oc=5",
+      "published": "2026-11-09T14:19:50+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Olivia Smith wins Emirates Goal of the Month - Arsenal.com"
+    },
+    {
+      "desc": "Newport County rounds on 'unacceptable' fan behaviour after latest allegation BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.484983+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zV3EzZzlUWHpKRlJEQmk4c1lMdGJzT0N3UWhCUmVRbFE1OHhuRWVoVV9HVG9OYXFIYVdaSGVaQjRtSlZENEMzazEwNWZKRWxjcnk0LXdPLVBEUG82S1FoLWZKbWJvS1Zremow?oc=5",
+      "published": "2026-11-09T14:16:18+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Newport County rounds on 'unacceptable' fan behaviour after latest allegation - BBC"
+    },
+    {
+      "desc": "Official Spurs Website Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485006+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVVFZcGxFaXVOcFBObHZTaWcteEtjLUxYQXpxV2ZoRFduNnJjdktuVzNGSVlNeU1rWllXMjB2eTFGUW1jd1VHREk1LS1UWmZuYkJsRERIajFUOFlzaWIwSVhIMUNvZG5BRWJDa1poYkVOdlVXcDVKckIyNUdwTzh4T05n?oc=5",
+      "published": "2026-11-09T14:02:38+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Official Spurs Website - Tottenham Hotspur"
+    },
+    {
       "desc": "MANCHESTER United are in the relegation zone despite their late comeback draw against Aston Villa. And recent Prem histo",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-09T14:01:12.581059+00:00",
@@ -2444,6 +2599,36 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "The worrying omen that means Man Utd are doomed to be RELEGATED unless they dramatically beat the odds"
+    },
+    {
+      "desc": "The Athletic FC: Ask David Ornstein your questions The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485047+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaUYxT1pxblcyOWVxQTFIQVdkZXBrdnRPQ0xIck9jeGtoLWloaWl4ckx2SnlUU0ZOYmMxZlVhRWd2eWo5M3hfV1JzWmNfNlE3N2FRSURibGdtUFhtMkJ3d3RKYXBnMmU5d2xLWk4zcWRzRjRjeHhvdkV4Rk9kbUsyMEpKbU1xV3RJX0prSjVvaVppSnVZ?oc=5",
+      "published": "2026-11-09T14:00:03+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "The Athletic FC: Ask David Ornstein your questions - The New York Times"
+    },
+    {
+      "desc": "Jafonso qualifies for FC Pro Open 2027 Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485069+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQN29yU0VycUUteVpOQldDZTZBbjBGZmlEdXZhMUhTbWVfOHFUNFlYTmFOYVUyc0lrVmhORmZaMUZOeXd5bm9hOUNtV0dnZkI4dFFxdkhpZVAwTjJwc3NER0VjMU9HTEZSeVBHTzItZ0FSSzltNGk5Y2xlMm1CeHdGQk15emZlVWR6?oc=5",
+      "published": "2026-11-09T14:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Jafonso qualifies for FC Pro Open 2027 - Manchester City FC"
+    },
+    {
+      "desc": "Tottenham insider and David Ornstein both agree on Spurs’ January striker plan Spurs Web",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485172+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYklRTWhkQnk1QXkzTUZPWTFpcnpFakNFVzVnS2V5bXlxZzAxTWZRMTlyTmlmRE1KZFBvX05CaUw5bEJMUlk4elEyT0NObThHWDdRbGtLTUR5S0owaWVCWDFBRVhMM01kUGRIeEtyNmJJbThvMzItVEZkdU1NalNOdUJxS2Z6V0NqcEs2N2FCMGFyLTVxeEVIUkxEQi1iSzYtZkd1V3hJenJGcU1nRFVSQWl5RUhWdw?oc=5",
+      "published": "2026-11-09T13:29:29+00:00",
+      "publisher": "https://www.spurs-web.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Tottenham insider and David Ornstein both agree on Spurs’ January striker plan - Spurs Web"
     },
     {
       "desc": "DECLAN RICE warned Christian Norgaard that Mikel Arteta “doesn’t care who you are” after he struggled to adapt to life a",
@@ -2464,6 +2649,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Inside Chelsea icon’s own private football museum with incredible trophy haul and bar stools made out of SHORTS"
+    },
+    {
+      "desc": "Alessia Russo named in FIFPRO World 11 Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485258+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNT096OGxlVUxKYUIxUnBzZ2hucjVuWUdwcVBaaXdpbHBnV0lOUG5xWXZGN3cwcmNRNVdDRFpxRVVIbnQzMXdIWTB3SUd1WUQwN3lQaTFsc2w0WVNSYVd6WjJPaTVKMURJZjRHLW5pamVCcnlHZjdOakJtRXBMdzA4RW1TaDRSREk?oc=5",
+      "published": "2026-11-09T13:21:34+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Alessia Russo named in FIFPRO World 11 - Arsenal.com"
     },
     {
       "desc": "MANCHESTER UNITED are reportedly considering adding to Michael Carrick's backroom staff to give him more support amid th",
@@ -2514,6 +2709,16 @@
       "publisher": "https://www.gazette-news.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Ex-Colchester United midfielder taken to hospital after collapse - Colchester Gazette"
+    },
+    {
+      "desc": "Declan Rice wins Player of the Month for October Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485423+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbXZEVnV3cVdXQzFjbmw4X3BpZFRlc0M5ZHpxWjdLRC16cTNBM2RpZUFFVnZxczIwNVZyaEdEYVFpMWNvQnBnSXFIR0JPQVVyN3pCdUM5TVY4am1RNVNTN05MRHpFUGNGRE9vV3dPWnNSbDIxamYtanB1MTFPY1c5d18wdUQzQTdzVm9rWVFYTUNBTVVO?oc=5",
+      "published": "2026-11-09T12:23:14+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Declan Rice wins Player of the Month for October - Arsenal.com"
     },
     {
       "desc": "STOCKPORT goalkeeper Oliver Whatmuff left fans stunned with his tiny shin pads. The Manchester City loanee, 19, was in F",
@@ -2666,6 +2871,16 @@
       "title": "Liverpool up to fourth after win at Palace - Premier League"
     },
     {
+      "desc": "Sunderland stun Chelsea to move off the bottom Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485583+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTzRJOC1wQlFPQTVSMW9BckFmX2xZZDFvTlc0anFObnM4OS1MY1FneV9rbWRtUnhPUFRQbVVZbTZ1akNhM0ZnSndDcDlGZDdkX19US1Z2bElqdnRlaWNvUGJHeUtyazBsLURyYWZLdVZWWFIzaFZidGxUSnhHNmRKc2V3cEZVTWlFVVk5cHFUN1puanJoUElr?oc=5",
+      "published": "2026-11-09T11:33:33+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Sunderland stun Chelsea to move off the bottom - Premier League"
+    },
+    {
       "desc": "لو بريس يكشف آخر تطورات إصابة تشاكا Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-09T11:35:39.500446+00:00",
@@ -2806,6 +3021,16 @@
       "title": "Even Man Utd fans say ‘we got away with one’ and claim equalising goal vs Villa should NOT have stood after ‘foul’"
     },
     {
+      "desc": "Team news: Confirmed Liverpool line-up v Crystal Palace Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485727+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMkFISWwwU0ZvQVVEZ1g3TnB4N0RnT3FzMmpCMFhfLWh3LU1fZGhELTF3cmUxd2RwWG1xM1o0cVU1U1k2UkszVG9MdzlCVEdVTm9HU2RLaFMybWd1Q1Myc2dObkVGNjk1WmJSa3o1bk9la1FQQWtyQjJvM1hlaDRLWHUzS3NhWHhiUDNCM0gxLW0?oc=5",
+      "published": "2026-11-09T10:52:34+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Team news: Confirmed Liverpool line-up v Crystal Palace - Liverpool FC"
+    },
+    {
       "desc": "David Ajiboye deflected goal secures FA Cup win for Carlisle against Salford Oxford Mail",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-09T10:55:36.036009+00:00",
@@ -2916,6 +3141,16 @@
       "title": "Michael Carrick sack: Fabrizio Romano reveals decision Man Utd just made - TEAMtalk"
     },
     {
+      "desc": "Ticket exchange cashback: first withdrawal window of 2026/27 | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485856+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPajlPTnBhYWFEeVFxNXBQUHdXWjhrT1RMcTVaQ1F3WlJmOVpISENza0lKcTkzXzB1dGEteExaZVluVDNiREZrdkJiaHA3czZ3RzZTZngzZnNLTEhkSGsyaldyb2wzWDNPSURXeUJDNVl1bUNYYmpvUjBrbjczYTVjSzlmMHJ2ZnBKazdvTUduMUdtcWxqNElBS2c0R2Ewek5neElN?oc=5",
+      "published": "2026-11-09T09:50:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Ticket exchange cashback: first withdrawal window of 2026/27 | News | Official Site - Chelsea Football Club"
+    },
+    {
       "desc": "Gary Neville has claimed the Manchester United squad are causing themselves 'emotional damage' with their post-match wal",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-09T12:10:34.011692+00:00",
@@ -2944,6 +3179,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Forest Green owner explains why they failed to commemorate Remembrance Day as English football falls silent"
+    },
+    {
+      "desc": "Liverpool equal club record with Premier League away form Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T15:00:55.485920+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRlZJTUlmNTZIcG1pMEJxUFFFYjZQTVJudC1GOUJ6TzZMU1hYNTZXUW1idTBmUC16T1MtXzdXZlhFZng3MXhQYW15Q0J6SkdhU2M2ODVhbGl3U2RCel9BVzcxX0dkWllJQW1LQ3RXLXlHSVdVQjQ4ZDRscklGNV8zcGVvTFlhb1NXY2NWRVMwSFFpeE9qTHFtS3dFQXdXRDV0UnFPOA?oc=5",
+      "published": "2026-11-09T09:14:06+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool equal club record with Premier League away form - Liverpool FC"
     },
     {
       "desc": "The centre forward, speaking with club media after the Craven Cottage game, spoke candidly of the difficulties he has fa",
@@ -3724,216 +3969,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Leeds condemn racist abuse of Bogle after Tel incident"
-    },
-    {
-      "desc": "Club statement Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T19:45:39.438846+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9reHFURms1SF9NTVlHYkRRTERmVHFJZGRlWWdOM3dGOEV0LV9ISU9JSng3TVIzUllxSlN2c2hpREJ4cmRVMUZrdS1WLVpoZWg4VUVTSEstZ0V1YnQ3MDJ3TXdFX0loRW5jN0dUWQ?oc=5",
-      "published": "2026-11-08T19:05:00+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Club statement - Tottenham Hotspur"
-    },
-    {
-      "desc": "Horseman on \"top pro\" Saliba Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T19:05:36.378368+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9XSXJwOVo0WHBzaVhMX2tKVHR3YlZUa0t2Z0gzTU9ldEgyVW1pRlNOWWIxal9lc3ZqWjQ0ODBjOXdsV2VaSmZibGZZOXo5ZjhFSXRwMjV6UDVKTEFtV3ZVUTVWMlVILWg0YmFabEtFQzBnbHpyX0tZ?oc=5",
-      "published": "2026-11-08T19:01:01+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Horseman on \"top pro\" Saliba - Arsenal.com"
-    },
-    {
-      "desc": "Man Utd: Michael Carrick sack remains 'inevitable' as he equals horror Ruben Amorim record TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T19:45:39.438879+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMW1YMzRDSG9hcmlzd0xod0tzQzRKWFZqX254Wl9EaExlMjg4My1sM3RmTFFRQmZRcEN4cG5JcG5zMF9lbnI5eWUzYm4yMDJ2Ni1XSFRuWDRRUjhKYVdKOFlYS0plZ1N1a09GdURBNWptaml5ZVhwbUZkZ0tiaGNjbHIyb1Q1aWdHam1wZmZDQzVFUQ?oc=5",
-      "published": "2026-11-08T18:57:19+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man Utd: Michael Carrick sack remains 'inevitable' as he equals horror Ruben Amorim record - TEAMtalk"
-    },
-    {
-      "desc": "Seventh-tier Wimborne Town beat League Two Crawley in a huge FA Cup upset, to reach round two of the competition for the",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-08T19:00:48.294444+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cmy83620wq2wo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-08T18:56:55+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Seventh-tier Wimborne knock out League Two Crawley in FA Cup upset"
-    },
-    {
-      "desc": "FREE TO WATCH: Highlights from the Premier League match between Manchester United and Aston Villa.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-08T19:00:48.294472+00:00",
-      "link": "https://www.skysports.com/watch/video/13609907/manchester-united-4-4-aston-villa-premier-league-highlights",
-      "published": "2026-11-08T18:49:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man Utd rescue draw in EIGHT-goal thriller against Villa"
-    },
-    {
-      "desc": "Man Utd fight back from two goals down twice in 4-4 draw with Aston Villa - but who did well and who didn't in player ra",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-08T18:50:41.627020+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwj34k7k54veo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-08T18:46:45+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Dorgu makes dramatic impact - Man Utd v Aston Villa ratings"
-    },
-    {
-      "desc": "MANCHESTER UNITED are officially the worst defensive team in Europe after shipping four goals at home to Aston Villa. Un",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T18:50:41.627057+00:00",
-      "link": "https://www.thesun.co.uk/sport/40961413/man-utd-worst-defence-europe-aston-villa-carrick/",
-      "published": "2026-11-08T18:45:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd officially become the worst defensive team in Europe this season with horror show against Aston Villa"
-    },
-    {
-      "desc": "Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T00:30:43.080952+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
-      "published": "2026-11-08T18:42:56+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "- Arsenal Direct"
-    },
-    {
-      "desc": "UNAI EMERY could not bear to watch the final moments of Aston Villa's clash with Manchester united after a heartbreaking",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T18:35:32.732680+00:00",
-      "link": "https://www.thesun.co.uk/sport/40961724/unai-emery-storms-tunnel-aston-villa-united/",
-      "published": "2026-11-08T18:34:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Unai Emery storms down Old Trafford tunnel before full-time as Aston Villa blow two-goal lead"
-    },
-    {
-      "desc": "MANCHESTER UNITED will rot in the relegation zone during the November break for the first time in 40 years after a hecti",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T18:35:32.732710+00:00",
-      "link": "https://www.thesun.co.uk/sport/40960305/man-utd-ratings-aston-villa-dalot-carrick/",
-      "published": "2026-11-08T18:32:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd ratings: Senne Lammens suffers worst outing since joining as Diogo Dalot booed off after horror display"
-    },
-    {
-      "desc": "MANCHESTER United legends gathered in numbers to celebrate the 40th anniversary of Sir Alex Ferguson's club appointment.",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T18:35:32.732757+00:00",
-      "link": "https://www.thesun.co.uk/sport/40960451/ex-man-utd-stars-attend-sir-alex-ferguson-dinner/",
-      "published": "2026-11-08T18:32:36+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "All the ex-Man Utd stars who attended Sir Alex Ferguson’s 40th anniversary dinner – can you name them all?"
-    },
-    {
-      "desc": "PATRICK DORGU scored a last-gasp equaliser for Manchester United to earn a point in a madcap game against Aston Villa. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T18:30:43.575298+00:00",
-      "link": "https://www.thesun.co.uk/sport/40961202/man-utd-aston-villa-premier-league/",
-      "published": "2026-11-08T18:30:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd 4 Aston Villa 4: Patrick Dorgu scores staggering 96th minute leveller after Red Devils fell apart in both halves"
-    },
-    {
-      "desc": "Xabi Alonso's frustration is evident as Chelsea's struggles for an identity continue with the disappointing 1-0 defeat b",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-08T18:30:43.575362+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5m2ddz437nzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-08T18:20:56+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'Tinkerman' Alonso's Chelsea side still searching for identity"
-    },
-    {
-      "desc": "Highlights: Sunderland 1-0 Chelsea | Video | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T05:30:49.868822+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUmZTQU1iV05HeUo2dlcxdXRyYVlZZi1PMXBDOERpZFIwdWx1dFZtakdNRGgtN2pCTWY3TWo3VTFPTW8tOUpDeERvNWhOaTZ4Rk10ZWstU2doVlc5QS0ybVVCRGhYSXlwYzF5WDRvZmhBam40aV9hMndMbkpEcUppSGU2VWREU2swRWxOTC1GS2hia1AxOUdvUkRR?oc=5",
-      "published": "2026-11-08T18:20:23+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Highlights: Sunderland 1-0 Chelsea | Video | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T22:00:55.253134+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-08T18:15:34+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Al3yala league Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T23:40:43.182983+00:00",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE05OEd6UEM1V1ZpeERwbGNLWDBNcUJNRllad0RWY3djdlE2QjM3THRhcU5nX3ZLcWpKX1NhdTNubVo4MnVEYVk2eGN1U0pEajFhNTQxMzV3Z2NMUThTeDFyRGFTQTEzOVNRU05VYlE4R0Y?oc=5",
-      "published": "2026-11-08T18:14:51+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Al3yala league - Fantasy Premier League"
-    },
-    {
-      "desc": "XABI ALONSO slammed his Chelsea defenders after Brian Brobbey pounded them into submission at Sunderland. Levi Colwill w",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T18:15:33.587894+00:00",
-      "link": "https://www.thesun.co.uk/sport/40961253/xabi-alonso-blasts-chelsea-players-brian-brobbey/",
-      "published": "2026-11-08T18:10:38+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘He’s not unstoppable’ – Xabi Alonso blasts his own Chelsea players after Brian Brobbey dominates them"
-    },
-    {
-      "desc": "Manchester City spent £320million on overhauling their midfield over the summer. In doing so, they twice broke their own",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-08T21:00:49.576214+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16275851/Man-City-asking-writes-JACK-GAUGHAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-08T18:08:29+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "This is how Enzo Maresca's tactics have left Elliot Anderson exposed with too much to do, writes JACK GAUGHAN... and why £125m Enzo Fernande"
-    },
-    {
-      "desc": "Highlights: Liverpool 1-2 Arsenal Women Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T21:15:36.139045+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYW96NVdzNlpobXZTS2Rnb3o2SWQyUlpzQkFlRnV2aDZwQTE3emlzbldhd0dudUxHckxCM0ZEbEFiekREXzNFbnQ3YmNNeHhtclBJWUc5YlgyRFpSYXVMaXNZRDNieENnQjBJRF9oT2pmWGJqUk56SzUxQkRwMEM0MFp3OVBoQXc?oc=5",
-      "published": "2026-11-08T18:06:49+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Highlights: Liverpool 1-2 Arsenal Women - Arsenal.com"
-    },
-    {
-      "desc": "Crystal Palace 1-3 Liverpool: Watch free highlights Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T19:10:40.382079+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaWI0ekNiZnllWWRSZHJzWUxGNllNSHhrLTc2T0pzV3A0Wml6dmhiNTRpTHN5ZWtVLXdTWm93MVpMTG4zbFB2aEVscmZ6SGFQS3I3OUNIQ0JWZ2ZzekdBLUViLTNMNXAtY2JUMFdPRjNFS1F4dFFrODdMWkhTTkpOV1Z5aU1BZ2daRVIw?oc=5",
-      "published": "2026-11-08T18:04:16+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Crystal Palace 1-3 Liverpool: Watch free highlights - Liverpool FC"
-    },
-    {
-      "desc": "Man Utd v Aston Villa: Roy Keane gives one-word verdict on Senne Lammens TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T19:05:36.378680+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVVY4MUVvdVpySC1pV2pXYjROQUNFUDBsUFRNa3FNUnVYZ21ibE5jRjRlQk96NVFpRFpCemtVenAxVzNyaThlZnpPVzhNMkwtVi03elJOVVhfc2tjeTgxZGNWa2htMVpJeFAwSHp0S25JRlZwU1J3aFhQbFdvRVo5VVJyb2tlT003X2JNWDdmaTF1aUpzU0NzZS12QkY?oc=5",
-      "published": "2026-11-08T18:03:52+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man Utd v Aston Villa: Roy Keane gives one-word verdict on Senne Lammens - TEAMtalk"
     }
   ],
   "processed_urls": [
@@ -4018,7 +4053,8 @@
     "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEMtZ01BcEd4emZpd2ZMbVpMMWVaSjYwcTFLbnJWWEdneUNRQkZXdklHdVEtY3RFdzJhQTRXZG5jUjNydGpwV3RHQ1o4Rm1oMWZwUXVHTzh0bW5fYk5HV3VsWTJqWklnd3llNlNoa2xnTWo1MWVVX0ZCdTQxeUZOQWtRYlRBV0owU25HNkh6NA",
     "https://www.thesun.co.uk/sport/40964075/forest-green-owner-dale-vince-remembrance-day-mistake",
     "https://www.thesun.co.uk/sport/40966075/unai-emery-interview-man-utd-sky-sports-video",
-    "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html"
+    "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html",
+    "https://www.thesun.co.uk/sport/40967824/man-utd-hit-relegation-zone-low-points"
   ],
   "s_overflow": {},
   "schema_version": 4
