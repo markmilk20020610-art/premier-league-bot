@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 220,
+        "calls": 221,
         "errors": 0,
-        "requests": 220
+        "requests": 221
       }
     },
-    "calls": 220,
+    "calls": 221,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1221685,
-    "output_tokens": 145145,
-    "requests": 220
+    "input_tokens": 1228040,
+    "output_tokens": 145683,
+    "requests": 221
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2344,7 +2344,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T10:16:28.567295+00:00",
+  "last_scan_at": "2026-11-09T10:20:35.229265+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2566,6 +2566,16 @@
       "title": "Who am I? Plus today's other quizzes"
     },
     {
+      "desc": "Dorgu named Player of the Match after Villa draw Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T10:20:35.232499+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWFE2N3hnVi1UUjRJZHR5Sjd5OEZaR1NxOWk4UDl1R01IWnJLcThVTEMtUHFVaXpTNDBCMnRBTER2ei1zRnlMcm1WT0hhRmF4Q0tRbWtzQWdIUU51UFQ5cVFRLVN6N1ZXM1NlblljSUdNQThTVWY3SllBcllHOEl1X2JYck9mSURWa0l5U040akczN1cxOFJvZG54M0dvNXctdmdBSHlfdXQySm5McTI4VWdtWnI5eU1B?oc=5",
+      "published": "2026-11-09T06:07:33+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Dorgu named Player of the Match after Villa draw - Manchester United"
+    },
+    {
       "desc": "MFL gathers reports on touchline fracas for FAM review NST Online",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-09T06:05:25.899315+00:00",
@@ -2584,6 +2594,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Sinn'Kaye Christie Videos & Best Moments - Premier League"
+    },
+    {
+      "desc": "Man City’s performances have taken a bizarre twist. They are starting to look distracted The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T10:20:35.232553+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbEVabGE4cHBWR2kySGsxT2l1TklIRmtnNHlZOFJrN0JzdGlDQnNCbC1QYVJSOHN3d2JJaml1N2JHNmlWMmR4UWZFcFdWZlo0X3ZTWmJKeUlmOWtjY096RDYwWFQ2ZHlidy1jMWFNd0Y1SXJmQ2s3NXJxdl9ZR0daT1JyTEFwSmY0YW5WUWlJMnk0cUFOS1JnSlR3?oc=5",
+      "published": "2026-11-09T05:12:17+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City’s performances have taken a bizarre twist. They are starting to look distracted - The New York Times"
     },
     {
       "desc": "Feyenoord vs Como Stats, League Position, Team Form | 2026/2027 | UEFA Champions League Premier League",
@@ -3844,26 +3864,6 @@
       "publisher": "https://www.independent.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "When is FA Cup second round draw? Ball numbers, time and how to watch - The Independent"
-    },
-    {
-      "desc": "Nagelsmann or Howe? Manchester United hierarchy split over next manager as Michael Carrick's future hangs in the balance",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T17:10:35.543031+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOY3RXV2ZNM2Nzay1DdE9zUVlWWGRTazZHemlEME93V1FpLUZPQVVERXVSOG5zM3ROc3V4azB4N0xpcUtJeHFhOVNWR2luTXU0VXlEWGd4TWpQZTMtdkJ0QU85UDdtdTByeThkVGxnUUllOFBEd0RPbEtYVDEwa212ZUsxbnNrTmFKdVQ4ekZLWVl5OXc4WUlfbGdzdloxMWZ5b3dBLXhHcTM1T1BacGJYUWxEMWNwTlkyckV3SndpLVBEYnkzRVB0T05YZ3J1SGVOV3dXN3J1bEJPbjVnTmw4amNXNFlXenpDa0k2bTdZRkJ2c01TVmU1NE91Rk0yRUU5S3FrdVA5eEpTU1E5bXI4?oc=5",
-      "published": "2026-11-08T15:43:19+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Nagelsmann or Howe? Manchester United hierarchy split over next manager as Michael Carrick's future hangs in the balance - LiveScore"
-    },
-    {
-      "desc": "Forest Green Rovers have apologised for failing to commemorate Remembrance Day at a home game, labelling it as 'human er",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-08T16:30:42.831819+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16276065/Forest-Green-apologise-failing-commemorate-Remembrance-Day-home-match-mistake.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-08T15:43:04+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Forest Green apologise for failing to commemorate Remembrance Day at a home match due to 'mistake'"
     }
   ],
   "processed_urls": [
