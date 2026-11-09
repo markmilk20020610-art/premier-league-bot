@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 54744,
-    "output_tokens": 6001,
-    "requests": 8
+    "input_tokens": 61028,
+    "output_tokens": 6622,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2449,7 +2449,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-09T22:00:48.744072+00:00",
+  "last_scan_at": "2026-11-09T23:00:52.083078+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2470,6 +2470,76 @@
     "updated_at": "2026-11-09T22:01:21.442247+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Michael Carrick's Manchester United reign appears close to an end following the club's worst start to a domestic campaig",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T23:00:52.084957+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmy0r041ed0po?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T22:46:43+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd expected to sack head coach Carrick"
+    },
+    {
+      "desc": "Man Utd WILL sack Michael Carrick and have shortlisted THREE managers – David Ornstein TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.084976+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeFA4YTJkQkVEYVRlNlZXaTkzWkUtUDR2bEY2R3I4Vkp0UGljNUd0QWJwdDU5ZWgwZkc2S0xBQkxwMm81NU9feWJadzlMU19yOGxZUUlfM21OQjZyUHl0NHhMd1MzY0JaRVpsdnpNRDRzLTI5OHZMZll3NTR0WkJzZ1l3cjdBV3VoOGlYdHBtaG42Wmh2Zk1RNnNPTk9mT0FjS25iWWpHUWdYTThJNUVGUmhLYkI?oc=5",
+      "published": "2026-11-09T22:28:21+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man Utd WILL sack Michael Carrick and have shortlisted THREE managers – David Ornstein - TEAMtalk"
+    },
+    {
+      "desc": "David Ornstein drops late night update on Michael Carrick’s Man Utd future United In Focus",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.084992+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdVRlSnI4QU42SUVEVG1HU0JYVTE2UHZaTlFGZWtFdUJlZjlrTHFpenpMYW15Zlh3dGl5OXVTUVRjMFdmNTVIWVZxSWl0OE1jTlJGNlUtSDc1Z1pjcExJOXN3TTFQd3N5SXV5MldQLVByTlVFWUhJMVFZNHFmQlRxN2tLbzFoc1RjX0ktcmMyN18wWDJqd2tVcGFReENWN1R3ekFVaVZ2alR0YllyNnc?oc=5",
+      "published": "2026-11-09T22:25:57+00:00",
+      "publisher": "https://www.unitedinfocus.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein drops late night update on Michael Carrick’s Man Utd future - United In Focus"
+    },
+    {
+      "desc": "Man United intend to sack Michael Carrick — David Ornstein Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.085007+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWFdBSzFQRGdPUDRmTzk3Z3hHVFRlYnNSc3VrRmhJZ09NUGVva2hEUExyRlRITG0yNjk0R2M2eG5Ed2lPdFNjX2EtRHBldVJjcVpOT1pNbVY5Zy10N2ltcGt5YkExUUdNdkRPMEVFNGNCc2NLUWhyaGpxT2RNS0VOYU5xMWd0S1BtWmQ2UEQ5R1hSU3R2aHZHN3NFc2nSAaIBQVVfeXFMTTVjX3M5UUFNbzZfWk9jSHdsTFA5ZHJ5R0VXTTkwdl8za1plSWdIX2t1MXVwb3dVN21RalpPaDhTU0R2ZzdSaUpVVFhJcFVFdkNxOUdKOEhpQnpEVWgxV2JGMjJrbkpuMXZXMVBOaFVwNkJidF9DUTF4MldPbkFTanBsdGlZZm05TkdPaGNmS2lYNDRERjVkV09KX181eHlQeDd3?oc=5",
+      "published": "2026-11-09T22:19:25+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man United intend to sack Michael Carrick — David Ornstein - Tribuna.com"
+    },
+    {
+      "desc": "NFL legend Tom Brady ends his association with top-of-the-table Championship side Birmingham City after three years.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T23:00:52.085022+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmd6d63vegd4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T22:18:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Brady ends association with Birmingham City"
+    },
+    {
+      "desc": "THE clucking in the background sounds like Manchester City’s chickens coming home to roost. Enzo Maresca was looking for",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T23:00:52.085037+00:00",
+      "link": "https://www.thesun.co.uk/sport/40973885/man-city-players-crumbling-financial-sham-guilty-verdict/",
+      "published": "2026-11-09T22:18:11+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man City’s players are crumbling under the guilt of £1billion financial ‘sham’ – even footballers don’t live in a vacuum"
+    },
+    {
+      "desc": "Manchester United expected to sack Michael Carrick as head coach - The Athletic The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.085076+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObURtYmFmREFqUmxBN0xmeURTcXNZRGNEUmZWUHVBZjBEdGU4a1pHTUhaM2RKVWJiWHVOU0Q5UGZiazhnU3h2MV9KX0x6SmlGb2VmTzB6eHBrNVN0RGxydGVpaWFILTAzX0Jucl9LUzBfWXVyc25lZURNWXZtT2ZfaExORWtWbWRScnM5S01WV0k5bWdPX1NnQQ?oc=5",
+      "published": "2026-11-09T21:57:15+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United expected to sack Michael Carrick as head coach - The Athletic - The New York Times"
+    },
     {
       "desc": "VAR weekend: BBC Sport expects two to four errors, led by Arsenal and Coventry penalties thefalse9.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2631,6 +2701,16 @@
       "title": "How Kobbie Mainoo’s ‘vacuum’ role powered Man Utd’s staggering last-gasp comeback in 4-4 thriller with Aston Villa"
     },
     {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.085277+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-09T20:22:52+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
+    {
       "desc": "CRAIG HOPE: The defender left the camp in Qatar after the group stages citing 'personal reasons', although a fallout wit",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-09T20:55:09.444198+00:00",
@@ -2749,6 +2829,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "People don't know full story behind England exile - White"
+    },
+    {
+      "desc": "🚨 BREAKING: The draw for the FA Cup second round has been made OneFootball",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.085375+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOR2JIUklqbG83S3d4MkJ1Q295akYtSUF4ZUxXaWYteUZOLV9fUmw4LXZBd01XQjBrNi0xT1g0eEN4UlpYaEk4a1pQM21UMWdBMUpNWEJRQUlKTWszMUx6emNPME9kSng1ZmxVWmQ0cmhIc0JFSW02cU5IM0NPMDRuR2FZWTQ2ak1NTHhDYTBSZHZmT3d4WW5pa2VCWWxsQTY1TkE?oc=5",
+      "published": "2026-11-09T18:59:07+00:00",
+      "publisher": "https://onefootball.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "🚨 BREAKING: The draw for the FA Cup second round has been made - OneFootball"
     },
     {
       "desc": "Man Utd: Romano reveals Dalot January transfer decision after boos from fans Football365",
@@ -3011,6 +3101,16 @@
       "title": "Man Utd will not rush decision on Carrick future"
     },
     {
+      "desc": "Report: Manchester United 4 Aston Villa 4 Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.085603+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORHA0WGNrMEZkTU8wUmxOMmZqY094dlUyNjQ0M1JiSU0yZUxRaUp1aUdlLU9OSkNobUFkWUp0cTF1NHJzdUlkaHpfbnozYmJoOWZmTE5ZV2ZqM0h6YzlLS1N0TG1fTEtqV3A3dERVOHBZcS1GOV9aVnM2TmRMTmxNVkZDUTZiTVlBV3pCTW85SUQxdw?oc=5",
+      "published": "2026-11-09T16:48:08+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Report: Manchester United 4 Aston Villa 4 - Manchester United"
+    },
+    {
       "desc": "Aberdeen sack head coach Stephen Robinson after dropping to second bottom of the Scottish Premiership.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-09T17:00:58.367623+00:00",
@@ -3249,6 +3349,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "FPL Team of the Season so far - see the top-scoring line-up - Premier League"
+    },
+    {
+      "desc": "Liverpool v FC Porto: Champions League ticket details Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T23:00:52.085700+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTDd4Q1lBbXduZWFjQ0xVc0t2X0ExNTBQamdRLXI4SWlhbEYtMjQ2MW1YdVBzOHlxQlNJWUpvWXZzTnRCdmgyeDdTS3QtbmVxLTJKREUzSjZvdEowUnV2Z2JXeEN0NDZ1ZG9xSnJGRnBtTGtYLTIwWGc2UU90MnBJRDhOcjNLYTM0NkJaelVR?oc=5",
+      "published": "2026-11-09T15:24:43+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool v FC Porto: Champions League ticket details - Liverpool FC"
     },
     {
       "desc": "Rio Ngumoha focused on Liverpool contract talks despite Bayern interest — Romano Tribuna.com",
@@ -3859,116 +3969,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Declan Rice reveals he's stepped back from social media because it can 'ruin your whole day' after sick trolling of him and his girlfriend -"
-    },
-    {
-      "desc": "PREMIER LEAGUE fans claimed Unai Emery had created a 'generational meme' after staring a reporter down in a tense post-m",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T11:40:40.648059+00:00",
-      "link": "https://www.thesun.co.uk/sport/40966075/unai-emery-interview-man-utd-sky-sports-video/",
-      "published": "2026-11-09T11:36:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Bizarre moment Emery goes completely silent and gives reporter death stare in explosive interview after Man Utd draw"
-    },
-    {
-      "desc": "Le Bris issues Xhaka injury update Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T13:01:01.039446+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQb2tsQWNPdmp4Y3g3MjdvaXRTRzdUUDVDeGZkY0NFVkZmaUxmVjF0dGQyM0ZlaFh3X3dhNDZscF9ORHVfRzhydWlfem9nQW1VMGR2djFpaV96SW9HSE9FR19QOEd5aWJWYUZlRTNuczU4TUlhODlmaHBaaG9lN1lDQmtfTGNteTg?oc=5",
-      "published": "2026-11-09T11:35:31+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Le Bris issues Xhaka injury update - Premier League"
-    },
-    {
-      "desc": "Liverpool up to fourth after win at Palace Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T13:01:01.039471+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbmZxZDZpMklJZVNIV0pkZzlzUmlXeHdJRmJ2WjgzOEx2a21jbGpTcGNKTUp3YUtKVjZ6b2JYRUFLbF9XVV9LcmJIOGdBanZ0blFldGhyaHh1Y092dWdSTTZHRTI1eDlEeVgtTzBSZ204a0RveTFLV2RCbDhWWUJhNkFyZ3NDY3djcm1TQ255ejBQdw?oc=5",
-      "published": "2026-11-09T11:33:33+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Liverpool up to fourth after win at Palace - Premier League"
-    },
-    {
-      "desc": "Sunderland stun Chelsea to move off the bottom Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.485583+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTzRJOC1wQlFPQTVSMW9BckFmX2xZZDFvTlc0anFObnM4OS1MY1FneV9rbWRtUnhPUFRQbVVZbTZ1akNhM0ZnSndDcDlGZDdkX19US1Z2bElqdnRlaWNvUGJHeUtyazBsLURyYWZLdVZWWFIzaFZidGxUSnhHNmRKc2V3cEZVTWlFVVk5cHFUN1puanJoUElr?oc=5",
-      "published": "2026-11-09T11:33:33+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Sunderland stun Chelsea to move off the bottom - Premier League"
-    },
-    {
-      "desc": "لو بريس يكشف آخر تطورات إصابة تشاكا Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T11:35:39.500446+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTllaTUl0ekF4MnlRSnlONzktR05kcVZjRUY3amdqWkdHNDBDYUVtM3BoWF90a19OaGtacG83SXJwLTVxSkRVYVVKRkJXUW5MalpGT3NXdWpuUVZiWjRlYXB0TkVsU2lXTzV3VGlxYmtTWk1GRmpTZHIyMVg4ZVd3YlBHMXdYZUU?oc=5",
-      "published": "2026-11-09T11:33:32+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "لو بريس يكشف آخر تطورات إصابة تشاكا - Premier League"
-    },
-    {
-      "desc": "Wirtz hails 'efficient' Liverpool after win at Palace Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T12:05:41.240688+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS2VEVUEtdHdVdXRZZWxqNWNINFNZYm9mVldUd1NzVlQ3RTE0cHhfc0FRcmdWbjNCb0NZNU1FRzhxSVpOdGYzb3BCaWxSRjdoclU1UUFPWDY3a3lGVkRtN3ZhcllVRS1sRENLVmJZdTA5eTM1VUFtWmktWlVZcXlMb3UtclNNWUl2T0tKSTVzeldJWDNSYm1vYjFJTWlRQQ?oc=5",
-      "published": "2026-11-09T11:33:32+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Wirtz hails 'efficient' Liverpool after win at Palace - Premier League"
-    },
-    {
-      "desc": "Le Fee reacts to Sunderland's win over Chelsea Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T13:01:01.039495+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRDFMNmVRNGw4MHdJYTAwT2pqZUJmQ1RQLTM1MGZJc1ZTdmx6bkNCSExmME1hcU5oX0lMMW1HYlBORnlFVkV0d1RwRlN1TTN1MlZIeGJrNlJnYjcxSlVJRl83bHl0MGVoNzJTRmp1V2RMSUhGRWNEM1F0MVpRTzBmWllKMEItSFY4aDJabk96SlpaRGtJWFE?oc=5",
-      "published": "2026-11-09T11:33:32+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Le Fee reacts to Sunderland's win over Chelsea - Premier League"
-    },
-    {
-      "desc": "It is as you were at the top of the Scottish Premiership heading into the second international break, but Falkirk's incr",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-09T11:45:41.287259+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13610080/scottish-premiership-celtic-rangers-lead-the-way-but-are-falkirk-the-surprise-package-as-aberdeen-consider-another-change",
-      "published": "2026-11-09T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Old Firm the top two, but are Falkirk this season's surprise package?"
-    },
-    {
-      "desc": "The Ref Watch panel discuss VAR's decision to not award Arsenal a penalty against Hull.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-09T11:50:33.974392+00:00",
-      "link": "https://www.skysports.com/watch/video/13610143/kai-havert-penalty-appeal-did-var-come-to-an-incorrect-decision-in-arsenal-game-against-hull-city",
-      "published": "2026-11-09T11:21:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Ref Watch: Did VAR come to an incorrect decision for Havertz penalty appeal?"
-    },
-    {
-      "desc": "FORMER Manchester United star Phil Neville has warned that some of the current defenders would get the club relegated. N",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T11:20:37.496012+00:00",
-      "link": "https://www.thesun.co.uk/sport/40964911/man-utd-phil-neville-michael-carrick-defence-defenders/",
-      "published": "2026-11-09T11:19:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘That back four gets you relegated’ warns former Man Utd star as defensive crisis leaves Michael Carrick on the brink"
-    },
-    {
-      "desc": "“MORE IS lost by indecision than by wrong decision,” Carmela warns Tony in The Sopranos. The Manchester United board cou",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T11:20:37.496038+00:00",
-      "link": "https://www.thesun.co.uk/sport/40965404/manchester-united-next-manager-news/",
-      "published": "2026-11-09T11:16:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd could do with heeding advice from The Sopranos as board face major Michael Carrick decision"
     }
   ],
   "processed_urls": [
