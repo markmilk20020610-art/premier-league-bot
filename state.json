@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 31090,
-    "output_tokens": 3448,
-    "requests": 5
+    "input_tokens": 36912,
+    "output_tokens": 4158,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2449,7 +2449,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T20:00:51.131002+00:00",
+  "last_scan_at": "2026-11-09T20:55:09.440459+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2470,6 +2470,86 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Mark Chapman and guests debate the weekend's football.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T20:55:09.444054+00:00",
+      "link": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_five_live?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T21:00:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Listen to Monday Night Club"
+    },
+    {
+      "desc": "Barcelona target Arsenal defender for January move but Romano casts serious doubt on deal https://aftv.co.uk/",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:55:09.444095+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5xYk9iN1lTMXNXUENoR0ZhQUJGb2Z5NjBJV09fY3VkYktpR2RsS29XWHNwbDZ0UktTSHpSR3ZPaG0?oc=5",
+      "published": "2026-11-09T20:45:00+00:00",
+      "publisher": "https://aftv.co.uk",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Barcelona target Arsenal defender for January move but Romano casts serious doubt on deal - https://aftv.co.uk/"
+    },
+    {
+      "desc": "RIO FERDINAND has defended his reaction to Manchester United's 4-4 thriller with Aston Villa. Ferdinand, 48, was met wit",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T20:55:09.444128+00:00",
+      "link": "https://www.thesun.co.uk/sport/40973392/rio-ferdinand-trolls-man-utd-reaction-aston-villa/",
+      "published": "2026-11-09T20:44:02+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Rio Ferdinand hits back at trolls who criticised Man Utd legend’s reaction to 4-4 thriller with Aston Villa"
+    },
+    {
+      "desc": "MANCHESTER UNITED staged a sensational stoppage time comeback to snatch a share of the spoils against Aston Villa. Joshu",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T20:55:09.444156+00:00",
+      "link": "https://www.thesun.co.uk/sport/40972738/kobbie-mainoo-man-utd-comeback-aston-villa-tactics-exposed/",
+      "published": "2026-11-09T20:27:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Kobbie Mainoo’s ‘vacuum’ role powered Man Utd’s staggering last-gasp comeback in 4-4 thriller with Aston Villa"
+    },
+    {
+      "desc": "CRAIG HOPE: The defender left the camp in Qatar after the group stages citing 'personal reasons', although a fallout wit",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-09T20:55:09.444198+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16278741/England-fans-boo-Ben-White.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-09T20:18:03+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'I've never revealed the whole story': England fans wouldn't boo me if they knew the truth, says Ben White... as he defends World Cup walkou"
+    },
+    {
+      "desc": "BRAVE Yassine En-Neyah shared an emotional message of gratitude after his shock collapse during warm-up this past weeken",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T20:55:09.444231+00:00",
+      "link": "https://www.thesun.co.uk/sport/40973216/former-nottingham-forest-starlet-issues-health-update-after-collapse/",
+      "published": "2026-11-09T20:14:52+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-Nottingham Forest starlet ‘truly humbled’ by response as he issues update after collapsing in warm-up"
+    },
+    {
+      "desc": "BEN WHITE hopes to finally play a role in a major tournament but knows that he will never be able to erase Qatar 2022 fr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T20:55:09.444288+00:00",
+      "link": "https://www.thesun.co.uk/sport/40972189/ben-white-england-exit-arsenal-thomas-tuchel/",
+      "published": "2026-11-09T20:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ben White admits England fans ‘would not be booing’ if they knew the real reason he walked away from Three Lions squad"
+    },
+    {
+      "desc": "Former United defender Ferdinand drew criticism when he shared a photo of himself celebrating after the Red Devils' dram",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-09T20:55:09.444345+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16279149/Rio-Ferdinand-fans-mocking-celebrating-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-09T19:41:05+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Rio Ferdinand claps back at fans mocking him for celebrating Man United's late equaliser against Aston Villa which left them in the relegati"
+    },
     {
       "desc": "Seventh-tier side Wimborne Town will host League One Bradford City in the second round of the FA Cup, while former winne",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2569,6 +2649,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "FPL Konsa vs Gabriel: £4.8m Value or £8.1m Premium for the GW11 Deadline - The False 9"
+    },
+    {
+      "desc": "JAMES SHARPE: Who is where they belong? What can we believe? Daily Mail Sport digs into the numbers to figure out what's",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-09T20:55:09.444748+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16277687/Premier-League-Chelsea-Tottenham-Brighton-Bournemouth-real-mirage.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-09T18:04:22+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Why Chelsea aren't European contenders, Tottenham aren't 'back'... and Brighton and Bournemouth are in a title race: What you should believe"
     },
     {
       "desc": "\"Maybe He Can Do A Bit Better...\" Michael Carrick Reacts To Poor Man Utd Star Vs Aston Villa roundtable.io",
@@ -2741,6 +2831,16 @@
       "title": "Carrick or Alonso? Fabrizio predicts next Premier League manager to get sacked - Legit.ng"
     },
     {
+      "desc": "Arsenal Analysed: The tactics behind our win over Hull Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:55:09.445184+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQmoyRUtNcmxaSm1pZFBsM2NSSFdzTnp2cnAyRWhBUFRMT3doUjRKYlUzbmdjS2ZiR3RqUWtsVjdOMUgxbDJqNjJqei1wUXlKMllJa2xJRU1tTUdzVFJySHVvcjFHVGIyZVF6UTZWYTJQQXJkNmlqVUw4eE44RlpJRzc2NVJrQnowOEJQR01iMFZmekJOMXpFc3Awd1RDRzA?oc=5",
+      "published": "2026-11-09T16:58:36+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal Analysed: The tactics behind our win over Hull - Arsenal.com"
+    },
+    {
       "desc": "West Ham have removed references to Russell Brand from their website following the disgraced actor and comedian being fo",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-09T17:00:58.367588+00:00",
@@ -2801,6 +2901,16 @@
       "title": "Harry Kane left OUT of World XI as Fifpro snub England captain just two weeks after Ballon d’Or win"
     },
     {
+      "desc": "Dorgu named Player of the Match after Villa draw Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:55:09.445297+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWFE2N3hnVi1UUjRJZHR5Sjd5OEZaR1NxOWk4UDl1R01IWnJLcThVTEMtUHFVaXpTNDBCMnRBTER2ei1zRnlMcm1WT0hhRmF4Q0tRbWtzQWdIUU51UFQ5cVFRLVN6N1ZXM1NlblljSUdNQThTVWY3SllBcllHOEl1X2JYck9mSURWa0l5U040akczN1cxOFJvZG54M0dvNXctdmdBSHlfdXQySm5McTI4VWdtWnI5eU1B?oc=5",
+      "published": "2026-11-09T16:39:31+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Dorgu named Player of the Match after Villa draw - Manchester United"
+    },
+    {
       "desc": "GREUTHER FURTH fans have voted to change the club's name ahead of next season. From the 2027-28 campaign, the 2. Bundesl",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-09T17:00:58.367714+00:00",
@@ -2829,6 +2939,16 @@
       "publisher": "https://www.chosun.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Mourinho Wins La Liga October Manager of the Month - 조선일보"
+    },
+    {
+      "desc": "Watch U18s highlights: Liverpool 2-1 Ipswich Town Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:55:09.445364+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPX1ZiM19zNzVLMEZXZTN2WUtGbHBRSHNpSG55VmFhZ19ZVDhwblp3VWlqZlRoWnpkSExGZXFWTVpfMWtSeEcwbGlqdC11YmpXV3NzS081WHlDZVJzbkQ1TkF1N1g1aFZoS3gzQ3pYSDZxd0RBVjdTdWxkaVlXcTVFZlBPSld1ZURT?oc=5",
+      "published": "2026-11-09T16:09:24+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Watch U18s highlights: Liverpool 2-1 Ipswich Town - Liverpool FC"
     },
     {
       "desc": "Chelsea international call-ups and schedules for November 2026 | News | Official Site Chelsea Football Club",
@@ -3849,126 +3969,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "'We have to keep improving' - Alexis Mac Allister on Liverpool’s post-international break aims - Liverpool FC"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 Home Knitted Crew Neck Jumper Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T10:35:28.015320+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTGM1MnRuTmkwTzg0QTJMeVBicWFsVkNZa25hRENnTVh0UGRJWGUwQUdVTUxKSVNzRkhUQ1Fxb2cyQjhIOTZZaC1kZjZJem9NM1hRTHg3LV8yQUQ5ZFc2THdmSnRmZUJIa0VTWHlQNENqZGpjMGVSUDhLSDJiMDloZjFGbHlnY19iX2NnRl9BYWE5Y1FvMWY5ZmtxMk95bzI1WUcwTFlxRkZRN2lPWExTazVKUTNuV1IxQmhHblE3RXJnSTVnSDlHQ2pzUW5oNlVjQ1VKUE9sUzV6MW9WNTE0?oc=5",
-      "published": "2026-11-09T10:04:09+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 Home Knitted Crew Neck Jumper - Arsenal Direct"
-    },
-    {
-      "desc": "As Pierre Sage waited to receive the Coupe de France trophy as the victorious manager of RC Lens last May, he turned to ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-09T10:55:36.036124+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13607192/pierre-sage-under-pressure-how-crystal-palace-and-last-seasons-ligue-1-manager-of-the-year-are-both-suffering",
-      "published": "2026-11-09T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "How has Sage's Palace tenure unravelled so quickly?"
-    },
-    {
-      "desc": "Michael Carrick sack: Fabrizio Romano reveals decision Man Utd just made TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T09:55:40.365560+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcXlibXExcERoZThMbGxrdXpkaURZRnVCS055X1IwY2QzNmJ6aWtfVTMtNlJJMGlMSHVVcjRYWFVjMEtVWUlGeDdyTnczdThiZktfelUyakhlbzFLV2J0N0ZjR3JUd2l4VUtuQ0xRdEVNN2ZmOWh6eGdsUXpTclQ5V3J5TUNVei1RTnFJWkRkMnlKN1FsTWNXSkNpQU9rRF9tNTlzVkR0NFU5bVA1aG1udk5pUlY?oc=5",
-      "published": "2026-11-09T09:52:15+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Michael Carrick sack: Fabrizio Romano reveals decision Man Utd just made - TEAMtalk"
-    },
-    {
-      "desc": "Ticket exchange cashback: first withdrawal window of 2026/27 | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.485856+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPajlPTnBhYWFEeVFxNXBQUHdXWjhrT1RMcTVaQ1F3WlJmOVpISENza0lKcTkzXzB1dGEteExaZVluVDNiREZrdkJiaHA3czZ3RzZTZngzZnNLTEhkSGsyaldyb2wzWDNPSURXeUJDNVl1bUNYYmpvUjBrbjczYTVjSzlmMHJ2ZnBKazdvTUduMUdtcWxqNElBS2c0R2Ewek5neElN?oc=5",
-      "published": "2026-11-09T09:50:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Ticket exchange cashback: first withdrawal window of 2026/27 | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "FGR statement on why there was no Remembrance Day silence before home matches Yahoo News UK",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.368934+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5oYW10eEVaQWowZktIWHhsWEdOT1lQdHpqLTBLWUhEdGN4Y2VCZVY3cHFNNi1KTDhVWXlqUHkxRkdtbnAxQWdCa2hmR2ZJTnJibzZRS3lELUY4UkhvbkhiYXBnQnNIQjNDbDRjaFFDckM3a3JxVHM1alZsV1BaZw?oc=5",
-      "published": "2026-11-09T09:41:22+00:00",
-      "publisher": "https://uk.news.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "FGR statement on why there was no Remembrance Day silence before home matches - Yahoo News UK"
-    },
-    {
-      "desc": "Gary Neville has claimed the Manchester United squad are causing themselves 'emotional damage' with their post-match wal",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-09T12:10:34.011692+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16277545/gary-neville-man-united-lap-honour.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-09T09:32:34+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Gary Neville says Man United stars are risking 'emotional damage' by laps of honour - and insists walking round Old Trafford pitch after fai"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-09T09:45:33.310102+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13607213/harry-kane-is-bayern-munichs-assist-king-barcelona-win-at-atletico-madrid-and-inter-close-gap-on-lazio-all-in-the-euro-debrief",
-      "published": "2026-11-09T09:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Euro Debrief: Kane has become the king of assists"
-    },
-    {
-      "desc": "Manchester City Derde shirt 2026/27 voor kinderen met LEWIS 82 bedrukking | Official Man City Store Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.368985+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNR2dlaEl3QVo0SE5PYzN5UFdqOWgyWnhtU1kwNjBxM0MwVXpHRDZCRHhfWkxiUi1LRHV4cVJyQU9EMUJ3NGcyTmVyMkh4UzkwN2ROVHpwZ0E5YTNsSzh1eXBpSGhwdFU4ZnpMMld4Z2hhU0F3Z2dUdkw1ZS01V1pWYTNzNmNISEZ0WkljeFdoNHZQZEwwYzkyQTJpZzRHS2NiQTViOWV0b0ZUR3NYMXB2ZDdVVlFuVzR3TVJOM1N2aldHYWhsYlE?oc=5",
-      "published": "2026-11-09T09:20:46+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Manchester City Derde shirt 2026/27 voor kinderen met LEWIS 82 bedrukking | Official Man City Store - Man City Shop"
-    },
-    {
-      "desc": "FOREST GREEN owner Dale Vince has apologised after the club failed to mark Remembrance Day. The National League club's f",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T09:20:34.611603+00:00",
-      "link": "https://www.thesun.co.uk/sport/40964075/forest-green-owner-dale-vince-remembrance-day-mistake/",
-      "published": "2026-11-09T09:16:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Forest Green owner explains why they failed to commemorate Remembrance Day as English football falls silent"
-    },
-    {
-      "desc": "Liverpool equal club record with Premier League away form Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.485920+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRlZJTUlmNTZIcG1pMEJxUFFFYjZQTVJudC1GOUJ6TzZMU1hYNTZXUW1idTBmUC16T1MtXzdXZlhFZng3MXhQYW15Q0J6SkdhU2M2ODVhbGl3U2RCel9BVzcxX0dkWllJQW1LQ3RXLXlHSVdVQjQ4ZDRscklGNV8zcGVvTFlhb1NXY2NWRVMwSFFpeE9qTHFtS3dFQXdXRDV0UnFPOA?oc=5",
-      "published": "2026-11-09T09:14:06+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool equal club record with Premier League away form - Liverpool FC"
-    },
-    {
-      "desc": "Crystal Palace 1-3 Liverpool: Watch free highlights Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T16:00:53.766157+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaWI0ekNiZnllWWRSZHJzWUxGNllNSHhrLTc2T0pzV3A0Wml6dmhiNTRpTHN5ZWtVLXdTWm93MVpMTG4zbFB2aEVscmZ6SGFQS3I3OUNIQ0JWZ2ZzekdBLUViLTNMNXAtY2JUMFdPRjNFS1F4dFFrODdMWkhTTkpOV1Z5aU1BZ2daRVIw?oc=5",
-      "published": "2026-11-09T09:14:06+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Crystal Palace 1-3 Liverpool: Watch free highlights - Liverpool FC"
-    },
-    {
-      "desc": "The centre forward, speaking with club media after the Craven Cottage game, spoke candidly of the difficulties he has fa",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-09T09:15:36.906841+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16275899/rodrigo-muniz-fulham-wife-pregnant.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-09T09:12:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Premier League star's miscarriage heartbreak: Fulham striker Rodrigo Muniz reveals off-field agony in emotional interview - before sharing h"
     }
   ],
   "processed_urls": [
