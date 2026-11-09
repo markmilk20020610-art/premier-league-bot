@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 101,
+        "calls": 102,
         "errors": 0,
-        "requests": 101
+        "requests": 102
       }
     },
-    "calls": 101,
+    "calls": 102,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 625734,
-    "output_tokens": 66518,
-    "requests": 101
+    "input_tokens": 632119,
+    "output_tokens": 67304,
+    "requests": 102
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T00:25:29.848313+00:00",
+  "last_scan_at": "2026-11-09T00:30:43.077492+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2799,6 +2799,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd officially become the worst defensive team in Europe this season with horror show against Aston Villa"
+    },
+    {
+      "desc": "Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T00:30:43.080952+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
+      "published": "2026-11-08T18:42:56+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "- Arsenal Direct"
     },
     {
       "desc": "UNAI EMERY could not bear to watch the final moments of Aston Villa's clash with Manchester united after a heartbreaking",
@@ -3819,16 +3829,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Report: Liverpool 1-2 Arsenal Women - Arsenal.com"
-    },
-    {
-      "desc": "Carrick: You're at your best playing on instinct Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T18:35:32.733675+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMEpVOURyY1FEQXdEd2dPQ0VyRGlZaUNuYVlwM244a2NYZTNRTU5MXzM1NkkwZ1VjOUQ4VEtxT3BPNVFhLXJYZWhfLWs3alNEaVV4UG9RN2tlTGxkb3VVSmstUkktVHgxWGlzc2hiZ2did1VXRUo1V2c0LVlrWXNsVmVvNldIUzZUdzZGVlh6VWxWcFU?oc=5",
-      "published": "2026-11-08T13:56:43+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Carrick: You're at your best playing on instinct - Manchester United"
     }
   ],
   "processed_urls": [
