@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 169,
+        "calls": 170,
         "errors": 0,
-        "requests": 169
+        "requests": 170
       }
     },
-    "calls": 169,
+    "calls": 170,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 955061,
-    "output_tokens": 110692,
-    "requests": 169
+    "input_tokens": 961430,
+    "output_tokens": 111272,
+    "requests": 170
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T06:00:49.434961+00:00",
+  "last_scan_at": "2026-11-09T06:05:25.897512+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2330,6 +2330,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MFL gathers reports on touchline fracas for FAM review NST Online",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T06:05:25.899315+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUnpXeUllajY4Uk8tZl80YTRqOUYzM08tcU51TWN2bFN3cGdLTHprb2ktMG1BNEVVZGZCdDFwUlpiZk5HdkwxM0o1ZkszaDhPSG51ZkQ0ajN1SDZLMVlxRUdxcWJWSWtMb2FXeUx2dGRrVzNQeHgxNzIydnllN1RJN3I4RG5CRmVJT2tFRVNlMFNkWjJoeHpxODlTemFucEd4ZWUxadIBqgFBVV95cUxNclpPY3lQQ1dXbHUxWGhwazR3RHZ2YTBJYm1oSTVJTzJmNDdTZ1FMNWZ6blFVVkU1S0k0bXgtU0hxaWZteUNsU1l5MWt1QVJWVmUxbEFuanpOQ2RKNWo0YnkyTF9rZUdUYUZBMF9kQTItWWtib3FWWDdzcjdnSy1teEtPbmV0LTQ0Yzltc1I1eTB1MmZ3ZGo0T0hJZVVCeUZTRjl0YUZMWkRKUQ?oc=5",
+      "published": "2026-11-09T05:56:06+00:00",
+      "publisher": "https://www.nst.com.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "MFL gathers reports on touchline fracas for FAM review - NST Online"
+    },
     {
       "desc": "Manchester United",
       "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3819,16 +3829,6 @@
       "publisher": "https://tribuna.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Manchester United have no clear plan for Michael Carrick's future - David Ornstein - Tribuna.com"
-    },
-    {
-      "desc": "Emily Fox reacts to 2-1 win at Liverpool Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T15:55:29.302945+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOXFkOFFjbmZWNGpLa0gyZW5WU09MSFhQelRoUEUxUmQ3dUVYTmREWVJIOVRXWnc2dnVLcTJwY2doZ1kybFNabjNPaDU4bWNvdDRWS0xJdmZLWkNwM0pEVC1LQ2g3eWxGUWJEcWpicEpBb1BmemE0cUZKUnZpUUx6SzVwbTFVQ0dudjhR?oc=5",
-      "published": "2026-11-08T14:41:42+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Emily Fox reacts to 2-1 win at Liverpool - Arsenal.com"
     }
   ],
   "processed_urls": [
