@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 24690,
-    "output_tokens": 2620,
-    "requests": 4
+    "input_tokens": 31090,
+    "output_tokens": 3448,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2449,7 +2449,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T19:00:55.154522+00:00",
+  "last_scan_at": "2026-11-09T20:00:51.131002+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2470,6 +2470,76 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Seventh-tier side Wimborne Town will host League One Bradford City in the second round of the FA Cup, while former winne",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T20:00:51.133569+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6wyrynd848jo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T19:33:28+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wimborne to host Bradford in FA Cup second round - see the full draw"
+    },
+    {
+      "desc": "Which Non-League sides have reached the FA Cup second round proper? Full draw The Non-League Football Paper",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:00:51.133597+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNelBJVmVWcWVETDk2S3oyamUzQlNrSkpxTzNidDE3czgwSjl4aGs0cGZsY3R3VlVJWVhtVEpRTkNwTWVxUkV6ZEc1Q3RjN01HMVhfT0NHRmVKYzFEaHp0SlZ0ZlRULVQ5QUVQS2xUWUxteFZqbTg2aWU3VVFub01HODNBb2pzTlNhM290aWYtYWg1cjRnajZfeFlmNUlwbkpNVkxWLVJIcFdWTHU2TUMzZEhUNVo2NWpRWUtuNXdBSk1xczUtU0d5M3gxcEEwMER0aXRLUG45MDNleTVEV3c?oc=5",
+      "published": "2026-11-09T19:25:19+00:00",
+      "publisher": "https://www.thenonleaguefootballpaper.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Which Non-League sides have reached the FA Cup second round proper? Full draw - The Non-League Football Paper"
+    },
+    {
+      "desc": "David Raya named in FIFPRO World 11 Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:00:51.133616+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQW5pb1VoNHlZLXJSYUV3YlhKa3JCaTJ4Z1VGMHJJaHJocHJSSE0wM3NNLWZ0RXdXN2pxVFYxb3BfYjR5dGFPeXV4SEtSTDJXTjN5VDNnUUFrektBWnZqQ2ZIdmo0OWtvWk92MjlJYXdvMTBZaUJ3QzR1VngwNFczczYxVQ?oc=5",
+      "published": "2026-11-09T19:19:17+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "David Raya named in FIFPRO World 11 - Arsenal.com"
+    },
+    {
+      "desc": "FA Cup draw in full: Second round fixtures confirmed as Leyton Orient and non-league sides learn fate AOL.co.uk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:00:51.133636+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9RS2NQYnVTVmYwMGFWZ3JhclNVbGVjbGJmRVNJY2RzRzI0cWs0QU1uaXlBTjRraGkxUUJnS0IxaGZSdjV2dzRQSlF6Znljb0J6VE1BOURMcXlSNWNienB5cElLMXZKX3JTdUdET0RaOTBOSkJMMTlIWQ?oc=5",
+      "published": "2026-11-09T19:08:41+00:00",
+      "publisher": "https://www.aol.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA Cup draw in full: Second round fixtures confirmed as Leyton Orient and non-league sides learn fate - AOL.co.uk"
+    },
+    {
+      "desc": "REAL MADRID legend Raul has landed his first job in senior management after taking charge of Real Oviedo following six y",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T20:00:51.133657+00:00",
+      "link": "https://www.thesun.co.uk/sport/40972573/raul-real-madrid-transfer-news-oviedo/",
+      "published": "2026-11-09T19:04:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Real Madrid legend Raul lands first job in senior club management after six years with Los Blancos’ reserves"
+    },
+    {
+      "desc": "LEICESTER CITY will travel to non-league Dover Athletic in a very tasty FA Cup second round tie. Russell Martin's side, ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T20:00:51.133676+00:00",
+      "link": "https://www.thesun.co.uk/sport/40972741/fa-cup-second-round-draw/",
+      "published": "2026-11-09T19:02:33+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "FA Cup second round draw in full as recent winners Leicester face minnows Dover and Wimborne host Bradford City"
+    },
+    {
+      "desc": "Arsenal defender Ben White says people don't know the \"full story\" behind his decision to previously make himself unavai",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T20:00:51.133698+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6rmym3p419no?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T19:00:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "People don't know full story behind England exile - White"
+    },
     {
       "desc": "DECLAN RICE has had a storming start to the season with Arsenal and England. The midfielder, 27, has linked up with the ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2499,6 +2569,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "FPL Konsa vs Gabriel: £4.8m Value or £8.1m Premium for the GW11 Deadline - The False 9"
+    },
+    {
+      "desc": "\"Maybe He Can Do A Bit Better...\" Michael Carrick Reacts To Poor Man Utd Star Vs Aston Villa roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:00:51.133765+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNSjNIT2ZjS3BZM2x1STh2SS1jRk9iVGRoSGNmQWdpVHBaajB1NjZvWmJuc0FrV1VyaVZJaWFGRzlZUFRnN2h5S3NYcXphLVhlSG9Qc1RzZTgyVTRJdHowRkZnVHJFTTRSbmltY3hHUlJLRklYUmFDaFpOSU41OUJLQVRFeEJKd2tLY3NKQzd1cHJidkxjd0xXVHYzOGlOZ2tyWEprcTJJZ0xVSEV4al9JSUpNMWh3dks2cDhxb2ROWlJqVFgzdUhTVXBWRGJlRjNsRHNlbWJqX3E4SVlsM1U2cHJSVWxLcG14QlpLRm9hZGpzU1J1?oc=5",
+      "published": "2026-11-09T18:00:41+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "\"Maybe He Can Do A Bit Better...\" Michael Carrick Reacts To Poor Man Utd Star Vs Aston Villa - roundtable.io"
     },
     {
       "desc": "Manchester United's board are yet to make a final decision on Michael Carrick's future, despite the club's worst start t",
@@ -2559,6 +2639,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Virgil van Dijk withdraws from Netherlands squad - Liverpool FC"
+    },
+    {
+      "desc": "In Focus: Ezri excels in win over Hull City Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:00:51.133915+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMWFXRklWLS1VZHVQMHlYUjNkOU9GX2ltakRPdUxEcVJYdlpNM0dWaG5iY0dqam5oX0psVXhtWHllWTdOWGtMWHc0aUR1Qzl4MEx0OS1wMW9CN2I5WGxPWGtQRUlaeWRzZDdmenVCVHN1c0ZwWWh2akxCUWJyWENXWWRCaXhJNTMya3NyaA?oc=5",
+      "published": "2026-11-09T17:12:44+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "In Focus: Ezri excels in win over Hull City - Arsenal.com"
     },
     {
       "desc": "LIVERPOOL flop Alberto Aquilani has been sacked by Sassuolo after just five months as the Serie A outfit's manager. Aqui",
@@ -3151,6 +3241,26 @@
       "title": "Three Women’s Super League matches at the Bridge in 2027 to go on sale | News | Official Site - Chelsea Football Club"
     },
     {
+      "desc": "Smith's stunner wins Emirates Goal of the Month Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:00:51.134433+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS3MzRVFla0ZxTUtfNGY4SDB3TTdMV2J3STROdkVnZjF2NWhaY20zY0poUGZ6OGNBWVBtdTg0QVkxaHo4dUlsdXJXSjgzYVRuNTdhX0FqUDQyUG93LVJhVGRCQU15LUFIeXRMeG1OcjVLOU1wUklkSU1XakpYbFltV2RGclZaMk0tdWxZcjc5RzNkczg?oc=5",
+      "published": "2026-11-09T13:59:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Smith's stunner wins Emirates Goal of the Month - Arsenal.com"
+    },
+    {
+      "desc": "CHRIS WHEELER AT OLD TRAFFORD: Coming out swinging every game like a boxer on his last legs is great for entertainment, ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-09T20:00:51.134459+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16268103/Michael-Carrick-Man-Uniteds-Captain-Chaos-reckless-cavalier-style-evidence-lack-preparation-not-way-play-football-writes-CHRIS-WHEELER.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-09T13:52:48+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside the world of Captain Chaos at Man United: Michael Carrick will not walk away but here's what the players are saying as they fail to r"
+    },
+    {
       "desc": "Carrick explains Maguire change Manchester United",
       "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-09T18:01:08.017229+00:00",
@@ -3299,6 +3409,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Goalkeeper’s tiny shin pads mistaken for ‘slice of CHEESE’ as fans demand ‘automatic red card’"
+    },
+    {
+      "desc": "Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T20:00:51.134626+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNOGQ2TVpaWWJ1aTh6aGh1ckpoYjZycHNscVEySkRlamNET3EtdW9GWnhTMHVoc2lTTUdjN3lnWXhHSzdnNl9zRS1YY0ZUZHlWc0ZaYklzM05jRkZHN3J1cGt3aW43WUhiN2ljSUVDUW1xUmlnMk9VMlE4RGtEVnQwc0lzbHdCVmFLMXJCWl90X1BQTklRZnVjNXFpQ19pTDdTc1R2emZKQ0N4TVRqWkcyUXdzZDV0eXRIb0lmeXlhNndCVWdabWxNd0xGcG1KazFRZHVUR3dUZ0pJOFZHOWFiNFJBVk1UUndNdGNOYzZaR0I4bnIySC11dHVDNlhhWXNtYnR5RmsyRThYRklPaHo5Y0ZWclY?oc=5",
+      "published": "2026-11-09T12:15:07+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Man City Shop"
     },
     {
       "desc": "FA Cup second round draw LIVE stream, updates and ball numbers TNT Sports",
@@ -3849,126 +3969,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Premier League star's miscarriage heartbreak: Fulham striker Rodrigo Muniz reveals off-field agony in emotional interview - before sharing h"
-    },
-    {
-      "desc": "LAST CHANCE to vote for October's Premier League award winners Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T09:25:39.332918+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdkV1T1hxNndDVVh6TS1MQzVLSUpOT1VqZjc2ZUFQcEF1NVNERDZWaGlMR294YS0tRjFLUWNxc1dCT1lobUlZSlBaQ21jQzFfRHVFXzdROHo2X0FpNi1uMUQ3ODJKSzFQZVFrY0FXT21BS29CNHJHX2ItVWZWeEkyUmFJV3VwRFhoVkVmWDQwMkVfemdiWWJuNDQ4V241b00?oc=5",
-      "published": "2026-11-09T09:12:10+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "LAST CHANCE to vote for October's Premier League award winners - Premier League"
-    },
-    {
-      "desc": "Man Utd: Romano reveals Dalot January transfer decision after boos from fans Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T10:00:57.319889+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQd1VybFNUZWFiZDA2Njg5d25weFVJT0xVeC05MXBLWGxjelNTSktndm93RkJLOFZ0bTN0aFR2SjZldmxzanVISVV6YkFEMGNZQmcyYWxFTzhNckNfV2ptNExqOWt0OExyS0tvQzJJUXR1UTdobWM0a0IxMWp1ZEROWXQ0UTNBQ29ldjNhN3ZWTWNnQVU?oc=5",
-      "published": "2026-11-09T09:11:47+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Romano reveals Dalot January transfer decision after boos from fans - Football365"
-    },
-    {
-      "desc": "THE BBC has made a major change to their iconic annual Sports Personality of the Year awards. There will be two new awar",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T09:10:45.590862+00:00",
-      "link": "https://www.thesun.co.uk/sport/40964024/bbc-shakes-up-spoty-with-new-awards/",
-      "published": "2026-11-09T09:07:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "BBC make major change to SPOTY as two new awards are introduced for first time"
-    },
-    {
-      "desc": "EPL: Fabrizio Romano reveals manager that is close to being sacked Daily Post Nigeria",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T09:05:32.228148+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNODVKZlI0ckJXOTg1QjY4QndmSFF6dnE0MTh2VmxOWWZta3Vjd2VFOWEwSVRramVrdVNNR2EyTkZtN3JXVnFXemlFblo2WjhYYnJZamhTOEN3eTdGbUFmQThKZk10d1NVZlhJZXNHQWNQTEZNY09SR0tBWV9mYzhwQ0MxWTNrUjdRUW1hNWZ3Y1ZnVk9hMEt3YzZ3VWFYczQ?oc=5",
-      "published": "2026-11-09T09:00:08+00:00",
-      "publisher": "https://dailypost.ng",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "EPL: Fabrizio Romano reveals manager that is close to being sacked - Daily Post Nigeria"
-    },
-    {
-      "desc": "40 years Gala Dinner: Best moments Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T10:40:36.643293+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMV8wMDU3di11RDVDZGN2SXV5aEdDakU5ZW1RM3dGQkhzdnZhV1dwRHJ5VGFJaUhWTkF0YXBsUEZWdzNhSmljRTZuOXlOR2ZTWTYyZUJ1dHcxdk9qU1QyQnFBd1RydFkwS2RCcjFtNWR3Tk9NT1VGMVFkZHdNeEphMw?oc=5",
-      "published": "2026-11-09T09:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "40 years Gala Dinner: Best moments - Manchester City FC"
-    },
-    {
-      "desc": "Chelsea and Liverpool make contact over €60m-rated Brentford star Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T13:01:01.039977+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPS0VuZC0wWW9tcWNwdHJqeXd3YVJOTmo3MHhFc3RuZXVsMDJzcW9LSWFjSkVOUjdwTWlKSVlWOGZtMlhqbGxYSlhKbDVNTmFpRHg5SHg3a3lJbVZwU21VWkZreFlJdnlQV3pGUG96UTVmcGNmM294eERmaHp0YnhudnR4RnBLd3l3aDF1TUNmT3Y?oc=5",
-      "published": "2026-11-09T08:52:10+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Chelsea and Liverpool make contact over €60m-rated Brentford star - Liverpool FC"
-    },
-    {
-      "desc": "When is FA Cup second round draw? Ball numbers, time and how to watch The Independent",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T10:35:28.015524+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQlI3dUNLQkZEQTlsc0FUMGZzQnJUeVBieTRNQjBLUF9lX29odFRvOEhMQWZmblZ4STdCLXE1dHdYRElXU0FpYl9DYzVyTTNndDljOEZ3VTJ3ZFlGLV9hQ1M2bmpING1aMW43TGZsM2JMX1F3YzNGUEJfMVNUemxWUDlYMXlBcGVFTnVKbE5keDVIUDlwYUlZbWEtV2pvSjNJRGFr?oc=5",
-      "published": "2026-11-09T08:49:00+00:00",
-      "publisher": "https://www.independent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "When is FA Cup second round draw? Ball numbers, time and how to watch - The Independent"
-    },
-    {
-      "desc": "Manchester City Authentiek Derde shirt 2026/27 met MIEDEMA 10 bedrukking in geschenkdoos | Official Man City Store Man C",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T16:00:53.766238+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQms2cWstSzZadm5WTkk2M0s1amxEalJmUlEtTmFDdDE2RGl0a20tT2QtNUhhMk9pYkVWaFNGZ3gxMy1aUzh6cEFzbDFBeUtjOUo5Mm9ZQUdqeVZvcWJLalpIRWVQOWl2NVVSZkNvQmxuanhVeFVMVU9YeHd3SHdEcHJwZE8yeXU2MXFIcnhaNXFCSXM0emhQTk0yb1l5YU9SYTFDVUVpOW5QVVVRSlcxdFc3OXRzek1uWEo0MExOamRXYUhnVGNjcmQ1OWV2Wi14RmhoNVd6cWp5UQ?oc=5",
-      "published": "2026-11-09T08:44:10+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Manchester City Authentiek Derde shirt 2026/27 met MIEDEMA 10 bedrukking in geschenkdoos | Official Man City Store - Man City Shop"
-    },
-    {
-      "desc": "THE draw for the second round of the FA Cup is tonight. Over the weekend, Leicester beat Oxford City 4-2, non-league Wim",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T08:35:32.480582+00:00",
-      "link": "https://www.thesun.co.uk/sport/40898605/fa-cup-2nd-round-draw-start-time-live-stream-ball-numbers/",
-      "published": "2026-11-09T08:33:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "When is FA Cup 2nd round draw? Start time, TV channel, live stream and ball numbers for next stage"
-    },
-    {
-      "desc": "FANS have urged Manchester United to appoint Javier Hernandez following his passionate speech before the club's Premier ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T08:20:35.267740+00:00",
-      "link": "https://www.thesun.co.uk/sport/40963807/man-utd-fans-want-cult-hero-javier-hernandez-back/",
-      "published": "2026-11-09T08:20:05+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Bring him back’ – Man Utd fans call for cult hero’s return as ‘assistant manager or on the board’ after rallying speech"
-    },
-    {
-      "desc": "Man Utd: Romano, Whitwell deliver huge Carrick sack updates – ‘That’s very clear’ Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T08:15:36.615357+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcEl0LVcwWmZYMVVjWUhfUWh1S2w3dkNxaUVsQVUzekdfcGRtMHhWZV8zeUlkbDBBRUYtbGdXMndrcEJyMWhRS1o4bThwVVlIWWpDWF9IVE85cXFDUUVTVTRjYVVGWHhXV3MzSmNUOUoyTGpfRnFsSEhuMnZiZ21zZGxDNA?oc=5",
-      "published": "2026-11-09T08:09:46+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Romano, Whitwell deliver huge Carrick sack updates – ‘That’s very clear’ - Football365"
-    },
-    {
-      "desc": "A Dutch second-tier match between Vitesse Arnhem and De Graafschap was called off after away team supporters blocked the",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T08:05:32.067808+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqy0r0lw4l5ro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-09T08:00:07+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Dutch match postponed after fans block team bus"
     }
   ],
   "processed_urls": [
