@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 12633,
-    "output_tokens": 1214,
-    "requests": 2
+    "input_tokens": 18660,
+    "output_tokens": 1866,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2449,7 +2449,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T17:00:58.364501+00:00",
+  "last_scan_at": "2026-11-09T18:01:08.012258+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2471,6 +2471,156 @@
   },
   "news_pool": [
     {
+      "desc": "Manchester United's board are yet to make a final decision on Michael Carrick's future, despite the club's worst start t",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T18:01:08.015940+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cw4g1g7z2mdgo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T17:49:05+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd yet to make decision on Carrick's future"
+    },
+    {
+      "desc": "EDDIE HOWE turned down a recent approach from Crystal Palace, SunSport can reveal. The ex-Newcastle boss, 48, ended his ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T18:01:08.015975+00:00",
+      "link": "https://www.thesun.co.uk/sport/40972220/eddie-howe-crystal-palace-pierre-sage-man-utd/",
+      "published": "2026-11-09T17:42:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Eddie Howe rejects Crystal Palace job despite ex-Newcastle boss being ready to return to management"
+    },
+    {
+      "desc": "Arsenal FC Official Website Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016005+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQTkhXaENZMVltZ0xBVlVHMExjVmpLQnUwa3ZWRThoWkRkLXJHTl9USUVGZmVXbTZtdXZwT1RlVk1NeGxsLXFrU0JhYlNtR2ptSklXY1VFQXFFMFdITkJtZWViMWRpOHlMS0xxU3lpQUE?oc=5",
+      "published": "2026-11-09T17:40:52+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal FC Official Website - Arsenal.com"
+    },
+    {
+      "desc": "England players are understood to have aired strong views about their World Cup semi-final defeat by Argentina in a team",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T18:01:08.016074+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqr7y7813l04o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T17:30:23+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Kane and Bellingham air strong views in England World Cup review"
+    },
+    {
+      "desc": "Harry Wilson believes Wales can shock Norway again in Oslo on Saturday and move a step closer to survival in Nations Lea",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-09T18:01:08.016106+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck3r5rwdpjj7o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-09T17:21:28+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wilson eyeing survival step as Wales tackle Norway"
+    },
+    {
+      "desc": "Virgil van Dijk withdraws from Netherlands squad Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016162+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdEZyTkk2bWlQWHJQRWNDMUhtdWJzaHNUeHhUSWlucl83cWNRQ2VHYmhGYUtWRUZIZk9jTlhUaXZLTndFOTl0Qll2TkFkempQTjV4azA3Q1FoRFlxblpGWlVwUUNiSEhWZzUyRDhsNzBZUzZmRU9VdjNraU4zaUdmNkpfeHhIdWNt?oc=5",
+      "published": "2026-11-09T17:13:42+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Virgil van Dijk withdraws from Netherlands squad - Liverpool FC"
+    },
+    {
+      "desc": "LIVERPOOL flop Alberto Aquilani has been sacked by Sassuolo after just five months as the Serie A outfit's manager. Aqui",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T18:01:08.016189+00:00",
+      "link": "https://www.thesun.co.uk/sport/40971185/liverpool-alberto-aquilani-sacked-sassuolo-xabi-alonso-chelsea/",
+      "published": "2026-11-09T17:11:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-Liverpool star and Xabi Alonso replacement, 42, sacked by Serie A side Sassuolo with abrupt 46-word statement"
+    },
+    {
+      "desc": "Ballon d'Or winner Harry Kane has not been named in the FIFPRO World 11.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-09T18:01:08.016212+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610309/fifpro-world-11-ballon-dor-winner-harry-kane-not-voted-by-fellow-professionals-to-be-named-in-team-of-the-year",
+      "published": "2026-11-09T17:10:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Ballon d'Or winner Kane not named in FIFPRO World 11"
+    },
+    {
+      "desc": "Zafar Iqbal Honored at Asian Achievers Awards for Sports Medicine South Asian Herald",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016239+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWDZKVlJjU3ZIUFk2VFQ4a0hDNkROLVlZOVRJMlNqMGZqRFhua0M0N1lCNTlsY3VieWIycU5JRGZEdVZDRElqS0wzdU4xSW14M1B2S1IyRGZFdW1yenRUZnhFSEkzSXNnX0pLdl9GblZTYWpJRlhuZF9sUnlnaGZYTi1QcVVVRnM5emdoMG9HTUk0MVhXWVlpTG5ZZw?oc=5",
+      "published": "2026-11-09T17:07:09+00:00",
+      "publisher": "https://southasianherald.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Zafar Iqbal Honored at Asian Achievers Awards for Sports Medicine - South Asian Herald"
+    },
+    {
+      "desc": "Pick the Official Premier League Fan Team of the Week Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016297+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fbEJFdkExbHZWbE1KS1YyTFJ4MlZJdUtEb3B6eDJzd1pYSTVNeWttTTRRTjhaRkFZai1JRGdhWkdBZkpidWVfYmk5YjNhdkhVMTVlOW9XYno?oc=5",
+      "published": "2026-11-09T17:01:36+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Pick the Official Premier League Fan Team of the Week - Premier League"
+    },
+    {
+      "desc": "Ornstein drops major Tottenham update on January striker hunt – ‘Prepared to go big’ TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016343+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaXdSc1BFblZZZTZHZmxlSVRkeXlxaDh3LWVUcjdZN2c2YU0wZmJJZDhuU01oRWxlcnM3MWF1T1R0UHI0Uzh4NFVuZDdZemJkSjkxVTRhMEtJVXRYMmlwaXNYU2ItdDYzY2V2OERhMEVQcGNWd1VkZU9KaGpPWjVLcnIwa0lwS3F3X3hyakZneGtTRjBtWnFZaGQ4elhHVEp5RHhMOWtsQQ?oc=5",
+      "published": "2026-11-09T17:01:13+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein drops major Tottenham update on January striker hunt – ‘Prepared to go big’ - TEAMtalk"
+    },
+    {
+      "desc": "Diogo Dalot: Fabrizio Romano explains why Michael Carrick wants Man United star to stay The Peoples Person",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016375+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWWctb0xfUWlpOFBHR2xFUU51Ti03b0cycGg0TXQ3RjVzeW5JOTYxYk5FN2hMTkFRWk9ET3dYaFlNWGpKanRjcmlSSzdqakl5Q0hpWmczMjdBRVN1YU01ZW9vLVFrcE9FcHFEcE11MUtKT1hUOHJuX3p2ZWJYN25qdFp3cVUwOGZUMVlvVE5tZDFNSjZoTGVLTHUycUVleG1SMUgyQkRPOFdWLVVqYjdzVXFLeUU?oc=5",
+      "published": "2026-11-09T17:00:38+00:00",
+      "publisher": "https://thepeoplesperson.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Diogo Dalot: Fabrizio Romano explains why Michael Carrick wants Man United star to stay - The Peoples Person"
+    },
+    {
+      "desc": "Alan Shearer's Team of the Week for Matchweek 10 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016401+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdjk2YnJsam1aVFI2eWFBbm5WbXhNMXloR2YzOVJRM1ZHdllQOWlZd1ZMNTdOVUItaVN2c1YtQ19KU01TemlWeHBHbjZrd3ZteDR2eXlwSzZEN18zWlFUV3BiTjZlWkNQMFJSd2xXNkZZUHhZYmVkZXE5bmhicldMZlo4ZTlZc3A0ZUMwdlVSeHpKd19GZm8tUA?oc=5",
+      "published": "2026-11-09T17:00:08+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Alan Shearer's Team of the Week for Matchweek 10 - Premier League"
+    },
+    {
+      "desc": "Chelsea Women's Constant Contact October Goal of the Month revealed! | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016429+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUnN2WEk1c1YwcVpmcENpV2dDaHVyUzRBWC1ZQmZENTI2Ull3YUxWU2JxMjlBX1BPcFdybU9JelJIVks2ZDF6RVV6RmdMTUJueEhuT1NhR1k3ZjRTZWFTNnNBcUZaZmo5VnlKbG9fM25pRzQ1aUYxMDU5NFo5dk5OWW5ZMXh5NmFYaTlCNnpvU0t0ZV9iei1vbkZSZmxQX080NWVlSXF1alliQ2tI?oc=5",
+      "published": "2026-11-09T17:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Women's Constant Contact October Goal of the Month revealed! | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Carrick or Alonso? Fabrizio predicts next Premier League manager to get sacked Legit.ng",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016457+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMklSNm0tX3hVZFlnd2RDY29VNW5JOHdwZUdabEhLV1NCNjVTVXZMVUlmTnNoX2wxeUFTVVZYbVBGck1VMlh1MUo0ZDdCWVFyV0UwU3V2bkxEREExa1NBbXh4bmdEd2h6YjFaVWpLVk1vTURyWVctSkgxb2RVTzh4VlBDYmdCeFVWX052X3hnSXVCcGI5Y0p6ajZLWUlGQndnQTZjSlB0TFZTb0g0Vk82QlRJclBxUQ?oc=5",
+      "published": "2026-11-09T16:59:48+00:00",
+      "publisher": "https://www.legit.ng",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Carrick or Alonso? Fabrizio predicts next Premier League manager to get sacked - Legit.ng"
+    },
+    {
       "desc": "West Ham have removed references to Russell Brand from their website following the disgraced actor and comedian being fo",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-09T17:00:58.367588+00:00",
@@ -2479,6 +2629,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "West Ham wipe Russell Brand from their history after years of getting VIP treatment and kissing their managers in post-match interviews - as"
+    },
+    {
+      "desc": "Manchester United's bosses will not rush a decision over Michael Carrick's future after their 4-4 draw with Aston Villa ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-09T18:01:08.016507+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610315/michael-carrick-future-man-utd-will-not-rush-decision-over-head-coachs-tenure-despite-dropping-into-relegation-zone",
+      "published": "2026-11-09T16:52:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd will not rush decision on Carrick future"
     },
     {
       "desc": "Aberdeen sack head coach Stephen Robinson after dropping to second bottom of the Scottish Premiership.",
@@ -2551,6 +2711,16 @@
       "title": "Mourinho Wins La Liga October Manager of the Month - 조선일보"
     },
     {
+      "desc": "Chelsea international call-ups and schedules for November 2026 | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016677+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeVE2bWhNZUhkemtLVHl6NFZScFBJZGNRZVJhVHEzaDF0alZoSENMM2NFZzJFdDBtdE9jbmRoRU9LWDVmYmFPRm9Qb0ZHbDZ6UjJnazN5elJ1UXhYdDlPd29fcWtudHFBZEdiVEsyMVRHY3lRdTIzaHJvYXBpbXo3cmcxV1BXbGRTYnItSW5FTDhIbXU1X1hMQ0M5VVJkeFp2ZUw5TTk3UQ?oc=5",
+      "published": "2026-11-09T16:05:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea international call-ups and schedules for November 2026 | News | Official Site - Chelsea Football Club"
+    },
+    {
       "desc": "ENGLAND return to Nations League duty on Thursday when hosting Croatia at Wembley. Register an account with BOYLE Sports",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-09T17:00:58.367782+00:00",
@@ -2599,6 +2769,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Crystal Palace will sack Pierre Sage TODAY after disastrous 16-game spell - this is how his reign fell apart over late, intense sessions, di"
+    },
+    {
+      "desc": "BTEC Football Coach (8 Month Fixed Term Contract) Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.016794+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQjIwZnFDaTd3NllCNHBZXzh6NXNhWGpoX1NjZ3NSYXNmYVF2UnpFU053UXVBYTI2RXlGck9hcWpSOFNtUHVYWjhqZjdpMWxYU0l1cng4eGZsRHcxLWs3eWhaaXpUcmFRbjZ2bE1yempkSnVyVE5QZnpDREdUYTBUNA?oc=5",
+      "published": "2026-11-09T15:44:01+00:00",
+      "publisher": "https://careers.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "BTEC Football Coach (8 Month Fixed Term Contract) - Manchester United"
     },
     {
       "desc": "REAL MADRID officials are wary of JJ Gabriel’s father’s demanding reputation as the teenager closes in on a move from Ma",
@@ -2901,6 +3081,16 @@
       "title": "Three Women’s Super League matches at the Bridge in 2027 to go on sale | News | Official Site - Chelsea Football Club"
     },
     {
+      "desc": "Carrick explains Maguire change Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.017229+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOREtUdzBlMlZDSFVJaWJVMGJzYzZIU1BvSEZKQU14VDNMamZZQWlLTnBQRU5MLVhES3h3REhsUWdEd2k3Qk5Qa0xmNlFQeERtZGhtZFk2dFlzSFlaV3g4ZElaTHFVWU94QS1LYmpoWnBVZEtrNjVBeXFGOXdVVVJXWTF3?oc=5",
+      "published": "2026-11-09T13:49:52+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Carrick explains Maguire change - Manchester United"
+    },
+    {
       "desc": "Manchester City spent £320million on overhauling their midfield over the summer. In doing so, they twice broke their own",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-09T16:00:53.765772+00:00",
@@ -3039,6 +3229,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Goalkeeper’s tiny shin pads mistaken for ‘slice of CHEESE’ as fans demand ‘automatic red card’"
+    },
+    {
+      "desc": "Villa clash makes Premier League history Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.017514+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRm9ESlU5QzNkY1ZDWlpDdnhtU1NFZmhzSTc0SDBBS2kzTk9nMHY3RU5BRTM2czJwNmNVbjBBbUs0ajlQVUkya2sxcU44WHQ3V1ZUUjBic1ZaN2d6ekVPLXE2VFNGZDkwdkdHNW9WNVlHMEx2R3ZmTTc3SlV1cEdXYUFYek0tMlRfczEtM3V5NmJCUTFPUHI0?oc=5",
+      "published": "2026-11-09T12:08:33+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Villa clash makes Premier League history - Manchester United"
     },
     {
       "desc": "ROY KEANE’S daughter Leah made a rare appearance at Manchester United yesterday… to cheer on Aston Villa against her dad",
@@ -3401,6 +3601,16 @@
       "title": "Track Order - Chelsea Store - Official Chelsea Store"
     },
     {
+      "desc": "Report: Manchester United 4 Aston Villa 4 Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T18:01:08.017796+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORHA0WGNrMEZkTU8wUmxOMmZqY094dlUyNjQ0M1JiSU0yZUxRaUp1aUdlLU9OSkNobUFkWUp0cTF1NHJzdUlkaHpfbnozYmJoOWZmTE5ZV2ZqM0h6YzlLS1N0TG1fTEtqV3A3dERVOHBZcS1GOV9aVnM2TmRMTmxNVkZDUTZiTVlBV3pCTW85SUQxdw?oc=5",
+      "published": "2026-11-09T10:37:38+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Report: Manchester United 4 Aston Villa 4 - Manchester United"
+    },
+    {
       "desc": "Man City on International Duty: Guehi Scan, Gvardiol Faces England The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-09T10:33:34.847564+00:00",
@@ -3759,216 +3969,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Fishlock retires after record-breaking career"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T06:35:34.060216+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6ly0w4n7d91o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-09T06:25:16+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "Dorgu named Player of the Match after Villa draw Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T10:20:35.232499+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWFE2N3hnVi1UUjRJZHR5Sjd5OEZaR1NxOWk4UDl1R01IWnJLcThVTEMtUHFVaXpTNDBCMnRBTER2ei1zRnlMcm1WT0hhRmF4Q0tRbWtzQWdIUU51UFQ5cVFRLVN6N1ZXM1NlblljSUdNQThTVWY3SllBcllHOEl1X2JYck9mSURWa0l5U040akczN1cxOFJvZG54M0dvNXctdmdBSHlfdXQySm5McTI4VWdtWnI5eU1B?oc=5",
-      "published": "2026-11-09T06:07:33+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Dorgu named Player of the Match after Villa draw - Manchester United"
-    },
-    {
-      "desc": "MFL gathers reports on touchline fracas for FAM review NST Online",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T06:05:25.899315+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUnpXeUllajY4Uk8tZl80YTRqOUYzM08tcU51TWN2bFN3cGdLTHprb2ktMG1BNEVVZGZCdDFwUlpiZk5HdkwxM0o1ZkszaDhPSG51ZkQ0ajN1SDZLMVlxRUdxcWJWSWtMb2FXeUx2dGRrVzNQeHgxNzIydnllN1RJN3I4RG5CRmVJT2tFRVNlMFNkWjJoeHpxODlTemFucEd4ZWUxadIBqgFBVV95cUxNclpPY3lQQ1dXbHUxWGhwazR3RHZ2YTBJYm1oSTVJTzJmNDdTZ1FMNWZ6blFVVkU1S0k0bXgtU0hxaWZteUNsU1l5MWt1QVJWVmUxbEFuanpOQ2RKNWo0YnkyTF9rZUdUYUZBMF9kQTItWWtib3FWWDdzcjdnSy1teEtPbmV0LTQ0Yzltc1I1eTB1MmZ3ZGo0T0hJZVVCeUZTRjl0YUZMWkRKUQ?oc=5",
-      "published": "2026-11-09T05:56:06+00:00",
-      "publisher": "https://www.nst.com.my",
-      "source": "https://www.thefa.com/rss",
-      "title": "MFL gathers reports on touchline fracas for FAM review - NST Online"
-    },
-    {
-      "desc": "Sinn'Kaye Christie Videos & Best Moments Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T08:25:28.057997+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9CNWxPc1Vma1dPTVJ6RXFNd3pvZnM3dXBnMWw3LW8wWFhIWVJfM3REalVKMEtlVG5aMHo5d2ZPSE1nMG1XN3hTelJPNjhPY0UwUmRkSXRaTEFqdThIZUFPSVd5Y09BT053YkRyVFBwOEM3RkN0LUVxblQxNA?oc=5",
-      "published": "2026-11-09T05:42:16+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Sinn'Kaye Christie Videos & Best Moments - Premier League"
-    },
-    {
-      "desc": "Man City’s performances have taken a bizarre twist. They are starting to look distracted The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T10:20:35.232553+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbEVabGE4cHBWR2kySGsxT2l1TklIRmtnNHlZOFJrN0JzdGlDQnNCbC1QYVJSOHN3d2JJaml1N2JHNmlWMmR4UWZFcFdWZlo0X3ZTWmJKeUlmOWtjY096RDYwWFQ2ZHlidy1jMWFNd0Y1SXJmQ2s3NXJxdl9ZR0daT1JyTEFwSmY0YW5WUWlJMnk0cUFOS1JnSlR3?oc=5",
-      "published": "2026-11-09T05:12:17+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Man City’s performances have taken a bizarre twist. They are starting to look distracted - The New York Times"
-    },
-    {
-      "desc": "Feyenoord vs Como Stats, League Position, Team Form | 2026/2027 | UEFA Champions League Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T08:00:46.578208+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBpX3lQVnJBUV9RYnF1OGE3THZyTHpyVVBEM1pETExCTmVzWlA3UWx4UlBIdnZvY1lhcTlzdjRSdk9zZ2JKYlFQTkVDb2s2R0tlNk83VnRsaTFmZ2lfUWJ4bGQwVUpnazluYXFPcy15ZldxTzF6dFFvc3hn?oc=5",
-      "published": "2026-11-09T04:35:52+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Feyenoord vs Como Stats, League Position, Team Form | 2026/2027 | UEFA Champions League - Premier League"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T04:15:32.857474+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
-      "published": "2026-11-09T02:20:24+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "James Clarke Burton Albion Goalkeeper, Profile & Stats Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T03:50:33.178151+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VQUhVVHROeUF5TWY2Vm5uYWloamFPWE9SZDIyNVVKNVk1Y3hyRWcyQ0JhNndYMVFkbmJXaWE2bEJ2THREeXVOaEVRTG9QNkNQeDRoaUNieUEtSnRGYldWVmNVMUNJaTVZS213a3plaHVFNkhUM0JV?oc=5",
-      "published": "2026-11-09T01:38:36+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "James Clarke Burton Albion Goalkeeper, Profile & Stats - Premier League"
-    },
-    {
-      "desc": "Wimborne Town 2-0 Crawley Town: Magpies deliver huge FA Cup shock The Non-League Football Paper",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T02:10:40.745866+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQbC1NZUswMWhhZ2hzb0FqRkNwME41Y2E3OE5zVnZSbWdKUEhWUGoxZ3NlYVlMcC1FZHdON2ItTU56dEo4VG1xc0F1Z2xaU0tnNXFiUnlNLXBuNmtnalhBTEpuSWZSYjdmRzZkMXY4bWNEQTQ0M1NkS1dWbU00dkh0U2dIY0owVVZRZjFUcjA3NVM3V1RMRFVXUm9IbTZoUG9CNG5JdlZ6ajA2bEFNNnhHMk1zWVJubUhKS2JxblVPX085TzczYzYzdVlJTkJOLTdvTTcwbUVWdFZyN1lBNUtBbjV5ZW1xeUQ1SFRiMnVEWTBXeDdPcDR6ejVTYUJTZWRJTnY0TGhHbnBSR3Vx?oc=5",
-      "published": "2026-11-08T23:39:08+00:00",
-      "publisher": "https://www.thenonleaguefootballpaper.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Wimborne Town 2-0 Crawley Town: Magpies deliver huge FA Cup shock - The Non-League Football Paper"
-    },
-    {
-      "desc": "Abdullah Al Hamddan Stats This Season & Career Statistics Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T04:25:27.388629+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFAyc3dPYkx0cDVjbWdGRTZESlpSZ2I4bW8wdGpoQmRUU3c4ZXExZU9JNk96bTQyWF9aNHJqN2x4VmpiN2hMWkM5bm92Q2t3emZNMWZGcFFDbTJDdUl5OWF5OUtOMlRuTG1aQ2dTZGNlb1hDOXdNYV91N2xTS25aUQ?oc=5",
-      "published": "2026-11-08T23:06:15+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Abdullah Al Hamddan Stats This Season & Career Statistics - Premier League"
-    },
-    {
-      "desc": "Iraola on whether Szoboszlai will go away on international duty Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T04:45:32.974205+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRjFxYmZNU1lsbk9XQ1NMQzlkMmhFdlFuMURGVXhpUjE2U2xUUHpSb1hQZFFfS0lnYXFER1BsNW1JZUU0Rmo2dnZlSjJaUWhOeVF6LTVRWkQxOUtja3lxU1l4cDJ1elJSV0I2LW5aQ0pFWV96UFQ4V3BoWUZfWVZNcjNValN3eTdJWVo0?oc=5",
-      "published": "2026-11-08T22:41:42+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Iraola on whether Szoboszlai will go away on international duty - Premier League"
-    },
-    {
-      "desc": "Manager headbutts player and gets red card in FA Cup drama that starts huge brawl AOL.co.uk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T22:40:32.878192+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZGFBVllOMjhzNVk1N0VJU0pCRjhVa1BWTEpDSTR3NmRXNTBneXpxRTV5a01hY19USG9rMVlhOXItUkN6eS16U0VMa0hmSHFtNHppN0NoTkdJcGwtajE5eDIyVlRfMEJ0Z1cxaFlLbDU0S0lBV0NqM2haeHBVb1FDbTE0UmlMUQ?oc=5",
-      "published": "2026-11-08T22:26:46+00:00",
-      "publisher": "https://www.aol.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Manager headbutts player and gets red card in FA Cup drama that starts huge brawl - AOL.co.uk"
-    },
-    {
-      "desc": "Falkirk continue to excel under the canny guidance of John McGlynn as a run of five successive victories takes them up t",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T06:35:34.060386+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/crwyd4q0k8ddo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-08T22:14:38+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Falkirk add goals and grit to McGlynn's guile on rapid rise"
-    },
-    {
-      "desc": "“The conversation is underway…” – Fabrizio Romano drops massive Liverpool update Live4Liverpool.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T22:05:32.770260+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSjBnX0daQU1mOC1vSnI3eDdSYWdxWkJtOVIxV2FvTVhMdVFVSndDLTFRb1I3eS1CYmF0cEZwS1pGb0h5Wjh0aGVKV1UydnhXSlBCU3JPY21CcThlTDRaRldPYW9NSWlLM19uNklveE9GZkpqOXgyakZYZW85ZGNqbWNFbFdkRHZaSG5va1l1QkN5SjlJ?oc=5",
-      "published": "2026-11-08T22:03:29+00:00",
-      "publisher": "https://live4liverpool.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "“The conversation is underway…” – Fabrizio Romano drops massive Liverpool update - Live4Liverpool.com"
-    },
-    {
-      "desc": "Prva ŽNL Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T01:05:30.554876+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Xekh4YjhvbldKX3BoNHNhX1JmMkhRMWxrZGZSRi1iTV9lYWVINVZkNFFtRnByS0lWVEtMTHR3ajBZTkJybXdoNDBZQVk0QmxvS2xHZWZURE9Ybnl0ZFRVWGh4cGhwZEpwaWhlTmZMaFlvdw?oc=5",
-      "published": "2026-11-08T21:58:22+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Prva ŽNL - Fantasy Premier League"
-    },
-    {
-      "desc": "It was a Premier League classic at Old Trafford but what as Man Utd's 4-4 draw with Aston Villa done to Michael Carrick'",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-08T21:55:27.196555+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cked3qjw1q4xo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-08T21:50:05+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Bizarre & thrilling theatre as Carrick's Man Utd future still in limbo"
-    },
-    {
-      "desc": "THE chaos that comes with Manchester United surpassed all expectations as the final whistle blew in their 4-4 draw with ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T21:45:33.621691+00:00",
-      "link": "https://www.thesun.co.uk/sport/40962897/man-utd-draw-villa-dalot-crisis/",
-      "published": "2026-11-08T21:44:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Three points from Man Utd’s chaotic draw with Villa as Dalot at point of no return and defensive heart-surgery needed"
-    },
-    {
-      "desc": "NUTFS-KNUST Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T00:55:29.555943+00:00",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zRHM4bDJFUG5yYktnNWYxQmJzbVp3QmZGa1lSbTFyQ3FibFU4Q0pmUE1rbF9HbGdfTFFIWU1EUHlSZk5TcVpEY2ZONC1SYmZPM2xVLWxPRDJaZWFIaUlfSDdyM0F1c0FRS19sZlFjazA?oc=5",
-      "published": "2026-11-08T21:44:17+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "NUTFS-KNUST - Fantasy Premier League"
-    },
-    {
-      "desc": "Manchester United book Michael Carrick sack decision meeting inkl",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T23:10:34.079758+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTEMtZ01BcEd4emZpd2ZMbVpMMWVaSjYwcTFLbnJWWEdneUNRQkZXdklHdVEtY3RFdzJhQTRXZG5jUjNydGpwV3RHQ1o4Rm1oMWZwUXVHTzh0bW5fYk5HV3VsWTJqWklnd3llNlNoa2xnTWo1MWVVX0ZCdTQxeUZOQWtRYlRBV0owU25HNkh6NA?oc=5",
-      "published": "2026-11-08T21:30:39+00:00",
-      "publisher": "https://www.inkl.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United book Michael Carrick sack decision meeting - inkl"
-    },
-    {
-      "desc": "CRYSTAL PALACE are reportedly ready to SACK manager Pierre Sage after just 16 games in charge. The Frenchman’s future is",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T21:15:36.138699+00:00",
-      "link": "https://www.thesun.co.uk/sport/40962840/crystal-palace-ready-to-sack-pierre-sage/",
-      "published": "2026-11-08T21:12:46+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Crystal Palace ‘ready to sack Pierre Sage’ after woeful start to season with two immediate frontrunners to replace him"
-    },
-    {
-      "desc": "GARY NEVILLE revealed his brutal worries concerning Michael Carrick's Manchester United after their 4-4 Aston Villa draw",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T21:10:33.322698+00:00",
-      "link": "https://www.thesun.co.uk/sport/40962570/gary-neville-fears-man-utd-emotional-damage/",
-      "published": "2026-11-08T21:09:23+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘This just can’t go on’ – Gary Neville fears Man Utd ‘causing themselves emotional damage’ with post-match antics"
     }
   ],
   "processed_urls": [
