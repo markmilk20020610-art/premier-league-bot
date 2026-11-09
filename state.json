@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 206,
+        "calls": 207,
         "errors": 0,
-        "requests": 206
+        "requests": 207
       }
     },
-    "calls": 206,
+    "calls": 207,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1143394,
-    "output_tokens": 135322,
-    "requests": 206
+    "input_tokens": 1148426,
+    "output_tokens": 136060,
+    "requests": 207
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T09:05:32.224149+00:00",
+  "last_scan_at": "2026-11-09T09:10:45.587065+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2330,6 +2330,16 @@
     "updated_at": "2026-11-08T22:01:32.116908+00:00"
   },
   "news_pool": [
+    {
+      "desc": "THE BBC has made a major change to their iconic annual Sports Personality of the Year awards. There will be two new awar",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-09T09:10:45.590862+00:00",
+      "link": "https://www.thesun.co.uk/sport/40964024/bbc-shakes-up-spoty-with-new-awards/",
+      "published": "2026-11-09T09:07:09+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "BBC make major change to SPOTY as two new awards are introduced for first time"
+    },
     {
       "desc": "EPL: Fabrizio Romano reveals manager that is close to being sacked Daily Post Nigeria",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3819,16 +3829,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why is Matheus Cunha not suspended for Man Utd vs Aston Villa?"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T16:40:30.748333+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ZVjFKQmw3RmJzc1c0TzgtUFo1WlpmVFl3TXRtT2NaNXdNWjRYV3lZV3Q4X1RFTm5ySnpWajlldUF4QlctX2RoaXI1YVRLZTZkYUxJa2szWHNjbmU3bTBNR205cF84d2M2LWRzNjEyYXJHOWpvNWQteXh3?oc=5",
-      "published": "2026-11-08T15:27:26+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
     }
   ],
   "processed_urls": [
