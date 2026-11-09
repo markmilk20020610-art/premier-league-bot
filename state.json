@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 106,
+        "calls": 107,
         "errors": 0,
-        "requests": 106
+        "requests": 107
       }
     },
-    "calls": 106,
+    "calls": 107,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 657604,
-    "output_tokens": 69893,
-    "requests": 106
+    "input_tokens": 663790,
+    "output_tokens": 70488,
+    "requests": 107
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T00:50:37.614933+00:00",
+  "last_scan_at": "2026-11-09T00:55:29.551755+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2369,6 +2369,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Three points from Man Utd’s chaotic draw with Villa as Dalot at point of no return and defensive heart-surgery needed"
+    },
+    {
+      "desc": "NUTFS-KNUST Fantasy Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T00:55:29.555943+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0zRHM4bDJFUG5yYktnNWYxQmJzbVp3QmZGa1lSbTFyQ3FibFU4Q0pmUE1rbF9HbGdfTFFIWU1EUHlSZk5TcVpEY2ZONC1SYmZPM2xVLWxPRDJaZWFIaUlfSDdyM0F1c0FRS19sZlFjazA?oc=5",
+      "published": "2026-11-08T21:44:17+00:00",
+      "publisher": "https://fantasy.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "NUTFS-KNUST - Fantasy Premier League"
     },
     {
       "desc": "Manchester United book Michael Carrick sack decision meeting inkl",
@@ -3819,16 +3829,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Bayern chief Uli Hoeness admits Jamal Musiala suffering from ‘illness that cannot simply be cured’"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-08T16:30:42.832260+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-08T14:01:49+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
     }
   ],
   "processed_urls": [
