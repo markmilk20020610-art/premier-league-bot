@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 226,
+        "calls": 227,
         "errors": 0,
-        "requests": 226
+        "requests": 227
       }
     },
-    "calls": 226,
+    "calls": 227,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 1260630,
-    "output_tokens": 149371,
-    "requests": 226
+    "input_tokens": 1267530,
+    "output_tokens": 150123,
+    "requests": 227
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2344,7 +2344,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T10:40:36.640355+00:00",
+  "last_scan_at": "2026-11-09T10:45:35.439104+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2594,6 +2594,16 @@
       "publisher": "https://www.shropshirestar.com",
       "source": "https://www.thefa.com/rss",
       "title": "Shrewsbury Town players earn praise for avoiding ‘soap opera’ in the FA Cup - Shropshire Star"
+    },
+    {
+      "desc": "VOTE for October 2026's Premier League award winners Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T10:45:35.443519+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOV242cWt5QjNkdjlyTk5rRmgySDItTkFqR3BPU2RjdEw4VWtzbzdzT0ZkUFU1Uld2Qy02RWxqZm81SVZHa2JHQU1INllULXpSSEcxOHpvMEd3TDByemptMEo0Q0JSVWJNcnlVRmJyZV8tUXBiTHc5dklGdEtRT3ByalVnQVJRNGJ1bnB6YmNaQzAtUGJuNDdKamxkRDRCQQ?oc=5",
+      "published": "2026-11-09T06:33:17+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "VOTE for October 2026's Premier League award winners - Premier League"
     },
     {
       "desc": "Wales' record cap-holder and goalscorer Jess Fishlock hangs up her boots after Seattle Reign were beaten in the NWSL pla",
@@ -3854,16 +3864,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Sunderland 1 Chelsea 0: Brobbey’s controversial penalty incident sees Blues go into international break on losing run"
-    },
-    {
-      "desc": "Brighton leapfrogged Man City into second place in the Premier League table with a 2-0 win over 10-man Brentford.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-08T16:05:31.656122+00:00",
-      "link": "https://www.skysports.com/football/brighton-and-hove-albion-vs-brentford/report/559535",
-      "published": "2026-11-08T16:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Brighton beat 10-man Brentford to leapfrog Man City into second"
     }
   ],
   "processed_urls": [
