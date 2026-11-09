@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 96,
+        "calls": 97,
         "errors": 0,
-        "requests": 96
+        "requests": 97
       }
     },
-    "calls": 96,
+    "calls": 97,
     "date": "2026-11-09",
     "errors": 0,
-    "input_tokens": 593101,
-    "output_tokens": 63494,
-    "requests": 96
+    "input_tokens": 599621,
+    "output_tokens": 64050,
+    "requests": 97
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2309,7 +2309,7 @@
     }
   },
   "last_morning_report_date": "2026-11-09",
-  "last_scan_at": "2026-11-09T00:00:48.983791+00:00",
+  "last_scan_at": "2026-11-09T00:05:28.976843+00:00",
   "last_summary_sent_at": "2026-11-08T22:01:32.128409+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2449,6 +2449,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Frank leading candidate for Palace job with Sage likely to be sacked"
+    },
+    {
+      "desc": "Villa clash makes Premier League history Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-09T00:05:28.981185+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRm9ESlU5QzNkY1ZDWlpDdnhtU1NFZmhzSTc0SDBBS2kzTk9nMHY3RU5BRTM2czJwNmNVbjBBbUs0ajlQVUkya2sxcU44WHQ3V1ZUUjBic1ZaN2d6ekVPLXE2VFNGZDkwdkdHNW9WNVlHMEx2R3ZmTTc3SlV1cEdXYUFYek0tMlRfczEtM3V5NmJCUTFPUHI0?oc=5",
+      "published": "2026-11-08T20:50:44+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Villa clash makes Premier League history - Manchester United"
     },
     {
       "desc": "Crystal Palace manager Pierre Sage is in serious danger of losing his job, with Thomas Frank among the contenders to rep",
@@ -3819,16 +3829,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Carrick: You're at your best playing on instinct - Manchester United"
-    },
-    {
-      "desc": "ROSARIO CENTRAL fans fled onto the pitch when they thought they had won the title - only to find out Boca Juniors had sn",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-08T13:55:36.835666+00:00",
-      "link": "https://www.thesun.co.uk/sport/40958200/rosario-central-celebrate-title-boca-juniors-break-hearts/",
-      "published": "2026-11-08T13:55:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Argentine side wildly celebrate title… only to discover rivals Boca have scored 96TH MIN winner to break their hearts"
     }
   ],
   "processed_urls": [
