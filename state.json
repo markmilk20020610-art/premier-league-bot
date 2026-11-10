@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-11",
     "errors": 0,
-    "input_tokens": 42704,
-    "output_tokens": 4515,
-    "requests": 7
+    "input_tokens": 48859,
+    "output_tokens": 5205,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -840,6 +840,41 @@
       "telegram_message_id": 33,
       "title": "纳格尔斯曼被曝考虑接掌尤文，曼联目标或落空",
       "updated_at": "2026-10-31T13:47:29.610142+00:00"
+    },
+    "3dfc7e7a4251": {
+      "article_title": "Man Utd risk having to hire CARETAKER manager for Liverpool clash amid farcical delay to sacking doomed Michael Carrick",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "c332c282b7c9cc1d",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 112
+        }
+      ],
+      "created_at": "2026-11-10T22:01:06.972831+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "a832174a8ceaa3c6",
+      "event_id": "3dfc7e7a4251",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-10T22:01:06.972831+00:00",
+          "origin": "created",
+          "title": "Man Utd risk having to hire CARETAKER manager for Liverpool clash amid farcical delay to sacking doomed Michael Carrick",
+          "url": "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 112,
+      "title": "曼联解雇卡里克拖延，恐被迫启用临时主帅迎战利物浦",
+      "updated_at": "2026-11-10T22:01:07.628879+00:00"
     },
     "4116e6d3a07d": {
       "article_title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times",
@@ -2589,7 +2624,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T21:00:59.755389+00:00",
+  "last_scan_at": "2026-11-10T22:01:00.770778+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2611,6 +2646,56 @@
   },
   "news_pool": [
     {
+      "desc": "City put four past Inter to stretch unbeaten European run Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.773413+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU29XWDMzNEo5M0ZPX1FaeURnSHhoejM0dzByRDlRVzE4eURJaGVJV25tYjl1QnRpeXZ4OTdBOWVRcUhqNVFUNkdoM1FVUTdEakp4Tk9xZ3gwTlc4c0Qtdkhua1RlTDhNcnM0ZHpUb1dhWS1TODNqc2JPSkpDUUlaU2g4dUhZcEdsbkxkWTFhY2lDTHhCcG9ORjVCemdSNGpldm1KUDNjLWQ2ZEJtcDhVaUt1SQ?oc=5",
+      "published": "2026-11-10T21:50:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City put four past Inter to stretch unbeaten European run - Manchester City FC"
+    },
+    {
+      "desc": "Guéhi Injury Update and Return Date: Hip Scan, Out of England (10 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.773440+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81YWpFTm84SDVnc0lHTElCM3JUWS1tZHJuN2tSRm5oZ3dRYURMaVpCWldoeTNpQWRYdTFTbFdMYkdDR1IzZThzei03Um82M1J1RnZ3THdBaG9jOXYzYXNKcTR5blo2SUZwamJMeWt0SFhtdjhBRlJtLUJyWkU2QQ?oc=5",
+      "published": "2026-11-10T21:29:16+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Guéhi Injury Update and Return Date: Hip Scan, Out of England (10 November) - The False 9"
+    },
+    {
+      "desc": "NICOLO ZANIOLO has sensationally quit the Italy squad for mystery personal reasons ahead of their Nations League showdow",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T22:01:00.773462+00:00",
+      "link": "https://www.thesun.co.uk/sport/40984662/nicolo-zaniolo-pulls-out-italy-squad-aston-villa/",
+      "published": "2026-11-10T21:28:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mystery as forgotten Premier League star, 27, pulls out of Italy squad after returning to fold for first time in 2 years"
+    },
+    {
+      "desc": "Fabrizio Romano delivers major Levi Colwill transfer update LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.773482+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNT1owbzFrbnQ1Zkt1Y2JhVmk2cDBCWHZTamNXdHRPcDNua2NaSUdJM2RZYkRLNUdsY1pOZTI1Nk1WREd3UUw3MHZvQnF1b0lqM3hZem5CWkdqV2MzdmduUFJHYjVNQjdaeFRiZVB4eGxnOVlhV3VKNmF6elp1Q3VGMHlJZThYZTk5SWExVmRPRUtuT3FydWF4OVZHdnNGZzZUVXNMN0RxMFdPd3ptV04tT1M1TXM3VEt6TjMydUtJM3Q2SVFZQkV3?oc=5",
+      "published": "2026-11-10T21:17:05+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano delivers major Levi Colwill transfer update - LiveScore"
+    },
+    {
+      "desc": "MANCHESTER UNITED risk having to install a caretaker for their next match at Liverpool amid their farcical delay in sack",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T22:01:00.773500+00:00",
+      "link": "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick/",
+      "published": "2026-11-10T21:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd risk having to hire CARETAKER manager for Liverpool clash amid farcical delay to sacking doomed Michael Carrick"
+    },
+    {
       "desc": "JAMES HILL knows he can tackle anything after coming through Joey Barton’s “relentless” summer boot camps unscathed. So ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-10T21:00:59.759190+00:00",
@@ -2619,6 +2704,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England new-boy James Hill reveals Joey Barton’s ‘relentless’ boot camps where players turned ‘white as ghosts’ aged 16"
+    },
+    {
+      "desc": "Watch: The best REACTIONS from Matchweek 10 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.773555+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQUtCZEtzR3BuOXQtN0RKclVVeENtZFV0NVVVTG1odVJmWEotdGNBM0dxTzN3bjFoR0lDZUk3ZGRNaGRaOGhnQmw3bl9salluQUJwQmxrRE80eDl3OUxTUWNZcTh1eFhpVFhyeHh6X0RQUV82MG9qQ3NONGdSVlRJR3lzMW5ydmVTS05LanZ3?oc=5",
+      "published": "2026-11-10T20:35:44+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch: The best REACTIONS from Matchweek 10 - Premier League"
+    },
+    {
+      "desc": "Watch: Things you may have missed in Matchweek 10 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.773573+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTTBMT2pVMGJrOVBvc3NnTkxFSXhhaFBPNU50MVdVQWlXal9ObnRIUHhwb0tGUVpiVldQX2dBSmNHLXVOdXRLaWY4c2dyeWRXVkgtNk1QRGNHNzNCamRZbGtNNTlFa085ZGlEc2d1MXVPRGl6c1VPZUVURmJnQmZ5XzBYelBsUWhnNG9MTGhMNHBHNGwtcm9SSjE2cw?oc=5",
+      "published": "2026-11-10T20:35:44+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch: Things you may have missed in Matchweek 10 - Premier League"
     },
     {
       "desc": "With ten games of the Premier League season gone, it's time for another breather as the second international break rolls",
@@ -2699,6 +2804,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "See Harry Kane play at Allianz Arena with official Bayern Munich tickets and hotel packages from just £169pp"
+    },
+    {
+      "desc": "REVEALED: Official Premier League Fan Team of Matchweek 10 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.773731+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUjF2dE9YWms5S1hoTFBCdERrWXdJa0VtOXhYdnNHbWtlenZSeF9mTzVBMlJoOFlkM29KdzQyZHJfT3lBaGFOQzEyWW4xbDFkanl4czdyRVVKbE9ERndaLVBLSHhDbDVLdWxxWUMwcUZtcHlxOTVKTUF6OGx1eng5ZGU5aE1UTjFQeVJxVkpnR0lqQ1U3a1FfdW45ZDFNM0xCbkRHWXFCOA?oc=5",
+      "published": "2026-11-10T19:10:19+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "REVEALED: Official Premier League Fan Team of Matchweek 10 - Premier League"
     },
     {
       "desc": "LOUIS SAHA has torn into Ineos and Jason Wilcox for making \"big mistakes\" in the summer transfer window. Manchester Unit",
@@ -3021,6 +3136,16 @@
       "title": "Police 'are trawling through dodgy Fire Stick sellers' bank accounts to contact illegal viewers' of Premier League football and films"
     },
     {
+      "desc": "Bernabe and Kirby hear cancer survivor’s story at Red Neighbours yoga session Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.774175+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEVoczNHM3ZVN0tnQnExdF9haUNNLTVJWHFSRTltUlVHZV9IcmszbmQ5bTJyaUhTWmF6VU9MQWdqeWhNanFfZFBhaXJOaXNraWZzZHkxSzBBMVBqUnhrT0VoS3c2aEJZbkh5N1BwSW9uZXdyNUx5enpyTDMtWHNnUzVYVnFXT1UtV3NYd2k5MGswUC1pUi1PS2JlVi1xTzJ1S01fRA?oc=5",
+      "published": "2026-11-10T16:02:52+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Bernabe and Kirby hear cancer survivor’s story at Red Neighbours yoga session - Liverpool FC"
+    },
+    {
       "desc": "Scott McTominay has revealed he needed to have his heart “shocked” two days before Scotland's World Cup opener against H",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-10T18:00:51.963694+00:00",
@@ -3059,6 +3184,16 @@
       "publisher": "https://www.theoldhamtimes.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Oldham Athletic manager Micky Mellon charged by FA after Sheffield Wednesday clash - Oldham Times"
+    },
+    {
+      "desc": "How about Stat?: Pre-match stats as Eagles head to Spurs Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T22:01:00.774206+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeVRQS2Ntb09DTjM3THNHVmpjMW1zMzBnam1BNUtHRzIzMndGRjYzRVpyZ1QycEZsQWNsQkFMclhwSmV4NHhBTXpLdUUtQjFQbllDTFo3QTFwd0pseTBvRDg0b1Blc2E0VHZhWktRS2hUc0FzWGJiTWJJTzB1bmFQbkxRb3kwYmllakJlVXVfazVnTzVudVlvdllybmpCb2dNc0E?oc=5",
+      "published": "2026-11-10T15:37:50+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "How about Stat?: Pre-match stats as Eagles head to Spurs - Premier League"
     },
     {
       "desc": "CHELSEA star Malo Gusto could be heading for the exit in January, with several European clubs linked with his signature.",
@@ -4009,106 +4144,6 @@
       "publisher": "https://shop.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Adult Retro - Tottenham Hotspur"
-    },
-    {
-      "desc": "Baby and Kids Retro Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T11:01:00.367924+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPV2E0R0YwTS1ZLTlxX2dteUs3UFdUdjFib3p5UkpmVEJiaGx1SVZnbldnZl94LTcwLVV4LUxaOGUxd21IZ1Z2R1NFeDYtbm5XNjcxdWZuN1hfekpaby0xa2g2elBYUzc0cUxpdUdXamx4aXRvSkp6RWphYTRlMUNQeGhZLThmNkVlTGdXajJpR3hsUGFkN25QVDFNSQ?oc=5",
-      "published": "2026-11-10T08:48:54+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Baby and Kids Retro - Tottenham Hotspur"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 Lifestyler T-Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T14:00:57.537031+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONjBqOHVsT1lWMng5T0Jhc05wWkhsRXBNbmZqR2FwUkFPdkxPelRtc3VKVlplTTlwd0lSVl9GT3JvLXBiY191NG5OUnFmYk5MZTliME1fdTJLNDc1MUFib1pJYXptZnNkQndYZzU3ZGhzU1hXV1VIS2F4ZWItN1Zhc29NelcxMlh6Q2FlNlR5akVnZElEam9SR2QyRGQ0LURCS25lejhzYnVJbUxGQTMySlQtc1lOSUl2OS1CeA?oc=5",
-      "published": "2026-11-10T08:41:18+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 Lifestyler T-Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 Lifestyler Track Pants Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T10:01:00.345082+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUk45TDQ5MFZlX1JrRU5qa294ZG5SRVNIXzNVM2lDclNBVTEwUF9laWRtOFZIOGxlR2pBV01pM1JfWlBjSUdaM3FkcXpWaUE1NGlxWXdzbXBhNzNJNWM1M0FlelBiWGYxWVNFS3B2RXVLYmkzcDJjdXVnUUhIR21YcGwtQTYtRkFRMG5YNFllTXV5VnlfSnNZZ1E4SE1sV0VZWjgwTk92QkJtRi0tQzhBOHhQd3BrcWxxTFhQUGM3dzJIN29vRHZBbUlGd1VjVXdr?oc=5",
-      "published": "2026-11-10T08:41:17+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 Lifestyler Track Pants - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 Lifestyler Cap Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T10:01:00.345104+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMmtLZS1rVV9wbXM0d0l2OFp4REtQejZteDI2MGZLRVNxaTBlUEQzOGJVeGFPR3RjUTROZm0xaTVRa0p6UDIwTmdCT3ppUmtReEo2c3FPMmdRVTdNenF0bmFNWFpRLWtiRlRIQm5zUnB4b2pkdzMzY25hR1l3WWFZQ205RTd4ZTJXUmptSnFvN0dpUDZzZ0RBVEx1V1B0N1dZblhZUVd3LXdYUHBWbU1la1l3MHU?oc=5",
-      "published": "2026-11-10T08:41:17+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 Lifestyler Cap - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 Lifestyler Track Top Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T11:01:00.367990+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWnNnRkpZQUxwQ1RIZ1pDeDg2NVA0QzA2TTQya1hHRFd3UktvQnNHdkd5Uy1mMzhoQnd2eUI2Yl9heVNxLUhVdWFzLWljMG5qdDBWZTVfWGxodlZLQjVFa2tPVVJQX3dlcEN6RkI3NWgydHpFanJ3X0ltel9zTEkzTjBCWFE5cGYxd2wtZnVGbHpydU9teTNoWEVja3NwZjkxeVBzTlgzQXpPZFlnR3RrZnUxWVpJU1JKNHJ0ZDV3?oc=5",
-      "published": "2026-11-10T08:41:17+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 Lifestyler Track Top - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 Lifestyler Hoodie Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T16:01:01.274087+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdEp0dHdGUXFKajFXMXpkTzJOTHhlcm42dk4wODVjclp3aF9WU043dnN1SXdrMTl5c2tOTXRmZ0F2WFRZZ3ZsWDJaX1lmTUJjcTB2bnNtOGV0amFadlBZMzV1d2Z1SkNJNlhDNTNCd09JblFSOXVycGVLNWxkMG5reHlub0w1akp0aTVoRy1jRndGOHJBVE9Eck4zcTJjSGt3MzVmZjBseExKdzBEYWpMaHBCal9FVGxvTk8xenR0QWFveVdGOF9WTmVZaXIzT0U?oc=5",
-      "published": "2026-11-10T08:41:17+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 Lifestyler Hoodie - Arsenal Direct"
-    },
-    {
-      "desc": "Michael Carrick arrived at Manchester United's training ground early on Tuesday, checking in at 7.15am on the day he cou",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T09:00:53.764838+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16280515/michael-carrick-manchester-united-sacking.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T08:34:21+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Michael Carrick arrives early to face his fate: Man United manager could be sacked TODAY - as he drives into training at 7.15am... with Maur"
-    },
-    {
-      "desc": "Romano reveals Man Utd move to appoint Eddie Howe with THREE manager ‘candidates’ on shortlist TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T09:00:53.764863+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSFN1VG1wR3ROSTJzem5lcTQ3ZlB4eUJadEZwaXlhQnNESDFmbkpKVm90WFU4a1RVYURESDBPTDRxX0lRZXhxV0pYUzJQZ3J5WTZWcl91LU9CTnZEa3N2TXNVN0J5M082RExEWlUtSjhHcUt5TjdSb1pNVF9ZOFR4ZXhjVE05THBtdUsxUGNYaUJlMXFOT0JOU1lYdnplZVpJRzB0N19RZ0pXWjZYLXc4S2FqSG1SOHRoTUV3WVdYN0JnZnd2ZnBjN0VBazJwM3dfNmw1ZkMyUQ?oc=5",
-      "published": "2026-11-10T08:31:18+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano reveals Man Utd move to appoint Eddie Howe with THREE manager ‘candidates’ on shortlist - TEAMtalk"
-    },
-    {
-      "desc": "CHRIS WHEELER AT OLD TRAFFORD: Coming out swinging every game like a boxer on his last legs is great for entertainment, ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T10:01:00.345181+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268103/Michael-Carrick-Man-Uniteds-Captain-Chaos-reckless-cavalier-style-evidence-lack-preparation-not-way-play-football-writes-CHRIS-WHEELER.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T08:22:53+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Inside the world of Captain Chaos at Man United: Michael Carrick will not walk away but here's what the players are saying as they fail to r"
-    },
-    {
-      "desc": "A FORMER QPR goalkeeper has revealed the scary ordeal that left him fearing for his life. Paul Nardi currently plays his",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T09:00:53.764922+00:00",
-      "link": "https://www.thesun.co.uk/sport/40975285/ex-qpr-goalkeeper-nardi-horror-chronic-illness-battle/",
-      "published": "2026-11-10T08:11:36+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘I thought I was going to die’ – Ex-QPR goalkeeper reveals horror chronic illness that saw him lose 1st 8lbs"
     }
   ],
   "processed_urls": [
@@ -4198,7 +4233,8 @@
     "https://www.dailymail.com/sport/football/article-16279525/Tom-Brady-QUITS-Birmingham-City.html",
     "https://www.thesun.co.uk/sport/40976073/man-utd-pay-millions-for-mauricio-pochettino",
     "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html",
-    "https://www.thesun.co.uk/sport/40980935/kevin-de-bruyne-quit-napoli-rasmus-hojlund-clash"
+    "https://www.thesun.co.uk/sport/40980935/kevin-de-bruyne-quit-napoli-rasmus-hojlund-clash",
+    "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick"
   ],
   "s_overflow": {},
   "schema_version": 4
