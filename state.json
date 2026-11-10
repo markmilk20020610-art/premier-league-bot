@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 101864,
-    "output_tokens": 11723,
-    "requests": 16
+    "input_tokens": 105776,
+    "output_tokens": 12450,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2484,7 +2484,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T05:00:52.229300+00:00",
+  "last_scan_at": "2026-11-10T06:00:53.927615+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2505,6 +2505,26 @@
     "updated_at": "2026-11-09T22:01:21.442247+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Semenyo Injury Update and Return Date: December Target (10 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T06:00:53.930233+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3V0dmYtUlozdHZMZkFKZFNDcUYxLVFYczZ5bWd4eTFEYzdDMm53WHBOYml2VDdDZXZsQmNUQl9YZy0xY0g1T0JQZWxOSEJYaGMyeDY5emIyOVVlLW9MZ3JoMklYWFM0Uk95VjdfdUJEalA3Qnc2RURoUW56R0JNenFIWlRjTFotZTRqR09GRnpsQQ?oc=5",
+      "published": "2026-11-10T05:31:47+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Semenyo Injury Update and Return Date: December Target (10 November) - The False 9"
+    },
+    {
+      "desc": "Transfer News Today: Carrick Report, Maatsen Deal, Rice Talks (10 November) thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T06:00:53.930259+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1PVzRPUmF1U0ItYzN6dDBudlZBRXZGZ1NhNFFyTDZoRUoxZVhXbHRqY2R6d2tsalI3TTlKTDdUWE0tWFdLRUsxNEVGeGh0b202bURVZVpSV2t2alc0UE5RdTB0VlNJS0Vkbi1uSXdmam4wbkpIX2RMZmNQZw?oc=5",
+      "published": "2026-11-10T05:22:17+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Transfer News Today: Carrick Report, Maatsen Deal, Rice Talks (10 November) - thefalse9.com"
+    },
     {
       "desc": "Manchester United set to relieve Carrick of head coaching duties SEN",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3984,26 +4004,6 @@
       "publisher": "https://www.gazette-news.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Ex-Colchester United midfielder taken to hospital after collapse - Colchester Gazette"
-    },
-    {
-      "desc": "Declan Rice wins Player of the Month for October Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.485423+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbXZEVnV3cVdXQzFjbmw4X3BpZFRlc0M5ZHpxWjdLRC16cTNBM2RpZUFFVnZxczIwNVZyaEdEYVFpMWNvQnBnSXFIR0JPQVVyN3pCdUM5TVY4am1RNVNTN05MRHpFUGNGRE9vV3dPWnNSbDIxamYtanB1MTFPY1c5d18wdUQzQTdzVm9rWVFYTUNBTVVO?oc=5",
-      "published": "2026-11-09T12:23:14+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Declan Rice wins Player of the Month for October - Arsenal.com"
-    },
-    {
-      "desc": "STOCKPORT goalkeeper Oliver Whatmuff left fans stunned with his tiny shin pads. The Manchester City loanee, 19, was in F",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T13:01:01.039152+00:00",
-      "link": "https://www.thesun.co.uk/sport/40965828/stockport-fa-cup-oliver-whatmuff-shin-pads/",
-      "published": "2026-11-09T12:19:16+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Goalkeeper’s tiny shin pads mistaken for ‘slice of CHEESE’ as fans demand ‘automatic red card’"
     }
   ],
   "processed_urls": [
