@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 119575,
-    "output_tokens": 14501,
-    "requests": 20
+    "input_tokens": 126249,
+    "output_tokens": 15226,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2484,7 +2484,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T09:00:53.762158+00:00",
+  "last_scan_at": "2026-11-10T10:01:00.341774+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2506,6 +2506,46 @@
   },
   "news_pool": [
     {
+      "desc": "'The lads were buzzing to see Sir Kenny, we wanted to put on a show for him' Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T10:01:00.344896+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaVI0bXpQZ2NMLVNEX2lpSEhLdHFFRjZQSnJBNm8zaGVGekNIc3hudFd4WHBDV0xxbXg0b21lZHlEeFQ5SnQzOGtmTkxZMEJVRWdaNFRVWkVVZjlSQ0tHdVE0T3FsNG4xcDJxWnc3UmhLMGhSZE53amtLaW9sTVhnaGdfekNnSGtSa2RXVEJIN1Y?oc=5",
+      "published": "2026-11-10T09:27:29+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "'The lads were buzzing to see Sir Kenny, we wanted to put on a show for him' - Liverpool FC"
+    },
+    {
+      "desc": "Romano: Man Utd Hold Talks to Appoint 48-Year-Old Manager Instead of Pochettino GiveMeSport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T10:01:00.344956+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOLXNiV2pNWkRNYnY3aS10a3A4dDlkNHlHZ0l1dWZYbTVRdEF5dVF6NFloNElTX2t3Z2ltRjZXenlSSnhaZWpBSXBUM1dVNmZQc04tVUhOZUk4Q2d0OVpFcUpQWDVwWTVjcVZWbzVDYTNmdjlwSTVOSTE0cUV1RTc2aUlQOHp3YzB1VG5xUzFRVE0zTk5TNHRlZWM1ZEpMWWc?oc=5",
+      "published": "2026-11-10T09:16:48+00:00",
+      "publisher": "https://www.givemesport.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Man Utd Hold Talks to Appoint 48-Year-Old Manager Instead of Pochettino - GiveMeSport"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO went to extraordinary lengths to make sure Luke Shaw was eating the right food during his time at So",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T10:01:00.345006+00:00",
+      "link": "https://www.thesun.co.uk/sport/40975784/mauricio-pochettino-luke-shaw-pizza-manchester-united-southampton/",
+      "published": "2026-11-10T09:12:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd-linked Mauricio Pochettino used to go to Luke Shaw’s house to stop him eating PIZZA"
+    },
+    {
+      "desc": "Fabrizio Romano gives verdict on Barcelona’s chance of landing Arsenal man Just Arsenal News",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T10:01:00.345035+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZHFaZXh3c2xHRlBxZ3pEcldVUkpzQUN1SXp4YndJNlpSQjBHbnoxakUycFFHYkR2X0Z1dXh1MTZNRjRBbjR3dXNvVHk3RFh1RkdWTUUzM0p3d1JJSmVGVEF1UDU4Z2R1ejB6M01YNEVZeXFoSmJEVWZ2VjUwM3pWRk8wNG82dVBERTRpWTRGaHQ2LTdyUHNYNGdCS1VRcXVHazZ4WjRFcm9aa3VZ0gGyAUFVX3lxTE9yQnMxWDl6WHZsTmlpMGMyeEZhbXY2d1pYeFVaNXBJdl9jMUsyQml0MFROb1RyaGxZMEJ2SWVFMTZublgxMHhCenRGZFZzejdTM1pNQWRIeTlLYWNpUmpBcTZrRlNBMzRWWXc0SzRnQWU2Sk1sSWk5V3NLTDZpdWROR25hS3RZNHVKeldpQnJaM0lSUUVVSGZiZ2V3RDkyZHJnaFl6WndwakFNTzkyOTFkNXc?oc=5",
+      "published": "2026-11-10T09:00:00+00:00",
+      "publisher": "https://www.justarsenal.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano gives verdict on Barcelona’s chance of landing Arsenal man - Just Arsenal News"
+    },
+    {
       "desc": "Former Arsenal manager Arsene Wenger is considering standing against Gianni Infantino as a candidate in Fifa's president",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-10T09:00:53.764805+00:00",
@@ -2514,6 +2554,26 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Wenger considers standing against Infantino"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 Lifestyler Track Pants Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T10:01:00.345082+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQUk45TDQ5MFZlX1JrRU5qa294ZG5SRVNIXzNVM2lDclNBVTEwUF9laWRtOFZIOGxlR2pBV01pM1JfWlBjSUdaM3FkcXpWaUE1NGlxWXdzbXBhNzNJNWM1M0FlelBiWGYxWVNFS3B2RXVLYmkzcDJjdXVnUUhIR21YcGwtQTYtRkFRMG5YNFllTXV5VnlfSnNZZ1E4SE1sV0VZWjgwTk92QkJtRi0tQzhBOHhQd3BrcWxxTFhQUGM3dzJIN29vRHZBbUlGd1VjVXdr?oc=5",
+      "published": "2026-11-10T08:41:17+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal adidas 26/27 Lifestyler Track Pants - Arsenal Direct"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 Lifestyler Cap Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T10:01:00.345104+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMmtLZS1rVV9wbXM0d0l2OFp4REtQejZteDI2MGZLRVNxaTBlUEQzOGJVeGFPR3RjUTROZm0xaTVRa0p6UDIwTmdCT3ppUmtReEo2c3FPMmdRVTdNenF0bmFNWFpRLWtiRlRIQm5zUnB4b2pkdzMzY25hR1l3WWFZQ205RTd4ZTJXUmptSnFvN0dpUDZzZ0RBVEx1V1B0N1dZblhZUVd3LXdYUHBWbU1la1l3MHU?oc=5",
+      "published": "2026-11-10T08:41:17+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal adidas 26/27 Lifestyler Cap - Arsenal Direct"
     },
     {
       "desc": "Michael Carrick arrived at Manchester United's training ground early on Tuesday, checking in at 7.15am on the day he cou",
@@ -2534,6 +2594,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano reveals Man Utd move to appoint Eddie Howe with THREE manager ‘candidates’ on shortlist - TEAMtalk"
+    },
+    {
+      "desc": "CHRIS WHEELER AT OLD TRAFFORD: Coming out swinging every game like a boxer on his last legs is great for entertainment, ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T10:01:00.345181+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16268103/Michael-Carrick-Man-Uniteds-Captain-Chaos-reckless-cavalier-style-evidence-lack-preparation-not-way-play-football-writes-CHRIS-WHEELER.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T08:22:53+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside the world of Captain Chaos at Man United: Michael Carrick will not walk away but here's what the players are saying as they fail to r"
     },
     {
       "desc": "A FORMER QPR goalkeeper has revealed the scary ordeal that left him fearing for his life. Paul Nardi currently plays his",
@@ -2564,6 +2634,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Penrice on 'slow rise' from part-time football to Scotland call-up"
+    },
+    {
+      "desc": "IT'S international break time once again, with the Nations League taking centre stage as the group phase reaches a concl",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T10:01:00.345281+00:00",
+      "link": "https://www.thesun.co.uk/sport/40045824/free-bets-football-sign-up-midnite-offer/",
+      "published": "2026-11-10T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Get £30 in free bets for football when you sign up and stake £10 with Midnite"
     },
     {
       "desc": "JOHN ALOISI has been sacked by Chinese side Chengdu Rongcheng following an incredible title race collapse. Former Portsm",
@@ -2714,6 +2794,26 @@
       "publisher": "https://www.leedsallover.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "David Ornstein’s Man United bombshell leaves baffling Leeds United transfer plot in ruin: View - LeedsAllOver"
+    },
+    {
+      "desc": "Thick fog left Notts County fans unable to see parts of the Magpies' FA Cup win over Altrincham.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-10T10:01:00.345602+00:00",
+      "link": "https://www.bbc.co.uk/news/articles/cmqjnjvld27yo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-10T06:00:05+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "The fans at the FA Cup game no-one could see"
+    },
+    {
+      "desc": "The Premier League Fantasy Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T10:01:00.345622+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04NWJyY3BaRloxZWNORnJpZF9FVGEwTHVMMFRfa1p6UEV1aVBBSnNnSDYxUENiXy1IYTdvVS1MX1lsVC0xX2tfOWJ4TkpHajJPanhUYW5tSTNOOHY0ODBDTHNvOWp2ZTgzU0JlVy1XVEE?oc=5",
+      "published": "2026-11-10T05:49:15+00:00",
+      "publisher": "https://fantasy.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "The Premier League - Fantasy Premier League"
     },
     {
       "desc": "Semenyo Injury Update and Return Date: December Target (10 November) The False 9",
@@ -3904,106 +4004,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "2026/27 ePremier League registrations open with bigger prize pool - Premier League"
-    },
-    {
-      "desc": "How to watch FA Cup 2nd round draw on TV for free - channel and start time Yahoo",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.368178+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5CTWJjSjZGREdDVUJUendQN01zVmVESHhuMTRVZFhkU3ZfS28zYzByRHV1TXIyTWFvaG0xNlNGYVlsbUQtS0tNOUlzMEhiNUpueWxjX1ZjVjF5SFBncV82NGRibmY3aVMzeEZRTkJ3UFVvLWtucTFDYi13?oc=5",
-      "published": "2026-11-09T14:58:04+00:00",
-      "publisher": "https://uk.sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "How to watch FA Cup 2nd round draw on TV for free - channel and start time - Yahoo"
-    },
-    {
-      "desc": "Lucy Bronze is one of five England players named in the Fifpro Women's World 11.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T15:00:55.484774+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmkgeg2z4dlwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-09T14:55:32+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Bronze named in World 11 for record ninth time"
-    },
-    {
-      "desc": "In that number | Elland Road Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T16:00:53.765614+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1MbEktemxhenN5TmZNNVJRY09meFBYa04xeWlfaUswbFY0bzd6LWJYcVI0OTBaR3lZYnJZWWg3S2pJWk5pZkluZU50V212M3Nkdi1HeXc4b0lQNEN5T20zZnpBdG1OSjk1RWE3Xy0yMFNxaDdtYTdNRGo1cms?oc=5",
-      "published": "2026-11-09T14:44:38+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "In that number | Elland Road - Tottenham Hotspur"
-    },
-    {
-      "desc": "GREMIO hope to complete a deal that will see them finally own their Arena do Gremio home in Porto Alegre. The Brazilian ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T15:00:55.484801+00:00",
-      "link": "https://www.thesun.co.uk/sport/40969030/gremio-stadium-ronaldinho-brazil-football/",
-      "published": "2026-11-09T14:42:57+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Former world champions agree stadium swap with Ronaldinho’s old club to take over 55,225-seater ground"
-    },
-    {
-      "desc": "Barcelona target 24-year-old Arsenal ace but Fabrizio Romano delivers transfer verdict LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.484830+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQVm9PMG1FSlNPZEc1Y2czY3VhOGVmZmdhelVYbXFxa09DR3dobEp6NDZ0UFNodUpzOHA0Sjg2TTRRdi1GTnRPV2ZHVjlnV0h6cWhocXA3YUdmTUVQRFNncGVzdzVyLW5seTZ0cTcwOXNsUUtBYm9qOWtlNlB2ZEdSNWRNZUlObGlTdFlWRzB6NGtCaUZZbG9MY3V4a1NoRGZFdUM3bjNrVkFYb1ZJLUozcEEwVUlPQ3VUSG9mRnBFSEZnVzBxYkZxN2FHeHlCbG5hOXNmek4xeTRvYnd6RjE3WG1SVUdWQWlzTDFSdmtISnA?oc=5",
-      "published": "2026-11-09T14:40:04+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Barcelona target 24-year-old Arsenal ace but Fabrizio Romano delivers transfer verdict - LiveScore"
-    },
-    {
-      "desc": "ROY KEANE has been tipped as a shock candidate to replace Michael Carrick at Manchester United. The Red Devils’ hierarch",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T15:00:55.484857+00:00",
-      "link": "https://www.thesun.co.uk/sport/40969404/roy-keane-man-utd-next-manager-michael-carrick-replacement/",
-      "published": "2026-11-09T14:38:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Roy Keane tipped for Man Utd job to ‘ruffle some feathers’ as ex-Prem manager says ‘it’s a no-brainer to bring him back’"
-    },
-    {
-      "desc": "Almost every game had a controversial VAR decision in the Premier League this weekend. But how many might go down as err",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T15:00:55.484886+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6n9r93dnr9do?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-09T14:34:19+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Incident-by-incident: Was it a bad weekend for VAR?"
-    },
-    {
-      "desc": "MANCHESTER UNITED have hit a new low. The Red Devils find themselves in the relegation zone ahead of the international b",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T15:00:55.484911+00:00",
-      "link": "https://www.thesun.co.uk/sport/40967824/man-utd-hit-relegation-zone-low-points/",
-      "published": "2026-11-09T14:28:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd hit new low in relegation zone after 10 games as dismal record post-Sir Alex Ferguson is revealed"
-    },
-    {
-      "desc": "MARLI SALMON has been promoted to England’s Under-19 squad for the first time. Salmon, 17, had initially received a call",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T15:00:55.484933+00:00",
-      "link": "https://www.thesun.co.uk/sport/40968909/marli-salmon-england-u19-squad-promotion-arsenal/",
-      "published": "2026-11-09T14:22:19+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal star gets England boost despite suffering nightmare in Fleetwood Carabao Cup clash"
-    },
-    {
-      "desc": "Olivia Smith wins Emirates Goal of the Month Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.484957+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMzVfajJ6WGc1REpsbC1ibnFpaUIycWJFMlg4ckZqYlVza2RKTm9wYi1xWnFtMktZbTZvdC1UemdTYjY1OFVfRXM3T05Ta0ZTaVpZeWwwQ0NHaXRYMUc4SW15bHlHOGZhSzloVFN2VzQ2UHQtaUQ4VmpfUEI5NUFRWUR0eEZ4TzBtZXFzX2xWYw?oc=5",
-      "published": "2026-11-09T14:19:50+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Olivia Smith wins Emirates Goal of the Month - Arsenal.com"
     }
   ],
   "processed_urls": [
