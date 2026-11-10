@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 11,
+        "calls": 12,
         "errors": 0,
-        "requests": 11
+        "requests": 12
       }
     },
-    "calls": 11,
+    "calls": 12,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 73214,
-    "output_tokens": 8030,
-    "requests": 11
+    "input_tokens": 79229,
+    "output_tokens": 8747,
+    "requests": 12
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2449,7 +2449,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T01:00:53.885401+00:00",
+  "last_scan_at": "2026-11-10T02:00:52.785530+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2470,6 +2470,26 @@
     "updated_at": "2026-11-09T22:01:21.442247+00:00"
   },
   "news_pool": [
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T02:00:52.789334+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-10T00:00:20+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
+      "desc": "five-a-side LB Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T02:00:52.789363+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAybU81NU5CMGlJU2lyMUdoQnh6TDlfaUl0Y0dabC1kbnN1MGVOeklfNGo3VTZSbGQ3WE9UTmd4VE1sNDI5clhpR0hIQjg2bTA2OWt5SnRRTmgzX2lWdlR4cHNhaVZOY0lWdDB2bQ?oc=5",
+      "published": "2026-11-09T23:57:16+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "five-a-side LB - Premier League"
+    },
     {
       "desc": "CHRIS WHEELER: Carrick's position has become precarious after United dropped into the relegation zone despite salvaging ",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -3949,26 +3969,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Alisson, 34, reveals he wants to STAY at Liverpool after rolling back the years against Crystal Palace... but is extending the goalkeeper's "
-    },
-    {
-      "desc": "IAN LADYMAN: At places like Manchester United, Crystal Palace, Sunderland, Newcastle and Spurs there is anxiety about ex",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-09T12:10:34.011393+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-09T12:00:24+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Xabi Alonso is failing on what he was hired to break at Chelsea - and football's most vanilla pundit gives out of his depth Michael Carrick "
-    },
-    {
-      "desc": "Liverpool goalkeeper Alisson Becker wants to stay at the club beyond the end of the season, when his current contract is",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T12:05:41.240528+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cw62ypepq2m7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-09T12:00:11+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Alisson wants to sign new Liverpool contract"
     }
   ],
   "processed_urls": [
