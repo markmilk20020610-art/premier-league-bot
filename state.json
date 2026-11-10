@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 13,
+        "calls": 14,
         "errors": 0,
-        "requests": 13
+        "requests": 14
       }
     },
-    "calls": 13,
+    "calls": 14,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 85207,
-    "output_tokens": 9477,
-    "requests": 13
+    "input_tokens": 91427,
+    "output_tokens": 10189,
+    "requests": 14
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2484,7 +2484,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T03:01:03.226169+00:00",
+  "last_scan_at": "2026-11-10T03:14:49.683283+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2814,6 +2814,26 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Listen to Monday Night Club"
+    },
+    {
+      "desc": "Bompastor on latest team news and needing to be at our best against Hacken | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T03:14:49.685683+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZC1qTEl5Zm5zR2pLVnFpeXJrR3lvR09xalBtNF9JNWVXUlBXRnFWYnVmdmJOZVppVE43M3F2TThSUmxpcXhWVHBzNTNmVE9CTmpVb2tsVnRfUGh3TXRqWWU1TUZOTnBVM1VPTlNhS3BwOWRHOFgxOERHeV9RVWxaRGRkUDlGdVhJdVRRamNJcjF3ajNDcFlYUzNwOU5HYkNtejdJdEUySzBfeDdpRXpqQzFHVkhELXM?oc=5",
+      "published": "2026-11-09T21:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Bompastor on latest team news and needing to be at our best against Hacken | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Brighton 2 Brentford 0: 10-man Bees beaten on the south coast Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T03:14:49.685701+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QZ1pqQmxDMGtkZGVBNUNWVEprdVpnQndvX1JMOWdVazhvVFhYeHBINllUYzdfOWhSYnlWRW81TFZYRm9BYzFIWllORGJDUFpERWZUMDhvclg?oc=5",
+      "published": "2026-11-09T20:55:09+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Brighton 2 Brentford 0: 10-man Bees beaten on the south coast - Premier League"
     },
     {
       "desc": "Barcelona target Arsenal defender for January move but Romano casts serious doubt on deal https://aftv.co.uk/",
@@ -3984,26 +4004,6 @@
       "publisher": "https://shop.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "- Man City Shop"
-    },
-    {
-      "desc": "FA Cup second round draw LIVE stream, updates and ball numbers TNT Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T19:00:55.157088+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPaHRHcEN4X3VCaHFEVV93Mng5ZmlrQ0prRURneUY4ckpNem81ck5OLUVsa1NTd1lMMWhETlQzVDkxVDdJRVZ5cnBySkFIRTRkMVV6NllTZWxlT3o5dURXZHFmT1R2NG52TTA5ZU5MTjFLYlozeGdBVmZiMmxjckptbHYtWVNpdkt3ckgxRWlBdEdnb0ZhN0RBcEUtMmtCY040NXRZbDNVQmZVVVhjTkl6Y2xvMXBBc2RRRE1QdXp3WEh2UVRSR3MzUEt4OFREQnc?oc=5",
-      "published": "2026-11-09T12:13:00+00:00",
-      "publisher": "https://www.tntsports.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA Cup second round draw LIVE stream, updates and ball numbers - TNT Sports"
-    },
-    {
-      "desc": "Villa clash makes Premier League history Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.017514+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRm9ESlU5QzNkY1ZDWlpDdnhtU1NFZmhzSTc0SDBBS2kzTk9nMHY3RU5BRTM2czJwNmNVbjBBbUs0ajlQVUkya2sxcU44WHQ3V1ZUUjBic1ZaN2d6ekVPLXE2VFNGZDkwdkdHNW9WNVlHMEx2R3ZmTTc3SlV1cEdXYUFYek0tMlRfczEtM3V5NmJCUTFPUHI0?oc=5",
-      "published": "2026-11-09T12:08:33+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Villa clash makes Premier League history - Manchester United"
     }
   ],
   "processed_urls": [
