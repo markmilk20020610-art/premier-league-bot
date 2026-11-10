@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 23,
+        "calls": 24,
         "errors": 0,
-        "requests": 23
+        "requests": 24
       }
     },
-    "calls": 23,
+    "calls": 24,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 140157,
-    "output_tokens": 17007,
-    "requests": 23
+    "input_tokens": 146999,
+    "output_tokens": 17539,
+    "requests": 24
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2519,7 +2519,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T11:24:15.594792+00:00",
+  "last_scan_at": "2026-11-10T12:01:03.774359+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2540,6 +2540,56 @@
     "updated_at": "2026-11-09T22:01:21.442247+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CHELSEA are reportedly lining up a January transfer swoop for Martin Zubimendi. The Blues are looking for midfield reinf",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T12:01:03.778550+00:00",
+      "link": "https://www.thesun.co.uk/sport/40977244/chelsea-target-martin-zubimendi-transfer/",
+      "published": "2026-11-10T11:56:08+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea ‘eye Martin Zubimendi transfer in January’ after Arsenal knocked back summer bid from Xabi Alonso"
+    },
+    {
+      "desc": "Bournemouth defender James Hill is added to the England squad for Thursday's Nations League match against Croatia at Wem",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-10T12:01:03.778576+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckjrwrggjlryo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-10T11:41:27+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Hill gets first England call-up as Konsa cover"
+    },
+    {
+      "desc": "MANCHESTER United are expected to point Michael Carrick in the direction of the job centre any time now. His future is s",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T12:01:03.778614+00:00",
+      "link": "https://www.thesun.co.uk/sport/40775098/eddie-howe-nagelsmann-conte-hurzeler-man-utd-boss/",
+      "published": "2026-11-10T11:33:26+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How contenders to be next Man Utd boss compare as Mauricio Pochettino, Eddie Howe and Antonio Conte all in running"
+    },
+    {
+      "desc": "Liverpool transfer news as Endrick makes huge admission about leaving Read Liverpool",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T12:01:03.778630+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSmFqT2E3LTREZjc1RmIwRjFsREs4TE9KSWxtSHEtTXdxeGpBRmViWG9kQWRPZ3lucWRrNDlBR3p0NEp0WlRUc19BRm1YMGl0My1qMDNTSHBVdHNSWk9hMlFaWl8xVFJsci1hdnc3TkxwVnAwTXp1YkZYSTNXRzJxc0FnQVJrbFhKMXRHQ3U4V0FjMHBGVTdKSzBhQks5WmNWRnQxdGZkMDVnZDRZ?oc=5",
+      "published": "2026-11-10T11:32:49+00:00",
+      "publisher": "https://readliverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Liverpool transfer news as Endrick makes huge admission about leaving - Read Liverpool"
+    },
+    {
+      "desc": "MANCHESTER UNITED chiefs will meet with co-owner Sir Jim Ratcliffe to ratify the sacking of Michael Carrick. United chie",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T12:01:03.778643+00:00",
+      "link": "https://www.thesun.co.uk/sport/40978275/man-utd-ratcliffe-sack-michael-carrick-pochettino/",
+      "published": "2026-11-10T11:29:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd chiefs meeting Sir Jim Ratcliffe to finalise Michael Carrick axe with Mauricio Pochettino frontrunner for job"
+    },
     {
       "desc": "Romano rates Arsenal chances of signing mesmerising £67m winger as RB Leipzig decide on January sale TEAMtalk",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2659,6 +2709,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why has Tom Brady quit Birmingham City?"
+    },
+    {
+      "desc": "Inside | Behind the scenes and new angles from Liverpool's win at Crystal Palace Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T12:01:03.779065+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa2NoYWJpX0VBNkpkZjlBeGlwMzZNbEtDUTk0NkhlSmlVMGxFLWU1TUU3alBrdl94UEEtQUQzb3E3OG5wZzhXYV9NS25IQXJXMm1TSE0wMGtHTXZUSUtyM3RyeUNkUU1aaU04c243VDMzbWlqdHF5TUZZQjl4LVpxSzZYVTNMN19FUE56TEZGNmhEZmc5bmpNbQ?oc=5",
+      "published": "2026-11-10T10:17:41+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Inside | Behind the scenes and new angles from Liverpool's win at Crystal Palace - Liverpool FC"
     },
     {
       "desc": "MAURICIO POCHETTINO has emerged as a serious contender to replace Michael Carrick at Manchester United. And the former T",
@@ -2929,6 +2989,16 @@
       "publisher": "https://utdreport.co.uk",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "“Really close now” – Romano delivers latest updates on Carrick & Pochettino as Man Utd brace for change - utdreport"
+    },
+    {
+      "desc": "Spurs Women vs Brighton Women | Full Match | 2026-27 Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T12:01:03.779793+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Cdm52SVZEeTRKNDBENjRoMkJjX081T05mU3JRVlVaVXlwdzRtcEJsZE1aS0M4cG0xdUVLcTlZbjRhdFhKR09ldkRjbUJISFdnWTVvVXZHeFd4RVYtbF9jaURua2d3ajg?oc=5",
+      "published": "2026-11-10T07:44:40+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Women vs Brighton Women | Full Match | 2026-27 - Tottenham Hotspur"
     },
     {
       "desc": "FORMER Napoli star Diego Demme fought his way from the depths of German football into MMA via a triumphant stint in Seri",
@@ -3969,76 +4039,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Harry Kane left OUT of World XI as Fifpro snub England captain just two weeks after Ballon d’Or win"
-    },
-    {
-      "desc": "Dorgu named Player of the Match after Villa draw Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T20:55:09.445297+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWFE2N3hnVi1UUjRJZHR5Sjd5OEZaR1NxOWk4UDl1R01IWnJLcThVTEMtUHFVaXpTNDBCMnRBTER2ei1zRnlMcm1WT0hhRmF4Q0tRbWtzQWdIUU51UFQ5cVFRLVN6N1ZXM1NlblljSUdNQThTVWY3SllBcllHOEl1X2JYck9mSURWa0l5U040akczN1cxOFJvZG54M0dvNXctdmdBSHlfdXQySm5McTI4VWdtWnI5eU1B?oc=5",
-      "published": "2026-11-09T16:39:31+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Dorgu named Player of the Match after Villa draw - Manchester United"
-    },
-    {
-      "desc": "GREUTHER FURTH fans have voted to change the club's name ahead of next season. From the 2027-28 campaign, the 2. Bundesl",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T17:00:58.367714+00:00",
-      "link": "https://www.thesun.co.uk/sport/40970766/bundesliga-name-change-greuther-furth/",
-      "published": "2026-11-09T16:34:24+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Former German champions announce change to TEAM NAME after fan vote"
-    },
-    {
-      "desc": "DELE ALLI has apologised to Tottenham fans by burning an Arsenal shirt after his lost bet. The 30-year-old ex-England mi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T17:00:58.367735+00:00",
-      "link": "https://www.thesun.co.uk/sport/40969914/dele-alli-apologises-arsenal-shirt-spurs-ishowspeed/",
-      "published": "2026-11-09T16:29:05+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Dele Alli apologises to Spurs fans after wearing Arsenal shirt – but makes amends by BURNING it"
-    },
-    {
-      "desc": "Mourinho Wins La Liga October Manager of the Month 조선일보",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.367760+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNTzQ5aEJJbHprV1NYbFR6WHN5MjhyN2pyS3c2cU4xdW9MeWljMENaU1BmNG5yeHV1MDhSUmFnN3BqMFVNTmlFNkU5V191Yy0tcm4yeW85ZndoODdHakpHT3lsemZoNEczRVZkUFRvdDBaeGtzdkVBWUl5QnFKM1lWX3l1VkRodw?oc=5",
-      "published": "2026-11-09T16:18:08+00:00",
-      "publisher": "https://www.chosun.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Mourinho Wins La Liga October Manager of the Month - 조선일보"
-    },
-    {
-      "desc": "Watch U18s highlights: Liverpool 2-1 Ipswich Town Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T20:55:09.445364+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPX1ZiM19zNzVLMEZXZTN2WUtGbHBRSHNpSG55VmFhZ19ZVDhwblp3VWlqZlRoWnpkSExGZXFWTVpfMWtSeEcwbGlqdC11YmpXV3NzS081WHlDZVJzbkQ1TkF1N1g1aFZoS3gzQ3pYSDZxd0RBVjdTdWxkaVlXcTVFZlBPSld1ZURT?oc=5",
-      "published": "2026-11-09T16:09:24+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Watch U18s highlights: Liverpool 2-1 Ipswich Town - Liverpool FC"
-    },
-    {
-      "desc": "Chelsea international call-ups and schedules for November 2026 | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016677+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeVE2bWhNZUhkemtLVHl6NFZScFBJZGNRZVJhVHEzaDF0alZoSENMM2NFZzJFdDBtdE9jbmRoRU9LWDVmYmFPRm9Qb0ZHbDZ6UjJnazN5elJ1UXhYdDlPd29fcWtudHFBZEdiVEsyMVRHY3lRdTIzaHJvYXBpbXo3cmcxV1BXbGRTYnItSW5FTDhIbXU1X1hMQ0M5VVJkeFp2ZUw5TTk3UQ?oc=5",
-      "published": "2026-11-09T16:05:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea international call-ups and schedules for November 2026 | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T19:00:55.156726+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43RGFYMnIxYVNsN0FtWHY5VHRoNUFXLXJaMFVzVzdZQTh6NlZwZlFNNXY2R1o0cGlJQkp6bWxwODZpWWlZdkg4d1oyV3Azc1RXbUtmVg?oc=5",
-      "published": "2026-11-09T16:02:33+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
     }
   ],
   "processed_urls": [
