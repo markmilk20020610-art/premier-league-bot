@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 22,
+        "calls": 23,
         "errors": 0,
-        "requests": 22
+        "requests": 23
       }
     },
-    "calls": 22,
+    "calls": 23,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 133251,
-    "output_tokens": 16308,
-    "requests": 22
+    "input_tokens": 140157,
+    "output_tokens": 17007,
+    "requests": 23
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1353,6 +1353,41 @@
       "title": "哈兰德父亲首度回应曼城财务违规判决与儿子未来",
       "updated_at": "2026-10-31T21:48:29.792545+00:00"
     },
+    "78e97bfc9ce8": {
+      "article_title": "Man Utd will have to pay MILLIONS to land Mauricio Pochettino as USA manager’s buyout clause is revealed",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "46a8f9c83d426168",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 109
+        }
+      ],
+      "created_at": "2026-11-10T11:24:22.622047+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "c14bc6fa2982ea27",
+      "event_id": "78e97bfc9ce8",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-10T11:24:22.622047+00:00",
+          "origin": "created",
+          "title": "Man Utd will have to pay MILLIONS to land Mauricio Pochettino as USA manager’s buyout clause is revealed",
+          "url": "https://www.thesun.co.uk/sport/40976073/man-utd-pay-millions-for-mauricio-pochettino"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40976073/man-utd-pay-millions-for-mauricio-pochettino",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 109,
+      "title": "曼联换帅传闻：波切蒂诺成候选，需支付买断费",
+      "updated_at": "2026-11-10T11:24:23.268201+00:00"
+    },
     "7a1974303495": {
       "article_title": "Unai Emery storms down Old Trafford tunnel before full-time as Aston Villa blow two-goal lead",
       "attempts": 1,
@@ -2484,7 +2519,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T11:01:00.363463+00:00",
+  "last_scan_at": "2026-11-10T11:24:15.594792+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2505,6 +2540,46 @@
     "updated_at": "2026-11-09T22:01:21.442247+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Romano rates Arsenal chances of signing mesmerising £67m winger as RB Leipzig decide on January sale TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T11:24:15.597291+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOc0U2alY3SFBkU3VZTlcwbF9Bd2V2dTlpRW5nQzhfbjFNRmRqbnZXR2RhVHdRSjNoRklUNG44Z0ZkOFAtZm80M1JSQUFxdjhieHh1NFVRODZEN2d0QktiSWZXcDN0ZU9VbkplRVFFcEFZN1FISmNlRkMyUERwMFBrOXRsZDhOTjdDUUlpZnFiSDB3dEFONFdLNFJXSGJzcE5qZWF2S0xXUUVrWWhxZVRQQXVjTzBOM0ViZXc?oc=5",
+      "published": "2026-11-10T11:21:37+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano rates Arsenal chances of signing mesmerising £67m winger as RB Leipzig decide on January sale - TEAMtalk"
+    },
+    {
+      "desc": "MICHAEL CARRICK was sitting at the front of the aircraft and on his own, scrutinising his tactics on a notepad, during M",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T11:24:15.597318+00:00",
+      "link": "https://www.thesun.co.uk/sport/40975992/michael-carrick-man-utd-reign-fell-apart/",
+      "published": "2026-11-10T11:13:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Carrick’s Man Utd reign fell apart from slipping standards to petty backstabbing as proud 148-year record falls"
+    },
+    {
+      "desc": "Fabrizio Romano rules out Barcelona negotiations for Chelsea defender: 'Nothing is happening' Barca Universal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T11:24:15.597341+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSktWSkxFRG5Xd19BMEZjVmRpc211X1JVdklyaXR1ek45RElJa05YUm5ab0phZFlUOUtmcmVHckVyNzN2WnljV0dfSi1HMDFSLXVueTYzU0thS2xSMlhZNWhmTU81UVp4cnY0eTRIa0xtVkROYXUxSjJWbXRiM0dvRVBTcmhfMmZHbUNHNzVMYzZ4aFZGTVRJYklFMGhDZjhvS2VvTUNNNktTajJVMDBQTUpaYU5WM1lXZlE?oc=5",
+      "published": "2026-11-10T11:07:18+00:00",
+      "publisher": "https://barcauniversal.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano rules out Barcelona negotiations for Chelsea defender: 'Nothing is happening' - Barca Universal"
+    },
+    {
+      "desc": "NOT even Florian Wirtz's (£4.8m) loudest cheerleaders would claim he's been at his best this season. But the Germany int",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T11:24:15.597384+00:00",
+      "link": "https://www.thesun.co.uk/sport/40976807/florian-wirtz-assists-fantasy-premier-league-liverpool-stats/",
+      "published": "2026-11-10T11:03:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Surprised? No Dream Team player has registered more assists than Florian Wirtz this season"
+    },
     {
       "desc": "Man Utd: Ratcliffe 'advised NOT to appoint' leading manager target as Romano reveals new shortlist Football365",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2614,6 +2689,16 @@
       "publisher": "https://www.lboro.ac.uk",
       "source": "https://www.thefa.com/rss",
       "title": "University commits to landmark Equal Sport pledge | Media Centre - Loughborough University"
+    },
+    {
+      "desc": "Crystal Palace players and club chiefs have grown frustrated over Pierre Sage's training methods - and the 47-year-old w",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T11:24:15.597580+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16276215/Crystal-Palace-Pierre-Sage-sacked-training-assistant.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T10:10:40+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Crystal Palace will sack Pierre Sage after disastrous 16-game spell - this is how his reign fell apart over late, intense sessions, dinner a"
     },
     {
       "desc": "Xaver Schlager has been quietly impressive for Nottingham Forest this season but what was missing was that big moment. I",
@@ -2814,6 +2899,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Get £30 in free bets for football when you sign up and stake £10 with Midnite"
+    },
+    {
+      "desc": "Nathalie Bjorn on why facing Hacken will be 'no walk in the park' | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T11:24:15.597868+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX1VRdXZsY2VCVm5WUzg4OHh5VE9Da0tsYlQwRkJQRDNPTW9FTzRyaF80UEtVLW9GWGhvN0ZxdVJMWG1kRl9Id0RLUGp6bHZfc2FITE52V1BvcHFnZkpSekJ5RXAxOU9pd3B2bzR6TEN4cThFcm0xbkFsc09BU09Dc0FBT1Qxc0RDdlUzNlRWQzczMGNrM1dTYUFRMlJkMnZVVWctb2xueXU?oc=5",
+      "published": "2026-11-10T08:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Nathalie Bjorn on why facing Hacken will be 'no walk in the park' | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "JOHN ALOISI has been sacked by Chinese side Chengdu Rongcheng following an incredible title race collapse. Former Portsm",
@@ -3944,66 +4039,6 @@
       "publisher": "https://tickets.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "- Manchester United"
-    },
-    {
-      "desc": "ENGLAND return to Nations League duty on Thursday when hosting Croatia at Wembley. Register an account with BOYLE Sports",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T17:00:58.367782+00:00",
-      "link": "https://www.thesun.co.uk/sport/40968691/england-croatia-boylesports-free-bets-boost/",
-      "published": "2026-11-09T16:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England vs Croatia: Bet £10, Get £30 free bets + 25% Bet Builder win boost | BOYLE Sports"
-    },
-    {
-      "desc": "Haaland voted into 2026 FIFPro World 11 Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.367805+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNDZROUJ0V28xWk5RV0l3TkZIMzVReDdiUkRpMW9BWGNKb0JnZ2RqZ0lkaXpSTnFyanF5VXgyVE5iZFRhMS1TTlhUaklPMU9US2cwSk9MV3RGc3l2T0RsV2paSmdvX2VQWU5fTE85emFYd3MzMG9sTmVwR19URUFvVV9NWHA?oc=5",
-      "published": "2026-11-09T16:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Haaland voted into 2026 FIFPro World 11 - Manchester City FC"
-    },
-    {
-      "desc": "VOTE: Who was the best player of Matchweek 10? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T19:00:55.156750+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBBcWlNNnJCT2xsTTBuSU43Q2FfZGQ3bTRPc0lvMVBjbVdKMC00dFJ5MmdIcjBVdU03SmRURTlFNng4WWgzTHFHNnQ3THlZOE9fT1Z3WFlyN0M?oc=5",
-      "published": "2026-11-09T15:59:26+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "VOTE: Who was the best player of Matchweek 10? - Premier League"
-    },
-    {
-      "desc": "Alisson Becker shortlisted for Premier League Player of the Matchweek award Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T19:00:55.156764+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ3VaS0dqR3Blck5BVGRYeC1UUFRPWkN5eXdoWVZDUFNneVJONUpVS0pmWUhYMHBZRFZTS1pnSllad1RtZnNaNTlEamlMVlVtOWRxOW5ydURWUnV2dGhsMXZrSUhrUlE5ZkU3MTFwWUlNWUtRYk9yUHlyTENSTGxjQms4Wkw2cjMtbVNnVlVfSDVfX0tSclhHRkU4UnNXVWthM1E?oc=5",
-      "published": "2026-11-09T15:58:33+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Alisson Becker shortlisted for Premier League Player of the Matchweek award - Liverpool FC"
-    },
-    {
-      "desc": "WHEN Matheus Cunha whipped his top off to celebrate scoring a late-winner against Roma, he exposed a WHOOP band wrapped ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T16:00:53.765431+00:00",
-      "link": "https://www.thesun.co.uk/sport/40967616/whoop-band-cristiano-ronaldo-christmas/",
-      "published": "2026-11-09T15:56:46+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "The Cristiano Ronaldo-backed fitness band worn by England stars that could make ideal Christmas present"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.367884+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-09T15:49:08+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
     }
   ],
   "processed_urls": [
@@ -4090,7 +4125,8 @@
     "https://www.thesun.co.uk/sport/40966075/unai-emery-interview-man-utd-sky-sports-video",
     "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html",
     "https://www.thesun.co.uk/sport/40967824/man-utd-hit-relegation-zone-low-points",
-    "https://www.dailymail.com/sport/football/article-16279525/Tom-Brady-QUITS-Birmingham-City.html"
+    "https://www.dailymail.com/sport/football/article-16279525/Tom-Brady-QUITS-Birmingham-City.html",
+    "https://www.thesun.co.uk/sport/40976073/man-utd-pay-millions-for-mauricio-pochettino"
   ],
   "s_overflow": {},
   "schema_version": 4
