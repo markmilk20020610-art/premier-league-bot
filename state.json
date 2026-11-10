@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 19,
+        "calls": 20,
         "errors": 0,
-        "requests": 19
+        "requests": 20
       }
     },
-    "calls": 19,
+    "calls": 20,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 113948,
-    "output_tokens": 13658,
-    "requests": 19
+    "input_tokens": 119575,
+    "output_tokens": 14501,
+    "requests": 20
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2484,7 +2484,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T08:00:57.078165+00:00",
+  "last_scan_at": "2026-11-10T09:00:53.762158+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2506,6 +2506,66 @@
   },
   "news_pool": [
     {
+      "desc": "Former Arsenal manager Arsene Wenger is considering standing against Gianni Infantino as a candidate in Fifa's president",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-10T09:00:53.764805+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwj343pep7zdo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-10T08:53:26+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wenger considers standing against Infantino"
+    },
+    {
+      "desc": "Michael Carrick arrived at Manchester United's training ground early on Tuesday, checking in at 7.15am on the day he cou",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T09:00:53.764838+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16280515/michael-carrick-manchester-united-sacking.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T08:34:21+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Michael Carrick arrives early to face his fate: Man United manager could be sacked TODAY - as he drives into training at 7.15am... with Maur"
+    },
+    {
+      "desc": "Romano reveals Man Utd move to appoint Eddie Howe with THREE manager ‘candidates’ on shortlist TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T09:00:53.764863+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSFN1VG1wR3ROSTJzem5lcTQ3ZlB4eUJadEZwaXlhQnNESDFmbkpKVm90WFU4a1RVYURESDBPTDRxX0lRZXhxV0pYUzJQZ3J5WTZWcl91LU9CTnZEa3N2TXNVN0J5M082RExEWlUtSjhHcUt5TjdSb1pNVF9ZOFR4ZXhjVE05THBtdUsxUGNYaUJlMXFOT0JOU1lYdnplZVpJRzB0N19RZ0pXWjZYLXc4S2FqSG1SOHRoTUV3WVdYN0JnZnd2ZnBjN0VBazJwM3dfNmw1ZkMyUQ?oc=5",
+      "published": "2026-11-10T08:31:18+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano reveals Man Utd move to appoint Eddie Howe with THREE manager ‘candidates’ on shortlist - TEAMtalk"
+    },
+    {
+      "desc": "A FORMER QPR goalkeeper has revealed the scary ordeal that left him fearing for his life. Paul Nardi currently plays his",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T09:00:53.764922+00:00",
+      "link": "https://www.thesun.co.uk/sport/40975285/ex-qpr-goalkeeper-nardi-horror-chronic-illness-battle/",
+      "published": "2026-11-10T08:11:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘I thought I was going to die’ – Ex-QPR goalkeeper reveals horror chronic illness that saw him lose 1st 8lbs"
+    },
+    {
+      "desc": "Carlos Vicens lands Lyon managerial job just three weeks after Braga sacking to replace Sporting-bound Paulo Fonseca Liv",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T09:00:53.764962+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNU2R3VHRITzctMVRRTjhhZ24waEVFQkdRRGFrb0hwaGZFYURXa3lWaHhyTkpaM0ZDWTRJbmp6dGtabjFFSU1fb3FHUjB4U21STVVyTzdEN0tVdllzQlYycUVDaTRkOFZwWWRYNXZJS0dvN3A1WHVMX195aHdoMVVkeHlEWUVMbUFYZTYxVVY3MjJfZmloSjc4T1I3b1hYYW5wQmctS1JVS2NRY2FQOHRjQk9qLS1vaEcyMFNXVlJvWXVjV253T1ZKeEZzbXlHMjZMN1lXVExuYW1BTHBDeG14Z3dkeFpWZ2pzM01BZ255Y3g2djlrclNZSlk5WUg5MU0?oc=5",
+      "published": "2026-11-10T08:09:09+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Carlos Vicens lands Lyon managerial job just three weeks after Braga sacking to replace Sporting-bound Paulo Fonseca - LiveScore"
+    },
+    {
+      "desc": "\"I always thought if I kept playing and kept performing it would come. Thankfully it has.\"",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-10T09:00:53.764978+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13608837/james-penrice-scotland-and-rangers-defender-on-his-slow-rise-from-part-time-football-to-international-call-up",
+      "published": "2026-11-10T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Penrice on 'slow rise' from part-time football to Scotland call-up"
+    },
+    {
       "desc": "JOHN ALOISI has been sacked by Chinese side Chengdu Rongcheng following an incredible title race collapse. Former Portsm",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-10T08:00:57.079991+00:00",
@@ -2514,6 +2574,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ex-Premier League star sacked in 26-word statement after blowing title despite having 14-point lead with 5 games left"
+    },
+    {
+      "desc": "“Really close now” – Romano delivers latest updates on Carrick & Pochettino as Man Utd brace for change utdreport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T09:00:53.765014+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdDV4d19IZjJQS29jenJ4N2w5R1BvaTRpNWFxa2ZiV3Nla21YaUtqbXpMLTMzYTR2UGpLZzBKZXBxd2YyUDJqQUtaNmUxZzMyTVVBbGlMM1BqeDlfVTlMTV9MZjhLcG5zbDNrRGVQcVVKWG1WbEJWRmxUbkROb0hpLUhMa1E2SWZhc2NZ0gGQAUFVX3lxTE1vVmNGUkEtVS0tTnYtLUlsMUM1Zm53azRpcVAxUzVMMGZPOTNmejlVVEVnMFlrblBQakJ5akhzODFiX1A3emx0Ykx0VjJFbTdxbU0wdkhfUGNlcndZVHU2azdxZlIxS1RpRGZJQWRyMi1GUTRMYmpnZGdwdllmd05VcDFkVEJXMThKMGJKYlR0Xw?oc=5",
+      "published": "2026-11-10T07:45:16+00:00",
+      "publisher": "https://utdreport.co.uk",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "“Really close now” – Romano delivers latest updates on Carrick & Pochettino as Man Utd brace for change - utdreport"
     },
     {
       "desc": "FORMER Napoli star Diego Demme fought his way from the depths of German football into MMA via a triumphant stint in Seri",
@@ -2556,6 +2626,26 @@
       "title": "Gyokeres and Merino Futures: BBC Gossip Cites AS Report on Arsenal Finances - The False 9"
     },
     {
+      "desc": "IAN LADYMAN: With a better manager - a better coach - in charge of the current team, United would be in the top half of ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T09:00:53.765123+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16279715/Man-United-drained-clout-reputation-weak-pitch-writes-IAN-LADYMAN-set-fail-Michael-Carricks-replacement-realise-soon-enough.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T07:20:01+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "What Man United, with their seemingly addictive habit, must do now once Michael Carrick is sacked: IAN LADYMAN on Sir Jim Ratcliffe's trail "
+    },
+    {
+      "desc": "Critic tells officials to crack down on 'extreme provocation' NST Online",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T09:00:53.765142+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUnNOVXpiRWhQdTRMZXZ1RmtRYkNOU29JNWhteXRINDNIZ0xlVHJBRlJpZDBxSGhaM2Y2VDFZa0ZLZF92Um02ek91cDUtUE5TTi0wbFlaaFRxMTI0VGozVm1tWWVUajRaUjBYQjgta3dBWVhiT3FBZWZwLVdTTXB5TlVhY3EtX21zemdPOHo5ZTBlbk5kTnFPZ2FGUS11MWxtUTJqQzQ4azNkNjBtS190OTRB0gGyAUFVX3lxTE9Sc05VemJFaFB1NExldnVGa1FiQ05Tb0k1aG15dEg0M0hnTGVUckFGUmlkMHFIaFozZjZUMVlrRktkX3ZSbTZ6T3VwNS1QTlNOLTBsWVpoVHExMjRUajNWbW1ZZVRqNFpSMFhCOC1rd0FZWGJPcUFlZnAtV1NNcHlOVWFjcS1fbXN6Z084ejllMGVuTmROcU9nYUZRLXUxbG1RMmpDNDhrM2Q2MG1LX3Q5NEE?oc=5",
+      "published": "2026-11-10T07:05:23+00:00",
+      "publisher": "https://www.nst.com.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "Critic tells officials to crack down on 'extreme provocation' - NST Online"
+    },
+    {
       "desc": "EMMA LOUISE JONES posted a concerning update to her Instagram page. The popular presenter uploaded a snap of herself in ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-10T08:00:57.080096+00:00",
@@ -2564,6 +2654,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "BBC presenter Emma Louise Jones in hospital as she posts health update from her bed"
+    },
+    {
+      "desc": "Street Reds Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T09:00:53.765184+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1UVEgzZ0JxWnRwdWEzRG5PdkZhMkNwZUVicngydzEzYW9qUTNGVXFNV0pfYm54Q2dLQ1Z1c0NUZV9panFCN2VUcW1EOEpkMUNXaHhfOUdmMzM1dThIUWszWDk5VjU?oc=5",
+      "published": "2026-11-10T06:59:51+00:00",
+      "publisher": "https://fxp-foundation.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Street Reds - Manchester United"
     },
     {
       "desc": "STEVEN GERRARD was left stunned by Manchester United CEO Omar Berrada's celebration on Sunday. The Red Devils salvaged a",
@@ -2636,6 +2736,16 @@
       "title": "Transfer News Today: Carrick Report, Maatsen Deal, Rice Talks (10 November) - thefalse9.com"
     },
     {
+      "desc": "As reported by the Daily Mail, Michael Carrick is facing the sack with United bosses leaning towards hiring a new coach ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T09:00:53.765354+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16279819/usmnt-mauricio-pochettino-manchester-united-job.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T04:51:56+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "USMNT fans in meltdown as head coach Mauricio Pochettino emerges as frontrunner for Manchester United job"
+    },
+    {
       "desc": "Manchester United set to relieve Carrick of head coaching duties SEN",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-10T03:01:03.229884+00:00",
@@ -2644,6 +2754,16 @@
       "publisher": "https://www.sen.com.au",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Manchester United set to relieve Carrick of head coaching duties - SEN"
+    },
+    {
+      "desc": "EXCLUSIVE INTERVIEW: Every sacked manager has a sob story or feels harshly treated - but few dismissals have felt as bon",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T09:00:53.765413+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16277685/andy-woodman-bromley-southgate-sacking.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T02:00:49+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'I feel betrayed, misled, in shock. It was a stupid thing for them to do': ANDY WOODMAN relives the moment he was 'brutally' sacked by Broml"
     },
     {
       "desc": "Chelsea Maxence Lacroix Jerseys Official Chelsea Store",
@@ -3884,126 +4004,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Olivia Smith wins Emirates Goal of the Month - Arsenal.com"
-    },
-    {
-      "desc": "Newport County rounds on 'unacceptable' fan behaviour after latest allegation BBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.484983+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zV3EzZzlUWHpKRlJEQmk4c1lMdGJzT0N3UWhCUmVRbFE1OHhuRWVoVV9HVG9OYXFIYVdaSGVaQjRtSlZENEMzazEwNWZKRWxjcnk0LXdPLVBEUG82S1FoLWZKbWJvS1Zremow?oc=5",
-      "published": "2026-11-09T14:16:18+00:00",
-      "publisher": "https://www.bbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Newport County rounds on 'unacceptable' fan behaviour after latest allegation - BBC"
-    },
-    {
-      "desc": "Adam and the boys leage Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T22:00:48.746792+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RVEtJSkR4M2l4N3FObk1XNVpERmItSWZxR1FkRXhrU3JaNkltN1dKYWhEYnpkMlFzQ0dvNnNkZ3B6YUZtNk9oWEUxMElPSEJiTDRQcWw0dGZhZnA5aDRISE5JTkxEMzlValBzY3FhZWowUQ?oc=5",
-      "published": "2026-11-09T14:05:44+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Adam and the boys leage - Fantasy Premier League"
-    },
-    {
-      "desc": "OLIVER HOLT: The only chance I got to hold one of the Glazers to account for what they were doing to United came in Tamp",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-09T17:00:58.368311+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16277683/Manchester-United-supporters-Glazers-walkout.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-09T14:02:44+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "OLIVER HOLT: Man United fans' anti-Glazer walkout flopped because owners don't care - but it's not impossible to oust them. Here's what they"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.485006+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVVFZcGxFaXVOcFBObHZTaWcteEtjLUxYQXpxV2ZoRFduNnJjdktuVzNGSVlNeU1rWllXMjB2eTFGUW1jd1VHREk1LS1UWmZuYkJsRERIajFUOFlzaWIwSVhIMUNvZG5BRWJDa1poYkVOdlVXcDVKckIyNUdwTzh4T05n?oc=5",
-      "published": "2026-11-09T14:02:38+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Video - Man Utd Star Urges Teammates To 'Look At Themselves' Amid Club Struggles roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T16:00:53.765710+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPanpBOEtMdXNiLU1JM1FZbzhxRlFDMkRMd1NhMExQM1dIUXBlYlJyYlJ5VTJhdUhkZC1PSHB1YjR3SVYzUHduNGYtbUtOSDVraUVncWZYeTRKV0lRSk95emVRenpjZ1hqdmRpN2h3YWdGRDBoR2d5a2FVXzd2MHFKdi1HeUJwREJVNW5TdUxsQlc2MGh0X3FzdDA5bUNIWU1OaDNqcE9ONlh1Vl93Rld0U0hzcDZVXzF0N1pndl9aNGtneHVjTW1IWmtFMlpYb1ZZUGNmR2gxTzhhYVd5NEE?oc=5",
-      "published": "2026-11-09T14:00:39+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Video - Man Utd Star Urges Teammates To 'Look At Themselves' Amid Club Struggles - roundtable.io"
-    },
-    {
-      "desc": "MANCHESTER United are in the relegation zone despite their late comeback draw against Aston Villa. And recent Prem histo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T14:01:12.581059+00:00",
-      "link": "https://www.thesun.co.uk/sport/40967785/man-utd-relegation-omen/",
-      "published": "2026-11-09T14:00:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "The worrying omen that means Man Utd are doomed to be RELEGATED unless they dramatically beat the odds"
-    },
-    {
-      "desc": "The Athletic FC: Ask David Ornstein your questions The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.485047+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaUYxT1pxblcyOWVxQTFIQVdkZXBrdnRPQ0xIck9jeGtoLWloaWl4ckx2SnlUU0ZOYmMxZlVhRWd2eWo5M3hfV1JzWmNfNlE3N2FRSURibGdtUFhtMkJ3d3RKYXBnMmU5d2xLWk4zcWRzRjRjeHhvdkV4Rk9kbUsyMEpKbU1xV3RJX0prSjVvaVppSnVZ?oc=5",
-      "published": "2026-11-09T14:00:03+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "The Athletic FC: Ask David Ornstein your questions - The New York Times"
-    },
-    {
-      "desc": "Jafonso qualifies for FC Pro Open 2027 Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T15:00:55.485069+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQN29yU0VycUUteVpOQldDZTZBbjBGZmlEdXZhMUhTbWVfOHFUNFlYTmFOYVUyc0lrVmhORmZaMUZOeXd5bm9hOUNtV0dnZkI4dFFxdkhpZVAwTjJwc3NER0VjMU9HTEZSeVBHTzItZ0FSSzltNGk5Y2xlMm1CeHdGQk15emZlVWR6?oc=5",
-      "published": "2026-11-09T14:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Jafonso qualifies for FC Pro Open 2027 - Manchester City FC"
-    },
-    {
-      "desc": "Three Women’s Super League matches at the Bridge in 2027 to go on sale | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.368378+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd3RWei04ZFBXWFpoV2otNUcyaWxZeTlNMWczcFBPczlTVHF2czFQMWc1dlVGbzBMMkdhaGx5ODk0R19uSjdJeGhIQU4zN0tReTZrd2x4dzBFSVVKc0M4TEVJb253WUdGOHNxc0xIZlBTeXRfazJGOXZwb3RLRmVrVGNuZktEemYyeThndDN3Njg5YWRyanZoSGFMbEIwZW44a3BKRXB6Yjl3TG0wV28zVg?oc=5",
-      "published": "2026-11-09T14:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Three Women’s Super League matches at the Bridge in 2027 to go on sale | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Smith's stunner wins Emirates Goal of the Month Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T20:00:51.134433+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS3MzRVFla0ZxTUtfNGY4SDB3TTdMV2J3STROdkVnZjF2NWhaY20zY0poUGZ6OGNBWVBtdTg0QVkxaHo4dUlsdXJXSjgzYVRuNTdhX0FqUDQyUG93LVJhVGRCQU15LUFIeXRMeG1OcjVLOU1wUklkSU1XakpYbFltV2RGclZaMk0tdWxZcjc5RzNkczg?oc=5",
-      "published": "2026-11-09T13:59:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Smith's stunner wins Emirates Goal of the Month - Arsenal.com"
-    },
-    {
-      "desc": "CHRIS WHEELER AT OLD TRAFFORD: Coming out swinging every game like a boxer on his last legs is great for entertainment, ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-09T20:00:51.134459+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16268103/Michael-Carrick-Man-Uniteds-Captain-Chaos-reckless-cavalier-style-evidence-lack-preparation-not-way-play-football-writes-CHRIS-WHEELER.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-09T13:52:48+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Inside the world of Captain Chaos at Man United: Michael Carrick will not walk away but here's what the players are saying as they fail to r"
-    },
-    {
-      "desc": "Carrick explains Maguire change Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.017229+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOREtUdzBlMlZDSFVJaWJVMGJzYzZIU1BvSEZKQU14VDNMamZZQWlLTnBQRU5MLVhES3h3REhsUWdEd2k3Qk5Qa0xmNlFQeERtZGhtZFk2dFlzSFlaV3g4ZElaTHFVWU94QS1LYmpoWnBVZEtrNjVBeXFGOXdVVVJXWTF3?oc=5",
-      "published": "2026-11-09T13:49:52+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Carrick explains Maguire change - Manchester United"
     }
   ],
   "processed_urls": [
