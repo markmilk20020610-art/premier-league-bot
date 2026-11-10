@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-11",
     "errors": 0,
-    "input_tokens": 36998,
-    "output_tokens": 3683,
-    "requests": 6
+    "input_tokens": 42704,
+    "output_tokens": 4515,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2589,7 +2589,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T20:00:56.404169+00:00",
+  "last_scan_at": "2026-11-10T21:00:59.755389+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2610,6 +2610,46 @@
     "updated_at": "2026-11-09T22:01:21.442247+00:00"
   },
   "news_pool": [
+    {
+      "desc": "JAMES HILL knows he can tackle anything after coming through Joey Barton’s “relentless” summer boot camps unscathed. So ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T21:00:59.759190+00:00",
+      "link": "https://www.thesun.co.uk/sport/40984622/england-james-hill-fleetwood-joey-barton-camps/",
+      "published": "2026-11-10T20:59:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England new-boy James Hill reveals Joey Barton’s ‘relentless’ boot camps where players turned ‘white as ghosts’ aged 16"
+    },
+    {
+      "desc": "With ten games of the Premier League season gone, it's time for another breather as the second international break rolls",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T21:00:59.759272+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16277525/Manager-season-one-horse-race-Man-United-taken-incompetence-new-levels-Newcastle-experts-verdict-Premier-League-far.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T20:32:44+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Manager of the season is a one-horse race, Man United have taken incompetence to new levels and Newcastle to go down? Our experts' verdict o"
+    },
+    {
+      "desc": "MANCHESTER UNITED face a financial disaster if they are relegated from the Premier League at the end of the season. The ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T21:00:59.759304+00:00",
+      "link": "https://www.thesun.co.uk/sport/40984133/man-utd-risk-adidas-contract-relegation/",
+      "published": "2026-11-10T20:24:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd risk £900m Adidas contract being TERMINATED if they’re relegated as club sit in drop zone at international break"
+    },
+    {
+      "desc": "Steve Ives Resigns as Tunbridge Wells Manager Southern Counties East Football League",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T21:00:59.759362+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8zcmdlZ2ItLWVnam5Nakdwc3ZMYXZaTl9TTHZnSkpPUFlhbUtoTUVTQlZvWU5kNU1aTWgzdWg0UjM0dnpFb2RMWmRmSXJsYXkyczNmb183RlBlaDVUTFdUYW8za3FBOFNsMEswV05vT2g?oc=5",
+      "published": "2026-11-10T19:54:04+00:00",
+      "publisher": "https://scefl.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Steve Ives Resigns as Tunbridge Wells Manager - Southern Counties East Football League"
+    },
     {
       "desc": "Renée: “It should be a really nice atmosphere” Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2729,6 +2769,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Kevin De Bruyne ‘set to leave Napoli on free transfer after clash with Man Utd flop Rasmus Hojlund’"
+    },
+    {
+      "desc": "Mauricio Pochettino: Man Utd contact made, says Romano Dave.Sport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T21:00:59.759666+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tQ0xOa1B0QWU0VV9NSUI3bzZCWnJOUnd2WW1QaDRfLVVZdGtCN2xuR18yai1zU2JzT2xZZ192Z2wwRGxtNkhtOEVHZi12VE5aZnAteE02bE5OOFRyWGdJbmhzYjluanZWNlMwbEY2NGJodWQ3U1E?oc=5",
+      "published": "2026-11-10T18:28:58+00:00",
+      "publisher": "https://dave.sport",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Mauricio Pochettino: Man Utd contact made, says Romano - Dave.Sport"
     },
     {
       "desc": "Spurs vs Crystal Palace, Players Cup | How to watch, team news, kit colours, key information Tottenham Hotspur",
@@ -3069,6 +3119,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Loris Karius ‘wanted by Bayern Munich in surprise transfer move’ after Liverpool flop suffers shocking facial injuries"
+    },
+    {
+      "desc": "El Nino Shelton Huddersfield Town U21 Forward, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T21:00:59.760247+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1yel96YjFQdWMtTU1BWDVnTExreGNhTU4ta0RqWTFCMXhPcjYtQ1JfeW00UGtzTFpaQTBmUVkzSm5rM25KR21JZ3BLLVFmMW1TZUZRbWRwdmdvcnYtTDgyUEdjTS1tQ04ybEJ2SnByS01nMW5LMkhFbVVUX2M?oc=5",
+      "published": "2026-11-10T15:16:54+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "El Nino Shelton Huddersfield Town U21 Forward, Profile & Stats - Premier League"
     },
     {
       "desc": "PIERRE SAGE is being linked with an immediate return to his homeland with RC Lens. Crystal Palace sacked the Frenchman j",
@@ -4049,66 +4109,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘I thought I was going to die’ – Ex-QPR goalkeeper reveals horror chronic illness that saw him lose 1st 8lbs"
-    },
-    {
-      "desc": "Carlos Vicens lands Lyon managerial job just three weeks after Braga sacking to replace Sporting-bound Paulo Fonseca Liv",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T09:00:53.764962+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNU2R3VHRITzctMVRRTjhhZ24waEVFQkdRRGFrb0hwaGZFYURXa3lWaHhyTkpaM0ZDWTRJbmp6dGtabjFFSU1fb3FHUjB4U21STVVyTzdEN0tVdllzQlYycUVDaTRkOFZwWWRYNXZJS0dvN3A1WHVMX195aHdoMVVkeHlEWUVMbUFYZTYxVVY3MjJfZmloSjc4T1I3b1hYYW5wQmctS1JVS2NRY2FQOHRjQk9qLS1vaEcyMFNXVlJvWXVjV253T1ZKeEZzbXlHMjZMN1lXVExuYW1BTHBDeG14Z3dkeFpWZ2pzM01BZ255Y3g2djlrclNZSlk5WUg5MU0?oc=5",
-      "published": "2026-11-10T08:09:09+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Carlos Vicens lands Lyon managerial job just three weeks after Braga sacking to replace Sporting-bound Paulo Fonseca - LiveScore"
-    },
-    {
-      "desc": "\"I always thought if I kept playing and kept performing it would come. Thankfully it has.\"",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-10T09:00:53.764978+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13608837/james-penrice-scotland-and-rangers-defender-on-his-slow-rise-from-part-time-football-to-international-call-up",
-      "published": "2026-11-10T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Penrice on 'slow rise' from part-time football to Scotland call-up"
-    },
-    {
-      "desc": "IT'S international break time once again, with the Nations League taking centre stage as the group phase reaches a concl",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T10:01:00.345281+00:00",
-      "link": "https://www.thesun.co.uk/sport/40045824/free-bets-football-sign-up-midnite-offer/",
-      "published": "2026-11-10T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Get £30 in free bets for football when you sign up and stake £10 with Midnite"
-    },
-    {
-      "desc": "Nathalie Bjorn on why facing Hacken will be 'no walk in the park' | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T11:24:15.597868+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX1VRdXZsY2VCVm5WUzg4OHh5VE9Da0tsYlQwRkJQRDNPTW9FTzRyaF80UEtVLW9GWGhvN0ZxdVJMWG1kRl9Id0RLUGp6bHZfc2FITE52V1BvcHFnZkpSekJ5RXAxOU9pd3B2bzR6TEN4cThFcm0xbkFsc09BU09Dc0FBT1Qxc0RDdlUzNlRWQzczMGNrM1dTYUFRMlJkMnZVVWctb2xueXU?oc=5",
-      "published": "2026-11-10T08:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Nathalie Bjorn on why facing Hacken will be 'no walk in the park' | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "JOHN ALOISI has been sacked by Chinese side Chengdu Rongcheng following an incredible title race collapse. Former Portsm",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T08:00:57.079991+00:00",
-      "link": "https://www.thesun.co.uk/sport/40975238/john-aloisi-sacked-chengdu-rongcheng-china/",
-      "published": "2026-11-10T07:47:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Premier League star sacked in 26-word statement after blowing title despite having 14-point lead with 5 games left"
-    },
-    {
-      "desc": "“Really close now” – Romano delivers latest updates on Carrick & Pochettino as Man Utd brace for change utdreport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T09:00:53.765014+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdDV4d19IZjJQS29jenJ4N2w5R1BvaTRpNWFxa2ZiV3Nla21YaUtqbXpMLTMzYTR2UGpLZzBKZXBxd2YyUDJqQUtaNmUxZzMyTVVBbGlMM1BqeDlfVTlMTV9MZjhLcG5zbDNrRGVQcVVKWG1WbEJWRmxUbkROb0hpLUhMa1E2SWZhc2NZ0gGQAUFVX3lxTE1vVmNGUkEtVS0tTnYtLUlsMUM1Zm53azRpcVAxUzVMMGZPOTNmejlVVEVnMFlrblBQakJ5akhzODFiX1A3emx0Ykx0VjJFbTdxbU0wdkhfUGNlcndZVHU2azdxZlIxS1RpRGZJQWRyMi1GUTRMYmpnZGdwdllmd05VcDFkVEJXMThKMGJKYlR0Xw?oc=5",
-      "published": "2026-11-10T07:45:16+00:00",
-      "publisher": "https://utdreport.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "“Really close now” – Romano delivers latest updates on Carrick & Pochettino as Man Utd brace for change - utdreport"
     }
   ],
   "processed_urls": [
