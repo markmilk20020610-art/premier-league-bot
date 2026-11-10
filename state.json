@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 61028,
-    "output_tokens": 6622,
-    "requests": 9
+    "input_tokens": 67161,
+    "output_tokens": 7344,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2449,7 +2449,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-09T23:00:52.083078+00:00",
+  "last_scan_at": "2026-11-10T00:00:55.498227+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2470,6 +2470,56 @@
     "updated_at": "2026-11-09T22:01:21.442247+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CHRIS WHEELER: Carrick's position has become precarious after United dropped into the relegation zone despite salvaging ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T00:00:55.502064+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16279641/Michael-Carrick-sack-Man-United-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-09T23:48:03+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Michael Carrick facing the sack at Man United: Mauricio Pochettino the frontrunner to replace beleaguered boss - but chiefs face splashing o"
+    },
+    {
+      "desc": "Football: Cat-astrophic night The Star",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T00:00:55.502103+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qa2lYZjVtSXVGNnFGR0t4TEpqYjdKTmdMQzBudW1DUUo2VzlMVGFHRHdvcjNtWTBBRTd0bUZJNHM0QXMxS2pNRUF5aVdENXRRMU9Dd245LWw4blFWQjg2b0pMRFptQjZmNmFlOHpHR2ZjNmNLR1Z5M1NvaHc?oc=5",
+      "published": "2026-11-09T23:39:08+00:00",
+      "publisher": "https://www.thestar.com.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "Football: Cat-astrophic night - The Star"
+    },
+    {
+      "desc": "MANCHESTER UNITED will reportedly not have to break the bank to sack Michael Carrick. The Old Trafford legend, 45, is ex",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T00:00:55.502192+00:00",
+      "link": "https://www.thesun.co.uk/sport/40974441/michael-carrick-man-utd-contract-break-clause/",
+      "published": "2026-11-09T23:04:09+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Michael Carrick’s Man Utd contract ‘contains break clause’ which will save Red Devils fortune if they sack him"
+    },
+    {
+      "desc": "Michael Carrick's position as Manchester United head coach is looking increasingly in doubt, but Sky Sports News has bee",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-10T00:00:55.502219+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610412/michael-carrick-future-man-utd-head-coach-position-increasingly-in-doubt-but-no-final-decision-made",
+      "published": "2026-11-09T23:04:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Carrick position increasingly in doubt as hierarchy mulls over his future"
+    },
+    {
+      "desc": "The top stories and transfer rumours from Tuesday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-10T00:00:55.502241+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610409/mauricio-pochettino-would-consider-manchester-united-job-if-michael-carrick-is-sacked-paper-talk",
+      "published": "2026-11-09T23:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Poch would consider PL return to join Man Utd"
+    },
     {
       "desc": "Michael Carrick's Manchester United reign appears close to an end following the club's worst start to a domestic campaig",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2749,6 +2799,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ben White admits England fans ‘would not be booing’ if they knew the real reason he walked away from Three Lions squad"
+    },
+    {
+      "desc": "Football latest news & gossip Sky Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T00:00:55.502928+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVVIbXE5Ykt3cjRpS2hxLTNaSlcxenlvTlF3MjFPRG03YkFDVnd0dGM4WU9jSnlfY2s0a1Y1dGVRY2RldzJBbzk3R0VacVZFV2VZUTF1akJoQmFGTE54U09BSFNJY1A0U21INk9ud0J3UUdvc1Q1ZVZUVDR1Q2NrMDhlQzFCa29HVS10V19B?oc=5",
+      "published": "2026-11-09T20:00:00+00:00",
+      "publisher": "https://www.skysports.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Football latest news & gossip - Sky Sports"
     },
     {
       "desc": "Former United defender Ferdinand drew criticism when he shared a photo of himself celebrating after the Red Devils' dram",
@@ -3909,66 +3969,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Neville: Is Man City charges spotlight seeping into performances?"
-    },
-    {
-      "desc": "MANCHESTER UNITED fans noticed a unique trick used by Youri Tielemans during the club's 4-4 draw against Aston Villa on ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T11:55:40.009008+00:00",
-      "link": "https://www.thesun.co.uk/sport/40966084/man-utd-fans-youri-tielemans-antics-bruno-fernandes-penalty/",
-      "published": "2026-11-09T11:54:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Eagle-eyed Man Utd fans spot Youri Tielemans’ bizarre antics during Bruno Fernandes’ penalty vs Villa"
-    },
-    {
-      "desc": "DAN BURN has been added to the England squad - after Marc Guehi pulled out through injury. Manchester City star Guehi, 2",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T11:55:40.009047+00:00",
-      "link": "https://www.thesun.co.uk/sport/40966982/marc-guehi-england-squad-dan-burn/",
-      "published": "2026-11-09T11:52:07+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Marc Guehi replaced in England squad after Man City star pulls out through injury ahead of Croatia and Spain clashes"
-    },
-    {
-      "desc": "Tributes paid to former Bury FC striker Darren Beckford following death at 59 The Bury Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T12:00:54.945040+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOMVpoelhiUTlYZVF0QUliMEZaRU4wNE5BckFNamo4MmtMODVYQV9ob1hFeGJ4Tmc3NzNfcGZNX0thU19uUlg0UlE5ZGJyTXdhOGRMcm9fdkE2RmdrWk9yQWNtTmxYQTdKMk85Qk44UHZfazVpcU54YlpXX2kydHFSWWY2aWRDbG5QZC1kd3FHYndSMjhJQlRRX1p3?oc=5",
-      "published": "2026-11-09T11:46:07+00:00",
-      "publisher": "https://www.burytimes.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Tributes paid to former Bury FC striker Darren Beckford following death at 59 - The Bury Times"
-    },
-    {
-      "desc": "The manager of seventh-tier Berkhamsted says his players will be barred from the \"distraction\" of the FA Cup second roun",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T13:01:01.039371+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6j9k910l1ryo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-09T11:45:08+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Berkhamsted players banned from watching FA Cup draw"
-    },
-    {
-      "desc": "Guéhi withdraws from England squad Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T17:00:58.368631+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUnkxRVUxYjlQaDNEc3E3TzAwQUdoSnJMXzZBdnNVYS1jaE1xZUsyd1BtTnIwNVQ5OUllbFZCR25wdnhURjNmR1lhT2pJcWtaNjJuSEdjRmdSazFVdzZQNmZUaDJmWGVRNGliWnNYOVFFdFF4N1JLckpjWUVYNTdrQ1ZGU00?oc=5",
-      "published": "2026-11-09T11:45:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Guéhi withdraws from England squad - Manchester City FC"
-    },
-    {
-      "desc": "Declan Rice has opened up about reducing his use of social media - citing the mental toll it can have.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-09T12:10:34.011486+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16277805/Declan-Rice-reveals-hes-stepped-social-media-ruin-day-sick-trolling-girlfriend-poses-new-photoshoot.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-09T11:38:55+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Declan Rice reveals he's stepped back from social media because it can 'ruin your whole day' after sick trolling of him and his girlfriend -"
     }
   ],
   "processed_urls": [
