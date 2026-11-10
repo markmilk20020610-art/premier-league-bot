@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-10",
     "errors": 0,
-    "input_tokens": 146999,
-    "output_tokens": 17539,
-    "requests": 24
+    "input_tokens": 153162,
+    "output_tokens": 18255,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2307,6 +2307,41 @@
       "title": "邮报独家：曼联从未真正追求帕尔默，切尔西新约内幕曝光",
       "updated_at": "2026-10-31T10:55:32.255016+00:00"
     },
+    "e0f8bf9564d2": {
+      "article_title": "Man United's new boss contenders: Mauricio Pochettino tops the bookies' favourites ahead of Eddie Howe and Julian Nagelsmann on 14-man list",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "624c0f4d79dc8e38",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 110
+        }
+      ],
+      "created_at": "2026-11-10T13:00:58.635720+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3706dcf2efc43384",
+      "event_id": "e0f8bf9564d2",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-10T13:00:58.635720+00:00",
+          "origin": "created",
+          "title": "Man United's new boss contenders: Mauricio Pochettino tops the bookies' favourites ahead of Eddie Howe and Julian Nagelsmann on 14-man list",
+          "url": "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 110,
+      "title": "曼联换帅传闻：波切蒂诺成头号热门，卡里克帅位岌岌可危",
+      "updated_at": "2026-11-10T13:00:59.275622+00:00"
+    },
     "e357fd1c5c59": {
       "article_title": "Were Arsenal 'lucky' not to concede penalty at Liverpool?",
       "attempts": 1,
@@ -2519,7 +2554,7 @@
     }
   },
   "last_morning_report_date": "2026-11-10",
-  "last_scan_at": "2026-11-10T12:01:03.774359+00:00",
+  "last_scan_at": "2026-11-10T13:00:51.911101+00:00",
   "last_summary_sent_at": "2026-11-09T22:01:21.450262+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2541,6 +2576,116 @@
   },
   "news_pool": [
     {
+      "desc": "Sir Jim Ratcliffe's Ineos have clinically dismantled the old sense of a United 'community' but Carrick's return created ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T13:00:51.913256+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16280695/Manchester-United-Carrick-Wilcox-Berrada-Chuckle-Brothers.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T12:49:35+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "IAN HERBERT: Classless Chuckle Brothers Jason Wilcox and Omar Berrada are not fit to lace Michael Carrick's boots - they have treated a dign"
+    },
+    {
+      "desc": "A Christian group set up for footballers says it wants to \"demonstrate love and respect towards everyone\" following crit",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-10T13:00:51.913278+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm3696yy9z64o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-10T12:48:21+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Dortmund fans' group criticises Nmecha celebration"
+    },
+    {
+      "desc": "MANCHESTER UNITED legend Cristiano Ronaldo has been tipped to become manager of the club in the future. Former United st",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T13:00:51.913295+00:00",
+      "link": "https://www.thesun.co.uk/sport/40977709/cristiano-ronaldo-man-utd-manager-mick-clegg-michael-carrick/",
+      "published": "2026-11-10T12:41:32+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘He’d be special’ – Cristiano Ronaldo backed to become Man Utd MANAGER by former Red Devils coach"
+    },
+    {
+      "desc": "FORMER Premier League referee Keith Cooper has died aged 78, the Welsh FA has announced. Cooper spent 14 years as a resp",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T13:00:51.913310+00:00",
+      "link": "https://www.thesun.co.uk/sport/40979298/keith-cooper-dead-steve-cooper-dad/",
+      "published": "2026-11-10T12:40:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Keith Cooper dead at 78: Former Premier League referee and dad of ex-Forest boss Steve dies as tributes pour in"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO has emerged as a major contender to succeed Michael Carrick as Manchester United manager. And the fo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T13:00:51.913339+00:00",
+      "link": "https://www.thesun.co.uk/sport/40977605/man-utd-mauricio-pochettino-carrick/",
+      "published": "2026-11-10T12:33:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "From dressing room ‘dad vibe’ to unlocking Rashford, five reasons why Pochettino is perfect choice for Man Utd"
+    },
+    {
+      "desc": "Paul Merson discusses Manchester United's transfer activity under INEOS and why it has led to poor results.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-10T13:00:51.913352+00:00",
+      "link": "https://www.skysports.com/watch/video/13610614/manchester-united-paul-merson-criticises-ineos-transfer-policy-and-how-its-affected-michael-carricks-job-as-head-coach",
+      "published": "2026-11-10T12:32:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "'You can't make a house on a puddle' - Merse criticises INEOS transfer policy"
+    },
+    {
+      "desc": "MANCHESTER UNITED'S misfiring stars will have nowhere to hide if Mauricio Pochettino replaces Michael Carrick. The USA m",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T13:00:51.913366+00:00",
+      "link": "https://www.thesun.co.uk/sport/40977222/mauricio-pochettino-manager-methods-next-manchester-united-manager-usa/",
+      "published": "2026-11-10T12:17:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino’s bizarre manager methods include tapping into his SIXTH SENSE and reading players’ auras"
+    },
+    {
+      "desc": "Thomas Tuchel has made a first-time England call-up to replace Ezri Konsa - but casual fans could be forgiven if they do",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T13:00:51.913385+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16280909/england-james-hill-call-up.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T12:06:59+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "The little-known new face called up by England: Can you name the star brought in to replace Ezri Konsa?"
+    },
+    {
+      "desc": "DANIEL FARKE launched a passionate defence of Jayden Bogle after the Leeds star avoided a red card for catching Mathys T",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T13:00:51.913400+00:00",
+      "link": "https://www.thesun.co.uk/sport/40976517/farke-jayden-bogle-nickname-butterfly-leeds-tottenham/",
+      "published": "2026-11-10T12:05:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Leeds boss Daniel Farke reveals bizarre nickname he has given ‘softest player in the league’ Bogle after horror tackle"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO is the right man to take over at Manchester United. That certainly would have been an accurate state",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-10T13:00:51.913414+00:00",
+      "link": "https://www.thesun.co.uk/sport/40977422/man-utd-pochettino-tottenham-michael-carrick-rangnick/",
+      "published": "2026-11-10T12:01:53+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd snubbed FOUR chances to hire Pochettino – would appointment now be eight years too late?"
+    },
+    {
+      "desc": "Serie A clubs, transfer gurus and esports teams: Pusulabet forging connections through sponsorship iGaming Business",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T13:00:51.913431+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQ18wRnVjaG9OMzZIQ3dvdzJFQ3J6UXNLeFBIQUhnVlNCOHpQTF9iNi1jUDNfTlpLSjRXUHdJZHNienNINXk5M2RhT2Jvdk5RWmNZbHdxZkl4RHI3dVV0NGRWeE85VU5IMGoxaV9ZSzZRQjVmY3Ixa1NjYlJQREdiOVltTEctSGVSZkJ2akxuVkFkenlqeDVNX09QVk5OTWpTYW5JOA?oc=5",
+      "published": "2026-11-10T12:00:31+00:00",
+      "publisher": "https://igamingbusiness.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Serie A clubs, transfer gurus and esports teams: Pusulabet forging connections through sponsorship - iGaming Business"
+    },
+    {
       "desc": "CHELSEA are reportedly lining up a January transfer swoop for Martin Zubimendi. The Blues are looking for midfield reinf",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-10T12:01:03.778550+00:00",
@@ -2549,6 +2694,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea ‘eye Martin Zubimendi transfer in January’ after Arsenal knocked back summer bid from Xabi Alonso"
+    },
+    {
+      "desc": "Wales have called up MK Dons striker Aaron Collins for this month's Nations League matches following Wrexham frontman Ki",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-10T13:00:51.913459+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c62l4l2k0lyro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-10T11:47:59+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wales call up MK Dons' Collins as Moore withdraws"
     },
     {
       "desc": "Bournemouth defender James Hill is added to the England squad for Thursday's Nations League match against Croatia at Wem",
@@ -2591,6 +2746,16 @@
       "title": "Man Utd chiefs meeting Sir Jim Ratcliffe to finalise Michael Carrick axe with Mauricio Pochettino frontrunner for job"
     },
     {
+      "desc": "Sven-Goran Eriksson's estate is being chased by HM Revenue & Customs (HMRC) for an outstanding £3.5million in tax owed.",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T13:00:51.913513+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16280399/HMRC-chase-estate-late-ex-England-manager-Sven-Goran-Eriksson-3-5MILLION-unpaid-tax-busy-ladies-save.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T11:25:24+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "HMRC chase the estate of late ex-England manager Sven-Goran Eriksson for £3.5MILLION in unpaid tax - because he was 'too busy with his ladie"
+    },
+    {
       "desc": "Romano rates Arsenal chances of signing mesmerising £67m winger as RB Leipzig decide on January sale TEAMtalk",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-10T11:24:15.597291+00:00",
@@ -2599,6 +2764,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano rates Arsenal chances of signing mesmerising £67m winger as RB Leipzig decide on January sale - TEAMtalk"
+    },
+    {
+      "desc": "Romeo Lavia: My Football Firsts | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T13:00:51.913541+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9nemtwbnh6V3RKcFZRU3BUWHVqQlpVNkgybmQ5czl4eFpobExFSmxmRWhHNHNQQ0FxZk90ZDkweFFwQVcwTUpCMGtaZmt3VUFiaFBBRzZReXlGbVJCN285aS13Z1BOeWw1Ml9CMzBpN0oxUGt2TmFqS0dUR0c?oc=5",
+      "published": "2026-11-10T11:15:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Romeo Lavia: My Football Firsts | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "MICHAEL CARRICK was sitting at the front of the aircraft and on his own, scrutinising his tactics on a notepad, during M",
@@ -2681,6 +2856,16 @@
       "title": "Arsenal given Ezri Konsa fitness boost as England release statement - Football London"
     },
     {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T13:00:51.913606+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
+      "published": "2026-11-10T10:32:00+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
+    },
+    {
       "desc": "'We have to keep improving' - Alexis Mac Allister on Liverpool's post-international break aims Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-10T11:01:00.367450+00:00",
@@ -2709,6 +2894,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why has Tom Brady quit Birmingham City?"
+    },
+    {
+      "desc": "Mauricio Pochettino is the bookies' leading candidate to replace under-fire Michael Carrick as Manchester United head co",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-10T13:00:51.913651+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-10T10:18:22+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United's new boss contenders: Mauricio Pochettino tops the bookies' favourites ahead of Eddie Howe and Julian Nagelsmann on 14-man list "
     },
     {
       "desc": "Inside | Behind the scenes and new angles from Liverpool's win at Crystal Palace Liverpool FC",
@@ -3099,6 +3294,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "Luca Knote-Reed Luton Town U21 Midfielder, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-10T13:00:51.913943+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA3eXZ4TDJfYjdkUlpwRzVKMEkzQ05JVFNMRXRYZ05FVnZucG1Bel9wMkJvbzhSRmxRZnFUWlVrU09WLVJoUlNHNmVHMWRiOHFlRGI4U0hLS3FpRHMzY2RzTXZNSjdTa1N5MUlJQWtGY0NxeGtMY0tQeEVR?oc=5",
+      "published": "2026-11-10T06:38:54+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Luca Knote-Reed Luton Town U21 Midfielder, Profile & Stats - Premier League"
     },
     {
       "desc": "Voting is now open for the BBC Women's Footballer of the Year 2026, with five players on the shortlist.",
@@ -3869,176 +4074,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "In Focus: Ezri excels in win over Hull City - Arsenal.com"
-    },
-    {
-      "desc": "LIVERPOOL flop Alberto Aquilani has been sacked by Sassuolo after just five months as the Serie A outfit's manager. Aqui",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T18:01:08.016189+00:00",
-      "link": "https://www.thesun.co.uk/sport/40971185/liverpool-alberto-aquilani-sacked-sassuolo-xabi-alonso-chelsea/",
-      "published": "2026-11-09T17:11:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Liverpool star and Xabi Alonso replacement, 42, sacked by Serie A side Sassuolo with abrupt 46-word statement"
-    },
-    {
-      "desc": "Ballon d'Or winner Harry Kane has not been named in the FIFPRO World 11.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-09T18:01:08.016212+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13610309/fifpro-world-11-ballon-dor-winner-harry-kane-not-voted-by-fellow-professionals-to-be-named-in-team-of-the-year",
-      "published": "2026-11-09T17:10:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Ballon d'Or winner Kane not named in FIFPRO World 11"
-    },
-    {
-      "desc": "Zafar Iqbal Honored at Asian Achievers Awards for Sports Medicine South Asian Herald",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016239+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWDZKVlJjU3ZIUFk2VFQ4a0hDNkROLVlZOVRJMlNqMGZqRFhua0M0N1lCNTlsY3VieWIycU5JRGZEdVZDRElqS0wzdU4xSW14M1B2S1IyRGZFdW1yenRUZnhFSEkzSXNnX0pLdl9GblZTYWpJRlhuZF9sUnlnaGZYTi1QcVVVRnM5emdoMG9HTUk0MVhXWVlpTG5ZZw?oc=5",
-      "published": "2026-11-09T17:07:09+00:00",
-      "publisher": "https://southasianherald.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Zafar Iqbal Honored at Asian Achievers Awards for Sports Medicine - South Asian Herald"
-    },
-    {
-      "desc": "Pick the Official Premier League Fan Team of the Week Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016297+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fbEJFdkExbHZWbE1KS1YyTFJ4MlZJdUtEb3B6eDJzd1pYSTVNeWttTTRRTjhaRkFZai1JRGdhWkdBZkpidWVfYmk5YjNhdkhVMTVlOW9XYno?oc=5",
-      "published": "2026-11-09T17:01:36+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Pick the Official Premier League Fan Team of the Week - Premier League"
-    },
-    {
-      "desc": "Ornstein drops major Tottenham update on January striker hunt – ‘Prepared to go big’ TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016343+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaXdSc1BFblZZZTZHZmxlSVRkeXlxaDh3LWVUcjdZN2c2YU0wZmJJZDhuU01oRWxlcnM3MWF1T1R0UHI0Uzh4NFVuZDdZemJkSjkxVTRhMEtJVXRYMmlwaXNYU2ItdDYzY2V2OERhMEVQcGNWd1VkZU9KaGpPWjVLcnIwa0lwS3F3X3hyakZneGtTRjBtWnFZaGQ4elhHVEp5RHhMOWtsQQ?oc=5",
-      "published": "2026-11-09T17:01:13+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Ornstein drops major Tottenham update on January striker hunt – ‘Prepared to go big’ - TEAMtalk"
-    },
-    {
-      "desc": "Diogo Dalot: Fabrizio Romano explains why Michael Carrick wants Man United star to stay The Peoples Person",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016375+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWWctb0xfUWlpOFBHR2xFUU51Ti03b0cycGg0TXQ3RjVzeW5JOTYxYk5FN2hMTkFRWk9ET3dYaFlNWGpKanRjcmlSSzdqakl5Q0hpWmczMjdBRVN1YU01ZW9vLVFrcE9FcHFEcE11MUtKT1hUOHJuX3p2ZWJYN25qdFp3cVUwOGZUMVlvVE5tZDFNSjZoTGVLTHUycUVleG1SMUgyQkRPOFdWLVVqYjdzVXFLeUU?oc=5",
-      "published": "2026-11-09T17:00:38+00:00",
-      "publisher": "https://thepeoplesperson.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Diogo Dalot: Fabrizio Romano explains why Michael Carrick wants Man United star to stay - The Peoples Person"
-    },
-    {
-      "desc": "Alan Shearer's Team of the Week for Matchweek 10 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016401+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdjk2YnJsam1aVFI2eWFBbm5WbXhNMXloR2YzOVJRM1ZHdllQOWlZd1ZMNTdOVUItaVN2c1YtQ19KU01TemlWeHBHbjZrd3ZteDR2eXlwSzZEN18zWlFUV3BiTjZlWkNQMFJSd2xXNkZZUHhZYmVkZXE5bmhicldMZlo4ZTlZc3A0ZUMwdlVSeHpKd19GZm8tUA?oc=5",
-      "published": "2026-11-09T17:00:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Alan Shearer's Team of the Week for Matchweek 10 - Premier League"
-    },
-    {
-      "desc": "Chelsea Women's Constant Contact October Goal of the Month revealed! | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016429+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUnN2WEk1c1YwcVpmcENpV2dDaHVyUzRBWC1ZQmZENTI2Ull3YUxWU2JxMjlBX1BPcFdybU9JelJIVks2ZDF6RVV6RmdMTUJueEhuT1NhR1k3ZjRTZWFTNnNBcUZaZmo5VnlKbG9fM25pRzQ1aUYxMDU5NFo5dk5OWW5ZMXh5NmFYaTlCNnpvU0t0ZV9iei1vbkZSZmxQX080NWVlSXF1alliQ2tI?oc=5",
-      "published": "2026-11-09T17:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea Women's Constant Contact October Goal of the Month revealed! | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Carrick or Alonso? Fabrizio predicts next Premier League manager to get sacked Legit.ng",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T18:01:08.016457+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMklSNm0tX3hVZFlnd2RDY29VNW5JOHdwZUdabEhLV1NCNjVTVXZMVUlmTnNoX2wxeUFTVVZYbVBGck1VMlh1MUo0ZDdCWVFyV0UwU3V2bkxEREExa1NBbXh4bmdEd2h6YjFaVWpLVk1vTURyWVctSkgxb2RVTzh4VlBDYmdCeFVWX052X3hnSXVCcGI5Y0p6ajZLWUlGQndnQTZjSlB0TFZTb0g0Vk82QlRJclBxUQ?oc=5",
-      "published": "2026-11-09T16:59:48+00:00",
-      "publisher": "https://www.legit.ng",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Carrick or Alonso? Fabrizio predicts next Premier League manager to get sacked - Legit.ng"
-    },
-    {
-      "desc": "Arsenal Analysed: The tactics behind our win over Hull Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T20:55:09.445184+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQmoyRUtNcmxaSm1pZFBsM2NSSFdzTnp2cnAyRWhBUFRMT3doUjRKYlUzbmdjS2ZiR3RqUWtsVjdOMUgxbDJqNjJqei1wUXlKMllJa2xJRU1tTUdzVFJySHVvcjFHVGIyZVF6UTZWYTJQQXJkNmlqVUw4eE44RlpJRzc2NVJrQnowOEJQR01iMFZmekJOMXpFc3Awd1RDRzA?oc=5",
-      "published": "2026-11-09T16:58:36+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal Analysed: The tactics behind our win over Hull - Arsenal.com"
-    },
-    {
-      "desc": "West Ham have removed references to Russell Brand from their website following the disgraced actor and comedian being fo",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-09T17:00:58.367588+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16277691/west-ham-wipe-russell-brand-history.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-09T16:55:01+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "West Ham wipe Russell Brand from their history after years of getting VIP treatment and kissing their managers in post-match interviews - as"
-    },
-    {
-      "desc": "Manchester United's bosses will not rush a decision over Michael Carrick's future after their 4-4 draw with Aston Villa ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-09T18:01:08.016507+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13610315/michael-carrick-future-man-utd-will-not-rush-decision-over-head-coachs-tenure-despite-dropping-into-relegation-zone",
-      "published": "2026-11-09T16:52:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man Utd will not rush decision on Carrick future"
-    },
-    {
-      "desc": "Report: Manchester United 4 Aston Villa 4 Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-09T23:00:52.085603+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORHA0WGNrMEZkTU8wUmxOMmZqY094dlUyNjQ0M1JiSU0yZUxRaUp1aUdlLU9OSkNobUFkWUp0cTF1NHJzdUlkaHpfbnozYmJoOWZmTE5ZV2ZqM0h6YzlLS1N0TG1fTEtqV3A3dERVOHBZcS1GOV9aVnM2TmRMTmxNVkZDUTZiTVlBV3pCTW85SUQxdw?oc=5",
-      "published": "2026-11-09T16:48:08+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Report: Manchester United 4 Aston Villa 4 - Manchester United"
-    },
-    {
-      "desc": "Aberdeen sack head coach Stephen Robinson after dropping to second bottom of the Scottish Premiership.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-09T17:00:58.367623+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwj34k2z5p00o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-09T16:46:11+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Aberdeen sack Robinson after league slump"
-    },
-    {
-      "desc": "PAU CUBARSI beat EIGHT Premier League stars to glory as he was named the 2026 Golden Boy winner. The annual award is han",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T17:00:58.367650+00:00",
-      "link": "https://www.thesun.co.uk/sport/40971347/pau-cubarsi-golden-boy-award-barcelona-spain/",
-      "published": "2026-11-09T16:45:19+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Pau Cubarsi beats eight Premier League stars to follow in Bellingham and Haaland’s footsteps as Golden Boy"
-    },
-    {
-      "desc": "DILETTA LEOTTA left little to the imagination after wowing fans in a low-cut top on live TV. The glamorous DAZN presente",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T17:00:58.367674+00:00",
-      "link": "https://www.thesun.co.uk/sport/40971419/diletta-leotta-busty-top-yoga/",
-      "published": "2026-11-09T16:44:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Diletta Leotta shows cleavage as DAZN presenter wows fans in low-cut top live on TV before enjoying yoga session"
-    },
-    {
-      "desc": "HARRY Kane has been OMITTED from the world’s best 11 in 2026 - despite WINNING the Ballon d’Or. England skipper Kane was",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-09T17:00:58.367696+00:00",
-      "link": "https://www.thesun.co.uk/sport/40971450/harry-kane-out-world-xi-fifpro-ballon-dor-win/",
-      "published": "2026-11-09T16:39:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Harry Kane left OUT of World XI as Fifpro snub England captain just two weeks after Ballon d’Or win"
     }
   ],
   "processed_urls": [
@@ -4126,7 +4161,8 @@
     "https://www.dailymail.com/sport/football/article-16277759/xabi-alonso-chelsea-carrick-premier-league.html",
     "https://www.thesun.co.uk/sport/40967824/man-utd-hit-relegation-zone-low-points",
     "https://www.dailymail.com/sport/football/article-16279525/Tom-Brady-QUITS-Birmingham-City.html",
-    "https://www.thesun.co.uk/sport/40976073/man-utd-pay-millions-for-mauricio-pochettino"
+    "https://www.thesun.co.uk/sport/40976073/man-utd-pay-millions-for-mauricio-pochettino",
+    "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html"
   ],
   "s_overflow": {},
   "schema_version": 4
