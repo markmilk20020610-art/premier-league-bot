@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 19007,
-    "output_tokens": 2117,
-    "requests": 3
+    "input_tokens": 25329,
+    "output_tokens": 2848,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -153,6 +153,41 @@
       "telegram_message_id": 27,
       "title": "切尔西vs曼联、利物浦vs阿森纳焦点战前瞻与投注情报",
       "updated_at": "2026-10-31T08:45:38.192338+00:00"
+    },
+    "0b7ba270c639": {
+      "article_title": "£75million man Malo Gusto is open to LEAVING Chelsea this season after struggling for minutes under Xabi Alonso",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d85398d271f5570c",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 117
+        }
+      ],
+      "created_at": "2026-11-11T18:36:02.659349+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "9981db9db1c2a510",
+      "event_id": "0b7ba270c639",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-11T18:36:02.659349+00:00",
+          "origin": "created",
+          "title": "£75million man Malo Gusto is open to LEAVING Chelsea this season after struggling for minutes under Xabi Alonso",
+          "url": "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 117,
+      "title": "古斯托愿冬窗离开切尔西，标价7500万镑",
+      "updated_at": "2026-11-11T18:36:03.221167+00:00"
     },
     "0f14991e7d49": {
       "article_title": "‘Absolute disgrace’ – Peter Schmeichel savages Martinez over Chelsea red card as Man Utd legend gasps ‘I have no words’",
@@ -2729,7 +2764,7 @@
     }
   },
   "last_morning_report_date": "2026-11-11",
-  "last_scan_at": "2026-11-11T18:00:54.031133+00:00",
+  "last_scan_at": "2026-11-11T18:35:56.161236+00:00",
   "last_summary_sent_at": "2026-11-10T22:01:35.376437+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2750,6 +2785,66 @@
     "updated_at": "2026-11-10T22:01:35.366174+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CHELSEA defender Josh Acheampong has withdrawn from the England Under-21s squad due to injury. The 20-year-old was not a",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T18:35:56.165115+00:00",
+      "link": "https://www.thesun.co.uk/sport/40995041/josh-acheampong-pulls-out-england-squad-chelsea/",
+      "published": "2026-11-11T18:34:08+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea star Josh Acheampong pulls out of England U21 squad days after missing Blues’ trip to Sunderland"
+    },
+    {
+      "desc": "Match Supervisor Suspended for Discriminatory Remarks in League 1 조선일보",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T18:35:56.165160+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNbzdadVFYTlNtM1ppVDVPMWVSZnBCQUMzcVpVOHc1dFV2cndkWGpQT1ZvZmdiYjJQMjJDTDV2bFZ1Q21ZVlByNkVxZUVQVDRPUnl6dDRMVGJxRnRPMWhIRGhpUnU0Nlp4Q1haOFJDMlRmamlvdGVXY0VtSDBTbnZkR09FUjh4dw?oc=5",
+      "published": "2026-11-11T18:14:04+00:00",
+      "publisher": "https://www.chosun.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Match Supervisor Suspended for Discriminatory Remarks in League 1 - 조선일보"
+    },
+    {
+      "desc": "Chelsea international call-ups and schedules for November 2026 | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T18:35:56.165213+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeVE2bWhNZUhkemtLVHl6NFZScFBJZGNRZVJhVHEzaDF0alZoSENMM2NFZzJFdDBtdE9jbmRoRU9LWDVmYmFPRm9Qb0ZHbDZ6UjJnazN5elJ1UXhYdDlPd29fcWtudHFBZEdiVEsyMVRHY3lRdTIzaHJvYXBpbXo3cmcxV1BXbGRTYnItSW5FTDhIbXU1X1hMQ0M5VVJkeFp2ZUw5TTk3UQ?oc=5",
+      "published": "2026-11-11T18:06:36+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea international call-ups and schedules for November 2026 | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "VIKTOR GYOKERES has insisted that he wants to stay at Arsenal despite his limited game time. Gyokeres, 27, has started j",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T18:35:56.165243+00:00",
+      "link": "https://www.thesun.co.uk/sport/40995123/viktor-gyokeres-gives-arsenal-transfer-update/",
+      "published": "2026-11-11T18:06:18+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Viktor Gyokeres gives update on Arsenal future with £63.5million star tipped for January transfer exit"
+    },
+    {
+      "desc": "WHILE some giants climb towering beanstalks, others are destined for a never-ending slumber. Teams once dominating Europ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T18:35:56.165272+00:00",
+      "link": "https://www.thesun.co.uk/sport/40923225/man-city-risk-expulsion-europes-fallen-giants/",
+      "published": "2026-11-11T18:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "What happened to Europe’s biggest fallen giants including champions now in EIGHTH tier as Man City risk expulsion"
+    },
+    {
+      "desc": "Referee observer banned for saying Chinese or Japanese fans ‘all look same’ The Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T18:35:56.165304+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOenZBVzI3SnhDam9HUkQ0Sk1LNEc5V3UtSTBiTklxRkdUMFhfVlNKRlhvTTNHTi0tTDNnNTAzTWg5M3pCSU5vNGJhbGc1Zlp3XzBzbVRUeVJid2JVc3BMclh5MlhSLTk1Tm5xbS1LMExEVnFCQ1JCOVd6NFRwejIzWGpmVUN3dVpZTWVCbjlTZ1RYWm9BbGFBRktUaEN6X0dHcmxFUk44Q3FyUQ?oc=5",
+      "published": "2026-11-11T17:58:52+00:00",
+      "publisher": "https://www.thetimes.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Referee observer banned for saying Chinese or Japanese fans ‘all look same’ - The Times"
+    },
     {
       "desc": "‘I’m happy at Arsenal,’ Zubimendi dismisses transfer rumours Punch Newspapers",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3099,6 +3194,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England pair ruled OUT of Croatia clash as Thomas Tuchel issues statement just day before Nations League match"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T18:35:56.166029+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
+      "published": "2026-11-11T14:00:23+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
     },
     {
       "desc": "October Player of the Month: Alessia Russo Arsenal.com",
@@ -4179,76 +4284,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Man Utd: Pochettino reaches 'instant decision' on replacing Carrick as two vital 'clauses' revealed - Football365"
-    },
-    {
-      "desc": "Remembering James Ridley - the Chelsea ballboy who served with Blues greats | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T07:00:57.936248+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPY3FWMWlVTUN5MnltOW5uQ0lRcDVpX2NpZktLYktwLWEwa2pBeG5rY3lGOUJfVG1rOGlhM0s1dFItM2RNSWt2NzJCQnpYcDltQXBmd2c1ekJvQmw3S0UtYUp0ZmxYSVN5UHJKSUY0RXhLaVJHS2RiRnJpdWhxNmkxUlNZd1ZFUDlDMjdPVC1JRUJSMG14WllDYmFORDZIdFFCcDMwU3QyTGxiOGsxLVdadHV2aFF1QQ?oc=5",
-      "published": "2026-11-11T06:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Remembering James Ridley - the Chelsea ballboy who served with Blues greats | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Dominic Calvert-Lewin weighs in on Jordan Pickford debate after Everton star sent warning Liverpool Echo",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.143378+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSDJHc3MxbnY1RGhWY0xjRUt3azBRS21sei01Rjh4SGwzMGF4VllZVkFrVXFiLVJLM09YU3hybll6RnVJcFBEWnNKUk5nb1MzakZjSU5wOG5TWXlhZWwxakFmSXFIb2RzZkJTYm1OVUpWNDZsbE5Xa0ZlNXBkWkJKVWRabDY5ek52a1NzTFREV2pDMFRWbUhOdlFoUExLVFprMkZ0Z3lOYUVJWUnSAbABQVVfeXFMTVJXNU0zS1dsU2hHWEphY1hGa1N5TWpTTWcwc19rLWtlSVY3LXBIT3VYYmQwNXlKa0hiUUhuZ1NyU3p1RnNvX3Mzdm9fMk54WVVFazltdnFzcjlkT2tqejlwZmE4cjJaUkdBWUUtVDNkU3FQOTBVZGRyLV9SbGZldU1GUFA2RzQ1TUhwTWZVMjhHUlktMkhkMjZ5SURxZGYxTWRJeE1Lakw1amJfM2cycEc?oc=5",
-      "published": "2026-11-11T06:00:00+00:00",
-      "publisher": "https://www.liverpoolecho.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Dominic Calvert-Lewin weighs in on Jordan Pickford debate after Everton star sent warning - Liverpool Echo"
-    },
-    {
-      "desc": "Who was in contention for Premier League Fan Team of the Week? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T13:01:00.717570+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fbEJFdkExbHZWbE1KS1YyTFJ4MlZJdUtEb3B6eDJzd1pYSTVNeWttTTRRTjhaRkFZai1JRGdhWkdBZkpidWVfYmk5YjNhdkhVMTVlOW9XYno?oc=5",
-      "published": "2026-11-11T05:26:15+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who was in contention for Premier League Fan Team of the Week? - Premier League"
-    },
-    {
-      "desc": "Transfer News Today: Endrick, Collins to Man Utd, Frimpong Stays (11 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T06:00:54.537456+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9uc1dPUGFUei1YUEc5RGQyMGFoaDNONktsWXp6dWdwZ0lYRHFOWHZ1Rm1QN09OeklfcTl5ZjBHdThFOUpwXzhqWW5GRmZmdzczdkZYZWpQMVQ2bnBSVUpuZGlseE5yZmVnenJZdGRBX0YwSFMzMW9wZVV0OA?oc=5",
-      "published": "2026-11-11T05:20:52+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Transfer News Today: Endrick, Collins to Man Utd, Frimpong Stays (11 November) - The False 9"
-    },
-    {
-      "desc": "Endrick to Arsenal: talkSPORT Reports January Interest, Roma Want Loan The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T06:00:54.537480+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOV2ZTYVBGak1EYWwzdnVKMnJLalpERVpsSm1IN0dCOWs0ZlZvVGg5Y2RjTVhKM3VmaXZmLU1VVEZkai1qM1hMY3JTajJQRnJrYUZ1YVYzTVZXaS1VaGVSX2dIaDVmRnBISW5icW9oRl9QTWowLV81c1BpLWQtbVRET1JqUVFTMkM0aEE?oc=5",
-      "published": "2026-11-11T05:19:42+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Endrick to Arsenal: talkSPORT Reports January Interest, Roma Want Loan - The False 9"
-    },
-    {
-      "desc": "Manchester City 2026/27 Home Kit IPhone 17 Clear Case Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:01:00.657692+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUFMxNWNSZzNmS3FsYlVaQmt4bHE3N3NCWHpNLWllN3FYVndvMXgybU9MTlFVcTYwMmN2YlFqcVBBbkpQdExDRFRQb1pWSkhXdXNIM2c0UF9fQ1kzWWNYMGVGdmVnMWFXY1hsVkI4bWNkQ1I2U1Z5ZERiMEdHWWN3c1AzMWZrUC1TZDhGYVZJZTBkVU8xYTVxa3NpbHl4ZE9IQVNRbE40OHVPMTZER2lzeU10TzBrMV9Db0lz?oc=5",
-      "published": "2026-11-11T05:08:07+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Manchester City 2026/27 Home Kit IPhone 17 Clear Case - Man City Shop"
-    },
-    {
-      "desc": "Coventry City 1987 FA Cup final shirt worn by Trevor Peake to be sold at auction Yahoo News UK",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.143421+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PclUteGM5ZllEcGlQaG5INkhNMDNLUEhPekNZY25PaEdtdTRHVEdWMjBtUVdRVnUwbnRpWVZrWEdLSmpqZkF1MVg1cHVWRXZvU1ZTNUlQUVNTWjFNeFBRa0FVMGprN0lLUHJqUHZmZGJxRkxx?oc=5",
-      "published": "2026-11-11T05:00:00+00:00",
-      "publisher": "https://uk.news.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Coventry City 1987 FA Cup final shirt worn by Trevor Peake to be sold at auction - Yahoo News UK"
     }
   ],
   "processed_urls": [
@@ -4342,7 +4377,8 @@
     "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick",
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k",
     "https://www.thesun.co.uk/sport/40992984/manchester-united-transfer-news-nathan-collins-calvin-bassey",
-    "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html"
+    "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html",
+    "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html"
   ],
   "s_overflow": {},
   "schema_version": 4
