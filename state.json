@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 55018,
-    "output_tokens": 5805,
-    "requests": 8
+    "input_tokens": 61180,
+    "output_tokens": 6477,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2657,6 +2657,41 @@
       "title": "曼城主场0-1爆冷负布莱顿，阿森纳重夺争冠优势",
       "updated_at": "2026-10-31T16:54:27.073866+00:00"
     },
+    "eb3774fe3791": {
+      "article_title": "‘Disgraceful.. shambles’ – Fans furious as Man Utd ‘allow Pochettino to finish international break’ as Liverpool looms",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "5bdbd2cc83597e9d",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 119
+        }
+      ],
+      "created_at": "2026-11-11T23:00:55.267168+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "22b39135b9d7a607",
+      "event_id": "eb3774fe3791",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-11T23:00:55.267168+00:00",
+          "origin": "created",
+          "title": "‘Disgraceful.. shambles’ – Fans furious as Man Utd ‘allow Pochettino to finish international break’ as Liverpool looms",
+          "url": "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 119,
+      "title": "曼联据报同意波切蒂诺关键条款，孔蒂无缘帅位",
+      "updated_at": "2026-11-11T23:00:55.910096+00:00"
+    },
     "eb66726bfabd": {
       "article_title": "Man Utd hit new low in relegation zone after 10 games as dismal record post-Sir Alex Ferguson is revealed",
       "attempts": 1,
@@ -2764,7 +2799,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-11T22:00:59.476049+00:00",
+  "last_scan_at": "2026-11-11T23:00:50.037951+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2786,6 +2821,66 @@
   },
   "news_pool": [
     {
+      "desc": "PETER SCHMEICHEL has accused Manchester United of being \"very disrespectful\" towards Michael Carrick amid talks over his",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T23:00:50.040482+00:00",
+      "link": "https://www.thesun.co.uk/sport/40997013/peter-schmeichel-slams-man-utd-over-michael-carrick/",
+      "published": "2026-11-11T22:57:49+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Peter Schmeichel slams Man Utd for ‘disrespecting’ Michael Carrick as icon calls under-fire boss one of club’s greatest"
+    },
+    {
+      "desc": "HARRY KANE has said it would take the perfect situation for him to return to the Premier League, and the perfect storm m",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T23:00:50.040509+00:00",
+      "link": "https://www.thesun.co.uk/sport/40996968/harry-kane-premier-league-return-mauricio-pochettino-man-utd/",
+      "published": "2026-11-11T22:52:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Harry Kane drops biggest hint yet he may return to Premier League with old boss Mauricio Pochettino set for Man Utd job"
+    },
+    {
+      "desc": "How to watch Stoke vs Millwall: TV channel and kick-off time Dave.Sport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T23:00:50.040532+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBfd3c1RE50ckxtSTBTcU15NWV2SU0wSS1mdlRvckxsQTBITFByd0IyZGQ4SW54ZVpmWUhnRGNmUWpzVm54Q0hOdGNlN0VNZ2dBVnQ5bWQteXZPZUVyWl9ZVnQzRVRTUQ?oc=5",
+      "published": "2026-11-11T22:50:50+00:00",
+      "publisher": "https://dave.sport",
+      "source": "https://www.thefa.com/rss",
+      "title": "How to watch Stoke vs Millwall: TV channel and kick-off time - Dave.Sport"
+    },
+    {
+      "desc": "Peter Schmeichel has hit out at the 'very disrespectful' way that he believes beleaguered Manchester United manager Mich",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T23:00:50.040563+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16285221/Man-United-legend-Peter-Schmeichel-disrespectful-treatment-Michael-Carrick-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T22:15:11+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United legend Peter Schmeichel fumes over club's 'very disrespectful' treatment of Michael Carrick as Mauricio Pochettino closes in on O"
+    },
+    {
+      "desc": "Pochettino is currently with his USMNT players ahead of their fixtures against Haiti in the CONCACAF Nations League this",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T23:00:50.040590+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16285381/Pep-Guardiola-United-States-target-replace-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T22:13:44+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Pep Guardiola 'set to be made top target to replace Mauricio Pochettino as United States boss' as ex-Spurs manager closes in on Man United j"
+    },
+    {
+      "desc": "MANCHESTER UNITED are reportedly willing to allow Mauricio Pochettino to manage the US national team for two upcoming fi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T23:00:50.040610+00:00",
+      "link": "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool/",
+      "published": "2026-11-11T22:03:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Disgraceful.. shambles’ – Fans furious as Man Utd ‘allow Pochettino to finish international break’ as Liverpool looms"
+    },
+    {
       "desc": "EMMA LOUISE JONES has shared a scary health update from her hospital bed. The BBC presenter had fans worried after shari",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-11T22:00:59.478616+00:00",
@@ -2794,6 +2889,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "BBC presenter Emma Louise Jones shares scary health update after worrying fans with post from hospital bed"
+    },
+    {
+      "desc": "The top stories and transfer rumours from Thursday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-11T23:00:50.040640+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13611225/arsenal-chelsea-and-liverpool-chase-bournemouth-star-alex-scott-paper-talk",
+      "published": "2026-11-11T21:50:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Arsenal, Chelsea and Liverpool chase Bournemouth star Scott"
     },
     {
       "desc": "MANCHESTER UNITED’S flops are in for a fitness shock if - and, what looks like, when - Mauricio Pochettino takes over. T",
@@ -2816,6 +2921,16 @@
       "title": "Arsenal join Scott chase - Thursday's gossip"
     },
     {
+      "desc": "CRAIG HOPE: Several of the head coach's camps have been blighted by withdrawals, including Cole Palmer's 'load managemen",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T23:00:50.040695+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16285269/Harry-Kane-annoyed-England.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T21:29:14+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Harry Kane is annoyed at his '50-50' England team-mates who pull out of international duty, reveals Thomas Tuchel"
+    },
+    {
       "desc": "Manchester United agree key terms with Pochettino Operativ Məlumat Mərkəzi",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T22:00:59.478687+00:00",
@@ -2824,6 +2939,16 @@
       "publisher": "https://operativmm.az",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Manchester United agree key terms with Pochettino - Operativ Məlumat Mərkəzi"
+    },
+    {
+      "desc": "CRAIG HOPE: Kane does have an ego, only it is measured in goals and self-improvement, not vanity and self-indulgence. He",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T23:00:50.040756+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16285055/Harry-Kane-ego-England-humble.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T21:11:17+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "HARRY KANE INTERVIEW: England captain opens up on having an 'ego', the secret behind Ballon d'Or glory, the 'tough' moments with his country"
     },
     {
       "desc": "BALLON d'OR WINNER Harry Kane has had a golf simulator built in his new £20million UK pad – despite it being just yards ",
@@ -2846,6 +2971,16 @@
       "title": "Man Utd latest: Pochettino set to remain in charge for USA's next two games"
     },
     {
+      "desc": "The United States have cancelled media access scheduled for Wednesday as Manchester United prepare to make a move for th",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T23:00:50.040809+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T20:47:54+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United set to appoint Mauricio Pochettino as head coach: Club make formal approach to US Soccer after agreeing personal terms - with Mic"
+    },
+    {
       "desc": "Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T22:00:59.478758+00:00",
@@ -2854,6 +2989,36 @@
       "publisher": "https://ticketing.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "- Liverpool FC"
+    },
+    {
+      "desc": "As Mauricio Pochettino prepares to activate a release clause with the USA national team to take the Manchester United jo",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T23:00:50.040845+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16284877/thomas-tuchel-england-mauricio-pochettino-man-united.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T20:19:32+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "I won't do a Mauricio Pochettino! Thomas Tuchel insists there is 'zero chance' he will walk out on England for a Premier League job - but ad"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T23:00:50.040860+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-11T20:19:02+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
+      "desc": "Arsenal Saka and Rice Trophy Fridge Magnet Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T23:00:50.040886+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONWZzX1pHa0dFQTl2ZTZQRVlZZFJrXzJQaDJUVFVWUWxqNmNPUnV1UTVLMDlyWWY3T1l5akVoVEVOZlA3ZnVIcFcwaDNnNnlELUd5Y29ZVjBnN1BMQjNzWVJ2SlhyWnVmSUdUNjI5eEtvb0dhaEI4S28yTE5SOGFkRlNhQlJIU3dWTDNvTTZKQUo3RHdmclFGSU85WC12X3RLUmVYSDgxYmM4T0RZZDJEMnhtY3pBSlRFN2xialBTbXZETGFITUNmWW1CN1U?oc=5",
+      "published": "2026-11-11T20:04:13+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal Saka and Rice Trophy Fridge Magnet - Arsenal Direct"
     },
     {
       "desc": "JUDE BELLINGHAM has a fleet of supercars - but the irony is he can't drive any of them! The England ace, 23, opened up t",
@@ -4154,136 +4319,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Alisson Becker wins Premier League Player of the Matchweek award - Liverpool FC"
-    },
-    {
-      "desc": "Bitesize Highlights: LFC 1-0 Real Madrid Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T11:00:53.505775+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5hU2k0alVCUloxakNSU3k0M2phOUp1WGpKYnhMcERCTmFLUktQZVFXSUtTenQ4YnZUV0otdkxsUVk2R0N5aXRZMndkMU4xOXI5Q3FVWTFZOFJKZ2dzcG9SbU9lNzh6bkx3WmRiZ283V2JsTGxGQ0JOUEN1VVMxUQ?oc=5",
-      "published": "2026-11-11T09:50:15+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Bitesize Highlights: LFC 1-0 Real Madrid - Liverpool FC"
-    },
-    {
-      "desc": "Ornstein says three Man Utd-linked managers ‘would take the job’ United In Focus",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T13:01:00.717198+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeGR2OG9PVXRwTGZPUWd5SlhldmJDaWVkUnhFQjZGXy1QbUw4OXdjcW9Wd1lueklkWnJiMWVyakE1OVRuWmlEdnAtclZGSnN4Wlp3YjFtR0J3a0xqOXhEWFZnSzVPMzRxbXpWYXNpZ2taNkF6YWJ0VDVkbjhpU2VVMkY5ZmxMejNhRGRZOG9wREkzS0VuS2R1dmozSW1LZUU?oc=5",
-      "published": "2026-11-11T09:30:00+00:00",
-      "publisher": "https://www.unitedinfocus.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Ornstein says three Man Utd-linked managers ‘would take the job’ - United In Focus"
-    },
-    {
-      "desc": "Police made Russell Brand leave home of his then-girlfriend after 'violent incident' Mansfield Radio",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:01:00.657071+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQc1lmQ29PaVduTk02MTRhX2NWM1lsa0VfV1Z6enVuVHJuQXVVd1Z5SkJrNEVmNEZIak0zUUZfbThtLThSNGtGY1RfMUtDM1h4d2tJZS1xZElJYVhhSF9rUEVod25SLUxFODNiVjBNMU5BYVJmS0pfSjlnUWtTMW43V2dqbUUyM0x0SnpWMng2YlVNUVhraDBwUmNfcHNzbFhnTlk3RnlBTkM2VkhHX29DTEdjVzVLNnhlTUctTGU0OXlfVmg5cHJZUTZPUElZY1VHV3RfX2FzTkV1bmUySUQ4dUxQNUMxS1I2Z2hLTUJCSQ?oc=5",
-      "published": "2026-11-11T09:26:00+00:00",
-      "publisher": "https://www.mansfieldradio.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Police made Russell Brand leave home of his then-girlfriend after 'violent incident' - Mansfield Radio"
-    },
-    {
-      "desc": "Man United deliver final gut punch to Michael Carrick as Mauricio Pochettino closes in on job Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:01:00.657104+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaUYtdkFiUDhqSkoxX0VzTXRiMWJqNm9ibTBvUlJjcVZ6X1lBbmV1bXFpamM2YTZib2otWS03dVcwNkt2NTJhSnJwekNINXptSGFya3JoNWhNUUsxTUtKR29LeDh1OTN6ekczMEc2WE1SYWV2Z0hfUF9JcTFHWk1ORHUtSQ?oc=5",
-      "published": "2026-11-11T09:26:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man United deliver final gut punch to Michael Carrick as Mauricio Pochettino closes in on job - Yahoo Sports"
-    },
-    {
-      "desc": "FPL Break Injuries: Guéhi and Konsa Out for England, Szoboszlai Doubt (11 Nov) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:01:00.657133+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVkJxdkg1WjFrel8yMmZMZEhjdDcxQ3dQdWt3WkhqQ1NkSUt0dG42UXhLMGpNcHhXLVp2TnlKQXhFOHRmdVR1Zll6aDg3RkZzTjF5VGxndmJXOWFiNXZsTjFxS01IVEV1UHNNYS0wTk1STHNYQWJEckh2RWpZSDljSWhhR2h2QQ?oc=5",
-      "published": "2026-11-11T09:17:43+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "FPL Break Injuries: Guéhi and Konsa Out for England, Szoboszlai Doubt (11 Nov) - The False 9"
-    },
-    {
-      "desc": "How much Manchester United will pay USMNT for Mauricio Pochettino HITC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.143018+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdUJXd25Dd3ZPQVN5RUxCcmtub3F4QS1rUVRjRUhLdG1MZXBNU3lkWWpGemtFalFpUW5nQ3RsRnFnbVhCRENMQk9Xbjd1U1ZmTVZocVpyeVlNOUZ6ZzFLaUxjbFowQVFTRC1LY0hxamJTTGVBOWdIYXJlUnk3RFF6WEYxR0tETnJ1aGZReTJYY0g?oc=5",
-      "published": "2026-11-11T09:13:38+00:00",
-      "publisher": "https://www.hitc.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "How much Manchester United will pay USMNT for Mauricio Pochettino - HITC"
-    },
-    {
-      "desc": "John McConnell Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.143029+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5tQnYxUFVlYVhLT2VTbmFhdHdPR3ZMOEhCZGN4X0UyM29URC1iMnVMZHlhNVE0YVJsQWJSSXo1VjJjeUpGM3pacFVydTRKSklzanh3aUVZUHNxMmJIX3VJZ25tbVRuQQ?oc=5",
-      "published": "2026-11-11T09:11:50+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "John McConnell - Liverpool FC"
-    },
-    {
-      "desc": "David Ornstein says Man United “finalising deal” for Pochettino – but here’s why it’s not a done deal yet LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:01:00.657188+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQVVBxel9KM05mclRNY3Qzbmt4YjRBREo1OWlTc195ZThMSi1WMEptNEl3cjgzSDZudlJka3lsdkliYnQ3cG54LUhvOE5zNmZYWi1FR3ZNclJ4WW5ZcHBqdkVlRVhCYmxtb0RFM19HUElQUjRHcnZQT0ZfUWJpVW5Ockkzbi00eVdjMnZNRE9hSFFnQUlBMHZuUU0zZlBTRXdkZUxDUjVpQXgwZUxUY2tFdWlQNUp0Tm5sR192RHVobzZFanVNUmlnbjN5WVhwY0Vfb0d0bGF5YU1paTRZc3VzY1gxT0dSbzFYMmh1T1BQSFFSYXFS?oc=5",
-      "published": "2026-11-11T09:11:15+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein says Man United “finalising deal” for Pochettino – but here’s why it’s not a done deal yet - LiveScore"
-    },
-    {
-      "desc": "Have your say: What are Liverpool's best Premier League home wins over Manchester United? Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.143067+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaUlGRW5HM2VxSC00LWNKazlBWUZqWERoYmp3RDE4Q2RFVGFNZW1qdjRaeDVGTDBJQW9IeU5CcGdXbzd2ZVluWjNteDk3TEJMdnhTYzRnT1dWaHRnWk1jUVhVVlN4UFByRHpOQjZOX1c1MVNLSXlIYmRIWTFSNUJwY2JSN0pXdVNaNlUyd3FIQW1RblR0TUMzdGVVM0VLWFBiT0E?oc=5",
-      "published": "2026-11-11T09:09:09+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Have your say: What are Liverpool's best Premier League home wins over Manchester United? - Liverpool FC"
-    },
-    {
-      "desc": "Internationals guide: When and where Liverpool players are in action in November Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T16:00:55.028434+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOT3Y5cHNiY3lZdFhoOEp6WXpTSHFrV1dYU0V3T21ycnlsbmJ5YUduSW9oa05XcmptTXJ4bEVIT0VZZFJKOWJIT3BSa3RLU3poT1lYVGRFcG9WbmJmZG1FVmFoWjhwTHl5MmJ4UUtCeVdWNEVqVmhuRXplcjZ4d1hjeS1NSVNBTnViV1JQa2pVbEtYblRZV2d3enIwczRhSS14SXM5VkRsZjU?oc=5",
-      "published": "2026-11-11T09:08:24+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Internationals guide: When and where Liverpool players are in action in November - Liverpool FC"
-    },
-    {
-      "desc": "Man Utd: Ornstein reveals extraordinary double Pochettino U-turn that truly exposes INEOS's wild management TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T13:01:00.717324+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORjMzemE3WFl3NnZZM3pXN1VKRFdSakRsSS1US3VxbldqQTVUdjVjczNuSTg2X0ZVcHJRaFhOcTVIMTNkZG8yOFVLYTBMWVR3Vkxad1c5eVViNE5OVFp3VERRb2JFa3BMbG5NOXR4bXlXbmlBemVhZERzNjJybUFQeURrSU45TzNCRmZxZGdLNnE4Yk13UnZMVnRhdzdpN051dHB6SUFkMkJ2b1pzcjdBMktTSQ?oc=5",
-      "published": "2026-11-11T09:02:06+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man Utd: Ornstein reveals extraordinary double Pochettino U-turn that truly exposes INEOS's wild management - TEAMtalk"
-    },
-    {
-      "desc": "Manchester United open talks with Mauricio Pochettino about replacing Michael Carrick, who is expected to lose his job.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T09:00:52.950912+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg25pj36mvo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T08:58:58+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Man Utd open talks with Pochettino about replacing Carrick"
-    },
-    {
-      "desc": "But Rav Wilding, a former detective who recently appeared on the BBC Morning Live show, has sent a fresh warning to indi",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-11T14:00:54.093046+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16281473/Police-trawling-Dodgy-Fire-Stick-sellers-bank-accounts-contact-illegal-viewers-Premier-League-football-films.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-11T08:40:49+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Police 'are trawling through dodgy Fire Stick sellers' bank accounts to contact illegal viewers' of Premier League football and films"
     }
   ],
   "processed_urls": [
@@ -4378,7 +4413,8 @@
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k",
     "https://www.thesun.co.uk/sport/40992984/manchester-united-transfer-news-nathan-collins-calvin-bassey",
     "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html",
-    "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html"
+    "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html",
+    "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool"
   ],
   "s_overflow": {},
   "schema_version": 4
