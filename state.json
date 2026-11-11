@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-11",
     "errors": 0,
-    "input_tokens": 121786,
-    "output_tokens": 13804,
-    "requests": 20
+    "input_tokens": 127521,
+    "output_tokens": 14652,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2342,6 +2342,41 @@
       "title": "弗格森执教曼联40周年纪念晚宴众星云集",
       "updated_at": "2026-11-08T11:10:49.012621+00:00"
     },
+    "dd15f15416ac": {
+      "article_title": "Man Utd ‘finalising deal’ for Mauricio Pochettino after ironing out personal terms – David Ornstein - TEAMtalk",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "1923c4377cc2e698",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 114
+        }
+      ],
+      "created_at": "2026-11-11T09:01:00.075526+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "dd13596236ae82ae",
+      "event_id": "dd15f15416ac",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-11T09:01:00.075526+00:00",
+          "origin": "created",
+          "title": "Man Utd ‘finalising deal’ for Mauricio Pochettino after ironing out personal terms – David Ornstein - TEAMtalk",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 114,
+      "title": "奥恩斯坦称曼联正敲定波切蒂诺交易",
+      "updated_at": "2026-11-11T09:01:00.973354+00:00"
+    },
     "de7d361bdd27": {
       "article_title": "Cole Palmer and Man United unpacked: The truth about Old Trafford links, why he really got a new Chelsea deal, Xabi Alonso's 'emotional cont",
       "attempts": 1,
@@ -2624,7 +2659,7 @@
     }
   },
   "last_morning_report_date": "2026-11-11",
-  "last_scan_at": "2026-11-11T08:00:55.641357+00:00",
+  "last_scan_at": "2026-11-11T09:00:52.948198+00:00",
   "last_summary_sent_at": "2026-11-10T22:01:35.376437+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2646,6 +2681,156 @@
   },
   "news_pool": [
     {
+      "desc": "Manchester United open talks with Mauricio Pochettino about replacing Michael Carrick, who is expected to lose his job.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T09:00:52.950912+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg25pj36mvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T08:58:58+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd open talks with Pochettino about replacing Carrick"
+    },
+    {
+      "desc": "David Ornstein names \"world class\" manager soaring up Man Utd's shortlist Football FanCast",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T09:00:52.950981+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOS1JU3ZNNEFMTlV6QXFhWi1HYTV6T3lXOVZkaDdWcC1IVGk0Rjl6a3R2QmUtTnlVSGJyVHRVRVNnZEpBUXFyczRnUWlLRU5zUnRHRjFqNDBFZFh3eGU1aWp3d09mZ3BUYkxoa0lWR08zZEt5cWVBZ3pYOGMzaE9wY3dDbUxKdVhhR0g1Mlo2aTg0dXJMOWlZcndCRHNPd2NGOVpjcVln?oc=5",
+      "published": "2026-11-11T08:40:12+00:00",
+      "publisher": "https://www.footballfancast.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein names \"world class\" manager soaring up Man Utd's shortlist - Football FanCast"
+    },
+    {
+      "desc": "Manchester United's powerbrokers meet for a summit in Monaco today - as Michael Carrick continues to turn up for work wi",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T09:00:52.951044+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T08:38:21+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Michael Carrick's D-Day: Man United boss arrives for work at 7.45am, while his bosses jet to Monaco to make final call over sacking him - wi"
+    },
+    {
+      "desc": "Manchester United finalize top candidate they want to replace Michael Carrick if he's sacked: David Ornstein Sportskeeda",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T09:00:52.951067+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPM251YTVfcDJmeDZ6dVBUM1MzT0xPem1TUm1uMHBOck9tYkVrb2lUSWQzc0kyZVEzSnJOc1puMjZyZDJkckpHY2dYMGp0cENBX1NfZXhsd2M2OThzVS1ZUU1TLUpfSi1rTElkSjhrd1duLTN5elV5TTRwQ2QtOVM3V3dHb3ktc2dRTEdhNEdDUGtVX3RXV21OS2RTeGZULS1WRERkOXdOR05sUXBYNHRGenRaVktfckFCS3phU1ljZ0kybTE3OC1qOTlwZmRWUHM?oc=5",
+      "published": "2026-11-11T08:38:00+00:00",
+      "publisher": "https://www.sportskeeda.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United finalize top candidate they want to replace Michael Carrick if he's sacked: David Ornstein - Sportskeeda"
+    },
+    {
+      "desc": "Manchester United finalising deal for Mauricio Pochettino if Michael Carrick departs - The Athletic The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T09:00:52.951087+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT2VnY1VPVW1kMk1wN2ZfUkYzZ0NkcTZUUU1nM0cwWGp6Qjk5MWY1QU4tSW1MNnA1WnpjZlNkbHpFbC1KT056NnI3VjRzVEVIVE0tbnpxOHhuQkJ3eXJ1YUtETkljQVEtSk5Wd3JuUnM3R0tlTWxMakNPWlI1a3NGSnRORXRYQ3c5aTdyaWNOWnFlUWRuMXdDXzhNeUZIX1NyT2RRSkh4RQ?oc=5",
+      "published": "2026-11-11T08:36:14+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United finalising deal for Mauricio Pochettino if Michael Carrick departs - The Athletic - The New York Times"
+    },
+    {
+      "desc": "Man Utd ‘finalising deal’ for Mauricio Pochettino after ironing out personal terms – David Ornstein TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T09:00:52.951107+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k?oc=5",
+      "published": "2026-11-11T08:31:59+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man Utd ‘finalising deal’ for Mauricio Pochettino after ironing out personal terms – David Ornstein - TEAMtalk"
+    },
+    {
+      "desc": "MANCHESTER UNITED are reportedly closing in on a deal to sign Mauricio Pochettino if Michael Carrick is sacked. The Athl",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T09:00:52.951125+00:00",
+      "link": "https://www.thesun.co.uk/sport/40986772/man-utd-pochettino-manager-carrick-sacked/",
+      "published": "2026-11-11T08:31:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd finalising deal for Mauricio Pochettino to become new manager with Michael Carrick set to be sacked"
+    },
+    {
+      "desc": "Ornstein reveals Man Utd now 'finalising deal' for 'chosen' Carrick replacement amid 'ultimate decision' Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T09:00:52.951143+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY09Pdm82WTVrSDdoUC1ZdTdSS2pqSEh0emljdkFPc21aTHB5VnJuVkdZdGNndEc0NFItUWNMYS1kUXNQZ3BxRjRaRjB6c0FiaFVza2EyaUV4ZHRVTTdnMmlfU09YQTlIUU52YkxrSkpLNnk0OGkzcEU5ZnNSZHRyNjR3UU1vdl90RTFLTFZaM0dTS3VUWjdmVHQ4b2JrNXQxZEFGUks3elNYZWdYc2dteXhkM1VpYTVpVXY3WWlqYw?oc=5",
+      "published": "2026-11-11T08:29:53+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein reveals Man Utd now 'finalising deal' for 'chosen' Carrick replacement amid 'ultimate decision' - Football365"
+    },
+    {
+      "desc": "Manchester United are close to agreeing a deal with Mauricio Pochettino to become their next head coach if they decide t",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-11T09:00:52.951160+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610862/mauricio-pochettino-man-utd-close-to-agreeing-deal-with-michael-carricks-potential-successor-ahead-of-monaco-meeting",
+      "published": "2026-11-11T08:28:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd close to agreeing Poch deal as Carrick reports for work"
+    },
+    {
+      "desc": "Man Utd stance on appointing Antonio Conte emerges after ‘talks’ claim Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T09:00:52.951179+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNlhlR2s3ZlBQOWFpeG15bHdTTlNISVBJVy1JTVZyMkRRN1BqcnZOeTVVa0x4cGhWZGYxVThCS2k1Yzk5NjItUFJ6dEVVVmhtcmhfdEdVRmFzc2dHa3pRMHBtVGdBQUFpVDJFOXh0M3I2c3JmVjhHU082NW5rb0NWYm1yVTFveW9YRVVWNVdoMThiWTZ1am1Yb3ltMDU?oc=5",
+      "published": "2026-11-11T08:22:25+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd stance on appointing Antonio Conte emerges after ‘talks’ claim - Football365"
+    },
+    {
+      "desc": "Man Utd next manager: Huge Ornstein update reveals most likely Carrick replacement with trio ruled out Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T09:00:52.951197+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcFFaNExQQmdfbHpWcC1oT1BFS2lydDAtSm5sUVI4MzZ6NDdnLU40eTdrLXB0ZTVxQ2RnUVBKeUd2UmNMWHVDblYtQ1k1Tk1NUHFEc3FmLWQzcVVFRHNVZFpnb1ZMZnRVVEZCcGtyOHNRcnFJSU9WbWE1R2RSRUpJMm5STnVYak5hNVpwQ2lfSjdPRHJuMG9ZbW1TQnktbFBSR1ZMWkV2Y0lMWlF4NkZlcW96UVg?oc=5",
+      "published": "2026-11-11T08:17:25+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man Utd next manager: Huge Ornstein update reveals most likely Carrick replacement with trio ruled out - Football365"
+    },
+    {
+      "desc": "Northern Ireland manager Michael O'Neill believes there are players in his squad who have the ability to become Premier ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T09:00:52.951217+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c3x2wz2kg0lno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T08:09:02+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "NI can draw on strong club form in key window"
+    },
+    {
+      "desc": "NATIONAL LEAGUE side Gateshead have put out an advert for a new manager on social media after sinking to the bottom of t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T09:00:52.951235+00:00",
+      "link": "https://www.thesun.co.uk/sport/40986512/gateshead-new-manager-advert-x-cv-national-league/",
+      "published": "2026-11-11T08:04:33+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Non-league club put out advert for new MANAGER on X and ask for CVs as they sit rooted to bottom of National League"
+    },
+    {
+      "desc": "Centre-half Ryan Porteous has taken a long journey to Los Angeles to rekindle his Scotland career, writes Kheredine Ides",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T09:00:52.951254+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5zjxjj91dn1o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T08:00:14+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Dalkeith to LA pays off for Porteous with Scotland recall"
+    },
+    {
+      "desc": "Harry Kane is set to become England's most-capped player ever on Thursday night - will it also be time to crown him the ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-11T09:00:52.951287+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610251/harry-kane-ballon-dor-winner-set-for-wembley-celebration-of-england-record",
+      "published": "2026-11-11T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "England's best? Record-breaking Ballon d'Or winner Kane set for Wembley celebration"
+    },
+    {
       "desc": "BEREFT Santos star Rony has thanked Neymar for his \"generosity\" following the murder of his father. Marigerson Barbosa C",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-11T08:00:55.645213+00:00",
@@ -2664,6 +2849,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano says Man Utd ‘scared’ to appoint ‘brutal’ manager: ‘He says the reality’ - TEAMtalk"
+    },
+    {
+      "desc": "BBC Sport charts Jarma Mohamed's surprising football journey from Premier League academies to the Somalia national team,",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T09:00:52.951349+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm5ynnklgl9xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T07:13:52+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "From Jersey to Somalia... via Liverpool & Man City"
     },
     {
       "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
@@ -3984,166 +4179,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "WATCH: What to do with Konsa in FPL now Saliba is back? - Premier League"
-    },
-    {
-      "desc": "Bournemouth defender James Hill is added to the England squad for Thursday's Nations League match against Croatia at Wem",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-10T12:01:03.778576+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckjrwrggjlryo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-10T11:41:27+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Hill gets first England call-up as Konsa cover"
-    },
-    {
-      "desc": "MANCHESTER United are expected to point Michael Carrick in the direction of the job centre any time now. His future is s",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T12:01:03.778614+00:00",
-      "link": "https://www.thesun.co.uk/sport/40775098/eddie-howe-nagelsmann-conte-hurzeler-man-utd-boss/",
-      "published": "2026-11-10T11:33:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How contenders to be next Man Utd boss compare as Mauricio Pochettino, Eddie Howe and Antonio Conte all in running"
-    },
-    {
-      "desc": "Liverpool transfer news as Endrick makes huge admission about leaving Read Liverpool",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T12:01:03.778630+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSmFqT2E3LTREZjc1RmIwRjFsREs4TE9KSWxtSHEtTXdxeGpBRmViWG9kQWRPZ3lucWRrNDlBR3p0NEp0WlRUc19BRm1YMGl0My1qMDNTSHBVdHNSWk9hMlFaWl8xVFJsci1hdnc3TkxwVnAwTXp1YkZYSTNXRzJxc0FnQVJrbFhKMXRHQ3U4V0FjMHBGVTdKSzBhQks5WmNWRnQxdGZkMDVnZDRZ?oc=5",
-      "published": "2026-11-10T11:32:49+00:00",
-      "publisher": "https://readliverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool transfer news as Endrick makes huge admission about leaving - Read Liverpool"
-    },
-    {
-      "desc": "MANCHESTER UNITED chiefs will meet with co-owner Sir Jim Ratcliffe to ratify the sacking of Michael Carrick. United chie",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T12:01:03.778643+00:00",
-      "link": "https://www.thesun.co.uk/sport/40978275/man-utd-ratcliffe-sack-michael-carrick-pochettino/",
-      "published": "2026-11-10T11:29:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd chiefs meeting Sir Jim Ratcliffe to finalise Michael Carrick axe with Mauricio Pochettino frontrunner for job"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T14:00:57.536649+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-10T11:26:29+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "Sven-Goran Eriksson's estate is being chased by HM Revenue & Customs (HMRC) for an outstanding £3.5million in tax owed.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T13:00:51.913513+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16280399/HMRC-chase-estate-late-ex-England-manager-Sven-Goran-Eriksson-3-5MILLION-unpaid-tax-busy-ladies-save.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T11:25:24+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "HMRC chase the estate of late ex-England manager Sven-Goran Eriksson for £3.5MILLION in unpaid tax - because he was 'too busy with his ladie"
-    },
-    {
-      "desc": "Manchester United head coach Michael Carrick's future will be discussed at a meeting on Wednesday, but executives Omar B",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-10T18:00:51.964077+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmy0r041ed0po?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-10T11:23:43+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Carrick's Man Utd future to be decided as Berrada and Wilcox retain support"
-    },
-    {
-      "desc": "Romano rates Arsenal chances of signing mesmerising £67m winger as RB Leipzig decide on January sale TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T11:24:15.597291+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOc0U2alY3SFBkU3VZTlcwbF9Bd2V2dTlpRW5nQzhfbjFNRmRqbnZXR2RhVHdRSjNoRklUNG44Z0ZkOFAtZm80M1JSQUFxdjhieHh1NFVRODZEN2d0QktiSWZXcDN0ZU9VbkplRVFFcEFZN1FISmNlRkMyUERwMFBrOXRsZDhOTjdDUUlpZnFiSDB3dEFONFdLNFJXSGJzcE5qZWF2S0xXUUVrWWhxZVRQQXVjTzBOM0ViZXc?oc=5",
-      "published": "2026-11-10T11:21:37+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano rates Arsenal chances of signing mesmerising £67m winger as RB Leipzig decide on January sale - TEAMtalk"
-    },
-    {
-      "desc": "Romeo Lavia: My Football Firsts | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T13:00:51.913541+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9nemtwbnh6V3RKcFZRU3BUWHVqQlpVNkgybmQ5czl4eFpobExFSmxmRWhHNHNQQ0FxZk90ZDkweFFwQVcwTUpCMGtaZmt3VUFiaFBBRzZReXlGbVJCN285aS13Z1BOeWw1Ml9CMzBpN0oxUGt2TmFqS0dUR0c?oc=5",
-      "published": "2026-11-10T11:15:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Romeo Lavia: My Football Firsts | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "MICHAEL CARRICK was sitting at the front of the aircraft and on his own, scrutinising his tactics on a notepad, during M",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T11:24:15.597318+00:00",
-      "link": "https://www.thesun.co.uk/sport/40975992/michael-carrick-man-utd-reign-fell-apart/",
-      "published": "2026-11-10T11:13:44+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Carrick’s Man Utd reign fell apart from slipping standards to petty backstabbing as proud 148-year record falls"
-    },
-    {
-      "desc": "Fabrizio Romano rules out Barcelona negotiations for Chelsea defender: 'Nothing is happening' Barca Universal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T11:24:15.597341+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSktWSkxFRG5Xd19BMEZjVmRpc211X1JVdklyaXR1ek45RElJa05YUm5ab0phZFlUOUtmcmVHckVyNzN2WnljV0dfSi1HMDFSLXVueTYzU0thS2xSMlhZNWhmTU81UVp4cnY0eTRIa0xtVkROYXUxSjJWbXRiM0dvRVBTcmhfMmZHbUNHNzVMYzZ4aFZGTVRJYklFMGhDZjhvS2VvTUNNNktTajJVMDBQTUpaYU5WM1lXZlE?oc=5",
-      "published": "2026-11-10T11:07:18+00:00",
-      "publisher": "https://barcauniversal.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano rules out Barcelona negotiations for Chelsea defender: 'Nothing is happening' - Barca Universal"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T15:01:05.714202+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95WV83cE50VUdxWndxaklDcWp6SDRrTm1TT0pGVWFBX1VKWmw1dTFjS2V6V1NoNnJYWElaQWRRQWx5bXFpcVFIUHllX3hvdFEwNTIwYmNSc3dXSldrWjAwUk1XS21zTW5xendhTm1TclVUUGV0OXhqdHdn?oc=5",
-      "published": "2026-11-10T11:05:26+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "NOT even Florian Wirtz's (£4.8m) loudest cheerleaders would claim he's been at his best this season. But the Germany int",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T11:24:15.597384+00:00",
-      "link": "https://www.thesun.co.uk/sport/40976807/florian-wirtz-assists-fantasy-premier-league-liverpool-stats/",
-      "published": "2026-11-10T11:03:57+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Surprised? No Dream Team player has registered more assists than Florian Wirtz this season"
-    },
-    {
-      "desc": "Watch the best of the boss against Hull with Bench Cam Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T18:45:29.320105+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQY3l4VFUySjA3NFZkVjdHYjE0SlFkOXNYamNuZzV1SG1mVksycDE2dy1fX3FDc0pfelBGUDdPSEd5OGR2SWJ4ZjZOV2hHS3ZvUWJEUm5RT3NENWp6bTd4V3NEcktZdlhiS2ZlNG1hOUliSW4xWGJpZUg1Zk13ZUhGdVVjNFhPV2tMMlJpQ0o1RDcwVTQwa2VsR3FJblk?oc=5",
-      "published": "2026-11-10T11:03:48+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Watch the best of the boss against Hull with Bench Cam - Arsenal.com"
-    },
-    {
-      "desc": "Man Utd: Ratcliffe 'advised NOT to appoint' leading manager target as Romano reveals new shortlist Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T11:01:00.367229+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQekktX0xGNGtwMWlHYTdNTWtNcUVvVnZVS0ZhZGtCbHJKMFJLT050SUJhNGZVelFPOGRnRUo3TEFWOHhzRjFHa0NIclhqS3VGVEg4VVlHeXRadFF6Q21oSW52N09fSDk5RFVCXzRDcXlNOUFCVDdkNTd6T21KZGVITUR4T0pOYUZ1Q3FBdVRIYlpqcTg5cmpPVFJpTmlRSEJRZ1NYNHVYT19wc0t5YURVQVZab3Y?oc=5",
-      "published": "2026-11-10T10:59:08+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Ratcliffe 'advised NOT to appoint' leading manager target as Romano reveals new shortlist - Football365"
-    },
-    {
-      "desc": "2026/27 PUMA STELLAR Play Reactivity Football Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T15:01:05.714232+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbWJjc2V4cXFPVzR3MHJRNllmdWZlWHlYd0pQUGgwbmlacV9NV3NxLXpKU25sQlg1R01vNVViUUxTYVNMVlhMeUt5Qy00bmxia1N3bFlYbkVFNEZPdWQxZ3RSdkxVQUtESi0tOThaR1NkSm5uZ052REIwUWF0Tkp5cmNKbDAwVDkzb3g3YUxGR2dDc1VJMW1KM2l3U1hZMWpwd2ItRDR3?oc=5",
-      "published": "2026-11-10T10:54:31+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "2026/27 PUMA STELLAR Play Reactivity Football - Man City Shop"
     }
   ],
   "processed_urls": [
@@ -4234,7 +4269,8 @@
     "https://www.thesun.co.uk/sport/40976073/man-utd-pay-millions-for-mauricio-pochettino",
     "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html",
     "https://www.thesun.co.uk/sport/40980935/kevin-de-bruyne-quit-napoli-rasmus-hojlund-clash",
-    "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick"
+    "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k"
   ],
   "s_overflow": {},
   "schema_version": 4
