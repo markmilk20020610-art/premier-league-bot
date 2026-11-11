@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 25,
+        "calls": 26,
         "errors": 0,
-        "requests": 25
+        "requests": 26
       }
     },
-    "calls": 25,
+    "calls": 26,
     "date": "2026-11-11",
     "errors": 0,
-    "input_tokens": 152905,
-    "output_tokens": 17150,
-    "requests": 25
+    "input_tokens": 159296,
+    "output_tokens": 17787,
+    "requests": 26
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2659,7 +2659,7 @@
     }
   },
   "last_morning_report_date": "2026-11-11",
-  "last_scan_at": "2026-11-11T12:00:51.928380+00:00",
+  "last_scan_at": "2026-11-11T13:01:00.713320+00:00",
   "last_summary_sent_at": "2026-11-10T22:01:35.376437+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2681,6 +2681,96 @@
   },
   "news_pool": [
     {
+      "desc": "Mauricio Pochettino looks set to turn a decade-long courtship with Manchester United into a full-blown relationship, say",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T13:01:00.716358+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwzd9pvjy426o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T12:58:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Pochettino a decade in Man Utd's making - but Carrick deserves better"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO made an immediate impression on Sir Alex Ferguson. “In the second half Southampton have been the bes",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T13:01:00.716392+00:00",
+      "link": "https://www.thesun.co.uk/sport/40989569/pochettino-man-utd-manager-ferguson-carrick/",
+      "published": "2026-11-11T12:56:45+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Pochettino wields iron fist in velvet glove and has Fergie’s approval but one thing must change if he’s Man Utd manager"
+    },
+    {
+      "desc": "FRENCH football has been plunged into mourning by the sudden death of Wanis Honsor. The young footballer, 22, passed awa",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T13:01:00.716416+00:00",
+      "link": "https://www.thesun.co.uk/sport/40990504/wanis-honsor-dead-footballer-cardiac-arrest/",
+      "published": "2026-11-11T12:48:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Footballer suddenly dies aged 22 after suffering cardiac arrest during training session as tributes pour in"
+    },
+    {
+      "desc": "Governance - Premier League Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.716441+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbjN5N2ZrNGhlMG42T1ZrSFZlYllocnRBeG1wMnlNVGtSZFlDWUowRHV6VDVrUXJpTlVDQi1DaHI3TW4wUjUzZ1psR3pNOWlmUFdNWk13R0tTdURJNjVjNExlZWFaNkl1NUFwWDRCRGRmRW9lWUhjSi1GR0ZkcXB0ekd3SW9HMlFRUWluS3FxVjI3MWxkaElSNnp0R2xlX0NxVEs3NTVSRmJHMUVHd3RTMTJmbw?oc=5",
+      "published": "2026-11-11T12:47:44+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Governance - Premier League - Premier League"
+    },
+    {
+      "desc": "CHELSEA keeper Robert Sanchez walked away after smashing a £300,000 Ferrari 488 Challenge Evo into a barrier during a mo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T13:01:00.716467+00:00",
+      "link": "https://www.thesun.co.uk/sport/40987971/chelsea-star-robert-sanchez-survives-ferrari-crash/",
+      "published": "2026-11-11T12:34:52+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea star Robert Sanchez cheats death after ploughing £300k Ferrari into barrier during motor circuit event"
+    },
+    {
+      "desc": "Strike by consultant doctors in England paused Mansfield Radio",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.716506+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbHhKSGUtemxYanVQUlJIc0VmOUQ3MF8wdHZsLWU0d3FLWHJXeUsyZ09zQTlwT2tpZndDU05SU0ZyT191WEozd2dzRk8yLS1idXdDMFo0OTZlXzR0bmJwZGVhbGJMRnZ3eHpsd294YmZYM2VHMUoxdWtLaDNqajhaUmlWeG9meVBhRE9oNl9OMWVia0llTTlzWTc1dFZodXJKRkRYQjkyUDZucm5RQnVGNHBDZWZaR0xNTmdtaG4wTQ?oc=5",
+      "published": "2026-11-11T12:23:00+00:00",
+      "publisher": "https://www.mansfieldradio.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Strike by consultant doctors in England paused - Mansfield Radio"
+    },
+    {
+      "desc": "MANCHESTER UNITED players are reportedly expecting Mauricio Pochettino to replace Michael Carrick… despite some of them ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T13:01:00.716558+00:00",
+      "link": "https://www.thesun.co.uk/sport/40989891/man-utd-mauricio-pochettino-new-manager-unai-emery-players/",
+      "published": "2026-11-11T12:14:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd stars expect Mauricio Pochettino to be new boss but ‘some wanted Premier League manager to take over’"
+    },
+    {
+      "desc": "LIVERPOOL should have had a penalty for the pull on Alexander Isak’s shirt by Arsenal defender Jurrien Timber, according",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T13:01:00.716578+00:00",
+      "link": "https://www.thesun.co.uk/sport/40988378/liverpool-arsenal-penalty-var-fail/",
+      "published": "2026-11-11T12:06:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool should have had penalty in 1-0 defeat to Arsenal as Premier League reveal VAR failed to intervene"
+    },
+    {
+      "desc": "Manchester United have reached an agreement in principle with Mauricio Pochettino to take over as head coach if Michael ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-11T13:01:00.716595+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610949/mauricio-pochettino-man-utd-strike-agreement-with-michael-carricks-potential-successor",
+      "published": "2026-11-11T12:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd strike Poch agreement as Carrick takes training"
+    },
+    {
       "desc": "talkSPORT presenter Danny Kelly has died at the age of 69, the broadcaster has announced.",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-11T12:00:51.931079+00:00",
@@ -2689,6 +2779,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Danny Kelly dead at 69: Broadcasting legend passes away after oesophagus cancer treatment 'did not go to plan' just eight months after stepp"
+    },
+    {
+      "desc": "Scotland will be without Caroline Weir for the World Cup play-off final with Sweden following a setback in the influenti",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T13:01:00.716620+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c64gnlevgj1zo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T11:59:18+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Scotland without captain Weir for World Cup play-off"
     },
     {
       "desc": "Mengi and Baptiste back in action while Town U18s earn FA Youth Cup win Luton Today",
@@ -2741,6 +2841,16 @@
       "title": "Martin Zubimendi responds to Arsenal exit rumours as Atletico Madrid and Chelsea linked to January transfer"
     },
     {
+      "desc": "Man United prepare Carrick dismissal as Pochettino talks advance – Romano Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.716730+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQzA3MlVWOV85SGVPeGhCY041NmxUQkRKZXVLdkNXRVNQRVJidE04eG5jYkpkQ0FFZnNyRFEwLXByeHhBUGNJb0lja05weVRpWXc4ZVd6dVI4d1l4VXROWENpcC00YVlFblBhOXR4VGo5dDltc2FrckhSSmdCc0w2M0twTEt3Rmx2Z0p2UDlGOXUxYjhjdU1BajhFeXkwMnBIWVhRVW9JUmRPTWdERERCStIBtgFBVV95cUxNNFBxUTZnZDZ2bVUwUUpiTW1TcWl4MXNaMmQyTzd4RE05d2JTR3Z1WF9NU3ptNWhucHB3VnZmUTg4bWVOSWFlYk9mWGhrd3lORThpVEFYbkl3TWY1Ykhnc1VtM09ITXRkYTRwWGRkdThuT1dXVl9CQnZpc09hS1AxUTBTUGJtX3lTMkR0Nmg5d1MtMnV6Z1VOa2VMcFhtS3VPckxhc3NsMThvRkJONzNpQ3pwTGlPdw?oc=5",
+      "published": "2026-11-11T11:23:40+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man United prepare Carrick dismissal as Pochettino talks advance – Romano - Tribuna.com"
+    },
+    {
       "desc": "'I'm Hearing' - David Ornstein: Pochettino Feeling 'Different' After Man Utd Approach GiveMeSport",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T12:00:51.931232+00:00",
@@ -2771,6 +2881,16 @@
       "title": "Legendary talkSPORT host Danny Kelly dies aged 69 as tributes pour in for ‘extraordinary’ presenter"
     },
     {
+      "desc": "Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.716825+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOXzZvckdicTZGTzlFYVRHMUU2Y055M1JMNlRWR19DZnlWaWFQVXZYejdEQ0tYZ1BJd3hYbHhuTzBJRXFMbDNxNnNtaFU1SVl1ZjdLdXgwVVJXdGF5Z1FqSVB5VnYtbEJSaDI2RTRQOHpLSzcwYXRsN2tiZ3Zoa1J3NDFLSlY?oc=5",
+      "published": "2026-11-11T10:59:32+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "- Liverpool FC"
+    },
+    {
       "desc": "Man Utd Advance Talks To Appoint Pochettino As Carrick Faces Sack TVC News",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T12:00:51.931295+00:00",
@@ -2779,6 +2899,16 @@
       "publisher": "https://www.tvcnews.tv",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd Advance Talks To Appoint Pochettino As Carrick Faces Sack - TVC News"
+    },
+    {
+      "desc": "Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.716859+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
+      "published": "2026-11-11T10:52:48+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "Chelsea v City: Kick-off time, teams news and TV information Manchester City FC",
@@ -2891,6 +3021,16 @@
       "title": "Arsenal Odegaard Trophy Fridge Magnet - Arsenal Direct"
     },
     {
+      "desc": "Arsenal Saka and Rice Trophy Keyring Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.717095+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWkc2cEgxcS1fWUduMEozQkdZUHZRejY2YU5aSXB3N0ViLXpfalNMbTFNZGpLMFdjdk51Sk5FdTI4T2R1dFcyY3NGQXBfYkE0Q3F3TnNtbk9jelBTM1hfWUNZRVRtcEZXYkF4YmxqMGNZQVFQU3FWb3dka0o0eTRZMm9QMmlTYkRoYWJJOTR3N2tnWDNPTVBkS3d2TG04ZTZHMzlxZUptMlQ5TDRoUGRRYU83T21hYkUzb2ppbGVlb2NKX2g3?oc=5",
+      "published": "2026-11-11T10:15:08+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal Saka and Rice Trophy Keyring - Arsenal Direct"
+    },
+    {
       "desc": "CHARLTON striker Matty Godden has become a fully qualified financial planner. Despite picking up a reported £12,500 a we",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-11T10:59:18.142906+00:00",
@@ -2949,6 +3089,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Bitesize Highlights: LFC 1-0 Real Madrid - Liverpool FC"
+    },
+    {
+      "desc": "Ornstein says three Man Utd-linked managers ‘would take the job’ United In Focus",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.717198+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeGR2OG9PVXRwTGZPUWd5SlhldmJDaWVkUnhFQjZGXy1QbUw4OXdjcW9Wd1lueklkWnJiMWVyakE1OVRuWmlEdnAtclZGSnN4Wlp3YjFtR0J3a0xqOXhEWFZnSzVPMzRxbXpWYXNpZ2taNkF6YWJ0VDVkbjhpU2VVMkY5ZmxMejNhRGRZOG9wREkzS0VuS2R1dmozSW1LZUU?oc=5",
+      "published": "2026-11-11T09:30:00+00:00",
+      "publisher": "https://www.unitedinfocus.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein says three Man Utd-linked managers ‘would take the job’ - United In Focus"
     },
     {
       "desc": "Police made Russell Brand leave home of his then-girlfriend after 'violent incident' Mansfield Radio",
@@ -3019,6 +3169,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Have your say: What are Liverpool's best Premier League home wins over Manchester United? - Liverpool FC"
+    },
+    {
+      "desc": "Man Utd: Ornstein reveals extraordinary double Pochettino U-turn that truly exposes INEOS's wild management TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.717324+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORjMzemE3WFl3NnZZM3pXN1VKRFdSakRsSS1US3VxbldqQTVUdjVjczNuSTg2X0ZVcHJRaFhOcTVIMTNkZG8yOFVLYTBMWVR3Vkxad1c5eVViNE5OVFp3VERRb2JFa3BMbG5NOXR4bXlXbmlBemVhZERzNjJybUFQeURrSU45TzNCRmZxZGdLNnE4Yk13UnZMVnRhdzdpN051dHB6SUFkMkJ2b1pzcjdBMktTSQ?oc=5",
+      "published": "2026-11-11T09:02:06+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man Utd: Ornstein reveals extraordinary double Pochettino U-turn that truly exposes INEOS's wild management - TEAMtalk"
     },
     {
       "desc": "Manchester United open talks with Mauricio Pochettino about replacing Michael Carrick, who is expected to lose his job.",
@@ -3309,6 +3469,16 @@
       "publisher": "https://www.liverpoolecho.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Dominic Calvert-Lewin weighs in on Jordan Pickford debate after Everton star sent warning - Liverpool Echo"
+    },
+    {
+      "desc": "Who was in contention for Premier League Fan Team of the Week? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T13:01:00.717570+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5fbEJFdkExbHZWbE1KS1YyTFJ4MlZJdUtEb3B6eDJzd1pYSTVNeWttTTRRTjhaRkFZai1JRGdhWkdBZkpidWVfYmk5YjNhdkhVMTVlOW9XYno?oc=5",
+      "published": "2026-11-11T05:26:15+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Who was in contention for Premier League Fan Team of the Week? - Premier League"
     },
     {
       "desc": "Transfer News Today: Endrick, Collins to Man Utd, Frimpong Stays (11 November) The False 9",
@@ -4009,176 +4179,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Noni Madueke’s uncanny Saka impression, Lewis Hall’s patented bonus haul and other things you probably missed"
-    },
-    {
-      "desc": "David Ornstein provides fresh update on United’s search for next manager, three big names ruled out The Peoples Person",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T17:00:58.403323+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdjFhRW9oaUJ4a1FVcWpLM3JkLXhGTW94eEt0eWdjVFpqRUJRS1Q3RjhzOXduSGNMZlEwUmVmM0dvMU5pb0VEUkFKVzVtNHBaRDJ5b2hmbGpOdE1hX0pzaDJ0Z3NwM0U5VVl4Z1VJcmRlWmFnSUVlNE4wdlN6TjBBSl9iUUI2eWwwUjF4VUZOeEtHRG1VejZWN296OTI5LUItU2VrZms0WGZSQlRVLUF4bUZqekljM002Rzl0OFdhNlFMQTMydEZHdjVxUG5DSmlSUHNpclBIbm5kVDhQLVE?oc=5",
-      "published": "2026-11-10T16:19:20+00:00",
-      "publisher": "https://thepeoplesperson.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein provides fresh update on United’s search for next manager, three big names ruled out - The Peoples Person"
-    },
-    {
-      "desc": "As doubts grow over Manchester United boss Michael Carrick's future, what are the club's managerial options?",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-10T17:00:58.403345+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5rmymrvm004o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-10T16:17:10+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pochettino, Howe, Emery... or Carrick? Man Utd's managerial options"
-    },
-    {
-      "desc": "Liverpool's Alisson voted Player of the Matchweek Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T17:00:58.403386+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOY1c3Z19tUVB6R2RSSGNmdVFCOTNPak5UTEw1LXgwUmZONHprQlVvaXNUdDV2ZUd6SnU2Mmt1M1BQSm11Q1VmSDZTUlVodjlBSXh4Zk82QXVlTmxtclVmUGYzNFZxd3lHZG9UQ0ZJenIydXhSNUxVQ0lOUGFXQUFhTnRiRExtaHNrbm8xM2JlaE5YWnc1OUF0X3hFN3pCR0R2dHNhTno2aW9WZHU5YUVoeXVSVlBQRHNBckE0?oc=5",
-      "published": "2026-11-10T16:14:23+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Liverpool's Alisson voted Player of the Matchweek - Premier League"
-    },
-    {
-      "desc": "David Ornstein Names Likely Next Man Utd Manager as Three Contenders Ruled Out GiveMeSport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T17:00:58.403405+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdEszZmR0R2premwxeGs2VERDdU5iN3RMZzJlaFBBUVhXbV9mYTdLdTU3OFY5WVVON01uM2lTWl94N3JJQ3cxcnMyV255SmN1LWRMcUgwc21QSTI5QXBjdlo4ZHRMcU40RFFOZER6cnZKbUwtS3B1VGtNVktqeUg2d1RDaUhhYUQ0ZHdQUEJQb21DVHFBTmE4?oc=5",
-      "published": "2026-11-10T16:11:42+00:00",
-      "publisher": "https://www.givemesport.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein Names Likely Next Man Utd Manager as Three Contenders Ruled Out - GiveMeSport"
-    },
-    {
-      "desc": "But Rav Wilding, a former detective who recently appeared on the BBC Morning Live show, has sent a fresh warning to indi",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T17:00:58.403431+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16281473/Police-trawling-Dodgy-Fire-Stick-sellers-bank-accounts-contact-illegal-viewers-Premier-League-football-films.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T16:09:19+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Police 'are trawling through dodgy Fire Stick sellers' bank accounts to contact illegal viewers' of Premier League football and films"
-    },
-    {
-      "desc": "Bernabe and Kirby hear cancer survivor’s story at Red Neighbours yoga session Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T22:01:00.774175+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaEVoczNHM3ZVN0tnQnExdF9haUNNLTVJWHFSRTltUlVHZV9IcmszbmQ5bTJyaUhTWmF6VU9MQWdqeWhNanFfZFBhaXJOaXNraWZzZHkxSzBBMVBqUnhrT0VoS3c2aEJZbkh5N1BwSW9uZXdyNUx5enpyTDMtWHNnUzVYVnFXT1UtV3NYd2k5MGswUC1pUi1PS2JlVi1xTzJ1S01fRA?oc=5",
-      "published": "2026-11-10T16:02:52+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Bernabe and Kirby hear cancer survivor’s story at Red Neighbours yoga session - Liverpool FC"
-    },
-    {
-      "desc": "Alisson Becker wins Premier League Player of the Matchweek award Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T23:46:19.071198+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVm0zblFWeVRHTGFnZzI1NXJjdjZzRHV6d0Y1b3dHaU1TTXA3eUlQNjZWRHZ5MmVtdGFLc0pmSWoxRHh6UHpBMmhpSzNwYlJFVk9zUlVrenlWNVl6R2xEOUZNOVF3UTZUenE3d2REQ1FjRVo5Uzh6U0tFRzBqLWY0RVhidy12aWVPeG1KX0d3VWlHTGlJSDdVb3RFam5RUQ?oc=5",
-      "published": "2026-11-10T16:02:52+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Alisson Becker wins Premier League Player of the Matchweek award - Liverpool FC"
-    },
-    {
-      "desc": "Scott McTominay has revealed he needed to have his heart “shocked” two days before Scotland's World Cup opener against H",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-10T18:00:51.963694+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13610728/scott-mctominay-scotland-midfielder-had-heart-shocked-two-days-before-world-cup-opener-against-haiti",
-      "published": "2026-11-10T16:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "McTominay had heart 'shocked' two days before Scotland's World Cup opener"
-    },
-    {
-      "desc": "DAN ASHWORTH was relieved to get out of Manchester United after his sudden exit as sporting director. The United structu",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T16:01:01.272416+00:00",
-      "link": "https://www.thesun.co.uk/sport/40980843/sir-jim-ratcliffe-man-utd-dan-ashworth-ineos/",
-      "published": "2026-11-10T15:58:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Sir Jim Ratcliffe and Ineos drove former Man Utd man ‘round the bend’ until he was relieved to be shown door"
-    },
-    {
-      "desc": "Real Madrid and England star Jude Bellingham has admitted he doesn't feel 'mature', despite being labelled as such from ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T17:00:58.403472+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16281645/jude-bellingham-gentleman-family-interview.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T15:56:26+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Jude Bellingham says he 'wants to be a gentleman' but admits he doesn't feel 'mature' because 'I can't cook, I can't drive and I rely on my "
-    },
-    {
-      "desc": "David Ornstein delivers update on Tottenham’s January transfer plans To The Lane And Back",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T23:46:19.071230+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSjhicDNCUGx0R2EyUzA1dGVXWVZCQ0R2am5ONndhX0lxOGNKcHJKZWVSQjNzU01KdFNyZ0dJWkc3REJha3g1WHNZSG5qMTdkb2M5WGFjMDUwWTNydFNTZk95aWp5MWpNd1VSTU1UTDJPRGZjMndTOWhxSXhiYzhaUmp4QjBkWVVzd0RsOVAyZWhZaHdzUGxBaENoTnJGZllKVFZSMTRiSFRib3FmR1J4SzVHcw?oc=5",
-      "published": "2026-11-10T15:54:14+00:00",
-      "publisher": "https://tothelaneandback.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein delivers update on Tottenham’s January transfer plans - To The Lane And Back"
-    },
-    {
-      "desc": "Oldham Athletic manager Micky Mellon charged by FA after Sheffield Wednesday clash Oldham Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T17:00:58.403491+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUm94eUItRV9qcjVjdWxTN09DOU55bHM0ME12LXp2MDFhWTVfMXVUR1BEb0NVeDVoLU44UWR5T2FxX2pKb19yMnlhWjlqSG01TFJnbnh2V3pwMUZGZThaODMzNGl4YUJ6Z29sdzkxQ1NsQjM4ak1pMFNHNHhVTHRRNk93Z1E2SFVCVmRaakdmRDg5NVpCcDFFUk9DTGJacWNi?oc=5",
-      "published": "2026-11-10T15:46:01+00:00",
-      "publisher": "https://www.theoldhamtimes.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Oldham Athletic manager Micky Mellon charged by FA after Sheffield Wednesday clash - Oldham Times"
-    },
-    {
-      "desc": "How about Stat?: Pre-match stats as Eagles head to Spurs Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T22:01:00.774206+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeVRQS2Ntb09DTjM3THNHVmpjMW1zMzBnam1BNUtHRzIzMndGRjYzRVpyZ1QycEZsQWNsQkFMclhwSmV4NHhBTXpLdUUtQjFQbllDTFo3QTFwd0pseTBvRDg0b1Blc2E0VHZhWktRS2hUc0FzWGJiTWJJTzB1bmFQbkxRb3kwYmllakJlVXVfazVnTzVudVlvdllybmpCb2dNc0E?oc=5",
-      "published": "2026-11-10T15:37:50+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "How about Stat?: Pre-match stats as Eagles head to Spurs - Premier League"
-    },
-    {
-      "desc": "CHELSEA star Malo Gusto could be heading for the exit in January, with several European clubs linked with his signature.",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T16:01:01.272455+00:00",
-      "link": "https://www.thesun.co.uk/sport/40981247/malo-gusto-chelsea-transfers-ac-milan-como-amorim-fabregas/",
-      "published": "2026-11-10T15:33:23+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ruben Amorim ‘plots raid on Chelsea for Malo Gusto as former Man Utd boss joined by Cesc Fabregas’ Como in race for ace’"
-    },
-    {
-      "desc": "PETERBOROUGH manager and TV pundit Robbie Savage has hit back at criticism he's been receiving lately. Savage's Posh sid",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T16:01:01.272485+00:00",
-      "link": "https://www.thesun.co.uk/sport/40980968/robbie-savage-defends-commentator-job-peterborough-manager/",
-      "published": "2026-11-10T15:31:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Robbie Savage defends TNT Sports commentator job as Peterborough manager says ‘it’s my life’"
-    },
-    {
-      "desc": "JUST a month after thrashing them 7-0 in Rijeka, England now play host to Croatia in a Nations League matchday five clas",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T16:01:01.272513+00:00",
-      "link": "https://www.thesun.co.uk/sport/40981005/england-croatia-free-bets-midnite/",
-      "published": "2026-11-10T15:30:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England vs Croatia: Get £30 in free bets for football when you sign up and stake £10 with Midnite"
-    },
-    {
-      "desc": "Fabrizio Romano dismisses Barcelona transfer links with Chelsea defender Levi Colwill Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T17:00:58.403576+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZWwwUXd0YWtfRGxqMUdNYm1zTHAwY1JkcnZhV3FvamFidHl0YkROZ1pvLWxhc01uWVV4ZWtfU1BGb045TFp2Q20wdXBlbF84Zk9GbDFRdXBvb1E3WFdxaWxCVDdzdXFNYjVzUnlLOTg3Q3FndHlUb0RuaWd5OUQzNGQ2LW1YZjl4aTlQeTRuSU1JWDBGUWdoVnNCWF96UmtxLXVZWkNwbEotT3ZWMGUzQkR2N2ZKRDZaYkozSDhiQzJpYVZLOWMzNNIByAFBVV95cUxNZWwwUXd0YWtfRGxqMUdNYm1zTHAwY1JkcnZhV3FvamFidHl0YkROZ1pvLWxhc01uWVV4ZWtfU1BGb045TFp2Q20wdXBlbF84Zk9GbDFRdXBvb1E3WFdxaWxCVDdzdXFNYjVzUnlLOTg3Q3FndHlUb0RuaWd5OUQzNGQ2LW1YZjl4aTlQeTRuSU1JWDBGUWdoVnNCWF96UmtxLXVZWkNwbEotT3ZWMGUzQkR2N2ZKRDZaYkozSDhiQzJpYVZLOWMzNA?oc=5",
-      "published": "2026-11-10T15:21:56+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano dismisses Barcelona transfer links with Chelsea defender Levi Colwill - Tribuna.com"
     }
   ],
   "processed_urls": [
