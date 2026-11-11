@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-11",
     "errors": 0,
-    "input_tokens": 102938,
-    "output_tokens": 11105,
-    "requests": 16
+    "input_tokens": 108048,
+    "output_tokens": 11920,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2624,7 +2624,7 @@
     }
   },
   "last_morning_report_date": "2026-11-11",
-  "last_scan_at": "2026-11-11T04:00:49.162778+00:00",
+  "last_scan_at": "2026-11-11T05:00:56.244161+00:00",
   "last_summary_sent_at": "2026-11-10T22:01:35.376437+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2645,6 +2645,16 @@
     "updated_at": "2026-11-10T22:01:35.366174+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Gvardiol Injury Update and Return Date: Fit for Croatia After Forest Knock The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T05:00:56.247928+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMDZQUE8yRjBiOXVoaklVQjVYeGtLLW9OblFNbS0yN195akxlMlMxZ2RxTFV5X1h4TXh4NEx2XzI0cGVubDJNUFFIR0ZpcG1MLWZ3STE1S0c5YkRId2ZUMnR6SzFOOEsyZmtMUnpjd2M0SGU2VnpiTkVaSTk3UWF6MQ?oc=5",
+      "published": "2026-11-11T04:30:38+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Gvardiol Injury Update and Return Date: Fit for Croatia After Forest Knock - The False 9"
+    },
     {
       "desc": "Wishlist Man City Shop",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4134,16 +4144,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why has Tom Brady quit Birmingham City?"
-    },
-    {
-      "desc": "Mauricio Pochettino is the bookies' leading candidate to replace under-fire Michael Carrick as Manchester United head co",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T13:00:51.913651+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T10:18:22+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United's new boss contenders: Mauricio Pochettino tops the bookies' favourites ahead of Eddie Howe and Julian Nagelsmann on 14-man list "
     }
   ],
   "processed_urls": [
