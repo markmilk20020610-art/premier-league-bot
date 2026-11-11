@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 6566,
-    "output_tokens": 614,
-    "requests": 1
+    "input_tokens": 12717,
+    "output_tokens": 1454,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1795,6 +1795,41 @@
       "title": "西班牙足协推迟全部比赛 悼念特内里费前锋德米格尔",
       "updated_at": "2026-11-03T11:23:03.930197+00:00"
     },
+    "9b958f683084": {
+      "article_title": "Man Utd ‘add Nathan Collins and Calvin Bassey to shortlist’ ahead of January transfer window to fix defensive nightmare",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "704bf068700ec987",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 115
+        }
+      ],
+      "created_at": "2026-11-11T17:01:06.401863+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "8d9bf3f8e0c2f3df",
+      "event_id": "9b958f683084",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-11T17:01:06.401863+00:00",
+          "origin": "created",
+          "title": "Man Utd ‘add Nathan Collins and Calvin Bassey to shortlist’ ahead of January transfer window to fix defensive nightmare",
+          "url": "https://www.thesun.co.uk/sport/40992984/manchester-united-transfer-news-nathan-collins-calvin-bassey"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/40992984/manchester-united-transfer-news-nathan-collins-calvin-bassey",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 115,
+      "title": "曼联冬窗瞄准科林斯与巴锡补强防线",
+      "updated_at": "2026-11-11T17:01:07.096100+00:00"
+    },
     "9bcc0dc49802": {
       "article_title": "James Trafford makes horror error as Leeds star and England No1 hopeful left red-faced in painful Bournemouth defeat",
       "attempts": 1,
@@ -2659,7 +2694,7 @@
     }
   },
   "last_morning_report_date": "2026-11-11",
-  "last_scan_at": "2026-11-11T16:00:55.025964+00:00",
+  "last_scan_at": "2026-11-11T17:00:58.933613+00:00",
   "last_summary_sent_at": "2026-11-10T22:01:35.376437+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2681,6 +2716,86 @@
   },
   "news_pool": [
     {
+      "desc": "ENGLAND will complete their Nations League group duties during this international break, starting with a home game again",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T17:00:58.935561+00:00",
+      "link": "https://www.thesun.co.uk/sport/40987913/england-croatia-nations-league-predictions-free-bets-tips/",
+      "published": "2026-11-11T17:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England vs Croatia: Nations League predictions, preview and free bets"
+    },
+    {
+      "desc": "From 21-year-old who scored 79 seconds into his debut to being on the brink of breaking his nation's appearance record, ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T17:00:58.935596+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c60qkdj4lp34o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T16:44:58+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Leader, role model, extraordinary - how Kane's 'fairytale' came true"
+    },
+    {
+      "desc": "Malo Gusto is open to leaving Chelsea this January, having stayed in the summer after being valued at £75million by his ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T17:00:58.935617+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T16:33:36+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "£75million man Malo Gusto is open to LEAVING Chelsea this season after struggling for minutes under Xabi Alonso"
+    },
+    {
+      "desc": "TURKISH football stars will soon be able to enjoy playing at an incredible new football arena. The breathtaking Ankara S",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T17:00:58.935634+00:00",
+      "link": "https://www.thesun.co.uk/sport/40993704/turkey-euro-2032-stadium-ankara/",
+      "published": "2026-11-11T16:32:45+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Inside incredible new 51,000-seater stadium set to host Euro 2032 matches and costing eye-watering £200million"
+    },
+    {
+      "desc": "Xabi Alonso confirms Chelsea team news for Sunderland | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935660+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnlRc25ndU8xSXV0YlFCWGRkbmZJQ0lCVVV2Wmxwd0F1NWkzWTE4NndnWkhhcE1UV2JaeVpzME9ZZ2lJZFZuWlVueWlTa2JNLXlpM0RoZXJrWWFhdGN6UWczMzRxQU1SZEMyQXFJT2pNaGk4RUtYZ05pYUJQUWR1WWktUFhsWlViWmRJNHZuWUdSa0R4cm9JdEdJMA?oc=5",
+      "published": "2026-11-11T16:00:07+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Xabi Alonso confirms Chelsea team news for Sunderland | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Key Oxford United Women figure leaves club after seven years Herald Series",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935674+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS19mNWRBRmtUNTQ4al94TjZFcmMwTWRXX1hmczJCNjVYNkp4bUwwN1V3LVdvMm1CZm1NYm5Qa0xfRWdKR3VqU2tUZDZJTk5tQ3BSSjBFUkVHV1JjYUE4UkFHTUliRHd1d2JpMXhOekFKY1BOVUtxYmgxN256dXAwS2NvSHRZTW5PTE9yS0s4VTN4M3ZpYzZ3RTlVZWdwMGNCNjdMYll0NE8?oc=5",
+      "published": "2026-11-11T16:00:00+00:00",
+      "publisher": "https://www.heraldseries.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Key Oxford United Women figure leaves club after seven years - Herald Series"
+    },
+    {
+      "desc": "Isak Penalty: Panel Says Liverpool Should Have Had It vs Arsenal The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935687+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ3hUdU5PcGVOTFZveG04UzNrWWR3SGtvYlR4Y1ItTkFMaHZCemQ3bmxGNi1IT3BsWWRWek9QU3JPdjRGYndlN1djMTd2RzAyYUpYSHd2TmhaQUxpOHh5RTdZNTRCem5MWWtpellCNENfVzBaWjZ4d0w1VUFOMTFrOHRNeTNyTDBadVE4RU5pV19tdi05Tm5JOHR3?oc=5",
+      "published": "2026-11-11T15:56:37+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Isak Penalty: Panel Says Liverpool Should Have Had It vs Arsenal - The False 9"
+    },
+    {
+      "desc": "Bristol City chief executive Charlie Boss says head coach Michael Skubala will be given more time to improve their resul",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-11T17:00:58.935703+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c54gnev0ydnno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T15:52:30+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Bristol City give Skubala opportunity to improve form"
+    },
+    {
       "desc": "MANCHESTER UNITED are weighing up a January move for Brentford's Nathan Collins and Fulham's Calvin Bassey as they look ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-11T16:00:55.027843+00:00",
@@ -2699,6 +2814,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Rayan’s unmatched radar, Zion Suzuki’s saves and other surprising Dream Team stats"
+    },
+    {
+      "desc": "Liverpool 'deal in place' for £58.5m first January signing Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935752+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPclIxQW9lVS11ZE1md2ljRjNDOU1jZUdYNXVMNHc1WFp5aG9SdzR1S3RjNDU5NllFQ2JMOE4wZ29DMmNzSW8tQ1M0d3p3NU16OV9BTmVQY3VRTG9ObTlSREU1MlhVQUROeU1xSGRkMG1RTlRKNmJkVE5QanNRanhvS0t0MmZhb3NUYmc?oc=5",
+      "published": "2026-11-11T15:29:11+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool 'deal in place' for £58.5m first January signing - Liverpool FC"
+    },
+    {
+      "desc": "Gallery: Women’s team train at Camp Nou Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935765+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZVRLUXhSZ2ZBNFJGZ1MxM2hZTUExLVN6WEN2SGZGRjlIRDhjNFhFYzdHeTFOWTF4WENhZ1ctN0JZMnI0VXM4ZzRMNlBnWGh3Z0xCM28zcjRFc1pRVUN1LVhnY3JHcTlicXlCc0JWdGRfdmxONUxZa2N1cTRnMjRia3VSS3VZUQ?oc=5",
+      "published": "2026-11-11T15:28:43+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Gallery: Women’s team train at Camp Nou - Arsenal.com"
     },
     {
       "desc": "Arsenal Contracts: TEAMtalk Says Rice, Odegaard, Timber Deals Due Before January The False 9",
@@ -2769,6 +2904,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Misa on settling in, Barcelona and Russo - Arsenal.com"
+    },
+    {
+      "desc": "What we have learned from the 2026/27 season so far Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935840+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUGZFQWxGdmk3cTI4bnQ4Ul9hRjQ0RDgzR1NjVnI1dDZoVFZxWFlGSWxaVkRDR1pIZjdOWjA1S0daNHd5aXV0ekRWdkh6S3FkdXpaN1d6NDFUb2lzcndGNFVVRU1qWGRBVzlCeEVjN0dUZkh2amhXOERFeWJMVlVfcUlyYlpGYmgxNnhtRVNHb2h5TTgtVnlj?oc=5",
+      "published": "2026-11-11T14:40:40+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What we have learned from the 2026/27 season so far - Premier League"
     },
     {
       "desc": "Swansea City news: FA contact Birmingham City over incidents during Swans win BBC",
@@ -2881,6 +3026,16 @@
       "title": "Zubimendi says January exit reports are far from the truth - The False 9"
     },
     {
+      "desc": "Watch: Harvey Elliott scores first goal for Valencia Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935952+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSTRhYV9IV0QxNjFJTFRxelllb3ZuSVBMRW1hN0ZxdU5iRUI1YUJDSG1yTjVRRXgwb0xNNVFPOTVQY0V6RVpCV2lIY195LTZlMUNianJXQ3lSWnV1TlItSjdldTZMbGNlbWdCWXhtN0x5dlpvTUxiOUFiY2hRbzRzMGE0bUhuRzA?oc=5",
+      "published": "2026-11-11T13:18:42+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Watch: Harvey Elliott scores first goal for Valencia - Liverpool FC"
+    },
+    {
       "desc": "Roma favored over Milan in race for Endrick RomaPress",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T14:00:54.092553+00:00",
@@ -2901,6 +3056,16 @@
       "title": "Man Utd’s winners and losers if Pochettino is appointed as two new signings could be in big trouble"
     },
     {
+      "desc": "ISAAN KHAN: Now, Daily Mail Sport can reveal the scale of the Arsenal star's involvement over the last four years with t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T17:00:58.935981+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16283853/Bukayo-Sakas-Socrates-Award-win-Ballon-dOr.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T13:13:33+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "The unexpected email that led to Bukayo Saka's Socrates Award win at the Ballon d'Or: Inside Arsenal star's secret humanitarian work after h"
+    },
+    {
       "desc": "TOM BRADY has delivered a heartfelt farewell to Birmingham City fans after his shock exit from the club. The NFL legend'",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-11T14:00:54.092579+00:00",
@@ -2909,6 +3074,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Tom Brady breaks silence on Birmingham exit as NFL legend quits with Blues sitting top of Championship"
+    },
+    {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.935993+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40SVRQTDZQUmRYV0ZEU0RiX3FxbDRZTHhnVVFtTGtOeWpGSW85Wkk0ZXlvaWgxTFR1VVVzaHF3MEM4QkthMkhmWXRLQjgyUEs1MTAwakxTNHowNUg2akpSNGlNeEE5NHhsWWhSQnhqc2FSNkRZVUl6UlR3?oc=5",
+      "published": "2026-11-11T12:59:38+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
     },
     {
       "desc": "Mauricio Pochettino looks set to turn a decade-long courtship with Manchester United into a full-blown relationship, say",
@@ -2969,6 +3144,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea star Robert Sanchez cheats death after ploughing £300k Ferrari into barrier during motor circuit event"
+    },
+    {
+      "desc": "The Prince of Wales, 44, has been a fan of Villa since his days at Eton, when he shunned the more conventional Premier L",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-11T17:00:58.936022+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16283929/Prince-William-asks-Aston-Villa-boss-Unai-Emery-team-DAY-reveals-hes-bigger-supporter-father-football-mad-George.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-11T12:32:00+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Prince William asks Aston Villa boss Unai Emery about the team EVERY DAY - as he reveals he's become a bigger supporter since becoming a fat"
     },
     {
       "desc": "Five things to look out for in the international break Arsenal.com",
@@ -3389,6 +3574,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Liverpool squad visit club museum at Anfield - and get team photo on the Kop - Liverpool FC"
+    },
+    {
+      "desc": "Alisson Becker wins Premier League Player of the Matchweek award Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T17:00:58.936330+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVm0zblFWeVRHTGFnZzI1NXJjdjZzRHV6d0Y1b3dHaU1TTXA3eUlQNjZWRHZ5MmVtdGFLc0pmSWoxRHh6UHpBMmhpSzNwYlJFVk9zUlVrenlWNVl6R2xEOUZNOVF3UTZUenE3d2REQ1FjRVo5Uzh6U0tFRzBqLWY0RVhidy12aWVPeG1KX0d3VWlHTGlJSDdVb3RFam5RUQ?oc=5",
+      "published": "2026-11-11T09:50:43+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Alisson Becker wins Premier League Player of the Matchweek award - Liverpool FC"
     },
     {
       "desc": "Bitesize Highlights: LFC 1-0 Real Madrid Liverpool FC",
@@ -4019,166 +4214,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Man United Confidential: Jim Ratcliffe makes new 'brutal' cutbacks to ex-players' charity, Nathan Collins and Calvin Bassey among January ta"
-    },
-    {
-      "desc": "Guéhi Injury Update and Return Date: Hip Scan, Out of England (10 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T22:01:00.773440+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE81YWpFTm84SDVnc0lHTElCM3JUWS1tZHJuN2tSRm5oZ3dRYURMaVpCWldoeTNpQWRYdTFTbFdMYkdDR1IzZThzei03Um82M1J1RnZ3THdBaG9jOXYzYXNKcTR5blo2SUZwamJMeWt0SFhtdjhBRlJtLUJyWkU2QQ?oc=5",
-      "published": "2026-11-10T21:29:16+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Guéhi Injury Update and Return Date: Hip Scan, Out of England (10 November) - The False 9"
-    },
-    {
-      "desc": "NICOLO ZANIOLO has sensationally quit the Italy squad for mystery personal reasons ahead of their Nations League showdow",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T22:01:00.773462+00:00",
-      "link": "https://www.thesun.co.uk/sport/40984662/nicolo-zaniolo-pulls-out-italy-squad-aston-villa/",
-      "published": "2026-11-10T21:28:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mystery as forgotten Premier League star, 27, pulls out of Italy squad after returning to fold for first time in 2 years"
-    },
-    {
-      "desc": "Chelsea, Real Madrid and Atletico reportedly monitor Arsenal's Zubimendi The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T04:00:49.166071+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQdENLS2xLTUVoeHZPc2VVUmZYU0FrUVd5Ym5MNmlRMjhjbzJWQ1VEOEpjQlpLeVV3UEVhcWI5MTJPT0ZTY3ZybEV6dVp4T01QRXBDZWxweEFOZklMR3FRbFlEaG91SVFYdExyd3RONGl1MlJNeFpCSkdVMTZ3ZEJLSjdsYUpzTHdwUy1va3FQMFFid241V2poTzVGbw?oc=5",
-      "published": "2026-11-10T21:20:02+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Chelsea, Real Madrid and Atletico reportedly monitor Arsenal's Zubimendi - The False 9"
-    },
-    {
-      "desc": "Fabrizio Romano delivers major Levi Colwill transfer update LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T22:01:00.773482+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNT1owbzFrbnQ1Zkt1Y2JhVmk2cDBCWHZTamNXdHRPcDNua2NaSUdJM2RZYkRLNUdsY1pOZTI1Nk1WREd3UUw3MHZvQnF1b0lqM3hZem5CWkdqV2MzdmduUFJHYjVNQjdaeFRiZVB4eGxnOVlhV3VKNmF6elp1Q3VGMHlJZThYZTk5SWExVmRPRUtuT3FydWF4OVZHdnNGZzZUVXNMN0RxMFdPd3ptV04tT1M1TXM3VEt6TjMydUtJM3Q2SVFZQkV3?oc=5",
-      "published": "2026-11-10T21:17:05+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano delivers major Levi Colwill transfer update - LiveScore"
-    },
-    {
-      "desc": "MANCHESTER UNITED risk having to install a caretaker for their next match at Liverpool amid their farcical delay in sack",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T22:01:00.773500+00:00",
-      "link": "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick/",
-      "published": "2026-11-10T21:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd risk having to hire CARETAKER manager for Liverpool clash amid farcical delay to sacking doomed Michael Carrick"
-    },
-    {
-      "desc": "JAMES HILL knows he can tackle anything after coming through Joey Barton’s “relentless” summer boot camps unscathed. So ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T21:00:59.759190+00:00",
-      "link": "https://www.thesun.co.uk/sport/40984622/england-james-hill-fleetwood-joey-barton-camps/",
-      "published": "2026-11-10T20:59:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England new-boy James Hill reveals Joey Barton’s ‘relentless’ boot camps where players turned ‘white as ghosts’ aged 16"
-    },
-    {
-      "desc": "Sebastien Pocognoli is delighted to welcome \"exciting\" Scott McTominay into his squad, saying the Napoli midfielder is o",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-10T23:00:55.110075+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmde8e8wjyzgo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-10T20:49:11+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pocognoli to lean on Scotland's 'captain group of five'"
-    },
-    {
-      "desc": "Watch: The best REACTIONS from Matchweek 10 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T22:01:00.773555+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQUtCZEtzR3BuOXQtN0RKclVVeENtZFV0NVVVTG1odVJmWEotdGNBM0dxTzN3bjFoR0lDZUk3ZGRNaGRaOGhnQmw3bl9salluQUJwQmxrRE80eDl3OUxTUWNZcTh1eFhpVFhyeHh6X0RQUV82MG9qQ3NONGdSVlRJR3lzMW5ydmVTS05LanZ3?oc=5",
-      "published": "2026-11-10T20:35:44+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch: The best REACTIONS from Matchweek 10 - Premier League"
-    },
-    {
-      "desc": "Watch: Things you may have missed in Matchweek 10 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T22:01:00.773573+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTTBMT2pVMGJrOVBvc3NnTkxFSXhhaFBPNU50MVdVQWlXal9ObnRIUHhwb0tGUVpiVldQX2dBSmNHLXVOdXRLaWY4c2dyeWRXVkgtNk1QRGNHNzNCamRZbGtNNTlFa085ZGlEc2d1MXVPRGl6c1VPZUVURmJnQmZ5XzBYelBsUWhnNG9MTGhMNHBHNGwtcm9SSjE2cw?oc=5",
-      "published": "2026-11-10T20:35:44+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch: Things you may have missed in Matchweek 10 - Premier League"
-    },
-    {
-      "desc": "UNSEEN ANGLES: Matchweek 10 like you've never seen before Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T23:00:55.110144+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVWdXZjQ5aG55UFE3Z21tcURhdEloZW9mQV85bENaalEzVmlqU010NHFvQ2o0TUFuTUVYYkluckFJeVZaekVyc1l5b1RneDJ3RkU3VU9ncFFJa0ZSU184YkRFSEZ1OXRaRExfckN4N0JxSVR4Ni0zWTY4V0dRdFl2dkNia1ZOSG8wWEk1UzJSRTZ4a0x4X2hhVllFb3NRclctUmV0Vg?oc=5",
-      "published": "2026-11-10T20:35:44+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "UNSEEN ANGLES: Matchweek 10 like you've never seen before - Premier League"
-    },
-    {
-      "desc": "With ten games of the Premier League season gone, it's time for another breather as the second international break rolls",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T21:00:59.759272+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16277525/Manager-season-one-horse-race-Man-United-taken-incompetence-new-levels-Newcastle-experts-verdict-Premier-League-far.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T20:32:44+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Manager of the season is a one-horse race, Man United have taken incompetence to new levels and Newcastle to go down? Our experts' verdict o"
-    },
-    {
-      "desc": "MANCHESTER UNITED face a financial disaster if they are relegated from the Premier League at the end of the season. The ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T21:00:59.759304+00:00",
-      "link": "https://www.thesun.co.uk/sport/40984133/man-utd-risk-adidas-contract-relegation/",
-      "published": "2026-11-10T20:24:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd risk £900m Adidas contract being TERMINATED if they’re relegated as club sit in drop zone at international break"
-    },
-    {
-      "desc": "CHRIS WHEELER: If United decide to sack Carrick, it would push the compensation paid out to coaching staff and executive",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-10T23:00:55.110260+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16280515/michael-carrick-manchester-united-sacking.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-10T20:11:07+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United chiefs set for Monaco summit TOMORROW to decide Michael Carrick's fate... as Ineos face taking their compensation for sacked mana"
-    },
-    {
-      "desc": "Steve Ives Resigns as Tunbridge Wells Manager Southern Counties East Football League",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T21:00:59.759362+00:00",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8zcmdlZ2ItLWVnam5Nakdwc3ZMYXZaTl9TTHZnSkpPUFlhbUtoTUVTQlZvWU5kNU1aTWgzdWg0UjM0dnpFb2RMWmRmSXJsYXkyczNmb183RlBlaDVUTFdUYW8za3FBOFNsMEswV05vT2g?oc=5",
-      "published": "2026-11-10T19:54:04+00:00",
-      "publisher": "https://scefl.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Steve Ives Resigns as Tunbridge Wells Manager - Southern Counties East Football League"
-    },
-    {
-      "desc": "Renée: “It should be a really nice atmosphere” Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T20:00:56.407135+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd29SZi1nYlQ4RHJLWktnUnItWFVrMmtuMndzZ3h2ekpPUi1BQWI2VjVtbEVqYjA1MlJVRzJmaU1JVVZTOExDS0Q5OGRPdDdORURiSDc5TkRjNGppSTJBM2o3bDgzYWRTTDNZZjFIQXZJTWhwTHJteFd2aVk0eF9aU2VkT2xjS3ZTOU5EeXhB?oc=5",
-      "published": "2026-11-10T19:48:13+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Renée: “It should be a really nice atmosphere” - Arsenal.com"
-    },
-    {
-      "desc": "Match report: Hacken 0-0 Chelsea | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T23:00:55.110321+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdVVEOFA3dGtiOUh4SWxTQTh3MzU1QUp1bXZKSzVyb3FoVXp6UHZtd3lpa2xmdEsyamRGTWpJeWRxa19xd3VuNmJjSnVMQ0ZTaGV1eGV1Y1JmeGNaZEM5T3BaYUFjaDFXamNkS01uWG9oaGFMVmJtUmFmNVVKaWJJWmVwamFVSWxQV0ZEa2JXdnlFU2Q1d1R1OEhBdDU0UnlCOUVRZW9fczFCenlQVl93?oc=5",
-      "published": "2026-11-10T19:45:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Match report: Hacken 0-0 Chelsea | News | Official Site - Chelsea Football Club"
     }
   ],
   "processed_urls": [
@@ -4270,7 +4305,8 @@
     "https://www.dailymail.com/sport/football/article-16280409/Mauricio-Pochettino-leads-bookmakers-favourites-named-new-Man-United-manager-Michael-Carrick-faces-sack.html",
     "https://www.thesun.co.uk/sport/40980935/kevin-de-bruyne-quit-napoli-rasmus-hojlund-clash",
     "https://www.thesun.co.uk/sport/40984328/man-utd-risk-caretaker-manager-liverpool-michael-carrick",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k"
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPck1vdlJwWnFKTXZYUDgwM19JNVEwZk1hcTZybFdrSnZqZDdhdXhfc3Q0S2tUX2diZlktaW5rSTl3eF8yRDRxM3Y5YlVHaGNvc3pxV0xmcjNNSFhZck5PMDliUHF2M3BTYlVveFFYQjNCdTYwMlRtdFFiVVlvMGpNLUJSXzdLRmp4SVZkOWVPYWlRYXFya1Vmemk3cXI5aWgxUUtEWEJwWHppeGkzd2dlTHg3R1k",
+    "https://www.thesun.co.uk/sport/40992984/manchester-united-transfer-news-nathan-collins-calvin-bassey"
   ],
   "s_overflow": {},
   "schema_version": 4
