@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-11",
     "errors": 0,
-    "input_tokens": 127521,
-    "output_tokens": 14652,
-    "requests": 21
+    "input_tokens": 133561,
+    "output_tokens": 15440,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2659,7 +2659,7 @@
     }
   },
   "last_morning_report_date": "2026-11-11",
-  "last_scan_at": "2026-11-11T09:00:52.948198+00:00",
+  "last_scan_at": "2026-11-11T10:01:00.653171+00:00",
   "last_summary_sent_at": "2026-11-10T22:01:35.376437+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2680,6 +2680,46 @@
     "updated_at": "2026-11-10T22:01:35.366174+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Police made Russell Brand leave home of his then-girlfriend after 'violent incident' Mansfield Radio",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T10:01:00.657071+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQc1lmQ29PaVduTk02MTRhX2NWM1lsa0VfV1Z6enVuVHJuQXVVd1Z5SkJrNEVmNEZIak0zUUZfbThtLThSNGtGY1RfMUtDM1h4d2tJZS1xZElJYVhhSF9rUEVod25SLUxFODNiVjBNMU5BYVJmS0pfSjlnUWtTMW43V2dqbUUyM0x0SnpWMng2YlVNUVhraDBwUmNfcHNzbFhnTlk3RnlBTkM2VkhHX29DTEdjVzVLNnhlTUctTGU0OXlfVmg5cHJZUTZPUElZY1VHV3RfX2FzTkV1bmUySUQ4dUxQNUMxS1I2Z2hLTUJCSQ?oc=5",
+      "published": "2026-11-11T09:26:00+00:00",
+      "publisher": "https://www.mansfieldradio.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Police made Russell Brand leave home of his then-girlfriend after 'violent incident' - Mansfield Radio"
+    },
+    {
+      "desc": "Man United deliver final gut punch to Michael Carrick as Mauricio Pochettino closes in on job Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T10:01:00.657104+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaUYtdkFiUDhqSkoxX0VzTXRiMWJqNm9ibTBvUlJjcVZ6X1lBbmV1bXFpamM2YTZib2otWS03dVcwNkt2NTJhSnJwekNINXptSGFya3JoNWhNUUsxTUtKR29LeDh1OTN6ekczMEc2WE1SYWV2Z0hfUF9JcTFHWk1ORHUtSQ?oc=5",
+      "published": "2026-11-11T09:26:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man United deliver final gut punch to Michael Carrick as Mauricio Pochettino closes in on job - Yahoo Sports"
+    },
+    {
+      "desc": "FPL Break Injuries: Guéhi and Konsa Out for England, Szoboszlai Doubt (11 Nov) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T10:01:00.657133+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVkJxdkg1WjFrel8yMmZMZEhjdDcxQ3dQdWt3WkhqQ1NkSUt0dG42UXhLMGpNcHhXLVp2TnlKQXhFOHRmdVR1Zll6aDg3RkZzTjF5VGxndmJXOWFiNXZsTjFxS01IVEV1UHNNYS0wTk1STHNYQWJEckh2RWpZSDljSWhhR2h2QQ?oc=5",
+      "published": "2026-11-11T09:17:43+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "FPL Break Injuries: Guéhi and Konsa Out for England, Szoboszlai Doubt (11 Nov) - The False 9"
+    },
+    {
+      "desc": "David Ornstein says Man United “finalising deal” for Pochettino – but here’s why it’s not a done deal yet LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T10:01:00.657188+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQVVBxel9KM05mclRNY3Qzbmt4YjRBREo1OWlTc195ZThMSi1WMEptNEl3cjgzSDZudlJka3lsdkliYnQ3cG54LUhvOE5zNmZYWi1FR3ZNclJ4WW5ZcHBqdkVlRVhCYmxtb0RFM19HUElQUjRHcnZQT0ZfUWJpVW5Ockkzbi00eVdjMnZNRE9hSFFnQUlBMHZuUU0zZlBTRXdkZUxDUjVpQXgwZUxUY2tFdWlQNUp0Tm5sR192RHVobzZFanVNUmlnbjN5WVhwY0Vfb0d0bGF5YU1paTRZc3VzY1gxT0dSbzFYMmh1T1BQSFFSYXFS?oc=5",
+      "published": "2026-11-11T09:11:15+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein says Man United “finalising deal” for Pochettino – but here’s why it’s not a done deal yet - LiveScore"
+    },
     {
       "desc": "Manchester United open talks with Mauricio Pochettino about replacing Michael Carrick, who is expected to lose his job.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -2919,6 +2959,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Endrick to Arsenal: talkSPORT Reports January Interest, Roma Want Loan - The False 9"
+    },
+    {
+      "desc": "Manchester City 2026/27 Home Kit IPhone 17 Clear Case Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T10:01:00.657692+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUFMxNWNSZzNmS3FsYlVaQmt4bHE3N3NCWHpNLWllN3FYVndvMXgybU9MTlFVcTYwMmN2YlFqcVBBbkpQdExDRFRQb1pWSkhXdXNIM2c0UF9fQ1kzWWNYMGVGdmVnMWFXY1hsVkI4bWNkQ1I2U1Z5ZERiMEdHWWN3c1AzMWZrUC1TZDhGYVZJZTBkVU8xYTVxa3NpbHl4ZE9IQVNRbE40OHVPMTZER2lzeU10TzBrMV9Db0lz?oc=5",
+      "published": "2026-11-11T05:08:07+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Manchester City 2026/27 Home Kit IPhone 17 Clear Case - Man City Shop"
     },
     {
       "desc": "Manchester United",
@@ -4129,56 +4179,6 @@
       "publisher": "https://igamingbusiness.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Serie A clubs, transfer gurus and esports teams: Pusulabet forging connections through sponsorship - iGaming Business"
-    },
-    {
-      "desc": "LFC New Era Adults 9Twenty 96 Cap Ivory Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T16:01:01.273373+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcmdYYWNncm9tZkFYNlJ0SGxnSVM3QXhjSUhCTjByOW0yVHRnSHpNdG1kS19kQ0JQUkFSUk43XzFic3BZZldXMWNvVDNwd0FHMXBOM0RyTWxub21PTUFqTXg5OUhtdUNaRkQxYUpjM3FPeHljSlJDS3JIS3hvaG83dGprcw?oc=5",
-      "published": "2026-11-10T11:59:19+00:00",
-      "publisher": "https://store.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC New Era Adults 9Twenty 96 Cap Ivory - Liverpool FC"
-    },
-    {
-      "desc": "CHELSEA are reportedly lining up a January transfer swoop for Martin Zubimendi. The Blues are looking for midfield reinf",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-10T12:01:03.778550+00:00",
-      "link": "https://www.thesun.co.uk/sport/40977244/chelsea-target-martin-zubimendi-transfer/",
-      "published": "2026-11-10T11:56:08+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea ‘eye Martin Zubimendi transfer in January’ after Arsenal knocked back summer bid from Xabi Alonso"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T14:00:57.536555+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS1FYTFRVSVpLaHVZZUxrRmtLdmNkR09FNTJENVZaR0N5cWZsOEZhQkRVVkZhbklNTXk5a3RkelJXNzdaTnkyLUJFSU1hTEJZb2hfd1gxaXU5VXRCZF94dUkxSEZUd09PSFF5Qk45UFlEY0Q0U2xmZl84Vm1sbVl6elUyQ2pwRXdxaFd1M1ppMTFpQnp0V19VZVRrcGhEVElMdVE?oc=5",
-      "published": "2026-11-10T11:53:07+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Wales have called up MK Dons striker Aaron Collins for this month's Nations League matches following Wrexham frontman Ki",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-10T13:00:51.913459+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c62l4l2k0lyro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-10T11:47:59+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Wales call up MK Dons' Collins as Moore withdraws"
-    },
-    {
-      "desc": "WATCH: What to do with Konsa in FPL now Saliba is back? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-10T14:00:57.536589+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeVFfcFN1bFVoNHQ5NlNqc0FtZ0k3MFV3em1wZkJWRl9KY3NMcWRJRXZfRHp2el9YdC1Mamd2YW5lV0wtQWstOHVOWDhCbUpCbU54OHk1UkgwWWdyZEp1VmdIQ0xsMl9CMTZibFloU3JhSjhwX29YSTNFTUQxYnV3WDNyNUlXZ21Q?oc=5",
-      "published": "2026-11-10T11:43:34+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "WATCH: What to do with Konsa in FPL now Saliba is back? - Premier League"
     }
   ],
   "processed_urls": [
