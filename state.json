@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 31697,
-    "output_tokens": 3404,
-    "requests": 5
+    "input_tokens": 37806,
+    "output_tokens": 4038,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2764,7 +2764,7 @@
     }
   },
   "last_morning_report_date": "2026-11-11",
-  "last_scan_at": "2026-11-11T19:00:52.919176+00:00",
+  "last_scan_at": "2026-11-11T20:00:55.580450+00:00",
   "last_summary_sent_at": "2026-11-10T22:01:35.376437+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2785,6 +2785,46 @@
     "updated_at": "2026-11-10T22:01:35.366174+00:00"
   },
   "news_pool": [
+    {
+      "desc": "JUDE BELLINGHAM has a fleet of supercars - but the irony is he can't drive any of them! The England ace, 23, opened up t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T20:00:55.584137+00:00",
+      "link": "https://www.thesun.co.uk/sport/40988023/jude-bellingham-car-collection-bmw-lamborghini/",
+      "published": "2026-11-11T20:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Inside Jude Bellingham’s £1m car collection, from a BMW fleet to a Lamborghini Urus after he reveals he can’t drive"
+    },
+    {
+      "desc": "THE US men's national team could make a push to appoint Pep Guardiola to replace Mauricio Pochettino as head coach, acco",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-11T20:00:55.584205+00:00",
+      "link": "https://www.thesun.co.uk/sport/40995985/pep-guardiola-usmnt-target-mauricio-pochettino/",
+      "published": "2026-11-11T19:48:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Pep Guardiola ‘top target’ for USMNT to replace Man Utd-bound Mauricio Pochettino with Man City legend ‘intrigued’"
+    },
+    {
+      "desc": "Thomas Tuchel revealed he has no release clause in his England contract but is committed to leading them until Euro 2028",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-11T20:00:55.584234+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13611191/thomas-tuchel-committed-to-england-until-euro-2028-but-keen-on-club-return-in-future",
+      "published": "2026-11-11T19:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Tuchel committed to England but keen on club return in future"
+    },
+    {
+      "desc": "Arsenal January Targets: Independent Reports Baena, Nusa and Kroupi Interest thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.584295+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZ2d0SHJ1X2h4bTYxb0VTWnJQT1pNZl9hWlQ5ekx5RHctNzdCX1hxeUVvb3hBY2xSX0V1TVBUZ25PTVoxN1MtU1VqZVE3V3pndWZvZ1Q1ZDBCNUFneU0tam8tUm9RTkV3Z2pfbnktOGhDMnVkRVU2eVhzWFczUzV5eDlWX2lzME85am5qYVlteHZ6Zw?oc=5",
+      "published": "2026-11-11T19:22:28+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal January Targets: Independent Reports Baena, Nusa and Kroupi Interest - thefalse9.com"
+    },
     {
       "desc": "Who has the best and worst fixtures in Fantasy? Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -2814,6 +2854,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea star Josh Acheampong pulls out of England U21 squad days after missing Blues’ trip to Sunderland"
+    },
+    {
+      "desc": "FA suspends referee observer nine weeks over discriminatory remarks Punch Newspapers",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.584417+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaDhkTDdKRko3UEVYaHY5Z0hjZEdCTUViVk00SkE2V3VfMEotcGJsUVhwcTQxRXpXVTNGTWRueDVFRmtYMmp0YlgzN1JlX3NLV3RrZV9nWGlHMzVzRnNZenFXODM0WVBfem81ZTVzWGc0UzFsSGpUU2FGVFZxaHlBTEJuckg1aXZnVUUyT0xqY2Fqdw?oc=5",
+      "published": "2026-11-11T18:27:30+00:00",
+      "publisher": "https://punchng.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA suspends referee observer nine weeks over discriminatory remarks - Punch Newspapers"
     },
     {
       "desc": "Match Supervisor Suspended for Discriminatory Remarks in League 1 조선일보",
@@ -3076,6 +3126,16 @@
       "title": "Man Utd ‘add Nathan Collins and Calvin Bassey to shortlist’ ahead of January transfer window to fix defensive nightmare"
     },
     {
+      "desc": "League 352436 Fantasy Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.584973+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4wemhFaWJxMVVpX0hVaFR0VElxOXIzdUhvcVVxUXhTUXlWMkM1LVJObUhSejhhd3JfSUFPU0gtSDQ1a3hLOHVfd09sYmRRVWdTX3liN0VzQVRKUXdydDFCN3o2b0VYVlZpeXAxY1hWV28?oc=5",
+      "published": "2026-11-11T15:38:43+00:00",
+      "publisher": "https://fantasy.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "League 352436 - Fantasy Premier League"
+    },
+    {
       "desc": "THIS international break gives Dream Team managers an opportunity to take stock of the season so far. Inspired by the re",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-11T16:00:55.027872+00:00",
@@ -3196,6 +3256,16 @@
       "title": "What we have learned from the 2026/27 season so far - Premier League"
     },
     {
+      "desc": "Alessia Russo wins AWFC Player of the Month Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.585171+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbnliMFIzYjc3ZlBybkVmc29sRnRFamd3cWdTcUVtZmNwd0ZwM2phT1Bzazg3R28ydXF5TmsxQXlNcXRVVWhiSGV2aU81WEV1bEVHYjRRcGQ0Smw3OWg5a1g4N3ZkbmJsYmxWajJhNWF1c1hrekZ6R2o2MjZLOWZaWVk3dEZaOGxXY3ZtelZB?oc=5",
+      "published": "2026-11-11T14:28:18+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Alessia Russo wins AWFC Player of the Month - Arsenal.com"
+    },
+    {
       "desc": "Swansea City news: FA contact Birmingham City over incidents during Swans win BBC",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T15:01:02.857529+00:00",
@@ -3244,6 +3314,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "October Player of the Month: Alessia Russo - Arsenal.com"
+    },
+    {
+      "desc": "Arsenal Saliba and Gabriel Trophy Fridge Magnet Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.585273+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNnJJRURtUlZBRTJlV2FORV81cmpJY2pnTXF3bnVuZXRaZEd0UnpFRmwzdk9YamNldlBaZzluMXpTMFRfLW00U0NfZ1lPM3lfNlR0N01PYllaR1NUWEVycGtKT01ScFMtVG0zMnRFejZWeDVRYzVyRWk2b0JDb2VjQWpKVE5hY3FoSnFkYjB5YVhBQ1B1TXhWYzhjYzNwOV9ra1NyOVlWa2F3REJxbkRIRm4tT0lmNENnbVVqYk9kbmgyMjNQdHFFMEVobE9pX1pNSUVF?oc=5",
+      "published": "2026-11-11T13:58:06+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal Saliba and Gabriel Trophy Fridge Magnet - Arsenal Direct"
     },
     {
       "desc": "MANCHESTER UNITED legend Teddy Sheringham believes Senne Lammens and Benjamin Sesko are to blame for the team's recent w",
@@ -3376,6 +3456,16 @@
       "title": "Tom Brady breaks silence on Birmingham exit as NFL legend quits with Blues sitting top of Championship"
     },
     {
+      "desc": "South Shields forward Adam Campbell has 'unfinished business' in FA Trophy Shields Gazette",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.585437+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPODVCMUVxZnBhOGxZcWpmTERCdUNzTDd2SkNfck1BU1Z1dnF3TTZtaFYzOXZYbmZLNmdtamdhZjVBeWt5a3E5empYcTZTYWdORlE4ZFJzN1lYWXctTkhNaXFPZlhoc3BrTk1mc3dFd191cWZ3dEZpUnVfM0Q4V2tGQUZaSHJFS1B5ZnJ6c21qWmZ3QW1yN2pnd1lWcmxySjA4VWlOZDdvc0Q?oc=5",
+      "published": "2026-11-11T13:11:00+00:00",
+      "publisher": "https://www.shieldsgazette.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "South Shields forward Adam Campbell has 'unfinished business' in FA Trophy - Shields Gazette"
+    },
+    {
       "desc": "Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T17:00:58.935993+00:00",
@@ -3404,6 +3494,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Pochettino wields iron fist in velvet glove and has Fergie’s approval but one thing must change if he’s Man Utd manager"
+    },
+    {
+      "desc": "Football latest news & gossip Sky Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.585488+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVVIbXE5Ykt3cjRpS2hxLTNaSlcxenlvTlF3MjFPRG03YkFDVnd0dGM4WU9jSnlfY2s0a1Y1dGVRY2RldzJBbzk3R0VacVZFV2VZUTF1akJoQmFGTE54U09BSFNJY1A0U21INk9ud0J3UUdvc1Q1ZVZUVDR1Q2NrMDhlQzFCa29HVS10V19B?oc=5",
+      "published": "2026-11-11T12:55:35+00:00",
+      "publisher": "https://www.skysports.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Football latest news & gossip - Sky Sports"
     },
     {
       "desc": "English - Premier League Premier League",
@@ -3504,6 +3604,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Liverpool should have had penalty in 1-0 defeat to Arsenal as Premier League reveal VAR failed to intervene"
+    },
+    {
+      "desc": "Buy Manchester United MUFC Kids T-Shirt Black Manchester United Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-11T20:00:55.585560+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc0xoNWdQMGpFaWFIVzF3cUROVmJ1aUEzbUtUbVdJQ2dxVlRvcVNWNm9vUjdzVHFfd0JCOWljbzdIVTlsTmpIdUVzeHZlSUNxbVVTN0NsSlkyMEhJNHpvMnRBVGstMUZCeDJ5aEtGMVo5Znpxc0FObmZQdjJmX3JhaXRkajVCUQ?oc=5",
+      "published": "2026-11-11T12:04:35+00:00",
+      "publisher": "https://store.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Buy Manchester United MUFC Kids T-Shirt Black - Manchester United Store"
     },
     {
       "desc": "'I always want to play for Liverpool' | How Lewis Koumas grasped the opportunity of a lifetime Liverpool FC",
@@ -4174,116 +4284,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Man Utd next manager: Huge Ornstein update reveals most likely Carrick replacement with trio ruled out - Football365"
-    },
-    {
-      "desc": "Northern Ireland manager Michael O'Neill believes there are players in his squad who have the ability to become Premier ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T09:00:52.951217+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c3x2wz2kg0lno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T08:09:02+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "NI can draw on strong club form in key window"
-    },
-    {
-      "desc": "NATIONAL LEAGUE side Gateshead have put out an advert for a new manager on social media after sinking to the bottom of t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T09:00:52.951235+00:00",
-      "link": "https://www.thesun.co.uk/sport/40986512/gateshead-new-manager-advert-x-cv-national-league/",
-      "published": "2026-11-11T08:04:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Non-league club put out advert for new MANAGER on X and ask for CVs as they sit rooted to bottom of National League"
-    },
-    {
-      "desc": "Centre-half Ryan Porteous has taken a long journey to Los Angeles to rekindle his Scotland career, writes Kheredine Ides",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T09:00:52.951254+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5zjxjj91dn1o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T08:00:14+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Dalkeith to LA pays off for Porteous with Scotland recall"
-    },
-    {
-      "desc": "Harry Kane is set to become England's most-capped player ever on Thursday night - will it also be time to crown him the ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-11T09:00:52.951287+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13610251/harry-kane-ballon-dor-winner-set-for-wembley-celebration-of-england-record",
-      "published": "2026-11-11T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "England's best? Record-breaking Ballon d'Or winner Kane set for Wembley celebration"
-    },
-    {
-      "desc": "BEREFT Santos star Rony has thanked Neymar for his \"generosity\" following the murder of his father. Marigerson Barbosa C",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T08:00:55.645213+00:00",
-      "link": "https://www.thesun.co.uk/sport/40986418/neymar-private-jet-santos-rony-father-murdered/",
-      "published": "2026-11-11T07:42:03+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Generous Brazil legend Neymar offers private jet to Santos team-mate whose dad was murdered to race home to family"
-    },
-    {
-      "desc": "Fabrizio Romano says Man Utd ‘scared’ to appoint ‘brutal’ manager: ‘He says the reality’ TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T08:00:55.645302+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNX2szWmdPUkVoTVRzQXRyMFR1bng0X3BqUmhrV3dZYUk0eEQ4cWRKeWVPM19zelBsYmF2TnR5MW9WMm5lOFp1MU9iWjlLTFpibklBaTF4ZmxSNFFHb01kakhtOXprMlkzbnY2MEc2a1hfVEk0RExfY2s2MHI3Q0JEY0c2cXhpRW1wZmJOdVRJN2hfQmhqdFVUWFRBWXpzaUlCWi1UQmJQUEZQRGNj?oc=5",
-      "published": "2026-11-11T07:31:48+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano says Man Utd ‘scared’ to appoint ‘brutal’ manager: ‘He says the reality’ - TEAMtalk"
-    },
-    {
-      "desc": "BBC Sport charts Jarma Mohamed's surprising football journey from Premier League academies to the Somalia national team,",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T09:00:52.951349+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm5ynnklgl9xo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T07:13:52+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "From Jersey to Somalia... via Liverpool & Man City"
-    },
-    {
-      "desc": "Tottenham Must Rival Arsenal For The £60m Striker Who Jose Mourinho Says Has 'Great Potential' roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.143314+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORk90b2ZkUDBSNzVENlZjNUc5N2g0N1BDSU1UVVg0NjBNREYxQ2xsWWtFak1tdGlDT210dXlfTUNKUExNd1ZNYlR1LW5HTm1xb09EYUdkSFBxU0h5bVlJVFRLZmlsN2JxMmNjSkVlWWRNSk9EUmFIQVlid2xtRGg4bkxneElZUlE4cTltNWtud21sZHlTbmtSQXd3b1V0MDR4YmpuUFFySVYzeFpQeGJqa2NscHVGay1hUXd5LWt2d0J0STBPVmFfSEVzUDhhWFc5T0x0MFI0ZFpMZzl3MVRBQ3QwT0RtaWJSbWJaVVI4RXh5Zw?oc=5",
-      "published": "2026-11-11T07:01:51+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Tottenham Must Rival Arsenal For The £60m Striker Who Jose Mourinho Says Has 'Great Potential' - roundtable.io"
-    },
-    {
-      "desc": "EFL Trophy: Owls seek atonement as Reds aim to harness momentum Yorkshire Post",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.143328+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOOUtYYU53R2pBN3BPMjl0MW1PQ0VKRXU0bU91bzJaQ05FUnhqQVg0Rlh3UlVvM2ZHdmp1U05VYTAxMXdYdE1DbGJ2Z01JMXQ1MURySU5SV2luZ0hJQ0h2UFB5Uzl1RWhmMF9CbWt2ajhUNEZzX2wwZ18zN3pKUHZzMTFSZzd2RjZhaEh0ZC00NE51NmRnX2VJaERBU3M3ZFNGTEoyeF9PcHhHSnpteE9mM0tPbjV2S2tmdjJxcDdHaklQRWxJV3JDd1FhdW5UcnRWZDkwRnJlZjFfekVtdk9TMUtUemp4NzV4YVlLY1BPM3o?oc=5",
-      "published": "2026-11-11T07:00:00+00:00",
-      "publisher": "https://www.yorkshirepost.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "EFL Trophy: Owls seek atonement as Reds aim to harness momentum - Yorkshire Post"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T07:00:57.936136+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmy4x9en5k3lo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T06:47:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "Arsenal News Today: Konsa Knee Injury, Nusa Interest and Saka Update (11 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T07:00:57.936177+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBwdUlZR0pEY19GX0lMUkU1MjVudktuYnZiV3BPWmpwZUZBUTVsUFpCSWxJcm5kcm9mc3JocmNOa0VBbHZ0WXBERTZ2VjJ3MUR0UWo1RG9XekRta2NQVXJXamx3b3FGcXpXcWpkY3AwUXBWbkpkUzNYQkZn?oc=5",
-      "published": "2026-11-11T06:30:40+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal News Today: Konsa Knee Injury, Nusa Interest and Saka Update (11 November) - The False 9"
     }
   ],
   "processed_urls": [
