@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 27,
+        "calls": 1,
         "errors": 0,
-        "requests": 27
+        "requests": 1
       }
     },
-    "calls": 27,
-    "date": "2026-11-12",
+    "calls": 1,
+    "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 163676,
-    "output_tokens": 19542,
-    "requests": 27
+    "input_tokens": 7137,
+    "output_tokens": 910,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3009,7 +3009,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T15:01:03.043970+00:00",
+  "last_scan_at": "2026-11-12T16:01:00.288739+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3030,6 +3030,96 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MICHAEL Carrick bid a tearful goodbye to his Manchester United players today after being sacked for leading the club int",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T16:01:00.291556+00:00",
+      "link": "https://www.thesun.co.uk/sport/41004478/michael-carrick-man-utd-bruno-fernandes-baleba/",
+      "published": "2026-11-12T15:58:45+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Michael Carrick breaks down in tears bidding farewell to Man Utd players after being sacked in farcical circumstances"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO is poised to return to the Premier League after his stint as USA boss. The former Southampton, Totte",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T16:01:00.291584+00:00",
+      "link": "https://www.thesun.co.uk/sport/41000167/mauricio-pochettino-fortune-wife-karina/",
+      "published": "2026-11-12T15:45:32+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Inside Mauricio Pochettino’s £40m fortune and life with ‘rock’ wife singer Karina ahead of his imminent Man Utd return"
+    },
+    {
+      "desc": "Misc Rumor RealGM",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.291604+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zdzBDTDU0aDJ5aC03VlVTaEdHTW1aNlNDVVhKWFdpTk81OHZHZ05YTjQ4R1NTaWdGYW1BbDEwUENrMzM3UUhiWnlXV0VTRU5VUWhtNzZraFJHdFZpMDktdkJMSHVHMFIz?oc=5",
+      "published": "2026-11-12T15:34:06+00:00",
+      "publisher": "https://soccer.realgm.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Misc Rumor - RealGM"
+    },
+    {
+      "desc": "Fabrizio Romano: Chelsea eye player Xabi Alonso tried to sign in 2024, ‘big money’ The Chelsea Chronicle",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.291628+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMW5CT2lqRzRXdTdKc29kYzF1eDVvS3NWTE9Fd0xpRW84N0tLUEN1WEYxbnpKTEVpZ3VzVWRKMkxhVHUtalU1MklHZlVtSld5d3FOUkViVmRFZk5DSTNEX25DRkd4V0E3RUpubWRidlNlOUtKQWt3ZHlaOUNNeHB6NEhHVGd4VW1rMHZSR0RLOS10LTV2TWlnMDB5bGo3bkN6WWxMdkhiY01NQzUzbUVDTUNJS1lNalhNN0RpVzFNSTBMcE8ycUphbg?oc=5",
+      "published": "2026-11-12T15:30:00+00:00",
+      "publisher": "https://www.thechelseachronicle.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: Chelsea eye player Xabi Alonso tried to sign in 2024, ‘big money’ - The Chelsea Chronicle"
+    },
+    {
+      "desc": "Women’s Champions League ticket news: OH Leuven away | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.291649+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVk84U09JT1cydHM4bDhiekl1MFJReHFsaUctV0hOWGRjUDZuUmxjbElQREl0ZXVDN0x3d1RCVVlMMnplclZ1cml4OVBDUURuSXl4TkNwZVlCckhFSHlIRml5LWhRczB6Q0t6cjJkN2hjRTFValRsMjRTTEFqQW5xMHNjMU9xRm1fb24zUGthUzB3Uy1XMFhj?oc=5",
+      "published": "2026-11-12T15:30:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Women’s Champions League ticket news: OH Leuven away | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Arsenal midfielder Zubimendi 'loved' at Chelsea but he's not the main target - Fabrizio Romano LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.291670+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdHFWOVhDRExjTWFYZzNtQkw0VllQUnFhYlZwN1pDTjZQZlI4Q195VG9Jd2JoR2NEQWcxWEQ3MFR0cng2a1JOd052Y1lqejE1cmt3cllFWVoyaC1TQXpwaFhYbC1xX0pYcjdpN2NXdVlGNFA5RUdOd09BS0ZTVTFhWkFvOHFSLUh5WGpFcTNfeUNrTXN0YjlNSktMTmRJTTBLSTFobnIxT01zcjUwSElma0gtTndoSnpoN3VSejFTOFhnRG55NDBrM3h0SnZkZw?oc=5",
+      "published": "2026-11-12T15:29:11+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Arsenal midfielder Zubimendi 'loved' at Chelsea but he's not the main target - Fabrizio Romano - LiveScore"
+    },
+    {
+      "desc": "ARSENAL supporters can enjoy watching the champions take on the finest teams in Europe from the best seats in The Emirat",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T16:01:00.291688+00:00",
+      "link": "https://www.thesun.co.uk/sport/39227637/arsenal-premier-league-champions-ticket-hotel-deal/",
+      "published": "2026-11-12T15:21:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal tickets plus hospitality packages to Premier League and Champions League matches at The Emirates"
+    },
+    {
+      "desc": "ENGLAND host Croatia in a mouthwatering Nations League clash tonight - and you could be watching the action live at Wemb",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T16:01:00.291706+00:00",
+      "link": "https://www.thesun.co.uk/sport/41003279/england-vs-croatia-tickets-nations-league-buy-price/",
+      "published": "2026-11-12T15:17:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England vs Croatia LAST MINUTE tickets: How to buy and cost for Nations League clash at Wembley"
+    },
+    {
+      "desc": "Romano and Moretto provide update on Milan’s Endrick pursuit: “Hasn’t said no” LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.291727+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWktESG5DYUpRNUdXWkVwakNObms0a2NlbGpTNTA5QnV1MGc2WURXQUU2MVo3eHN5bGZGRnJnVXlQS1BoSGE5Qm5PSHB3ckU3VU04NU9ZcHhKNTdGdjhTbzhaSFZ5MFJPUXJ5WUxaVExzVmJfMTRTRXBTN3B0Vm1GVk01TFFFSGc2Zzh6anAxd0hVRVBXcUhrdGtLVjhDYUNmcThkSlBxVVdkbEgxUmlZTWRpMEl3d3B6Z2hLVkZpWkRobDBjT1Q2ZmNUM01WQ2huVzVJ?oc=5",
+      "published": "2026-11-12T15:11:17+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano and Moretto provide update on Milan’s Endrick pursuit: “Hasn’t said no” - LiveScore"
+    },
     {
       "desc": "MANCHESTER UNITED have reached a full agreement with Mauricio Pochettino to become new manager, according to reports. Th",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3119,6 +3209,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Unrecognisable Champions League winner, 31, now in NINTH division admits ‘I consumed too much McDonald’s and beer’"
+    },
+    {
+      "desc": "The Breakdown: Why NOBODY can stop Martin Odegaard Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.291884+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQWkzYWtuZTM0ZGZ4QkxxMElCZWhONjl1S3cydmYzZTdvblNvRnZnQWdIWDhOQVhhcDA1MEJDY0VaejJoR0lZOV85QkFDc2VpNVFKcWIzX1dOQWVYaEZ1SzNrZFZtUGRxbjF1cFd6b0twSnhyT0hZTVlsSFJwZVctTnFEbHFQSnRFOTlJb0xYNEgwSHFBU01WbTRkX1I?oc=5",
+      "published": "2026-11-12T14:21:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "The Breakdown: Why NOBODY can stop Martin Odegaard - Premier League"
     },
     {
       "desc": "Fast starts or big finishes? When EVERY club score the most goals Premier League",
@@ -3371,6 +3471,16 @@
       "title": "Chelsea wonderkids Ryan Kavuma-McQueen and Mahdi Nicoll-Jazuli steal show on England duty with 12 Cobham stars on show"
     },
     {
+      "desc": "'I can't fault the effort' - the benefits of Liverpool's Jersey Mike's Trophy involvement Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.292173+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQV1Y5bEpwQnBsY084Y1hBRGNXSDlyTWlGZFlSaEVLSkItVk9UVVJiY2RYOEp0MEJ3dVlOTnhtRXB1N2NuMkotOHhaNENKOGdMYW1Jd2pwNWI0VHprTmlrbENPUC1XSTRSb3ZkTGZ6Q1RLd2E3YnhWbTZ1V2M3UDJPV0JHdXNRdw?oc=5",
+      "published": "2026-11-12T11:46:36+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "'I can't fault the effort' - the benefits of Liverpool's Jersey Mike's Trophy involvement - Liverpool FC"
+    },
+    {
       "desc": "Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-12T14:00:51.267904+00:00",
@@ -3539,6 +3649,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Next Manchester United manager odds | Mauricio Pochettino clear favourite after Michael Carrick SACKED"
+    },
+    {
+      "desc": "Manchester United sack Michael Carrick as head coach LBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T16:01:00.292362+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdzI3QkxWb2ZHS0tvaXp4bHlndmU5bGZOeDA5Y21WbUZXdEhKUk5SWUx2Y1YzS0xTaUpDRkx0Ni03cjNOQUVEN1ljQW5PTWdkbTM4MWU2cTZrY25WeExTR3VZRXdVTFVxTGxlOVd0dURjZ2t1SjZGckpCWkZKQlpxZVpybkt6cmk3LXdSVVc2VE9aYnZVRG5mbQ?oc=5",
+      "published": "2026-11-12T10:31:51+00:00",
+      "publisher": "https://www.lbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Manchester United sack Michael Carrick as head coach - LBC"
     },
     {
       "desc": "Sources close to the United dressing room believe Carrick has been 'hung out to dry' as United dithered over his future ",
@@ -4409,126 +4529,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Pep Guardiola ‘top target’ for USMNT to replace Man Utd-bound Mauricio Pochettino with Man City legend ‘intrigued’"
-    },
-    {
-      "desc": "Track Order - Chelsea Store Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T21:00:58.177228+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tZVAtOG1XSExLdm1Hc1hKNjBVbkdJLTVRSmJ1LVhMcG53MURxZTlXb0xXUGdQSVFyMXcyZ040QnJXd2YtbXRoTHY3SWNXYW1r?oc=5",
-      "published": "2026-11-11T19:42:54+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Track Order - Chelsea Store - Chelsea FC Store"
-    },
-    {
-      "desc": "Thomas Tuchel revealed he has no release clause in his England contract but is committed to leading them until Euro 2028",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-11T20:00:55.584234+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611191/thomas-tuchel-committed-to-england-until-euro-2028-but-keen-on-club-return-in-future",
-      "published": "2026-11-11T19:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Tuchel committed to England but keen on club return in future"
-    },
-    {
-      "desc": "Arsenal January Targets: Independent Reports Baena, Nusa and Kroupi Interest thefalse9.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T20:00:55.584295+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZ2d0SHJ1X2h4bTYxb0VTWnJQT1pNZl9hWlQ5ekx5RHctNzdCX1hxeUVvb3hBY2xSX0V1TVBUZ25PTVoxN1MtU1VqZVE3V3pndWZvZ1Q1ZDBCNUFneU0tam8tUm9RTkV3Z2pfbnktOGhDMnVkRVU2eVhzWFczUzV5eDlWX2lzME85am5qYVlteHZ6Zw?oc=5",
-      "published": "2026-11-11T19:22:28+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal January Targets: Independent Reports Baena, Nusa and Kroupi Interest - thefalse9.com"
-    },
-    {
-      "desc": "Liverpool hunt for second Barcelona signing Alejandro Balde revealed by insider LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T22:00:59.478906+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeG51OFp2THJSQ211R19VZ1paMkFXUy1tQUVuVUw4cVBYbVVzMWhfU2hhVXFrcFNNMTl6ME9lTTQ1S3Y3Q3dXendPTkRYTWV6TTd2RXFzc3N3U1ZUWTVhM0xCUDdzQ2ZPdjZPNF93VEZHbVUxUmZVN2dzS2NnT0dZSGNEQUZiOHhNYUpxM0E1RGxtUGg3X3EzQlN6REhMcTd6ZGxGM3pNbmlsSnVKeEF4OWRUX08?oc=5",
-      "published": "2026-11-11T18:50:34+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool hunt for second Barcelona signing Alejandro Balde revealed by insider - LiveScore"
-    },
-    {
-      "desc": "Fantasy Premier League, Official Fantasy Football Game of the Premier League Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T00:01:01.935053+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ud3dOZzdtZnNpTWhkRlJsanZSTzBDTmJxdjM1V3RsaXlkWjgxMUhXVW1qSjlRN05WenluN19pZ1ZySE1rT3V2SHYyak5MV0dTT1RHSXBkRENrYVBINURTcGh5WQ?oc=5",
-      "published": "2026-11-11T18:46:46+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Fantasy Premier League, Official Fantasy Football Game of the Premier League - Fantasy Premier League"
-    },
-    {
-      "desc": "Who has the best and worst fixtures in Fantasy? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T19:00:52.922860+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORE04VTlPNWY1V1dKVjYwNVNhY1Ryd2txQmg3aXNxeEwyU2xkUDJWZFE1eVZYV1lZWmFhLXRVRndNa3lyQXhlZUxmRnJ5WWxnOFlDaEl4d2R3dnNUa19Da0NqRjhhX2dhT2ZwTExxQTBkSUo4Q01mQ2ZmX09PMW5UcWUxMUE5am9SX2k5MW55dUNOVGdIN0xz?oc=5",
-      "published": "2026-11-11T18:43:25+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who has the best and worst fixtures in Fantasy? - Premier League"
-    },
-    {
-      "desc": "David Ornstein reveals extraordinary reason Man Utd rejected Pochettino twice since 2024 Football FanCast",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T19:00:52.922901+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOREVCRFhkWlRVMERucE1OeHVLNU1mZFlkRVRWcm1oT0FPVDZfOVNRVzN2c0d3c241alA5azA2RWt3UUxLdnZ4U05PWENMcGtkMjB5RjJESHdzamVlOHZCSl8zQ0o2MXJZSlQ3MlVPWXc1RmQwVDFPVnNPQmhlSFhsbGpCV0t4eTBK?oc=5",
-      "published": "2026-11-11T18:42:12+00:00",
-      "publisher": "https://www.footballfancast.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein reveals extraordinary reason Man Utd rejected Pochettino twice since 2024 - Football FanCast"
-    },
-    {
-      "desc": "CHELSEA defender Josh Acheampong has withdrawn from the England Under-21s squad due to injury. The 20-year-old was not a",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T18:35:56.165115+00:00",
-      "link": "https://www.thesun.co.uk/sport/40995041/josh-acheampong-pulls-out-england-squad-chelsea/",
-      "published": "2026-11-11T18:34:08+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea star Josh Acheampong pulls out of England U21 squad days after missing Blues’ trip to Sunderland"
-    },
-    {
-      "desc": "Racist League One football referee slapped with nine-week ban Daily Mail",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T22:00:59.478969+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNYnkwY1FCQmxWRnFQNFRCd0NKNWR5LTRoanVzOXJlVXEyVWQzbmc0TU9Fa0tsbld3WmUzZzdNWjVoQzE5d2g3OFl6UFBPWEVmT0VIdkkxVWYxanhSSGR2RklPY3BPUDJZVWpwWXc4eGJZVmh2WlR0bTRQbUF4SUZHLUxSRUtKWGVUdklyYmNuQzBYSmROVEN1enhTQ2xqV2RkQmhiWlFqQnlua2ZmTUdSemxQUjlPT05NM3VtM2dsbE1UQmxVajY5WlJNcVcxaFJnWHYtQkJHbw?oc=5",
-      "published": "2026-11-11T18:33:13+00:00",
-      "publisher": "https://www.dailymail.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Racist League One football referee slapped with nine-week ban - Daily Mail"
-    },
-    {
-      "desc": "FA suspends referee observer nine weeks over discriminatory remarks Punch Newspapers",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T20:00:55.584417+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaDhkTDdKRko3UEVYaHY5Z0hjZEdCTUViVk00SkE2V3VfMEotcGJsUVhwcTQxRXpXVTNGTWRueDVFRmtYMmp0YlgzN1JlX3NLV3RrZV9nWGlHMzVzRnNZenFXODM0WVBfem81ZTVzWGc0UzFsSGpUU2FGVFZxaHlBTEJuckg1aXZnVUUyT0xqY2Fqdw?oc=5",
-      "published": "2026-11-11T18:27:30+00:00",
-      "publisher": "https://punchng.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA suspends referee observer nine weeks over discriminatory remarks - Punch Newspapers"
-    },
-    {
-      "desc": "Chelsea FC Nike Rompers, Chelsea Rompers Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T00:01:01.935163+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQTNwSHg5WjRUdzBKR2UyOVU4aGlINmJpTjZhVHlZcmhSc1Y5RjlaMURSRndNbkgzNlhKa2FLRTg3MHcwampLdVhZc2d4eTMyU2Zyb2s5eGd1dUt6QjRFQkNCSDRsRWZ1NUhTWnEzRWExOFJuQTFPZWowWmlyRVJaN25hN0g2WkFKLWpiekxtWVRHTUVBdHRBV3kwSkV6alNlZTJGamhVUVZqQ002b2c?oc=5",
-      "published": "2026-11-11T18:25:00+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea FC Nike Rompers, Chelsea Rompers - Chelsea FC Store"
-    },
-    {
-      "desc": "League EMS Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T02:00:52.547533+00:00",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1nZHRqQzBwS3FlYkg3OUFjdjJjWEJfaUtBblZ6NVdHM3NHdngtTFZwN0hURTRnQ0YweTZYN3BTRk1xVVdtUEhYbGl1RGR3LVhXcDdUbEZrWHZVb3JmM3puYnhuUTBRb3A3M2g0OHFzOE8?oc=5",
-      "published": "2026-11-11T18:18:12+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "League EMS - Fantasy Premier League"
     }
   ],
   "processed_urls": [
