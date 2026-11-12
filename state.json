@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 122020,
-    "output_tokens": 14989,
-    "requests": 20
+    "input_tokens": 125855,
+    "output_tokens": 15608,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1422,6 +1422,41 @@
       "telegram_message_id": 116,
       "title": "美国队取消发布会，波切蒂诺接近曼联帅位",
       "updated_at": "2026-11-11T18:01:00.429631+00:00"
+    },
+    "70e83b0a5e24": {
+      "article_title": "'Unfinished business' - Tuchel committed to England",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "19eee16729422e06",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 121
+        }
+      ],
+      "created_at": "2026-11-12T09:01:17.317417+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "14d8d41c35d4ac8a",
+      "event_id": "70e83b0a5e24",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-12T09:01:17.317417+00:00",
+          "origin": "created",
+          "title": "'Unfinished business' - Tuchel committed to England",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 121,
+      "title": "图赫尔表态无意离开英格兰帅位，承诺执教至2028欧洲杯",
+      "updated_at": "2026-11-12T09:01:17.941346+00:00"
     },
     "71e1de6387b1": {
       "article_title": "Brentford 2 Nottingham Forest 0: Pressure grows for Oliver Glasner as new club suffer fourth defeat in five outings",
@@ -2834,7 +2869,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T08:11:19.637470+00:00",
+  "last_scan_at": "2026-11-12T09:01:11.747801+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2855,6 +2890,66 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "FOOTBALL fans can enjoy an unmissable city break to Barcelona with seats at a game at the Nou Camp stadium. Supporters h",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T09:01:11.749840+00:00",
+      "link": "https://www.thesun.co.uk/sport/39805720/barcelona-live-spain-match-ticket-hotel-nou-camp/",
+      "published": "2026-11-12T08:48:50+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Barcelona tickets and 2-night hotel deals from £309pp for travel breaks to LaLiga games at the Nou Camp"
+    },
+    {
+      "desc": "FANCY a taste of La Dolce Vita... along with watching a world-class football match at AC Milan's legendary San Siro stad",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T09:01:11.749859+00:00",
+      "link": "https://www.thesun.co.uk/sport/39559460/ac-milan-san-siro-serie-ticket-hotel-packages/",
+      "published": "2026-11-12T08:48:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "AC Milan ticket and two-night hotel packages to see Serie A matches at the legendary San Siro from just £239pp"
+    },
+    {
+      "desc": "FOOTBALL fans can enjoy an unbeatable city break to Spain's iconic capital with top tickets to see the superstar Galacti",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T09:01:11.749874+00:00",
+      "link": "https://www.thesun.co.uk/sport/39805767/real-madrid-tickets-la-liga-santiago-bernabeu-mourinho-bellingham/",
+      "published": "2026-11-12T08:47:29+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Real Madrid tickets and hotel deals for city breaks to the iconic Santiago Bernabeu from just £359pp"
+    },
+    {
+      "desc": "England head coach Thomas Tuchel says he has \"no intention\" of leaving the job before Euro 2028 regardless of any offers",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T09:01:11.749891+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T08:42:47+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Unfinished business' - Tuchel committed to England"
+    },
+    {
+      "desc": "AN English non-league club are set for a major stadium makeover, with almost £1million being pumped into a new roof and ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T09:01:11.749905+00:00",
+      "link": "https://www.thesun.co.uk/sport/40998084/non-league-dartford-new-roof-champions-league-inter-milan/",
+      "published": "2026-11-12T08:24:05+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "English minnows announce £1million stadium renovation with new roof – and they’re managed by Champions League winner"
+    },
+    {
+      "desc": "With Northern Ireland yet to concede a goal in the 2026-27 Nations League, young defenders Ruairi McConville and Tom Atc",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T09:01:11.749921+00:00",
+      "link": "https://www.bbc.co.uk/sport/articles/cw24epvmq96lo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T08:17:52+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Young duo at heart of Nations League's meanest defence"
+    },
     {
       "desc": "MICHAEL CARRICK has arrived at Manchester United's Carrington training base despite being expected to be sacked as boss.",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4294,66 +4389,6 @@
       "publisher": "https://www.mansfieldradio.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Strike by consultant doctors in England paused - Mansfield Radio"
-    },
-    {
-      "desc": "MANCHESTER UNITED players are reportedly expecting Mauricio Pochettino to replace Michael Carrick… despite some of them ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T13:01:00.716558+00:00",
-      "link": "https://www.thesun.co.uk/sport/40989891/man-utd-mauricio-pochettino-new-manager-unai-emery-players/",
-      "published": "2026-11-11T12:14:03+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd stars expect Mauricio Pochettino to be new boss but ‘some wanted Premier League manager to take over’"
-    },
-    {
-      "desc": "LIVERPOOL should have had a penalty for the pull on Alexander Isak’s shirt by Arsenal defender Jurrien Timber, according",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T13:01:00.716578+00:00",
-      "link": "https://www.thesun.co.uk/sport/40988378/liverpool-arsenal-penalty-var-fail/",
-      "published": "2026-11-11T12:06:36+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Liverpool should have had penalty in 1-0 defeat to Arsenal as Premier League reveal VAR failed to intervene"
-    },
-    {
-      "desc": "Buy Manchester United MUFC Kids T-Shirt Black Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T20:00:55.585560+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc0xoNWdQMGpFaWFIVzF3cUROVmJ1aUEzbUtUbVdJQ2dxVlRvcVNWNm9vUjdzVHFfd0JCOWljbzdIVTlsTmpIdUVzeHZlSUNxbVVTN0NsSlkyMEhJNHpvMnRBVGstMUZCeDJ5aEtGMVo5Znpxc0FObmZQdjJmX3JhaXRkajVCUQ?oc=5",
-      "published": "2026-11-11T12:04:35+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Manchester United MUFC Kids T-Shirt Black - Manchester United Store"
-    },
-    {
-      "desc": "'I always want to play for Liverpool' | How Lewis Koumas grasped the opportunity of a lifetime Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T18:00:54.033459+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMkE0d1l0dkE1NHdHNVBucDBVYXlzWWwzNmhlcU91LVhEWnk1cV9jUTFIUGRQRXFhV3V6UVE3c2k1YkNnWGlFUVowcEJEOXNJMEU5bzlwVjJ0eks4bm1INGRMOFlGY3VFbl9iNWtJd3hweTNfbGphSXRVZTdqUTBjYXNUVGd3Y1VrOUt4WDZSWFVHV0hzQl9NVWZmQ0p2QQ?oc=5",
-      "published": "2026-11-11T12:02:37+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "'I always want to play for Liverpool' | How Lewis Koumas grasped the opportunity of a lifetime - Liverpool FC"
-    },
-    {
-      "desc": "Manchester United have reached an agreement in principle with Mauricio Pochettino to take over as head coach if Michael ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-11T13:01:00.716595+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13610949/mauricio-pochettino-man-utd-strike-agreement-with-michael-carricks-potential-successor",
-      "published": "2026-11-11T12:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man Utd strike Poch agreement as Carrick takes training"
-    },
-    {
-      "desc": "talkSPORT presenter Danny Kelly has died at the age of 69, the broadcaster has announced.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-11T12:00:51.931079+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16284047/Danny-Kelly-dead-69-Broadcasting-legend-passes-away-just-eight-months-stepping-radio-work-oesophagus-cancer.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-11T11:59:33+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Danny Kelly dead at 69: Broadcasting legend passes away after oesophagus cancer treatment 'did not go to plan' just eight months after stepp"
     }
   ],
   "processed_urls": [
@@ -4450,7 +4485,8 @@
     "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html",
     "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html",
     "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool",
-    "https://news.google.com/rss/articles/CBMilgFBVV95cUxObE5jMHdSandtS0lIVXQ5bjFpVm5pbXdudEp3WkFnT0lSWXdrSHBsWVExSVhHblZUa001OTh5bzRUZnZBV21TRDN3RDBmSWt1MFNDMDZwQXh1RXNSMGpDSkVNMHYycXJaZUZjbnVYQTU1UEpvMjVBXzVvcndLM1g2VnJCWktUTzN2U2dXQkNBTlJJVnpJV3c"
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxObE5jMHdSandtS0lIVXQ5bjFpVm5pbXdudEp3WkFnT0lSWXdrSHBsWVExSVhHblZUa001OTh5bzRUZnZBV21TRDN3RDBmSWt1MFNDMDZwQXh1RXNSMGpDSkVNMHYycXJaZUZjbnVYQTU1UEpvMjVBXzVvcndLM1g2VnJCWktUTzN2U2dXQkNBTlJJVnpJV3c",
+    "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko"
   ],
   "s_overflow": {},
   "schema_version": 4
