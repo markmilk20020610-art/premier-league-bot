@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 62324,
-    "output_tokens": 7077,
-    "requests": 9
+    "input_tokens": 68129,
+    "output_tokens": 7872,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1050,6 +1050,41 @@
       "telegram_message_id": 46,
       "title": "曼联42年最差无胜绩，卡里克仍不下课？罗马诺曝新帅目标",
       "updated_at": "2026-10-31T16:45:38.303518+00:00"
+    },
+    "46e14e64e099": {
+      "article_title": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United - The New York Times",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "64ff13b76aa762a7",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 129
+        }
+      ],
+      "created_at": "2026-11-12T23:01:01.315495+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "74657cff1d08d21d",
+      "event_id": "46e14e64e099",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-12T23:01:01.315495+00:00",
+          "origin": "created",
+          "title": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 129,
+      "title": "波切蒂诺将签曼联两年半合同？NYT独家爆料",
+      "updated_at": "2026-11-12T23:01:01.854084+00:00"
     },
     "4817db9d90ca": {
       "article_title": "Fuming Man Utd fans storm out of Stamford Bridge early after second half COLLAPSE against Chelsea",
@@ -3079,7 +3114,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-12T22:28:56.408643+00:00",
+  "last_scan_at": "2026-11-12T23:00:54.376911+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3100,6 +3135,66 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T23:00:54.380815+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ?oc=5",
+      "published": "2026-11-12T22:57:43+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United - The New York Times"
+    },
+    {
+      "desc": "Report: Pochettino leaving USMNT to become Man United coach theScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T23:00:54.380853+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM0ZNN1VoTDdicDJQcDFiUk1iSklmVjJxNnVtX0lOclh2d3E5UW5UVjhfUmdGQmdSc1NaZ3F3Um90RUJMZVdMS2pOU2tPRXNFa1dyX0VKR01FZnVjNUlGQ2hzNWtBTnotV25CcEdOeEk2LW05RlE5R1FoN01mSGR1U3V4OTZ4ZWdaVW5GSldjNElydE9PQm4zTng4SVUtT3ZJakktbw?oc=5",
+      "published": "2026-11-12T22:56:16+00:00",
+      "publisher": "https://www.thescore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Report: Pochettino leaving USMNT to become Man United coach - theScore"
+    },
+    {
+      "desc": "FRANCE star Desire Doue was left with visibly crooked teeth after taking an elbow to the face during their Nations Leagu",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T23:00:54.380917+00:00",
+      "link": "https://www.thesun.co.uk/sport/41009723/desire-doue-tooth-crooked-elbow-face-italy-france/",
+      "published": "2026-11-12T22:52:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Desire Doue’s tooth left visibly crooked after taking sickening elbow to face during France’s defeat to Italy"
+    },
+    {
+      "desc": "Gallery: 43 snaps from our Camp Nou clash Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T23:00:54.380947+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQUtBcF9iRm01cW1lajFISFRua1JGX1NNcnphR2ZyVUxNeGZKU0ZLa3dHSy1pcjFXVFExNmxWa2FKSWVUVW1sNV94MXJsSnZPOFJyell2bG1ITVJFQTZwQzRrWWpFamgxNE5UQVEtR3RtLTFyMVNsMjlNRVphblVxN1BwQl80aFBJSkE?oc=5",
+      "published": "2026-11-12T22:52:34+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Gallery: 43 snaps from our Camp Nou clash - Arsenal.com"
+    },
+    {
+      "desc": "THE Glazer family made the final decision when selecting the next Manchester United head coach, according to reports. Un",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T23:00:54.380975+00:00",
+      "link": "https://www.thesun.co.uk/sport/41009659/glazers-ordered-ratcliffe-hire-pochettino-man-utd/",
+      "published": "2026-11-12T22:47:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Glazers ‘ordered Sir Jim Ratcliffe to hire Pochettino’ with Man Utd chiefs Berrada and Wilcox ‘overruled’"
+    },
+    {
+      "desc": "BRUNO FERNANDES has reportedly rejected a new contract at Manchester United. The club captain is in the final year of hi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T23:00:54.381001+00:00",
+      "link": "https://www.thesun.co.uk/sport/41009762/bruno-fernandes-contract-offer-man-utd/",
+      "published": "2026-11-12T22:32:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Bruno Fernandes ‘REJECTS new Man Utd contract’ with Portugal star’s deal expiring at the end of this season"
+    },
     {
       "desc": "MAX DOWMAN will break Jude Bellingham’s record as the youngest-ever England U21s player if he plays against Portugal at ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3261,6 +3356,16 @@
       "title": "Man Utd & Man City in Gusto battle - Friday's gossip"
     },
     {
+      "desc": "The top stories and transfer rumours from Friday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-12T23:00:54.381339+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13611732/bruno-fernandes-rejects-second-manchester-united-contract-offer-paper-talk",
+      "published": "2026-11-12T21:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Bruno rejects second Man Utd contract offer"
+    },
+    {
       "desc": "Maanum: “I always want to hunt those rebounds!” Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-12T21:00:54.354169+00:00",
@@ -3389,6 +3494,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Arsenal survive dominant Barca to earn precious WCL point"
+    },
+    {
+      "desc": "Argentina FA announces new contract for head coach, Lionel Scaloni Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T23:00:54.381566+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYTg2bjdhQWZ1OGtRT0ZUVU9ldEVGakV4WWNPbEoyMXRCLWFzWmI3aEFvblZyQVVSOGlUaC1sUGlXN2RZampmMV9HdTRuYmFQVUJVd3l5T21aa3JDS1hHV3B6dno1eTM3LTFpWG1KMnBFRXNHQmd5WmowWm5DLVZta0hIYnBZR1JzMzlEYUtkWE1xYWxocHRQY1JPcENhSFFOdDFmeFZpWTTSAa4BQVVfeXFMUDlhQ0dMTWpub1phYjZaa0FIMjIxZmtVVVpnMzZ1eTR3MGRzVDN0QkpZSXI4dWdUeHRhUUN5bHpTT2dOV2lfdWM4dDAxb3R2eWh5SDRtcmZ2d3dxYU9rZjRmS1NlczE0NUE2SERZNlcyRzQxNHJ4X0xTOThTMlVBVFl1WUlrb2p5THJ1UkpLQ2ZlWDdpX2JFYVYxaWpMSDNER0JNaTFXLUYzX3RFQTNR?oc=5",
+      "published": "2026-11-12T19:33:50+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Argentina FA announces new contract for head coach, Lionel Scaloni - Tribuna.com"
     },
     {
       "desc": "'Pochettino likes to have his say': Fabrizio Romano reveals how Man United's January plan will change under new boss Tri",
@@ -3561,6 +3676,16 @@
       "title": "- Manchester United"
     },
     {
+      "desc": "Football latest news & gossip Sky Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T23:00:54.381771+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVVIbXE5Ykt3cjRpS2hxLTNaSlcxenlvTlF3MjFPRG03YkFDVnd0dGM4WU9jSnlfY2s0a1Y1dGVRY2RldzJBbzk3R0VacVZFV2VZUTF1akJoQmFGTE54U09BSFNJY1A0U21INk9ud0J3UUdvc1Q1ZVZUVDR1Q2NrMDhlQzFCa29HVS10V19B?oc=5",
+      "published": "2026-11-12T17:59:28+00:00",
+      "publisher": "https://www.skysports.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Football latest news & gossip - Sky Sports"
+    },
+    {
       "desc": "MICHAEL CARRICK has been followed through the Manchester United exit door by five members of his coaching staff. The Old",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-12T18:01:02.596376+00:00",
@@ -3589,6 +3714,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Follow our men's and women's WhatsApp channels - Arsenal.com"
+    },
+    {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T23:00:54.381796+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbXBKYzlteFV6MnYtck5wSXIwSV92UEFpOGdlckhHSGRGc1hjWS1ldUZ3TmpQaDN5a2tHVWhhMUtLdHpoN3VSN3pndFhQRkcwczZMenNPV2gxaHIxeUUyOFZrQnFIaVh5WTV3bFktb3FBcFRLNUZuLWd4cmhub0ZmZHZR?oc=5",
+      "published": "2026-11-12T17:31:43+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
     },
     {
       "desc": "Ben White's refusal to play for England and Arsenal chief forced to step in AOL.co.uk",
@@ -3719,6 +3854,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Mauricio Pochettino faces nightmare Man United start as it emerges he WILL take charge of USA game in early hours of Wednesday - cutting pre"
+    },
+    {
+      "desc": "Our top 10 gift ideas for Liverpool fans this Christmas - shop now Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T23:00:54.381978+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUFFfT29odVoySzl5am9pN3p5a2djZFRtNjFKUUFaa1B3QjRxNGtzem9BcmN1WDBpUjZhcHd5TmtUcVBhRVZUU0FtbHZuaUVpZFBVajd1UGVKQkUzNjUwSWpoNEpoX0V3ZURwcWUzdS1SbTVtYlJBdEpCd2ZkaU9FS3BRSUNEcjduUDdOTmlXcXhUZ1Vieml1bVBiNFdaQQ?oc=5",
+      "published": "2026-11-12T16:05:48+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Our top 10 gift ideas for Liverpool fans this Christmas - shop now - Liverpool FC"
     },
     {
       "desc": "Fabrizio Romano Transfer News: Zubimendi to Chelsea truth, Pochettino deal, Guardiola to USMNT? FootballTransfers.com",
@@ -4489,116 +4634,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Michael Carrick is SACKED by Man United: Manager leaves training ground just 2½ hours after arriving - and now Mauricio Pochettino is ready "
-    },
-    {
-      "desc": "Why is Manchester United sacking Michael Carrick seen by many fans as a distasteful insult to a club legend? The Week",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T11:00:53.123828+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZVRRdG9wOEtiaU9MdTJaY25mR2JvaUxZUEQwX05Mei1FX19JU21FdnJBYmkxaFF1OUJPbi1xeDlNM3FJcGNMLXFGMWxCb0ZnY0xoUF9GcHdLVDlPZzBoSkgzbGU0b2hKVThBSWdJQ0E3OEFIaGFBRjFpbjF2THlkRUpMYUZJWGpOQW5TclZnNkFJSktOSmNUQmRzVFp4aFM4M0lxNkh2OW9nYkNKbXpvR005OE5BbW5nd21xLXNLbktDV2l0dkRzONIBzgFBVV95cUxNX2J6RUpGWVdsRFZ4c3lVSXo2ek1YVVMxbkx0aWlkcWZDSDQtOXZCc19PYmRPTDZEYTdQV05pWGRPSHVjblVNOGVGeHl3b3A5OXFHaGZvWGs1ekI3QVlzamNKeG9HMFp4c0pDem9xcVdoSVhhQXA0UTBZQzU0ZHl5TVRVMTJYZF90ZHcxWlVJZVMxakdtUlQ5UXVZMVJQaHFEYTI0elI5Q0EtOWhKanlRREdhSHNiMVdwVEZ5ek1aMTY5YWMzUG02V3lOOXV1dw?oc=5",
-      "published": "2026-11-12T10:42:14+00:00",
-      "publisher": "https://www.theweek.in",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Why is Manchester United sacking Michael Carrick seen by many fans as a distasteful insult to a club legend? - The Week"
-    },
-    {
-      "desc": "David Ornstein confirms Carrick's Man United exit as Pochettino is lined up Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T12:00:59.100698+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNU0xJV2Njd2tRbnN3LU9HOHpaWXc2UGRsZThWTnUxMlRTNlJfamJmblAyNHc0VElLQXZWeHZDMThzRHFZTkg2dk5ucmF2dUl4ZmlWT2NhcXNNVHcyMGdLWWt4MThScDRrZWR4UFZZZ2tRY3JWXzdSOHNtTU82RlA3NE15N0NDYWc3dHR0bk1DMmZTWjdWSXFJbUVMTm9WWTRRV0FZRnJNN2Uxc2hiWXU5ZVZnSC3SAboBQVVfeXFMTW1SNy1sNHE2cTZtdjh4cFozSVhLSDJabF9HM215MzZFT1pKYWEtUDJaSFh4VmtEd09HbDc0SjVIbzRNWkd2dzRsZXRYMjRYa0poMFRMaVN1aVJ5S0FDS05JLUdrZ3NWbmUtWXg2WUJRSWxkQV9wTk9WdmIydmtOWER1ak0wYUZWRE5NVjl3OTlCY2VqVXpEQjEtWWJtVjhuLXlrN3dTNzRjQ1VhcEV0MFJ3SlVRZHpDZ3VR?oc=5",
-      "published": "2026-11-12T10:41:52+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein confirms Carrick's Man United exit as Pochettino is lined up - Tribuna.com"
-    },
-    {
-      "desc": "Joint statement from Premier League, FA, EFL and WSL Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T11:00:53.123857+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNN2dRQUFpMm1CU2tiMENvVmhpRW1Yb3ZKTk1CbTdtVVVVRWxGX3BkZEtlLWdURHBOTU0tbHRrZUZuRm9rcHQtbjJ5WWtzaGRuNS1PaE9xVEtPTl9jVUFBRkVUVUxXQkh5MXd6SnVvRk5scjhIYzkzMktkblF4YVdkMThLV2tBWUdiMFlBRDBzVmFyS3ZEMGE3TVpwcGFsV0NCZUVUTldrNDBlVG8?oc=5",
-      "published": "2026-11-12T10:39:55+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Joint statement from Premier League, FA, EFL and WSL - Premier League"
-    },
-    {
-      "desc": "BBC Sport looks back at the six Premier League matches that defined the highs and lows of Michael Carrick's 10-month spe",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T11:00:53.123889+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c5ev37egv97mo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T10:39:54+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Six matches that defined Carrick's Man Utd tenure"
-    },
-    {
-      "desc": "Club statement on Michael Carrick Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T11:00:53.123914+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XaFV6VEFMY2loVmNZY0xHWUZUNmdVcV9CQUM0ZWV2QkZEWWF2LUhTeFZDSjhSVkZ4WndMQlFTMmhtRlhXT2N0VFo3VmtHYlFNa2VHWHNCZlJoenI0LVZ4ek9FOVQ5dmdRMTN6MXB3SzU0TDgteHI3d1NKVGpTOUE?oc=5",
-      "published": "2026-11-12T10:39:26+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Club statement on Michael Carrick - Manchester United"
-    },
-    {
-      "desc": "MAN UNITED fans can get unmissable ticket deals to watch the Red Devils under their new manager at Old Trafford this sea",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T11:00:53.123941+00:00",
-      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
-      "published": "2026-11-12T10:38:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd tickets plus hotels and official hospitality for Champions League and Premier League games at Old Trafford"
-    },
-    {
-      "desc": "MANCHESTER UNITED are once again looking for a new manager after Michael Carrick was SACKED today. The Old Trafford club",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T11:00:53.123966+00:00",
-      "link": "https://www.thesun.co.uk/sport/40976294/next-manchester-united-manager-odds-latest/",
-      "published": "2026-11-12T10:36:24+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Next Manchester United manager odds | Mauricio Pochettino clear favourite after Michael Carrick SACKED"
-    },
-    {
-      "desc": "Manchester United sack Michael Carrick as head coach LBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:01:00.292362+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdzI3QkxWb2ZHS0tvaXp4bHlndmU5bGZOeDA5Y21WbUZXdEhKUk5SWUx2Y1YzS0xTaUpDRkx0Ni03cjNOQUVEN1ljQW5PTWdkbTM4MWU2cTZrY25WeExTR3VZRXdVTFVxTGxlOVd0dURjZ2t1SjZGckpCWkZKQlpxZVpybkt6cmk3LXdSVVc2VE9aYnZVRG5mbQ?oc=5",
-      "published": "2026-11-12T10:31:51+00:00",
-      "publisher": "https://www.lbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Manchester United sack Michael Carrick as head coach - LBC"
-    },
-    {
-      "desc": "Sources close to the United dressing room believe Carrick has been 'hung out to dry' as United dithered over his future ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-12T11:00:53.124004+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16284173/michael-carrick-manchester-united-flight-weak.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T10:23:57+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "How Michael Carrick's Man United fell apart: Players' bust-up on flight back from Madrid, weakness in training and on touchline - and why dr"
-    },
-    {
-      "desc": "MANCHESTER UNITED have sacked Michael Carrick following a disastrous start to the season. The former Middlesbrough chief",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T11:00:53.124031+00:00",
-      "link": "https://www.thesun.co.uk/sport/40768626/michael-carrick-sacked-man-utd/",
-      "published": "2026-11-12T10:23:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Michael Carrick finally SACKED by Man Utd with giants wallowing in relegation zone with Mauricio Pochettino to take over"
-    },
-    {
-      "desc": "Michael Carrick becomes the third Manchester United manager to be sacked in three seasons - where did it go wrong?",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T11:00:53.124109+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T10:21:29+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "The chaos that took Carrick from two-year deal to sacked within 15 games"
     }
   ],
   "processed_urls": [
@@ -4702,7 +4737,8 @@
     "https://www.skysports.com/football/news/12040/13602738/michael-carrick-sacked-by-man-utd-how-his-old-trafford-reign-unravelled-in-worst-start-to-a-season-in-40-years",
     "https://www.thesun.co.uk/sport/41003637/mauricio-pochettino-man-utd-old-trafford-camp-nou",
     "https://www.thesun.co.uk/sport/41005536/when-mauricio-pochettino-man-utd-manager",
-    "https://www.thesun.co.uk/sport/41007690/fifa-lose-court-battle-world-cup-gianni-infantino"
+    "https://www.thesun.co.uk/sport/41007690/fifa-lose-court-battle-world-cup-gianni-infantino",
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ"
   ],
   "s_overflow": {},
   "schema_version": 4
