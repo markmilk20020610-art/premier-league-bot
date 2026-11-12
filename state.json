@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 25,
+        "calls": 26,
         "errors": 0,
-        "requests": 25
+        "requests": 26
       }
     },
-    "calls": 25,
+    "calls": 26,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 150155,
-    "output_tokens": 18256,
-    "requests": 25
+    "input_tokens": 156719,
+    "output_tokens": 18757,
+    "requests": 26
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1352,6 +1352,41 @@
       "telegram_message_id": 98,
       "title": "曼联补时两球绝平维拉，八球大战战平",
       "updated_at": "2026-11-08T20:25:34.427610+00:00"
+    },
+    "63a8870656ae": {
+      "article_title": "How Carrick's reign unravelled",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "8375bf3b8a97801e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 124
+        }
+      ],
+      "created_at": "2026-11-12T14:00:55.200306+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "17a777cfeecfa6ff",
+      "event_id": "63a8870656ae",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-12T14:00:55.200306+00:00",
+          "origin": "created",
+          "title": "How Carrick's reign unravelled",
+          "url": "https://www.skysports.com/football/news/12040/13602738/michael-carrick-sacked-by-man-utd-how-his-old-trafford-reign-unravelled-in-worst-start-to-a-season-in-40-years"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/football/news/12040/13602738/michael-carrick-sacked-by-man-utd-how-his-old-trafford-reign-unravelled-in-worst-start-to-a-season-in-40-years",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 124,
+      "title": "天空体育：迈克尔·卡里克被曼联解雇",
+      "updated_at": "2026-11-12T14:00:55.784959+00:00"
     },
     "68d6afe5a9be": {
       "article_title": "West Ham confirm Parker as boss",
@@ -2939,7 +2974,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T13:00:53.507926+00:00",
+  "last_scan_at": "2026-11-12T14:00:51.264708+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2960,6 +2995,96 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "HARRY KANE gave England fans a sign of things to come when he scored just 79 seconds into his debut against Lithuania ba",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T14:00:51.267427+00:00",
+      "link": "https://www.thesun.co.uk/sport/41001149/england-xi-harry-kane-debut-wayne-rooney/",
+      "published": "2026-11-12T13:45:19+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Where England XI from Harry Kane’s debut is today – from BBC pundits to managerial flops and Chelsea stars"
+    },
+    {
+      "desc": "FPL Pod: Who are the best Arsenal defensive picks? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267454+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbmFTUThxdEJZYUpaRDFFRXU5cnBOVEg2UUgzMjJ1a2xDVkYwUlp4VUx2M3FfOG5ERmpfVTJOT2RqZ2hKZkM0R3g1MmlMZTM4VGdnUUpjMFA2ZzFEaWRGLXZRdC10RmhjWnQxck5TZW9WMUEtQ3Z5VVF5Nk1QTm02bWJ0RHo4bUFHcTd1X1REdk5Jb21VOTE4TFJn?oc=5",
+      "published": "2026-11-12T13:39:36+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "FPL Pod: Who are the best Arsenal defensive picks? - Premier League"
+    },
+    {
+      "desc": "MANCHESTER UNITED players have been left “confused and bemused” by the club’s stance on manager Michael Carrick - with a",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T14:00:51.267478+00:00",
+      "link": "https://www.thesun.co.uk/sport/41002206/man-utd-stars-confused-carrick-treatment/",
+      "published": "2026-11-12T13:35:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Confused Man Utd stars respond to club’s ‘weird’ treatment of Carrick before finally putting him out of his misery"
+    },
+    {
+      "desc": "Crystal Palace sack Pierre Sage as Eagles move into advanced talks with former Tottenham boss LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267500+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPUXlveklxMnlTSHdTdTBrYzNOQVhMcURwMGctZFNkWm9zUzRscGxkdjJLVEVJMnNxN2FnY1l6WnByMnNYdEVwRWpCTWdBcHJHSGV5dnQ4THJpdVV0dm95TFZGOElkNjhiUDc2NG9qVWpjOFVULWJMWkZNdlhrX0plN0JWYXdVWTFfRmgxYThOMjJNS3AxRlYzSUZ3d3NiZGR4R3Y2eWMzZDBaeVJTdWFENVNzRDJ0ZzZaejBmWVpfTWhDTXVOdnRPNVNwYWowV1ZOUng1VktHaDRXcFdFU3k0M3ZjTzdxS3pDYmdxQU9B?oc=5",
+      "published": "2026-11-12T13:31:53+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Crystal Palace sack Pierre Sage as Eagles move into advanced talks with former Tottenham boss - LiveScore"
+    },
+    {
+      "desc": "Fabrizio Romano: \"Endrick has not said no to Milan\" Milanreports.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267518+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcUtWZUZlU2ZaNnc0Tl9vWmRJWFI0TzBuSy16d2pMcG9sZ2paeTRpekxsQklUOFdmTktxNGZoRXJXRERieXNVU3dYVUJKdU1Vb0ZQTVRlVHlHZVBRbFlhdVg2cl9zTVczTlRiMzlidklIRHZfX0R4a0pPS3pMN2RULXdPaDFERThGQ1gtNGx3?oc=5",
+      "published": "2026-11-12T13:21:36+00:00",
+      "publisher": "https://milanreports.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: \"Endrick has not said no to Milan\" - Milanreports.com"
+    },
+    {
+      "desc": "Fabrizio Romano Makes Man Utd January Transfer 'Guarantee' as Pochettino Deal Agreed GiveMeSport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267537+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbTVVY21ROHdGRmVya3NvbzJzSkpoWmVtLTNibXhJX2YtMkE1YjRBbzBvR1R2cVNoczJ1bG9yOTlkdlphQjBoQ2ItUVliR0k1UzhPUGQ0UjhDRnVNNmlGcjhVNEVhaDFCVloyUGptQmFRakpXLVppclJwdWpIeWNuVUd3UlNrcEFkclZOYUszTHk4Y1JTeHAwY2k3QXFwdw?oc=5",
+      "published": "2026-11-12T13:16:14+00:00",
+      "publisher": "https://www.givemesport.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano Makes Man Utd January Transfer 'Guarantee' as Pochettino Deal Agreed - GiveMeSport"
+    },
+    {
+      "desc": "HARRY KANE has given fans a rare glimpse inside his luxurious Munich home - showing off his incredible collection of Eng",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T14:00:51.267556+00:00",
+      "link": "https://www.thesun.co.uk/sport/41002414/inside-harry-kanes-munich-mansion/",
+      "published": "2026-11-12T13:14:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Inside Harry Kane’s Munich mansion as England captain takes fans on tour to show off caps and Ballon d’Or trophy"
+    },
+    {
+      "desc": "Williams-Barnett wins Adobe Express Creative Moment of the Month award Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267574+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcGlDcjJmYXRjS3FpbnlQWlNpNnNqbFBXVVR3dEVYQm1nelRQTkY1SHlUZDBiVXc1dGh3Z3BOcWhjbGVBaWJHYmZ1dGx0cGI5Wjl0LWp2QUNFLWQyUVdBeURybDB4b2pIbVpJYWJZdXVfQTVEeWlnR0dvM0J0TXl5TXZRRk1LRzFJYWpHM2p2WU5OOTlCWTVHQ1NyYlJ4Z2J4WVR5aGVuNWRReVZzY3h4bE5pekk2VVU?oc=5",
+      "published": "2026-11-12T13:09:47+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Williams-Barnett wins Adobe Express Creative Moment of the Month award - Premier League"
+    },
+    {
+      "desc": "Williams-Barnett wins Premier League's Creative Moment of the Month award Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267591+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNU0hEZlg1QV9XR29ESHlRa2FwLVVpN19PSWVrTFZyb3VqclVxNGlWY0hYbTRMYTB2Q1d1cld3VkxEOW1ZdklwZXdzWWdzenQ1LS1rZWtFVlpHaG5XQWhPN2tWWk5TZzdsSnNORkI2S01HdHZneWdHSmo3QXBkTEVfZG1TY0g1ckJfdDZ4VmFVN3pxOGFNU1k2RFI2dHhObGRYaUZmekJQb3pjOWRiLUtHd2Zpc1BVdlVn?oc=5",
+      "published": "2026-11-12T13:00:00+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Williams-Barnett wins Premier League's Creative Moment of the Month award - Tottenham Hotspur"
+    },
     {
       "desc": "Pierre Sage sacked by Crystal Palace LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3081,6 +3206,16 @@
       "title": "Chelsea wonderkids Ryan Kavuma-McQueen and Mahdi Nicoll-Jazuli steal show on England duty with 12 Cobham stars on show"
     },
     {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267904+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE51WjdBR3JKalVacWNDNDJlNUpSLWMtdkdKQkhRNGRtblQxRG50TXc3U2I3VllUbVRBd3NxNGRJSEhoVHNlRFdGbmFQdEdQakJTX0FVNTJ5Vkg?oc=5",
+      "published": "2026-11-12T11:25:43+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
+    },
+    {
       "desc": "MANCHESTER UNITED had no succession plan for Michael Carrick until only two weeks ago. United finally sacked Carrick on ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-12T12:00:59.100556+00:00",
@@ -3099,6 +3234,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Alonso: It’s make or break | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Jeremie Frimpong nominated for FIFPRO Merit Award Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.267935+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdVFSUG5ZZVkzN1BmNG9ZZTVJT2ZwYUlHWk9Zek92YWhtQUNBQ29ZRm0tSU95ajhPSjNfX3RFVi1WV3ctdHhGTGpsSE02ZnNBbTFVa0drQ0NWN2NQSE0zU01kRnN4UlN2TXZWaEVCUUNJdVRjbEhTYzRvckRfQ3BBMDVQUDY?oc=5",
+      "published": "2026-11-12T11:07:38+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Jeremie Frimpong nominated for FIFPRO Merit Award - Liverpool FC"
     },
     {
       "desc": "MELISSA SATTA wowed fans in a see-through top as she attended Italian entertainment festival Il Festival dello Spettacol",
@@ -3359,6 +3504,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Mauricio Pochettino should TURN DOWN the Man United job unless he gets TWO new signings to fix 'the worst back four in the Premier League', "
+    },
+    {
+      "desc": "Vote for your CFCW October Player of the Month on the Chelsea Official App | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T14:00:51.268149+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxObWtZZXVzZUdadWUzVFJ1VFltMGtNb3RxaTFqSTVoQkRLOThiNGlVZ0N0cTFRVkhNekZSamtzdVhaOUhyNHdRZXZraENvUGZaTE5zVGpMRHR1U2UtQlQ3TUo0THZBUldwX2NHNXVIM3ZtN3pVSEw4dWFrMUpYQ0phTXVrMEczT1BlZzZJTldvMWhCRGQzdEwxdjgzZVlEanpZRVRHRHlBbTV4bjlUSmg2aFFuY25oamM?oc=5",
+      "published": "2026-11-12T09:35:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Vote for your CFCW October Player of the Month on the Chelsea Official App | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "'One of my personality traits' - why Ronald Araujo is not content with his Liverpool form Liverpool FC",
@@ -4339,126 +4494,6 @@
       "publisher": "https://www.lutontoday.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Referee observer banned for discriminatory comments made at Kenilworth Road - Luton Today"
-    },
-    {
-      "desc": "Goal/assist every 57 minutes: How Keyrol Figueroa is thriving on loan at Port Vale Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T22:00:59.479197+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZElOenVwRUhDT25PVGxNLUFXeXZiaHVSaEY1eWIweUxJajZpcHdOYUkxdVYzTDlxNkU4OHhpTmtOaUlwT1BJOUpHd0N0YXZ1Zl93SFp4MDdjQmhjWTlGUG5BZ0ZUWndfaUlReTFOc3p4eFlLMW5yZzUwY1luRFhiQ1liWFlJZ0FrNlZFUXlvWmNtbm5Qb2Vnam80Q09jTktiUEJV?oc=5",
-      "published": "2026-11-11T17:20:36+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Goal/assist every 57 minutes: How Keyrol Figueroa is thriving on loan at Port Vale - Liverpool FC"
-    },
-    {
-      "desc": "MANCHESTER UNITED appointed a Portuguese firebrand and a former player before sounding out Mauricio Pochettino. But enou",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T18:00:54.033062+00:00",
-      "link": "https://www.thesun.co.uk/sport/40993684/man-utd-treatment-michael-carrick-new-low/",
-      "published": "2026-11-11T17:02:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd’s handling of Michael Carrick is new low as Ineos chiefs swan around Monaco while dead man walking soldiers on"
-    },
-    {
-      "desc": "ENGLAND will complete their Nations League group duties during this international break, starting with a home game again",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T17:00:58.935561+00:00",
-      "link": "https://www.thesun.co.uk/sport/40987913/england-croatia-nations-league-predictions-free-bets-tips/",
-      "published": "2026-11-11T17:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England vs Croatia: Nations League predictions, preview and free bets"
-    },
-    {
-      "desc": "David Ornstein explains Man Utd’s U-turn on Pochettino under Ineos United In Focus",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T18:00:54.033104+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZHV3c21WOTNXVk1UVDRmS2oxSDlfU3ZMaGU2V1phdXBiakY0ZEpyRG5KdGt5TEotZEVRWWVaWHZVZWpMUnlSNE9meGRURnkxeEFIZl9JVXNMTkgtTjItaWlGZ0Y4SlhJUmQ2dGp1aGFtQVhxRjFYNGZTdHhmZk9kMkVwU1JlNzNsNG5SQ1g4QWMzNldIcTRUSy00LThnNDlqX1d3?oc=5",
-      "published": "2026-11-11T17:00:00+00:00",
-      "publisher": "https://www.unitedinfocus.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein explains Man Utd’s U-turn on Pochettino under Ineos - United In Focus"
-    },
-    {
-      "desc": "Video: The latest on Man United's pursuit of Pochettino The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T21:00:58.177555+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IVjVSRFJENjZhbHVfNGpnaWMyRWJqVG5rNmYxbko5UnJDbDBBXzlpbzBRZVU4dERMX015UFF4QnQ1YkxKeHFsckFiNUpoVnZqUkRoSXl4RzBHZ1lrQmlnOTJ0T2d1dw?oc=5",
-      "published": "2026-11-11T16:54:39+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Video: The latest on Man United's pursuit of Pochettino - The New York Times"
-    },
-    {
-      "desc": "From 21-year-old who scored 79 seconds into his debut to being on the brink of breaking his nation's appearance record, ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T17:00:58.935596+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c60qkdj4lp34o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T16:44:58+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Leader, role model, extraordinary - how Kane's 'fairytale' came true"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T00:01:01.935565+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcnJ0UXY3clpPSDVEaUd5Sm1QMVFEcVFXNkY5MjM3MDRZdndXZC12TVkzTW02RWdDdWVBclFoVmZ4Y3dFdklNNVl5a2JtY3NLM0REWjRPNGVSNTM3WVFseGxIRzg2SmNaZmkyN2VVeERBQkNUVXB5aHp4bnJYQmFlMGR6MW4?oc=5",
-      "published": "2026-11-11T16:43:16+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
-    },
-    {
-      "desc": "Malo Gusto is open to leaving Chelsea this January, having stayed in the summer after being valued at £75million by his ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-11T17:00:58.935617+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-11T16:33:36+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "£75million man Malo Gusto is open to LEAVING Chelsea this season after struggling for minutes under Xabi Alonso"
-    },
-    {
-      "desc": "TURKISH football stars will soon be able to enjoy playing at an incredible new football arena. The breathtaking Ankara S",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T17:00:58.935634+00:00",
-      "link": "https://www.thesun.co.uk/sport/40993704/turkey-euro-2032-stadium-ankara/",
-      "published": "2026-11-11T16:32:45+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Inside incredible new 51,000-seater stadium set to host Euro 2032 matches and costing eye-watering £200million"
-    },
-    {
-      "desc": "Mauricio Pochettino is ready to accept an offer from Manchester United to become their next head coach.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T00:01:01.935597+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg25pj36mvo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T16:03:02+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pochettino ready to accept Man Utd offer to replace Carrick"
-    },
-    {
-      "desc": "Xabi Alonso confirms Chelsea team news for Sunderland | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.935660+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnlRc25ndU8xSXV0YlFCWGRkbmZJQ0lCVVV2Wmxwd0F1NWkzWTE4NndnWkhhcE1UV2JaeVpzME9ZZ2lJZFZuWlVueWlTa2JNLXlpM0RoZXJrWWFhdGN6UWczMzRxQU1SZEMyQXFJT2pNaGk4RUtYZ05pYUJQUWR1WWktUFhsWlViWmRJNHZuWUdSa0R4cm9JdEdJMA?oc=5",
-      "published": "2026-11-11T16:00:07+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Xabi Alonso confirms Chelsea team news for Sunderland | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Key Oxford United Women figure leaves club after seven years Herald Series",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.935674+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS19mNWRBRmtUNTQ4al94TjZFcmMwTWRXX1hmczJCNjVYNkp4bUwwN1V3LVdvMm1CZm1NYm5Qa0xfRWdKR3VqU2tUZDZJTk5tQ3BSSjBFUkVHV1JjYUE4UkFHTUliRHd1d2JpMXhOekFKY1BOVUtxYmgxN256dXAwS2NvSHRZTW5PTE9yS0s4VTN4M3ZpYzZ3RTlVZWdwMGNCNjdMYll0NE8?oc=5",
-      "published": "2026-11-11T16:00:00+00:00",
-      "publisher": "https://www.heraldseries.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Key Oxford United Women figure leaves club after seven years - Herald Series"
     }
   ],
   "processed_urls": [
@@ -4558,7 +4593,8 @@
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxObE5jMHdSandtS0lIVXQ5bjFpVm5pbXdudEp3WkFnT0lSWXdrSHBsWVExSVhHblZUa001OTh5bzRUZnZBV21TRDN3RDBmSWt1MFNDMDZwQXh1RXNSMGpDSkVNMHYycXJaZUZjbnVYQTU1UEpvMjVBXzVvcndLM1g2VnJCWktUTzN2U2dXQkNBTlJJVnpJV3c",
     "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko",
     "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo",
-    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTllnd2tEM2ZJMFNmX2VvVHFuYTlHWlh6eXJoSGJtSWxidWRnS3Y3c1k3bjNZVVF4TzNUU3BjMFBlVEJIT01HVEZxa0dCRm1IMl9qRnp0UnVhSVJubGhyM0ludU9Cam4xaUNRTGxDVVVUME4yRWtqVjRnRHdYa21PQ0loTUhMSWw1UnFLNjZuaEtCTmN1ekRBcklXbWVkSmxjZFhWVHhiWVVTdXo1N2l2LWFTeFhpMlE"
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTllnd2tEM2ZJMFNmX2VvVHFuYTlHWlh6eXJoSGJtSWxidWRnS3Y3c1k3bjNZVVF4TzNUU3BjMFBlVEJIT01HVEZxa0dCRm1IMl9qRnp0UnVhSVJubGhyM0ludU9Cam4xaUNRTGxDVVVUME4yRWtqVjRnRHdYa21PQ0loTUhMSWw1UnFLNjZuaEtCTmN1ekRBcklXbWVkSmxjZFhWVHhiWVVTdXo1N2l2LWFTeFhpMlE",
+    "https://www.skysports.com/football/news/12040/13602738/michael-carrick-sacked-by-man-utd-how-his-old-trafford-reign-unravelled-in-worst-start-to-a-season-in-40-years"
   ],
   "s_overflow": {},
   "schema_version": 4
