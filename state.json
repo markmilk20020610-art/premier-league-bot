@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 143846,
-    "output_tokens": 17658,
-    "requests": 24
+    "input_tokens": 150155,
+    "output_tokens": 18256,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2285,6 +2285,41 @@
       "title": "贝尔巴托夫震惊曼联跌入降级区，卡里克帅位无保证",
       "updated_at": "2026-11-08T11:01:00.753547+00:00"
     },
+    "bf397b956f34": {
+      "article_title": "Chelsea Football Club marks 10 years since historic sexual abuse disclosures in football | News | Official Site - Chelsea Football Club",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "7151efd2217a753a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 123
+        }
+      ],
+      "created_at": "2026-11-12T13:00:58.560790+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "b52628e30c231c6c",
+      "event_id": "bf397b956f34",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-12T13:00:58.560790+00:00",
+          "origin": "created",
+          "title": "Chelsea Football Club marks 10 years since historic sexual abuse disclosures in football | News | Official Site - Chelsea Football Club",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTllnd2tEM2ZJMFNmX2VvVHFuYTlHWlh6eXJoSGJtSWxidWRnS3Y3c1k3bjNZVVF4TzNUU3BjMFBlVEJIT01HVEZxa0dCRm1IMl9qRnp0UnVhSVJubGhyM0ludU9Cam4xaUNRTGxDVVVUME4yRWtqVjRnRHdYa21PQ0loTUhMSWw1UnFLNjZuaEtCTmN1ekRBcklXbWVkSmxjZFhWVHhiWVVTdXo1N2l2LWFTeFhpMlE"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTllnd2tEM2ZJMFNmX2VvVHFuYTlHWlh6eXJoSGJtSWxidWRnS3Y3c1k3bjNZVVF4TzNUU3BjMFBlVEJIT01HVEZxa0dCRm1IMl9qRnp0UnVhSVJubGhyM0ludU9Cam4xaUNRTGxDVVVUME4yRWtqVjRnRHdYa21PQ0loTUhMSWw1UnFLNjZuaEtCTmN1ekRBcklXbWVkSmxjZFhWVHhiWVVTdXo1N2l2LWFTeFhpMlE",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 123,
+      "title": "切尔西足球俱乐部纪念足球界历史性性侵披露十周年",
+      "updated_at": "2026-11-12T13:00:59.337675+00:00"
+    },
     "c1ca9017032e": {
       "attempts": 1,
       "chunks": [],
@@ -2904,7 +2939,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T12:00:59.096515+00:00",
+  "last_scan_at": "2026-11-12T13:00:53.507926+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2925,6 +2960,96 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Pierre Sage sacked by Crystal Palace LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T13:00:53.511624+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYTNyTS0zMnhUM1owNHZVUEptODlVMUZycXltbHBEOVluTkdtUUxGRURPMFhkMXVEU2kxaS1GQVJhYUEzc0RkN2loN0dPUmtBbjE4ZncxZ2k5bHVDU3dZS2pyR0VHNWJCVDU2SU1ESXlLVkltLU00OXYtWGpXOEhRNUIzNFpleHg4MllBNTdpczlVNGZUb1E1NEZFUVBOV09IRkZMa0NrMzhtV3BRd1RsaQ?oc=5",
+      "published": "2026-11-12T12:46:58+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Pierre Sage sacked by Crystal Palace - LiveScore"
+    },
+    {
+      "desc": "CRYSTAL PALACE have finally confirmed the sacking of manager Pierre Sage. The Eagles are rock bottom of the Premier Leag",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T13:00:53.511659+00:00",
+      "link": "https://www.thesun.co.uk/sport/41002174/crystal-palace-confirm-pierre-sage-sacking/",
+      "published": "2026-11-12T12:37:53+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Crystal Palace CONFIRM Pierre Sage sacking in very brief statement with Thomas Frank favourite to take over"
+    },
+    {
+      "desc": "Crystal Palace have sacked manager Pierre Sage after just 16 matches.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-12T13:00:53.511723+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13606476/pierre-sage-crystal-palace-sack-manager-with-club-bottom-of-premier-league-table-after-10-matches",
+      "published": "2026-11-12T12:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Crystal Palace sack Sage after 16 matches"
+    },
+    {
+      "desc": "Chelsea Football Club marks 10 years since historic sexual abuse disclosures in football | News | Official Site Chelsea ",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T13:00:53.511756+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTllnd2tEM2ZJMFNmX2VvVHFuYTlHWlh6eXJoSGJtSWxidWRnS3Y3c1k3bjNZVVF4TzNUU3BjMFBlVEJIT01HVEZxa0dCRm1IMl9qRnp0UnVhSVJubGhyM0ludU9Cam4xaUNRTGxDVVVUME4yRWtqVjRnRHdYa21PQ0loTUhMSWw1UnFLNjZuaEtCTmN1ekRBcklXbWVkSmxjZFhWVHhiWVVTdXo1N2l2LWFTeFhpMlE?oc=5",
+      "published": "2026-11-12T12:30:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Football Club marks 10 years since historic sexual abuse disclosures in football | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "MANCHESTER UNITED'S supporters group have hit out at the board after Michael Carrick's sacking marked \"another depressin",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T13:00:53.511785+00:00",
+      "link": "https://www.thesun.co.uk/sport/41001255/man-utd-supporters-trust-statement-michael-carrick-sacking/",
+      "published": "2026-11-12T12:29:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd supporter group demands owners explain themselves after Carrick sacked in ‘another depressing moment’ for club"
+    },
+    {
+      "desc": "Crystal Palace have sacked manager Pierre Sage after 16 games in charge and the club bottom of the table.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T13:00:53.511818+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cv5y18lkk87do?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T12:23:47+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Crystal Palace sack boss Sage after 16 games"
+    },
+    {
+      "desc": "TOTTENHAM star Dejan Kulusevski has admitted he was left disappointed by the way some people handled his injury nightmar",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T13:00:53.511847+00:00",
+      "link": "https://www.thesun.co.uk/sport/41001347/tottenham-star-kulusevski-injury-sweden-xavi-simons/",
+      "published": "2026-11-12T12:23:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Tottenham star Kulusevski admits he’s ‘disappointed’ with handling of his injury after spending 526 DAYS out of action"
+    },
+    {
+      "desc": "THOMAS TUCHEL evidently doesn't take Dream Team points into account when selecting his England squads but maybe he shoul",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T13:00:53.511870+00:00",
+      "link": "https://www.thesun.co.uk/sport/40999761/james-justin-marcus-tavernier-england-xi-dream-team/",
+      "published": "2026-11-12T12:22:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "James Justin and Marcus Tavernier make England XI determined by Dream Team points"
+    },
+    {
+      "desc": "James Milner to return to Anfield for LFC Legends charity match Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T13:00:53.511898+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS3BNWllYOHFTN0Vud01BTzR6akxnTUdEbXNHNkFDU01DRkZaWlVnQW1tSklTWWVpRG1seDRRZXUtcUd5OHdDR0JlWUk1bjRka05VZm1qOE9xLXhkbHlkSk1Kd05GV21vLTZoMFBNWFg3QTJ5Q09nRXNRTG50ZUs2ZmlHN2tldkZIR1JSY2VrVDkzR01Nb2M5ekxoUUM?oc=5",
+      "published": "2026-11-12T12:09:35+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "James Milner to return to Anfield for LFC Legends charity match - Liverpool FC"
+    },
     {
       "desc": "BARCELONA fans can continue supporting their beloved team in the afterlife by INTERRING THEIR ASHES at the Nou Camp. But",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -2964,6 +3089,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd had NO plan to replace Michael Carrick until two weeks ago as Mauricio Pochettino arrival faces delays"
+    },
+    {
+      "desc": "Alonso: It’s make or break | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T13:00:53.512201+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYNW80WXg0T2Rub1VhbmpLcFFqcG1Bci12RUY2QjM4NDFlRDU0UG43ZDN5SjJNTXQzT2FWUHMzWUprdDdnZEQ3YjdkeWx6UkN6VDI2bk9CWHhTQnVEVE1kQVZKTm41Nm9wUHRtUmw3cmRlVERQ?oc=5",
+      "published": "2026-11-12T11:09:22+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Alonso: It’s make or break | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "MELISSA SATTA wowed fans in a see-through top as she attended Italian entertainment festival Il Festival dello Spettacol",
@@ -3286,6 +3421,16 @@
       "title": "Spurs Nike Mens Navy Dri-FIT Polo I Spurs - Tottenham Hotspur"
     },
     {
+      "desc": "Chelsea v Liverpool: Away ticket details Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T13:00:53.512633+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaGN6SDA5MGZzVmZsRDV2cGl3NFB3TEZJZ216N2RaUWJ3Nm51eHRBdVQwd2RqMTY5RllkLW1nYkJtUWdGd3J3WnRreGJTU0dUTHZzdGY5MUpPUHBlbU9sSk5yeGhsWGtBdHlyVkh2MXlTeTE3czJPRFRvYmtpMDhnOVZzX3pSTkN6c2VKdmRB?oc=5",
+      "published": "2026-11-12T09:03:23+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Chelsea v Liverpool: Away ticket details - Liverpool FC"
+    },
+    {
       "desc": "ITALY and France collide in a cracking Group A1 clash in the Nations League on Thursday. To mark the game, Betfred are o",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-12T10:00:53.951615+00:00",
@@ -3374,6 +3519,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Young duo at heart of Nations League's meanest defence"
+    },
+    {
+      "desc": "Romano deals Pochettino start date blow; reveals what Berrada has already told him on Man Utd transfers MSN",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T13:00:53.512710+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQQWEzVXYzbVRoekhycEljbk9RVFcxWnVqWUdkU0xNUU15c21DdENnZ3lYVHBVR1NwTlR4TnE4cm9STFNUSUxrLU5xUHRiNllPa3h4QnhraTVRanJiTjFTMjV0ZVFLQzZNRDNqNWpLQ05NSGVBUW1FaGF1WWo1ZEVReFlxVlRKWkwxdG1HVkY4MTg1bVNpdGY2WUZhZTdYZ0EzTElkLTNpTDlVQjFQZmFjWDNqYnhUNDBxMENkakJEYXRtdS0xVUdndmlzcWFOT0tJNlo2OGRNMHFsYWRidWMxVG5uYm5SUld1WUtF?oc=5",
+      "published": "2026-11-12T08:17:51+00:00",
+      "publisher": "https://www.msn.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano deals Pochettino start date blow; reveals what Berrada has already told him on Man Utd transfers - MSN"
     },
     {
       "desc": "MICHAEL CARRICK has arrived at Manchester United's Carrington training base despite being expected to be sacked as boss.",
@@ -3564,6 +3719,16 @@
       "publisher": "https://login.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "- Manchester City FC"
+    },
+    {
+      "desc": "Transfer News Today: Alex Scott, Diouf, Ait-Nouri, Lavia (12 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T13:00:53.512905+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBFYXdhTnl6dEEtTEpTc292Y2g0aGMyUVJXemRjSXU1VGVEZ2tRc3NYeUQ2VFRjVzRoS2x2anI4VmhvTmFxdmRLbk02VXpvdmhHR19QQXBZa3FHNVlQdXVCN1YzZVYwcFZpYkNZSE5ucmNQd2RORDQxNzQxWQ?oc=5",
+      "published": "2026-11-12T05:20:35+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Transfer News Today: Alex Scott, Diouf, Ait-Nouri, Lavia (12 November) - The False 9"
     },
     {
       "desc": "Alex Scott to Arsenal: The i Says Chelsea and Liverpool Also Called Bournemouth The False 9",
@@ -4294,136 +4459,6 @@
       "publisher": "https://www.heraldseries.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Key Oxford United Women figure leaves club after seven years - Herald Series"
-    },
-    {
-      "desc": "Why Conte will NOT become Man Utd manager as new favourite emerges London Evening Standard",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T18:00:54.033164+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQUhGU2lsdlpsTlJxYTl3RXdiTThOZ3VIZmRrUUhXb25MTVBLSFpLQ3hzeHpjNW5mYkRfa19oQm5zbHV0dTk2T1JLS3VaVzE1bE5LVl9Xd0pIa0NCX2NSY09yODZoUUpKVFdRS2t0NUNLOExZdS1Ta1VoVUI0MEpJVkItZHg2bi1oNmVhWnBoY2M0b2E0SlpLem0zaU9VTjF1eW4w?oc=5",
-      "published": "2026-11-11T15:58:14+00:00",
-      "publisher": "https://www.standard.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Why Conte will NOT become Man Utd manager as new favourite emerges - London Evening Standard"
-    },
-    {
-      "desc": "Test Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T18:00:54.033174+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LbWxUQTRnODZJMnFPXzdTOU5HQkxPN1BBNHpVcG9Zd1NtWmZCRkJXX2tOdFpQcW9wMUN5NzRSbGJrby1OeTJSVk1YMUhhdXFRY0s4MVB1ZzVOUzBzSjBF?oc=5",
-      "published": "2026-11-11T15:56:48+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Test - Premier League"
-    },
-    {
-      "desc": "Isak Penalty: Panel Says Liverpool Should Have Had It vs Arsenal The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.935687+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ3hUdU5PcGVOTFZveG04UzNrWWR3SGtvYlR4Y1ItTkFMaHZCemQ3bmxGNi1IT3BsWWRWek9QU3JPdjRGYndlN1djMTd2RzAyYUpYSHd2TmhaQUxpOHh5RTdZNTRCem5MWWtpellCNENfVzBaWjZ4d0w1VUFOMTFrOHRNeTNyTDBadVE4RU5pV19tdi05Tm5JOHR3?oc=5",
-      "published": "2026-11-11T15:56:37+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Isak Penalty: Panel Says Liverpool Should Have Had It vs Arsenal - The False 9"
-    },
-    {
-      "desc": "Bristol City chief executive Charlie Boss says head coach Michael Skubala will be given more time to improve their resul",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T17:00:58.935703+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c54gnev0ydnno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T15:52:30+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Bristol City give Skubala opportunity to improve form"
-    },
-    {
-      "desc": "MANCHESTER UNITED are weighing up a January move for Brentford's Nathan Collins and Fulham's Calvin Bassey as they look ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T16:00:55.027843+00:00",
-      "link": "https://www.thesun.co.uk/sport/40992984/manchester-united-transfer-news-nathan-collins-calvin-bassey/",
-      "published": "2026-11-11T15:46:45+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd ‘add Nathan Collins and Calvin Bassey to shortlist’ ahead of January transfer window to fix defensive nightmare"
-    },
-    {
-      "desc": "League 352436 Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T20:00:55.584973+00:00",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4wemhFaWJxMVVpX0hVaFR0VElxOXIzdUhvcVVxUXhTUXlWMkM1LVJObUhSejhhd3JfSUFPU0gtSDQ1a3hLOHVfd09sYmRRVWdTX3liN0VzQVRKUXdydDFCN3o2b0VYVlZpeXAxY1hWV28?oc=5",
-      "published": "2026-11-11T15:38:43+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "League 352436 - Fantasy Premier League"
-    },
-    {
-      "desc": "THIS international break gives Dream Team managers an opportunity to take stock of the season so far. Inspired by the re",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T16:00:55.027872+00:00",
-      "link": "https://www.thesun.co.uk/sport/40991278/rayan-shots-zion-suzuki-saves-fantasy-football-stats/",
-      "published": "2026-11-11T15:33:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Rayan’s unmatched radar, Zion Suzuki’s saves and other surprising Dream Team stats"
-    },
-    {
-      "desc": "Arsenal Skateboard Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T18:00:54.033226+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE11VmhxOEYzYm5oeTVKWk5ESWpXOVhWbnBpY1F4SjZDSE5FeTJPd1phVEVpUmhNRTBPT0NKWGJNa3RzX1E2NWl2eW1mNzlXel9iVjMtSjZJdU9MTWRxNkRLMTNuYVp4OXNydEJGVWtmd2MyLVptOWw5LWZleFY?oc=5",
-      "published": "2026-11-11T15:32:52+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal Skateboard - Arsenal Direct"
-    },
-    {
-      "desc": "Liverpool 'deal in place' for £58.5m first January signing Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.935752+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPclIxQW9lVS11ZE1md2ljRjNDOU1jZUdYNXVMNHc1WFp5aG9SdzR1S3RjNDU5NllFQ2JMOE4wZ29DMmNzSW8tQ1M0d3p3NU16OV9BTmVQY3VRTG9ObTlSREU1MlhVQUROeU1xSGRkMG1RTlRKNmJkVE5QanNRanhvS0t0MmZhb3NUYmc?oc=5",
-      "published": "2026-11-11T15:29:11+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool 'deal in place' for £58.5m first January signing - Liverpool FC"
-    },
-    {
-      "desc": "Gallery: Women’s team train at Camp Nou Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.935765+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZVRLUXhSZ2ZBNFJGZ1MxM2hZTUExLVN6WEN2SGZGRjlIRDhjNFhFYzdHeTFOWTF4WENhZ1ctN0JZMnI0VXM4ZzRMNlBnWGh3Z0xCM28zcjRFc1pRVUN1LVhnY3JHcTlicXlCc0JWdGRfdmxONUxZa2N1cTRnMjRia3VSS3VZUQ?oc=5",
-      "published": "2026-11-11T15:28:43+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Gallery: Women’s team train at Camp Nou - Arsenal.com"
-    },
-    {
-      "desc": "Arsenal Contracts: TEAMtalk Says Rice, Odegaard, Timber Deals Due Before January The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T16:00:55.027887+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQlhLMWo4ZE4wdFJDcktsUllYdmxKenU1T2RyUkFMSDRQZm1BNzFqOUF5dnlnS0tTU3F5S1p4OXVkNmJDdzBDNEt5TDN5YjFZOGtEcUE3UlhtSFdHeERHcGM4Q0t4SkUxR0Nuc2FXRmFtdlR0amFRWExlRlcxcU9UcTdhanpOUVF0NUUtUndneVc4eUt6WHRMM0x5NV8wUQ?oc=5",
-      "published": "2026-11-11T15:21:54+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal Contracts: TEAMtalk Says Rice, Odegaard, Timber Deals Due Before January - The False 9"
-    },
-    {
-      "desc": "HARRY KANE the world-beater was once Harry Kane the Leicester flop. Chewed up and spat out in four bench-warming months ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T16:00:55.027901+00:00",
-      "link": "https://www.thesun.co.uk/sport/40991534/harry-kane-leicester-england-tottenham-les-ferdinand/",
-      "published": "2026-11-11T15:14:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘I need to change’ – Harry Kane’s ex-coach reveals how nightmare loan set Ballon d’Or winner on path to England record"
-    },
-    {
-      "desc": "SKYLAR SKYE has given the thumbs up for Manchester United to appoint Mauricio Pochettino by flashing for the Argentine. ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T16:00:55.027913+00:00",
-      "link": "https://www.thesun.co.uk/sport/40992317/skylar-skye-flashes-mauricio-pochettino-man-utd/",
-      "published": "2026-11-11T15:13:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Adult star Skylar Skye flashes for Mauricio Pochettino as she throws support behind Man Utd manager target"
     }
   ],
   "processed_urls": [
@@ -4522,7 +4557,8 @@
     "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool",
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxObE5jMHdSandtS0lIVXQ5bjFpVm5pbXdudEp3WkFnT0lSWXdrSHBsWVExSVhHblZUa001OTh5bzRUZnZBV21TRDN3RDBmSWt1MFNDMDZwQXh1RXNSMGpDSkVNMHYycXJaZUZjbnVYQTU1UEpvMjVBXzVvcndLM1g2VnJCWktUTzN2U2dXQkNBTlJJVnpJV3c",
     "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko",
-    "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo"
+    "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTllnd2tEM2ZJMFNmX2VvVHFuYTlHWlh6eXJoSGJtSWxidWRnS3Y3c1k3bjNZVVF4TzNUU3BjMFBlVEJIT01HVEZxa0dCRm1IMl9qRnp0UnVhSVJubGhyM0ludU9Cam4xaUNRTGxDVVVUME4yRWtqVjRnRHdYa21PQ0loTUhMSWw1UnFLNjZuaEtCTmN1ekRBcklXbWVkSmxjZFhWVHhiWVVTdXo1N2l2LWFTeFhpMlE"
   ],
   "s_overflow": {},
   "schema_version": 4
