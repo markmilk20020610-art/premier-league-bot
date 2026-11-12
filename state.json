@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 14,
+        "calls": 15,
         "errors": 0,
-        "requests": 14
+        "requests": 15
       }
     },
-    "calls": 14,
+    "calls": 15,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 92209,
-    "output_tokens": 11091,
-    "requests": 14
+    "input_tokens": 97162,
+    "output_tokens": 11824,
+    "requests": 15
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2799,7 +2799,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T03:01:03.150987+00:00",
+  "last_scan_at": "2026-11-12T04:00:50.984734+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2820,6 +2820,16 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Liste d'envies Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T04:00:50.987375+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOLVNhSHFYRGdpRk85dUczUm5OaENBWXFvTkNqUDJyd2F6QVBLeU9tWUJnbExUNDNMZEJTZjJHWXJRbHJXU3JzRVlzTUs4SXExS29RWlNpblBKakVwRnIwSGZGUjR4ZVZneGtIakltRXktdHFrd3FvczZ6MlRSOWpCS2tR?oc=5",
+      "published": "2026-11-12T01:22:36+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Liste d'envies - Man City Shop"
+    },
     {
       "desc": "KIA Tigers Eye FA Stars, Avoid Bidding War 조선일보",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4309,16 +4319,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Premier League Match Round 9 Key Match Incidents Panel Outcomes - Premier League"
-    },
-    {
-      "desc": "Arsenal Saliba and Gabriel Trophy Keyring Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.142878+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMm1oSWRvRzcxbzBoT3FSdTFRRENXU2FDQ1NGR1FybEw4RDdSdnpGbDdCYTNVOEFNSmIxRk84ckZzSDNibkQxQ1NCT1NTYUpHQk1hNVQ5dThXX1A5S1FzX095cktBUlVyQlZxTGxKMTh5aW9Dd0dHU1JtbUYtemZqdkIzS0Z0ZzRLRVk0emk3QUhjbTQxMzhPXzkwODZhU19HT3JwNlp1bmhMOGt5MTdvdEdFNXg5YnVwaUZ1LWpZYjlrOU03OF93clVUdw?oc=5",
-      "published": "2026-11-11T10:15:09+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal Saliba and Gabriel Trophy Keyring - Arsenal Direct"
     }
   ],
   "processed_urls": [
