@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 14199,
-    "output_tokens": 1721,
-    "requests": 2
+    "input_tokens": 21497,
+    "output_tokens": 2634,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3044,7 +3044,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T16:50:04.659363+00:00",
+  "last_scan_at": "2026-11-12T17:01:02.570811+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3065,6 +3065,16 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MICHAEL CARRICK was sacked as Manchester United manager after tactical changes that didn't land well with a number of pl",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T17:01:02.573446+00:00",
+      "link": "https://www.thesun.co.uk/sport/41005548/michael-carrick-tactics-bruno-fernandes-man-utd/",
+      "published": "2026-11-12T16:50:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Michael Carrick’s summer tactical tweaks alienated Bruno Fernandes and set ex-Man Utd boss on road to sack"
+    },
     {
       "desc": "MAURICIO POCHETTINO is set to replace Michael Carrick as Manchester United head coach. Carrick was sacked on November 12",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3106,6 +3116,16 @@
       "title": "‘Can’t believe what I’ve seen’ – Man Utd hero’s stunned call to Gary Neville after secret Brighton training session"
     },
     {
+      "desc": "Oldham Athletic goalkeeping coach Scott Davies banned for two matches and fined £500 Oldham Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T17:01:02.573546+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQLVcwdWpKc3A2M1pDOXU5OXFDMkdqemluVlE2TTVsR3V1MWZPaFRRQW9PS0M4Mkg1aWpjZWl6TVFfRTNEdUx6eFpYQkI1WnN0TlEyMUxjSUp6ME0tbWY3Nk5ON043Yll3OUhEZzFFVVZxaVNETlNWcmszOU5iaGRtQ2JlbHVyM2huRVo3aDJ4a1BOWlVNeXNUWHhxNm44YlhZOThqTEFmSmxaQQ?oc=5",
+      "published": "2026-11-12T16:19:21+00:00",
+      "publisher": "https://www.theoldhamtimes.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Oldham Athletic goalkeeping coach Scott Davies banned for two matches and fined £500 - Oldham Times"
+    },
+    {
       "desc": "How Man Utd identified Mauricio Pochettino as their new head coach - and what happened in the week Michael Carrick was l",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-12T16:50:04.663420+00:00",
@@ -3114,6 +3134,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "How Pochettino came on Man Utd's radar - and what Carrick was told when"
+    },
+    {
+      "desc": "Soccer Wiretap RealGM",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T17:01:02.573581+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBqVmw5VHpXdTBzN0h1NXNXRU03clM3T2R1UzhMTnZ0aEgyNEJZQ2VoQ21PcVl0cnRTZFkwQWlOeF92bHZPVkE?oc=5",
+      "published": "2026-11-12T16:10:12+00:00",
+      "publisher": "https://soccer.realgm.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Soccer Wiretap - RealGM"
     },
     {
       "desc": "The US take on Haiti in the CONCACAF Nations League quarter-final first leg on Saturday, with the second fixture then ta",
@@ -3356,6 +3386,16 @@
       "title": "Fast starts or big finishes? When EVERY club score the most goals - Premier League"
     },
     {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T17:01:02.573906+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-12T14:04:05+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
       "desc": "Xabi Alonso “loves” Arsenal star but watch out for another Chelsea transfer target, says Fabrizio Romano LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-12T15:01:03.048189+00:00",
@@ -3464,6 +3504,16 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Williams-Barnett wins Premier League's Creative Moment of the Month award - Tottenham Hotspur"
+    },
+    {
+      "desc": "Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T17:01:02.573999+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
+      "published": "2026-11-12T12:56:31+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "- Liverpool FC"
     },
     {
       "desc": "Crystal Palace players and club chiefs have grown frustrated over Pierre Sage's training methods - and the 47-year-old w",
@@ -3624,6 +3674,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea wonderkids Ryan Kavuma-McQueen and Mahdi Nicoll-Jazuli steal show on England duty with 12 Cobham stars on show"
+    },
+    {
+      "desc": "The United States have cancelled media access scheduled for Wednesday as Manchester United prepare to make a move for th",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-12T17:01:02.574179+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T11:50:23+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United set to appoint Mauricio Pochettino as head coach: Club make formal approach to US Soccer after agreeing personal terms - with Mic"
     },
     {
       "desc": "'I can't fault the effort' - the benefits of Liverpool's Jersey Mike's Trophy involvement Liverpool FC",
@@ -4504,66 +4564,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Man United legend Peter Schmeichel fumes over club's 'very disrespectful' treatment of Michael Carrick as Mauricio Pochettino closes in on O"
-    },
-    {
-      "desc": "Pochettino is currently with his USMNT players ahead of their fixtures against Haiti in the CONCACAF Nations League this",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-11T23:00:50.040590+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16285381/Pep-Guardiola-United-States-target-replace-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-11T22:13:44+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Pep Guardiola 'set to be made top target to replace Mauricio Pochettino as United States boss' as ex-Spurs manager closes in on Man United j"
-    },
-    {
-      "desc": "MANCHESTER UNITED are reportedly willing to allow Mauricio Pochettino to manage the US national team for two upcoming fi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T23:00:50.040610+00:00",
-      "link": "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool/",
-      "published": "2026-11-11T22:03:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Disgraceful.. shambles’ – Fans furious as Man Utd ‘allow Pochettino to finish international break’ as Liverpool looms"
-    },
-    {
-      "desc": "EMMA LOUISE JONES has shared a scary health update from her hospital bed. The BBC presenter had fans worried after shari",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T22:00:59.478616+00:00",
-      "link": "https://www.thesun.co.uk/sport/40996519/bbc-emma-louise-jones-shares-scary-health-update/",
-      "published": "2026-11-11T21:57:19+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "BBC presenter Emma Louise Jones shares scary health update after worrying fans with post from hospital bed"
-    },
-    {
-      "desc": "The top stories and transfer rumours from Thursday's newspapers...",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-11T23:00:50.040640+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611225/arsenal-chelsea-and-liverpool-chase-bournemouth-star-alex-scott-paper-talk",
-      "published": "2026-11-11T21:50:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Papers: Arsenal, Chelsea and Liverpool chase Bournemouth star Scott"
-    },
-    {
-      "desc": "Internationals: Will Wright makes England youth debut Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T00:59:15.401269+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVEFCYTVLallPRVRpZHpFNHhIUW96ZnRQZzhKNDkyOEJsNFlRa1doT1I3eHpTcHYxNDl3cVNxbzEwTkpXRmgxVFVBNlZkVXhRN0plaXl2SU1oS1BZNFMzbGZ3bnJrMTU1V3VIdHhZOUhaZ2RSMXN6SUdCblVETHpfZjJlTWhrWU1HT3JYN29B?oc=5",
-      "published": "2026-11-11T21:48:23+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Internationals: Will Wright makes England youth debut - Liverpool FC"
-    },
-    {
-      "desc": "MANCHESTER UNITED’S flops are in for a fitness shock if - and, what looks like, when - Mauricio Pochettino takes over. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T22:00:59.478642+00:00",
-      "link": "https://www.thesun.co.uk/sport/40996168/man-utd-flops-mauricio-pochettino-gacon-fitness-test/",
-      "published": "2026-11-11T21:47:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd flops in for brutal reality check as Mauricio Pochettino makes players follow ‘Gacon test’ fitness regime"
     }
   ],
   "processed_urls": [
