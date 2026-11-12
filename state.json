@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 22,
+        "calls": 23,
         "errors": 0,
-        "requests": 22
+        "requests": 23
       }
     },
-    "calls": 22,
+    "calls": 23,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 131816,
-    "output_tokens": 16392,
-    "requests": 22
+    "input_tokens": 137770,
+    "output_tokens": 17006,
+    "requests": 23
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -560,6 +560,41 @@
       "telegram_message_id": 103,
       "title": "森林绿流浪者老板就未纪念阵亡将士道歉",
       "updated_at": "2026-11-09T09:20:39.779898+00:00"
+    },
+    "2b49a019e43a": {
+      "article_title": "The chaos that took Carrick from two-year deal to sacked within 15 games",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "a9d5b8769f7491b2",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 122
+        }
+      ],
+      "created_at": "2026-11-12T11:00:58.558162+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "bb7b7d2cea9a7759",
+      "event_id": "2b49a019e43a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-12T11:00:58.558162+00:00",
+          "origin": "created",
+          "title": "The chaos that took Carrick from two-year deal to sacked within 15 games",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 122,
+      "title": "卡里克执教15场即遭曼联解雇，创40年最差开局",
+      "updated_at": "2026-11-12T11:00:59.382354+00:00"
     },
     "2d0c18ebd560": {
       "article_title": "Chelsea tickets and hospitality packages for Premier League matches at Stamford Bridge from just £155pp",
@@ -2869,7 +2904,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T10:00:53.947685+00:00",
+  "last_scan_at": "2026-11-12T11:00:53.119508+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2891,6 +2926,206 @@
   },
   "news_pool": [
     {
+      "desc": "MELISSA SATTA wowed fans in a see-through top as she attended Italian entertainment festival Il Festival dello Spettacol",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T11:00:53.123688+00:00",
+      "link": "https://www.thesun.co.uk/sport/40999103/melissa-satta-seethrough-top-kevin-prince-boateng-barcelona/",
+      "published": "2026-11-12T10:57:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Sex-mad ex-Barcelona wag whips fans into a frenzy in see-through top as she launches acting career"
+    },
+    {
+      "desc": "Michael Carrick has been sacked as Manchester United head coach , so how did his Old Trafford reign go so wrong, so quic",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-12T11:00:53.123721+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13602738/michael-carrick-sacked-by-man-utd-how-his-old-trafford-reign-unravelled-in-worst-start-to-a-season-in-40-years",
+      "published": "2026-11-12T10:50:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "From Champions League finish to drop zone: How Carrick's reign unravelled"
+    },
+    {
+      "desc": "MANCHESTER UNITED have confirmed the sacking of Michael Carrick following a disappointing start to the season. The Red D",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T11:00:53.123751+00:00",
+      "link": "https://www.thesun.co.uk/sport/41000175/man-utd-statement-michael-carrick-mauricio-pochettino/",
+      "published": "2026-11-12T10:47:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd release brief statement finally confirming Michael Carrick sacking with Pochettino appointment imminent"
+    },
+    {
+      "desc": "Michael Carrick has been sacked by Manchester United, with former Chelsea and Tottenham Hotspur boss Mauricio Pochettino",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-12T11:00:53.123793+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16229277/michael-carrick-sacked-man-united.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T10:44:11+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Michael Carrick is SACKED by Man United: Manager leaves training ground just 2½ hours after arriving - and now Mauricio Pochettino is ready "
+    },
+    {
+      "desc": "Why is Manchester United sacking Michael Carrick seen by many fans as a distasteful insult to a club legend? The Week",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.123828+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZVRRdG9wOEtiaU9MdTJaY25mR2JvaUxZUEQwX05Mei1FX19JU21FdnJBYmkxaFF1OUJPbi1xeDlNM3FJcGNMLXFGMWxCb0ZnY0xoUF9GcHdLVDlPZzBoSkgzbGU0b2hKVThBSWdJQ0E3OEFIaGFBRjFpbjF2THlkRUpMYUZJWGpOQW5TclZnNkFJSktOSmNUQmRzVFp4aFM4M0lxNkh2OW9nYkNKbXpvR005OE5BbW5nd21xLXNLbktDV2l0dkRzONIBzgFBVV95cUxNX2J6RUpGWVdsRFZ4c3lVSXo2ek1YVVMxbkx0aWlkcWZDSDQtOXZCc19PYmRPTDZEYTdQV05pWGRPSHVjblVNOGVGeHl3b3A5OXFHaGZvWGs1ekI3QVlzamNKeG9HMFp4c0pDem9xcVdoSVhhQXA0UTBZQzU0ZHl5TVRVMTJYZF90ZHcxWlVJZVMxakdtUlQ5UXVZMVJQaHFEYTI0elI5Q0EtOWhKanlRREdhSHNiMVdwVEZ5ek1aMTY5YWMzUG02V3lOOXV1dw?oc=5",
+      "published": "2026-11-12T10:42:14+00:00",
+      "publisher": "https://www.theweek.in",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Why is Manchester United sacking Michael Carrick seen by many fans as a distasteful insult to a club legend? - The Week"
+    },
+    {
+      "desc": "Joint statement from Premier League, FA, EFL and WSL Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.123857+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNN2dRQUFpMm1CU2tiMENvVmhpRW1Yb3ZKTk1CbTdtVVVVRWxGX3BkZEtlLWdURHBOTU0tbHRrZUZuRm9rcHQtbjJ5WWtzaGRuNS1PaE9xVEtPTl9jVUFBRkVUVUxXQkh5MXd6SnVvRk5scjhIYzkzMktkblF4YVdkMThLV2tBWUdiMFlBRDBzVmFyS3ZEMGE3TVpwcGFsV0NCZUVUTldrNDBlVG8?oc=5",
+      "published": "2026-11-12T10:39:55+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Joint statement from Premier League, FA, EFL and WSL - Premier League"
+    },
+    {
+      "desc": "BBC Sport looks back at the six Premier League matches that defined the highs and lows of Michael Carrick's 10-month spe",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T11:00:53.123889+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c5ev37egv97mo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T10:39:54+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Six matches that defined Carrick's Man Utd tenure"
+    },
+    {
+      "desc": "Club statement on Michael Carrick Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.123914+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XaFV6VEFMY2loVmNZY0xHWUZUNmdVcV9CQUM0ZWV2QkZEWWF2LUhTeFZDSjhSVkZ4WndMQlFTMmhtRlhXT2N0VFo3VmtHYlFNa2VHWHNCZlJoenI0LVZ4ek9FOVQ5dmdRMTN6MXB3SzU0TDgteHI3d1NKVGpTOUE?oc=5",
+      "published": "2026-11-12T10:39:26+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Club statement on Michael Carrick - Manchester United"
+    },
+    {
+      "desc": "MAN UNITED fans can get unmissable ticket deals to watch the Red Devils under their new manager at Old Trafford this sea",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T11:00:53.123941+00:00",
+      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
+      "published": "2026-11-12T10:38:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd tickets plus hotels and official hospitality for Champions League and Premier League games at Old Trafford"
+    },
+    {
+      "desc": "MANCHESTER UNITED are once again looking for a new manager after Michael Carrick was SACKED today. The Old Trafford club",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T11:00:53.123966+00:00",
+      "link": "https://www.thesun.co.uk/sport/40976294/next-manchester-united-manager-odds-latest/",
+      "published": "2026-11-12T10:36:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Next Manchester United manager odds | Mauricio Pochettino clear favourite after Michael Carrick SACKED"
+    },
+    {
+      "desc": "Sources close to the United dressing room believe Carrick has been 'hung out to dry' as United dithered over his future ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-12T11:00:53.124004+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16284173/michael-carrick-manchester-united-flight-weak.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T10:23:57+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "How Michael Carrick's Man United fell apart: Players' bust-up on flight back from Madrid, weakness in training and on touchline - and why dr"
+    },
+    {
+      "desc": "MANCHESTER UNITED have sacked Michael Carrick following a disastrous start to the season. The former Middlesbrough chief",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T11:00:53.124031+00:00",
+      "link": "https://www.thesun.co.uk/sport/40768626/michael-carrick-sacked-man-utd/",
+      "published": "2026-11-12T10:23:09+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Michael Carrick finally SACKED by Man Utd with giants wallowing in relegation zone with Mauricio Pochettino to take over"
+    },
+    {
+      "desc": "Michael Carrick becomes the third Manchester United manager to be sacked in three seasons - where did it go wrong?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T11:00:53.124109+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T10:21:29+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "The chaos that took Carrick from two-year deal to sacked within 15 games"
+    },
+    {
+      "desc": "Manchester United part ways with Michael Carrick - The Athletic The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.124143+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcnd5M01CSnpYSDloM0sxV0Q0aDB6WUpmeVN5R2V5ejVkeUJ0NzY0eEo3SUozcnVQWVcwRWZ2UmRXTExXdlNQNG1JWWtURVpSRGZob2liWU1KQWg4b0xPai1lRlRjRVFEckhxaDhTSHREQUdYbXJ1SlBtZmtuSHN0bDBhUDZzUFRfR19fWEZleE5vSkEwNjlqYmR6SUVHUmh0ZkM4OXRRRQ?oc=5",
+      "published": "2026-11-12T10:19:35+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United part ways with Michael Carrick - The Athletic - The New York Times"
+    },
+    {
+      "desc": "FOOTBALL legend Ronaldinho will return to the pitch THIS WEEKEND. The iconic Brazilian winger is back in action after si",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T11:00:53.124173+00:00",
+      "link": "https://www.thesun.co.uk/sport/40998993/ronaldinho-shock-return-football-free-serie-c/",
+      "published": "2026-11-12T10:17:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ronaldinho’s shock return to football with SERIE C club aged 46 to be streamed for FREE in UK this weekend"
+    },
+    {
+      "desc": "Michael Carrick sacked as Manchester United manager Pulse Ghana",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.124201+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbnRKMjBFM2VhVWM1SlhsQVhwLUJYLXZiVGNlVXlFcWN4WU9xcXFrZWxxMTR2S0M2NUoyY1Zkc0RjY1dDSEJ6d0JVZ3V0dHJ2eUhzZFB4RjUwZktmeHkyZ1NaNDJ4cjJlVE43ZkpUYzNpSHEtMy1wWjFOakhqQTZYSDgzNFlsTnNmQWI0R1ljWEZHdW05dm1QRHhReFkzRUZubkxHUQ?oc=5",
+      "published": "2026-11-12T10:00:34+00:00",
+      "publisher": "https://www.pulse.com.gh",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Michael Carrick sacked as Manchester United manager - Pulse Ghana"
+    },
+    {
+      "desc": "Manchester United set to relieve Carrick of head coaching duties SEN",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.124229+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb3pHY3hVZENsZmVYSUxRODJWTElDS0hya1JSVUtZNVkxTjJJaThpZldyRlBEQTFOZ1prY3BOeVhvZ3U4VElCbXc2R2h2WkVobW9fWDdzelJOY2x6WHlTcHdKWUVWaEh3OVZmcTBpOW1ZT0Q3UU1GalJxV3BaYjg4MlhrZDk3T1U3VFk0amk1Q2g3bnREY2Y2SGRnMlU2TTdyZmxBTWVrN3daTGpmNlhocFFMTkNocmN1MGtSRzBFbVAwQ2FyUXBQbmt2TW1TaXhtTjQ5RUc2MWxYT00?oc=5",
+      "published": "2026-11-12T09:56:14+00:00",
+      "publisher": "https://www.sen.com.au",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United set to relieve Carrick of head coaching duties - SEN"
+    },
+    {
+      "desc": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect LEADERSHIP Newspapers",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.124256+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY3Zuc1k1QlVQNC12MFM4R3JJTGZILUNpbkZ0TWk0ejljdVYzVTJLWFRrVUVtdXJQOFVIWFZKYzBfUlpqc0NBOGVna2k4VDduN190SGRGRjNoRGxoRHA0cEJ5dUJLSXRSNUNESGFoQUFqUTZaeGJCRFViZzFuRUM5bnN5SUwzQXdsUWxYaHVVUUJENGRIVklr?oc=5",
+      "published": "2026-11-12T09:54:46+00:00",
+      "publisher": "https://leadership.ng",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect - LEADERSHIP Newspapers"
+    },
+    {
+      "desc": "Have your say: What are Liverpool's best Premier League home wins over Manchester United? Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.124283+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaUlGRW5HM2VxSC00LWNKazlBWUZqWERoYmp3RDE4Q2RFVGFNZW1qdjRaeDVGTDBJQW9IeU5CcGdXbzd2ZVluWjNteDk3TEJMdnhTYzRnT1dWaHRnWk1jUVhVVlN4UFByRHpOQjZOX1c1MVNLSXlIYmRIWTFSNUJwY2JSN0pXdVNaNlUyd3FIQW1RblR0TUMzdGVVM0VLWFBiT0E?oc=5",
+      "published": "2026-11-12T09:54:10+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Have your say: What are Liverpool's best Premier League home wins over Manchester United? - Liverpool FC"
+    },
+    {
+      "desc": "Michael Carrick has been sacked as Manchester United head coach with Mauricio Pochettino lined up to replace him.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-12T11:00:53.124305+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13606106/man-utd-sack-michael-carrick-with-mauricio-pochettino-set-to-be-appointed-after-worst-start-to-premier-league-season",
+      "published": "2026-11-12T09:50:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Carrick sacked by Man Utd"
+    },
+    {
       "desc": "Manchester United-bound manager Mauricio Pochettino looks set to face the daunting task of steering a struggling Red Dev",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-12T10:00:53.951386+00:00",
@@ -2909,6 +3144,16 @@
       "publisher": "https://www.goal.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Manchester United sack Michael Carrick with immediate effect - Goal.com"
+    },
+    {
+      "desc": "Mauricio Pochettino has been warned against taking the Manchester United job, by Gary Neville unless the club's hierarch",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-12T11:00:53.124383+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16286373/Mauricio-Pochettino-TURN-Man-United-job-unless-gets-TWO-new-signings-fix-worst-four-Premier-League-says-Gary-Neville.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T09:39:43+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino should TURN DOWN the Man United job unless he gets TWO new signings to fix 'the worst back four in the Premier League', "
     },
     {
       "desc": "'One of my personality traits' - why Ronald Araujo is not content with his Liverpool form Liverpool FC",
@@ -3019,6 +3264,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "English minnows announce £1million stadium renovation with new roof – and they’re managed by Champions League winner"
+    },
+    {
+      "desc": "UK Parliament Urges Legal Restrictions on Soccer Heading Drills 조선일보",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T11:00:53.124584+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOFlIOVJySzkwS1ZsVU00VzF1TVdDcnF3akpnMzc1ckFScUNGQzg3SXlEQzJsc1pZTXo5UHhydklzSS0tSEdJdy1KU3lLNzJIbHJ5VUEyMS00Q3JwOTNUbkZBYXo2dG5PMUlvRE0xTHNXYWFOQTVrenZZUThGbWw5b0RTMXFkdw?oc=5",
+      "published": "2026-11-12T08:21:16+00:00",
+      "publisher": "https://www.chosun.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "UK Parliament Urges Legal Restrictions on Soccer Heading Drills - 조선일보"
     },
     {
       "desc": "With Northern Ireland yet to concede a goal in the 2026-27 Nations League, young defenders Ruairi McConville and Tom Atc",
@@ -4169,226 +4424,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea star Cole Palmer fails in bid to trademark his own range of beauty products"
-    },
-    {
-      "desc": "ENGLAND will be without defenders Ezri Konsa and Djed Spence against Croatia. Three Lions chief Thomas Tuchel confirmed ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T15:01:02.857569+00:00",
-      "link": "https://www.thesun.co.uk/sport/40991933/england-croatia-team-news-thomas-ezri-konsa-djed-spence/",
-      "published": "2026-11-11T14:02:16+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England pair ruled OUT of Croatia clash as Thomas Tuchel issues statement just day before Nations League match"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T18:35:56.166029+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
-      "published": "2026-11-11T14:00:23+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "October Player of the Month: Alessia Russo Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T16:00:55.028010+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcFlXZEktYlNVbzhtMGxicU42VmlmcjRmaDZiWldvb2RfZDJOVXQwQ1o0eDN5d0dER3ltT3lLVkJodEFYdjRTeW9teFZPdnRBelNPQWp4WExXLVVvZHZybExVZWtQOHpXSzMzUm9XS2I0ZW81NlJ6bTFNT3ZkQlBlWXl1Yjd1RUR2S3pISg?oc=5",
-      "published": "2026-11-11T13:59:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "October Player of the Month: Alessia Russo - Arsenal.com"
-    },
-    {
-      "desc": "Arsenal Saliba and Gabriel Trophy Fridge Magnet Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T20:00:55.585273+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNnJJRURtUlZBRTJlV2FORV81cmpJY2pnTXF3bnVuZXRaZEd0UnpFRmwzdk9YamNldlBaZzluMXpTMFRfLW00U0NfZ1lPM3lfNlR0N01PYllaR1NUWEVycGtKT01ScFMtVG0zMnRFejZWeDVRYzVyRWk2b0JDb2VjQWpKVE5hY3FoSnFkYjB5YVhBQ1B1TXhWYzhjYzNwOV9ra1NyOVlWa2F3REJxbkRIRm4tT0lmNENnbVVqYk9kbmgyMjNQdHFFMEVobE9pX1pNSUVF?oc=5",
-      "published": "2026-11-11T13:58:06+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal Saliba and Gabriel Trophy Fridge Magnet - Arsenal Direct"
-    },
-    {
-      "desc": "MANCHESTER UNITED legend Teddy Sheringham believes Senne Lammens and Benjamin Sesko are to blame for the team's recent w",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T14:00:54.092435+00:00",
-      "link": "https://www.thesun.co.uk/sport/40991501/teddy-sheringham-senne-lammens-benjamin-sesko-man-utd-carrick/",
-      "published": "2026-11-11T13:53:02+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Teddy Sheringham blames TWO players for Man Utd woes leading to Carrick axe – including one who’s barely featured"
-    },
-    {
-      "desc": "ENGLAND will look to finish this international break with a flourish when they welcome Czechia to Wembley tonight, and B",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T14:00:54.092452+00:00",
-      "link": "https://www.thesun.co.uk/sport/40989243/england-croatia-free-bet-refund/",
-      "published": "2026-11-11T13:52:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England vs Croatia: Get money back as free bets if your Bet Builder loses tonight"
-    },
-    {
-      "desc": "Press Conference: Liverpool vs Bournemouth | Premier League preview Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T16:00:55.028040+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRDJOY0pYZjBhNlJnOS12MXZPbmgwZkRnbXZQRXVTcG5FR0IxamFuQXNvYlZwTTBGd1lIcDFpZnUxQnM1UndkdktNbVFjVnRxSGxKVkpwYjdjb1ZKd1ptLTRpMnR0OXRxQkRRTjRGQ2paRFRYTk1zWGFoYTRySEpKMWNsS196ZU9fX3dqSmgwZ1hnMDBCejlqUkhYd2hSdUU?oc=5",
-      "published": "2026-11-11T13:49:54+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Press Conference: Liverpool vs Bournemouth | Premier League preview - Liverpool FC"
-    },
-    {
-      "desc": "Manchester United expected to sack Michael Carrick as head coach The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T14:00:54.092495+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObURtYmFmREFqUmxBN0xmeURTcXNZRGNEUmZWUHVBZjBEdGU4a1pHTUhaM2RKVWJiWHVOU0Q5UGZiazhnU3h2MV9KX0x6SmlGb2VmTzB6eHBrNVN0RGxydGVpaWFILTAzX0Jucl9LUzBfWXVyc25lZURNWXZtT2ZfaExORWtWbWRScnM5S01WV0k5bWdPX1NnQQ?oc=5",
-      "published": "2026-11-11T13:46:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United expected to sack Michael Carrick as head coach - The New York Times"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has been spotted for the first time amid reports he’s agreed to become the new boss of Manchester Un",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T14:00:54.092510+00:00",
-      "link": "https://www.thesun.co.uk/sport/40991584/mauricio-pochettino-man-utd-usa-training-goodbye/",
-      "published": "2026-11-11T13:44:02+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Fans think Mauricio Pochettino is saying goodbye in USA training as he is seen for first time since Man Utd links"
-    },
-    {
-      "desc": "David Bates has been called up to the Scotland squad as fellow defender Luis Binks drops out for the matches against Nor",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T14:00:54.092526+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c539gkdrn7yeo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T13:37:08+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Turkey-based Bates replaces Binks in Scotland squad"
-    },
-    {
-      "desc": "Macari receives his MBE Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T18:00:54.033347+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY1NlOHVTUXB1VDhiMjNiTzhmajB0ZFFUaFlxVTM3eWNZTHBGbHRwMzJNUGVkV2FRUkFMWEhmblFyZVlxM1ByUVRxWDFpdkdFZGZNaTMtaWU5MVVVU3dyWHJkX0tta1VtTXJ6dFVDTFpXaFN3YWlqM3dCckJ3Ymphd0lR?oc=5",
-      "published": "2026-11-11T13:33:45+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Macari receives his MBE - Manchester United"
-    },
-    {
-      "desc": "Zubimendi says January exit reports are far from the truth The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T14:00:54.092540+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaHlQSTBHU2N4VEJnZTMwRkFoVGlGRFYzT3VkOVBUTlF6ckltT192WDJTc1ZrTXozMFotQVZoUjZ2STQ2TVpSVFRjTXJZMUFRemRkd0JUY1EyM0E2UndkWldvdXdkUkstN1pUSy1aTDdoRElGUjJVYjhFd2xJNEVFWEJFZ01PQkJXVmFPc0RnODUyZDQ?oc=5",
-      "published": "2026-11-11T13:24:00+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Zubimendi says January exit reports are far from the truth - The False 9"
-    },
-    {
-      "desc": "Watch: Harvey Elliott scores first goal for Valencia Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.935952+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSTRhYV9IV0QxNjFJTFRxelllb3ZuSVBMRW1hN0ZxdU5iRUI1YUJDSG1yTjVRRXgwb0xNNVFPOTVQY0V6RVpCV2lIY195LTZlMUNianJXQ3lSWnV1TlItSjdldTZMbGNlbWdCWXhtN0x5dlpvTUxiOUFiY2hRbzRzMGE0bUhuRzA?oc=5",
-      "published": "2026-11-11T13:18:42+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Watch: Harvey Elliott scores first goal for Valencia - Liverpool FC"
-    },
-    {
-      "desc": "Roma favored over Milan in race for Endrick RomaPress",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T14:00:54.092553+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBxWFRiQnd2ZWhQeDQ3U0oxeXVTcXh4Y3JPLTZRSDNLb3FkQ1lqNXo1QmdTODZLT21OdUNGQ0VQZXNORTludGVzSnJ2Wmw3VUNQRGN1dC1XUnpHb2pQSG1mRnJOanZMeHZoVWc0dDU1b2tXSjZ3?oc=5",
-      "published": "2026-11-11T13:18:25+00:00",
-      "publisher": "https://romapress.net",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Roma favored over Milan in race for Endrick - RomaPress"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO could soon be tasked with leading Manchester United's rebuild at Old Trafford. The former Tottenham ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T14:00:54.092567+00:00",
-      "link": "https://www.thesun.co.uk/sport/40988954/man-utd-winners-losers-mauricio-pochettino-shaw-mount-martinez/",
-      "published": "2026-11-11T13:18:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd’s winners and losers if Pochettino is appointed as two new signings could be in big trouble"
-    },
-    {
-      "desc": "ISAAN KHAN: Now, Daily Mail Sport can reveal the scale of the Arsenal star's involvement over the last four years with t",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-11T17:00:58.935981+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16283853/Bukayo-Sakas-Socrates-Award-win-Ballon-dOr.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-11T13:13:33+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "The unexpected email that led to Bukayo Saka's Socrates Award win at the Ballon d'Or: Inside Arsenal star's secret humanitarian work after h"
-    },
-    {
-      "desc": "TOM BRADY has delivered a heartfelt farewell to Birmingham City fans after his shock exit from the club. The NFL legend'",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T14:00:54.092579+00:00",
-      "link": "https://www.thesun.co.uk/sport/40988109/tom-brady-silence-birmingham-nfl-legend-championship/",
-      "published": "2026-11-11T13:12:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tom Brady breaks silence on Birmingham exit as NFL legend quits with Blues sitting top of Championship"
-    },
-    {
-      "desc": "South Shields forward Adam Campbell has 'unfinished business' in FA Trophy Shields Gazette",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T20:00:55.585437+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPODVCMUVxZnBhOGxZcWpmTERCdUNzTDd2SkNfck1BU1Z1dnF3TTZtaFYzOXZYbmZLNmdtamdhZjVBeWt5a3E5empYcTZTYWdORlE4ZFJzN1lYWXctTkhNaXFPZlhoc3BrTk1mc3dFd191cWZ3dEZpUnVfM0Q4V2tGQUZaSHJFS1B5ZnJ6c21qWmZ3QW1yN2pnd1lWcmxySjA4VWlOZDdvc0Q?oc=5",
-      "published": "2026-11-11T13:11:00+00:00",
-      "publisher": "https://www.shieldsgazette.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "South Shields forward Adam Campbell has 'unfinished business' in FA Trophy - Shields Gazette"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.935993+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40SVRQTDZQUmRYV0ZEU0RiX3FxbDRZTHhnVVFtTGtOeWpGSW85Wkk0ZXlvaWgxTFR1VVVzaHF3MEM4QkthMkhmWXRLQjgyUEs1MTAwakxTNHowNUg2akpSNGlNeEE5NHhsWWhSQnhqc2FSNkRZVUl6UlR3?oc=5",
-      "published": "2026-11-11T12:59:38+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "Mauricio Pochettino looks set to turn a decade-long courtship with Manchester United into a full-blown relationship, say",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-11T13:01:00.716358+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwzd9pvjy426o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-11T12:58:17+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pochettino a decade in Man Utd's making - but Carrick deserves better"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO made an immediate impression on Sir Alex Ferguson. “In the second half Southampton have been the bes",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T13:01:00.716392+00:00",
-      "link": "https://www.thesun.co.uk/sport/40989569/pochettino-man-utd-manager-ferguson-carrick/",
-      "published": "2026-11-11T12:56:45+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Pochettino wields iron fist in velvet glove and has Fergie’s approval but one thing must change if he’s Man Utd manager"
-    },
-    {
-      "desc": "Football latest news & gossip Sky Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T20:00:55.585488+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVVIbXE5Ykt3cjRpS2hxLTNaSlcxenlvTlF3MjFPRG03YkFDVnd0dGM4WU9jSnlfY2s0a1Y1dGVRY2RldzJBbzk3R0VacVZFV2VZUTF1akJoQmFGTE54U09BSFNJY1A0U21INk9ud0J3UUdvc1Q1ZVZUVDR1Q2NrMDhlQzFCa29HVS10V19B?oc=5",
-      "published": "2026-11-11T12:55:35+00:00",
-      "publisher": "https://www.skysports.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Football latest news & gossip - Sky Sports"
     }
   ],
   "processed_urls": [
@@ -4486,7 +4521,8 @@
     "https://www.dailymail.com/sport/football/article-16284195/75million-man-Malo-Gusto-open-LEAVING-Chelsea-season-struggling-minutes-Xabi-Alonso.html",
     "https://www.thesun.co.uk/sport/40996557/man-utd-pochettino-fury-liverpool",
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxObE5jMHdSandtS0lIVXQ5bjFpVm5pbXdudEp3WkFnT0lSWXdrSHBsWVExSVhHblZUa001OTh5bzRUZnZBV21TRDN3RDBmSWt1MFNDMDZwQXh1RXNSMGpDSkVNMHYycXJaZUZjbnVYQTU1UEpvMjVBXzVvcndLM1g2VnJCWktUTzN2U2dXQkNBTlJJVnpJV3c",
-    "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko"
+    "https://www.bbc.co.uk/sport/football/articles/cqg7l9x9jnzko",
+    "https://www.bbc.co.uk/sport/football/articles/cm0rl4kwn8vqo"
   ],
   "s_overflow": {},
   "schema_version": 4
