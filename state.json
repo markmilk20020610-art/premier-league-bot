@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 61180,
-    "output_tokens": 6477,
-    "requests": 9
+    "input_tokens": 67390,
+    "output_tokens": 7363,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2799,7 +2799,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-11T23:00:50.037951+00:00",
+  "last_scan_at": "2026-11-12T00:01:01.930723+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2820,6 +2820,26 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Spurs 1-1 Crystal Palace (3-5 on pens), Players Cup | Martin Ho’s verdict Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T00:01:01.934363+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZnpDVzlCdXg1VnVEYng5dUgzTVB0dklheFdyQjhqaGRRSlNpbmQzOVVJRTVqY1ZSblByYW9GckJCQ1ZHNEtlQ3JocFRfYy12SGc4WEp4Mm1TUGo0b0E0bjdhWFp0bUJNQUFVSU1mYzhJdlVhU1NwVUladnFCaTExR2hFR1ZzYmRldDdYU1JJbmxXUXBIN0wxNlA3S2ZKakxETk55b2p2V2RHQzJhaXlsajNuWnFFeUhvWlRrSXNSbURCMUk?oc=5",
+      "published": "2026-11-11T23:41:05+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs 1-1 Crystal Palace (3-5 on pens), Players Cup | Martin Ho’s verdict - Tottenham Hotspur"
+    },
+    {
+      "desc": "AS a footballer he is at the top of his game – but Jude Bellingham admits he still has plenty to learn about life. At 23",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T00:01:01.934403+00:00",
+      "link": "https://www.thesun.co.uk/sport/40996740/jude-bellingham-life-off-pitch/",
+      "published": "2026-11-11T23:10:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘I’m good at what I do but everything else? Not that great’: Jude Bellingham lifts lid on his life on and off the pitch"
+    },
     {
       "desc": "PETER SCHMEICHEL has accused Manchester United of being \"very disrespectful\" towards Michael Carrick amid talks over his",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3081,6 +3101,16 @@
       "title": "Liverpool hunt for second Barcelona signing Alejandro Balde revealed by insider - LiveScore"
     },
     {
+      "desc": "Fantasy Premier League, Official Fantasy Football Game of the Premier League Fantasy Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T00:01:01.935053+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9ud3dOZzdtZnNpTWhkRlJsanZSTzBDTmJxdjM1V3RsaXlkWjgxMUhXVW1qSjlRN05WenluN19pZ1ZySE1rT3V2SHYyak5MV0dTT1RHSXBkRENrYVBINURTcGh5WQ?oc=5",
+      "published": "2026-11-11T18:46:46+00:00",
+      "publisher": "https://fantasy.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fantasy Premier League, Official Fantasy Football Game of the Premier League - Fantasy Premier League"
+    },
+    {
       "desc": "Who has the best and worst fixtures in Fantasy? Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-11T19:00:52.922860+00:00",
@@ -3129,6 +3159,16 @@
       "publisher": "https://punchng.com",
       "source": "https://www.thefa.com/rss",
       "title": "FA suspends referee observer nine weeks over discriminatory remarks - Punch Newspapers"
+    },
+    {
+      "desc": "Chelsea FC Nike Rompers, Chelsea Rompers Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T00:01:01.935163+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQTNwSHg5WjRUdzBKR2UyOVU4aGlINmJpTjZhVHlZcmhSc1Y5RjlaMURSRndNbkgzNlhKa2FLRTg3MHcwampLdVhZc2d4eTMyU2Zyb2s5eGd1dUt6QjRFQkNCSDRsRWZ1NUhTWnEzRWExOFJuQTFPZWowWmlyRVJaN25hN0g2WkFKLWpiekxtWVRHTUVBdHRBV3kwSkV6alNlZTJGamhVUVZqQ002b2c?oc=5",
+      "published": "2026-11-11T18:25:00+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea FC Nike Rompers, Chelsea Rompers - Chelsea FC Store"
     },
     {
       "desc": "Match Supervisor Suspended for Discriminatory Remarks in League 1 조선일보",
@@ -3331,6 +3371,16 @@
       "title": "Leader, role model, extraordinary - how Kane's 'fairytale' came true"
     },
     {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T00:01:01.935565+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcnJ0UXY3clpPSDVEaUd5Sm1QMVFEcVFXNkY5MjM3MDRZdndXZC12TVkzTW02RWdDdWVBclFoVmZ4Y3dFdklNNVl5a2JtY3NLM0REWjRPNGVSNTM3WVFseGxIRzg2SmNaZmkyN2VVeERBQkNUVXB5aHp4bnJYQmFlMGR6MW4?oc=5",
+      "published": "2026-11-11T16:43:16+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
+    },
+    {
       "desc": "Malo Gusto is open to leaving Chelsea this January, having stayed in the summer after being valued at £75million by his ",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-11T17:00:58.935617+00:00",
@@ -3349,6 +3399,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Inside incredible new 51,000-seater stadium set to host Euro 2032 matches and costing eye-watering £200million"
+    },
+    {
+      "desc": "Mauricio Pochettino is ready to accept an offer from Manchester United to become their next head coach.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T00:01:01.935597+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg25pj36mvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-11T16:03:02+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Pochettino ready to accept Man Utd offer to replace Carrick"
     },
     {
       "desc": "Xabi Alonso confirms Chelsea team news for Sunderland | News | Official Site Chelsea Football Club",
@@ -4259,66 +4319,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Championship striker, 35, juggling £12.5k-a-week football career with second job as financial advisor"
-    },
-    {
-      "desc": "As football has evolved, so have routes into football management.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-11T10:59:18.142918+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13594403/jordan-hadaway-interview-meet-the-25-year-old-llandudno-boss-the-youngest-top-flight-manager-in-europe",
-      "published": "2026-11-11T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Meet the youngest top-flight manager in Europe"
-    },
-    {
-      "desc": "Not every successful career starts spectacularly well but Andoni Iraola's journey to Liverpool will take some beating. S",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-11T10:59:18.142931+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13576948/andoni-iraola-was-sacked-from-his-first-job-at-aek-larnaca-in-cyprus-liverpool-managers-difficult-career-start-explained",
-      "published": "2026-11-11T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "From the sack in Cyprus to Liverpool: Iraola's first job explained"
-    },
-    {
-      "desc": "Romano claims Man Utd could be ‘scared’ of Antonio Conte United In Focus",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.142945+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYXpIcHdLYlV6RzZGWEpySk5kZk16UjBDWmJIV1NUWlU0QXVxTG91MU1tYm9RRDJkdnlVbzE4cklaWURKVEMyeXozV0duQk54VmxhR1pnZGtUYnItYkJNaVNxYWRjLVpmUXRTMmEwY0dZNDZ4NzRVTW9wVmlzM1ZtbkJNRWZRTUE4ejBZd1BObDZxZkNY?oc=5",
-      "published": "2026-11-11T10:00:00+00:00",
-      "publisher": "https://www.unitedinfocus.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano claims Man Utd could be ‘scared’ of Antonio Conte - United In Focus"
-    },
-    {
-      "desc": "Police address 'violent incident' claim against Russell Brand made by Jemima Goldsmith Mansfield Radio",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.142961+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPSXl4Y3NHdkJPcmRnZ1ZKeE40NnJKaDNHejZ1MTViR0RwQVFzR1B3aEljdGtWS3FSRHVmaDNKekR2Rk1ac3FyTzZyZFpjQlRqWWszNzJjN3Q2RzMzY1FULTlXNnFaWmwxT09xNVEyR0VYSGtvZWUwSU4wQktseGF2SWdiZ0dFaFpMcWtPN1RPMG55MkpGTWNiQ1VfdU0zMnpCc2ltaHUyYkY1dEVhWFdOR0U1bmRiVDZTLU1aRlJzM1F6NlZjVl9pNlJjRVlDZC1kaU9GWVUxVHJoaGZqekhDZXVYWnMxel83V012RTNKVFpqdw?oc=5",
-      "published": "2026-11-11T09:54:00+00:00",
-      "publisher": "https://www.mansfieldradio.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Police address 'violent incident' claim against Russell Brand made by Jemima Goldsmith - Mansfield Radio"
-    },
-    {
-      "desc": "Liverpool squad visit club museum at Anfield - and get team photo on the Kop Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T16:00:55.028400+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVUl4WDVyWk9VbVVBV1haaFNXdE9jUVVIWVhGbVlmdFo1UnpObnZNbHhQNEFRaTQzZjhDMUFyUEFjMW03R3RSbnZNaG5maHZ3OWltQUJFejF3NTBTUV92X0R1U2k2bF9KT0lxRUV6R0w0UU0tYWZ5THhKTnVtY1ZmVzdZbHF5Y0pBaHVsQkE5WXowNzE2VTFfU0ozaU1Ma2hp?oc=5",
-      "published": "2026-11-11T09:50:43+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool squad visit club museum at Anfield - and get team photo on the Kop - Liverpool FC"
-    },
-    {
-      "desc": "Alisson Becker wins Premier League Player of the Matchweek award Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T17:00:58.936330+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVm0zblFWeVRHTGFnZzI1NXJjdjZzRHV6d0Y1b3dHaU1TTXA3eUlQNjZWRHZ5MmVtdGFLc0pmSWoxRHh6UHpBMmhpSzNwYlJFVk9zUlVrenlWNVl6R2xEOUZNOVF3UTZUenE3d2REQ1FjRVo5Uzh6U0tFRzBqLWY0RVhidy12aWVPeG1KX0d3VWlHTGlJSDdVb3RFam5RUQ?oc=5",
-      "published": "2026-11-11T09:50:43+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Alisson Becker wins Premier League Player of the Matchweek award - Liverpool FC"
     }
   ],
   "processed_urls": [
