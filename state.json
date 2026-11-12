@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 67390,
-    "output_tokens": 7363,
-    "requests": 10
+    "input_tokens": 73713,
+    "output_tokens": 8288,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2799,7 +2799,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T00:01:01.930723+00:00",
+  "last_scan_at": "2026-11-12T00:59:15.398094+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2821,6 +2821,16 @@
   },
   "news_pool": [
     {
+      "desc": "KIA Tigers Eye FA Stars, Avoid Bidding War 조선일보",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T00:59:15.400961+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPbXh0OFk5SnhLNGNPTlFfYXJxN3Z2emVDVGVUd0dRd2VJOTNQOHoyNzRrRTFDQjRyNFhkTERiNkRSaWMtM0Z6dk5HWmtLbDJNNTNvR1NlelhLQVIyQk9ZMEItRlRsSVQ5RElHcUJZQ2w1cFQ4T0poaVVITjE5UUx6TVpGaWcyQQ?oc=5",
+      "published": "2026-11-12T00:47:03+00:00",
+      "publisher": "https://www.chosun.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "KIA Tigers Eye FA Stars, Avoid Bidding War - 조선일보"
+    },
+    {
       "desc": "Spurs 1-1 Crystal Palace (3-5 on pens), Players Cup | Martin Ho’s verdict Tottenham Hotspur",
       "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-12T00:01:01.934363+00:00",
@@ -2829,6 +2839,16 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Spurs 1-1 Crystal Palace (3-5 on pens), Players Cup | Martin Ho’s verdict - Tottenham Hotspur"
+    },
+    {
+      "desc": "Arsenal Topps Premier League Starter Pack Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T00:59:15.401056+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNnNyNkplUFNsUkNLSUR3N1dNSnZCRmV2TEVhVlVsbXpaSk42anJXUTA0N2lwVjkyVDEzcGN4Tks1czlDc0I0OGdpRHZQX3d0OXZvUXhuWFBta2hFRGpQeV9Fd3hOR0dQZm1ocjZGWGtRemgtazJOQzR5OUFmYmtVQXFqUERRYXBsQlN6OVFSajAtS3BSYjJDOXR3Zw?oc=5",
+      "published": "2026-11-11T23:34:04+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal Topps Premier League Starter Pack - Arsenal Direct"
     },
     {
       "desc": "AS a footballer he is at the top of his game – but Jude Bellingham admits he still has plenty to learn about life. At 23",
@@ -2919,6 +2939,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Papers: Arsenal, Chelsea and Liverpool chase Bournemouth star Scott"
+    },
+    {
+      "desc": "Internationals: Will Wright makes England youth debut Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T00:59:15.401269+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVEFCYTVLallPRVRpZHpFNHhIUW96ZnRQZzhKNDkyOEJsNFlRa1doT1I3eHpTcHYxNDl3cVNxbzEwTkpXRmgxVFVBNlZkVXhRN0plaXl2SU1oS1BZNFMzbGZ3bnJrMTU1V3VIdHhZOUhaZ2RSMXN6SUdCblVETHpfZjJlTWhrWU1HT3JYN29B?oc=5",
+      "published": "2026-11-11T21:48:23+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Internationals: Will Wright makes England youth debut - Liverpool FC"
     },
     {
       "desc": "MANCHESTER UNITED’S flops are in for a fitness shock if - and, what looks like, when - Mauricio Pochettino takes over. T",
@@ -4289,36 +4319,6 @@
       "publisher": "https://arsenaldirect.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Arsenal Odegaard Trophy Keyring - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal Saka and Rice Trophy Keyring Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T13:01:00.717095+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWkc2cEgxcS1fWUduMEozQkdZUHZRejY2YU5aSXB3N0ViLXpfalNMbTFNZGpLMFdjdk51Sk5FdTI4T2R1dFcyY3NGQXBfYkE0Q3F3TnNtbk9jelBTM1hfWUNZRVRtcEZXYkF4YmxqMGNZQVFQU3FWb3dka0o0eTRZMm9QMmlTYkRoYWJJOTR3N2tnWDNPTVBkS3d2TG04ZTZHMzlxZUptMlQ5TDRoUGRRYU83T21hYkUzb2ppbGVlb2NKX2g3?oc=5",
-      "published": "2026-11-11T10:15:08+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal Saka and Rice Trophy Keyring - Arsenal Direct"
-    },
-    {
-      "desc": "'Having Sir Kenny's support is amazing and special - he saw some really good attacking play' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T16:00:55.028361+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPaVI0bXpQZ2NMLVNEX2lpSEhLdHFFRjZQSnJBNm8zaGVGekNIc3hudFd4WHBDV0xxbXg0b21lZHlEeFQ5SnQzOGtmTkxZMEJVRWdaNFRVWkVVZjlSQ0tHdVE0T3FsNG4xcDJxWnc3UmhLMGhSZE53amtLaW9sTVhnaGdfekNnSGtSa2RXVEJIN1Y?oc=5",
-      "published": "2026-11-11T10:11:31+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "'Having Sir Kenny's support is amazing and special - he saw some really good attacking play' - Liverpool FC"
-    },
-    {
-      "desc": "CHARLTON striker Matty Godden has become a fully qualified financial planner. Despite picking up a reported £12,500 a we",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-11T10:59:18.142906+00:00",
-      "link": "https://www.thesun.co.uk/sport/40987162/efl-matty-godden-financial-advisor-charlton-athletic/",
-      "published": "2026-11-11T10:02:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Championship striker, 35, juggling £12.5k-a-week football career with second job as financial advisor"
     }
   ],
   "processed_urls": [
