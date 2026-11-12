@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 35125,
-    "output_tokens": 4026,
-    "requests": 5
+    "input_tokens": 41249,
+    "output_tokens": 4781,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3079,7 +3079,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T19:00:51.286207+00:00",
+  "last_scan_at": "2026-11-12T20:00:47.430627+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3100,6 +3100,96 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Follow Daily Mail Sport's live blog as England host Croatia at Wembley in the Nations League.",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-12T20:00:47.433275+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16284251/england-croatia-nations-league-harry-kane.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T19:55:25+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "England vs Croatia - UEFA Nations League LIVE: Harry Kane set to become most capped Three Lions player EVER as Thomas Tuchel names team for "
+    },
+    {
+      "desc": "From the 21-year-old who scored 79 seconds into his debut to breaking his nation's appearance record, BBC Sport looks at",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T20:00:47.433303+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c60qkdj4lp34o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T19:53:40+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Leader, role model, extraordinary - how Kane's 'fairytale' came true"
+    },
+    {
+      "desc": "Can you name every England men's player who has at least 60 caps?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-12T20:00:47.433376+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmlylv1xl9qgo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T19:47:16+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Quiz: Name England's all-time leading appearance makers"
+    },
+    {
+      "desc": "Barcelona 1-1 Arsenal: Maanum Scores, Graham Hansen Levels at Camp Nou The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T20:00:47.433395+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbjlITU5fSFdaZEtXN2gzeGRpUDFmS1VOSWNVT0dwNDNQNUJjbW85V21ncFBKcG16T3dEa3BWZUFRaUF1OGdnN1c3M1ZnYVVpYTJabk5SaEJHYlJsRGl2eUp5a193LUFra3B4UXhLQWhxWGlucXlvUThLNFVER3NBTnllak9Pb0dNb3luekNtVERrQTlsR3hhQXh3a0QydlNjc3J3?oc=5",
+      "published": "2026-11-12T19:46:47+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Barcelona 1-1 Arsenal: Maanum Scores, Graham Hansen Levels at Camp Nou - The False 9"
+    },
+    {
+      "desc": "ENGLAND head to world champions Spain on Sunday to round off the league phase of the Nations League. Register an account",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T20:00:47.433414+00:00",
+      "link": "https://www.thesun.co.uk/sport/40993416/spain-england-free-bets-boylesports/",
+      "published": "2026-11-12T19:46:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Spain vs England: Bet £10, Get £30 free bets + 25% Bet Builder win boost | BOYLE Sports"
+    },
+    {
+      "desc": "HE’S magic, you know, Mauricio Pochettino. That’s what Spurs fans, like me, used to sing at White Hart Lane. And Poch wi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T20:00:47.433434+00:00",
+      "link": "https://www.thesun.co.uk/sport/41008033/mauricio-pochettino-save-man-utd-tactical-blueprint/",
+      "published": "2026-11-12T19:44:50+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Mauricio Pochettino can SAVE Man Utd with USMNT tactical blueprint to unlock Bruno Fernandes and youth stars"
+    },
+    {
+      "desc": "HARRY KANE has broken another milestone as he became England's outright most-capped player ever tonight against Croatia.",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T20:00:47.433454+00:00",
+      "link": "https://www.thesun.co.uk/sport/41005775/harry-kane-breaks-peter-shilton-england-appearance-record/",
+      "published": "2026-11-12T19:42:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Harry Kane makes history as he breaks Peter Shilton’s England appearance record just weeks after Ballon d’Or win"
+    },
+    {
+      "desc": "ENGLAND welcome Croatia to Wembley in the Nations League - and it's set to be an emotional evening for captain Harry Kan",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T20:00:47.433469+00:00",
+      "link": "https://www.thesun.co.uk/sport/40993453/harry-kane-england-croatia-presentation-record-appearance/",
+      "published": "2026-11-12T19:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "What is Harry Kane being presented with before England vs Croatia?"
+    },
+    {
+      "desc": "ENGLAND take on Croatia in their penultimate Nations League Group A3 clash TONIGHT. The Three Lions currently sit second",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-12T20:00:47.433483+00:00",
+      "link": "https://www.thesun.co.uk/sport/40994490/what-england-need-qualify-nations-league-quarter-finals/",
+      "published": "2026-11-12T19:01:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "What do England need to qualify for Nations League quarter-finals?"
+    },
     {
       "desc": "FIFA faces being ordered to hand over ALL documents relating to the failed World Cup sell-off - after losing a US court ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3221,6 +3311,16 @@
       "title": "Jack Grealish plays first Everton game after David Moyes’ disciplinary axe in behind-closed-doors friendly comeback"
     },
     {
+      "desc": "Follow our men's and women's WhatsApp channels Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T20:00:47.433639+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMmJ4eVVEcXVTbXNmT0FhenppU213bzcyQ2RuUDkwUk01bnhZMjlMenVSV3NacnVpWWFIMG1MN3hlWi1JS2VmT09sVllZVll4dUhwSkpQSVBGaW5FUUtNWmVMTllkaEZPQi1vQUhwODBDbURTV1FOTmp6dmxZTkRtVnVrRHpBQmJ0SjByUXozZw?oc=5",
+      "published": "2026-11-12T17:38:34+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Follow our men's and women's WhatsApp channels - Arsenal.com"
+    },
+    {
       "desc": "Ben White's refusal to play for England and Arsenal chief forced to step in AOL.co.uk",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-12T18:01:02.596442+00:00",
@@ -3239,6 +3339,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Forgotten Chelsea star who cost £52million ‘lined up for winter transfer by Napoli’ after rival summer bid rejected"
+    },
+    {
+      "desc": "Akron Canton Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T20:00:47.433667+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPU0VYa2JoRU0xWEdpZFJqRmwxbHE2ME1GeDdiVmg5ekFqN0dFRGhYTGdTaXpZV2E2UFpROWRBby04b3JBZVNweEpaQ2VDX2VVQV9QZk9XMXV4Mzd4SGVfWkhYQ3k0a2d3VDJOUVZOTFV3elBTN3pocWg4Q05KREdhekY0WndoVHlsbWxlLV81MVNaNWd6NnJ4c1RGY0ZWUThfeFE?oc=5",
+      "published": "2026-11-12T17:17:50+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Akron Canton - Tottenham Hotspur"
     },
     {
       "desc": "Team news: One change at Camp Nou Arsenal.com",
@@ -3351,6 +3461,16 @@
       "title": "Fabrizio Romano Transfer News: Zubimendi to Chelsea truth, Pochettino deal, Guardiola to USMNT? - FootballTransfers.com"
     },
     {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T20:00:47.433771+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdHRWVFU4UndnQXRuQk5na2ExYkRRWDhaR25RTm15THd6X0Zpc3lLMzZWT2tRMjczMXVzZzVnOWtkanV2SUFRTjRwaDQtbExVMjRuQ2dQZlZURWFsZVhTeWctNHFFYk9IdkhONlBtS01fUmMwWTRxVk5mRjJmWFlZUE4xNEh4anNhcDN1SnNlOXRoZHBzZWE0T29OMXZrTm5RaDhUa3Bya21odHlYSFNGSjNLTWRaRTQ?oc=5",
+      "published": "2026-11-12T16:03:25+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
+    {
       "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-12T18:01:02.596768+00:00",
@@ -3409,6 +3529,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Inside Mauricio Pochettino’s £40m fortune and life with ‘rock’ wife singer Karina ahead of his imminent Man Utd return"
+    },
+    {
+      "desc": "Man Utd officially confirm Michael Carrick’s sack | The Eagle Online",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T20:00:47.433807+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMjhTZEw2Z2xCX2NfU0xMcWZ2VXl1V1RjMHdCUlItU2xXaDhYTjZpUEVmSVhFODQwVVJncmczNUVMWUowWDU0VU5IT1F2MU5PTEc5ODlsQ2QwaWV0TDhEa2d6VGtoR3pFSUtuSjV2alYzRzkyNE85RmU0Y3ZPU0xVbXp6WVBhQQ?oc=5",
+      "published": "2026-11-12T15:34:08+00:00",
+      "publisher": "https://theeagleonline.com.ng",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd officially confirm Michael Carrick’s sack | - The Eagle Online"
     },
     {
       "desc": "Misc Rumor RealGM",
@@ -3509,6 +3639,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Seven things Pochettino must fix at Man Utd from league’s worst defence to getting fans onside and Bruno Fernandes issue"
+    },
+    {
+      "desc": "Michael Carrick Fired By Manchester United RealGM",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T20:00:47.433909+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTVlIM1lib2NWblhwQ01DejBSaEM2Tndld2t6TU81SjdXaXBlbktJcHlSU0YxYll1d2RzcWhvV21fbGh5TGdMdEhDYlRuV3ZuZG1FYUtkUEdQZTBKQzI1SFNRRDVfN1JPTG9UMklhRG04T3RpcTR0UWdtMy1yaDF6Q0ZSQzBtUFBXVmc?oc=5",
+      "published": "2026-11-12T14:52:50+00:00",
+      "publisher": "https://soccer.realgm.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Michael Carrick Fired By Manchester United - RealGM"
     },
     {
       "desc": "MAURICIO POCHETTINO'S incredible reaction to Manchester United's historic 1999 Treble triumph has resurfaced as he close",
@@ -4459,146 +4599,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Michael Carrick arrives at Man Utd for third straight day with axe finally set to fall after Pochettino deal ‘agreed’"
-    },
-    {
-      "desc": "CRAWLEY TOWN have completed a free transfer for ex-Crystal Palace striker Connor Wickham. The League Two club sit at the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T08:11:19.640099+00:00",
-      "link": "https://www.thesun.co.uk/sport/40998085/crawley-town-connor-wickham-free-transfer-efl/",
-      "published": "2026-11-12T08:05:46+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "EFL’s bottom club Crawley Town complete shock transfer for former Premier League striker, 33, in bid to rescue season"
-    },
-    {
-      "desc": "ENGLAND return to Nations League duty with a home clash against Croatia - who they thumped 7-0 away from home last month",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T08:11:19.640119+00:00",
-      "link": "https://www.thesun.co.uk/sport/40977827/england-croatia-free-bets-bet-builder/",
-      "published": "2026-11-12T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England vs Croatia: Get £50 in free bets, plus our 7/1 Bet Builder tip | Sky Bet"
-    },
-    {
-      "desc": "Five straight league wins delight Haywards Heath Town – but Green plays it cool SussexWorld",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T08:11:19.640143+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOd09YYlI4S1I2N21lU3d2RkY4cGMxTUtnWWVlVl91RWt1OGpscmV4WkpteTlveFV4NjJqZW5OUkxHeVFta3R2WHp3MTZRclp4Qi16TDQtT2hTbmo2dzlMc1kzRDczbWZkdHF5YU1Ld2t1YzhTUmV4cDFXV09BNlJSVHhKMHhJOFR1dS05Ym9xMkVaSTlsMDlLUzhQM0RxN1FDU19QanU2eGdONkw0V3VQem1mMHN6ekY1WEV1QXp6NmhqcGlQdlJSczFzbUJEV1JqcWZnaTJ6OXFaNlEz?oc=5",
-      "published": "2026-11-12T08:00:00+00:00",
-      "publisher": "http://www.brightonandhoveindependent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Five straight league wins delight Haywards Heath Town – but Green plays it cool - SussexWorld"
-    },
-    {
-      "desc": "Romano gives Pochettino to Man Utd 'Here we go' soon with swift details emerging on January transfer plans TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T08:00:52.082997+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMGN3YXMyMU9IOVlIUUNHX1Fkckk5TEZxNUFKTkpYY3RaamdYcEN0bzVab1U2R1lmNUgwb3hzdlVGQndyamI1dlpseFBTNDIxbWtsWGdWZ2lpbDZURUVWc1NJVzY5MU5sRXhfWFE4XzF6OEZqUk9UUXRUYVZFeEp3dEJGdkYwcnYtR0dUakc0M2hhUXpxS1ppOFJ1cDJteTNvYjBoYWcxenZTQndwUlg5T3FpMXg?oc=5",
-      "published": "2026-11-12T07:53:04+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano gives Pochettino to Man Utd 'Here we go' soon with swift details emerging on January transfer plans - TEAMtalk"
-    },
-    {
-      "desc": "The USA pull out of the Under-17 World Cup, which starts in Qatar next week, because of the risk of armed conflict.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T08:00:52.083040+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6y49yz77pppo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T07:44:21+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "USA withdraw from U17 World Cup"
-    },
-    {
-      "desc": "Man City Players on International Duty: Haaland Back, Guéhi Out (12 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T08:00:52.083130+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWHJUTW1QRXJlMXBaeEhYYTRUanlweEZRUkJQbnhlZ3c1VUFWaTJjajl0NmdjQXZqQmNyMVJRSmlUekstZmRhaXlKNGZRZ3FWTmFId0ZHbGtfTTJ3NlhFZmJsUlcxVmR1bWstdmJ5aFVpWWVrejJ6c3dTVkNVTWNiTUpHdkEtR0tITlE?oc=5",
-      "published": "2026-11-12T07:32:33+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Man City Players on International Duty: Haaland Back, Guéhi Out (12 November) - The False 9"
-    },
-    {
-      "desc": "Ties bind Scotland captain Andy Robertson and the man whose caps record he's about to equal, Kenny Dalglish, in more way",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T08:00:52.083170+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxe89dq16dp2o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T07:19:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Robertson set to make history but his hero Dalglish will always be King"
-    },
-    {
-      "desc": "Boyhood Birmingham City fans Jude and Jobe Bellingham could become the first brothers to play for England for 19 years.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T08:00:52.083203+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm1j3j20r2rzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T07:12:41+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "England's Blues brothers - how the Bellinghams helped save Birmingham"
-    },
-    {
-      "desc": "Pochettino to Man Utd: Romano deals start date blow; reveals what Berrada has 'already' told him on transfers Football36",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T08:00:52.083237+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdkJ2NDJldTFrR1NLampoT3IxSlc1Tzl1SkhxS21qVW5QS2FlWmVaMzlVNl9RbkFEblpHMjAwbDdYNUNCcTRBQXNnMUVmQVNKUXFGT3Vkc3lBYV9ZbC1mZEthenltUGc0Sm03ZFVuMlVSVEdrOXNtR1dCc1dYNjJidVJjdVg1Tjk4eXJwLTVkdmpjcjBuTHNYQi1VTWQxWDUybWNwdXc0YXlIV0N2SGc?oc=5",
-      "published": "2026-11-12T07:08:51+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Pochettino to Man Utd: Romano deals start date blow; reveals what Berrada has 'already' told him on transfers - Football365"
-    },
-    {
-      "desc": "SPAIN are looking to keep their 100% record alive in the Nations League when heading to Czechia on Thursday. Punters who",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T08:00:52.083289+00:00",
-      "link": "https://www.thesun.co.uk/sport/40968286/czechia-spain-free-bets-sbk/",
-      "published": "2026-11-12T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Czechia vs Spain: Get £40 in free bets when you stake £10 with SBK"
-    },
-    {
-      "desc": "POINTLESS Turkey welcome third placed Belgium in a crunch Group A clash in the Nations League on Thursday. New customers",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T08:00:52.083317+00:00",
-      "link": "https://www.thesun.co.uk/sport/40968009/turkey-belgium-free-bets-talksport-bet/",
-      "published": "2026-11-12T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Turkey vs Belgium: Bet £10+ on football and get up to £30 in free bets | talkSPORT BET"
-    },
-    {
-      "desc": "Mauricio Pochettino has five words to describe Man Utd manager job, says Fabrizio Romano United In Focus",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T08:00:52.083347+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSjFoanJ5TFRJZlVobklvNWFOSzcwSkNuUjFDN3JxZnNHdmdZUmxwRUFRZ0RHRDRWcFlyX3BDNWxRemVyVmdMRVNSMHlvR3VoXzlBWmFYdHZQMUlRR2gyODJJeFhSMlNnYWtLOUpFbTVFVWp1UkV6LWY5bVFYZHVxZjNzalpFckFmdkpRR2NvTFNXUWZ6RTVxdG1iMXB0dHRIMTJuenlpNThwNndNUF9jR1NHTmpDTVpJOTRVazJLV20?oc=5",
-      "published": "2026-11-12T07:00:00+00:00",
-      "publisher": "https://www.unitedinfocus.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Mauricio Pochettino has five words to describe Man Utd manager job, says Fabrizio Romano - United In Focus"
-    },
-    {
-      "desc": "Man Utd make Pochettino decision as Romano reveals Carrick's fate FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T08:00:52.083376+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVkh6NUpPQ1lwVWZUQ1lNN0E1anFKYk5EV0dMRVp6U2k0T04xeG9zM25UZGZSVmgtaFNQV29RYUE0cXdtb1VqeWJqc0kwZmRlcUpBYW1McGQyZFliUWlqQUVUbHcxMXJucG1VWDNNd05xMzRlTU5LZjdJSFp0Y0RaOExndHdDXzVSM18zamoyTmZYbG5oSFdUbE5KRDJlZ1ZUQlYyeVlsTTdlMjZRdTZ4MnNxWDNORFJPRF9NUDdWOU4wdmZ1SXRpb2wtdFpQNGFvckZ2anJjcVk?oc=5",
-      "published": "2026-11-12T07:00:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd make Pochettino decision as Romano reveals Carrick's fate - FootballTransfers.com"
-    },
-    {
-      "desc": "Arsenal face a much-changed Barcelona in the Women's Champions League on Thursday - but how have the Spanish giants cope",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T07:00:51.880417+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5vg23nmgp2yo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T06:41:09+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How 'Barca way' continues despite big-name exits"
     }
   ],
   "processed_urls": [
