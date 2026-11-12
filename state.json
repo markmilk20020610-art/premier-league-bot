@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-12",
     "errors": 0,
-    "input_tokens": 97162,
-    "output_tokens": 11824,
-    "requests": 15
+    "input_tokens": 101935,
+    "output_tokens": 12568,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2799,7 +2799,7 @@
     }
   },
   "last_morning_report_date": "2026-11-12",
-  "last_scan_at": "2026-11-12T04:00:50.984734+00:00",
+  "last_scan_at": "2026-11-12T05:00:50.824694+00:00",
   "last_summary_sent_at": "2026-11-11T22:01:38.000126+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -2820,6 +2820,16 @@
     "updated_at": "2026-11-11T22:01:37.989230+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Watch: Alisson's performance v Crystal Palace Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-12T05:00:50.827651+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNlJmelVKU2owbnFmcVlYLTZ4S2hpcE8zTEpUYU1pR2Z1V0l1RTJaTUpGV3hnSGViU0MtM3FWaWRIUVMzZmJBMGRsZmVRMHVMcmR4MWowSjJEVDdCQU9nNW5WbXdRQ3B4c0pTN3NvSENvMXk5R3RSU1k4Rkd1a1ZQMnctbVNQeVI0OXpVc2xLWUVPRlpx?oc=5",
+      "published": "2026-11-12T01:25:50+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch: Alisson's performance v Crystal Palace - Premier League"
+    },
     {
       "desc": "Liste d'envies Man City Shop",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4309,16 +4319,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Wayne Rooney leads I'm A Celebrity... Get Me Out of Here! line-up"
-    },
-    {
-      "desc": "Premier League Match Round 9 Key Match Incidents Panel Outcomes Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-11T10:59:18.142864+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Zc3EwY2tIbHlNbzBoTm5ZczdXa1Rxbm9fQXRqR0pGQS1DcEt4anlqdG4xZkJqWk1qNjhuWDQ4X19PVWpreG9FV1NRUnlQcE0yeGZuak9jMmNtaWtoYUFfd2tSWmppelJxalV6WVAtMEFhbEdqVEE?oc=5",
-      "published": "2026-11-11T10:16:24+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League Match Round 9 Key Match Incidents Panel Outcomes - Premier League"
     }
   ],
   "processed_urls": [
