@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 128531,
-    "output_tokens": 15352,
-    "requests": 21
+    "input_tokens": 134314,
+    "output_tokens": 15961,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T09:01:11.268777+00:00",
+  "last_scan_at": "2026-11-13T10:00:57.013748+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3205,6 +3205,56 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Manchester United captain Bruno Fernandes rejects the club's second contract offer, with his current deal due to expire ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T10:00:57.017762+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm782d4pz9jyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T09:55:01+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Fernandes rejects second Man Utd contract offer"
+    },
+    {
+      "desc": "Evanilson to Arsenal: TEAMtalk Says Bournemouth Want £50m, City Also in The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T10:00:57.017836+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSG5zaWExQ09DZXNKY0VuTlR6U29hLXlDTmhCMXlGdVZzejVpVUttLWtYcGtxUE5pTzhILXVZdmZBbl90ZlVmMWRGVVRQVXppMUZRblRZTXlxSnBfOTl3a2xpZUROXy16aWNZOVR3aVNwWE5JaDRxNkh0NHR6UGFFUXZUYw?oc=5",
+      "published": "2026-11-13T09:24:50+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Evanilson to Arsenal: TEAMtalk Says Bournemouth Want £50m, City Also in - The False 9"
+    },
+    {
+      "desc": "With Mauricio Pochettino set to become Man Utd manager, we analyse if he can clear the tactical hurdles others haven't.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T10:00:57.017874+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm2kljzkw77ko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T09:24:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "How Ferguson-inspired Pochettino can succeed where Carrick failed at Man Utd"
+    },
+    {
+      "desc": "FA Cup: FAM receives official reports from Kuching City, Selangor over Sunday's brawl Sinar Daily",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T10:00:57.017906+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1dTZ1UGtQaVNPNzJMSjc2NmhYRGc5cUlvYnFuSE5FVXI3cmxmQ1RKZ3k1dHlvcXhqSV9OV3JmQUhtZlpPNjNFQzBXTEtLVGhMd3J6UTh3?oc=5",
+      "published": "2026-11-13T08:26:00+00:00",
+      "publisher": "https://www.sinardaily.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA Cup: FAM receives official reports from Kuching City, Selangor over Sunday's brawl - Sinar Daily"
+    },
+    {
+      "desc": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T10:00:57.017937+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdUpkdlVCWmJIRlJGQVNYaHNzSW1WNzBRSHV2QmVhVFE1U09MNWd4SUFkOEdvMDlPX2dTUnVPa0ZDXzljbXotRHBReTlqYy0tWEQ5RW5CTEx6VVY1eURmZ1ByMVI5MmE2NURpeDRSUnR2QTNKcXM3VDNhVnRRaENnUkJTdGpZVnltVFEtZG5meTNIU2d4UTM2VGgxWjk?oc=5",
+      "published": "2026-11-13T08:25:48+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' - Football365"
+    },
     {
       "desc": "Former England captain David Beckham is set to be inducted into the United States' National Soccer Hall of Fame as part ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3274,6 +3324,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Liverpool shortlist Luka Vuskovic in £80million-plus deal – but Anfield is not Brighton star’s dream transfer"
+    },
+    {
+      "desc": "Morgan Rogers says it is a \"lie\" that his Chelsea team-mate Cole Palmer does not want to play for England.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-13T10:00:57.018141+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13611803/cole-palmer-its-a-lie-chelsea-forward-does-not-want-to-play-for-england-says-team-mate-morgan-rogers",
+      "published": "2026-11-13T07:46:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "'It's a lie! Palmer wants to play for England, says Rogers"
     },
     {
       "desc": "Amy Canavan assesses Scotland's central defensive dilemmas before Friday evening's must-win match against North Macedoni",
@@ -3346,6 +3406,16 @@
       "title": "Who am I? Plus today's other quizzes"
     },
     {
+      "desc": "Charlie Wilson Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T10:00:57.018382+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5vVGJZaU1nT25Kb0ZFSzBlRk5INjhBNi12X195MGZ4Ui1oSnFHbFpMM1E0ZUVYZGJWSDRNblB5YXpZem9sYUVZSXkzVzNRczhyUlROa3FCaVJ2WW5KSWdEWjNwY1R3QQ?oc=5",
+      "published": "2026-11-13T05:30:23+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Charlie Wilson - Liverpool FC"
+    },
+    {
       "desc": "Man City News Today: Guehi Injury, Three Defeats and Appeal (13 November) The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-13T06:00:46.355719+00:00",
@@ -3394,6 +3464,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Abdul Fatawu Issahaku Videos & Best Moments - Premier League"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T10:00:57.018510+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-13T02:09:08+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "Steve Ogrizovic Liverpool FC",
@@ -4624,86 +4704,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd ‘reach FULL agreement with Mauricio Pochettino’ to be next manager hours after sacking Michael Carrick"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO is teeing up for a much-anticipated move to Manchester United. The Red Devils pulled the cord on Mic",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T15:01:03.047911+00:00",
-      "link": "https://www.thesun.co.uk/sport/41000619/pochettino-fix-list-man-utd-defence-bruno-fernandes-amass/",
-      "published": "2026-11-12T14:58:03+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Seven things Pochettino must fix at Man Utd from league’s worst defence to getting fans onside and Bruno Fernandes issue"
-    },
-    {
-      "desc": "Michael Carrick Fired By Manchester United RealGM",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T20:00:47.433909+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTVlIM1lib2NWblhwQ01DejBSaEM2Tndld2t6TU81SjdXaXBlbktJcHlSU0YxYll1d2RzcWhvV21fbGh5TGdMdEhDYlRuV3ZuZG1FYUtkUEdQZTBKQzI1SFNRRDVfN1JPTG9UMklhRG04T3RpcTR0UWdtMy1yaDF6Q0ZSQzBtUFBXVmc?oc=5",
-      "published": "2026-11-12T14:52:50+00:00",
-      "publisher": "https://soccer.realgm.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Michael Carrick Fired By Manchester United - RealGM"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO'S incredible reaction to Manchester United's historic 1999 Treble triumph has resurfaced as he close",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T15:01:03.047943+00:00",
-      "link": "https://www.thesun.co.uk/sport/41003637/mauricio-pochettino-man-utd-old-trafford-camp-nou/",
-      "published": "2026-11-12T14:52:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino’s reaction to Man Utd’s 1999 Treble win re-emerges as he closes in on Old Trafford hotseat"
-    },
-    {
-      "desc": "CHELSEA have been dealt another injury scare involving Moises Caicedo during the international break amid ongoing fitnes",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T15:01:03.047972+00:00",
-      "link": "https://www.thesun.co.uk/sport/41002832/moises-caicedo-chelsea-injury-ecuador-xabi-alonso-sunderland/",
-      "published": "2026-11-12T14:49:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Moises Caicedo sparks fresh Chelsea injury fears as he admits to ‘having a few problems’ on Ecuador duty"
-    },
-    {
-      "desc": "Sky Sports' Gary Neville has described Manchester United's treatment of Michael Carrick as \"disgusting\" after the club l",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-12T15:01:03.047998+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611501/gary-neville-man-utds-treatment-of-michael-carrick-disgusting-as-mauricio-pochettino-prepares-to-take-over-at-old-trafford",
-      "published": "2026-11-12T14:49:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Neville 'disgusted' at Man Utd's treatment of Carrick"
-    },
-    {
-      "desc": "Crystal Palace Fire Pierre Sage As Thomas Frank Emerges As Top Target RealGM",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T15:01:03.048032+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPMXB4dXlFRWtBdTl5QkZJdTkyejAzLW1ZR2dvTWkwajBRbWVaWXlESEVGdnd6TWxFeC05NWlDTjFyT1FKS01Fd0xiYzg2ajZuVmdfUFoybHpBZXN4QjFIM00xOHFsTkNkU2ZPY0Y2cnE1Q3VJMTBWSzR2QlJqYlVJSl92VS1pRW1kZlJxZHMtZ1ZfOERXem1KaC1qZ1NtRWtZUk01TDh4RERVNkcxYnc?oc=5",
-      "published": "2026-11-12T14:48:50+00:00",
-      "publisher": "https://soccer.realgm.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Crystal Palace Fire Pierre Sage As Thomas Frank Emerges As Top Target - RealGM"
-    },
-    {
-      "desc": "RIO FERDINAND has blasted Manchester United's statement announcing the departure of Michael Carrick - and even compared ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T15:01:03.048062+00:00",
-      "link": "https://www.thesun.co.uk/sport/41003113/rio-ferdinand-slams-man-utd-chiefs-carrick-sacking/",
-      "published": "2026-11-12T14:45:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Rio Ferdinand slams Man Utd chiefs over Carrick sacking and accuses them of ‘disrespect’ with ‘Chat GPT’ statement"
-    },
-    {
-      "desc": "HARRY KANE will become England's most-capped player in history when leading the Three Lions against Croatia at Wembley t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T15:01:03.048091+00:00",
-      "link": "https://www.thesun.co.uk/sport/41003110/harry-kane-england-croatia-talksport-bet/",
-      "published": "2026-11-12T14:42:55+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Get Harry Kane score and England to beat Croatia TONIGHT at 5/4 with talkSPORT BET, plus £30 free bets"
     }
   ],
   "processed_urls": [
