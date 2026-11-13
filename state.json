@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 6202,
-    "output_tokens": 638,
-    "requests": 1
+    "input_tokens": 12250,
+    "output_tokens": 1294,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3007,6 +3007,41 @@
       "title": "曼联换帅传闻：波切蒂诺成头号热门，卡里克帅位岌岌可危",
       "updated_at": "2026-11-10T13:00:59.275622+00:00"
     },
+    "e18ab2a8e41a": {
+      "article_title": "Pochettino left in tears on leaving US job - 'Most difficult decision'",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "0fd9a392b9a31c57",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 134
+        }
+      ],
+      "created_at": "2026-11-13T17:01:05.662644+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "abdbea42bb4b0369",
+      "event_id": "e18ab2a8e41a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-13T17:01:05.662644+00:00",
+          "origin": "created",
+          "title": "Pochettino left in tears on leaving US job - 'Most difficult decision'",
+          "url": "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-most-difficult-decision"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-most-difficult-decision",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 134,
+      "title": "波切蒂诺含泪告别美国队，即将接任曼联主帅",
+      "updated_at": "2026-11-13T17:01:06.319477+00:00"
+    },
     "e357fd1c5c59": {
       "article_title": "Were Arsenal 'lucky' not to concede penalty at Liverpool?",
       "attempts": 1,
@@ -3254,7 +3289,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T16:00:51.568301+00:00",
+  "last_scan_at": "2026-11-13T17:01:00.847785+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3275,6 +3310,36 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "JOHAN CRUYFF'S footballing legacy will continue after his grandson earned an international call-up - but not with Hollan",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T17:01:00.851658+00:00",
+      "link": "https://www.thesun.co.uk/sport/41014827/johan-cruyff-grandson-international-call-up/",
+      "published": "2026-11-13T16:44:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Johan Cruyff’s grandson called up for completely different country after making own way in football"
+    },
+    {
+      "desc": "USA chiefs have revealed money will not be an issue when it comes to appointing Mauricio Pochettino's successor. The Arg",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T17:01:00.851683+00:00",
+      "link": "https://www.thesun.co.uk/sport/41017347/usa-hint-pep-guardiola-approach-mauricio-pochettino-man-utd/",
+      "published": "2026-11-13T16:25:22+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "USA drop major hint over ambitious Pep Guardiola approach after Mauricio Pochettino’s tearful exit for Man Utd"
+    },
+    {
+      "desc": "AS the international break kicks in, some footballers will be enjoying their time off. Many will be enjoying sinking the",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T17:01:00.851725+00:00",
+      "link": "https://www.thesun.co.uk/sport/40479608/footballers-strange-hobbies-cristiano-ronaldo-bingo/",
+      "published": "2026-11-13T16:11:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Footballers with strange hobbies, like Cristiano Ronaldo’s love of bingo, after Alisson Becker shows passion for fishing"
+    },
     {
       "desc": "MAURICIO POCHETTINO will replace Michael Carrick as Manchester United head coach. Carrick was sacked on November 12, wit",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3444,6 +3509,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "U18s match report: Liverpool beat Salford City 6-1 in friendly - Liverpool FC"
+    },
+    {
+      "desc": "Official Chelsea Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:01:00.851945+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yNkF5bEllYUc0Um42OEpvdVpyM2xnSWw0VzVPSmRIRENWeURfMjduUzFFOWJfcldfVGRWUXUwNTdyT3JaaHljeEs1LWthX3gzd3NiRzB3a1ZHeVRjN1lKSUtHLUVtQVktblRvazhXMUZlRkRlUGJNUmFTUGNlRms?oc=5",
+      "published": "2026-11-13T14:33:13+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Official Chelsea Store"
     },
     {
       "desc": "",
@@ -3994,6 +4069,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Arsenal Players on International Duty: Rice Back, Calafiori Starts (13 November) - The False 9"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:01:00.852486+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-13T10:31:01+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "MANCHESTER UNITED are monitoring Como playmaker Nico Paz ahead of a potential move next summer. Paz, 22, scored twice an",
@@ -4724,56 +4809,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Jack Grealish APOLOGISES after being dropped for missing training without permission as Everton star continues comeback trail in behind-clos"
-    },
-    {
-      "desc": "Jack Grealish issues an apology to Everton fans for his recent absence due to a disciplinary issue.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T22:28:56.411116+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cr3wgp8e2ljxo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T22:10:13+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Grealish apologises for absence after breach of discipline"
-    },
-    {
-      "desc": "Harry Kane is England's all-time top scorer and record appearance maker, but where does he rank among the Three Lions' g",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T22:28:56.411137+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxj0lvqpn94qo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T22:09:59+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Where does Kane rank among all-time England greats?"
-    },
-    {
-      "desc": "Harry Kane scored on his record 126th appearance for England as they beat Croatia 2-1 at Wembley in the Nations League. ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T01:00:49.584105+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16287059/england-croatia-player-ratings.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T22:07:55+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "England 2-1 Croatia PLAYER RATINGS: Whose position is under 'serious' threat? Which two regulars need to show more? And who was at the heart"
-    },
-    {
-      "desc": "Internationals: Rogers on target, Gusto features for France | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T22:28:56.411157+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNclR5enVyemZWbVU3ZllidW1iN1lxek1UbEtjUjNmelM3aGJQcFN4XzZObVc3LXVKZEY5bmNfakNTekN3M2FyWjNtWnk3TEtzOHV3enctTkc3ZGxiUGZJSENHYXlaN0V1NllNSHVWWThxY0FlUnBSN2dDTXk2eDdFS0FXTkxGZnluOUN3UG81QkZ0SVZXUFJXZEJReVExTkpt?oc=5",
-      "published": "2026-11-12T22:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Internationals: Rogers on target, Gusto features for France | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "HARRY KANE was hero once again as he marked his record-breaking 126th cap with a match-winning penalty. It gave lacklust",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T22:00:49.089566+00:00",
-      "link": "https://www.thesun.co.uk/sport/41007880/england-player-ratings-croatia-harry-kane-jarell-quansah/",
-      "published": "2026-11-12T21:58:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England player ratings: Kane shines on big night at Wembley as Quansah error leaves Tuchel sweating on defensive options"
     }
   ],
   "processed_urls": [
@@ -4882,7 +4917,8 @@
     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnZvdHNNQ1JNeU0yZFBtRVYwTGVZZ0EzTW9Iek5oVWVDMHZYS3g0WGtDWUc2TktHa0I3Wm91Zk5kWUpkUDFkemNFX05yelBKcmhPS2RPeEJMT1F4dVVmUkwzVXYzaW9sYkpHWFYwSmxzcXBaa28yWnJlc1gzajBVZXAweXBtU0FmLWpmc1JIU3Z1MGVzUXI4cXp3STAyN3NDaFZUa2pYLVJoNmhlZjIzTzVXdFRXcW5YaXFYak5iNnpkaGo0QzIxcA",
     "https://www.dailymail.com/sport/football/article-16288805/Bruno-Fernandes-REJECTS-second-new-deal-Man-United-Michael-Carrick-sacked.html",
     "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNjJOVFprbnVVQy1nZnhlRW9DNlROSzRSd0kyZm5ULTBadS1XQkxuNEFpUkg0N05yT2Eyd2VwSWN5enJHTHRWU2tNNE1LUmJzOUw1Y0YwY3V2czNYWjlQdkdac0c3ZDJ5LWt6cDFoUTNKZFo3QXBLbFR5Y2VOcFZ5dkRLNURuNk5lVlpLeDJmZ2JFVVZPZ25YYlo4SQ",
-    "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSFFvWHZpZXdDSThUZ2JCNzlwc1ZSbGJaaTZPUkM4N2poaFhWSF92Y1VMMC1tQ29OOWtlRHd5Qk55WGJrRjlObkI4ZkNUSERGM1VRNHhoRGdDMWVoYW9GaG5ycDUydHpTd1dlYkZjSHFublpSSnIxQ0JZYW9sYjduNi1jd0RkU0Z3SnZXLWpB"
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSFFvWHZpZXdDSThUZ2JCNzlwc1ZSbGJaaTZPUkM4N2poaFhWSF92Y1VMMC1tQ29OOWtlRHd5Qk55WGJrRjlObkI4ZkNUSERGM1VRNHhoRGdDMWVoYW9GaG5ycDUydHpTd1dlYkZjSHFublpSSnIxQ0JZYW9sYjduNi1jd0RkU0Z3SnZXLWpB",
+    "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-most-difficult-decision"
   ],
   "s_overflow": {},
   "schema_version": 4
