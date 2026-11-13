@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 13,
+        "calls": 14,
         "errors": 0,
-        "requests": 13
+        "requests": 14
       }
     },
-    "calls": 13,
+    "calls": 14,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 85611,
-    "output_tokens": 9888,
-    "requests": 13
+    "input_tokens": 91356,
+    "output_tokens": 10651,
+    "requests": 14
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T02:01:41.467451+00:00",
+  "last_scan_at": "2026-11-13T02:51:57.301352+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3206,6 +3206,16 @@
   },
   "news_pool": [
     {
+      "desc": "Steve Ogrizovic Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T02:51:57.305086+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlM0U5dXozMEU5OXdIc0FzeEhZSWNxYTVFUllSVGItS1F3dUVGV0xXNWY1OGRQX2NSSXZHVnhfRWQ5VTNnX2Y4aW9zdGhaTG5EVm5raENB?oc=5",
+      "published": "2026-11-13T02:00:02+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Steve Ogrizovic - Liverpool FC"
+    },
+    {
       "desc": "Bruno Fernandes has rejected a new contract at Manchester United against the turbulent backdrop of the departure of head",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-13T01:00:49.583341+00:00",
@@ -3224,6 +3234,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Former England ace Dele Alli set for eye-watering windfall as he shuts down image rights firm"
+    },
+    {
+      "desc": "Manchester United set to appoint Pochettino as intriguing Harry Kane twist emerges football360.com.au",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T02:51:57.305266+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPN2M1NTlkZ0hsY05XTHFOeUFWUTNGbklzSGpFdmFMeU1OMmNXbzhWbnFzcWhoMWd1ZHFRS25JMFRzQmVCOW04eUR4NGhqNmZjYXd1bzFQZGVIWkdaVUdzV0RxU1NiMXMyRktPbkY5R0lraHVEUmFsaVM4dlU0MlBsS19kNDN5MFdLYzZ1RHB3?oc=5",
+      "published": "2026-11-12T23:45:10+00:00",
+      "publisher": "https://football360.com.au",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United set to appoint Pochettino as intriguing Harry Kane twist emerges - football360.com.au"
     },
     {
       "desc": "CHRIS WHEELER AND DANIEL MATTHEWS: It was time for Carrick to vacate the head coach's office at Manchester United, and P",
@@ -4684,26 +4704,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Crystal Palace sack Sage after 16 matches"
-    },
-    {
-      "desc": "Chelsea Football Club marks 10 years since historic sexual abuse disclosures in football | News | Official Site Chelsea ",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T13:00:53.511756+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTllnd2tEM2ZJMFNmX2VvVHFuYTlHWlh6eXJoSGJtSWxidWRnS3Y3c1k3bjNZVVF4TzNUU3BjMFBlVEJIT01HVEZxa0dCRm1IMl9qRnp0UnVhSVJubGhyM0ludU9Cam4xaUNRTGxDVVVUME4yRWtqVjRnRHdYa21PQ0loTUhMSWw1UnFLNjZuaEtCTmN1ekRBcklXbWVkSmxjZFhWVHhiWVVTdXo1N2l2LWFTeFhpMlE?oc=5",
-      "published": "2026-11-12T12:30:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea Football Club marks 10 years since historic sexual abuse disclosures in football | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "MANCHESTER UNITED'S supporters group have hit out at the board after Michael Carrick's sacking marked \"another depressin",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T13:00:53.511785+00:00",
-      "link": "https://www.thesun.co.uk/sport/41001255/man-utd-supporters-trust-statement-michael-carrick-sacking/",
-      "published": "2026-11-12T12:29:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd supporter group demands owners explain themselves after Carrick sacked in ‘another depressing moment’ for club"
     }
   ],
   "processed_urls": [
