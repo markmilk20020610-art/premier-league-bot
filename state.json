@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 12250,
-    "output_tokens": 1294,
-    "requests": 2
+    "input_tokens": 18489,
+    "output_tokens": 2078,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3289,7 +3289,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T17:01:00.847785+00:00",
+  "last_scan_at": "2026-11-13T17:57:44.780181+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3310,6 +3310,56 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "FRANCE supremo Zinedine Zidane leapt to Malo Gusto's defence after suffering a Nations League nightmare. The Chelsea rig",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T17:57:44.782552+00:00",
+      "link": "https://www.thesun.co.uk/sport/41018452/zinedine-zidane-defends-malo-gusto-france-italy-chelsea/",
+      "published": "2026-11-13T17:43:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘There you have it’ – Zinedine Zidane leaps to Malo Gusto’s defence after Chelsea star’s costly error in France clash"
+    },
+    {
+      "desc": "Thomas Tuchel committed to England until Euro 2028 but keen on club return in future Sky Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:57:44.782577+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSThfWUxrRjFLRFNlNmxDVkI0b1Z3Wi1YeEFrY0hqV3E5clZJSHdTX2FHTHZQU3BZSEdSSG95OFdxZEQwNl83UHAxU2VaMWlpNE1kLTFiV0RKVEZNMTRveGs5Ml9PTFZCUENQVmZpSGdDLURWQ09pbERiNGN0YzE5SGxrZXZjSDRUbEEweWI5WWpfeGJNQkgzMUhPNTR6N3gzR1hFRjhGSTNHcE5vVlR4dnZGWjlDM0xMQXBBOTRWczBnNWQ1LXI2RXFGWTN6UQ?oc=5",
+      "published": "2026-11-13T17:25:45+00:00",
+      "publisher": "https://www.skysports.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Thomas Tuchel committed to England until Euro 2028 but keen on club return in future - Sky Sports"
+    },
+    {
+      "desc": "Rotation incoming! What to do with the Arsenal defence in FPL? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:57:44.782595+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWHM1ZFRPZV9YSVF0Z0VoZl9ZUG5DemFUYjFjay1Hc2RfV0ZSTkg3N21YZEZld1laVjdhbHowckRRWUhZeU1iQ1VLLUd2LTByb0lUQnIyV3VJX3dhMXc0OGxrakx5bzJQSnR3TFpqT3liV3IxTl9QZHdNWkYyUmlva1FSZkdEZ0lOR1VJZHROdDRqQkVVVmk3WVFQaWJSMnZzUlpMQXRmMjdjQQ?oc=5",
+      "published": "2026-11-13T17:24:34+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Rotation incoming! What to do with the Arsenal defence in FPL? - Premier League"
+    },
+    {
+      "desc": "DELE ALLI is closing his image rights company with £8.3million in the bank. The former England ace, 30, will pocket £7.6",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T17:57:44.782614+00:00",
+      "link": "https://www.thesun.co.uk/sport/41013385/dele-alli-fortune-adidas-boohooman/",
+      "published": "2026-11-13T17:01:50+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Spurs icon Dele Alli amassed £8.3million from image rights company, including amazing deals and property portfolio"
+    },
+    {
+      "desc": "Key talking points from Sonia Bompastor's pre-Man City press conference | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:57:44.782633+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaWZHWDFFMUlpUUdkdXllUTJVX1lWTVB3TTVRMzRnOWVhY0NhS0lHaF8wMXh1dm5zV2pXS3o1bm96UTA5SFBfMm9saVRTUmlqOEM3SXBHSUsxN1p0S0pKc0NIc3EybVcza3Q2OVlJMG0zdVAyaUktS3lIZE9pTDJCaDRoeHh4Zkk5bjNZUWhVSWFUZHZEb0wxVzFjRmx0eGRnS0o1d2lseFduSS1kbU9wVVFR?oc=5",
+      "published": "2026-11-13T17:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Key talking points from Sonia Bompastor's pre-Man City press conference | News | Official Site - Chelsea Football Club"
+    },
     {
       "desc": "JOHAN CRUYFF'S footballing legacy will continue after his grandson earned an international call-up - but not with Hollan",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3349,6 +3399,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "When will Mauricio Pochettino officially join Man Utd?"
+    },
+    {
+      "desc": "Here we go! It's official: Mauricio Pochettino succeeds Michael Carrick as Manchester United boss Deccan Herald",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:57:44.782747+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQaHBKTEM3RzdteXRIam9vLUc2bXRyUEtzaXpXZUt1YjhFbWxRcHR4VXFna0p3V0VNTjhySjk0ejczQWpMcG5EZGxLRS1PaFdULUNlRFhySzZxMDVjN0VCUm9sd0JBaURRRHF1XzdBMW5QU0RzRnlWNFN0dF85TFU1QkI4TGJ5X3pKdWNvM1NRUDBmVkdlNVl6V2VrUW1aVjJDaXoxZ29PTERndk5Xb3RKeHY3VWhNZlJfQlM3dWtrZTlKVUFwdmdrZzlFRTdMQ1FWTEhFbFJBLXFmOFg0UlMyRU9XbmMwX09EQW1uck9n?oc=5",
+      "published": "2026-11-13T15:33:36+00:00",
+      "publisher": "https://www.deccanherald.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Here we go! It's official: Mauricio Pochettino succeeds Michael Carrick as Manchester United boss - Deccan Herald"
     },
     {
       "desc": "An emotional Mauricio Pochettino broke down as he explained why he was leaving the USA to take the Manchester United job",
@@ -3649,6 +3709,26 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Michael Carrick speaks out on his Man United sacking for the first time - and admits 'we've not had the results lately' - as Mauricio Pochet"
+    },
+    {
+      "desc": "Man Utd: Romano confirms ‘under the radar’ January transfer ’95 percent done’ TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:57:44.783035+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNkN4ZlVfTjZ0SHhYdE1hZzExSEYxaXAwb0FVZ1BGaW15RFRwS3RfYWxfTmlpU29FdXI4OFRmblhta0ttV3FSLU5rbkVUWTFNZ250ZEs3U2E2V3V1MFI1bTVLZTRuVzIwWjFCWDF1ejcxVnExZHJ1ZHlXRTNvdldMOFV3YmdCdXRyajlfcVljQ2t3eWR2VWpoYXRMM2dvUmEzTkU0elhnTVdRaGppVUt3UVU0WWhVUWprU04yLWZSV2ljdw?oc=5",
+      "published": "2026-11-13T13:05:07+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd: Romano confirms ‘under the radar’ January transfer ’95 percent done’ - TEAMtalk"
+    },
+    {
+      "desc": "Gallery: Cazorla stars at our New York takeover! Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T17:57:44.783052+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdHVhcl95ZWFVR0xyclQ3d3ZlSWR2eFlDNmlEX3ItZU8tcGN5X0VsN200M2tMMWZGQ1BrN0RkdkNHNVFRcDZBRkYta1lWSG1SVnlMQ0VJMVdNSE83cFo3eFRuZ0E3T2pvSDNVWk91S3BnSDlZYi1RY0N2WnczVmpvVUttdTgwUnRzWmRuYnprS0k5dw?oc=5",
+      "published": "2026-11-13T13:02:53+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Gallery: Cazorla stars at our New York takeover! - Arsenal.com"
     },
     {
       "desc": "MANCHESTER UNITED still believe they can convince Bruno Fernandes to sign a new contract. Fernandes has rejected two off",
@@ -4729,86 +4809,6 @@
       "publisher": "https://www.thescore.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Report: Pochettino leaving USMNT to become Man United coach - theScore"
-    },
-    {
-      "desc": "FRANCE star Desire Doue was left with visibly crooked teeth after taking an elbow to the face during their Nations Leagu",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T23:00:54.380917+00:00",
-      "link": "https://www.thesun.co.uk/sport/41009723/desire-doue-tooth-crooked-elbow-face-italy-france/",
-      "published": "2026-11-12T22:52:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Desire Doue’s tooth left visibly crooked after taking sickening elbow to face during France’s defeat to Italy"
-    },
-    {
-      "desc": "Gallery: 43 snaps from our Camp Nou clash Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T23:00:54.380947+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQUtBcF9iRm01cW1lajFISFRua1JGX1NNcnphR2ZyVUxNeGZKU0ZLa3dHSy1pcjFXVFExNmxWa2FKSWVUVW1sNV94MXJsSnZPOFJyell2bG1ITVJFQTZwQzRrWWpFamgxNE5UQVEtR3RtLTFyMVNsMjlNRVphblVxN1BwQl80aFBJSkE?oc=5",
-      "published": "2026-11-12T22:52:34+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Gallery: 43 snaps from our Camp Nou clash - Arsenal.com"
-    },
-    {
-      "desc": "THE Glazer family made the final decision when selecting the next Manchester United head coach, according to reports. Un",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T23:00:54.380975+00:00",
-      "link": "https://www.thesun.co.uk/sport/41009659/glazers-ordered-ratcliffe-hire-pochettino-man-utd/",
-      "published": "2026-11-12T22:47:34+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Glazers ‘ordered Sir Jim Ratcliffe to hire Pochettino’ with Man Utd chiefs Berrada and Wilcox ‘overruled’"
-    },
-    {
-      "desc": "BRUNO FERNANDES has reportedly rejected a new contract at Manchester United. The club captain is in the final year of hi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T23:00:54.381001+00:00",
-      "link": "https://www.thesun.co.uk/sport/41009762/bruno-fernandes-contract-offer-man-utd/",
-      "published": "2026-11-12T22:32:24+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Bruno Fernandes ‘REJECTS new Man Utd contract’ with Portugal star’s deal expiring at the end of this season"
-    },
-    {
-      "desc": "Arsenal Christmas Classic Elf Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T00:01:00.413436+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdWhsV3B2QlFxV1FKTkZZUXVhdDIxbEItQm1QLXU1YnZBRU1JMnFTZTZ4RDlEY0xqRGlTQlYtYUVuRnBDQzRBZE84M0hVOGZBZl9XdXhQRjBGYWZtZjk2MVAtQnhSXzdzZVVzLWtYbmtIQ0ZoMEFndW1idzBxU2dQNmZDVGcxdE1NNTZZ?oc=5",
-      "published": "2026-11-12T22:26:22+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal Christmas Classic Elf - Arsenal Direct"
-    },
-    {
-      "desc": "MAX DOWMAN will break Jude Bellingham’s record as the youngest-ever England U21s player if he plays against Portugal at ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T22:28:56.411034+00:00",
-      "link": "https://www.thesun.co.uk/sport/41009589/max-dowman-jude-bellingham-england-u21-record-carsley/",
-      "published": "2026-11-12T22:25:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Max Dowman set to break Jude Bellingham’s incredible England record as Lee Carsley backs Arsenal whiz for superstardom"
-    },
-    {
-      "desc": "JUDE BELLINGHAM will have to wait a little longer before he shares the pitch with his brother Jobe. It is 19 years since",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T22:28:56.411058+00:00",
-      "link": "https://www.thesun.co.uk/sport/41009480/harry-kane-england-night-jude-bellingham-record-future/",
-      "published": "2026-11-12T22:16:29+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "On Harry Kane’s big night, Jude Bellingham proves he’s ready to shatter record.. but forced to wait to play with brother"
-    },
-    {
-      "desc": "Jack Grealish made his first Everton appearance since being suspended for missing training as he helped a scratch XI bea",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T01:00:49.584017+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16288641/Jacks-Grealish-Everton-return.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T22:13:33+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Jack Grealish APOLOGISES after being dropped for missing training without permission as Everton star continues comeback trail in behind-clos"
     }
   ],
   "processed_urls": [
