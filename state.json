@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 17,
+        "calls": 18,
         "errors": 0,
-        "requests": 17
+        "requests": 18
       }
     },
-    "calls": 17,
+    "calls": 18,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 107619,
-    "output_tokens": 12814,
-    "requests": 17
+    "input_tokens": 112569,
+    "output_tokens": 13472,
+    "requests": 18
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T05:01:06.075303+00:00",
+  "last_scan_at": "2026-11-13T06:00:46.353859+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3205,6 +3205,36 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Man City News Today: Guehi Injury, Three Defeats and Appeal (13 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T06:00:46.355719+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBTcS1lV0k0cF9yUEI2a05KWnJFUy14dWN1WWRsRVYydm9za0E3eVVCUHpTaV9ZUGpBX2VZcFN6aHB6MkkxTVdnVENhQWxWNmRiYnNlVzlPamh5TUNhVXAyclZFRmFaaGVTYlVDLWxyVVFsWDV3cmtUOUphWQ?oc=5",
+      "published": "2026-11-13T05:25:05+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City News Today: Guehi Injury, Three Defeats and Appeal (13 November) - The False 9"
+    },
+    {
+      "desc": "Man City, 10 questions after 10 matches: Maresca’s empty midfield, vital Haaland, new No 1 needed? The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T06:00:46.355737+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWmo0MlBCakdvZzhOLUFodkNEVzdtblFyeTVlcTloakNnUmJRRVhMSV9xOHAyTHdfOEZiNzZjWEh6cEFrZWpFdFNKc0tCbFlzekpScktKNUtrNkZ6RDFpcmNsbXJDOGtwNXJGaVBHRzBNbm54UU9PUGQwY1B3SjVTLUNpUmVMclpicVlMMg?oc=5",
+      "published": "2026-11-13T05:16:07+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City, 10 questions after 10 matches: Maresca’s empty midfield, vital Haaland, new No 1 needed? - The New York Times"
+    },
+    {
+      "desc": "30% OFF RETRO Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T06:00:46.355750+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeW53YWtpZ0ZiakJXVDBtSjR2ZndFbVNUaGxQRXNhVjJaRjMwZnZkaVg1U2FteDZZSHlCZ2c2YUtsenl5UkRsc3Y0X3pBVFJMbVVPOXdPM21WTmt5Y2YtaVdJdlZNYTV4WkNoaWRaUHRRd3NPSkdJSVFKZDlHUDlCNGtueDA?oc=5",
+      "published": "2026-11-13T03:19:49+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "30% OFF RETRO - Arsenal Direct"
+    },
     {
       "desc": "50% OFF Arsenal Direct",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3244,6 +3274,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Former England ace Dele Alli set for eye-watering windfall as he shuts down image rights firm"
+    },
+    {
+      "desc": "Brian O'Neil Nottingham Forest Midfielder, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T06:00:46.355854+00:00",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zbE5vbVg3cTd5NUF3WE5yR091d0NNRjVKX1M5bEFqR1h4NEMwWThvZ09zSlQ0d2FJWlJsbFFpOHJRbXlEdGNHZ1BjRGNOY0U1bU1OdTFrX3NhVHk0dk5YNnM5bzVYTEhndElibmNYMTlOZw?oc=5",
+      "published": "2026-11-13T00:13:17+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Brian O'Neil Nottingham Forest Midfielder, Profile & Stats - Premier League"
     },
     {
       "desc": "Manchester United set to appoint Pochettino as intriguing Harry Kane twist emerges football360.com.au",
@@ -4664,46 +4704,6 @@
       "publisher": "https://ticketing.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "- Liverpool FC"
-    },
-    {
-      "desc": "Crystal Palace players and club chiefs have grown frustrated over Pierre Sage's training methods - and the 47-year-old w",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-12T16:50:04.664383+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16276215/Crystal-Palace-Pierre-Sage-sacked-training-assistant.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T12:52:44+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Crystal Palace sack Pierre Sage after disastrous 16-game spell - this is how his reign unravelled over late, intense sessions, dinner at the"
-    },
-    {
-      "desc": "Pierre Sage sacked by Crystal Palace LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T13:00:53.511624+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYTNyTS0zMnhUM1owNHZVUEptODlVMUZycXltbHBEOVluTkdtUUxGRURPMFhkMXVEU2kxaS1GQVJhYUEzc0RkN2loN0dPUmtBbjE4ZncxZ2k5bHVDU3dZS2pyR0VHNWJCVDU2SU1ESXlLVkltLU00OXYtWGpXOEhRNUIzNFpleHg4MllBNTdpczlVNGZUb1E1NEZFUVBOV09IRkZMa0NrMzhtV3BRd1RsaQ?oc=5",
-      "published": "2026-11-12T12:46:58+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Pierre Sage sacked by Crystal Palace - LiveScore"
-    },
-    {
-      "desc": "Jack Talbot signs first professional contract Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T15:01:03.048450+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOEM1ZlZIa01venVSUTlyMlYtRzFERDBJaWo5UW1vekFVRXVqbTBpM05qTUxzVWNkZkpNNmkxNHFvaVBjRkhzQktfMUZpZ2Jsa1R0TWVMNTExczBuYnFxZjl1Mk5fdENwNHA0WjJJanVpTEthaWFUSndMYThFSmRIeE9NamhnLWdkYVRUbnBqaEc?oc=5",
-      "published": "2026-11-12T12:43:40+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Jack Talbot signs first professional contract - Arsenal.com"
-    },
-    {
-      "desc": "CRYSTAL PALACE have finally confirmed the sacking of manager Pierre Sage. The Eagles are rock bottom of the Premier Leag",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T13:00:53.511659+00:00",
-      "link": "https://www.thesun.co.uk/sport/41002174/crystal-palace-confirm-pierre-sage-sacking/",
-      "published": "2026-11-12T12:37:53+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Crystal Palace CONFIRM Pierre Sage sacking in very brief statement with Thomas Frank favourite to take over"
     }
   ],
   "processed_urls": [
