@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 22,
+        "calls": 23,
         "errors": 0,
-        "requests": 22
+        "requests": 23
       }
     },
-    "calls": 22,
+    "calls": 23,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 134314,
-    "output_tokens": 15961,
-    "requests": 22
+    "input_tokens": 140133,
+    "output_tokens": 16464,
+    "requests": 23
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T10:00:57.013748+00:00",
+  "last_scan_at": "2026-11-13T10:24:03.454327+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3205,6 +3205,26 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "AN ex-Premier League defender watched his team concede while standing on the sideline in his PANTS. Former Burnley man M",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T10:24:03.456470+00:00",
+      "link": "https://www.thesun.co.uk/sport/41011630/premier-league-maxime-esteve-shorts-burnley-rb-leipzig/",
+      "published": "2026-11-13T10:04:02+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Bizarre moment former Premier League star is left playing in his PANTS as shorts are ripped to shreds during match"
+    },
+    {
+      "desc": "Non-league Hendon are preparing to return to action for the first time since midfielder Ezekiel Williams died earlier th",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T10:24:03.456497+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6vg7gz9w5edo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T10:00:46+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "The club preparing to play again after the death of a player"
+    },
     {
       "desc": "Manchester United captain Bruno Fernandes rejects the club's second contract offer, with his current deal due to expire ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3234,6 +3254,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "How Ferguson-inspired Pochettino can succeed where Carrick failed at Man Utd"
+    },
+    {
+      "desc": "England will head to Spain on Sunday for a Nations League shoot out with the World Champions. A win in Madrid could see ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T10:24:03.456582+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16287055/Why-England-unremarkable-Harry-Kanes-big-night-IAN-LADYMAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T08:43:31+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Why England were unremarkable on Harry Kane's big night, the Ben White problem - and established star whose place could be under threat from"
     },
     {
       "desc": "FA Cup: FAM receives official reports from Kuching City, Selangor over Sunday's brawl Sinar Daily",
@@ -3294,6 +3324,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "How do you stop Haaland? Wales show how it's done"
+    },
+    {
+      "desc": "Finance Director – Financial Control Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T10:24:03.456702+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOUN4alhpSENSSmRfa2YtZWJDYWRxR0Y2ZWFBallCWFJMamprYldFX3ZZUXVvS283ZEFBU1VCdnExOURyemZOalEwcmdqanVrNHdSZnRFdUVhQnBJc2FKc0NlekxuS1djRzhDQ3hUR1laRk5sd3VlempfVXNVSGlvQQ?oc=5",
+      "published": "2026-11-13T08:01:57+00:00",
+      "publisher": "https://careers.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Finance Director – Financial Control - Manchester United"
     },
     {
       "desc": "GERMANY find themselves outside the top two heading into the penultimate Group A2 clash in the Nations League at Serbia.",
@@ -3404,6 +3444,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "FPL GW11 Sell List: João Pedro, Gvardiol, Saka, Semenyo and Thiago The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T10:24:03.456861+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBKQ09tN3Z4bWJ5ZlhheWd1VDREVHNmR1N6WHk0QTdOYTU5VW50U1NKV3U5LWdFQWpjTTd0dkh3VDBwX1hsdjFLeE4wNU93dkZZa2lXZkw0bzRiRjRrVHFYNnlRdnA3QQ?oc=5",
+      "published": "2026-11-13T06:19:05+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "FPL GW11 Sell List: João Pedro, Gvardiol, Saka, Semenyo and Thiago - The False 9"
     },
     {
       "desc": "Charlie Wilson Liverpool FC",
@@ -4654,56 +4704,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England vs Croatia LAST MINUTE tickets: How to buy and cost for Nations League clash at Wembley"
-    },
-    {
-      "desc": "Record-breaker Harry Kane scored from the spot to seal England's place in the Nations League quarter-finals with a 2-1 v",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-12T22:00:49.090667+00:00",
-      "link": "https://www.skysports.com/football/england-vs-croatia/report/554088",
-      "published": "2026-11-12T15:12:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Kane the hero on historic night as England book Nations League QF spot"
-    },
-    {
-      "desc": "Romano and Moretto provide update on Milan’s Endrick pursuit: “Hasn’t said no” LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:01:00.291727+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWktESG5DYUpRNUdXWkVwakNObms0a2NlbGpTNTA5QnV1MGc2WURXQUU2MVo3eHN5bGZGRnJnVXlQS1BoSGE5Qm5PSHB3ckU3VU04NU9ZcHhKNTdGdjhTbzhaSFZ5MFJPUXJ5WUxaVExzVmJfMTRTRXBTN3B0Vm1GVk01TFFFSGc2Zzh6anAxd0hVRVBXcUhrdGtLVjhDYUNmcThkSlBxVVdkbEgxUmlZTWRpMEl3d3B6Z2hLVkZpWkRobDBjT1Q2ZmNUM01WQ2huVzVJ?oc=5",
-      "published": "2026-11-12T15:11:17+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano and Moretto provide update on Milan’s Endrick pursuit: “Hasn’t said no” - LiveScore"
-    },
-    {
-      "desc": "Mauricio Pochettino has been warned against taking the Manchester United job, by Gary Neville unless the club's hierarch",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-12T22:28:56.411746+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16286373/Mauricio-Pochettino-TURN-Man-United-job-unless-gets-TWO-new-signings-fix-worst-four-Premier-League-says-Gary-Neville.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T15:08:08+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino should TURN DOWN the Man United job unless he gets TWO new signings to fix 'the worst back four in the Premier League', "
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-12T18:01:02.597011+00:00",
-      "link": "https://www.skysports.com/football/england-vs-croatia/live/554088",
-      "published": "2026-11-12T15:03:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "England vs Croatia team news LIVE!"
-    },
-    {
-      "desc": "MANCHESTER UNITED have reached a full agreement with Mauricio Pochettino to become new manager, according to reports. Th",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T15:01:03.047870+00:00",
-      "link": "https://www.thesun.co.uk/sport/41004243/man-utd-mauricio-pochettino-manager-agreement-carrick/",
-      "published": "2026-11-12T14:58:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd ‘reach FULL agreement with Mauricio Pochettino’ to be next manager hours after sacking Michael Carrick"
     }
   ],
   "processed_urls": [
