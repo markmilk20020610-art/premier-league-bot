@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 60738,
-    "output_tokens": 6233,
-    "requests": 9
+    "input_tokens": 67288,
+    "output_tokens": 6893,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1913,6 +1913,41 @@
       "title": "贝林厄姆弟弟进球被吹，因前切尔西球员踢中门将面部",
       "updated_at": "2026-10-31T19:37:30.014681+00:00"
     },
+    "834c7064868d": {
+      "article_title": "Fitness obsessed & 'control freak' - what can Man Utd expect from Pochettino?",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "903661c1bb19c06a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 137
+        }
+      ],
+      "created_at": "2026-11-13T23:28:04.195831+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e4124d7f4c371aed",
+      "event_id": "834c7064868d",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-13T23:28:04.195831+00:00",
+          "origin": "created",
+          "title": "Fitness obsessed & 'control freak' - what can Man Utd expect from Pochettino?",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 137,
+      "title": "波切蒂诺出任曼联新帅，BBC解析其执教风格",
+      "updated_at": "2026-11-13T23:28:04.684917+00:00"
+    },
     "85b871108469": {
       "article_title": "Angulo dodges VAR red after HAIR pull on Coventry’s Sakamoto as Sunderland sink further into relegation mire with loss",
       "attempts": 1,
@@ -3324,7 +3359,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-13T23:00:56.425147+00:00",
+  "last_scan_at": "2026-11-13T23:27:58.898252+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3796,6 +3831,16 @@
       "title": "Rotation incoming! What to do with the Arsenal defence in FPL? - Premier League"
     },
     {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T23:27:58.900887+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRnRfUTJNYVZTQzhMSy0zc2FTRV80TUt5cjU1ZEpiNDlTZndvMzg4cm82WVRyQm03MmpXS1NxX2ozS3VpX3I5X1Q5bXVCQjZjRGdkLWpESnNzdm1zZzJ3ZlkwYWJVdDc3TGp3b05CWjNYWUVxTFl2c3dKM1JFcmNmMFJYaw?oc=5",
+      "published": "2026-11-13T17:07:00+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
+    },
+    {
       "desc": "DELE ALLI is closing his image rights company with £8.3million in the bank. The former England ace, 30, will pocket £7.6",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-13T17:57:44.782614+00:00",
@@ -3834,6 +3879,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Johan Cruyff’s grandson called up for completely different country after making own way in football"
+    },
+    {
+      "desc": "Manchester City Fairisle Fleece Blanket Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T23:27:58.900930+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZG5nMWRiV1ZDS0w2bXBEOGZjZnM4MGRTalRjRl9TNTU3bk1rTXVRMWpvdHZfRkVvWkVpQWxwX2VGVGlENHdJTG4xNzlrN1BkUkVEekVGcm92OV94QW42bmxMcm95YjBDa29Jd2RMeUVvYWpYQWNXTUV0VHhYT2NjTFVDMUhLYkFldFVoT0NFTzNEWHhLSHc?oc=5",
+      "published": "2026-11-13T16:36:02+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Manchester City Fairisle Fleece Blanket - Man City Shop"
     },
     {
       "desc": "USA chiefs have revealed money will not be an issue when it comes to appointing Mauricio Pochettino's successor. The Arg",
@@ -4824,26 +4879,6 @@
       "publisher": "https://www.sinardaily.my",
       "source": "https://www.thefa.com/rss",
       "title": "FA Cup: FAM receives official reports from Kuching City, Selangor over Sunday's brawl - Sinar Daily"
-    },
-    {
-      "desc": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T10:00:57.017937+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdUpkdlVCWmJIRlJGQVNYaHNzSW1WNzBRSHV2QmVhVFE1U09MNWd4SUFkOEdvMDlPX2dTUnVPa0ZDXzljbXotRHBReTlqYy0tWEQ5RW5CTEx6VVY1eURmZ1ByMVI5MmE2NURpeDRSUnR2QTNKcXM3VDNhVnRRaENnUkJTdGpZVnltVFEtZG5meTNIU2d4UTM2VGgxWjk?oc=5",
-      "published": "2026-11-13T08:25:48+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' - Football365"
-    },
-    {
-      "desc": "Former England captain David Beckham is set to be inducted into the United States' National Soccer Hall of Fame as part ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T09:01:11.271071+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmx295q05l7eo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T08:22:34+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Beckham to be inducted into US Soccer Hall of Fame"
     }
   ],
   "processed_urls": [
@@ -4954,7 +4989,8 @@
     "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNjJOVFprbnVVQy1nZnhlRW9DNlROSzRSd0kyZm5ULTBadS1XQkxuNEFpUkg0N05yT2Eyd2VwSWN5enJHTHRWU2tNNE1LUmJzOUw1Y0YwY3V2czNYWjlQdkdac0c3ZDJ5LWt6cDFoUTNKZFo3QXBLbFR5Y2VOcFZ5dkRLNURuNk5lVlpLeDJmZ2JFVVZPZ25YYlo4SQ",
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSFFvWHZpZXdDSThUZ2JCNzlwc1ZSbGJaaTZPUkM4N2poaFhWSF92Y1VMMC1tQ29OOWtlRHd5Qk55WGJrRjlObkI4ZkNUSERGM1VRNHhoRGdDMWVoYW9GaG5ycDUydHpTd1dlYkZjSHFublpSSnIxQ0JZYW9sYjduNi1jd0RkU0Z3SnZXLWpB",
     "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-most-difficult-decision",
-    "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko"
+    "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko",
+    "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo"
   ],
   "s_overflow": {},
   "schema_version": 4
