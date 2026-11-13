@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 24749,
-    "output_tokens": 2701,
-    "requests": 4
+    "input_tokens": 30748,
+    "output_tokens": 3244,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3289,7 +3289,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T18:00:51.590013+00:00",
+  "last_scan_at": "2026-11-13T19:01:06.347359+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3310,6 +3310,56 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "YANNICK BOLASIE has seen his contract at Chapecoense TERMINATED following the club's relegation. The Premier League cult",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T19:01:06.350247+00:00",
+      "link": "https://www.thesun.co.uk/sport/41019127/yannick-bolasie-chapecoense-crystal-palace-contract-terminanted/",
+      "published": "2026-11-13T18:49:47+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Premier League cult icon, 37, has contract TERMINATED after Chapecoense relegated to Brazilian Serie B"
+    },
+    {
+      "desc": "SCOTT PARKER is the right man to spearhead West Ham to promotion despite making a woeful start in the hotseat, according",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T19:01:06.350274+00:00",
+      "link": "https://www.thesun.co.uk/sport/41018282/scott-parker-perfect-west-ham-promotion-darren-bent/",
+      "published": "2026-11-13T18:32:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "I’m an ex-England star who played with Scott Parker.. here’s why he’s the perfect man to take over at West Ham"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-13T19:01:06.350291+00:00",
+      "link": "https://www.skysports.com/football/scotland-vs-north-macedonia/live/554098",
+      "published": "2026-11-13T18:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Scotland vs North Macedonia LIVE!"
+    },
+    {
+      "desc": "The English Football League (EFL) warns its members about their usage of posts on social media.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T19:01:06.350317+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmqj5r8edvneo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T18:20:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "EFL warns clubs over social media posts"
+    },
+    {
+      "desc": "Romano Delivers Bruno Fernandes Man Utd Future Update After Pochettino Appointment GiveMeSport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T19:01:06.350339+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ3Y3Ri02RWJkamF0ZEU5TnlnTkhCMWQ5d3VoVHFQZzRDQm1lV3dSZTdoTW44SjY2NXVvVmF5UmZETms2RTg1cHhLMzR1QkJaSW1NNnN6TGxhMXpNWnJSb054eHBGczVLbGF4VEtqbVphV0twaHVTMlZlVHlwZTdOX2ZLY2RORXFhQ0xrOFNvZw?oc=5",
+      "published": "2026-11-13T18:15:14+00:00",
+      "publisher": "https://www.givemesport.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano Delivers Bruno Fernandes Man Utd Future Update After Pochettino Appointment - GiveMeSport"
+    },
     {
       "desc": "FRANCE supremo Zinedine Zidane leapt to Malo Gusto's defence after suffering a Nations League nightmare. The Chelsea rig",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3909,6 +3959,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Mauricio Pochettino's Man United SQUAD AUDIT: Axe EIGHT stars, new role for the attacker he's 'always liked' and who could be his new Dele A"
+    },
+    {
+      "desc": "Vermiglio to oversee Chorley after Preece leaves for Scunthorpe Yahoo",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T19:01:06.351044+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSDkzVG9XVjVTWkZlU3BIY3hsZ04yUC16dHdZRHUxcTVQY3JQSGx4ZnRRZTNockFvOXBmcEkzcGtxOXdyUHdnaG1mNDR1MVpNaFlmRjhpdmxDbmdrOEREYkRQUmtKNU9ORl9wenMwMVRuNlRRY280WTVITVh1dUMyT0dqeWhmSW5TZU1iVzFzbU4?oc=5",
+      "published": "2026-11-13T12:12:42+00:00",
+      "publisher": "https://uk.sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Vermiglio to oversee Chorley after Preece leaves for Scunthorpe - Yahoo"
     },
     {
       "desc": "Son Heung-min's former mentor, Mauricio Pochettino, set to rescue relegation-threatened Manchester United... Romano also",
@@ -4749,66 +4809,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "'A lie' & 'nonsense' - Palmer committed to England, says Rogers"
-    },
-    {
-      "desc": "Report: Man United appoints USMNT coach Pochettino as new manager Sportsnet.ca",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T00:01:00.413128+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRzBLVjFudzZ1OWtvWVNJTlAweUNieGNOdk4zX2NYU0xrSk5MR3doT3EwTi02WHBfOE1PNjhLdlFPOF9kUHJ4dnFXbUlyekF4STdOU2hnLTZpLVZBV2M4NE1kTFpjN0hpLXhLTVhZVVE4RzllcHR2SlVBcGdTT1RpQVZ2ZjhyOVNSY3NBcndZWlR4QlVzdnZyYm5zM3NyNVV3SVdwNWo0Rzc1cm40OV9ncVhSQQ?oc=5",
-      "published": "2026-11-12T23:04:00+00:00",
-      "publisher": "https://www.sportsnet.ca",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Report: Man United appoints USMNT coach Pochettino as new manager - Sportsnet.ca"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has agreed to become the new Manchester United manager. The Argentine emerged as the favourite to ta",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T00:01:00.413158+00:00",
-      "link": "https://www.thesun.co.uk/sport/41010024/man-utd-mauricio-pochettino-liverpool/",
-      "published": "2026-11-12T23:03:47+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd AGREE deal to hire Mauricio Pochettino on two-and-a-half-year deal and will be in charge against Liverpool"
-    },
-    {
-      "desc": "Manchester United and Mauricio Pochettino have agreed a deal for him to become the club's next head coach.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-13T00:01:00.413210+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611745/mauricio-pochettino-manchester-united-agree-two-and-a-half-year-deal-with-usa-manager-to-replace-michael-carrick",
-      "published": "2026-11-12T23:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Pochettino agrees two-and-a-half-year deal to become Man Utd boss"
-    },
-    {
-      "desc": "Mauricio Pochettino to sign a two-and-a-half year deal at Manchester United The Peoples Person",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T00:01:00.413239+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOF9nLTRqdWdteTY1Tk9QNndxZGUyOElsUk1JWllWemFoVW40WERBMkpIU0FhbzhiVmJhdkFMdm1rUmkzeXVRaXIxVTlIVnNIYld5WWsxaDBLQzMweC1kYnhKZ01lLWV1VmtqdHJaRTNKLXcxM0w5bGs1bEpySWFHYzNhQ2NtZnUxNnVOMy1xUjZ4dW44LTVUUFdUWjdzV2hXYnZPYThZenQ1S05GY1dqWHhLbDlDcElQQ3dYZHBpUVM?oc=5",
-      "published": "2026-11-12T22:57:51+00:00",
-      "publisher": "https://thepeoplesperson.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Mauricio Pochettino to sign a two-and-a-half year deal at Manchester United - The Peoples Person"
-    },
-    {
-      "desc": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T23:00:54.380815+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ?oc=5",
-      "published": "2026-11-12T22:57:43+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United - The New York Times"
-    },
-    {
-      "desc": "Report: Pochettino leaving USMNT to become Man United coach theScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T23:00:54.380853+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM0ZNN1VoTDdicDJQcDFiUk1iSklmVjJxNnVtX0lOclh2d3E5UW5UVjhfUmdGQmdSc1NaZ3F3Um90RUJMZVdMS2pOU2tPRXNFa1dyX0VKR01FZnVjNUlGQ2hzNWtBTnotV25CcEdOeEk2LW05RlE5R1FoN01mSGR1U3V4OTZ4ZWdaVW5GSldjNElydE9PQm4zTng4SVUtT3ZJakktbw?oc=5",
-      "published": "2026-11-12T22:56:16+00:00",
-      "publisher": "https://www.thescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Report: Pochettino leaving USMNT to become Man United coach - theScore"
     }
   ],
   "processed_urls": [
