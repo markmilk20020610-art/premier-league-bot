@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 12,
+        "calls": 13,
         "errors": 0,
-        "requests": 12
+        "requests": 13
       }
     },
-    "calls": 12,
+    "calls": 13,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 79902,
-    "output_tokens": 9365,
-    "requests": 12
+    "input_tokens": 85611,
+    "output_tokens": 9888,
+    "requests": 13
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T01:00:49.579585+00:00",
+  "last_scan_at": "2026-11-13T02:01:41.467451+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3254,6 +3254,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Record-breaking Harry Kane belongs in the company of greats that he keeps. There is only one gap in his record now and he remains as central"
+    },
+    {
+      "desc": "Arsenal Classic Bear Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T02:01:41.469876+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PMUtqR1NXZ2NzVHVxRVNSWEVKcFExU0k0dVhhNThpRjM3a2Zjc1FWZ1V1NFoxS3NXY3I0bTRheEdmeVk3dUlxMmQwMVQ2Rkt2QUkyQ25meXdwNXZTa3l0azR2ZFAwU2haemtvbC1LTm9JMHVYSWxVZ2FpRnM0Z2c?oc=5",
+      "published": "2026-11-12T23:35:33+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal Classic Bear - Arsenal Direct"
     },
     {
       "desc": "MORGAN ROGERS has leapt to the defence of Cole Palmer after his snub from the England squad. Three Lions boss Thomas Tuc",
@@ -3674,6 +3684,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Report: Barcelona 1-1 Arsenal Women - Arsenal.com"
+    },
+    {
+      "desc": "A club statement - Manchester United Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T02:01:41.470257+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOekNSeDgwZ0RBd1hQc1hwTDA3NnlqZGt4cVVGazJKaFptMVJhbHQ2bHhrNG83QTg4blIyV3d4WDhtTHBnc09ZZXk5a1E3SWpkaW84U0RZX1J0YXhZdWE0eVU2T0kwVFBZUDhOQXdRREs0cFZSS1NORVBweHNqc1o2aU9GMVk?oc=5",
+      "published": "2026-11-12T20:15:18+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "A club statement - Manchester United - Manchester United"
     },
     {
       "desc": "Follow Daily Mail Sport's live blog as England host Croatia at Wembley in the Nations League.",
@@ -4684,26 +4704,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd supporter group demands owners explain themselves after Carrick sacked in ‘another depressing moment’ for club"
-    },
-    {
-      "desc": "Crystal Palace have sacked manager Pierre Sage after 16 games in charge and the club bottom of the table.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-12T13:00:53.511818+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cv5y18lkk87do?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-12T12:23:47+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Crystal Palace sack boss Sage after 16 games"
-    },
-    {
-      "desc": "TOTTENHAM star Dejan Kulusevski has admitted he was left disappointed by the way some people handled his injury nightmar",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T13:00:53.511847+00:00",
-      "link": "https://www.thesun.co.uk/sport/41001347/tottenham-star-kulusevski-injury-sweden-xavi-simons/",
-      "published": "2026-11-12T12:23:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tottenham star Kulusevski admits he’s ‘disappointed’ with handling of his injury after spending 526 DAYS out of action"
     }
   ],
   "processed_urls": [
