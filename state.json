@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 146213,
-    "output_tokens": 17096,
-    "requests": 24
+    "input_tokens": 152144,
+    "output_tokens": 17816,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T11:01:09.425959+00:00",
+  "last_scan_at": "2026-11-13T12:00:55.299892+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3205,6 +3205,46 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MAURICIO POCHETTINO was not on Manchester United's radar until late last month. The USA boss is expected to be announced",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T12:00:55.303714+00:00",
+      "link": "https://www.thesun.co.uk/sport/41012468/mauricio-pochettino-man-utd-manager-job/",
+      "published": "2026-11-13T11:39:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino wasn’t on Man Utd’s radar until late last month but he’s finally getting job he’s always craved"
+    },
+    {
+      "desc": "FRANCE manager Zinedine Zidane will be without Dayot Upamecano as he looks to bounce back from a humbling loss. The tact",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T12:00:55.303749+00:00",
+      "link": "https://www.thesun.co.uk/sport/41012790/france-star-quits-zinedine-zidane-squad/",
+      "published": "2026-11-13T11:28:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "France star QUITS Zinedine Zidane’s squad after shock Nations League defeat to Italy"
+    },
+    {
+      "desc": "Re - Chelsea FC Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T12:00:55.303780+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5CTmZWR184aXM4SmUwLVFqM3dZME5FS2N3bmc4WDJJUDdhZjJuckd5cGJ6WjVjYzdYMGhjRVlzMzBSNEZuUmNBcUtDZ2J3S0s4UmhyYlR3VFo4RTF1NUFuWHFKSlI4UFRzSTQ4dS1xdVNoUXY0eHFBSWlR?oc=5",
+      "published": "2026-11-13T11:21:04+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Re - Chelsea FC - Chelsea Football Club"
+    },
+    {
+      "desc": "Lewis Koumas and Trey Nyoni surprise local pupils at LFC Foundation 'Onside' session Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T12:00:55.303811+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVGNrT0NEbFNBclBHUmZOc3NIblQxRU4xV2hrc05JRW56RUI4QWdwNUhfUW1vdmF6b3dGSTBNZmRTdmFJRm1mZHp3ZENLZzZOWUlENG5OUXZLcWRpaDJwNlBiT1RLclM0MGNTZEZNQzlYYkROaTdLbVhjeFNXOUYzUU9SYVJiVm9OTTExVTl2MEpiR1ZnaFg5Ni1wWjd2Sk5qVk5kZjZzR2duOU5H?oc=5",
+      "published": "2026-11-13T11:02:55+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Lewis Koumas and Trey Nyoni surprise local pupils at LFC Foundation 'Onside' session - Liverpool FC"
+    },
     {
       "desc": "What to do with Palmer in FPL? Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3284,6 +3324,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Tottenham Hotspur's Tyrese Hall wins PL2 Player of the Month for October - Premier League"
+    },
+    {
+      "desc": "BREAKING: Pochettino officially set to be unveiled by Man United Soccer News",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T12:00:55.304010+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbmc3ZHhMZEo2UlRGT0pyaHpydnhrbWJQc2hxYVJkMXBHTmlnZGpPdmNvYUZOeFM2OTE0cHRLM0FQN0J6UUxNSmVZWERQQXFtMUplcFJuNGFNb2pQbnd5bjdQQ1kzai16RFFZYXFmUlJUNVg4Rmk0eWlLemkzOXh5dTBLSUVYWlZNODB0MUg3WDM3RmRFWWY3b1d1bm40TzQ?oc=5",
+      "published": "2026-11-13T10:21:28+00:00",
+      "publisher": "https://www.soccernews.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "BREAKING: Pochettino officially set to be unveiled by Man United - Soccer News"
     },
     {
       "desc": "'The Big Interview' with Rio Ngumoha: Fearless approach, versatility and guidance Liverpool FC",
@@ -4654,56 +4704,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Mauricio Pochettino faces nightmare Man United start as it emerges he WILL take charge of USA game in early hours of Wednesday - cutting pre"
-    },
-    {
-      "desc": "Our top 10 gift ideas for Liverpool fans this Christmas - shop now Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T23:00:54.381978+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUFFfT29odVoySzl5am9pN3p5a2djZFRtNjFKUUFaa1B3QjRxNGtzem9BcmN1WDBpUjZhcHd5TmtUcVBhRVZUU0FtbHZuaUVpZFBVajd1UGVKQkUzNjUwSWpoNEpoX0V3ZURwcWUzdS1SbTVtYlJBdEpCd2ZkaU9FS3BRSUNEcjduUDdOTmlXcXhUZ1Vieml1bVBiNFdaQQ?oc=5",
-      "published": "2026-11-12T16:05:48+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Our top 10 gift ideas for Liverpool fans this Christmas - shop now - Liverpool FC"
-    },
-    {
-      "desc": "Fabrizio Romano Transfer News: Zubimendi to Chelsea truth, Pochettino deal, Guardiola to USMNT? FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:50:04.663491+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdVRDVzlvMjZQVGtKXy1PT0JSWlg5NWc3Ym8zV3lQZ3UzWnhXemdqMExZRDlKZ2lvSHQwclp5TnBMZWVJaU1qWU5UREF2d2VLZjBDUW95SVFLWGw2RlY2TERiX0ZFU2hxUHBSMXE5cV9hck8xNWRBVWs4YndZeldZR3ZxT2FMbXNZMnNEQWd1QkVsai13ZS0xZU1zNmFiRnNURWRBWHZkNWFVNnV5VXJuMEFIVUxOTmU2VmNQeXNDRXN5eFE1U2tkYjA0c2xjdHlJV21pd01QWjgyeXVKOVY0ejZCNF8zYTd6emxRNWQ4c0RLTEpNVW5vaTJBU1J0cDd3YVB1ZTg0alpTRmM?oc=5",
-      "published": "2026-11-12T16:05:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Transfer News: Zubimendi to Chelsea truth, Pochettino deal, Guardiola to USMNT? - FootballTransfers.com"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T20:00:47.433771+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdHRWVFU4UndnQXRuQk5na2ExYkRRWDhaR25RTm15THd6X0Zpc3lLMzZWT2tRMjczMXVzZzVnOWtkanV2SUFRTjRwaDQtbExVMjRuQ2dQZlZURWFsZVhTeWctNHFFYk9IdkhONlBtS01fUmMwWTRxVk5mRjJmWFlZUE4xNEh4anNhcDN1SnNlOXRoZHBzZWE0T29OMXZrTm5RaDhUa3Bya21odHlYSFNGSjNLTWRaRTQ?oc=5",
-      "published": "2026-11-12T16:03:25+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T18:01:02.596768+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-11-12T16:02:13+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
-    },
-    {
-      "desc": "INTERNATIONAL football returns as England take on Croatia tonight. The Three Lions have won three of their four games in",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T16:50:04.663566+00:00",
-      "link": "https://www.thesun.co.uk/sport/40964394/england-vs-croatia-tv-channel-live-stream-free-nations-league/",
-      "published": "2026-11-12T16:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England vs Croatia TV channel and live stream: How to watch Nations League clash"
     }
   ],
   "processed_urls": [
