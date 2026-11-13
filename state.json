@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 11,
+        "calls": 12,
         "errors": 0,
-        "requests": 11
+        "requests": 12
       }
     },
-    "calls": 11,
+    "calls": 12,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 74289,
-    "output_tokens": 8728,
-    "requests": 11
+    "input_tokens": 79902,
+    "output_tokens": 9365,
+    "requests": 12
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2110,6 +2110,41 @@
       "title": "阿斯顿维拉1-1富勒姆：铃木彩艳乌龙送礼，麦金失点",
       "updated_at": "2026-10-31T22:22:28.881729+00:00"
     },
+    "93e86301d27e": {
+      "article_title": "Bruno Fernandes snubs second new contract offer from Man United in early headache for incoming manager Mauricio Pochettino - with star free",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "bf550197a766abfa",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 131
+        }
+      ],
+      "created_at": "2026-11-13T01:00:55.724557+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "eec24734319fdc34",
+      "event_id": "93e86301d27e",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-13T01:00:55.724557+00:00",
+          "origin": "created",
+          "title": "Bruno Fernandes snubs second new contract offer from Man United in early headache for incoming manager Mauricio Pochettino - with star free",
+          "url": "https://www.dailymail.com/sport/football/article-16288805/Bruno-Fernandes-REJECTS-second-new-deal-Man-United-Michael-Carrick-sacked.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16288805/Bruno-Fernandes-REJECTS-second-new-deal-Man-United-Michael-Carrick-sacked.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 131,
+      "title": "B费拒绝曼联第二份续约报价，合同明夏到期",
+      "updated_at": "2026-11-13T01:00:56.422219+00:00"
+    },
     "9b5124bd8492": {
       "article_title": "Spanish FA postpone all matches following tragic death of Jesus de Miguel after horror collision with keeper on pitch",
       "attempts": 1,
@@ -3149,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T00:01:00.409148+00:00",
+  "last_scan_at": "2026-11-13T01:00:49.579585+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3171,6 +3206,56 @@
   },
   "news_pool": [
     {
+      "desc": "Bruno Fernandes has rejected a new contract at Manchester United against the turbulent backdrop of the departure of head",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T01:00:49.583341+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16288805/Bruno-Fernandes-REJECTS-second-new-deal-Man-United-Michael-Carrick-sacked.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T00:24:45+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Bruno Fernandes snubs second new contract offer from Man United in early headache for incoming manager Mauricio Pochettino - with star free "
+    },
+    {
+      "desc": "FORMER England ace Dele Alli is closing his image rights company — but is set to pocket £7.6million from the move. Dele ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T01:00:49.583407+00:00",
+      "link": "https://www.thesun.co.uk/sport/41010166/dele-alli-shuts-firm-windfall/",
+      "published": "2026-11-13T00:13:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former England ace Dele Alli set for eye-watering windfall as he shuts down image rights firm"
+    },
+    {
+      "desc": "CHRIS WHEELER AND DANIEL MATTHEWS: It was time for Carrick to vacate the head coach's office at Manchester United, and P",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T01:00:49.583472+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16288185/Man-United-staff-treatment-Michael-Carrick-disgusting-comment-Omar-Berrada-legend-misery-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T23:42:52+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Why Man United staff feel treatment of Michael Carrick was 'disgusting' and the comment from Omar Berrada that raised eyebrows as club legen"
+    },
+    {
+      "desc": "After missing out on selection for the World Cup, Palmer was called up to the group for the first international break of",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T01:00:49.583513+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16288883/Morgan-Rogers-Cole-Palmer-commitment-England.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T23:41:41+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'It's a LIE': Bullish Morgan Rogers hits back at claims Cole Palmer isn't committed to England as Three Lions star appears to suggest Thomas"
+    },
+    {
+      "desc": "OLIVER HOLT AT WEMBLEY: It is just 16 days since Kane held his hands to his face, climbed up to the stage and said 'wow'",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T01:00:49.583551+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16287053/England-2-1-Croatia-Nations-League-Harry-Kane.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T23:40:06+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Record-breaking Harry Kane belongs in the company of greats that he keeps. There is only one gap in his record now and he remains as central"
+    },
+    {
       "desc": "MORGAN ROGERS has leapt to the defence of Cole Palmer after his snub from the England squad. Three Lions boss Thomas Tuc",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-13T00:01:00.412955+00:00",
@@ -3189,6 +3274,16 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Pochettino to Man Utd 'done' as Ornstein reveals huge contract detail and when 'announcement' is due - Football365"
+    },
+    {
+      "desc": "Highlights: Barcelona 1-1 Arsenal Women Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T01:00:49.583654+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORldMUThqNFdkcGxGSFE4cWJhMy1RU2FJUmotYTR0TTl2YzJZejg3a1F3cjduSHE0cjREOXhaUzdwNEJwT0doNDB2MHRRUVR6R1h5QUs5UVVsMG1sc2JWRVlrSXJWZ0RJMW5HcjEwOFRCV056NFRnUnM2U1dvWm44Yk15bV9hWkk?oc=5",
+      "published": "2026-11-12T23:12:43+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Highlights: Barcelona 1-1 Arsenal Women - Arsenal.com"
     },
     {
       "desc": "Ornstein drops huge Pochettino update as Man Utd contract length, likely announcement date revealed TEAMtalk",
@@ -3341,6 +3436,16 @@
       "title": "On Harry Kane’s big night, Jude Bellingham proves he’s ready to shatter record.. but forced to wait to play with brother"
     },
     {
+      "desc": "Jack Grealish made his first Everton appearance since being suspended for missing training as he helped a scratch XI bea",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T01:00:49.584017+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16288641/Jacks-Grealish-Everton-return.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T22:13:33+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Jack Grealish APOLOGISES after being dropped for missing training without permission as Everton star continues comeback trail in behind-clos"
+    },
+    {
       "desc": "Jack Grealish issues an apology to Everton fans for his recent absence due to a disciplinary issue.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-12T22:28:56.411116+00:00",
@@ -3359,6 +3464,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Where does Kane rank among all-time England greats?"
+    },
+    {
+      "desc": "Harry Kane scored on his record 126th appearance for England as they beat Croatia 2-1 at Wembley in the Nations League. ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T01:00:49.584105+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16287059/england-croatia-player-ratings.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-12T22:07:55+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "England 2-1 Croatia PLAYER RATINGS: Whose position is under 'serious' threat? Which two regulars need to show more? And who was at the heart"
     },
     {
       "desc": "Internationals: Rogers on target, Gusto features for France | News | Official Site Chelsea Football Club",
@@ -3519,6 +3634,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Maanum: “I always want to hunt those rebounds!” - Arsenal.com"
+    },
+    {
+      "desc": "Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T01:00:49.584388+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
+      "published": "2026-11-12T20:37:47+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "- Arsenal Direct"
     },
     {
       "desc": "GIANLUIGI DONNARUMMA made a catastrophic error to gift France a goal in their Nations League clash against Italy. The Ma",
@@ -3779,6 +3904,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Wolverhampton Wanderers U21 vs Middlesbrough U21 | Line-Ups & Squads | 2026/2027 - Premier League"
+    },
+    {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T01:00:49.584604+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE80bXBDcEJHaUpaNnpNZUNtRHBBOWo2dEVZY1RTVjFwYm1PamtKOThyV19FZF9qZW9aRW9STXYzSGFaem1GTzNGUl9ycmZVN05WY3JDNVFwTzY1VkFtemNoUklxeGpyRW1SYTQwSkRoY2otN1dpcmpWeTJn?oc=5",
+      "published": "2026-11-12T18:23:34+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
     },
     {
       "desc": "Fabrizio Romano confirms Man United’s January transfer plans EPL Index",
@@ -4569,106 +4704,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Tottenham star Kulusevski admits he’s ‘disappointed’ with handling of his injury after spending 526 DAYS out of action"
-    },
-    {
-      "desc": "THOMAS TUCHEL evidently doesn't take Dream Team points into account when selecting his England squads but maybe he shoul",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T13:00:53.511870+00:00",
-      "link": "https://www.thesun.co.uk/sport/40999761/james-justin-marcus-tavernier-england-xi-dream-team/",
-      "published": "2026-11-12T12:22:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "James Justin and Marcus Tavernier make England XI determined by Dream Team points"
-    },
-    {
-      "desc": "Man United's key decision makers, including chief executive Omar Berrada and technical director Jason Wilcox, have not i",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-12T16:50:04.664611+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16286961/Rio-Ferdinand-labels-Man-United-Michael-Carrick-sacking-Chat-GPT-142-word-statement-sent-communications-department-no-message-club-chiefs.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T12:22:14+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Rio Ferdinand labels Man United's Michael Carrick sacking 'like ChatGPT' - with 142-word statement sent by communications department and no "
-    },
-    {
-      "desc": "James Milner to return to Anfield for LFC Legends charity match Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T13:00:53.511898+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS3BNWllYOHFTN0Vud01BTzR6akxnTUdEbXNHNkFDU01DRkZaWlVnQW1tSklTWWVpRG1seDRRZXUtcUd5OHdDR0JlWUk1bjRka05VZm1qOE9xLXhkbHlkSk1Kd05GV21vLTZoMFBNWFg3QTJ5Q09nRXNRTG50ZUs2ZmlHN2tldkZIR1JSY2VrVDkzR01Nb2M5ekxoUUM?oc=5",
-      "published": "2026-11-12T12:09:35+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "James Milner to return to Anfield for LFC Legends charity match - Liverpool FC"
-    },
-    {
-      "desc": "Arsenal Taylormade Champions Tri-fold Cotton Golf Towel Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T15:01:03.048632+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTVZtVnhMbldqbnVDV2NKbV9HMXQ3MXhmaWxhY2dNZDd0YlhiZG1LNXZ0WnNmeUlYNE5zMm43WHN2ZnBTWnpoT0o1eG5fX1lSZHkxanZ5RGw2VWN4dUNNWlFEVzBqaHNza2N3RFJCelB3NEU2YWxQZGdXRXZPV0llZEdpMmxjZDRjcDQ1cFUxTU1zSnBmSXBzT1hZNGEzNUpLeWM0WFNrUQ?oc=5",
-      "published": "2026-11-12T12:09:18+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal Taylormade Champions Tri-fold Cotton Golf Towel - Arsenal Direct"
-    },
-    {
-      "desc": "BARCELONA fans can continue supporting their beloved team in the afterlife by INTERRING THEIR ASHES at the Nou Camp. But",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T12:00:59.100278+00:00",
-      "link": "https://www.thesun.co.uk/sport/40998952/barcelona-fans-ashes-nou-camp-laliga/",
-      "published": "2026-11-12T11:59:08+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Barcelona fans can support team in the afterlife by having ASHES interred at Nou Camp – for eye-watering price"
-    },
-    {
-      "desc": "MANCHESTER UNITED have finally sacked Michael Carrick after a disastrous start to the season. The decision to hand the b",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T12:00:59.100317+00:00",
-      "link": "https://www.thesun.co.uk/sport/40999094/man-utd-manager-hiring-firing-costs-pochettino-michael-carrick/",
-      "published": "2026-11-12T11:52:59+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd will hit £100MILLION mark for hiring and firing managers post-Sir Alex Ferguson once Pochettino replaces Carrick"
-    },
-    {
-      "desc": "CHELSEA wonderkids Ryan Kavuma-McQueen and Mahdi Nicoll-Jazuli put the hype into hyphenated as Blues youngsters starred ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T12:00:59.100347+00:00",
-      "link": "https://www.thesun.co.uk/sport/40999960/chelsea-kavuma-mcqueen-nicoll-jazuli-england/",
-      "published": "2026-11-12T11:52:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea wonderkids Ryan Kavuma-McQueen and Mahdi Nicoll-Jazuli steal show on England duty with 12 Cobham stars on show"
-    },
-    {
-      "desc": "The United States have cancelled media access scheduled for Wednesday as Manchester United prepare to make a move for th",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-12T17:01:02.574179+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16283683/michael-carrick-manchester-united-sacking-monaco.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T11:50:23+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United set to appoint Mauricio Pochettino as head coach: Club make formal approach to US Soccer after agreeing personal terms - with Mic"
-    },
-    {
-      "desc": "Peter Schmeichel has hit out at the 'very disrespectful' way that he believes beleaguered Manchester United manager Mich",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-12T19:00:51.291544+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16285221/Man-United-legend-Peter-Schmeichel-disrespectful-treatment-Michael-Carrick-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T11:48:03+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Peter Schmeichel fumes at Man United for 'very disrespectful' treatment of Michael Carrick as Mauricio Pochettino closes in on Old Trafford "
-    },
-    {
-      "desc": "'I can't fault the effort' - the benefits of Liverpool's Jersey Mike's Trophy involvement Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:01:00.292173+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQV1Y5bEpwQnBsY084Y1hBRGNXSDlyTWlGZFlSaEVLSkItVk9UVVJiY2RYOEp0MEJ3dVlOTnhtRXB1N2NuMkotOHhaNENKOGdMYW1Jd2pwNWI0VHprTmlrbENPUC1XSTRSb3ZkTGZ6Q1RLd2E3YnhWbTZ1V2M3UDJPV0JHdXNRdw?oc=5",
-      "published": "2026-11-12T11:46:36+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "'I can't fault the effort' - the benefits of Liverpool's Jersey Mike's Trophy involvement - Liverpool FC"
     }
   ],
   "processed_urls": [
@@ -4774,7 +4809,8 @@
     "https://www.thesun.co.uk/sport/41005536/when-mauricio-pochettino-man-utd-manager",
     "https://www.thesun.co.uk/sport/41007690/fifa-lose-court-battle-world-cup-gianni-infantino",
     "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ",
-    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnZvdHNNQ1JNeU0yZFBtRVYwTGVZZ0EzTW9Iek5oVWVDMHZYS3g0WGtDWUc2TktHa0I3Wm91Zk5kWUpkUDFkemNFX05yelBKcmhPS2RPeEJMT1F4dVVmUkwzVXYzaW9sYkpHWFYwSmxzcXBaa28yWnJlc1gzajBVZXAweXBtU0FmLWpmc1JIU3Z1MGVzUXI4cXp3STAyN3NDaFZUa2pYLVJoNmhlZjIzTzVXdFRXcW5YaXFYak5iNnpkaGo0QzIxcA"
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnZvdHNNQ1JNeU0yZFBtRVYwTGVZZ0EzTW9Iek5oVWVDMHZYS3g0WGtDWUc2TktHa0I3Wm91Zk5kWUpkUDFkemNFX05yelBKcmhPS2RPeEJMT1F4dVVmUkwzVXYzaW9sYkpHWFYwSmxzcXBaa28yWnJlc1gzajBVZXAweXBtU0FmLWpmc1JIU3Z1MGVzUXI4cXp3STAyN3NDaFZUa2pYLVJoNmhlZjIzTzVXdFRXcW5YaXFYak5iNnpkaGo0QzIxcA",
+    "https://www.dailymail.com/sport/football/article-16288805/Bruno-Fernandes-REJECTS-second-new-deal-Man-United-Michael-Carrick-sacked.html"
   ],
   "s_overflow": {},
   "schema_version": 4
