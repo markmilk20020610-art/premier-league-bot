@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 54693,
-    "output_tokens": 5586,
-    "requests": 8
+    "input_tokens": 60738,
+    "output_tokens": 6233,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3286,10 +3286,45 @@
       "telegram_message_id": 96,
       "title": "切尔西球迷怒斥摩根·罗杰斯逃红：VAR为何不介入？",
       "updated_at": "2026-11-08T20:05:42.127072+00:00"
+    },
+    "fcfbd39949b4": {
+      "article_title": "Goalkeeper involved in fatal collision gets 12-game ban",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "2c2d5fabd886eb74",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 136
+        }
+      ],
+      "created_at": "2026-11-13T23:01:01.589199+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "5a223ae7f00eefac",
+      "event_id": "fcfbd39949b4",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-13T23:01:01.589199+00:00",
+          "origin": "created",
+          "title": "Goalkeeper involved in fatal collision gets 12-game ban",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 136,
+      "title": "门将赫苏斯·奥沃诺因致命碰撞被西班牙足协禁赛12场",
+      "updated_at": "2026-11-13T23:01:02.341961+00:00"
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-13T22:00:53.491032+00:00",
+  "last_scan_at": "2026-11-13T23:00:56.425147+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3310,6 +3345,116 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "What can Manchester United fans expect from their new manager Mauricio Pochettino? BBC Sport gets an insight from Toby A",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T23:00:56.428872+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T22:53:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Fitness obsessed & 'control freak' - what can Man Utd expect from Pochettino?"
+    },
+    {
+      "desc": "MAX DOWMAN became the youngest-ever England Under-21 player as he made his debut aged just 16. The teenager’s second-hal",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T23:00:56.428911+00:00",
+      "link": "https://www.thesun.co.uk/sport/41021224/max-dowman-hailed-england-break-bellingham-record-youngest-player/",
+      "published": "2026-11-13T22:51:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Max Dowman hailed as ‘outstanding’ as Arsenal prodigy breaks Jude Bellingham record for England U21s"
+    },
+    {
+      "desc": "The top stories and transfer rumours from Saturday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-13T23:00:56.428938+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13611965/man-utd-transfer-news-como-star-nico-paz-emerges-as-target-ahead-of-summer-transfer-window-paper-talk",
+      "published": "2026-11-13T22:51:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Man Utd eyeing move for Como star Paz"
+    },
+    {
+      "desc": "But things haven't gone to plan in Italy, with De Bruyne struggling for fitness in his first season, while he also clash",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T23:00:56.428981+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16290027/kevin-bruyne-napoli-exit.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T22:47:09+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Kevin De Bruyne to leave Napoli 'the sooner the better', his wife announces: Man City legend, 35, desperate to quit his 'not nice existence'"
+    },
+    {
+      "desc": "Jesus Owono is given a 12-match suspension by the Spanish football federation's disciplinary committee after his challen",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T23:00:56.429015+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T22:37:30+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Goalkeeper involved in fatal collision gets 12-game ban"
+    },
+    {
+      "desc": "NATHAN SALT AT ASHTON GATE: Max Dowman smashed Jude Bellingham's record to become the youngest player to play for Englan",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T23:00:56.429051+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16290173/Arsenal-Max-Dowman-Jude-Bellingham-record-Thomas-Tuchel-Euro-2028-England-U21s-defeat-Portugal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T22:31:27+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Arsenal star Max Dowman smashes Jude Bellingham's record - but a less-familiar name should catch Thomas Tuchel's eye ahead of Euro 2028: THI"
+    },
+    {
+      "desc": "The goalkeeper involved in the collision that killed Spanish footballer Jesus de Miguel has been hit with a 12-match ban",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T23:00:56.429088+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16291441/jesus-miguel-death-goalkeeper.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T22:18:38+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Goalkeeper involved in fatal collision with Spanish footballer Jesus de Miguel given 12-MATCH ban - and may never return to football"
+    },
+    {
+      "desc": "MANCHESTER UNITED fans have sent a message directly to new boss Mauricio Pochettino over the future of one academy star.",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T23:00:56.429116+00:00",
+      "link": "https://www.thesun.co.uk/sport/41020285/mauricio-pochettino-man-utd-fans-message-lacey-england/",
+      "published": "2026-11-13T22:17:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘He’s the future’ – Man Utd fans message to Mauricio Pochettino as academy graduate scores two on England duty"
+    },
+    {
+      "desc": "Of 252 clubs in the top seven tiers of English football the last one unbeaten can be found at Meadow Park, yards from th",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T23:00:56.429155+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16280691/Boreham-Wood-Luke-Garrard-national-league-promotion.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T22:17:23+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside Boreham Wood, the only unbeaten team in England's top seven tiers: Boss LUKE GARRARD explains how play-off heartache and a 'genius' o"
+    },
+    {
+      "desc": "MORGAN ROGERS is not set to be punished after passionately defending Cole Palmer following his England snub. The attacki",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T23:00:56.429184+00:00",
+      "link": "https://www.thesun.co.uk/sport/41020483/thomas-tuchel-reacts-morgan-rogers-rant-cole-palmer-england/",
+      "published": "2026-11-13T22:07:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Thomas Tuchel reacts to Morgan Rogers’ passionate rant in defence of axed Chelsea pal Cole Palmer after England snub"
+    },
+    {
+      "desc": "Manchester United are targeting Como midfielder Nico Paz as new manager Mauricio Pochettino prepares to receive backing ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T23:00:56.429215+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq39glw42xkjo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T22:05:14+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd want Paz, Chelsea target Kounde - Saturday's gossip"
+    },
     {
       "desc": "BILLY GILMOUR produced one of the worst misses of the season during Scotland's Nations League clash with North Macedonia",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3371,6 +3516,16 @@
       "title": "Mauricio Pochettino is £10m gamble for Man Utd.. he must take sledgehammer to toxic culture and follow Arsenal blueprint"
     },
     {
+      "desc": "'There are 20 other top clubs': Fabrizio Romano clarifies Nico Paz links with Man United Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T23:00:56.429451+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSUhrRHJkSGxhd3Y5ckRQaG1uaFhnMlRRX0FLQ2FYZzFqbXpiN3FqUVl6S0VNQVd5Qmx0OUs0RGkzRnE3bjFxNUFZOEdIM0ZGQ2hxYmdpUUVjUHg1VHQ1X25VZjI0QWhyV0hMYVlGMXlzTkNDWkZLaHFvM0dZQ3ZudVJGaUFOMnlSZWYwWWFwVTlwb2c3RWhXdDNvQWpjV0xXbTlBbXZ0TXlYUlVSaVFkWDRJQ1NyZGt3Yl9tNjBRYW1vOTjSAcgBQVVfeXFMTWpBLWtMVmJEUm96T1QwSlVGZzUwMlgwVkIwaks3LWhFb1Z1dUJLcFFQclFIc2dzbzhwY1lIZzdLYjdfMFlDb09PckVtd1RzZHFDUkZydWQ5ZWNDcEZlOF9FWVV2VGxkM1haZmMyY1JiNFA0OFFkVWdLTGdrRTU2TzRZVHVPWUt1UGt5d2JNQnEzWFA1LTdWcUhRTnVFTTRNSEJuNklvbG1uYWZvcDlrSDQ5eDFjWXYzTmw1ZzdtbG92em9HYzFTTXM?oc=5",
+      "published": "2026-11-13T21:09:12+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "'There are 20 other top clubs': Fabrizio Romano clarifies Nico Paz links with Man United - Tribuna.com"
+    },
+    {
       "desc": "THERE is an extraordinary postscript to Roman Abramovich’s ownership of Chelsea Football Club. He has gone, the club has",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-13T21:00:58.709523+00:00",
@@ -3421,6 +3576,16 @@
       "title": "Mo Salah’s Egypt manager SACKED after he fainted when his two wives punched and pulled hair in wild bar brawl"
     },
     {
+      "desc": "The celebration - called 'The King's Return' - was popularised by an evangelical network of footballers called Ballers i",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T23:00:56.429606+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16289997/jurgen-klopp-felix-nmecha-germany-celebration.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T20:09:22+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Jurgen Klopp reveals he confronted Germany star over controversial crown celebration with links to 'anti-LGBTQ+ group' - and promises he won"
+    },
+    {
       "desc": "Spurs Adult Stainless Steel Chunky Bracelet I Spurs Tottenham Hotspur",
       "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-13T21:00:58.709680+00:00",
@@ -3461,6 +3626,16 @@
       "title": "'It's a shootout' - Wales out to derail stuttering Norway"
     },
     {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T23:00:56.429735+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-13T19:50:33+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
       "desc": "Kroupi to Arsenal: TEAMtalk Says Bournemouth Won’t Sell in January The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-13T20:00:52.008550+00:00",
@@ -3489,6 +3664,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League cult icon, 37, has contract TERMINATED after Chapecoense relegated to Brazilian Serie B"
+    },
+    {
+      "desc": "El-Gharbawy and Mustafa were videoed arguing with Hassan in the middle attempting to cool tensions, but the duo came to ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T23:00:56.429847+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16290573/Egypt-sack-manager-negative-image-fainted-fight-TWO-wives-punches-hair-pulling.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T18:48:43+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Egypt sack their manager for 'negative impact on team image' after he fainted when fight broke out between his TWO wives with punches and ha"
     },
     {
       "desc": "SCOTT PARKER is the right man to spearhead West Ham to promotion despite making a woeful start in the hotseat, according",
@@ -3539,6 +3724,16 @@
       "publisher": "https://www.givemesport.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano Delivers Bruno Fernandes Man Utd Future Update After Pochettino Appointment - GiveMeSport"
+    },
+    {
+      "desc": "Former Tottenham star Dele Alli is set for a mammoth £7.6million payday in as he plans to close down his image rights co",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-13T23:00:56.429926+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16290001/Former-England-star-Dele-Alli-line-huge-8-3m-payday-selling-image-rights-company.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-13T18:07:58+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Former England star Dele Alli in line for huge £8.3m payday after selling his image rights company"
     },
     {
       "desc": "'No negotiations ongoing': Fabrizio Romano delivers update on Zubimendi-Alvarez swap deal rumours Tribuna.com",
@@ -3619,6 +3814,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Key talking points from Sonia Bompastor's pre-Man City press conference | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Sonia Bompastor named WSL Manager of the Month | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T23:00:56.430053+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQelhXYm9uMFNYQ0l2RzJDZ1lob01mdTZvNkRLY2ljWEhTNGZyTTlLbzVOcVJwZk5NeVFxNEdPellQRFcwaEdrZGFmamx5LTBBUzlBNlJmMHFpQzVRTGlYWTdkeGFKZlFoMXZHZDFZQXVLQUM5SllQeGVvUGtIQ1BkWHNGczBvWjlOVHdEVWpSa3QtQQ?oc=5",
+      "published": "2026-11-13T16:45:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Sonia Bompastor named WSL Manager of the Month | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "JOHAN CRUYFF'S footballing legacy will continue after his grandson earned an international call-up - but not with Hollan",
@@ -4639,176 +4844,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Beckham to be inducted into US Soccer Hall of Fame"
-    },
-    {
-      "desc": "Ahead of Northern Ireland's Nations League outing with Ukraine in Belfast, who would you pick in your starting team at W",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T11:01:09.430682+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5y4jlplner0o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T08:21:40+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who makes your Northern Ireland XI against Ukraine?"
-    },
-    {
-      "desc": "DARTS star Chris Dobey has revealed an unlikely friendship with Croatia international Marcelo Brozovic. The world No 16 ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T09:01:11.271095+00:00",
-      "link": "https://www.thesun.co.uk/sport/41011016/chris-dobey-marcelo-brozovic-friendship-world-cup-darts/",
-      "published": "2026-11-13T08:17:40+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Darts star Chris Dobey reveals unlikely friendship with World Cup finalist he tried to get to sign for Newcastle"
-    },
-    {
-      "desc": "BBC Sport columnist Tony Pulis explains some of the different ways a manager can leave a club, whether they have been sa",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T09:01:11.271117+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cve8716dg46xo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T08:13:19+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "From postcards to texts, the different ways a manager gets the sack - Pulis"
-    },
-    {
-      "desc": "Erling Haaland can seem unstoppable - but Wales managed it a month ago. In Norway on Saturday, they hope the plan will w",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T09:01:11.271136+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c3y0e0z0r8kzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T08:05:12+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How do you stop Haaland? Wales show how it's done"
-    },
-    {
-      "desc": "Finance Director – Financial Control Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T10:24:03.456702+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOUN4alhpSENSSmRfa2YtZWJDYWRxR0Y2ZWFBallCWFJMamprYldFX3ZZUXVvS283ZEFBU1VCdnExOURyemZOalEwcmdqanVrNHdSZnRFdUVhQnBJc2FKc0NlekxuS1djRzhDQ3hUR1laRk5sd3VlempfVXNVSGlvQQ?oc=5",
-      "published": "2026-11-13T08:01:57+00:00",
-      "publisher": "https://careers.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Finance Director – Financial Control - Manchester United"
-    },
-    {
-      "desc": "GERMANY find themselves outside the top two heading into the penultimate Group A2 clash in the Nations League at Serbia.",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T09:01:11.271152+00:00",
-      "link": "https://www.thesun.co.uk/sport/40987447/serbia-germany-tote-free-bets/",
-      "published": "2026-11-13T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Serbia vs Germany: Get £20 in Nations League free bets when you stake £5 with Tote"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T14:00:52.443327+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZ1Z4REV6Ylh6eHVGSVkyZHBDV3pIZmZaTU5tODhqaFZUZFBzdkFwMGs2b19sNEFoWWk5ZFR6SjlYc2hMa2VaZXNHdkFPUTBKdXgzU1ROU2lCQTlzWmJlMDhpekVmOGxxb0tkZ2lhNXRSTEl6bVJrY2JGaXAyWnlTaHNhcw?oc=5",
-      "published": "2026-11-13T07:59:27+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
-    },
-    {
-      "desc": "JAMES MILNER is set to return to Anfield to star in a Liverpool legends match. The 40-year-old only retired at the end o",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T08:00:55.891116+00:00",
-      "link": "https://www.thesun.co.uk/sport/41010972/james-milner-liverpool-legends-debut/",
-      "published": "2026-11-13T07:55:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "James Milner to make Liverpool Legends debut vs European giants as fans say: ‘He’s going to run rings around everyone’"
-    },
-    {
-      "desc": "BRIGHTON star Luka Vuskovic is reportedly on Liverpool's radar next summer. The 19-year-old centre-back has starred for ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T08:00:55.891154+00:00",
-      "link": "https://www.thesun.co.uk/sport/41011017/liverpool-luka-vuskovic-transfer-news-real-madrid-brighton/",
-      "published": "2026-11-13T07:54:54+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Liverpool shortlist Luka Vuskovic in £80million-plus deal – but Anfield is not Brighton star’s dream transfer"
-    },
-    {
-      "desc": "Morgan Rogers says it is a \"lie\" that his Chelsea team-mate Cole Palmer does not want to play for England.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-13T10:00:57.018141+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611803/cole-palmer-its-a-lie-chelsea-forward-does-not-want-to-play-for-england-says-team-mate-morgan-rogers",
-      "published": "2026-11-13T07:46:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'It's a lie! Palmer wants to play for England, says Rogers"
-    },
-    {
-      "desc": "Amy Canavan assesses Scotland's central defensive dilemmas before Friday evening's must-win match against North Macedoni",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T09:01:11.271197+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckwy9jyd2wq5o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T07:23:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How big a problem is central defence for Pocognoli?"
-    },
-    {
-      "desc": "FAM refers Selangor, Kuching FA Cup complaints to disciplinary panel NST Online",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T08:00:55.891191+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbEZzOWdHcW5fVFFCY2tzdGlfNnNOcEJFVGtzX2JFR0htZDlFblgtRng4Tk9iS09iV0FTSkNIZWpkQ2tyYm94dDREY2tEbXZ2X3BPOUFDODRLYXNDMnhoZlNCeVFXRkJzWTBlX2FJTnRmekNQMUw3Qy0wdVlXMGNYQjZoY05fZW5sS1NuMF9maHBySUI5ZlhvQ1JvTlBiTDEzcmlsZHY0Uk5oM2w5SzlvOFY4eEE4Q2QzdmxZ0gHAAUFVX3lxTE1ERENkU2Qtb2JBaExtYW1mNXZDd1AtVDc0SEJVdlpGR2RGY3NXNngzX2J3eGs2MlhoaTN6M1hvejdPQXNZZWYyS2lkUWtseDZpU3gwZnNBbzk4X2V1emUxR081Y19VSzNIN09MdHVJVmxsR0ctd29mT3VnLXNMd1lwSEhKOUVfcjQ1M1RZNnZTNV9KcDcxZDNXb2ZaY0pRWXBJeFJ0UHo4ZEdwWTJpMWthaUtjdHo1SjlJLWZvTWtSZA?oc=5",
-      "published": "2026-11-13T07:22:01+00:00",
-      "publisher": "https://www.nst.com.my",
-      "source": "https://www.thefa.com/rss",
-      "title": "FAM refers Selangor, Kuching FA Cup complaints to disciplinary panel - NST Online"
-    },
-    {
-      "desc": "THE Netherlands sit top of Group A2 going into the final two games of the Nations League, with Greece at home up first. ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T08:00:55.891234+00:00",
-      "link": "https://www.thesun.co.uk/sport/40980331/netherlands-greece-bet-builder-tip/",
-      "published": "2026-11-13T07:01:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Netherlands vs Greece: Our 9/1 bet builder tip, plus get £50 in free bets | Paddy Power"
-    },
-    {
-      "desc": "Virgil van Dijk says he is in no panic about his contract situation at Liverpool - BBC Sport takes a look at what could ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T07:00:53.420259+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ck4gnd2pgd06o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T06:57:25+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Liverpool and Van Dijk have a decision to make"
-    },
-    {
-      "desc": "Spurs Stainless Steel Retro Crest Necklace I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T07:00:53.420297+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWVJrNm0wTFdqamlrRGozYk9Pa25TUHFGdlFFTEhtS3A4Yi0taEdJMGliSlNGS01tc3NTODJ1bjRLbGJTM1ZvRmVoUXcxOFB5RS1TY1I4V2ItdVNxQjc2aDM4VTltSjlrSUh0RThlVFY3aUY4bjZFVkZmYjlISkxSRTZCR3ZJSTRYTWZLQzczZjVWWnZ4Y3EzU1NQTXAzUQ?oc=5",
-      "published": "2026-11-13T06:46:49+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Stainless Steel Retro Crest Necklace I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Fabrizio Romano: Man Utd still trying to secure the signature of ‘greatly disappointed’ star LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T07:00:53.420333+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQVEZoc0ppVjVIWldNZWYtMjVtdmY0OVAwWW1jYy1LbDFvVzN3aF9ya0gxQ3d0U3NndTY1X3RqeVF6N0Y4ajBKZlcxdzAyUnJnR2IxVTdsVnJvZ2kwQVY1Wk9lLWRoS2s2dUFSNXBTekdwb01uMXBpd2J1eTY2OXA5T2t6akhrR0pWRW1xRXMyeUhFQjhYVDNBMzA0LVhMM2NGWkNBcHFFajJCMEFoOVNvUGFRQTBtUkFWZV9GcGtwODNkUlVaZ3NSX3ZJUlhUOEVqY3NjdXdMVUhWcUZpeVRhdFRPaEZIRm1ieHZ3QzFFUQ?oc=5",
-      "published": "2026-11-13T06:45:00+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: Man Utd still trying to secure the signature of ‘greatly disappointed’ star - LiveScore"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T07:00:53.420367+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6x298z10lg1o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T06:42:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
     }
   ],
   "processed_urls": [
@@ -4918,7 +4953,8 @@
     "https://www.dailymail.com/sport/football/article-16288805/Bruno-Fernandes-REJECTS-second-new-deal-Man-United-Michael-Carrick-sacked.html",
     "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNjJOVFprbnVVQy1nZnhlRW9DNlROSzRSd0kyZm5ULTBadS1XQkxuNEFpUkg0N05yT2Eyd2VwSWN5enJHTHRWU2tNNE1LUmJzOUw1Y0YwY3V2czNYWjlQdkdac0c3ZDJ5LWt6cDFoUTNKZFo3QXBLbFR5Y2VOcFZ5dkRLNURuNk5lVlpLeDJmZ2JFVVZPZ25YYlo4SQ",
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSFFvWHZpZXdDSThUZ2JCNzlwc1ZSbGJaaTZPUkM4N2poaFhWSF92Y1VMMC1tQ29OOWtlRHd5Qk55WGJrRjlObkI4ZkNUSERGM1VRNHhoRGdDMWVoYW9GaG5ycDUydHpTd1dlYkZjSHFublpSSnIxQ0JZYW9sYjduNi1jd0RkU0Z3SnZXLWpB",
-    "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-most-difficult-decision"
+    "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-most-difficult-decision",
+    "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko"
   ],
   "s_overflow": {},
   "schema_version": 4
