@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 23,
+        "calls": 24,
         "errors": 0,
-        "requests": 23
+        "requests": 24
       }
     },
-    "calls": 23,
+    "calls": 24,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 140133,
-    "output_tokens": 16464,
-    "requests": 23
+    "input_tokens": 146213,
+    "output_tokens": 17096,
+    "requests": 24
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T10:24:03.454327+00:00",
+  "last_scan_at": "2026-11-13T11:01:09.425959+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3205,6 +3205,96 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "What to do with Palmer in FPL? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430037+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS3l5OXZXNGY0cTlpa1Z4MFlFRVd2MmNlM29RMFdxRFlyMFBIWmdDRXlxZHN1cXNVMHYyR04yeU5mOFo3SG9mRUxRbWZQeHRVMS15RGIySWladHRPVFRvM2x0ZVVYek1IVEtkQ2x3djFCQXRrRE1IbVhPVDgzdnZBaA?oc=5",
+      "published": "2026-11-13T10:58:33+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What to do with Palmer in FPL? - Premier League"
+    },
+    {
+      "desc": "Joe Anderson: Accrington Stanley defender given three-game ban for violent conduct BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430077+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JdHpJT1JURmJ1WF9wLS0zeVZNaloydWlvR0tqam4ySkh1ZE54dW9sRXhKUkdKU053S040ZnFOUWRDOEk1WHhzazBjVlQtWDFQNUdDN0tsVlhxblpOWlJYNFZKazhjckJhSVN3?oc=5",
+      "published": "2026-11-13T10:48:59+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Joe Anderson: Accrington Stanley defender given three-game ban for violent conduct - BBC"
+    },
+    {
+      "desc": "ARSENAL have reportedly stepped into the race for Bournemouth midfielder Alex Scott. The 23-year-old enjoyed a breakout ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T11:01:09.430147+00:00",
+      "link": "https://www.thesun.co.uk/sport/41011807/arsenal-chelsea-liverpool-alex-scott-transfer-race/",
+      "published": "2026-11-13T10:40:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal ‘to rival Chelsea and Liverpool in £100million Alex Scott race’ as Gunners lay out different transfer strategy"
+    },
+    {
+      "desc": "James Milner to return to Anfield for LFC Legends charity match Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430185+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS3BNWllYOHFTN0Vud01BTzR6akxnTUdEbXNHNkFDU01DRkZaWlVnQW1tSklTWWVpRG1seDRRZXUtcUd5OHdDR0JlWUk1bjRka05VZm1qOE9xLXhkbHlkSk1Kd05GV21vLTZoMFBNWFg3QTJ5Q09nRXNRTG50ZUs2ZmlHN2tldkZIR1JSY2VrVDkzR01Nb2M5ekxoUUM?oc=5",
+      "published": "2026-11-13T10:37:54+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "James Milner to return to Anfield for LFC Legends charity match - Liverpool FC"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO is set to bring his trusted trio of coaches with him to Manchester United alongside his son Sebastia",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T11:01:09.430216+00:00",
+      "link": "https://www.thesun.co.uk/sport/41011775/mauricio-pochettino-man-utd-backroom-staff-michael-carrick-son/",
+      "published": "2026-11-13T10:34:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Pochettino’s trusted backroom team he could bring to Man Utd including sports scientist SON in major change to Carrick"
+    },
+    {
+      "desc": "Arsenal Players on International Duty: Rice Back, Calafiori Starts (13 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430246+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVVpRR2k1M01yam04VHltb2tLd2dMS05PVFBaS1VYNld4WlVtM1d4c3pNRUV5Y0k3UnFibVptQ0lwa084akFhcUpncUN6MDVUTHRfQ242VGsydXAtUjdvM1ZJTnVKOHRvOFNxWUxBZjF1SnlXbzdlNmlBcEpBME9ncnVyX2Y5UElU?oc=5",
+      "published": "2026-11-13T10:33:23+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal Players on International Duty: Rice Back, Calafiori Starts (13 November) - The False 9"
+    },
+    {
+      "desc": "MANCHESTER UNITED are monitoring Como playmaker Nico Paz ahead of a potential move next summer. Paz, 22, scored twice an",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T11:01:09.430276+00:00",
+      "link": "https://www.thesun.co.uk/sport/41011619/man-utd-transfer-target-nico-paz/",
+      "published": "2026-11-13T10:24:09+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd tracking Como star Nico Paz with Bruno Fernandes deal winding down but Real Madrid have £67m buy-back clause"
+    },
+    {
+      "desc": "Tottenham Hotspur's Tyrese Hall wins PL2 Player of the Month for October Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430305+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV2ZmOUtmQ0x5bjRrVFEyMGZmUlBGejJBRXNmal85QmV2SVc0UmFrenBXdUwtNUdVOU1lU1Z2YXRlTDNtalk3Tkp3UHlROFBSV3gyZVkyUThUR25EYnpDTERGZll5cmIweldDS1l1UlluTVprNmFNLVZDUGp6cDgwZHdYczREek82NEdOZ0JQcHhXU0ZiV2ZnQ0lFOXNPTzlnYkJmLXF0SlFmVmhtWkw0dmwtVWRfUWMt?oc=5",
+      "published": "2026-11-13T10:23:33+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Tottenham Hotspur's Tyrese Hall wins PL2 Player of the Month for October - Premier League"
+    },
+    {
+      "desc": "'The Big Interview' with Rio Ngumoha: Fearless approach, versatility and guidance Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430347+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVEMwSC1nYUJaal9wMnljZmNTVlFpS3Z5X2NqYS1aVlB6QmdFc3BRLU5nSENCQkNhOE1sdVlSOWozU2sxa05tY29CYk5fREMtNzc2OHNIR21sTlk2NzRXMmFXNXNhNHJ1MUxCZU5hZ2R2VkQ0NHhkNWFJbXpSRGE2VTZIaFEzdTJXOXNadERFeG93YVlJZExhd2FVWXo4T0ttYmRaakJ3ejlTQ2k4Zmxv?oc=5",
+      "published": "2026-11-13T10:07:13+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "'The Big Interview' with Rio Ngumoha: Fearless approach, versatility and guidance - Liverpool FC"
+    },
     {
       "desc": "AN ex-Premier League defender watched his team concede while standing on the sideline in his PANTS. Former Burnley man M",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3234,6 +3324,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Fernandes rejects second Man Utd contract offer"
+    },
+    {
+      "desc": "Joint statement from Premier League, FA, EFL and WSL Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430475+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWnJ2TEJJbDJyWE4yOXRadVh5aENicHNBQm16c3B3aUJtR25sdGlTVWh0UWJkaWlDRW1EX2dqdlFLa2FvNnZtT2wwSXJ5WVVhMjY1OHNsVC1mdl9nMEdBaVVBckNwckNwRERJNEJsOWVwWWFvX2R4WGNhYWtJMy1iZGdVVzVRNDJVU1BEOVZLd3pOLXV5RG50MGg2V0NYTEhkMDlUQzRDdzhWRTA?oc=5",
+      "published": "2026-11-13T09:30:58+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Joint statement from Premier League, FA, EFL and WSL - Premier League"
     },
     {
       "desc": "Evanilson to Arsenal: TEAMtalk Says Bournemouth Want £50m, City Also in The False 9",
@@ -3266,6 +3366,16 @@
       "title": "Why England were unremarkable on Harry Kane's big night, the Ben White problem - and established star whose place could be under threat from"
     },
     {
+      "desc": "Big Nations League wins for Zubimendi, Rice and Calafiori Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T11:01:09.430584+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbXZhdTJxVGp6NHB3VEZJNXNMUlhQQ3lwbnA4WjhDcVNOb1NFbF80azVqY2NudEtpTHItSzVnRW94T3ByeVBwbFhlX0FkNXdHTVdyM1h5YlB6UngwNGZyOE1vUGJzUnRBUU1YVTZZVWt1UGlVcDVZYmd3dnpEdmsySXh0aTdjNkR6Y2ZuYVlDQTVJVkhiMHQxVkYwMVprcDQ?oc=5",
+      "published": "2026-11-13T08:33:21+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Big Nations League wins for Zubimendi, Rice and Calafiori - Arsenal.com"
+    },
+    {
       "desc": "FA Cup: FAM receives official reports from Kuching City, Selangor over Sunday's brawl Sinar Daily",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-13T10:00:57.017906+00:00",
@@ -3294,6 +3404,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Beckham to be inducted into US Soccer Hall of Fame"
+    },
+    {
+      "desc": "Ahead of Northern Ireland's Nations League outing with Ukraine in Belfast, who would you pick in your starting team at W",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T11:01:09.430682+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5y4jlplner0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-13T08:21:40+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who makes your Northern Ireland XI against Ukraine?"
     },
     {
       "desc": "DARTS star Chris Dobey has revealed an unlikely friendship with Croatia international Marcelo Brozovic. The world No 16 ",
@@ -4584,126 +4704,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England vs Croatia TV channel and live stream: How to watch Nations League clash"
-    },
-    {
-      "desc": "MICHAEL Carrick bid a tearful goodbye to his Manchester United players today after being sacked for leading the club int",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T16:01:00.291556+00:00",
-      "link": "https://www.thesun.co.uk/sport/41004478/michael-carrick-man-utd-bruno-fernandes-baleba/",
-      "published": "2026-11-12T15:58:45+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Michael Carrick breaks down in tears bidding farewell to Man Utd players after being sacked in farcical circumstances"
-    },
-    {
-      "desc": "Fabrizio Romano Reveals Xabi Alonso's Desire To Work With Martin Zubimendi roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T18:01:02.596836+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRjFJOHh4QXI1bWNuVlZMa2JkaEdkT1JQU3VGb2k2TGYyME5hN1FTWHYwT001YUtRUVo3WkVaUExjcDRLVHFaX3k2VWtXcy04REFvcWpzeFYtTjJ6MjdLd212WGNac0h6ZnhSNGdudmpGQk56VEV2bnBDSFQ1aWRPM19wNEM3NUNQajlqM1ZUT25yZDF1OHh0Z1pWX3lsSThFX1piT01XQUJlMklWSU5uUTJJdTlKcEFuME94ek9ZR1paXzhzSjNuNHpZTURNc1NyTlVMVFh0cWJJUQ?oc=5",
-      "published": "2026-11-12T15:52:19+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Reveals Xabi Alonso's Desire To Work With Martin Zubimendi - roundtable.io"
-    },
-    {
-      "desc": "Support United Women v Palace this Saturday Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:50:04.663617+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2F2bTd2VDhDeG55cXFIZGxsUWllc2JYMGZPTmNWTFFnZWhKLV9JeXIyRzFMcTU5N2JPZUYySzBzY2I2TV9kYUk5ZGlfTDdURE1XUFVmcE5vZ1drQnpaMThIcmNjcWxiZU1YS2JFRE5sVW0yRnBvanlxTF9CZjFRNDRzbzBSUWhGMFQzcm1qcw?oc=5",
-      "published": "2026-11-12T15:49:55+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Support United Women v Palace this Saturday - Manchester United"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO is poised to return to the Premier League after his stint as USA boss. The former Southampton, Totte",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T16:01:00.291584+00:00",
-      "link": "https://www.thesun.co.uk/sport/41000167/mauricio-pochettino-fortune-wife-karina/",
-      "published": "2026-11-12T15:45:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Inside Mauricio Pochettino’s £40m fortune and life with ‘rock’ wife singer Karina ahead of his imminent Man Utd return"
-    },
-    {
-      "desc": "Man Utd officially confirm Michael Carrick’s sack | The Eagle Online",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T20:00:47.433807+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMjhTZEw2Z2xCX2NfU0xMcWZ2VXl1V1RjMHdCUlItU2xXaDhYTjZpUEVmSVhFODQwVVJncmczNUVMWUowWDU0VU5IT1F2MU5PTEc5ODlsQ2QwaWV0TDhEa2d6VGtoR3pFSUtuSjV2alYzRzkyNE85RmU0Y3ZPU0xVbXp6WVBhQQ?oc=5",
-      "published": "2026-11-12T15:34:08+00:00",
-      "publisher": "https://theeagleonline.com.ng",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd officially confirm Michael Carrick’s sack | - The Eagle Online"
-    },
-    {
-      "desc": "Misc Rumor RealGM",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:01:00.291604+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zdzBDTDU0aDJ5aC03VlVTaEdHTW1aNlNDVVhKWFdpTk81OHZHZ05YTjQ4R1NTaWdGYW1BbDEwUENrMzM3UUhiWnlXV0VTRU5VUWhtNzZraFJHdFZpMDktdkJMSHVHMFIz?oc=5",
-      "published": "2026-11-12T15:34:06+00:00",
-      "publisher": "https://soccer.realgm.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Misc Rumor - RealGM"
-    },
-    {
-      "desc": "Fabrizio Romano: Chelsea eye player Xabi Alonso tried to sign in 2024, ‘big money’ The Chelsea Chronicle",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:01:00.291628+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMW5CT2lqRzRXdTdKc29kYzF1eDVvS3NWTE9Fd0xpRW84N0tLUEN1WEYxbnpKTEVpZ3VzVWRKMkxhVHUtalU1MklHZlVtSld5d3FOUkViVmRFZk5DSTNEX25DRkd4V0E3RUpubWRidlNlOUtKQWt3ZHlaOUNNeHB6NEhHVGd4VW1rMHZSR0RLOS10LTV2TWlnMDB5bGo3bkN6WWxMdkhiY01NQzUzbUVDTUNJS1lNalhNN0RpVzFNSTBMcE8ycUphbg?oc=5",
-      "published": "2026-11-12T15:30:00+00:00",
-      "publisher": "https://www.thechelseachronicle.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: Chelsea eye player Xabi Alonso tried to sign in 2024, ‘big money’ - The Chelsea Chronicle"
-    },
-    {
-      "desc": "Women’s Champions League ticket news: OH Leuven away | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:01:00.291649+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVk84U09JT1cydHM4bDhiekl1MFJReHFsaUctV0hOWGRjUDZuUmxjbElQREl0ZXVDN0x3d1RCVVlMMnplclZ1cml4OVBDUURuSXl4TkNwZVlCckhFSHlIRml5LWhRczB6Q0t6cjJkN2hjRTFValRsMjRTTEFqQW5xMHNjMU9xRm1fb24zUGthUzB3Uy1XMFhj?oc=5",
-      "published": "2026-11-12T15:30:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Women’s Champions League ticket news: OH Leuven away | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T22:28:56.411704+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9AVBVV95cUxQaDFjdkJ4Z01RX0xfbjVDWkJjNnVNTFpybmNCQW1oUGVDcmNUTkI3Ukk2dXh3cXhWVW1OVURkTzkzdERRSUM2dXYyN0RQaC1ldzNpbklQZFczYWl5NWIwTWszZDhtT1B4VWhuZzJmZ3cxbVlnNmd6UDNtdkpQcC1XRVRlRFhBbmEwOEY5SnZ3RWoxTmZNWFprN05Qc2tYdThzSGttaDZfVVgzeE5qNkZVUHhDRHJJSTB1M083V0drNFgyQWpjMmhIcjhZbWxHcVREWm9ULTNDR1BjOERIMjdXUkpMb1BuWkc2UElPdmhEVmtvMmJrQkdqdU9XN3gzR3hpSG5pSTljZXpHOFl0OThXTGt6UjdZcnhIdm5hOHRyWWtqWi1JbTBKS2szcEh4SDhYNXNHY2V5S2VlM1JMY0JPcDFLNHlYWnpONFV3ZlFlNVZRcGNiWl83TXNWdGRBemFhVFU2SjVELWdmTXE0Rzk5TmNyQUp0cEtMNHNTMFhPbi1zalQ5VVBhNlBhU0V2a0k2Ty03dTFCZi1SdE10ZFB3aV96Y0NVZkZxbWdISFlwMC1fSU9NSDRPWFNfWWxYTVlUNGNoSTdYYm5kMl9CWVNnS181WjJYWlVKOFdYMFgyNGtaVFAxOGw5LVNLRlVHTUYyQktHRDJVMC1yVFNPdmwtUUd2d2lpcXFoNUQ0WWFvMXVBZTVVaFB3SldPRFdRamk1X0M1WHl0STJPMzNFdEQ1RGN2OTgteGw4WVJRREl3WnZES1Z4MVJlS3hrOHEtTzZBdnJ3RmJBUDdLMldqSHdEVnVuanNsdEFTMkRlTU83ejBXbnR0d0xGWUVTZG9SRUZlWDVVUWM2aU1BVVAzR204cUg2Tm1zUm5ZUDJlS2w1V3JQbGpQb3dxQnY1WTRZa3k1Z1ZZOTVNWjVsM0JzMWZHYXZaRXBYOENkMmt1QkFoeFQ3VFZ3WG9XTzllSEg2MzZ4TTAyTVZlbDRnMkJZVmZlUlVCVks?oc=5",
-      "published": "2026-11-12T15:29:55+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "Arsenal midfielder Zubimendi 'loved' at Chelsea but he's not the main target - Fabrizio Romano LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:01:00.291670+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdHFWOVhDRExjTWFYZzNtQkw0VllQUnFhYlZwN1pDTjZQZlI4Q195VG9Jd2JoR2NEQWcxWEQ3MFR0cng2a1JOd052Y1lqejE1cmt3cllFWVoyaC1TQXpwaFhYbC1xX0pYcjdpN2NXdVlGNFA5RUdOd09BS0ZTVTFhWkFvOHFSLUh5WGpFcTNfeUNrTXN0YjlNSktMTmRJTTBLSTFobnIxT01zcjUwSElma0gtTndoSnpoN3VSejFTOFhnRG55NDBrM3h0SnZkZw?oc=5",
-      "published": "2026-11-12T15:29:11+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Arsenal midfielder Zubimendi 'loved' at Chelsea but he's not the main target - Fabrizio Romano - LiveScore"
-    },
-    {
-      "desc": "ARSENAL supporters can enjoy watching the champions take on the finest teams in Europe from the best seats in The Emirat",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T16:01:00.291688+00:00",
-      "link": "https://www.thesun.co.uk/sport/39227637/arsenal-premier-league-champions-ticket-hotel-deal/",
-      "published": "2026-11-12T15:21:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal tickets plus hospitality packages to Premier League and Champions League matches at The Emirates"
-    },
-    {
-      "desc": "ENGLAND host Croatia in a mouthwatering Nations League clash tonight - and you could be watching the action live at Wemb",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T16:01:00.291706+00:00",
-      "link": "https://www.thesun.co.uk/sport/41003279/england-vs-croatia-tickets-nations-league-buy-price/",
-      "published": "2026-11-12T15:17:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England vs Croatia LAST MINUTE tickets: How to buy and cost for Nations League clash at Wembley"
     }
   ],
   "processed_urls": [
