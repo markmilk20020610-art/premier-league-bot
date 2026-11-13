@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 97017,
-    "output_tokens": 11283,
-    "requests": 15
+    "input_tokens": 102638,
+    "output_tokens": 12071,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3184,7 +3184,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-13T03:00:56.427119+00:00",
+  "last_scan_at": "2026-11-13T04:00:47.534523+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3205,6 +3205,16 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "50% OFF Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T04:00:47.537353+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBxakV0R2l2bjVwa3NoaWZZWmhIbkdlczlSMy1mbXhZN1QxMWVKZnhTaVVZdHdPZVdVSE1QZEROeHpjeWtSbmVZWTlhdUFhVjg4eFlQSG1JTGw5Tkg2cmVjZUZ0bGRFbTlzWnc?oc=5",
+      "published": "2026-11-13T03:15:50+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "50% OFF - Arsenal Direct"
+    },
     {
       "desc": "Steve Ogrizovic Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4694,16 +4704,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Crystal Palace CONFIRM Pierre Sage sacking in very brief statement with Thomas Frank favourite to take over"
-    },
-    {
-      "desc": "Crystal Palace have sacked manager Pierre Sage after just 16 matches.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-12T13:00:53.511723+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13606476/pierre-sage-crystal-palace-sack-manager-with-club-bottom-of-premier-league-table-after-10-matches",
-      "published": "2026-11-12T12:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Crystal Palace sack Sage after 16 matches"
     }
   ],
   "processed_urls": [
