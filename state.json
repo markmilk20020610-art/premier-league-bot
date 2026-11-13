@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-13",
     "errors": 0,
-    "input_tokens": 68129,
-    "output_tokens": 7872,
-    "requests": 10
+    "input_tokens": 74289,
+    "output_tokens": 8728,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1668,6 +1668,41 @@
       "title": "布伦特福德2-0诺丁汉森林：格拉斯纳新东家五场四败，帅位压力陡增",
       "updated_at": "2026-10-31T17:21:28.754219+00:00"
     },
+    "742665df8c59": {
+      "article_title": "Pochettino to Man Utd 'done' as Ornstein reveals huge contract detail and when 'announcement' is due - Football365",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "0bbb01e38eb81553",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 130
+        }
+      ],
+      "created_at": "2026-11-13T00:01:06.950959+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "6dcb40dbbb25c028",
+      "event_id": "742665df8c59",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-13T00:01:06.950959+00:00",
+          "origin": "created",
+          "title": "Pochettino to Man Utd 'done' as Ornstein reveals huge contract detail and when 'announcement' is due - Football365",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnZvdHNNQ1JNeU0yZFBtRVYwTGVZZ0EzTW9Iek5oVWVDMHZYS3g0WGtDWUc2TktHa0I3Wm91Zk5kWUpkUDFkemNFX05yelBKcmhPS2RPeEJMT1F4dVVmUkwzVXYzaW9sYkpHWFYwSmxzcXBaa28yWnJlc1gzajBVZXAweXBtU0FmLWpmc1JIU3Z1MGVzUXI4cXp3STAyN3NDaFZUa2pYLVJoNmhlZjIzTzVXdFRXcW5YaXFYak5iNnpkaGo0QzIxcA"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnZvdHNNQ1JNeU0yZFBtRVYwTGVZZ0EzTW9Iek5oVWVDMHZYS3g0WGtDWUc2TktHa0I3Wm91Zk5kWUpkUDFkemNFX05yelBKcmhPS2RPeEJMT1F4dVVmUkwzVXYzaW9sYkpHWFYwSmxzcXBaa28yWnJlc1gzajBVZXAweXBtU0FmLWpmc1JIU3Z1MGVzUXI4cXp3STAyN3NDaFZUa2pYLVJoNmhlZjIzTzVXdFRXcW5YaXFYak5iNnpkaGo0QzIxcA",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 130,
+      "title": "名记爆料波切蒂诺执教曼联已达成协议",
+      "updated_at": "2026-11-13T00:01:07.678680+00:00"
+    },
     "77823818a9b0": {
       "article_title": "Erling Haaland’s dad breaks silence on Man City guilty verdict and speaks out over son’s future amid relegation threat",
       "attempts": 1,
@@ -3114,7 +3149,7 @@
     }
   },
   "last_morning_report_date": "2026-11-13",
-  "last_scan_at": "2026-11-12T23:00:54.376911+00:00",
+  "last_scan_at": "2026-11-13T00:01:00.409148+00:00",
   "last_summary_sent_at": "2026-11-12T22:01:21.045906+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3135,6 +3170,86 @@
     "updated_at": "2026-11-12T22:01:21.023647+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MORGAN ROGERS has leapt to the defence of Cole Palmer after his snub from the England squad. Three Lions boss Thomas Tuc",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T00:01:00.412955+00:00",
+      "link": "https://www.thesun.co.uk/sport/41009971/morgan-rogers-defends-cole-palmer-england-snub/",
+      "published": "2026-11-12T23:31:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘It’s a lie’ – Morgan Rogers leaps to defence of Cole Palmer after Thomas Tuchel left Chelsea star out of England squad"
+    },
+    {
+      "desc": "Pochettino to Man Utd 'done' as Ornstein reveals huge contract detail and when 'announcement' is due Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413029+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnZvdHNNQ1JNeU0yZFBtRVYwTGVZZ0EzTW9Iek5oVWVDMHZYS3g0WGtDWUc2TktHa0I3Wm91Zk5kWUpkUDFkemNFX05yelBKcmhPS2RPeEJMT1F4dVVmUkwzVXYzaW9sYkpHWFYwSmxzcXBaa28yWnJlc1gzajBVZXAweXBtU0FmLWpmc1JIU3Z1MGVzUXI4cXp3STAyN3NDaFZUa2pYLVJoNmhlZjIzTzVXdFRXcW5YaXFYak5iNnpkaGo0QzIxcA?oc=5",
+      "published": "2026-11-12T23:13:51+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Pochettino to Man Utd 'done' as Ornstein reveals huge contract detail and when 'announcement' is due - Football365"
+    },
+    {
+      "desc": "Ornstein drops huge Pochettino update as Man Utd contract length, likely announcement date revealed TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413063+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbTZfMnVacGl5SG9GclgwbjJyYUE4elhTYWZ1TjYwOXFCU1NsWVgtVV9RQnotb3dMM2hrRDhnc0JQTVljLTRMMlp5Qnd3eFZ4WjdRczVOMWQ2TjhqVGs0Mm9oMFloOXNJOHFUSWlaQ2Y3TnpST3p5d1dDSVFkQ0M4SzJzbmZNSzNVdmlVRHd2bFpVSThFZXlfMVNYdDN4aW5qUjVDZERnaktUYnFILTRyWm1FTFJfR3RIN3R3SG9iLVJWMWFSbmJGM0xjcWZJRnN1LXFHUXd1Umg?oc=5",
+      "published": "2026-11-12T23:10:34+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein drops huge Pochettino update as Man Utd contract length, likely announcement date revealed - TEAMtalk"
+    },
+    {
+      "desc": "Morgan Rogers says any suggestion Cole Palmer is not committed to England \"is a lie\" and \"nonsense\".",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-13T00:01:00.413098+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6e9kjne5y8vo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-12T23:09:07+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'A lie' & 'nonsense' - Palmer committed to England, says Rogers"
+    },
+    {
+      "desc": "Report: Man United appoints USMNT coach Pochettino as new manager Sportsnet.ca",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413128+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRzBLVjFudzZ1OWtvWVNJTlAweUNieGNOdk4zX2NYU0xrSk5MR3doT3EwTi02WHBfOE1PNjhLdlFPOF9kUHJ4dnFXbUlyekF4STdOU2hnLTZpLVZBV2M4NE1kTFpjN0hpLXhLTVhZVVE4RzllcHR2SlVBcGdTT1RpQVZ2ZjhyOVNSY3NBcndZWlR4QlVzdnZyYm5zM3NyNVV3SVdwNWo0Rzc1cm40OV9ncVhSQQ?oc=5",
+      "published": "2026-11-12T23:04:00+00:00",
+      "publisher": "https://www.sportsnet.ca",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Report: Man United appoints USMNT coach Pochettino as new manager - Sportsnet.ca"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO has agreed to become the new Manchester United manager. The Argentine emerged as the favourite to ta",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-13T00:01:00.413158+00:00",
+      "link": "https://www.thesun.co.uk/sport/41010024/man-utd-mauricio-pochettino-liverpool/",
+      "published": "2026-11-12T23:03:47+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd AGREE deal to hire Mauricio Pochettino on two-and-a-half-year deal and will be in charge against Liverpool"
+    },
+    {
+      "desc": "Manchester United and Mauricio Pochettino have agreed a deal for him to become the club's next head coach.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-13T00:01:00.413210+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13611745/mauricio-pochettino-manchester-united-agree-two-and-a-half-year-deal-with-usa-manager-to-replace-michael-carrick",
+      "published": "2026-11-12T23:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Pochettino agrees two-and-a-half-year deal to become Man Utd boss"
+    },
+    {
+      "desc": "Mauricio Pochettino to sign a two-and-a-half year deal at Manchester United The Peoples Person",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413239+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOF9nLTRqdWdteTY1Tk9QNndxZGUyOElsUk1JWllWemFoVW40WERBMkpIU0FhbzhiVmJhdkFMdm1rUmkzeXVRaXIxVTlIVnNIYld5WWsxaDBLQzMweC1kYnhKZ01lLWV1VmtqdHJaRTNKLXcxM0w5bGs1bEpySWFHYzNhQ2NtZnUxNnVOMy1xUjZ4dW44LTVUUFdUWjdzV2hXYnZPYThZenQ1S05GY1dqWHhLbDlDcElQQ3dYZHBpUVM?oc=5",
+      "published": "2026-11-12T22:57:51+00:00",
+      "publisher": "https://thepeoplesperson.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Mauricio Pochettino to sign a two-and-a-half year deal at Manchester United - The Peoples Person"
+    },
     {
       "desc": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United The New York Times",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3196,6 +3311,16 @@
       "title": "Bruno Fernandes ‘REJECTS new Man Utd contract’ with Portugal star’s deal expiring at the end of this season"
     },
     {
+      "desc": "Arsenal Christmas Classic Elf Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413436+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdWhsV3B2QlFxV1FKTkZZUXVhdDIxbEItQm1QLXU1YnZBRU1JMnFTZTZ4RDlEY0xqRGlTQlYtYUVuRnBDQzRBZE84M0hVOGZBZl9XdXhQRjBGYWZtZjk2MVAtQnhSXzdzZVVzLWtYbmtIQ0ZoMEFndW1idzBxU2dQNmZDVGcxdE1NNTZZ?oc=5",
+      "published": "2026-11-12T22:26:22+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal Christmas Classic Elf - Arsenal Direct"
+    },
+    {
       "desc": "MAX DOWMAN will break Jude Bellingham’s record as the youngest-ever England U21s player if he plays against Portugal at ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-12T22:28:56.411034+00:00",
@@ -3254,6 +3379,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England player ratings: Kane shines on big night at Wembley as Quansah error leaves Tuchel sweating on defensive options"
+    },
+    {
+      "desc": "Fan Engagement Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413613+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNUUdrb0tVWDU3RzRyOEJNY24xX2pnb0drUHRrQVZKZkw0X28xMFNvSWxkLTg4TmFucFctNXltMklQdHJmWWswQUtZZVZQYTVhQ2FXRFU4UVZTM1pxSHQ5bWp1Y0xmUQ?oc=5",
+      "published": "2026-11-12T21:56:05+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Fan Engagement - Liverpool FC"
     },
     {
       "desc": "JACK GREALISH has issued a grovelling apology to fans after his boozy antics. The midfielder returned to action for the ",
@@ -3344,6 +3479,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Jesus Owono yet to decide if he will return to football with goalkeeper distraught after tragic Jesus de Miguel incident"
+    },
+    {
+      "desc": "Silver Lake funds complete a share sale, but First Advantage (FA) receives no proceeds. Stock Titan",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413758+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTVlFTUR6bWxyZFZEcVgtQWsxV2lnRm11YWhmLTlsbktHRE8xaXJDcGpXb2xXSEd1UkVBVWM1WmtQVktGREFsSXNqUjE5bEhTWGRTQk5HdXYxUUI3MU5wVTgyNlFRd1c2bWtlR2x2bFhVLUkzN09LUTVpOTEwMzI5dDJCT0F0Sm1NNTJaTjVHWGNRakNxaGxTZlU5eTkxb0pxakNBZmFBeF9lbVE?oc=5",
+      "published": "2026-11-12T21:16:26+00:00",
+      "publisher": "https://www.stocktitan.net",
+      "source": "https://www.thefa.com/rss",
+      "title": "Silver Lake funds complete a share sale, but First Advantage (FA) receives no proceeds. - Stock Titan"
     },
     {
       "desc": "Manchester United and Manchester City are going head-to-head for Chelsea defender Malo Gusto and Leeds United pursue Wil",
@@ -3524,6 +3669,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "What is Harry Kane being presented with before England vs Croatia?"
+    },
+    {
+      "desc": "Chelsea and Arsenal receive devastating news over top January transfer targets LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-13T00:01:00.413969+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPNXI0SVR3MkVsQWJZa0w1Qi1PWTh1TGtSVlJTT18wMkh2S2gtZUlYR0xvS1gzWFdUeFZ2MWdoRm1BQ2FKNGlHc3lreHYyaWgwcURzaHJRSDZkeGZ5RlVFOVZ5U1kxQm04QmxQYjhxcTZQSjhXNmN3bEM4ZF9iQWVzbzNmUjdSWTJvR0o0djhCazZTUW0zSS0xQlM5WmliX0xXd190RmVoNENPM1o5RFJIYjR3UzNvY21TclU1bjMwZ3E2VkpYanNhcGxEUjhpTUJuRmJGVmxYU3lHanRJWFZ4T3MyQlhZNnV2SXNn?oc=5",
+      "published": "2026-11-12T19:12:56+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Chelsea and Arsenal receive devastating news over top January transfer targets - LiveScore"
     },
     {
       "desc": "ENGLAND take on Croatia in their penultimate Nations League Group A3 clash TONIGHT. The Three Lions currently sit second",
@@ -4514,126 +4669,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "'I can't fault the effort' - the benefits of Liverpool's Jersey Mike's Trophy involvement - Liverpool FC"
-    },
-    {
-      "desc": "Late Stamford Bridge winners: vote for your favourite on the Chelsea Official App! | News | Official Site Chelsea Footba",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T18:01:02.597518+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRDQ5WU5hV2J3SVp1UDFiYmozekQ1cGVyVTdvQjc1RGpiVWZsQ0xaSENQUXJ2WjZPMXpKN0lzcldmUzJ1TFJuQmJncHctLXRUWlBWOGozX2hjcjI5UVoyZkJJVW93R05Id2VBRk1tZFNadHBqQWI2Yl9KcF9vLS1ocXBTNlN4QngyMm1nRjZ6eGplYkJZQ19HeFVHZjNQSTZoanpGOTkzQm9ncXEwdVE?oc=5",
-      "published": "2026-11-12T11:35:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Late Stamford Bridge winners: vote for your favourite on the Chelsea Official App! | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T14:00:51.267904+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE51WjdBR3JKalVacWNDNDJlNUpSLWMtdkdKQkhRNGRtblQxRG50TXc3U2I3VllUbVRBd3NxNGRJSEhoVHNlRFdGbmFQdEdQakJTX0FVNTJ5Vkg?oc=5",
-      "published": "2026-11-12T11:25:43+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "MANCHESTER UNITED had no succession plan for Michael Carrick until only two weeks ago. United finally sacked Carrick on ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T12:00:59.100556+00:00",
-      "link": "https://www.thesun.co.uk/sport/41000508/man-utd-michael-carrick-replacement-mauricio-pochettino/",
-      "published": "2026-11-12T11:25:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd had NO plan to replace Michael Carrick until two weeks ago as Mauricio Pochettino arrival faces delays"
-    },
-    {
-      "desc": "Alonso: It’s make or break | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T13:00:53.512201+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYNW80WXg0T2Rub1VhbmpLcFFqcG1Bci12RUY2QjM4NDFlRDU0UG43ZDN5SjJNTXQzT2FWUHMzWUprdDdnZEQ3YjdkeWx6UkN6VDI2bk9CWHhTQnVEVE1kQVZKTm41Nm9wUHRtUmw3cmRlVERQ?oc=5",
-      "published": "2026-11-12T11:09:22+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Alonso: It’s make or break | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Jeremie Frimpong nominated for FIFPRO Merit Award Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T14:00:51.267935+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdVFSUG5ZZVkzN1BmNG9ZZTVJT2ZwYUlHWk9Zek92YWhtQUNBQ29ZRm0tSU95ajhPSjNfX3RFVi1WV3ctdHhGTGpsSE02ZnNBbTFVa0drQ0NWN2NQSE0zU01kRnN4UlN2TXZWaEVCUUNJdVRjbEhTYzRvckRfQ3BBMDVQUDY?oc=5",
-      "published": "2026-11-12T11:07:38+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Jeremie Frimpong nominated for FIFPRO Merit Award - Liverpool FC"
-    },
-    {
-      "desc": "Mikel Arteta’s record against Mauricio Pochettino as Man United job looms LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T15:01:03.048896+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNV25HY3FuVzBuUWV4LWplSDNFYTNoVWVraUVwRUQ3N0Y4Mkl5NkFLWVd5aDVqa3picTd6Ym9kekJQcC1DdDhuOTFYa0pOWFZ1LUk3Q1lOaXRCSEp4djNCQjFzYzJLLWZMQlJRTEluTUcyT1ROVm1weGJPZm9ydjFHNXlneEMwWkZfMXdYQVRxSmtnaUlGOWJfRWM0bGYyQ2lwZTZZOUd0djVjeEc1NmgtTVAxcUxLZmtzSEt1cWVpd3YwTnoyd2k1SE9OTFU5cEwyYzlZTUhwRUM?oc=5",
-      "published": "2026-11-12T11:05:26+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Mikel Arteta’s record against Mauricio Pochettino as Man United job looms - LiveScore"
-    },
-    {
-      "desc": "MELISSA SATTA wowed fans in a see-through top as she attended Italian entertainment festival Il Festival dello Spettacol",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T11:00:53.123688+00:00",
-      "link": "https://www.thesun.co.uk/sport/40999103/melissa-satta-seethrough-top-kevin-prince-boateng-barcelona/",
-      "published": "2026-11-12T10:57:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Sex-mad ex-Barcelona wag whips fans into a frenzy in see-through top as she launches acting career"
-    },
-    {
-      "desc": "said in a statement - Manchester United Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T16:50:04.665018+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQYzdSUzRWRUhYNUJjcnFwN29OMzU2TXU2NVhIdUxSeUdBM2k0Ukx5clpja0t0dEJYWEl6ZnJhZ0d1OVpOaWpzTDVfVm1GN2xUTkdfZDRRcXRUZDNMUEpheVd1Rkh2V2w4VFJ6RmdCQzVqV3pRR1czUWw5QzR5WUpBNlhzakJPWWozSlRlSEpreUthVFBGRlR3Z3FSVHFaREVLWkxmQlhIRmxNamVVNjZuWmNFSVVUbFhiblJLUGVnamw0ZU5ZcW0tT2h5RENoOHF2SUVr?oc=5",
-      "published": "2026-11-12T10:52:23+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "said in a statement - Manchester United - Manchester United"
-    },
-    {
-      "desc": "Michael Carrick has been sacked as Manchester United head coach , so how did his Old Trafford reign go so wrong, so quic",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-12T11:00:53.123721+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13602738/michael-carrick-sacked-by-man-utd-how-his-old-trafford-reign-unravelled-in-worst-start-to-a-season-in-40-years",
-      "published": "2026-11-12T10:50:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "From Champions League finish to drop zone: How Carrick's reign unravelled"
-    },
-    {
-      "desc": "MANCHESTER UNITED have confirmed the sacking of Michael Carrick following a disappointing start to the season. The Red D",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-12T11:00:53.123751+00:00",
-      "link": "https://www.thesun.co.uk/sport/41000175/man-utd-statement-michael-carrick-mauricio-pochettino/",
-      "published": "2026-11-12T10:47:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd release brief statement finally confirming Michael Carrick sacking with Pochettino appointment imminent"
-    },
-    {
-      "desc": "Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-12T12:00:59.100641+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
-      "published": "2026-11-12T10:44:50+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "- Arsenal Direct"
-    },
-    {
-      "desc": "Michael Carrick has been sacked by Manchester United, with former Chelsea and Tottenham Hotspur boss Mauricio Pochettino",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-12T11:00:53.123793+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16229277/michael-carrick-sacked-man-united.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-12T10:44:11+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Michael Carrick is SACKED by Man United: Manager leaves training ground just 2½ hours after arriving - and now Mauricio Pochettino is ready "
     }
   ],
   "processed_urls": [
@@ -4738,7 +4773,8 @@
     "https://www.thesun.co.uk/sport/41003637/mauricio-pochettino-man-utd-old-trafford-camp-nou",
     "https://www.thesun.co.uk/sport/41005536/when-mauricio-pochettino-man-utd-manager",
     "https://www.thesun.co.uk/sport/41007690/fifa-lose-court-battle-world-cup-gianni-infantino",
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ"
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ",
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQnZvdHNNQ1JNeU0yZFBtRVYwTGVZZ0EzTW9Iek5oVWVDMHZYS3g0WGtDWUc2TktHa0I3Wm91Zk5kWUpkUDFkemNFX05yelBKcmhPS2RPeEJMT1F4dVVmUkwzVXYzaW9sYkpHWFYwSmxzcXBaa28yWnJlc1gzajBVZXAweXBtU0FmLWpmc1JIU3Z1MGVzUXI4cXp3STAyN3NDaFZUa2pYLVJoNmhlZjIzTzVXdFRXcW5YaXFYak5iNnpkaGo0QzIxcA"
   ],
   "s_overflow": {},
   "schema_version": 4
