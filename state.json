@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 104496,
-    "output_tokens": 11830,
-    "requests": 16
+    "input_tokens": 109360,
+    "output_tokens": 12666,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3394,7 +3394,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T04:00:55.061840+00:00",
+  "last_scan_at": "2026-11-14T05:00:49.005794+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3434,6 +3434,16 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd Transfer News Today: Fermin Lopez targeted as Romano confirms January signing - LiveScore"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T05:00:49.009539+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
+      "published": "2026-11-14T01:32:08+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
     },
     {
       "desc": "FOOTBALL fans looking to score a pre-Christmas stadium trip can bag an impressive bargain. Supporters can claim 10% off ",
@@ -4904,16 +4914,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Tottenham Hotspur's Tyrese Hall wins PL2 Player of the Month for October - Premier League"
-    },
-    {
-      "desc": "BREAKING: Pochettino officially set to be unveiled by Man United Soccer News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T12:00:55.304010+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbmc3ZHhMZEo2UlRGT0pyaHpydnhrbWJQc2hxYVJkMXBHTmlnZGpPdmNvYUZOeFM2OTE0cHRLM0FQN0J6UUxNSmVZWERQQXFtMUplcFJuNGFNb2pQbnd5bjdQQ1kzai16RFFZYXFmUlJUNVg4Rmk0eWlLemkzOXh5dTBLSUVYWlZNODB0MUg3WDM3RmRFWWY3b1d1bm40TzQ?oc=5",
-      "published": "2026-11-13T10:21:28+00:00",
-      "publisher": "https://www.soccernews.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "BREAKING: Pochettino officially set to be unveiled by Man United - Soccer News"
     }
   ],
   "processed_urls": [
