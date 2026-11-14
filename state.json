@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 28,
+        "calls": 1,
         "errors": 0,
-        "requests": 28
+        "requests": 1
       }
     },
-    "calls": 28,
-    "date": "2026-11-14",
+    "calls": 1,
+    "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 168497,
-    "output_tokens": 19909,
-    "requests": 28
+    "input_tokens": 6903,
+    "output_tokens": 555,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T15:00:59.499017+00:00",
+  "last_scan_at": "2026-11-14T16:00:53.635486+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3520,6 +3520,76 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "With United languishing in the Premier League relegation zone and 17th in the Champions League standings, Daily Mail Spo",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-14T16:00:53.639113+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16289923/The-four-problems-Mauricio-Pochettino-needs-fix-Man-United-big-names-causing-unrest-dressing-room-issue-plagued-Ruben-Amorim-Michael-Carrick-items-Old-Trafford-tray.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-14T15:51:26+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "The four problems Mauricio Pochettino needs to fix at Man United: From big names causing unrest in the dressing room to an issue which plagu"
+    },
+    {
+      "desc": "Chelsea caught up in worldwide Microsoft outage chaos Football Today",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:00:53.639152+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcTBqc0xtSGM4eUh2SVVmNDR0NUNsYVpiWjVpWEhrR1RqRjdQWEhaZTBHZjlpYXZLVnZZTC1DN01oSnVyVVNoZ1BKN3VDV3JqNTdlNmVhU3c3cGdZN2dDSTZDZDdoSjFqbTZHbzVRaTloWHBZdndDa09NWnJ2b1RuUk1KWDNxTVhxVGlHX3Z5Smo4YXpzTkJuVTB1Z191aUoxN05yOVN6UmROb2tPY3NuNlVYUDRsSjJlcjUxMQ?oc=5",
+      "published": "2026-11-14T15:47:19+00:00",
+      "publisher": "https://footballtoday.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Chelsea caught up in worldwide Microsoft outage chaos - Football Today"
+    },
+    {
+      "desc": "Fabrizio Romano settles the debate over Hamza Abdelkarim's departure Goal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:00:53.639184+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNa0p6TGgwRHpSNHVqc0pWYWFGckd5M2U1U04tLUcwXy1hNmR0d1FZcW93WFZCUURkVEJzRXNRRHFON0Rnc1RSaVNQU21ZbjNZS0x4dkRwZElaakZyWDVsc3FQZkFVUnVlTkJJRW1xUFpHenNHT2llMGFqamNYLTBJNERGQ0ZnN1k5c2hOMjd1RVo3M29tSW1xN2VoaWZXNmFSenNaRTQyXzBvNWRSQjRpZkJ1LXhwajJo?oc=5",
+      "published": "2026-11-14T15:35:19+00:00",
+      "publisher": "https://www.goal.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano settles the debate over Hamza Abdelkarim's departure - Goal.com"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-14T16:00:53.639209+00:00",
+      "link": "https://www.skysports.com/football/norway-vs-wales/live/554107",
+      "published": "2026-11-14T15:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Haaland starts for Norway vs Wales LIVE!"
+    },
+    {
+      "desc": "10-player City fall to first defeat of the season at Chelsea Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:00:53.639238+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTWZ1emJQNHAydUp5aC1nVEVTM28ybjFMbE9kQ2xGVzY3X0c4ZlFiS1RXeDBvR3p6cXBwR1RSM21pTDFWWWJPdzJvLWtnaGQ4cmgwWlNXeVd2bFk5TXBxeDdfWWo4RkRHMldHaFdOMmJoaVlMWlFESUt2Xy1WRFFvb0ZaSHRNUQ?oc=5",
+      "published": "2026-11-14T15:30:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "10-player City fall to first defeat of the season at Chelsea - Manchester City FC"
+    },
+    {
+      "desc": "John Wenham urges Tottenham to keep tabs on former Chelsea flop who recently destroyed Manchester City To The Lane And B",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:00:53.639268+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ1dpVGlSSGY1Tm9POUhrVHNtc2NPdGEyZWNZUXB1T3hQajl4SVgzUWdQdG5fRF9ZaTIxQWJMMWhMZWl4ZlV0NXlHS2tiV1VZQkZUZk4xcVFUNWVUN3FKbWRQeFVLR1V3N0RlV0NmOWpxbEg0MjFnT3hBdkphV1p5TF9zZGtsWVpxbUpsR0NzRTFEbGhqLXdLRVJnNDFqMGh2V1ZwdDRSbw?oc=5",
+      "published": "2026-11-14T15:13:09+00:00",
+      "publisher": "https://tothelaneandback.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "John Wenham urges Tottenham to keep tabs on former Chelsea flop who recently destroyed Manchester City - To The Lane And Back"
+    },
+    {
+      "desc": "Gudjon Thordarson, who led Stoke City to promotion from the third tier in 2002 and managed three other English clubs, di",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T16:00:53.639301+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c98r7l5yrn6go?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T15:04:59+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Former Stoke City manager Thordarson dies aged 71"
+    },
     {
       "desc": "FORMER Premier League striker Mario Jardel has revealed he nearly DIED from a cocaine overdose after spiralling into dep",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3711,6 +3781,16 @@
       "title": "Confirmed Chelsea Women line up vs Manchester City | News | Official Site - Chelsea Football Club"
     },
     {
+      "desc": "Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:00:53.639532+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaEcyUEZHMlF2MWZ1TDE3TFk0ekg2MXN6dVVZdFJTZ283ZDMxbldSaDI3blNKenVEbUczUHJIQ0JrQ3pEZGJtbTRQTjZBWjBKU2tadzdfa3BSVjZFSGJPWGU4d0pkTGV2TVFadFd0amJpeEdTX0tmSlhOMWJFMGlHTTVLRUlmdEVhRGpvYi12alNtdHFUM2FMbVpWNzdubDFMZE15UGhYUXI0R080OElrTnVsbFF2cG5XcjRHbUNKb1BTSDlN?oc=5",
+      "published": "2026-11-14T12:27:12+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United Website"
+    },
+    {
       "desc": "KEVIN DE BRUYNE could be heading for a shock Napoli exit after PSV Eindhoven opened talks over a stunning move. The form",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-14T13:01:02.056498+00:00",
@@ -3881,6 +3961,16 @@
       "title": "Why Man Utd could face rocky start under Pochettino – but there is a GOOD omen for Liverpool clash"
     },
     {
+      "desc": "Maya Le Tissier marked her 150th club appearance with a stunning strike as Manchester United moved fourth in the WSL wit",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-14T16:00:53.639767+00:00",
+      "link": "https://www.skysports.com/football/manchester-united-women-vs-crystal-palace-women/report/575822",
+      "published": "2026-11-14T10:54:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Le Tissier hits stunner to mark milestone in Man Utd win"
+    },
+    {
       "desc": "Official Spurs Website Tottenham Hotspur",
       "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-14T13:01:02.056782+00:00",
@@ -3949,6 +4039,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Renée: “I’m expecting a tough challenge against London City” - Arsenal.com"
+    },
+    {
+      "desc": "News Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:00:53.639896+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAxVG5JS1g1WGxKSE9hRHYydjlFdkM1S2VOdk0xaW11YW43cmpsY2Ywb0padkE5R0pZOHE3UXlxdUVYNkprUFRxU2FrNA?oc=5",
+      "published": "2026-11-14T10:25:03+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "News - Arsenal.com"
     },
     {
       "desc": "Manchester United is in negotiations with Pochettino Radar Armenia",
@@ -4099,6 +4199,16 @@
       "publisher": "https://lfcbeta.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "'A massive honour' and 'very proud' - five Reds react to Liverpool's Greatest rankings - Liverpool FC"
+    },
+    {
+      "desc": "Romano delivers verdict on Liverpool re-signing Alexander-Arnold with 'important' Real Madrid stance Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:00:53.640189+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVVZaRnktT2dsZGhheVoyVUZCQnJ2bmlERnNMMURFSVA0VXZwdnhrOThNSURTcTdVQWx0RmdfMmxJTlZhdmRhMnk3MzZCOFNMdVRZMkkwakRvbTlXaTAzOVBmU3A0bmlRRDlQQzhOVFNGUGNNTjg1dllNbWRWOXVzT1JzcExnemRZdHpkdUkwUXFTLXljTnhpZmF6alQtN3cxV3VEb1AxQzhXUQ?oc=5",
+      "published": "2026-11-14T08:57:20+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Romano delivers verdict on Liverpool re-signing Alexander-Arnold with 'important' Real Madrid stance - Football365"
     },
     {
       "desc": "Mansfield boss Nigel Clough discusses his longevity and staying power as he becomes a club's longest-serving manager for",
@@ -4909,116 +5019,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘There you have it’ – Zinedine Zidane leaps to Malo Gusto’s defence after Chelsea star’s costly error in France clash"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T20:00:52.008812+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qY1N2dUdHZjUyd2NnWWZBNnBoV1JuQ3YxM0hReUNXOUlTSUZSZ3F0S1plOWh5WFd6ejdhNEM4Zy1rRktnOVlVV2dYN0tNWlRQaTNiTENmUW0wQksxaWREU2d1VXhhb0tV?oc=5",
-      "published": "2026-11-13T17:27:58+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "Thomas Tuchel committed to England until Euro 2028 but keen on club return in future Sky Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T17:57:44.782577+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSThfWUxrRjFLRFNlNmxDVkI0b1Z3Wi1YeEFrY0hqV3E5clZJSHdTX2FHTHZQU3BZSEdSSG95OFdxZEQwNl83UHAxU2VaMWlpNE1kLTFiV0RKVEZNMTRveGs5Ml9PTFZCUENQVmZpSGdDLURWQ09pbERiNGN0YzE5SGxrZXZjSDRUbEEweWI5WWpfeGJNQkgzMUhPNTR6N3gzR1hFRjhGSTNHcE5vVlR4dnZGWjlDM0xMQXBBOTRWczBnNWQ1LXI2RXFGWTN6UQ?oc=5",
-      "published": "2026-11-13T17:25:45+00:00",
-      "publisher": "https://www.skysports.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Thomas Tuchel committed to England until Euro 2028 but keen on club return in future - Sky Sports"
-    },
-    {
-      "desc": "Rotation incoming! What to do with the Arsenal defence in FPL? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T17:57:44.782595+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWHM1ZFRPZV9YSVF0Z0VoZl9ZUG5DemFUYjFjay1Hc2RfV0ZSTkg3N21YZEZld1laVjdhbHowckRRWUhZeU1iQ1VLLUd2LTByb0lUQnIyV3VJX3dhMXc0OGxrakx5bzJQSnR3TFpqT3liV3IxTl9QZHdNWkYyUmlva1FSZkdEZ0lOR1VJZHROdDRqQkVVVmk3WVFQaWJSMnZzUlpMQXRmMjdjQQ?oc=5",
-      "published": "2026-11-13T17:24:34+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Rotation incoming! What to do with the Arsenal defence in FPL? - Premier League"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T23:27:58.900887+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRnRfUTJNYVZTQzhMSy0zc2FTRV80TUt5cjU1ZEpiNDlTZndvMzg4cm82WVRyQm03MmpXS1NxX2ozS3VpX3I5X1Q5bXVCQjZjRGdkLWpESnNzdm1zZzJ3ZlkwYWJVdDc3TGp3b05CWjNYWUVxTFl2c3dKM1JFcmNmMFJYaw?oc=5",
-      "published": "2026-11-13T17:07:00+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
-    },
-    {
-      "desc": "DELE ALLI is closing his image rights company with £8.3million in the bank. The former England ace, 30, will pocket £7.6",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T17:57:44.782614+00:00",
-      "link": "https://www.thesun.co.uk/sport/41013385/dele-alli-fortune-adidas-boohooman/",
-      "published": "2026-11-13T17:01:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Spurs icon Dele Alli amassed £8.3million from image rights company, including amazing deals and property portfolio"
-    },
-    {
-      "desc": "Key talking points from Sonia Bompastor's pre-Man City press conference | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T17:57:44.782633+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaWZHWDFFMUlpUUdkdXllUTJVX1lWTVB3TTVRMzRnOWVhY0NhS0lHaF8wMXh1dm5zV2pXS3o1bm96UTA5SFBfMm9saVRTUmlqOEM3SXBHSUsxN1p0S0pKc0NIc3EybVcza3Q2OVlJMG0zdVAyaUktS3lIZE9pTDJCaDRoeHh4Zkk5bjNZUWhVSWFUZHZEb0wxVzFjRmx0eGRnS0o1d2lseFduSS1kbU9wVVFR?oc=5",
-      "published": "2026-11-13T17:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Key talking points from Sonia Bompastor's pre-Man City press conference | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Sonia Bompastor named WSL Manager of the Month | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T23:00:56.430053+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQelhXYm9uMFNYQ0l2RzJDZ1lob01mdTZvNkRLY2ljWEhTNGZyTTlLbzVOcVJwZk5NeVFxNEdPellQRFcwaEdrZGFmamx5LTBBUzlBNlJmMHFpQzVRTGlYWTdkeGFKZlFoMXZHZDFZQXVLQUM5SllQeGVvUGtIQ1BkWHNGczBvWjlOVHdEVWpSa3QtQQ?oc=5",
-      "published": "2026-11-13T16:45:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Sonia Bompastor named WSL Manager of the Month | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "JOHAN CRUYFF'S footballing legacy will continue after his grandson earned an international call-up - but not with Hollan",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T17:01:00.851658+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014827/johan-cruyff-grandson-international-call-up/",
-      "published": "2026-11-13T16:44:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Johan Cruyff’s grandson called up for completely different country after making own way in football"
-    },
-    {
-      "desc": "Manchester City Fairisle Fleece Blanket Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T23:27:58.900930+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZG5nMWRiV1ZDS0w2bXBEOGZjZnM4MGRTalRjRl9TNTU3bk1rTXVRMWpvdHZfRkVvWkVpQWxwX2VGVGlENHdJTG4xNzlrN1BkUkVEekVGcm92OV94QW42bmxMcm95YjBDa29Jd2RMeUVvYWpYQWNXTUV0VHhYT2NjTFVDMUhLYkFldFVoT0NFTzNEWHhLSHc?oc=5",
-      "published": "2026-11-13T16:36:02+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Manchester City Fairisle Fleece Blanket - Man City Shop"
-    },
-    {
-      "desc": "USA chiefs have revealed money will not be an issue when it comes to appointing Mauricio Pochettino's successor. The Arg",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T17:01:00.851683+00:00",
-      "link": "https://www.thesun.co.uk/sport/41017347/usa-hint-pep-guardiola-approach-mauricio-pochettino-man-utd/",
-      "published": "2026-11-13T16:25:22+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "USA drop major hint over ambitious Pep Guardiola approach after Mauricio Pochettino’s tearful exit for Man Utd"
-    },
-    {
-      "desc": "Pochettino: It's difficult to turn down United Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T22:00:53.495506+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQamZEN2ZhQi1Ra0Z1U004VGpzSkkyNlFrWmNGSlpIeGZKZmFfd01RWlpCSmthNWhtcEtPUmxZbHlyUzVqODNHd05UajJ2QWhZTEdzTVRFOEE4N0VydWtodGRiQlJSLVRlcTZkOE1ZVnRwRGRuak9NUnVxaVpEaU1YeGNNWkZ4UGRkMlRkNUN3ME9OcG5zNUVmTmZIdw?oc=5",
-      "published": "2026-11-13T16:15:47+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino: It's difficult to turn down United - Manchester United"
     }
   ],
   "processed_urls": [
