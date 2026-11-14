@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 26,
+        "calls": 27,
         "errors": 0,
-        "requests": 26
+        "requests": 27
       }
     },
-    "calls": 26,
+    "calls": 27,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 155625,
-    "output_tokens": 18805,
-    "requests": 26
+    "input_tokens": 162179,
+    "output_tokens": 19361,
+    "requests": 27
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1387,6 +1387,41 @@
       "telegram_message_id": 20,
       "title": "西汉姆联以色列球员所罗门遭亲巴勒斯坦人士辱骂为“婴儿杀手”",
       "updated_at": "2026-10-31T00:25:39.680813+00:00"
+    },
+    "5261400ac9ca": {
+      "article_title": "New Man Utd boss Mauricio Pochettino to ban players’ day off after games as he cracks the whip in major fitness blitz",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "047d09ec6f3702a4",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 141
+        }
+      ],
+      "created_at": "2026-11-14T14:00:54.868896+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "0a6452c3dbd88a1f",
+      "event_id": "5261400ac9ca",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-14T14:00:54.868896+00:00",
+          "origin": "created",
+          "title": "New Man Utd boss Mauricio Pochettino to ban players’ day off after games as he cracks the whip in major fitness blitz",
+          "url": "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 141,
+      "title": "太阳报称波切蒂诺将取消曼联球员赛后休息日",
+      "updated_at": "2026-11-14T14:00:55.695385+00:00"
     },
     "5261a8f93a76": {
       "article_title": "Tottenham mood 'totally different' - De Zerbi",
@@ -3464,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T13:01:02.052587+00:00",
+  "last_scan_at": "2026-11-14T14:00:50.004190+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3485,6 +3520,86 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "NEW MANCHESTER United coach Mauricio Pochettino is set to crack the whip with his players to improve their much-criticis",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T14:00:50.006766+00:00",
+      "link": "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes/",
+      "published": "2026-11-14T13:50:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "New Man Utd boss Mauricio Pochettino to ban players’ day off after games as he cracks the whip in major fitness blitz"
+    },
+    {
+      "desc": "PRIVATE chef Tommy Cole is sure to be serving up a storm for his mystery Cobham client tonight. Nearly every day, Tommy ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T14:00:50.006794+00:00",
+      "link": "https://www.thesun.co.uk/sport/40988097/tommy-cole-private-chef-sports-stars-premier-league/",
+      "published": "2026-11-14T13:39:47+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "I used to drink salmon and potato smoothies, now I’m a private chef for Premier League stars, NBA players and golfers"
+    },
+    {
+      "desc": "Tyler Adjei: Fabrizio Romano confirms United have completed deal to sign striker for academy Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.006819+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRXZCbEZsN1FjWmVmbTZ0WXJiYkhtN2xmWDVnUE5MWmNveXdFbjdfbGhLc1djOVRCTXFTRjcxMG5yWE02UFRlUTRmQTNDOXA5U0RxYTFsc0NIVDgzRVpVWXNjaVQxSm1WUFpaZlZaVkZlOXlHSmxTSTM3NW5oc2F2OXgxakJFVkxfZlgzX1Jn?oc=5",
+      "published": "2026-11-14T13:35:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Tyler Adjei: Fabrizio Romano confirms United have completed deal to sign striker for academy - Yahoo Sports"
+    },
+    {
+      "desc": "Arsenal Players on International Duty: Bruno Two Assists, Gabriel Loses (14 Nov) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.006840+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWkFYeUktbXdwTjhSV21tVGtDYXdlUDhfQkI5NEVIMFI3cG51azdOeUFPZnFNSTlzVkVLYk5DajEyaHJBdmZoNzVnVmt0WEh3MTlvdC1ROUdKSEtGQUN2RXZsXzdCZUo5MUpVZGR0dHJLUHdObW53RkdyS3lOenFONDh5S2FsX2hm?oc=5",
+      "published": "2026-11-14T13:31:17+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal Players on International Duty: Bruno Two Assists, Gabriel Loses (14 Nov) - The False 9"
+    },
+    {
+      "desc": "Play: Quiz on the 2026/27 Premier League season so far Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.006859+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLUd2S2V3WXdlQldfNUlSaWxkOFdNT0V1dVg5YzNLU2V0X01jelNKSWhvaFlfekZ1UEdOdHhMejNMWDFQWWZlbTd1azlQRWp1UjVEcE4tbHQ3TEk3R1pVTG5nZFRob1BwYU1nN3MxRUtONW85bTNYMkU5TDh0MmhTbEhlVWJFQ0g2R3JOTktFb3FQbmpPOUpwNy0wWkxLSS1mYlNBTDctaHZGUlZnY1FINkxZQQ?oc=5",
+      "published": "2026-11-14T13:29:05+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Play: Quiz on the 2026/27 Premier League season so far - Premier League"
+    },
+    {
+      "desc": "ARGENTINA's first game without Lionel Messi ended in a chastening defeat in front of deserted stands. Manager Lionel Sca",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T14:00:50.006876+00:00",
+      "link": "https://www.thesun.co.uk/sport/41023371/argentina-uruguay-attendance-emoty-seats-lionel-messi-retirement/",
+      "published": "2026-11-14T13:21:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Argentina face Uruguay with stadium virtually empty as post-Messi era gets off to ominous start"
+    },
+    {
+      "desc": "MIKEL ARTETA has been named the hardest Premier League manager to deal with by former top-flight referee Graham Scott. T",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T14:00:50.006894+00:00",
+      "link": "https://www.thesun.co.uk/sport/41023388/ex-referee-graham-scott-reveals-most-difficult-pl-manager/",
+      "published": "2026-11-14T13:12:09+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-referee Graham Scott reveals the Premier League manager who was the worst to deal with during his career"
+    },
+    {
+      "desc": "Michael Thomas Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.006909+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55RTQ5VWN0ZnJlaENGakk4dTVoX3p6TzRGcWtHeFAwRmx4djdtZlN3Rk5kaDQ2VldXaDhwdXpWX3lTWHpGUlVjREowd3ZzRk9vbkJyVUVjNk5PaVYzSjhadg?oc=5",
+      "published": "2026-11-14T13:01:25+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Michael Thomas - Liverpool FC"
+    },
     {
       "desc": "Fabrizio Romano: Man Utd in 20-team race \"ready\" to bid for Nico Paz Football FanCast",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3546,6 +3661,16 @@
       "title": "Game4Ricky line-ups: Who is playing in star-studded charity match?"
     },
     {
+      "desc": "Exclusive: David Pleat Names The Tottenham Academy Star Who Must Join Luca Williams-Barnett in The First Team roundtable",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.007011+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPcncwSGw5SmxyWmI0MHhwdGtWcGxhODlmR0MxYTFwcGRnQmhtRWcza0pmb2RIUFBKWk9EWHZKQkxqSlM3eXlTdXlqQ2tYdmt3UDdreTBDSTlTMjhieDlYVmdoaXoyWXlaTlZSY19lQ1Nqd1hyOFVWOUhNRi1lOWxmMTRzOUNScjVhbU92ZlV6OGJVemNyU2pKTERDZXRRU201ODN0VDRxdnh1c1l6NGhMU185V1NjMmpKTkp4VWVxSWN3bjEwZEdUWXF2ekFFNllTUjBNTWgxX0VOM19wY3czYUw4OVF4MDBwNXNVRjBUcTl5d0JpV29FbzJfX2hkbkY1a0NTVmtB?oc=5",
+      "published": "2026-11-14T12:00:05+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Exclusive: David Pleat Names The Tottenham Academy Star Who Must Join Luca Williams-Barnett in The First Team - roundtable.io"
+    },
+    {
       "desc": "MANCHESTER UNITED have completed their first signing of the Mauricio Pochettino era after snapping up teenage striker Ty",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-14T12:00:51.118525+00:00",
@@ -3564,6 +3689,16 @@
       "publisher": "https://dave.sport",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Tyler Adjei: Man Utd agree deal for Reading teenager, says Romano - Dave.Sport"
+    },
+    {
+      "desc": "Knitwear Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.007053+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UT2IwT0JUUmhfeXR1RE13SWQ1X19acWdBcFNZVzlQWDJ4VmdvOVhyR0cyTWVsSFd1Z1JpWUw5eDMtQzV5OTBHY2YteUVNWHhfTkQzV2NPY0ptTTRQa2NuUXpZVTRsd3FrVzlqWQ?oc=5",
+      "published": "2026-11-14T11:34:08+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Knitwear - Man City Shop"
     },
     {
       "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge this season at an unmissable price with this fantastic",
@@ -3596,6 +3731,16 @@
       "title": "Leeds United tickets and hotel deals for all Premier League matches at Elland Road this season"
     },
     {
+      "desc": "Internationals | Bentancur captains Uruguay to win over big rivals Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.007085+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdEFWdWZaT0QyWFFsTHhsQzIyd3VCWTFOclBPT1ZwbHlJU2ROQ1Q1Tm5CN1pTLWxLVFZuTUpheHhGQ29uREgtLWRabVRaME5EbTRJLUZXVThrUDZpUUFlWXVtTHdRTmJfT3NNaG5BbkstRmZvWE9BZ0kwUkRHeG56aVVpVVhxRjhYcTZsWFgxWHo2REFKaWFmeURLUC1BcC1NWml1bktEdlpLVHBqeHpB?oc=5",
+      "published": "2026-11-14T11:25:47+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Internationals | Bentancur captains Uruguay to win over big rivals - Tottenham Hotspur"
+    },
+    {
       "desc": "MANCHESTER UNITED missed out on their top seven midfield transfer targets before signing Youri Tielemans for £35million.",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-14T12:00:51.118624+00:00",
@@ -3614,6 +3759,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "WSL LIVE! Chelsea vs Man City plus Man Utd vs Palace LIVE on Sky!"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-14T14:00:50.007100+00:00",
+      "link": "https://www.skysports.com/football/chelsea-women-vs-manchester-city-women/live/575819",
+      "published": "2026-11-14T11:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "WSL LIVE! Chelsea vs Man City under way, Man Utd lead Palace"
     },
     {
       "desc": "Big Nations League wins for Zubimendi, Rice and Calafiori Arsenal.com",
@@ -3724,6 +3879,16 @@
       "publisher": "https://radar.am",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Manchester United is in negotiations with Pochettino - Radar Armenia"
+    },
+    {
+      "desc": "BBC Sport NI looks as Jack Moylan's terrific form for Cardiff City and Republic of Ireland ahead of the Irish's final tw",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T14:00:50.007246+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmlydwy2zg10o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T09:59:18+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Exciting' Moylan flourishing for club and country"
     },
     {
       "desc": "A win against Ukraine on Saturday night would leave Northern Ireland needing only a point away to Hungary next week to s",
@@ -3846,6 +4011,16 @@
       "title": "Who would make your England-Spain combined XI?"
     },
     {
+      "desc": "'A massive honour' and 'very proud' - five Reds react to Liverpool's Greatest rankings Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.007419+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRGhZcjV6UGxwQmVwVUpEZFFzTnJCNjJzamdjY1dzVHQ4TnhaYlcwUnF6V09nV0JvS2kwaGhRSEpNSjJuQ0xfTEg0VWlqMzB5Nkl2dF96Z0ZFeEZQcnloMVAtQ3BqdXJFeDVIbHE0OEZrUjl3bmxVMUxTakI0X2NkdkU3NGpWdVJ6ZWpJTGdaTFVGcnpyUGs3T21RUUFuVzZjTWFCOEJiWTZXQ0t2QUNqaQ?oc=5",
+      "published": "2026-11-14T08:57:22+00:00",
+      "publisher": "https://lfcbeta.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "'A massive honour' and 'very proud' - five Reds react to Liverpool's Greatest rankings - Liverpool FC"
+    },
+    {
       "desc": "Mansfield boss Nigel Clough discusses his longevity and staying power as he becomes a club's longest-serving manager for",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-14T09:00:52.452662+00:00",
@@ -3904,6 +4079,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Six goals to go - will McGinn catch Dalglish & Law?"
+    },
+    {
+      "desc": "Pochettino's coaching journey to United Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T14:00:50.007462+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9INEd4aUdMX3ZKdzhMclpCcVRfMHJkb3JTVmI3b2pIZkhVV01GZ0lFbkdlRTg5c3ljb3A3UmlHOTNyQ19sczh3ejcwdUdiaGtWenZ3NUlVVmVOaEF4VmpKb29qNHlTSU1uQl92NU0xcnlxN1ZVckhpN2kyeHo?oc=5",
+      "published": "2026-11-14T07:49:09+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino's coaching journey to United - Manchester United"
     },
     {
       "desc": "MANCHESTER UNITED have suffered a fresh injury scare after Patrick Dorgu was forced to withdraw from international duty ",
@@ -4834,156 +5019,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd tickets plus hotels and official hospitality for Champions League and Premier League games at Old Trafford"
-    },
-    {
-      "desc": "Sanction agreements reached with Manchester City over kick-off/re-start delays and PL2 breach Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T16:00:51.570412+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSmNubHpybG1KeXpGbXhsUHZfVGpFbHJoOEdJS2lCNUVJdjZuT1hVdWNGN2xQMXVIdnJMUHNQVl9qZ3dEUUR2TjVQX2E2ajdKcHZNYm1TSGVueThrWVZGbF9ITXBlbkozRmczQkQzRXhKSGVLd0NXcFFnTDZJUDlaM2dmNzBaaEdMTEtzeExMcWtMdWZHTndxTjNTbnZQbmhEelIybGh1RExoYW1RME1nZkgtSkRpcHZ3SndMd2MxcHlRN2QwOXBBNGo0cEhKMG5GWTBONFpB?oc=5",
-      "published": "2026-11-13T15:08:33+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Sanction agreements reached with Manchester City over kick-off/re-start delays and PL2 breach - Premier League"
-    },
-    {
-      "desc": "REVEALED: October's Premier League monthly award winners Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T21:00:58.710344+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN25pSkZybXRtaWZJdEoxeVVET2dMV0FJcFpsVEI5MGR5UDlZU3dsRXFxeDJxd0YxNnlBbmJhYjhza1ZkVWxRT3R3UHV0SkpiQVZwdzQ3bDJPbE1ZZFJsa04wRUczUUU0MFNUcnZLNEdjUlg1VFhCU25rWkxxRE52OHZnWkk5ZUNWWEZBNk80Mmduc2JidHd1dVFmM1FVTmNUNGc?oc=5",
-      "published": "2026-11-13T15:08:33+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "REVEALED: October's Premier League monthly award winners - Premier League"
-    },
-    {
-      "desc": "TONY PULIS has revealed how he was once sacked by Stoke City while driving on the motorway for the first day of pre-seas",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T16:00:51.570431+00:00",
-      "link": "https://www.thesun.co.uk/sport/41015684/tony-pulis-sacked-stoke-city-motorway-premier-league/",
-      "published": "2026-11-13T15:07:34+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Premier League boss reveals brutal way he was sacked on the motorway while driving to first day of pre-season"
-    },
-    {
-      "desc": "An emotional Mauricio Pochettino said that leaving his role with the United States was the \"toughest decision of his car",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-13T16:00:51.570448+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611887/mauricio-pochettino-new-man-utd-head-coach-in-tears-as-he-labels-leaving-usmnt-toughest-decision-of-career",
-      "published": "2026-11-13T15:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Tearful Pochettino admits he 'couldn't say no to Man Utd'"
-    },
-    {
-      "desc": "Transfer rumors, news: Man United eye USMNT's Balogun, Freeman for Pochettino ESPN",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T16:00:51.570468+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSjZ1QnlkRDNEMWZEcEVGUXlGazhBTkZQeFdNbmpuSGVVTDNUQnBZOFotMERRWXg2d25SQnZMdk1aRGxxbjd0NTdwN2RReUJ3bXlQN09GVmV3ZmIxaWhkZjFEd1dmRGxRTmNjSFhCNnBOZmVhS1VFVjFDbnp5ZGF4VnRpTHAzLWNBWDFXTE1lcFV6YVk1amttX0xfb1Z0dmxWdnJ0N3hnbmtydw?oc=5",
-      "published": "2026-11-13T15:00:00+00:00",
-      "publisher": "https://www.espn.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Transfer rumors, news: Man United eye USMNT's Balogun, Freeman for Pochettino - ESPN"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO broke down in tears as he said an emotional goodbye to the United States national team ahead of taki",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T15:00:57.364073+00:00",
-      "link": "https://www.thesun.co.uk/sport/41016293/mauricio-pochettino-manchester-united-liverpool-haiti/",
-      "published": "2026-11-13T14:54:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino breaks down in tears in farewell USA press conference before becoming next Man Utd boss"
-    },
-    {
-      "desc": "Mauricio Pochettino speaks for the first time since taking the Manchester United job, facing questions at a United State",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T15:00:57.364133+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290199/mauricio-pochettino-manchester-united-premier-league.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-13T14:50:37+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino breaks down in tears as he speaks on leaving USA to become Man United manager for the first time: LIVE updates"
-    },
-    {
-      "desc": "Favourite late winners: The quarter-final results! | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T16:00:51.570503+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS2tsQzFzZDNpQWJDa1JYU2NGVnZOWDRtN2E0MWNrQ29xelUteTdxZjV1Q1ZZbWQ1WkJaRFBwUU5JbU1xMXYzRERMdUdZLTJJNU42TC1DSEZwZUY0Q0hfV1I1b1JxbDFacVB6b3J6ckJieW1ROUxUMVVRS0FSWktnLXZiMDZabG5lUW56RFZXZmd3QTha?oc=5",
-      "published": "2026-11-13T14:50:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Favourite late winners: The quarter-final results! | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "What to do with Cole Palmer in FPL? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T16:00:51.570521+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LS1VkVW1MSWVOLTRmS3ZIb3MtNHZBM3k5SXhnWlpZMUFyRldsUWFTUHZjRm5BNVUwTlF1a3RGNEFfQWRRaUhrd3REWmtCd3lsRVd6eW01SUo?oc=5",
-      "published": "2026-11-13T14:49:33+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "What to do with Cole Palmer in FPL? - Premier League"
-    },
-    {
-      "desc": "New Manchester United boss Mauricio Pochettino was very emotional when thanking the US Soccer Federation.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-13T15:00:57.364174+00:00",
-      "link": "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-the-most-difficult-decision-of-my-career",
-      "published": "2026-11-13T14:49:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Pochettino left in tears on leaving US job - 'The most difficult decision of my career'"
-    },
-    {
-      "desc": "Internationals: How EVERY Premier League club's stars are performing Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T16:00:51.570568+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdDYyR0pHTk8xS1JRUS1OVGhzWEZ6VGYzdFVrZExkYnJSOEczb2hjaExGY2U1WUJvcG9VaHdzZXlGX3ZwUWlEaURuN0V6cmtOTEtiRmw4Rm5DZ093NTlsYmVUcG1zZlZncXFSYVBhaDJLR2dMcXYtdGxWWm5tdVRfNW9kdE1ER2Raa252YUtxMUNKTGREVVRLUjhmaHNwcGxCSlo3YUwwUXBMOVFXbkhiQS1B?oc=5",
-      "published": "2026-11-13T14:38:33+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Internationals: How EVERY Premier League club's stars are performing - Premier League"
-    },
-    {
-      "desc": "ENGLAND know what they have to do to top their Nations League group when traveling to world champions Spain on Sunday. P",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T15:00:57.364218+00:00",
-      "link": "https://www.thesun.co.uk/sport/41015873/spain-england-free-bets-sbk/",
-      "published": "2026-11-13T14:38:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Spain vs England: Get £40 in free bets when you stake £10 with SBK"
-    },
-    {
-      "desc": "U18s match report: Liverpool beat Salford City 6-1 in friendly Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T16:00:51.570600+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOX1ZkNVdpVFZNcmpNd19kVE9fOHJUMGRiNFVPRTBueTR4cm8xbTlWUkN0c0NmdGFhaHA1dU5talRwbWhnZXF5cU9nUTNhN0pJaXRRTlVMbmhrQXlvNUNERF9LSWlYWFhKUWV4ZkdzQ3FIeTN6SXpzY3ZKeF9RVWo1YnQ4eWo2ZWZrZHF1dDZ2Y3k3NnNIUUZMQWd3?oc=5",
-      "published": "2026-11-13T14:37:15+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "U18s match report: Liverpool beat Salford City 6-1 in friendly - Liverpool FC"
-    },
-    {
-      "desc": "Official Chelsea Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T17:01:00.851945+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yNkF5bEllYUc0Um42OEpvdVpyM2xnSWw0VzVPSmRIRENWeURfMjduUzFFOWJfcldfVGRWUXUwNTdyT3JaaHljeEs1LWthX3gzd3NiRzB3a1ZHeVRjN1lKSUtHLUVtQVktblRvazhXMUZlRkRlUGJNUmFTUGNlRms?oc=5",
-      "published": "2026-11-13T14:33:13+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Official Chelsea Store"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-13T15:00:57.364240+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13279298/crystal-palace-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-      "published": "2026-11-13T14:25:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Palace latest: Eagles hold further Frank talks"
     }
   ],
   "processed_urls": [
@@ -5098,7 +5133,8 @@
     "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo",
     "https://www.thesun.co.uk/sport/41021367/kevin-de-bruyne-wife-napoli-quit-transfer",
     "https://www.bbc.co.uk/sport/football/articles/cq39glw42xkjo",
-    "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton"
+    "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton",
+    "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes"
   ],
   "s_overflow": {},
   "schema_version": 4
