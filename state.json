@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 127283,
-    "output_tokens": 15480,
-    "requests": 21
+    "input_tokens": 133235,
+    "output_tokens": 16287,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3429,7 +3429,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T09:00:52.450023+00:00",
+  "last_scan_at": "2026-11-14T10:00:52.932699+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3450,6 +3450,86 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Here we go! Manchester United unexpectedly sign a new forward Dailysports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T10:00:52.934920+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQmFCemxTYzBwYmQxLV8yQTJvWGNzMEs0cUVGalhiMy0zWHM0TGp2Qkt1MVlOa2p0aXVoVDUxdjNlbzhHY3FXaDN4a1dyOGtwVjh2OEY3Z2xibkpzUlFPTUNLcjl2eW43LXVtRnllaTF5YUVGbm5zNjd1WE50LTRrdkYxN19mZWhGYXpZenl6cEg5ZW5X?oc=5",
+      "published": "2026-11-14T09:49:12+00:00",
+      "publisher": "https://dailysports.net",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Here we go! Manchester United unexpectedly sign a new forward - Dailysports"
+    },
+    {
+      "desc": "Timber scores first Netherlands goals in 7-0 win Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T10:00:52.934940+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQX3ByM3BzNFhuaVY1NnZjclpBMjV1MTRfeDMxWHB5N1U5ZkR6dGJxYThOam9yZGJnZFVTQXI1VFl6X19PaFhXRnFNRGlubjdrLVdxb0NuRFhUeENkY1VVYUlXenZKbmZDUVFVTWl0eU01b2dYNzhlWnI0dEFyeVNpeHMtWVhXQjRNSnF5U2dNbHB1b0Nm?oc=5",
+      "published": "2026-11-14T09:42:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Timber scores first Netherlands goals in 7-0 win - Arsenal.com"
+    },
+    {
+      "desc": "Academy column: Why Liverpool's former players are a 'source of strength' Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T10:00:52.934959+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSGpDUWR4UUxXdlBHYXdsUUxuY0RFblRlMFBDcmhnTWxvNzBUMUlqV3ZuS1dvRENTX2FsSWM4QjRXSm1GbFluckhWdEhzMWpjc1p6SnhEd3NuY0Y0dWMtTmtJREZBaFhfaTJHWmpVNFRLNER0NmMzc2Z1X1pjZnk2UGlkZmFmckNEQVhKdTdadjFmYmRhamdhMHktWEVIbTdfc3dv?oc=5",
+      "published": "2026-11-14T09:34:56+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Academy column: Why Liverpool's former players are a 'source of strength' - Liverpool FC"
+    },
+    {
+      "desc": "Alex Scott to Arsenal: i Paper Says Gunners Join Chelsea, Liverpool Chase The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T10:00:52.934974+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOXJwNnplSVpoa0pxLXFXakZPTGxWbmZDMVZyZVVsTnYwbnZ4dmxtSEplNFZoUUUxX3lqelo5dUtNV2xnWnMxTFhQWTJ6Ny01VzNuSTRuQ1pQVm91anU0a1hIOGEzZnptdHFPTzVOd2dTRlNUMlN6TTd5ajJLZ2EzYkhxOFVHZjNjZEVxMEpGOTRrWXE2dHc?oc=5",
+      "published": "2026-11-14T09:20:53+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Alex Scott to Arsenal: i Paper Says Gunners Join Chelsea, Liverpool Chase - The False 9"
+    },
+    {
+      "desc": "Manager Thomas Tuchel will remind England's players of Uefa's anti-racism protocols before Sunday's Nations League fixtu",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T10:00:52.934993+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c60mdzn2dk1eo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T09:13:30+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Tuchel to remind England of anti-racism protocols before Spain game"
+    },
+    {
+      "desc": "talkSPORT hosts clash in heated debate over Jack Grealish punishment at Everton - 'he's a human being!' Goodison News",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T10:00:52.935013+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUzNpRk9QektybVUxclB3UXlpVHBvR3dFN3ByNEUxeUdvcVdZaTFFb2w0Y0oxZkRRQzBRSkdGTTNrOVdFbVdleXJUeTV2ei1lbHJPSTlicmt0eUNLTUo0YXNKMXk3MW5fbE83QkJsMTA3TUZIbS1haHlvWkpRMGlYVzVHSXdsbGFyWFNGUXNhcHNWbGFTQ19idGF5Y0NGQnpfMVliTW1DeTRKQ2JMZXhfYWdGTmtaU0VRb2puaVI2MTZFSkFTN0VtdWQ5NDk?oc=5",
+      "published": "2026-11-14T09:00:00+00:00",
+      "publisher": "https://www.goodisonnews.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "talkSPORT hosts clash in heated debate over Jack Grealish punishment at Everton - 'he's a human being!' - Goodison News"
+    },
+    {
+      "desc": "The Steph Houghton Column: Aoba Fujino is a shining star for City! Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T10:00:52.935029+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR2hQZkRxQjdiX2kxMnpwNnpHZHRMUzFWVzFmLXROLXkxMVdOeFRrRXZpNVAyeUhxT0J4MHM4ZDVKNzRDMHJ1cHFvMFFWczFfdjQ1SmtqV1k0ZExyMm5BVUFSMjA3XzJlemE4M3RTbk55ZDJUclI5NU5hY2lYTE9mRERoVXlKT05kdmtDQzBzaWoyLWM?oc=5",
+      "published": "2026-11-14T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "The Steph Houghton Column: Aoba Fujino is a shining star for City! - Manchester City FC"
+    },
+    {
+      "desc": "How many England players do you think would make the Spain team?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T10:00:52.935046+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cw77p0v78exlo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T08:57:49+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who would make your England-Spain combined XI?"
+    },
     {
       "desc": "Mansfield boss Nigel Clough discusses his longevity and staying power as he becomes a club's longest-serving manager for",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3609,6 +3689,16 @@
       "publisher": "https://shop.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "90s Kit - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Nike Men's Slate Dri-FIT Polo I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T10:00:52.935217+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNTh1VVlfRkxUNzNnNTdabnIyV3hVdUNYczlQV1NpQ1hYOWNjeGFSREptNnQ3MVFKR0tJWEFBcFhxR242cHFKSTlWVGxYMkhrUjVDSHRWOEZZRVJNeDgyb1ZYcXI2QnU4ZEVvcGxlWmxHaDh3NmRZZkJtUFhiNFA4aFVXSlF1enRVTHRJS1JYYXF6VGNNMjRFa2JB?oc=5",
+      "published": "2026-11-14T06:36:17+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Slate Dri-FIT Polo I Spurs - Tottenham Hotspur"
     },
     {
       "desc": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
@@ -4859,96 +4949,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Mauricio Pochettino's Man United SQUAD AUDIT: Axe EIGHT stars, new role for the attacker he's 'always liked' and who could be his new Dele A"
-    },
-    {
-      "desc": "Vermiglio to oversee Chorley after Preece leaves for Scunthorpe Yahoo",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T19:01:06.351044+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSDkzVG9XVjVTWkZlU3BIY3hsZ04yUC16dHdZRHUxcTVQY3JQSGx4ZnRRZTNockFvOXBmcEkzcGtxOXdyUHdnaG1mNDR1MVpNaFlmRjhpdmxDbmdrOEREYkRQUmtKNU9ORl9wenMwMVRuNlRRY280WTVITVh1dUMyT0dqeWhmSW5TZU1iVzFzbU4?oc=5",
-      "published": "2026-11-13T12:12:42+00:00",
-      "publisher": "https://uk.sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Vermiglio to oversee Chorley after Preece leaves for Scunthorpe - Yahoo"
-    },
-    {
-      "desc": "Son Heung-min's former mentor, Mauricio Pochettino, set to rescue relegation-threatened Manchester United... Romano also",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T13:00:55.340956+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBURVVIeXFvSXBrRXRpd0FfcFphcm1pTU5YaFB0QkdoTnViZnRpbHd3M2dvVDVBN2VIeUFNLVh0VHAzRDB6c0dQOU1RcVNKQ1duM1k5a0tGc2tWV1RISVRuNGNiWWRYelZkTU9XRi1ERDdEeW1pN2plQWFn?oc=5",
-      "published": "2026-11-13T12:11:25+00:00",
-      "publisher": "https://www.starnewskorea.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Son Heung-min's former mentor, Mauricio Pochettino, set to rescue relegation-threatened Manchester United... Romano also says \"Here we go\" a"
-    },
-    {
-      "desc": "Here we go: Real Madrid’s first summer signing of 2027 will sign a contract until 2030 Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T14:00:52.442543+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMUgzTmQwRGNIX19UNzdPZWFiYjZxdDRHS1hnLW1zS01GUG5KQkxPTEdnM2p3aWhnN3U4X1cwSlRad294R1JPWHZWY1RQY1labXRnMklTX2sySHhxdmpXbzVoVWJoVGhMbUNuLWFScFhEVS1kRlZneXBFYm44VXpzc3dKb29pMWtw?oc=5",
-      "published": "2026-11-13T12:10:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Here we go: Real Madrid’s first summer signing of 2027 will sign a contract until 2030 - Yahoo Sports"
-    },
-    {
-      "desc": "DISCIPLINARIANS, old-timers, legends - Charlie Austin experienced the full spectrum of football managers during his 19-y",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.340993+00:00",
-      "link": "https://www.thesun.co.uk/sport/41013552/charlie-austin-sean-dyche-david-beckham-burnley/",
-      "published": "2026-11-13T12:07:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Charlie Austin reveals how thinking he was David Beckham earned him the rollicking of a lifetime from Sean Dyche"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has been appointed as Manchester United's new boss. The Red Devils sacked Michael Carrick on Thursda",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.341012+00:00",
-      "link": "https://www.thesun.co.uk/sport/41004688/mauricio-pochettino-appointed-man-utd-manager-michael-carrick/",
-      "published": "2026-11-13T12:02:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino appointed Man Utd manager as he replaces Michael Carrick and is tasked with saving disastrous season"
-    },
-    {
-      "desc": "THE very best Dream Team managers are using this international break to broaden their knowledge of the season so far. In",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.341031+00:00",
-      "link": "https://www.thesun.co.uk/sport/41012482/underrated-players-suzuki-vuskovic-yeremy-pino-fantasy-football/",
-      "published": "2026-11-13T12:02:21+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Dream Team managers overlooking Yeremy Pino, Luka Vuskovic and others — 3 underrated players from each position"
-    },
-    {
-      "desc": "Mauricio Pochettino has been appointed as the new Manchester United head coach, following the sacking of Michael Carrick",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-13T13:00:55.341045+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13610882/mauricio-pochettino-appointed-as-manchester-united-head-coach-after-michael-carricks-sacking-at-old-trafford",
-      "published": "2026-11-13T12:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man Utd appoint Pochettino as head coach"
-    },
-    {
-      "desc": "Fabrizio Romano gives detailed update on that Alvarez-Zubimendi swap talk Just Arsenal News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T13:00:55.341066+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQmVIYzV0WFVoRGNZdXVYenJYTlVSeU0xT3dSckxlUzd5cDRuQUp3ZG5paEQxc1A1RGVjTXZoalFkQkQ4VVFlejlHRXFacjNhSGlORHVtMm5VS1dYREF3aU1PZzJGV2VqXzl1WGV1NmpEUzlPSlRYZ2daY0JqQjNLZlBrRDJFcUtOQ1gyRzFWazlwWHcyLTFIdktxN3BaNjJ4akE4eXlTdWNJb0840gGyAUFVX3lxTE9nNlFPcmIwd0pvWkptbFduYTQwY0VVYUt5YzJaV2xvQmtWSUlkVFNMN2ZqMkJtQ1g0cVlPdWRnaGdNNllXMTBjc2tFT3l2Tm1vNGVXQktZemNnNFJxYWtKTUlkWWotNmtPX1NYVHdMQzlDVjB4MGYxcFEyaXJaWDNvQm1qeXpVbnc5VTNvN1hvNzRhZThYNDN6Y05ySl9EZV9idTNoU0U2cW9lMEtVd1VIcXc?oc=5",
-      "published": "2026-11-13T12:00:00+00:00",
-      "publisher": "https://www.justarsenal.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano gives detailed update on that Alvarez-Zubimendi swap talk - Just Arsenal News"
-    },
-    {
-      "desc": "Pochettino to become head coach Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T14:00:52.442663+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSFFvWHZpZXdDSThUZ2JCNzlwc1ZSbGJaaTZPUkM4N2poaFhWSF92Y1VMMC1tQ29OOWtlRHd5Qk55WGJrRjlObkI4ZkNUSERGM1VRNHhoRGdDMWVoYW9GaG5ycDUydHpTd1dlYkZjSHFublpSSnIxQ0JZYW9sYjduNi1jd0RkU0Z3SnZXLWpB?oc=5",
-      "published": "2026-11-13T11:57:36+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino to become head coach - Manchester United"
     }
   ],
   "processed_urls": [
