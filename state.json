@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 13,
+        "calls": 14,
         "errors": 0,
-        "requests": 13
+        "requests": 14
       }
     },
-    "calls": 13,
+    "calls": 14,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 85803,
-    "output_tokens": 9194,
-    "requests": 13
+    "input_tokens": 92220,
+    "output_tokens": 10108,
+    "requests": 14
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3394,7 +3394,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T02:00:49.193872+00:00",
+  "last_scan_at": "2026-11-14T03:01:05.194797+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3416,6 +3416,16 @@
   },
   "news_pool": [
     {
+      "desc": "Man Utd Transfer News Today: Fermin Lopez targeted as Romano confirms January signing LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T03:01:05.197004+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQTFUtVGU3RXNRekNsSmlfcWtDZU1mVEhjc0UwNEEwRWQ3X0M2QzJsUUl1a1hlWGg5WHk2Q2ZTN0s3dFlNT05Ya1hUcml3RmVXVmpHMXZoWXFkd0xpVm5xczVKVHI5TWJJWktVaGQ4OC1GeXdpaXJ6bTFpcC01M25TcE9RNkpYSWp1c2wtUmpmbTdjWTVIUmszNUJKLW9TRHdWRWdFT3FCZXdBdnZiVW14LWV1Sm1xYi1CX1plNkFyY0dlaVRDV1IyS1ZqVnQ1MlAzWEF1X0hxTnlQTEFxTm1mclZPRWJQYmtCcERuSXhpc184VGc?oc=5",
+      "published": "2026-11-14T01:50:55+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd Transfer News Today: Fermin Lopez targeted as Romano confirms January signing - LiveScore"
+    },
+    {
       "desc": "FOOTBALL fans looking to score a pre-Christmas stadium trip can bag an impressive bargain. Supporters can claim 10% off ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-14T02:00:49.197652+00:00",
@@ -3436,6 +3446,16 @@
       "title": "Watch Gomez's October Guinness Goal of the Month - Premier League"
     },
     {
+      "desc": "News Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T03:01:05.197054+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBlQ3RiR1QtSk1UenZVTVlyMzZSZ1huSmFSa2ZxOXBzVkN1MEE2MGN0a0NkRzY5eDFvZWNiemdsbDRoT09HM0FLYmo0LU0?oc=5",
+      "published": "2026-11-14T00:49:39+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "News - Arsenal.com"
+    },
+    {
       "desc": "KEVIN DE BRUYNE's wife has revealed he will QUIT Napoli and move back to Belgium. Michelle, 32, has been with the former",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-14T00:00:57.430505+00:00",
@@ -3454,6 +3474,16 @@
       "publisher": "https://www.skysports.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd transfer news: Como star Nico Paz emerges as target ahead of summer transfer window - Paper Talk - Sky Sports"
+    },
+    {
+      "desc": "Syd Roberts Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T03:01:05.197102+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ZUi1oX2FZSWhfOW4xVE54LXgzbFJSa0c5ZmI0cnhPeHZFOVZfbVZFd1Bfd3VYT1Jnb29LS2ZQTTZiM3Fad0VkeUhPZXBHa2ln?oc=5",
+      "published": "2026-11-13T23:05:45+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Syd Roberts - Liverpool FC"
     },
     {
       "desc": "What can Manchester United fans expect from their new manager Mauricio Pochettino? BBC Sport gets an insight from Toby A",
@@ -4884,36 +4914,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "The club preparing to play again after the death of a player"
-    },
-    {
-      "desc": "Manchester United captain Bruno Fernandes rejects the club's second contract offer, with his current deal due to expire ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T10:00:57.017762+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm782d4pz9jyo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T09:55:01+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Fernandes rejects second Man Utd contract offer"
-    },
-    {
-      "desc": "Joint statement from Premier League, FA, EFL and WSL Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T11:01:09.430475+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWnJ2TEJJbDJyWE4yOXRadVh5aENicHNBQm16c3B3aUJtR25sdGlTVWh0UWJkaWlDRW1EX2dqdlFLa2FvNnZtT2wwSXJ5WVVhMjY1OHNsVC1mdl9nMEdBaVVBckNwckNwRERJNEJsOWVwWWFvX2R4WGNhYWtJMy1iZGdVVzVRNDJVU1BEOVZLd3pOLXV5RG50MGg2V0NYTEhkMDlUQzRDdzhWRTA?oc=5",
-      "published": "2026-11-13T09:30:58+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Joint statement from Premier League, FA, EFL and WSL - Premier League"
-    },
-    {
-      "desc": "LFC kickstarts fan giveback with Christmas shopping savings for supporters Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T15:00:57.365338+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVHVjLThwS1RDeERWSHk1RUp4cUx0cm1QY1cydHlxcVRMM3BiMmVJa216ZFAxaTZwYVU2Ti1UdVVLUzFRbWc5NVVobjhPak11WW9mWHQyTEM4TXY2NXBXSndsVGcxdUk3SUxNUWkyVDhvOWtYQlRFbkZXWjd2VUM0dzlLNU5kamNMYUJqSVZRWkJLSjJ1ZUVJQkdHWERVSGxCTzl1NlAzQkZIdjQ?oc=5",
-      "published": "2026-11-13T09:26:56+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC kickstarts fan giveback with Christmas shopping savings for supporters - Liverpool FC"
     }
   ],
   "processed_urls": [
