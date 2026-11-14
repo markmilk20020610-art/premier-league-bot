@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 37349,
-    "output_tokens": 3231,
-    "requests": 6
+    "input_tokens": 43975,
+    "output_tokens": 3753,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T20:00:53.138294+00:00",
+  "last_scan_at": "2026-11-14T20:59:30.246520+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3520,6 +3520,46 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Spain manager Luis de la Fuente says \"there is no racism in Spain\" after Thomas Tuchel issued a warning to his England p",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T20:59:30.250039+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c893r74ryy3qo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T20:43:57+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'No racism in Spain' – De la Fuente message for Tuchel"
+    },
+    {
+      "desc": "CRAIG HOPE: Souness has long believed the Arsenal and England star does not do enough for a midfielder and said recently",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-14T20:59:30.250088+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16292603/Declan-Rice-bites-Graeme-Souness-old-mans-football-criticism.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-14T20:40:48+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Declan Rice bites back at Graeme Souness: Arsenal star claims pundit doesn't understand how the game has evolved over 'old man's football' c"
+    },
+    {
+      "desc": "Arsenal and England midfielder Declan Rice says he is close to signing a new contract with his club.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T20:59:30.250122+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq0mdzrjn0j2o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T20:40:35+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Rice close to signing new Arsenal contract"
+    },
+    {
+      "desc": "England's game with world champions Spain will reveal if head coach Thomas Tuchel has learned from summer disappointment",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T20:59:30.250155+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq2d9l3e313zo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T20:22:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Spain test will reveal if Tuchel and England have learned World Cup lessons"
+    },
     {
       "desc": "TONI DUGGAN has stunned fans in a plunging dress at the Football for Change gala. The former England Lionesses star atte",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3549,6 +3589,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Goalkeeper incredibly scores from OWN HALF during National League clash – but fans think goal could be taken off him"
+    },
+    {
+      "desc": "Emery identifies promising South American talent as Villa plan January transfer CaughtOffside",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T20:59:30.250272+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeC1vRm01U2dwNzVzTzA2dmRtUXRCbS1KUFNUUDRZVEFBZFBmOVNaYVQwZVYzd1NSZWpnakJzUnlobzI1NUcxNmZzWHU5Qk5nSFJ3aW9IR3VfaTE1ZXhZWFJORzdwYjJLWTZEcE45UmFQMWNsaDdlNlp6bTlaQnVPMlQ1OGVJVGlJM1pMN0daRFlEenlBeElpTC1sV01aS1R2TU8ybjJMd0pRcC1tcExNWnJFc1o5Tkp5bWZqTmFn0gHDAUFVX3lxTE43OEpvdzJueFI3dWtaTXd6MzRldnpjUXZLTVRFV3JsN0lmMWhnRXRhcFNSX253eTN5NklJSGRzSkNMcU5QblVZOUdpTHdWUl9JTUx4cThDdFI1aE9JVU1zblU5bkRKeHN3UlhWeExJeWlPNU0zM05TZGttaEZNR3BOSmdnX3lRbkt5eFg3N3ZnTWs3NkgycmhSaUZPNHpWdzBlMV9lUTB4ZWZwRUpQNW9YN0FlSkg4Tk9VajB0eEVpUmNiVQ?oc=5",
+      "published": "2026-11-14T19:30:00+00:00",
+      "publisher": "https://www.caughtoffside.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Emery identifies promising South American talent as Villa plan January transfer - CaughtOffside"
     },
     {
       "desc": "Watch the best of the action as Norway beat Wales in the Nations League in Oslo.",
@@ -3589,6 +3639,16 @@
       "publisher": "https://www.caughtoffside.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Everton weigh up financial risks of pursuing high-profile move for UCL winner - CaughtOffside"
+    },
+    {
+      "desc": "Everton face stumbling block in Kevin De Bruyne pursuit CaughtOffside",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T20:59:30.250365+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZlVfWFVabllpZ05sa01OSmRiWHNqVHlDZGxXWmRNY0RCcFdUc1ROQnc1OXJqdTNRWkJscWFWMDAxamw2dnludzM4aVR2SHA0MjMtdDN1LVY0Z3dCR0hjX3l6YXR3RVBSdHM1RFlaSVE2RWZldjFXZFpXMDU1MWd6SHlYUXE4VU1MQlM4RmkzMVQycnAtVmVVY2xtdzdSU050SWRrLW53X2otZGpoRTFETDNlRGdlR2pra1Qw?oc=5",
+      "published": "2026-11-14T19:00:00+00:00",
+      "publisher": "https://www.caughtoffside.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Everton face stumbling block in Kevin De Bruyne pursuit - CaughtOffside"
     },
     {
       "desc": "Gallery: Baltimore's screamer fires Blues to top of the league! | News | Official Site Chelsea Football Club",
@@ -3809,6 +3869,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "The four problems Mauricio Pochettino needs to fix at Man United: From big names causing unrest in the dressing room to an issue which plagu"
+    },
+    {
+      "desc": "Sonia Bompastor says it's 'too early' to predict WSL champions as Chelsea snag crucial win over Man City Her Football Hu",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T20:59:30.250958+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc3UtQWRBczlMcjZHUDd3VnhuY2loWEZuaGlNZkVmMGpoNkxDVWhhRWdjR1AtQ1BBT0drdHFoZk9vVGlSVVVYbXRoTFNPLU1oeDFHZXFaR3pwMlgyR2F1cXhOa0tNNnJ2ZDFnNjRtX0dya3h6ZER2M3V3WUNkQ0RYMFZXSmRXTHhRQjYyZW5Jc3UtUjZMNFJGM01Ucw?oc=5",
+      "published": "2026-11-14T15:49:08+00:00",
+      "publisher": "https://herfootballhub.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Sonia Bompastor says it's 'too early' to predict WSL champions as Chelsea snag crucial win over Man City - Her Football Hub"
     },
     {
       "desc": "Chelsea caught up in worldwide Microsoft outage chaos Football Today",
@@ -4949,76 +5019,6 @@
       "publisher": "https://lentedesportiva.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Former Arsenal striker wants Manchester United move to reunite with Mauricio Pochettino - Lente Desportiva"
-    },
-    {
-      "desc": "What can Manchester United fans expect from their new manager Mauricio Pochettino? BBC Sport gets an insight from Toby A",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T23:00:56.428872+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T22:53:17+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Fitness obsessed & 'control freak' - what can Man Utd expect from Pochettino?"
-    },
-    {
-      "desc": "MAX DOWMAN became the youngest-ever England Under-21 player as he made his debut aged just 16. The teenager’s second-hal",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T23:00:56.428911+00:00",
-      "link": "https://www.thesun.co.uk/sport/41021224/max-dowman-hailed-england-break-bellingham-record-youngest-player/",
-      "published": "2026-11-13T22:51:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Max Dowman hailed as ‘outstanding’ as Arsenal prodigy breaks Jude Bellingham record for England U21s"
-    },
-    {
-      "desc": "The top stories and transfer rumours from Saturday's newspapers...",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-13T23:00:56.428938+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611965/man-utd-transfer-news-como-star-nico-paz-emerges-as-target-ahead-of-summer-transfer-window-paper-talk",
-      "published": "2026-11-13T22:51:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Papers: Man Utd eyeing move for Como star Paz"
-    },
-    {
-      "desc": "But things haven't gone to plan in Italy, with De Bruyne struggling for fitness in his first season, while he also clash",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T23:00:56.428981+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290027/kevin-bruyne-napoli-exit.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-13T22:47:09+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Kevin De Bruyne to leave Napoli 'the sooner the better', his wife announces: Man City legend, 35, desperate to quit his 'not nice existence'"
-    },
-    {
-      "desc": "Jesus Owono is given a 12-match suspension by the Spanish football federation's disciplinary committee after his challen",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T23:00:56.429015+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T22:37:30+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Goalkeeper involved in fatal collision gets 12-game ban"
-    },
-    {
-      "desc": "NATHAN SALT AT ASHTON GATE: Max Dowman smashed Jude Bellingham's record to become the youngest player to play for Englan",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T23:00:56.429051+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290173/Arsenal-Max-Dowman-Jude-Bellingham-record-Thomas-Tuchel-Euro-2028-England-U21s-defeat-Portugal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-13T22:31:27+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Arsenal star Max Dowman smashes Jude Bellingham's record - but a less-familiar name should catch Thomas Tuchel's eye ahead of Euro 2028: THI"
-    },
-    {
-      "desc": "Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T04:00:55.064394+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQkpNTm9MclgxNUJ0NDdkeXROQ1g2LWtVMm14Uy1kRXNNZ2h6amcwNVRXeUdQR1RfVGVCS3B2YnJBR29DckphQXlILTR0N2JPblhTa0FpaW90OWJFVVNmQjJRTWVhUGxJUEZiRFhKa3hlcVdUZTZ6Tk91WktTMGlwcW9fd0pIb2JWR3dEYkxUQ2F6dldseGY1bHROR3hzV3V3dWp0b1FWejZ1M3BJNlZJRW1rbElTZw?oc=5",
-      "published": "2026-11-13T22:29:23+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Man City Shop"
     }
   ],
   "processed_urls": [
