@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 14,
+        "calls": 15,
         "errors": 0,
-        "requests": 14
+        "requests": 15
       }
     },
-    "calls": 14,
+    "calls": 15,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 92220,
-    "output_tokens": 10108,
-    "requests": 14
+    "input_tokens": 98209,
+    "output_tokens": 10910,
+    "requests": 15
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3394,7 +3394,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T03:01:05.194797+00:00",
+  "last_scan_at": "2026-11-14T03:29:38.933146+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3415,6 +3415,16 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Guehi Injury Update and Return Date: Hip Problem, No Timescale Yet The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T03:29:38.935813+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00SEFjVVA0dzI2SVZTMWhxMWRSQUYzLWx6SmtVUlNJMGZGbFZkdWFQT3JDX2NSVW9CcFBLUThKbi0xbmo4dHZLVlRYRUJ6VFV0WEp6QUFBMHo4YkQ0bDJCUjdPSWZleGx6TTd5RDhLMlhqbExnOGRYRWZSSll6Zw?oc=5",
+      "published": "2026-11-14T03:06:07+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Guehi Injury Update and Return Date: Hip Problem, No Timescale Yet - The False 9"
+    },
     {
       "desc": "Man Utd Transfer News Today: Fermin Lopez targeted as Romano confirms January signing LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3444,6 +3454,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Watch Gomez's October Guinness Goal of the Month - Premier League"
+    },
+    {
+      "desc": "Nicolas Jackson, October's EA SPORTS Player of the Month winner Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T03:29:38.935895+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZ2VabWV4ZGJ3S2k1dkFtM0xWYms3dFJJckp6SmQyM3NsSi1rc0ZfeW9mNXRFNFdMQ0tNb1pCUC1iWkpDZ3RzMGNPRm4tMGVhODEwdGRvRU9xT2xJSkxiaHUtdDJIamVsVWVlRFlKdW5WN21HZ01YVEV4TzJPTnpjMmdEVm1aZWRia1FOSnB1OXVUbTJiRGtNUy1pUTE2c1k?oc=5",
+      "published": "2026-11-14T00:50:28+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Nicolas Jackson, October's EA SPORTS Player of the Month winner - Premier League"
     },
     {
       "desc": "News Arsenal.com",
@@ -4894,26 +4914,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "'The Big Interview' with Rio Ngumoha: Fearless approach, versatility and guidance - Liverpool FC"
-    },
-    {
-      "desc": "AN ex-Premier League defender watched his team concede while standing on the sideline in his PANTS. Former Burnley man M",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T10:24:03.456470+00:00",
-      "link": "https://www.thesun.co.uk/sport/41011630/premier-league-maxime-esteve-shorts-burnley-rb-leipzig/",
-      "published": "2026-11-13T10:04:02+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Bizarre moment former Premier League star is left playing in his PANTS as shorts are ripped to shreds during match"
-    },
-    {
-      "desc": "Non-league Hendon are preparing to return to action for the first time since midfielder Ezekiel Williams died earlier th",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T10:24:03.456497+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6vg7gz9w5edo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T10:00:46+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "The club preparing to play again after the death of a player"
     }
   ],
   "processed_urls": [
