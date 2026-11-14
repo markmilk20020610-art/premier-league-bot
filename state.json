@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 6903,
-    "output_tokens": 555,
-    "requests": 1
+    "input_tokens": 12878,
+    "output_tokens": 1124,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T16:00:53.635486+00:00",
+  "last_scan_at": "2026-11-14T16:48:48.783654+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3521,6 +3521,26 @@
   },
   "news_pool": [
     {
+      "desc": "Tenerife boss Alvaro Cervera reacts to goalkeeper Jesus Owono's 12-match ban as the club prepare for their first game si",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T16:48:48.787254+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmjeq0x815zko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T16:26:49+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Tenerife boss says Owono's 12-match ban 'feels light'"
+    },
+    {
+      "desc": "Fabrizio Romano: “Rabiot’s renewal? I expect it to happen soon” Milanreports.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:48:48.787292+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9pbDRyS0xFUjljVVZIS1hzaEpaVDhMdm5RdWtNc1V1TlRpdk1RWjZBSGZ0VHEwRkhGekJTWmtyUEloc1VTQnBnaHB2T3NibVEtTWs3Nkc4MmplSVpBaU51RDV2T1BaZzhVYkR0dk9XaE0?oc=5",
+      "published": "2026-11-14T16:08:20+00:00",
+      "publisher": "https://milanreports.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: “Rabiot’s renewal? I expect it to happen soon” - Milanreports.com"
+    },
+    {
       "desc": "With United languishing in the Premier League relegation zone and 17th in the Champions League standings, Daily Mail Spo",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-14T16:00:53.639113+00:00",
@@ -3539,6 +3559,16 @@
       "publisher": "https://footballtoday.com",
       "source": "https://www.thefa.com/rss",
       "title": "Chelsea caught up in worldwide Microsoft outage chaos - Football Today"
+    },
+    {
+      "desc": "CRISTIANO RONALDO has swapped his football boots for golf clubs during his first international break since retiring from",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T16:48:48.787359+00:00",
+      "link": "https://www.thesun.co.uk/sport/41024161/cristiano-ronaldo-international-break-portugal-golf-portugal/",
+      "published": "2026-11-14T15:46:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Cristiano Ronaldo, 41, takes up new sport in first international break since retirement from Portugal team"
     },
     {
       "desc": "Fabrizio Romano settles the debate over Hamza Abdelkarim's departure Goal.com",
@@ -3581,6 +3611,16 @@
       "title": "John Wenham urges Tottenham to keep tabs on former Chelsea flop who recently destroyed Manchester City - To The Lane And Back"
     },
     {
+      "desc": "ITALY has gone Ronaldinho mad as the Brazilian legend prepares to make his sensational return to professional football a",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T16:48:48.787477+00:00",
+      "link": "https://www.thesun.co.uk/sport/41023956/italy-goes-wild-for-ronaldinho-return-to-football/",
+      "published": "2026-11-14T15:05:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Italy goes Ronaldinho mad as Brazil legend prepares for sensational return at the age of 46 with Serie C side Ravenna"
+    },
+    {
       "desc": "Gudjon Thordarson, who led Stoke City to promotion from the third tier in 2002 and managed three other English clubs, di",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-14T16:00:53.639301+00:00",
@@ -3609,6 +3649,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Real Madrid star submits amazing bid to buy 100 per cent of Italy’s Serie C football club Reggiana"
+    },
+    {
+      "desc": "Internationals: How EVERY Premier League club's stars are performing Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:48:48.787576+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdDYyR0pHTk8xS1JRUS1OVGhzWEZ6VGYzdFVrZExkYnJSOEczb2hjaExGY2U1WUJvcG9VaHdzZXlGX3ZwUWlEaURuN0V6cmtOTEtiRmw4Rm5DZ093NTlsYmVUcG1zZlZncXFSYVBhaDJLR2dMcXYtdGxWWm5tdVRfNW9kdE1ER2Raa252YUtxMUNKTGREVVRLUjhmaHNwcGxCSlo3YUwwUXBMOVFXbkhiQS1B?oc=5",
+      "published": "2026-11-14T14:21:45+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Internationals: How EVERY Premier League club's stars are performing - Premier League"
     },
     {
       "desc": "CRAIG HOPE: Five seasons ago, Bukayo Saka clocked up 3,000 Premier League minutes for Arsenal. Morgan Rogers appeared in",
@@ -3799,6 +3849,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Kevin De Bruyne ‘in transfer talks with European heavyweight with Napoli spell set for abrupt end’"
+    },
+    {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T16:48:48.787954+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWnlGOU9HazhYNks3NUpYNzV3U1RKTkdwTEFfQjFteUIzbE80VEc1Wmp6UDVHM1laNHZuUWNNd1RiODNJTThNWnNGRXhsbU56TU5xSFpmVjBtV203d2s0Q2hYTnJ1UGNPZk9lQWktM01jbTk2NnlKMVBxYmpKUm5MLUxsUUw?oc=5",
+      "published": "2026-11-14T12:24:59+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
     },
     {
       "desc": "MANY huge names from the world of sport and entertainment are set to take part in Sunday's Game4Ricky! The star-studded ",
@@ -4959,66 +5019,6 @@
       "publisher": "https://shop.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Spurs White Hart Lane Street Sign Magnet I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "The English Football League (EFL) warns its members about their usage of posts on social media.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T19:01:06.350317+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmqj5r8edvneo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T18:20:17+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "EFL warns clubs over social media posts"
-    },
-    {
-      "desc": "Romano Delivers Bruno Fernandes Man Utd Future Update After Pochettino Appointment GiveMeSport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T19:01:06.350339+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ3Y3Ri02RWJkamF0ZEU5TnlnTkhCMWQ5d3VoVHFQZzRDQm1lV3dSZTdoTW44SjY2NXVvVmF5UmZETms2RTg1cHhLMzR1QkJaSW1NNnN6TGxhMXpNWnJSb054eHBGczVLbGF4VEtqbVphV0twaHVTMlZlVHlwZTdOX2ZLY2RORXFhQ0xrOFNvZw?oc=5",
-      "published": "2026-11-13T18:15:14+00:00",
-      "publisher": "https://www.givemesport.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano Delivers Bruno Fernandes Man Utd Future Update After Pochettino Appointment - GiveMeSport"
-    },
-    {
-      "desc": "Former Tottenham star Dele Alli is set for a mammoth £7.6million payday in as he plans to close down his image rights co",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T23:00:56.429926+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290001/Former-England-star-Dele-Alli-line-huge-8-3m-payday-selling-image-rights-company.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-13T18:07:58+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Former England star Dele Alli in line for huge £8.3m payday after selling his image rights company"
-    },
-    {
-      "desc": "'No negotiations ongoing': Fabrizio Romano delivers update on Zubimendi-Alvarez swap deal rumours Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T20:00:52.008761+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWVBQNFdWTlI5WjFmU25XUFJZYXlVZGQtUjBZMFB6RDRqT1oxU3ljbVNXYzdwZzNVRU0tUE93OWdybXhfN0hGSE1mY2Q4REtxel9yMVhzTnV3QWp3VFc1RTllcDdKakRnMWVLRkNLUk5HeGt4c25McDVxczFndWhWQmlVQ0xCRjdmaWlUaHpZWkVRVVhHSGdTckhqM1dNWm03NjhEOUVvMTBUZTljSTRRZGdyZlp2a01XemJXNHhrUDNOeHFMS0NsTtIBzgFBVV95cUxPSU94VS0wcEM5bUJiaFJtcG9BMWZoT0pKQlZRdl8wT19EQVNMN3ozNmc0VXpCY3RMbGZJZHZmVXlxcmp5ZFcxeFdLMzROMVhENjlub01fOVk0ajlERGZXR1Ftd3dOejlPMXhad003Rko2Ni1BUVJoem1QY25EVXhpNm1nVEk2b0JhSmYxUEc1YXV0RHN4ejA4TjNMNFlyZTdpbnlBRXFEcDdVN1ZMNXE2ZUNNTUQwbFZpdDhvV1pWSFhuTXliZWhqc3pyMXNkQQ?oc=5",
-      "published": "2026-11-13T17:56:01+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "'No negotiations ongoing': Fabrizio Romano delivers update on Zubimendi-Alvarez swap deal rumours - Tribuna.com"
-    },
-    {
-      "desc": "Malcolm McVean Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T21:00:58.710080+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5zaUN1Rm81YzBiV0tOWjBvWnhCZGljYW9mcHBHeTRwckZtNjJmbDRtR0FSSkFVTG1vLVRMejJvN2MxOXJKX1pqYm00TkpuWjFPbE9oMw?oc=5",
-      "published": "2026-11-13T17:45:39+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Malcolm McVean - Liverpool FC"
-    },
-    {
-      "desc": "FRANCE supremo Zinedine Zidane leapt to Malo Gusto's defence after suffering a Nations League nightmare. The Chelsea rig",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T17:57:44.782552+00:00",
-      "link": "https://www.thesun.co.uk/sport/41018452/zinedine-zidane-defends-malo-gusto-france-italy-chelsea/",
-      "published": "2026-11-13T17:43:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘There you have it’ – Zinedine Zidane leaps to Malo Gusto’s defence after Chelsea star’s costly error in France clash"
     }
   ],
   "processed_urls": [
