@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 143065,
-    "output_tokens": 17573,
-    "requests": 24
+    "input_tokens": 149138,
+    "output_tokens": 18230,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3464,7 +3464,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T11:00:55.235802+00:00",
+  "last_scan_at": "2026-11-14T12:00:51.115603+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3485,6 +3485,76 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED have completed their first signing of the Mauricio Pochettino era after snapping up teenage striker Ty",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T12:00:51.118525+00:00",
+      "link": "https://www.thesun.co.uk/sport/41022889/man-utd-sign-tyler-adjei-first-transfer-mauricio-pochettino/",
+      "published": "2026-11-14T11:39:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd sign ‘athletic’ England youth striker Tyler Adjei, 16, from Reading in first transfer of Mauricio Pochettino era"
+    },
+    {
+      "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge this season at an unmissable price with this fantastic",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T12:00:51.118558+00:00",
+      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
+      "published": "2026-11-14T11:30:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea tickets and VIP hospitality deals for Premier League games at Stamford Bridge from just £155pp"
+    },
+    {
+      "desc": "SPURS fans can secure top tickets with VIP hospitality at the Tottenham Stadium from just £135 per person. Robert de Zer",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T12:00:51.118583+00:00",
+      "link": "https://www.thesun.co.uk/sport/39228834/tottenham-hotspur-premier-league-ticket-hotel-packages/",
+      "published": "2026-11-14T11:30:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Tottenham Hotspur ticket and hospitality packages for all Premier League games from only £135 per person"
+    },
+    {
+      "desc": "LEEDS fans can get their hands on the best seats in the house to see their heroes at Elland Road this season. The club's",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T12:00:51.118603+00:00",
+      "link": "https://www.thesun.co.uk/sport/39786485/leeds-united-ticket-hotel-packages-premier-league/",
+      "published": "2026-11-14T11:29:52+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Leeds United tickets and hotel deals for all Premier League matches at Elland Road this season"
+    },
+    {
+      "desc": "MANCHESTER UNITED missed out on their top seven midfield transfer targets before signing Youri Tielemans for £35million.",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T12:00:51.118624+00:00",
+      "link": "https://www.thesun.co.uk/sport/41022905/man-utd-youri-tielemans-mauricio-pochettino-carrick/",
+      "published": "2026-11-14T11:20:25+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd ‘missed out on top SEVEN summer transfer targets’ before signing £35million Youri Tielemans"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-14T12:00:51.118642+00:00",
+      "link": "https://www.skysports.com/football/manchester-united-women-vs-crystal-palace-women/live/575822",
+      "published": "2026-11-14T11:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "WSL LIVE! Chelsea vs Man City plus Man Utd vs Palace LIVE on Sky!"
+    },
+    {
+      "desc": "Pick YOUR Premier League Team of the Season so far Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T12:00:51.118668+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1YLUNGYWVYb1dKOGM5YnBwY0JpRnR6YUo3RTZwM3lJVXlWM244WmRDaEhlUjJQTDBUUXZMLXVuMTdYb1RqRXJUa0pDWXlxNE56ZExsNW9xOVA?oc=5",
+      "published": "2026-11-14T11:03:45+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Pick YOUR Premier League Team of the Season so far - Premier League"
+    },
     {
       "desc": "MAURICIO POCHETTINO could be in for a rocky start at Manchester United if his previous Premier League appointments are a",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3544,6 +3614,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Renée: “I’m expecting a tough challenge against London City” - Arsenal.com"
+    },
+    {
+      "desc": "Manchester United is in negotiations with Pochettino Radar Armenia",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T12:00:51.118813+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xTXRNODk0MVREbjV4ampXM2tZYUp3NG1pOVY1bnU3Q1cxcVRBb25NbG41ZVZVbFRhTjJJZlAyMFNYRTl2ODJuSUw4QmZPbm95aVo5dQ?oc=5",
+      "published": "2026-11-14T10:07:46+00:00",
+      "publisher": "https://radar.am",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United is in negotiations with Pochettino - Radar Armenia"
     },
     {
       "desc": "Suspensions over boys' team abusive messages claim Yahoo Sport Australia",
@@ -3726,6 +3806,16 @@
       "title": "Buy There's Nothing on Earth Like Being a Red - Manchester United Store"
     },
     {
+      "desc": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T12:00:51.119103+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdUpkdlVCWmJIRlJGQVNYaHNzSW1WNzBRSHV2QmVhVFE1U09MNWd4SUFkOEdvMDlPX2dTUnVPa0ZDXzljbXotRHBReTlqYy0tWEQ5RW5CTEx6VVY1eURmZ1ByMVI5MmE2NURpeDRSUnR2QTNKcXM3VDNhVnRRaENnUkJTdGpZVnltVFEtZG5meTNIU2d4UTM2VGgxWjk?oc=5",
+      "published": "2026-11-14T07:14:23+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' - Football365"
+    },
+    {
       "desc": "Buy Club Colours Manchester United Store",
       "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-14T11:00:55.237831+00:00",
@@ -3824,6 +3914,16 @@
       "publisher": "https://shop.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Spurs Nike Men's Slate Dri-FIT Polo I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Lewis Koumas and Trey Nyoni surprise local pupils at LFC Foundation 'Onside' session Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T12:00:51.119204+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVGNrT0NEbFNBclBHUmZOc3NIblQxRU4xV2hrc05JRW56RUI4QWdwNUhfUW1vdmF6b3dGSTBNZmRTdmFJRm1mZHp3ZENLZzZOWUlENG5OUXZLcWRpaDJwNlBiT1RLclM0MGNTZEZNQzlYYkROaTdLbVhjeFNXOUYzUU9SYVJiVm9OTTExVTl2MEpiR1ZnaFg5Ni1wWjd2Sk5qVk5kZjZzR2duOU5H?oc=5",
+      "published": "2026-11-14T06:29:42+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Lewis Koumas and Trey Nyoni surprise local pupils at LFC Foundation 'Onside' session - Liverpool FC"
     },
     {
       "desc": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
@@ -4884,106 +4984,6 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd: Romano confirms ‘under the radar’ January transfer ’95 percent done’ - TEAMtalk"
-    },
-    {
-      "desc": "Gallery: Cazorla stars at our New York takeover! Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T17:57:44.783052+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdHVhcl95ZWFVR0xyclQ3d3ZlSWR2eFlDNmlEX3ItZU8tcGN5X0VsN200M2tMMWZGQ1BrN0RkdkNHNVFRcDZBRkYta1lWSG1SVnlMQ0VJMVdNSE83cFo3eFRuZ0E3T2pvSDNVWk91S3BnSDlZYi1RY0N2WnczVmpvVUttdTgwUnRzWmRuYnprS0k5dw?oc=5",
-      "published": "2026-11-13T13:02:53+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Gallery: Cazorla stars at our New York takeover! - Arsenal.com"
-    },
-    {
-      "desc": "MANCHESTER UNITED still believe they can convince Bruno Fernandes to sign a new contract. Fernandes has rejected two off",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T14:00:52.442008+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014992/man-utd-bruno-fernandes-new-contract/",
-      "published": "2026-11-13T13:01:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd believe they can convince Bruno Fernandes to sign new deal despite rejecting two contract offers"
-    },
-    {
-      "desc": "Analysis: How will Man Utd look under Pochettino? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T13:00:55.340715+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTHZRa0J3cThiemViNVpYTkVqN3VIOWh3UnZidWpCenJnYXpma2VpZlZ6aVpDOVlGZFRQSWJvVFhWR1ZJYTZibmx2QkRveGgyV0NsTmk0d3BzRV9mZWdOaTNmQ01PZGV1Qi1MZmtjMVJWUmUxOUZuR3pJVm1fYmw3bncya0ZseVpqNVdlVUg4M2VQOXluUFlpcWl6c3haQQ?oc=5",
-      "published": "2026-11-13T12:58:33+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Analysis: How will Man Utd look under Pochettino? - Premier League"
-    },
-    {
-      "desc": "Manchester United finalising deal for Mauricio Pochettino if Michael Carrick departs - The Athletic The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T14:00:52.442063+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT2VnY1VPVW1kMk1wN2ZfUkYzZ0NkcTZUUU1nM0cwWGp6Qjk5MWY1QU4tSW1MNnA1WnpjZlNkbHpFbC1KT056NnI3VjRzVEVIVE0tbnpxOHhuQkJ3eXJ1YUtETkljQVEtSk5Wd3JuUnM3R0tlTWxMakNPWlI1a3NGSnRORXRYQ3c5aTdyaWNOWnFlUWRuMXdDXzhNeUZIX1NyT2RRSkh4RQ?oc=5",
-      "published": "2026-11-13T12:58:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United finalising deal for Mauricio Pochettino if Michael Carrick departs - The Athletic - The New York Times"
-    },
-    {
-      "desc": "Manchester United expected to sack Michael Carrick as head coach The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T14:00:52.442091+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObURtYmFmREFqUmxBN0xmeURTcXNZRGNEUmZWUHVBZjBEdGU4a1pHTUhaM2RKVWJiWHVOU0Q5UGZiazhnU3h2MV9KX0x6SmlGb2VmTzB6eHBrNVN0RGxydGVpaWFILTAzX0Jucl9LUzBfWXVyc25lZURNWXZtT2ZfaExORWtWbWRScnM5S01WV0k5bWdPX1NnQQ?oc=5",
-      "published": "2026-11-13T12:56:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United expected to sack Michael Carrick as head coach - The New York Times"
-    },
-    {
-      "desc": "Bournemouth star Kroupi makes senior France debut Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T15:00:57.364656+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWWFHS2VTRGptbDdTWGVGUktwX1ozdy1ocnVfT0J1VDZUdHUzYVpMbGFyMUo1NldTWmZfOWFNc2E5R0hYUy0tNnQwazZYWGJkTy1JelZiYU1fMGtrOUd0d1FERGg2ZkFvWGVDM09sM1M2RHN3aktaTUM5ZDVLaWdLOG9faTdBYTc0SmM3VnVEUTQ1SmdWVWx1TW1uNA?oc=5",
-      "published": "2026-11-13T12:55:39+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Bournemouth star Kroupi makes senior France debut - Premier League"
-    },
-    {
-      "desc": "Mauricio Pochettino has been appointed as the new manager of Manchester United in place of Michael Carrick, who was sack",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T14:00:52.442131+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16287297/Mauricio-Pochettino-Manchester-United-manager.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-13T12:51:18+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino is CONFIRMED as new Man United manager: Departing USA boss speaks out as he agrees to succeed Michael Carrick - but face"
-    },
-    {
-      "desc": "MICHAEL CARRICK is officially out at Manchester United, but holds no grudges. The former boss will be replaced by Mauric",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.340741+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014950/michael-carrick-man-utd-sacking-statement-mauricio-pochettino/",
-      "published": "2026-11-13T12:49:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Michael Carrick breaks silence on Man Utd sacking with classy statement and tells fans ‘that love never dies’"
-    },
-    {
-      "desc": "EDS v West Brom: Get your PL2 tickets now! Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T13:00:55.340784+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUklqVXVDOXJLbHV2ckstdGNlMXh6U0J4TThwMVpVdWJkYXR4aHd3TXZidDBtUHAyVktvNGJ5Q0JzbGlsSzZmdTFOcDRCZS1CbnhrTUV4NElxVFBfN1dPV1Y0ZVY5Nk5tRHRqeno5OGJIOFJNNFNaakk5dF9menpXa196SQ?oc=5",
-      "published": "2026-11-13T12:47:38+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "EDS v West Brom: Get your PL2 tickets now! - Manchester City FC"
-    },
-    {
-      "desc": "MICHAEL CARRICK issued an indirect rallying cry to Manchester United's players in one of his parting acts as manager. Ca",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.340805+00:00",
-      "link": "https://www.thesun.co.uk/sport/41012773/michael-carrick-sir-alex-ferguson-standards-man-utd-exit/",
-      "published": "2026-11-13T12:47:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Michael Carrick hailed Sir Alex Ferguson’s ruthless standards in poignant speech days before Man Utd sacking"
     }
   ],
   "processed_urls": [
