@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 23,
+        "calls": 24,
         "errors": 0,
-        "requests": 23
+        "requests": 24
       }
     },
-    "calls": 23,
+    "calls": 24,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 136798,
-    "output_tokens": 16912,
-    "requests": 23
+    "input_tokens": 143065,
+    "output_tokens": 17573,
+    "requests": 24
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1562,6 +1562,41 @@
       "telegram_message_id": 74,
       "title": "西汉姆联官方任命斯科特·帕克为主教练",
       "updated_at": "2026-11-04T11:16:11.835287+00:00"
+    },
+    "6c6773c31487": {
+      "article_title": "Why Man Utd could face rocky start under Pochettino – but there is a GOOD omen for Liverpool clash",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "c569ee522c0edebb",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 140
+        }
+      ],
+      "created_at": "2026-11-14T11:01:00.698257+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "24aa1ba247c48341",
+      "event_id": "6c6773c31487",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-14T11:01:00.698257+00:00",
+          "origin": "created",
+          "title": "Why Man Utd could face rocky start under Pochettino – but there is a GOOD omen for Liverpool clash",
+          "url": "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 140,
+      "title": "太阳报：波切蒂诺若执教曼联恐开局艰难，但对利物浦有吉兆",
+      "updated_at": "2026-11-14T11:01:01.306355+00:00"
     },
     "6e05ef100179": {
       "article_title": "Fifa lose US court battle and forced to hand over ALL documents on World Cup sell-off plan in major blow to Infantino",
@@ -3429,7 +3464,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T10:52:06.588978+00:00",
+  "last_scan_at": "2026-11-14T11:00:55.235802+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3450,6 +3485,76 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MAURICIO POCHETTINO could be in for a rocky start at Manchester United if his previous Premier League appointments are a",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T11:00:55.237557+00:00",
+      "link": "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton/",
+      "published": "2026-11-14T10:56:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why Man Utd could face rocky start under Pochettino – but there is a GOOD omen for Liverpool clash"
+    },
+    {
+      "desc": "Trent Alexander-Arnold transfer announcement: Romano reveals Real Madrid star’s future LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237576+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQY0g0cWF6QlhZWFRCNW1yZ0dpYUtTRVRBakdjXzNhVEktcnVrM0NBaTh0RGc1Tl9vS3FkTFZsb2J0M1dubWxXTW1lUVFGYVBLcWJzVDFMZzQ2a0ZVLXQxckpqTVg3cXBRdEt1Tmg5RXlYMENZb2V1NG11N3dTa2hMMXBWWGVteGs4SzlXb1FYMVRmenFfWVVKLWxIRlQzSERUYWpNbXE5b0wwZVdrb3dzVGpmQlpGTnBKQXVhMWJNc2hZeTZQZTZuY1VQTlVfcVp3cnAwZU1DdTJrRkIxX2x3aklCcDNvbWhuQWM2ZzM2d1V4YTg?oc=5",
+      "published": "2026-11-14T10:46:45+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Trent Alexander-Arnold transfer announcement: Romano reveals Real Madrid star’s future - LiveScore"
+    },
+    {
+      "desc": "Maanum fires us ahead at Camp Nou Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237590+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5GUDFwRFFxZmNpOFYzRlVmYTlzTTktdTFSaV9OZXFPYk5VMTQ2c1VzUE1NUzZ5bUFZS25LMGhSdnpYOEdfVElaRUtDX2NZQ0dSRzdfeUhsczE4Y3FtSnFZ?oc=5",
+      "published": "2026-11-14T10:38:24+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Maanum fires us ahead at Camp Nou - Arsenal.com"
+    },
+    {
+      "desc": "October Player of the Month: Alessia Russo Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237602+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBjOWZrR2JzdHAwNVZsY1FfTE1GLU5tTXg5NnFRbERPMUVuSFBxSXI3c0Z0NXFxRzhmdG9vVnB6X3RXSE5XRmZPOFo0RzFRR1BmSWFkd2N0SmpTQ3IwTnRN?oc=5",
+      "published": "2026-11-14T10:38:06+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "October Player of the Month: Alessia Russo - Arsenal.com"
+    },
+    {
+      "desc": "Decision made. Barcelona forward set to leave the club? Dailysports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237614+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdFdYalBnWmhhTXZNOXlhMUdXRU5MSEtPbXJlNTFZY0NqY0FXUmo3b0ZSRG9OMl95TFJTXzZZSERiam1DSXZLUTRmN2h6Z3BQNHZrdnhxNmY0dDRJSnF5OE5iNnZrWnVpajY2c0docXJYb05mVTRMNGtvVHBFdGEtaVl0dGJjSG1vVlhZ?oc=5",
+      "published": "2026-11-14T10:36:42+00:00",
+      "publisher": "https://dailysports.net",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Decision made. Barcelona forward set to leave the club? - Dailysports"
+    },
+    {
+      "desc": "Renée: “I’m expecting a tough challenge against London City” Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237640+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNd1RSYXpvWTdmeUlIa0V2Ny04UmVwTUF5cWxKZE8zbjl5YWlIUEVOeFFnTkpoYnhtNzZHTFc5Z1I3UjMxeDN5Y2g0UHlqb0lNYmxiaHV5Rk1SdnlLdDgwUkRZM2htS0ZpNGV4MjRhN25NMXlBdi02YWxKeDdVazB2RmtXRDBrZ0cwRmFHbEl0MFhSdGpFNFpsNVRUY2V4MG8?oc=5",
+      "published": "2026-11-14T10:30:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Renée: “I’m expecting a tough challenge against London City” - Arsenal.com"
+    },
+    {
+      "desc": "Suspensions over boys' team abusive messages claim Yahoo Sport Australia",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237675+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVFZoLXlZVVowWDNSbXE3MWw0UW5XOUMzTGgycWhkNFhFVE56RXNwa29Xa2ZId0tJdEdneE5LMXpuN2hhUFJoQjF2WkJlTnlqUG5tc1hmX0lXSlRQYW1SZVh5Uy1vdTh2Z1Q4d1JuUDlmZko5S2V3MkhvN0xTWkpub3ZPNA?oc=5",
+      "published": "2026-11-14T09:55:37+00:00",
+      "publisher": "https://au.sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Suspensions over boys' team abusive messages claim - Yahoo Sport Australia"
+    },
     {
       "desc": "Here we go! Manchester United unexpectedly sign a new forward Dailysports",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3609,6 +3714,26 @@
       "publisher": "https://www.givemesport.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano: Man Utd Keen to Sign 'One of the Best Players in the World' for Pochettino - GiveMeSport"
+    },
+    {
+      "desc": "Buy There's Nothing on Earth Like Being a Red Manchester United Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237819+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMFFkQS1TT3Jma0V0SGwtOEsybWE0UFU4eGo1OEtSOXNIOXZGR0pCNnRsZ2pQbC1lMFVzVTBKZ3M1YURIR2gwRkJjVklIOVYtcTB4amRTbTc1WU9pbTgzc2ROUmVCbFBkZjByOWhsckF5Mlg4ZU1jbW9GcEpoVHRzTERyQ042NGlXb0ZHb0k3SmhMN2F6bnZ1UVdRTXh3OTV0bFlFaW4zb3NtRGdiSEpCcE9xMElKZw?oc=5",
+      "published": "2026-11-14T07:16:51+00:00",
+      "publisher": "https://store.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Buy There's Nothing on Earth Like Being a Red - Manchester United Store"
+    },
+    {
+      "desc": "Buy Club Colours Manchester United Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T11:00:55.237831+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNczF6aXk5SWFxTTZiazMxbkZZQkZkT21mMjh5RV9mR3dMQzBBUjliRjhvSVcwVy1TbUEzUmRoMWIyclU1Yk1Sbm9GaXVhRXpEc2JQcnZkT1lLTmlzbzYwZUsyWkdVQ1ctZG9FN0xVdnNJeElibm1FcDA4dmtzeENuREkwSGY0NzZRTGJRSDctdjU?oc=5",
+      "published": "2026-11-14T07:10:46+00:00",
+      "publisher": "https://store.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Buy Club Colours - Manchester United Store"
     },
     {
       "desc": "WALES are in Norway on Saturday to take on Erling Haaland and co in their penultimate Nations League group phase clash. ",
@@ -4859,96 +4984,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Michael Carrick hailed Sir Alex Ferguson’s ruthless standards in poignant speech days before Man Utd sacking"
-    },
-    {
-      "desc": "MANCHESTER UNITED drafted up a longer statement to mark the appointment of Mauricio Pochettino than they published to an",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.340824+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014544/man-utd-statement-mauricio-pochettino-michael-carrick/",
-      "published": "2026-11-13T12:46:53+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd release longer statement announcing Mauricio Pochettino than they did for sacking club legend Michael Carrick"
-    },
-    {
-      "desc": "Premier League club caught up in worldwide Microsoft outage chaos talkSPORT",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T13:00:55.340842+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQcDZhdTdJMWtwZGN3TUtOa1pSR1NDbVE2VGdNSFhuQmRDTkhoaTlmTDZ0UmV3ZXQwRnRvaWV6Zks1RWFoQ3lMeVRrSnZjTTVNMGZ2TDE1Z1BrbWFWLURsX18tU0J1czFnSjN6MEd3ejNBd0xZNm9TVDV5NHdUSXFMM2d1TjZGYV84M0JSRDlqWUR2N2s?oc=5",
-      "published": "2026-11-13T12:38:30+00:00",
-      "publisher": "https://talksport.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Premier League club caught up in worldwide Microsoft outage chaos - talkSPORT"
-    },
-    {
-      "desc": "French star Desire Doue was left with a loose front tooth after being hit with a nasty elbow in France's 3-1 defeat to I",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T14:00:52.442304+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16289793/desire-doue-loose-tooth-italy-france.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-13T12:35:54+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "France star Desire Doue is left with gruesome tooth injury after PSG youngster suffered elbow smash to the face during Les Bleus' dismal def"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T13:00:55.340858+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbkJoZWdONlFMSGttYjh3a3QtU20yTVQ5Vy1tdU9mNFY4eWl1UkRLMGdUdGg0bGQ2RTVuVUFrSUZYdV9POXl6Mms4R3pLdU5uMmNtMl9fSzJIOVdvdG5TR2tGSkxsbmxWZG9QMy1JMDhka0F1aUV4eU1nTEthNEhaRFlR?oc=5",
-      "published": "2026-11-13T12:34:08+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Friday’s Everton News: Grealish apology, behind-closed-doors Derby County friendly Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T13:00:55.340877+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdHFSeUFmdDdTNmprZmhrTi1Ma0t1QTdZVE1lQ21CcE5fTUNaTWg1QkNfcGg3RnRGTDlTQkphZUJRaEs2aWMzVVlkTUpHdi11Mm1MRFA1dWdNaFlobm1UTGRXelNaQjk2c1VrcjRERlpxRE9JTUx0bzFUUWRHcjFWRjRvQi1MMmxYQVVWaXpR?oc=5",
-      "published": "2026-11-13T12:29:14+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Friday’s Everton News: Grealish apology, behind-closed-doors Derby County friendly - Yahoo Sports"
-    },
-    {
-      "desc": "Republic of Ireland captain Nathan Collins says he felt he left his team-mates \"on their own\" after missing the two cont",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-13T14:00:52.442380+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq7821vdgrevo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-13T12:26:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Missing Israel games 'stressful' for captain Collins"
-    },
-    {
-      "desc": "MANCHESTER UNITED have defended their process of appointing Mauricio Pochettino as Michael Carrick’s replacement. Club s",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.340896+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014709/why-man-utd-picked-mauricio-pochettino/",
-      "published": "2026-11-13T12:25:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why Man Utd picked Mauricio Pochettino with crisis-ridden Red Devils scrambling to avoid relegation fight"
-    },
-    {
-      "desc": "CHAMPIONS LEAGUE winner William Pacho has called on Chelsea to keep faith in attacking prospect Kendry Paez. Paez, 19, h",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T13:00:55.340915+00:00",
-      "link": "https://www.thesun.co.uk/sport/41012023/psg-william-pacho-chelsea-kendry-paez-ecuador-premier-league/",
-      "published": "2026-11-13T12:16:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Struggling Chelsea ace Kendry Paez, 19, backed to succeed by £60m-rated PSG star after ‘tough times’ following transfer"
-    },
-    {
-      "desc": "Daily Mail Sport runs the rule over the 36 players Pochettino will be inheriting when he walks through the door at Carri",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-13T14:00:52.442487+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16287141/mauricio-pochettino-man-united-squad-audit.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-13T12:15:08+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino's Man United SQUAD AUDIT: Axe EIGHT stars, new role for the attacker he's 'always liked' and who could be his new Dele A"
     }
   ],
   "processed_urls": [
@@ -5062,7 +5097,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko",
     "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo",
     "https://www.thesun.co.uk/sport/41021367/kevin-de-bruyne-wife-napoli-quit-transfer",
-    "https://www.bbc.co.uk/sport/football/articles/cq39glw42xkjo"
+    "https://www.bbc.co.uk/sport/football/articles/cq39glw42xkjo",
+    "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton"
   ],
   "s_overflow": {},
   "schema_version": 4
