@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 67288,
-    "output_tokens": 6893,
-    "requests": 10
+    "input_tokens": 73229,
+    "output_tokens": 7550,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2902,6 +2902,41 @@
       "title": "曼联为卡里克安排解雇决定会议",
       "updated_at": "2026-11-08T23:40:50.622616+00:00"
     },
+    "db0cdb826947": {
+      "article_title": "Kevin De Bruyne’s wife reveals star will QUIT Napoli ‘the sooner the better’ after rows with boss, team-mates and fans",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "0a7f4412647e62ef",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 138
+        }
+      ],
+      "created_at": "2026-11-14T00:01:03.015642+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "fc120b3561e49c3d",
+      "event_id": "db0cdb826947",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-14T00:01:03.015642+00:00",
+          "origin": "created",
+          "title": "Kevin De Bruyne’s wife reveals star will QUIT Napoli ‘the sooner the better’ after rows with boss, team-mates and fans",
+          "url": "https://www.thesun.co.uk/sport/41021367/kevin-de-bruyne-wife-napoli-quit-transfer"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41021367/kevin-de-bruyne-wife-napoli-quit-transfer",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 138,
+      "title": "德布劳内妻子放话：越快越好，他将离开那不勒斯回比利时",
+      "updated_at": "2026-11-14T00:01:03.553324+00:00"
+    },
     "dd13e9d267b9": {
       "article_title": "Acting legend shares first pic from Sir Alex Ferguson 40th anniversary dinner with Man Utd icon surrounded by ex-stars",
       "attempts": 1,
@@ -3359,7 +3394,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-13T23:27:58.898252+00:00",
+  "last_scan_at": "2026-11-14T00:00:57.426755+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3380,6 +3415,26 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "KEVIN DE BRUYNE's wife has revealed he will QUIT Napoli and move back to Belgium. Michelle, 32, has been with the former",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-14T00:00:57.430505+00:00",
+      "link": "https://www.thesun.co.uk/sport/41021367/kevin-de-bruyne-wife-napoli-quit-transfer/",
+      "published": "2026-11-13T23:39:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Kevin De Bruyne’s wife reveals star will QUIT Napoli ‘the sooner the better’ after rows with boss, team-mates and fans"
+    },
+    {
+      "desc": "Man Utd transfer news: Como star Nico Paz emerges as target ahead of summer transfer window - Paper Talk Sky Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T00:00:57.430544+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wNkN5T1hUWFNodVlXMTNTNXlRTjlEcTU3VU1YdC1Va2pxdjFwdTZRNHdtV2RvaEhfY0Yyd3daLTQ4NzVMZTFOaFdFV2NrNmtpMkVBd0tqcFpESllJY1kwWF9ubHo?oc=5",
+      "published": "2026-11-13T23:33:08+00:00",
+      "publisher": "https://www.skysports.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd transfer news: Como star Nico Paz emerges as target ahead of summer transfer window - Paper Talk - Sky Sports"
+    },
     {
       "desc": "What can Manchester United fans expect from their new manager Mauricio Pochettino? BBC Sport gets an insight from Toby A",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3489,6 +3544,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Man Utd want Paz, Chelsea target Kounde - Saturday's gossip"
+    },
+    {
+      "desc": "Internationals round-up: Florian Wirtz scores, Gakpo meets Tsimikas and more - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-14T00:00:57.430845+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLTNyV0pkY3M5ZkM5bVo2LVYySEdqOHNISnZub3VDZnR5YTEyeDZWZTgyV0UyR25oeTc2c25JdE5GM3pZcG9RZ0VuaGljWWpQZ2ZNV1NFaDF4YlMxTkFPa0ZnN2RRX3FvYUNfcjVnYlFVOVpLQ0Nad2ppQWRjOG41N0o0dVBqZGdUamRabDh1bkZNTHRQWTVOZi1YWHNpUVZ2UWpjM25mS0tyNDg?oc=5",
+      "published": "2026-11-13T21:42:35+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Internationals round-up: Florian Wirtz scores, Gakpo meets Tsimikas and more - Liverpool FC - Liverpool FC"
     },
     {
       "desc": "BILLY GILMOUR produced one of the worst misses of the season during Scotland's Nations League clash with North Macedonia",
@@ -4849,36 +4914,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Why England were unremarkable on Harry Kane's big night, the Ben White problem - and established star whose place could be under threat from"
-    },
-    {
-      "desc": "Big Nations League wins for Zubimendi, Rice and Calafiori Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T11:01:09.430584+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbXZhdTJxVGp6NHB3VEZJNXNMUlhQQ3lwbnA4WjhDcVNOb1NFbF80azVqY2NudEtpTHItSzVnRW94T3ByeVBwbFhlX0FkNXdHTVdyM1h5YlB6UngwNGZyOE1vUGJzUnRBUU1YVTZZVWt1UGlVcDVZYmd3dnpEdmsySXh0aTdjNkR6Y2ZuYVlDQTVJVkhiMHQxVkYwMVprcDQ?oc=5",
-      "published": "2026-11-13T08:33:21+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Big Nations League wins for Zubimendi, Rice and Calafiori - Arsenal.com"
-    },
-    {
-      "desc": "Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T15:00:57.365398+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxPcFZmeWVhYjZKTGNQdzVnTVc5Ums0cUkwX0IxMjQ0c2xlMGg3TEZaVkJlS0o3cFBwSVRoZkM1SWlMMmpmajJ6RGFMVmhxN3ZxT21FaEk0bVVjRmQ2M3JzOW9DemRwX2xHWWVqTGtfU0R0Qkp6NDhEQmQ3Y1k3dVloSkozTG5UWlhKVlp4SFFNVWh1UHE3QW9DTTNFYlJOR0s3RGJGZVI5RkdKSWpSdkxJY1drOFZqYXg2SEJicUEzQUhzQVY2NnlNakFCUndYS1pqd3hpeW9EZ2VSekQ2MTNfamQ4Rlh1RnVYSGdPTE1uVW8wVFZVcjUzMVZxbFpwOEswYTNwOHRsdWFjbVRLQVNwRURRZmhSTk53ZGh4TVBuemxVYmxKVE5mb0k1N1JYQzA1QkFHb2d6OVVMdmloVEdJX0p6N1hQRVQzZm9jX1pyMXpOdVdxbGhN?oc=5",
-      "published": "2026-11-13T08:31:11+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Man City Shop"
-    },
-    {
-      "desc": "FA Cup: FAM receives official reports from Kuching City, Selangor over Sunday's brawl Sinar Daily",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T10:00:57.017906+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1dTZ1UGtQaVNPNzJMSjc2NmhYRGc5cUlvYnFuSE5FVXI3cmxmQ1RKZ3k1dHlvcXhqSV9OV3JmQUhtZlpPNjNFQzBXTEtLVGhMd3J6UTh3?oc=5",
-      "published": "2026-11-13T08:26:00+00:00",
-      "publisher": "https://www.sinardaily.my",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA Cup: FAM receives official reports from Kuching City, Selangor over Sunday's brawl - Sinar Daily"
     }
   ],
   "processed_urls": [
@@ -4990,7 +5025,8 @@
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSFFvWHZpZXdDSThUZ2JCNzlwc1ZSbGJaaTZPUkM4N2poaFhWSF92Y1VMMC1tQ29OOWtlRHd5Qk55WGJrRjlObkI4ZkNUSERGM1VRNHhoRGdDMWVoYW9GaG5ycDUydHpTd1dlYkZjSHFublpSSnIxQ0JZYW9sYjduNi1jd0RkU0Z3SnZXLWpB",
     "https://www.skysports.com/watch/video/13611928/mauricio-pochettino-left-in-tears-on-leaving-us-job-most-difficult-decision",
     "https://www.bbc.co.uk/sport/football/articles/cm98xy2j8k1ko",
-    "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo"
+    "https://www.bbc.co.uk/sport/football/articles/c85y13pv69xwo",
+    "https://www.thesun.co.uk/sport/41021367/kevin-de-bruyne-wife-napoli-quit-transfer"
   ],
   "s_overflow": {},
   "schema_version": 4
