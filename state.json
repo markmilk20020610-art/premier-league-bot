@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-14",
     "errors": 0,
-    "input_tokens": 113590,
-    "output_tokens": 13341,
-    "requests": 18
+    "input_tokens": 117250,
+    "output_tokens": 14220,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3429,7 +3429,7 @@
     }
   },
   "last_morning_report_date": "2026-11-14",
-  "last_scan_at": "2026-11-14T06:00:47.488231+00:00",
+  "last_scan_at": "2026-11-14T07:00:46.988534+00:00",
   "last_summary_sent_at": "2026-11-13T22:01:25.873344+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3450,6 +3450,26 @@
     "updated_at": "2026-11-13T22:01:25.859135+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Chelsea striker Melvine Malard and manager Sonia Bompastor tell the story of their 12-year footballing relationship.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T07:00:46.991107+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5lyey8p8yv4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T06:37:49+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "How a reunion with scout Bompastor solved Chelsea's striker issue"
+    },
+    {
+      "desc": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-14T07:00:46.991133+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6n83ld3le95o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T06:27:36+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
     {
       "desc": "Man City News Today: Appeal Hearing, Bellamy on Haaland and Defence Slump (14 November) The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4929,26 +4949,6 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Arsenal Players on International Duty: Rice Back, Calafiori Starts (13 November) - The False 9"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-13T17:01:00.852486+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
-      "published": "2026-11-13T10:31:01+00:00",
-      "publisher": "https://login.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
-    },
-    {
-      "desc": "MANCHESTER UNITED are monitoring Como playmaker Nico Paz ahead of a potential move next summer. Paz, 22, scored twice an",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-13T11:01:09.430276+00:00",
-      "link": "https://www.thesun.co.uk/sport/41011619/man-utd-transfer-target-nico-paz/",
-      "published": "2026-11-13T10:24:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd tracking Como star Nico Paz with Bruno Fernandes deal winding down but Real Madrid have £67m buy-back clause"
     }
   ],
   "processed_urls": [
