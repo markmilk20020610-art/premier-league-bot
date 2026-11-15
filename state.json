@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 34341,
-    "output_tokens": 3507,
-    "requests": 6
+    "input_tokens": 40054,
+    "output_tokens": 4158,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1878,6 +1878,41 @@
       "title": "英格兰球迷赛前嘘西班牙世界杯奖杯展示，ITV观众意见分裂",
       "updated_at": "2026-11-15T20:19:37.268743+00:00"
     },
+    "76d8f9d5ff55": {
+      "article_title": "England fans mock ‘pathetic’ Cucurella after bizarre attempt to get Harry Kane penalty overturned against Spain",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "8690906075648eea",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 145
+        }
+      ],
+      "created_at": "2026-11-15T21:00:50.957813+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "7e274a1b77700e51",
+      "event_id": "76d8f9d5ff55",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-15T21:00:50.957813+00:00",
+          "origin": "created",
+          "title": "England fans mock ‘pathetic’ Cucurella after bizarre attempt to get Harry Kane penalty overturned against Spain",
+          "url": "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 145,
+      "title": "英格兰球迷嘲讽库库雷利亚，凯恩点球助三狮领先西班牙",
+      "updated_at": "2026-11-15T21:00:51.591146+00:00"
+    },
     "77823818a9b0": {
       "article_title": "Erling Haaland’s dad breaks silence on Man City guilty verdict and speaks out over son’s future amid relegation threat",
       "attempts": 1,
@@ -3569,7 +3604,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T20:19:32.278049+00:00",
+  "last_scan_at": "2026-11-15T21:00:45.772041+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3590,6 +3625,56 @@
     "updated_at": "2026-11-14T22:01:27.524120+00:00"
   },
   "news_pool": [
+    {
+      "desc": "SPAIN star Marc Cucurella may be glad he's left the Premier League after drawing the ire of England fans. The full-back,",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T21:00:45.773819+00:00",
+      "link": "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty/",
+      "published": "2026-11-15T20:56:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England fans mock ‘pathetic’ Cucurella after bizarre attempt to get Harry Kane penalty overturned against Spain"
+    },
+    {
+      "desc": "EX-TOTTENHAM and Barcelona ace Giovani dos Santos looks unrecognisable as he crossed over to padel tennis with his two b",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T21:00:45.773850+00:00",
+      "link": "https://www.thesun.co.uk/sport/41031960/tottenham-giovani-dos-santos-padel-tennis-barcelona-ipswich/",
+      "published": "2026-11-15T20:50:08+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former Premier League and Barcelona star, 37, looks unrecognisable as he plays padel with family"
+    },
+    {
+      "desc": "Manchester United target Fulham's Calvin Bassey and Brentford's Nathan Collins, AC Milan want Real Madrid's Endrick on l",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T21:00:45.773866+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cklyegvq86w8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T20:47:44+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd target Fulham's Bassey - Monday's gossip"
+    },
+    {
+      "desc": "Real Madrid transfer news: Fabrizio Romano reveals truth behind Trent Alexander-Arnold to Liverpool links Sports Mole",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T21:00:45.773882+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONzhZSnhEUXRuVlA0bVpodFhPWHdsNmdMZFFJU1JUQ3hJVGlveWdsOWt6cl92Z3JtMkQwaVVWNENJYTFtOGtFdDNhVWprYWE4cTdQekRsYjcwUDVRcXEyaE9feWNZbWxGQlctVE1IcXZYUFVQSGNURG5tdVVRTXFHa21sbHZuQ25GTzNEaW9XOEhxdjI4UW5sR0JqSXg3WXdKTktMWElSTkY3bFpiaXNPQTZyNkJQSm1DNzBsSUIwNTJmdTZtSHAwSzZub0w0ODBjVlNPOWg3U1N6NVI2M1FsOWZVZzI?oc=5",
+      "published": "2026-11-15T20:31:17+00:00",
+      "publisher": "https://www.sportsmole.co.uk",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Real Madrid transfer news: Fabrizio Romano reveals truth behind Trent Alexander-Arnold to Liverpool links - Sports Mole"
+    },
+    {
+      "desc": "LAMINE YAMAL was handed a brutal reminder of his Ballon d'Or snub by England fans. The Spanish sensation is taking on Ha",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T21:00:45.773895+00:00",
+      "link": "https://www.thesun.co.uk/sport/41032073/england-fans-troll-lamine-yamal-harry-kane-chant/",
+      "published": "2026-11-15T20:25:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Love that’ – England fans brutally troll Lamine Yamal with seven-word Harry Kane chant during Spain clash"
+    },
     {
       "desc": "ENGLAND fans booed Spain's presentation of the World Cup trophy ahead of the Nations League clash. Goalkeeper Unai Simon",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3779,6 +3864,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Arsenal's wait for home WSL win goes on after Earps masterclass"
+    },
+    {
+      "desc": "Renee praises crowd but disappointed with draw Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T21:00:45.774044+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWExhYkVsZ1lFeUprSTEyWGpMZzIxaDdQTmF4VC01ZElGWmxrTWszRHc1R2tQSXk3M2t0ZWFqZG5aZ3ExbFMyVXd6V2NlV1VWcklhYmN1T3A0Yi1FWWJSc2thdlRod19xYVBtcW9STURPNnc5czYycV9sbDlQVS1tNkQ3bF9KeGc2clFuYy1lTUczdDg?oc=5",
+      "published": "2026-11-15T18:28:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Renee praises crowd but disappointed with draw - Arsenal.com"
     },
     {
       "desc": "Former Liechtenstein striker Mario Frick is announced as the new head coach of Aberdeen.",
@@ -4179,6 +4274,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Iliman N'Diaye Southampton U18 Midfielder, Profile & Stats - Premier League"
+    },
+    {
+      "desc": "Garry O'Connor Birmingham City Forward, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T21:00:45.774265+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1c3ZFeFZReWYxWmZFYnpaU1BRVU9xLUxOaTFRMW1jb1FIckdPc19VV29sSHp5eWR0aGZXRkVlYjdNSXBTMVhtcDZwYXNpUUEyRFdvNUJMaUxnT3c2WlROQWdJNjlBVXg4d0ZfbDdoajlISUZF?oc=5",
+      "published": "2026-11-15T14:33:48+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Garry O'Connor Birmingham City Forward, Profile & Stats - Premier League"
     },
     {
       "desc": "AN ARGENTINE goalkeeper left fans stunned after he scored one of the most bizarre own goals. Ezequiel Bacher would not h",
@@ -5019,76 +5124,6 @@
       "publisher": "https://www.si.com",
       "source": "https://www.thefa.com/rss",
       "title": "Luis De La Fuente and Thomas Tuchel Thrown Into Fiery Debate Over ‘Racism in Spain’ - Sports Illustrated"
-    },
-    {
-      "desc": "REPORT: Chorley 1-2 Buxton Chorley FC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T04:00:53.817897+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Wd1BuanpXVVRrekUzNFZJd000U0l0ZzdTdkl6YTlldW9xeEVpNlpwMmZaNk1sc0Z2S1R6Vks5MTVCejh5b0hOMGtuYUhyeDlybWx2dTZFdUswRmIyUFhNMlZrU0VMY3lI?oc=5",
-      "published": "2026-11-15T01:31:13+00:00",
-      "publisher": "https://www.chorleyfc.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "REPORT: Chorley 1-2 Buxton - Chorley FC"
-    },
-    {
-      "desc": "Buy Arsenal FC Men, Women & Academy Tickets Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T07:44:16.399834+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5aSmE0bjdtUFhGck9IaWJadUhEV01vZ3VQUjNyMGl5X2xrR2JVaDZmT1FPdVZwWGhSOEdROWFNZFFaYWtmTzhZTElIZnhCWWVId2p3?oc=5",
-      "published": "2026-11-15T01:17:26+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Buy Arsenal FC Men, Women & Academy Tickets - Arsenal.com"
-    },
-    {
-      "desc": "Burnley still expecting Barton deal - Dyche BeSoccer Livescore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T07:44:16.399872+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNenplcTlKbEtUSi1uTnV3SlBwSXhuM3k5X3QxZlZJTlpWTDlEYXI1VXlKR0VrSlM4SUZoczkzUmhzLU56UlhsbmQ3UFNQMnhsNkdTRkV6UzRlUlJIVS03VmNKU1F5ZUs5ZjU2YzhCTURzQ19zbWxMYjFieloyNVBZMnlPa2pDV0ta0gGIAUFVX3lxTE16emVxOUpsS1RKLW5OdXdKUHBJeG4zeTlfdDFmVklOWlZMOURhcjVVeUpHRWtKUzhJRmhzOTNSaHMtTnpSWGxuZDdQU1AyeGw2R1NGRXpTNGVSUkhVLTdWY0pTUXllSzlmNTZjOEJNRHNDX3NtbExiMWJ6WjI1UFkyeU9rakNXS1o?oc=5",
-      "published": "2026-11-15T00:47:43+00:00",
-      "publisher": "https://www.besoccer.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Burnley still expecting Barton deal - Dyche - BeSoccer Livescore"
-    },
-    {
-      "desc": "Mauricio Pochettino enjoyed a stellar penultimate game in charge of the United States, thrashing Haiti 6-0.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T00:57:48.555805+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290257/Pochettino-USA-game-things-learnemauricio-pochettino-man-united-usa-things-learned.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T00:39:28+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Young talent will be trusted, Bruno Fernandes can thrive and touchline presence is vital - what Man United fans can learn as incoming boss M"
-    },
-    {
-      "desc": "OLIVER HOLT: Spain are formidable opposition. They are on a record-breaking run of 43 matches unbeaten and have won thei",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T00:57:48.555837+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16293007/england-spain-euro-2028-oliver-holt.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T00:04:45+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "England's Euro 2028 mission starts NOW! Thomas Tuchel's men must beat Spain to prove they can compete with the best - or risk their 'DNA' cu"
-    },
-    {
-      "desc": "Kelly Smith: An Arsenal icon Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T06:00:50.721799+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5WNjJ5V0FUQUR1NjZMOTk4d2JhTUJ2T2JfYUo0UE9FbGhfeE5Qc0N0dXI4UDFaSTYzQjFJdjJGYXN3N3cwU21PbHJzd2VXMTF5eWJMak42dXV1VllkNXd3?oc=5",
-      "published": "2026-11-14T23:47:59+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Kelly Smith: An Arsenal icon - Arsenal.com"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO faced up to a partisan crowd and watched his side survive a tasty battle on the pitch. He can expect",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T00:01:00.486401+00:00",
-      "link": "https://www.thesun.co.uk/sport/41027401/mauricio-pochettino-thrills-man-utd-fans-usa-rout-haiti/",
-      "published": "2026-11-14T23:29:23+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino leaves Man Utd fans drooling as USA destroy Haiti 6-0 at David Beckham’s stadium"
     }
   ],
   "processed_urls": [
@@ -5206,7 +5241,8 @@
     "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton",
     "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes",
     "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o",
-    "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy"
+    "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy",
+    "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty"
   ],
   "s_overflow": {},
   "schema_version": 4
