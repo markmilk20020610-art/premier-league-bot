@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 18102,
-    "output_tokens": 1913,
-    "requests": 3
+    "input_tokens": 24000,
+    "output_tokens": 2404,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3534,7 +3534,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T18:01:00.147362+00:00",
+  "last_scan_at": "2026-11-15T19:01:01.026018+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3556,6 +3556,86 @@
   },
   "news_pool": [
     {
+      "desc": "PARIS FC are eyeing a return to the Parc des Princes, with Paris Saint-Germain's future in the iconic arena uncertain. T",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T19:01:01.028195+00:00",
+      "link": "https://www.thesun.co.uk/sport/41031344/psg-parc-des-princes-paris-fc-relocation-plans/",
+      "published": "2026-11-15T18:53:50+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "PSG could leave Parc des Princes and be replaced by rivals from ‘across the street’ in iconic 48,583-seater stadium"
+    },
+    {
+      "desc": "Highlights of the Women's Super League match between Arsenal and London City Lionesses.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-15T19:01:01.028215+00:00",
+      "link": "https://www.skysports.com/watch/video/13612562/arsenal-1-1-london-city-lionesses-wsl-highlights",
+      "published": "2026-11-15T18:37:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Earps masterclass helps London City deny Arsenal first WSL home win"
+    },
+    {
+      "desc": "Brazil legend Ronaldinho makes his comeback aged 46 for Ravenna, playing the first half of their Italian third-tier derb",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T19:01:01.028238+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckregz4g823xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T18:33:36+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Ronaldinho makes comeback in Ravenna win"
+    },
+    {
+      "desc": "CONTROVERSY erupted as a second-division match in Argentina was abandoned after a goalkeeper was hit by an exploding fir",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T19:01:01.028256+00:00",
+      "link": "https://www.thesun.co.uk/sport/41031181/firework-goalkeeper-argentina-deportivo-madryn-maipu-nahuel-galardi/",
+      "published": "2026-11-15T18:30:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Second tier clash abandoned after goalkeeper hit by exploding firework as clubs provide conflicting statements"
+    },
+    {
+      "desc": "Arsenal's wait for a home WSL win continues as they drew 1-1 against London City Lionesses on Sunday - their fifth draw ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-15T19:01:01.028270+00:00",
+      "link": "https://www.skysports.com/football/arsenal-women-vs-london-city-lionesses/report/575818",
+      "published": "2026-11-15T18:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Arsenal's wait for home WSL win goes on after Earps masterclass"
+    },
+    {
+      "desc": "Former Liechtenstein striker Mario Frick is announced as the new head coach of Aberdeen.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T19:01:01.028288+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqrmgz9ypvwko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T18:27:08+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Frick named new head coach at Aberdeen"
+    },
+    {
+      "desc": "FOOTBALL fans can enjoy an unbeatable city break to Spain's iconic capital with top tickets to see the likes of Vini Jun",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T19:01:01.028314+00:00",
+      "link": "https://www.thesun.co.uk/sport/39805767/real-madrid-tickets-la-liga-santiago-bernabeu-mourinho-bellingham/",
+      "published": "2026-11-15T18:23:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Real Madrid tickets and hotel deals for city breaks to the new look Santiago Bernabeu from just £359pp"
+    },
+    {
+      "desc": "JACK GREALISH has been seen putting in the hard yards without his top as he aims to bounce back from his boozy bender ba",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T19:01:01.028329+00:00",
+      "link": "https://www.thesun.co.uk/sport/41031094/jack-grealish-trains-topless-everton/",
+      "published": "2026-11-15T18:01:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ripped Jack Grealish trains topless as England star looks to reclaim Everton place after spending two nights boozing"
+    },
+    {
       "desc": "WILLIAM GALLAS rolled back the years by playing in Game4Ricky this weekend. The former Arsenal and Chelsea defender, now",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T18:01:00.149573+00:00",
@@ -3564,6 +3644,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Two-time Premier League winner, 49, looks a new man with bushy beard as he plays in Game4Ricky"
+    },
+    {
+      "desc": "Scotland head coach Sebastien Pocognoli says he draws on the influence of iconic manager Louis van Gaal in his own coach",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T19:01:01.028359+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cw1mdl14dzx8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T17:56:57+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Why 'inspiring' Van Gaal influences Scotland head coach Pocognoli"
     },
     {
       "desc": "BANGLADESH captain Hamza Choudhury's pleas fell on deaf ears as he begged fans to stop throwing smokebombs onto the fiel",
@@ -4144,6 +4234,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Ashley Cole accidentally shooting a student, bare-chested Marcus Bent threatening police with a meat cleaver - and an ex-Barcelona star firi"
+    },
+    {
+      "desc": "Man United target “important player” from Premier League rivals for problematic position CaughtOffside",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T19:01:01.028884+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeFBhdGFkOWFYaUlCUFY5dTZtSVR2RkppUjVKZ1Q2RjVJZ0UteDM4dDN0TU5meEM5UUpGOWxZMUk3MVdSVFBnZnBzUm11Q0ZpMjVmYlJOWHJPa2R2Z2ItVGFHdWJOMi1mdzRTQmNmTEhFeDNqVV81YVNDSVc4MzVMU2dzeEJxeHpKTFZOclpiMmRqRkNOTktNR0VpYjF1QUnSAaQBQVVfeXFMTzRmYmdlRkVqaGlwZ3lIVXlEellLZEVNb2NXdm9rdGU3TGhzTEpKZC1iTUE0WjZFZUlwdFFzb1BNUm1VREJJekFEbDdTdkdkT1JpT28zV1Z3ejd4QlBIS1B3UzM0Rkt0U29aMm1Ya2c4anZhcERhY0NYMkFMUURFYXRuX1ZfdWpKQjFTWDNIT2llNDRSOC1FY0ZESFVSZFpYNXh6Q0I?oc=5",
+      "published": "2026-11-15T12:33:58+00:00",
+      "publisher": "https://www.caughtoffside.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man United target “important player” from Premier League rivals for problematic position - CaughtOffside"
     },
     {
       "desc": "Khiev Sameth lands third term as Asean football chief NST Online",
@@ -4954,106 +5054,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano delivers verdict on Liverpool re-signing Alexander-Arnold with 'important' Real Madrid stance - Football365"
-    },
-    {
-      "desc": "Sasa Kalajdzic dealt the Republic of Ireland a late blow in Linz with the only goal in Austria's 1-0 Nations League vict",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-14T22:00:57.730966+00:00",
-      "link": "https://www.skysports.com/football/austria-vs-republic-of-ireland/report/554103",
-      "published": "2026-11-14T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Kalajdzic scores late as Republic of Ireland taste defeat in Austria"
-    },
-    {
-      "desc": "Liverpool step up move for highly-rated Frenchman compared to former World Cup winner CaughtOffside",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T22:00:57.730986+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQR1BHSU9uZFc0di0wVFJmSC1lWEVmRkJkN0lYYzhDWmJYbjZoSVFwR050WEhrdWZ2TXhhVUhuQUVYVFVtNGsyVjlXSy0xdzJFR2lPdzVvaWpnNmpKTXQ4MmRwZkVuYXJvSmZkV21oQ0VtMnN1SGwzbG5rb2pnWk40Q0ctQ0ZseDZSeEh3Z0I4U291MU16eFFUOVNMVWdqRUdRcGhOUGxZM1VWd3ozcHhnaXVUTzRPanp6REtBWUlGMHpnaEZOR2fSAcsBQVVfeXFMTUtzdzZXS0lYYlhxWWtwczhxUUtpTy1ub1pfT0piRkxycEhieDVDbGpvLVFuVlgtX21jNzh4dldSMUZsdFM1ZTZhWkxURXE5RllJLVBnRHR1UVFGMk82NDN3TGVRMjdxeEttSzVWV2tuZU5aMmxXMDZPSHZhdWVpRlduYzNWMGpWd0xmN3FtdnFENWh4MkJheFB3WVRSeDJQbzFzTXhIQURFWERpV0poNUtkQXFPdkV2eWRaZ1FzZXVzb0RBSlJMN0lDZkU?oc=5",
-      "published": "2026-11-14T21:30:00+00:00",
-      "publisher": "https://www.caughtoffside.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Liverpool step up move for highly-rated Frenchman compared to former World Cup winner - CaughtOffside"
-    },
-    {
-      "desc": "MIDDLESBROUGH are determined to resist any bids for England hopeful Will Lankshear in January - by slapping a £70million",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T22:00:57.731004+00:00",
-      "link": "https://www.thesun.co.uk/sport/41026523/middlesbrough-price-will-lankshear-transfer/",
-      "published": "2026-11-14T21:24:57+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Middlesbrough slap astonishing £70m price tag on Will Lankshear with Newcastle and Leeds considering transfer move"
-    },
-    {
-      "desc": "Nusa to Arsenal: TEAMtalk Says Agents Contacted, Leipzig Value Him at €80m The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T22:00:57.731023+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVWl1WkxQWS1fR2pjc1dyUzZ0aG5QQllWdW1NU2FsOFVGZ18tT1I0OExWWjB4QmVLeUlDSWVBZTJWNVAwMnNIY2lGMEJKdm5pNlFoaFVid0IyamlDWFNtN2lxb2tZLWFrSGFyeFVqdkJIcUEzcTR2XzVkVGRzRHdUMEtMZTRtcHpLSGtxOQ?oc=5",
-      "published": "2026-11-14T21:21:06+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Nusa to Arsenal: TEAMtalk Says Agents Contacted, Leipzig Value Him at €80m - The False 9"
-    },
-    {
-      "desc": "ZINEDINE ZIDANE expressed his grief over former club Bordeaux's devastating fall from grace as France gear up for a crun",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T22:00:57.731040+00:00",
-      "link": "https://www.thesun.co.uk/sport/41026057/france-nations-league-zinedine-zidane-turkey-bordeaux/",
-      "published": "2026-11-14T21:16:28+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "France to play Nations League clash at sixth tier stadium with Zinedine Zidane left unhappy at situation"
-    },
-    {
-      "desc": "MANCHESTER UNITED might look like a complete mess to punters but there is hardly a better time for Mauricio Pochettino t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T21:01:07.696733+00:00",
-      "link": "https://www.thesun.co.uk/sport/41025372/man-utd-mauricio-pochettino-tottenham-harry-redknapp/",
-      "published": "2026-11-14T21:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd are so bad that Mauricio Pochettino can’t fail – just like me at Tottenham, says Harry Redknapp"
-    },
-    {
-      "desc": "BRUNO FERNANDES will put all talk of a new contract on ice — until he works out if new Manchester United boss Mauricio P",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T21:01:07.696756+00:00",
-      "link": "https://www.thesun.co.uk/sport/41025939/bruno-fenandes-man-utd-mauricio-pochettino/",
-      "published": "2026-11-14T21:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Bruno Fernandes to SHELVE new Man Utd contract talks until Mauricio Pochettino proves himself to £300k-a-week star"
-    },
-    {
-      "desc": "Thomas Tuchel insisted his words had been \"twisted\" as questions over anti-racism protocols overshadowed the build-up to",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-14T22:00:57.731066+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612301/thomas-tuchel-england-boss-unhappy-as-anti-racism-protocol-questions-overshadow-nations-league-test-in-spain",
-      "published": "2026-11-14T21:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Tuchel unhappy as anti-racism protocol questions overshadow Spain clash"
-    },
-    {
-      "desc": "BBC Sport Wales explains how Wales can stay in the Nations League top tier despite finishing bottom of their group.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-14T22:00:57.731111+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmx28nxw1elvo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T20:52:48+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "What Wales need to stay in Nations League top tier"
-    },
-    {
-      "desc": "Spain manager Luis de la Fuente says \"there is no racism in Spain\" after Thomas Tuchel issued a warning to his England p",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-14T20:59:30.250039+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c893r74ryy3qo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T20:43:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'No racism in Spain' – De la Fuente message for Tuchel"
     }
   ],
   "processed_urls": [
