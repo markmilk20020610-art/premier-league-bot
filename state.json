@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 48938,
-    "output_tokens": 5175,
-    "requests": 8
+    "input_tokens": 54676,
+    "output_tokens": 5760,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3077,6 +3077,41 @@
       "title": "卡里克未获曼联留任保证，帅位悬于维拉一战",
       "updated_at": "2026-11-08T11:20:47.263146+00:00"
     },
+    "d52c8774d889": {
+      "article_title": "Arsenal suffer huge injury blow as star goes off holding hamstring during Spain vs England clash",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "12b7fb533d4aff74",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 148
+        }
+      ],
+      "created_at": "2026-11-15T23:00:58.470179+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "742d1f01c4e4138c",
+      "event_id": "d52c8774d889",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-15T23:00:58.470179+00:00",
+          "origin": "created",
+          "title": "Arsenal suffer huge injury blow as star goes off holding hamstring during Spain vs England clash",
+          "url": "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 148,
+      "title": "阿森纳中场苏比门迪国家队比赛疑似腿筋受伤",
+      "updated_at": "2026-11-15T23:00:59.218056+00:00"
+    },
     "d60aad727d8c": {
       "article_title": "Manchester United book Michael Carrick sack decision meeting - inkl",
       "attempts": 1,
@@ -3639,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-15T22:00:54.657389+00:00",
+  "last_scan_at": "2026-11-15T23:00:53.118245+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3660,6 +3695,56 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "IF he plays his cards right, Lewis Hall could be England’s left-back for the next decade. Because, after this sensationa",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T23:00:53.120845+00:00",
+      "link": "https://www.thesun.co.uk/sport/41033323/lewis-hall-england-newcastle-spain-lamine-yamal/",
+      "published": "2026-11-15T22:56:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lewis Hall could be England’s left-back for the next decade after showing Tuchel what he was missing at World Cup"
+    },
+    {
+      "desc": "The top stories and transfer rumours from Monday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-15T23:00:53.120891+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13612630/pep-guardiola-usa-approach-to-replace-mauricio-pochettino-to-be-rejected-by-ex-man-city-boss-paper-talk",
+      "published": "2026-11-15T22:45:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Guardiola to reject USA approach to replace Pochettino"
+    },
+    {
+      "desc": "Spain vs. England Player Ratings: La Roja’s Historic Undefeated Streak Finally Broken Sports Illustrated",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T23:00:53.120914+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UZzU5ZDN4a0NfMllTNVphTFRheXZPdnpzN1VMSjNDc3pWN3huSzAzem93ZEMtWGlBUnlSMTBwRXRyRE1NSTRVczUtb0syLTlGNjk4QkdkUHlTMDJLX3hKVzYyYnJfbUI0SlJiVjBnSzYyWXEz?oc=5",
+      "published": "2026-11-15T22:41:12+00:00",
+      "publisher": "https://www.si.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Spain vs. England Player Ratings: La Roja’s Historic Undefeated Streak Finally Broken - Sports Illustrated"
+    },
+    {
+      "desc": "Spanish football reporter Elizabeth Conway and senior football correspondent Sami Mokbel give their player ratings for S",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T23:00:53.120937+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cjg46lrpllrpo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T22:12:55+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who swaggered around like he owned the place? Spain v England ratings"
+    },
+    {
+      "desc": "Crawley Town to sign former Arsenal goalkeeper as a free agent now.arsenal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T23:00:53.120956+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY0pDZFRZcUdKTmJiNHhjVHk3MnM3NncteWJSUGlack5xYUkxNWdDUnVCTVFMNzZ2WGFGdTkyd1FNeUNTcDl4VkhrTnYtdkduMlBvb0NrcU51ZUpldUZOdXZ6dDdMUHlqNU1fY24xc09tcE5mNXJHTWhlaGV1LXRHb1pKaWRRWE1kcmZzSUVoUVVMMlVCRENjYmZEWVlFSnI5cmdXV3lIdw?oc=5",
+      "published": "2026-11-15T22:09:36+00:00",
+      "publisher": "https://www.nowarsenal.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Crawley Town to sign former Arsenal goalkeeper as a free agent - now.arsenal"
+    },
     {
       "desc": "ENGLAND put an end to Spain’s 43-game unbeaten streak with a thrilling 3-2 victory in Madrid. Harry Kane, Ezri Konsa and",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3709,6 +3794,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal suffer huge injury blow as star goes off holding hamstring during Spain vs England clash"
+    },
+    {
+      "desc": "José Fernández - Universidad de Chile - Defender، الملف الشخصي والإحصائيات | بريميرليج Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T23:00:53.121068+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOUFBck03aTdGWkxQWlV4TC1MUTFwQnJra3c2T0lsbzZRVnRPbXU5NU5Wa192enJHalRLdDdLRVh5NzJ0cnNuMUpwWEJkYlNLbWRWN1RtZmJvcGlaSTJlWXY5Q1dpUnRBd2Z2VUMyNV9qaVpORVNxUWloYUFpZHRGamQ5cmNpZw?oc=5",
+      "published": "2026-11-15T21:21:30+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "José Fernández - Universidad de Chile - Defender، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
     },
     {
       "desc": "ENGLAND fans have raged \"just let him score\" after Elliot Anderson was sent off for pulling back Lamine Yamal. The Three",
@@ -3799,6 +3894,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Spain vs England - UEFA Nations League LIVE: Jude Bellingham denied second-minute opener in fast start"
+    },
+    {
+      "desc": "Fantasy Premier League: Liverpool's top-performing assets so far this season Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T23:00:53.121217+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcVpxaDhXQWN3bUxCQllPM0xtVUcxZ3dVZE41VDNxXzdRV3V0SlBhYi11N0I3STlQN1ZJRWNvVHFCRE5HaS1UejBMaDI3dl9VZ1JERzRReUx1a1gzbTBEQUJJRnY4TURlQTg0VVc2bnZqS1hMY3EzOHM2XzRnNDl6MmVYQmRyaTM3TzRGTk9xeXdvSFVheTF2enZacDZCUQ?oc=5",
+      "published": "2026-11-15T19:49:05+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Fantasy Premier League: Liverpool's top-performing assets so far this season - Liverpool FC"
     },
     {
       "desc": "ENGLAND are taking on Spain tonight in a huge Nations League clash. La Roja midfielder Martin Zubimendi is wearing a pro",
@@ -5089,76 +5194,6 @@
       "publisher": "https://www.rousingthekop.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Liverpool fans given answer over January deal for Ronald Araujo - Rousing The Kop"
-    },
-    {
-      "desc": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T07:00:55.888801+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c60mdnedvj2wo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T06:47:10+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "Jake’s boys have come full circle The Non-League Football Paper",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T10:00:50.307562+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLThMSUZoZm9rdGNDNmhpRHg3TmFjZEpUa0doa1BxWjY2d1ppbTlhTXg4bFROOGJXcFFOVUc4eWYwQVhIdGM0am5DbVZXdzZsbnZOeHhXMnYwRzdsSmNKbUR1RlJpTWJ6QzY4enJTSWVvM1lkRUo2ZF9lLVl4YmozLVJTYWZwVmdJOWpCSm5pQmN1aXlCckdVSkh0UHFjM3hpaTNpaXJWbi11SGRDOGEwcA?oc=5",
-      "published": "2026-11-15T06:30:50+00:00",
-      "publisher": "https://www.thenonleaguefootballpaper.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Jake’s boys have come full circle - The Non-League Football Paper"
-    },
-    {
-      "desc": "Harry Kane, Jude Bellingham and Anthony Gordon are three of England's current biggest stars, but all have chosen to play",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T07:00:55.888826+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckdd17mq2pvmo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T06:25:41+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Respect? Exposure? Why England's star names are going abroad"
-    },
-    {
-      "desc": "Arsenal News Today: Rice Contract Close, White Booed and Saka Out (15 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T07:00:55.888847+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1YVU9DeXc5NFhPb3I4N0xhSDZCS1p6RmlJUDkwb1lVSHhhbHlVY3M2UkVGd2FTUWdXVUxmWGQweDA5ZVl6WllhQloybm5YYTR5U2J3SlpaN1o0WFpvY3Z4YVNiYVUyOHBBSmlLOWdQcXdMZ28yMjhZc1R3?oc=5",
-      "published": "2026-11-15T06:25:32+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal News Today: Rice Contract Close, White Booed and Saka Out (15 November) - The False 9"
-    },
-    {
-      "desc": "FPL Price Changes: Konsa Rises to £4.9m, Saka Falls to £9.4m (15 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T07:00:55.888865+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmY3luWG5PcndaVklncWJvUHJ4VVFWU21uU1oxQ3BTalEwMjZlbkpPQU5EWnBrUmphRWVOSEczcG0xcWVOR2tOZFptNmhkWXUzdlZFQzFvbHlQdkwxODJoam4zRE4tMVlsM25DR0tsbG9Ba2pzM1g5NA?oc=5",
-      "published": "2026-11-15T06:15:56+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "FPL Price Changes: Konsa Rises to £4.9m, Saka Falls to £9.4m (15 November) - The False 9"
-    },
-    {
-      "desc": "Barcelona defender open to Premier League move as Chelsea explore January deal CaughtOffside",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T07:00:55.888884+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeFlPSVNuaGFkSXA3bW5aeTFkemxvb1VKNWFldDJneEw4azRtUWpVdFEtTXBLOEt6a0Rkbm1sZ2gxSWpKR0cxOHNMSzUzYzFaSGd2eWFHdUMwT182Q3ktU3dpQWtod1h0clFLZ1lKODFHVE90OHJQTjBPTWRRM2M4c0gtZVlHelpzc1l4Y1dCZUdYT0tlTlJIbGlxYUHSAaIBQVVfeXFMTkg5aFpUWWJBYWVlNTZ0ZmhRTFBwTlVjYWpnbk0za0ZjVmFacjM1LUZPeVNkRDJSWVdzbmNSTUxIYzJ4NFpqVjUzY1ZBQmkwcHVYWW9tR2JkZTJCejJ6d0RZTWd5bUJxb2YzX0tzVTV6LXlpaVNBamcyQUVpV29lRlVVZWhZRUc4TzVJeWp1dnJERXFGaFdDS3pYdTlBX3d2UTV3?oc=5",
-      "published": "2026-11-15T06:09:33+00:00",
-      "publisher": "https://www.caughtoffside.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Barcelona defender open to Premier League move as Chelsea explore January deal - CaughtOffside"
-    },
-    {
-      "desc": "Arttu Heinonen Videos & Best Moments Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T11:00:53.503151+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KWjBZTFpjSFhUNjQzTGpndkVDYUM1cFBULWMtUEt1RjczUXVvM2ZOR1NMSk12RmQtU1RmZ3ZnTDJKMURXUV8yc3RKMVNPU2lnSzc1YUg3LW5hYjVrNlZjMV9PV25aZ1RGX0hZb2pIMm02RTRjOUEw?oc=5",
-      "published": "2026-11-15T05:39:57+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Arttu Heinonen Videos & Best Moments - Premier League"
     }
   ],
   "processed_urls": [
@@ -5278,7 +5313,8 @@
     "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o",
     "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy",
     "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty",
-    "https://www.skysports.com/football/spain-vs-england/report/554117"
+    "https://www.skysports.com/football/spain-vs-england/report/554117",
+    "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league"
   ],
   "s_overflow": {},
   "schema_version": 4
