@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 68740,
-    "output_tokens": 6040,
-    "requests": 10
+    "input_tokens": 75176,
+    "output_tokens": 6580,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-14T23:00:54.987445+00:00",
+  "last_scan_at": "2026-11-15T00:01:00.482803+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3521,6 +3521,26 @@
   },
   "news_pool": [
     {
+      "desc": "MAURICIO POCHETTINO faced up to a partisan crowd and watched his side survive a tasty battle on the pitch. He can expect",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T00:01:00.486401+00:00",
+      "link": "https://www.thesun.co.uk/sport/41027401/mauricio-pochettino-thrills-man-utd-fans-usa-rout-haiti/",
+      "published": "2026-11-14T23:29:23+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino leaves Man Utd fans drooling as USA destroy Haiti 6-0 at David Beckham’s stadium"
+    },
+    {
+      "desc": "After scoring his first international goal in the 1-0 win over Ukraine, Northern Ireland boss Michael O'Neill says Terry",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T00:01:00.486446+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c84gn2dl4zleo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T23:21:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "The 'manager's dream' who has put NI one game from history"
+    },
+    {
       "desc": "CRISTIANO RONALDO fans slammed Portugal after their heavy defeat to Denmark in their first match after the five-time Bal",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-14T23:00:54.991082+00:00",
@@ -3529,6 +3549,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘Never disrespect Cristiano Ronaldo’ – Portugal destroyed 4-1 by Denmark as CR7 fans declare love for £72m Man Utd flop"
+    },
+    {
+      "desc": "Full Match | Barcelona v Arsenal Women Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T00:01:00.486503+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNckgweEFXSG56VjBlNU5QYko5dzZ4LWtLRzA3MW1PYW5VcTNuR1I5YU1GbWluVU4zbWkwM1JBc2I4YW9uOEttSGpTdGMzcVF4SmZCZmlvcjhFbTR3bS1Yc0JpcGdsVW93TmtLRzVhZXQzSDJBelNZVkwyUDdkUUhYOXU5aVFGUQ?oc=5",
+      "published": "2026-11-14T22:59:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Full Match | Barcelona v Arsenal Women - Arsenal.com"
+    },
+    {
+      "desc": "Republic of Ireland boss Heimir Hallgrimsson says their 1-0 defeat against Austria in their penultimate Nations League g",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T00:01:00.486556+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cr15e4w75wxpo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-14T22:40:02+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Hallgrimsson rues 'painful' defeat for Republic of Ireland"
     },
     {
       "desc": "Internationals | Kulusevski makes long-awaited return for Sweden Tottenham Hotspur",
@@ -3541,6 +3581,16 @@
       "title": "Internationals | Kulusevski makes long-awaited return for Sweden - Tottenham Hotspur"
     },
     {
+      "desc": "30% OFF BADGES, KEYRINGS & MAGNETS Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T00:01:00.486601+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTnFsWDI3ZFAxcm9LajZqazBCVkduaUlmYzZsX0hDMUtnS3pXMHIzNWJzRjc3b2U0UXo0cVp2eXl3N3pBUzRBTUFsNnMzSlpydmJMdUtIZkFOSHpBclNLeHM4V2Q1YkYwOE9GUXlYWmtvdU91cTJ4Z0VDZy1TVjhrRGVaUm9Wd3ZzRWVnS3RHT3NkdkVRazFrVW1GYXFOUlF4WVJuSzNmeDMzbTl2Z2NTZWN2YnJELUs4cEw1bQ?oc=5",
+      "published": "2026-11-14T22:27:28+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "30% OFF BADGES, KEYRINGS & MAGNETS - Arsenal Direct"
+    },
+    {
       "desc": "FORMER Premier League winning captain Wes Morgan has been ordered to pay at least £274k in child support arrears after a",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-14T23:00:54.991199+00:00",
@@ -3549,6 +3599,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ex-Prem ace Wes Morgan ordered to pay £274k in child support to two mums after seven-year legal battle"
+    },
+    {
+      "desc": "Internationals: Szoboszlai assists and Abe scores as nine Reds feature on Saturday Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T00:01:00.486680+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVUdSTUhaSmxxYnVTTlF5akZVM3pka2dpenpicWhsQ1ZrNXpkc3NrLWx0Q0ZsVV9sYnBWel9SVS14WG1hTUFaSHdiUFV4V0duNDlQZE55cUhKRnlfYXMwNnZiV3h3VVVZUXdwVEhLMFZ6bmF1UXNfXzJKajgxWDg3d1RaV29FRjB2aFZqWVdrcU1FYmNVMzM5emZUc19FMFg1SHNzb1pBWFhkMkxDVERxWS1mc3M?oc=5",
+      "published": "2026-11-14T22:06:59+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Internationals: Szoboszlai assists and Abe scores as nine Reds feature on Saturday - Liverpool FC"
     },
     {
       "desc": "ERLING HAALAND broke his silence on Manchester City's charges in a lengthy interview. The superstar striker was celebrat",
@@ -3961,6 +4021,16 @@
       "title": "Romano: Rabiot renewal should be completed ‘soon’ as Milan make him a priority - LiveScore"
     },
     {
+      "desc": "Fabrizio Romano: \"Alejandro Balde offered by agent Mendes to Milan and Roma\" Milanreports.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T00:01:00.487393+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQR2h2dDRPT0NJZGhPc3dodVRBcVJwX09ZRHA1dnNERHlaXzZ1QVUtcVdfczFmbWNVUGFuTDBQVGFrWkhWMzJrTFZ5bWUyT2hIdGxwZE42NTFiSTRSa3R3SmthMFBtckRjWHkwTXZicThfRkZ4R2lrWGFKbjRVRmhqSE1rV1laUDZlSHo1MGJoejM0SENzWXh2QzlyRkVYOUp2dVhRV0ppUjU5SnFKcjlF?oc=5",
+      "published": "2026-11-14T17:34:47+00:00",
+      "publisher": "https://milanreports.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: \"Alejandro Balde offered by agent Mendes to Milan and Roma\" - Milanreports.com"
+    },
+    {
       "desc": "Arsenal monitor prolific striker after sensational 15-goal start to the season CaughtOffside",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-14T22:00:57.731404+00:00",
@@ -4019,6 +4089,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Chelsea's Player of the Month for October 2026 revealed! | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "We should have turned our chances into goals, says Jeglertz Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T00:01:00.487491+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMXA3OTQ1X2dVWHFXMDlvMnNFSVBGaTBwaG51TWVUbGZqaVBENGg4VTM0ZDJfQWx6eGdielJlc0MtYmJXdDZTN1RwbXc5aTRUekxvYS1kZ0I2bmZzS3J4aUxqNmFCVzVjQkJBMjBfb3czcnFwUWNvM0x6SFhBcUlBV0FsMA?oc=5",
+      "published": "2026-11-14T16:59:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "We should have turned our chances into goals, says Jeglertz - Manchester City FC"
     },
     {
       "desc": "My Account | Tickets - Man City Manchester City FC",
@@ -4939,86 +5019,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Betting column: SunSport picks for Spain vs England, Nations League and EFL action"
-    },
-    {
-      "desc": "After drawing level with Hughie Gallacher on 24 Scotland goals, will midfielder John McGinn reach Kenny Dalglish and Den",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-14T08:00:59.968140+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cke89156y10zo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T07:49:46+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Six goals to go - will McGinn catch Dalglish & Law?"
-    },
-    {
-      "desc": "Pochettino's coaching journey to United Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.007462+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9INEd4aUdMX3ZKdzhMclpCcVRfMHJkb3JTVmI3b2pIZkhVV01GZ0lFbkdlRTg5c3ljb3A3UmlHOTNyQ19sczh3ejcwdUdiaGtWenZ3NUlVVmVOaEF4VmpKb29qNHlTSU1uQl92NU0xcnlxN1ZVckhpN2kyeHo?oc=5",
-      "published": "2026-11-14T07:49:09+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino's coaching journey to United - Manchester United"
-    },
-    {
-      "desc": "MANCHESTER UNITED have suffered a fresh injury scare after Patrick Dorgu was forced to withdraw from international duty ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T08:00:59.968171+00:00",
-      "link": "https://www.thesun.co.uk/sport/41022084/mannchester-united-dealt-fresh-injury-blow-with-patrick-dorgu/",
-      "published": "2026-11-14T07:42:49+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd dealt fresh injury blow as Patrick Dorgu PULLS OUT of Denmark duty just days after making comeback"
-    },
-    {
-      "desc": "Romano: Man Utd Keen to Sign 'One of the Best Players in the World' for Pochettino GiveMeSport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T08:00:59.968203+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPczRXMVI4N1dJNFhQTXBvQktSUDgtekxXTm9SYl9wTzJ6TUNsa2xBc0ttSmdfSGtjazVibUxqM3VpZ1VHNnJNVXZCTV83ZEFrbE1RT21hZS1KT2pVTEtETWhSOTJYUThId0t1YXRUcUQ5U0dNZE1YTHh5OWFlNk1RYzREd0ozNUxwQnFr?oc=5",
-      "published": "2026-11-14T07:25:14+00:00",
-      "publisher": "https://www.givemesport.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano: Man Utd Keen to Sign 'One of the Best Players in the World' for Pochettino - GiveMeSport"
-    },
-    {
-      "desc": "Buy There's Nothing on Earth Like Being a Red Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T11:00:55.237819+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMFFkQS1TT3Jma0V0SGwtOEsybWE0UFU4eGo1OEtSOXNIOXZGR0pCNnRsZ2pQbC1lMFVzVTBKZ3M1YURIR2gwRkJjVklIOVYtcTB4amRTbTc1WU9pbTgzc2ROUmVCbFBkZjByOWhsckF5Mlg4ZU1jbW9GcEpoVHRzTERyQ042NGlXb0ZHb0k3SmhMN2F6bnZ1UVdRTXh3OTV0bFlFaW4zb3NtRGdiSEpCcE9xMElKZw?oc=5",
-      "published": "2026-11-14T07:16:51+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy There's Nothing on Earth Like Being a Red - Manchester United Store"
-    },
-    {
-      "desc": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T12:00:51.119103+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdUpkdlVCWmJIRlJGQVNYaHNzSW1WNzBRSHV2QmVhVFE1U09MNWd4SUFkOEdvMDlPX2dTUnVPa0ZDXzljbXotRHBReTlqYy0tWEQ5RW5CTEx6VVY1eURmZ1ByMVI5MmE2NURpeDRSUnR2QTNKcXM3VDNhVnRRaENnUkJTdGpZVnltVFEtZG5meTNIU2d4UTM2VGgxWjk?oc=5",
-      "published": "2026-11-14T07:14:23+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Romano reveals two real reasons why Pochettino has accepted job - 'he is 100% convinced' - Football365"
-    },
-    {
-      "desc": "Buy Club Colours Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T11:00:55.237831+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNczF6aXk5SWFxTTZiazMxbkZZQkZkT21mMjh5RV9mR3dMQzBBUjliRjhvSVcwVy1TbUEzUmRoMWIyclU1Yk1Sbm9GaXVhRXpEc2JQcnZkT1lLTmlzbzYwZUsyWkdVQ1ctZG9FN0xVdnNJeElibm1FcDA4dmtzeENuREkwSGY0NzZRTGJRSDctdjU?oc=5",
-      "published": "2026-11-14T07:10:46+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Club Colours - Manchester United Store"
-    },
-    {
-      "desc": "WALES are in Norway on Saturday to take on Erling Haaland and co in their penultimate Nations League group phase clash. ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T08:00:59.968230+00:00",
-      "link": "https://www.thesun.co.uk/sport/40987708/norway-wales-talksport-bet-offer/",
-      "published": "2026-11-14T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Norway vs Wales: Bet £10+ on football and get up to £30 in free bets | talkSPORT BET"
     }
   ],
   "processed_urls": [
