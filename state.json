@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 22,
+        "calls": 23,
         "errors": 0,
-        "requests": 22
+        "requests": 23
       }
     },
-    "calls": 22,
+    "calls": 23,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 136123,
-    "output_tokens": 13749,
-    "requests": 22
+    "input_tokens": 141811,
+    "output_tokens": 14352,
+    "requests": 23
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T09:00:58.639922+00:00",
+  "last_scan_at": "2026-11-15T10:00:50.303397+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3520,6 +3520,36 @@
     "updated_at": "2026-11-14T22:01:27.524120+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Gyokeres scores twice to secure promotion for Sweden Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T10:00:50.307165+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOOUU0T0NmTkVwMFNIdkxCblVUcHc1Y2o3anlnanE4WE9sTllQZzkzaXV0ZUZONUdrbFByNnVEQWJnQ21DRUZxakgxZEpnaUIzVmVUTnJ2RmhLYmkzaDVaRm54bV9KR1ppY2E4cllwOEZPN3RyNzFtMlZ0MEZjS0V5Z25MVUstSGlUaWNrdGFZeGItd0hmMEVxS0NR?oc=5",
+      "published": "2026-11-15T09:47:20+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Gyokeres scores twice to secure promotion for Sweden - Arsenal.com"
+    },
+    {
+      "desc": "SPAIN are looking to maintain their 100% Nations League campaign and 43-game unbeaten run when England visit on Sunday. ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T10:00:50.307233+00:00",
+      "link": "https://www.thesun.co.uk/sport/41018144/spain-england-turbo-boost-betfred/",
+      "published": "2026-11-15T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Spain vs England: Get Spanish to score first at Evens | Betfred"
+    },
+    {
+      "desc": "THE Detroit Lions and New England Patriots collide in Germany on Sunday with NFL Munich taking centre stage. We've put t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T10:00:50.307265+00:00",
+      "link": "https://www.thesun.co.uk/sport/40992130/patriots-lions-nfl-munich-bet-builder/",
+      "published": "2026-11-15T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "New England Patriots @ Detroit Lions: Our 5/1 NFL Munich bet builder tip, plus £50 in free bets | Sky Bet"
+    },
     {
       "desc": "Pochettino: It's difficult to turn down United Manchester United",
       "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3629,6 +3659,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "Jake’s boys have come full circle The Non-League Football Paper",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T10:00:50.307562+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPLThMSUZoZm9rdGNDNmhpRHg3TmFjZEpUa0doa1BxWjY2d1ppbTlhTXg4bFROOGJXcFFOVUc4eWYwQVhIdGM0am5DbVZXdzZsbnZOeHhXMnYwRzdsSmNKbUR1RlJpTWJ6QzY4enJTSWVvM1lkRUo2ZF9lLVl4YmozLVJTYWZwVmdJOWpCSm5pQmN1aXlCckdVSkh0UHFjM3hpaTNpaXJWbi11SGRDOGEwcA?oc=5",
+      "published": "2026-11-15T06:30:50+00:00",
+      "publisher": "https://www.thenonleaguefootballpaper.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Jake’s boys have come full circle - The Non-League Football Paper"
     },
     {
       "desc": "Harry Kane, Jude Bellingham and Anthony Gordon are three of England's current biggest stars, but all have chosen to play",
@@ -4979,46 +5019,6 @@
       "publisher": "https://dave.sport",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Tyler Adjei: Man Utd agree deal for Reading teenager, says Romano - Dave.Sport"
-    },
-    {
-      "desc": "Knitwear Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.007053+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UT2IwT0JUUmhfeXR1RE13SWQ1X19acWdBcFNZVzlQWDJ4VmdvOVhyR0cyTWVsSFd1Z1JpWUw5eDMtQzV5OTBHY2YteUVNWHhfTkQzV2NPY0ptTTRQa2NuUXpZVTRsd3FrVzlqWQ?oc=5",
-      "published": "2026-11-14T11:34:08+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Knitwear - Man City Shop"
-    },
-    {
-      "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge this season at an unmissable price with this fantastic",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T12:00:51.118558+00:00",
-      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
-      "published": "2026-11-14T11:30:44+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea tickets and VIP hospitality deals for Premier League games at Stamford Bridge from just £155pp"
-    },
-    {
-      "desc": "SPURS fans can secure top tickets with VIP hospitality at the Tottenham Stadium from just £135 per person. Robert de Zer",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T12:00:51.118583+00:00",
-      "link": "https://www.thesun.co.uk/sport/39228834/tottenham-hotspur-premier-league-ticket-hotel-packages/",
-      "published": "2026-11-14T11:30:17+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tottenham Hotspur ticket and hospitality packages for all Premier League games from only £135 per person"
-    },
-    {
-      "desc": "LEEDS fans can get their hands on the best seats in the house to see their heroes at Elland Road this season. The club's",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T12:00:51.118603+00:00",
-      "link": "https://www.thesun.co.uk/sport/39786485/leeds-united-ticket-hotel-packages-premier-league/",
-      "published": "2026-11-14T11:29:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Leeds United tickets and hotel deals for all Premier League matches at Elland Road this season"
     }
   ],
   "processed_urls": [
