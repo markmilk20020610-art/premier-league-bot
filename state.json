@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 24000,
-    "output_tokens": 2404,
-    "requests": 4
+    "input_tokens": 28884,
+    "output_tokens": 2922,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3534,7 +3534,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T19:01:01.026018+00:00",
+  "last_scan_at": "2026-11-15T20:01:11.193005+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3555,6 +3555,106 @@
     "updated_at": "2026-11-14T22:01:27.524120+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Follow Daily Mail Sport's live coverage as England travel to Madrid to face world champions Spain in the Nations League.",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-15T20:01:11.195309+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16290259/spain-england-nations-league-spot-battle.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T19:54:13+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Spain vs England - UEFA Nations League LIVE: Jude Bellingham denied second-minute opener in fast start"
+    },
+    {
+      "desc": "ENGLAND are taking on Spain tonight in a huge Nations League clash. La Roja midfielder Martin Zubimendi is wearing a pro",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195332+00:00",
+      "link": "https://www.thesun.co.uk/sport/40817465/why-martin-zubimendi-mask-spain-england/",
+      "published": "2026-11-15T19:47:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why is Martin Zubimendi wearing a mask against England?"
+    },
+    {
+      "desc": "SPAIN face England in the Nations League tonight - but fans have noticed something strange when the national anthem play",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195348+00:00",
+      "link": "https://www.thesun.co.uk/sport/39750607/why-spain-not-sing-national-anthem/",
+      "published": "2026-11-15T19:43:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why do Spain not sing their national anthem?"
+    },
+    {
+      "desc": "THE knockout stage of the Nations League is rapidly approaching and a date has been set for the draw! The top two teams ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195365+00:00",
+      "link": "https://www.thesun.co.uk/sport/41019819/when-nations-league-quarter-final-draw-date-time-live-stream/",
+      "published": "2026-11-15T19:35:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "When is the Nations League quarter-final draw? Date, start time, TV channel and live stream as England learn fate"
+    },
+    {
+      "desc": "ENGLAND face world champions Spain in their final Nations League group stage clash TONIGHT. The Three Lions claimed thei",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195396+00:00",
+      "link": "https://www.thesun.co.uk/sport/41017831/who-england-play-nations-league-quarter-final-next/",
+      "published": "2026-11-15T19:25:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Who can England face in Nations League quarter-finals?"
+    },
+    {
+      "desc": "ENGLAND head to Spain tonight for the final group stage game of the Nations League! Both sides will observe a minute's s",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195411+00:00",
+      "link": "https://www.thesun.co.uk/sport/41029393/why-england-spain-black-armbands-nations-league/",
+      "published": "2026-11-15T19:25:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why are England and Spain wearing black armbands in Nations League clash?"
+    },
+    {
+      "desc": "ARSENAL supporters can enjoy watching the champions take on the finest teams in Europe from the finest seats in The Emir",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195426+00:00",
+      "link": "https://www.thesun.co.uk/sport/39227637/arsenal-premier-league-champions-ticket-hotel-deal/",
+      "published": "2026-11-15T19:08:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal tickets plus hospitality packages to Premier League and Champions League games at The Emirates"
+    },
+    {
+      "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge at an unmissable price with this fantastic deal. Perfe",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195441+00:00",
+      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
+      "published": "2026-11-15T19:08:38+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea tickets and VIP hospitality deals for Premier League matches at Stamford Bridge from just £155pp"
+    },
+    {
+      "desc": "MAN UNITED fans can get unmissable ticket deals to watch the Red Devils under new boss Mauricio Pochettino at Old Traffo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:01:11.195455+00:00",
+      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
+      "published": "2026-11-15T19:08:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Book Man Utd tickets plus hotels and official hospitality for Champions League and Premier League games at Old Trafford"
+    },
+    {
+      "desc": "His eyes are perfectly good when bespectacled, his mind nimble enough to keep up with play and his soothingly familiar v",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-15T20:01:11.195479+00:00",
+      "link": "https://www.dailymail.com/sport/article-16290827/Legendary-commentator-CLIVE-TYLDESLEY-ITV-exit-hearts-grow-fonder-rise-YouTube-streamers-lockdown-money-spinner-refuses-loud-voice-game.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T19:00:03+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Legendary commentator CLIVE TYLDESLEY on how his ITV exit has made hearts grow fonder, the rise of YouTube streamers, his lockdown money-spi"
+    },
     {
       "desc": "PARIS FC are eyeing a return to the Parc des Princes, with Paris Saint-Germain's future in the iconic arena uncertain. T",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4954,106 +5054,6 @@
       "publisher": "https://arsenaldirect.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "30% OFF BAGS & WALLETS - Arsenal Direct"
-    },
-    {
-      "desc": "30% OFF BADGES, KEYRINGS & MAGNETS Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T00:01:00.486601+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTnFsWDI3ZFAxcm9LajZqazBCVkduaUlmYzZsX0hDMUtnS3pXMHIzNWJzRjc3b2U0UXo0cVp2eXl3N3pBUzRBTUFsNnMzSlpydmJMdUtIZkFOSHpBclNLeHM4V2Q1YkYwOE9GUXlYWmtvdU91cTJ4Z0VDZy1TVjhrRGVaUm9Wd3ZzRWVnS3RHT3NkdkVRazFrVW1GYXFOUlF4WVJuSzNmeDMzbTl2Z2NTZWN2YnJELUs4cEw1bQ?oc=5",
-      "published": "2026-11-14T22:27:28+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "30% OFF BADGES, KEYRINGS & MAGNETS - Arsenal Direct"
-    },
-    {
-      "desc": "Liverpool target Ismaelo Ganiou Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T03:01:07.855156+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBUOEVOR3RzUkhNNlZSTnBkWVdGc0tGTkdDYzlxX1NWZEIxQkFITEViTVNCbHZNS1p4eFFHSGlWeVVRZWRPQ2EzVWY4RFptR2lBNEQzQ25EaWllYTdOQUI2WnJtbUZFYTBRelNyYmh1R2c0QQ?oc=5",
-      "published": "2026-11-14T22:14:03+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool target Ismaelo Ganiou - Liverpool FC"
-    },
-    {
-      "desc": "FORMER Premier League winning captain Wes Morgan has been ordered to pay at least £274k in child support arrears after a",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T23:00:54.991199+00:00",
-      "link": "https://www.thesun.co.uk/sport/41026319/wes-morgan-child-support-battle-two-mums/",
-      "published": "2026-11-14T22:09:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Prem ace Wes Morgan ordered to pay £274k in child support to two mums after seven-year legal battle"
-    },
-    {
-      "desc": "Internationals: Szoboszlai assists and Abe scores as nine Reds feature on Saturday Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T00:01:00.486680+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVUdSTUhaSmxxYnVTTlF5akZVM3pka2dpenpicWhsQ1ZrNXpkc3NrLWx0Q0ZsVV9sYnBWel9SVS14WG1hTUFaSHdiUFV4V0duNDlQZE55cUhKRnlfYXMwNnZiV3h3VVVZUXdwVEhLMFZ6bmF1UXNfXzJKajgxWDg3d1RaV29FRjB2aFZqWVdrcU1FYmNVMzM5emZUc19FMFg1SHNzb1pBWFhkMkxDVERxWS1mc3M?oc=5",
-      "published": "2026-11-14T22:06:59+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Internationals: Szoboszlai assists and Abe scores as nine Reds feature on Saturday - Liverpool FC"
-    },
-    {
-      "desc": "ERLING HAALAND broke his silence on Manchester City's charges in a lengthy interview. The superstar striker was celebrat",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T23:00:54.991228+00:00",
-      "link": "https://www.thesun.co.uk/sport/41026726/erling-haaland-man-city-charges/",
-      "published": "2026-11-14T22:06:57+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘We don’t need the whole list’ – Erling Haaland breaks silence on Man City charges in lengthy interview"
-    },
-    {
-      "desc": "Arsenal could have to pay £66m for RB Leipzig's Antonio Nusa, Real Betis reject Chelsea's bid for Jose Morante, plus mor",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-14T22:00:57.730872+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6e9kgn532gxo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T21:48:45+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Arsenal target Nusa could cost £66m - Sunday's gossip"
-    },
-    {
-      "desc": "Thomas Tuchel was dragged into a bitter race row on the eve of England's Nations League showdown with Spain.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-14T22:00:57.730904+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16293027/England-boss-Thomas-Tuchel-angry-dragged-race-row-told-Luis-la-Fuente-no-racism-Spain-eve-Nations-League-showdown.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T21:48:12+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "England boss Thomas Tuchel angry at being dragged into race row after being told by Luis de la Fuente: 'There is no racism in Spain!' on eve"
-    },
-    {
-      "desc": "The goalkeeper involved in the collision that killed Spanish footballer Jesus de Miguel has been hit with a 12-match ban",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-14T22:00:57.730931+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16291441/jesus-miguel-death-goalkeeper.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T21:42:00+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Goalkeeper involved in fatal collision with Spanish footballer Jesus de Miguel given 12-MATCH ban - and may never return to football"
-    },
-    {
-      "desc": "FIRED-UP Declan Rice wants to show he is back to his best against world champions Spain — after confessing he was “avera",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T22:00:57.730950+00:00",
-      "link": "https://www.thesun.co.uk/sport/41026655/declan-rice-england-arsenal-spain-world-cup/",
-      "published": "2026-11-14T21:41:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Declan Rice blasts himself for ‘average’ displays during England’s World Cup campaign"
-    },
-    {
-      "desc": "Romano delivers verdict on Liverpool re-signing Alexander-Arnold with 'important' Real Madrid stance Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T02:00:49.875444+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVVZaRnktT2dsZGhheVoyVUZCQnJ2bmlERnNMMURFSVA0VXZwdnhrOThNSURTcTdVQWx0RmdfMmxJTlZhdmRhMnk3MzZCOFNMdVRZMkkwakRvbTlXaTAzOVBmU3A0bmlRRDlQQzhOVFNGUGNNTjg1dllNbWRWOXVzT1JzcExnemRZdHpkdUkwUXFTLXljTnhpZmF6alQtN3cxV3VEb1AxQzhXUQ?oc=5",
-      "published": "2026-11-14T21:37:48+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano delivers verdict on Liverpool re-signing Alexander-Arnold with 'important' Real Madrid stance - Football365"
     }
   ],
   "processed_urls": [
