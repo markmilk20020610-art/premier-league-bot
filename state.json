@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 26,
+        "calls": 27,
         "errors": 0,
-        "requests": 26
+        "requests": 27
       }
     },
-    "calls": 26,
+    "calls": 27,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 160372,
-    "output_tokens": 16395,
-    "requests": 26
+    "input_tokens": 167356,
+    "output_tokens": 16870,
+    "requests": 27
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3534,7 +3534,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T13:01:06.853273+00:00",
+  "last_scan_at": "2026-11-15T14:00:52.733734+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3556,6 +3556,156 @@
   },
   "news_pool": [
     {
+      "desc": "The Premier League, English Football League and Women's Super League are reviewing pitch perimeters after the death of B",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T14:00:52.736329+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5y4jn2zw3yno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T13:49:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Pitch perimeters under review after Vigar death"
+    },
+    {
+      "desc": "LIONEL MESSI left Juventus wonderkid Kenan Yildiz speechless after gifting him the custom-made boots he wore during his ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T14:00:52.736375+00:00",
+      "link": "https://www.thesun.co.uk/sport/41029605/wonderkid-hails-crazy-gift-after-messi-sends-boots/",
+      "published": "2026-11-15T13:47:48+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Wonderkid hails ‘craziest gift’ after Lionel Messi sends him the custom-made boots from his last Argentina game"
+    },
+    {
+      "desc": "THOMAS TUCHEL has excluded three England stars from his squad just hours before facing Spain. The Three Lions face the S",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T14:00:52.736395+00:00",
+      "link": "https://www.thesun.co.uk/sport/41029822/thomas-tuchel-england-spain-nations-league/",
+      "published": "2026-11-15T13:39:47+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Thomas Tuchel excludes three England stars from squad just hours before Spain clash"
+    },
+    {
+      "desc": "Spurs Men's Grey White Hart Lane Hoodie I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736415+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNmptZlpnMzNkNVJrdGNmWEFKbWtYZXVxV1pISW1HYXFjM09XMGFPUkhOeUx3WnFGZkxhSmdBZzQxbEpRYmFuTkt5OUpzTDUxellDY2NuMDFaZXpLdElBalVOOTFIeXE0N3REZVZacV8wbXQ0eHdINW52WlJYUFpjWFBoWXFxWk1JVzROYUFENDVwTF9XakFXNVNsclZraVU?oc=5",
+      "published": "2026-11-15T13:23:19+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Men's Grey White Hart Lane Hoodie I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Men's Khaki Zip Polo I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736433+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMTdHUVdtTnU2X1Z2a0VBRzZBSjBOaHRaVVlVMjFXVTVKbHZPdEFZYWdjRWEzaFJmejkyZmlnTjR4cGhmNGIxVEtITGZKY05kZGZteDFxb1E4ZFFLMTZyVmljdUNuVnZKOHZ6VjVrcnRKdzY4ZXlLdjRnMVY2TVdZS1BaM290TWZBSjV5dnhR?oc=5",
+      "published": "2026-11-15T13:23:18+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Men's Khaki Zip Polo I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Nike Men's Slate Dri-FIT Polo I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736449+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNTh1VVlfRkxUNzNnNTdabnIyV3hVdUNYczlQV1NpQ1hYOWNjeGFSREptNnQ3MVFKR0tJWEFBcFhxR242cHFKSTlWVGxYMkhrUjVDSHRWOEZZRVJNeDgyb1ZYcXI2QnU4ZEVvcGxlWmxHaDh3NmRZZkJtUFhiNFA4aFVXSlF1enRVTHRJS1JYYXF6VGNNMjRFa2JB?oc=5",
+      "published": "2026-11-15T13:23:18+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Slate Dri-FIT Polo I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Nike Men's Navy Dri-FIT Polo I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736465+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNc0xoYVJfSWZRTDd1c0wwT3R6dnBXOGlNTTFIczM5REtpZFNodElvNm9Md1ZJZEtFb2tYYkFIRHFsYXZFRUhFSmRwb3FsSjBYY2xRcnV0aXJtTG5mU3NxSjJtVmJqSUlmZkRrUFFjT0I5Qi1WVERhdkdIN1FZU2NKNDg2WkhZRDJzWFlTTmhiUjQxNklkSGtlag?oc=5",
+      "published": "2026-11-15T13:23:17+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Navy Dri-FIT Polo I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Men's Navy Heritage Raglan Zip Sweatshirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736482+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ012b2U0RS1IQXJTM0RRNndrcHZuR2hfZEk4UVZDNzFuWGsxYzZrX0VrSVI1Z3hqSGg2WERQZDU4YnFyaUFmQ0FLZnhDbXFFdHpSVnpSZTlubUpoSUt6UVo0dmp4WURZUlFBLXRtMjRJVUE5VkNscUhpTEZjb2E1Rm0xT202WmxMLV9WREtsZTdrbVFPVWhPRk9XQWluaE1DNWstM0g4NVVHQQ?oc=5",
+      "published": "2026-11-15T13:23:16+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Men's Navy Heritage Raglan Zip Sweatshirt I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Nike Men's Black Gilet I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736497+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWjlyaEtxdGhyakpmTmJ2aFBqUjJzTUtqSzhpcy1ONlBCakR4UDFraDhUa3JDYmd1bWhCXzhvUTZRaUhqdVF1dnNEZDVkbGZmSlZRaHdDUkFCbHlFejZfdFIxOWNnV1R3THdvaG1fUFpPUFZYdE9yeENxRHhadk1HUHF4UXIxRlhpREhnQjd6R1g?oc=5",
+      "published": "2026-11-15T13:23:16+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Black Gilet I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "MODEL Joana Sanz has confirmed her split from former Barcelona star Dani Alves. The 34-year-old beauty, who stood by the",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T14:00:52.736516+00:00",
+      "link": "https://www.thesun.co.uk/sport/41029415/dani-alves-wife-joana-sanz-split-barcelona/",
+      "published": "2026-11-15T13:16:18+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Dani Alves’ model wife Joana Sanz confirms breakup with former footie star, 43, after he took up new life as preacher"
+    },
+    {
+      "desc": "England manager Thomas Tuchel omits Josh King, James Garner and Jarrad Branthwaite from his squad to face Spain on Sunda",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T14:00:52.736537+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq4gn7014x76o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T13:15:15+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Branthwaite, Garner and King omitted for Spain game"
+    },
+    {
+      "desc": "FOOTBALL fans looking to score a pre-Christmas football break in the UK or Europe can bag an impressive bargain. Support",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T14:00:52.736555+00:00",
+      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
+      "published": "2026-11-15T13:08:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Black Friday 10% discount on football trips including Real Madrid, Barcelona, Man Utd and others"
+    },
+    {
+      "desc": "VOTE for the BEST MATCH of the 2026/27 season so far Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736571+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNUdrc3RvbUxyRUEzU0hfNDdtc0hRM1lsN2NWR2tiMUNtRFhCRXRZR09HbzctYy15TW05LTN0ckJ1RFJKc3dYM3dYQi1SSlVqczBwTmNNc19GZnNDTk5MWU9GcFlGVEl2R2xmMW9PVHppNm9pMWpHX1d4cGFkaVhIWDFraW1MWmd6ajZNOS1MRG5hY0ZjVHFoVUFCZE8tUQ?oc=5",
+      "published": "2026-11-15T13:07:30+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "VOTE for the BEST MATCH of the 2026/27 season so far - Premier League"
+    },
+    {
+      "desc": "ALAN RUSCHEL is retiring on top of the world after earning promotion with his club, a decade on from surviving the horri",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T14:00:52.736588+00:00",
+      "link": "https://www.thesun.co.uk/sport/41028362/chapecoense-crash-survivor-alan-ruscher-promotion-retirement/",
+      "published": "2026-11-15T13:02:33+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chapecoense plane crash survivor who was left struggling to walk wins promotion to Serie A in last ever game"
+    },
+    {
+      "desc": "Fabrizio Romano reveals Liverpool reaction to Ronald Araujo permanent done deal in January claims Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736606+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY1BuOWJFdUVHaWJMdWtnVjNEMF94c21EdVJMSDN6NmZBMW55U2tKdERsM0RaZzVfQy1fTGRlLVFHY2ZacllpUnQtck1LOFFNcE5ZUW1xblhrZXJWY1hlc0c2VDZONkNKU0JoNUJ6Z25NQURZVWlwNk9GR3pHNlNNbk5SR3hPcnlSZmZSTVhqeDRubFZHNjFsZ0dneFFBVlU?oc=5",
+      "published": "2026-11-15T12:58:32+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Liverpool reaction to Ronald Araujo permanent done deal in January claims - Football365"
+    },
+    {
       "desc": "Amar Dedic's escapade with a bow and arrows was certainly not the first time a footballer has found himself in hot water",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-15T13:01:06.855486+00:00",
@@ -3566,6 +3716,16 @@
       "title": "Ashley Cole accidentally shooting a student, bare-chested Marcus Bent threatening police with a meat cleaver - and an ex-Barcelona star firi"
     },
     {
+      "desc": "Khiev Sameth lands third term as Asean football chief NST Online",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736645+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOM1pYS2h2OHMxN1hucFJuVXZCbVJHTDB5TThoM2hnNnZUQkRrbDJ1WVRzMnRCenNpOHcxUWJCQnExOFpULVRXal9Hei1vVk9nbTBYUW1yb3NoaWV2cmpBWTk3Z2RibEtKekRralJ6S2Ftd050cDVKT2FETWhkT2YzUlVwUU5oX0xmanhnaTdUZFI1c3BIS2hGRFh3cUQ2Q0dvazlUcFVVRHNQUlY5WmfSAa4BQVVfeXFMTjNaWEtodjhzMTdYbnBSblV2Qm1SR0wweU04aDNoZzZ2VEJEa2wydVlUczJ0QnpzaTh3MVFiQkJxMThaVC1UV2pfR3otb1ZPZ20wWFFtcm9zaGlldnJqQVk5N2dkYmxLSnpEa2pSekthbXdOdHA1Sk9hRE1oZE9mM1JVcFFOaF9MZmp4Z2k3VGRSNXNwSEtoRkRYd3FENkNHb2s5VHBVVURzUFJWOVpn?oc=5",
+      "published": "2026-11-15T12:24:13+00:00",
+      "publisher": "https://www.nst.com.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "Khiev Sameth lands third term as Asean football chief - NST Online"
+    },
+    {
       "desc": "COLE PALMER jetted off to Dubai with girlfriend Olivia Holder after being snubbed by England boss Thomas Tuchel. The Che",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T13:01:06.855509+00:00",
@@ -3574,6 +3734,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Cole Palmer flies to Dubai with Wag Olivia Holder to get over England snub and enjoys amazing tribute from MMA fighter"
+    },
+    {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736674+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTjdLVTR5azRmNUw1ekszZ1J0NTNiSEJndFNYeEdndG5EWUxQN29mQ0FiMHRsN2FHT3NLVHMyVm0zYk1PdUR5UGU3a09mVXJFRDExa1BCVGcwT1A2bjlWdktxTzRtZ25IcWg2QWYySEQyZEpoWjNlTzBiWWhfSElicERFYw?oc=5",
+      "published": "2026-11-15T12:10:57+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
     },
     {
       "desc": "Romano reveals Liverpool decision on £46m January transfer: ‘The answer I got is..’ Football365",
@@ -3646,6 +3816,16 @@
       "title": "Hacken v City: Kick off time, team news and TV information - Manchester City FC"
     },
     {
+      "desc": "Manchester United Sunderland | 2010/2011 | Premier League | Highlights Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736833+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNbGlaTmM0czl2UVROU254a0ozRmJYanR0YzBQeTJERjRNMnBudzhMb2kxb2NYNHFvcVRDNGxuNjBfZUdIYTRXZXhVbHM4RjBBeHhVN0NFRnB4S253d1NtVFp5SmdYMi1HUm5Mci1KOEhOejhwdmw2RHJRUVE0VmlhUWJoczdERUw4ZmowV2JaVGM0dw?oc=5",
+      "published": "2026-11-15T09:52:11+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Manchester United Sunderland | 2010/2011 | Premier League | Highlights - Premier League"
+    },
+    {
       "desc": "Gyokeres scores twice to secure promotion for Sweden Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-15T10:00:50.307165+00:00",
@@ -3664,6 +3844,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Papers: Fernandes wants to see if Poch is 'real deal' before signing new contract"
+    },
+    {
+      "desc": "Chelsea Cup Nike Goalkeeper Stadium Shirt 2026-27 with Martinez 1 Cup printing Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736876+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQTJUWU9uUXMtQk9JMGNmRTl0TDZwNTNCVUpHMG0xX2ZHaEphNWhpcHE0QV93endTZ3BPb0JLb1NIRXh2QVU3Zk5JRnJ5UGJaNEpoVGpzNG5jXzQ0Uk12eU5Pelc2UlZJbkdHaDR5Vmw1NUtCVnRWYjNHOHF6RE1Fd0JYbEJqZVJXX0hMTkxXZjFxcXd5aXJ4UnB5eEhmbFZGY092bnNhWDdzREZndVdSdGRxNDFuOUFTVTFkR2JhUmxXRklYQXRqeVRVTng?oc=5",
+      "published": "2026-11-15T09:31:53+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Cup Nike Goalkeeper Stadium Shirt 2026-27 with Martinez 1 Cup printing - Chelsea FC Store"
     },
     {
       "desc": "LFC Stadium Magnet Liverpool FC",
@@ -3744,6 +3934,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "How Spain's humble superstar Simon became world's best keeper"
+    },
+    {
+      "desc": "Gusto to Man Utd or Man City: talkSPORT Reports Chelsea Defender Battle The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T14:00:52.736954+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdVdrcll2TzJETUdOeHY2NnYyS0Qxd2RDemtESmRvLUN1VTdkalZJYmtXSlRmdEhCQl8yN3pvOXBCblRERFB0VzlGWjhlc1FKUTRvaV8xWHpMeC1maHJoWGVSVzJzMkRFTUJvNUxDSmFBemp2VE5ZTzBXendOODFoNHpXX3FmWTJ5SmRr?oc=5",
+      "published": "2026-11-15T07:21:41+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Gusto to Man Utd or Man City: talkSPORT Reports Chelsea Defender Battle - The False 9"
     },
     {
       "desc": "Aston Villa Women are celebrating an important 30-year milestone on Sunday - but how are they trying to reclaim their id",
@@ -4854,206 +5054,6 @@
       "publisher": "https://tothelaneandback.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "John Wenham urges Tottenham to keep tabs on former Chelsea flop who recently destroyed Manchester City - To The Lane And Back"
-    },
-    {
-      "desc": "Liverpool and Arsenal target €60m Brighton defender Maxim De Cuyper Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T20:00:53.142721+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPT0VoRDUydlptZF9zaDVVSTJWRU42a3lXaTBHYk5VaDZoQ3ROdW1ZdWViVHc3UmlUUGNTTENtV2hIZHJUdHdOMy04UC0yazJUaHRCS3I4SzQtbFVmbVRXWXJ2ekxuY2xDMlhoUVZUMlp1YVdCZmhGZnRya2pIMi1heTBIZXVDY1ZVYWhOamNkcmNhTEk3QzZ3Tm9aMXBiOE40?oc=5",
-      "published": "2026-11-14T15:10:50+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool and Arsenal target €60m Brighton defender Maxim De Cuyper - Liverpool FC"
-    },
-    {
-      "desc": "ITALY has gone Ronaldinho mad as the Brazilian legend prepares to make his sensational return to professional football a",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T16:48:48.787477+00:00",
-      "link": "https://www.thesun.co.uk/sport/41023956/italy-goes-wild-for-ronaldinho-return-to-football/",
-      "published": "2026-11-14T15:05:40+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Italy goes Ronaldinho mad as Brazil legend prepares for sensational return at the age of 46 with Serie C side Ravenna"
-    },
-    {
-      "desc": "Gudjon Thordarson, who led Stoke City to promotion from the third tier in 2002 and managed three other English clubs, di",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-14T16:00:53.639301+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c98r7l5yrn6go?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T15:04:59+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Former Stoke City manager Thordarson dies aged 71"
-    },
-    {
-      "desc": "FORMER Premier League striker Mario Jardel has revealed he nearly DIED from a cocaine overdose after spiralling into dep",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T15:00:59.502453+00:00",
-      "link": "https://www.thesun.co.uk/sport/41023901/mario-jardel-reveals-he-almost-died-after-drug-overdose/",
-      "published": "2026-11-14T14:59:55+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Alcohol, depression and cocaine’- Ex-Premier League star and Brazil striker reveals he almost died after drug overdose"
-    },
-    {
-      "desc": "REAL MADRID superstar Thibaut Courtois is looking to buy an Italian football club through his investment company. The Be",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T15:00:59.502489+00:00",
-      "link": "https://www.thesun.co.uk/sport/41023393/real-madrid-serie-c-football-club-reggiana-media/",
-      "published": "2026-11-14T14:26:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Real Madrid star submits amazing bid to buy 100 per cent of Italy’s Serie C football club Reggiana"
-    },
-    {
-      "desc": "Internationals: How EVERY Premier League club's stars are performing Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T16:48:48.787576+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdDYyR0pHTk8xS1JRUS1OVGhzWEZ6VGYzdFVrZExkYnJSOEczb2hjaExGY2U1WUJvcG9VaHdzZXlGX3ZwUWlEaURuN0V6cmtOTEtiRmw4Rm5DZ093NTlsYmVUcG1zZlZncXFSYVBhaDJLR2dMcXYtdGxWWm5tdVRfNW9kdE1ER2Raa252YUtxMUNKTGREVVRLUjhmaHNwcGxCSlo3YUwwUXBMOVFXbkhiQS1B?oc=5",
-      "published": "2026-11-14T14:21:45+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Internationals: How EVERY Premier League club's stars are performing - Premier League"
-    },
-    {
-      "desc": "CRAIG HOPE: Five seasons ago, Bukayo Saka clocked up 3,000 Premier League minutes for Arsenal. Morgan Rogers appeared in",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-14T15:00:59.502535+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290387/Why-Bukayo-Sakas-England-spot-suddenly-threat-Morgan-Rogers-hits-gear-CRAIG-HOPE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T14:21:42+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Why Bukayo Saka's England spot is suddenly under threat: Clocking up the miles has made Arsenal star a fitness concern - while his rival Mor"
-    },
-    {
-      "desc": "United needed a big bull to replace Carrick and they have one. Wilcox's preference? Eddie Howe who is far from a shrinki",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-14T15:00:59.502576+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290879/mauricio-pochettino-manchester-united-transfers.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T14:10:23+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "RIATH AL-SAMARRAI: I'm told control over transfers was key to Mauricio Pochettino taking Man United job. It seems they finally have a manage"
-    },
-    {
-      "desc": "Manchester United finalising deal for Mauricio Pochettino if Michael Carrick departs - The Athletic The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T15:00:59.502608+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQT2VnY1VPVW1kMk1wN2ZfUkYzZ0NkcTZUUU1nM0cwWGp6Qjk5MWY1QU4tSW1MNnA1WnpjZlNkbHpFbC1KT056NnI3VjRzVEVIVE0tbnpxOHhuQkJ3eXJ1YUtETkljQVEtSk5Wd3JuUnM3R0tlTWxMakNPWlI1a3NGSnRORXRYQ3c5aTdyaWNOWnFlUWRuMXdDXzhNeUZIX1NyT2RRSkh4RQ?oc=5",
-      "published": "2026-11-14T14:04:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United finalising deal for Mauricio Pochettino if Michael Carrick departs - The Athletic - The New York Times"
-    },
-    {
-      "desc": "NEW MANCHESTER United coach Mauricio Pochettino is set to crack the whip with his players to improve their much-criticis",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T14:00:50.006766+00:00",
-      "link": "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes/",
-      "published": "2026-11-14T13:50:46+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "New Man Utd boss Mauricio Pochettino to ban players’ day off after games as he cracks the whip in major fitness blitz"
-    },
-    {
-      "desc": "News Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T17:00:59.601530+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5MVUNpV21QQ3MtLXZGMV9xRmd5R2VzUy1XV3I5akxrZkEzVlNHMlhWRkt3YjBKQ2FEV2dDZGZQZ1labVFLT0g4YWNrLWxzZw?oc=5",
-      "published": "2026-11-14T13:47:33+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "News - Arsenal.com"
-    },
-    {
-      "desc": "PRIVATE chef Tommy Cole is sure to be serving up a storm for his mystery Cobham client tonight. Nearly every day, Tommy ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T14:00:50.006794+00:00",
-      "link": "https://www.thesun.co.uk/sport/40988097/tommy-cole-private-chef-sports-stars-premier-league/",
-      "published": "2026-11-14T13:39:47+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "I used to drink salmon and potato smoothies, now I’m a private chef for Premier League stars, NBA players and golfers"
-    },
-    {
-      "desc": "Tyler Adjei: Fabrizio Romano confirms United have completed deal to sign striker for academy Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.006819+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRXZCbEZsN1FjWmVmbTZ0WXJiYkhtN2xmWDVnUE5MWmNveXdFbjdfbGhLc1djOVRCTXFTRjcxMG5yWE02UFRlUTRmQTNDOXA5U0RxYTFsc0NIVDgzRVpVWXNjaVQxSm1WUFpaZlZaVkZlOXlHSmxTSTM3NW5oc2F2OXgxakJFVkxfZlgzX1Jn?oc=5",
-      "published": "2026-11-14T13:35:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Tyler Adjei: Fabrizio Romano confirms United have completed deal to sign striker for academy - Yahoo Sports"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T19:00:48.871480+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8xQXItUk5US0o2UnhubkdsMzNIX3ZwTWtQdU1KN1I5U3lwZHVaRDlmLWEzNnRzbThiRHl0OWVBTFZWZTNxU2JibmFRaHpYb1V4T0w0bVBBb1dwVnVUQlNMN0U3ZlRZZklNbE15cGhyT0VUeXZTSlZRWEd3?oc=5",
-      "published": "2026-11-14T13:34:10+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "Arsenal Players on International Duty: Bruno Two Assists, Gabriel Loses (14 Nov) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.006840+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWkFYeUktbXdwTjhSV21tVGtDYXdlUDhfQkI5NEVIMFI3cG51azdOeUFPZnFNSTlzVkVLYk5DajEyaHJBdmZoNzVnVmt0WEh3MTlvdC1ROUdKSEtGQUN2RXZsXzdCZUo5MUpVZGR0dHJLUHdObW53RkdyS3lOenFONDh5S2FsX2hm?oc=5",
-      "published": "2026-11-14T13:31:17+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal Players on International Duty: Bruno Two Assists, Gabriel Loses (14 Nov) - The False 9"
-    },
-    {
-      "desc": "Play: Quiz on the 2026/27 Premier League season so far Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.006859+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLUd2S2V3WXdlQldfNUlSaWxkOFdNT0V1dVg5YzNLU2V0X01jelNKSWhvaFlfekZ1UEdOdHhMejNMWDFQWWZlbTd1azlQRWp1UjVEcE4tbHQ3TEk3R1pVTG5nZFRob1BwYU1nN3MxRUtONW85bTNYMkU5TDh0MmhTbEhlVWJFQ0g2R3JOTktFb3FQbmpPOUpwNy0wWkxLSS1mYlNBTDctaHZGUlZnY1FINkxZQQ?oc=5",
-      "published": "2026-11-14T13:29:05+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Play: Quiz on the 2026/27 Premier League season so far - Premier League"
-    },
-    {
-      "desc": "ARGENTINA's first game without Lionel Messi ended in a chastening defeat in front of deserted stands. Manager Lionel Sca",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T14:00:50.006876+00:00",
-      "link": "https://www.thesun.co.uk/sport/41023371/argentina-uruguay-attendance-emoty-seats-lionel-messi-retirement/",
-      "published": "2026-11-14T13:21:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Argentina face Uruguay with stadium virtually empty as post-Messi era gets off to ominous start"
-    },
-    {
-      "desc": "MIKEL ARTETA has been named the hardest Premier League manager to deal with by former top-flight referee Graham Scott. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T14:00:50.006894+00:00",
-      "link": "https://www.thesun.co.uk/sport/41023388/ex-referee-graham-scott-reveals-most-difficult-pl-manager/",
-      "published": "2026-11-14T13:12:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-referee Graham Scott reveals the Premier League manager who was the worst to deal with during his career"
-    },
-    {
-      "desc": "Mohamed Salah becomes Egypt's all-time record goalscorer Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T15:00:59.502775+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOelVvMFVXd0hzSWRlSWFrS2J1UXUtdWxaaFIxSV9VX1NsbTlIaElvOHdLYW1HRlVOcXBqeGtpTUxiWFNqdGhlTUVnRXVmRTU3RzBVRUtSVjNmWHVpQTVkbW5JN3hLeGhtbzFnR0lodndfU1pRWlZGeDdYSFJCQklhejB4a0hOVjNKY0JtcHJhWXk?oc=5",
-      "published": "2026-11-14T13:08:38+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Mohamed Salah becomes Egypt's all-time record goalscorer - Liverpool FC"
-    },
-    {
-      "desc": "Michael Thomas Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.006909+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55RTQ5VWN0ZnJlaENGakk4dTVoX3p6TzRGcWtHeFAwRmx4djdtZlN3Rk5kaDQ2VldXaDhwdXpWX3lTWHpGUlVjREowd3ZzRk9vbkJyVUVjNk5PaVYzSjhadg?oc=5",
-      "published": "2026-11-14T13:01:25+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Michael Thomas - Liverpool FC"
     }
   ],
   "processed_urls": [
