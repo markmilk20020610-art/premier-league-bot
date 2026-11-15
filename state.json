@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 114570,
-    "output_tokens": 11345,
-    "requests": 18
+    "input_tokens": 119442,
+    "output_tokens": 12075,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T06:00:50.718933+00:00",
+  "last_scan_at": "2026-11-15T07:00:55.886601+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3520,6 +3520,56 @@
     "updated_at": "2026-11-14T22:01:27.524120+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T07:00:55.888801+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c60mdnedvj2wo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T06:47:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "Harry Kane, Jude Bellingham and Anthony Gordon are three of England's current biggest stars, but all have chosen to play",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T07:00:55.888826+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckdd17mq2pvmo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T06:25:41+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Respect? Exposure? Why England's star names are going abroad"
+    },
+    {
+      "desc": "Arsenal News Today: Rice Contract Close, White Booed and Saka Out (15 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T07:00:55.888847+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1YVU9DeXc5NFhPb3I4N0xhSDZCS1p6RmlJUDkwb1lVSHhhbHlVY3M2UkVGd2FTUWdXVUxmWGQweDA5ZVl6WllhQloybm5YYTR5U2J3SlpaN1o0WFpvY3Z4YVNiYVUyOHBBSmlLOWdQcXdMZ28yMjhZc1R3?oc=5",
+      "published": "2026-11-15T06:25:32+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal News Today: Rice Contract Close, White Booed and Saka Out (15 November) - The False 9"
+    },
+    {
+      "desc": "FPL Price Changes: Konsa Rises to £4.9m, Saka Falls to £9.4m (15 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T07:00:55.888865+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmY3luWG5PcndaVklncWJvUHJ4VVFWU21uU1oxQ3BTalEwMjZlbkpPQU5EWnBrUmphRWVOSEczcG0xcWVOR2tOZFptNmhkWXUzdlZFQzFvbHlQdkwxODJoam4zRE4tMVlsM25DR0tsbG9Ba2pzM1g5NA?oc=5",
+      "published": "2026-11-15T06:15:56+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "FPL Price Changes: Konsa Rises to £4.9m, Saka Falls to £9.4m (15 November) - The False 9"
+    },
+    {
+      "desc": "Barcelona defender open to Premier League move as Chelsea explore January deal CaughtOffside",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T07:00:55.888884+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeFlPSVNuaGFkSXA3bW5aeTFkemxvb1VKNWFldDJneEw4azRtUWpVdFEtTXBLOEt6a0Rkbm1sZ2gxSWpKR0cxOHNMSzUzYzFaSGd2eWFHdUMwT182Q3ktU3dpQWtod1h0clFLZ1lKODFHVE90OHJQTjBPTWRRM2M4c0gtZVlHelpzc1l4Y1dCZUdYT0tlTlJIbGlxYUHSAaIBQVVfeXFMTkg5aFpUWWJBYWVlNTZ0ZmhRTFBwTlVjYWpnbk0za0ZjVmFacjM1LUZPeVNkRDJSWVdzbmNSTUxIYzJ4NFpqVjUzY1ZBQmkwcHVYWW9tR2JkZTJCejJ6d0RZTWd5bUJxb2YzX0tzVTV6LXlpaVNBamcyQUVpV29lRlVVZWhZRUc4TzVJeWp1dnJERXFGaFdDS3pYdTlBX3d2UTV3?oc=5",
+      "published": "2026-11-15T06:09:33+00:00",
+      "publisher": "https://www.caughtoffside.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Barcelona defender open to Premier League move as Chelsea explore January deal - CaughtOffside"
+    },
     {
       "desc": "Premier League attacker admits Man United dream amid fresh transfer speculation CaughtOffside",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4969,56 +5019,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "October Player of the Month: Alessia Russo - Arsenal.com"
-    },
-    {
-      "desc": "Gallery: Cazorla stars at our New York takeover! Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T13:01:02.056927+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdHVhcl95ZWFVR0xyclQ3d3ZlSWR2eFlDNmlEX3ItZU8tcGN5X0VsN200M2tMMWZGQ1BrN0RkdkNHNVFRcDZBRkYta1lWSG1SVnlMQ0VJMVdNSE83cFo3eFRuZ0E3T2pvSDNVWk91S3BnSDlZYi1RY0N2WnczVmpvVUttdTgwUnRzWmRuYnprS0k5dw?oc=5",
-      "published": "2026-11-14T10:37:31+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Gallery: Cazorla stars at our New York takeover! - Arsenal.com"
-    },
-    {
-      "desc": "Decision made. Barcelona forward set to leave the club? Dailysports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T11:00:55.237614+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdFdYalBnWmhhTXZNOXlhMUdXRU5MSEtPbXJlNTFZY0NqY0FXUmo3b0ZSRG9OMl95TFJTXzZZSERiam1DSXZLUTRmN2h6Z3BQNHZrdnhxNmY0dDRJSnF5OE5iNnZrWnVpajY2c0docXJYb05mVTRMNGtvVHBFdGEtaVl0dGJjSG1vVlhZ?oc=5",
-      "published": "2026-11-14T10:36:42+00:00",
-      "publisher": "https://dailysports.net",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Decision made. Barcelona forward set to leave the club? - Dailysports"
-    },
-    {
-      "desc": "Renée: “I’m expecting a tough challenge against London City” Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T11:00:55.237640+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNd1RSYXpvWTdmeUlIa0V2Ny04UmVwTUF5cWxKZE8zbjl5YWlIUEVOeFFnTkpoYnhtNzZHTFc5Z1I3UjMxeDN5Y2g0UHlqb0lNYmxiaHV5Rk1SdnlLdDgwUkRZM2htS0ZpNGV4MjRhN25NMXlBdi02YWxKeDdVazB2RmtXRDBrZ0cwRmFHbEl0MFhSdGpFNFpsNVRUY2V4MG8?oc=5",
-      "published": "2026-11-14T10:30:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Renée: “I’m expecting a tough challenge against London City” - Arsenal.com"
-    },
-    {
-      "desc": "News Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T16:00:53.639896+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAxVG5JS1g1WGxKSE9hRHYydjlFdkM1S2VOdk0xaW11YW43cmpsY2Ywb0padkE5R0pZOHE3UXlxdUVYNkprUFRxU2FrNA?oc=5",
-      "published": "2026-11-14T10:25:03+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "News - Arsenal.com"
-    },
-    {
-      "desc": "Manchester United is in negotiations with Pochettino Radar Armenia",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T12:00:51.118813+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xTXRNODk0MVREbjV4ampXM2tZYUp3NG1pOVY1bnU3Q1cxcVRBb25NbG41ZVZVbFRhTjJJZlAyMFNYRTl2ODJuSUw4QmZPbm95aVo5dQ?oc=5",
-      "published": "2026-11-14T10:07:46+00:00",
-      "publisher": "https://radar.am",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United is in negotiations with Pochettino - Radar Armenia"
     }
   ],
   "processed_urls": [
