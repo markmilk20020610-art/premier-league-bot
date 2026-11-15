@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 23,
+        "calls": 24,
         "errors": 0,
-        "requests": 23
+        "requests": 24
       }
     },
-    "calls": 23,
+    "calls": 24,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 141811,
-    "output_tokens": 14352,
-    "requests": 23
+    "input_tokens": 148007,
+    "output_tokens": 14971,
+    "requests": 24
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T10:00:50.303397+00:00",
+  "last_scan_at": "2026-11-15T11:00:53.498950+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3521,6 +3521,36 @@
   },
   "news_pool": [
     {
+      "desc": "Matty Cash leaves Poland camp with concussion in Aston Villa blow Dave.Sport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T11:00:53.502607+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5sbC1oRVBGUzBtRWF4LThtMTRYSkZfX1B5dUdsd1ZtOWQzbnJudmJ2TkJtOEZGZXR3djcxMHdCdDkwTTMyU0NkeFFFd05QekJNclI2dHBsbmNWaFV0NGEwbFRIY28wUlp5MHFLZFRKOGVHUmM?oc=5",
+      "published": "2026-11-15T10:45:28+00:00",
+      "publisher": "https://dave.sport",
+      "source": "https://www.thefa.com/rss",
+      "title": "Matty Cash leaves Poland camp with concussion in Aston Villa blow - Dave.Sport"
+    },
+    {
+      "desc": "ARSENE WENGER has snubbed a plea from Uefa chiefs to challenge Gianni Infantino for the Fifa presidency. The legendary f",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T11:00:53.502645+00:00",
+      "link": "https://www.thesun.co.uk/sport/41028623/arsene-wenger-snubs-uefa-plea-to-challenge-infantino/",
+      "published": "2026-11-15T10:09:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsene Wenger snubs Uefa plea to challenge Gianni Infantino for Fifa presidency after talks with senior chiefs"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Liverpool stance on Trent Alexander-Arnold Anfield Watch",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T11:00:53.502679+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVFJUSWVIZHhIMlg0bXhub2R3TEVCVHFfZHBUbFg1LVMzLTNNSkFqVTlFaVFORHFLeHJoLWNiNmRzekFrb2g1Z0RKVjFoOE9sNWJEQ05KYUUzN2IyYWNDeHh3bVY1RUxxdW5mU3VhZ3JkUGNodlNkT2E1bXEzdF8tVEJkR2pqbjZXNkREaXhwVFd0QXhxRHA3US0zLXNWdVI2bWxFaWZySU45dEEtNzFTVDhtSUhjQ2pm?oc=5",
+      "published": "2026-11-15T10:00:00+00:00",
+      "publisher": "https://www.anfieldwatch.co.uk",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Liverpool stance on Trent Alexander-Arnold - Anfield Watch"
+    },
+    {
       "desc": "Gyokeres scores twice to secure promotion for Sweden Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-15T10:00:50.307165+00:00",
@@ -3529,6 +3559,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Gyokeres scores twice to secure promotion for Sweden - Arsenal.com"
+    },
+    {
+      "desc": "The top stories and transfer rumours from Sunday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-15T11:00:53.502727+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13612415/x-paper-talk",
+      "published": "2026-11-15T09:47:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Fernandes wants to see if Poch is 'real deal' before signing new contract"
     },
     {
       "desc": "SPAIN are looking to maintain their 100% Nations League campaign and 43-game unbeaten run when England visit on Sunday. ",
@@ -3709,6 +3749,16 @@
       "publisher": "https://www.caughtoffside.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Barcelona defender open to Premier League move as Chelsea explore January deal - CaughtOffside"
+    },
+    {
+      "desc": "Arttu Heinonen Videos & Best Moments Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T11:00:53.503151+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5KWjBZTFpjSFhUNjQzTGpndkVDYUM1cFBULWMtUEt1RjczUXVvM2ZOR1NMSk12RmQtU1RmZ3ZnTDJKMURXUV8yc3RKMVNPU2lnSzc1YUg3LW5hYjVrNlZjMV9PV25aZ1RGX0hZb2pIMm02RTRjOUEw?oc=5",
+      "published": "2026-11-15T05:39:57+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Arttu Heinonen Videos & Best Moments - Premier League"
     },
     {
       "desc": "Premier League attacker admits Man United dream amid fresh transfer speculation CaughtOffside",
@@ -4969,56 +5019,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "- Premier League"
-    },
-    {
-      "desc": "MANY huge names from the world of sport and entertainment are set to take part in Sunday's Game4Ricky! The star-studded ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T13:01:02.056522+00:00",
-      "link": "https://www.thesun.co.uk/sport/40972085/game4ricky-charity-match-line-up/",
-      "published": "2026-11-14T12:14:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Game4Ricky line-ups: Who is playing in star-studded charity match?"
-    },
-    {
-      "desc": "Exclusive: David Pleat Names The Tottenham Academy Star Who Must Join Luca Williams-Barnett in The First Team roundtable",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.007011+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPcncwSGw5SmxyWmI0MHhwdGtWcGxhODlmR0MxYTFwcGRnQmhtRWcza0pmb2RIUFBKWk9EWHZKQkxqSlM3eXlTdXlqQ2tYdmt3UDdreTBDSTlTMjhieDlYVmdoaXoyWXlaTlZSY19lQ1Nqd1hyOFVWOUhNRi1lOWxmMTRzOUNScjVhbU92ZlV6OGJVemNyU2pKTERDZXRRU201ODN0VDRxdnh1c1l6NGhMU185V1NjMmpKTkp4VWVxSWN3bjEwZEdUWXF2ekFFNllTUjBNTWgxX0VOM19wY3czYUw4OVF4MDBwNXNVRjBUcTl5d0JpV29FbzJfX2hkbkY1a0NTVmtB?oc=5",
-      "published": "2026-11-14T12:00:05+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Exclusive: David Pleat Names The Tottenham Academy Star Who Must Join Luca Williams-Barnett in The First Team - roundtable.io"
-    },
-    {
-      "desc": "Man Utd: Romano confirms Pochettino first signing 'complete' with deal for 'talented' striker 'all done' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T15:00:59.503024+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOY1hreEpQNmZkNXY0THJ1eU5BYkNRaXkzakQ0U05XZTlwLW5UZjV5U2owcWJxMXBRSHQ3Qk1COGJXbjhXRVJ2UDdQQ2xjdGxLTmlJUUtUSlNVdkhqcVB6MG9KX1g4ZzluempPbU90dEtONmt6ZEhMb3JwWkdrTnEwTDlrRjlsU0drOGpJdmp6dWJwbHB6UXBfcGZhc1RUN1BnU1ZMRTVkeGlvb3hsWkFjeF9R?oc=5",
-      "published": "2026-11-14T11:59:28+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Romano confirms Pochettino first signing 'complete' with deal for 'talented' striker 'all done' - Football365"
-    },
-    {
-      "desc": "MANCHESTER UNITED have completed their first signing of the Mauricio Pochettino era after snapping up teenage striker Ty",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T12:00:51.118525+00:00",
-      "link": "https://www.thesun.co.uk/sport/41022889/man-utd-sign-tyler-adjei-first-transfer-mauricio-pochettino/",
-      "published": "2026-11-14T11:39:40+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd sign ‘athletic’ England youth striker Tyler Adjei, 16, from Reading in first transfer of Mauricio Pochettino era"
-    },
-    {
-      "desc": "Tyler Adjei: Man Utd agree deal for Reading teenager, says Romano Dave.Sport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T13:01:02.056572+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoeFFwWmtaYnZTR2NFV0dFLW5wNVR0ckFkWFU0bWxWZllWbDluV3FTM0J1d2l2aGJ4azY1MEdwMTVGbWtDUzh4SXkyY19DOGV0N1ZnUDhWNnJKTEFGSXFfSTh3?oc=5",
-      "published": "2026-11-14T11:37:12+00:00",
-      "publisher": "https://dave.sport",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Tyler Adjei: Man Utd agree deal for Reading teenager, says Romano - Dave.Sport"
     }
   ],
   "processed_urls": [
