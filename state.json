@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 130780,
-    "output_tokens": 13149,
-    "requests": 21
+    "input_tokens": 136123,
+    "output_tokens": 13749,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T08:01:07.386697+00:00",
+  "last_scan_at": "2026-11-15T09:00:58.639922+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3521,6 +3521,16 @@
   },
   "news_pool": [
     {
+      "desc": "Pochettino: It's difficult to turn down United Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T09:00:58.642590+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQamZEN2ZhQi1Ra0Z1U004VGpzSkkyNlFrWmNGSlpIeGZKZmFfd01RWlpCSmthNWhtcEtPUmxZbHlyUzVqODNHd05UajJ2QWhZTEdzTVRFOEE4N0VydWtodGRiQlJSLVRlcTZkOE1ZVnRwRGRuak9NUnVxaVpEaU1YeGNNWkZ4UGRkMlRkNUN3ME9OcG5zNUVmTmZIdw?oc=5",
+      "published": "2026-11-15T08:10:46+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino: It's difficult to turn down United - Manchester United"
+    },
+    {
       "desc": "SEVERAL star-studded names from the world of sport and entertainment are set to participate in today's Game4Ricky - and ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T08:01:07.388926+00:00",
@@ -3529,6 +3539,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Game4Ricky live stream and TV guide: How to watch star-studded charity match"
+    },
+    {
+      "desc": "FRANCE host Turkey on Sunday, needing a victory to guarantee a top two spot in Group A1 of the Nations League. New custo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T09:00:58.642629+00:00",
+      "link": "https://www.thesun.co.uk/sport/41012141/france-turkey-free-bets-bet-builder-sky-bet/",
+      "published": "2026-11-15T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "France vs Turkey: Get £50 in free bets, plus our 6/1 Bet Builder tip | Sky Bet"
     },
     {
       "desc": "As Spain prepare to host England in the Nations League, BBC Sport columnist Guillem Balague charts the rise of Unai Simo",
@@ -4999,26 +5019,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Leeds United tickets and hotel deals for all Premier League matches at Elland Road this season"
-    },
-    {
-      "desc": "Internationals | Bentancur captains Uruguay to win over big rivals Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T14:00:50.007085+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdEFWdWZaT0QyWFFsTHhsQzIyd3VCWTFOclBPT1ZwbHlJU2ROQ1Q1Tm5CN1pTLWxLVFZuTUpheHhGQ29uREgtLWRabVRaME5EbTRJLUZXVThrUDZpUUFlWXVtTHdRTmJfT3NNaG5BbkstRmZvWE9BZ0kwUkRHeG56aVVpVVhxRjhYcTZsWFgxWHo2REFKaWFmeURLUC1BcC1NWml1bktEdlpLVHBqeHpB?oc=5",
-      "published": "2026-11-14T11:25:47+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Internationals | Bentancur captains Uruguay to win over big rivals - Tottenham Hotspur"
-    },
-    {
-      "desc": "MANCHESTER UNITED missed out on their top seven midfield transfer targets before signing Youri Tielemans for £35million.",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T12:00:51.118624+00:00",
-      "link": "https://www.thesun.co.uk/sport/41022905/man-utd-youri-tielemans-mauricio-pochettino-carrick/",
-      "published": "2026-11-14T11:20:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd ‘missed out on top SEVEN summer transfer targets’ before signing £35million Youri Tielemans"
     }
   ],
   "processed_urls": [
