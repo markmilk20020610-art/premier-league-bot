@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 148007,
-    "output_tokens": 14971,
-    "requests": 24
+    "input_tokens": 154160,
+    "output_tokens": 15669,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2727,6 +2727,41 @@
       "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
       "updated_at": "2026-10-31T00:05:41.886537+00:00"
     },
+    "c364c0b835a9": {
+      "article_title": "Wenger decides not to challenge Fifa chief Infantino",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e4fe8347abf4ab55",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 143
+        }
+      ],
+      "created_at": "2026-11-15T12:00:54.292724+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ccd271beef3681fc",
+      "event_id": "c364c0b835a9",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-15T12:00:54.292724+00:00",
+          "origin": "created",
+          "title": "Wenger decides not to challenge Fifa chief Infantino",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 143,
+      "title": "温格放弃竞选FIFA主席，因凡蒂诺连任前景大增",
+      "updated_at": "2026-11-15T12:00:54.873718+00:00"
+    },
     "c82dc290ae10": {
       "article_title": "Football world mourns Tenerife striker De Miguel",
       "attempts": 1,
@@ -3499,7 +3534,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T11:00:53.498950+00:00",
+  "last_scan_at": "2026-11-15T12:00:48.235647+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3520,6 +3555,26 @@
     "updated_at": "2026-11-14T22:01:27.524120+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Arsene Wenger decides against running for the Fifa presidency, in a boost to Gianni Infantino's hopes of a fourth term.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T12:00:48.237556+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T11:28:25+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wenger decides not to challenge Fifa chief Infantino"
+    },
+    {
+      "desc": "Fabrizio Romano Transfer News: Gusto to Man Utd truth, Araujo update, De Bruyne latest FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T12:00:48.237595+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNS2x1WXp5VGVJTWRXWnloUEl1dm5HRm43WXRIVU9ybk03dXVpZTJsUGRDRmk1b2NGd0V0YnhLT2VmQTd1RWxmZm1mR08tcnc2VkYxdEo1MUEwc1VYbWQ1ZEVkeVppdG90QWdnb2ZacjYxcnFOMVJwV3o1ZUN3SncxOWZsenh1OUVYRDNZLV9oWFNJWmlhUzJHTDFIZXVuZDFPRk1jSnhWOWhkcndFa3ZJa0VGby1pbFBqT3BBRkZ1TnBxUkx1cDNhSVF3UVdEZWpldTJYM1VTN3dSZHpQaF9oNlhjcDl6RHJoMmx1Nzd0QlNvTV9TYm8xVHlkUUttVjc4REZJNTdtQ3NJNnB2?oc=5",
+      "published": "2026-11-15T11:08:19+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano Transfer News: Gusto to Man Utd truth, Araujo update, De Bruyne latest - FootballTransfers.com"
+    },
     {
       "desc": "Matty Cash leaves Poland camp with concussion in Aston Villa blow Dave.Sport",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3551,6 +3606,16 @@
       "title": "Fabrizio Romano confirms Liverpool stance on Trent Alexander-Arnold - Anfield Watch"
     },
     {
+      "desc": "Hacken v City: Kick off time, team news and TV information Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T12:00:48.237645+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNXzcybmdERjJ2bHowdkwxWndMZXVvWloxQUI3cHBZX0FjczU0UTVZeXJHUUZ4M25VRzI1RlBXNjczT3lVOHFnWGNpOXhOcEl2M1pPZ2FYQm55ZU92Rzg2emx5czFHMlRiZzdxNjlGZFFvaW10azFBeHZOOVNBdnlkTS1PQnNUMjhBMkE?oc=5",
+      "published": "2026-11-15T10:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Hacken v City: Kick off time, team news and TV information - Manchester City FC"
+    },
+    {
       "desc": "Gyokeres scores twice to secure promotion for Sweden Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-15T10:00:50.307165+00:00",
@@ -3569,6 +3634,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Papers: Fernandes wants to see if Poch is 'real deal' before signing new contract"
+    },
+    {
+      "desc": "Emergency unfolds at Essex football match as ambulance called Southend Echo",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T12:00:48.237691+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQU3A1ZlMtUXBmdDU0ZWhmRVMzdlFTeTJuWk1JTmhaQll0cWEtdW8zTGZvSldvZzI5dm9DS0FIdWIzTVIzOHA2RmdXZHF2QXFJYzF5aFBfQTZOTEcyQnBueXFiZVJjU1dVRUdmYVhVMXJmYmhEQjJoY2M5U19nbVVRc2pORDc2SXI1b0x3LVlZRXoxTWl1T3R5OTJiSVJBaGRH?oc=5",
+      "published": "2026-11-15T09:10:00+00:00",
+      "publisher": "http://www.southendstandard.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Emergency unfolds at Essex football match as ambulance called - Southend Echo"
     },
     {
       "desc": "SPAIN are looking to maintain their 100% Nations League campaign and 43-game unbeaten run when England visit on Sunday. ",
@@ -3779,6 +3854,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Man City News Today: Haaland Penalty, Guéhi Doubt, Gusto Interest (15 November) - thefalse9.com"
+    },
+    {
+      "desc": "Transfer News Today: Rudoni, Nusa, Fernandes and Morante (15 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T12:00:48.237895+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1KSWJmMDF5SXpLMm5JcUZCakxoSDdKbU9DeDRiN1ZyZWhsMlE2RTIxanlhZFRxMmlkTUlUR0h4dy1HNGpGbVo0djFnY2ZYb2NtT09URVNndlFrN3JRS1UyNlFzVTBFcTVJaHh5RVl3TkhVM0NZZGN5emFhQQ?oc=5",
+      "published": "2026-11-15T05:21:42+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Transfer News Today: Rudoni, Nusa, Fernandes and Morante (15 November) - The False 9"
     },
     {
       "desc": "CLUBS POCKET FA CUP LIVE TV BONUS The League Paper",
@@ -4969,56 +5054,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Inter Milan tickets and 2-night hotel deals for Serie A games at iconic San Siro from just £229pp"
-    },
-    {
-      "desc": "GABBY AGBONLAHOR has launched a blistering attack on Jamie Carragher, Gary Neville and Roy Keane after the trio took aim",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T13:01:02.056437+00:00",
-      "link": "https://www.thesun.co.uk/sport/41023157/gabby-agbonlahor-blasts-jamie-carragher-gary-neville-roy-keane/",
-      "published": "2026-11-14T12:33:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Terrible’ – Ex-Premier League star’s brutal rant to Jamie Carragher, Gary Neville & Roy Keane after stinging criticism"
-    },
-    {
-      "desc": "Confirmed Chelsea Women line up vs Manchester City | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T13:01:02.056469+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVlFLTTJ5NlJDSkNGSXRBZGctY0pDSWdvX2tNT3hJNmx6Zk1fek82WmtLM3ZXU3NnZC10Q1Z2SWpBUXpUSTFkR3gyX2paSjV0dUlFWS1YNGlkSm9qbXI3Ykk3SDR1TkptTG5mNjdPTkNWVno1c3BvTVRZN3NyRlptenNGcS01WUJEOTBNVS1IMTM2bGlMZzFF?oc=5",
-      "published": "2026-11-14T12:30:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Confirmed Chelsea Women line up vs Manchester City | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T16:00:53.639532+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaEcyUEZHMlF2MWZ1TDE3TFk0ekg2MXN6dVVZdFJTZ283ZDMxbldSaDI3blNKenVEbUczUHJIQ0JrQ3pEZGJtbTRQTjZBWjBKU2tadzdfa3BSVjZFSGJPWGU4d0pkTGV2TVFadFd0amJpeEdTX0tmSlhOMWJFMGlHTTVLRUlmdEVhRGpvYi12alNtdHFUM2FMbVpWNzdubDFMZE15UGhYUXI0R080OElrTnVsbFF2cG5XcjRHbUNKb1BTSDlN?oc=5",
-      "published": "2026-11-14T12:27:12+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United Website"
-    },
-    {
-      "desc": "KEVIN DE BRUYNE could be heading for a shock Napoli exit after PSV Eindhoven opened talks over a stunning move. The form",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T13:01:02.056498+00:00",
-      "link": "https://www.thesun.co.uk/sport/41023146/kevin-de-bruyne-transfer-napoli-man-city-psv/",
-      "published": "2026-11-14T12:25:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Kevin De Bruyne ‘in transfer talks with European heavyweight with Napoli spell set for abrupt end’"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T16:48:48.787954+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWnlGOU9HazhYNks3NUpYNzV3U1RKTkdwTEFfQjFteUIzbE80VEc1Wmp6UDVHM1laNHZuUWNNd1RiODNJTThNWnNGRXhsbU56TU5xSFpmVjBtV203d2s0Q2hYTnJ1UGNPZk9lQWktM01jbTk2NnlKMVBxYmpKUm5MLUxsUUw?oc=5",
-      "published": "2026-11-14T12:24:59+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
     }
   ],
   "processed_urls": [
@@ -5134,7 +5169,8 @@
     "https://www.thesun.co.uk/sport/41021367/kevin-de-bruyne-wife-napoli-quit-transfer",
     "https://www.bbc.co.uk/sport/football/articles/cq39glw42xkjo",
     "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton",
-    "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes"
+    "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes",
+    "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o"
   ],
   "s_overflow": {},
   "schema_version": 4
