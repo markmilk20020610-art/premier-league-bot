@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 25,
+        "calls": 26,
         "errors": 0,
-        "requests": 25
+        "requests": 26
       }
     },
-    "calls": 25,
+    "calls": 26,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 154160,
-    "output_tokens": 15669,
-    "requests": 25
+    "input_tokens": 160372,
+    "output_tokens": 16395,
+    "requests": 26
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3534,7 +3534,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T12:00:48.235647+00:00",
+  "last_scan_at": "2026-11-15T13:01:06.853273+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3555,6 +3555,36 @@
     "updated_at": "2026-11-14T22:01:27.524120+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Amar Dedic's escapade with a bow and arrows was certainly not the first time a footballer has found himself in hot water",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-15T13:01:06.855486+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16271235/Footballers-fascination-weapons.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T12:37:36+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Ashley Cole accidentally shooting a student, bare-chested Marcus Bent threatening police with a meat cleaver - and an ex-Barcelona star firi"
+    },
+    {
+      "desc": "COLE PALMER jetted off to Dubai with girlfriend Olivia Holder after being snubbed by England boss Thomas Tuchel. The Che",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T13:01:06.855509+00:00",
+      "link": "https://www.thesun.co.uk/sport/41029022/cole-palmer-dubai-wag-olivia-holder-england-snub/",
+      "published": "2026-11-15T12:15:37+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Cole Palmer flies to Dubai with Wag Olivia Holder to get over England snub and enjoys amazing tribute from MMA fighter"
+    },
+    {
+      "desc": "Romano reveals Liverpool decision on £46m January transfer: ‘The answer I got is..’ Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T13:01:06.855531+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSzZEVVBROGh2TzBxY05wZzMxMWpWakpPS2QzYlN2eHhtcm52bXFQbjdQU1FVRDd4OTZLVm5mN21Rcm9kcWdpTU9qTnhVUUJ1ZE9SQm1WdDBOckcyUE1OVlQ0Z3FmcUVQMXV1cldHOTJMYUVhLTNXWFJPVDk4cldhWDRpNDUxSDY0SkZCaXpiWjVVNHM?oc=5",
+      "published": "2026-11-15T12:03:23+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Romano reveals Liverpool decision on £46m January transfer: ‘The answer I got is..’ - Football365"
+    },
     {
       "desc": "Arsene Wenger decides against running for the Fifa presidency, in a boost to Gianni Infantino's hopes of a fourth term.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -3634,6 +3664,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Papers: Fernandes wants to see if Poch is 'real deal' before signing new contract"
+    },
+    {
+      "desc": "LFC Stadium Magnet Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T13:01:06.855679+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE04c3pmSmFjT09oV3NYejZxZ2JvdlJEWS02aVZVSTJYRHlzMl9EZWNfc0h6Sm5hd0pnV2dIRkQzeTh3OVljSnNXRWdCMzVlWGhURGN2SHIzQXZlOG8?oc=5",
+      "published": "2026-11-15T09:24:32+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFC Stadium Magnet - Liverpool FC"
     },
     {
       "desc": "Emergency unfolds at Essex football match as ambulance called Southend Echo",
@@ -5014,46 +5054,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Michael Thomas - Liverpool FC"
-    },
-    {
-      "desc": "Football latest news & gossip Sky Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T19:00:48.871545+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVVIbXE5Ykt3cjRpS2hxLTNaSlcxenlvTlF3MjFPRG03YkFDVnd0dGM4WU9jSnlfY2s0a1Y1dGVRY2RldzJBbzk3R0VacVZFV2VZUTF1akJoQmFGTE54U09BSFNJY1A0U21INk9ud0J3UUdvc1Q1ZVZUVDR1Q2NrMDhlQzFCa29HVS10V19B?oc=5",
-      "published": "2026-11-14T13:01:11+00:00",
-      "publisher": "https://www.skysports.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Football latest news & gossip - Sky Sports"
-    },
-    {
-      "desc": "Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T15:00:59.502798+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE15MGxBd0Q0eTI1d0NxcXE0ODdZMHVUTlE3U1JqTWNsb3R3UTRuU2Iwb0RmN2hIX0cybHZsazdTU2RCUDdOMlE0bVNwdnZyOENpY2ZsaFo5Zw?oc=5",
-      "published": "2026-11-14T12:49:30+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "- Arsenal Direct"
-    },
-    {
-      "desc": "Fabrizio Romano: Man Utd in 20-team race \"ready\" to bid for Nico Paz Football FanCast",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T13:01:02.056366+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWDlKeTlEdVVZdXFneG5xeFE5RUFmMUV1cUU0ekNDa29SOExCRWNTaWdDejVMbnNZNWF5Yl9BTlZ5eHNuME0teU00WF9QZ2hmZzV5SlNCb0lYajQ2WU9XMFZhS2Q4RWFmUWFtdXJ3X0NjVVY4V2dobTdZVnhxQlNQVW1EalNKTXdXT3o1enhkYUk5RUxWemtPN1paRTBBTEE?oc=5",
-      "published": "2026-11-14T12:48:10+00:00",
-      "publisher": "https://www.footballfancast.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: Man Utd in 20-team race \"ready\" to bid for Nico Paz - Football FanCast"
-    },
-    {
-      "desc": "FOOTBALL fans should experience the spine-tingling atmosphere of the legendary San Siro stadium before it gets demolishe",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T13:01:02.056404+00:00",
-      "link": "https://www.thesun.co.uk/sport/40048025/inter-milan-tickets-hotel-san-siro-packages/",
-      "published": "2026-11-14T12:44:40+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Inter Milan tickets and 2-night hotel deals for Serie A games at iconic San Siro from just £229pp"
     }
   ],
   "processed_urls": [
