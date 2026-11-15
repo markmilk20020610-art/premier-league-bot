@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 28884,
-    "output_tokens": 2922,
-    "requests": 5
+    "input_tokens": 34341,
+    "output_tokens": 3507,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1843,6 +1843,41 @@
       "title": "名记爆料波切蒂诺执教曼联已达成协议",
       "updated_at": "2026-11-13T00:01:07.678680+00:00"
     },
+    "76bbdd4682d9": {
+      "article_title": "‘No longer necessary’ – England fans boo Spain gesture before Nations League showdown as ITV viewers left divided",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "026078228469fa4f",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 144
+        }
+      ],
+      "created_at": "2026-11-15T20:19:36.777686+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "f475a145550e2b22",
+      "event_id": "76bbdd4682d9",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-15T20:19:36.777686+00:00",
+          "origin": "created",
+          "title": "‘No longer necessary’ – England fans boo Spain gesture before Nations League showdown as ITV viewers left divided",
+          "url": "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 144,
+      "title": "英格兰球迷赛前嘘西班牙世界杯奖杯展示，ITV观众意见分裂",
+      "updated_at": "2026-11-15T20:19:37.268743+00:00"
+    },
     "77823818a9b0": {
       "article_title": "Erling Haaland’s dad breaks silence on Man City guilty verdict and speaks out over son’s future amid relegation threat",
       "attempts": 1,
@@ -3534,7 +3569,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T20:01:11.193005+00:00",
+  "last_scan_at": "2026-11-15T20:19:32.278049+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3555,6 +3590,26 @@
     "updated_at": "2026-11-14T22:01:27.524120+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ENGLAND fans booed Spain's presentation of the World Cup trophy ahead of the Nations League clash. Goalkeeper Unai Simon",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T20:19:32.280238+00:00",
+      "link": "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy/",
+      "published": "2026-11-15T20:12:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘No longer necessary’ – England fans boo Spain gesture before Nations League showdown as ITV viewers left divided"
+    },
+    {
+      "desc": "After 10 games in the Women's Super League season, London City Lionesses have shown they are capable of finishing inside",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T20:19:32.280264+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6y49gzjgew5o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T20:03:08+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "London City's 'bravery' paying off in top three pursuit"
+    },
     {
       "desc": "Follow Daily Mail Sport's live coverage as England travel to Madrid to face world champions Spain in the Nations League.",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -3616,6 +3671,16 @@
       "title": "Why are England and Spain wearing black armbands in Nations League clash?"
     },
     {
+      "desc": "How to watch Arsenal Women v London City Lionesses Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T20:19:32.280353+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNzlfZllYY1FORVNxTkNfTzBkLW1ub2I0SGN6OFdja3ByMnZuR3pmaU5yb0NMamdSZC0wS2VtNFRtU2ltNTRYM1JteWQwejJLV2JWX0VES2FZNW1HazUwOTVXZERCOVhyNFZGYVZVZjFfWVNHNjcwQXdsMHVGNWZ4ekxmMGw4Q0tGWXgzUHY1MDVSZng1ZjFR?oc=5",
+      "published": "2026-11-15T19:19:55+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "How to watch Arsenal Women v London City Lionesses - Arsenal.com"
+    },
+    {
       "desc": "ARSENAL supporters can enjoy watching the champions take on the finest teams in Europe from the finest seats in The Emir",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T20:01:11.195426+00:00",
@@ -3644,6 +3709,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Book Man Utd tickets plus hotels and official hospitality for Champions League and Premier League games at Old Trafford"
+    },
+    {
+      "desc": "Renée: \"We let them come back too easy\" Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T20:19:32.280407+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUTcyNll0SFZPOV9jQU5FNWdfSUFRMEZ5dWVLREMzNFh5RVNQamd0TzZJZTl2VUZVVzgzYUhNdEU4LUJQRkp0MTBHV0xBcDViOFd4MHQwY1lSUXVDMXdwcnZHNEpzX0ZvUmlxSE5IMC1KX3hFRmN6UjNEcUZhQzFQREtiRU4?oc=5",
+      "published": "2026-11-15T19:03:49+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Renée: \"We let them come back too easy\" - Arsenal.com"
     },
     {
       "desc": "His eyes are perfectly good when bespectacled, his mind nimble enough to keep up with play and his soothingly familiar v",
@@ -3906,6 +3981,16 @@
       "title": "Tenerife return to action after death of De Miguel"
     },
     {
+      "desc": "Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T20:19:32.280637+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBIQ19IUnJLRk01ZkV5ZDBEamt1bW5kUjByVXZLSm1JMUNQTEVoNVR5TjFSSDNQaGVoREtmTmoyMDdLSmNRc3ZTV0YtWQ?oc=5",
+      "published": "2026-11-15T16:35:35+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea FC Store"
+    },
+    {
       "desc": "Chelsea secured a deserved 1-0 victory over Manchester City at Stamford Bridge to leapfrog their rivals and reclaim top ",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-15T18:01:00.149867+00:00",
@@ -3924,6 +4009,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Book European football trips to watch Real Madrid, Barcelona, PSG and Bayern Munich games live from just £189pp"
+    },
+    {
+      "desc": "Thousands enjoy Game4Ricky as stars turn out at the Joie Stadium Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T20:19:32.280674+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBSX0Z4R3pFSkMzcXBtMk9FeVRaRkFQeDloSmVkRzI1SjdGcUIteGJtVEl5R0EzREVWRWdraUlhMjRwYTlkTTZiMmk5dXByd3NiX2dnWkZDUGtUVk5ydXVCQTYtRTgxOFBXX0Q2OUdJWmZsM2cz?oc=5",
+      "published": "2026-11-15T16:15:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Thousands enjoy Game4Ricky as stars turn out at the Joie Stadium - Manchester City FC"
     },
     {
       "desc": "Arsenal Direct",
@@ -4154,6 +4249,16 @@
       "publisher": "https://uk.sports.yahoo.com",
       "source": "https://www.thefa.com/rss",
       "title": "Eastleigh make surprise decision to sack manager Gray - Yahoo"
+    },
+    {
+      "desc": "Maanum breaks the deadlock Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T20:19:32.280853+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8tR2ttVXNjUWotY3lOU1JfWFV4Z2lsTGZYb0QzM0UxN05pMUtoTkQ3TklpQXZFeHRMZzJZNllkUHJNSk5VZl9YWVpHR0Q4QURlYnVKNTUyNE9CcTQ5ZnR0dVJCNlVpTFotRG1SRmxYR3ktdzdjRmh3Ng?oc=5",
+      "published": "2026-11-15T14:00:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Maanum breaks the deadlock - Arsenal.com"
     },
     {
       "desc": "The Premier League, English Football League and Women's Super League are reviewing pitch perimeters after the death of B",
@@ -4984,76 +5089,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Mauricio Pochettino leaves Man Utd fans drooling as USA destroy Haiti 6-0 at David Beckham’s stadium"
-    },
-    {
-      "desc": "After scoring his first international goal in the 1-0 win over Ukraine, Northern Ireland boss Michael O'Neill says Terry",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T00:01:00.486446+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c84gn2dl4zleo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T23:21:45+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "The 'manager's dream' who has put NI one game from history"
-    },
-    {
-      "desc": "CRISTIANO RONALDO fans slammed Portugal after their heavy defeat to Denmark in their first match after the five-time Bal",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T23:00:54.991082+00:00",
-      "link": "https://www.thesun.co.uk/sport/41026839/cristiano-ronaldo-portugal-denmark-rasmus-hojlund-man-utd/",
-      "published": "2026-11-14T22:59:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Never disrespect Cristiano Ronaldo’ – Portugal destroyed 4-1 by Denmark as CR7 fans declare love for £72m Man Utd flop"
-    },
-    {
-      "desc": "Full Match | Barcelona v Arsenal Women Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T00:01:00.486503+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNckgweEFXSG56VjBlNU5QYko5dzZ4LWtLRzA3MW1PYW5VcTNuR1I5YU1GbWluVU4zbWkwM1JBc2I4YW9uOEttSGpTdGMzcVF4SmZCZmlvcjhFbTR3bS1Yc0JpcGdsVW93TmtLRzVhZXQzSDJBelNZVkwyUDdkUUhYOXU5aVFGUQ?oc=5",
-      "published": "2026-11-14T22:59:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Full Match | Barcelona v Arsenal Women - Arsenal.com"
-    },
-    {
-      "desc": "60% OFF T-SHIRTS Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T00:57:48.555928+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWk1NOGRHeElqc0xnbjEtUENELTl3Q2tKZXZzWVA3ZGNrR2Fvd2N6QVR1ZGw2YUwwOU15MG5aMUJvWjZaNHRVSS1tbWhfQ1JkTVVmaF9QVy1oVXA0QzFpaFZpbFdhYllINlZFSzNxNzQ3WVBJdG1acjF3TmZZaXg3cHZOU3lNV19kek5j?oc=5",
-      "published": "2026-11-14T22:43:31+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "60% OFF T-SHIRTS - Arsenal Direct"
-    },
-    {
-      "desc": "Republic of Ireland boss Heimir Hallgrimsson says their 1-0 defeat against Austria in their penultimate Nations League g",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T00:01:00.486556+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cr15e4w75wxpo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T22:40:02+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Hallgrimsson rues 'painful' defeat for Republic of Ireland"
-    },
-    {
-      "desc": "Internationals | Kulusevski makes long-awaited return for Sweden Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T23:00:54.991122+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOHhKandvZzVPeU12eXEtNHpuUXJVR0VNOXlPWC1xM214UzhjbEZrQUdtMVpQUUYtNEhzN2trbjdOMFpHT2k0RmxZOFNUSjhaVGRIYng1OUUxWW5LRkJlVFNnbC12Tk93bTByeGlJT2NDc0djZzhicUhRUzlFMnFVb0JVMk85ZGtzS3NSQml3cld3S01aZTRSVVhVNHRRcXZaRkRnQUhBZURuVzly?oc=5",
-      "published": "2026-11-14T22:35:15+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Internationals | Kulusevski makes long-awaited return for Sweden - Tottenham Hotspur"
-    },
-    {
-      "desc": "30% OFF BAGS & WALLETS Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T00:57:48.555962+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa3p6dU90emVXVzBjdzlQSEhsS0Q3RS1xWE40UGk0WFFXbzM5eHRpd0VPaWVYV3QzOWlCTVlsTTlVMU91RWxrd2JDU0ZLTDNzaWVHQWJXV1d6cWh1QWdLcVdDUVozVmdFaUFRb3VKMnFURmU4Q3ZsWUZFSU5HcV9hTHB6VEtHak05cnlWWW14a2I0WFNIelVlSnRvNA?oc=5",
-      "published": "2026-11-14T22:33:38+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "30% OFF BAGS & WALLETS - Arsenal Direct"
     }
   ],
   "processed_urls": [
@@ -5170,7 +5205,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cq39glw42xkjo",
     "https://www.thesun.co.uk/sport/41014133/man-utd-mauricio-pochettino-liverpool-southampton",
     "https://www.thesun.co.uk/sport/41022651/pochettino-manchester-united-fitness-changes",
-    "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o"
+    "https://www.bbc.co.uk/sport/football/articles/c539gn33z1l3o",
+    "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy"
   ],
   "s_overflow": {},
   "schema_version": 4
