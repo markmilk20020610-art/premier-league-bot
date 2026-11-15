@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 6264,
-    "output_tokens": 628,
-    "requests": 1
+    "input_tokens": 12031,
+    "output_tokens": 1309,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3534,7 +3534,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T16:00:56.980214+00:00",
+  "last_scan_at": "2026-11-15T17:00:57.842976+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3556,6 +3556,86 @@
   },
   "news_pool": [
     {
+      "desc": "It's safe to say Manchester United are going through a rough patch - and then some - at the moment, but many of their su",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-15T17:00:57.845617+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16281875/Inside-Sir-Alex-Fergusons-inner-circle-Man-United-legends-player-threatened-end-ditch-football-chief-cult-hero-striker-playing-38-sorry-Michael-Carrick-Old-Trafford-sacking.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T16:52:52+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside Sir Alex Ferguson's inner circle of Man United legends: The player threatened 'he will end up in a ditch' by football chief, the cult"
+    },
+    {
+      "desc": "VIKTORIA VARGA stunned fans as she wore a figure-hugging dress on a night out with her friends. The ex-wife of former Pr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T17:00:57.845644+00:00",
+      "link": "https://www.thesun.co.uk/sport/41030590/viktoria-varga-graziano-pelle-premier-league-wag/",
+      "published": "2026-11-15T16:49:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Absolutely stunning’ former Premier League Wag wows fans in figure-hugging dress as she puts on leggy display"
+    },
+    {
+      "desc": "CHELSEA'S latest target is the son of Spanish royalty, who suffered a horrific rectal injury bullfighting in April. Real",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T17:00:57.845664+00:00",
+      "link": "https://www.thesun.co.uk/sport/41030593/chelsea-sign-bullfighter-son/",
+      "published": "2026-11-15T16:39:33+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea ‘keen to sign son of Spain’s greatest bullfighter, 19, in £25m transfer’"
+    },
+    {
+      "desc": "Tenerife play their first game since the death of striker Jesus de Miguel on an emotional day at the Heliodoro Rodriguez",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T17:00:57.845687+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqx2xn535yj8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T16:38:51+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Tenerife return to action after death of De Miguel"
+    },
+    {
+      "desc": "FOOTBALL fans can book unbeatable away-days to enjoy some of the biggest matches on the planet. Supporters can experienc",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-15T17:00:57.845725+00:00",
+      "link": "https://www.thesun.co.uk/sport/40226584/travel-real-madrid-barcelona-bayern-munich-champions-league/",
+      "published": "2026-11-15T16:30:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Book European football trips to watch Real Madrid, Barcelona, PSG and Bayern Munich games live from just £189pp"
+    },
+    {
+      "desc": "A draw in Hungary on Tuesday would secure Nations League promotion for Northern Ireland, but they are targeting all thre",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-15T17:00:57.845745+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm1ew79gnxnxo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T16:04:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Why Northern Ireland won't focus on point they need in Hungary"
+    },
+    {
+      "desc": "National League side sack manager a week after FA Cup exit to EFL team talkSPORT",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T17:00:57.845764+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVl96Y2VjcjNvNHlDS0F0LUs4cmx3S1FxLWxjT3Y4TFFkZTZfYmxDVzU5MTlQQVZfdnJESWNPdy1yTDZJTGRFQlRTcHB2RFlPR043RjJVRGpZQ0pnMXBMOEV6a3pRZXpldUpna1RFVHo2elk1WFBQaUc2Ty1RU2dDNGJzQUZFX09udVdTSG1BazBwVU1v?oc=5",
+      "published": "2026-11-15T15:56:13+00:00",
+      "publisher": "https://talksport.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "National League side sack manager a week after FA Cup exit to EFL team - talkSPORT"
+    },
+    {
+      "desc": "The Man City star's initial answer lasted for two minutes and 14 seconds, as he reeled off the teams he had represented ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-15T17:00:57.845790+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16294157/Erling-Haaland-Man-City-cheating-verdict-star-striker-insists-dont-really-know-incredibly-happy.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T15:41:51+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'Am I supposed to answer that?': Erling Haaland breaks silence and distances himself from Man City cheating verdict as star striker insists "
+    },
+    {
       "desc": "NEW YORK RED BULL'S clash against Club America erupted into chaos as SIX players were sent off after a mass brawl. The f",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T16:00:56.983049+00:00",
@@ -3574,6 +3654,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal star, 32, spends international break playing for country that doesn’t exist"
+    },
+    {
+      "desc": "Team news: Two changes against London City Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T17:00:57.845835+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSkU2UUd3M0hCYjFrTnNaa1RPd3VMUWh0Z0JHbS1qcHFRb1RYbzNsa2FZOVF4NExOMVFlTW5iRWcwSVZ6d00yR0xjSThMRHBMRW50dDNaLU5XUGp2LVlQRjBaRHJfN1Q3SzZzd1VTelhwOUZaXzR1ZUswSUhaOEliNllFU0JsVkNocTVJ?oc=5",
+      "published": "2026-11-15T15:33:47+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Team news: Two changes against London City - Arsenal.com"
     },
     {
       "desc": "",
@@ -3596,6 +3686,26 @@
       "title": "‘Why have we agreed to that?’ – Untelevised FA Cup clash moved to Friday night without explanation as fans left fuming"
     },
     {
+      "desc": "Sunderland ضد Manchester City | التشكيلات والقوائم | 2012/2013 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T17:00:57.845880+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYl9HTms3ZHRCZVR2dU1uZkZtUnA5WVRyc1BsZmYxUHl5NHBuV2pudnhSZTh2MWpGTkRlLW9ZQjFiLWRFTWdUTUU3MlVKeXVoU003RFV0Mkc0cXJKclhRSWl0bWgtMEE0d3B1dWFmT2Q5cF9vaTlsd01mUGw0WHB3dmY4TU9XbWV3SUVn?oc=5",
+      "published": "2026-11-15T15:10:44+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Sunderland ضد Manchester City | التشكيلات والقوائم | 2012/2013 - Premier League"
+    },
+    {
+      "desc": "The Everton centre back's omission means that two rivals who were not in the original squad but were added last week, Da",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-15T17:00:57.845903+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16294353/Jarrad-Branthwaite-England-squad-Nations-League-decider-Spain-James-Hill-Dan-Burn-Thomas-Tuchel.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T15:07:06+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Jarrad Branthwaite left out of England squad for Nations League decider with Spain - as James Hill and Dan Burn leapfrog defender in Thomas "
+    },
+    {
       "desc": "NON-LEAGUE side Hendon were forced to cancel their game against Bedfont Sports after just seven minutes following defend",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T14:59:50.723785+00:00",
@@ -3614,6 +3724,16 @@
       "publisher": "https://www.leaderlive.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Three late goals make sure Chester depart FA Trophy at hands of Avro - The Leader Wrexham"
+    },
+    {
+      "desc": "News Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T17:00:57.845946+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1TRFEtbzVham1uQ1BTQmQ5bGVJdkxlRnJVdjk4UnVZMlBHNFRvWW9aaGVhc3Q3NjZ0d2NSek1JTFBqMVVFOEdBUTlhM2lhRVE?oc=5",
+      "published": "2026-11-15T14:48:09+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "News - Arsenal.com"
     },
     {
       "desc": "PORTUGAL'S new era without Cristiano Ronaldo began with a humbling 4-1 loss to Denmark. Manchester United flop Rasmus Ho",
@@ -3916,6 +4036,16 @@
       "title": "Mikel Arteta is a GENIUS | James Benge | Let's Talk Arsenal - YouTube"
     },
     {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T17:00:57.846250+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-15T11:50:09+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
       "desc": "Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-15T14:59:50.724352+00:00",
@@ -3966,6 +4096,16 @@
       "title": "JT, Azpi and Di Matteo reflect on amazing Chelsea careers | Video | Official Site - Chelsea Football Club"
     },
     {
+      "desc": "LFC Most Popular Gifts | Liverpool FC Online Store Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T17:00:57.846324+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE83M2dDbVZZYXVydndwLWwxdDVic1l1eS0tY3JWczJZTk9nQXBCcmVrQlNVT3hRbXNhTjdISXUxSThucmU3b1QzNXI4RDhZNWtWMjFHVF96UkcwTVAyWE83aEYtY1I4UTJvVm9ZbF9VSGRlcVd4SHBCTEJR?oc=5",
+      "published": "2026-11-15T10:56:26+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFC Most Popular Gifts | Liverpool FC Online Store - Liverpool FC"
+    },
+    {
       "desc": "Matty Cash leaves Poland camp with concussion in Aston Villa blow Dave.Sport",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-15T11:00:53.502607+00:00",
@@ -3994,6 +4134,16 @@
       "publisher": "https://store.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "LFC Mens Back Print Oversized Hoodie Khaki - Liverpool FC"
+    },
+    {
+      "desc": "LFC Accessories | Liverpool FC Online Store Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T17:00:57.846352+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yS1RrNV81a2Z6azlzTk12WUEtWGU3U0lFeG5nS1VRZnJFcG1QdmtlcFQyTVJ0SThzUjlsOXVSaXdSVE02dTVTd05TeTljSkhlSnhDZXB1YzNJZWJLNkhDeA?oc=5",
+      "published": "2026-11-15T10:22:29+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFC Accessories | Liverpool FC Online Store - Liverpool FC"
     },
     {
       "desc": "Internationals: How EVERY Premier League club's stars are performing Premier League",
@@ -4904,156 +5054,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Bompastor's risks pay off as Chelsea go top of WSL"
-    },
-    {
-      "desc": "Chelsea secured a deserved 1-0 victory over Manchester City at Stamford Bridge to leapfrog their rivals and reclaim top ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T00:57:48.556390+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290255/wsl-sonia-bompastor-chelsea-man-city-title-race.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T18:50:10+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Sonia Bompastor's side show their teeth as Chelsea sink the reigning champions to reclaim top spot in WSL title race: Chelsea 1-0 Man City"
-    },
-    {
-      "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino could become \"Sir Alex Ferguson's successor\" at Old Trafford after r",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T19:00:48.870762+00:00",
-      "link": "https://www.thesun.co.uk/sport/41024959/mauricio-pochettino-sir-alex-ferguson-man-utd-usa/",
-      "published": "2026-11-14T18:42:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Pochettino could be the new Sir Alex Ferguson at Man Utd after press conference masterclass’, says body language expert"
-    },
-    {
-      "desc": "Mauricio Pochettino's plan to create a 'lasting impact' in US Soccer only survived four months as he's off to earn a big",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T00:57:48.556415+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16291521/mauricio-pochettino-usmnt-manchester-united.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T18:42:12+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino leaves behind a negligible legacy at USMNT... where raised standards never materialized into results as tearful Argentin"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T23:00:54.991976+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
-      "published": "2026-11-14T18:33:20+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "YOU still would not fancy a 50-50 against Terry Butcher. He still stands an imposing figure at 6ft 4in — and boy, does t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T19:00:48.870788+00:00",
-      "link": "https://www.thesun.co.uk/sport/41025086/england-dan-burn-terry-butcher/",
-      "published": "2026-11-14T18:30:58+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England legend, 67, labels Dan Burn ‘my hero’ as he runs rule over Three Lions stars"
-    },
-    {
-      "desc": "Liverpool make official enquiries for €30m-rated Brazilian attacking midfielder CaughtOffside",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T19:00:48.870818+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaGdGSFkxYUljS25YalVLQU5RbF9Ya1ctTGNBd196RG1BTTBuRE45bmRhaHRlUXFGdnVTaE5pOGdTUHJRbjI1enNyWGpyZDZaRHZNNEZYMlRYaEs1enN3NXZfOGNKX0Z5ei1HTm0xV2Vib3lkN19mSDFwMDRMY1JZSzlkUHNoQ0xhcEphRUtqVzhFTjh0d1lNR0wzdG9rbGFXTlc1R2RWWDZIcUdJTE9aX1hCRjVXUkdOZEE2bkJn0gHDAUFVX3lxTE9FQXVqT1MzbWFLRjhIeEtMeldIUDA0V0c3Tm1MSG1FUElEWlBGNXA0ajB5V1Z3YmlESm5OZVhyejRDUFVoRS1YeHpqWU5MMDNoSUhvZU5PeVRxNENuSUFMOFMxS2d4eXBaWlBjWTFhVE1SR0IzZl95eEluNE9LSTVmYlNWeEQ4SW5IeEFKRm9icWJfdy05Z1FpTjZ4emt6SmJqNVo5aVhxclhuZGJaMm9rYktfR1FlalNHNXZVWldCc1FLSQ?oc=5",
-      "published": "2026-11-14T18:30:00+00:00",
-      "publisher": "https://www.caughtoffside.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Liverpool make official enquiries for €30m-rated Brazilian attacking midfielder - CaughtOffside"
-    },
-    {
-      "desc": "On Tuesday, the Football Association of Wales (FAW) announced Keith Cooper (pictured) had died aged 78. But he was alive",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T00:57:48.556437+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16292787/football-chiefs-Premier-League-referee-dead-alive.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T18:17:37+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Red card for football chiefs as they announce ex-Premier League referee is dead aged 78 - when he is still alive and kicking"
-    },
-    {
-      "desc": "Spalding United left to fly the flag in the FA Trophy, Deeping rescue a point late in a basement battle, Pywell scores o",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T00:57:48.556458+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPUU16a2NDZnRlXzlQSFdjYVc0YWp0WEx5aHRmRnNwbUZrYk1iNXQ1cS1NQjVHdHA0YVRyS1hqRWh0X0tlVTQ3bFRYNzFXTHV4dnBsU051UlRpbFpKUnl1TzczN0lxSjhMR3JRWXNwaHpIQmdRSzZ0M2p6em1vSjl3RkVGMXhVRG8tbk9SbmxEOEpXa1RqWEViM3Vod2t5bHY1akNKTFhsdlFrSDlGSWNVbnlDc3phc1VvWHFwLS0ySlIwaWZkYnI1bzdMcW9Pb2NOazBKQS1fUXB0VzI0X2FQUWVTeUhYV0c5YS1NZzhyU1doTkg3TmlIdUdzdHlRSFlNUVZCcEtMQ2JRa0NJM1c3V2NYSDB5QkJ4VGwyME82LWRIdXprZ3Ntb0t5MGtKR3JfOHdJ?oc=5",
-      "published": "2026-11-14T18:12:00+00:00",
-      "publisher": "https://www.peterboroughtoday.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Spalding United left to fly the flag in the FA Trophy, Deeping rescue a point late in a basement battle, Pywell scores on his return to Neth"
-    },
-    {
-      "desc": "MANCHESTER UNITED are only one point further away from the top four than when they first looked to appoint Mauricio Poch",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T18:00:51.648217+00:00",
-      "link": "https://www.thesun.co.uk/sport/41022757/manchester-united-pochettino-news-latest-transfer-bruno-fernandes/",
-      "published": "2026-11-14T18:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Pochettino’s 5 priorities include axing Man Utd deadwood, deciding Bruno’s future and shock transfer for former star"
-    },
-    {
-      "desc": "Singaporean referee Jansen Foo Chuan Hui had allowed play to continue after Takumi Minamino made multiple challenges on ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-14T18:00:51.648271+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16292553/Carlo-Ancelotti-scathing-attack-inexperienced-referee-Raphinha-sent-Brazil-defeat-Japan.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-14T17:52:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Carlo Ancelotti and Raphinha see red: Security separate furious Brazil stars from officials after shock 3-2 defeat by Japan - with manager a"
-    },
-    {
-      "desc": "Bompastor praises Chelsea character after Man City victory | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T18:00:51.648334+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONGQ1aFhET0NyZkhaTHV5VGNTYTRFUTlGNXJHdDVTQTVrRFdaWXhGOVZSdmlEWTAtYUk5d1dvdnFqbGhibVNNbG4xVXoySHBJbklFZk1xR2VZWGdtWWgzVWdMUk9qUkI2Y21SVXRCZ25xbWZUVnhrbi00UkZhTm1Nc0xQY0hCTXdJWmowOTBVMmZWdzM2TFZjYnBZUllOT0RlalE?oc=5",
-      "published": "2026-11-14T17:52:11+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Bompastor praises Chelsea character after Man City victory | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "IT IS a comeback that seeks to defy time itself. But on Sunday, more than 11 years after he last unlaced his boots in ea",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-14T18:00:51.648369+00:00",
-      "link": "https://www.thesun.co.uk/sport/41024775/ronaldinho-serie-c-ravenna-forli-italy-nike-ai/",
-      "published": "2026-11-14T17:48:55+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Ronaldinho was lured back into professional football at 46 with Italian third tier side"
-    },
-    {
-      "desc": "Romano: Rabiot renewal should be completed ‘soon’ as Milan make him a priority LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T18:00:51.648406+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaDRnbE5Wc2ZKTHp3VmRCbWZsc3VvY1ZFOTh0a3ItUFhUcUR5Q1k2bDNYa2Z6MTRaQ2gzYlFqYzhTV1VBdXZWaFh3SWtBRHpPeHU1QmRJTTU2a01YY2pvUFpma3hTN1dHMURNajQtVWdzWUUxZDJycUt6U2hEYWdyZWdBTGhaSHJnUU0xbW9ZWWtnXzByMzlFaEFqVndMd1NtbzM0X0c5cm14ZktUN29RQ1JIbkc1bTQwTFUyRk5leW9NbXl5Q1ExUzBjV1Z4d0VaTjNQaGhB?oc=5",
-      "published": "2026-11-14T17:37:44+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano: Rabiot renewal should be completed ‘soon’ as Milan make him a priority - LiveScore"
-    },
-    {
-      "desc": "Fabrizio Romano: \"Alejandro Balde offered by agent Mendes to Milan and Roma\" Milanreports.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T00:01:00.487393+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQR2h2dDRPT0NJZGhPc3dodVRBcVJwX09ZRHA1dnNERHlaXzZ1QVUtcVdfczFmbWNVUGFuTDBQVGFrWkhWMzJrTFZ5bWUyT2hIdGxwZE42NTFiSTRSa3R3SmthMFBtckRjWHkwTXZicThfRkZ4R2lrWGFKbjRVRmhqSE1rV1laUDZlSHo1MGJoejM0SENzWXh2QzlyRkVYOUp2dVhRV0ppUjU5SnFKcjlF?oc=5",
-      "published": "2026-11-14T17:34:47+00:00",
-      "publisher": "https://milanreports.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: \"Alejandro Balde offered by agent Mendes to Milan and Roma\" - Milanreports.com"
-    },
-    {
-      "desc": "Arsenal monitor prolific striker after sensational 15-goal start to the season CaughtOffside",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T22:00:57.731404+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUDVmTWs2MTEwYWpRZkJXQm5paVA3NGttT1Nvc1FKamprZ3RET0Zud3psLWp5Ukp5REhsZ3UzT0hfWVNwbnA0Y0ZfZmNuR2F0QXo3enp5MGhUQVpTVmV3QU9ySTA5ZE00TXB5Z2tiRXNBVlJkbDFsUnlOZEtLdzNoS0s3VV9FcWhyNHRJZ056TUJRVndIa0I4RWV0Rkt3RDFUd3dKM1g2OWNJLUUwMFlCeGItemhpUlRlYThtVdIBwgFBVV95cUxNT0JDRWlkOE5zVXlFTWt4YVFQdTBuMTh0WmNvd1FSaW1WcWNyYVd0UGlTQ2lHR3hyTDU2Y0lINm5LT1dRb3UzQ0tBZ1p3UHNPekhGYmtuNzRvV0ZyQmQzakc1NWJONDNDUmtXcUZuTjJBQ2o4MWt6RUtOVHZyMHplcndhM1ZpVl9VMDdTeWxBVGVEUElDQVpDVW16UUdRVDEtNnhzdG83WVo0RFZwT2NmMXk2djM3dmE3Znl4c25ScVZIUQ?oc=5",
-      "published": "2026-11-14T17:30:13+00:00",
-      "publisher": "https://www.caughtoffside.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal monitor prolific striker after sensational 15-goal start to the season - CaughtOffside"
     }
   ],
   "processed_urls": [
