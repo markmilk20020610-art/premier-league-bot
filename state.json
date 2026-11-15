@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 17,
+        "calls": 18,
         "errors": 0,
-        "requests": 17
+        "requests": 18
       }
     },
-    "calls": 17,
+    "calls": 18,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 109284,
-    "output_tokens": 10663,
-    "requests": 17
+    "input_tokens": 114570,
+    "output_tokens": 11345,
+    "requests": 18
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T05:01:19.640713+00:00",
+  "last_scan_at": "2026-11-15T06:00:50.718933+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3521,6 +3521,36 @@
   },
   "news_pool": [
     {
+      "desc": "Premier League attacker admits Man United dream amid fresh transfer speculation CaughtOffside",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T06:00:50.721583+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOal9CYk5KbTI2VVp5TFB4S0pKcVBNS19lVm5QckkwRFYxbEx0QmxSSjhSM21FYk53MVZhNlZmNGZsVjktOGIwWmRzbVlBaG16ZWRaUTUyTUdaUk9iYjJJaHB5WTh0WFVEbWduMU9ma2R6LTJkcy1zSjE0dElpb2JhU19kUkI4S1I0b1BCY2F4a1hWQlnSAZgBQVVfeXFMTnhSeVhIWmJyR19qR0hiUTVud1RoY21aTUdmZkpMTTI4cWMtVHJIMXBkSmJGOXZEbjBVT09vTHY5RzVXbGs3WVd6WEJOZlZBRzdrUTdXem1yLWF0OWtlSDI1S0JRS3Y2cC10dVJiY1dyVkFZV3lMbEt0Q2t2ajRvOG9oS3J1Z0xPOVlMXzcxNmY3NFllNkNZZHA?oc=5",
+      "published": "2026-11-15T05:25:04+00:00",
+      "publisher": "https://www.caughtoffside.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Premier League attacker admits Man United dream amid fresh transfer speculation - CaughtOffside"
+    },
+    {
+      "desc": "Man City News Today: Haaland Penalty, Guéhi Doubt, Gusto Interest (15 November) thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T06:00:50.721612+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE05cEJZekluZGxpc3hmNDdTc09oLS1FYzh6dzI4bzdzWjB6LVJUdzhBTUZ1bklKT18tSFo3MkhUNENaeE00RW11THdicUZfV2hSR29hdHhNZTVzRXZIeTJ1NUs3Q3U0am1QV3I2WFIzX2Q0T3dXaGk2NjlYZw?oc=5",
+      "published": "2026-11-15T05:24:10+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City News Today: Haaland Penalty, Guéhi Doubt, Gusto Interest (15 November) - thefalse9.com"
+    },
+    {
+      "desc": "CLUBS POCKET FA CUP LIVE TV BONUS The League Paper",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T06:00:50.721632+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUk9wTGVHZ1FOOTFfNlNPODZRNHZKRnJjcWVmQ2paSnVVWHN4Y01jWC1wQXlqOUpiSnRSZ1FVWl9GRnJHX25MQV9wOWY2UmY5dWhZT1JfS09zTDA1WkJpTDg2X1FlVGNLSWJFVHhaRzlaRjAtbjFkMVdHeGQ3enVTRWJwazdYdGxjSlJMSA?oc=5",
+      "published": "2026-11-15T04:49:04+00:00",
+      "publisher": "https://www.theleaguepaper.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "CLUBS POCKET FA CUP LIVE TV BONUS - The League Paper"
+    },
+    {
       "desc": "Pochettino appointed as Man Utd boss after Carrick sacking The Sun Malaysia",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-15T04:00:53.817839+00:00",
@@ -3529,6 +3559,26 @@
       "publisher": "https://thesun.my",
       "source": "https://www.thefa.com/rss",
       "title": "Pochettino appointed as Man Utd boss after Carrick sacking - The Sun Malaysia"
+    },
+    {
+      "desc": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United - The Athletic The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T06:00:50.721667+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWM3dDFyQjM0YnhlNld6d1Vfd05wclh3SHJEOUlHOW9EOE5oWll3NmlMTG5MMUtnb1Z4ZDNZSkVnRU9HcHNDZ0hqMjl5MkFmM083ejRJWkJpMldwMGVpWHFJMl9Bck9MbnVwckZBNXNZRHdHdndlR1lUQnA5cWtIeU1Jb2Zhd2ZmVFdGVzd3V2JsejhrU1RhSmcwZVZhczU3RGhsQlhWYzZnQQ?oc=5",
+      "published": "2026-11-15T02:13:00+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United - The Athletic - The New York Times"
+    },
+    {
+      "desc": "Man Utd: Romano reveals huge update on Bruno Fernandes future as INEOS told to 'move on' captain Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T06:00:50.721687+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdjV3WThtQzhVNXdhQlhhazBPeUxkZE5DbEhnY1dWdHpzRm5NS1lWYVl1cW1PY1NPY3FSRDRsZUhINXNka3F4Tk1lR0VDQzVSOG5qQTlqZFNBZlMySkM1SnB3QjFoOHg2QzM2ekd5eWt4VUoyUXNPbm13dDZwSUV3Z3laVGdSMXBCU3FWakUtbXRVX0Jz?oc=5",
+      "published": "2026-11-15T01:49:48+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd: Romano reveals huge update on Bruno Fernandes future as INEOS told to 'move on' captain - Football365"
     },
     {
       "desc": "Luis De La Fuente and Thomas Tuchel Thrown Into Fiery Debate Over ‘Racism in Spain’ Sports Illustrated",
@@ -3569,6 +3619,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "England's Euro 2028 mission starts NOW! Thomas Tuchel's men must beat Spain to prove they can compete with the best - or risk their 'DNA' cu"
+    },
+    {
+      "desc": "Kelly Smith: An Arsenal icon Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T06:00:50.721799+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5WNjJ5V0FUQUR1NjZMOTk4d2JhTUJ2T2JfYUo0UE9FbGhfeE5Qc0N0dXI4UDFaSTYzQjFJdjJGYXN3N3cwU21PbHJzd2VXMTF5eWJMak42dXV1VllkNXd3?oc=5",
+      "published": "2026-11-14T23:47:59+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Kelly Smith: An Arsenal icon - Arsenal.com"
     },
     {
       "desc": "MAURICIO POCHETTINO faced up to a partisan crowd and watched his side survive a tasty battle on the pitch. He can expect",
@@ -4959,66 +5019,6 @@
       "publisher": "https://radar.am",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Manchester United is in negotiations with Pochettino - Radar Armenia"
-    },
-    {
-      "desc": "BBC Sport NI looks as Jack Moylan's terrific form for Cardiff City and Republic of Ireland ahead of the Irish's final tw",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-14T14:00:50.007246+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmlydwy2zg10o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T09:59:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'Exciting' Moylan flourishing for club and country"
-    },
-    {
-      "desc": "A win against Ukraine on Saturday night would leave Northern Ireland needing only a point away to Hungary next week to s",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-14T13:01:02.057002+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwx2e0dzvy0vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-14T09:57:20+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "NI target challenge of Nations League promotion"
-    },
-    {
-      "desc": "Suspensions over boys' team abusive messages claim Yahoo Sport Australia",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T11:00:55.237675+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVFZoLXlZVVowWDNSbXE3MWw0UW5XOUMzTGgycWhkNFhFVE56RXNwa29Xa2ZId0tJdEdneE5LMXpuN2hhUFJoQjF2WkJlTnlqUG5tc1hmX0lXSlRQYW1SZVh5Uy1vdTh2Z1Q4d1JuUDlmZko5S2V3MkhvN0xTWkpub3ZPNA?oc=5",
-      "published": "2026-11-14T09:55:37+00:00",
-      "publisher": "https://au.sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Suspensions over boys' team abusive messages claim - Yahoo Sport Australia"
-    },
-    {
-      "desc": "Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T13:01:02.057082+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
-      "published": "2026-11-14T09:52:06+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Here we go! Manchester United unexpectedly sign a new forward Dailysports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T10:00:52.934920+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQmFCemxTYzBwYmQxLV8yQTJvWGNzMEs0cUVGalhiMy0zWHM0TGp2Qkt1MVlOa2p0aXVoVDUxdjNlbzhHY3FXaDN4a1dyOGtwVjh2OEY3Z2xibkpzUlFPTUNLcjl2eW43LXVtRnllaTF5YUVGbm5zNjd1WE50LTRrdkYxN19mZWhGYXpZenl6cEg5ZW5X?oc=5",
-      "published": "2026-11-14T09:49:12+00:00",
-      "publisher": "https://dailysports.net",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Here we go! Manchester United unexpectedly sign a new forward - Dailysports"
-    },
-    {
-      "desc": "Timber scores first Netherlands goals in 7-0 win Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T10:00:52.934940+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQX3ByM3BzNFhuaVY1NnZjclpBMjV1MTRfeDMxWHB5N1U5ZkR6dGJxYThOam9yZGJnZFVTQXI1VFl6X19PaFhXRnFNRGlubjdrLVdxb0NuRFhUeENkY1VVYUlXenZKbmZDUVFVTWl0eU01b2dYNzhlWnI0dEFyeVNpeHMtWVhXQjRNSnF5U2dNbHB1b0Nm?oc=5",
-      "published": "2026-11-14T09:42:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Timber scores first Netherlands goals in 7-0 win - Arsenal.com"
     }
   ],
   "processed_urls": [
