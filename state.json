@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-15",
     "errors": 0,
-    "input_tokens": 99385,
-    "output_tokens": 9329,
-    "requests": 15
+    "input_tokens": 105626,
+    "output_tokens": 10003,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3499,7 +3499,7 @@
     }
   },
   "last_morning_report_date": "2026-11-15",
-  "last_scan_at": "2026-11-15T03:01:07.852786+00:00",
+  "last_scan_at": "2026-11-15T04:00:53.815270+00:00",
   "last_summary_sent_at": "2026-11-14T22:01:27.536054+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3521,6 +3521,16 @@
   },
   "news_pool": [
     {
+      "desc": "Pochettino appointed as Man Utd boss after Carrick sacking The Sun Malaysia",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T04:00:53.817839+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcFVLdjMyMXdhdG43ZWhuOHlQV2RCZG1uTm5tYks1Y3JySE83MXkxZVRDM29MdEQzc0pxUGF6bHpnaGk0TjhxU1UzcWFtY0cwV0NKTmxPY0U3LXYydldxaUpFZnhpTzRvMUNiSHBHRVl1dDNJclJlVlZZVWp3NEFneS1YWHdUUUo2Nml0em9nZlJRUmQ4aHNPZg?oc=5",
+      "published": "2026-11-15T02:40:12+00:00",
+      "publisher": "https://thesun.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "Pochettino appointed as Man Utd boss after Carrick sacking - The Sun Malaysia"
+    },
+    {
       "desc": "Luis De La Fuente and Thomas Tuchel Thrown Into Fiery Debate Over ‘Racism in Spain’ Sports Illustrated",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-15T03:01:07.854985+00:00",
@@ -3529,6 +3539,16 @@
       "publisher": "https://www.si.com",
       "source": "https://www.thefa.com/rss",
       "title": "Luis De La Fuente and Thomas Tuchel Thrown Into Fiery Debate Over ‘Racism in Spain’ - Sports Illustrated"
+    },
+    {
+      "desc": "REPORT: Chorley 1-2 Buxton Chorley FC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-15T04:00:53.817897+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Wd1BuanpXVVRrekUzNFZJd000U0l0ZzdTdkl6YTlldW9xeEVpNlpwMmZaNk1sc0Z2S1R6Vks5MTVCejh5b0hOMGtuYUhyeDlybWx2dTZFdUswRmIyUFhNMlZrU0VMY3lI?oc=5",
+      "published": "2026-11-15T01:31:13+00:00",
+      "publisher": "https://www.chorleyfc.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "REPORT: Chorley 1-2 Buxton - Chorley FC"
     },
     {
       "desc": "Mauricio Pochettino enjoyed a stellar penultimate game in charge of the United States, thrashing Haiti 6-0.",
@@ -4999,26 +5019,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Timber scores first Netherlands goals in 7-0 win - Arsenal.com"
-    },
-    {
-      "desc": "Ronald Araujo and Alexis Mac Allister meet in international friendly Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T13:01:02.057110+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSmthYTRCNmZGYTZoTnpGTXVTdFJRODJTM1Boa282NmZvSFlaaGRyYlhLWjJDZGNZbHc5U0F1TnRFVzJMYzhrUGVlRkxMYXNWMU5mQWQ5eGJCUFIxdDlySnZxMFhJYWp5V0lqTTd4QUdJSDB3YVcxdXFEVDgwQlAtb0ZGSDVsSGhoaE1qZHJuTXhpdFBldi0zOHNR?oc=5",
-      "published": "2026-11-14T09:39:52+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ronald Araujo and Alexis Mac Allister meet in international friendly - Liverpool FC"
-    },
-    {
-      "desc": "Academy column: Why Liverpool's former players are a 'source of strength' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-14T10:00:52.934959+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQSGpDUWR4UUxXdlBHYXdsUUxuY0RFblRlMFBDcmhnTWxvNzBUMUlqV3ZuS1dvRENTX2FsSWM4QjRXSm1GbFluckhWdEhzMWpjc1p6SnhEd3NuY0Y0dWMtTmtJREZBaFhfaTJHWmpVNFRLNER0NmMzc2Z1X1pjZnk2UGlkZmFmckNEQVhKdTdadjFmYmRhamdhMHktWEVIbTdfc3dv?oc=5",
-      "published": "2026-11-14T09:34:56+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Academy column: Why Liverpool's former players are a 'source of strength' - Liverpool FC"
     }
   ],
   "processed_urls": [
