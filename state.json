@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 25146,
-    "output_tokens": 3192,
-    "requests": 4
+    "input_tokens": 31684,
+    "output_tokens": 3861,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3709,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T18:00:49.524297+00:00",
+  "last_scan_at": "2026-11-16T19:00:52.770531+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3730,6 +3730,56 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "LUKE SHAW was clocked at Manchester United’s training ground last week and it remains to be seen if he clocks back on no",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T19:00:52.774272+00:00",
+      "link": "https://www.thesun.co.uk/sport/41038368/lewis-hall-manchester-united-transfer/",
+      "published": "2026-11-16T19:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Missing out on Lewis Hall has already cost Man Utd points and Michael Carrick his job – now he could cost them £100m too"
+    },
+    {
+      "desc": "Fabrizio Romano provides BIG January update on Antonio Nusa to Arsenal now.arsenal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T19:00:52.774410+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSDE0bVpNam03VFNwcmZ6cnJoeW9hVHdaeUdKaVlQMGFkbEw3eVN5M3hycGdjRVpNd2FHTWxWUHAxTkNuVHdQTGFja25xNDFILTcwa3dTMTVJQWNOaS1pcy15dV9QYUY3M3lyeGVudnUyWVg5bDZRa2FhSjVFQk9KOWl5OHNUQkJfaGNMLVE0R1BpYy16Q2dOOFlNVVQydkZuZGdsWWpBbEdmbDNNS1BfZ3BR?oc=5",
+      "published": "2026-11-16T18:50:10+00:00",
+      "publisher": "https://www.nowarsenal.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano provides BIG January update on Antonio Nusa to Arsenal - now.arsenal"
+    },
+    {
+      "desc": "DANI ALVES’ estranged model wife has launched a blistering attack on the former Barcelona star a day after confirming th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T19:00:52.774444+00:00",
+      "link": "https://www.thesun.co.uk/sport/41041640/dani-alves-wife-joana-sanz-barcelona-juventus-psg/",
+      "published": "2026-11-16T18:44:54+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘You destroyed me’ – Dani Alves’ wife launches blistering attack on ex-footie star, 43, after ‘paying all his debts’"
+    },
+    {
+      "desc": "ENJOY top class European nights under the lights at iconic football grounds like the San Siro and Celtic Park. Champions",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T19:00:52.774473+00:00",
+      "link": "https://www.thesun.co.uk/sport/40258251/tickets-ac-milan-celtic-crystal-palace-live-europa-league/",
+      "published": "2026-11-16T18:25:19+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Watch AC Milan, Celtic and Crystal Palace in Europa League with ticket and hospitality deals from under £40"
+    },
+    {
+      "desc": "NEYMAR put his cards on the table after being accused of cheating on his pregnant girlfriend with his team-mate's ex. Th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T19:00:52.774501+00:00",
+      "link": "https://www.thesun.co.uk/sport/41041195/neymar-cheating-claims-pregnant-girlfriend-vinicius-jr-ex-poker/",
+      "published": "2026-11-16T18:12:48+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Let me play poker in peace’ – Neymar angrily denies rumours he cheated on pregnant girlfriend with Vinicius Jr’s ex"
+    },
     {
       "desc": "Arsenal learn asking price for 21-year-old target who is “one of the best” in his position LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3819,6 +3869,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Frank appointed Crystal Palace manager"
+    },
+    {
+      "desc": "Get your Chelsea fix with CFC+ | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T19:00:52.774808+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1TSzRkc1lNaHA3amkwS2tDQkxpVm5PRXN2bnNPNGp2T2JkbGJoOFRIMmtaTEdtV2RsQjlfTGQ3c2xQM1Jpcm5la1pqOU5RNzZlZ0JzYTFlck5kOEtmM3dtcU1xdENUZ1RXVmFnNTRTSjN6UVBRYTdNbGQtMA?oc=5",
+      "published": "2026-11-16T17:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Get your Chelsea fix with CFC+ | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "MAURICIO POCHETTINO could make Juventus star Weston McKennie one of his first signings as Manchester United manager. And",
@@ -3941,6 +4001,16 @@
       "title": "Cristiano Ronaldo’s mum says ‘I was happy about it’ in furious swipe at Portugal after ‘well deserved’ Denmark loss"
     },
     {
+      "desc": "Wales will be without right-back Neco Williams for their final Nations League group match against Portugal, while goalke",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-16T19:00:52.774976+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmkgk3nv6pqyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-16T15:55:16+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wales without Williams for Portugal as Bellamy makes Vitinha point"
+    },
+    {
       "desc": "CHELSEA chief Xabi Alonso is facing a battle to keep Bernardo Cueva on his backroom staff - with Crystal Palace circling",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-16T16:00:55.677766+00:00",
@@ -4049,6 +4119,16 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano ‘wouldn’t be surprised’ if Man Utd replace Zirkzee with Pochettino favourite in January - LiveScore"
+    },
+    {
+      "desc": "EA SPORTS Player of the Season shortlist Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T19:00:52.775154+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fc0t2OEJpR0JvR1luMm1GRnlfNHBTUmc0cnlUV0RKVVlRdFJxU1ZXUVlDdnhJYW5TUnVEUFNIc3U4WXh2X2ctcWpmZko3aTNOSGJRQnZKWEFtQQ?oc=5",
+      "published": "2026-11-16T15:03:52+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "EA SPORTS Player of the Season shortlist - Premier League"
     },
     {
       "desc": "JAMES TRAFFORD has been given his chance to become England’s No1, and the Leeds United goalkeeper is grabbing it with bo",
@@ -5149,86 +5229,6 @@
       "publisher": "https://login.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "- Manchester City FC"
-    },
-    {
-      "desc": "A HERO footie doctor who saved two star players when their hearts had stopped now faces being struck off over sexual mis",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T01:00:56.947322+00:00",
-      "link": "https://www.thesun.co.uk/sport/41033868/fabrice-muamba-hero-doctor-strike-off/",
-      "published": "2026-11-16T00:29:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Hero doctor who saved footie’s Fabrice Muamba when his heart stopped faces being struck off ‘after sex with patient’"
-    },
-    {
-      "desc": "Trying to protect a lead in the closing stages, England have been here before - so how did they cling on against Spain?",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T01:00:56.947351+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6742l4z91lwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T00:02:22+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How did England cling on against Spain and what did Tuchel do differently?"
-    },
-    {
-      "desc": "England's stunning win in Spain had everything - and was their best under Thomas Tuchel, writes Phil McNulty.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T00:00:56.945216+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c933ge310n33o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T23:52:43+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "60 minutes of perfection, 30 minutes of chaos - an England win for the ages"
-    },
-    {
-      "desc": "Tuchel hails England’s statement win over Spain as ‘complete performance’ AOL.co.uk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T00:00:56.945235+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMjBJdk4xZ1dwQXh0Ry15VU50Mk04LUt2dVBKV2cwUndMQmJBbTFTZEpqYXdNdzdOc3ZXOTJSZUJpMmM0LURrMDdzLTVWWGJsVGctRjgtSi1zeXBwTHRySGFHa3VENjkyb1l1cEs0U0pjOV90cWRBZ3N6Q2JPLTZkN3BWOURwd00?oc=5",
-      "published": "2026-11-15T23:47:56+00:00",
-      "publisher": "https://www.aol.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Tuchel hails England’s statement win over Spain as ‘complete performance’ - AOL.co.uk"
-    },
-    {
-      "desc": "JAMES TRAFFORD showed he is ready to take the England gloves off Jordan Pickford with his heroic display against Spain. ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T00:00:56.945250+00:00",
-      "link": "https://www.thesun.co.uk/sport/41033151/james-trafford-jordan-pickford-england-spain/",
-      "published": "2026-11-15T23:31:29+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘World class’ – James Trafford leaves England fans fearing for Pickford with stunning double save to earn Spain win"
-    },
-    {
-      "desc": "SPAIN 2-3 ENGLAND -OLIVER HOLT IN MADRID: Thomas Tuchel had said he wanted evidence. He needed to believe his coaching w",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T00:00:56.945271+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290271/England-deliver-spectacular-Three-Lions-men-strip-world-champions-Spain-invincibility-Thomas-Tuchel-proof-coaching-working-writes-OLIVER-HOLT.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T23:18:29+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "England deliver the spectacular as Three Lions strip world champions Spain of their invincibility and give Thomas Tuchel the proof that his "
-    },
-    {
-      "desc": "OLIVER HOLT IN MADRID: England played the best football of Tuchel's two-year reign as coach to end Spain's world record ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T00:00:56.945289+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16295093/Thomas-Tuchels-best-night-England-manager-Three-Lions-boss-hails-heroes-Spain-victory-hits-Elliot-Anderson-decision-referee-previously-labelled-one-10.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T23:11:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Thomas Tuchel's 'best night' as England manager: Three Lions boss hails heroes after Spain victory - but hits out at Elliot Anderson decisio"
-    },
-    {
-      "desc": "Exclusive: David Pleat Has One Big Concern About Tottenham's Move For Eli Junior Kroupi roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T00:00:56.945314+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWFdDTHF2VklFNWlWMDFzVDIyNWN1VXl2eG1vRTJyNlJMNk41anZVa2NPdEVjeHRybWNOY1lVd1lKSk1hdTlVQ3BIelNKaUI0Uy1DSVJmVjhLQmIxbkVuUHVDYXEwNDd2ckVVQzd2TTl1dmlZb2tNTHdOVXlydjBxYnY1VGxhU1NtQkhISlNPX2stdmszalNwUzZIVjRkRHA4NW01aXdRRWdWYmVKdjNkQlQ5aFJfOGI3V0Z5dkFWTmM5T1RfeFJlTXNtUzNtWkRzVndXczhPTmxySXZOVDFPTUVwVllTYUYwaGMtag?oc=5",
-      "published": "2026-11-15T23:02:13+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Exclusive: David Pleat Has One Big Concern About Tottenham's Move For Eli Junior Kroupi - roundtable.io"
     }
   ],
   "processed_urls": [
