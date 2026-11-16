@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 11980,
-    "output_tokens": 1740,
-    "requests": 2
+    "input_tokens": 18444,
+    "output_tokens": 2460,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3709,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T16:06:28.013520+00:00",
+  "last_scan_at": "2026-11-16T17:01:02.679817+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3730,6 +3730,66 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MAURICIO POCHETTINO could make Juventus star Weston McKennie one of his first signings as Manchester United manager. And",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T17:01:02.683645+00:00",
+      "link": "https://www.thesun.co.uk/sport/41039613/mauricio-pochettino-winston-mckennie-man-utd-transfer/",
+      "published": "2026-11-16T16:50:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "New Man Utd boss Mauricio Pochettino ‘could target Winston McKennie transfer in shock USA reunion from Juventus’"
+    },
+    {
+      "desc": "Fabrizio Romano hints Pochettino could impact Tottenham’s £70m Malo Gusto race Spurs Web",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T17:01:02.683720+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeWMweEFPTTJTeXBkSzJyMDZIVGQ5WnNhYXQ1aDY0OXR2QzFaVWtCMzdHTmFwNFAxS044WXdBWlllamYxOUZFRDdFcGVNeGIyeTR1QUZuX3cwdmlMSWVaZDRQRGdNUDBsVFI4SEZkQ1hHQ292RHNvakg5U2FCZElZTDVKSk8zYjlkbFdCZFVPa01vZnI5S0swcEhSVHFFdWh3UEhDemdZOFg5bDNfMzV0UURSTHQ?oc=5",
+      "published": "2026-11-16T16:30:00+00:00",
+      "publisher": "https://www.spurs-web.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano hints Pochettino could impact Tottenham’s £70m Malo Gusto race - Spurs Web"
+    },
+    {
+      "desc": "Coke Top Three - Gameweek 11 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T17:01:02.683757+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBmdE10S2VleEVFRmFMZTc2Ylc2N19VUzE2TmxrRWJMb1JpTUlWdGdSbkJJZnduVXVfOTRJMDU4cXU0aFFDeGtmZ29VLVVfOFJsMngwMjZLYnFWSWdDUGpsRTQtbVk4anplLUd1dEJJSGNFN2hTTDhySEd6bFZmR2s?oc=5",
+      "published": "2026-11-16T16:29:28+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Coke Top Three - Gameweek 11 - Premier League"
+    },
+    {
+      "desc": "MOST Dream Team managers know how important it is to target the European fixtures. Clubs active in the Champions League,",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T17:01:02.683787+00:00",
+      "link": "https://www.thesun.co.uk/sport/41038274/analysing-champions-league-minutes-dream-team-players/",
+      "published": "2026-11-16T16:23:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Analysing this season’s Champions League minutes for Dream Team’s most popular players"
+    },
+    {
+      "desc": "QUIZ: How much do you know about the FPL season so far? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T17:01:02.683816+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYWpiTnE2Vlp4QllHaVZEQlNtcEhoZV9Za3h0ck9YeWRybXptWm03NTRTRzU4QnNOUDlDYWxZN1FUTDdwM1M4UXBZM1lybzhSUnMyc2NsbE11b01QblJZeGRmOHF0d0Y2aHlJczJPUmJ3b1hkN1k2Y09Id2czNHh2QWM5QWQ2djdkb3lJbkdubHlnNE1DSG1zdHpLQWFZSTZk?oc=5",
+      "published": "2026-11-16T16:12:47+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "QUIZ: How much do you know about the FPL season so far? - Premier League"
+    },
+    {
+      "desc": "Premier League referee appointments: Matchweek 11 officials Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T17:01:02.683843+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWEpsWDdFZEtvYkdxc2VmTU1VU1Q1c2dXY1BTR1dJQ29ZSFh2N0k1QXE2Szg5SXEwNGcxUnhRYVk3c3pJamtvRFBUWmhUaXBiOWdrQTFUZlgxX1hVelpDTEpJR2RWV1dZeWJfY3hsRWhfQzluTUZxc19wSV9iUTBTeUJoTDVlM005Tkx2WnpBcmZaald6WlR6bGhoeVNrMjMydzh3T2ZnOA?oc=5",
+      "published": "2026-11-16T16:10:51+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Premier League referee appointments: Matchweek 11 officials - Premier League"
+    },
     {
       "desc": "THOMAS TUCHEL hailed a “statement victory” in Madrid on Sunday night as England beat world champions Spain 3-2 to top th",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3941,6 +4001,16 @@
       "title": "Liverpool vs Man Utd: Get £20 free bets + 50% Bet Builder boost | BOYLE Sports"
     },
     {
+      "desc": "Cole Palmer: My Football Firsts | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T17:01:02.684404+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwARBVV95cUxNRlRWM0xYRmhvTnNRaHFpZ3RHZUpiekpfNEhJU1dUODU0dF8zNnZwYVh2TkU1Z3VNX1Q2elZ4TlJuVUwyN0ZuYUhrQjZNRXoyVXc4eXdXZWh6ZWRFSl9FRjM0TWh5REg4V04yYVRTTVFERDZFcEwxVkUtakNwUUtmb3FHT3F5ZTRLbFdTcUxkTFRPcGhvQnRxR1pucUU3U1Y0QkxRR3h6V0xMbEM2eXlXcHA5UFFyNERSZjlhaGl4SDJHWEJqRmRmeTFVSkRIQ3B1ajZLQnJhZHp0aUtndmhPNndNNVJCWVg4Y0pESDJJUjlwaGhNM2c3bFNjdVpTNmJKNUlEYW1hRm9HWDZhVHEyeGd5TGc4WnlQVmtBYzhhQzJsY2YxMTVFRnk3TTBQdGtWR29KRXNaWlVLXzJLeDR5YWJXN0gyMUxvWUhaX2lTaGg3ZFAxM2x6TWFQS1NYM0hFY3BySVU4b0VSRDVBbHh2ZUtXUVpzOUFyWW04TXVtU2FuUHJBOGdtUGY2UTByMHg3Z3d0OVFRZ0toNWQ2Nzd3cE9RMHBldzBVcTRORUdxU1Z1ZDJieXdSdTB1MjBJdEVQNl95SDlTTHUyaHU3bHROYkdUc2FKdlBzSWVnbnl2TVFxUFVIVE01dkdMR01XV2hKQWFiQ2RHSk1mY2dfWU50ZnN3Wnhtc2FkSThPc0M5MGdTcF94c3ctUXB6WnFDTnZnZG5QZWhwb1hyM25zbURTUjhXd1ROR0pqZkhWeThMRFk?oc=5",
+      "published": "2026-11-16T14:25:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Cole Palmer: My Football Firsts | News | Official Site - Chelsea Football Club"
+    },
+    {
       "desc": "COLE PALMER got over his brutal England snub by having a kickabout with some kids during a luxury holiday in Dubai. The ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-16T15:00:56.599370+00:00",
@@ -4149,6 +4219,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Cap fits as Robertson poised to take King Kenny's crown"
+    },
+    {
+      "desc": "Lye, Peterborough and the never-ending Women's FA Cup tie BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T17:01:02.684661+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZMTRlS0VTcnk0S1NwQkpyU0xFd2lZRlJSQzNPT0JnRGF2WG5HbGY2ZUhoRGFTQkVHaTFObXNaa3JnOEQtZFhlMl9INlpUQVpmTzNNVmN4cXhoeWVRS29VM0FaQXl6OWNVRVRN?oc=5",
+      "published": "2026-11-16T12:11:48+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Lye, Peterborough and the never-ending Women's FA Cup tie - BBC"
     },
     {
       "desc": "David O'Leary Leeds United Defender, Profile & Stats Premier League",
@@ -4459,6 +4539,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England are second best team in the world and on the same level as Spain, says rival after incredible streak ends"
+    },
+    {
+      "desc": "International Reds: Senne's big save Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T17:01:02.685022+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5yU0hiODNZOVpGZEszQTlERXBYZHZIaTRpdkRIZW9mdVpYc3RJLXNaZ2VYQUpjOVlfYW91Qk1WQWJJMHBBT25TOThkRWFQcnBMNFkwM2dnZ3dMYVB1dTVHbEdiemZiMXBEMWw4QXdyZU1VTDgyWE9tUHJ3cmw?oc=5",
+      "published": "2026-11-16T10:38:18+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "International Reds: Senne's big save - Manchester United"
     },
     {
       "desc": "LFC and Standard Chartered's 'Play On' logo swap returns to help keep girls in sport Liverpool FC",
@@ -5139,96 +5229,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal suffer huge injury blow as star goes off holding hamstring during Spain vs England clash"
-    },
-    {
-      "desc": "José Fernández - Universidad de Chile - Defender، الملف الشخصي والإحصائيات | بريميرليج Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T23:00:53.121068+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOUFBck03aTdGWkxQWlV4TC1MUTFwQnJra3c2T0lsbzZRVnRPbXU5NU5Wa192enJHalRLdDdLRVh5NzJ0cnNuMUpwWEJkYlNLbWRWN1RtZmJvcGlaSTJlWXY5Q1dpUnRBd2Z2VUMyNV9qaVpORVNxUWloYUFpZHRGamQ5cmNpZw?oc=5",
-      "published": "2026-11-15T21:21:30+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "José Fernández - Universidad de Chile - Defender، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
-    },
-    {
-      "desc": "ENGLAND fans have raged \"just let him score\" after Elliot Anderson was sent off for pulling back Lamine Yamal. The Three",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T22:00:54.660781+00:00",
-      "link": "https://www.thesun.co.uk/sport/41032646/england-elliot-anderson-spain-red-card-nations-league/",
-      "published": "2026-11-15T21:21:21+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Just let him score’ – England fans rage at Elliot Anderson for ‘idiotic’ red card against Spain"
-    },
-    {
-      "desc": "SPAIN star Marc Cucurella may be glad he's left the Premier League after drawing the ire of England fans. The full-back,",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T21:00:45.773819+00:00",
-      "link": "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty/",
-      "published": "2026-11-15T20:56:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England fans mock ‘pathetic’ Cucurella after bizarre attempt to get Harry Kane penalty overturned against Spain"
-    },
-    {
-      "desc": "Having enjoyed retirement for 11 years, he shocked world football by agreeing a surprise transfer to Serie C outfit Rave",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T00:00:56.945515+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16294611/Ronaldinho-return-Brazil-legend.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T20:52:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Ronaldinho makes return at age of 46: Brazil legend plays full first-half for Italian third-tier team and hints he may play again despite 'p"
-    },
-    {
-      "desc": "EX-TOTTENHAM and Barcelona ace Giovani dos Santos looks unrecognisable as he crossed over to padel tennis with his two b",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T21:00:45.773850+00:00",
-      "link": "https://www.thesun.co.uk/sport/41031960/tottenham-giovani-dos-santos-padel-tennis-barcelona-ipswich/",
-      "published": "2026-11-15T20:50:08+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Former Premier League and Barcelona star, 37, looks unrecognisable as he plays padel with family"
-    },
-    {
-      "desc": "Manchester United target Fulham's Calvin Bassey and Brentford's Nathan Collins, AC Milan want Real Madrid's Endrick on l",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T21:00:45.773866+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cklyegvq86w8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T20:47:44+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Man Utd target Fulham's Bassey - Monday's gossip"
-    },
-    {
-      "desc": "Real Madrid transfer news: Fabrizio Romano reveals truth behind Trent Alexander-Arnold to Liverpool links Sports Mole",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T21:00:45.773882+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONzhZSnhEUXRuVlA0bVpodFhPWHdsNmdMZFFJU1JUQ3hJVGlveWdsOWt6cl92Z3JtMkQwaVVWNENJYTFtOGtFdDNhVWprYWE4cTdQekRsYjcwUDVRcXEyaE9feWNZbWxGQlctVE1IcXZYUFVQSGNURG5tdVVRTXFHa21sbHZuQ25GTzNEaW9XOEhxdjI4UW5sR0JqSXg3WXdKTktMWElSTkY3bFpiaXNPQTZyNkJQSm1DNzBsSUIwNTJmdTZtSHAwSzZub0w0ODBjVlNPOWg3U1N6NVI2M1FsOWZVZzI?oc=5",
-      "published": "2026-11-15T20:31:17+00:00",
-      "publisher": "https://www.sportsmole.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Real Madrid transfer news: Fabrizio Romano reveals truth behind Trent Alexander-Arnold to Liverpool links - Sports Mole"
-    },
-    {
-      "desc": "Lewis Page - St Albans City - Defender، الملف الشخصي والإحصائيات | بريميرليج Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T00:03:59.684249+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rMmp5V1N1aURYNnJfSGhrZTdXMWZCbEFKOFhoZ0xBY3lxSjE4SmhCX1drZGJWQ3lad2p4bEFaMmF5Mm85WmxKY1pEdXkxdzBRSkE2LXVLMHZlX296SndhY3d4ODNjVm9aeTBZZ2NaMzdlRTQ?oc=5",
-      "published": "2026-11-15T20:30:27+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Lewis Page - St Albans City - Defender، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
-    },
-    {
-      "desc": "LAMINE YAMAL was handed a brutal reminder of his Ballon d'Or snub by England fans. The Spanish sensation is taking on Ha",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T21:00:45.773895+00:00",
-      "link": "https://www.thesun.co.uk/sport/41032073/england-fans-troll-lamine-yamal-harry-kane-chant/",
-      "published": "2026-11-15T20:25:57+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Love that’ – England fans brutally troll Lamine Yamal with seven-word Harry Kane chant during Spain clash"
     }
   ],
   "processed_urls": [
