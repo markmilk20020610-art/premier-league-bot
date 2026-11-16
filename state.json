@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 110317,
-    "output_tokens": 13506,
-    "requests": 20
+    "input_tokens": 115049,
+    "output_tokens": 14463,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3674,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T08:01:01.063393+00:00",
+  "last_scan_at": "2026-11-16T09:01:03.857165+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3695,6 +3695,76 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Fabrizio Romano warns of ‘increasingly complicated’ situation which is brewing at Liverpool LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T09:01:03.860956+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOcTFRcWdXVnh2T3NLRlRma0tSMGNyWkJBeXViYlBQMHpLSjhHVlBQZ1dFeXJESFRESGR1LXF1dnJlZUhuN3BYM19GaDJ2LXhGN2p3eFg4YWZqM25UTGxEUUM2M29iSDE5UkRqbDJ5MHAyME5lckp6UHNBMkhGZk1WYnZuRUdtbE5uMENlWU83TGM1WEh4QVZUaWJQdm1zRVQ2al9wVk03NENLSzIxaC1TMHY3aXp2RWJ4dEU5U0ZHdUx1SzJabHYwUVNBQ2g5SW96SFItUWY2ZzBOZTc4SFdLSmY1UkN4V2E3VmFvWFFMVzRuNWhoNk1Fb1pTNk1NNVU?oc=5",
+      "published": "2026-11-16T08:44:16+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano warns of ‘increasingly complicated’ situation which is brewing at Liverpool - LiveScore"
+    },
+    {
+      "desc": "How Serie A outfit Monza are trying to make an impact in the shadow Milan giants and fashionable Como.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-16T09:01:03.861035+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6wy4y3pgpx9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-16T08:31:05+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "More than F1 - Monza's captivating football story"
+    },
+    {
+      "desc": "A HUGE brawl broke out during the Sao Paulo Under-21 Women's Championship final at the weekend - resulting in one team f",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T09:01:03.861068+00:00",
+      "link": "https://www.thesun.co.uk/sport/41034301/corinthians-police-ferroviaria-womens-u20-star-punches-two-players/",
+      "published": "2026-11-16T08:28:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Brazilian giants go to police as women’s U20 star punches two players in face and floors opponents with sickening blow"
+    },
+    {
+      "desc": "'A strange decision' - Wycombe's FA Cup match moved despite it not being televised Bucks Free Press",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T09:01:03.861099+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeDNraGpPbDZtVXU2dmRkQ0pVYk1iVVVWOGpqcWowU0ZtdGh2MGNSZVhha3dJN1FWN1dIcjhwVUdvRFF6R2dDNVV6MURtNm9vWTFmU3NaRHYyM1ctY0tlRmZhQW5FeVg3WFNsS3Y0T3FrNzdwaDlmMUUtRkdjSjh2dGhzaDNESHVNUVNLd3JpZTQ1NGNWUzJkc0JDOGVrUQ?oc=5",
+      "published": "2026-11-16T08:24:31+00:00",
+      "publisher": "https://www.bucksfreepress.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "'A strange decision' - Wycombe's FA Cup match moved despite it not being televised - Bucks Free Press"
+    },
+    {
+      "desc": "LIONEL MESSI may have God-given talent for football, but his wife Antonela Roccuzzo was who fans called divine after tak",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T09:01:03.861128+00:00",
+      "link": "https://www.thesun.co.uk/sport/41034295/lionel-messi-wife-antonela-outfit-michu-picchu/",
+      "published": "2026-11-16T08:24:20+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lionel Messi’s wife Antonela labelled ‘divine’ as she takes Machu Picchu trip in stylish outfit"
+    },
+    {
+      "desc": "Andy Burnham urges caution on lifting the Saturday 3pm TV blackout in the UK, saying the health of the football pyramid ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-16T09:01:03.861161+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6jre22p3941o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-16T08:18:33+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Burnham urges caution on scrapping 3pm TV blackout"
+    },
+    {
+      "desc": "Fabrizio Romano shares latest on Man Utd’s transfer plans for Pochettino United In Focus",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T09:01:03.861192+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOa2haNGRWQ19Xb3owendyU0QxRkxYZFUtVHdnX0g0SjZydWJrUUVmdGVscHB5NWFDMDl3T2lBVDRzNm5iZUtub29OeVJOckd4bWExUnpjcC14VGplZ0FRc09aa0dpU01uRTh4R0xHSzN2TUN2Z3FoekJTM3NoTDJwOVlFTjlWZ1Q5Q0YxdHBSdHV1ZEtQalhEQlRhUlR1aG1ZTXJ5cGhIMGE2cmtERkhRa3o3bE9odkU?oc=5",
+      "published": "2026-11-16T08:00:00+00:00",
+      "publisher": "https://www.unitedinfocus.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano shares latest on Man Utd’s transfer plans for Pochettino - United In Focus"
+    },
     {
       "desc": "Who is the best European's men's striker this century? Vote for your top three before the results are revealed on Euro L",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -5124,76 +5194,6 @@
       "publisher": "https://www.caughtoffside.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Man United target “important player” from Premier League rivals for problematic position - CaughtOffside"
-    },
-    {
-      "desc": "Khiev Sameth lands third term as Asean football chief NST Online",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736645+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOM1pYS2h2OHMxN1hucFJuVXZCbVJHTDB5TThoM2hnNnZUQkRrbDJ1WVRzMnRCenNpOHcxUWJCQnExOFpULVRXal9Hei1vVk9nbTBYUW1yb3NoaWV2cmpBWTk3Z2RibEtKekRralJ6S2Ftd050cDVKT2FETWhkT2YzUlVwUU5oX0xmanhnaTdUZFI1c3BIS2hGRFh3cUQ2Q0dvazlUcFVVRHNQUlY5WmfSAa4BQVVfeXFMTjNaWEtodjhzMTdYbnBSblV2Qm1SR0wweU04aDNoZzZ2VEJEa2wydVlUczJ0QnpzaTh3MVFiQkJxMThaVC1UV2pfR3otb1ZPZ20wWFFtcm9zaGlldnJqQVk5N2dkYmxLSnpEa2pSekthbXdOdHA1Sk9hRE1oZE9mM1JVcFFOaF9MZmp4Z2k3VGRSNXNwSEtoRkRYd3FENkNHb2s5VHBVVURzUFJWOVpn?oc=5",
-      "published": "2026-11-15T12:24:13+00:00",
-      "publisher": "https://www.nst.com.my",
-      "source": "https://www.thefa.com/rss",
-      "title": "Khiev Sameth lands third term as Asean football chief - NST Online"
-    },
-    {
-      "desc": "COLE PALMER jetted off to Dubai with girlfriend Olivia Holder after being snubbed by England boss Thomas Tuchel. The Che",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T13:01:06.855509+00:00",
-      "link": "https://www.thesun.co.uk/sport/41029022/cole-palmer-dubai-wag-olivia-holder-england-snub/",
-      "published": "2026-11-15T12:15:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Cole Palmer flies to Dubai with Wag Olivia Holder to get over England snub and enjoys amazing tribute from MMA fighter"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736674+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTjdLVTR5azRmNUw1ekszZ1J0NTNiSEJndFNYeEdndG5EWUxQN29mQ0FiMHRsN2FHT3NLVHMyVm0zYk1PdUR5UGU3a09mVXJFRDExa1BCVGcwT1A2bjlWdktxTzRtZ25IcWg2QWYySEQyZEpoWjNlTzBiWWhfSElicERFYw?oc=5",
-      "published": "2026-11-15T12:10:57+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
-    },
-    {
-      "desc": "Romano reveals Liverpool decision on £46m January transfer: ‘The answer I got is..’ Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T13:01:06.855531+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSzZEVVBROGh2TzBxY05wZzMxMWpWakpPS2QzYlN2eHhtcm52bXFQbjdQU1FVRDd4OTZLVm5mN21Rcm9kcWdpTU9qTnhVUUJ1ZE9SQm1WdDBOckcyUE1OVlQ0Z3FmcUVQMXV1cldHOTJMYUVhLTNXWFJPVDk4cldhWDRpNDUxSDY0SkZCaXpiWjVVNHM?oc=5",
-      "published": "2026-11-15T12:03:23+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Romano reveals Liverpool decision on £46m January transfer: ‘The answer I got is..’ - Football365"
-    },
-    {
-      "desc": "Mikel Arteta is a GENIUS | James Benge | Let's Talk Arsenal YouTube",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T16:00:56.983513+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9XOHN5YnNhR3pzNWtqMXpJVl9hYlkyNGg0UHVubHdUSjN5d0ozLVZvUU90Nnp3Q2NSSVU1MGFYSDc5MVpOS2dXd25fOFkydXNaa3NDckZRTTlKalpP?oc=5",
-      "published": "2026-11-15T12:00:08+00:00",
-      "publisher": "https://youtu.be",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Mikel Arteta is a GENIUS | James Benge | Let's Talk Arsenal - YouTube"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T17:00:57.846250+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-15T11:50:09+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:59:50.724352+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBvQkZERlJLcmRINTJHV2llNUNFcFV0d3dvQS1QTm5BT3ZmaWExdk0tOFROeXZNTDJ2M0ZCMkxhWUxBbTQxOTBTMWRxZDh0UndvRmkyay1yVzVSa3hYcGVCSnhKYlhSY3JXNVZXcXNSb2hCRVZ2WUxhYV9R?oc=5",
-      "published": "2026-11-15T11:34:17+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
     }
   ],
   "processed_urls": [
