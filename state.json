@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 18444,
-    "output_tokens": 2460,
-    "requests": 3
+    "input_tokens": 25146,
+    "output_tokens": 3192,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3709,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T17:01:02.679817+00:00",
+  "last_scan_at": "2026-11-16T18:00:49.524297+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3731,6 +3731,96 @@
   },
   "news_pool": [
     {
+      "desc": "Arsenal learn asking price for 21-year-old target who is “one of the best” in his position LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526153+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOS2s5aVROZE5JWnpvMjY3bjF3N0Z3UndTakRXcnI2SlEydDVEQUNZZGx5U0NJS2tfT3hQeEVHSmIzTGloSzhZaE5IdjlQbk12cDFKSzFvUXBmQjBycmhuMnFLVVFCNGVQWU9GbzVCMURuUEZ3QTZBRUNZLTR4aUJwcFRITVFjbDYyOXBhemQ0NUlGWWN5N2drNXBlVG9RWXRxVUdNU0drYUk0TnVKcUlHMXI2amFfN2pKZ3hmbEhhQ3pqampNU3diRXhvb3hpZnFCSHB2OC1UNmhQa01LYWkwc3djZlc4Y0JjOVdDMGxDV0xHUUE?oc=5",
+      "published": "2026-11-16T17:50:51+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Arsenal learn asking price for 21-year-old target who is “one of the best” in his position - LiveScore"
+    },
+    {
+      "desc": "Palace appoint Frank in quest for Premier League survival France 24",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526183+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcl9uNWgwTHExUDZEWWp2S1kyd2I3dllzRENTVGUzMzBqWnRhVWUxN1lWSTNJNGhhcjQ1SU9hMjFKc0FVN0dJZWZjZUFGTk1zNHZiZ0FOTnV6bnc5Wm5vaXBCdjF5Y3N3bU8zMkFkcHpwZ1JXR2xJM0ZGSHEzMnFtNkJQYjl0NlFNUzh2d0tmX0VQdDFhMFFMWW1TQzZRRkNKVV9MN1VPSQ?oc=5",
+      "published": "2026-11-16T17:43:22+00:00",
+      "publisher": "https://www.france24.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Palace appoint Frank in quest for Premier League survival - France 24"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO'S Manchester United reign begins this weekend as the Red Devils travel to Anfield. Michael Carrick's",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T18:00:49.526198+00:00",
+      "link": "https://www.thesun.co.uk/sport/41040428/man-utd-shirts-reduced-black-friday-deals/",
+      "published": "2026-11-16T17:28:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd shirts reduced by over £35 including this season’s kit in Black Friday savings – throwback kits up to 60% off"
+    },
+    {
+      "desc": "CRYSTAL PALACE have announced Thomas Frank as their new manager after a disastrous Premier League start. Frank, 53, retu",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T18:00:49.526240+00:00",
+      "link": "https://www.thesun.co.uk/sport/41041088/crystal-palace-thomas-frank-tottenham-brentford-pierre-sage/",
+      "published": "2026-11-16T17:17:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Crystal Palace announce Thomas Frank as new manager with ex-Tottenham and Brentford boss hailed as ‘perfect fit’"
+    },
+    {
+      "desc": "Palace have their man in Thomas Frank Lente Desportiva",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526253+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xQXZpdEpaVEh3UWZqeGlpR204QjFkdk96RUgtQ3dpSUxWOVBBM3VjZXpRcFpvSkNqRllLcDlDaVJ4dmpvM3dKTU1aaUJPSTlHbFZ1blZQc3F5VlZwOXlDMXFhdTBiM1pneFdnS3pUd0o1ZHNf?oc=5",
+      "published": "2026-11-16T17:14:00+00:00",
+      "publisher": "https://lentedesportiva.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Palace have their man in Thomas Frank - Lente Desportiva"
+    },
+    {
+      "desc": "SEVEN things to look out for in the next five Matchweeks Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526277+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQOGp0aDZMZi1YWGhFdmNjQzB0Y2lzMnlCWGNXbklLSkx1UnFIRkw2UGpBMTdIeUhkRmRxZTRWRWJjMzlLb0FfRkpDcGFFTXhoV2E1djJOMFFDZjhyTEZtQXRIeDQ1UnlEdzZTblhLTE82UGwwRnpSQzBIWmNHbHpFZjBzekUxZlBWc3FCRWNZcWxJUXZucE5UUUFvUmFyaHI4XzN2VmR5ZEFlei14Rml1VXIzdUs4MkNI?oc=5",
+      "published": "2026-11-16T17:12:15+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "SEVEN things to look out for in the next five Matchweeks - Premier League"
+    },
+    {
+      "desc": "FRENCH Football Federation president Philippe Diallo will take on Gianni Infantino for the Fifa presidency. Uefa has bee",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T18:00:49.526289+00:00",
+      "link": "https://www.thesun.co.uk/sport/41040375/candidate-challenges-infantino-fifa-presidency/",
+      "published": "2026-11-16T17:12:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Uefa announce candidate to stand against Infantino for Fifa President after being snubbed by Arsene Wenger"
+    },
+    {
+      "desc": "A FOOTIE ace who allegedly punched a pitch invader could face jail after being charged with a criminal offence, The Sun ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T18:00:49.526301+00:00",
+      "link": "https://www.thesun.co.uk/sport/41040468/efl-boateng-york-jail-punch-invader/",
+      "published": "2026-11-16T17:04:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "EFL star, 30, could face jail after allegedly punching a pitch invader during final day clash"
+    },
+    {
+      "desc": "Crystal Palace have appointed Thomas Frank as their new manager.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-16T18:00:49.526312+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13610988/thomas-frank-crystal-palace-appoint-former-spurs-and-brentford-boss-as-pierre-sages-successor-at-selhurst-park",
+      "published": "2026-11-16T17:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Frank appointed Crystal Palace manager"
+    },
+    {
       "desc": "MAURICIO POCHETTINO could make Juventus star Weston McKennie one of his first signings as Manchester United manager. And",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-16T17:01:02.683645+00:00",
@@ -3739,6 +3829,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "New Man Utd boss Mauricio Pochettino ‘could target Winston McKennie transfer in shock USA reunion from Juventus’"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO could make Juventus star Weston McKennie one of his first signings as Manchester United manager. And",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T18:00:49.526330+00:00",
+      "link": "https://www.thesun.co.uk/sport/41039613/mauricio-pochettino-weston-mckennie-man-utd-transfer/",
+      "published": "2026-11-16T16:50:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "New Man Utd boss Mauricio Pochettino ‘could target Weston McKennie transfer in shock USA reunion from Juventus’"
+    },
+    {
+      "desc": "CHRIS WHEELER: The 54-year-old will speak to the media and say farewell to his players before jumping on a direct flight",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T18:00:49.526347+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16297069/Mauricio-Pochettino-private-jet-final-USA-game-start-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T16:40:35+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United hire private jet to get Mauricio Pochettino straight to Manchester after final USA game in Cincinnati - and new boss is expected "
     },
     {
       "desc": "Fabrizio Romano hints Pochettino could impact Tottenham’s £70m Malo Gusto race Spurs Web",
@@ -3769,6 +3879,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Analysing this season’s Champions League minutes for Dream Team’s most popular players"
+    },
+    {
+      "desc": "Which non-league sides will face each other in the FA Trophy third round? The Non-League Football Paper",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526388+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQWXdqWUUyZDZpTEVnU3NVaTBHTEFZT1dsa3h2TEZRZzRTdDBtRXlZV2ZVNlUzYVMyVUdRM2o0NDY4Z0MwVTVlSUZRZjV1RjdXN2Z5RFJCMDdWQ0dqSGwydlVMZmRtZ05pQ0FEdm02b1RGV1h1RllodVNxM2xHVS1paWFrQmpKdnlHNnVJZHdMTFZZLTVFcUhyaTVwM184cU0xVm9zQkhxY0huUTBtMUFhSlE0d3RLSjRZVml2MlpPSFRkVk9yVnVmN1ZNNk5LOExVdW42amlzRFZPZDJtMEc5WG1mNkhVQQ?oc=5",
+      "published": "2026-11-16T16:14:17+00:00",
+      "publisher": "https://www.thenonleaguefootballpaper.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Which non-league sides will face each other in the FA Trophy third round? - The Non-League Football Paper"
     },
     {
       "desc": "QUIZ: How much do you know about the FPL season so far? Premier League",
@@ -3889,6 +4009,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Roberto De Zerbi is five points and seven goals WORSE than Thomas Frank was at Spurs – but stats show he’s much better"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526518+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-16T15:19:48+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "Will Thomas Frank rebuild his reputation at Crystal Palace after a bruising time in charge of Tottenham?",
@@ -4131,6 +4261,16 @@
       "title": "'Managers now are b****y boring!': NEIL WARNOCK on the lack of characters in football, his friendship with Pep Guardiola, why he is open to "
     },
     {
+      "desc": "Football latest news & gossip Sky Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526635+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVVIbXE5Ykt3cjRpS2hxLTNaSlcxenlvTlF3MjFPRG03YkFDVnd0dGM4WU9jSnlfY2s0a1Y1dGVRY2RldzJBbzk3R0VacVZFV2VZUTF1akJoQmFGTE54U09BSFNJY1A0U21INk9ud0J3UUdvc1Q1ZVZUVDR1Q2NrMDhlQzFCa29HVS10V19B?oc=5",
+      "published": "2026-11-16T13:05:04+00:00",
+      "publisher": "https://www.skysports.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Football latest news & gossip - Sky Sports"
+    },
+    {
       "desc": "THEY say you should never go back in football. But many footballers have been keen to try their luck again after making ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-16T14:01:19.185223+00:00",
@@ -4299,6 +4439,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Manchester City midfielders dominating bonus points but Dream Team bosses undecided which way to turn"
+    },
+    {
+      "desc": "Norwich head of scouting Ruhr leaves for Hannover BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T18:00:49.526719+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJdnh6RXlKVUVyMmMxS3EyYlZZQ1pHd1NXbzRDNnd6dm1xd3M4dGNJVDlUaDgzdzRpdEhPQWRkY2tJMnhhXzVLWVBWckUzRHNUZW9aSFNuRmUyY3JnSHFham1LeEpCZ2JBeTdJ?oc=5",
+      "published": "2026-11-16T11:44:32+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Norwich head of scouting Ruhr leaves for Hannover - BBC"
     },
     {
       "desc": "Crystal Palace finalising deal to appoint Thomas Frank as manager The New York Times",
@@ -5079,156 +5229,6 @@
       "publisher": "https://roundtable.io",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Exclusive: David Pleat Has One Big Concern About Tottenham's Move For Eli Junior Kroupi - roundtable.io"
-    },
-    {
-      "desc": "IF he plays his cards right, Lewis Hall could be England’s left-back for the next decade. Because, after this sensationa",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T23:00:53.120845+00:00",
-      "link": "https://www.thesun.co.uk/sport/41033323/lewis-hall-england-newcastle-spain-lamine-yamal/",
-      "published": "2026-11-15T22:56:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Lewis Hall could be England’s left-back for the next decade after showing Tuchel what he was missing at World Cup"
-    },
-    {
-      "desc": "Tuchel: England made statement with win over world champion Spain theScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T00:00:56.945339+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkczUFBtVjQyNTBpb1o0TzltSEZ2NktPRDMxS1FOYjY1YWdVLWdOa2pTaW1WMkEtUmdRWVlXdjFobFJHODE3eG90bW95M08xdFp1a295cTZwZER2ckhRM0RpQ2pCcktReGNSQk1pcDM3UkJvZXFsWUlWTEplWG5vMHlLWUl4SWJNRE5vQUVwM3lhNmdiRWZTZXU0eXdhNHc4d0RwVGc3N2t1dmpOLWd3?oc=5",
-      "published": "2026-11-15T22:56:04+00:00",
-      "publisher": "https://www.thescore.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Tuchel: England made statement with win over world champion Spain - theScore"
-    },
-    {
-      "desc": "CRAIG HOPE AT THE METROPOLITANO STADIUM: England secured a historic victory over Spain in the Nations League to secure t",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T00:00:56.945365+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290275/Spain-2-3-England-PLAYER-RATINGS.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T22:47:42+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Spain 2-3 England PLAYER RATINGS: Which star was the man of the match for Thomas Tuchel? Who was key to their energy and adventure? And who "
-    },
-    {
-      "desc": "The top stories and transfer rumours from Monday's newspapers...",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-15T23:00:53.120891+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612630/pep-guardiola-usa-approach-to-replace-mauricio-pochettino-to-be-rejected-by-ex-man-city-boss-paper-talk",
-      "published": "2026-11-15T22:45:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Papers: Guardiola to reject USA approach to replace Pochettino"
-    },
-    {
-      "desc": "Spain vs. England Player Ratings: La Roja’s Historic Undefeated Streak Finally Broken Sports Illustrated",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T23:00:53.120914+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UZzU5ZDN4a0NfMllTNVphTFRheXZPdnpzN1VMSjNDc3pWN3huSzAzem93ZEMtWGlBUnlSMTBwRXRyRE1NSTRVczUtb0syLTlGNjk4QkdkUHlTMDJLX3hKVzYyYnJfbUI0SlJiVjBnSzYyWXEz?oc=5",
-      "published": "2026-11-15T22:41:12+00:00",
-      "publisher": "https://www.si.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Spain vs. England Player Ratings: La Roja’s Historic Undefeated Streak Finally Broken - Sports Illustrated"
-    },
-    {
-      "desc": "Spanish football reporter Elizabeth Conway and senior football correspondent Sami Mokbel give their player ratings for S",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T23:00:53.120937+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cjg46lrpllrpo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T22:12:55+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who swaggered around like he owned the place? Spain v England ratings"
-    },
-    {
-      "desc": "Crawley Town to sign former Arsenal goalkeeper as a free agent now.arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T23:00:53.120956+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY0pDZFRZcUdKTmJiNHhjVHk3MnM3NncteWJSUGlack5xYUkxNWdDUnVCTVFMNzZ2WGFGdTkyd1FNeUNTcDl4VkhrTnYtdkduMlBvb0NrcU51ZUpldUZOdXZ6dDdMUHlqNU1fY24xc09tcE5mNXJHTWhlaGV1LXRHb1pKaWRRWE1kcmZzSUVoUVVMMlVCRENjYmZEWVlFSnI5cmdXV3lIdw?oc=5",
-      "published": "2026-11-15T22:09:36+00:00",
-      "publisher": "https://www.nowarsenal.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Crawley Town to sign former Arsenal goalkeeper as a free agent - now.arsenal"
-    },
-    {
-      "desc": "Internationals | Tough night for our players in UEFA Nations League action Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T04:01:01.176279+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeGFhWk8zTkl4TkswVDd1d2Nfbk1FVXo1aUppZkE1bkJkQ3oyRHFfZWNxbVJ5aXEtWjczQjdfZjFfUWp4aVRHbTFISm5uemRPOGJwMjA1UnpXdnd4cXUxWk00WVNiUXduNFBNaEx1LUotaElqTkhzUkhyUm5LZ3hwOW9jM1VIQ3ROVTVBVkdVYjNOOVZQQWlqaHBteThjT1ByTV9tMVNGWlBYMHRyanYwWXhBbVFzbVhoNGc?oc=5",
-      "published": "2026-11-15T21:57:08+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Internationals | Tough night for our players in UEFA Nations League action - Tottenham Hotspur"
-    },
-    {
-      "desc": "ENGLAND put an end to Spain’s 43-game unbeaten streak with a thrilling 3-2 victory in Madrid. Harry Kane, Ezri Konsa and",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T22:00:54.660597+00:00",
-      "link": "https://www.thesun.co.uk/sport/41032517/jude-bellingham-jarell-quansah-england-spain-nations-league/",
-      "published": "2026-11-15T21:53:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England player ratings: Jude Bellingham stars in Madrid but Quansah looks out of his depth"
-    },
-    {
-      "desc": "After England beat Spain in their own back yard in a statement result, we look at the main talking points from a memorab",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-16T00:00:56.945436+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612611/spain-2-3-england-talking-points-thomas-tuchel-learns-lessons-from-argentina-as-harry-kane-ben-white-and-lewis-hall-shine",
-      "published": "2026-11-15T21:52:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "England talking points: Tuchel learns Argentina lesson as full-backs shine"
-    },
-    {
-      "desc": "England withstood a Spain fightback after Elliot Anderson's red card to secure a famous 3-2 victory and finish above the",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-15T22:00:54.660684+00:00",
-      "link": "https://www.skysports.com/football/spain-vs-england/report/554117",
-      "published": "2026-11-15T21:45:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Ten-man England hold on to claim famous win over Spain"
-    },
-    {
-      "desc": "AGAINST the world champions, this was just perfect. This was the best yet under Thomas Tuchel, and it made it even sweet",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T22:00:54.660711+00:00",
-      "link": "https://www.thesun.co.uk/sport/41032206/spain-england-nations-league/",
-      "published": "2026-11-15T21:44:57+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Spain 2 England 3: Ten-man Three Lions hold out as world champions lose in Madrid for first time in 39 YEARS"
-    },
-    {
-      "desc": "LFC 26/27 Virgil Standee Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T05:01:08.089856+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNUjFrOElGS2cxald2VE9FUDBsZWtfaEZ4TWhBbHNYT09VVzBtSFgyN0dLdzdGQ1BWQ3ZqVW96Wk85Q3kxU29jRE01bDdlVWxFb3pKZFRNZlQyMmlxejMxTWhVSHp0UjZQS3c?oc=5",
-      "published": "2026-11-15T21:38:48+00:00",
-      "publisher": "https://store.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC 26/27 Virgil Standee - Liverpool FC"
-    },
-    {
-      "desc": "MANCHESTER UNITED legend Roy Keane saw Elliot Anderson live out his dream as England faced Spain. The Manchester City mi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T22:00:54.660737+00:00",
-      "link": "https://www.thesun.co.uk/sport/41032631/roy-keane-elliot-anderson-marc-cucurella-spain-vs-england/",
-      "published": "2026-11-15T21:35:28+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘He knows what he’s doing’ – Roy Keane hails Elliot Anderson for ‘leaving one on’ Cucurella in Spain vs England clash"
-    },
-    {
-      "desc": "ARSENAL suffered a fresh injury concern during the international break with Martin Zubimendi hobbling off with an appare",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T22:00:54.660759+00:00",
-      "link": "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league/",
-      "published": "2026-11-15T21:34:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal suffer huge injury blow as star goes off holding hamstring during Spain vs England clash"
     }
   ],
   "processed_urls": [
