@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 115049,
-    "output_tokens": 14463,
-    "requests": 21
+    "input_tokens": 120892,
+    "output_tokens": 15187,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3674,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T09:01:03.857165+00:00",
+  "last_scan_at": "2026-11-16T10:00:50.269741+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3695,6 +3695,66 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "City v Fulham: Kick-off time and TV information Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T10:00:50.272703+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWWdXZWZjRGM4TzZrVENNYTl6bjQxOXFkVkxSUU9IWGRVSTVwRmZlaXk4Z1MxMHF2UVYwVG1fejRBX1AycGJ6WnE5SENBVEhIZWZXN3cxUHBZSG9RcGFYYmJxREF1dUxMblhNamRncEdrend4MV9NcThnQ1hDcDc5SVFranBmLVdzUzN2U3lvdHNNSWVTci1R?oc=5",
+      "published": "2026-11-16T09:58:40+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City v Fulham: Kick-off time and TV information - Manchester City FC"
+    },
+    {
+      "desc": "With more than half of the 2026-27 Nations League group stage completed, BBC Sport looks at what will happen next in the",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-16T10:00:50.272741+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/crz65j3xyn9xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-16T09:46:34+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "How promotion, relegation and knockouts work in Nations League"
+    },
+    {
+      "desc": "MARIO VUSKOVIC - older brother of Brighton wonderkid Luka - returned from a whopping FOUR-YEAR doping ban on Sunday. Ham",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T10:00:50.272768+00:00",
+      "link": "https://www.thesun.co.uk/sport/41034712/premier-league-luka-vuskovic-brother-doping-ban-brighton-hamburg/",
+      "published": "2026-11-16T09:24:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Premier League star’s brother plays first game after serving FOUR-YEAR ban for doping"
+    },
+    {
+      "desc": "JUDE BELLINGHAM faces an awkward reunion with Real Madrid team-mate Marc Cucurella after lashing out at him during Engla",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T10:00:50.272791+00:00",
+      "link": "https://www.thesun.co.uk/sport/41034503/jude-bellingham-marc-cucurella-reunion-real-madrid-england-spain/",
+      "published": "2026-11-16T09:14:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Jude Bellingham faces awkward Cucurella reunion after fans spot his gesture following ‘embarrassing’ antics"
+    },
+    {
+      "desc": "GABRIEL CLARKE has come under fire for his post-match England interviews - four months after being slammed at the World ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T10:00:50.272813+00:00",
+      "link": "https://www.thesun.co.uk/sport/41034321/england-spain-itv-gabriel-clarke-thomas-tuchel-declan-rice/",
+      "published": "2026-11-16T09:13:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England fans hit out at ITV reporter for ‘doing it again’ as Tuchel and Rice interviews repeat World Cup controversy"
+    },
+    {
+      "desc": "Monday Marker: Your guide to City’s week ahead Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T10:00:50.272839+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBEZkhQRkZBOE9ta3hSTmpGTVRFMExfUm1CNWhaa253T3haaUJLSF9BT1hkdVpHWDJfaWxhWW1XMlQwbVJqanFSWDZ2SUpjVFpVdENHY0kzbFVRYW5SVGNNMkswaFBhbnhlVnFVNlBqaHRLbHdrd1N3?oc=5",
+      "published": "2026-11-16T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Monday Marker: Your guide to City’s week ahead - Manchester City FC"
+    },
     {
       "desc": "Fabrizio Romano warns of ‘increasingly complicated’ situation which is brewing at Liverpool LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3866,6 +3926,16 @@
       "title": "’A serious possibility’: Romano discloses two signings Man Utd plan to make in January for Pochettino - LiveScore"
     },
     {
+      "desc": "'I don't think many clubs in world football have a better 100 players than Liverpool' Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T10:00:50.273184+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUHRnTWFsNEVUR1Ffd0QxSDlodENfMVdIRl8tNDJRdlJyZzZmREdqS0oxNzVBSzVVN2hVOGVQbG1mSk5GQ1A3cFFxZHZVbWRSczdvX2w2bzlFVWE2LXBFa21qdjdELS1NeHdDNGlBTURoUE5IQzc4T29NSTM0WEZnUzF6UEtiQXN3QzRJQWFhMklFbF91NXlzdXQ3SjBpMkkwd2hV?oc=5",
+      "published": "2026-11-16T06:25:43+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "'I don't think many clubs in world football have a better 100 players than Liverpool' - Liverpool FC"
+    },
+    {
       "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-16T07:01:03.091915+00:00",
@@ -3904,6 +3974,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Lee Collins - Yeovil Town - Defender، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
+    },
+    {
+      "desc": "Man Utd: Fabrizio Romano reveals truth about Red Devils interest in Calvin Bassey Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T10:00:50.273237+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYWdfQWxiOUNUWFc0VTBfSmFoM3BOOXlISWdjM0tkYklSSGVJUnRhcFBPNms1TE9jb2pGaHNJUWZpdXowbEZWYWlfdXUyTVBZUmJqQ0tiVEZrWXBkOW5VWDVMbGlWVDc4VVp6WlFZNGhJUE1TZFY4MUJ4MXhKZ2dacnZn?oc=5",
+      "published": "2026-11-16T03:31:37+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd: Fabrizio Romano reveals truth about Red Devils interest in Calvin Bassey - Football365"
     },
     {
       "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
@@ -5114,86 +5194,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Dani Alves’ model wife Joana Sanz confirms breakup with former footie star, 43, after he took up new life as preacher"
-    },
-    {
-      "desc": "England manager Thomas Tuchel omits Josh King, James Garner and Jarrad Branthwaite from his squad to face Spain on Sunda",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T14:00:52.736537+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq4gn7014x76o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T13:15:15+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Branthwaite, Garner and King omitted for Spain game"
-    },
-    {
-      "desc": "FOOTBALL fans looking to score a pre-Christmas football break in the UK or Europe can bag an impressive bargain. Support",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T14:00:52.736555+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
-      "published": "2026-11-15T13:08:40+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Black Friday 10% discount on football trips including Real Madrid, Barcelona, Man Utd and others"
-    },
-    {
-      "desc": "VOTE for the BEST MATCH of the 2026/27 season so far Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736571+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNUdrc3RvbUxyRUEzU0hfNDdtc0hRM1lsN2NWR2tiMUNtRFhCRXRZR09HbzctYy15TW05LTN0ckJ1RFJKc3dYM3dYQi1SSlVqczBwTmNNc19GZnNDTk5MWU9GcFlGVEl2R2xmMW9PVHppNm9pMWpHX1d4cGFkaVhIWDFraW1MWmd6ajZNOS1MRG5hY0ZjVHFoVUFCZE8tUQ?oc=5",
-      "published": "2026-11-15T13:07:30+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "VOTE for the BEST MATCH of the 2026/27 season so far - Premier League"
-    },
-    {
-      "desc": "ALAN RUSCHEL is retiring on top of the world after earning promotion with his club, a decade on from surviving the horri",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T14:00:52.736588+00:00",
-      "link": "https://www.thesun.co.uk/sport/41028362/chapecoense-crash-survivor-alan-ruscher-promotion-retirement/",
-      "published": "2026-11-15T13:02:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chapecoense plane crash survivor who was left struggling to walk wins promotion to Serie A in last ever game"
-    },
-    {
-      "desc": "Fabrizio Romano reveals Liverpool reaction to Ronald Araujo permanent done deal in January claims Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736606+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY1BuOWJFdUVHaWJMdWtnVjNEMF94c21EdVJMSDN6NmZBMW55U2tKdERsM0RaZzVfQy1fTGRlLVFHY2ZacllpUnQtck1LOFFNcE5ZUW1xblhrZXJWY1hlc0c2VDZONkNKU0JoNUJ6Z25NQURZVWlwNk9GR3pHNlNNbk5SR3hPcnlSZmZSTVhqeDRubFZHNjFsZ0dneFFBVlU?oc=5",
-      "published": "2026-11-15T12:58:32+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reveals Liverpool reaction to Ronald Araujo permanent done deal in January claims - Football365"
-    },
-    {
-      "desc": "Watch: The BEST matches of the season so far Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:59:50.724243+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTXlRUVdRSV9sdk13MTJ1Zklady1Vb2diT3B5QkZIUWQxZkhJZl9PbWxtUzF0cmtyMmZqOHI5OXRsdGJjbkxyd3Azd0Z6UzF0VUtBWEVXYS1Vd1NaR1VxS3pIWjJycHd6bjdrcGJnRGRDcjFtbkZpem5pYmlXRGp4T013MzczX2dIN3UyMlJnbHpadXNl?oc=5",
-      "published": "2026-11-15T12:47:18+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch: The BEST matches of the season so far - Premier League"
-    },
-    {
-      "desc": "Amar Dedic's escapade with a bow and arrows was certainly not the first time a footballer has found himself in hot water",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T13:01:06.855486+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16271235/Footballers-fascination-weapons.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T12:37:36+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Ashley Cole accidentally shooting a student, bare-chested Marcus Bent threatening police with a meat cleaver - and an ex-Barcelona star firi"
-    },
-    {
-      "desc": "Man United target “important player” from Premier League rivals for problematic position CaughtOffside",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T19:01:01.028884+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPeFBhdGFkOWFYaUlCUFY5dTZtSVR2RkppUjVKZ1Q2RjVJZ0UteDM4dDN0TU5meEM5UUpGOWxZMUk3MVdSVFBnZnBzUm11Q0ZpMjVmYlJOWHJPa2R2Z2ItVGFHdWJOMi1mdzRTQmNmTEhFeDNqVV81YVNDSVc4MzVMU2dzeEJxeHpKTFZOclpiMmRqRkNOTktNR0VpYjF1QUnSAaQBQVVfeXFMTzRmYmdlRkVqaGlwZ3lIVXlEellLZEVNb2NXdm9rdGU3TGhzTEpKZC1iTUE0WjZFZUlwdFFzb1BNUm1VREJJekFEbDdTdkdkT1JpT28zV1Z3ejd4QlBIS1B3UzM0Rkt0U29aMm1Ya2c4anZhcERhY0NYMkFMUURFYXRuX1ZfdWpKQjFTWDNIT2llNDRSOC1FY0ZESFVSZFpYNXh6Q0I?oc=5",
-      "published": "2026-11-15T12:33:58+00:00",
-      "publisher": "https://www.caughtoffside.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man United target “important player” from Premier League rivals for problematic position - CaughtOffside"
     }
   ],
   "processed_urls": [
