@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 27,
+        "calls": 1,
         "errors": 0,
-        "requests": 27
+        "requests": 1
       }
     },
-    "calls": 27,
-    "date": "2026-11-16",
+    "calls": 1,
+    "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 149092,
-    "output_tokens": 18243,
-    "requests": 27
+    "input_tokens": 5946,
+    "output_tokens": 935,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -595,6 +595,41 @@
       "telegram_message_id": 51,
       "title": "罗马诺爆料：曼联锁定卡里克继任者头号目标",
       "updated_at": "2026-10-31T17:34:32.574287+00:00"
+    },
+    "28a50068f0e2": {
+      "article_title": "Crystal Palace finalising deal to appoint Thomas Frank as manager - The Athletic - The New York Times",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "16431e4b5e83b439",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 149
+        }
+      ],
+      "created_at": "2026-11-16T16:01:02.672293+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "27d638d87c3267d6",
+      "event_id": "28a50068f0e2",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-16T16:01:02.672293+00:00",
+          "origin": "created",
+          "title": "Crystal Palace finalising deal to appoint Thomas Frank as manager - The Athletic - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 149,
+      "title": "水晶宫接近任命托马斯·弗兰克为主帅",
+      "updated_at": "2026-11-16T16:01:03.290052+00:00"
     },
     "299a502280a8": {
       "article_title": "Forest Green owner explains why they failed to commemorate Remembrance Day as English football falls silent",
@@ -3674,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T15:00:56.595780+00:00",
+  "last_scan_at": "2026-11-16T16:00:55.673882+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3696,6 +3731,126 @@
   },
   "news_pool": [
     {
+      "desc": "THOMAS TUCHEL hailed a “statement victory” in Madrid on Sunday night as England beat world champions Spain 3-2 to top th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T16:00:55.677650+00:00",
+      "link": "https://www.thesun.co.uk/sport/41038796/england-next-match-announcement/",
+      "published": "2026-11-16T16:00:21+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Who are England playing next? Why Men’s national team’s next game has not yet been decided – when it could be announced"
+    },
+    {
+      "desc": "NEWCASTLE are adamant Lewis Hall is going NOWHERE any time soon. Boss Matthias Jaissle is understood to want to strength",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T16:00:55.677686+00:00",
+      "link": "https://www.thesun.co.uk/sport/41039722/newcastle-lewis-hall-transfer-man-utd-latest-news/",
+      "published": "2026-11-16T16:00:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Newcastle make Lewis Hall transfer decision as Euro giants consider entering £80m race with Man Utd"
+    },
+    {
+      "desc": "CRISTIANO RONALDO'S mum has launched a furious attack on Portugal following their humiliating 4-1 defeat to Denmark. Dol",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T16:00:55.677716+00:00",
+      "link": "https://www.thesun.co.uk/sport/41039881/cristiano-ronaldos-mum-portugal-denmark-sporting/",
+      "published": "2026-11-16T16:00:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Cristiano Ronaldo’s mum says ‘I was happy about it’ in furious swipe at Portugal after ‘well deserved’ Denmark loss"
+    },
+    {
+      "desc": "CHELSEA chief Xabi Alonso is facing a battle to keep Bernardo Cueva on his backroom staff - with Crystal Palace circling",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T16:00:55.677766+00:00",
+      "link": "https://www.thesun.co.uk/sport/41038815/chelsea-raided-crystal-palace-thomas-frank-bernardo-cueva/",
+      "published": "2026-11-16T15:52:18+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea set to be raided by new Crystal Palace boss Thomas Frank for set-piece coach"
+    },
+    {
+      "desc": "What to do with Cole Palmer in FPL? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.677795+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS3l5OXZXNGY0cTlpa1Z4MFlFRVd2MmNlM29RMFdxRFlyMFBIWmdDRXlxZHN1cXNVMHYyR04yeU5mOFo3SG9mRUxRbWZQeHRVMS15RGIySWladHRPVFRvM2x0ZVVYek1IVEtkQ2x3djFCQXRrRE1IbVhPVDgzdnZBaA?oc=5",
+      "published": "2026-11-16T15:45:15+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What to do with Cole Palmer in FPL? - Premier League"
+    },
+    {
+      "desc": "Horsham edge past Torquay United as penalty seals FA Trophy victory – the match in 48 pictures SussexWorld",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.677828+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeFlMMFREWU14U1BIV1c2VVZYakxjUUNnNHNlZHdXYUc2LWlaZWdPTElDSmRLLWVLVnBtc2RiQzJxa3VMdmJJNmlNVVhoTVh1MS05d3ZiMFI4eUJGZ01Da2tJWGlET1lLMmtsMnV6VGctVGgyNnk4TDB5SUVOeXZQMHQ3RU5LTkVqVWFmYm56RHBMRncxRDl6aHVILXA3Wk1LT3EydjdKemZVTnUzeHVtZngwQWM2eTZkZ1lDbWNwZDVidGdkZVR1YlQyWUZ3Xy1YZVBIZjJEX1NFQ2M?oc=5",
+      "published": "2026-11-16T15:38:00+00:00",
+      "publisher": "https://www.sussexexpress.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Horsham edge past Torquay United as penalty seals FA Trophy victory – the match in 48 pictures - SussexWorld"
+    },
+    {
+      "desc": "NEW JAMES BOND star Robert Pattinson does not keep his love for Arsenal top secret, but his favourite player might surpr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T16:00:55.677890+00:00",
+      "link": "https://www.thesun.co.uk/sport/41039499/robert-pattinson-arsenal-love-affair-petit/",
+      "published": "2026-11-16T15:34:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Inside new James Bond star Robert Pattinson’s love affair with Arsenal, including surprise favourite player"
+    },
+    {
+      "desc": "TEN LEAGUE games into his first proper season as Spurs boss and Roberto De Zerbi is seven goals and five points worse of",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T16:00:55.677935+00:00",
+      "link": "https://www.thesun.co.uk/sport/41037724/de-zerbi-thomas-frank-premier-league-games-stats/",
+      "published": "2026-11-16T15:22:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Roberto De Zerbi is five points and seven goals WORSE than Thomas Frank was at Spurs – but stats show he’s much better"
+    },
+    {
+      "desc": "Will Thomas Frank rebuild his reputation at Crystal Palace after a bruising time in charge of Tottenham?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-16T16:00:55.677967+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmge3y2qjlyro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-16T15:15:57+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "How Frank can restore reputation and save Crystal Palace"
+    },
+    {
+      "desc": "KIERAN GILL: Thomas Frank is closing in on the Crystal Palace job as the former Brentford and Tottenham manager eyes a r",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T16:00:55.678003+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16296771/thomas-frank-crystal-palace-set-piece-guru.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T15:07:26+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Thomas Frank closing in on Crystal Palace job as he eyes raid on Chelsea set-piece guru marginalised under Xabi Alonso"
+    },
+    {
+      "desc": "Romano ‘wouldn’t be surprised’ if Man Utd replace Zirkzee with Pochettino favourite in January LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.678034+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQYjdDR1FKR09acnNUcEcybGROaXE0dFZMbUdwdGhjZFhLRXNqZjYtb1owX2ktTEFDS0hkdjVKMHhXdndaZ2l5WXdwVjgwQW1kM1cyQ1ktcVMtam1YWHNsZmtBNHdwM0hJWWs4NTl4VUdiYUZidkVTU0Q1X1ZLX2RPY1dqUXhJN21rQk9fVnZqZkVnMU5lZ1ZPTlVGb1VlUC1ha2JtaEt6UzFPbzlROHRZZVpzQjFWRVlLaXhZNHNQREdOeG9iTWRsVWsyeHpaeERsVVdEYVlWQmttM3dhRVBLV3FBbHFueVhjOTUyME1yem12Zw?oc=5",
+      "published": "2026-11-16T15:07:18+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano ‘wouldn’t be surprised’ if Man Utd replace Zirkzee with Pochettino favourite in January - LiveScore"
+    },
+    {
+      "desc": "JAMES TRAFFORD has been given his chance to become England’s No1, and the Leeds United goalkeeper is grabbing it with bo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T16:00:55.678062+00:00",
+      "link": "https://www.thesun.co.uk/sport/41038814/james-trafford-jordan-pickford-england-leeds/",
+      "published": "2026-11-16T15:01:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How James Trafford and Jordan Pickford compare as Leeds and Everton goalies battle for England’s No1 jersey"
+    },
+    {
       "desc": "JOAO FELIX allegedly has a secret clause in his Al-Nassr contract which could see him return to Chelsea. The 27-year-old",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-16T15:00:56.599181+00:00",
@@ -3704,6 +3859,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Joao Felix ‘could rejoin Chelsea AGAIN thanks to incredible secret transfer clause in Saudi Arabia contract’"
+    },
+    {
+      "desc": "Hassell appointed interim Barnsley CEO Yahoo",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.678148+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUjh4YWQ2eGVTMjdoVW5zbE1nWFZETEJxV1hfS3JKc0IwbUdYV3BZNTNRc2NMZU9iOGRla1pZdDZTdHo5OGxTeDdfYmtUeEp4b3lieWxHQXkwQjNIODA1UmUzVl8ydlFaNDVXSDZjdXY5WEhCbTJ5ai1ORW1fXzc4bUtPYmZVa19QTUZPcUJIUQ?oc=5",
+      "published": "2026-11-16T14:52:43+00:00",
+      "publisher": "https://ca.sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Hassell appointed interim Barnsley CEO - Yahoo"
     },
     {
       "desc": "Bobby Hassell: Ex-Barnsley captain named club's new interim CEO BBC",
@@ -3734,6 +3899,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Romelu Lukaku announces 'bombshell' international retirement: Former Chelsea star, 33, U-turns on his Belgium future - leaving Belgian press"
+    },
+    {
+      "desc": "Vinicius Junior has admitted his lavish summer holiday after Brazil's last-16 World Cup exit is behind his slow start wi",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T16:00:55.678242+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16296407/vinicius-jr-real-madrid-arsenal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T14:48:19+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "How Vinicius Jr's lavish summer holiday has left him playing catch up: Real Madrid star admits he 'trained less' while on luxury yacht trip "
     },
     {
       "desc": "MAURICIO POCHETTINO takes charge of Manchester United for the first time on Sunday when the Reds travel to Liverpool on ",
@@ -3956,6 +4131,16 @@
       "title": "Cap fits as Robertson poised to take King Kenny's crown"
     },
     {
+      "desc": "David O'Leary Leeds United Defender, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.678542+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02VEZrcGZvQXVTMERJb0VwZ1pSZ0QxTmRtU2ZLZ0lpUC1rY09NNnJiN0JmS0FYR09EMlNjdmlGbFdJYkVCNkZ3YjhocXVRZG1SZWlpeDNBdnRmcldfdzNBS2RRX0RyVFBvOXFyRmpFWFdWSjg?oc=5",
+      "published": "2026-11-16T12:05:53+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "David O'Leary Leeds United Defender, Profile & Stats - Premier League"
+    },
+    {
       "desc": "Republic of Ireland captain Nathan Collins is ruled out of Tuesday's must-win Nations League game against Kosovo with a ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-16T13:01:18.441269+00:00",
@@ -3964,6 +4149,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Republic of Ireland captain Collins to miss Kosovo game"
+    },
+    {
+      "desc": "FA Trophy Third Round: Draw Details AFC Telford United",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.678606+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOFllNTdpdnRMWjYwVGpZbURBdjRiOFFmUDJ0QXlwMEROMjJkRGx2QWFYZjhpWVdLLXRDYTlzOFRkcWR3V2RMMmhVRUh0MGIwNDdrT0lSSmhFQ2ZSYm5QR2ZpQkhIQTJHS1plT3lPZUgtTmZLaG9UM2dfWXdHbVBOWkpWVkx3STg?oc=5",
+      "published": "2026-11-16T11:57:47+00:00",
+      "publisher": "https://www.telfordunited.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA Trophy Third Round: Draw Details - AFC Telford United"
     },
     {
       "desc": "Crystal Palace closing in on Thomas Frank appointment – The Athletic Tribuna.com",
@@ -4276,6 +4471,16 @@
       "title": "Chelsea Under-18s discover FA Youth Cup third round opponents | News | Official Site - Chelsea Football Club"
     },
     {
+      "desc": "Under-18s handed away tie in FA Youth Cup Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.678959+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBfMGRyaFJGVzhLSEtfT0otdWZNcmFyeFV5NVVWTVFzd09TdkxXVUc1RGxVXzFLbHNCc3V4dnhQTVdRNlpSSTJCSUJPaHY5R092Z0YxaDBNT09FWlhSMmY5cnZsZFVMckJlTHVjazlTd3JsbERDOEEyT0VZZ2g?oc=5",
+      "published": "2026-11-16T10:05:28+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Under-18s handed away tie in FA Youth Cup - Manchester United"
+    },
+    {
       "desc": "FOOTBALL fans looking to score a pre-Christmas football away day in the UK or Europe can bag an unbeatable bargain. Supp",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-16T11:01:07.066479+00:00",
@@ -4314,6 +4519,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "How promotion, relegation and knockouts work in Nations League"
+    },
+    {
+      "desc": "Dinamo Minsk ضد Rapid | التشكيلات والقوائم | 2015/2016 | UEFA Europa League Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T16:00:55.679038+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQMEhHZHpHTXBvNEdlU18tVjExQUdtLThNY2FNMF9kQ1hEbDB1bFBuX0gtM3NFTlpIcFJYaTg0dURWY2RZRTZpcmtFRkR5RXRrVUczZUFPRUlGejJ3bHpTb2tMLTI3NXBjTFYzMjlzanVGRGRiSk5UektfSWdWb2JvaQ?oc=5",
+      "published": "2026-11-16T09:43:26+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Dinamo Minsk ضد Rapid | التشكيلات والقوائم | 2015/2016 | UEFA Europa League - Premier League"
     },
     {
       "desc": "MARIO VUSKOVIC - older brother of Brighton wonderkid Luka - returned from a whopping FOUR-YEAR doping ban on Sunday. Ham",
@@ -5014,186 +5229,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Spain vs England - UEFA Nations League LIVE: Jude Bellingham denied second-minute opener in fast start"
-    },
-    {
-      "desc": "news Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T00:03:59.684317+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8gVBVV95cUxNZm5HSXF6R3p4aEJYOWpDNUpxWU1LUFYtVVhibHpWb3pNYXNsS1VlWlEtZ3ZDY0dtLS0wdENEc0E3am5HMWRyd0ZYaGh5MWVzY3FsRDVENkQxamFncldIbktJRzh3d0xlMkxBVmExcGZ4bW1aUjlvYjI4OWhfN1N4eXBYNFFscHhLSUpEbFdvaF96RWo2LTl6U2RsUS1NQTNFUlIwYi1WSUdGNkZBWHhmN2ZnbUlwRjNya2RuNnNDQzhuQy15VXBrdGFic3d4SVFoaUE0V1pSanM4NjhESjB5UFJhUFFoU1BGNHRjNlVIZWQ0TnNnZUkxUXBTaGJxemZQcEpCNi1OWlJuSVAwRC14VjVidmxEbmpjR3IxWmItUEVEbnZ2YXluX3BoUER2X3N1OHZXX0R4S2tXdS1pS2ZPdkJMOGU0ZjUxYmFlTkl2U2xVcUdYajRvdnVHVllHckhDU0hpSDlRSGVPR2xnWjAtWnBLMXFfV0M3MWZSU204YzEwZHFjRFotc0hoVDhfYWxEM0IxS1pDS2w2NTRoWm45YVlMdjVRbVpoZl9pV3R0UHFxc1loT21UVWp4X2c0dkkzRUhOeFJuQkQ3cm8yZi1VMEktOG5LVzhja3Zkd2d4V0dsOWFJdkZkZDBsTldkOVBDeThEaEdab2VPalVIT2VJbjJxTTVQZEFwS3VlZnJCa0tlNTF1czhlNFF2bnVMVlRWMTNYWG42WUR6djRQc0RoclhwdS1pOHpXODlXMEIyT09yc0wtaDhnU1NnZUdJdWdzS0w0elV5MnYxdXFldDlTWWJibTdZbkFZdVFoNFE4b2VpWFpGLUp3SWFhRTFFaWNZMUNGUm81WTBFNGxoOUhoTFNyMU9VMFdMZlg0b2t5SWJWZzZZQ19heUpKTlAwUl9pVmRvZTFzMXBEa3ZwRE1xdFV0c0xkX1B3dUdNQ2NWaFFqa0hTbm1aMnk1YmJBSTBRbW56eVYxS203X0FEVjNGNXl3?oc=5",
-      "published": "2026-11-15T19:49:21+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "news - Manchester City FC"
-    },
-    {
-      "desc": "Fantasy Premier League: Liverpool's top-performing assets so far this season Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T23:00:53.121217+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcVpxaDhXQWN3bUxCQllPM0xtVUcxZ3dVZE41VDNxXzdRV3V0SlBhYi11N0I3STlQN1ZJRWNvVHFCRE5HaS1UejBMaDI3dl9VZ1JERzRReUx1a1gzbTBEQUJJRnY4TURlQTg0VVc2bnZqS1hMY3EzOHM2XzRnNDl6MmVYQmRyaTM3TzRGTk9xeXdvSFVheTF2enZacDZCUQ?oc=5",
-      "published": "2026-11-15T19:49:05+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Fantasy Premier League: Liverpool's top-performing assets so far this season - Liverpool FC"
-    },
-    {
-      "desc": "ENGLAND are taking on Spain tonight in a huge Nations League clash. La Roja midfielder Martin Zubimendi is wearing a pro",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195332+00:00",
-      "link": "https://www.thesun.co.uk/sport/40817465/why-martin-zubimendi-mask-spain-england/",
-      "published": "2026-11-15T19:47:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why is Martin Zubimendi wearing a mask against England?"
-    },
-    {
-      "desc": "SPAIN face England in the Nations League tonight - but fans have noticed something strange when the national anthem play",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195348+00:00",
-      "link": "https://www.thesun.co.uk/sport/39750607/why-spain-not-sing-national-anthem/",
-      "published": "2026-11-15T19:43:58+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why do Spain not sing their national anthem?"
-    },
-    {
-      "desc": "THE knockout stage of the Nations League is rapidly approaching and a date has been set for the draw! The top two teams ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195365+00:00",
-      "link": "https://www.thesun.co.uk/sport/41019819/when-nations-league-quarter-final-draw-date-time-live-stream/",
-      "published": "2026-11-15T19:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "When is the Nations League quarter-final draw? Date, start time, TV channel and live stream as England learn fate"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T22:00:54.660986+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-15T19:30:35+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "Lazio vs Nice Stats, clasificación y Forma | 2017/2018 | UEFA Europa League Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T00:03:59.684370+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE93OGtHemN5Q2YyRlZXaEZvSVdGNEY0anc1amVCSlpRNlpxYkRqdG1ZNDdzVnB3bGtvU3AweE9uOG9YNnI3eXhyZXNIUTVlTzVyXzNzWHpETFVRQ3dRLW14VHVXTEpESWF6amJPdVVsd2xLNGs?oc=5",
-      "published": "2026-11-15T19:29:55+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Lazio vs Nice Stats, clasificación y Forma | 2017/2018 | UEFA Europa League - Premier League"
-    },
-    {
-      "desc": "ENGLAND face world champions Spain in their final Nations League group stage clash TONIGHT. The Three Lions claimed thei",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195396+00:00",
-      "link": "https://www.thesun.co.uk/sport/41017831/who-england-play-nations-league-quarter-final-next/",
-      "published": "2026-11-15T19:25:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Who can England face in Nations League quarter-finals?"
-    },
-    {
-      "desc": "ENGLAND head to Spain tonight for the final group stage game of the Nations League! Both sides will observe a minute's s",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195411+00:00",
-      "link": "https://www.thesun.co.uk/sport/41029393/why-england-spain-black-armbands-nations-league/",
-      "published": "2026-11-15T19:25:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why are England and Spain wearing black armbands in Nations League clash?"
-    },
-    {
-      "desc": "How to watch Arsenal Women v London City Lionesses Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T20:19:32.280353+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNzlfZllYY1FORVNxTkNfTzBkLW1ub2I0SGN6OFdja3ByMnZuR3pmaU5yb0NMamdSZC0wS2VtNFRtU2ltNTRYM1JteWQwejJLV2JWX0VES2FZNW1HazUwOTVXZERCOVhyNFZGYVZVZjFfWVNHNjcwQXdsMHVGNWZ4ekxmMGw4Q0tGWXgzUHY1MDVSZng1ZjFR?oc=5",
-      "published": "2026-11-15T19:19:55+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "How to watch Arsenal Women v London City Lionesses - Arsenal.com"
-    },
-    {
-      "desc": "ARSENAL supporters can enjoy watching the champions take on the finest teams in Europe from the finest seats in The Emir",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195426+00:00",
-      "link": "https://www.thesun.co.uk/sport/39227637/arsenal-premier-league-champions-ticket-hotel-deal/",
-      "published": "2026-11-15T19:08:59+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal tickets plus hospitality packages to Premier League and Champions League games at The Emirates"
-    },
-    {
-      "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge at an unmissable price with this fantastic deal. Perfe",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195441+00:00",
-      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
-      "published": "2026-11-15T19:08:38+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea tickets and VIP hospitality deals for Premier League matches at Stamford Bridge from just £155pp"
-    },
-    {
-      "desc": "MAN UNITED fans can get unmissable ticket deals to watch the Red Devils under new boss Mauricio Pochettino at Old Traffo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T20:01:11.195455+00:00",
-      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
-      "published": "2026-11-15T19:08:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Book Man Utd tickets plus hotels and official hospitality for Champions League and Premier League games at Old Trafford"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T22:00:54.661020+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZmFIdkZTSExvaExYU1JFV0JoQTByVHFLLWQzcXRaVzEzOTVSTm9uY18xREM1Q3VxaUpaaUkxbi11eW9wUnRrcC1mVEhuN3oxdmhrVHktdWc4ZFVTY0g5XzRSQUdobGt5OGEybVhwX3h2OG5PdEZQd1dEa1NtcGhtRGJn?oc=5",
-      "published": "2026-11-15T19:05:40+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Renée: \"We let them come back too easy\" Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T20:19:32.280407+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUTcyNll0SFZPOV9jQU5FNWdfSUFRMEZ5dWVLREMzNFh5RVNQamd0TzZJZTl2VUZVVzgzYUhNdEU4LUJQRkp0MTBHV0xBcDViOFd4MHQwY1lSUXVDMXdwcnZHNEpzX0ZvUmlxSE5IMC1KX3hFRmN6UjNEcUZhQzFQREtiRU4?oc=5",
-      "published": "2026-11-15T19:03:49+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Renée: \"We let them come back too easy\" - Arsenal.com"
-    },
-    {
-      "desc": "His eyes are perfectly good when bespectacled, his mind nimble enough to keep up with play and his soothingly familiar v",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T20:01:11.195479+00:00",
-      "link": "https://www.dailymail.com/sport/article-16290827/Legendary-commentator-CLIVE-TYLDESLEY-ITV-exit-hearts-grow-fonder-rise-YouTube-streamers-lockdown-money-spinner-refuses-loud-voice-game.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T19:00:03+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Legendary commentator CLIVE TYLDESLEY on how his ITV exit has made hearts grow fonder, the rise of YouTube streamers, his lockdown money-spi"
-    },
-    {
-      "desc": "PARIS FC are eyeing a return to the Parc des Princes, with Paris Saint-Germain's future in the iconic arena uncertain. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T19:01:01.028195+00:00",
-      "link": "https://www.thesun.co.uk/sport/41031344/psg-parc-des-princes-paris-fc-relocation-plans/",
-      "published": "2026-11-15T18:53:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "PSG could leave Parc des Princes and be replaced by rivals from ‘across the street’ in iconic 48,583-seater stadium"
-    },
-    {
-      "desc": "Felipe Pardo - Olympiakos - Midfielder، الملف الشخصي والإحصائيات | بريميرليج Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T00:00:56.945654+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1DVm1iRHFhVWJoMEw3TS02MUZlWXMzaXpURnJFanNrYlh1STBKNzk0LUNjLUxPZ3JTOEFodm12WVJ2Y0dsY3R6OWpxYXVEdG10NDZuWGF3bkZqNWZuX1hLOU1EZnJWeVN4ODFZRW9JTEJfNktEUWU0Rg?oc=5",
-      "published": "2026-11-15T18:47:16+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Felipe Pardo - Olympiakos - Midfielder، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
     }
   ],
   "processed_urls": [
@@ -5314,7 +5349,8 @@
     "https://www.thesun.co.uk/sport/41032033/spain-england-nations-league-world-cup-trophy",
     "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty",
     "https://www.skysports.com/football/spain-vs-england/report/554117",
-    "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league"
+    "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league",
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA"
   ],
   "s_overflow": {},
   "schema_version": 4
