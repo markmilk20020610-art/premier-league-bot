@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 94993,
-    "output_tokens": 10797,
-    "requests": 16
+    "input_tokens": 98742,
+    "output_tokens": 11408,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3674,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T05:01:08.087221+00:00",
+  "last_scan_at": "2026-11-16T06:00:58.296521+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3695,6 +3695,26 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Manchester City squad ladder: Big drops for Donnarumma and Guehi, but Ndiaye is on the rise The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T06:00:58.298823+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMzVSLXl4andzSXpMMEJNSjR1VFFwUU04blFvSFVxUnBLaHA1SEpSTW1DT0VWQ2QzMjNQUTZ2cm1vemhzV0dBbVc2c3owS0l2TkJPZ0dfYUdSTXRJcFJUM2FLN1hGanF0WG5UeEZXbGZVaUtqUWo2c3FMc0FUSEhaQk9MVk1rR29aUkdwM3hqMXUyd1l4cnhTYVN4SDFQdlRTNktzRUlWSnMwdw?oc=5",
+      "published": "2026-11-16T05:27:56+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Manchester City squad ladder: Big drops for Donnarumma and Guehi, but Ndiaye is on the rise - The New York Times"
+    },
+    {
+      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T06:00:58.298859+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
+      "published": "2026-11-16T02:06:06+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
+    },
     {
       "desc": "Manchester City FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5174,26 +5194,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd: Romano confirms Pochettino first signing 'complete' with deal for 'talented' striker 'all done' - Football365"
-    },
-    {
-      "desc": "Fabrizio Romano confirms Liverpool stance on Trent Alexander-Arnold Anfield Watch",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T11:00:53.502679+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVFJUSWVIZHhIMlg0bXhub2R3TEVCVHFfZHBUbFg1LVMzLTNNSkFqVTlFaVFORHFLeHJoLWNiNmRzekFrb2g1Z0RKVjFoOE9sNWJEQ05KYUUzN2IyYWNDeHh3bVY1RUxxdW5mU3VhZ3JkUGNodlNkT2E1bXEzdF8tVEJkR2pqbjZXNkREaXhwVFd0QXhxRHA3US0zLXNWdVI2bWxFaWZySU45dEEtNzFTVDhtSUhjQ2pm?oc=5",
-      "published": "2026-11-15T10:00:00+00:00",
-      "publisher": "https://www.anfieldwatch.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano confirms Liverpool stance on Trent Alexander-Arnold - Anfield Watch"
-    },
-    {
-      "desc": "Hacken v City: Kick off time, team news and TV information Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T12:00:48.237645+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNXzcybmdERjJ2bHowdkwxWndMZXVvWloxQUI3cHBZX0FjczU0UTVZeXJHUUZ4M25VRzI1RlBXNjczT3lVOHFnWGNpOXhOcEl2M1pPZ2FYQm55ZU92Rzg2emx5czFHMlRiZzdxNjlGZFFvaW10azFBeHZOOVNBdnlkTS1PQnNUMjhBMkE?oc=5",
-      "published": "2026-11-15T10:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Hacken v City: Kick off time, team news and TV information - Manchester City FC"
     }
   ],
   "processed_urls": [
