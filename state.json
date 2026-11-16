@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 54676,
-    "output_tokens": 5760,
-    "requests": 9
+    "input_tokens": 60651,
+    "output_tokens": 6451,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3674,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-15T23:00:53.118245+00:00",
+  "last_scan_at": "2026-11-16T00:00:56.943376+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3696,6 +3696,66 @@
   },
   "news_pool": [
     {
+      "desc": "England's stunning win in Spain had everything - and was their best under Thomas Tuchel, writes Phil McNulty.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-16T00:00:56.945216+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c933ge310n33o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-15T23:52:43+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "60 minutes of perfection, 30 minutes of chaos - an England win for the ages"
+    },
+    {
+      "desc": "Tuchel hails England’s statement win over Spain as ‘complete performance’ AOL.co.uk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T00:00:56.945235+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMjBJdk4xZ1dwQXh0Ry15VU50Mk04LUt2dVBKV2cwUndMQmJBbTFTZEpqYXdNdzdOc3ZXOTJSZUJpMmM0LURrMDdzLTVWWGJsVGctRjgtSi1zeXBwTHRySGFHa3VENjkyb1l1cEs0U0pjOV90cWRBZ3N6Q2JPLTZkN3BWOURwd00?oc=5",
+      "published": "2026-11-15T23:47:56+00:00",
+      "publisher": "https://www.aol.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Tuchel hails England’s statement win over Spain as ‘complete performance’ - AOL.co.uk"
+    },
+    {
+      "desc": "JAMES TRAFFORD showed he is ready to take the England gloves off Jordan Pickford with his heroic display against Spain. ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T00:00:56.945250+00:00",
+      "link": "https://www.thesun.co.uk/sport/41033151/james-trafford-jordan-pickford-england-spain/",
+      "published": "2026-11-15T23:31:29+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘World class’ – James Trafford leaves England fans fearing for Pickford with stunning double save to earn Spain win"
+    },
+    {
+      "desc": "SPAIN 2-3 ENGLAND -OLIVER HOLT IN MADRID: Thomas Tuchel had said he wanted evidence. He needed to believe his coaching w",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T00:00:56.945271+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16290271/England-deliver-spectacular-Three-Lions-men-strip-world-champions-Spain-invincibility-Thomas-Tuchel-proof-coaching-working-writes-OLIVER-HOLT.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T23:18:29+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "England deliver the spectacular as Three Lions strip world champions Spain of their invincibility and give Thomas Tuchel the proof that his "
+    },
+    {
+      "desc": "OLIVER HOLT IN MADRID: England played the best football of Tuchel's two-year reign as coach to end Spain's world record ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T00:00:56.945289+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16295093/Thomas-Tuchels-best-night-England-manager-Three-Lions-boss-hails-heroes-Spain-victory-hits-Elliot-Anderson-decision-referee-previously-labelled-one-10.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T23:11:31+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Thomas Tuchel's 'best night' as England manager: Three Lions boss hails heroes after Spain victory - but hits out at Elliot Anderson decisio"
+    },
+    {
+      "desc": "Exclusive: David Pleat Has One Big Concern About Tottenham's Move For Eli Junior Kroupi roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T00:00:56.945314+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWFdDTHF2VklFNWlWMDFzVDIyNWN1VXl2eG1vRTJyNlJMNk41anZVa2NPdEVjeHRybWNOY1lVd1lKSk1hdTlVQ3BIelNKaUI0Uy1DSVJmVjhLQmIxbkVuUHVDYXEwNDd2ckVVQzd2TTl1dmlZb2tNTHdOVXlydjBxYnY1VGxhU1NtQkhISlNPX2stdmszalNwUzZIVjRkRHA4NW01aXdRRWdWYmVKdjNkQlQ5aFJfOGI3V0Z5dkFWTmM5T1RfeFJlTXNtUzNtWkRzVndXczhPTmxySXZOVDFPTUVwVllTYUYwaGMtag?oc=5",
+      "published": "2026-11-15T23:02:13+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Exclusive: David Pleat Has One Big Concern About Tottenham's Move For Eli Junior Kroupi - roundtable.io"
+    },
+    {
       "desc": "IF he plays his cards right, Lewis Hall could be England’s left-back for the next decade. Because, after this sensationa",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T23:00:53.120845+00:00",
@@ -3704,6 +3764,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Lewis Hall could be England’s left-back for the next decade after showing Tuchel what he was missing at World Cup"
+    },
+    {
+      "desc": "Tuchel: England made statement with win over world champion Spain theScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T00:00:56.945339+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQkczUFBtVjQyNTBpb1o0TzltSEZ2NktPRDMxS1FOYjY1YWdVLWdOa2pTaW1WMkEtUmdRWVlXdjFobFJHODE3eG90bW95M08xdFp1a295cTZwZER2ckhRM0RpQ2pCcktReGNSQk1pcDM3UkJvZXFsWUlWTEplWG5vMHlLWUl4SWJNRE5vQUVwM3lhNmdiRWZTZXU0eXdhNHc4d0RwVGc3N2t1dmpOLWd3?oc=5",
+      "published": "2026-11-15T22:56:04+00:00",
+      "publisher": "https://www.thescore.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Tuchel: England made statement with win over world champion Spain - theScore"
+    },
+    {
+      "desc": "CRAIG HOPE AT THE METROPOLITANO STADIUM: England secured a historic victory over Spain in the Nations League to secure t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T00:00:56.945365+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16290275/Spain-2-3-England-PLAYER-RATINGS.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T22:47:42+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Spain 2-3 England PLAYER RATINGS: Which star was the man of the match for Thomas Tuchel? Who was key to their energy and adventure? And who "
     },
     {
       "desc": "The top stories and transfer rumours from Monday's newspapers...",
@@ -3754,6 +3834,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England player ratings: Jude Bellingham stars in Madrid but Quansah looks out of his depth"
+    },
+    {
+      "desc": "After England beat Spain in their own back yard in a statement result, we look at the main talking points from a memorab",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-16T00:00:56.945436+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13612611/spain-2-3-england-talking-points-thomas-tuchel-learns-lessons-from-argentina-as-harry-kane-ben-white-and-lewis-hall-shine",
+      "published": "2026-11-15T21:52:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "England talking points: Tuchel learns Argentina lesson as full-backs shine"
     },
     {
       "desc": "England withstood a Spain fightback after Elliot Anderson's red card to secure a famous 3-2 victory and finish above the",
@@ -3826,6 +3916,16 @@
       "title": "England fans mock ‘pathetic’ Cucurella after bizarre attempt to get Harry Kane penalty overturned against Spain"
     },
     {
+      "desc": "Having enjoyed retirement for 11 years, he shocked world football by agreeing a surprise transfer to Serie C outfit Rave",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T00:00:56.945515+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16294611/Ronaldinho-return-Brazil-legend.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T20:52:31+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Ronaldinho makes return at age of 46: Brazil legend plays full first-half for Italian third-tier team and hints he may play again despite 'p"
+    },
+    {
       "desc": "EX-TOTTENHAM and Barcelona ace Giovani dos Santos looks unrecognisable as he crossed over to padel tennis with his two b",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-15T21:00:45.773850+00:00",
@@ -3884,6 +3984,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "London City's 'bravery' paying off in top three pursuit"
+    },
+    {
+      "desc": "Comunicaciones were taking on Arsenal Sarandi at the weekend with the score 0-0, and the goalkeeper had caught the ball ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T00:00:56.945574+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16294693/Goalkeeper-scores-bizarre-goal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-15T19:54:57+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Goalkeeper scores one of the most bizarre own goals EVER during play-off clash in Argentina"
     },
     {
       "desc": "Follow Daily Mail Sport's live coverage as England travel to Madrid to face world champions Spain in the Nations League.",
@@ -4044,6 +4154,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "PSG could leave Parc des Princes and be replaced by rivals from ‘across the street’ in iconic 48,583-seater stadium"
+    },
+    {
+      "desc": "Felipe Pardo - Olympiakos - Midfielder، الملف الشخصي والإحصائيات | بريميرليج Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T00:00:56.945654+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1DVm1iRHFhVWJoMEw3TS02MUZlWXMzaXpURnJFanNrYlh1STBKNzk0LUNjLUxPZ3JTOEFodm12WVJ2Y0dsY3R6OWpxYXVEdG10NDZuWGF3bkZqNWZuX1hLOU1EZnJWeVN4ODFZRW9JTEJfNktEUWU0Rg?oc=5",
+      "published": "2026-11-15T18:47:16+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Felipe Pardo - Olympiakos - Midfielder، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
     },
     {
       "desc": "Highlights of the Women's Super League match between Arsenal and London City Lionesses.",
@@ -5074,126 +5194,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "New England Patriots @ Detroit Lions: Our 5/1 NFL Munich bet builder tip, plus £50 in free bets | Sky Bet"
-    },
-    {
-      "desc": "Pochettino: It's difficult to turn down United Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T09:00:58.642590+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQamZEN2ZhQi1Ra0Z1U004VGpzSkkyNlFrWmNGSlpIeGZKZmFfd01RWlpCSmthNWhtcEtPUmxZbHlyUzVqODNHd05UajJ2QWhZTEdzTVRFOEE4N0VydWtodGRiQlJSLVRlcTZkOE1ZVnRwRGRuak9NUnVxaVpEaU1YeGNNWkZ4UGRkMlRkNUN3ME9OcG5zNUVmTmZIdw?oc=5",
-      "published": "2026-11-15T08:10:46+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino: It's difficult to turn down United - Manchester United"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T16:00:56.983695+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
-      "published": "2026-11-15T08:04:46+00:00",
-      "publisher": "https://login.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
-    },
-    {
-      "desc": "SEVERAL star-studded names from the world of sport and entertainment are set to participate in today's Game4Ricky - and ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T08:01:07.388926+00:00",
-      "link": "https://www.thesun.co.uk/sport/40977066/game4ricky-live-stream-tv-channel-guide-how-to-watch/",
-      "published": "2026-11-15T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Game4Ricky live stream and TV guide: How to watch star-studded charity match"
-    },
-    {
-      "desc": "FRANCE host Turkey on Sunday, needing a victory to guarantee a top two spot in Group A1 of the Nations League. New custo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T09:00:58.642629+00:00",
-      "link": "https://www.thesun.co.uk/sport/41012141/france-turkey-free-bets-bet-builder-sky-bet/",
-      "published": "2026-11-15T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "France vs Turkey: Get £50 in free bets, plus our 6/1 Bet Builder tip | Sky Bet"
-    },
-    {
-      "desc": "As Spain prepare to host England in the Nations League, BBC Sport columnist Guillem Balague charts the rise of Unai Simo",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T07:44:16.399520+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg23nv0jw2o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T07:29:30+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How Spain's humble superstar Simon became world's best keeper"
-    },
-    {
-      "desc": "Gusto to Man Utd or Man City: talkSPORT Reports Chelsea Defender Battle The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736954+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNdVdrcll2TzJETUdOeHY2NnYyS0Qxd2RDemtESmRvLUN1VTdkalZJYmtXSlRmdEhCQl8yN3pvOXBCblRERFB0VzlGWjhlc1FKUTRvaV8xWHpMeC1maHJoWGVSVzJzMkRFTUJvNUxDSmFBemp2VE5ZTzBXendOODFoNHpXX3FmWTJ5SmRr?oc=5",
-      "published": "2026-11-15T07:21:41+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Gusto to Man Utd or Man City: talkSPORT Reports Chelsea Defender Battle - The False 9"
-    },
-    {
-      "desc": "Aston Villa Women are celebrating an important 30-year milestone on Sunday - but how are they trying to reclaim their id",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T07:44:16.399548+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm4gkgnkkn9zo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T07:12:05+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How Aston Villa are reclaiming their identity"
-    },
-    {
-      "desc": "Exclusive: Teddy Sheringham Tells Tottenham to Sign £30m Brighton Star to Fix Roberto De Zerbi's Attack roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T07:44:16.399573+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNYVZEbW9ZQUNVWmJDRmNGaGR5Z0ZYRmtSazZ0Y3FIazd2SE5qbG1YMDhzNm5lelpGWWw3T0pEWEJjZzJVcG5kTWFzVVhhTDRVS0pERkJNYnRDenZLRjcyOUNBVTZCb3prY2FSZlVZUnNyMVJMdG5DUGpWaUxZc3dZRGFXZmVIT1Njek5vcmlUZl9oTXBXWWIzNC1BeU1TaFJrdzNEMjVMZFhSVG8zT2Q4S1JhdnpIVEpPV1BiYU1OSUJPN0staW1ZVkRRUDJkWFN6UGlfVTloMEh0VVM3UUkxRF9IT3ZxZ3g3dVNENWYyZnFZMzZyamtqUVY3aFdGMGI4?oc=5",
-      "published": "2026-11-15T07:02:26+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Exclusive: Teddy Sheringham Tells Tottenham to Sign £30m Brighton Star to Fix Roberto De Zerbi's Attack - roundtable.io"
-    },
-    {
-      "desc": "Work out the identity of today's Women's Super League player in as few attempts as possible.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T07:44:16.399595+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c32l8yzvjgx7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T07:01:31+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Guess WSL star No 12"
-    },
-    {
-      "desc": "BELGIUM and Italy collide in a Nations League shoot-out on the final day for Group A, with a winner takes all clash. New",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T07:44:16.399614+00:00",
-      "link": "https://www.thesun.co.uk/sport/40999898/belgium-italy-talksport-bet-offer/",
-      "published": "2026-11-15T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Belgium vs Italy: Bet £10+ on football and get up to £30 in free bets | talkSPORT BET"
-    },
-    {
-      "desc": "ENGLAND are in Spain on Sunday, needing a win by a couple of goals to secure top spot in their Nations League group. Sun",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T07:44:16.399631+00:00",
-      "link": "https://www.thesun.co.uk/sport/41012449/spain-england-nations-league-predictions-free-bets/",
-      "published": "2026-11-15T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Spain vs England | Nations League predictions, preview and free bets"
-    },
-    {
-      "desc": "Liverpool fans given answer over January deal for Ronald Araujo Rousing The Kop",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T08:01:07.389037+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQU0VEdl9EcnhPdS12YTBsOURvc3ZIdlhyVEVhZXQ2VGIycnpabjNlS0FBM3hhdUlBeHRUNWR2VmdXWkE3UVAzNFIteTBFSk9za3kxdzh6MW8tdFIyZGpvT0xEZXZYd0xHWHVOdVlKNjBuUWo3RXJHVVBuZkJQVXZVdUhLZnI5UjZLVkFKTUlFZU8zMG14d204eWlIRWRucTQ?oc=5",
-      "published": "2026-11-15T07:00:00+00:00",
-      "publisher": "https://www.rousingthekop.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool fans given answer over January deal for Ronald Araujo - Rousing The Kop"
     }
   ],
   "processed_urls": [
