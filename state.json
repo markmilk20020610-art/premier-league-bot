@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 31684,
-    "output_tokens": 3861,
-    "requests": 5
+    "input_tokens": 38347,
+    "output_tokens": 4496,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3709,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T19:00:52.770531+00:00",
+  "last_scan_at": "2026-11-16T20:00:59.863191+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3730,6 +3730,46 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Andy Robertson has broken the record for the most senior Scotland men's team caps, surpassing the feat held by Sir Kenny",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-16T20:00:59.865778+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13612913/andy-robertson-scotland-captain-breaks-national-appearance-record-by-winning-103rd-senior-cap-vs-switzerland",
+      "published": "2026-11-16T19:47:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Robertson makes history with record 103rd Scotland cap"
+    },
+    {
+      "desc": "MEMBERS of Mauricio Pochettino’s backroom staff have already flown into Manchester ahead of United’s pivotal Premier Lea",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T20:00:59.865839+00:00",
+      "link": "https://www.thesun.co.uk/sport/41041942/mauricio-pochettino-staff-man-utd-usa-liverpool-haiti/",
+      "published": "2026-11-16T19:13:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino’s staff fly in to start work at Man Utd after leaving USA camp early"
+    },
+    {
+      "desc": "Misc Rumor RealGM",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T20:00:59.865857+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zdzBDTDU0aDJ5aC03VlVTaEdHTW1aNlNDVVhKWFdpTk81OHZHZ05YTjQ4R1NTaWdGYW1BbDEwUENrMzM3UUhiWnlXV0VTRU5VUWhtNzZraFJHdFZpMDktdkJMSHVHMFIz?oc=5",
+      "published": "2026-11-16T19:12:08+00:00",
+      "publisher": "https://soccer.realgm.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Misc Rumor - RealGM"
+    },
+    {
+      "desc": "Palace appoint Frank in quest for Premier League survival - World - Sports Ahram Online",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T20:00:59.865877+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNY2tMUW9UM1pwSWZnMC1MYTBhZm5wX3kxbURiWjc4QWFOS3ctakR4d0RqNnVNbU1tLXVadldUb0RJWW84V3VXT0VKbm52TE5UWVdmcWdSMmw0WnFTb1ZEWXpNRmpELXEzVlk5TURLTHRhY3I4VjNHSFRxRDVqLXd1UlhESjlPTTFQR0RQbzhBQ3NpYzNnTmVmMjZqNVA3YlRqOWZxV2p2RnItOVEzb0ItbU9PcF9RUDBwSkVTNHhn?oc=5",
+      "published": "2026-11-16T19:10:06+00:00",
+      "publisher": "https://english.ahram.org.eg",
+      "source": "https://www.thefa.com/rss",
+      "title": "Palace appoint Frank in quest for Premier League survival - World - Sports - Ahram Online"
+    },
     {
       "desc": "LUKE SHAW was clocked at Manchester United’s training ground last week and it remains to be seen if he clocks back on no",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3759,6 +3799,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘You destroyed me’ – Dani Alves’ wife launches blistering attack on ex-footie star, 43, after ‘paying all his debts’"
+    },
+    {
+      "desc": "Fabrizio Romano reveals Man Utd decision on January striker signing TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T20:00:59.866004+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPT2JvT0xDSU9fLTRVZFNFaGNWSFFiYlhOaU9ycVdYb2oyMk50dnVWeEdCaFRMZGFSMkg4Xy1GcUJJOFhodmZMVnVQa1owU2g2d0I2Y3hnUTJITXpNN0NyUVBFTVVETXV2YjF4UExQNm5CQktGaUZDS1VOX2NWancyMGp6ZUJsbHZwdHIwcDBfVlRfNkJBcGtoY28wUDF6NWY3R2s1UFBHT0NBdEI1ZUdLM3NkOWNGd0x1Mnc?oc=5",
+      "published": "2026-11-16T18:37:41+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Man Utd decision on January striker signing - TEAMtalk"
     },
     {
       "desc": "ENJOY top class European nights under the lights at iconic football grounds like the San Siro and Celtic Park. Champions",
@@ -3969,6 +4019,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Premier League referee appointments: Matchweek 11 officials - Premier League"
+    },
+    {
+      "desc": "Alisson set to leave Liverpool as Juventus end interest in Brazilian goalkeeper Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T20:00:59.866279+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcTRfNTNiVWRXTG9CalFrd1RINXJUYVpSbXZrbF9OTFdiNEU4NEtIQkh0V2psWkp0LWprY0ZNOGtESUdhNXdwR19XRVk2VHBwTEROR2U0UkdEQmgtQTNpYU9GSjhaVXVFLWFqZ01fMnVFUDVCQ3AxREFac0VqWEM3ZUZacTg3T0c0ZmpqQkI5LWJsY1ZJUGlPS2dUU2ZxYTJtc0RMQWdCN2JjRVFwOVNzZVVPUjVET1NqOWhn0gHAAUFVX3lxTE1DeE5waDRqNHY3QVJGaDc4dGhLRDMzZ251YlBNSGNZZmFldzZQbm9XNmZ3OVJrbnFpQzNUYV9qejRzZVJzaC1YNWhKbDBvQndPd1lPZnZ4aGIxUnJRY2FOa1BCTWt1b1dpeGhzSlZRc3BibVhGRVJqTDl3NTdqSW9nT3EwWHJkbGFOUjNNNFlSZWI2dWJqS05MUzVLOTlFS3ZPRmpTQ2hiR1NrQmZnbVhaMkladkJBRlZUcUpHVzFOMw?oc=5",
+      "published": "2026-11-16T16:01:03+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Alisson set to leave Liverpool as Juventus end interest in Brazilian goalkeeper - Tribuna.com"
     },
     {
       "desc": "THOMAS TUCHEL hailed a “statement victory” in Madrid on Sunday night as England beat world champions Spain 3-2 to top th",
@@ -4429,6 +4489,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Dino Sani dead at 94: Brazil legend and oldest surviving World Cup winner dies as emotional tribute paid"
+    },
+    {
+      "desc": "Thomas Frank 'finalising' Crystal Palace deal as top insider reveals Chelsea man is coming with Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T20:00:59.866577+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9fcUxBSDMzcUtrR2YxVmx2dkFVdlQ3RnVzWEpQb3R0TUxMdjlTZ2laVEJLT3lpSFpxWlhCQWthS0taODJybl90ZjgtcTU0RWtjVHhEUnByaEFlMzg0UUp4VlVERDAzaUZsUHVibkhQSVRCdEU2UFhV?oc=5",
+      "published": "2026-11-16T12:32:09+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Thomas Frank 'finalising' Crystal Palace deal as top insider reveals Chelsea man is coming with - Football365"
     },
     {
       "desc": "Andy Robertson will take over from Kenny Dalglish as Scotland's most-capped player when he captains his country against ",
@@ -5159,76 +5229,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "'I don't think many clubs in world football have a better 100 players than Liverpool' - Liverpool FC"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T07:01:03.091915+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqy0el2jy17ro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T06:23:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "Declan Rice new Arsenal contract update as Fabrizio Romano reveals final stages now.arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T06:16:55.936706+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMC1OQ0cwaF9leFFFV2cweldUVFFPVTRwS0xpZ05LUXF3VFJxaEtMSnlJeWRCaGw1V1FxR1hjVk1pbzRVbzBSV3JTQUdlbVlITlhLTWFjcVVweEFkSURodzZxVmlVc016Z1cwQllOQzdWcWpyTm5UcVY2YndEYjRBMjVueC1tdTFValYwcFdJVlVHbXUyM3dua2VUS0ZydW5aZVNRTVJSRkU5dzZDeFJxZGxma1d0cHlBcTVz?oc=5",
-      "published": "2026-11-16T06:11:32+00:00",
-      "publisher": "https://www.nowarsenal.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Declan Rice new Arsenal contract update as Fabrizio Romano reveals final stages - now.arsenal"
-    },
-    {
-      "desc": "Manchester City squad ladder: Big drops for Donnarumma and Guehi, but Ndiaye is on the rise The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T06:00:58.298823+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMzVSLXl4andzSXpMMEJNSjR1VFFwUU04blFvSFVxUnBLaHA1SEpSTW1DT0VWQ2QzMjNQUTZ2cm1vemhzV0dBbVc2c3owS0l2TkJPZ0dfYUdSTXRJcFJUM2FLN1hGanF0WG5UeEZXbGZVaUtqUWo2c3FMc0FUSEhaQk9MVk1rR29aUkdwM3hqMXUyd1l4cnhTYVN4SDFQdlRTNktzRUlWSnMwdw?oc=5",
-      "published": "2026-11-16T05:27:56+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Manchester City squad ladder: Big drops for Donnarumma and Guehi, but Ndiaye is on the rise - The New York Times"
-    },
-    {
-      "desc": "Lee Collins - Yeovil Town - Defender، الملف الشخصي والإحصائيات | بريميرليج Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T07:01:03.091965+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4zUFh6cWxUdnhFcW1xOFprQ21YZ2RHTzFvX1FQX0x3OGpnN0FlUHRIaTFQNEZpcTRlVjR3Y3cyTjI4QTFFalNTZ2JMdG9PUjhXOVNqZk0zX0dPZWdVa0xVblVWQm9aWkpEZHdid0Y0Y1dza2s?oc=5",
-      "published": "2026-11-16T03:41:44+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Lee Collins - Yeovil Town - Defender، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
-    },
-    {
-      "desc": "Man Utd: Fabrizio Romano reveals truth about Red Devils interest in Calvin Bassey Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T10:00:50.273237+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYWdfQWxiOUNUWFc0VTBfSmFoM3BOOXlISWdjM0tkYklSSGVJUnRhcFBPNms1TE9jb2pGaHNJUWZpdXowbEZWYWlfdXUyTVBZUmJqQ0tiVEZrWXBkOW5VWDVMbGlWVDc4VVp6WlFZNGhJUE1TZFY4MUJ4MXhKZ2dacnZn?oc=5",
-      "published": "2026-11-16T03:31:37+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Fabrizio Romano reveals truth about Red Devils interest in Calvin Bassey - Football365"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T06:00:58.298859+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-11-16T02:06:06+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T04:01:01.175911+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
-      "published": "2026-11-16T01:23:24+00:00",
-      "publisher": "https://login.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
     }
   ],
   "processed_urls": [
