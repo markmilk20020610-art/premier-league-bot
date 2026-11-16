@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 38347,
-    "output_tokens": 4496,
-    "requests": 6
+    "input_tokens": 44488,
+    "output_tokens": 5041,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3709,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T20:00:59.863191+00:00",
+  "last_scan_at": "2026-11-16T21:00:57.662586+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3730,6 +3730,46 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Romano reveals Balogun to Man Utd state of play: 'I wouldn't be surprised' LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T21:00:57.665180+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQYi1WWW5JWkVzZjZFYnBldFZRZUsyUklLT3FyMXZMZ2tLamhvb2pwZHI1Y2R0S1ZSRkc5UkNRYkJ5ZURYSXdyX2xmVlVFMnlfMkRoX3FZLXRXUDZUdE5TZEZSRy1maXJWNjlsQXBEejNFUi1MclJNaURscVNFbHJiNEg0dllBRzctcUhGVnBZT0dkTEhUQ1FXMFpISllvSmh1TkpkSWtDMUE2UTV5ejh3TGViUEdqSW9JZXlxVk1CUkNrdE5jTU5JeEpvcUtldldSSVhuN0l0ck5td3VPRFFGUQ?oc=5",
+      "published": "2026-11-16T20:55:38+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano reveals Balogun to Man Utd state of play: 'I wouldn't be surprised' - LiveScore"
+    },
+    {
+      "desc": "Zubimendi Injury Update: Hamstring Scare Puts Dortmund in Doubt (16 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T21:00:57.665205+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPV0ZlUzFRLUhYVU1WSEN3MmJUMUdfeXdGUk9qclc0QUlKYzYxczRwUl9qbzU4WWdVLXVja1EyR0Q3UjVjaWJRZjhtbWZ1MVQ3TDFYSVZBQ0lHcTRxQkpFRnRuOTN4bnNMQUVwMDlnQTViY0JidHY5MkliMDZUUUoxdXcweGdVRkVmU1ZKdXhtZU0?oc=5",
+      "published": "2026-11-16T20:45:40+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Zubimendi Injury Update: Hamstring Scare Puts Dortmund in Doubt (16 November) - The False 9"
+    },
+    {
+      "desc": "MICHAEL CARRICK looked refreshed and replenished after being publicly spotted for the first time since his dismissal as ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T21:00:57.665226+00:00",
+      "link": "https://www.thesun.co.uk/sport/41042129/michael-carrick-man-utd-exit-mauricio-pochettino/",
+      "published": "2026-11-16T20:12:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Michael Carrick seen for first time since Man Utd sacking as fans say ‘looks five years younger already’"
+    },
+    {
+      "desc": "CHELSEA’S season has turned into a puzzling tactical experiment under Xabi Alonso. The Blues currently sit fifth in the ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T21:00:57.665245+00:00",
+      "link": "https://www.thesun.co.uk/sport/41041856/xabi-alonso-tactics-fail-chelsea/",
+      "published": "2026-11-16T20:02:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why Xabi Alonso’s tactics AREN’T working at Chelsea with weird and reactionary changes hampering Blues"
+    },
     {
       "desc": "Andy Robertson has broken the record for the most senior Scotland men's team caps, surpassing the feat held by Sir Kenny",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -3769,6 +3809,16 @@
       "publisher": "https://english.ahram.org.eg",
       "source": "https://www.thefa.com/rss",
       "title": "Palace appoint Frank in quest for Premier League survival - World - Sports - Ahram Online"
+    },
+    {
+      "desc": "'It was like meeting a kid at a sixth-form careers day'. That was the verdict, slightly unflattering but endearing all t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T21:00:57.665331+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16296111/james-trafford-england-goalkeeper-manchester-city.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T19:00:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "The boyish, Lego-obsessed son of a farmer who quit Man City to become England's No 1: How James Trafford - with £95m spent on him - is matur"
     },
     {
       "desc": "LUKE SHAW was clocked at Manchester United’s training ground last week and it remains to be seen if he clocks back on no",
@@ -3861,6 +3911,16 @@
       "title": "Man Utd shirts reduced by over £35 including this season’s kit in Black Friday savings – throwback kits up to 60% off"
     },
     {
+      "desc": "Crystal Palace appoint Thomas Frank in quest for Premier League survival The Straits Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T21:00:57.665496+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWlUxX3pZNWRRSVNkVG1CakhsdVlyWjFVeVJLTVBxbXpoa0RIN0h4Q0dzSk56LWtjejBUOUNzRFEzeml1ZHFfWTF5eW9IZ1BYWDBNZjQxc2lOdjhjd2I5NkRJaTNLbHQ2a1pjUFlRWW93aXpUNVl2eVpPOE9NdmxLT3liVEFZSTFIc3o1d0dOMjVoQTIxUHNmVmxlZFcxY3ZpWk9hSzZ4OA?oc=5",
+      "published": "2026-11-16T17:24:00+00:00",
+      "publisher": "https://www.straitstimes.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Crystal Palace appoint Thomas Frank in quest for Premier League survival - The Straits Times"
+    },
+    {
       "desc": "CRYSTAL PALACE have announced Thomas Frank as their new manager after a disastrous Premier League start. Frank, 53, retu",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-16T18:00:49.526240+00:00",
@@ -3899,6 +3959,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Uefa announce candidate to stand against Infantino for Fifa President after being snubbed by Arsene Wenger"
+    },
+    {
+      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T21:00:57.665576+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
+      "published": "2026-11-16T17:08:02+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     },
     {
       "desc": "A FOOTIE ace who allegedly punched a pitch invader could face jail after being charged with a criminal offence, The Sun ",
@@ -4271,6 +4341,16 @@
       "title": "Liverpool vs Man Utd: Get £20 free bets + 50% Bet Builder boost | BOYLE Sports"
     },
     {
+      "desc": "Vote for your favourite late Stamford Bridge winner: Estevao or Palmer? | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T21:00:57.665785+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMUlKSGRTd1ZRY3NpZFdiSDFpRkVQZ21sbzhpcmVHRGZHajZFMWdudC10RTE3ODBkMlQzZTdkekdNX0t3amx3WDNMbGNnT2dzeDRZQmdsclctazJHakpHRUxJZnJsS2hHWHQ2MjczZTFfQzJFRFpVeC01dnNOZkpSNTlJMDIyR1lfcl9rOGJ2MENMTUJwNUFUOE9WbzNqUDNtbmNia0NtdjNWaHpEeHltQjVnbWtTQQ?oc=5",
+      "published": "2026-11-16T14:35:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Vote for your favourite late Stamford Bridge winner: Estevao or Palmer? | News | Official Site - Chelsea Football Club"
+    },
+    {
       "desc": "Cole Palmer: My Football Firsts | News | Official Site Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-16T17:01:02.684404+00:00",
@@ -4359,6 +4439,16 @@
       "publisher": "https://theshed.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "- Chelsea Football Club"
+    },
+    {
+      "desc": "Leeds United U21 ضد Liverpool U21، الوقت والتاريخ والبث التلفزيوني والإذاعي | 2023/2024 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T21:00:57.665874+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcmp4UUR0XzhNb1ZBSjhfNVNBM0o1THpsSGQ1eDJ1SDZMeVlfZUVGNmdlSHQxaDBRMlE2Z0YtTVZJMHZDNlFJUkM2d3hGV2hDYk82RmZoeG94dy0tUjVXM0JFUUs5OU9WTk1YZ3d1SmFNTzhURVFXMnBRZU9kM3FyakdyVzIyUTltbS01SGxB?oc=5",
+      "published": "2026-11-16T13:51:36+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Leeds United U21 ضد Liverpool U21، الوقت والتاريخ والبث التلفزيوني والإذاعي | 2023/2024 - Premier League"
     },
     {
       "desc": "JUDE BELLINGHAM is well on his way to toppling a number of England records. Jude Bellingham earned his 62nd cap for the ",
@@ -5139,96 +5229,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Basel ضد Arsenal | التشكيلات والقوائم | 2016/2017 | UEFA Champions League - Premier League"
-    },
-    {
-      "desc": "CRAIG HOPE IN MADRID: It would not have mattered had England conceded a late equaliser. To draw comparison with Argentin",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T08:01:01.065649+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16290277/england-tuchel-bellingham-spain-victory.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T07:42:06+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "England's evolution: How Thomas Tuchel and his players learned from Argentina, have two new stars with their names inked in the XI - and Jud"
-    },
-    {
-      "desc": "Homophobia and transphobia are on the rise in English football, with new data revealing record numbers of discrimination",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T08:01:01.065668+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c617ked5wn9po?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T07:26:27+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Homophobia on the rise in football - what is your club doing about it?"
-    },
-    {
-      "desc": "Liverpool: Slot’s first major signing to demand exit as Fabrizio Romano reveals the final straw TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T08:01:01.065686+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSTYyeXpVN3dtWUlYeW40OHNzRF9VcVF1R0l5NnFaOW9OMmZVYjRYMkpId0wwT2NXaXM2UHp6VmYyaE1WSUd4akJJeDFUVGxVeTYyLXZ2Rk5ldEw1blZDZFVpdldaUmhtOHN3M3h6RXRJcG5ZbHlLVXBMUVNuVVQxbHNzUm44ZTBXdENybTltNzJvQkgydVo4enBHWWdfb3pY?oc=5",
-      "published": "2026-11-16T07:18:28+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool: Slot’s first major signing to demand exit as Fabrizio Romano reveals the final straw - TEAMtalk"
-    },
-    {
-      "desc": "As Scotland prepare to conclude their Nations League group campaign in Switzerland, there are concerns about how new hea",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T08:01:01.065704+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c64gnpvdld40o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T07:09:40+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "What do Scotland do about 'scunnered' Gannon-Doak?"
-    },
-    {
-      "desc": "ENGLAND star Jude Bellingham celebrated a famous win over Spain by kissing his girlfriend. Bellingham was in familiar su",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T08:01:01.065721+00:00",
-      "link": "https://www.thesun.co.uk/sport/41034201/jude-bellingham-hug-girlfriend-chat-dad-england-spain/",
-      "published": "2026-11-16T07:06:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Jude Bellingham kisses girlfriend Ashlyn Castro and beams as couple embrace after epic England win in Spain"
-    },
-    {
-      "desc": "Premier League Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T15:00:56.600559+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxSm9YQW51ZlY5cmJUYXJ4RVBSNFpqZkFvMFYyZ1hDSW44QXE1UVE2d3NFdEZmeFVUbEUtZXRybUJ4ODl3U1Z3WHV1ZDdZdTVabUlsUk41cmppNWM?oc=5",
-      "published": "2026-11-16T07:04:52+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League - Premier League"
-    },
-    {
-      "desc": "Fabrizio Romano Transfer News: Man Utd priorities, Nusa price, Barcelona denial FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T08:01:01.065738+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQUHFJUjhIdmxDZmFsTFdnVEZpLS14OURnUmpXM1hqYVBtUEJENGxRYjJZS2RPZVpCeVF2Mkd6MUF6WkdPQ3psZ19mcTBJcEdEZC0wNjlIc054RUpTZkJrT0Znbml2bnNzcmtyQzhZdDVpUkZfMFFKTUxfMTRnUGpwNkdJdFBiRHJpdkpvaUl4SXRrcWVfN202c19oaU0wLUFOeDZlbzNKLTBtZGE0Y01IajhPUWJaNnlYNzhUcDFMdm9DUTAwY043c3J0dy1fMFM5VWZIVTZNUlZHV1J3V3JfSEtGcmlMeE96?oc=5",
-      "published": "2026-11-16T06:58:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Transfer News: Man Utd priorities, Nusa price, Barcelona denial - FootballTransfers.com"
-    },
-    {
-      "desc": "’A serious possibility’: Romano discloses two signings Man Utd plan to make in January for Pochettino LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T07:01:03.091888+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxONmktR2k1X3JaY2ZFdk53OFhHbGdRRkVENWlFWmJ4MWlLcmMxdGNGWU5KMkJxRFBoR3FPaEs4Umg2eWdSZ0NRS3FuZ1hPNDgyaW41WVB6dkk0andIVzg4MXdGNnZkSG03dEhLdkRQTkUwdjEtWWN0dmk3dmhPSjhLdExkcmxnWU1tampuS3M3OFJDaG9sUXBROVNKLW1yOWtZTzd6S3h6cVBJVDVBX1RNSHdxQUJNZ04xWFRiMHlFYWlZblVlbkxNaV9KcnIyWWNyWWlqRkVLMzQ5UE16Q0VNZV80dThMOGNiV1JCY1Bfb0wxWmIwaW5QTFZkQQ?oc=5",
-      "published": "2026-11-16T06:35:42+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "’A serious possibility’: Romano discloses two signings Man Utd plan to make in January for Pochettino - LiveScore"
-    },
-    {
-      "desc": "'I don't think many clubs in world football have a better 100 players than Liverpool' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T10:00:50.273184+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUHRnTWFsNEVUR1Ffd0QxSDlodENfMVdIRl8tNDJRdlJyZzZmREdqS0oxNzVBSzVVN2hVOGVQbG1mSk5GQ1A3cFFxZHZVbWRSczdvX2w2bzlFVWE2LXBFa21qdjdELS1NeHdDNGlBTURoUE5IQzc4T29NSTM0WEZnUzF6UEtiQXN3QzRJQWFhMklFbF91NXlzdXQ3SjBpMkkwd2hV?oc=5",
-      "published": "2026-11-16T06:25:43+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "'I don't think many clubs in world football have a better 100 players than Liverpool' - Liverpool FC"
     }
   ],
   "processed_urls": [
