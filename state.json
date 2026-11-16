@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 14,
+        "calls": 15,
         "errors": 0,
-        "requests": 14
+        "requests": 15
       }
     },
-    "calls": 14,
+    "calls": 15,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 85244,
-    "output_tokens": 9345,
-    "requests": 14
+    "input_tokens": 90404,
+    "output_tokens": 10070,
+    "requests": 15
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3674,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T03:01:12.843066+00:00",
+  "last_scan_at": "2026-11-16T04:01:01.173580+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3695,6 +3695,16 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T04:01:01.175911+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-16T01:23:24+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
     {
       "desc": "A HERO footie doctor who saved two star players when their hearts had stopped now faces being struck off over sexual mis",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3844,6 +3854,16 @@
       "publisher": "https://www.nowarsenal.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Crawley Town to sign former Arsenal goalkeeper as a free agent - now.arsenal"
+    },
+    {
+      "desc": "Internationals | Tough night for our players in UEFA Nations League action Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T04:01:01.176279+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeGFhWk8zTkl4TkswVDd1d2Nfbk1FVXo1aUppZkE1bkJkQ3oyRHFfZWNxbVJ5aXEtWjczQjdfZjFfUWp4aVRHbTFISm5uemRPOGJwMjA1UnpXdnd4cXUxWk00WVNiUXduNFBNaEx1LUotaElqTkhzUkhyUm5LZ3hwOW9jM1VIQ3ROVTVBVkdVYjNOOVZQQWlqaHBteThjT1ByTV9tMVNGWlBYMHRyanYwWXhBbVFzbVhoNGc?oc=5",
+      "published": "2026-11-15T21:57:08+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Internationals | Tough night for our players in UEFA Nations League action - Tottenham Hotspur"
     },
     {
       "desc": "ENGLAND put an end to Spain’s 43-game unbeaten streak with a thrilling 3-2 victory in Madrid. Harry Kane, Ezri Konsa and",
@@ -5174,26 +5194,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Manchester United Sunderland | 2010/2011 | Premier League | Highlights - Premier League"
-    },
-    {
-      "desc": "Gyokeres scores twice to secure promotion for Sweden Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T10:00:50.307165+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOOUU0T0NmTkVwMFNIdkxCblVUcHc1Y2o3anlnanE4WE9sTllQZzkzaXV0ZUZONUdrbFByNnVEQWJnQ21DRUZxakgxZEpnaUIzVmVUTnJ2RmhLYmkzaDVaRm54bV9KR1ppY2E4cllwOEZPN3RyNzFtMlZ0MEZjS0V5Z25MVUstSGlUaWNrdGFZeGItd0hmMEVxS0NR?oc=5",
-      "published": "2026-11-15T09:47:20+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Gyokeres scores twice to secure promotion for Sweden - Arsenal.com"
-    },
-    {
-      "desc": "The top stories and transfer rumours from Sunday's newspapers...",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-15T11:00:53.502727+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612415/x-paper-talk",
-      "published": "2026-11-15T09:47:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Papers: Fernandes wants to see if Poch is 'real deal' before signing new contract"
     }
   ],
   "processed_urls": [
