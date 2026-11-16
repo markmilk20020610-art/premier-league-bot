@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 22,
+        "calls": 23,
         "errors": 0,
-        "requests": 22
+        "requests": 23
       }
     },
-    "calls": 22,
+    "calls": 23,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 120892,
-    "output_tokens": 15187,
-    "requests": 22
+    "input_tokens": 126908,
+    "output_tokens": 15742,
+    "requests": 23
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3674,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T10:00:50.269741+00:00",
+  "last_scan_at": "2026-11-16T11:01:07.063288+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3695,6 +3695,96 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MANCHESTER CITY fans can fork out a whopping £740 for a matchday ticket for a new nightclub-style hospitality suite that",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T11:01:07.066243+00:00",
+      "link": "https://www.thesun.co.uk/sport/41035474/man-city-nightclub-style-ticket/",
+      "published": "2026-11-16T10:57:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man City flogging match tickets for ‘90s attitude’ nightclub-style suite with ‘free flowing beer’ for eye-watering price"
+    },
+    {
+      "desc": "RANGERS fans can beat the queues and book their seats at Ibrox this season in fine style. Following the highly anticipat",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T11:01:07.066268+00:00",
+      "link": "https://www.thesun.co.uk/sport/39467048/rangers-ticket-hotel-packages-scottish-premiership-ibrox/",
+      "published": "2026-11-16T10:57:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Rangers ticket and hotel deals for matches at Ibrox Stadium this Scottish Premiership season"
+    },
+    {
+      "desc": "NOTHING comes close to the electric atmosphere of a top football clash at Celtic Park. The ultimate, hassle-free way to ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T11:01:07.066289+00:00",
+      "link": "https://www.thesun.co.uk/sport/39466749/celtic-match-ticket-hotel-packages-scottish-premiership/",
+      "published": "2026-11-16T10:56:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Celtic tickets with hotel included starting from just £116pp for Scottish Premiership matches"
+    },
+    {
+      "desc": "ASTON Villa fans can enjoy the electric atmosphere of matchday live at Villa Park with these unmissable ticket and hotel",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T11:01:07.066306+00:00",
+      "link": "https://www.thesun.co.uk/sport/39504960/aston-villa-tickets-hotel-premier-league-villa-park/",
+      "published": "2026-11-16T10:52:33+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Aston Villa ticket and hotel deals for Premier League and Champions League games at Villa Park"
+    },
+    {
+      "desc": "Amar Dedic's escapade with a bow and arrows was certainly not the first time a footballer has found himself in hot water",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T11:01:07.066354+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16271235/Footballers-fascination-weapons.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T10:44:42+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Ashley Cole accidentally shooting a student, bare-chested Marcus Bent threatening police with a meat cleaver - and an ex-Barcelona star firi"
+    },
+    {
+      "desc": "ENGLAND are on the same level as Spain, according to their No.1 Unai Simon. And the La Roja goalkeeper says the world ch",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T11:01:07.066371+00:00",
+      "link": "https://www.thesun.co.uk/sport/41035580/england-spain-madrid-unai-simon-aymeric-laporte-best-team/",
+      "published": "2026-11-16T10:44:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England are second best team in the world and on the same level as Spain, says rival after incredible streak ends"
+    },
+    {
+      "desc": "LFC and Standard Chartered's 'Play On' logo swap returns to help keep girls in sport Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T11:01:07.066391+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZEtJTUlhQ25pT2VjNjU3eFdpVG9GLUZiaGJnZXlOcWxqU1YtcmRFVnl3RVg0MmFkTHBEUm1YZktfUUhiNkRCdEJld2hULUp4bTg0djRkcDJsMWNNMmNNYVloOFE0MUhEa1lBalNhRUdXcGlmSWhjWVZQa09UOHhHbVRESWNHbkZJTkI1d3QtcVJWeWdWTlBPaXpsVlc3ZG16dXhYckV6V0F3VkJnZUR2c0NKcw?oc=5",
+      "published": "2026-11-16T10:31:54+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFC and Standard Chartered's 'Play On' logo swap returns to help keep girls in sport - Liverpool FC"
+    },
+    {
+      "desc": "Man Utd Transfer News: Romano on January Priorities Dave.Sport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T11:01:07.066408+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1BYndSbzEtX2UtTDl2ckxRQjB4MXB0SzZmcHltMXEtY211ZDA0REdEUDRWZU5yVnA5NHgtdlNzR05NblFkazJmVVFDWjVhX2YxbTdGNzZSb2dmNEJMelhmZnNuZ3I?oc=5",
+      "published": "2026-11-16T10:22:48+00:00",
+      "publisher": "https://dave.sport",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd Transfer News: Romano on January Priorities - Dave.Sport"
+    },
+    {
+      "desc": "FOOTBALL fans looking to score a pre-Christmas football away day in the UK or Europe can bag an unbeatable bargain. Supp",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T11:01:07.066479+00:00",
+      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
+      "published": "2026-11-16T09:59:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Black Friday 10% discount on football travel trips including Real Madrid, Barcelona, Man Utd and others"
+    },
     {
       "desc": "City v Fulham: Kick-off time and TV information Manchester City FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3724,6 +3814,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League star’s brother plays first game after serving FOUR-YEAR ban for doping"
+    },
+    {
+      "desc": "Internationals: Barcola and Jacquet help France to Nations League win over Turkiye Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-16T11:01:07.066527+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzF3VFI0YVNDUVJKZVVoN0V4RXd0SGlQbEVxVHFxNGluSVRmWDJja194eUxweTlYWG5yMDYzR2h0S1k1SVdwWHViQjJwZEZ2MHlrQ2JmS2tQRnQtX1JJMGdqMnRPSEVwOXNLbmJ3QTBQM1g1eU8xdmw1d0d5cUVUcXBnYi1tMmQ4X2cwaUV6MXNhNXNlVkx6cmFpckV2Zw?oc=5",
+      "published": "2026-11-16T09:17:57+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Internationals: Barcola and Jacquet help France to Nations League win over Turkiye - Liverpool FC"
     },
     {
       "desc": "JUDE BELLINGHAM faces an awkward reunion with Real Madrid team-mate Marc Cucurella after lashing out at him during Engla",
@@ -5094,106 +5194,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Pitch perimeters under review after Vigar death"
-    },
-    {
-      "desc": "LIONEL MESSI left Juventus wonderkid Kenan Yildiz speechless after gifting him the custom-made boots he wore during his ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T14:00:52.736375+00:00",
-      "link": "https://www.thesun.co.uk/sport/41029605/wonderkid-hails-crazy-gift-after-messi-sends-boots/",
-      "published": "2026-11-15T13:47:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Wonderkid hails ‘craziest gift’ after Lionel Messi sends him the custom-made boots from his last Argentina game"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T18:01:00.150129+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
-      "published": "2026-11-15T13:47:36+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "THOMAS TUCHEL has excluded three England stars from his squad just hours before facing Spain. The Three Lions face the S",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T14:00:52.736395+00:00",
-      "link": "https://www.thesun.co.uk/sport/41029822/thomas-tuchel-england-spain-nations-league/",
-      "published": "2026-11-15T13:39:47+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Thomas Tuchel excludes three England stars from squad just hours before Spain clash"
-    },
-    {
-      "desc": "Spurs Men's Grey White Hart Lane Hoodie I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736415+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNmptZlpnMzNkNVJrdGNmWEFKbWtYZXVxV1pISW1HYXFjM09XMGFPUkhOeUx3WnFGZkxhSmdBZzQxbEpRYmFuTkt5OUpzTDUxellDY2NuMDFaZXpLdElBalVOOTFIeXE0N3REZVZacV8wbXQ0eHdINW52WlJYUFpjWFBoWXFxWk1JVzROYUFENDVwTF9XakFXNVNsclZraVU?oc=5",
-      "published": "2026-11-15T13:23:19+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Men's Grey White Hart Lane Hoodie I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Men's Khaki Zip Polo I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736433+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMTdHUVdtTnU2X1Z2a0VBRzZBSjBOaHRaVVlVMjFXVTVKbHZPdEFZYWdjRWEzaFJmejkyZmlnTjR4cGhmNGIxVEtITGZKY05kZGZteDFxb1E4ZFFLMTZyVmljdUNuVnZKOHZ6VjVrcnRKdzY4ZXlLdjRnMVY2TVdZS1BaM290TWZBSjV5dnhR?oc=5",
-      "published": "2026-11-15T13:23:18+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Men's Khaki Zip Polo I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Nike Men's Slate Dri-FIT Polo I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736449+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNTh1VVlfRkxUNzNnNTdabnIyV3hVdUNYczlQV1NpQ1hYOWNjeGFSREptNnQ3MVFKR0tJWEFBcFhxR242cHFKSTlWVGxYMkhrUjVDSHRWOEZZRVJNeDgyb1ZYcXI2QnU4ZEVvcGxlWmxHaDh3NmRZZkJtUFhiNFA4aFVXSlF1enRVTHRJS1JYYXF6VGNNMjRFa2JB?oc=5",
-      "published": "2026-11-15T13:23:18+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Nike Men's Slate Dri-FIT Polo I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Nike Men's Navy Dri-FIT Polo I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736465+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNc0xoYVJfSWZRTDd1c0wwT3R6dnBXOGlNTTFIczM5REtpZFNodElvNm9Md1ZJZEtFb2tYYkFIRHFsYXZFRUhFSmRwb3FsSjBYY2xRcnV0aXJtTG5mU3NxSjJtVmJqSUlmZkRrUFFjT0I5Qi1WVERhdkdIN1FZU2NKNDg2WkhZRDJzWFlTTmhiUjQxNklkSGtlag?oc=5",
-      "published": "2026-11-15T13:23:17+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Nike Men's Navy Dri-FIT Polo I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Men's Navy Heritage Raglan Zip Sweatshirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736482+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ012b2U0RS1IQXJTM0RRNndrcHZuR2hfZEk4UVZDNzFuWGsxYzZrX0VrSVI1Z3hqSGg2WERQZDU4YnFyaUFmQ0FLZnhDbXFFdHpSVnpSZTlubUpoSUt6UVo0dmp4WURZUlFBLXRtMjRJVUE5VkNscUhpTEZjb2E1Rm0xT202WmxMLV9WREtsZTdrbVFPVWhPRk9XQWluaE1DNWstM0g4NVVHQQ?oc=5",
-      "published": "2026-11-15T13:23:16+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Men's Navy Heritage Raglan Zip Sweatshirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Nike Men's Black Gilet I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T14:00:52.736497+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWjlyaEtxdGhyakpmTmJ2aFBqUjJzTUtqSzhpcy1ONlBCakR4UDFraDhUa3JDYmd1bWhCXzhvUTZRaUhqdVF1dnNEZDVkbGZmSlZRaHdDUkFCbHlFejZfdFIxOWNnV1R3THdvaG1fUFpPUFZYdE9yeENxRHhadk1HUHF4UXIxRlhpREhnQjd6R1g?oc=5",
-      "published": "2026-11-15T13:23:16+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Nike Men's Black Gilet I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "MODEL Joana Sanz has confirmed her split from former Barcelona star Dani Alves. The 34-year-old beauty, who stood by the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T14:00:52.736516+00:00",
-      "link": "https://www.thesun.co.uk/sport/41029415/dani-alves-wife-joana-sanz-split-barcelona/",
-      "published": "2026-11-15T13:16:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Dani Alves’ model wife Joana Sanz confirms breakup with former footie star, 43, after he took up new life as preacher"
     }
   ],
   "processed_urls": [
