@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 25,
+        "calls": 26,
         "errors": 0,
-        "requests": 25
+        "requests": 26
       }
     },
-    "calls": 25,
+    "calls": 26,
     "date": "2026-11-16",
     "errors": 0,
-    "input_tokens": 138883,
-    "output_tokens": 17176,
-    "requests": 25
+    "input_tokens": 143062,
+    "output_tokens": 17693,
+    "requests": 26
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3674,7 +3674,7 @@
     }
   },
   "last_morning_report_date": "2026-11-16",
-  "last_scan_at": "2026-11-16T13:01:18.438911+00:00",
+  "last_scan_at": "2026-11-16T14:01:19.182831+00:00",
   "last_summary_sent_at": "2026-11-15T22:01:31.644966+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3695,6 +3695,46 @@
     "updated_at": "2026-11-15T22:01:31.634538+00:00"
   },
   "news_pool": [
+    {
+      "desc": "JUDE BELLINGHAM is well on his way to toppling a number of England records. Jude Bellingham earned his 62nd cap for the ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T14:01:19.185166+00:00",
+      "link": "https://www.thesun.co.uk/sport/41036437/jude-bellingham-beats-rooney-england-record/",
+      "published": "2026-11-16T13:48:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Jude Bellingham on track to shatter Rooney England record by THREE YEARS and could be one of fastest centurions ever"
+    },
+    {
+      "desc": "FOOTBALL fans across the UK often find themselves cheering on their team in front of the television on Saturday's - but ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T14:01:19.185204+00:00",
+      "link": "https://www.thesun.co.uk/sport/41037923/why-does-football-have-saturday-3pm-tv-blackout/",
+      "published": "2026-11-16T13:36:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why does football have a Saturday 3pm TV blackout in the UK?"
+    },
+    {
+      "desc": "THEY say you should never go back in football. But many footballers have been keen to try their luck again after making ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-16T14:01:19.185223+00:00",
+      "link": "https://www.thesun.co.uk/sport/41035922/ronaldinho-best-and-worst-football-comebacks/",
+      "published": "2026-11-16T13:02:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Best and worst comebacks as Ronaldinho returns, including Scholes’ Man Utd title glee and Chelsea icon’s nightmare debut"
+    },
+    {
+      "desc": "James Trafford was given a chance to stake his claim as England's new number one - and away to the world champions, he a",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-16T14:01:19.185245+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-16T13:01:41+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Has Trafford replaced Pickford as England No 1?"
+    },
     {
       "desc": "ENGLAND shattered two sensational records as they picked up a statement win over Spain. Thomas Tuchel's side notched a s",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3874,6 +3914,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Klopp says Infantino worse than Blatter"
+    },
+    {
+      "desc": "The Man City star's initial answer lasted for two minutes and 14 seconds, as he reeled off the teams he had represented ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-16T14:01:19.185420+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16294157/Erling-Haaland-Man-City-cheating-verdict-star-striker-insists-dont-really-know-incredibly-happy.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T11:26:25+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'Am I supposed to answer that?': Erling Haaland breaks silence and distances himself from Man City cheating verdict as star striker insists "
     },
     {
       "desc": "MAURICIO POCHETTINO is the “perfect fit” for Manchester United, according to club hero Teddy Sheringham. Pochettino will",
@@ -5144,56 +5194,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Analysis: How Bronze, Baltimore and defensive resilience inspired Chelsea Women to key win - Chelsea Football Club"
-    },
-    {
-      "desc": "It's safe to say Manchester United are going through a rough patch - and then some - at the moment, but many of their su",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-15T17:00:57.845617+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16281875/Inside-Sir-Alex-Fergusons-inner-circle-Man-United-legends-player-threatened-end-ditch-football-chief-cult-hero-striker-playing-38-sorry-Michael-Carrick-Old-Trafford-sacking.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-15T16:52:52+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Inside Sir Alex Ferguson's inner circle of Man United legends: The player threatened 'he will end up in a ditch' by football chief, the cult"
-    },
-    {
-      "desc": "Morecambe made hard work of reaching the FA Trophy next round Lancaster Guardian",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-15T18:01:00.149801+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSDczME1vY0NaNkhtdEpLOGYzU0JWQ1pFZm1sS2R0Y0xtaEFmdzcxRVBJdHVaaGx6ZnViaDNTVjM0eXJjQUk4THJBaTFCMktVdHE1c2NXekI1TV9qTVFNMG1falBuX21la2xyYm9PMG02Vm1vUnNEYXRnOS1nZ3hKRGtLR2pSOXloWDZQdENWWl9kZjhMVWl0MA?oc=5",
-      "published": "2026-11-15T16:50:00+00:00",
-      "publisher": "https://www.lancasterguardian.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Morecambe made hard work of reaching the FA Trophy next round - Lancaster Guardian"
-    },
-    {
-      "desc": "VIKTORIA VARGA stunned fans as she wore a figure-hugging dress on a night out with her friends. The ex-wife of former Pr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T17:00:57.845644+00:00",
-      "link": "https://www.thesun.co.uk/sport/41030590/viktoria-varga-graziano-pelle-premier-league-wag/",
-      "published": "2026-11-15T16:49:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Absolutely stunning’ former Premier League Wag wows fans in figure-hugging dress as she puts on leggy display"
-    },
-    {
-      "desc": "CHELSEA'S latest target is the son of Spanish royalty, who suffered a horrific rectal injury bullfighting in April. Real",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-15T17:00:57.845664+00:00",
-      "link": "https://www.thesun.co.uk/sport/41030593/chelsea-sign-bullfighter-son/",
-      "published": "2026-11-15T16:39:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea ‘keen to sign son of Spain’s greatest bullfighter, 19, in £25m transfer’"
-    },
-    {
-      "desc": "Tenerife play their first game since the death of striker Jesus de Miguel on an emotional day at the Heliodoro Rodriguez",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-15T17:00:57.845687+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqx2xn535yj8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-15T16:38:51+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Tenerife return to action after death of De Miguel"
     }
   ],
   "processed_urls": [
