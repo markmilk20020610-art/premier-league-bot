@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 30022,
-    "output_tokens": 2972,
-    "requests": 5
+    "input_tokens": 36503,
+    "output_tokens": 3777,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4024,7 +4024,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T19:00:55.911819+00:00",
+  "last_scan_at": "2026-11-17T20:00:53.404988+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4046,6 +4046,116 @@
   },
   "news_pool": [
     {
+      "desc": "MANCHESTER UNITED are set to make history by hiring their very first female coach EVER. The Red Devils are readying the ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T20:00:53.407417+00:00",
+      "link": "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach/",
+      "published": "2026-11-17T19:56:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd to make Silvia Tuya their first EVER female coach as Mauricio Pochettino create history with Red Devils staff"
+    },
+    {
+      "desc": "He has been training in Madrid in recent days ahead of a move to Real Madrid, and he has taken to social media to bid fa",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T20:00:53.407466+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16300607/JJ-Gabriel-Man-United-exit.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-17T19:47:13+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "JJ Gabriel confirms Man United exit: Star, 16, posts farewell video as he finalises move to Real Madrid after stunning Old Trafford chiefs w"
+    },
+    {
+      "desc": "TeenagerJJ Gabriel posts a farewell message saying Manchester United will always be part of his story, as he prepares fo",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T20:00:53.407491+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg2e4208zmo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T19:35:06+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Madrid-bound Gabriel posts farewell Man Utd message"
+    },
+    {
+      "desc": "‘Fake news’ – Tottenham fan relief at Fabrizio Romano’s latest Pedro Porro update Spurs Web",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407513+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMUdPb0hpV252bVQ5SldweDM2QWlSUFBzamJsdVZLQ2FUUTBVLTRrQnVIZzF0MW0xRXcydnllQ0JXUUpuLXBMSVhpUmtXTFBIc3dXZWs0LWQ2d3BWeWhiYWxrQk0zbnlPRkJ0Q2JDVzc1STg1YXN4Y2sxRTFOLWZLeEY3bWx6Q3hXaERzNUVtc3BGVTZZZmx5bGhiOFVFV0VsR1pXNjY1azkzMVpOakVLNTBIZzY?oc=5",
+      "published": "2026-11-17T19:31:34+00:00",
+      "publisher": "https://www.spurs-web.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "‘Fake news’ – Tottenham fan relief at Fabrizio Romano’s latest Pedro Porro update - Spurs Web"
+    },
+    {
+      "desc": "York footballer charged after altercation with pitch-invading fan The Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407531+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWXJnLWYtaGliNjIzdmNKNmpzVm4wZ0FaMGxKMXBHbmdubDNuVGQ4NERtZU5oWmx1LWdiNlRSVkppQld4QlU4NEd0SlA1LTVvWV90SzJ0a0R1enl2MkpvUlM3VDhFclBKeEVMbHNmYTByTjNBY190TUtuMnFla1BuY3MxSjJ0bHlqQXZ6ZjU5QzNvVEpJTmFPdFZhRlVzUl9l?oc=5",
+      "published": "2026-11-17T19:19:29+00:00",
+      "publisher": "https://www.thetimes.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "York footballer charged after altercation with pitch-invading fan - The Times"
+    },
+    {
+      "desc": "FA chair to examine Gianni Infantino’s Fifa World Cup sell-off plan documents The Independent",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407550+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcmFsUmJSQ3g1RHNrVzRadDNtT1pOdWVROWNnMzB1TS1BOHpRbUpxbURNc1NaR1ZmQXVTdml0ZHhzZ2c3Z09KSUdUY0NXczNtb0s1bGZuVmxfZDlBNG1ISm8wYjRiVFdqaDljVWRfbndqU1RFaWd0Vlk4YW1hZ1FScWE5TXhFdzNjNEpCbVNaVXNLM2l2YTdiOGZvNS1SRFZReFhBaXh2Tm01Z3pwQVE?oc=5",
+      "published": "2026-11-17T19:18:00+00:00",
+      "publisher": "https://www.independent.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA chair to examine Gianni Infantino’s Fifa World Cup sell-off plan documents - The Independent"
+    },
+    {
+      "desc": "Arsenal, England soccer great Peter Storey dies at 81 Sportsnet.ca",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407568+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcDhqcFFxZXZibmk3NHdXTXI1NkpSaFZnVWpvMk5peThBNGZkU1p1ZzVNT3loTnljM1lGT0dQUTRoQWE3dXUzcW9CUC13VURuUUI3M2pPUXkxaVpZYkhHY1dFMEJSR18xRDJQS0xhaWd3RnRiMUJobW5XQU1tQ2xQVVNjeUc2SDVEd0JidTdXSFQza3hXU2hCZUtwUW9CeGh3ZVQw?oc=5",
+      "published": "2026-11-17T19:15:00+00:00",
+      "publisher": "https://www.sportsnet.ca",
+      "source": "https://www.thefa.com/rss",
+      "title": "Arsenal, England soccer great Peter Storey dies at 81 - Sportsnet.ca"
+    },
+    {
+      "desc": "“I wanted to clarify…”: Romano delivers clear message on Barcelona interest in Tottenham star LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407587+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRHl4c0J4M3BiVEJXZXlzX2FVTm5KdHpPd1NJYTFzMC1CaXhYT19ZY01MTnUyY1dTcHlWMHlfVDNqN1IxRGFlUUs1MkhhQ1ZFVFNNNHZxNVJ4RWRKWFhRalZySnFoSzR2TjNfTThoQWVmdklGcnN5RDNGTFJVd2ZxTmVHb2JsdGxBZl9kbTk2c09RWU9kb0R6aE8wUnJvUFBYeDBvVXpsOWd3SnVPWUtocFpzSUc5MUJGTUZSeGZlT1Y2TlF3VDdVdWlFVkRhYjNsbGpFOHQ5Q1AzWlBTX3B4OHMtYmVoOVRERERpdzhkS0VPT0VC?oc=5",
+      "published": "2026-11-17T19:14:09+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "“I wanted to clarify…”: Romano delivers clear message on Barcelona interest in Tottenham star - LiveScore"
+    },
+    {
+      "desc": "Watch | Behind the scenes as Tommy Hilfiger style Liverpool squad ahead of Villarreal Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407605+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTGQ3cW13QnNXQmhwVjA4SVplbk5ZUTF6OUdHNXA5Wk8zbzdGbUx1aEIxck1UYmc4MTNXTUdqQ0twM0lqN3JsNzl0Ty1JTkdkWmhzNzZjM1g1S21DZXZEeTVqMlVuaWVUUy0yaFA5T2dyRmozbmlVUUdxLXNtVEdac0xreVFKTDRCQVdJaVJpdW5xRl85Rjgyc1M4Zw?oc=5",
+      "published": "2026-11-17T19:11:33+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Watch | Behind the scenes as Tommy Hilfiger style Liverpool squad ahead of Villarreal - Liverpool FC"
+    },
+    {
+      "desc": "David Ornstein’s The Athletic FC Q&A: Kroupi’s future and would Arsenal go back in for Vinicius Jr? The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407624+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUmFfSEZ5VUtJRzQwTXpfMDc0c3JpcVVWVTAtTlJrU0R5YU5aYkZpRmxvSUNSZ2lqMFBPMk9GNElQZ1hYSHZUWGt0M2oyZkNFNkUzblNEZmZJeVpDaUR5c0RuME94VWI2bUViY0NKTU9MUEVPNGRvaTJiSmpJcm1aWlluTU4yeVlyMVRMQkQwN25tdw?oc=5",
+      "published": "2026-11-17T19:09:53+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein’s The Athletic FC Q&A: Kroupi’s future and would Arsenal go back in for Vinicius Jr? - The New York Times"
+    },
+    {
+      "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino is set to crack the whip by introducing regular fat tests upon of hi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T20:00:53.407643+00:00",
+      "link": "https://www.thesun.co.uk/sport/41053324/mauricio-pochettino-man-utd-michael-carrick-usa-liverpool/",
+      "published": "2026-11-17T19:06:26+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino ‘to introduce routine FAT TESTS for Man Utd flops… despite also planning to host team meal’"
+    },
+    {
       "desc": "CHELSEA are set to be stuck with flops earning a combined £400,000 per week. But the Blues hope one big signing in the J",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-17T19:00:55.915303+00:00",
@@ -4054,6 +4164,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Why Chelsea are set to be stuck with 3 flops on combined £400k a week – but January transfer window could save season"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 RICE Pre-Printed Away Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407675+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWHc3dm5oOEk0eW5Ja08yVUZFVmdjakowTzFvTDhfV2RiQTdaMEI3YkJZOVNvQXh5Q2hmMndLbzQ3VlNuZ3FIWVFndGh1cGN4MVpBRlJXVlhsRkNEc2ZQOWY1U19nXzNCLVZCY2p0UUdndlBLUGh2Q3l0OHRHZDlwMEg4OUQxVjZLeXA1cmxsQkhWUWNFSHdFejVySnhGZXQyZlZkT05JZGtlMTZMU0ZnMVVmZlJ4aFZyQzU1bm03azQ1SjVYcTN4OQ?oc=5",
+      "published": "2026-11-17T18:59:06+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal adidas 26/27 RICE Pre-Printed Away Shirt - Arsenal Direct"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 EZE Pre-Printed Away Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407711+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdmZOMlhIcjJkVkZvOGFVemxhTFk0bnc0Z3VqWkQtaHVKdXJHRDBJY2g3QWhQd2cxc1I4SHNjSXRwRVktMFN4dFh5SXFrTHRBUEFXaHJVMlhyU1JjNVk0ZXA5eUx4TmhJdDBHYXpUM2M0OEVhSERFQndZVnctemItWTltQXBlRm00b3JfSDNBb0lWcDBWT1VXNFVoNDF3cmcySG94OFExY2hBanZzMEdERG1TY1diTmhyRzlWYUJZQ2pJUHh0NFE?oc=5",
+      "published": "2026-11-17T18:59:06+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal adidas 26/27 EZE Pre-Printed Away Shirt - Arsenal Direct"
     },
     {
       "desc": "JJ GABRIEL has sent a message to fans as he confirmed his Manchester United exit. The teenage sensation declared his des",
@@ -4086,6 +4216,16 @@
       "title": "Piero Hincapie officially signs new Arsenal contract - now.arsenal"
     },
     {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T20:00:53.407768+00:00",
+      "link": "https://www.skysports.com/football/wales-vs-portugal/live/554136",
+      "published": "2026-11-17T18:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Fernandes thunderbolt puts Portugal ahead vs Wales LIVE!"
+    },
+    {
       "desc": "JJ Gabriel has announced he is leaving Manchester United as he looks forward to his \"next chapter\" at Real Madrid.",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-17T19:00:55.915425+00:00",
@@ -4094,6 +4234,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "JJ Gabriel says goodbye to Man Utd amid Real Madrid agreement"
+    },
+    {
+      "desc": "Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T20:00:53.407795+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE85Z1c2LUJRZFdrZ0h6Slg0anpFSDJvQV9fX2pYRmlta1BHclhnT3hEYVlqbEI4YXpQaW5UaVBMczU0NFdYSktzS2ZFRGtFVXRFREo4d3VMQkFOT25CVjFlS0htT2VfdGFPaUhGM3EyWkFXZnBXNkkyRVdSWFo?oc=5",
+      "published": "2026-11-17T18:23:02+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea FC Store"
     },
     {
       "desc": "Piero Hincapie signs new and improved Arsenal contract to 2032 The New York Times",
@@ -4204,6 +4354,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Bompastor Press Conference 🎙️ | Video | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Voting is now open for the BBC Women's Footballer of the Year 2026, with five players on the shortlist.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T20:00:53.407990+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj20velkgnypo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T17:13:24+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Last chance to vote for BBC Women's Footballer of the Year 2026"
     },
     {
       "desc": "Arsenal adidas 26/27 GYOKERES Pre-Printed Home Shirt Arsenal Direct",
@@ -5384,166 +5544,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Transfer Centre LIVE! McKennie speaks on USA players reuniting with Poch at Man Utd"
-    },
-    {
-      "desc": "Fabrizio Romano confirms Man Utd’s first January transfer FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T09:00:53.108899+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxObjBQZTNycm5JWVdtLTlFZlRFVUR1czZSSko0OUh3MTJUczlzeG96cEFRZVhOSHJCTzFwLXI2eEllYjZYdmRIUTdKcG1YeWVyU3JNNmxKeDFycjBwTUlTcEVrTmk5YmFaV3VibFNWQnJ3bFpzVWF5ZGtHaGg3SkFEUkNEQ0VySFZYTXdKT05VMlV0Uzg2UUJxUXdhUUhUZEZRUFZjeWVBaWFNckVBdHVQWEFPS2hJZkxYcmFzTWllUWFsUHQzMmx0UmVvSUQ3ZDJIa1k4VFR6cGxqSkVaZUViWHlPZVY?oc=5",
-      "published": "2026-11-17T08:07:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano confirms Man Utd’s first January transfer - FootballTransfers.com"
-    },
-    {
-      "desc": "Jurrien Timber New Contract: Terms Agreed, and Right-Back Is His (17 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T08:00:50.453682+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSEJPU2x2bndMczlyYS12ZnduSVczblJUR3oyMUJSSHNfWmJvTWJQT1B6eFcxbDloUmYzbTF4b2M1TkhkbkxQWHhhOXF6bkJlbGFMWTdqV3l4b0JNTkZpWUNzNHFicDNCeGNrTmFYMm82YWdjWXpvZW1heV9wYnhraXpJOVMwNTFBZmc?oc=5",
-      "published": "2026-11-17T07:56:01+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Jurrien Timber New Contract: Terms Agreed, and Right-Back Is His (17 November) - The False 9"
-    },
-    {
-      "desc": "After a bruising defeat in Switzerland to conclude Scotland's Nations League campaign, questions are being asked about t",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T09:00:53.108956+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6zxvd1p4pr0o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T07:55:21+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Are Scotland still too reliant on 'old guard'?"
-    },
-    {
-      "desc": "Real Madrid close in on Man United wonderkid JJ Gabriel – Romano Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T08:00:50.453747+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNU1B6OVh2cGh1dlJic0hNaVRCWFlSR0JYWUptRW1OSFh6NVV0bmZVZUxzNEE0OW9DVWlnSE1LSV9WNkJsdUdYLVZObVpOVmNxSDQ5RU5HN2FaY25HVkliSE5XQlJUZ0xWbkFqWjV6WlRfWllncnRjeEcxS0FiMTR4RVRybnFIX091enpOTXdzODNJTDJSQkpUQnRSdm1xMDdRckVGM9IBqgFBVV95cUxQZDVUQm1BLUJYdjVrNTU5QkdQUThmRUREanZmYl94dFdvTjJIM3E3azdsaFlfelhrV0tWMjlzYzcyc3o0MUFqMWNBT0NKVlFNdnd0WFVlTk14YjEtbUg5UUVfclFiWnBiMnJrVWFWZ04wcWw2ZUIyeTFFX0xNWXJsR01kTHRuNXNocnVWX1ZZUVRHZE44Q09BQ3lidk9WYXZPVW9xY21jdFpBdw?oc=5",
-      "published": "2026-11-17T07:52:30+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Real Madrid close in on Man United wonderkid JJ Gabriel – Romano - Tribuna.com"
-    },
-    {
-      "desc": "A matter of short time. Real Madrid are on the verge of completing the transfer of the year Dailysports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T08:00:50.453786+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM1pfRnY5SWtrWDJlM1ZNWmxOS0VwSzNPMTJHbVRPdV9aM1pNX0NhSVptbUp5eW5fcXpUeEJ6Y0ptOWZGaHkyOW9IMVpnVmw0Wm41WWpHalBKRFF4UTVjMWNTeFVrdG91ZUlQUTBFajBpRmw0SlgxUVRoMW9DRjlzZnNvNzRzZ2l4VFVKQWFYMHhVN3I4ZjRXVUFvNVlUWkh1dDF2bnZGV3hlVjRnVUxKYUdrWTNWMTFfT2lQMg?oc=5",
-      "published": "2026-11-17T07:50:49+00:00",
-      "publisher": "https://dailysports.net",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "A matter of short time. Real Madrid are on the verge of completing the transfer of the year - Dailysports"
-    },
-    {
-      "desc": "TOTTENHAM rejected the chance to sign James Trafford in 2023 because of his lack of experience. England's new goalkeepin",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T08:00:50.453817+00:00",
-      "link": "https://www.thesun.co.uk/sport/41044601/tottenham-snubbed-james-trafford-transfer-england/",
-      "published": "2026-11-17T07:42:58+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tottenham ‘turned down chance to sign James Trafford in cut-price transfer’ despite ‘loving’ England goalkeeper"
-    },
-    {
-      "desc": "Football's biggest stars used to turn out in their prime for the Rest of the World XI, something that would not seem pos",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T08:00:50.453850+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwj34058rvv6o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T07:22:26+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Ronaldo, Maradona, Baggio - what happened to the World XI?"
-    },
-    {
-      "desc": "Shop Nike - Spurs Shop Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T10:00:51.068812+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQdXJyRm0zcXoxRDh5Mkt0RjQzVmplcHZuUFlydTNLZUxQX2ViajZ6bi1XZjhoSC14NDgxQVFldjdzVXFKMmUtaTczVHRucGowNEprLUtfWnVNbmNqcy01dHRZNGJ4MkxsdWh4cmVnNkZxRUJhemNoWlV0QWJPV25mLXlKZVlEZlp1dXlWWThVUU5hY3BHbEsyN0t4enhGaDdJUmNKTHNLSlJieWp5WlFWX3p5T1lTOC1OdUV4YkdvRjZmekZZZlpVWTh4UEwxTFQzbjBwM0dxUExUQUlnUm9Ic2pMaFlma1gzZmpRbHpwaEJocmZkYndjeHhoUUNJcjZuY1lSakpTTzJpWUE?oc=5",
-      "published": "2026-11-17T07:21:34+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Shop Nike - Spurs Shop - Tottenham Hotspur"
-    },
-    {
-      "desc": "Arsenal strike agreement with €117m superstar FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T15:00:56.368358+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTTBZb1VHVFEwTVNwdkhVTDc5emJBM09YbUFmOHEzeEZfVHJudVFVMTZzUlZ0Y0pFdi1ISEtSeEdic2ptTDE0cmpUcFFGdmVuWFZHaGZlUlRnVEprSWdFVGk2b0RIYjNGRVhIZHVCY3hkcXVuNFJ1YUV3SUxySlR6V3kwYTY1WGh4WWVXUTFJZS1Pcm1VRkU5TXlJUlRlQ0VPREE5QUpfWGp2WnBQS2tkRmUzOEFLSk1udUUtendURXVHNzVnOUhpa2JZaGoxY0lLdkVhUlpTX2RJTjVrenI2SXVpRQ?oc=5",
-      "published": "2026-11-17T07:03:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal strike agreement with €117m superstar - FootballTransfers.com"
-    },
-    {
-      "desc": "TONIGHT sees already-relegated Wales host a Portugal side still hurting from a Nations League thumping at the weekend. N",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T08:00:50.453877+00:00",
-      "link": "https://www.thesun.co.uk/sport/41037061/wales-portugal-football-free-bets/",
-      "published": "2026-11-17T07:01:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Wales vs Portugal: Bet £10+ on football and get up to £30 in free bets | talkSPORT BET"
-    },
-    {
-      "desc": "DENMARK head to Norway in the final Nations League games tonight, knowing avoiding defeat will see them bag a quarter fi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T07:00:51.291769+00:00",
-      "link": "https://www.thesun.co.uk/sport/41036918/norway-denmark-free-bets-sbk/",
-      "published": "2026-11-17T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Norway vs Denmark: Get £40 in free bets when you stake £10 with SBK"
-    },
-    {
-      "desc": "Buy Heritage Collection Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T10:00:51.068873+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMXJCa0JTLWhCYUdrWE5odjdzVXRJcnZBMVVWZDRWRjUzeFlVZUhTZmFPSW9JMUJxbWhwdUIzXzNIMWdVcGxfMmRFUFFLaTRaTndwSlRIVXpJUFVHQ0VoektKakpxeDdSSnZTdDY1aTN4OVVPanZLa1RVYWZ3ZVZ6OHJCUkpKcFNGdkgyNjBGdmV5WXh5bWc?oc=5",
-      "published": "2026-11-17T06:32:51+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Heritage Collection - Manchester United Store"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T07:00:51.291810+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cx5y1pl7yvz6o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T06:26:22+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "Romano: Man Utd Want to Sign Premier League 'Beast' for Mauricio Pochettino GiveMeSport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T07:00:51.291841+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOU5IVDBDV3JWdDcybV9QMF9VMG5maGZwaTgxQXh6eGVOS0x3T0NVcWtBVG03a1haV2JiTWtjNmdRRFh0QUJ3Y3ZLV2hLeDJkUFp2ejRYTG9abDhvVUR6Q1czVGlDNlIxOW5JWlA1NzZzc1lESWtKUnFKd3duZFJRamV4VXc5TTBFOEZ3Ql9jcHUxdw?oc=5",
-      "published": "2026-11-17T06:18:13+00:00",
-      "publisher": "https://www.givemesport.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano: Man Utd Want to Sign Premier League 'Beast' for Mauricio Pochettino - GiveMeSport"
-    },
-    {
-      "desc": "BBC Sport looks at the career of former Manchester City and Inter Milan striker Mario Balotelli.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T07:00:51.291873+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cvgxvg4v981o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T06:15:43+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Why always him? The rise and fall of Balotelli"
-    },
-    {
-      "desc": "WATCH: What to do with Konsa in FPL now Saliba is back? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T07:00:51.291900+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wTHFpQnN0RFFaNjFtZnV4QU1VUU5oTVpkRE5jUkxha3dPdUpRcmFuWGMxMnc4WHVNUmhKeW9KNzFKT2N5YnFvSFdweFVDTzlvZjd1Znlzdi1YUQ?oc=5",
-      "published": "2026-11-17T05:50:39+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "WATCH: What to do with Konsa in FPL now Saliba is back? - Premier League"
     }
   ],
   "processed_urls": [
