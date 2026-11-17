@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 17793,
-    "output_tokens": 1700,
-    "requests": 3
+    "input_tokens": 23880,
+    "output_tokens": 2335,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3989,7 +3989,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T17:34:01.377976+00:00",
+  "last_scan_at": "2026-11-17T18:01:04.235521+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4010,6 +4010,36 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "What is the perfect back five in Fantasy? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T18:01:04.237548+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKZ2FVNzY5MlRkTllxbGpXNG5wNHR6T2V1amFVYTFSRHZUcEFUYnBtV0tWY2dFMTNvWi1kcGNvS2xIRGZwWDlWVWgyR1Q0VktpamFUOUJHdDg?oc=5",
+      "published": "2026-11-17T17:58:48+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What is the perfect back five in Fantasy? - Premier League"
+    },
+    {
+      "desc": "MATTHIAS JAISSLE’S hopes of an Ivan Toney reunion have been dashed - but he still wants a proven striker to spark Newcas",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T18:01:04.237572+00:00",
+      "link": "https://www.thesun.co.uk/sport/41052561/newcastle-ivan-toney-transfer-jaissle/",
+      "published": "2026-11-17T17:52:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Newcastle’s Ivan Toney transfer hopes for January revealed as Matthias Jaissle targets striker signing to save season"
+    },
+    {
+      "desc": "Former Arsenal and England midfielder Peter Storey - who helped the Gunners win the Double in 1970-71 - has died at the ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T18:01:04.237616+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c63eg3ekxnpyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T17:33:41+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Arsenal Double winner Storey dies aged 81"
+    },
     {
       "desc": "GARY NEVILLE has launched a passionate defence of Diogo Dalot and insisted Manchester United should get rid of Noussair ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5479,36 +5509,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd star suffers knee injury days before Mauricio Pochettino set to take charge as manager"
-    },
-    {
-      "desc": "Breaking: Fabrizio Romano provides the latest update on Manchester United's move for a striker this winter Foot-Africa.c",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T00:13:15.847100+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNcW9FNFFwSm1FVTVnSEVwTnBaQkhlb2RHazR6cWJJWm1CYmFRN21NdW1nNVZuTnRuX3ZYOXRub2ZrYmFlQ3J0WDFkaWV6NUxSOVFkWFMyaE1pa2dET1RLandPaHNCM1NOMEFyMEp6Nk1TUjZaTkQ3YloxNHNDUXIzOHhwQzlRSGV0Q3BfM2NTV09JeFZGZWxiaXJiSmNnVnRhVWdzLTVmUk80Mk82Y3MwZ0JWMnNiTjhOZ05pRV90elAzY2VLbFo3WFdiU1g1TnBrdnloU2NFWUhQcUJreVE?oc=5",
-      "published": "2026-11-16T22:41:59+00:00",
-      "publisher": "https://foot-africa.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Breaking: Fabrizio Romano provides the latest update on Manchester United's move for a striker this winter - Foot-Africa.com"
-    },
-    {
-      "desc": "Internationals: Florian Wirtz scores twice as Germany beat the Netherlands Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T00:13:15.847120+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQOHdDN2RsVTVqYkpIb3RTem0wVS1qNVg1b1RCaUNnbjVxRzlHSE1KQzZERVd1NlBzNzdxQkpSRU9FQ0ItTDlqSUt4MVNCVUR0cWwyRXIzTmd5ZnVWSmVvajZJeVdwS21VclFVWTdEQmlpeHliNzl6d2pXRjRhWEhKdm1rOXFnVzRfX3ZYd256Y2dKb01kZUcxQ1Y4NHJLUWNv?oc=5",
-      "published": "2026-11-16T22:38:46+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Internationals: Florian Wirtz scores twice as Germany beat the Netherlands - Liverpool FC"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T01:00:57.425470+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQTlCcHpGRWROMWNEZDNNbkdMUzRYMWRzMHEyZ3A4Y0VDc3ZUbk9sLVlnNFVBdFRLQTBrR2ExMmFBQmtLdThsbm1Nd1J2NkFKckdMeUN1d3FwZTFLTWM0Mk1UbWd5eU5pMEljRWJjQmxPTm95NV9zUkExekNfdGVJcDFFNWQ5QQ?oc=5",
-      "published": "2026-11-16T22:37:54+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
     }
   ],
   "processed_urls": [
