@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 13,
+        "calls": 14,
         "errors": 0,
-        "requests": 13
+        "requests": 14
       }
     },
-    "calls": 13,
+    "calls": 14,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 87974,
-    "output_tokens": 9671,
-    "requests": 13
+    "input_tokens": 94055,
+    "output_tokens": 10584,
+    "requests": 14
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2053,6 +2053,41 @@
       "title": "埃梅里在老特拉福德终场前愤然离场，维拉两球领先遭曼联绝平",
       "updated_at": "2026-11-08T18:50:48.759424+00:00"
     },
+    "7c9323d8a9d2": {
+      "article_title": "Declan Rice agrees new five-year Arsenal contract: Star to join Bukayo Saka as Gunners' highest-paid player at over £350,000-per-week - days",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "5dfdeea4af3e0729",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 151
+        }
+      ],
+      "created_at": "2026-11-17T03:01:10.392717+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e9aeeeda5ac6bf66",
+      "event_id": "7c9323d8a9d2",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-17T03:01:10.392717+00:00",
+          "origin": "created",
+          "title": "Declan Rice agrees new five-year Arsenal contract: Star to join Bukayo Saka as Gunners' highest-paid player at over £350,000-per-week - days",
+          "url": "https://www.dailymail.com/sport/football/article-16297859/Declan-Rice-agrees-new-five-year-Arsenal-contract-Star-join-Bukayo-Saka-Gunners-highest-paid-player-350-000-week-days-midfielder-declared-extremely-lucky-play-Gunners.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16297859/Declan-Rice-agrees-new-five-year-Arsenal-contract-Star-join-Bukayo-Saka-Gunners-highest-paid-player-350-000-week-days-midfielder-declared-extremely-lucky-play-Gunners.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 151,
+      "title": "赖斯同意与阿森纳续约五年，周薪超35万镑跻身顶薪",
+      "updated_at": "2026-11-17T03:01:11.546592+00:00"
+    },
     "7df17ef8b703": {
       "article_title": "Jude Bellingham’s brother Jobe has goal vs Bayern disallowed as ex-Chelsea star boots goalie in the FACE",
       "attempts": 1,
@@ -3709,7 +3744,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T02:00:49.641122+00:00",
+  "last_scan_at": "2026-11-17T03:01:02.517718+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3731,6 +3766,16 @@
   },
   "news_pool": [
     {
+      "desc": "Crystal Palace appoint Thomas Frank as new manager Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T03:01:02.520337+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcFdORmRZT3VZTzkzTVRNbTA1X1dtWHd1dUVaN3o5WVlMVmZSbVY1WkV6dFlRT2Yta1RvMW9MUndrM0ZTMUdWV3BlaDBLZUVDVkpCc0lwSVI0R2ZmQ0xoRGEyZEVZU0xlb1Zmam9HY3NuRGlsMVNUNWg1UDJKdnNnS3AwTTYxaDcyOHE0T3p6blNsVnNVdEFqQVdEWUJKWjRa?oc=5",
+      "published": "2026-11-17T01:35:22+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Crystal Palace appoint Thomas Frank as new manager - Premier League"
+    },
+    {
       "desc": "FOOTBALL fans can enjoy the spine-tingling atmosphere of Champions League matches with official ticket and hospitality p",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-17T02:00:49.644549+00:00",
@@ -3739,6 +3784,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "See Real Madrid, Barcelona, Man Utd games with UEFA Champions League tickets and official packages from just £100pp"
+    },
+    {
+      "desc": "Who has the best and worst fixtures in Fantasy? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T03:01:02.520396+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORE04VTlPNWY1V1dKVjYwNVNhY1Ryd2txQmg3aXNxeEwyU2xkUDJWZFE1eVZYV1lZWmFhLXRVRndNa3lyQXhlZUxmRnJ5WWxnOFlDaEl4d2R3dnNUa19Da0NqRjhhX2dhT2ZwTExxQTBkSUo4Q01mQ2ZmX09PMW5UcWUxMUE5am9SX2k5MW55dUNOVGdIN0xz?oc=5",
+      "published": "2026-11-17T00:59:27+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Who has the best and worst fixtures in Fantasy? - Premier League"
     },
     {
       "desc": "The sense of drift in this Scotland team can't go on much longer. Is it too late for Sebastien Pocognoli to win back pla",
@@ -3961,6 +4016,16 @@
       "title": "- Manchester United"
     },
     {
+      "desc": "Arsenal Crest Decoration Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T03:01:02.520788+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ05pcTJtQ0xYdF9aSUdySkNtQXhEc2piMXoyOWNqV0tZX2txcjVmUWhhd0lxR2FxNUZjNzRFRGJlajVtQXl0TVRGQUFhX1lnbm5VSFBLeWJjV2c0eXVHdGVDNWZNbkt4YndCVzlocUlRTDRmSW9lNTFsOHhWTkpiVHY0OXNuR0t2dmplTV9sM1JEZEtXUTRldHl3?oc=5",
+      "published": "2026-11-16T21:27:31+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal Crest Decoration - Arsenal Direct"
+    },
+    {
       "desc": "Arsenal Champions Champagne Christmas Decoration Arsenal Direct",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-16T22:00:50.989714+00:00",
@@ -4079,6 +4144,16 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Declan Rice agrees new five-year Arsenal deal - The Athletic - The New York Times"
+    },
+    {
+      "desc": "Fabrizio Romano reveals major Liverpool transfer concern Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T03:01:02.520983+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUklCVmJXNS1oYlowTVEySjJIQ1JUVHNta2w2dUY0N2NNR1IxZkFhRnhEY21MSnJERjJsOGNOZFdNemZLMEJ5T3JteGc0UHNSVW8tbW82S2QtZUZSdUJXZmJTTmxGWmZsQ05lWmFkRklQX3FIQWdxTGNfdUtTUHN4dXNRbzVVck9UNmZzWlp0dzdJdw?oc=5",
+      "published": "2026-11-16T20:50:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals major Liverpool transfer concern - Yahoo Sports"
     },
     {
       "desc": "Zubimendi Injury Update: Hamstring Scare Puts Dortmund in Doubt (16 November) The False 9",
@@ -5189,46 +5264,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "SCORE PREDICTOR: Can you predict the Matchweek 11 - Premier League"
-    },
-    {
-      "desc": "Germany manager Jurgen Klopp says he \"didn't think things could get worse after Sepp Blatter, but someone has managed to",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T12:01:02.516121+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cjr4gr2k41dxo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T11:27:08+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Klopp says Infantino worse than Blatter"
-    },
-    {
-      "desc": "The Man City star's initial answer lasted for two minutes and 14 seconds, as he reeled off the teams he had represented ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T14:01:19.185420+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16294157/Erling-Haaland-Man-City-cheating-verdict-star-striker-insists-dont-really-know-incredibly-happy.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T11:26:25+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'Am I supposed to answer that?': Erling Haaland breaks silence and distances himself from Man City cheating verdict as star striker insists "
-    },
-    {
-      "desc": "MAURICIO POCHETTINO is the “perfect fit” for Manchester United, according to club hero Teddy Sheringham. Pochettino will",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T12:01:02.516157+00:00",
-      "link": "https://www.thesun.co.uk/sport/41036019/mauricio-pochettino-manchester-united-teddy-sheringham/",
-      "published": "2026-11-16T11:23:27+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd legend explains why Mauricio Pochettino is the ‘perfect fit’ and says fans should be ‘excited’"
-    },
-    {
-      "desc": "Como posso ver o City x Fulham na TV em todo o mundo? Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T12:01:02.516175+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY0tJMm9HUGJEWG5tQmd1YlhyeGE3Wm5rNGtBazdHRXF1cW1NbF9hVDZxUkp3Rmh4YlFiTVZiLTZwN1czTGNKVC15cC1mdlB1YnRMdE8zcmJ2ZFlTMXZEMWFYaGFEaWhydno5V2QxcUVLakxvM3NVblNRaXYxSDFGUWxKaFNFMGM3SmVXYVNhTmFBZUtKRFRJ?oc=5",
-      "published": "2026-11-16T11:23:21+00:00",
-      "publisher": "https://pt.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Como posso ver o City x Fulham na TV em todo o mundo? - Manchester City FC"
     }
   ],
   "processed_urls": [
@@ -5350,7 +5385,8 @@
     "https://www.thesun.co.uk/sport/41032336/england-fans-mock-marc-cucurella-harry-kane-penalty",
     "https://www.skysports.com/football/spain-vs-england/report/554117",
     "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league",
-    "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA"
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA",
+    "https://www.dailymail.com/sport/football/article-16297859/Declan-Rice-agrees-new-five-year-Arsenal-contract-Star-join-Bukayo-Saka-Gunners-highest-paid-player-350-000-week-days-midfielder-declared-extremely-lucky-play-Gunners.html"
   ],
   "s_overflow": {},
   "schema_version": 4
