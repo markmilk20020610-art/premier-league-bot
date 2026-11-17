@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 27,
+        "calls": 1,
         "errors": 0,
-        "requests": 27
+        "requests": 1
       }
     },
-    "calls": 27,
-    "date": "2026-11-17",
+    "calls": 1,
+    "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 164605,
-    "output_tokens": 19264,
-    "requests": 27
+    "input_tokens": 5931,
+    "output_tokens": 515,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3916,10 +3916,45 @@
       "telegram_message_id": 136,
       "title": "门将赫苏斯·奥沃诺因致命碰撞被西班牙足协禁赛12场",
       "updated_at": "2026-11-13T23:01:02.341961+00:00"
+    },
+    "fd54ef992cf2": {
+      "article_title": "Peter Storey dead at 81: Arsenal legend and Double winner dies as emotional tributes paid",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "80f71bf81752c42a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 157
+        }
+      ],
+      "created_at": "2026-11-17T16:01:00.461639+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3101c5b666c1291f",
+      "event_id": "fd54ef992cf2",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-17T16:01:00.461639+00:00",
+          "origin": "created",
+          "title": "Peter Storey dead at 81: Arsenal legend and Double winner dies as emotional tributes paid",
+          "url": "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 157,
+      "title": "阿森纳传奇彼得·斯托里逝世，享年81岁",
+      "updated_at": "2026-11-17T16:01:01.175769+00:00"
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T15:00:56.363364+00:00",
+  "last_scan_at": "2026-11-17T16:00:56.232434+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3941,6 +3976,96 @@
   },
   "news_pool": [
     {
+      "desc": "ARSENAL legend Peter Storey has died aged 81. The former England international was a key member of the Gunners side that",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T16:00:56.234323+00:00",
+      "link": "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa/",
+      "published": "2026-11-17T15:57:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Peter Storey dead at 81: Arsenal legend and Double winner dies as emotional tributes paid"
+    },
+    {
+      "desc": "England could host the Nations League finals this season after Football Association officials register their interest.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T16:00:56.234344+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5742x4xldmpo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T15:51:30+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "FA wants to host Nations League finals in England"
+    },
+    {
+      "desc": "MALO GUSTO has been branded the \"biggest disappointment\" of France's international break following a nightmare performan",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T16:00:56.234360+00:00",
+      "link": "https://www.thesun.co.uk/sport/41050411/chelsea-flop-malo-gusto-biggest-disappointment-france-zidane/",
+      "published": "2026-11-17T15:48:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea flop branded ‘biggest disappointment of Zidane era’ as France are brutally exposed during international break"
+    },
+    {
+      "desc": "Peter Storey: 1945-2026 Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.234375+00:00",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtVGxWZndhV055aFBMOWZxUnNEQ2R4dGZ2TnRTdm9zZW5PNVo2eGg2MVJUX3ZoTXZWUFprdUpnLW9IRnFBdldJYVVVbXk3V1hSNGtnOVhkSi1sbFRvZ0JiaFczMHVjdEJ2WFI1NlpNVjUyUQ?oc=5",
+      "published": "2026-11-17T15:44:50+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Peter Storey: 1945-2026 - Arsenal.com"
+    },
+    {
+      "desc": "GW11 FPL Challenge: All substitutes earn TRIPLE points Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.234390+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1RbFR3RlZxbElqZ184YV9XOC03WjJTLXRFYnE1T3YyTm5WekV5azAydlpFR0hzR3I3R0pLb3RDdmVMc1lFNHRjdDJUaDFDdXUwZzZJOExHVzI?oc=5",
+      "published": "2026-11-17T15:24:41+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "GW11 FPL Challenge: All substitutes earn TRIPLE points - Premier League"
+    },
+    {
+      "desc": "NEIL WARNOCK has traded management for modelling aged 77 as part of a Christmas campaign. The legendary coach has overse",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T16:00:56.234402+00:00",
+      "link": "https://www.thesun.co.uk/sport/41049884/neil-warnock-modelling-career-chiropodist-socks/",
+      "published": "2026-11-17T15:06:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Neil Warnock becomes a MODEL at 77 in shock career change thanks to unusual qualification"
+    },
+    {
+      "desc": "CRISTIANO RONALDO’S mum has become the latest football family member to take aim at a manager after launching a furious ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T16:00:56.234416+00:00",
+      "link": "https://www.thesun.co.uk/sport/41049887/maguire-silva-cristiano-ronaldo-portugal-pogba/",
+      "published": "2026-11-17T15:00:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Seven times families and managers clashed from Maguire snub to Silva’s wife after Cristiano Ronaldo’s mum savaged boss"
+    },
+    {
+      "desc": "Rotherham United: Boss Alex Bruce gets two-match ban for abusive language BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.234430+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ITzJDdE1yeGVvTzNwZkhpUDZKTmRQTnppdEpzUHBILXlSSG9kS2ZRZ0pmWDlHSEJhaWxWUWhUM3l5bmxtTG9wdEpsWlN3UW91Q1QwRFFMb1h3THp3d3I1TF9HZU16UUlSNmJB?oc=5",
+      "published": "2026-11-17T15:00:02+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Rotherham United: Boss Alex Bruce gets two-match ban for abusive language - BBC"
+    },
+    {
+      "desc": "Romano: Balde expected to leave Barcelona – Milan’s position after summer talks SempreMilan",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.234446+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sT2R4TzNSUVRnV1FuR0tqNTcwV3gzczNhQWpoNi13SDRKT2tmNXR6R0swVm9aZFJQa2xGVEtrTWFnLVBNbDd5WVZ5S3JjUFQweE1KbTdlZGxYN2x3bEpWYmZDWFNSREVfczVaem1mT0lCNFV5TWfSAXtBVV95cUxOdldOYlFlVEl3VlY3aWt2UFB0VU1Kcjkxa1d1LTZLZnNNLWx1VGVyTTBDNkxTcnZmVmN0UGZXNTJxOHVFSWVyVnhoQV9vZ3ZsZmNuUEtJMGRUbVhHZXBmbWFROGtqMFZYeVA5cGRTMm9ZWTgyQ0swQnBFMGs?oc=5",
+      "published": "2026-11-17T15:00:00+00:00",
+      "publisher": "https://sempremilan.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Balde expected to leave Barcelona – Milan’s position after summer talks - SempreMilan"
+    },
+    {
       "desc": "PIERS MORGAN has sensationally claimed Ben White quit the England squad after being ridiculed by former assistant boss S",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-17T15:00:56.366759+00:00",
@@ -3949,6 +4074,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Piers Morgan reveals his ‘understanding’ of why Arsenal star Ben White quit England camp"
+    },
+    {
+      "desc": "Wayne Rooney has revealed there was a period in his Manchester United career where he contemplated suicide.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T16:00:56.234483+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13613275/wayne-rooney-says-he-contemplated-suicide-during-lowest-point-of-manchester-united-career",
+      "published": "2026-11-17T14:36:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Rooney contemplated suicide at ‘lowest point’ of Man Utd career"
     },
     {
       "desc": "HARRY AMASS has given Mauricio Pochettino a timely reminder of his talent after being left in limbo at Manchester United",
@@ -4181,6 +4316,16 @@
       "title": "Tom Huddlestone felt like an ‘imposter’ at Man Utd but has set sights on becoming manager after advice from Hoddle"
     },
     {
+      "desc": "adidas Black Friday Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.234737+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yTXZMcVp4VXYtd0RMU3Q1SXNTTGVxRnhuUkEtaF92VGFBNnUyby1Jd1VjVWtnOTltYXotbmFxZy1WdThIZ1gyaEZTS0NPT015VERxaGhZZUVVSER5eFNlQ2liRjBXU0tCSGxiUWdZYXJMeFIzdVE?oc=5",
+      "published": "2026-11-17T12:46:39+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "adidas Black Friday - Liverpool FC"
+    },
+    {
       "desc": "Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-17T15:00:56.367409+00:00",
@@ -4331,6 +4476,16 @@
       "title": "David Raya New Contract: Arsenal Agree Long-Term Deal - The False 9"
     },
     {
+      "desc": "Fred Staniforth Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.234846+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5QVQ0Zi1YMlg2dWFPOVNYZEZXZ1JJUmdjM0IzWUwweGx2YUowVEFvWGFoeTdCYWw5S3FaaXRqZFhKWE9qWmtUUVczS0RuTkkyX1VuanRB?oc=5",
+      "published": "2026-11-17T11:43:13+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Fred Staniforth - Liverpool FC"
+    },
+    {
       "desc": "ENGLAND'S win over Spain on Sunday meant that they topped the group over the world champions! The Three Lions clung on t",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-17T12:01:00.010632+00:00",
@@ -4469,6 +4624,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "City quartet called up for latest Lionesses squad - Manchester City FC"
+    },
+    {
+      "desc": "Squad debutant among six Blues called up by England Women | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.234949+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYTZHOURoVDdQV3R4X19lb19OcnJrQlc5V2lUcGxHVmc0TEtoTFpGWGZZckdHLWszbmtvcXQ5UndDRUlGRmw4ajZxVzBKRXl2WnpJeF9aMnprYmFNVE00UVV2RHNuRzU4cnVSYTE5ZUY4ak8xbEQ1MncyUVNKbk0zbHY2SXk5ZGtOR3NES3pweXNCWFo5WlBXdXFTVmFVQWZx?oc=5",
+      "published": "2026-11-17T11:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Squad debutant among six Blues called up by England Women | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "My Account | Tickets - Man City Manchester City FC",
@@ -4729,6 +4894,16 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Mbeumo leads Cameroon into AFCON finals - Manchester United"
+    },
+    {
+      "desc": "Norwich City Women chief to reunite with former club in FA Cup EDP24",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T16:00:56.235096+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbWpyWXFmWGpxRGNoZXA0c19uMmpqZ1U2aEVhdF9oaVhHUjZ5aXlCWk9JUF9xYmg3M2F5NXpMdjB3dlp3WUVNUnVyTHFBdWw2cHlRSm9ZazhaOGdodURROFJCVXRfOTVRckNJVl9mdEttcHNiVjlZdm9aWlp1UnB4dmVPeENLZk1pY0FQVUhXc0ROWmE4ZTdxbUNoMA?oc=5",
+      "published": "2026-11-17T09:23:48+00:00",
+      "publisher": "https://www.edp24.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Norwich City Women chief to reunite with former club in FA Cup - EDP24"
     },
     {
       "desc": "LFC and adidas celebrate Thai heritage with new Gold Leaf collection Liverpool FC",
@@ -5299,146 +5474,6 @@
       "publisher": "https://arsenaldirect.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Arsenal Crest Decoration - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal Champions Champagne Christmas Decoration Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T22:00:50.989714+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeHZMQ2MtQTI3S0ZVS2xtb0J1TEdYNjV0LThOb3F0MjQtUGN4cGlaSU9GeVB2WmlQR2JUM09wM3hUMVR2aGlkX1huQjA4c01BNjRnb0VTVVkxQTJjdTh4QVJIakU1dThrODFhZ0NxZXNMdnU5c3BubWtMSnFnTllZZkdfZXhmNEdRZFJxbkxQQWhyc2VhQWViOUNTVU9vNHZfdTY1anJMLTBOUQ?oc=5",
-      "published": "2026-11-16T21:27:30+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal Champions Champagne Christmas Decoration - Arsenal Direct"
-    },
-    {
-      "desc": "England Midfielder Declan Rice Agrees New Five-Year Arsenal Contract roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T22:00:50.989741+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTjJqTzdNeHNFTHAtQVVUcHVrbmRWVFQ1emNmSGV0ODJCemQwcWhoTHoxVEtYUDBpMzgxS2NvZ2VqQkhxYnFybWZaY1RXVGI3OWZVd01IY2gyMWpCZW5EeGpHNG5aR2JEMGJJcUhsYzN4R2RlT0h4RFdGWlFIQVBCcHo4T2lLYTJJc2tQRzkxRHhKdURvY2dGcGlRUE5VYmRJMzFwRlV5ZFNxSFZvWjB2eHVuOVFFWE5odVFCcUtIeTQwQTdka0MzZ2VsMm4?oc=5",
-      "published": "2026-11-16T21:26:38+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "England Midfielder Declan Rice Agrees New Five-Year Arsenal Contract - roundtable.io"
-    },
-    {
-      "desc": "MANCHESTER UNITED have turned to Mauricio Pochettino to rescue their disastrous season following the sacking of Michael ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T22:00:50.989765+00:00",
-      "link": "https://www.thesun.co.uk/sport/41042554/mauricio-pochettino-jason-wilcox-man-utd-power-struggle/",
-      "published": "2026-11-16T21:19:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why Mauricio Pochettino appointment could spell the end for Jason Wilcox at Man Utd"
-    },
-    {
-      "desc": "Finally! Arsenal reach agreement on new contract with club star Dailysports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T22:00:50.989790+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPY2I5UUl2eXo2WHJTdE5oSkx3TzBWaFNLNlpTX1J2blpxZjFJYmJVVGxTZkh1QXprRDJlaEo4LXV3VHVDcjZjbjdlajA2ZFVkTjRnVGE5NF9RRDUwdHVEeUZWVXRqZVFRTEVpWUhCZzcxNzF4RHlEeE5RRGQ2WGRhZDZTUHp1M0dSQk5wWW95YnpUNFJIWnBR?oc=5",
-      "published": "2026-11-16T21:18:23+00:00",
-      "publisher": "https://dailysports.net",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Finally! Arsenal reach agreement on new contract with club star - Dailysports"
-    },
-    {
-      "desc": "Declan Rice has verbally agreed terms on a new long-term contract at Arsenal, Sky Sports News can reveal.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-16T22:00:50.989811+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612986/declan-rice-contract-arsenal-midfielder-verbally-agrees-new-320000-a-week-deal-with-the-premier-league-champions",
-      "published": "2026-11-16T21:12:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Rice verbally agrees new Arsenal contract"
-    },
-    {
-      "desc": "Declan Rice handed huge Arsenal contract boost as David Ornstein reveals new terms now.arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T22:00:50.989837+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdWVINXViZTBkbTRkbG1ldzVtdUFDMFZKQXl1UmE3ekhNOHBnRDdKWDFhd1RleTZ1UHpnZktYWlhHMkZMVHZPanFLdG5WUjlLdm5DWHkzZFozUVphUzQxQVNLdnNYTm95YnlFR2NXVDM1Ti1qVGtFMjFqZlAxVFRVaWxrMFVKSTlLYm5odi1IZ3g2dU1SOFFabGluRFZSNXQxNTg5Sk1uSmoyRVR1cHJwb1Iyckw1ZWtmNldZZ01MNA?oc=5",
-      "published": "2026-11-16T21:10:12+00:00",
-      "publisher": "https://www.nowarsenal.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Declan Rice handed huge Arsenal contract boost as David Ornstein reveals new terms - now.arsenal"
-    },
-    {
-      "desc": "Jorge Jesus responds to claims by Cristiano Ronaldo's mother, Dolores Aveiro, that her son had been \"deceived\" by the Po",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T22:00:50.989867+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ck87984g3x1po?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T21:08:06+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Portugal boss responds to criticism from Ronaldo's mum"
-    },
-    {
-      "desc": "Declan Rice agrees 5-year contract with Arsenal — Ornstein Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T22:00:50.989913+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQcTlVMmRmZnR6WGRyMzBXNG55RmVqVVpEcFhSR2hzUjBRNVp4b0FzNTEtZ0M5VXRnUHh4MVJUWDNqZ3phTEFUdEktRDFheUpYeFI4TzhpeXFIbVdZQmsyN3JBenhYeDk2TkRPSG1xNFJpSHdsWFhfTFVOdXUteG5IeUY3YVhZOG1sckVlakhDc2Q4ZURETFY4ckFjQdIBoAFBVV95cUxPVng0cFEwQTMtSVdFTVhMMGlpVGFMaDkzV0F2QlhERnNlaVRkek5lSWRxb3Y5X0dsRmE4Z1g5dHNyeVpocS1USkVqbERGcUllQnNvYVFiVFpua0V1MmwydW9XZE9rbjV3aWlVdkpoYV9VVXpudGlXdWhPZzZyMURpU2cyZmVHZkZYUFB3azNmWGh3blhzb3FRN0xxQjgzM09j?oc=5",
-      "published": "2026-11-16T21:06:12+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Declan Rice agrees 5-year contract with Arsenal — Ornstein - Tribuna.com"
-    },
-    {
-      "desc": "Vitor Matos has emerged as a target for French top-flight club Strasbourg who could soon part ways with Hugo Oliveira.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T01:00:57.425749+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqly47zn8xlgo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T21:01:50+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Swansea in fight to keep Matos amid Strasbourg interest"
-    },
-    {
-      "desc": "ROBERT PATTINSON is officially the new James Bond. The British actor has replaced Daniel Craig and his debut appearance ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T22:00:50.989937+00:00",
-      "link": "https://www.thesun.co.uk/sport/41039490/robert-pattinson-supports-football-arsenal-james-bond/",
-      "published": "2026-11-16T21:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Who does Robert Pattinson support? New James Bond’s football team revealed"
-    },
-    {
-      "desc": "Romano reveals Balogun to Man Utd state of play: 'I wouldn't be surprised' LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T21:00:57.665180+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQYi1WWW5JWkVzZjZFYnBldFZRZUsyUklLT3FyMXZMZ2tLamhvb2pwZHI1Y2R0S1ZSRkc5UkNRYkJ5ZURYSXdyX2xmVlVFMnlfMkRoX3FZLXRXUDZUdE5TZEZSRy1maXJWNjlsQXBEejNFUi1MclJNaURscVNFbHJiNEg0dllBRzctcUhGVnBZT0dkTEhUQ1FXMFpISllvSmh1TkpkSWtDMUE2UTV5ejh3TGViUEdqSW9JZXlxVk1CUkNrdE5jTU5JeEpvcUtldldSSVhuN0l0ck5td3VPRFFGUQ?oc=5",
-      "published": "2026-11-16T20:55:38+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano reveals Balogun to Man Utd state of play: 'I wouldn't be surprised' - LiveScore"
-    },
-    {
-      "desc": "Declan Rice agrees new five-year Arsenal deal - The Athletic The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T22:00:50.990010+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWm1mSFVzUmtNVGdrREZ5NmRrTl9aZEQwTmx6TER5TWp2V2NhS05OWllZMEJlZ01lYXZPRlZXeEtSRlplOUNrLTRfUlV0Zk85UDNLSlVwOEhXSG5EUVdfR2VweGczZ0E0M010VHJCNnNPbS0tb2FlQkZZc0R3N3NMMlhQMWNNeXNScEdfUFBxeERPQQ?oc=5",
-      "published": "2026-11-16T20:55:07+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Declan Rice agrees new five-year Arsenal deal - The Athletic - The New York Times"
-    },
-    {
-      "desc": "Fabrizio Romano reveals major Liverpool transfer concern Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T03:01:02.520983+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUklCVmJXNS1oYlowTVEySjJIQ1JUVHNta2w2dUY0N2NNR1IxZkFhRnhEY21MSnJERjJsOGNOZFdNemZLMEJ5T3JteGc0UHNSVW8tbW82S2QtZUZSdUJXZmJTTmxGWmZsQ05lWmFkRklQX3FIQWdxTGNfdUtTUHN4dXNRbzVVck9UNmZzWlp0dzdJdw?oc=5",
-      "published": "2026-11-16T20:50:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reveals major Liverpool transfer concern - Yahoo Sports"
-    },
-    {
-      "desc": "Zubimendi Injury Update: Hamstring Scare Puts Dortmund in Doubt (16 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T21:00:57.665205+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPV0ZlUzFRLUhYVU1WSEN3MmJUMUdfeXdGUk9qclc0QUlKYzYxczRwUl9qbzU4WWdVLXVja1EyR0Q3UjVjaWJRZjhtbWZ1MVQ3TDFYSVZBQ0lHcTRxQkpFRnRuOTN4bnNMQUVwMDlnQTViY0JidHY5MkliMDZUUUoxdXcweGdVRkVmU1ZKdXhtZU0?oc=5",
-      "published": "2026-11-16T20:45:40+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Zubimendi Injury Update: Hamstring Scare Puts Dortmund in Doubt (16 November) - The False 9"
     }
   ],
   "processed_urls": [
@@ -5566,7 +5601,8 @@
     "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html",
     "https://www.thesun.co.uk/sport/41044601/tottenham-snubbed-james-trafford-transfer-england",
     "https://www.bbc.co.uk/sport/football/articles/cjn504vweneyo",
-    "https://www.dailymail.com/sport/football/article-16299041/Tony-Mowbray-steps-Blackburn-Rovers.html"
+    "https://www.dailymail.com/sport/football/article-16299041/Tony-Mowbray-steps-Blackburn-Rovers.html",
+    "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa"
   ],
   "s_overflow": {},
   "schema_version": 4
