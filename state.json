@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 17,
+        "calls": 18,
         "errors": 0,
-        "requests": 17
+        "requests": 18
       }
     },
-    "calls": 17,
+    "calls": 18,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 111232,
-    "output_tokens": 12666,
-    "requests": 17
+    "input_tokens": 115582,
+    "output_tokens": 13247,
+    "requests": 18
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2368,6 +2368,41 @@
       "title": "桑德兰争议点球绝杀切尔西，蓝军进攻哑火引质疑",
       "updated_at": "2026-11-08T16:45:47.233446+00:00"
     },
+    "8d165a7d6551": {
+      "article_title": "Push it to the Max! Dowman, 16, becomes England U21s youngest-ever goalscorer - as Arsenal starlet scores 89th-minute winner against France",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "cc2795012bc92866",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 153
+        }
+      ],
+      "created_at": "2026-11-17T07:00:56.353092+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "cea3159046a8f201",
+      "event_id": "8d165a7d6551",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-17T07:00:56.353092+00:00",
+          "origin": "created",
+          "title": "Push it to the Max! Dowman, 16, becomes England U21s youngest-ever goalscorer - as Arsenal starlet scores 89th-minute winner against France",
+          "url": "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 153,
+      "title": "16岁道曼替补绝杀法国U21，创英格兰U21最年轻进球纪录",
+      "updated_at": "2026-11-17T07:00:57.029483+00:00"
+    },
     "8e90eaab6e7a": {
       "article_title": "Kane beat Mbappe to Ballon d'Or by just 28 points",
       "attempts": 1,
@@ -3779,7 +3814,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T06:00:56.013623+00:00",
+  "last_scan_at": "2026-11-17T07:00:51.288356+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3801,6 +3836,56 @@
   },
   "news_pool": [
     {
+      "desc": "DENMARK head to Norway in the final Nations League games tonight, knowing avoiding defeat will see them bag a quarter fi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T07:00:51.291769+00:00",
+      "link": "https://www.thesun.co.uk/sport/41036918/norway-denmark-free-bets-sbk/",
+      "published": "2026-11-17T07:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Norway vs Denmark: Get £40 in free bets when you stake £10 with SBK"
+    },
+    {
+      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T07:00:51.291810+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cx5y1pl7yvz6o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T06:26:22+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "Romano: Man Utd Want to Sign Premier League 'Beast' for Mauricio Pochettino GiveMeSport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T07:00:51.291841+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOU5IVDBDV3JWdDcybV9QMF9VMG5maGZwaTgxQXh6eGVOS0x3T0NVcWtBVG03a1haV2JiTWtjNmdRRFh0QUJ3Y3ZLV2hLeDJkUFp2ejRYTG9abDhvVUR6Q1czVGlDNlIxOW5JWlA1NzZzc1lESWtKUnFKd3duZFJRamV4VXc5TTBFOEZ3Ql9jcHUxdw?oc=5",
+      "published": "2026-11-17T06:18:13+00:00",
+      "publisher": "https://www.givemesport.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Man Utd Want to Sign Premier League 'Beast' for Mauricio Pochettino - GiveMeSport"
+    },
+    {
+      "desc": "BBC Sport looks at the career of former Manchester City and Inter Milan striker Mario Balotelli.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T07:00:51.291873+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvgxvg4v981o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T06:15:43+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Why always him? The rise and fall of Balotelli"
+    },
+    {
+      "desc": "WATCH: What to do with Konsa in FPL now Saliba is back? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T07:00:51.291900+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wTHFpQnN0RFFaNjFtZnV4QU1VUU5oTVpkRE5jUkxha3dPdUpRcmFuWGMxMnc4WHVNUmhKeW9KNzFKT2N5YnFvSFdweFVDTzlvZjd1Znlzdi1YUQ?oc=5",
+      "published": "2026-11-17T05:50:39+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "WATCH: What to do with Konsa in FPL now Saliba is back? - Premier League"
+    },
+    {
       "desc": "Declan Rice New Contract: Verbal Deal Agreed at Arsenal The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-17T06:00:56.016192+00:00",
@@ -3809,6 +3894,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Declan Rice New Contract: Verbal Deal Agreed at Arsenal - The False 9"
+    },
+    {
+      "desc": "As Portugal adapt to life without the great Cristiano Ronaldo, they face a Wales side further along in their post-Gareth",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T07:00:51.291960+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckvg29vler1no?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T04:45:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Life after Ronaldo - Portugal face post-Bale Wales"
     },
     {
       "desc": "Josh O'Hanlon Videos & Best Moments Premier League",
@@ -5239,66 +5334,6 @@
       "publisher": "https://www.ysscores.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Crystal Palace agree with Thomas Frank to manage t… | Yalla Shoot - YSscores"
-    },
-    {
-      "desc": "Como posso ver Hacken vs City na TV? Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T12:01:02.515982+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9QaHUtaGVRZjVSa1VDSzhJZ0RSdWdVN3I0YnM3VEM5YXZPYzRhN3lodXhrOEd4UW5lakJVWXgtR3laUGRvV0xjT2ZiX05IdWZPNGZDeW5sMHVwZ0lEWTFNZTM2UDlaWWRuMGtpY1B0WmJ1MnY1NHQ1V0RPWlZNNDA?oc=5",
-      "published": "2026-11-16T11:48:16+00:00",
-      "publisher": "https://pt.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Como posso ver Hacken vs City na TV? - Manchester City FC"
-    },
-    {
-      "desc": "NOW that England have confirmed themselves as soon-to-be European/World champions, it's time to refocus on Dream Team. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T12:01:02.516001+00:00",
-      "link": "https://www.thesun.co.uk/sport/41035110/manchester-city-midfielders-bonus-points-fantasy-premier-league/",
-      "published": "2026-11-16T11:47:38+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Manchester City midfielders dominating bonus points but Dream Team bosses undecided which way to turn"
-    },
-    {
-      "desc": "Norwich head of scouting Ruhr leaves for Hannover BBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T18:00:49.526719+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBJdnh6RXlKVUVyMmMxS3EyYlZZQ1pHd1NXbzRDNnd6dm1xd3M4dGNJVDlUaDgzdzRpdEhPQWRkY2tJMnhhXzVLWVBWckUzRHNUZW9aSFNuRmUyY3JnSHFham1LeEpCZ2JBeTdJ?oc=5",
-      "published": "2026-11-16T11:44:32+00:00",
-      "publisher": "https://www.bbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Norwich head of scouting Ruhr leaves for Hannover - BBC"
-    },
-    {
-      "desc": "Crystal Palace finalising deal to appoint Thomas Frank as manager The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T12:01:02.516019+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA?oc=5",
-      "published": "2026-11-16T11:42:53+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Crystal Palace finalising deal to appoint Thomas Frank as manager - The New York Times"
-    },
-    {
-      "desc": "ROMELU LUKAKU has announced his shock retirement from international football after 16 years representing Belgium. The fo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T12:01:02.516046+00:00",
-      "link": "https://www.thesun.co.uk/sport/41035993/romelu-lukaku-belgium-retirement-chelsea-man-united/",
-      "published": "2026-11-16T11:41:07+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Romelu Lukaku announces shock Belgium retirement aged 33 as former Man Utd and Chelsea striker posts emotional statement"
-    },
-    {
-      "desc": "Romelu Lukaku retires from international football, saying he has \"enjoyed every single moment\" of playing for Belgium.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T12:01:02.516068+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwlymxr0ge8zo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T11:40:20+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Belgium's Lukaku retires from internationals"
     }
   ],
   "processed_urls": [
@@ -5422,7 +5457,8 @@
     "https://www.thesun.co.uk/sport/41032781/arsenal-martin-zubimendi-injury-spain-england-nations-league",
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA",
     "https://www.dailymail.com/sport/football/article-16297859/Declan-Rice-agrees-new-five-year-Arsenal-contract-Star-join-Bukayo-Saka-Gunners-highest-paid-player-350-000-week-days-midfielder-declared-extremely-lucky-play-Gunners.html",
-    "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWUpnMzZXbHdYMW1PSXJOMXprZWFRR2o1dlhYcmFCcjVreEtvYVVGcE5YaWhrZU51RkdrXzdMeXBfYnBySThCQTVWalRFQmE4RTI2cXNId2E4NnN6NWJOSGctOGpkbGhSaEdESkJodXYzakpRT3JoWl9JTFpMR0ExN2NDbFhkbTdPc0ZBdnNvWmZXTHBkRC14YmZoNzM"
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWUpnMzZXbHdYMW1PSXJOMXprZWFRR2o1dlhYcmFCcjVreEtvYVVGcE5YaWhrZU51RkdrXzdMeXBfYnBySThCQTVWalRFQmE4RTI2cXNId2E4NnN6NWJOSGctOGpkbGhSaEdESkJodXYzakpRT3JoWl9JTFpMR0ExN2NDbFhkbTdPc0ZBdnNvWmZXTHBkRC14YmZoNzM",
+    "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html"
   ],
   "s_overflow": {},
   "schema_version": 4
