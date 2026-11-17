@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 129628,
-    "output_tokens": 15481,
-    "requests": 21
+    "input_tokens": 135054,
+    "output_tokens": 16145,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3849,7 +3849,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T09:00:53.105190+00:00",
+  "last_scan_at": "2026-11-17T10:00:51.064792+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3870,6 +3870,86 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "FPL player price changes - risers, fallers and top transfers for Gameweek 11 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T10:00:51.068398+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa2w4aVAzNUZWMTVRWGxrS0Vlc3NGZkdUeXdUeFRwTUxQMEJSYmNJaFZ2aFF6WlVqSmQ0NWRLZUxnc2RBVWRMb0NOOFVGbXZ1VEt3bGg3R0ZxMlF1TWQxU1cwb0h0Y3FCUk9oQ20wVUlYTENBalVwdEkzUXd5RFNrdzBraGs0ejB2NEhQMkhOaUlsTmEzSXdnSFdUV1FHMHRPZnlKSXFQX2Z2TWpoWXJkbjdUaWlkM2tKOVZN?oc=5",
+      "published": "2026-11-17T10:00:07+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "FPL player price changes - risers, fallers and top transfers for Gameweek 11 - Premier League"
+    },
+    {
+      "desc": "Mauricio Pochettino says he would tell Pep Guardiola to take the United States job if the former Manchester City manager",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T10:00:51.068442+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/crgj36e6ee5yo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T09:48:24+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Pochettino says he would tell Guardiola to take USA job"
+    },
+    {
+      "desc": "Jorge Linares: Former world champion detained by ICE in Texas BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T10:00:51.068500+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00cUwxSUtUV1o0d2pudDQ2aGFQQ0Ntb3VmUkIyMzR3MEdhbW1OUEVIX09CMHRLWWFwYW5KV2pOaVNBLVBVR3RyOUtZM0E2Zmc3OHJZaTN0UW5XczRudUxXOUdiREhrVFRS?oc=5",
+      "published": "2026-11-17T09:31:27+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Jorge Linares: Former world champion detained by ICE in Texas - BBC"
+    },
+    {
+      "desc": "Gyokeres challenging Gunners greats with scoring spree Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T10:00:51.068527+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVUpjaGprT3BkNDZ2dGxRSms2ZVVtMHV6Z0lIQzNaN3FzdXFrMEFWQWVaclJTaWtkQVpwLXE1VWVyTkxxQVU3dUJ0MGlWQzcyRjFpOTA1NWx0RTA3bEpaWGU4LV92NjNpck16eWk3Ym9YLUNQcmJMMng4cGlyOW4ybV96WGR0V0Z2RnItc0gtRWx1OERuUHcyNVktanA?oc=5",
+      "published": "2026-11-17T09:30:10+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Gyokeres challenging Gunners greats with scoring spree - Arsenal.com"
+    },
+    {
+      "desc": "Havertz and Timber reach Nations League quarter-finals Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T10:00:51.068553+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTlNSQ0huSTRBMDkxRGdVYVEzOWtPZktwUXNKc2NHc0w1OTlKdXBOeHJZdFJ4anlTOFE4NGFaaG1fcU0wVElRZFNvSnVnd2hORzJ5RjdxSmdhUmM3d216QmM3YTV2ZVJBN3dydkM4STBCdDdSTllrRkJYMk5iZV92a1ZzY0g2MmZlcl9XbFhmMGMtTVZjTmQtS1FrQWw?oc=5",
+      "published": "2026-11-17T09:30:09+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Havertz and Timber reach Nations League quarter-finals - Arsenal.com"
+    },
+    {
+      "desc": "Harry Cooksley departs Bracknell Town as manager rallies fans Football in Berkshire",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T10:00:51.068578+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTWxNSTBlZERXcFFzcm5fZ1RONnpjbjNROW95WXJvbGR0SlNmdWZZd2J2RzB2QTR4bFdDQ3VyOXJyQ3BSQzJMTHpWcUJQdVZkcUZKNnpUODFlOVJ3Rm0zLWtaODV5YkM1cVdCY2UtM1IySkNUdVRNaXhiREo2cFpXZU90aUphUmVnRHRvYjVXZDJ6WGVyb2dCQWhEeFNlQQ?oc=5",
+      "published": "2026-11-17T09:29:00+00:00",
+      "publisher": "https://footballinberkshire.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Harry Cooksley departs Bracknell Town as manager rallies fans - Football in Berkshire"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T10:00:51.068601+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-11-17T09:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Arsenal latest: 'Agreement reached over new Raya contract'"
+    },
+    {
+      "desc": "A BODY LANGUAGE expert has predicted that Mauricio Pochettino will sign some US national team stars following his move t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T10:00:51.068628+00:00",
+      "link": "https://www.thesun.co.uk/sport/41044824/mauricio-pochettino-man-utd-usa-signings/",
+      "published": "2026-11-17T09:06:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Body language expert says there is ‘no doubt’ Mauricio Pochettino will sign USA players for Man Utd after spotting sign"
+    },
     {
       "desc": "Fabrizio Romano reveals first Man Utd January exit is at the ‘final stages’ LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -3971,6 +4051,16 @@
       "title": "Ronaldo, Maradona, Baggio - what happened to the World XI?"
     },
     {
+      "desc": "Shop Nike - Spurs Shop Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T10:00:51.068812+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQdXJyRm0zcXoxRDh5Mkt0RjQzVmplcHZuUFlydTNLZUxQX2ViajZ6bi1XZjhoSC14NDgxQVFldjdzVXFKMmUtaTczVHRucGowNEprLUtfWnVNbmNqcy01dHRZNGJ4MkxsdWh4cmVnNkZxRUJhemNoWlV0QWJPV25mLXlKZVlEZlp1dXlWWThVUU5hY3BHbEsyN0t4enhGaDdJUmNKTHNLSlJieWp5WlFWX3p5T1lTOC1OdUV4YkdvRjZmekZZZlpVWTh4UEwxTFQzbjBwM0dxUExUQUlnUm9Ic2pMaFlma1gzZmpRbHpwaEJocmZkYndjeHhoUUNJcjZuY1lSakpTTzJpWUE?oc=5",
+      "published": "2026-11-17T07:21:34+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Shop Nike - Spurs Shop - Tottenham Hotspur"
+    },
+    {
       "desc": "TONIGHT sees already-relegated Wales host a Portugal side still hurting from a Nations League thumping at the weekend. N",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-17T08:00:50.453877+00:00",
@@ -3989,6 +4079,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Norway vs Denmark: Get £40 in free bets when you stake £10 with SBK"
+    },
+    {
+      "desc": "Buy Heritage Collection Manchester United Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T10:00:51.068873+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMXJCa0JTLWhCYUdrWE5odjdzVXRJcnZBMVVWZDRWRjUzeFlVZUhTZmFPSW9JMUJxbWhwdUIzXzNIMWdVcGxfMmRFUFFLaTRaTndwSlRIVXpJUFVHQ0VoektKakpxeDdSSnZTdDY1aTN4OVVPanZLa1RVYWZ3ZVZ6OHJCUkpKcFNGdkgyNjBGdmV5WXh5bWc?oc=5",
+      "published": "2026-11-17T06:32:51+00:00",
+      "publisher": "https://store.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Buy Heritage Collection - Manchester United Store"
     },
     {
       "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
@@ -5269,106 +5369,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Leeds United U21 ضد Liverpool U21، الوقت والتاريخ والبث التلفزيوني والإذاعي | 2023/2024 - Premier League"
-    },
-    {
-      "desc": "JUDE BELLINGHAM is well on his way to toppling a number of England records. Jude Bellingham earned his 62nd cap for the ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T14:01:19.185166+00:00",
-      "link": "https://www.thesun.co.uk/sport/41036437/jude-bellingham-beats-rooney-england-record/",
-      "published": "2026-11-16T13:48:51+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Jude Bellingham on track to shatter Rooney England record by THREE YEARS and could be one of fastest centurions ever"
-    },
-    {
-      "desc": "FOOTBALL fans across the UK often find themselves cheering on their team in front of the television on Saturday's - but ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T14:01:19.185204+00:00",
-      "link": "https://www.thesun.co.uk/sport/41037923/why-does-football-have-saturday-3pm-tv-blackout/",
-      "published": "2026-11-16T13:36:39+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why does football have a Saturday 3pm TV blackout in the UK?"
-    },
-    {
-      "desc": "Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T15:00:56.599620+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
-      "published": "2026-11-16T13:32:40+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "- Arsenal Direct"
-    },
-    {
-      "desc": "LEWIS STEELE: We get on to talking about a life in football that started six decades ago and has traversed 10 clubs as a",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T15:00:56.599656+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16291111/Managers-b-y-boring-NEIL-WARNOCK-lack-characters-football-friendship-Pep-Guardiola-open-managing-post-Christmas-chiropodist.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T13:25:52+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'Managers now are b****y boring!': NEIL WARNOCK on the lack of characters in football, his friendship with Pep Guardiola, why he is open to "
-    },
-    {
-      "desc": "Football latest news & gossip Sky Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T18:00:49.526635+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaVVIbXE5Ykt3cjRpS2hxLTNaSlcxenlvTlF3MjFPRG03YkFDVnd0dGM4WU9jSnlfY2s0a1Y1dGVRY2RldzJBbzk3R0VacVZFV2VZUTF1akJoQmFGTE54U09BSFNJY1A0U21INk9ud0J3UUdvc1Q1ZVZUVDR1Q2NrMDhlQzFCa29HVS10V19B?oc=5",
-      "published": "2026-11-16T13:05:04+00:00",
-      "publisher": "https://www.skysports.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Football latest news & gossip - Sky Sports"
-    },
-    {
-      "desc": "THEY say you should never go back in football. But many footballers have been keen to try their luck again after making ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T14:01:19.185223+00:00",
-      "link": "https://www.thesun.co.uk/sport/41035922/ronaldinho-best-and-worst-football-comebacks/",
-      "published": "2026-11-16T13:02:03+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Best and worst comebacks as Ronaldinho returns, including Scholes’ Man Utd title glee and Chelsea icon’s nightmare debut"
-    },
-    {
-      "desc": "James Trafford was given a chance to stake his claim as England's new number one - and away to the world champions, he a",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T14:01:19.185245+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmvg2r752ykzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T13:01:41+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Has Trafford replaced Pickford as England No 1?"
-    },
-    {
-      "desc": "ENGLAND shattered two sensational records as they picked up a statement win over Spain. Thomas Tuchel's side notched a s",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T13:01:18.441124+00:00",
-      "link": "https://www.thesun.co.uk/sport/41036974/england-break-two-records-spain-win-nations-league/",
-      "published": "2026-11-16T12:57:28+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England break two incredible records for first time ever with 3-2 win over Spain"
-    },
-    {
-      "desc": "Lamine Yamal mercilessly taunted England rival Elliot Anderson as tensions flared during the Three Lions' spectacular vi",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T13:01:18.441155+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16295969/lamine-yamal-elliot-anderson-spain-england-nations-league.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T12:50:48+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Lamine Yamal's sly jibe at Elliot Anderson: Unseen footage reveals the moment Spain star is caught calling rival 'stupid' as tempers flared "
-    },
-    {
-      "desc": "Play Coca-Cola Top Three for chance to win a club shirt Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T13:01:18.441175+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5TMEltQmc4aVp5SnVzUkE0YTJETVdPd0dzdzBIcHktbzJhRjVhd2h5eENKS3JCdTk5Y1pTbWlkWFJxcUxJQVYtaVRLNzZUM19paEdSVGswZVJodGhBb2tXSWNtZV9IT1FOUVd3VTRJQnFvV00?oc=5",
-      "published": "2026-11-16T12:45:49+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Play Coca-Cola Top Three for chance to win a club shirt - Premier League"
     }
   ],
   "processed_urls": [
