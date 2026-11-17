@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 63186,
-    "output_tokens": 6836,
-    "requests": 9
+    "input_tokens": 69258,
+    "output_tokens": 7472,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3709,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-16T23:00:58.467674+00:00",
+  "last_scan_at": "2026-11-17T00:00:58.667772+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3730,6 +3730,56 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "The Arsenal teenager has already broken a plethora of records at club level, and is now taking that to the international",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T00:00:58.672711+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T23:37:18+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Push it to the Max! Dowman, 16, becomes England U21s youngest-ever goalscorer - as Arsenal starlet scores 89th-minute winner against France"
+    },
+    {
+      "desc": "The England midfielder is expected to sign the new contract soon, which is set to put him alongside Bukayo Saka as Arsen",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T00:00:58.672761+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16297859/Declan-Rice-agrees-new-five-year-Arsenal-contract-Star-join-Bukayo-Saka-Gunners-highest-paid-player-350-000-week-days-midfielder-declared-extremely-lucky-play-Gunners.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T23:19:25+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Declan Rice agrees new five-year Arsenal contract: Star to join Bukayo Saka as Gunners' highest-paid player at over £350,000-per-week - days"
+    },
+    {
+      "desc": "MAX DOWMAN was the Young Lions’ late hero as Lee Carsley’s side proved their worth in a HALF-A-BILLION-POUND bout in the",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T00:00:58.672792+00:00",
+      "link": "https://www.thesun.co.uk/sport/41043835/england-under-21s-france-max-dowman-arsenal/",
+      "published": "2026-11-16T23:07:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England U21 3 France U21 2: Max Dowman nets last gasp winner for Young Lions in clash with £600MILLION of talent"
+    },
+    {
+      "desc": "Sir Geoff, who saw six of his England team-mates suffer from dementia before they died, is now the sole survivor of Sir ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T00:00:58.672829+00:00",
+      "link": "https://www.dailymail.com/news/article-16296879/1966-World-Cup-hero-Sir-Geoff-Hurst-backs-Mails-dementia-carers-appeal-six-England-team-mates-developed-disease.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T22:59:38+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "1966 World Cup hero Sir Geoff Hurst backs Mail's dementia carers appeal after six of his England team-mates developed the disease"
+    },
+    {
+      "desc": "The 23-year-old has had a tough time of it at Anfield since his £116million move to the club last summer, but has never ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T00:00:58.672866+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16297911/Florian-Wirtz-scores-twice-Germany-Netherlands.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T22:56:14+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Florian Wirtz scores twice (including a stunner) as Germany thump Netherlands 5-0 in UEFA Nations League... as Liverpool misfit receives a h"
+    },
     {
       "desc": "MANCHESTER UNITED keeper Karl Darlow has suffered an injury setback ahead of Mauricio Pochettino's arrival at Old Traffo",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -3779,6 +3829,26 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Man Utd to resurrect Hall interest - Tuesday's gossip"
+    },
+    {
+      "desc": "CRAIG HOPE: Thomas Tuchel has always liked what he sees from his England players on the training pitch. Less so, at time",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T00:00:58.673039+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16297839/Thomas-Tuchel-traditional-English-values.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T21:57:09+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Thomas Tuchel is now embracing traditional English values - clarity has helped England understand who they are, and now they can beat the be"
+    },
+    {
+      "desc": "Ineos had taken High Court action in a bid to reclaim the boat, known as Britannia, which had been raced in the last edi",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T00:00:58.673076+00:00",
+      "link": "https://www.dailymail.com/sport/othersports/article-16297539/Sir-Jim-Ratcliffe-Ineos-settles-lawsuit-180m-boat-Sir-Ben-Ainslie-Man-United-owners-acrimonious-Americas-Cup-split.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-16T21:54:32+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Sir Jim Ratcliffe's Ineos settles lawsuit over £180m boat with Sir Ben Ainslie - after Man United owner's acrimonious America's Cup split"
     },
     {
       "desc": "JAMES TRAFFORD has always had safe hands. The Leeds United shotstopper, 24, produced a heroic display for England in the",
@@ -4019,6 +4089,16 @@
       "publisher": "https://english.ahram.org.eg",
       "source": "https://www.thefa.com/rss",
       "title": "Palace appoint Frank in quest for Premier League survival - World - Sports - Ahram Online"
+    },
+    {
+      "desc": "Ulster Grand Prix: Road race will not take place in 2027 as latest revival attempt fails BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T00:00:58.673552+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBFVnpHUEJSWmU5c1VPbEJRQVY2SUQ2UFdYd2pLdGM3aDh6WnhiQlozbDE1dTZnVVljYURyZ1plNF9JWERGTjhoTzB4bnUzQmxTbGVzMHFweTVmLVA2RW8wZkFKT2UwWC1Cb05nSmdR?oc=5",
+      "published": "2026-11-16T19:01:10+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Ulster Grand Prix: Road race will not take place in 2027 as latest revival attempt fails - BBC"
     },
     {
       "desc": "'It was like meeting a kid at a sixth-form careers day'. That was the verdict, slightly unflattering but endearing all t",
@@ -5149,86 +5229,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Manchester City men's squad photo 2026/27 - Manchester City FC"
-    },
-    {
-      "desc": "MANCHESTER CITY fans can fork out a whopping £740 for a matchday ticket for a new nightclub-style hospitality suite that",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T11:01:07.066243+00:00",
-      "link": "https://www.thesun.co.uk/sport/41035474/man-city-nightclub-style-ticket/",
-      "published": "2026-11-16T10:57:24+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City flogging match tickets for ‘90s attitude’ nightclub-style suite with ‘free flowing beer’ for eye-watering price"
-    },
-    {
-      "desc": "RANGERS fans can beat the queues and book their seats at Ibrox this season in fine style. Following the highly anticipat",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T11:01:07.066268+00:00",
-      "link": "https://www.thesun.co.uk/sport/39467048/rangers-ticket-hotel-packages-scottish-premiership-ibrox/",
-      "published": "2026-11-16T10:57:16+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Rangers ticket and hotel deals for matches at Ibrox Stadium this Scottish Premiership season"
-    },
-    {
-      "desc": "NOTHING comes close to the electric atmosphere of a top football clash at Celtic Park. The ultimate, hassle-free way to ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T11:01:07.066289+00:00",
-      "link": "https://www.thesun.co.uk/sport/39466749/celtic-match-ticket-hotel-packages-scottish-premiership/",
-      "published": "2026-11-16T10:56:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Celtic tickets with hotel included starting from just £116pp for Scottish Premiership matches"
-    },
-    {
-      "desc": "ASTON Villa fans can enjoy the electric atmosphere of matchday live at Villa Park with these unmissable ticket and hotel",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T11:01:07.066306+00:00",
-      "link": "https://www.thesun.co.uk/sport/39504960/aston-villa-tickets-hotel-premier-league-villa-park/",
-      "published": "2026-11-16T10:52:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Aston Villa ticket and hotel deals for Premier League and Champions League games at Villa Park"
-    },
-    {
-      "desc": "Amar Dedic's escapade with a bow and arrows was certainly not the first time a footballer has found himself in hot water",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-16T11:01:07.066354+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16271235/Footballers-fascination-weapons.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T10:44:42+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Ashley Cole accidentally shooting a student, bare-chested Marcus Bent threatening police with a meat cleaver - and an ex-Barcelona star firi"
-    },
-    {
-      "desc": "ENGLAND are on the same level as Spain, according to their No.1 Unai Simon. And the La Roja goalkeeper says the world ch",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T11:01:07.066371+00:00",
-      "link": "https://www.thesun.co.uk/sport/41035580/england-spain-madrid-unai-simon-aymeric-laporte-best-team/",
-      "published": "2026-11-16T10:44:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England are second best team in the world and on the same level as Spain, says rival after incredible streak ends"
-    },
-    {
-      "desc": "International Reds: Senne's big save Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T17:01:02.685022+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5yU0hiODNZOVpGZEszQTlERXBYZHZIaTRpdkRIZW9mdVpYc3RJLXNaZ2VYQUpjOVlfYW91Qk1WQWJJMHBBT25TOThkRWFQcnBMNFkwM2dnZ3dMYVB1dTVHbEdiemZiMXBEMWw4QXdyZU1VTDgyWE9tUHJ3cmw?oc=5",
-      "published": "2026-11-16T10:38:18+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "International Reds: Senne's big save - Manchester United"
-    },
-    {
-      "desc": "LFC and Standard Chartered's 'Play On' logo swap returns to help keep girls in sport Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T11:01:07.066391+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZEtJTUlhQ25pT2VjNjU3eFdpVG9GLUZiaGJnZXlOcWxqU1YtcmRFVnl3RVg0MmFkTHBEUm1YZktfUUhiNkRCdEJld2hULUp4bTg0djRkcDJsMWNNMmNNYVloOFE0MUhEa1lBalNhRUdXcGlmSWhjWVZQa09UOHhHbVRESWNHbkZJTkI1d3QtcVJWeWdWTlBPaXpsVlc3ZG16dXhYckV6V0F3VkJnZUR2c0NKcw?oc=5",
-      "published": "2026-11-16T10:31:54+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC and Standard Chartered's 'Play On' logo swap returns to help keep girls in sport - Liverpool FC"
     }
   ],
   "processed_urls": [
