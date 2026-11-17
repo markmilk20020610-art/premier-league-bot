@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 57899,
-    "output_tokens": 5391,
-    "requests": 8
+    "input_tokens": 64582,
+    "output_tokens": 6065,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4059,7 +4059,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-17T22:00:53.288363+00:00",
+  "last_scan_at": "2026-11-17T23:01:02.756827+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4080,6 +4080,116 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Senegal, Cameroon and Morocco lead six qualifiers for the 2027 Africa Cup of Nations, while Nigeria's bid to reach the f",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T23:01:02.760168+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5evrgrvw1ezo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T22:54:51+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Senegal and Morocco lead Afcon qualifiers but Tunisia protest"
+    },
+    {
+      "desc": "Vinicius Jr to Arsenal ruled out for January Arsenal Core",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T23:01:02.760202+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBTUXV3TjNQMWRiOUJibGh1alNCUjZ0aDZyM2dIQ2ZJaFM1WVFEY2ZYaF9hczdXQThpbU4xTmg4Wlk0NmNDOXdHUTFIZW95M3RrYVRVaHo4b0Nwb0s1UXc3d2s3Skw2dG0yZGZHS19oRXE3N0lfd1pv?oc=5",
+      "published": "2026-11-17T22:54:24+00:00",
+      "publisher": "https://arsenalcore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Vinicius Jr to Arsenal ruled out for January - Arsenal Core"
+    },
+    {
+      "desc": "ASHLEY YOUNG says Manchester United should forget building a new team around Bruno Fernandes – and go for Morgan Gibbs-W",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T23:01:02.760257+00:00",
+      "link": "https://www.thesun.co.uk/sport/41055144/man-utd-pochettino-morgan-gibbs-white-bruno-fernandes/",
+      "published": "2026-11-17T22:52:25+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd icon urges Mauricio Pochettino to look past Bruno Fernandes and sign England star, 26, to build new team around"
+    },
+    {
+      "desc": "PAUL INCE claims Manchester United’s midfield have “no legs” and accused them of “wasting” £50million on Andrey Santos. ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T23:01:02.760287+00:00",
+      "link": "https://www.thesun.co.uk/sport/41054753/paul-ince-slams-man-utd-flops/",
+      "published": "2026-11-17T22:33:28+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Paul Ince slams ‘basket case’ Man Utd for blowing cash on midfield flops with ‘no LEGS’ but says that’s all they can get"
+    },
+    {
+      "desc": "Liverpool leading Chelsea in race for Monaco's Lamine Camara, Barcelona rule out moves for Virgil van Dijk and Bruno Fer",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T23:01:02.760319+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvx2xwx604y0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T22:25:16+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Liverpool lead Chelsea in Camara race - Wednesday's gossip"
+    },
+    {
+      "desc": "David Ornstein Rules Out Arsenal Return For Vinicius Jr in January Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T23:01:02.760346+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeUloTjVMb0FJZThPMTVUMWozdXNENTJEV1MtWVpnSDYxVENOZnNZQkJoN2JfdFBKQ0R5Q0dKNHZnSVJ1VzJnNU9jVnYzWUJHcmxBOG5mdU5kX3NING5BTjQtcDdIWS1fcHlPeTQzSHlOMnRaZFhHQ3lTOXNnazh4YXZCVzdHUjZEOTFFdQ?oc=5",
+      "published": "2026-11-17T22:16:02+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein Rules Out Arsenal Return For Vinicius Jr in January - Yahoo Sports"
+    },
+    {
+      "desc": "THE GQ Awards was taken over by iconic Lionesses with Chloe Kelly stunning in a black dress. The two-time Euros winner w",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T23:01:02.760371+00:00",
+      "link": "https://www.thesun.co.uk/sport/41054392/chloe-kelly-alex-scott-mary-earps-gq-awards/",
+      "published": "2026-11-17T22:11:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lioness hero Chloe Kelly goes braless in see-through dress at GQ Awards as Mary Earps and Alex Scott stun on red carpet"
+    },
+    {
+      "desc": "After a thrilling international break that saw England record an historic 3-2 win over Spain our focus returns to the Pr",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T23:01:02.760408+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16299831/man-city-chelsea-leeds-premier-league.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-17T22:05:11+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man City MUST stop the rot, old rivals Chelsea and Leeds set for Stamford Bridge blockbuster and Mauricio Pochettino's baptism of fire: SEVE"
+    },
+    {
+      "desc": "PAUL INCE believes Mauricio Pochettino has the “nous” to nail it at Manchester United. New boss Pochettino, 54, jets int",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T23:01:02.760434+00:00",
+      "link": "https://www.thesun.co.uk/sport/41054704/paul-ince-mauricio-pochettino-man-utd-michael-carrick/",
+      "published": "2026-11-17T22:01:45+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Paul Ince insists Mauricio Pochettino has the ‘nous’ to succeed at Man Utd and slams ‘bizarre’ poisoned chalice excuses"
+    },
+    {
+      "desc": "Man Utd Transfer News Today: Folarin Balogun swap as talks over €80m signing opened LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T23:01:02.760463+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQam1udFZZdV80cWFTS21JV3owOV9XenlzaXd6ZFMwOGxHcFhvN2ZvVlFKRkh0M1pwVnFzUThfRENWMXgwemhGZ3VDT1FxVFQwZXhoczNNY1JTUm9jUEZTOTM3TWh6WVZlQ2MtT2VDM3NmaXBjNjJJRlFpLWd3bWxoSG5Rb2p4OWp2Y0ZsWTlVOGpJMTlCTzdZTnMtWHdDZDRKYlEteWw5eGxXVk9UcFRsZC1jU3VFZ3h0amY5VGpkT1AzaDRnZHdwczZOSGk3MWxQbmRBcGl2WnI3bTlNOUVHSmZFdlNaT0pIWlh6TGFEaw?oc=5",
+      "published": "2026-11-17T21:58:50+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd Transfer News Today: Folarin Balogun swap as talks over €80m signing opened - LiveScore"
+    },
+    {
+      "desc": "Justin Devenny's superb strike saw Northern Ireland earn promotion to the top tier of the Nations League with a hard-fou",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T23:01:02.760486+00:00",
+      "link": "https://www.skysports.com/football/hungary-vs-northern-ireland/report/554131",
+      "published": "2026-11-17T21:49:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Northern Ireland promoted to Nations League top tier with draw in Hungary"
+    },
     {
       "desc": "ENGLAND'S win over Spain on Sunday saw them top their Nations League group over the World Cup winners. The Three Lions h",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4199,6 +4309,16 @@
       "publisher": "https://soccer.realgm.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Arsenal Not Expected To Revisit Vinicius Junior Pursuit In January - RealGM"
+    },
+    {
+      "desc": "Although Pochettino is going to have money for new players, United will have to be smart in their transfer dealings and ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T23:01:02.760804+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16299135/manchester-united-mauricio-pochettino-january-transfers.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-17T20:04:11+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United Confidential: Mauricio Pochettino to be given money to spend in January as club target recruits in THREE positions - and surprise"
     },
     {
       "desc": "MANCHESTER UNITED are set to make history by hiring their very first female coach EVER. The Red Devils are readying the ",
@@ -4489,6 +4609,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Peter Storey Dies Aged 81: Arsenal Double Winner Played 501 Games (17 November) - The False 9"
+    },
+    {
+      "desc": "Mbeumo leads Cameroon into AFCON finals Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T23:01:02.761173+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPX0w5eHBzUDNFcldpLXp1bkRtQUprS0pZQjZVWW1yYXJzQjdzcF9RbmZFUEJqNHYyTldueEk3VkVsdkc4MThnZDhMd3ByN2o1eVFNeG9sSDFHTC1zRDdqQVJvbGtoZnV2SkNNMU5wVWpPSVdnd2Q5SnFBZ3dRVS11eGdn?oc=5",
+      "published": "2026-11-17T17:40:10+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Mbeumo leads Cameroon into AFCON finals - Manchester United"
     },
     {
       "desc": "Former Arsenal and England midfielder Peter Storey - who helped the Gunners win the Double in 1970-71 - has died at the ",
@@ -5449,136 +5579,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Differential options for Gameweek 11: Noni Madueke among overlooked prospects"
-    },
-    {
-      "desc": "FPL player price changes - risers, fallers and top transfers for Gameweek 11 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T10:00:51.068398+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa2w4aVAzNUZWMTVRWGxrS0Vlc3NGZkdUeXdUeFRwTUxQMEJSYmNJaFZ2aFF6WlVqSmQ0NWRLZUxnc2RBVWRMb0NOOFVGbXZ1VEt3bGg3R0ZxMlF1TWQxU1cwb0h0Y3FCUk9oQ20wVUlYTENBalVwdEkzUXd5RFNrdzBraGs0ejB2NEhQMkhOaUlsTmEzSXdnSFdUV1FHMHRPZnlKSXFQX2Z2TWpoWXJkbjdUaWlkM2tKOVZN?oc=5",
-      "published": "2026-11-17T10:00:07+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "FPL player price changes - risers, fallers and top transfers for Gameweek 11 - Premier League"
-    },
-    {
-      "desc": "Tony Mowbray has stepped down from his role as Blackburn Rovers head coach due to health issues.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-17T11:00:55.911231+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13613146/tony-mowbray-steps-down-as-blackburn-rovers-head-coach-due-to-health-issues",
-      "published": "2026-11-17T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Mowbray steps down from Blackburn due to health issues"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-17T11:00:55.911252+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13197324/premier-league-team-news-injury-latest-suspensions-previews-and-fantasy-football-live-updates",
-      "published": "2026-11-17T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "VOTE: There's a new Bond... but who is the best (00)7 in PL history?"
-    },
-    {
-      "desc": "It is easy to forget that Aaron Connolly is still only 26, considering everything he has already experienced.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-17T11:00:55.911274+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612813/aaron-connolly-leyton-orient-midfielder-reflects-on-eventful-career-path-from-brighton-premier-league-debut-goals-to-set-backs-and-comebacks",
-      "published": "2026-11-17T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'I didn't want to look back on my career with regret' - the journey of Aaron Connolly"
-    },
-    {
-      "desc": "“It’s had a huge impact on us.”- We Are City in the Community: a father and son story Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T11:00:55.911302+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UN3JaZkFWZURWNXZ4SDY1SXhyRXBFMzV1bEpjbnRSQWs3TWY2eTBqOFJ6QUZSeEZIVWpxdi10MVlyN1o5TDJVZlFWRDIxZU51bHlZNHBYaFlnVWkxZUFseXZiNXdibkV3UGtQY1RqMG1aSmhFQWc3WmIwcFExUms?oc=5",
-      "published": "2026-11-17T10:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "“It’s had a huge impact on us.”- We Are City in the Community: a father and son story - Manchester City FC"
-    },
-    {
-      "desc": "Premier League presenter Ellie Collins issued a warning to her followers after learning that she had been being imperson",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T12:01:00.011044+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16298787/premier-league-tv-presenter-whatsapp-impersonator-police.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-17T09:54:19+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Premier League TV presenter reports WhatsApp 'impersonator' to the police after they contacted a string of sport superstars pretending to be"
-    },
-    {
-      "desc": "Mauricio Pochettino says he would tell Pep Guardiola to take the United States job if the former Manchester City manager",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T10:00:51.068442+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/crgj36e6ee5yo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T09:48:24+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pochettino says he would tell Guardiola to take USA job"
-    },
-    {
-      "desc": "Spurs Heritage Back Print T-Shirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T12:01:00.011094+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLVdVblVmRVdoT0ZCSTJsOS01clFoa2FqTHVpWmRPTGRNbkNvVm9NeHNjOGNEejgyMjc3bEJwQmxHMGVYaFY1TWZKQ1d6QVZQODhWdEJlZ3hmT2REQTAtdUIyempfbnplZjVZc0dpT1VDc0J6dENXTWJKOXNsOW9nMU4xaFlZUjdKcmhEak5nYkVSTnBR?oc=5",
-      "published": "2026-11-17T09:38:46+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Heritage Back Print T-Shirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Navy Heritage Raglan Zip Sweatshirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T13:01:00.354797+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOS3dYbk5ycS1SMGoyckZ0QnRJcC1aRXpwOFY0VTZWcVdvWkdHTk9BQm5xdnptMF9lZVg1WDE0Yk1LQng2allkRWRNcXI0STA0bzVEOWpIdVhNcEZZTjBkNmcxYzBRaEJyS2FwUHFtek83dHFpMXBCdzRDUnIyQ0JVa2ZtTmEwWklSSlpjSlFHLUh3aTYzT0dYYTNMWHIwNEU?oc=5",
-      "published": "2026-11-17T09:38:46+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Navy Heritage Raglan Zip Sweatshirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Navy Heritage Back Print T-Shirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T12:01:00.011111+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQeDB5OG9KUHF2cFl3LXJQU0V1Rkd2RGl3dDY0QWtZeGtYN2s3bmpMakpERjNvSEI2eGg5alBFQnBwSFFUX0pydGNQN183N3dQb0VGd0toNlFUbmlWZnlURDFLZXVWYTRVaVVlQkZyRER6TDg2U3pkME53TUJfS19wNzJ4SklzZlN2ZHlpQjhlVEYtWXBZbDdha2hKZw?oc=5",
-      "published": "2026-11-17T09:38:45+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Navy Heritage Back Print T-Shirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Jorge Linares: Former world champion detained by ICE in Texas BBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T10:00:51.068500+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00cUwxSUtUV1o0d2pudDQ2aGFQQ0Ntb3VmUkIyMzR3MEdhbW1OUEVIX09CMHRLWWFwYW5KV2pOaVNBLVBVR3RyOUtZM0E2Zmc3OHJZaTN0UW5XczRudUxXOUdiREhrVFRS?oc=5",
-      "published": "2026-11-17T09:31:27+00:00",
-      "publisher": "https://www.bbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Jorge Linares: Former world champion detained by ICE in Texas - BBC"
-    },
-    {
-      "desc": "Gyokeres challenging Gunners greats with scoring spree Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T10:00:51.068527+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVUpjaGprT3BkNDZ2dGxRSms2ZVVtMHV6Z0lIQzNaN3FzdXFrMEFWQWVaclJTaWtkQVpwLXE1VWVyTkxxQVU3dUJ0MGlWQzcyRjFpOTA1NWx0RTA3bEpaWGU4LV92NjNpck16eWk3Ym9YLUNQcmJMMng4cGlyOW4ybV96WGR0V0Z2RnItc0gtRWx1OERuUHcyNVktanA?oc=5",
-      "published": "2026-11-17T09:30:10+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Gyokeres challenging Gunners greats with scoring spree - Arsenal.com"
-    },
-    {
-      "desc": "Havertz and Timber reach Nations League quarter-finals Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T10:00:51.068553+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTlNSQ0huSTRBMDkxRGdVYVEzOWtPZktwUXNKc2NHc0w1OTlKdXBOeHJZdFJ4anlTOFE4NGFaaG1fcU0wVElRZFNvSnVnd2hORzJ5RjdxSmdhUmM3d216QmM3YTV2ZVJBN3dydkM4STBCdDdSTllrRkJYMk5iZV92a1ZzY0g2MmZlcl9XbFhmMGMtTVZjTmQtS1FrQWw?oc=5",
-      "published": "2026-11-17T09:30:09+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Havertz and Timber reach Nations League quarter-finals - Arsenal.com"
     }
   ],
   "processed_urls": [
