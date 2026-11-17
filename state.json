@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 12,
+        "calls": 13,
         "errors": 0,
-        "requests": 12
+        "requests": 13
       }
     },
-    "calls": 12,
+    "calls": 13,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 81808,
-    "output_tokens": 9010,
-    "requests": 12
+    "input_tokens": 87974,
+    "output_tokens": 9671,
+    "requests": 13
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3709,7 +3709,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T01:00:57.423213+00:00",
+  "last_scan_at": "2026-11-17T02:00:49.641122+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3730,6 +3730,16 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "FOOTBALL fans can enjoy the spine-tingling atmosphere of Champions League matches with official ticket and hospitality p",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T02:00:49.644549+00:00",
+      "link": "https://www.thesun.co.uk/sport/40258344/real-madrid-liverpool-man-city-champions-league-match-breaks/",
+      "published": "2026-11-17T01:14:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "See Real Madrid, Barcelona, Man Utd games with UEFA Champions League tickets and official packages from just £100pp"
+    },
     {
       "desc": "The sense of drift in this Scotland team can't go on much longer. Is it too late for Sebastien Pocognoli to win back pla",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -5219,16 +5229,6 @@
       "publisher": "https://pt.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Como posso ver o City x Fulham na TV em todo o mundo? - Manchester City FC"
-    },
-    {
-      "desc": "Junior T-Shirts Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T16:06:28.018538+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSGRUemlQYTAtZ3NoWXE4VVdJY3JDWWFPd1V6MlBxb0tlelFsbTF0Q0xacmc1ME1pOE04RThXVWs0cUlnU21BOFBDSzVWWGdsTU1EcnVIY3p6R2cyZV9Fa3dMNTd2bHdhTkxsMGpGb3BoTmNadGVtellsNldEcC1SMUt0dmVRZw?oc=5",
-      "published": "2026-11-16T11:22:24+00:00",
-      "publisher": "https://store.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Junior T-Shirts - Liverpool FC"
     }
   ],
   "processed_urls": [
