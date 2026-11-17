@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 11903,
-    "output_tokens": 1128,
-    "requests": 2
+    "input_tokens": 17793,
+    "output_tokens": 1700,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3602,6 +3602,41 @@
       "title": "波切蒂诺含泪告别美国队，即将接任曼联主帅",
       "updated_at": "2026-11-13T17:01:06.319477+00:00"
     },
+    "e22929ed5486": {
+      "article_title": "Gary Neville names Man Utd players who should be axed well before ‘easy target’ Diogo Dalot",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "99163780e9383ed8",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 158
+        }
+      ],
+      "created_at": "2026-11-17T17:34:05.593523+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "124dac8024aba15e",
+      "event_id": "e22929ed5486",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-17T17:34:05.593523+00:00",
+          "origin": "created",
+          "title": "Gary Neville names Man Utd players who should be axed well before ‘easy target’ Diogo Dalot",
+          "url": "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 158,
+      "title": "加里·内维尔力挺达洛特，点名曼联应先卖马兹拉维",
+      "updated_at": "2026-11-17T17:34:06.331172+00:00"
+    },
     "e357fd1c5c59": {
       "article_title": "Were Arsenal 'lucky' not to concede penalty at Liverpool?",
       "attempts": 1,
@@ -3954,7 +3989,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T17:01:02.901940+00:00",
+  "last_scan_at": "2026-11-17T17:34:01.377976+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3975,6 +4010,36 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "GARY NEVILLE has launched a passionate defence of Diogo Dalot and insisted Manchester United should get rid of Noussair ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T17:34:01.380429+00:00",
+      "link": "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui/",
+      "published": "2026-11-17T17:26:30+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Gary Neville names Man Utd players who should be axed well before ‘easy target’ Diogo Dalot"
+    },
+    {
+      "desc": "Bompastor Press Conference 🎙️ | Video | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:34:01.380458+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYzNMc24ybzNOREliSXZ6bkdsNHpFS2doSnVtc3dFMkFlRkN6aGkwVURjSTlkNUdhdzhYT0l1Sjc1ZnFuYjk1bktSTGRvMjhlME5DSEMxUGFlc1pFczkyM2RmdnF4UmJrMDlMeG13WGYwTUtkdmtXRFJMUENURWJLeTkwTWo5cWpiR0wtdw?oc=5",
+      "published": "2026-11-17T17:24:41+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Bompastor Press Conference 🎙️ | Video | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Peter Storey, the Highbury hard man who kept Arsenal's Double alive, dies aged 81 Camden New Journal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:34:01.380482+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPXzdqNUNqcmZKaHlvQ3RFeERURmNKVlJZLWwxczhaZmFMR1NYaHN3Wi1wSUZ4eFZ3YmNzaFN3SkN4T2dzWnktSExKOHRfdG9VVWltUjUtS1h4NHB1Q0lKQy03RjJlS2ZyVjBPdktZUUlBZ1cySWUwMjZMY1lvX1pyR3ZWQXNENWNhNWR4b0FibUFncDdiWnV1V0psRmlsOWViOFJMODZvWXZ1d3JteFMxUnZ3T184VG9LeVJ5aU5R?oc=5",
+      "published": "2026-11-17T17:02:53+00:00",
+      "publisher": "https://www.camdennewjournal.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Peter Storey, the Highbury hard man who kept Arsenal's Double alive, dies aged 81 - Camden New Journal"
+    },
     {
       "desc": "ARSENAL will face competition from Barcelona and Paris Saint-Germain for Bournemouth's Eli Junior Kroupi. The France str",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4004,6 +4069,16 @@
       "publisher": "https://www.bristolpost.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Bristol City prospect backed to have 'massive future' after Reds recall - Bristol Live"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 ODEGAARD Pre-Printed Home Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:34:01.380582+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMHpLNDh3Zm9tRXBiaThpY3lsa080alNLNmstbDRZQzFiSnhoVFBXUWFuSWNxS0pGMVNZN0VnZVNLUmpsSHhUYlRXM0tkVDBYcG5ZbEhKb0pvSjVBN0d3VWxIUUxDUURCYUdGTzRqODFMX1VETEJlUDZjRHBjVXQyV2M2Ynd2ekYwTE5MM25NOUM0dnlWcWhGV1dUVzE1U1FnTzFqb0pWU0VCUUhWQUI2MVVHT1FjOEdod0I3YWpJcmppbHBPbnlnT3VQT0c2YVJ2MmEw?oc=5",
+      "published": "2026-11-17T16:11:26+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal adidas 26/27 ODEGAARD Pre-Printed Home Shirt - Arsenal Direct"
     },
     {
       "desc": "Gary Neville has stood up for under-fire Manchester United man Diogo Dalot - and named three of his defensive team-mates",
@@ -4314,6 +4389,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "BK Häcken travelling squad confirmed - Manchester City FC"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:34:01.381022+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
+      "published": "2026-11-17T13:13:45+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
     },
     {
       "desc": "Max Dowman's incredible list of records for club and country Arsenal.com",
@@ -5424,56 +5509,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "- Premier League"
-    },
-    {
-      "desc": "Angry captain Andy Robertson says Scotland do not have time to turn things around after a brutal 4-0 defeat by Switzerla",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T23:00:58.469896+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwnv432qy0l1o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T22:36:26+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pocognoli wants patience but Scotland 'don't have time' says Robertson"
-    },
-    {
-      "desc": "ENGLAND boss Thomas Tuchel has hinted he is planning to change his No1 with James Trafford making a strong case for Jord",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T23:00:58.469914+00:00",
-      "link": "https://www.thesun.co.uk/sport/41042673/chelsea-jordan-pickford-james-trafford-hilario-england-tuchel/",
-      "published": "2026-11-16T22:31:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Meet forgotten ex-Chelsea star, 51, central to England’s decision to axe Jordan Pickford for James Trafford"
-    },
-    {
-      "desc": "THE new Generalissimo is heading for Old Trafford. However, no army chief can be assured of success unless his troops tr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T23:00:58.469931+00:00",
-      "link": "https://www.thesun.co.uk/sport/41043016/man-utd-axe-bruno-fernandes-cole-palmer-transfer/",
-      "published": "2026-11-16T22:10:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd must go all out for stunning £130m Cole Palmer transfer – and axe £300k-a-week Bruno Fernandes to pay for it"
-    },
-    {
-      "desc": "Manchester United may struggle to prise defender Lewis Hall from Newcastle, Arsenal midfielder Martin Zubimendi is ponde",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T23:00:58.469949+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6d91x7nz85jo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T22:06:32+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Man Utd to resurrect Hall interest - Tuesday's gossip"
-    },
-    {
-      "desc": "CRAIG HOPE: Thomas Tuchel has always liked what he sees from his England players on the training pitch. Less so, at time",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T00:00:58.673039+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16297839/Thomas-Tuchel-traditional-English-values.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T21:57:09+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Thomas Tuchel is now embracing traditional English values - clarity has helped England understand who they are, and now they can beat the be"
     }
   ],
   "processed_urls": [
@@ -5602,7 +5637,8 @@
     "https://www.thesun.co.uk/sport/41044601/tottenham-snubbed-james-trafford-transfer-england",
     "https://www.bbc.co.uk/sport/football/articles/cjn504vweneyo",
     "https://www.dailymail.com/sport/football/article-16299041/Tony-Mowbray-steps-Blackburn-Rovers.html",
-    "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa"
+    "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa",
+    "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui"
   ],
   "s_overflow": {},
   "schema_version": 4
