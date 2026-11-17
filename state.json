@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 14,
+        "calls": 15,
         "errors": 0,
-        "requests": 14
+        "requests": 15
       }
     },
-    "calls": 14,
+    "calls": 15,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 94055,
-    "output_tokens": 10584,
-    "requests": 14
+    "input_tokens": 100061,
+    "output_tokens": 11229,
+    "requests": 15
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3744,7 +3744,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T03:01:02.517718+00:00",
+  "last_scan_at": "2026-11-17T04:00:48.458810+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3794,6 +3794,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Who has the best and worst fixtures in Fantasy? - Premier League"
+    },
+    {
+      "desc": "Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T04:00:48.462494+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
+      "published": "2026-11-17T00:54:47+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "The sense of drift in this Scotland team can't go on much longer. Is it too late for Sebastien Pocognoli to win back pla",
@@ -5254,16 +5264,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Frank agrees deal in principle to become new Crystal Palace head coach"
-    },
-    {
-      "desc": "SCORE PREDICTOR: Can you predict the Matchweek 11 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T12:01:02.516102+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAycGt1WmJPWUlGbTVOdmY2cjN6TVZmSTd1V3R6YXhkSDVGVTlOU2ZtWWMzVHRpZjN0dUc2RldqVVo4MVhjMndnVzMtQXcyOGw0WkJCbnNYaGlLV21tcGprLTVCSUExLXVBLW82S3FJNnQ3QnE2eWJiVWJMa3hNVUE?oc=5",
-      "published": "2026-11-16T11:27:17+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "SCORE PREDICTOR: Can you predict the Matchweek 11 - Premier League"
     }
   ],
   "processed_urls": [
