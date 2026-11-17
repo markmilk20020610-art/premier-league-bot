@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 43274,
-    "output_tokens": 4468,
-    "requests": 7
+    "input_tokens": 50394,
+    "output_tokens": 4955,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -223,6 +223,41 @@
       "telegram_message_id": 44,
       "title": "舒梅切尔怒斥马丁内斯红牌：绝对耻辱",
       "updated_at": "2026-10-31T16:09:33.137204+00:00"
+    },
+    "0f8dfac985be": {
+      "article_title": "Rangers great Brand dies aged 89",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "9931ba38c6375e8b",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 160
+        }
+      ],
+      "created_at": "2026-11-17T22:00:57.603327+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "169008435eac582b",
+      "event_id": "0f8dfac985be",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-17T22:00:57.603327+00:00",
+          "origin": "created",
+          "title": "Rangers great Brand dies aged 89",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 160,
+      "title": "流浪者传奇拉尔夫·布兰德逝世，享年89岁",
+      "updated_at": "2026-11-17T22:00:58.152992+00:00"
     },
     "107c7f016595": {
       "attempts": 1,
@@ -4024,7 +4059,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T21:00:58.871437+00:00",
+  "last_scan_at": "2026-11-17T22:00:53.288363+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4045,6 +4080,66 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ENGLAND'S win over Spain on Sunday saw them top their Nations League group over the World Cup winners. The Three Lions h",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T22:00:53.291724+00:00",
+      "link": "https://www.thesun.co.uk/sport/41017831/who-england-play-nations-league-quarter-final-draw/",
+      "published": "2026-11-17T21:47:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Who will England play in Nations League quarter-finals?"
+    },
+    {
+      "desc": "Wales ended their Nations League group campaign with a 3-2 defeat against 10-man Portugal in Cardiff after Chelsea's Ped",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T22:00:53.291754+00:00",
+      "link": "https://www.skysports.com/football/wales-vs-portugal/report/554136",
+      "published": "2026-11-17T21:40:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Wales beaten by 10-man Portugal as Neto scores but is sent off"
+    },
+    {
+      "desc": "Arsenal: Blockbuster Vinicius Junior January swoop chances revealed by Ornstein - 'I would imagine'... TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T22:00:53.291787+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUHVnUllTMVNHMjZYdEtvZ1UtVDFoVGh4TGN5aHB6cUx5OUhLUTYxWGVXREZkc2haN3ZzSlRtNUN2ZDVfSE5CZHU5VGxoN01zWTg4LWlTUzFIMDJwQmtjRGdER2tBbUFxT2xZRXJPVGVWVlFlOERNaEYtYlpNNEFxRXBKelNCX0M0bUNNSlp0YnV3YzZ0MmRsZmxCc1BCQ0ZldDNLZkt3?oc=5",
+      "published": "2026-11-17T21:35:39+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Arsenal: Blockbuster Vinicius Junior January swoop chances revealed by Ornstein - 'I would imagine'... - TEAMtalk"
+    },
+    {
+      "desc": "Ornstein reveals Arsenal chances of signing Vinicius Junior amid transfer 'likely' claim - 'there's scope to' Football36",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T22:00:53.291817+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQd0hFZWpxMnByQmtkSWQ5Qlc2dVRkc0RabGVGazlDcFNqWGNrREtweFBWalp5Sm9PYndWYnhmdzFzWUh5UXpldEpOcERqQ1F0T1hobU5qclR3S3d2TmE5b2JUdjRnSnBpMnBWQnA4WWVIN2lwSmJXZmJkZ2hXdlUtTzNsLVE2b2p2b3F1Z2owLUVRa18teVp3ZHRwYkNISUdRSGxXZ2U0X1dxWEZjbTc5Sw?oc=5",
+      "published": "2026-11-17T21:35:10+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein reveals Arsenal chances of signing Vinicius Junior amid transfer 'likely' claim - 'there's scope to' - Football365"
+    },
+    {
+      "desc": "EX-PREMIER LEAGUE prospect Benicio Baker-Boaitey has been suspended by Millwall and may have his contract TERMINATED. Ba",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T22:00:53.291843+00:00",
+      "link": "https://www.thesun.co.uk/sport/41054209/premier-league-benicio-baker-boaitey-suspended-millwall-brighton/",
+      "published": "2026-11-17T21:05:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former Premier League star, 22, ‘suspended by EFL club and could have contract TERMINATED’"
+    },
+    {
+      "desc": "Rangers have paid tribute to Ralph Brand, one of the most prolific goalscorers in the club's history, who has died aged ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T22:00:53.291897+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T21:02:57+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Rangers great Brand dies aged 89"
+    },
     {
       "desc": "Who has the best and worst fixtures in Fantasy? Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4146,6 +4241,16 @@
       "title": "‘Fake news’ – Tottenham fan relief at Fabrizio Romano’s latest Pedro Porro update - Spurs Web"
     },
     {
+      "desc": "Show us your matchday ritual Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T22:00:53.292163+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9zZk92ZkNmdGtiMlBOU1JWZWRGTnhNWHE3MVNLTF9VWXZEdVVkOFYwRlBFRlc0YkJKd2RVM2xPQlpUN1Qwbm92aWg5bkVEb2l2R2Utb2ZMd2VNLVFES2Z0VW9aM2VReVo4UER5Mk1kNjNoMzNTYTNfYUdKMG4?oc=5",
+      "published": "2026-11-17T19:21:20+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Show us your matchday ritual - Manchester City FC"
+    },
+    {
       "desc": "York footballer charged after altercation with pitch-invading fan The Times",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-17T20:00:53.407531+00:00",
@@ -4244,6 +4349,16 @@
       "publisher": "https://arsenaldirect.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Arsenal adidas 26/27 EZE Pre-Printed Away Shirt - Arsenal Direct"
+    },
+    {
+      "desc": "Maanum breaks the deadlock Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T22:00:53.292409+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yZUo0dC1jVS15S25LMnFiREdjSkhwSmY5MHJYUTVSbmRjdXFHSlBjNHp3U0ZXWGxVcGtMV1dhVzhyMUplcmdoTEFST1VWTVlvYU5PUUdFS1lEd0UxUzZF?oc=5",
+      "published": "2026-11-17T18:47:54+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Maanum breaks the deadlock - Arsenal.com"
     },
     {
       "desc": "JJ GABRIEL has sent a message to fans as he confirmed his Manchester United exit. The teenage sensation declared his des",
@@ -5464,86 +5579,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Havertz and Timber reach Nations League quarter-finals - Arsenal.com"
-    },
-    {
-      "desc": "Harry Cooksley departs Bracknell Town as manager rallies fans Football in Berkshire",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T10:00:51.068578+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTWxNSTBlZERXcFFzcm5fZ1RONnpjbjNROW95WXJvbGR0SlNmdWZZd2J2RzB2QTR4bFdDQ3VyOXJyQ3BSQzJMTHpWcUJQdVZkcUZKNnpUODFlOVJ3Rm0zLWtaODV5YkM1cVdCY2UtM1IySkNUdVRNaXhiREo2cFpXZU90aUphUmVnRHRvYjVXZDJ6WGVyb2dCQWhEeFNlQQ?oc=5",
-      "published": "2026-11-17T09:29:00+00:00",
-      "publisher": "https://footballinberkshire.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Harry Cooksley departs Bracknell Town as manager rallies fans - Football in Berkshire"
-    },
-    {
-      "desc": "Mbeumo leads Cameroon into AFCON finals Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T14:00:59.083125+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPX0w5eHBzUDNFcldpLXp1bkRtQUprS0pZQjZVWW1yYXJzQjdzcF9RbmZFUEJqNHYyTldueEk3VkVsdkc4MThnZDhMd3ByN2o1eVFNeG9sSDFHTC1zRDdqQVJvbGtoZnV2SkNNMU5wVWpPSVdnd2Q5SnFBZ3dRVS11eGdn?oc=5",
-      "published": "2026-11-17T09:25:26+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Mbeumo leads Cameroon into AFCON finals - Manchester United"
-    },
-    {
-      "desc": "Norwich City Women chief to reunite with former club in FA Cup EDP24",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T16:00:56.235096+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQbWpyWXFmWGpxRGNoZXA0c19uMmpqZ1U2aEVhdF9oaVhHUjZ5aXlCWk9JUF9xYmg3M2F5NXpMdjB3dlp3WUVNUnVyTHFBdWw2cHlRSm9ZazhaOGdodURROFJCVXRfOTVRckNJVl9mdEttcHNiVjlZdm9aWlp1UnB4dmVPeENLZk1pY0FQVUhXc0ROWmE4ZTdxbUNoMA?oc=5",
-      "published": "2026-11-17T09:23:48+00:00",
-      "publisher": "https://www.edp24.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Norwich City Women chief to reunite with former club in FA Cup - EDP24"
-    },
-    {
-      "desc": "LFC and adidas celebrate Thai heritage with new Gold Leaf collection Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T11:00:55.911461+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRV8wbEQzVndaU2FiWjNEU2xMOVlqT1I4VU9ULTRpTzZRbFVtREVOWFotWnptcmRpZ0lReWgySnRSUFNvOEJNczdfNmJ4MVBDcjQ4c3V2UEJkSGFBNHp5T2N3dFlDNF9jSUN6MDU3cjUwU0QtR1JHS1piUzd4TUhlYUdNUG9mRlk2blg2MzBBUUdIaG9Mb3Bj?oc=5",
-      "published": "2026-11-17T09:23:24+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC and adidas celebrate Thai heritage with new Gold Leaf collection - Liverpool FC"
-    },
-    {
-      "desc": "Home tie with Marine for Boston United in FA Trophy LincolnshireWorld",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T11:00:55.911487+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObk5mTDJtdkNaeUhTRU01N0k3SFFKOVVoRWNYMl8zUHB5bG5wbElnNHFzWU11XzIyMEJvbVFiYVdyTV9GZ2FQYy1fc2pLS3NobnpPU1B0MXItRGNpNVlWTFRfaUJBbGhuTGtGUnhuY3NHa0RBamFBTlpLV0RaN18wanFFZk9RR1ltRWgwMzRud0xkWUVEaW55Tk5sOWJpZWplQXFGMHNRSEZBY1da?oc=5",
-      "published": "2026-11-17T09:18:00+00:00",
-      "publisher": "https://www.lincolnshireworld.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Home tie with Marine for Boston United in FA Trophy - LincolnshireWorld"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-17T10:00:51.068601+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-17T09:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Arsenal latest: 'Agreement reached over new Raya contract'"
-    },
-    {
-      "desc": "Man Utd: Fabrizio Romano confirms first January transfer under Mauricio Pochettino Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T11:00:55.911529+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRkVmbUt3RXBXSkhBdk8wcmV5NldLZlVGZFJ6bERGMXNRdDFNaUsxN1FCUXVSWjVla1o2QW4tenNtOHE0eEJ3VFBaNTh6elVpb1otNFVUQXpKaVBJcUlwT3BDa0dwS2F1ZnR4d0lScExrZm42LVVQbHVUVERnSHExOEZYMUNicmtfVk1LaGhVOFVGU0E3RGhjVFFIM0ZkaHp0djZXckJrSVJuQ1RJNUp4anh3?oc=5",
-      "published": "2026-11-17T09:13:51+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Fabrizio Romano confirms first January transfer under Mauricio Pochettino - Football365"
-    },
-    {
-      "desc": "A BODY LANGUAGE expert has predicted that Mauricio Pochettino will sign some US national team stars following his move t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T10:00:51.068628+00:00",
-      "link": "https://www.thesun.co.uk/sport/41044824/mauricio-pochettino-man-utd-usa-signings/",
-      "published": "2026-11-17T09:06:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Body language expert says there is ‘no doubt’ Mauricio Pochettino will sign USA players for Man Utd after spotting sign"
     }
   ],
   "processed_urls": [
@@ -5674,7 +5709,8 @@
     "https://www.dailymail.com/sport/football/article-16299041/Tony-Mowbray-steps-Blackburn-Rovers.html",
     "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa",
     "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui",
-    "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts"
+    "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts",
+    "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o"
   ],
   "s_overflow": {},
   "schema_version": 4
