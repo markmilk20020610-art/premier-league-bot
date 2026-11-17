@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 5931,
-    "output_tokens": 515,
-    "requests": 1
+    "input_tokens": 11903,
+    "output_tokens": 1128,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3954,7 +3954,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T16:00:56.232434+00:00",
+  "last_scan_at": "2026-11-17T17:01:02.901940+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3975,6 +3975,46 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ARSENAL will face competition from Barcelona and Paris Saint-Germain for Bournemouth's Eli Junior Kroupi. The France str",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T17:01:02.904014+00:00",
+      "link": "https://www.thesun.co.uk/sport/41052041/arsenal-target-eli-junior-kroupi-transfer/",
+      "published": "2026-11-17T16:36:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal eye Eli Junior Kroupi transfer as Bournemouth slap ace with £100million price tag and European giants plot moves"
+    },
+    {
+      "desc": "Arsenal are close to finalising new deals with David Raya, Jurrien Timber and Piero Hincapie.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T17:01:02.904051+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts",
+      "published": "2026-11-17T16:23:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Arsenal close to new deals for Raya, Timber and Hincapie"
+    },
+    {
+      "desc": "Bristol City prospect backed to have 'massive future' after Reds recall Bristol Live",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:01:02.904072+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbzZ3Mm9TSklwRm9hd29PaTJzNkFPbjJjNVBSa0VmNE00Vm1ib1N4aXZ4QWFKY3lFWUs5bGdiaU9qdkR0Z1BxVkJub2pMZjk4MWlXcHhSOU1KaDYwaXdpZEhpNVBKcGNQN1NzUVRiXzAxbzlMRHRPSnNPcjRidmw5THFxcmNHQmNqTXhNNnJoa1I1Yld5cjBLcUU3WFZuY0w0Q2R2bFNR?oc=5",
+      "published": "2026-11-17T16:20:00+00:00",
+      "publisher": "https://www.bristolpost.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Bristol City prospect backed to have 'massive future' after Reds recall - Bristol Live"
+    },
+    {
+      "desc": "Gary Neville has stood up for under-fire Manchester United man Diogo Dalot - and named three of his defensive team-mates",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-17T17:01:02.904097+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16299757/Gary-Neville-surprise-defence-Diogo-Dalot-names-THREE-defenders-Mauricio-Pochettino-sell-Man-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-17T16:07:32+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Gary Neville launches surprise defence of Diogo Dalot and names the THREE defenders Mauricio Pochettino should sell before Man United boo bo"
+    },
     {
       "desc": "ARSENAL legend Peter Storey has died aged 81. The former England international was a key member of the Gunners side that",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4024,6 +4064,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "GW11 FPL Challenge: All substitutes earn TRIPLE points - Premier League"
+    },
+    {
+      "desc": "Lotte Giants Weigh FA Moves After Four-Year Silence 조선일보",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:01:02.904175+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQM2ZVM21YT2xhRExhRzBVWkdVUlhLRENqYk9VZWQtNkhxUFFhRjBoREZNc2hkdmRha0lYVWt5c256VVlvMXRaUGVCSy02NWNCYTZOeV91YmowdjVSLVpwVUNDR2pEM3R5M0NXRDZ1UjdTN0ZTREt0cmV1c2JVVG11QURYRlg2dw?oc=5",
+      "published": "2026-11-17T15:17:06+00:00",
+      "publisher": "https://www.chosun.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Lotte Giants Weigh FA Moves After Four-Year Silence - 조선일보"
     },
     {
       "desc": "NEIL WARNOCK has traded management for modelling aged 77 as part of a Christmas campaign. The legendary coach has overse",
@@ -4154,6 +4204,26 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Official Spurs Website - Tottenham Hotspur"
+    },
+    {
+      "desc": "Your chance to ask Bradley Barcola, Hugo Ekitike and Jeremy Jacquet a question Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:01:02.904408+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZzBkV3dmakJMeWNvRjh3YlRPckxyS190dzFPUTVLYy1wQWFjRUJiQUg0SWhLaU1oZ21DTTJnQm5wSnlMaTdfRUhQRGN5SHlmUzVWSzF3MndPWUpQclc1Q01oSnVYbVdYcnEzQktOdTAwMnBPRHRhZXVhTk5DNE9ObWtiQUdKaElIWlQ2Q0dBOVJfcDdjYk45eXdxVjRIZGs3aGFocXRHNUM0NmZidFpZ?oc=5",
+      "published": "2026-11-17T13:55:13+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Your chance to ask Bradley Barcola, Hugo Ekitike and Jeremy Jacquet a question - Liverpool FC"
+    },
+    {
+      "desc": "David Raya agrees new Arsenal contract until 2030 – Romano Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:01:02.904425+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNM0JJOHFzNFJtN1BDSUxWa0RXN2k0bzk0TVl4bEd0LVBiT1d6VnN6S29Lck5jT1o5aTNOcG5FMmdUTkFSMGJHc3N4cHNFVGF5RkN2bkhLNUNNUHk4d19tYkR2ZFhZODNIOVRmY0gzQmFyU3pMWTZqbXJsRjZYQzV3TUxkRkZfUlBqWnZQLVd5SWpfVWZWRW1MRjVjQkjSAaIBQVVfeXFMUHlBZzZiZGhIQ2l2OEMxYUFSX2R3YzBZSW9Zb3htZU9KYnFqenZ4am45SHIzRUZBX2xlZy01SXhvT2V5RFozWTJ6T1k4WVlYeV92MVYwWDlVVko1VHV1bGMzS2FLRmxQODlod1d4T0VqSVV6c3dseWV3aDNIdGZyLTA5SHhmNlE5UldWd1hZRjJiVGhMMGNkNUdEQWVNa1RYVzJB?oc=5",
+      "published": "2026-11-17T13:52:10+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "David Raya agrees new Arsenal contract until 2030 – Romano - Tribuna.com"
     },
     {
       "desc": "WAYNE ROONEY has opened up on how he shut himself away for days at a time to drink during the height of his Manchester U",
@@ -4374,6 +4444,16 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Arsenal keen to offer new contract to player they only signed in the summer - LiveScore"
+    },
+    {
+      "desc": "My Liverpool Story… Thiago Alcantara: 'Anfield's energy lifted my game, even as an opponent' Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T17:01:02.904647+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE82SUlJNk1YRzBiRExYVEZMbk83U3lOUWFmTHpYUHA3V2d0eGJWVjBGYWY2VVdNUFk1STFsejNzbFcyNi16anJLM3F4RXNCc3g3YUtEWXRZaUZQRHQ2bFFsRHlEUGliWXUtaHg3QndmeW0yN0c3b29J?oc=5",
+      "published": "2026-11-17T12:05:39+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "My Liverpool Story… Thiago Alcantara: 'Anfield's energy lifted my game, even as an opponent' - Liverpool FC"
     },
     {
       "desc": "Fabrizio Romano drops bombshell on Pedro Porro leaving Tottenham for Barcelona TEAMtalk",
@@ -5394,86 +5474,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Thomas Tuchel is now embracing traditional English values - clarity has helped England understand who they are, and now they can beat the be"
-    },
-    {
-      "desc": "Ineos had taken High Court action in a bid to reclaim the boat, known as Britannia, which had been raced in the last edi",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T00:00:58.673076+00:00",
-      "link": "https://www.dailymail.com/sport/othersports/article-16297539/Sir-Jim-Ratcliffe-Ineos-settles-lawsuit-180m-boat-Sir-Ben-Ainslie-Man-United-owners-acrimonious-Americas-Cup-split.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T21:54:32+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Sir Jim Ratcliffe's Ineos settles lawsuit over £180m boat with Sir Ben Ainslie - after Man United owner's acrimonious America's Cup split"
-    },
-    {
-      "desc": "JAMES TRAFFORD has always had safe hands. The Leeds United shotstopper, 24, produced a heroic display for England in the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T22:00:50.989613+00:00",
-      "link": "https://www.thesun.co.uk/sport/41035760/james-trafford-rise-england-family-farm/",
-      "published": "2026-11-16T21:48:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘It’s a lonely place’ – How working as a FARMER helped turn James Trafford into England goalkeeping superstar"
-    },
-    {
-      "desc": "Arsenal 25/26 Champions Boxed Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T23:00:58.469978+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNN010dFZ2UnNXVmxQSmwzRHpWQWlNcWp6dXdoYmNqNjhoTXNNbmZxQXU5a1JHQVRLU0g3MXFvVmVqbUNnX1RDT2xoS0J0U2JNdWkwVEFrMFQ2TkxQTHVXYzFHSnV3elZhbFVnR1VieGtudTM1dmVEU2J0WENFSThDN0hzUEdPR1gwd3ExRHc1X0QxWnVr?oc=5",
-      "published": "2026-11-16T21:47:33+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal 25/26 Champions Boxed Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal continue crucial contract work as Declan Rice agrees new deal Pain in the Arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T22:00:50.989650+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNjNuTWhvT2cxalhDa2oyVGp3V1EwLVF3X2pnUVhUOVhiRnFIOF9IRkJmRHpVS1RlQlBrSVA0cFEyNGY0ZE1LUHBzR3YyZ3pocFdBUmIxMkllLXlLSnpKR1RyeFdkcUc2U2x4R2lmMkd1c2VGRzB1RktYVlpudFpJMU1XUFE5RzFRVHVEUmF4QVktdlp4VjRwYVBoMkV2NE0?oc=5",
-      "published": "2026-11-16T21:40:40+00:00",
-      "publisher": "https://paininthearsenal.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal continue crucial contract work as Declan Rice agrees new deal - Pain in the Arsenal"
-    },
-    {
-      "desc": "Strasbourg approach Swansea over head coach Vitor Matos - The Athletic The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T23:00:58.469993+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdVM3RFBvY1M0OG1IZTR2c1NMamFwZkM4VDZrNkZhSnlkRWxSYXlFeGMybjRiMHRMZEdzeDN0UUZXYVhSWnVSOUEtZFladTVoQTdDZGlrd1YyaXotZTlibjlob1AzMVcwN1NBM2hKQlpDc0t1MmtyZlNZeEFhZ0l2OUItMXA1VEIwd0RJ?oc=5",
-      "published": "2026-11-16T21:39:08+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Strasbourg approach Swansea over head coach Vitor Matos - The Athletic - The New York Times"
-    },
-    {
-      "desc": "Andy Robertson created Scotland history then delievered a scathing assessment of their Nations League collapse against S",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-16T23:00:58.470028+00:00",
-      "link": "https://www.skysports.com/football/switzerland-vs-scotland/report/554127",
-      "published": "2026-11-16T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Robertson breaks caps record and speaks out after Scotland's bruising loss to Switzerland"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T23:00:58.470042+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
-      "published": "2026-11-16T21:28:42+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "Arsenal Crest Decoration Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T03:01:02.520788+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ05pcTJtQ0xYdF9aSUdySkNtQXhEc2piMXoyOWNqV0tZX2txcjVmUWhhd0lxR2FxNUZjNzRFRGJlajVtQXl0TVRGQUFhX1lnbm5VSFBLeWJjV2c0eXVHdGVDNWZNbkt4YndCVzlocUlRTDRmSW9lNTFsOHhWTkpiVHY0OXNuR0t2dmplTV9sM1JEZEtXUTRldHl3?oc=5",
-      "published": "2026-11-16T21:27:31+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal Crest Decoration - Arsenal Direct"
     }
   ],
   "processed_urls": [
