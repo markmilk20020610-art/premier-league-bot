@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 124711,
-    "output_tokens": 14641,
-    "requests": 20
+    "input_tokens": 129628,
+    "output_tokens": 15481,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3849,7 +3849,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T08:01:57.887564+00:00",
+  "last_scan_at": "2026-11-17T09:00:53.105190+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3871,6 +3871,46 @@
   },
   "news_pool": [
     {
+      "desc": "Fabrizio Romano reveals first Man Utd January exit is at the ‘final stages’ LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T09:00:53.108767+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZ2FpWkZnaTB0RWF4MjRtcEwyakN3dlRGQnZOb2JUNE1RSlA2X2pPV0FmTWpnN3JSc2hLTzRLbzNHeU80MnpaTGM5WmFlLThiN2NiYUJiQWRwYkd3RFBwV3ZaWEVDdkJWY2VMMjFIT1FZQ1FKSW1NXzZkR0JnN1ZaZmxxYTFGMXRGZ1ZZY0xfRGI5b3lkNUhpVVU4UTE4bDRNSWlaMDZqSW5FZDBMY1NUSjVzd0UwMjVldExRWEU1aWo3VHlvcEsyYWlobUNkZ3ItaHVFN09kWmVYdw?oc=5",
+      "published": "2026-11-17T08:33:52+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals first Man Utd January exit is at the ‘final stages’ - LiveScore"
+    },
+    {
+      "desc": "FC Andorra owner Gerard Pique says goalkeeper Jesus Owono did not deserve the 12-match suspension he received following ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T09:00:53.108830+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c91430yk4el2o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T08:28:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Owono did not deserve 12-match ban - Pique"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T09:00:53.108865+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "published": "2026-11-17T08:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Transfer Centre LIVE! McKennie speaks on USA players reuniting with Poch at Man Utd"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Man Utd’s first January transfer FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T09:00:53.108899+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxObjBQZTNycm5JWVdtLTlFZlRFVUR1czZSSko0OUh3MTJUczlzeG96cEFRZVhOSHJCTzFwLXI2eEllYjZYdmRIUTdKcG1YeWVyU3JNNmxKeDFycjBwTUlTcEVrTmk5YmFaV3VibFNWQnJ3bFpzVWF5ZGtHaGg3SkFEUkNEQ0VySFZYTXdKT05VMlV0Uzg2UUJxUXdhUUhUZEZRUFZjeWVBaWFNckVBdHVQWEFPS2hJZkxYcmFzTWllUWFsUHQzMmx0UmVvSUQ3ZDJIa1k4VFR6cGxqSkVaZUViWHlPZVY?oc=5",
+      "published": "2026-11-17T08:07:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Man Utd’s first January transfer - FootballTransfers.com"
+    },
+    {
       "desc": "Jurrien Timber New Contract: Terms Agreed, and Right-Back Is His (17 November) The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-17T08:00:50.453682+00:00",
@@ -3879,6 +3919,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Jurrien Timber New Contract: Terms Agreed, and Right-Back Is His (17 November) - The False 9"
+    },
+    {
+      "desc": "After a bruising defeat in Switzerland to conclude Scotland's Nations League campaign, questions are being asked about t",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T09:00:53.108956+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6zxvd1p4pr0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T07:55:21+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Are Scotland still too reliant on 'old guard'?"
     },
     {
       "desc": "Real Madrid close in on Man United wonderkid JJ Gabriel – Romano Tribuna.com",
@@ -5319,56 +5369,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Play Coca-Cola Top Three for chance to win a club shirt - Premier League"
-    },
-    {
-      "desc": "NEWCASTLE abandoned a move for Alex Scott because they did not want to block Elliot Anderson’s pathway, it has been reve",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T13:01:18.441194+00:00",
-      "link": "https://www.thesun.co.uk/sport/41037012/newcastle-snubbed-18m-alex-scott-move-elliot-anderson/",
-      "published": "2026-11-16T12:40:16+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Newcastle snubbed £18m transfer for Alex Scott years ago because it would have stunted Elliot Anderson’s progress"
-    },
-    {
-      "desc": "FOR Charlie Austin, becoming a viral internet meme was a bit of a Blur. The comical clip began circulating in 2018 after",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T13:01:18.441209+00:00",
-      "link": "https://www.thesun.co.uk/sport/41036697/charlie-austin-parklife-meme-southampton-watford-premier-league/",
-      "published": "2026-11-16T12:37:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Charlie Austin reveals how unwittingly becoming a viral meme has helped him with his career after football"
-    },
-    {
-      "desc": "BRAZILIAN football has been plunged into mourning after World Cup winner Dino Sani passed away aged 94. Sani, who helped",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T13:01:18.441223+00:00",
-      "link": "https://www.thesun.co.uk/sport/41037396/dino-sani-dead-brazil-legend-world-cup-winner/",
-      "published": "2026-11-16T12:32:39+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Dino Sani dead at 94: Brazil legend and oldest surviving World Cup winner dies as emotional tribute paid"
-    },
-    {
-      "desc": "Thomas Frank 'finalising' Crystal Palace deal as top insider reveals Chelsea man is coming with Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T20:00:59.866577+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9fcUxBSDMzcUtrR2YxVmx2dkFVdlQ3RnVzWEpQb3R0TUxMdjlTZ2laVEJLT3lpSFpxWlhCQWthS0taODJybl90ZjgtcTU0RWtjVHhEUnByaEFlMzg0UUp4VlVERDAzaUZsUHVibkhQSVRCdEU2UFhV?oc=5",
-      "published": "2026-11-16T12:32:09+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Thomas Frank 'finalising' Crystal Palace deal as top insider reveals Chelsea man is coming with - Football365"
-    },
-    {
-      "desc": "Andy Robertson will take over from Kenny Dalglish as Scotland's most-capped player when he captains his country against ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T13:01:18.441242+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cjp3v5r9enp1o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T12:18:45+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Cap fits as Robertson poised to take King Kenny's crown"
     }
   ],
   "processed_urls": [
