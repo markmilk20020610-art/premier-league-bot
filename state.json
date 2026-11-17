@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 23880,
-    "output_tokens": 2335,
-    "requests": 4
+    "input_tokens": 30022,
+    "output_tokens": 2972,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1562,6 +1562,41 @@
       "telegram_message_id": 98,
       "title": "曼联补时两球绝平维拉，八球大战战平",
       "updated_at": "2026-11-08T20:25:34.427610+00:00"
+    },
+    "609364fa2dd1": {
+      "article_title": "Arsenal close to new deals for Raya, Timber and Hincapie",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "c3320915676f2818",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 159
+        }
+      ],
+      "created_at": "2026-11-17T19:01:00.733333+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "025306203492a610",
+      "event_id": "609364fa2dd1",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-17T19:01:00.733333+00:00",
+          "origin": "created",
+          "title": "Arsenal close to new deals for Raya, Timber and Hincapie",
+          "url": "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 159,
+      "title": "阿森纳接近敲定拉亚、廷贝尔、因卡皮耶新合同",
+      "updated_at": "2026-11-17T19:01:01.387991+00:00"
     },
     "63a8870656ae": {
       "article_title": "How Carrick's reign unravelled",
@@ -3989,7 +4024,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T18:01:04.235521+00:00",
+  "last_scan_at": "2026-11-17T19:00:55.911819+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4011,6 +4046,96 @@
   },
   "news_pool": [
     {
+      "desc": "CHELSEA are set to be stuck with flops earning a combined £400,000 per week. But the Blues hope one big signing in the J",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T19:00:55.915303+00:00",
+      "link": "https://www.thesun.co.uk/sport/41052833/malo-gusto-wes-fofana-chelsea-jamie-gittens-transfer/",
+      "published": "2026-11-17T18:59:52+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why Chelsea are set to be stuck with 3 flops on combined £400k a week – but January transfer window could save season"
+    },
+    {
+      "desc": "JJ GABRIEL has sent a message to fans as he confirmed his Manchester United exit. The teenage sensation declared his des",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T19:00:55.915339+00:00",
+      "link": "https://www.thesun.co.uk/sport/41053607/jj-gabriel-quits-man-utd-real-madrid-transfer/",
+      "published": "2026-11-17T18:43:19+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "JJ Gabriel announces Man Utd exit in emotional statement as 16-year-old prepares to complete Real Madrid transfer"
+    },
+    {
+      "desc": "JORDAN GRAHAM has been discharged from intensive care but still remains in hospital after a serious car accident in Sept",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T19:00:55.915370+00:00",
+      "link": "https://www.thesun.co.uk/sport/41053219/efl-star-leaves-icu-graham-crash/",
+      "published": "2026-11-17T18:32:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "EFL star ‘discharged from intensive care’ two months after car crash but remains in hospital for ‘specialist treatment’"
+    },
+    {
+      "desc": "Piero Hincapie officially signs new Arsenal contract now.arsenal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915401+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOM3FtTDlhMmVaN2l6NVZuM3d1LTBtVEZqZ01MVUpWaEcxZzcyM0dONmRGUVJnQy1pemh2bUNlNGwtMXlKTlh0QTB2VXUwdk5yM1VVdEUxZ2M3NWtTMVJHZXVyOFRCbjJYNUxIeFF2em9QVnNWVHFlWUhObElYUWhjWlVBaGJERlcxS013SXFJbEZxYXpvVVEwRGYtQzJqd2Jkc0hoUEMzWEQ4VnU1?oc=5",
+      "published": "2026-11-17T18:30:40+00:00",
+      "publisher": "https://www.nowarsenal.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Piero Hincapie officially signs new Arsenal contract - now.arsenal"
+    },
+    {
+      "desc": "JJ Gabriel has announced he is leaving Manchester United as he looks forward to his \"next chapter\" at Real Madrid.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-17T19:00:55.915425+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13613361/jj-gabriel-transfer-news-manchester-united-teenager-announces-departure-from-club-amid-real-madrid-agreement",
+      "published": "2026-11-17T18:29:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "JJ Gabriel says goodbye to Man Utd amid Real Madrid agreement"
+    },
+    {
+      "desc": "Piero Hincapie signs new and improved Arsenal contract to 2032 The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915452+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeEhiby14aU5sUVVpTEJTLTRGSzdKNEFGY2hWX09HODYxTVBzN3prUFp5emNCS2gxaURGNnc1TG53MHFnSDkwVWwwX3o3WnYyc2JDMUFzNUQzM2NVYjU0M19zdlpTRWc5OWJBSlRHYVlUd0l4ck9SYVVMU2c3VjJLTjl1WHlkZk1hVGxTSGtpRWhVdw?oc=5",
+      "published": "2026-11-17T18:15:34+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Piero Hincapie signs new and improved Arsenal contract to 2032 - The New York Times"
+    },
+    {
+      "desc": "WAYNE ROONEY has revealed the photo that sparked his incredible health transformation. The Manchester United and England",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T19:00:55.915478+00:00",
+      "link": "https://www.thesun.co.uk/sport/41052874/wayne-rooney-reveals-health-transformation-photo/",
+      "published": "2026-11-17T18:14:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Wayne Rooney reveals photo that sparked incredible health transformation after hitting nearly 18 stone"
+    },
+    {
+      "desc": "Classic away wins under Mikel Arteta Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915503+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KY09DVGpmTDNhZWtQbGxzSlZ6Y1JOYXZUblQzaDFncGtubEs3SklYZVZkeWJPTHF1TVhZcEJtblhtRURVVHo4d0gwZjcyb3dEY1A4aHZjeTZVTVhGbk9B?oc=5",
+      "published": "2026-11-17T18:12:02+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Classic away wins under Mikel Arteta - Arsenal.com"
+    },
+    {
+      "desc": "Club Statement: Ayaka Yamashita Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915528+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRHZmdzFVZjFqQWpzNXdHcHR3RlQ1SjI2ZDFnWVlDbldJTFBxWnhEUHE4MWYxTzQ3LTdmTnN1QVJBdV9PY1FKX2xXMkpZV25wS2hpNWhKQmU1YUtXaTR0LVZwSGItS1dKNDlrWjRtVVVNSndpNkFkV0FtZUJFTHA0Uzc2c0VaTUpPdThXaHpESHlmQ1NYZEpVQmpPTi0?oc=5",
+      "published": "2026-11-17T18:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Club Statement: Ayaka Yamashita - Manchester City FC"
+    },
+    {
       "desc": "What is the perfect back five in Fantasy? Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-17T18:01:04.237548+00:00",
@@ -4031,6 +4156,16 @@
       "title": "Newcastle’s Ivan Toney transfer hopes for January revealed as Matthias Jaissle targets striker signing to save season"
     },
     {
+      "desc": "Peter Storey Dies Aged 81: Arsenal Double Winner Played 501 Games (17 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915595+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV2doVklEWGgwbzBrTWRpUTZmWG9mOExFY3ZOSmhhXzd0aVB0bEZZZ0ZDSmhBaF9INmhZOVhnRGpKdVBGbnY2dEN5cVdkbmoxa082anZKdnpNalY0UkYzUzRZWXFnSFAtYlpDVVc0ODZneFJ5eXkyaFdOZEpRUndiWWFOUmZ2YnpsNDBXWW13c1RWM1FwUVpUeGJB?oc=5",
+      "published": "2026-11-17T17:47:23+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Peter Storey Dies Aged 81: Arsenal Double Winner Played 501 Games (17 November) - The False 9"
+    },
+    {
       "desc": "Former Arsenal and England midfielder Peter Storey - who helped the Gunners win the Double in 1970-71 - has died at the ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-17T18:01:04.237616+00:00",
@@ -4039,6 +4174,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Arsenal Double winner Storey dies aged 81"
+    },
+    {
+      "desc": "Peter Storey: Former Arsenal and England midfielder dies aged 81 BBC",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915692+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KTUNMRUFWSjJKeW11V2NxNGpmX3NTajVQZVNpeUZvbURhNmM0Vi1fMVVkVmVnSzI0NXBBb0NKQmh2S2dYbjl6S284ZFB4UEtyTVdDUFl1LVNZWlBYMFlReEhySXczcVFSc2hN?oc=5",
+      "published": "2026-11-17T17:33:41+00:00",
+      "publisher": "https://www.bbc.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Peter Storey: Former Arsenal and England midfielder dies aged 81 - BBC"
     },
     {
       "desc": "GARY NEVILLE has launched a passionate defence of Diogo Dalot and insisted Manchester United should get rid of Noussair ",
@@ -4061,6 +4206,16 @@
       "title": "Bompastor Press Conference 🎙️ | Video | Official Site - Chelsea Football Club"
     },
     {
+      "desc": "Arsenal adidas 26/27 GYOKERES Pre-Printed Home Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915760+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWm52ZDBZNzZwb1I1WkU2MUNyUmQ1ZjMxaG9ZWURYWHJsT2dzVkFxNExNeEoxZ2lCcHQtWDJBRGl2aG1BY2lONmdzYkd5eksyUGJaZVItdms4STNsTEhwTGRyb1BqRzRpXzd2ZGh6dUs2WHVBcFpGRW9kX2xkYWVjbk9DUDdkNTVPRjNpM2Z0R3BaN1BQbWE1cnpqeWZOSmt3Ul9CMU9ONHkwNzVZNHMzOXI2LUpRUlZDVWd4eW12Nkc1bWkzUWQxaVc2b0RnVFJKM1pv?oc=5",
+      "published": "2026-11-17T17:13:21+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal adidas 26/27 GYOKERES Pre-Printed Home Shirt - Arsenal Direct"
+    },
+    {
       "desc": "Peter Storey, the Highbury hard man who kept Arsenal's Double alive, dies aged 81 Camden New Journal",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-17T17:34:01.380482+00:00",
@@ -4069,6 +4224,16 @@
       "publisher": "https://www.camdennewjournal.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Peter Storey, the Highbury hard man who kept Arsenal's Double alive, dies aged 81 - Camden New Journal"
+    },
+    {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915833+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQc2pIVVM2ZlRQZGJwLU10ODZFaHBhNGNZTzJTVjBCV1dnOEM0NEdGQ1pvZnoxc2ktRkxWbjBZSVpLTm1fVHFDT0dKakg1d2dwRnpoTEpvMllvZWFtRzE4S01XTjM1Vm1wdUgtS21CbDE4NkI2N0FRek9WOFZuYWpxWG5aVmIydw?oc=5",
+      "published": "2026-11-17T16:46:41+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
     },
     {
       "desc": "ARSENAL will face competition from Barcelona and Paris Saint-Germain for Bournemouth's Eli Junior Kroupi. The France str",
@@ -4119,6 +4284,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Gary Neville launches surprise defence of Diogo Dalot and names the THREE defenders Mauricio Pochettino should sell before Man United boo bo"
+    },
+    {
+      "desc": "Winning Mentality: Christos Tzolis Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T19:00:55.915944+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNjFqR1VnemIzc1FJSWc2bjRxcnF1YkVyX3ZLVWRsQTVkUVcxNktYd1ZvaTliaTFaclE2Yk5zc05LUFVIQjJKejhmQmcyQ1ZXNllxekZMS25WbFpwM1gxaFBydUhRNHVMNk9Qb3AycmVBdy1oQU96VkdHMXdkWjFWSjN1S3ppdjNPRU9RM3VJNEtwWDg?oc=5",
+      "published": "2026-11-17T16:05:08+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Winning Mentality: Christos Tzolis - Arsenal.com"
     },
     {
       "desc": "ARSENAL legend Peter Storey has died aged 81. The former England international was a key member of the Gunners side that",
@@ -5369,146 +5544,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "WATCH: What to do with Konsa in FPL now Saliba is back? - Premier League"
-    },
-    {
-      "desc": "Declan Rice New Contract: Verbal Deal Agreed at Arsenal The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T06:00:56.016192+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWUpnMzZXbHdYMW1PSXJOMXprZWFRR2o1dlhYcmFCcjVreEtvYVVGcE5YaWhrZU51RkdrXzdMeXBfYnBySThCQTVWalRFQmE4RTI2cXNId2E4NnN6NWJOSGctOGpkbGhSaEdESkJodXYzakpRT3JoWl9JTFpMR0ExN2NDbFhkbTdPc0ZBdnNvWmZXTHBkRC14YmZoNzM?oc=5",
-      "published": "2026-11-17T05:48:03+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Declan Rice New Contract: Verbal Deal Agreed at Arsenal - The False 9"
-    },
-    {
-      "desc": "As Portugal adapt to life without the great Cristiano Ronaldo, they face a Wales side further along in their post-Gareth",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T07:00:51.291960+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckvg29vler1no?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T04:45:00+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Life after Ronaldo - Portugal face post-Bale Wales"
-    },
-    {
-      "desc": "Josh O'Hanlon Videos & Best Moments Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T05:00:51.762819+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMNWFnZ1ZIVlZmMmhrcUFVVVlYRmh1UmUteTlUTU1Mel9kX3dCbHRtWE5ySEZNQl9sV1FxX3JydHM1YzdwLTltWWZ2akl6M05rTTEyQUlkNkdya05FRS16VWZqUzZIcUR3dmN2LTlpOWFpVkRU?oc=5",
-      "published": "2026-11-17T02:11:31+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Josh O'Hanlon Videos & Best Moments - Premier League"
-    },
-    {
-      "desc": "Crystal Palace appoint Thomas Frank as new manager Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T03:01:02.520337+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcFdORmRZT3VZTzkzTVRNbTA1X1dtWHd1dUVaN3o5WVlMVmZSbVY1WkV6dFlRT2Yta1RvMW9MUndrM0ZTMUdWV3BlaDBLZUVDVkpCc0lwSVI0R2ZmQ0xoRGEyZEVZU0xlb1Zmam9HY3NuRGlsMVNUNWg1UDJKdnNnS3AwTTYxaDcyOHE0T3p6blNsVnNVdEFqQVdEWUJKWjRa?oc=5",
-      "published": "2026-11-17T01:35:22+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Crystal Palace appoint Thomas Frank as new manager - Premier League"
-    },
-    {
-      "desc": "FOOTBALL fans can enjoy the spine-tingling atmosphere of Champions League matches with official ticket and hospitality p",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T02:00:49.644549+00:00",
-      "link": "https://www.thesun.co.uk/sport/40258344/real-madrid-liverpool-man-city-champions-league-match-breaks/",
-      "published": "2026-11-17T01:14:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "See Real Madrid, Barcelona, Man Utd games with UEFA Champions League tickets and official packages from just £100pp"
-    },
-    {
-      "desc": "Who has the best and worst fixtures in Fantasy? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T03:01:02.520396+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORE04VTlPNWY1V1dKVjYwNVNhY1Ryd2txQmg3aXNxeEwyU2xkUDJWZFE1eVZYV1lZWmFhLXRVRndNa3lyQXhlZUxmRnJ5WWxnOFlDaEl4d2R3dnNUa19Da0NqRjhhX2dhT2ZwTExxQTBkSUo4Q01mQ2ZmX09PMW5UcWUxMUE5am9SX2k5MW55dUNOVGdIN0xz?oc=5",
-      "published": "2026-11-17T00:59:27+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who has the best and worst fixtures in Fantasy? - Premier League"
-    },
-    {
-      "desc": "Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T04:00:48.462494+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
-      "published": "2026-11-17T00:54:47+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "The sense of drift in this Scotland team can't go on much longer. Is it too late for Sebastien Pocognoli to win back pla",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T01:00:57.425300+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/crgqx1zz94d4o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T00:19:58+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "What's the story with Scotland boss Pocognoli - is it time to go?"
-    },
-    {
-      "desc": "The Arsenal teenager has already broken a plethora of records at club level, and is now taking that to the international",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T00:00:58.672711+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T23:37:18+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Push it to the Max! Dowman, 16, becomes England U21s youngest-ever goalscorer - as Arsenal starlet scores 89th-minute winner against France"
-    },
-    {
-      "desc": "The England midfielder is expected to sign the new contract soon, which is set to put him alongside Bukayo Saka as Arsen",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T00:00:58.672761+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16297859/Declan-Rice-agrees-new-five-year-Arsenal-contract-Star-join-Bukayo-Saka-Gunners-highest-paid-player-350-000-week-days-midfielder-declared-extremely-lucky-play-Gunners.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T23:19:25+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Declan Rice agrees new five-year Arsenal contract: Star to join Bukayo Saka as Gunners' highest-paid player at over £350,000-per-week - days"
-    },
-    {
-      "desc": "MAX DOWMAN was the Young Lions’ late hero as Lee Carsley’s side proved their worth in a HALF-A-BILLION-POUND bout in the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T00:00:58.672792+00:00",
-      "link": "https://www.thesun.co.uk/sport/41043835/england-under-21s-france-max-dowman-arsenal/",
-      "published": "2026-11-16T23:07:27+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England U21 3 France U21 2: Max Dowman nets last gasp winner for Young Lions in clash with £600MILLION of talent"
-    },
-    {
-      "desc": "Sir Geoff, who saw six of his England team-mates suffer from dementia before they died, is now the sole survivor of Sir ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T00:00:58.672829+00:00",
-      "link": "https://www.dailymail.com/news/article-16296879/1966-World-Cup-hero-Sir-Geoff-Hurst-backs-Mails-dementia-carers-appeal-six-England-team-mates-developed-disease.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T22:59:38+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "1966 World Cup hero Sir Geoff Hurst backs Mail's dementia carers appeal after six of his England team-mates developed the disease"
-    },
-    {
-      "desc": "The 23-year-old has had a tough time of it at Anfield since his £116million move to the club last summer, but has never ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T00:00:58.672866+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16297911/Florian-Wirtz-scores-twice-Germany-Netherlands.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-16T22:56:14+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Florian Wirtz scores twice (including a stunner) as Germany thump Netherlands 5-0 in UEFA Nations League... as Liverpool misfit receives a h"
-    },
-    {
-      "desc": "MANCHESTER UNITED keeper Karl Darlow has suffered an injury setback ahead of Mauricio Pochettino's arrival at Old Traffo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-16T23:00:58.469869+00:00",
-      "link": "https://www.thesun.co.uk/sport/41043197/man-utd-karl-darlow-injury-wales-mauricio-pochettino/",
-      "published": "2026-11-16T22:46:02+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd star suffers knee injury days before Mauricio Pochettino set to take charge as manager"
     }
   ],
   "processed_urls": [
@@ -5638,7 +5673,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cjn504vweneyo",
     "https://www.dailymail.com/sport/football/article-16299041/Tony-Mowbray-steps-Blackburn-Rovers.html",
     "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa",
-    "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui"
+    "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui",
+    "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts"
   ],
   "s_overflow": {},
   "schema_version": 4
