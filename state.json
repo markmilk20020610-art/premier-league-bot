@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 115582,
-    "output_tokens": 13247,
-    "requests": 18
+    "input_tokens": 120851,
+    "output_tokens": 13938,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2880,6 +2880,41 @@
       "title": "曼城主场再战布莱顿：四天内二番战，两队均欲止颓",
       "updated_at": "2026-10-31T07:25:31.214794+00:00"
     },
+    "b7b11d23f83c": {
+      "article_title": "Tottenham ‘turned down chance to sign James Trafford in cut-price transfer’ despite ‘loving’ England goalkeeper",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "b5ee2d708fc85f43",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 154
+        }
+      ],
+      "created_at": "2026-11-17T08:00:56.778613+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ea4b6cf4b20e6a82",
+      "event_id": "b7b11d23f83c",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-17T08:00:56.778613+00:00",
+          "origin": "created",
+          "title": "Tottenham ‘turned down chance to sign James Trafford in cut-price transfer’ despite ‘loving’ England goalkeeper",
+          "url": "https://www.thesun.co.uk/sport/41044601/tottenham-snubbed-james-trafford-transfer-england"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41044601/tottenham-snubbed-james-trafford-transfer-england",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 154,
+      "title": "热刺2023年曾拒绝低价签下英格兰新门神特拉福德",
+      "updated_at": "2026-11-17T08:00:57.423072+00:00"
+    },
     "b9ec85637e51": {
       "article_title": "‘I don’t believe it’ – Moment Berbatov puts his head in hands after learning Man Utd have dropped into relegation zone",
       "attempts": 1,
@@ -3814,7 +3849,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T07:00:51.288356+00:00",
+  "last_scan_at": "2026-11-17T08:00:50.450184+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3835,6 +3870,66 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Jurrien Timber New Contract: Terms Agreed, and Right-Back Is His (17 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T08:00:50.453682+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSEJPU2x2bndMczlyYS12ZnduSVczblJUR3oyMUJSSHNfWmJvTWJQT1B6eFcxbDloUmYzbTF4b2M1TkhkbkxQWHhhOXF6bkJlbGFMWTdqV3l4b0JNTkZpWUNzNHFicDNCeGNrTmFYMm82YWdjWXpvZW1heV9wYnhraXpJOVMwNTFBZmc?oc=5",
+      "published": "2026-11-17T07:56:01+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Jurrien Timber New Contract: Terms Agreed, and Right-Back Is His (17 November) - The False 9"
+    },
+    {
+      "desc": "Real Madrid close in on Man United wonderkid JJ Gabriel – Romano Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T08:00:50.453747+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNU1B6OVh2cGh1dlJic0hNaVRCWFlSR0JYWUptRW1OSFh6NVV0bmZVZUxzNEE0OW9DVWlnSE1LSV9WNkJsdUdYLVZObVpOVmNxSDQ5RU5HN2FaY25HVkliSE5XQlJUZ0xWbkFqWjV6WlRfWllncnRjeEcxS0FiMTR4RVRybnFIX091enpOTXdzODNJTDJSQkpUQnRSdm1xMDdRckVGM9IBqgFBVV95cUxQZDVUQm1BLUJYdjVrNTU5QkdQUThmRUREanZmYl94dFdvTjJIM3E3azdsaFlfelhrV0tWMjlzYzcyc3o0MUFqMWNBT0NKVlFNdnd0WFVlTk14YjEtbUg5UUVfclFiWnBiMnJrVWFWZ04wcWw2ZUIyeTFFX0xNWXJsR01kTHRuNXNocnVWX1ZZUVRHZE44Q09BQ3lidk9WYXZPVW9xY21jdFpBdw?oc=5",
+      "published": "2026-11-17T07:52:30+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Real Madrid close in on Man United wonderkid JJ Gabriel – Romano - Tribuna.com"
+    },
+    {
+      "desc": "A matter of short time. Real Madrid are on the verge of completing the transfer of the year Dailysports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T08:00:50.453786+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM1pfRnY5SWtrWDJlM1ZNWmxOS0VwSzNPMTJHbVRPdV9aM1pNX0NhSVptbUp5eW5fcXpUeEJ6Y0ptOWZGaHkyOW9IMVpnVmw0Wm41WWpHalBKRFF4UTVjMWNTeFVrdG91ZUlQUTBFajBpRmw0SlgxUVRoMW9DRjlzZnNvNzRzZ2l4VFVKQWFYMHhVN3I4ZjRXVUFvNVlUWkh1dDF2bnZGV3hlVjRnVUxKYUdrWTNWMTFfT2lQMg?oc=5",
+      "published": "2026-11-17T07:50:49+00:00",
+      "publisher": "https://dailysports.net",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "A matter of short time. Real Madrid are on the verge of completing the transfer of the year - Dailysports"
+    },
+    {
+      "desc": "TOTTENHAM rejected the chance to sign James Trafford in 2023 because of his lack of experience. England's new goalkeepin",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T08:00:50.453817+00:00",
+      "link": "https://www.thesun.co.uk/sport/41044601/tottenham-snubbed-james-trafford-transfer-england/",
+      "published": "2026-11-17T07:42:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Tottenham ‘turned down chance to sign James Trafford in cut-price transfer’ despite ‘loving’ England goalkeeper"
+    },
+    {
+      "desc": "Football's biggest stars used to turn out in their prime for the Rest of the World XI, something that would not seem pos",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-17T08:00:50.453850+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwj34058rvv6o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T07:22:26+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Ronaldo, Maradona, Baggio - what happened to the World XI?"
+    },
+    {
+      "desc": "TONIGHT sees already-relegated Wales host a Portugal side still hurting from a Nations League thumping at the weekend. N",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-17T08:00:50.453877+00:00",
+      "link": "https://www.thesun.co.uk/sport/41037061/wales-portugal-football-free-bets/",
+      "published": "2026-11-17T07:01:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Wales vs Portugal: Bet £10+ on football and get up to £30 in free bets | talkSPORT BET"
+    },
     {
       "desc": "DENMARK head to Norway in the final Nations League games tonight, knowing avoiding defeat will see them bag a quarter fi",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5274,66 +5369,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Cap fits as Robertson poised to take King Kenny's crown"
-    },
-    {
-      "desc": "Lye, Peterborough and the never-ending Women's FA Cup tie BBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T17:01:02.684661+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZMTRlS0VTcnk0S1NwQkpyU0xFd2lZRlJSQzNPT0JnRGF2WG5HbGY2ZUhoRGFTQkVHaTFObXNaa3JnOEQtZFhlMl9INlpUQVpmTzNNVmN4cXhoeWVRS29VM0FaQXl6OWNVRVRN?oc=5",
-      "published": "2026-11-16T12:11:48+00:00",
-      "publisher": "https://www.bbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Lye, Peterborough and the never-ending Women's FA Cup tie - BBC"
-    },
-    {
-      "desc": "David O'Leary Leeds United Defender, Profile & Stats Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T16:00:55.678542+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02VEZrcGZvQXVTMERJb0VwZ1pSZ0QxTmRtU2ZLZ0lpUC1rY09NNnJiN0JmS0FYR09EMlNjdmlGbFdJYkVCNkZ3YjhocXVRZG1SZWlpeDNBdnRmcldfdzNBS2RRX0RyVFBvOXFyRmpFWFdWSjg?oc=5",
-      "published": "2026-11-16T12:05:53+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "David O'Leary Leeds United Defender, Profile & Stats - Premier League"
-    },
-    {
-      "desc": "Republic of Ireland captain Nathan Collins is ruled out of Tuesday's must-win Nations League game against Kosovo with a ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-16T13:01:18.441269+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmlyd25gy904o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-16T12:02:07+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Republic of Ireland captain Collins to miss Kosovo game"
-    },
-    {
-      "desc": "FA Trophy Third Round: Draw Details AFC Telford United",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T16:00:55.678606+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOFllNTdpdnRMWjYwVGpZbURBdjRiOFFmUDJ0QXlwMEROMjJkRGx2QWFYZjhpWVdLLXRDYTlzOFRkcWR3V2RMMmhVRUh0MGIwNDdrT0lSSmhFQ2ZSYm5QR2ZpQkhIQTJHS1plT3lPZUgtTmZLaG9UM2dfWXdHbVBOWkpWVkx3STg?oc=5",
-      "published": "2026-11-16T11:57:47+00:00",
-      "publisher": "https://www.telfordunited.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA Trophy Third Round: Draw Details - AFC Telford United"
-    },
-    {
-      "desc": "Crystal Palace closing in on Thomas Frank appointment – The Athletic Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T13:01:18.441288+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbU5KaUhGRkcxbUttNGFYT2dlUEJxckVaT0NySEhSQ3plNmFrR1dGLTRxR0wzU0pYMXdNc1VmbmRleTV3ZV9OTy1HUUlZTmJDQVhiaVZKMGV5V1ctUHRaanRsWVYzWXQ2ZF9CTFJtQ21WMmFVYkFJa1RPV29rMlM1U1hkMGtlOE53WFdWakpsbmpPTFV4aHRGMjBXV0RNRnRYVzVueWlnZ2NXUdIBrwFBVV95cUxNUW9rTU5hQjZmU3d6RW96aXZTZzZ1ZTFSU0JFaHRJQ3NZVFpwcVhiTm1obU5aZThTcktWNFRyeTdNTlpvd1V0YUZHbmE1NjdpR0duQmRGa2pCSFVjRVdPbFdHTGFjSTdBTlhxZEdOZGpMSVV4TDA1bHVwSXJMb3Q4aENVeHBXeGdSTVRhT2luRzJlNlg5RmRfbDJXdGdYcFZQZWR0Y1Q3STVwUURiNGJZ?oc=5",
-      "published": "2026-11-16T11:55:34+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Crystal Palace closing in on Thomas Frank appointment – The Athletic - Tribuna.com"
-    },
-    {
-      "desc": "Crystal Palace agree with Thomas Frank to manage t… | Yalla Shoot YSscores",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-16T12:01:02.515959+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNclg3ZmNzVmN3RkdDR3NfMEhtQ3NYcUZ1azh3U05MbWFQbTBTaE1hU2ZJQXJFT2VEcXA4ZGVLQVd3azdfV3BTaGZtVWlRTERUb29YcVZVaUtvdDJFLWdKVG5xbjVVSUgyLWJVSjZOZnZoMUlkYkVTZ2ctdjg2LXNibUxiTFJNUXZzcEtwdV9LOUtSQTRvV3NUWTdDSFZBbmg5?oc=5",
-      "published": "2026-11-16T11:54:42+00:00",
-      "publisher": "https://www.ysscores.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Crystal Palace agree with Thomas Frank to manage t… | Yalla Shoot - YSscores"
     }
   ],
   "processed_urls": [
@@ -5458,7 +5493,8 @@
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVi1vT0FndzBibUhVY19jbW5rbVpDSXZzaEV5ZW5RdU1zNzZzVFNqZk5wT0UxcW5kcmhTamt0RXFUbE1xeFhiSjZDd3JKUGxJNklicGtsUXp1em9IdlhoX2VCTEJRVkV2ZmVHMHY4Q0RiREpWc3pRNmVDUmxFNlpqUGQwVzJiNzZNcndNRkwyUEtHcTBxYmRONA",
     "https://www.dailymail.com/sport/football/article-16297859/Declan-Rice-agrees-new-five-year-Arsenal-contract-Star-join-Bukayo-Saka-Gunners-highest-paid-player-350-000-week-days-midfielder-declared-extremely-lucky-play-Gunners.html",
     "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWUpnMzZXbHdYMW1PSXJOMXprZWFRR2o1dlhYcmFCcjVreEtvYVVGcE5YaWhrZU51RkdrXzdMeXBfYnBySThCQTVWalRFQmE4RTI2cXNId2E4NnN6NWJOSGctOGpkbGhSaEdESkJodXYzakpRT3JoWl9JTFpMR0ExN2NDbFhkbTdPc0ZBdnNvWmZXTHBkRC14YmZoNzM",
-    "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html"
+    "https://www.dailymail.com/sport/football/article-16298047/Max-Dowman-England-goalscorer-Arsenal.html",
+    "https://www.thesun.co.uk/sport/41044601/tottenham-snubbed-james-trafford-transfer-england"
   ],
   "s_overflow": {},
   "schema_version": 4
