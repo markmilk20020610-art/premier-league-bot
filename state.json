@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-17",
     "errors": 0,
-    "input_tokens": 100061,
-    "output_tokens": 11229,
-    "requests": 15
+    "input_tokens": 106123,
+    "output_tokens": 11966,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3744,7 +3744,7 @@
     }
   },
   "last_morning_report_date": "2026-11-17",
-  "last_scan_at": "2026-11-17T04:00:48.458810+00:00",
+  "last_scan_at": "2026-11-17T05:00:51.760226+00:00",
   "last_summary_sent_at": "2026-11-16T22:01:21.160912+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -3765,6 +3765,16 @@
     "updated_at": "2026-11-16T22:01:21.145876+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Josh O'Hanlon Videos & Best Moments Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-17T05:00:51.762819+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBMNWFnZ1ZIVlZmMmhrcUFVVVlYRmh1UmUteTlUTU1Mel9kX3dCbHRtWE5ySEZNQl9sV1FxX3JydHM1YzdwLTltWWZ2akl6M05rTTEyQUlkNkdya05FRS16VWZqUzZIcUR3dmN2LTlpOWFpVkRU?oc=5",
+      "published": "2026-11-17T02:11:31+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Josh O'Hanlon Videos & Best Moments - Premier League"
+    },
     {
       "desc": "Crystal Palace appoint Thomas Frank as new manager Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5254,16 +5264,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Watch the BEST GOALS of Matchweek 9 - Premier League"
-    },
-    {
-      "desc": "Crystal Palace have agreed terms in principle with Thomas Frank to become their next head coach, Sky Sports News underst",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-16T12:01:02.516084+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612758/thomas-frank-crystal-palace-agree-deal-in-principle-with-former-spurs-and-brentford-boss-as-pierre-sages-successor",
-      "published": "2026-11-16T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Frank agrees deal in principle to become new Crystal Palace head coach"
     }
   ],
   "processed_urls": [
