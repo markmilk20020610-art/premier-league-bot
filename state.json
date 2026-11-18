@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 111113,
-    "output_tokens": 11305,
-    "requests": 16
+    "input_tokens": 116307,
+    "output_tokens": 12067,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4129,7 +4129,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T05:00:54.918221+00:00",
+  "last_scan_at": "2026-11-18T06:00:49.995573+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4150,6 +4150,16 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Melksham Town withdraws from cup, sending Corsham Town through by default The Wiltshire Gazette and Herald",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T06:00:49.998097+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYm9KS2hvaHhBT1JlQ1VyZGkyZ251enZ3ZmtiTnJjNF95WEk3a0ZteG9RY1VvWFpYWGhlakd2Mmt1MG5YLTEzczhKamFWeXJ2V2lEM1FyQkpQbTJNRkJ3ODk1cVVJX095a3F1Vk51UWZMUHAyblN2MVhvV1Zxbmk0dVhYOGRjOERSNWlUZjJudW9rRXBwUGEtYXJ1NS1ObmdP?oc=5",
+      "published": "2026-11-18T05:00:00+00:00",
+      "publisher": "https://www.gazetteandherald.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Melksham Town withdraws from cup, sending Corsham Town through by default - The Wiltshire Gazette and Herald"
+    },
     {
       "desc": "Black Friday Learn Football Offers | Manchester City F.C. Manchester City FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5639,16 +5649,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Arsenal FC Official Website - Arsenal.com"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T15:00:56.367676+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-11-17T11:14:36+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     }
   ],
   "processed_urls": [
