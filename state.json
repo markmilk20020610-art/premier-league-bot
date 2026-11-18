@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 5034,
-    "output_tokens": 922,
-    "requests": 1
+    "input_tokens": 11364,
+    "output_tokens": 1865,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4339,7 +4339,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T16:01:11.488421+00:00",
+  "last_scan_at": "2026-11-18T16:18:58.941010+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4360,6 +4360,46 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "The Premier League resumes on Saturday with Crystal Palace, Sunderland and Man Utd in the relegation zone. But is it too",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T16:18:58.943154+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj3vgp36z063o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T16:09:55+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "The tightest survival scrap for years? Why it's not too early to worry"
+    },
+    {
+      "desc": "KIM HELLBERG needs zero assurances over Will Lankshear’s future — declaring the red-hot striker has no interest in ditch",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T16:18:58.943179+00:00",
+      "link": "https://www.thesun.co.uk/sport/41053301/will-lankshear-boro-hellberg-transfer/",
+      "published": "2026-11-18T16:03:48+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Kim Hellberg backs Will Lankshear to snub Premier League transfer interest and claims Boro star has no desire to leave"
+    },
+    {
+      "desc": "Crystal Palace v Man City Women - Ticket Information 2026/27 Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943199+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWGZSRllzUER5cng0eVJqdUZEcXg1Y3Q1SVJZaFVWbVhBTmVIYnlNR0N1N0xBZDhtR1Mzdy1HLWxGUS0xdFJjazlrRGhNREl2V0NTRjl1QmJYVTRmUlpQYTJMc212U3Z0S29rNlI4UGUwLVlhWkVvZk9aN1Q4eXFoVXZ2bjh1N3dQcnlFVGd1WjNpM3pBVlU5cWZGWFU?oc=5",
+      "published": "2026-11-18T16:02:23+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Crystal Palace v Man City Women - Ticket Information 2026/27 - Manchester City FC"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-18T16:18:58.943215+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13612918/premier-league-predictor-predict-the-fixtures-each-gameweek-generate-your-table-and-share-results",
+      "published": "2026-11-18T16:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Premier League predictor - play our new game each week!"
+    },
     {
       "desc": "CARLO ANCELOTTI has responded to a scathing attack by Brazil legend Romario, who demanded he leave his role as national ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4391,6 +4431,36 @@
       "title": "Man Utd confirm exit of five staff including three-time Premier League winner as Pochettino instantly wields axe"
     },
     {
+      "desc": "Pochettino arrives! Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943287+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM0Z4Zkp1X1VOemNYWnhFdEx4NFdJMDVueUJkZEZFbnFITUpfOTlmdUZJWm5pR2xDOWxFOGd4NWZNbVp3TFJuUDhKU1hqMzRSNlc0TENoZkRIbDV3VWNmVkxzVTFTT0piemRTSGtHOWZmTGJZamUzYS1MLVJUQ2RXVzYyQm5SVjBvdVlUblVrcEk?oc=5",
+      "published": "2026-11-18T15:12:44+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino arrives! - Manchester United"
+    },
+    {
+      "desc": "Maanum: “I love the competitive, big games” Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943317+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOTNibjAyTE9LdWdVWVVlcWJ2YTgtdmZkbTZnNzE0TjByOGFtNUhtbzQyc0xSUmZMMDAtcW1PQ1ZNWFloNG96Q3VuSGF2VGMyZHdxdXUwaWJ4di0wdzB1S1RzejBaanJCa0ZPTmRIazZLUXR2SExBSmxGanp0cHkzanBvZmtsUkwx?oc=5",
+      "published": "2026-11-18T15:08:38+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Maanum: “I love the competitive, big games” - Arsenal.com"
+    },
+    {
+      "desc": "TOM COLLOMOSSE: Galatasaray have switched their home fixture against Samsunspor this weekend to the stadium of Istanbul ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-18T16:18:58.943340+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16302997/Galatasaray-emergency-pitch-repairs-Champions-League-clash-Aston-Villa-worrying-images-emerge.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-18T15:07:45+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Galatasaray forced into emergency pitch repairs to make it playable for Champions League clash with Aston Villa after they had to MOVE OUT, "
+    },
+    {
       "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge at an unmissable price with these top deals. Perfect f",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-18T16:01:11.490683+00:00",
@@ -4409,6 +4479,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Arsenal willing to make sales to beat Chelsea and Liverpool to Scott signing"
+    },
+    {
+      "desc": "Share your team with our new FPL feature Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943379+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORmtCcDlVVXU2WVlxY19RbmR3WGNUeFF1V1VYUUczRGZzOXJPV3dvdjZlbFF0bTczcnEyLWptaXVaNFdrSFdpclgwcmFKZUdtQ0JQa3oxS243UHRYbmg4andOMkI1aFRPNFVRZkR1RXQ4R2pIS04xNHlCaGlfOG1GU1pPMEVvaGM5RDFMU3hQMA?oc=5",
+      "published": "2026-11-18T14:59:16+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Share your team with our new FPL feature - Premier League"
     },
     {
       "desc": "Fan Engagement Liverpool FC",
@@ -4451,6 +4531,16 @@
       "title": "Cole Palmer is ‘better than some of the other guys’ in England squad, says Chelsea legend who tells star to step up"
     },
     {
+      "desc": "The Ballon d'Or king is joined by England team-mates Jude Bellingham, Declan Rice, and Bukayo Saka in the Best Men's Pla",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-18T16:18:58.943454+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16301225/harry-kane-globe-soccer-awards-dubai.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-18T14:13:11+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Harry Kane up for ANOTHER prize alongside three England team-mates - as Globe Soccer Awards voting opens ahead of glitzy Dubai ceremony"
+    },
+    {
       "desc": "ARSENAL supporters can get their hands on tickets to watch the champions take on the finest teams in Europe from the fin",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-18T15:00:53.963942+00:00",
@@ -4459,6 +4549,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal tickets and hospitality packages to Premier League and Champions League games at The Emirates"
+    },
+    {
+      "desc": "Quiz: The most goal involvements from these 25 nations Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943490+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa0VBWU5FQXVlQzQ3aS1YSzlvWTBTTFlYdTUtYWZPdzR3dXhxQWp1OVY3WVUwSHhLWU9mNDNtVTlzbTFYc196bWNScjdYbXEzUVhTMXRwNVhCbnNUU1RVUFF3UHFMOGN2X1dGNUctVDZsWEdNeXVmRW5RVkdrOXlBMTFNQVdKN0dnZHVXei15aGxCcThtQ1VfU0Rvbw?oc=5",
+      "published": "2026-11-18T14:00:13+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Quiz: The most goal involvements from these 25 nations - Arsenal.com"
     },
     {
       "desc": "Ornstein reports PSG among teams most interested in €100m Premier League star LiveScore",
@@ -4691,6 +4791,16 @@
       "title": "\"Declan Rice will put pen to paper\" with Arsenal but he is not in a \"rush\" claims Romano - TribalFootball"
     },
     {
+      "desc": "Dowman and Donczew star in youth internationals Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943700+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPX1VoT1p5VmRNNmUzMXBFUlRRNjI5cm9BNkFtdFJEZ1dPd3pJVmNETmc2ZTBKZ2NoSi1BVUlwOFlobGdnQnV6c3R3WVc4M0pja0oxUGpYZm1TekNya1g2ZVRZNWdmQktubHJ4cUtmOGNtLVNVMDZQQXAxZFJ5cG1oTG1NOWNhNGdwdzMxeU1FakN6X00?oc=5",
+      "published": "2026-11-18T11:49:42+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Dowman and Donczew star in youth internationals - Arsenal.com"
+    },
+    {
       "desc": "CHRIS WHEELER: United sources say they are disappointed the video appeared without any contact with them. The club maint",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-18T12:00:51.446964+00:00",
@@ -4749,6 +4859,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd legend’s daughter ‘heartbroken’ after devastating injury sees netball World Cup dream ‘ripped away’"
+    },
+    {
+      "desc": "Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943768+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOZDJWUjlVN0JqbUdjbkY2Z05oakhNLUhiaDFKZlk3UmtQVXN3dm1rc1l5ZlZsazF2T0FsckFGSEZHbWU2UWhLZVNtS3NvTmM5eEpISHZyV2dSRlAyUVZtOWhYdmVFcnlDTzcyM0lNUTNHVHQwU2Rlb01vd2JWbzkybE8wb0UwYTBQaWNJaU53Z0JURER4WUd3RENUNmY5by1lckR1elc2Wjl1RXhPT0pPM3dKNjZDZ3UtWW9hajRfQjg1WGxoWXFLaWxMemlsZk4xUHVRRjAtclpHc21JVjM2OUFKQVpvd18yY3B5UkJCbURQWUhmRXU2WVhlNEc3US1VVEEyV19n?oc=5",
+      "published": "2026-11-18T11:16:34+00:00",
+      "publisher": "https://shop.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "- Premier League"
     },
     {
       "desc": "Shop | 2026/27 PUMA STELLAR NITRO Ultimate Acceleration Football (FIFA Quality Pro) fluoyellow-multicolor Premier League",
@@ -4979,6 +5099,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Internationals: Martinez returns and Anselmino debuts in huge Argentina win | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Pochettino signs off from USA with victory Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:18:58.943950+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaGVpcGV2ZzdyM1Jtc2ZnenRUZ0JzWHQ0aWhmODVfVW5zWExwdHUyUmpMU1Rnc3lOUW1BLV9PZlJXOTQzVGM2dGRnNFNIZ1NPb1pqYVdiUDhXeDUtdmpIMUY3dVZNV2ROVGdNdl9Tbl9SZkd5b0hVWlR2ZEJGc3BNMGR6bUJ2amFBVHc?oc=5",
+      "published": "2026-11-18T09:55:35+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino signs off from USA with victory - Manchester United"
     },
     {
       "desc": "Odegaard inspires Norway fightback Arsenal.com",
@@ -5729,136 +5859,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Man United Confidential: Mauricio Pochettino to be given money to spend in January as club target recruits in THREE positions - and surprise"
-    },
-    {
-      "desc": "MANCHESTER UNITED are set to make history by hiring their very first female coach EVER. The Red Devils are readying the ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T20:00:53.407417+00:00",
-      "link": "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach/",
-      "published": "2026-11-17T19:56:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd to make Silvia Tuya their first EVER female coach as Mauricio Pochettino create history with Red Devils staff"
-    },
-    {
-      "desc": "He has been training in Madrid in recent days ahead of a move to Real Madrid, and he has taken to social media to bid fa",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T20:00:53.407466+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16300607/JJ-Gabriel-Man-United-exit.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-17T19:47:13+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "JJ Gabriel confirms Man United exit: Star, 16, posts farewell video as he finalises move to Real Madrid after stunning Old Trafford chiefs w"
-    },
-    {
-      "desc": "TeenagerJJ Gabriel posts a farewell message saying Manchester United will always be part of his story, as he prepares fo",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T20:00:53.407491+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg2e4208zmo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T19:35:06+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Madrid-bound Gabriel posts farewell Man Utd message"
-    },
-    {
-      "desc": "‘Fake news’ – Tottenham fan relief at Fabrizio Romano’s latest Pedro Porro update Spurs Web",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407513+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMUdPb0hpV252bVQ5SldweDM2QWlSUFBzamJsdVZLQ2FUUTBVLTRrQnVIZzF0MW0xRXcydnllQ0JXUUpuLXBMSVhpUmtXTFBIc3dXZWs0LWQ2d3BWeWhiYWxrQk0zbnlPRkJ0Q2JDVzc1STg1YXN4Y2sxRTFOLWZLeEY3bWx6Q3hXaERzNUVtc3BGVTZZZmx5bGhiOFVFV0VsR1pXNjY1azkzMVpOakVLNTBIZzY?oc=5",
-      "published": "2026-11-17T19:31:34+00:00",
-      "publisher": "https://www.spurs-web.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "‘Fake news’ – Tottenham fan relief at Fabrizio Romano’s latest Pedro Porro update - Spurs Web"
-    },
-    {
-      "desc": "Liverpool or Chelsea? Lamine Camara most 'likely destination' revealed with agreement 'close' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T02:00:51.725713+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUjVyUFFfWE9QU1ZxeGJrWk5MZF80RzBhZURwM2FkRElRd3BPT3JsMXltMkR3SWk1ZGVlNVU0dEI5czF5X0dWbDA4dFk2TWRDdDVaMmFRRFhmcUdZSmM4SGVma2dzUXZJcFltdGJUNDBUU0VHMk1Sa2U5bDFNUGVxeFNzcEJVZ2g3bTlNN1o3NVJvVWJCeGUtUlRCNUVxUHhyZXJGdTI4U3VHTlhaV2s1aktkMA?oc=5",
-      "published": "2026-11-17T19:30:19+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool or Chelsea? Lamine Camara most 'likely destination' revealed with agreement 'close' - Football365"
-    },
-    {
-      "desc": "Show us your matchday ritual Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T22:00:53.292163+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9zZk92ZkNmdGtiMlBOU1JWZWRGTnhNWHE3MVNLTF9VWXZEdVVkOFYwRlBFRlc0YkJKd2RVM2xPQlpUN1Qwbm92aWg5bkVEb2l2R2Utb2ZMd2VNLVFES2Z0VW9aM2VReVo4UER5Mk1kNjNoMzNTYTNfYUdKMG4?oc=5",
-      "published": "2026-11-17T19:21:20+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Show us your matchday ritual - Manchester City FC"
-    },
-    {
-      "desc": "York footballer charged after altercation with pitch-invading fan The Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407531+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWXJnLWYtaGliNjIzdmNKNmpzVm4wZ0FaMGxKMXBHbmdubDNuVGQ4NERtZU5oWmx1LWdiNlRSVkppQld4QlU4NEd0SlA1LTVvWV90SzJ0a0R1enl2MkpvUlM3VDhFclBKeEVMbHNmYTByTjNBY190TUtuMnFla1BuY3MxSjJ0bHlqQXZ6ZjU5QzNvVEpJTmFPdFZhRlVzUl9l?oc=5",
-      "published": "2026-11-17T19:19:29+00:00",
-      "publisher": "https://www.thetimes.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "York footballer charged after altercation with pitch-invading fan - The Times"
-    },
-    {
-      "desc": "FA chair to examine Gianni Infantino’s Fifa World Cup sell-off plan documents The Independent",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407550+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcmFsUmJSQ3g1RHNrVzRadDNtT1pOdWVROWNnMzB1TS1BOHpRbUpxbURNc1NaR1ZmQXVTdml0ZHhzZ2c3Z09KSUdUY0NXczNtb0s1bGZuVmxfZDlBNG1ISm8wYjRiVFdqaDljVWRfbndqU1RFaWd0Vlk4YW1hZ1FScWE5TXhFdzNjNEpCbVNaVXNLM2l2YTdiOGZvNS1SRFZReFhBaXh2Tm01Z3pwQVE?oc=5",
-      "published": "2026-11-17T19:18:00+00:00",
-      "publisher": "https://www.independent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA chair to examine Gianni Infantino’s Fifa World Cup sell-off plan documents - The Independent"
-    },
-    {
-      "desc": "Arsenal, England soccer great Peter Storey dies at 81 Sportsnet.ca",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407568+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcDhqcFFxZXZibmk3NHdXTXI1NkpSaFZnVWpvMk5peThBNGZkU1p1ZzVNT3loTnljM1lGT0dQUTRoQWE3dXUzcW9CUC13VURuUUI3M2pPUXkxaVpZYkhHY1dFMEJSR18xRDJQS0xhaWd3RnRiMUJobW5XQU1tQ2xQVVNjeUc2SDVEd0JidTdXSFQza3hXU2hCZUtwUW9CeGh3ZVQw?oc=5",
-      "published": "2026-11-17T19:15:00+00:00",
-      "publisher": "https://www.sportsnet.ca",
-      "source": "https://www.thefa.com/rss",
-      "title": "Arsenal, England soccer great Peter Storey dies at 81 - Sportsnet.ca"
-    },
-    {
-      "desc": "“I wanted to clarify…”: Romano delivers clear message on Barcelona interest in Tottenham star LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407587+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRHl4c0J4M3BiVEJXZXlzX2FVTm5KdHpPd1NJYTFzMC1CaXhYT19ZY01MTnUyY1dTcHlWMHlfVDNqN1IxRGFlUUs1MkhhQ1ZFVFNNNHZxNVJ4RWRKWFhRalZySnFoSzR2TjNfTThoQWVmdklGcnN5RDNGTFJVd2ZxTmVHb2JsdGxBZl9kbTk2c09RWU9kb0R6aE8wUnJvUFBYeDBvVXpsOWd3SnVPWUtocFpzSUc5MUJGTUZSeGZlT1Y2TlF3VDdVdWlFVkRhYjNsbGpFOHQ5Q1AzWlBTX3B4OHMtYmVoOVRERERpdzhkS0VPT0VC?oc=5",
-      "published": "2026-11-17T19:14:09+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "“I wanted to clarify…”: Romano delivers clear message on Barcelona interest in Tottenham star - LiveScore"
-    },
-    {
-      "desc": "Watch | Behind the scenes as Tommy Hilfiger style Liverpool squad ahead of Villarreal Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407605+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTGQ3cW13QnNXQmhwVjA4SVplbk5ZUTF6OUdHNXA5Wk8zbzdGbUx1aEIxck1UYmc4MTNXTUdqQ0twM0lqN3JsNzl0Ty1JTkdkWmhzNzZjM1g1S21DZXZEeTVqMlVuaWVUUy0yaFA5T2dyRmozbmlVUUdxLXNtVEdac0xreVFKTDRCQVdJaVJpdW5xRl85Rjgyc1M4Zw?oc=5",
-      "published": "2026-11-17T19:11:33+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Watch | Behind the scenes as Tommy Hilfiger style Liverpool squad ahead of Villarreal - Liverpool FC"
-    },
-    {
-      "desc": "David Ornstein’s The Athletic FC Q&A: Kroupi’s future and would Arsenal go back in for Vinicius Jr? The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407624+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUmFfSEZ5VUtJRzQwTXpfMDc0c3JpcVVWVTAtTlJrU0R5YU5aYkZpRmxvSUNSZ2lqMFBPMk9GNElQZ1hYSHZUWGt0M2oyZkNFNkUzblNEZmZJeVpDaUR5c0RuME94VWI2bUViY0NKTU9MUEVPNGRvaTJiSmpJcm1aWlluTU4yeVlyMVRMQkQwN25tdw?oc=5",
-      "published": "2026-11-17T19:09:53+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein’s The Athletic FC Q&A: Kroupi’s future and would Arsenal go back in for Vinicius Jr? - The New York Times"
-    },
-    {
-      "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino is set to crack the whip by introducing regular fat tests upon of hi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T20:00:53.407643+00:00",
-      "link": "https://www.thesun.co.uk/sport/41053324/mauricio-pochettino-man-utd-michael-carrick-usa-liverpool/",
-      "published": "2026-11-17T19:06:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino ‘to introduce routine FAT TESTS for Man Utd flops… despite also planning to host team meal’"
     }
   ],
   "processed_urls": [
