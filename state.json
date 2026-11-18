@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 27,
+        "calls": 1,
         "errors": 0,
-        "requests": 27
+        "requests": 1
       }
     },
-    "calls": 27,
-    "date": "2026-11-18",
+    "calls": 1,
+    "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 173690,
-    "output_tokens": 18649,
-    "requests": 27
+    "input_tokens": 5034,
+    "output_tokens": 922,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4339,7 +4339,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T15:00:53.961248+00:00",
+  "last_scan_at": "2026-11-18T16:01:11.488421+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4360,6 +4360,56 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CARLO ANCELOTTI has responded to a scathing attack by Brazil legend Romario, who demanded he leave his role as national ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T16:01:11.490587+00:00",
+      "link": "https://www.thesun.co.uk/sport/41061057/romario-slams-ancelotti-real-madrid-response/",
+      "published": "2026-11-18T15:50:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Brazil legend Romario calls for Carlo Ancelotti to be SACKED before Real Madrid legend hits back"
+    },
+    {
+      "desc": "NICO PAZ has sent Manchester United a timely reminder of his rising superstardom with two stunners for Argentina. The 22",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T16:01:11.490610+00:00",
+      "link": "https://www.thesun.co.uk/sport/41062386/nico-paz-man-utd-mauricio-pochettino-transfer/",
+      "published": "2026-11-18T15:47:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lionel Messi’s heir Nico Paz send timely reminder to Mauricio Pochettino as long-term Man Utd transfer target shines"
+    },
+    {
+      "desc": "MANCHESTER UNITED have confirmed the departures of five members of staff. The Red Devils are clearing out the staff room",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T16:01:11.490628+00:00",
+      "link": "https://www.thesun.co.uk/sport/41062340/man-utd-axe-staff-evans-pochettino/",
+      "published": "2026-11-18T15:43:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd confirm exit of five staff including three-time Premier League winner as Pochettino instantly wields axe"
+    },
+    {
+      "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge at an unmissable price with these top deals. Perfect f",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T16:01:11.490683+00:00",
+      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
+      "published": "2026-11-18T15:01:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea tickets and VIP hospitality deals for Premier League games at Stamford Bridge from just £155pp"
+    },
+    {
+      "desc": "Arsenal are one of three top Premier League clubs interested in signing Bournemouth and England midfielder Alex Scott.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-18T16:01:11.490698+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13613285/alex-scott-arsenal-keen-on-chelsea-and-liverpool-target-with-bournemouth-softening-stance-over-potential-sale",
+      "published": "2026-11-18T15:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Arsenal willing to make sales to beat Chelsea and Liverpool to Scott signing"
+    },
     {
       "desc": "Fan Engagement Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4599,6 +4649,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "How Man Utd legend Sir Alex Ferguson quietly helped Frank Lampard in managerial career"
+    },
+    {
+      "desc": "Arsenal reach agreement with Jurrien Timber over new contract until 2031 – Romano Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T16:01:11.490871+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVkhLV1RmSDhyOWJnUFp3cVRLcFhxZWxEOWdPLXVWb1l3c2I4em5qQUw4TmJ0b21jby1xdVJmQXJPd2tRajNKMTRLOXdvckxMQVZodGR1clV4R0lUS0pheVg3YUIwNW1iMGUyNGozWVIyaDdaWUlRajM1eHZQbDIweng2VEVXREVvaUlXN3BtSkJ6V0o1eU4yOTFPUXU2bEl3c0RvZUxISm1faTR1SHBHOTctR2NjNDVwNk130gHAAUFVX3lxTFBHcDVmX1dIZWxlUVA2eFRVZUg1b2x2Y1pqM0tVT2VEMXlRZXZFTkN3OGZLeXNnbzM3X0dhWWt5Sko5OEpCeno4N2NncTQtaUhlbTd4Q3FwT0tEMmd6S2gwWk5PVlY5LXlrbjFDRWN4V2RBbWtVck1NTldzQmNVSlMyVjkwbjMxS2VPc1p1RE4tOTZqNHlnVFU2Vy1mMWJuX09DVWYxUUsyVEs3S3lUNmxodzh3TzFqWThHalJBMUZZMA?oc=5",
+      "published": "2026-11-18T12:01:58+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Arsenal reach agreement with Jurrien Timber over new contract until 2031 – Romano - Tribuna.com"
     },
     {
       "desc": "Manchester United head coach Mauricio Pochettino is expected to be backed in the January transfer window as the club aim",
@@ -5799,66 +5859,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Mauricio Pochettino ‘to introduce routine FAT TESTS for Man Utd flops… despite also planning to host team meal’"
-    },
-    {
-      "desc": "CHELSEA are set to be stuck with flops earning a combined £400,000 per week. But the Blues hope one big signing in the J",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T19:00:55.915303+00:00",
-      "link": "https://www.thesun.co.uk/sport/41052833/malo-gusto-wes-fofana-chelsea-jamie-gittens-transfer/",
-      "published": "2026-11-17T18:59:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why Chelsea are set to be stuck with 3 flops on combined £400k a week – but January transfer window could save season"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 RICE Pre-Printed Away Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407675+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWHc3dm5oOEk0eW5Ja08yVUZFVmdjakowTzFvTDhfV2RiQTdaMEI3YkJZOVNvQXh5Q2hmMndLbzQ3VlNuZ3FIWVFndGh1cGN4MVpBRlJXVlhsRkNEc2ZQOWY1U19nXzNCLVZCY2p0UUdndlBLUGh2Q3l0OHRHZDlwMEg4OUQxVjZLeXA1cmxsQkhWUWNFSHdFejVySnhGZXQyZlZkT05JZGtlMTZMU0ZnMVVmZlJ4aFZyQzU1bm03azQ1SjVYcTN4OQ?oc=5",
-      "published": "2026-11-17T18:59:06+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 RICE Pre-Printed Away Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 EZE Pre-Printed Away Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T20:00:53.407711+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdmZOMlhIcjJkVkZvOGFVemxhTFk0bnc0Z3VqWkQtaHVKdXJHRDBJY2g3QWhQd2cxc1I4SHNjSXRwRVktMFN4dFh5SXFrTHRBUEFXaHJVMlhyU1JjNVk0ZXA5eUx4TmhJdDBHYXpUM2M0OEVhSERFQndZVnctemItWTltQXBlRm00b3JfSDNBb0lWcDBWT1VXNFVoNDF3cmcySG94OFExY2hBanZzMEdERG1TY1diTmhyRzlWYUJZQ2pJUHh0NFE?oc=5",
-      "published": "2026-11-17T18:59:06+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal adidas 26/27 EZE Pre-Printed Away Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "Maanum breaks the deadlock Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T22:00:53.292409+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5yZUo0dC1jVS15S25LMnFiREdjSkhwSmY5MHJYUTVSbmRjdXFHSlBjNHp3U0ZXWGxVcGtMV1dhVzhyMUplcmdoTEFST1VWTVlvYU5PUUdFS1lEd0UxUzZF?oc=5",
-      "published": "2026-11-17T18:47:54+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Maanum breaks the deadlock - Arsenal.com"
-    },
-    {
-      "desc": "JJ GABRIEL has sent a message to fans as he confirmed his Manchester United exit. The teenage sensation declared his des",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T19:00:55.915339+00:00",
-      "link": "https://www.thesun.co.uk/sport/41053607/jj-gabriel-quits-man-utd-real-madrid-transfer/",
-      "published": "2026-11-17T18:43:19+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "JJ Gabriel announces Man Utd exit in emotional statement as 16-year-old prepares to complete Real Madrid transfer"
-    },
-    {
-      "desc": "JORDAN GRAHAM has been discharged from intensive care but still remains in hospital after a serious car accident in Sept",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T19:00:55.915370+00:00",
-      "link": "https://www.thesun.co.uk/sport/41053219/efl-star-leaves-icu-graham-crash/",
-      "published": "2026-11-17T18:32:17+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "EFL star ‘discharged from intensive care’ two months after car crash but remains in hospital for ‘specialist treatment’"
     }
   ],
   "processed_urls": [
