@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 12,
+        "calls": 13,
         "errors": 0,
-        "requests": 12
+        "requests": 13
       }
     },
-    "calls": 12,
+    "calls": 13,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 84308,
-    "output_tokens": 8163,
-    "requests": 12
+    "input_tokens": 91041,
+    "output_tokens": 8717,
+    "requests": 13
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2775,6 +2775,41 @@
       "title": "利兹门将特拉福德低级失误送礼，伯恩茅斯笑纳大礼",
       "updated_at": "2026-10-31T17:10:59.041457+00:00"
     },
+    "a50e644842e2": {
+      "article_title": "Man Utd to make Silvia Tuya their first EVER female coach as Mauricio Pochettino creates history with Red Devils staff",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "57f31954d08fb5d0",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 163
+        }
+      ],
+      "created_at": "2026-11-18T02:00:57.420695+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "cc08b8e7d9c2bed1",
+      "event_id": "a50e644842e2",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-18T02:00:57.420695+00:00",
+          "origin": "created",
+          "title": "Man Utd to make Silvia Tuya their first EVER female coach as Mauricio Pochettino creates history with Red Devils staff",
+          "url": "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 163,
+      "title": "曼联将任命队史首位女性教练西尔维娅·图亚",
+      "updated_at": "2026-11-18T02:00:58.001239+00:00"
+    },
     "ab0b6fd30956": {
       "article_title": "Sunderland 1 Chelsea 0: Brobbey’s controversial penalty incident sees Blues go into international break on losing run",
       "attempts": 1,
@@ -4094,7 +4129,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T01:00:58.361788+00:00",
+  "last_scan_at": "2026-11-18T02:00:51.722577+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4115,6 +4150,16 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Mauricio - Pochettino - Premier League Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T02:00:51.725077+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOSWNrU2EwdXBQVVJ3M0djNHJDRVY1N1FVdFF3OWlYcV9pQTN6UlJTQXM4WHF2MFI0MUczaWs1MERSekpoZjd5WWpOcEh0blVWbmdGeU5rNzZMaDcwb0ZiNXZmN2ZhR09lZzQtOXJrb2FvZlVTWGlTWWVkcHFibVd5Wll3?oc=5",
+      "published": "2026-11-18T01:06:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Mauricio - Pochettino - Premier League - Premier League"
+    },
     {
       "desc": "Manager Michael O'Neill hails the belief shown by his side after they come from behind against Hungary to earn the draw ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -4164,6 +4209,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Republic of Ireland talisman Parrott caps dream year with two more goals"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T02:00:51.725233+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-17T23:06:38+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "Round-up: 11 Liverpool players feature in international action throughout Tuesday Liverpool FC",
@@ -4514,6 +4569,16 @@
       "publisher": "https://www.spurs-web.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "‘Fake news’ – Tottenham fan relief at Fabrizio Romano’s latest Pedro Porro update - Spurs Web"
+    },
+    {
+      "desc": "Liverpool or Chelsea? Lamine Camara most 'likely destination' revealed with agreement 'close' Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T02:00:51.725713+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUjVyUFFfWE9QU1ZxeGJrWk5MZF80RzBhZURwM2FkRElRd3BPT3JsMXltMkR3SWk1ZGVlNVU0dEI5czF5X0dWbDA4dFk2TWRDdDVaMmFRRFhmcUdZSmM4SGVma2dzUXZJcFltdGJUNDBUU0VHMk1Sa2U5bDFNUGVxeFNzcEJVZ2g3bTlNN1o3NVJvVWJCeGUtUlRCNUVxUHhyZXJGdTI4U3VHTlhaV2s1aktkMA?oc=5",
+      "published": "2026-11-17T19:30:19+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Liverpool or Chelsea? Lamine Camara most 'likely destination' revealed with agreement 'close' - Football365"
     },
     {
       "desc": "Show us your matchday ritual Manchester City FC",
@@ -5584,36 +5649,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "London City's Goodwin gets first England call-up"
-    },
-    {
-      "desc": "Tony Mowbray has stepped down from his role as Blackburn Rovers manager due to ill health. The 62-year-old previously ha",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T12:01:00.010804+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16299041/Tony-Mowbray-steps-Blackburn-Rovers.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-17T11:06:25+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Tony Mowbray steps down as Blackburn Rovers manager with immediate effect due to health reasons - two years after illness forced him to leav"
-    },
-    {
-      "desc": "The French media have rained down hard on a number of Premier League players in the national team after a less than impr",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T12:01:00.010827+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16298837/Chelseas-Malo-Gusto-named-biggest-disappointment-Zidane-era-Liverpools-123m-man-Bradley-Barcola-lacked-accuracy-composure-damning-verdict-Frances-Premier-League-stars.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-17T11:01:20+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Chelsea's Malo Gusto named 'biggest disappointment of the Zidane era'... and Liverpool's £123m man Bradley Barcola 'lacked accuracy and comp"
-    },
-    {
-      "desc": "City quartet called up for latest Lionesses squad Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T12:01:00.010842+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdnJ1SzZjYVVRU1NQdGRpU2puVnB1cWdGNVI3T0xVNHgwSUxidjAta21uNkNSdGZwMkVzQ3dCQVFNMDJpbkt4UHpwYXV0S3lGR0hleDdZckpseG0zb01yNXhFdldPQ05tUV9Va1NJVkU5cHVxZVpVTF9DM2VJbUJka3JvWlBkMUU?oc=5",
-      "published": "2026-11-17T11:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "City quartet called up for latest Lionesses squad - Manchester City FC"
     }
   ],
   "processed_urls": [
@@ -5746,7 +5781,8 @@
     "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui",
     "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts",
     "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o",
-    "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy"
+    "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy",
+    "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach"
   ],
   "s_overflow": {},
   "schema_version": 4
