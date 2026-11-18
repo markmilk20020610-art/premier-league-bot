@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 25,
+        "calls": 26,
         "errors": 0,
-        "requests": 25
+        "requests": 26
       }
     },
-    "calls": 25,
+    "calls": 26,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 161505,
-    "output_tokens": 17162,
-    "requests": 25
+    "input_tokens": 167501,
+    "output_tokens": 17847,
+    "requests": 26
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4304,7 +4304,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T13:01:08.788497+00:00",
+  "last_scan_at": "2026-11-18T14:01:15.555422+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4325,6 +4325,76 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Ornstein reports PSG among teams most interested in €100m Premier League star LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.557587+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQnpYdW9URjhiamRtVWtQVERDb09zUGhHQmZpbnhoZTZxY2VwZE9WN0dKalBSeVdqWXl4UHhZZDJsaWpuOHJ3azVha19RRnBWSVVfZUVjVUdEX0JoVVpIY1pVUmtwZWlyMVNCVEVQcWlvV1NMZ3RLa2VwM0RzR0FwSkRpTC1GUkluNUx5SEJYQkZFMndJeGFwMkwzazdIWnl1WG5hX0NaR3IyS0J1WHpENWpKN1JjVjhCR0JOQ0FFQWZqclhOZ1JzZl9rSkNERGxaNjNZ?oc=5",
+      "published": "2026-11-18T13:52:36+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein reports PSG among teams most interested in €100m Premier League star - LiveScore"
+    },
+    {
+      "desc": "KMI Panel: Six Referee Errors, Havertz and Kerkez Calls Wrong (18 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.557610+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeS1WTVdCYTh2elczbzVzS3h1VWVPcHFmMXJRcTlJWHFXX0xSNzhHM3d4Rm1WUzBJZVBNdXVoWXZ2TTBqUDN2bDAxMVhFeDVSTXdYWmJBU2xOWXBjRkQ3d2VVa3VRRHJZV2FmU19faEk5STMyOV9GelVnRjFVbnlHTy1IZDV6ZFBNNGt5NlYxNVkzalkzZktDUDFsMGlmZi1m?oc=5",
+      "published": "2026-11-18T13:49:48+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "KMI Panel: Six Referee Errors, Havertz and Kerkez Calls Wrong (18 November) - The False 9"
+    },
+    {
+      "desc": "MAN UNITED fans can still book top ticket deals to watch the Red Devils under new boss Mauricio Pochettino at Old Traffo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T14:01:15.557667+00:00",
+      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
+      "published": "2026-11-18T13:48:37+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd tickets plus hotels and official hospitality for Champions League and Premier League matches at Old Trafford"
+    },
+    {
+      "desc": "TURNING Manchester United around will be no easy feat for Mauricio Pochettino. From the bustle of a busy international b",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T14:01:15.557684+00:00",
+      "link": "https://www.thesun.co.uk/sport/41058766/mauricio-pochettino-man-utd-midfield-youri-tielemans-kobbie-mainoo/",
+      "published": "2026-11-18T13:35:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd’s major issue Pochettino must fix as stats show they are lagging behind rival midfields"
+    },
+    {
+      "desc": "PIERCE CHARLES is desperate to make the grade at Manchester City - but he found himself in an awkward situation while on",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T14:01:15.557701+00:00",
+      "link": "https://www.thesun.co.uk/sport/41060146/pierce-charles-man-city-qpr-apologises-ref-nations-league/",
+      "published": "2026-11-18T13:27:31+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man City star sheepishly apologises after flattening ref with brutal punt to back of head but fans say ‘amazing tekkers’"
+    },
+    {
+      "desc": "Republic of Ireland manager Heimir Hallgrimsson says the controversy surrounding the Nations League games against Israel",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T14:01:15.557720+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/credqnv9xe4vo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T13:05:48+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Israel row a 'defining moment for us' - Hallgrimsson"
+    },
+    {
+      "desc": "CHELSEA'S internationals are making their way back to Cobham having been scattered across the globe. The Blues had 13 pl",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T14:01:15.557736+00:00",
+      "link": "https://www.thesun.co.uk/sport/41059763/chelsea-stars-international-break-morgan-rogers-pedro-neto/",
+      "published": "2026-11-18T13:03:49+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How 13 Chelsea stars got on during international break from scintillating Morgan Rogers to all-action Pedro Neto"
+    },
     {
       "desc": "MAURICIO POCHETTINO is ready for business at Manchester United after being filmed arriving at Carrington. The Argentine,",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4354,6 +4424,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal star Martin Odegaard left vomiting all night but overcomes illness to inspire Norway’s win over Denmark"
+    },
+    {
+      "desc": "David Ornstein: Eli Junior Kroupi decides next destination after Arsenal and Tottenham talk Football FanCast",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.557821+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxON2VlTDdEa1F1cVREWlNnMlQxSkJtX0RzZXp3MTlNblBxX2dGOXhXRXd2VXlWbktRYWxoeGczbHZwb0tDOHotZ2NZcFdVWXdQT0F0bFVybUxUakpUSW42ZDVlMWIyTmFJVUFHYklhOTBVNHQ0TWFhLW1aS0FONnhNU0IxbWVzLXdjU3pMMENERmw0VzNFUTI3MXh6UnotQ3lZWVE?oc=5",
+      "published": "2026-11-18T12:40:13+00:00",
+      "publisher": "https://www.footballfancast.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein: Eli Junior Kroupi decides next destination after Arsenal and Tottenham talk - Football FanCast"
     },
     {
       "desc": "The Premier League's Key Match Incidents Panel rules there were six on-field errors in the last round of games - the joi",
@@ -4446,6 +4526,16 @@
       "title": "Your PL club's 'Unfinished Business' revealed ahead of January window"
     },
     {
+      "desc": "\"Declan Rice will put pen to paper\" with Arsenal but he is not in a \"rush\" claims Romano TribalFootball",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.557946+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPRzh6ekdmbnZqLUl0MXpwNEtWVzNwcjJVU3RWbThFNF9zTUI2Ml9zMEVhOUdCc2RyMjc4cE8yTjJEaEpFa3AzVnV5NmZSOEFsR2plTUd6U1ZPSU5FN1hyeGJoVEptZ0pOaDZYcnpIa1BsaHlITTVYNXYzOFZFMzc4T0RWS1VNWEUxTzY5TFlNcXFmVV9JdGstMFZGOWNSRFpUTnluMkpfWGN5bHRkSmtQbmk5SmwtVVNVdXh2N2EtcVZEZU1UY3Q1bEgxdTFXQXI3eXJCSmRLdlAyR0RvRUU1WlNsVEt6QUdUdDJ4VDhMNVAxZw?oc=5",
+      "published": "2026-11-18T11:56:02+00:00",
+      "publisher": "https://www.tribalfootball.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "\"Declan Rice will put pen to paper\" with Arsenal but he is not in a \"rush\" claims Romano - TribalFootball"
+    },
+    {
       "desc": "CHRIS WHEELER: United sources say they are disappointed the video appeared without any contact with them. The club maint",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-18T12:00:51.446964+00:00",
@@ -4474,6 +4564,26 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Premier League identify FIVE key refereeing errors in one weekend as boss Howard Webb prepares to appear in front of clubs after Arsenal blu"
+    },
+    {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.557986+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qY1N2dUdHZjUyd2NnWWZBNnBoV1JuQ3YxM0hReUNXOUlTSUZSZ3F0S1plOWh5WFd6ejdhNEM4Zy1rRktnOVlVV2dYN0tNWlRQaTNiTENmUW0wQksxaWREU2d1VXhhb0tV?oc=5",
+      "published": "2026-11-18T11:32:15+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
+    },
+    {
+      "desc": "Shop | 2026/27 PUMA STELLAR Mini Acceleration Football fluoyellow-multicolor Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.558002+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRHlRYk1LZHVBaWpYSjZfOW9OcUJjVmFJX2FyOEw4TnVtb0NGZmJMS2NVbmljUFRVclNiVFgyMDZEX3lZTkswQXpuMDlaUzVpM05fMkplTG5iYURIeUhvdmd0dGdtOGsxZ0dYRHROWExDd3pHaUZKTlpWUVhxb3daM1FDVGkxdGFSQlJXeWRrNkNOQXA2ZV9nWVRtNGJ0bU43T0FBRXhtcVJNaW5mR0t5MV8tVmVkVWVmbjVoWTZya0Q?oc=5",
+      "published": "2026-11-18T11:30:38+00:00",
+      "publisher": "https://shop.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Shop | 2026/27 PUMA STELLAR Mini Acceleration Football fluoyellow-multicolor - Premier League"
     },
     {
       "desc": "ALICIA SCHOLES has admitted she is \"heartbroken\" after her Netball World Cup dream was ended by injury. The 25-year-old ",
@@ -4636,6 +4746,16 @@
       "title": "Arsenal double-winning great Peter Storey dies at 81 | Daily Sabah - Daily Sabah"
     },
     {
+      "desc": "Romano reveals Man Utd now have 'really serious' chance of signing Barcelona star in January Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.558133+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQXRlYUREZ3A3aXdfWlNOTzFKWGJPSzZnVENzOUNYR1JRWUduSWk4VG50bVJVLWxORFhZMURZSDVfTEFncTFtS3JlejZieVZjcF9MTlg1M0l3Rk1jWW82V0E5b3NGZ0FQeXFrNXlCZEQxQ1l4ZE03LXd3em1lblMtR3B4cWpTM3JiUHRjRkl1OUVIWHNjLVBXb0tPZU81T0VBMXcxTXBvRVFxREVaeEhEa0Rn?oc=5",
+      "published": "2026-11-18T10:09:10+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano reveals Man Utd now have 'really serious' chance of signing Barcelona star in January - Football365"
+    },
+    {
       "desc": "GARY NEVILLE was left baffled by Grand Theft Auto VI after Mark Goldbridge revealed he was set to play the new game this",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-18T11:00:55.211361+00:00",
@@ -4714,6 +4834,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League legend who won Champions League & World Cup, 38, announces retirement with tear-jerking video"
+    },
+    {
+      "desc": "Topps Premier League Starter Pack Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T14:01:15.558208+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc0dzUkxuZ0pFTmFMMHlqT0pXM21IXzBtakI4MnFsWEtBX2VxVXVva3Bka3BBYzMtM3pScDFaR1prMzRNZUpZQjl6MGpUVVRSekM3b1dCTWV5VllNZ01ac1dHclpiTjlqd3dydFhfZUU1WE5JSzBiOV8waWExR2N3WnFaRnpEcEZuWjZ2eFhxa2c?oc=5",
+      "published": "2026-11-18T09:30:58+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Topps Premier League Starter Pack - Arsenal Direct"
     },
     {
       "desc": "MAURICIO POCHETTINO has already won over Manchester United fans after shutting down suggestions that the city is blue. T",
@@ -5694,136 +5824,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Club Statement: Ayaka Yamashita - Manchester City FC"
-    },
-    {
-      "desc": "What is the perfect back five in Fantasy? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T18:01:04.237548+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKZ2FVNzY5MlRkTllxbGpXNG5wNHR6T2V1amFVYTFSRHZUcEFUYnBtV0tWY2dFMTNvWi1kcGNvS2xIRGZwWDlWVWgyR1Q0VktpamFUOUJHdDg?oc=5",
-      "published": "2026-11-17T17:58:48+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "What is the perfect back five in Fantasy? - Premier League"
-    },
-    {
-      "desc": "MATTHIAS JAISSLE’S hopes of an Ivan Toney reunion have been dashed - but he still wants a proven striker to spark Newcas",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T18:01:04.237572+00:00",
-      "link": "https://www.thesun.co.uk/sport/41052561/newcastle-ivan-toney-transfer-jaissle/",
-      "published": "2026-11-17T17:52:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Newcastle’s Ivan Toney transfer hopes for January revealed as Matthias Jaissle targets striker signing to save season"
-    },
-    {
-      "desc": "Peter Storey Dies Aged 81: Arsenal Double Winner Played 501 Games (17 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T19:00:55.915595+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV2doVklEWGgwbzBrTWRpUTZmWG9mOExFY3ZOSmhhXzd0aVB0bEZZZ0ZDSmhBaF9INmhZOVhnRGpKdVBGbnY2dEN5cVdkbmoxa082anZKdnpNalY0UkYzUzRZWXFnSFAtYlpDVVc0ODZneFJ5eXkyaFdOZEpRUndiWWFOUmZ2YnpsNDBXWW13c1RWM1FwUVpUeGJB?oc=5",
-      "published": "2026-11-17T17:47:23+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Peter Storey Dies Aged 81: Arsenal Double Winner Played 501 Games (17 November) - The False 9"
-    },
-    {
-      "desc": "Mbeumo leads Cameroon into AFCON finals Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T23:01:02.761173+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPX0w5eHBzUDNFcldpLXp1bkRtQUprS0pZQjZVWW1yYXJzQjdzcF9RbmZFUEJqNHYyTldueEk3VkVsdkc4MThnZDhMd3ByN2o1eVFNeG9sSDFHTC1zRDdqQVJvbGtoZnV2SkNNMU5wVWpPSVdnd2Q5SnFBZ3dRVS11eGdn?oc=5",
-      "published": "2026-11-17T17:40:10+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Mbeumo leads Cameroon into AFCON finals - Manchester United"
-    },
-    {
-      "desc": "Former Arsenal and England midfielder Peter Storey - who helped the Gunners win the Double in 1970-71 - has died at the ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T18:01:04.237616+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c63eg3ekxnpyo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T17:33:41+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Arsenal Double winner Storey dies aged 81"
-    },
-    {
-      "desc": "Peter Storey: Former Arsenal and England midfielder dies aged 81 BBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T19:00:55.915692+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KTUNMRUFWSjJKeW11V2NxNGpmX3NTajVQZVNpeUZvbURhNmM0Vi1fMVVkVmVnSzI0NXBBb0NKQmh2S2dYbjl6S284ZFB4UEtyTVdDUFl1LVNZWlBYMFlReEhySXczcVFSc2hN?oc=5",
-      "published": "2026-11-17T17:33:41+00:00",
-      "publisher": "https://www.bbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Peter Storey: Former Arsenal and England midfielder dies aged 81 - BBC"
-    },
-    {
-      "desc": "GARY NEVILLE has launched a passionate defence of Diogo Dalot and insisted Manchester United should get rid of Noussair ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T17:34:01.380429+00:00",
-      "link": "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui/",
-      "published": "2026-11-17T17:26:30+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Gary Neville names Man Utd players who should be axed well before ‘easy target’ Diogo Dalot"
-    },
-    {
-      "desc": "Bompastor Press Conference 🎙️ | Video | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T17:34:01.380458+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYzNMc24ybzNOREliSXZ6bkdsNHpFS2doSnVtc3dFMkFlRkN6aGkwVURjSTlkNUdhdzhYT0l1Sjc1ZnFuYjk1bktSTGRvMjhlME5DSEMxUGFlc1pFczkyM2RmdnF4UmJrMDlMeG13WGYwTUtkdmtXRFJMUENURWJLeTkwTWo5cWpiR0wtdw?oc=5",
-      "published": "2026-11-17T17:24:41+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Bompastor Press Conference 🎙️ | Video | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Voting is now open for the BBC Women's Footballer of the Year 2026, with five players on the shortlist.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T20:00:53.407990+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cj20velkgnypo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T17:13:24+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Last chance to vote for BBC Women's Footballer of the Year 2026"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 GYOKERES Pre-Printed Home Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T19:00:55.915760+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWm52ZDBZNzZwb1I1WkU2MUNyUmQ1ZjMxaG9ZWURYWHJsT2dzVkFxNExNeEoxZ2lCcHQtWDJBRGl2aG1BY2lONmdzYkd5eksyUGJaZVItdms4STNsTEhwTGRyb1BqRzRpXzd2ZGh6dUs2WHVBcFpGRW9kX2xkYWVjbk9DUDdkNTVPRjNpM2Z0R3BaN1BQbWE1cnpqeWZOSmt3Ul9CMU9ONHkwNzVZNHMzOXI2LUpRUlZDVWd4eW12Nkc1bWkzUWQxaVc2b0RnVFJKM1pv?oc=5",
-      "published": "2026-11-17T17:13:21+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal adidas 26/27 GYOKERES Pre-Printed Home Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "Peter Storey, the Highbury hard man who kept Arsenal's Double alive, dies aged 81 Camden New Journal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T17:34:01.380482+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPXzdqNUNqcmZKaHlvQ3RFeERURmNKVlJZLWwxczhaZmFMR1NYaHN3Wi1wSUZ4eFZ3YmNzaFN3SkN4T2dzWnktSExKOHRfdG9VVWltUjUtS1h4NHB1Q0lKQy03RjJlS2ZyVjBPdktZUUlBZ1cySWUwMjZMY1lvX1pyR3ZWQXNENWNhNWR4b0FibUFncDdiWnV1V0psRmlsOWViOFJMODZvWXZ1d3JteFMxUnZ3T184VG9LeVJ5aU5R?oc=5",
-      "published": "2026-11-17T17:02:53+00:00",
-      "publisher": "https://www.camdennewjournal.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Peter Storey, the Highbury hard man who kept Arsenal's Double alive, dies aged 81 - Camden New Journal"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T19:00:55.915833+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQc2pIVVM2ZlRQZGJwLU10ODZFaHBhNGNZTzJTVjBCV1dnOEM0NEdGQ1pvZnoxc2ktRkxWbjBZSVpLTm1fVHFDT0dKakg1d2dwRnpoTEpvMllvZWFtRzE4S01XTjM1Vm1wdUgtS21CbDE4NkI2N0FRek9WOFZuYWpxWG5aVmIydw?oc=5",
-      "published": "2026-11-17T16:46:41+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
-    },
-    {
-      "desc": "ARSENAL will face competition from Barcelona and Paris Saint-Germain for Bournemouth's Eli Junior Kroupi. The France str",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T17:01:02.904014+00:00",
-      "link": "https://www.thesun.co.uk/sport/41052041/arsenal-target-eli-junior-kroupi-transfer/",
-      "published": "2026-11-17T16:36:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal eye Eli Junior Kroupi transfer as Bournemouth slap ace with £100million price tag and European giants plot moves"
     }
   ],
   "processed_urls": [
