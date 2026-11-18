@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 30379,
-    "output_tokens": 3787,
-    "requests": 5
+    "input_tokens": 36475,
+    "output_tokens": 4358,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2543,6 +2543,41 @@
       "title": "桑德兰争议点球绝杀切尔西，蓝军进攻哑火引质疑",
       "updated_at": "2026-11-08T16:45:47.233446+00:00"
     },
+    "8cf58fbfb0ec": {
+      "article_title": "Mauricio Pochettino's Man United rallying cry: New boss promises fans it will be a 'SPECIAL' season - despite club sitting in drop zone - as",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e9299261cb8b478a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 170
+        }
+      ],
+      "created_at": "2026-11-18T20:00:58.410205+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "1f94b0a20b28e341",
+      "event_id": "8cf58fbfb0ec",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-18T20:00:58.410205+00:00",
+          "origin": "created",
+          "title": "Mauricio Pochettino's Man United rallying cry: New boss promises fans it will be a 'SPECIAL' season - despite club sitting in drop zone - as",
+          "url": "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 170,
+      "title": "波切蒂诺向曼联球迷喊话：这将是特别赛季",
+      "updated_at": "2026-11-18T20:00:59.084357+00:00"
+    },
     "8d165a7d6551": {
       "article_title": "Push it to the Max! Dowman, 16, becomes England U21s youngest-ever goalscorer - as Arsenal starlet scores 89th-minute winner against France",
       "attempts": 1,
@@ -4339,7 +4374,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T19:00:51.275213+00:00",
+  "last_scan_at": "2026-11-18T20:00:51.096318+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4361,6 +4396,76 @@
   },
   "news_pool": [
     {
+      "desc": "MAURICIO POCHETTINO sent his first message to Manchester United fans promising them a \"special season\". United released ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T20:00:51.099935+00:00",
+      "link": "https://www.thesun.co.uk/sport/41065171/mauricio-pochettino-man-utd-fans-message/",
+      "published": "2026-11-18T19:54:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Special season’ – Mauricio Pochettino sends first message to Man Utd fans and vows to get flops ‘fighting on field’"
+    },
+    {
+      "desc": "Club Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T20:00:51.099969+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9QZU9jTFJGdzBqMy05Y3QzUkFMUkxMVGIySW4xU0s1eFNTbEdoNzJVNkp1QkVzX2tfeHh2ZVpLVGs3ZTZVU2pYV2ZFTUFqNE1lVGFXdDNiNGxZV2k3TVFnQlg5Y0NXZw?oc=5",
+      "published": "2026-11-18T19:53:06+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Club - Liverpool FC"
+    },
+    {
+      "desc": "GW11 FPL Challenge: Who's most likely to get points off the bench? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T20:00:51.100029+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91TXF3b1FIQ2QtQTZkSzJoYnNuX01FVEdIeDdqOVpyTUVHb1RIN28zTzdnWU4xMnRhME9sRDdHTHBwbmZMUExVM3BuRHZmOUdqY1FQMk80cVA?oc=5",
+      "published": "2026-11-18T19:44:44+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "GW11 FPL Challenge: Who's most likely to get points off the bench? - Premier League"
+    },
+    {
+      "desc": "ENGLAND star Alex Scott is reportedly at the centre of a three-way transfer tussle with Arsenal ready reshuffle their mi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T20:00:51.100060+00:00",
+      "link": "https://www.thesun.co.uk/sport/41065027/arsenal-alex-scott-transfer-news-chelsea-liverpool-bournemouth/",
+      "published": "2026-11-18T19:33:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal ‘enter Alex Scott race with Gunners ready to reorganise midfield to beat Chelsea to England star transfer’"
+    },
+    {
+      "desc": "ASTON VILLA's clash with Galatasaray is in danger after the Turkish giants were forced to MOVE a league fixture. The Vil",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T20:00:51.100115+00:00",
+      "link": "https://www.thesun.co.uk/sport/41064414/aston-villa-galatasaray-match-stadium-chaos/",
+      "published": "2026-11-18T19:07:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Aston Villa Champions League clash at risk with Galatasaray forced to move out of stadium days before match"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-18T20:00:51.100139+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13176154/scottish-premiership-news-transfers-rumours-gossip-and-more",
+      "published": "2026-11-18T19:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Scottish football latest: Dumbarton appoint youngest manager in SPFL history"
+    },
+    {
+      "desc": "David Ornstein delivers update on Arsenal’s January move for winger Just Arsenal News",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T20:00:51.100169+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaGYtY0hOZmdVREg2WXBLU1FIcTFnZXNkSV80VXIzT3BzamlwaFZZdlhnZElwd1o0SnNSY21ndkJPNko1YU1IbnVVcVo0MnctV2lwTkliZmtIT1d4U0tKRnRGNWhNX3V0VWxPdkVDQkdWdUpLektNTnFfd0VldzhYdEx5eTR1VFZvWG9KdWhzemlVbGFIN2FGTjVFdzMwWUxUMzNF0gGoAUFVX3lxTFBjQW9IS0MtR3lkSmV3WmtfMVBhUHRycklud0d4RXhYdVpreGJSMUhjQWJTS1BkRWFZVUNXMlNSUW5xc1E1Z212b3F5UXpyc0E3RUJBOHZ6aGVXQW53MnFLQXVGLVp6U2FZc2dXb1k1cUFOUVJQOEtreUthbHpQTnFoTVJhbnBYQlM0QVNNTm5sYWx1dGRlV2R0QTRWR0lRMFFfV1F0UC00cA?oc=5",
+      "published": "2026-11-18T19:00:00+00:00",
+      "publisher": "https://www.justarsenal.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein delivers update on Arsenal’s January move for winger - Just Arsenal News"
+    },
+    {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-18T19:00:51.277290+00:00",
@@ -4381,6 +4486,16 @@
       "title": "‘Beauty in paradise’ – Sara Sampaio stuns in black bikini amid rumours Superman actress, 35, is dating Ferran Torres"
     },
     {
+      "desc": "Watch United Women v Everton live on MUTV Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T20:00:51.100235+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE81OVBOWGxjc3EyTkpPQ3lvdDUxcmJEak5tU0NCY2FSVWJObWlKakpCanJEM0tTQW42bmlnT0V4Tk5GM0lSSzIyaUtwOU9STjF3N0ZwZEZKWFdNaDBGek4wcjdUSnQ5RmJ6d2lKa21ObEo3RlBzWVhBMlhvcmo?oc=5",
+      "published": "2026-11-18T18:50:39+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Watch United Women v Everton live on MUTV - Manchester United Website"
+    },
+    {
       "desc": "LAWMAKERS will draw a veil over Arsene Wenger’s “daylight” offside idea - after agreeing it would make teams play even m",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-18T19:00:51.277346+00:00",
@@ -4399,6 +4514,16 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Confirmed line-ups | Spurs vs Leicester, Players Cup - Tottenham Hotspur"
+    },
+    {
+      "desc": "Republic of Ireland manager Carla Ward says she is close to agreeing a new contract as she names her squad for the World",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T20:00:51.100323+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6782xedd985o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T18:06:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Ward close to new Republic of Ireland deal as Noonan returns"
     },
     {
       "desc": "COLE PALMER's girlfriend Olivia Holder left little to the imagination as she turned heads on a Dubai holiday. Holder, 24",
@@ -5769,96 +5894,6 @@
       "publisher": "https://arsenaldirect.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "- Arsenal Direct"
-    },
-    {
-      "desc": "PEDRO NETO had to be restrained by Craig Bellamy after clashing with the Wales bench. The Portugal and Chelsea star was ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T23:57:07.101504+00:00",
-      "link": "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy/",
-      "published": "2026-11-17T23:19:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea star Pedro Neto restrained by Craig Bellamy as he clashes with Wales bench after being sent off for Portugal"
-    },
-    {
-      "desc": "What to do with Cole Palmer in FPL? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T23:57:07.101531+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS3l5OXZXNGY0cTlpa1Z4MFlFRVd2MmNlM29RMFdxRFlyMFBIWmdDRXlxZHN1cXNVMHYyR04yeU5mOFo3SG9mRUxRbWZQeHRVMS15RGIySWladHRPVFRvM2x0ZVVYek1IVEtkQ2x3djFCQXRrRE1IbVhPVDgzdnZBaA?oc=5",
-      "published": "2026-11-17T23:15:27+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "What to do with Cole Palmer in FPL? - Premier League"
-    },
-    {
-      "desc": "Republic of Ireland striker Troy Parrott reflects on a transformative 12 months for both club and country after scoring ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T23:57:07.101558+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqzjr3yr2z0eo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T23:10:33+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Republic of Ireland talisman Parrott caps dream year with two more goals"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T02:00:51.725233+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-17T23:06:38+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Round-up: 11 Liverpool players feature in international action throughout Tuesday Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T01:00:58.364002+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRGpjd09pRjBfSmtJZkFuVlEtWWZweHpTeXJYQVhDaWRLUWhtU1dnMTVDWDZwWXFRbVNScXdnMTNTM3lsM09nX3VEWkY5ZmVhX2ZuT0x3UzNnYlp3TUIzcjItM001TEJUUE5xNHBkNWN0b29QS1liajV1WjJQQVlCcDNfVGFSQmRMeGRmUGtLUnNpMWg2UmtBZ0wwejZfTVlT?oc=5",
-      "published": "2026-11-17T23:03:10+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Round-up: 11 Liverpool players feature in international action throughout Tuesday - Liverpool FC"
-    },
-    {
-      "desc": "Rotation incoming! What to do with the Arsenal defence in FPL? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T23:57:07.101588+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWHM1ZFRPZV9YSVF0Z0VoZl9ZUG5DemFUYjFjay1Hc2RfV0ZSTkg3N21YZEZld1laVjdhbHowckRRWUhZeU1iQ1VLLUd2LTByb0lUQnIyV3VJX3dhMXc0OGxrakx5bzJQSnR3TFpqT3liV3IxTl9QZHdNWkYyUmlva1FSZkdEZ0lOR1VJZHROdDRqQkVVVmk3WVFQaWJSMnZzUlpMQXRmMjdjQQ?oc=5",
-      "published": "2026-11-17T23:01:16+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Rotation incoming! What to do with the Arsenal defence in FPL? - Premier League"
-    },
-    {
-      "desc": "The top stories and transfer rumours from Wednesday's newspapers...",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-17T23:57:07.101604+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13613427/man-utd-boss-mauricio-pochettino-to-appoint-clubs-first-ever-female-coach-paper-talk",
-      "published": "2026-11-17T22:58:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Papers: Poch to appoint Man Utd's first-ever female coach"
-    },
-    {
-      "desc": "Senegal, Cameroon and Morocco lead six qualifiers for the 2027 Africa Cup of Nations, while Nigeria's bid to reach the f",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T23:01:02.760168+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5evrgrvw1ezo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T22:54:51+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Senegal and Morocco lead Afcon qualifiers but Tunisia protest"
-    },
-    {
-      "desc": "Vinicius Jr to Arsenal ruled out for January Arsenal Core",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T23:01:02.760202+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBTUXV3TjNQMWRiOUJibGh1alNCUjZ0aDZyM2dIQ2ZJaFM1WVFEY2ZYaF9hczdXQThpbU4xTmg4Wlk0NmNDOXdHUTFIZW95M3RrYVRVaHo4b0Nwb0s1UXc3d2s3Skw2dG0yZGZHS19oRXE3N0lfd1pv?oc=5",
-      "published": "2026-11-17T22:54:24+00:00",
-      "publisher": "https://arsenalcore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Vinicius Jr to Arsenal ruled out for January - Arsenal Core"
     }
   ],
   "processed_urls": [
@@ -5998,7 +6033,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cm782wnwzvq3o",
     "https://www.dailymail.com/sport/football/article-16302359/man-united-jj-gabriel-real-madrid-legal-fight.html",
     "https://www.bbc.co.uk/sport/football/articles/c69q8jy924y4o",
-    "https://www.thesun.co.uk/sport/41059532/cole-palmer-hasselbaink-england-tuchel-chelsea"
+    "https://www.thesun.co.uk/sport/41059532/cole-palmer-hasselbaink-england-tuchel-chelsea",
+    "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html"
   ],
   "s_overflow": {},
   "schema_version": 4
