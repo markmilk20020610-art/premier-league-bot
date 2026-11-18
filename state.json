@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 121354,
-    "output_tokens": 12789,
-    "requests": 18
+    "input_tokens": 126662,
+    "output_tokens": 13538,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2810,6 +2810,41 @@
       "title": "曼联将任命队史首位女性教练西尔维娅·图亚",
       "updated_at": "2026-11-18T02:00:58.001239+00:00"
     },
+    "a74b6424bfe7": {
+      "article_title": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January - Sports Mole",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d33dfa8e9e5814d1",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 164
+        }
+      ],
+      "created_at": "2026-11-18T07:00:56.861234+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ee50a10fb40f37a7",
+      "event_id": "a74b6424bfe7",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-18T07:00:56.861234+00:00",
+          "origin": "created",
+          "title": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January - Sports Mole",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeHBlU1BNVGNveTN6THpJQmhfRFkzdzhlVU0yUVVFSHd4Q0phcHVBTmpOWmFSMnJpYlpLYzFOWE5od2d5ZnE3bmxadzdtbmY4X0xkMVA3SjNyMUZsR0lLWHRZZmZrMlUzUEVtZmxMajVkUVQ3NFZnNGYtT3FCR1JUYUhIVXJLRy1nNUNtdFZhTTFWeDlodldXbjNMM29vMlV5X2lkdWxkZ25Na0U0QW9fMEZmUnViZUlXNjBCam80aDZFZlhWSVY1VGVCbmUwTWtXbEdHTVFwdXRMMXZuOWVXdUZJUHRyQXR3ZVpGbWhQYXJqNU0"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeHBlU1BNVGNveTN6THpJQmhfRFkzdzhlVU0yUVVFSHd4Q0phcHVBTmpOWmFSMnJpYlpLYzFOWE5od2d5ZnE3bmxadzdtbmY4X0xkMVA3SjNyMUZsR0lLWHRZZmZrMlUzUEVtZmxMajVkUVQ3NFZnNGYtT3FCR1JUYUhIVXJLRy1nNUNtdFZhTTFWeDlodldXbjNMM29vMlV5X2lkdWxkZ25Na0U0QW9fMEZmUnViZUlXNjBCam80aDZFZlhWSVY1VGVCbmUwTWtXbEdHTVFwdXRMMXZuOWVXdUZJUHRyQXR3ZVpGbWhQYXJqNU0",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 164,
+      "title": "奥恩斯坦独家：阿森纳关注小将克鲁皮，冬窗动向引关注",
+      "updated_at": "2026-11-18T07:00:57.624775+00:00"
+    },
     "ab0b6fd30956": {
       "article_title": "Sunderland 1 Chelsea 0: Brobbey’s controversial penalty incident sees Blues go into international break on losing run",
       "attempts": 1,
@@ -4129,7 +4164,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T06:56:33.479796+00:00",
+  "last_scan_at": "2026-11-18T07:00:50.812580+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4150,6 +4185,36 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January Sports Mole",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T07:00:50.815535+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeHBlU1BNVGNveTN6THpJQmhfRFkzdzhlVU0yUVVFSHd4Q0phcHVBTmpOWmFSMnJpYlpLYzFOWE5od2d5ZnE3bmxadzdtbmY4X0xkMVA3SjNyMUZsR0lLWHRZZmZrMlUzUEVtZmxMajVkUVQ3NFZnNGYtT3FCR1JUYUhIVXJLRy1nNUNtdFZhTTFWeDlodldXbjNMM29vMlV5X2lkdWxkZ25Na0U0QW9fMEZmUnViZUlXNjBCam80aDZFZlhWSVY1VGVCbmUwTWtXbEdHTVFwdXRMMXZuOWVXdUZJUHRyQXR3ZVpGbWhQYXJqNU0?oc=5",
+      "published": "2026-11-18T06:57:18+00:00",
+      "publisher": "https://www.sportsmole.co.uk",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January - Sports Mole"
+    },
+    {
+      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T07:00:50.815573+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6ly5dq07wk5o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T06:56:12+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "After 60 years, is time finally running out on the 3pm blackout in football?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T07:00:50.815602+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwvg2mxkd4x8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T06:27:11+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "The 3pm football blackout: outdated or still relevant in 2026?"
+    },
     {
       "desc": "Ferdi Kadıoğlu Brighton and Hove Albion Defender, Profile & Stats Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5619,36 +5684,6 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "David Raya New Contract: Arsenal Agree Long-Term Deal - The False 9"
-    },
-    {
-      "desc": "Fred Staniforth Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T16:00:56.234846+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5QVQ0Zi1YMlg2dWFPOVNYZEZXZ1JJUmdjM0IzWUwweGx2YUowVEFvWGFoeTdCYWw5S3FaaXRqZFhKWE9qWmtUUVczS0RuTkkyX1VuanRB?oc=5",
-      "published": "2026-11-17T11:43:13+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Fred Staniforth - Liverpool FC"
-    },
-    {
-      "desc": "ENGLAND'S win over Spain on Sunday meant that they topped the group over the world champions! The Three Lions clung on t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T12:01:00.010632+00:00",
-      "link": "https://www.thesun.co.uk/sport/41017831/who-england-play-nations-league-quarter-final-next/",
-      "published": "2026-11-17T11:37:21+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Who can England face in Nations League quarter-finals?"
-    },
-    {
-      "desc": "Club Statement – Joe Sharples Chippenham Town Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T12:01:00.010647+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBuS3A0MlFGU09BVTJtYnQzbS1CYkZiVXFOVF9RZVUyTElwSGsyVUdqc1prY0hXbzhaUGtSYzEzQmZRUHVJM2dTVWdnSjVad2RaSy1rTXBRM0lSUEw0MTRNWGV1cldmRGtzYUJReUNR?oc=5",
-      "published": "2026-11-17T11:35:09+00:00",
-      "publisher": "https://chippenhamtown.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Club Statement – Joe Sharples - Chippenham Town Football Club"
     }
   ],
   "processed_urls": [
@@ -5782,7 +5817,8 @@
     "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts",
     "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o",
     "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy",
-    "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach"
+    "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach",
+    "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeHBlU1BNVGNveTN6THpJQmhfRFkzdzhlVU0yUVVFSHd4Q0phcHVBTmpOWmFSMnJpYlpLYzFOWE5od2d5ZnE3bmxadzdtbmY4X0xkMVA3SjNyMUZsR0lLWHRZZmZrMlUzUEVtZmxMajVkUVQ3NFZnNGYtT3FCR1JUYUhIVXJLRy1nNUNtdFZhTTFWeDlodldXbjNMM29vMlV5X2lkdWxkZ25Na0U0QW9fMEZmUnViZUlXNjBCam80aDZFZlhWSVY1VGVCbmUwTWtXbEdHTVFwdXRMMXZuOWVXdUZJUHRyQXR3ZVpGbWhQYXJqNU0"
   ],
   "s_overflow": {},
   "schema_version": 4
