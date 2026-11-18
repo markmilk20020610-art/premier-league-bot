@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 19,
+        "calls": 20,
         "errors": 0,
-        "requests": 19
+        "requests": 20
       }
     },
-    "calls": 19,
+    "calls": 20,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 126662,
-    "output_tokens": 13538,
-    "requests": 19
+    "input_tokens": 131542,
+    "output_tokens": 14176,
+    "requests": 20
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -293,6 +293,41 @@
       "telegram_message_id": 160,
       "title": "流浪者传奇拉尔夫·布兰德逝世，享年89岁",
       "updated_at": "2026-11-17T22:00:58.152992+00:00"
+    },
+    "1009a6e2a56e": {
+      "article_title": "Mauricio Pochettino says he is ‘following my heart’ in farewell message to USA as he jets in to start work at Man Utd",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "19092d3e89dfe41b",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 165
+        }
+      ],
+      "created_at": "2026-11-18T08:00:57.032350+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "6a41390cec30dde8",
+      "event_id": "1009a6e2a56e",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-18T08:00:57.032350+00:00",
+          "origin": "created",
+          "title": "Mauricio Pochettino says he is ‘following my heart’ in farewell message to USA as he jets in to start work at Man Utd",
+          "url": "https://www.thesun.co.uk/sport/41055832/man-utd-news-mauricio-pochettino-usa-frewell-statement"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.thesun.co.uk/sport/41055832/man-utd-news-mauricio-pochettino-usa-frewell-statement",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 165,
+      "title": "波切蒂诺告别美国队，飞抵曼联上任",
+      "updated_at": "2026-11-18T08:00:57.569404+00:00"
     },
     "107c7f016595": {
       "attempts": 1,
@@ -4164,7 +4199,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T07:00:50.812580+00:00",
+  "last_scan_at": "2026-11-18T08:00:50.946927+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4185,6 +4220,86 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "England haven't qualified for the World Cup yet but Sarina Wiegman has laid down the gauntlet to anyone that wants to ma",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-18T08:00:50.950347+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13613373/sarina-wiegman-lays-down-gauntlet-to-england-players-looking-to-make-world-cup-squad-but-whose-spot-is-under-threat",
+      "published": "2026-11-18T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Wiegman lays down Lionesses gauntlet - but whose spot is under threat?"
+    },
+    {
+      "desc": "Mauricio Pochettino made a promise to end Man City's dominance as Man United manager in his last interview as United Sta",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-18T08:00:50.950428+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-18T07:52:26+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino boards a private jet to Manchester with a promise that Man City's dominance of the city rivalry is 'gonna change'... and"
+    },
+    {
+      "desc": "NATIONAL LEAGUE whipping boys Gateshead have rehired former manager Alun Armstrong after advertising their head coach jo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T08:00:50.950462+00:00",
+      "link": "https://www.thesun.co.uk/sport/41055955/national-league-gateshead-new-manager-alun-armstrong/",
+      "published": "2026-11-18T07:50:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "National League side rehire former manager less than a YEAR after sacking him for losing 11 games in a row"
+    },
+    {
+      "desc": "Eli Junior Kroupi transfer update as David Ornstein reveals what happens next now.arsenal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T08:00:50.950494+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMkFCNnBXMlczbkpVeGJuRkptYXMyNWEtdzg2clpWaXRINkZIamp3YndsdGlYQkYxN3ZhbUw2ZXBBNUFDSUJMS0o4Tmh2NUNyZTFfVGxRQkljbEhnbzNLSWtNbnh1R0UxaWhsZU9hTGFIRTJWb2JRVVpJeTBiNVF2VFBsVzIwTGVlSS1TRkJyVTNhV0lEd052a3dxRHZjdV9oOHk2YjJOZmYwbE41emVuR3NlSVZpUXdvMzRn?oc=5",
+      "published": "2026-11-18T07:23:41+00:00",
+      "publisher": "https://www.nowarsenal.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Eli Junior Kroupi transfer update as David Ornstein reveals what happens next - now.arsenal"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO has penned an emotional farewell letter to USA fans following his final game as manager. The Argenti",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T08:00:50.950523+00:00",
+      "link": "https://www.thesun.co.uk/sport/41055832/man-utd-news-mauricio-pochettino-usa-frewell-statement/",
+      "published": "2026-11-18T07:06:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino says he is ‘following my heart’ in farewell message to USA as he jets in to start work at Man Utd"
+    },
+    {
+      "desc": "Fabrizio Romano Transfer News: JJ Gabriel official, Balde exit, Arsenal contract updates FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T08:00:50.950553+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOSTdKUTVpX0Q0UjRndUpTR2c5MWFyemM4alJvODY3U2RkMjhLaGhtTERaZU1sZlB1LWRsbTRpZWlFeXNSd0RlWUUwWE1xeEM1QlNLUnJlMEJvNkJtTVU0aThfTTlYa0ZSb3FvU2haQVhHTFJqUXFjUEp5ZzdQN2ZtVmFpbVp6NzF3S0FoNVBXTHBEa2Q2NXJXQllBb1BMeDVBVENwNzd5WDVkOUN0X29paThvQVlTb0hUSnJmeWRVVUstUU9aRkUtQkdWamM5cnRFYTRST2JsWVlZM3pjQXZMTE1ERnQ0czY5ZFNuVnVwVGlJWmZi?oc=5",
+      "published": "2026-11-18T07:04:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano Transfer News: JJ Gabriel official, Balde exit, Arsenal contract updates - FootballTransfers.com"
+    },
+    {
+      "desc": "Former Ajax academy player Elikia Mbinga tells BBC Sport how he swapped football for music after playing with some Premi",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T08:00:50.950604+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmly053x643ro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T07:02:42+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "From one of Ajax's future stars to quitting football for music"
+    },
+    {
+      "desc": "Fabrizio Romano names the striker Chelsea were offered before signing Danny Welbeck The Chelsea Chronicle",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T08:00:50.950637+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPc1dQdzJTTnYtMzlycUNSTURKelktYWpxQjBsVV9aelpMcV80YmEtc05NVGxXRnM1MGEtWW5ZVHRyNkxYTFdPQnRNTmJRTUpmZVRZRlc5V3VFNlN0Nk8zQVBsNkhGSlp0Z3BfN3lzc0FyNmVmckdNTVdWUFM5RUFIMHNrcDY0Z1hsU0std1diOXFNZThJUkFGU0FyMjY1alNUYmdxcmwtNVFHQ3NCcV8xaFo2RXNwRjhsU01LNWloNExndXBWTW9DZXVCa1ZaTVU?oc=5",
+      "published": "2026-11-18T07:00:00+00:00",
+      "publisher": "https://www.thechelseachronicle.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano names the striker Chelsea were offered before signing Danny Welbeck - The Chelsea Chronicle"
+    },
     {
       "desc": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January Sports Mole",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5604,86 +5719,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Chelsea latest: Estevao scores in dominant Brazil win"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-17T13:01:00.354130+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13163353/championship-news-transfer-latest-and-gossip-plus-efl-updates-from-league-one-and-league-two",
-      "published": "2026-11-17T12:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "EFL latest: Matos set to leave Swansea for Strasbourg"
-    },
-    {
-      "desc": "LEAGUE leaders Arsenal return to action with a Saturday teatime clash at Newcastle this weekend. Register an account wit",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T13:01:00.354154+00:00",
-      "link": "https://www.thesun.co.uk/sport/41038210/newcastle-arsenal-boylesports-free-bets-builder/",
-      "published": "2026-11-17T12:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Newcastle vs Arsenal: Bet £10, Get £20 free bets + 25% Bet Builder win boost | BOYLE Sports"
-    },
-    {
-      "desc": "GLAM Premier League TV host Ellie Collins has contacted the police after her identity was used to catfish high-profile s",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T12:01:00.010554+00:00",
-      "link": "https://www.thesun.co.uk/sport/41047013/ellie-collins-catfish-police-messages-premier-league-presenter/",
-      "published": "2026-11-17T11:55:38+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Glamorous Premier League presenter Ellie Collins reports catfish to police after messages to high-profile stars"
-    },
-    {
-      "desc": "Track Order - Chelsea Store Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T14:00:59.082720+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tZVAtOG1XSExLdm1Hc1hKNjBVbkdJLTVRSmJ1LVhMcG53MURxZTlXb0xXUGdQSVFyMXcyZ040QnJXd2YtbXRoTHY3SWNXYW1r?oc=5",
-      "published": "2026-11-17T11:55:24+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Track Order - Chelsea Store - Chelsea FC Store"
-    },
-    {
-      "desc": "ENGLAND legend Peter Shilton has led tributes to London Marathon icon and ex-goalkeeper Lloyd Scott after his tragic dea",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T12:01:00.010576+00:00",
-      "link": "https://www.thesun.co.uk/sport/41047159/peter-shilton-tribute-lloyd-scott-dead-london-marathon-orient/",
-      "published": "2026-11-17T11:55:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Peter Shilton pays emotional tribute to best man and former footballer who died at 65 after raising millions for charity"
-    },
-    {
-      "desc": "Why Premier League players are trying their luck on goal from long range more regularly.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T12:01:00.010598+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cw24041nqlygo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T11:54:07+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'Why not have a go?' - the halfway line goal phenomenon"
-    },
-    {
-      "desc": "Barclays Community Icon of the Month, November 2026: Paul, Man City Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T15:00:56.367566+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQY0RiWkJXeW9GLWRGNUZwbUJfR1RjQWducWEyMmJIVWV3YnE0Tk5vNm9IRUdaZ2lGcU00aGVNdzdoclEwWWZ2Um5mb3d5RGNjVWpVZ0Fsc1BRcnZ2eFdYcEt5dEJrb1VkYm13ZVpOWDJZcTVFMUVSdDFDLUZPREFZU2xCMmVPcHF0MTBETkRhb0YwbGNWdUZsRHRFRnpfamFCUnF4V0dVcVc0RGJHQXhNag?oc=5",
-      "published": "2026-11-17T11:53:01+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Barclays Community Icon of the Month, November 2026: Paul, Man City - Premier League"
-    },
-    {
-      "desc": "David Raya New Contract: Arsenal Agree Long-Term Deal The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T12:01:00.010617+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOb21RWTNUaGZhSS1RUGgya0NhOEhITEw1NDh0UVA2RXhKa0tRMGRSa1BxWXZnbXhjNzJlb3J2ZkFtZE4ta2JKeGlHYWtvaGVKcW9heGY0ZjVfWk9jNDh5b3h3b1hGWmF6V1d4akpIdFBGd255T2tsZW1oZEdKRXZLanRRLWhsR2lIeloyNVdldko0UQ?oc=5",
-      "published": "2026-11-17T11:49:28+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "David Raya New Contract: Arsenal Agree Long-Term Deal - The False 9"
     }
   ],
   "processed_urls": [
@@ -5818,7 +5853,8 @@
     "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o",
     "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy",
     "https://www.thesun.co.uk/sport/41053612/man-utd-silvia-tuya-first-female-coach",
-    "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeHBlU1BNVGNveTN6THpJQmhfRFkzdzhlVU0yUVVFSHd4Q0phcHVBTmpOWmFSMnJpYlpLYzFOWE5od2d5ZnE3bmxadzdtbmY4X0xkMVA3SjNyMUZsR0lLWHRZZmZrMlUzUEVtZmxMajVkUVQ3NFZnNGYtT3FCR1JUYUhIVXJLRy1nNUNtdFZhTTFWeDlodldXbjNMM29vMlV5X2lkdWxkZ25Na0U0QW9fMEZmUnViZUlXNjBCam80aDZFZlhWSVY1VGVCbmUwTWtXbEdHTVFwdXRMMXZuOWVXdUZJUHRyQXR3ZVpGbWhQYXJqNU0"
+    "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeHBlU1BNVGNveTN6THpJQmhfRFkzdzhlVU0yUVVFSHd4Q0phcHVBTmpOWmFSMnJpYlpLYzFOWE5od2d5ZnE3bmxadzdtbmY4X0xkMVA3SjNyMUZsR0lLWHRZZmZrMlUzUEVtZmxMajVkUVQ3NFZnNGYtT3FCR1JUYUhIVXJLRy1nNUNtdFZhTTFWeDlodldXbjNMM29vMlV5X2lkdWxkZ25Na0U0QW9fMEZmUnViZUlXNjBCam80aDZFZlhWSVY1VGVCbmUwTWtXbEdHTVFwdXRMMXZuOWVXdUZJUHRyQXR3ZVpGbWhQYXJqNU0",
+    "https://www.thesun.co.uk/sport/41055832/man-utd-news-mauricio-pochettino-usa-frewell-statement"
   ],
   "s_overflow": {},
   "schema_version": 4
