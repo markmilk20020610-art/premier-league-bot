@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-18",
     "errors": 0,
-    "input_tokens": 71258,
-    "output_tokens": 6617,
-    "requests": 10
+    "input_tokens": 77846,
+    "output_tokens": 7306,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -61,6 +61,41 @@
       "telegram_message_id": 17,
       "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
       "updated_at": "2026-10-31T00:10:45.160755+00:00"
+    },
+    "0405dda1c690": {
+      "article_title": "Chelsea star Pedro Neto restrained by Craig Bellamy as he clashes with Wales bench after being sent off for Portugal",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "1b6744745d34d232",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 162
+        }
+      ],
+      "created_at": "2026-11-18T00:00:57.601716+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ca6e093e0d80ce03",
+      "event_id": "0405dda1c690",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-18T00:00:57.601716+00:00",
+          "origin": "created",
+          "title": "Chelsea star Pedro Neto restrained by Craig Bellamy as he clashes with Wales bench after being sent off for Portugal",
+          "url": "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 162,
+      "title": "佩德罗·内托染红后与威尔士替补席冲突，贝拉米出面拉架",
+      "updated_at": "2026-11-18T00:00:58.171273+00:00"
     },
     "057fb4ed1242": {
       "attempts": 1,
@@ -4059,7 +4094,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-17T23:57:07.099005+00:00",
+  "last_scan_at": "2026-11-18T00:00:51.609615+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4080,6 +4115,16 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Wales finished bottom of their Nations League group, but boss Craig Bellamy believes his team showed they belong in the ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T00:00:51.612827+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmn507wn6gg3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-17T23:37:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wales display boosts Bellamy's belief despite defeat by Portugal"
+    },
     {
       "desc": "PEDRO NETO had to be restrained by Craig Bellamy after clashing with the Wales bench. The Portugal and Chelsea star was ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5569,16 +5614,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Man United's first woman on their backroom team, the fitness enforcer, a scorpion-kicking goalkeeper coach... and his son! Meet Mauricio Poc"
-    },
-    {
-      "desc": "Zubimendi Transfer News: AS Says He’s Open to Leaving Arsenal (17 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T11:00:55.910983+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcjBVLUEtRGpGQTdqNldkMEotb3AwUFdIV3l6UnZHT245X085eXYyM2FRVEhUQVE4bEZUTWozMXpGMGNHbDA2UTRDU2N1UDBENTNITnV3VkxLVHlkY3FnQXhvSGR4Z1FTRjF1dGsxR1VaTjE1eHQ3ZVdjYWVGU2hlWmNpMUE1MzdOQTNHWHVRRFBVcktyRzZqdjlKQ204dw?oc=5",
-      "published": "2026-11-17T10:47:19+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Zubimendi Transfer News: AS Says He’s Open to Leaving Arsenal (17 November) - The False 9"
     }
   ],
   "processed_urls": [
@@ -5710,7 +5745,8 @@
     "https://www.thesun.co.uk/sport/41051780/peter-storey-arsenal-legend-league-cup-fa",
     "https://www.thesun.co.uk/sport/41052357/gary-neville-man-utd-diogo-dalot-noussair-mazraoui",
     "https://www.skysports.com/football/news/12040/13613327/arsenal-transfer-news-david-raya-jurrien-timber-and-piero-hincapie-close-to-finalising-new-contracts",
-    "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o"
+    "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o",
+    "https://www.thesun.co.uk/sport/41055183/portuga-wales-pedro-neto-red-card-craig-bellamy"
   ],
   "s_overflow": {},
   "schema_version": 4
