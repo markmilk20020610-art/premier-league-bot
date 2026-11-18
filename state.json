@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 11364,
-    "output_tokens": 1865,
-    "requests": 2
+    "input_tokens": 17528,
+    "output_tokens": 2426,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4339,7 +4339,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T16:18:58.941010+00:00",
+  "last_scan_at": "2026-11-18T17:00:53.522838+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4360,6 +4360,36 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED are not backing down despite JJ Gabriel reportedly turning up at Real Madrid's training ground. The wo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T17:00:53.526274+00:00",
+      "link": "https://www.thesun.co.uk/sport/41062858/jj-gabriel-real-madrid-training-ground-man-utd-goodbye/",
+      "published": "2026-11-18T16:57:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "JJ Gabriel ‘arrives at Real Madrid training ground’ after goodbye message as Man Utd insist star, 16, still their player"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-18T17:00:53.526304+00:00",
+      "link": "https://www.skysports.com/football/bk-hcken-women-vs-manchester-city-women/live/578269",
+      "published": "2026-11-18T16:45:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "WCL LIVE! Mead makes first start since October as Man City travel to BK Hacken"
+    },
+    {
+      "desc": "Mari Ward called up for England U23s duty Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T17:00:53.526333+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUmpSb3V0Ml9qbkxrUG1VTzBiVW9VLUlRM0I5d2tYQkNuU1R1dURzU09WN1JJY0NfZ1JZWDROTURtODlZSXNXZW9vS01RX1I4V1BDLXZpS1hDM0tUZzYzWEZPdnV4WU41eGZMaDFNVm0tZnAxNlQxWWZUT1k1YUJCREtUaw?oc=5",
+      "published": "2026-11-18T16:22:10+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Mari Ward called up for England U23s duty - Liverpool FC"
+    },
     {
       "desc": "The Premier League resumes on Saturday with Crystal Palace, Sunderland and Man Utd in the relegation zone. But is it too",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -4529,6 +4559,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Cole Palmer is ‘better than some of the other guys’ in England squad, says Chelsea legend who tells star to step up"
+    },
+    {
+      "desc": "Former Man Utd and Chelsea star Juan Mata announces retirement footballtoday.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T17:00:53.526740+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRTEtY3l0ZDJyOEIxU2JnRDcyRHJqZXNYamgzcFBvQWNNX0FkUC1EVXQteEtYOGJsOEFPVDk3M0xaOGc1QmFtd0t5WkN0TUM2VGpRbXIzendSUHptSHVKVndHR3hHckJXOF85QjM0aW5KT19FbGs4dnEtT0tVZjNzZzhBVHBSTnZEeDQ0Uy1SOGQ1eVlMcUtGWU1ENWdaU0VpLXc?oc=5",
+      "published": "2026-11-18T14:17:56+00:00",
+      "publisher": "https://footballtoday.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Former Man Utd and Chelsea star Juan Mata announces retirement - footballtoday.com"
+    },
+    {
+      "desc": "Spurs Blue Heritage Crest Hoodie I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T17:00:53.526794+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYmgyXzJPTXNvd2tDaU9lV0xiTlRsYzg3WU92Y0ZtV1FTVWg4cFBqY2FJS1YwemZ5T0RESFZhSU1HM3BzRzd0NjNfclltYXBFNHFITnBVTGdLZ0dvVkktS3JVMDd0QU5QaXMyTlJ0TkJEbUhVMTdfYkh6WnpFX2g1SFhsWVVDZ2RSTXVYOExXWkxQWnc?oc=5",
+      "published": "2026-11-18T14:14:58+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Blue Heritage Crest Hoodie I Spurs - Tottenham Hotspur"
     },
     {
       "desc": "The Ballon d'Or king is joined by England team-mates Jude Bellingham, Declan Rice, and Bukayo Saka in the Best Men's Pla",
@@ -4739,6 +4789,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "How 16 Man Utd stars fared during international break as under-fire star’s woes continue but young Shea Lacey thrives"
+    },
+    {
+      "desc": "Send in your FPL questions for fantasy football expert Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T17:00:53.527151+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2N2bDNEUFFpOWdtRlVldU5PamJ1VmVqYkVsQU1uNko2ZDJGRjg3Rmc4b1NHYVMyWFZobWFWMTEyZHJqR1dsZVdiOHd4enNxaG11Zk9CQWprcWIySkkzQzVKakptRmJDSlFuejNVeWR2WU92MmRVWE9WMVNDbHFpWVFKN2xmUG9FM00wRldxNHdoallzZU9iZnpSYm9ZWF9oc2c?oc=5",
+      "published": "2026-11-18T12:06:36+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Send in your FPL questions for fantasy football expert - Tottenham Hotspur"
     },
     {
       "desc": "COVENTRY boss Frank Lampard has revealed legendary Manchester United supremo Sir Alex Ferguson sends messages of support",
@@ -5799,66 +5859,6 @@
       "publisher": "https://sports.yahoo.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Piero Hincapie to sign new Arsenal contract, also - Yahoo Sports"
-    },
-    {
-      "desc": "Vinicius Jr Arsenal transfer verdict delivered by David Ornstein ahead of January now.arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T21:00:58.873482+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWmxiZ3NNUktVRF84MXV1ZHhlVTRNTW5qTFd6SVpDdXdFamdBbEVxc1BYY1Uyd3UybmV2M0FxOFB5QjNXNU1iaWhmSy03dW1kS1IwTFBpdW9NTHZDc1BDaFpVUktsb2gwMGZEeVNwX0Y2M183Q3NoRVJkTXQwTEZJOUl0c0I5cThfcXpZVGMxVVpXS19ockVleXczUTNzZWlPV0FrbzdmWUNNVy1lXzNiYm8zQWM2SXBaaXp1QVpKelY?oc=5",
-      "published": "2026-11-17T20:25:44+00:00",
-      "publisher": "https://www.nowarsenal.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Vinicius Jr Arsenal transfer verdict delivered by David Ornstein ahead of January - now.arsenal"
-    },
-    {
-      "desc": "Fabrizio Romano confirms Man United want to sign forward in January Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T21:00:58.873501+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMV9JakRqNGgwMW9HM1drcWVQQ3FMUUxscXhCWlEzVkoyazNoZnQ0UnJRdHV4NXlkdks5NU1PR2tSZXItNy1Qb0dFRUhWbmN6dG5sSW10ZWtBMzhpNkQtOXJCblBKLVV3bW15Q3RZcHV2Y1dGVzh5UncyQzhMYnpQOXpxNUVpeHpzdlcwOA?oc=5",
-      "published": "2026-11-17T20:20:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano confirms Man United want to sign forward in January - Yahoo Sports"
-    },
-    {
-      "desc": "Spurs vs Leicester, Players Cup | How to watch, team news, kit colours, key information Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T21:00:58.873517+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZ19rekVRNnBRTW9sYm5zLWdoMnpjbURXcGdXY2t6WU9lWFczQ0tmZ3Y2Mmg1TmFzLU5GbHo4NmRQVVE3SEZvTlJXMTNKdkIwb1c1TkdJakFLck1JZDlKRXpyN0FrUWRFYVdDcG55aC1vS0htX2hVd2JDNjFnXzBZZTJSeUdVNEhLY3ZhYWxUcU81YU56T3gtcDdaZW5QYTNuR25wYkk5UUNqSmdhQUtJVXBiMm5JNTQ0T2E4WWdBRUdMWjMwS0VPcGFZWUdnUnlJYkF0dE9n?oc=5",
-      "published": "2026-11-17T20:19:31+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs vs Leicester, Players Cup | How to watch, team news, kit colours, key information - Tottenham Hotspur"
-    },
-    {
-      "desc": "Arsenal Not Expected To Revisit Vinicius Junior Pursuit In January RealGM",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T21:00:58.873532+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSnF3N3dfYVFUTWU2eS1RZzduY0RnNXRvOXl3WGJFTHgtUUZHb0lvWXhKam40dlFQNU5wdjYzSWZieXBKTVU5MUU5aDUyZE1WMzZoZ0FUQ2ZVSFNkZFR1ZU5hYlhHU21NWEtpMUR1c1VlQmhfc1dmTTRRNnZMTGZnS3hrTUcycFFQeWhTSU9SNEowbTFFdmFwMFhfVnI4cl9wSTdfcDRhNmlPdw?oc=5",
-      "published": "2026-11-17T20:17:40+00:00",
-      "publisher": "https://soccer.realgm.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal Not Expected To Revisit Vinicius Junior Pursuit In January - RealGM"
-    },
-    {
-      "desc": "Daily Who Am I? Play our Premier League GAME Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T23:57:07.101928+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcmNzaGRlTE1IYXVjRkVOcThOaVdFLWhaSGJPU01BQnU5VlpGXzdiX1ZmQUZxdEZoSlF6ZGhkeDZLU211SG5feHpWZ2FFQThsWDNVUE14cFc1bzF1SVNfUlJCZEVPd09UaXh2WkEzdDNlbGRXX0tlM3V0ejJIWGd5N3gzWWNlcDVUSFlrSTF6anEwTUtfcGJ1YV9aaUpmdw?oc=5",
-      "published": "2026-11-17T20:12:28+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Daily Who Am I? Play our Premier League GAME - Premier League"
-    },
-    {
-      "desc": "Although Pochettino is going to have money for new players, United will have to be smart in their transfer dealings and ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-17T23:01:02.760804+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16299135/manchester-united-mauricio-pochettino-january-transfers.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-17T20:04:11+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United Confidential: Mauricio Pochettino to be given money to spend in January as club target recruits in THREE positions - and surprise"
     }
   ],
   "processed_urls": [
