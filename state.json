@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 17528,
-    "output_tokens": 2426,
-    "requests": 3
+    "input_tokens": 23902,
+    "output_tokens": 3257,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4339,7 +4339,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T17:00:53.522838+00:00",
+  "last_scan_at": "2026-11-18T18:01:00.416896+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4360,6 +4360,66 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "COLE PALMER's girlfriend Olivia Holder left little to the imagination as she turned heads on a Dubai holiday. Holder, 24",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T18:01:00.419386+00:00",
+      "link": "https://www.thesun.co.uk/sport/41063502/cole-palmer-olivia-holder-dubai-beach/",
+      "published": "2026-11-18T17:56:23+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Cole Palmer’s girlfriend Olivia Holder stuns in low cut beach dress as couple take Dubai break after England snub"
+    },
+    {
+      "desc": "JJ GABRIEL should swot up on Martin Odegaard’s background after becoming the latest wonderkid to be snapped by Real Madr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T18:01:00.419411+00:00",
+      "link": "https://www.thesun.co.uk/sport/41062014/man-utd-odegaard-jj-gabriel-real-madrid-transfer/",
+      "published": "2026-11-18T17:54:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd wonderkid JJ Gabriel warned over transfer after Martin Odegaard struggles as Real Madrid chase own Lamine Yamal"
+    },
+    {
+      "desc": "Daily Who Am I? Play 18 November Premier League game Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T18:01:00.419433+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOM3pmVjV5RW14VHNfZVBndkIxWUs3cUZiUDNrVjR0UElBMkJYaTVMaHJ3Y2d1RDBiVVVJVGdJcEo5MWFqTFBudEEtMDdhR1pZbUFsODRHY3BLa1JxUW1LUHgwbFdKZl8zbW1wbXlEZjNSLWFHMkVOV2EwY2dSby1ObmtoN2x3SGxycklLT2ZITjhsd0tTaktueTRXT3U0QQ?oc=5",
+      "published": "2026-11-18T17:48:09+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Daily Who Am I? Play 18 November Premier League game - Premier League"
+    },
+    {
+      "desc": "Plan to use an FPL chip in GW12! Which one will be best? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T18:01:00.419452+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQkxfM1YxQ2RvbnVRVmdLTEVZaTUxeFREZi1ySmp2MHVtaG5pOEJFb2JMVVowdlZJeEFDRXA4N2ljWUpOeUNFLUZINVJsc0UtNW5vSHhZZFdoSmdNZG1odzhXcVNWX2l3djhWUUZrZFBVX1JpYjlmbkstR05LYmg2eXF3Sk9Ba2Q2T3h6Y1hEck5lZkJLVmgxbERIdGZ1ajdGbEE?oc=5",
+      "published": "2026-11-18T17:13:53+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Plan to use an FPL chip in GW12! Which one will be best? - Premier League"
+    },
+    {
+      "desc": "Liverpool make move to secure future of midfielder Real Madrid tried to sign LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T18:01:00.419470+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPc1BiS0JFV3lZcUttUnVTYXZ1cmRnbkMwdWJLTExUdFNVUGpxbld1WlZFYmI3VFpFWE10UVdhNDhTNTdscm81ZzFzYWczR3FYdkVaRXRham50c2RYb1VQMHdWckcxT3dYVUJOVU8yOW11RlNKUVVMRHdXUDNOR1hOYjBXdmJ4WE55UDdHV0JVR0dPQ2lOUW9PM1pLLXVKdm5heWhVVnpNY0NtNmF3QmcxU0FsMm8tVmo0c2ZGMGF4SHZOMVN5ejJTcFpfVjM4dmczZ1EzZ2JvY1JiRzZnRDdRNjhoNA?oc=5",
+      "published": "2026-11-18T17:11:16+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Liverpool make move to secure future of midfielder Real Madrid tried to sign - LiveScore"
+    },
+    {
+      "desc": "Bruno Fernandes has been dethroned as the king of the Premier League in a major shake-up to the top 25 Premier League pl",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-18T18:01:00.419507+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13613154/bruno-fernandes-tumbles-as-new-no-1-is-crowned-sky-sports-ranks-the-premier-leagues-top-25-players-right-now",
+      "published": "2026-11-18T17:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Fernandes tumbles as new No 1 is crowned: Sky Sports' top 25 Premier League players"
+    },
     {
       "desc": "MANCHESTER UNITED are not backing down despite JJ Gabriel reportedly turning up at Real Madrid's training ground. The wo",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4389,6 +4449,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Mari Ward called up for England U23s duty - Liverpool FC"
+    },
+    {
+      "desc": "The best training snaps before OL Lyonnes tie Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T18:01:00.419592+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSF9mOE8yVWdTcmN3SjhqYnVCMUI0U3ZpM1RPQ216dzBzT0tRMEk2Q2hqTUw0Q19FZ2FpcUNaaWtIU09XXzBrVzBwMHRFeElWYmwyN0ZmRjZMV2Zza3oxVlExWGJUTkxWbUxIWkVfaVRsYmVUbENXTjRQWV9FY1o5ZGRYY0U5MXlVNXVUWl9ramc?oc=5",
+      "published": "2026-11-18T16:15:01+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "The best training snaps before OL Lyonnes tie - Arsenal.com"
     },
     {
       "desc": "The Premier League resumes on Saturday with Crystal Palace, Sunderland and Man Utd in the relegation zone. But is it too",
@@ -4691,6 +4761,16 @@
       "title": "How 13 Chelsea stars got on during international break from scintillating Morgan Rogers to all-action Pedro Neto"
     },
     {
+      "desc": "Man City Esports confirm Rocket League roster Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T18:01:00.419975+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQODlLa21QQUtjS0NSXzRXT3NxLUJfbl9iOUx4VVNqTGtSVV84TnNOX2dvaDU3UGlnM0RERTZVZ2NxTF9rbXlQRXplenRuN3pCRWw4QmYtZ1Z0TW8xeWE0WUhSYXE3NWtiU1Q3Mk5qaTJFR3B0T2FhZmhldENmX1FXUWVxRXhjd28tZEZLX0JVcGRYZw?oc=5",
+      "published": "2026-11-18T13:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City Esports confirm Rocket League roster - Manchester City FC"
+    },
+    {
       "desc": "MAURICIO POCHETTINO is ready for business at Manchester United after being filmed arriving at Carrington. The Argentine,",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-18T13:01:08.790666+00:00",
@@ -4861,6 +4941,16 @@
       "title": "Dowman and Donczew star in youth internationals - Arsenal.com"
     },
     {
+      "desc": "Buy Manchester United x adidas Adistar Control 5 Trainers Black Manchester United Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T18:01:00.420092+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdVJOM3lzUnBhWFhZYlpKdmp5aEJXb2NfU2NIREg3YThfbU9mdkVmZkNlTVdGQ25FLTlZSjNiRjZkbFFHdzdKbHVGakNGd3V0Z2lkcGxUUXdJX1NuNlphLTEtV3Q1elVOQnpBUGN6Q1NNN3FfRmlzRFhxREpFcjJockUyS3lVc0lOX0trZ3hvVnRyUnRGSnBJdnBB?oc=5",
+      "published": "2026-11-18T11:46:21+00:00",
+      "publisher": "https://store.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Buy Manchester United x adidas Adistar Control 5 Trainers Black - Manchester United Store"
+    },
+    {
       "desc": "CHRIS WHEELER: United sources say they are disappointed the video appeared without any contact with them. The club maint",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-18T12:00:51.446964+00:00",
@@ -4989,6 +5079,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Live Training ahead of Lyonnes! - Arsenal.com"
+    },
+    {
+      "desc": "Haaland's back on the Official Man City Podcast this Thursday Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T18:01:00.420208+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYjUwS1NYOUYtNVZzVFV6UEppRW9YRzU0TFVpTHZhX1FoM1ZHa2xEbFA3c2VHektlRlVnbVFod3NNWmdYRnNvVlFoV0pSUkkwUWJyYUlBcGhpVzFNVGk3ZVY3ZnZWSm9RXzVodUZsb0dRVFg0SVRva3BsNk40cEtWRg?oc=5",
+      "published": "2026-11-18T11:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Haaland's back on the Official Man City Podcast this Thursday - Manchester City FC"
     },
     {
       "desc": "Man Utd: Fabrizio Romano confirms first January transfer under Mauricio Pochettino Football365",
@@ -5759,106 +5859,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Northern Ireland promoted to Nations League top tier with draw in Hungary"
-    },
-    {
-      "desc": "ENGLAND'S win over Spain on Sunday saw them top their Nations League group over the World Cup winners. The Three Lions h",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T22:00:53.291724+00:00",
-      "link": "https://www.thesun.co.uk/sport/41017831/who-england-play-nations-league-quarter-final-draw/",
-      "published": "2026-11-17T21:47:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Who will England play in Nations League quarter-finals?"
-    },
-    {
-      "desc": "Wales ended their Nations League group campaign with a 3-2 defeat against 10-man Portugal in Cardiff after Chelsea's Ped",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-17T22:00:53.291754+00:00",
-      "link": "https://www.skysports.com/football/wales-vs-portugal/report/554136",
-      "published": "2026-11-17T21:40:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Wales beaten by 10-man Portugal as Neto scores but is sent off"
-    },
-    {
-      "desc": "Internationals | Promotions galore in UEFA Nations League Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T04:01:00.550829+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZUNDaGE2NGVmZlNOU2hMa2ljMU9hQUl2TXJPVFQzX1Z3WHZmdm56d3BlemM4eHQ2OTRlQTRNQ3YyVGQxS21kLUFpMFpNUnc3ZEtialpiNWpYMWx4R0NYdU4xMnlGRXo5NDJxZExaRjBqQ3RGUEVVSWJlN3hud2FBckxtY1NKVnM1Mkh4eGZCbHlTMmRHcE5hX0ttRG5YSDlPQnZR?oc=5",
-      "published": "2026-11-17T21:37:42+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Internationals | Promotions galore in UEFA Nations League - Tottenham Hotspur"
-    },
-    {
-      "desc": "Arsenal: Blockbuster Vinicius Junior January swoop chances revealed by Ornstein - 'I would imagine'... TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T22:00:53.291787+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUHVnUllTMVNHMjZYdEtvZ1UtVDFoVGh4TGN5aHB6cUx5OUhLUTYxWGVXREZkc2haN3ZzSlRtNUN2ZDVfSE5CZHU5VGxoN01zWTg4LWlTUzFIMDJwQmtjRGdER2tBbUFxT2xZRXJPVGVWVlFlOERNaEYtYlpNNEFxRXBKelNCX0M0bUNNSlp0YnV3YzZ0MmRsZmxCc1BCQ0ZldDNLZkt3?oc=5",
-      "published": "2026-11-17T21:35:39+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal: Blockbuster Vinicius Junior January swoop chances revealed by Ornstein - 'I would imagine'... - TEAMtalk"
-    },
-    {
-      "desc": "Ornstein reveals Arsenal chances of signing Vinicius Junior amid transfer 'likely' claim - 'there's scope to' Football36",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T22:00:53.291817+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQd0hFZWpxMnByQmtkSWQ5Qlc2dVRkc0RabGVGazlDcFNqWGNrREtweFBWalp5Sm9PYndWYnhmdzFzWUh5UXpldEpOcERqQ1F0T1hobU5qclR3S3d2TmE5b2JUdjRnSnBpMnBWQnA4WWVIN2lwSmJXZmJkZ2hXdlUtTzNsLVE2b2p2b3F1Z2owLUVRa18teVp3ZHRwYkNISUdRSGxXZ2U0X1dxWEZjbTc5Sw?oc=5",
-      "published": "2026-11-17T21:35:10+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Ornstein reveals Arsenal chances of signing Vinicius Junior amid transfer 'likely' claim - 'there's scope to' - Football365"
-    },
-    {
-      "desc": "EX-PREMIER LEAGUE prospect Benicio Baker-Boaitey has been suspended by Millwall and may have his contract TERMINATED. Ba",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T22:00:53.291843+00:00",
-      "link": "https://www.thesun.co.uk/sport/41054209/premier-league-benicio-baker-boaitey-suspended-millwall-brighton/",
-      "published": "2026-11-17T21:05:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Former Premier League star, 22, ‘suspended by EFL club and could have contract TERMINATED’"
-    },
-    {
-      "desc": "Rangers have paid tribute to Ralph Brand, one of the most prolific goalscorers in the club's history, who has died aged ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-17T22:00:53.291897+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c933g4eegmp8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-17T21:02:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Rangers great Brand dies aged 89"
-    },
-    {
-      "desc": "Who has the best and worst fixtures in Fantasy? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-17T21:00:58.873439+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORE04VTlPNWY1V1dKVjYwNVNhY1Ryd2txQmg3aXNxeEwyU2xkUDJWZFE1eVZYV1lZWmFhLXRVRndNa3lyQXhlZUxmRnJ5WWxnOFlDaEl4d2R3dnNUa19Da0NqRjhhX2dhT2ZwTExxQTBkSUo4Q01mQ2ZmX09PMW5UcWUxMUE5am9SX2k5MW55dUNOVGdIN0xz?oc=5",
-      "published": "2026-11-17T20:46:15+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who has the best and worst fixtures in Fantasy? - Premier League"
-    },
-    {
-      "desc": "JORGE JESUS has responded to Cristiano Ronaldo's mum after she claimed that he \"deceived\" the superstar. Dolores Aveiro,",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-17T21:00:58.873461+00:00",
-      "link": "https://www.thesun.co.uk/sport/41054127/portugal-jorge-jesus-cristiano-ronaldo-mum-dolores-aveiro/",
-      "published": "2026-11-17T20:41:53+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Portugal manager Jorge Jesus responds to Cristiano Ronaldo’s mum’s claims he ‘deceived’ her son"
-    },
-    {
-      "desc": "Piero Hincapie to sign new Arsenal contract, also Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T01:00:58.364301+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUzZNMFlYVGljQVp2Tl9KWE55cVFEcUFBUTFXVS1pVk50cFRIUmg3bm1nQl8wa0taQjNZd0FXbHF5UklEM2cteTRZVm1NdzhqelFEcUtvOS1WM3g5ZXVUYUNCU1czbXdHcjhjTWxNdkZ6TU8wY3lfRjc1VHQtVnZDWDBKS1RVY0tXRzhWS0dR?oc=5",
-      "published": "2026-11-17T20:28:41+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Piero Hincapie to sign new Arsenal contract, also - Yahoo Sports"
     }
   ],
   "processed_urls": [
