@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 42693,
-    "output_tokens": 5244,
-    "requests": 7
+    "input_tokens": 48668,
+    "output_tokens": 5801,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4374,7 +4374,7 @@
     }
   },
   "last_morning_report_date": "2026-11-18",
-  "last_scan_at": "2026-11-18T21:00:56.193145+00:00",
+  "last_scan_at": "2026-11-18T22:01:08.219525+00:00",
   "last_summary_sent_at": "2026-11-17T22:01:20.584095+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4395,6 +4395,36 @@
     "updated_at": "2026-11-17T22:01:20.563693+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Tottenham's on-loan Chelsea winger Mykhailo Mudryk says he blames the Ukrainian Association of Football for his failed d",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T22:01:08.221624+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cr930l71z5ejo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T21:22:18+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Ukrainian FA to blame for failed drugs test - Mudryk"
+    },
+    {
+      "desc": "LEICESTER CITY have dropped their man shirt sponsor over its relationship with a porn star. BC Game has sponsored the Le",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-18T22:01:08.221645+00:00",
+      "link": "https://www.thesun.co.uk/sport/41065431/leicester-city-bc-game-shirt-sponsor-porn-eva-elfie/",
+      "published": "2026-11-18T21:10:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Leicester City terminate contract with main sponsor after it named porn star as ambassador"
+    },
+    {
+      "desc": "Strasbourg appoint Swansea City's Vitor Matos as the club's new head coach.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T22:01:08.221665+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T20:57:54+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Strasbourg appoint Swansea boss Matos"
+    },
     {
       "desc": "JUDE BELLINGHAM is reportedly set to be offered a massive new contract at Real Madrid. The England star has become a vit",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4424,6 +4454,16 @@
       "publisher": "https://www.bbc.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Fifa: Football Association explored Gianni Infantino legal challenge - BBC"
+    },
+    {
+      "desc": "Fabrizio Romano: Liverpool now in renewal talks with star Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T22:01:08.221723+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSS00ZFQ3WElKX2xzaEtqblk1NThqbkFEM192anFYYmZVSmRLaTFoRncwRVRWQjh0YnZVdlVZOWExTWtGeE5JVktfWmFlMUVwOXJkZW96V3k0RUhiRmdmQ2pDZ0Q5Mld2akpKUmswa05oOFd4aGRPYVV5SURTaFpqejdLUXlpVzRDSVQzamRkaw?oc=5",
+      "published": "2026-11-18T20:50:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: Liverpool now in renewal talks with star - Yahoo Sports"
     },
     {
       "desc": "Alex Scott Transfer News: Bournemouth Want Up to £100m in January (18 November) The False 9",
@@ -4474,6 +4514,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Photos: Conor Bradley and Giovanni Leoni continue injury recovery work - Liverpool FC"
+    },
+    {
+      "desc": "Liverpool Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T22:01:08.221833+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNU1kwWlBjUHhlRGkzSXpzRWpHMERUN3c0SjZ3dEsyOWNheDFaa2hOMUV2RUItal9CZ2hpWHBOY1ZSQUk1UVJWZlhwaUZNT0xGWTJhVk51MlhkNExxbWE4VGZhRFM1RnhlV0xuaGpJV1UzelNhZ01ocE0zZmRiMkdQQW9FcEpOMjJ3bGoyVUhRVXN3UG1KUkhNcWZuaVItR1RoZzAzMGthVVVlcm1GMUpJYmdR?oc=5",
+      "published": "2026-11-18T19:58:54+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool - Liverpool FC"
     },
     {
       "desc": "MAURICIO POCHETTINO sent his first message to Manchester United fans promising them a \"special season\". United released ",
@@ -4546,6 +4596,16 @@
       "title": "Leicester split with sponsor after porn actress row"
     },
     {
+      "desc": "Martin Fellowes becomes the youngest manager in SPFL history, taking on the Dumbarton job at the age of 28.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-18T22:01:08.221933+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c61k9mz9vvkyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-18T19:09:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "From kit boy to manager at 28 - Dumbarton appoint Fellowes"
+    },
+    {
       "desc": "ASTON VILLA's clash with Galatasaray is in danger after the Turkish giants were forced to MOVE a league fixture. The Vil",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-18T20:00:51.100115+00:00",
@@ -4614,6 +4674,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsene Wenger’s ‘daylight offside’ rule will never see light of day as trial reveals unimpressive results"
+    },
+    {
+      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T22:01:08.222019+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
+      "published": "2026-11-18T18:41:03+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     },
     {
       "desc": "Confirmed line-ups | Spurs vs Leicester, Players Cup Tottenham Hotspur",
@@ -4924,6 +4994,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Share your team with our new FPL feature - Premier League"
+    },
+    {
+      "desc": "Surprise destination: De Bruyne considering leaving Napoli in the winter LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-18T22:01:08.222240+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQc0J3ZkRLYjMtbS1KTkxMQTZ5S0I4ZjZOTl9FOURKVmdQV28wbHBHZXhZeGxTdjg1SFFQWl9MU1UycUR2QmdIdkZwcS0waVMzWGpoUVo2WTVyelU3VEo3ZjlQVlpBa0tyRVVFd1VJMVVneDhfOThoZEdKbnZVaFA0S3VQdHF4VXgxVks3UmhBNV9KOWJiQ3pOajdRLUQtOFZuSmE2SmZYeUcyQnE5UHBzZnhFeDBYM3NyZm1MZm5MZ0E4dlpGR3JB?oc=5",
+      "published": "2026-11-18T14:57:18+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Surprise destination: De Bruyne considering leaving Napoli in the winter - LiveScore"
     },
     {
       "desc": "Fan Engagement Liverpool FC",
@@ -5814,86 +5894,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Mauricio Pochettino boards a private jet to Manchester with a promise that Man City's dominance of the city rivalry is 'gonna change'... and"
-    },
-    {
-      "desc": "NATIONAL LEAGUE whipping boys Gateshead have rehired former manager Alun Armstrong after advertising their head coach jo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T08:00:50.950462+00:00",
-      "link": "https://www.thesun.co.uk/sport/41055955/national-league-gateshead-new-manager-alun-armstrong/",
-      "published": "2026-11-18T07:50:39+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "National League side rehire former manager less than a YEAR after sacking him for losing 11 games in a row"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-18T11:00:55.211670+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13613478/premier-league-top-25-players-who-is-the-best-player-in-the-premier-league-right-now",
-      "published": "2026-11-18T07:42:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Have your say on the top 25 players in the Premier League!"
-    },
-    {
-      "desc": "Eli Junior Kroupi transfer update as David Ornstein reveals what happens next now.arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T08:00:50.950494+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMkFCNnBXMlczbkpVeGJuRkptYXMyNWEtdzg2clpWaXRINkZIamp3YndsdGlYQkYxN3ZhbUw2ZXBBNUFDSUJMS0o4Tmh2NUNyZTFfVGxRQkljbEhnbzNLSWtNbnh1R0UxaWhsZU9hTGFIRTJWb2JRVVpJeTBiNVF2VFBsVzIwTGVlSS1TRkJyVTNhV0lEd052a3dxRHZjdV9oOHk2YjJOZmYwbE41emVuR3NlSVZpUXdvMzRn?oc=5",
-      "published": "2026-11-18T07:23:41+00:00",
-      "publisher": "https://www.nowarsenal.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Eli Junior Kroupi transfer update as David Ornstein reveals what happens next - now.arsenal"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has penned an emotional farewell letter to USA fans following his final game as manager. The Argenti",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T08:00:50.950523+00:00",
-      "link": "https://www.thesun.co.uk/sport/41055832/man-utd-news-mauricio-pochettino-usa-frewell-statement/",
-      "published": "2026-11-18T07:06:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino says he is ‘following my heart’ in farewell message to USA as he jets in to start work at Man Utd"
-    },
-    {
-      "desc": "Fabrizio Romano Transfer News: JJ Gabriel official, Balde exit, Arsenal contract updates FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T08:00:50.950553+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOSTdKUTVpX0Q0UjRndUpTR2c5MWFyemM4alJvODY3U2RkMjhLaGhtTERaZU1sZlB1LWRsbTRpZWlFeXNSd0RlWUUwWE1xeEM1QlNLUnJlMEJvNkJtTVU0aThfTTlYa0ZSb3FvU2haQVhHTFJqUXFjUEp5ZzdQN2ZtVmFpbVp6NzF3S0FoNVBXTHBEa2Q2NXJXQllBb1BMeDVBVENwNzd5WDVkOUN0X29paThvQVlTb0hUSnJmeWRVVUstUU9aRkUtQkdWamM5cnRFYTRST2JsWVlZM3pjQXZMTE1ERnQ0czY5ZFNuVnVwVGlJWmZi?oc=5",
-      "published": "2026-11-18T07:04:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Transfer News: JJ Gabriel official, Balde exit, Arsenal contract updates - FootballTransfers.com"
-    },
-    {
-      "desc": "Former Ajax academy player Elikia Mbinga tells BBC Sport how he swapped football for music after playing with some Premi",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-18T08:00:50.950604+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmly053x643ro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-18T07:02:42+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "From one of Ajax's future stars to quitting football for music"
-    },
-    {
-      "desc": "Fabrizio Romano names the striker Chelsea were offered before signing Danny Welbeck The Chelsea Chronicle",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T08:00:50.950637+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPc1dQdzJTTnYtMzlycUNSTURKelktYWpxQjBsVV9aelpMcV80YmEtc05NVGxXRnM1MGEtWW5ZVHRyNkxYTFdPQnRNTmJRTUpmZVRZRlc5V3VFNlN0Nk8zQVBsNkhGSlp0Z3BfN3lzc0FyNmVmckdNTVdWUFM5RUFIMHNrcDY0Z1hsU0std1diOXFNZThJUkFGU0FyMjY1alNUYmdxcmwtNVFHQ3NCcV8xaFo2RXNwRjhsU01LNWloNExndXBWTW9DZXVCa1ZaTVU?oc=5",
-      "published": "2026-11-18T07:00:00+00:00",
-      "publisher": "https://www.thechelseachronicle.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano names the striker Chelsea were offered before signing Danny Welbeck - The Chelsea Chronicle"
-    },
-    {
-      "desc": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January Sports Mole",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T07:00:50.815535+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOeHBlU1BNVGNveTN6THpJQmhfRFkzdzhlVU0yUVVFSHd4Q0phcHVBTmpOWmFSMnJpYlpLYzFOWE5od2d5ZnE3bmxadzdtbmY4X0xkMVA3SjNyMUZsR0lLWHRZZmZrMlUzUEVtZmxMajVkUVQ3NFZnNGYtT3FCR1JUYUhIVXJLRy1nNUNtdFZhTTFWeDlodldXbjNMM29vMlV5X2lkdWxkZ25Na0U0QW9fMEZmUnViZUlXNjBCam80aDZFZlhWSVY1VGVCbmUwTWtXbEdHTVFwdXRMMXZuOWVXdUZJUHRyQXR3ZVpGbWhQYXJqNU0?oc=5",
-      "published": "2026-11-18T06:57:18+00:00",
-      "publisher": "https://www.sportsmole.co.uk",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January - Sports Mole"
     }
   ],
   "processed_urls": [
