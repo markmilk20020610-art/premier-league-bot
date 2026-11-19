@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 129324,
-    "output_tokens": 15237,
-    "requests": 21
+    "input_tokens": 134583,
+    "output_tokens": 15971,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4479,7 +4479,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T09:00:53.242348+00:00",
+  "last_scan_at": "2026-11-19T10:00:54.223309+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4500,6 +4500,26 @@
     "updated_at": "2026-11-18T22:01:44.838662+00:00"
   },
   "news_pool": [
+    {
+      "desc": "When is Pochettino's first United press conference? Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T10:00:54.225791+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeGxZYnNDNU83Q0dtMERTekRjb2YxbHZZM2dheFZDY1dBcjJ4TGJVVHBqYW1xTGw0M0Y3cTBqTTZmMkFPMTdYTkxTVmFPYUk2cTJDdHBFOGh1TjJfX1NpeldfLUFNaEdoNU5uVjduNzNteFNGMGw3eEhRendJRTJUYWYtT2dhSjhFdWxvcWs4MFhaTXM?oc=5",
+      "published": "2026-11-19T09:29:05+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "When is Pochettino's first United press conference? - Manchester United Website"
+    },
+    {
+      "desc": "FOOTBALL fans can enjoy the spine-tingling atmosphere of Champions League matches with official ticket and hospitality d",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T10:00:54.225816+00:00",
+      "link": "https://www.thesun.co.uk/sport/40258344/real-madrid-liverpool-man-city-champions-league-match-breaks/",
+      "published": "2026-11-19T09:18:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "See Real Madrid, Barcelona, Man Utd matches with UEFA Champions League tickets and official packages from just £100pp"
+    },
     {
       "desc": "FA considered legal challenge to stop Gianni Infantino standing in Fifa election The Independent",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4531,6 +4551,16 @@
       "title": "Fabrizio Romano confirms Liverpool are in talks over deal that changes everything - LiveScore"
     },
     {
+      "desc": "BOBBY MANZI: It was unanimously ruled that Kai Havertz should have been given a penalty after he was tugged in the area ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-19T10:00:54.225891+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16302267/Premier-League-identify-FIVE-key-refereeing-errors-one-weekend-boss-Howard-Webb-prepares-appear-clubs.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-19T08:22:45+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Premier League identify SIX key refereeing errors in one weekend as boss Howard Webb prepares to appear in front of clubs after Arsenal blun"
+    },
+    {
       "desc": "Walsh outlines importance of Blues' competitive mentality after PSG win | News | Official Site Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-19T09:00:53.245494+00:00",
@@ -4559,6 +4589,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Black Friday 10% discount on football travel to games including Real Madrid, Barcelona, Man Utd and others"
+    },
+    {
+      "desc": "Arsenal adidas Kids 26/27 ODEGAARD Pre-Printed Home Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T10:00:54.225952+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdVRlQWg5d2hDdjRMWGtsTVJVd1V6WldueFNBRll1T21pRGFBMkV5WXRWcGtIZWZtMmE1RmVRNU5qYTc0ZzFzeDFlWklkZGxTMjMtTGVubkVjNlBMS1FvQkJrNzRHei05UzJ4NmhVamNqelI1dVhSanFaNGNqQ3BiNkh2cTRNQVpjMkpIcGpFakxzUy1tY1lKQ01kd25yb0JQeGs5RkZWODk0RXJoV0plSDBTWGtha1ZOMzhic01kVVRXMkFKbFNDSFZ1Z050SzIyQU9mbg?oc=5",
+      "published": "2026-11-19T08:07:38+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal adidas Kids 26/27 ODEGAARD Pre-Printed Home Shirt - Arsenal Direct"
     },
     {
       "desc": "‘Started’ – Fabrizio Romano provides overnight Liverpool contract update readliverpoolfc.com",
@@ -4649,6 +4689,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "New Man Utd manager Mauricio Pochettino’s first job saw him save crisis club with four-hour chat amid shareholder war"
+    },
+    {
+      "desc": "Pochettino's message to fans Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T10:00:54.226115+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRzFndGp2NkVHdUlEdHpQY01FSnNoYmxBT2lQaVRfWHFEbm95R0hWcXdFQlFobmVUX3lQNDVSaDBnUGdVcEhkSmRjaF83dVJhU1NYRGZ2Yi0tSVA0Wmt6T252ZjNQRWM2YlVNeXNpam1JS3RIdFZZcWpRbnZmNXpoUg?oc=5",
+      "published": "2026-11-19T06:34:55+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino's message to fans - Manchester United Website"
     },
     {
       "desc": "Jude Bellingham, Harry Kane, Kylian Mbappe, Rodri and Lamine Yamal are shortlisted for the BBC's Men's Footballer of the",
@@ -5949,56 +5999,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Iconic EFL stadium given ‘green light’ to INCREASE capacity despite already seating 68,000 fans"
-    },
-    {
-      "desc": "Alexander Isak: You want to contribute important goals - I can feel a connection with fans Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T13:01:08.790820+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQV3FwS1ZhWTZzYzFlVzg4VXhVaktEMjVFY0xMRmFqb2dPNEdobHdLVXRxUmVXX0dSaGE4NWV2TFMtSHAzV1hiT25fZGNnQ0hBOTFjMnk4bXpjMFZEdzVpVGtJWG8tX2dpSUtUbTVHM1BRSzF0NVFuV2Y2OFF5SFN5bzRIb3FsYWxZc2hMNG5OR1U2ZVdhZERsTFZmS0o5TG54S2c3U2ZiY0xqaXlvN0NqakxSS3liZ194emZMaQ?oc=5",
-      "published": "2026-11-18T12:16:05+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Alexander Isak: You want to contribute important goals - I can feel a connection with fans - Liverpool FC"
-    },
-    {
-      "desc": "MANCHESTER UNITED had 16 players away on international duty as Michael Carrick was sacked. United players enjoyed a brea",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T13:01:08.790837+00:00",
-      "link": "https://www.thesun.co.uk/sport/41059112/man-utd-international-lacey-pochettino/",
-      "published": "2026-11-18T12:10:21+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How 16 Man Utd stars fared during international break as under-fire star’s woes continue but young Shea Lacey thrives"
-    },
-    {
-      "desc": "Send in your FPL questions for fantasy football expert Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T17:00:53.527151+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPT2N2bDNEUFFpOWdtRlVldU5PamJ1VmVqYkVsQU1uNko2ZDJGRjg3Rmc4b1NHYVMyWFZobWFWMTEyZHJqR1dsZVdiOHd4enNxaG11Zk9CQWprcWIySkkzQzVKakptRmJDSlFuejNVeWR2WU92MmRVWE9WMVNDbHFpWVFKN2xmUG9FM00wRldxNHdoallzZU9iZnpSYm9ZWF9oc2c?oc=5",
-      "published": "2026-11-18T12:06:36+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Send in your FPL questions for fantasy football expert - Tottenham Hotspur"
-    },
-    {
-      "desc": "COVENTRY boss Frank Lampard has revealed legendary Manchester United supremo Sir Alex Ferguson sends messages of support",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T13:01:08.790871+00:00",
-      "link": "https://www.thesun.co.uk/sport/41058385/man-utd-sir-alex-ferguson-helped-frank-lampard-coventry/",
-      "published": "2026-11-18T12:03:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Man Utd legend Sir Alex Ferguson quietly helped Frank Lampard in managerial career"
-    },
-    {
-      "desc": "Arsenal reach agreement with Jurrien Timber over new contract until 2031 – Romano Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T16:01:11.490871+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVkhLV1RmSDhyOWJnUFp3cVRLcFhxZWxEOWdPLXVWb1l3c2I4em5qQUw4TmJ0b21jby1xdVJmQXJPd2tRajNKMTRLOXdvckxMQVZodGR1clV4R0lUS0pheVg3YUIwNW1iMGUyNGozWVIyaDdaWUlRajM1eHZQbDIweng2VEVXREVvaUlXN3BtSkJ6V0o1eU4yOTFPUXU2bEl3c0RvZUxISm1faTR1SHBHOTctR2NjNDVwNk130gHAAUFVX3lxTFBHcDVmX1dIZWxlUVA2eFRVZUg1b2x2Y1pqM0tVT2VEMXlRZXZFTkN3OGZLeXNnbzM3X0dhWWt5Sko5OEpCeno4N2NncTQtaUhlbTd4Q3FwT0tEMmd6S2gwWk5PVlY5LXlrbjFDRWN4V2RBbWtVck1NTldzQmNVSlMyVjkwbjMxS2VPc1p1RE4tOTZqNHlnVFU2Vy1mMWJuX09DVWYxUUsyVEs3S3lUNmxodzh3TzFqWThHalJBMUZZMA?oc=5",
-      "published": "2026-11-18T12:01:58+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Arsenal reach agreement with Jurrien Timber over new contract until 2031 – Romano - Tribuna.com"
     }
   ],
   "processed_urls": [
