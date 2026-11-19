@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 114531,
-    "output_tokens": 12985,
-    "requests": 18
+    "input_tokens": 119599,
+    "output_tokens": 13710,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4444,7 +4444,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T06:00:56.973921+00:00",
+  "last_scan_at": "2026-11-19T07:00:56.930981+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4466,6 +4466,46 @@
   },
   "news_pool": [
     {
+      "desc": "Fabrizio Romano Transfer News: Balde truth, Nico Paz to Man Utd, Bruno dilemma www.footballtransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T07:00:56.934483+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUVREZFczenBRN1cyektWRjllcHVNMDFKZ3FQTklQZGk5d24zTHZGN0E1Q2VKV3J4RUdVVGRhTmRSSjRmaGc0R3NZOTFtMkpIZ3c2SzdYdnZLcDBNaXNBTjljN3RqMXI1RGp2bXZ5emF2ZnoxYW5XSFI5WjFFV3F6XzFpVG9RNGxSUWtMN25iZEc1ZmN5ZmVWWkF5RGU5OGlLUmg3WGlic1VpVndpc2VRUTdnM1duVDllX2dXUEhrUDl1NktxN1pXVUloSjFxQ3JqU2laUXVPemVLaHFIaDFxQlJXQmdsTUE?oc=5",
+      "published": "2026-11-19T06:55:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano Transfer News: Balde truth, Nico Paz to Man Utd, Bruno dilemma - www.footballtransfers.com"
+    },
+    {
+      "desc": "THIS will be just like old times for Mauricio Pochettino. Manchester United’s new boss is rolling up his sleeves for a p",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T07:00:56.934520+00:00",
+      "link": "https://www.thesun.co.uk/sport/41067082/man-utd-mauricio-pochettino-espanyol-daniel-sanchez-llibre/",
+      "published": "2026-11-19T06:42:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "New Man Utd manager Mauricio Pochettino’s first job saw him save crisis club with four-hour chat amid shareholder war"
+    },
+    {
+      "desc": "Jude Bellingham, Harry Kane, Kylian Mbappe, Rodri and Lamine Yamal are shortlisted for the BBC's Men's Footballer of the",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T07:00:56.934556+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c61wrqr7l1d8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T06:30:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Vote for the first BBC Men's Footballer of the Year"
+    },
+    {
+      "desc": "Fred Tomley Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T07:00:56.934582+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE83OTRwZnlXaDQ2TThkajIwRFFwaW1ING9tVVlJNENicmw0R3hBNjZnWHJFcEN2Ujg3MXlQMzlWaHRHa1BYeTBlSWl3VlBkcGgw?oc=5",
+      "published": "2026-11-19T05:25:16+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Fred Tomley - Liverpool FC"
+    },
+    {
       "desc": "Matchday Programme - LFC Women v Chelsea Women - Women's Super League - 21/11/2026 Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-19T06:00:56.976405+00:00",
@@ -4474,6 +4514,16 @@
       "publisher": "https://store.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Matchday Programme - LFC Women v Chelsea Women - Women's Super League - 21/11/2026 - Liverpool FC"
+    },
+    {
+      "desc": "‘It’s good news for Carrick’: Romano shares news he’s hearing out of Man Utd this week LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T07:00:56.934634+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRXFoUm51T1RZLTF3LVY5ZVB2WDBBeVpSWFhCbEhWU21Qa1dxQzVzZFUtVFRBd0g5MHMxWVc2QVEtODJ5TndxNk1DdGNEX0U0RDNjNXVvRzJWVk44Wkg5RlpDUWRFZUMzUlpkQWpRSDhLRjVld3hwa2RXZERaU3pfUEV2NWZTNDA4dndqQjdBcjcxREFiZXZEdDJwLVVRR3U5T2ZzUjV1X2ExZEx5VmtaOVFCdnhiSXVFNklaT1haVXZwcTdxU1k4V0lleFo2cXZ0cTlET1hPSzRSYlBEZzJGUVY0TFk?oc=5",
+      "published": "2026-11-19T05:00:40+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "‘It’s good news for Carrick’: Romano shares news he’s hearing out of Man Utd this week - LiveScore"
     },
     {
       "desc": "Arsenal adidas Kids 26/27 EZE Pre-Printed Home Shirt Arsenal Direct",
@@ -4546,6 +4596,16 @@
       "title": "‘Show what I can do’ | Pierre’s delight after senior debut in Leicester success - Tottenham Hotspur"
     },
     {
+      "desc": "‘Show what I can do’ - Pierre’s delight after senior debut Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T07:00:56.934825+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdjBhRENZSVpPUV9NZzFjTEJXYmFPT2dJSGhqZ0dyQ3hkdlY3R3NXUS1wMGRsajNsX0FKcEZzaWc4WjN3S1BuRUl1Q3Z4Qm9wbndCelJxQ3VsemtVR241cnFUZFkxQW84b0VocmVsOVRZaFRwT2Y5S0lwaHN2TDhCQkc2MkZ4Vm54M2JzRGh3Y3JIeHFhV1Z4dmlQNzJHdXIyUVphRUN5emtKMXNBN0tsZQ?oc=5",
+      "published": "2026-11-18T23:36:43+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "‘Show what I can do’ - Pierre’s delight after senior debut - Tottenham Hotspur"
+    },
+    {
       "desc": "VITOR MATOS has bizarrely been announced as the new Strasbourg manager despite Swansea City refusing to confirm his depa",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-19T00:00:52.341131+00:00",
@@ -4564,6 +4624,16 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "‘Really ruthless’ – Ho praises attacking display in emphatic Leicester victory - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs 7-0 Leicester, Players Cup | Martin Ho's verdict Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T07:00:56.934872+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPamVmYTM4NldSOUU5V3Z1MXN3aHIxWkkybi1CakV3eDc3Z2hmUlp5WWkzR0RyZmVmYWlsV3R1ajRyeThpaDVGMjVHU012QVlUTDlUR0xUUldrUU9VM3Z3bExRdUZqRVBlSjRUMzJISngxaVdYaVBUWDZnUVhZU2paRFZIY1g0MFNYT1hiM0h6M3ZSTlBqNl9FUFRSaXpQQXVsNVd4dW9KOG9mWTFS?oc=5",
+      "published": "2026-11-18T23:03:33+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs 7-0 Leicester, Players Cup | Martin Ho's verdict - Tottenham Hotspur"
     },
     {
       "desc": "Liverpool FC",
@@ -5894,76 +5964,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Line-up confirmed: United v Everton live on MUTV - Manchester United Website"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T13:01:08.790995+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXRrOFVWaUJ0cFQ0NU9zQVZWX1Z2bmJOQWFKeVZ6T0FNR2ZpODZUM0hCZ2xzRHN4YXpIWnY4VUpYX3VoTWhJVVo5R1BGaTRHN0dScWZvYjkyZUx1a0h4dlJVaEd1T0dPeFk1OEIwRlpyYTl2S0dDZm9NUTBhcGF4U0d6dWpqb2lHd2M3bTNFMmpyazJzOXNYVWp2MnE0anpyNktucVJjOEd4Ti1FdjE5Mm5kVlZPSVVUVmVSdnBRM3V2RmlF?oc=5",
-      "published": "2026-11-18T11:04:42+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "SWANSEA are in talks with ex-skipper Ashley Williams to join Leon Britton and Kris O'Leary as interim managers. And SunS",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T12:00:51.447076+00:00",
-      "link": "https://www.thesun.co.uk/sport/41057958/motd-pundit-ashley-williams-swansea-interim-manager/",
-      "published": "2026-11-18T11:04:20+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Match of the Day pundit, 42, lined up for shock interim manager job at Championship high-flyers Swansea"
-    },
-    {
-      "desc": "Live Training ahead of Lyonnes! Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T12:00:51.447088+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05TEJwWHEwbE1XYWdvcjZETTlGaTNpN3lVT2N6dk5MeVNodzlaNEEtbTNTZ2p3Vmx0N1VUSjh4d0FQcXl1MEJKMFRrTGJzN2hUZWxZU2wyN2NvTElIRkNQMDU2OV9MR3FvOG96OU9lTzFua04xTlNiVi1ZLU1Xdw?oc=5",
-      "published": "2026-11-18T11:00:54+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Live Training ahead of Lyonnes! - Arsenal.com"
-    },
-    {
-      "desc": "Haaland's back on the Official Man City Podcast this Thursday Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T18:01:00.420208+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYjUwS1NYOUYtNVZzVFV6UEppRW9YRzU0TFVpTHZhX1FoM1ZHa2xEbFA3c2VHektlRlVnbVFod3NNWmdYRnNvVlFoV0pSUkkwUWJyYUlBcGhpVzFNVGk3ZVY3ZnZWSm9RXzVodUZsb0dRVFg0SVRva3BsNk40cEtWRg?oc=5",
-      "published": "2026-11-18T11:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Haaland's back on the Official Man City Podcast this Thursday - Manchester City FC"
-    },
-    {
-      "desc": "Man Utd: Fabrizio Romano confirms first January transfer under Mauricio Pochettino Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T15:00:53.964397+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRkVmbUt3RXBXSkhBdk8wcmV5NldLZlVGZFJ6bERGMXNRdDFNaUsxN1FCUXVSWjVla1o2QW4tenNtOHE0eEJ3VFBaNTh6elVpb1otNFVUQXpKaVBJcUlwT3BDa0dwS2F1ZnR4d0lScExrZm42LVVQbHVUVERnSHExOEZYMUNicmtfVk1LaGhVOFVGU0E3RGhjVFFIM0ZkaHp0djZXckJrSVJuQ1RJNUp4anh3?oc=5",
-      "published": "2026-11-18T10:57:19+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Fabrizio Romano confirms first January transfer under Mauricio Pochettino - Football365"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T15:00:53.964413+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBobDh6MXpzYjluMDBoeWFrVTJGV0VraGN6bjc5M1ZGUXZxMUVtWnhybG0tUU1KUmxEcEw1YkdkcEI0dEFwVkp2bk1DeHR1Y09sQ3hhcGxUdHNHMzA3aDczQ2N3NEdVc05Yc0RoSzhjWVlNWEVIOVE?oc=5",
-      "published": "2026-11-18T10:54:03+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "The Spain star came through Real Madrid's academy before winning the Champions League with Chelsea and the Europa League",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-18T12:00:51.447106+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16302147/Juan-Mata-retires-aged-38-Premier-League-legend-calls-time-glittering-career-Manchester-United-pay-tribute-former-star.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-18T10:53:41+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Juan Mata retires aged 38: Premier League legend calls time on glittering career as Manchester United pay tribute to former star"
     }
   ],
   "processed_urls": [
