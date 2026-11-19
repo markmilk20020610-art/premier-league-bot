@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 148155,
-    "output_tokens": 17253,
-    "requests": 24
+    "input_tokens": 154250,
+    "output_tokens": 17796,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4514,7 +4514,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T12:00:52.875406+00:00",
+  "last_scan_at": "2026-11-19T12:56:17.109181+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4535,6 +4535,96 @@
     "updated_at": "2026-11-18T22:01:44.838662+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MAURICIO POCHETTINO has been given the green light to break a Premier League rule following his arrival at Manchester Un",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T12:56:17.111567+00:00",
+      "link": "https://www.thesun.co.uk/sport/41070368/mauricio-pochettino-break-premier-league-rule-man-utd/",
+      "published": "2026-11-19T12:49:02+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino allowed to break little-known Premier League rule just days before Man Utd’s trip to Liverpool"
+    },
+    {
+      "desc": "Training photos: Liverpool prepare for meeting with Manchester United Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T12:56:17.111593+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNDZUb3NqbVNhZVlWVGZveXNQb0hyS1YtSUQzWEU0X2ZOWVc5UDNnT0pxQ0lla0poN0R0UnlvVk5DQXc3aHMyNDVIRTVQSEhFMkJVTThzWmExeGgzbEpESGlaeDl5WFUxLWRac0hHNm9wcGZmRVQwUWJ0R1dFeHlLSVNidmc0eThtTG45MEU4ZTdzZw?oc=5",
+      "published": "2026-11-19T12:36:52+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Training photos: Liverpool prepare for meeting with Manchester United - Liverpool FC"
+    },
+    {
+      "desc": "With five teams separated by just one point at the top of the Championship, could this be the best season yet?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T12:56:17.111617+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c63ele354444o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T12:36:31+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Will this be the tightest Championship promotion race ever?"
+    },
+    {
+      "desc": "2027/28 Premier League season: Key dates confirmed Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T12:56:17.111636+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQXJWQ0d6eUZVMWRPMEtEaDdQQnAtWDVzN2I5Q3NWckw3Y0kxMTROV1pYYl91cWJPU1pUam42NWRPNzJwcm5GeXk4OU5CZzBHVzZ3V3N6cVlOREtiZTV5SHhnTmY5Mk1FamMwNmlUVlhleGMwd0Z5d2NEcGJDcTdsVFY0ZU9QZ1JIMzVBUTE4d1VkbGtCeUttMWpR?oc=5",
+      "published": "2026-11-19T12:35:16+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "2027/28 Premier League season: Key dates confirmed - Premier League"
+    },
+    {
+      "desc": "THIS luxury two-bedroom apartment sits atop a former Premier League stadium - but do you recognise where it is? The impr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T12:56:17.111655+00:00",
+      "link": "https://www.thesun.co.uk/sport/41069872/luxury-apartment-former-premier-league-stadium/",
+      "published": "2026-11-19T12:31:39+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Luxury two-bed apartment inside former Premier League stadium goes on the market – but do you recognise it?"
+    },
+    {
+      "desc": "PREMIER LEAGUE chiefs have confirmed January's TV fixtures, with Manchester United vs Liverpool topping the bill. The mo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T12:56:17.111672+00:00",
+      "link": "https://www.thesun.co.uk/sport/41070719/premer-league-january-tv-fixtures/",
+      "published": "2026-11-19T12:12:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Premier League fixtures revealed for January with new date for huge Man Utd vs Liverpool clash"
+    },
+    {
+      "desc": "Three fixture changes in early 2027 Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T12:56:17.111711+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORGFKWEFHSEJvUlAzTWxqMTNWVklyUzUwVU90Y0xYQU1yN3R4YUM0ZWtNdjc1Mml4S0M0Y0VlSlhNbEltSG1kS1N6bkd6NVRlRUZwVEZacXN5SDFuR1RYYkFJWTlTNkh4X0hycFdORWJYWTBRUzdkbUI0cHNtemVmbUl2SXQ?oc=5",
+      "published": "2026-11-19T12:02:14+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Three fixture changes in early 2027 - Manchester United"
+    },
+    {
+      "desc": "Ornstein: Arsenal target more likely to go abroad Daily Cannon",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T12:56:17.111727+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZ21YOXVMSVpkSUpSc0ZHaDBwZGQtelJMak5pUlJrVGZidGxaWjZQM3VCdGZIZlN6NXBnYTR0QVZmbGRQeGVkLUpJckFONVBFR1dkNnZvMmtlX2tudlRZSHJrdVpLQXFuSTZJeFdTa1ViWnU2YjBKSEMyQkVFSW8wdzV3?oc=5",
+      "published": "2026-11-19T12:01:00+00:00",
+      "publisher": "https://dailycannon.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein: Arsenal target more likely to go abroad - Daily Cannon"
+    },
+    {
+      "desc": "Two Premier League games in January moved for TV coverage Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T12:56:17.111743+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRXhkVVVnVTJFaE9VSkpiVXNuMEE5WExjSDRUcjZzaEJSaXFpUG9XQ1BzQUlLQkxFeG9GY1VXdG5DZVdrTjBselVkQk5mZTZZOWZWZzdiRTZrZWRJSGRIbUZuR09NLVRCbTk4NENMYllNcXR2VVR6dDRNUDg5dms4VndfdzFJUQ?oc=5",
+      "published": "2026-11-19T12:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Two Premier League games in January moved for TV coverage - Manchester City FC"
+    },
     {
       "desc": "MAURICIO POCHETTINO has vowed to lift the pressure off Manchester United’s players and build a new philosophy by \"starti",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4604,6 +4694,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Premier League referee appointments: Matchweek 11 officials - Premier League"
+    },
+    {
+      "desc": "Northern Ireland manager Michael McArdle has made five changes to his squad for the upcoming friendlies against Greece, ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T12:56:17.111876+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqly43n1vjm8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T11:12:20+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Magill returns to NI squad for Greece friendlies"
     },
     {
       "desc": "The Scout’s FPL Gameweek 11 transfer radar Premier League",
@@ -4964,6 +5064,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Henderson details how Blues are working to build the 'best version of ourselves' | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "THE Premier League is back with a BANG this weekend after the international break! Midnite are offering new customers a ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T12:56:17.112310+00:00",
+      "link": "https://www.thesun.co.uk/sport/40045824/free-bets-football-sign-up-midnite-offer/",
+      "published": "2026-11-19T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Get £30 in free bets for football when you sign up and stake £10 with Midnite"
     },
     {
       "desc": "The Chelsea winger, who is now on loan with Tottenham Hotspur, has opened up for the first time since he returned to foo",
@@ -5924,116 +6034,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Premier League predictor - play our new game each week!"
-    },
-    {
-      "desc": "CARLO ANCELOTTI has responded to a scathing attack by Brazil legend Romario, who demanded he leave his role as national ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T16:01:11.490587+00:00",
-      "link": "https://www.thesun.co.uk/sport/41061057/romario-slams-ancelotti-real-madrid-response/",
-      "published": "2026-11-18T15:50:39+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Brazil legend Romario calls for Carlo Ancelotti to be SACKED before Real Madrid legend hits back"
-    },
-    {
-      "desc": "Liverpool initiate contract renewal talks with midfielder linked to Real Madrid – Romano Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T21:00:56.195775+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbGQ3aDZaekt6S0htTkRuU0hTT25fSERoemVOelRKa19xLWRfMWNzaEgxQXVMY0cyU18wRHpPdEt4Y0tMam4weDRxVUUwVFNNWk9rVGh4OUxkVE5pLWdDcm1QTlEwU2pEOGFlMDJ2TGlkblhXa3VXVzRmTjc0bFllQk5WVjM5M1JtTkVVYnA4TVdTdlct?oc=5",
-      "published": "2026-11-18T15:49:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool initiate contract renewal talks with midfielder linked to Real Madrid – Romano - Yahoo Sports"
-    },
-    {
-      "desc": "NICO PAZ has sent Manchester United a timely reminder of his rising superstardom with two stunners for Argentina. The 22",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T16:01:11.490610+00:00",
-      "link": "https://www.thesun.co.uk/sport/41062386/nico-paz-man-utd-mauricio-pochettino-transfer/",
-      "published": "2026-11-18T15:47:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Lionel Messi’s heir Nico Paz send timely reminder to Mauricio Pochettino as long-term Man Utd transfer target shines"
-    },
-    {
-      "desc": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid The Independent",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T21:00:56.195794+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbW45QjZ5Rjg5alZWWDNzZWg3dUE5QzZSdTJfUndUMzBLSk8zdmtIaE93YkdNOVQ0eW53V3hCYkJTcWU1Y0ZmRE5MRExURlF2WDNTbWNScDJQWnlZUHd0c2xuSGdCbG9aTTh2MEZjOTVVOXlRN3RnT1NKd3NmV20xN0JRdFBTS1ZpU0t3ajduNU15Mk9LdXRJU3NWQm4tdGZBRHpEaVFXbVljczlKdlR0NWx2SzZUWWJBZHc?oc=5",
-      "published": "2026-11-18T15:45:00+00:00",
-      "publisher": "https://www.independent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid - The Independent"
-    },
-    {
-      "desc": "MANCHESTER UNITED have confirmed the departures of five members of staff. The Red Devils are clearing out the staff room",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T16:01:11.490628+00:00",
-      "link": "https://www.thesun.co.uk/sport/41062340/man-utd-axe-staff-evans-pochettino/",
-      "published": "2026-11-18T15:43:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd confirm exit of five staff including three-time Premier League winner as Pochettino instantly wields axe"
-    },
-    {
-      "desc": "Pochettino arrives! Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T16:18:58.943287+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM0Z4Zkp1X1VOemNYWnhFdEx4NFdJMDVueUJkZEZFbnFITUpfOTlmdUZJWm5pR2xDOWxFOGd4NWZNbVp3TFJuUDhKU1hqMzRSNlc0TENoZkRIbDV3VWNmVkxzVTFTT0piemRTSGtHOWZmTGJZamUzYS1MLVJUQ2RXVzYyQm5SVjBvdVlUblVrcEk?oc=5",
-      "published": "2026-11-18T15:12:44+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino arrives! - Manchester United"
-    },
-    {
-      "desc": "Maanum: “I love the competitive, big games” Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T16:18:58.943317+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOTNibjAyTE9LdWdVWVVlcWJ2YTgtdmZkbTZnNzE0TjByOGFtNUhtbzQyc0xSUmZMMDAtcW1PQ1ZNWFloNG96Q3VuSGF2VGMyZHdxdXUwaWJ4di0wdzB1S1RzejBaanJCa0ZPTmRIazZLUXR2SExBSmxGanp0cHkzanBvZmtsUkwx?oc=5",
-      "published": "2026-11-18T15:08:38+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Maanum: “I love the competitive, big games” - Arsenal.com"
-    },
-    {
-      "desc": "Renée: “Meadow Park is a special ground for us” Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T19:00:51.277661+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWmp4b242bXRBYUhhN1JUbmxHaW1MYnViOGVzdWtxdTlRUFZGblBnOHdNUFo2RnNDTFhTTFNPMk0xNUlJQUVuRmFkU1lsRDNRdlVsc2pPNUNXS01RajF1S25IUVRhaWZ6YjdRWU92TW4tRDFibVBwSEtPS3dHbkRFYUd5RTN1YkpBZXM5a25YVQ?oc=5",
-      "published": "2026-11-18T15:08:38+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Renée: “Meadow Park is a special ground for us” - Arsenal.com"
-    },
-    {
-      "desc": "Every word of Renée's pre-Lyon press conference Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T19:00:51.277677+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSTlFdWpPM3Y0N1dVX25WYWd0dkFUUlRCVTFvaTdmazQ2VVRRdGlVRWY0dzctd3U5RElCUGlFOFZTZVFNRTNPZHhYejhaQlExQVE4U2taSGY5NnBvOUZaMUtkaFRfQnVPNExDdTFDZzZYQ3JXc25LSXllaDRXbjdYcmRkZ2ZaSllfcWdCTktYbmIyQQ?oc=5",
-      "published": "2026-11-18T15:08:37+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Every word of Renée's pre-Lyon press conference - Arsenal.com"
-    },
-    {
-      "desc": "TOM COLLOMOSSE: Galatasaray have switched their home fixture against Samsunspor this weekend to the stadium of Istanbul ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-18T16:18:58.943340+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16302997/Galatasaray-emergency-pitch-repairs-Champions-League-clash-Aston-Villa-worrying-images-emerge.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-18T15:07:45+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Galatasaray forced into emergency pitch repairs to make it playable for Champions League clash with Aston Villa after they had to MOVE OUT, "
-    },
-    {
-      "desc": "CHELSEA fans can enjoy a luxury VIP experience at Stamford Bridge at an unmissable price with these top deals. Perfect f",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T16:01:11.490683+00:00",
-      "link": "https://www.thesun.co.uk/sport/39471356/chelsea-ticket-deal-price-hotel-premier-league-stamford-bridge/",
-      "published": "2026-11-18T15:01:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea tickets and VIP hospitality deals for Premier League games at Stamford Bridge from just £155pp"
     }
   ],
   "processed_urls": [
