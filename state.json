@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 14,
+        "calls": 15,
         "errors": 0,
-        "requests": 14
+        "requests": 15
       }
     },
-    "calls": 14,
+    "calls": 15,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 91626,
-    "output_tokens": 10305,
-    "requests": 14
+    "input_tokens": 98033,
+    "output_tokens": 11048,
+    "requests": 15
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4409,7 +4409,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T03:01:00.109469+00:00",
+  "last_scan_at": "2026-11-19T04:00:51.122901+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4430,6 +4430,26 @@
     "updated_at": "2026-11-18T22:01:44.838662+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Arsenal adidas Kids 26/27 EZE Pre-Printed Home Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T04:00:51.126366+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNd3dDVFlPVDQyUmw3QlltVE5ubDBJX1JVWjE4RmxEdzd0TGZXLVc2OEpkZHlncjVXZXpvbUpOMWZWaTg2dUJfZWxvVjJTcF9lSjVYWGprN1c4OTVONVR4X0E1U2FPZlBTR2pXaXR6eEp2ZGd5Q3Q1X0RLT3Y0ZmljX1dPdzZZYzBWNVBmeHVRbWdHSEdHanItZ2RTeUF0azVwUmgzNk5taDRCUlpJWW1GeTJnNHY4bkVYajU1Z1UzVGNzUkFPdDJBOGx0RE4?oc=5",
+      "published": "2026-11-19T01:30:06+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal adidas Kids 26/27 EZE Pre-Printed Home Shirt - Arsenal Direct"
+    },
+    {
+      "desc": "Arsenal adidas Kids 26/27 RICE Pre-Printed Away Shirt | Official Online Store Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T04:00:51.126404+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeXpJR0JtWXQ4RzRMTkttVDYtZUtpbWl5ZGNKT2RwbFQxSDA3UTRIaFN4WHh2ZEhxaEhWZXpYT2ZYOEdOZzA3ZkRkZGZoekp0NTE1WnFfM1RmLTBKNXZ1LVJXb2lXYkZsZ2VUaTF5eTFjQmliWnFocFJvamMtZy1lSDMybzl3VTQxak1WWWtnNzcxXzliQk9MaUdRcWp6U2pOWUVJTVgzUjZXckFLTXhjZ3JRbTdUakttNkNYVjZDZUgyeGxHRERJWUh5Ym4?oc=5",
+      "published": "2026-11-19T01:30:05+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal adidas Kids 26/27 RICE Pre-Printed Away Shirt | Official Online Store - Arsenal Direct"
+    },
     {
       "desc": "'Credit to our backline' | Video | Official Site Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5909,26 +5929,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Former Spain midfielder Mata retires aged 38"
-    },
-    {
-      "desc": "Arsenal double-winning great Peter Storey dies at 81 | Daily Sabah Daily Sabah",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T13:01:08.791093+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYUgtazhzVFZnOGxxRk9jSGNZbnFMdEVWX3UzdlF0SjU3ZWNmZHk2SUh0aC1tbzB6bTJoZFNPNW1KM1BZLXJVUXRKSTBUTktLLXNJSExfRENzRnkyanJBUERXUW52ZlIxWGpCdm1MOE80MVJnM0pHb1hhOEx5Mmw1VGxtdEZOMThxWXBmOFYtd2dMeW0wNk42Y3dTNHVROGV10gGgAUFVX3lxTE1hSC1rOHNUVmc4bHFGT2NIY1lucUx0RVZfdTN2UXRKNTdlY2ZkeTZJSHRoLW1vMHptMmhkU081bUozUFktclVRdEpJMFROS0stc0lITF9EQ3NGeTJqckFQRFdRbnZmUjFYakJ2bUw4TzQxUmczSkdvWGE4THkybDVUbG10Rk4xOHFZcGY4Vi13Z0x5bTA2TjZjd1M0dVE4ZXU?oc=5",
-      "published": "2026-11-18T10:12:17+00:00",
-      "publisher": "https://www.dailysabah.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Arsenal double-winning great Peter Storey dies at 81 | Daily Sabah - Daily Sabah"
-    },
-    {
-      "desc": "Romano reveals Man Utd now have 'really serious' chance of signing Barcelona star in January Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T14:01:15.558133+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQXRlYUREZ3A3aXdfWlNOTzFKWGJPSzZnVENzOUNYR1JRWUduSWk4VG50bVJVLWxORFhZMURZSDVfTEFncTFtS3JlejZieVZjcF9MTlg1M0l3Rk1jWW82V0E5b3NGZ0FQeXFrNXlCZEQxQ1l4ZE03LXd3em1lblMtR3B4cWpTM3JiUHRjRkl1OUVIWHNjLVBXb0tPZU81T0VBMXcxTXBvRVFxREVaeEhEa0Rn?oc=5",
-      "published": "2026-11-18T10:09:10+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano reveals Man Utd now have 'really serious' chance of signing Barcelona star in January - Football365"
     }
   ],
   "processed_urls": [
