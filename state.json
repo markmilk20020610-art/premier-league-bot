@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 6047,
-    "output_tokens": 756,
-    "requests": 1
+    "input_tokens": 12039,
+    "output_tokens": 1367,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4549,7 +4549,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T16:00:53.286910+00:00",
+  "last_scan_at": "2026-11-19T17:01:04.650316+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4570,6 +4570,96 @@
     "updated_at": "2026-11-18T22:01:44.838662+00:00"
   },
   "news_pool": [
+    {
+      "desc": "YET again, Chloe Kelly has stolen the red carpet. All eyes were on the Lionesses star, 28, when she attended the 2026 Br",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T17:01:04.652149+00:00",
+      "link": "https://www.thesun.co.uk/sport/41068834/chloe-kelly-football-style-icon/",
+      "published": "2026-11-19T16:45:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Chloe Kelly has transcended sport and become global fashion icon with stunning red-carpet walks & huge endorsements"
+    },
+    {
+      "desc": "TONY BLOOM believes Brighton can win the Premier League - just like Leicester City. The soaring Seagulls sit second in t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T17:01:04.652168+00:00",
+      "link": "https://www.thesun.co.uk/sport/41074119/brighton-tony-bloom-title-leicester/",
+      "published": "2026-11-19T16:40:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Brighton owner backs high-flying Seagulls to follow Leicester’s footsteps and clinch stunning Premier League title"
+    },
+    {
+      "desc": "Fabrizio Romano drops Nico Paz to Man Utd bombshell: ‘Because Mauricio Pochettino is Argentinian’ TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T17:01:04.652186+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeFgtczI4cjE1Wjc3RVdnczR2SGYyUEJhUm9mS0ZXVG5QUHVfeVFlaHhuV3ZTTVVUT3VTdGRPdXR2TG1MbWJyS3NWSllMMFhITmlKVWJ1NmtfR3FLVWdmckx3anpFNWttNmJYb0Rtb0RRdHJLRi0zbXlZM1NmZ2FoUTlHRDh5MWw5WTRwbzQ5cTU3Z01yXzUxbVZ4MlRBNkozLTE0VHJOendSbGljcDFRa0hfSXBiQjg1azlGUm5oSmM?oc=5",
+      "published": "2026-11-19T16:26:53+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano drops Nico Paz to Man Utd bombshell: ‘Because Mauricio Pochettino is Argentinian’ - TEAMtalk"
+    },
+    {
+      "desc": "BLACKPOOL have sacked Ian Evatt on his BIRTHDAY after he managed one win in ten games. The Tangerines have been left in ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T17:01:04.652199+00:00",
+      "link": "https://www.thesun.co.uk/sport/41074159/blackpool-sack-manager-ian-evatt/",
+      "published": "2026-11-19T16:26:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Blackpool sack manager Ian Evatt, 45, seven hours after wishing him a HAPPY BIRTHDAY following horror run"
+    },
+    {
+      "desc": "ASTON VILLA have shared a new video documenting their North Stand redevelopment. Unai Emery's side are playing home matc",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T17:01:04.652212+00:00",
+      "link": "https://www.thesun.co.uk/sport/41073048/aston-villa-north-stand-redevelopment-latest/",
+      "published": "2026-11-19T16:17:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Premier League club reveal amazing new video of stadium updates which will boost capacity to over 50,000 and new tunnel"
+    },
+    {
+      "desc": "Blackpool sack head coach Ian Evatt after a year in charge following a run of one win and six defeats in their past 10 l",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T17:01:04.652243+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm4g1rzjj4v2o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T16:12:14+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Struggling Blackpool sack head coach Evatt"
+    },
+    {
+      "desc": "FPL focus: Madueke, Konsa and striker dilemmas Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T17:01:04.652256+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbmNsSDg3U1JiQ0FWSDJxaGU4cUdkSWR0OG16bGNHbzJZa2x0RW12TDctSzdTa3c4MUZ1MUQtU3V4ajBob3hHTmxzQUNrejlsLUZia1o2ZDFfYTB3cEEwNENIRUJ2YzIzSEFXck8tWV9vWkFJX0p3YnF2aDNoVmVUdkVSbWxnYnVSSmhLajZQRQ?oc=5",
+      "published": "2026-11-19T16:08:27+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "FPL focus: Madueke, Konsa and striker dilemmas - Arsenal.com"
+    },
+    {
+      "desc": "City vs Spurs: Kick-off time, teams news and TV information Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T17:01:04.652269+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYi1hcGN4QlFKZFBXOTJtUVBRMGxTSk5GLVhxLTEzaTQ1bTNrX21haGdEMGRCTi1aYkVteXFUNy1LcFpXVmk0SUxKTFk0TFQ4MjFoTVFJNHM5VExqWl9DRnA1TjdxWEVaOTBiZE9BdEZyUDJ6dTdMQ1BxSXdfYnR3V1RRWXhaZ0I1?oc=5",
+      "published": "2026-11-19T16:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City vs Spurs: Kick-off time, teams news and TV information - Manchester City FC"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-19T17:01:04.652280+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13279286/bournemouth-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+      "published": "2026-11-19T15:55:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Rose says Scott will start one of next three games - but not drawn on transfer links"
+    },
     {
       "desc": "Joelinton Injury Update: Out vs Arsenal, Specialist Next The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4719,6 +4809,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Manchester City ticket and hotel deals for Premier League and Champions League matches at The Etihad"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T17:01:04.652425+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yQXhEQmJfVWxNU1otTFVSUWV2MmZYZXJId19Ibl9fSXJRYUlQOUxIc0FHX05jNjVzRTJXZG43TDNtZWZyaW1BMmNIOUpJWDhGNjBnWGJ3?oc=5",
+      "published": "2026-11-19T14:22:14+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "LEGENDARY Premier League boss Harry Redknapp has been left heartbroken following the death of his dog Barney. The former",
@@ -5969,106 +6069,6 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Spurs Women vs Everton Women | Full Match | 2026/27 - Tottenham Hotspur"
-    },
-    {
-      "desc": "When will we wear our new third kit? Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T02:00:51.597404+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQREFaakstZ3pKNUpLN1phUGtENVU0Q3ZEdlRzSHdHZ0VOZHNxYjJ2d2RrOHAtMWpDY1Z0VzBvZ1hHZEpPeHY0ZFoxaUJ1MlBZdWljQU9rTFVsdDlpR3NHLV9DTjVqWkNORlFOSml4eVh1RHI4LUhuTDZ0QlVCVW5Hd1psNA?oc=5",
-      "published": "2026-11-18T22:04:58+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "When will we wear our new third kit? - Manchester United Website"
-    },
-    {
-      "desc": "Veerle Buurman's late winner snatched a late 1-0 win for Chelsea against Paris Saint-Germain to move them to the top of ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-18T22:59:12.526371+00:00",
-      "link": "https://www.skysports.com/football/chelsea-women-vs-paris-saint-germain-women/report/578268",
-      "published": "2026-11-18T22:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Chelsea snatch late winner vs PSG to move top of WCL table"
-    },
-    {
-      "desc": "Mauricio Pochettino has issued a rallying cry to Manchester United supporters, promising that this is going to be a 'spe",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-18T23:00:52.326886+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-18T21:51:35+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino's Man United rallying cry: New boss promises fans it will be a 'SPECIAL' season - despite club sitting in drop zone - as"
-    },
-    {
-      "desc": "Arsenal: Ornstein hints at Kroupi decision on joining Gunners over Barcelona in 2027 - 'my information is' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T01:00:58.491835+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQjRKVmhpQzJqZjd4bzktY3dYbENDZjVVS1FBaWFicE9DNEFXTGdHbVE1U3hCUWhNVWlqbmxmN2I3LTVJUHJrUkxsTWszQ2dwYWdrQmxXZ09RN1M3X0RndXhOQWFZUzNvV3BYVjFjVW9pLXRlakZJTDlBWEF4cm5MMU1la0ZzREZhM3A2Q2QzMU9VcHpJNFRESkNxYTliZUxzNTVLMA?oc=5",
-      "published": "2026-11-18T21:48:40+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal: Ornstein hints at Kroupi decision on joining Gunners over Barcelona in 2027 - 'my information is' - Football365"
-    },
-    {
-      "desc": "Lionesses and Arsenal star Chloe Kelly stole the show at the GQ Men of the Year Awards on Tuesday night, going braless i",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-18T22:59:12.526448+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16303291/chloe-kelly-gq-awards-england-squad.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-18T21:48:36+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Lionesses star Chloe Kelly cuts a glamorous figure in see-through dress at GQ awards night - hours after being left out of the England squad"
-    },
-    {
-      "desc": "Juan Mata retires: See Chelsea's tribute to former player Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T00:00:52.341365+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8tdnlpc05RWUUyZEJEZGZuSmZnNjNzYTJWRVFkTmZ4Q25DWXpjWEV5OGtIX2FBeGxScHZXLUVsaXdaN29GTlUwMFVSMlRvYWM3ODZvbW5teEN2SnFRU05sZUZvOThmNmZXY1NV?oc=5",
-      "published": "2026-11-18T21:23:31+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Juan Mata retires: See Chelsea's tribute to former player - Premier League"
-    },
-    {
-      "desc": "Tottenham's on-loan Chelsea winger Mykhailo Mudryk says he blames the Ukrainian Association of Football for his failed d",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-18T22:01:08.221624+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cr930l71z5ejo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-18T21:22:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Ukrainian FA to blame for failed drugs test - Mudryk"
-    },
-    {
-      "desc": "Dominant display sinks Foxes in Players Cup Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T00:00:52.341414+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPU0ZqV1d4VlZaMXgxRmJXUVZydy1pVzZMZDNEVzJZTW5EdkEwdlBxOXZwVlhQTkt2eVg3Uy1pN1JhcENCb2NOZmhoZERJb0xqZXNHdUh2TmVNSkNEVmE3Um1YY1F1UWVyVWdKNmgydjFaVldZT1p2dFEtQ0JrV24wZUZtMGd6dHRZM2phb1dOUmV1S0E?oc=5",
-      "published": "2026-11-18T21:17:52+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Dominant display sinks Foxes in Players Cup - Tottenham Hotspur"
-    },
-    {
-      "desc": "Access All Areas: Pochettino's first day Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T01:00:58.492019+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSmREUnkwdlBiUzVWNkV4djdqcnoxMGsyQlhsTVh0SGRJTjJqMjVqTG4zOUlPTERXbmZLbURWZGtOWndNWUE0QUFQMzFmQ2FWUmcwWXA5cE12aEtmM0xnaEpHVjdTVVhxREVDdV9FY2EtT1RzUTRTSkU3UjhwNmpsOEhnaVJ6WVJhMlFhcFg4ZW95R29mS0dF?oc=5",
-      "published": "2026-11-18T21:14:39+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Access All Areas: Pochettino's first day - Manchester United Website"
-    },
-    {
-      "desc": "LEICESTER CITY have dropped their man shirt sponsor over its relationship with a porn star. BC Game has sponsored the Le",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T22:01:08.221645+00:00",
-      "link": "https://www.thesun.co.uk/sport/41065431/leicester-city-bc-game-shirt-sponsor-porn-eva-elfie/",
-      "published": "2026-11-18T21:10:40+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Leicester City terminate contract with main sponsor after it named porn star as ambassador"
     }
   ],
   "processed_urls": [
