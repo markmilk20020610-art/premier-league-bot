@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 17,
+        "calls": 18,
         "errors": 0,
-        "requests": 17
+        "requests": 18
       }
     },
-    "calls": 17,
+    "calls": 18,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 110191,
-    "output_tokens": 12210,
-    "requests": 17
+    "input_tokens": 114531,
+    "output_tokens": 12985,
+    "requests": 18
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3497,6 +3497,41 @@
       "title": "足球界悼念特内里费前锋德米格尔",
       "updated_at": "2026-11-04T03:19:40.034155+00:00"
     },
+    "c8596e7d9524": {
+      "article_title": "Ethan Williams departs for EFL club - Manchester United Website",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "648ba1aaac3d1be3",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 173
+        }
+      ],
+      "created_at": "2026-11-19T06:01:03.534860+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "07cc5fcf3715b690",
+      "event_id": "c8596e7d9524",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-19T06:01:03.534860+00:00",
+          "origin": "created",
+          "title": "Ethan Williams departs for EFL club - Manchester United Website",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcnFiRVZKajJlRlA3QU1pX2hFRUdNOUhQckVNNzhVc1BIVEpTUlU1WVpEaWFoS3B3NTlMOUExM1VTSk5xbzRrbXF3WHVIbTFIQUI5VHFEQlRaQjI1ZEtZYnhuWVNlUFRpLVBVdldacWpOQ0xkQWJnLW1Sd1FSZmlwWTVuUHNhc2RJd2pGOUxvYw"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcnFiRVZKajJlRlA3QU1pX2hFRUdNOUhQckVNNzhVc1BIVEpTUlU1WVpEaWFoS3B3NTlMOUExM1VTSk5xbzRrbXF3WHVIbTFIQUI5VHFEQlRaQjI1ZEtZYnhuWVNlUFRpLVBVdldacWpOQ0xkQWJnLW1Sd1FSZmlwWTVuUHNhc2RJd2pGOUxvYw",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 173,
+      "title": "曼联官方：伊森·威廉姆斯转会加盟EFL俱乐部",
+      "updated_at": "2026-11-19T06:01:04.379507+00:00"
+    },
     "c9a63c2229de": {
       "article_title": "Mauricio Pochettino’s reaction to Man Utd’s 1999 Treble win re-emerges as he closes in on Old Trafford hotseat",
       "attempts": 1,
@@ -4409,7 +4444,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T05:01:05.357859+00:00",
+  "last_scan_at": "2026-11-19T06:00:56.973921+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4430,6 +4465,16 @@
     "updated_at": "2026-11-18T22:01:44.838662+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Matchday Programme - LFC Women v Chelsea Women - Women's Super League - 21/11/2026 Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T06:00:56.976405+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMXdWdVBGTDNkcFlKVy1QSmNsaVZETTJjUHlzWXZiRHZQeVEwUzhHNE1RMnNBb3hkd2hsS3h1dGhtaGdRU19EUDdyRU1rVjNULTVvMjZWOUJPYXlVa1Q1NFEtU3ZTX1RQaWk1dEZUelktN3NtNlQ3UjAtbEJMTjQ0ZkJCb25mSVhZaFV2bVNqaFJjWXQzNkhOVVhfOW5tS250aDRrM2p3VnZLcGdRMFE?oc=5",
+      "published": "2026-11-19T05:22:23+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Matchday Programme - LFC Women v Chelsea Women - Women's Super League - 21/11/2026 - Liverpool FC"
+    },
     {
       "desc": "Arsenal adidas Kids 26/27 EZE Pre-Printed Home Shirt Arsenal Direct",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5919,16 +5964,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Juan Mata retires aged 38: Premier League legend calls time on glittering career as Manchester United pay tribute to former star"
-    },
-    {
-      "desc": "Bordeaux fans thought things could not get any worse, then they were demoted to France's amateur sixth tier.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-18T11:00:55.211237+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c63rgqrz9jgqo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-18T10:51:37+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Record crowds, legends - Bordeaux bid to escape amateur game"
     }
   ],
   "processed_urls": [
@@ -6070,7 +6105,8 @@
     "https://www.bbc.co.uk/sport/football/articles/c69q8jy924y4o",
     "https://www.thesun.co.uk/sport/41059532/cole-palmer-hasselbaink-england-tuchel-chelsea",
     "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html",
-    "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o"
+    "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcnFiRVZKajJlRlA3QU1pX2hFRUdNOUhQckVNNzhVc1BIVEpTUlU1WVpEaWFoS3B3NTlMOUExM1VTSk5xbzRrbXF3WHVIbTFIQUI5VHFEQlRaQjI1ZEtZYnhuWVNlUFRpLVBVdldacWpOQ0xkQWJnLW1Sd1FSZmlwWTVuUHNhc2RJd2pGOUxvYw"
   ],
   "s_overflow": {},
   "schema_version": 4
