@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 24177,
-    "output_tokens": 2783,
-    "requests": 4
+    "input_tokens": 30667,
+    "output_tokens": 3490,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3125,6 +3125,41 @@
       "title": "曼联将任命队史首位女性教练西尔维娅·图亚",
       "updated_at": "2026-11-18T02:00:58.001239+00:00"
     },
+    "a6b0aca12c89": {
+      "article_title": "England punished by UEFA! FA hit with fine and suspended away fan ban after discriminatory chants in Spain - Goal.com",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "2e2a10334a5a713d",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 178
+        }
+      ],
+      "created_at": "2026-11-19T20:00:55.419381+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "2e8621411649b54c",
+      "event_id": "a6b0aca12c89",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-19T20:00:55.419381+00:00",
+          "origin": "created",
+          "title": "England punished by UEFA! FA hit with fine and suspended away fan ban after discriminatory chants in Spain - Goal.com",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 178,
+      "title": "欧足联处罚英格兰足总：罚款并缓期执行客场球迷禁令",
+      "updated_at": "2026-11-19T20:00:56.027158+00:00"
+    },
     "a74b6424bfe7": {
       "article_title": "Arsenal transfer news: David Ornstein drops interesting update on Eli Junior Kroupi ahead of January - Sports Mole",
       "attempts": 1,
@@ -4584,7 +4619,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T19:00:59.104305+00:00",
+  "last_scan_at": "2026-11-19T20:00:50.421276+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4606,6 +4641,96 @@
   },
   "news_pool": [
     {
+      "desc": "CONOR SAMMON will kick off his managerial career with a return to Scottish League One side Alloa Athletic. Sammon, 40, t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T20:00:50.423763+00:00",
+      "link": "https://www.thesun.co.uk/sport/41075771/premier-league-conor-sammon-scottish-league-one-allloa-athletic-manager/",
+      "published": "2026-11-19T19:50:25+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former Premier League star, 40, appointed as manager of Scottish third tier club six months after retirement"
+    },
+    {
+      "desc": "BROMLEY have announced the shock signing of Reece Oxford on a free transfer. The former Premier League starlet made his ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T20:00:50.423789+00:00",
+      "link": "https://www.thesun.co.uk/sport/41076082/bromley-sign-west-ham-reece-oxford-transfer/",
+      "published": "2026-11-19T19:48:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Bromley sign forgotten Premier League wonderkid, 27, who ‘pocketed Mesut Ozil’ in first transfer since Andy Woodman axe"
+    },
+    {
+      "desc": "England punished by UEFA! FA hit with fine and suspended away fan ban after discriminatory chants in Spain Goal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T20:00:50.423813+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln?oc=5",
+      "published": "2026-11-19T19:44:28+00:00",
+      "publisher": "https://www.goal.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "England punished by UEFA! FA hit with fine and suspended away fan ban after discriminatory chants in Spain - Goal.com"
+    },
+    {
+      "desc": "SWANSEA have finally confirmed that Vitor Matos has left the club. Strasbourg announced the Portuguese manager had taken",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T20:00:50.423833+00:00",
+      "link": "https://www.thesun.co.uk/sport/41076466/swansea-victor-matos-strasbourg-ashley-williams-new-manager/",
+      "published": "2026-11-19T19:32:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Swansea appoint FOUR interim managers including Match of the Day pundit, 42, after ‘acknowledging’ Vitor Matos exit"
+    },
+    {
+      "desc": "England receive UEFA punishment for 'racist or discriminatory behaviour' of fans in Spain AOL.co.uk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T20:00:50.423854+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMnZCWGFYZ1haeW9DdjU0X21lVTNMTjJqd0RDVk5zS3JfWUNXbVJFeWxQeTFTZjljeHNvY1pyX19vNGJMbWl1emJNY28zdVQ3dDh6bzdnZzFLTWRLcXdHMUE1N2xhR3g3RTNSVjJHc1ZWQ2JpRS1ZdjVQTzFYcHl0VDJmdkhXYUVaSmlVQg?oc=5",
+      "published": "2026-11-19T19:27:34+00:00",
+      "publisher": "https://www.aol.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "England receive UEFA punishment for 'racist or discriminatory behaviour' of fans in Spain - AOL.co.uk"
+    },
+    {
+      "desc": "England are punished by Uefa following anti-Catholic chanting from the away fans during their Nations League victory in ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T20:00:50.423876+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmlye2n7p7d9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T19:11:03+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "England fined for fans' anti-Catholic chants in Spain"
+    },
+    {
+      "desc": "FA fined, handed suspended ban after England fans’ ‘racist and/or discriminatory’ chanting in Spain The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T20:00:50.423897+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSXBONzNvMXY1anRzMDhmUWxWaXhDaHAzRHpZQU4wam1GQ2ltWjY3THRYcnA5b1BPRWJycFE4YkpheElUZlpiSm8tNWVMdmVHQnY1cGk3elBNek5Wak1ieURGaWR1ZHpPVEF4bEdIV2l5Si1jLTUyNmVabFl4VmQzeTNlOG1UYm1FVk52di1wOHc?oc=5",
+      "published": "2026-11-19T19:07:47+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA fined, handed suspended ban after England fans’ ‘racist and/or discriminatory’ chanting in Spain - The New York Times"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-19T20:00:50.423911+00:00",
+      "link": "https://www.skysports.com/football/arsenal-women-vs-olympiques-lyon-women/live/578272",
+      "published": "2026-11-19T19:03:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "WCL: Arsenal vs Lyon LIVE!"
+    },
+    {
+      "desc": "DAVID Beckham’s production company is working on a George Best biopic. The film telling the story of the Manchester Unit",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T20:00:50.423929+00:00",
+      "link": "https://www.thesun.co.uk/sport/41074469/david-beckham-george-best-film/",
+      "published": "2026-11-19T19:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "David Beckham working on blockbuster film about fellow Man Utd icon George Best 21 years after his death"
+    },
+    {
       "desc": "A MANCHESTER UNITED fan has been handed a THREE-YEAR ban from Old Trafford. The supporter is one of four who have been b",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-19T19:00:59.107776+00:00",
@@ -4624,6 +4749,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Sutton's predictions v world champion boxer Lauren Price"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Liverpool have entered talks with midfielder Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T20:00:50.423978+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSjlPbTRIVDdyR1dOSU5RcXV6Q2hIN2c2bXIzTWdGT3NzaHNxWUh3UGpmN0pNbXNVSFkzc09nQ012YlJxbVZOYUZTcGZySnBQcTR3TUJvTUU2Y0hZQU5XUEJocVREN2lTRTM2cnFIZUJfb1lnTlFkU21nc3FoalliQXhlcGhMcU5PMDZPalMwQ0FYUHk2UWc?oc=5",
+      "published": "2026-11-19T18:50:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Liverpool have entered talks with midfielder - Yahoo Sports"
     },
     {
       "desc": "NOBODY wants to be the boyfriend who forgot Valentine’s Day - and Amslux is here for each and every man needing a last-m",
@@ -4764,6 +4899,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Footballer banned for eight years for throwing ROCK at linesman with official left needing facial surgery"
+    },
+    {
+      "desc": "Training gallery: All together for Leeds | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T20:00:50.424143+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONVFON3JodkpqRGpOcW41RUwyRFQ3Rk9Yem1pZ19jbWJ4WDZORWtRajdVeWRtTkVsVUZmZUtudzlXRnRTanRxNUh1Sl9PZTZ2TDFmU3MwN2xYRThvcFNWamI2VVlFT1lCa1R3NWpzdXl0dGFGeEVHOTNrelVRdlU3ZzlYZTRXWE9U?oc=5",
+      "published": "2026-11-19T17:30:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Training gallery: All together for Leeds | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "",
@@ -4984,6 +5129,26 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "City vs Spurs: Kick-off time, teams news and TV information - Manchester City FC"
+    },
+    {
+      "desc": "Dates and kick-off times confirmed for City’s Premier League International Cup group games Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T20:00:50.424407+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbmhVYkIwRjI1blVFSGJuX1BjaUJZZHFKSFJNeWhzZEtUR3p5Mi1uWV9oUndSd1draWN3U0pDblRkNUo5dUJibFZVRUdKano2bDRKajlnV0xFbHhsNGxQOGZyeHlJLVp3OGVUS0R2OUJvNVM5UUtTeDR5WkUzWVRIM29jUEZoNEMxdVByaWktV2JVVnAyQ2M4T2k1U1ByazBfNldnWTl1d3c0RXFDZVUwck5R?oc=5",
+      "published": "2026-11-19T16:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Dates and kick-off times confirmed for City’s Premier League International Cup group games - Manchester City FC"
+    },
+    {
+      "desc": "Pochettino's message to fans Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T20:00:50.424423+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRzFndGp2NkVHdUlEdHpQY01FSnNoYmxBT2lQaVRfWHFEbm95R0hWcXdFQlFobmVUX3lQNDVSaDBnUGdVcEhkSmRjaF83dVJhU1NYRGZ2Yi0tSVA0Wmt6T252ZjNQRWM2YlVNeXNpam1JS3RIdFZZcWpRbnZmNXpoUg?oc=5",
+      "published": "2026-11-19T15:57:00+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino's message to fans - Manchester United"
     },
     {
       "desc": "",
@@ -5974,136 +6139,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "FPL Scout: Timo tops the chart for Fulham points - Premier League"
-    },
-    {
-      "desc": "Black Friday is here: Save up to 50% Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446927+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZjlGd0lkQXZGQTJSLUJXbzJCS2hGUlBfb2VaX093VFdGX2JDUldZRmxWUjZ2UWVnUjNKWjktLXpJdjZRdmFXU3k4dFR0ZEIySTZNTi13dDBVQUNsTk5FYkxDRWxyOFBJdnVGd3lRYXNfbm5kclFCZE1JdGlmRnV2R1ZB?oc=5",
-      "published": "2026-11-19T08:40:42+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Black Friday is here: Save up to 50% - Arsenal.com"
-    },
-    {
-      "desc": "Finance Director – Financial Control Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470933+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5uZWhRQzhEY3E2dDN0eWhsMndhcTJNRHBSQTBPSG9Od09oNG5VazRQV1ZWSXgzZmxxaGVQWlpoSTdiN1dwckNPem4wSGVQSXlRSkhlbnB6alFFQnhYWlVPZzBRSjU1OW81WkFkWGhONVFlRGUtR2ZXWEc1Zlc?oc=5",
-      "published": "2026-11-19T08:36:54+00:00",
-      "publisher": "https://careers.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Finance Director – Financial Control - Manchester United Website"
-    },
-    {
-      "desc": "Watch: Pochettino starts work as Man Utd head coach Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T15:01:00.205633+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWDhYdk1XNmI1WkxUdnVqb0tPU1kzVFdNMERPVno2OWlaS0s5bUthMzVwaDg2QWRxN3g2WDQtWXZCQXRRN1EyekdfLTlNeUNTMWRuNWNYeUluYl9vXzRTRHhkQi01NGpQMUJJWUQwazVYZV9pVXBGbVZqU3RPd04zd3Q3SVJrQTRtSnl1c0NpRVMzWG1uNTY4R0J4MTU?oc=5",
-      "published": "2026-11-19T08:35:38+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch: Pochettino starts work as Man Utd head coach - Premier League"
-    },
-    {
-      "desc": "BOBBY MANZI: It was unanimously ruled that Kai Havertz should have been given a penalty after he was tugged in the area ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T10:00:54.225891+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16302267/Premier-League-identify-FIVE-key-refereeing-errors-one-weekend-boss-Howard-Webb-prepares-appear-clubs.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T08:22:45+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Premier League identify SIX key refereeing errors in one weekend as boss Howard Webb prepares to appear in front of clubs after Arsenal blun"
-    },
-    {
-      "desc": "Walsh outlines importance of Blues' competitive mentality after PSG win | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T09:00:53.245494+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQODMxN3F6WjJtdk93QkRNMnFMdWktc1lkRUMyZ2YyMGlQMXBjaDhxOFFxcnp5dXpVTHBDU2V2dURxc0pXbXFyaFRYMUVBRmZjdWJCQkZyQTQwa3BjVGFFRzJJS2FXZHlHekc2OUxEZmx4SXFYUDZPY2t6QWVKLWtROUl3dUJTbXVQNXdnLURlTmVqeHZSSm5mMGdmVzQtMkpXZVphS2NoNkdCVUF0Njg4SVVn?oc=5",
-      "published": "2026-11-19T08:14:41+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Walsh outlines importance of Blues' competitive mentality after PSG win | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "FA Explored Legal Challenge to Infantino's Bid for Fourth FIFA Term, Backs Philippe Diallo RG.org",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T09:00:53.245518+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSkI3MUFUWERnczd2VXVjbWFlU3B6dFN1U1JkaHJ5S2l5M3RYd2NHd3UtWnU0aTNtMzhEUUJmQ2VEcDZpSjk2Y2c4Y2p1cExBTjcwVVNkMXozdkF3bFpxVnpOU0l4TzlYekxpYjZ2S3hzY0xZYWREZ3I5czBiZFd6Yy1LVTI3S0VXQkk2U2FHRzZGN2hOWEdzYW5SS3hGLXBIbnA3dw?oc=5",
-      "published": "2026-11-19T08:12:34+00:00",
-      "publisher": "https://rg.org",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA Explored Legal Challenge to Infantino's Bid for Fourth FIFA Term, Backs Philippe Diallo - RG.org"
-    },
-    {
-      "desc": "FOOTBALL fans looking to score a spectacular football away day in the UK or Europe can now save money with a Black Frida",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T09:00:53.245541+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
-      "published": "2026-11-19T08:10:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Black Friday 10% discount on football travel to games including Real Madrid, Barcelona, Man Utd and others"
-    },
-    {
-      "desc": "Arsenal adidas Kids 26/27 ODEGAARD Pre-Printed Home Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T10:00:54.225952+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdVRlQWg5d2hDdjRMWGtsTVJVd1V6WldueFNBRll1T21pRGFBMkV5WXRWcGtIZWZtMmE1RmVRNU5qYTc0ZzFzeDFlWklkZGxTMjMtTGVubkVjNlBMS1FvQkJrNzRHei05UzJ4NmhVamNqelI1dVhSanFaNGNqQ3BiNkh2cTRNQVpjMkpIcGpFakxzUy1tY1lKQ01kd25yb0JQeGs5RkZWODk0RXJoV0plSDBTWGtha1ZOMzhic01kVVRXMkFKbFNDSFZ1Z050SzIyQU9mbg?oc=5",
-      "published": "2026-11-19T08:07:38+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal adidas Kids 26/27 ODEGAARD Pre-Printed Home Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "‘Started’ – Fabrizio Romano provides overnight Liverpool contract update readliverpoolfc.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T09:00:53.245565+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQT083ZTRKZWVfX0xFUzg1QjROSDNnSi0wWDUyaldtX0Q1WnZGNG5NaHVHMFp6dnR2TnNqNFdZMFpEcnV1WVNzSnQtVWM3eExaMVBaWDZRNUlTekNYcElaRm5pTFNYNFFjOC1MZ0tIUUtIRVVQWkRPT3VxcWdyVlU1VWdia25keGtpUmZKbWpOOXlHU0ozVHFZb2hZUXhUT2FFdEJTRg?oc=5",
-      "published": "2026-11-19T08:05:47+00:00",
-      "publisher": "https://readliverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "‘Started’ – Fabrizio Romano provides overnight Liverpool contract update - readliverpoolfc.com"
-    },
-    {
-      "desc": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit utd",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T09:00:53.245590+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRVdXeV94Q0p6MVFjaWRGRjY3UGsxcXR4YU5LYUFpUVlyOWI4QmNzb2RqazVUWDk2TW5mai10V0s3NThjRExLUmJtN3ZkcGlEMGFWaG1HS3REclNMZnRaN1pSblZnajcweG9ONEcxcVZnVmZPTjAxNHQ0S1FoSU5vdTM0RUg1XzN4d0EzY25KNNIBlAFBVV95cUxNYVY2cURBU05FZzJBZ2N4cmRJeDFKTmI1by0temw1NVctbGJENEEwblNVYmZWbXdqbW5KMWdXVFhRenNuRmVTM3RhQm82VUtIOUN2OWhEMGo3MGRPSF9OOUR1SklLYUViSWo2M0VELWFCcGdiOS1zRGZZYVhHQ3F3WVZqS3d0VUVuZHd4T2J4MVR6Q0R4?oc=5",
-      "published": "2026-11-19T08:00:51+00:00",
-      "publisher": "https://utdreport.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit - utdreport"
-    },
-    {
-      "desc": "The Premier League is back after the recent international break and the Sky Sports football writers dissect all the majo",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T08:01:03.633741+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13613208/mauricio-pochettino-begins-man-utd-tenure-with-testing-trip-to-liverpool-premier-league-talking-points",
-      "published": "2026-11-19T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Premier League Talking Points: Trial by Anfield as Poch begins Man Utd tenure"
-    },
-    {
-      "desc": "Henderson details how Blues are working to build the 'best version of ourselves' | News | Official Site Chelsea Football",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T09:00:53.245629+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRWRfS240cFAyaXg1MmowX0I5R0NjZUxuNTR1MGc1ZHFQUWhCYkQ0ZFp4QkVWX0JjX254U0RwQjhaMHBTT3BWLS1XbURFRGFKSUNNNl9SZFBod0NpMzVPclhqSENRX2huQjFpSzdMTmJTUkpHTkhwbklGWmt2blpuVDdwQUpfd0x4ak0tT0k2cHlpdG9PMEdRZUF4TzNuM3lSMzVUTXhETjR6X1RmWjdV?oc=5",
-      "published": "2026-11-19T08:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Henderson details how Blues are working to build the 'best version of ourselves' | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "THE Premier League is back with a BANG this weekend after the international break! Midnite are offering new customers a ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T12:56:17.112310+00:00",
-      "link": "https://www.thesun.co.uk/sport/40045824/free-bets-football-sign-up-midnite-offer/",
-      "published": "2026-11-19T08:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Get £30 in free bets for football when you sign up and stake £10 with Midnite"
     }
   ],
   "processed_urls": [
@@ -6250,7 +6285,8 @@
     "https://www.skysports.com/football/news/12040/13613208/mauricio-pochettino-begins-man-utd-tenure-with-testing-trip-to-liverpool-premier-league-talking-points",
     "https://www.thesun.co.uk/sport/41069105/man-utd-fans-fume-bryan-mbeumo-grand-theft-auto",
     "https://www.bbc.co.uk/sport/football/articles/cqy4jvdw7jdlo",
-    "https://www.thesun.co.uk/sport/41075369/man-utd-mauricio-pochettino-training-session-drone"
+    "https://www.thesun.co.uk/sport/41075369/man-utd-mauricio-pochettino-training-session-drone",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln"
   ],
   "s_overflow": {},
   "schema_version": 4
