@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 54499,
-    "output_tokens": 5749,
-    "requests": 8
+    "input_tokens": 61021,
+    "output_tokens": 6514,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4654,7 +4654,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-19T22:00:52.881676+00:00",
+  "last_scan_at": "2026-11-19T23:00:52.194244+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4675,6 +4675,46 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Renee feels plenty to learn from Lyon defeat Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T23:00:52.197344+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNaUpPcHRvN1djcktNT2VXUmlsM2JrLVVQTVdPSXd2aE9NVFZkOTV6VmRwY2xnTlUybThRV3VPaTYxSnk5RW1ySWVGaHpBWDRFZnlBVG1kalg5SjN2RjVYQ1JLajhTdjVEU2w0ODNJVHpoenl4emhRbnFhUnVhcFJDOU1iM1lVenZuY2NUSVBTUQ?oc=5",
+      "published": "2026-11-19T22:52:03+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Renee feels plenty to learn from Lyon defeat - Arsenal.com"
+    },
+    {
+      "desc": "CLUB BRUGGE are closing in on new digs. The Belgian giants have held promising talks with local authorities over securin",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T23:00:52.197388+00:00",
+      "link": "https://www.thesun.co.uk/sport/41077636/club-brugge-new-stadium-plan-vote-pro-league/",
+      "published": "2026-11-19T22:24:38+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Champions League club set to build stunning 40,116-seater new stadium as agreement is reached"
+    },
+    {
+      "desc": "England get one-match suspended ban on away tickets for anti-pope chants in Spain The Guardian",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T23:00:52.197417+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWkJmQy1IQ2RZd2NRRk1tOUppczQzSDd2QVM1amVaV3ZsWFlYWWRkM0tXenhtUjVMMWVGa0FId2l6V3BFeVY1YmF4ZWxWT0g0eWppUTFNQ0d5QTZ6RWs5TWZTd3djeUdxX1RpOHpGTm9TM0JEQWVrMXRYdUZyQlNXSm9GYXJfWFRMSlRtcmozLUEyN1NxeUk4U2M4MkxoQmstal9MQlVXYkpKNnpMLUUtVW9seVlRT2l3RTFGc0l3?oc=5",
+      "published": "2026-11-19T22:17:00+00:00",
+      "publisher": "https://www.theguardian.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "England get one-match suspended ban on away tickets for anti-pope chants in Spain - The Guardian"
+    },
+    {
+      "desc": "Thibaut Courtois signs new Real Madrid deal through June 2028 Operativ Məlumat Mərkəzi",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T23:00:52.197443+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOS1wX2tUdjk5cGJRdnVPazVVOXMwNEdOQXVJSU5pU0NPT1R6N2tqOVNlX3dvd19UWUtERzNsdTdYN01XVWdQazFSOTZRUlpJd3Jmc3hIaGdTQktDOXBhaG01dHl6WTJxcWRmWFhmVWFSUTNCUUx5MXZ2UHc1ZUZkemNOdEJPX0swRV9wMVBzQXdvUkVtd1JQdG1CNU5VQQ?oc=5",
+      "published": "2026-11-19T22:15:30+00:00",
+      "publisher": "https://operativmm.az",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Thibaut Courtois signs new Real Madrid deal through June 2028 - Operativ Məlumat Mərkəzi"
+    },
     {
       "desc": "Barcelona interested in Lisandro Martinez, while Manchester United target Fulham defensive pair and Liverpool scout Seri",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -4714,6 +4754,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "How Mauricio Pochettino fell in love with Man Utd attending 1999 Champions League final with future goalkeeping coach"
+    },
+    {
+      "desc": "Arsenal’s hopes of automatic qualification to the Women’s Champions League quarter-finals are hanging by a thread after ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-19T23:00:52.197585+00:00",
+      "link": "https://www.skysports.com/football/arsenal-women-vs-olympiques-lyon-women/report/578272",
+      "published": "2026-11-19T21:28:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Arsenal outclassed in defeat to dominant Lyon"
     },
     {
       "desc": "Mykhailo Mudryk has been accused of 'baseless slander' by Ukraine FA (UAF) president Andriy Shevchenko after the former ",
@@ -4856,6 +4906,16 @@
       "title": "Black Friday Promotion Terms & Conditions - Liverpool FC"
     },
     {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T23:00:52.197847+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-19T20:14:44+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
       "desc": "England hit with suspended one-game away ticket ban and fine after sectarian, anti-Irish chanting during win over Spain ",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-19T21:15:38.559905+00:00",
@@ -4904,6 +4964,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Bromley sign forgotten Premier League wonderkid, 27, who ‘pocketed Mesut Ozil’ in first transfer since Andy Woodman axe"
+    },
+    {
+      "desc": "Team news: Two changes for UWCL at Meadow Park Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T23:00:52.197921+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVER2d3Bpanl1Sk84dGVqeVRDbGFibVVpSVBZS1VUWmdoUHNoUU04TjN2UDJmQmo3UElFVlR0UmZjQnFUcVhXZVRaZ0FjSXlJd0hNczdOOGxGcHZoUFg4d2hKaTVEcXB6eTk3N1JPczNjVHRnOUxxVGJzdjN5Z05NNjk4TXVudUFwZHIySnVuaHo?oc=5",
+      "published": "2026-11-19T19:47:13+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Team news: Two changes for UWCL at Meadow Park - Arsenal.com"
     },
     {
       "desc": "The biggest casualty of Piero Hincapié’s new Arsenal contract will surprise fans LiveScore",
@@ -5444,6 +5514,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Dates and kick-off times confirmed for City’s Premier League International Cup group games - Manchester City FC"
+    },
+    {
+      "desc": "Liverpool vs Chelsea Women: How to watch, kick-off time, live stream info | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T23:00:52.198548+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSUFINm1jcmJTUkR5VTQtXzhHRHFEZU90WGJ0dGpPakdWMmF2UUVwZTVGYkJ1ZlphT0NtNmtldW5RRFJrc2xFbEtockR0NE5JZUw0YzVTREttcXRHSV9SYU1LTnlEZ0lUQ3JFZUFBYlR3cVh2cEJmTEV6SlRCdGdSU29SaFo4Ul9jSEI0RFRRbTJCOTljVGViUkZHMTBaOEVqT0tJTWc0el95M0NITVRQc21VSQ?oc=5",
+      "published": "2026-11-19T16:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Liverpool vs Chelsea Women: How to watch, kick-off time, live stream info | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "Pochettino's message to fans Manchester United",
@@ -6094,86 +6174,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Culture is a priority for Pochettino - Manchester United Website"
-    },
-    {
-      "desc": "Premier League referee appointments: Matchweek 11 officials Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:00:52.877995+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWEpsWDdFZEtvYkdxc2VmTU1VU1Q1c2dXY1BTR1dJQ29ZSFh2N0k1QXE2Szg5SXEwNGcxUnhRYVk3c3pJamtvRFBUWmhUaXBiOWdrQTFUZlgxX1hVelpDTEpJR2RWV1dZeWJfY3hsRWhfQzluTUZxc19wSV9iUTBTeUJoTDVlM005Tkx2WnpBcmZaald6WlR6bGhoeVNrMjMydzh3T2ZnOA?oc=5",
-      "published": "2026-11-19T11:29:20+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League referee appointments: Matchweek 11 officials - Premier League"
-    },
-    {
-      "desc": "SCOOPS AFL DRAFT RECAP NIGHT 1- Swan shock throws massive curveballs-Saints/Pies benefit #afl #footy YouTube",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.290175+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wWUxzTE9UVmlsRHBnSmVNSURXOFZVbWZnX0JFNDhZTG9IanRFTFZnV2lEWnQwZnZ2dHY1ZnBNdXBxelZzekxZUkxlREZUc0JscW5pSm81cFRvMGNK?oc=5",
-      "published": "2026-11-19T11:26:52+00:00",
-      "publisher": "https://youtu.be",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "SCOOPS AFL DRAFT RECAP NIGHT 1- Swan shock throws massive curveballs-Saints/Pies benefit #afl #footy - YouTube"
-    },
-    {
-      "desc": "Northern Ireland manager Michael McArdle has made five changes to his squad for the upcoming friendlies against Greece, ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T12:56:17.111876+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqly43n1vjm8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T11:12:20+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Magill returns to NI squad for Greece friendlies"
-    },
-    {
-      "desc": "Classic Match | Chelsea 3-2 Leeds Utd | Video | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.290191+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdnNkYmlldms4OVkwbXpjV2I2SEVsWDVKUWczaHJfaWFsZ1BrSWM4dllEaE1ELXRFeDJNMmtkbHlnYXUwSDZCWWFyNUI0bVhIMWZYNXdtMklKMFdoUWdVS05Xc0tVZ2NaQVJiQ2NBdjB0R0V2S2FDY3FvaHFCaVhjQjc4TUNTR0NaeGVJM0RTdmYyX3AxcDczZERNUmNKRXli?oc=5",
-      "published": "2026-11-19T11:04:55+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Classic Match | Chelsea 3-2 Leeds Utd | Video | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "The Scout’s FPL Gameweek 11 transfer radar Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:00:52.878013+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBVS1ZFeW5aQzI5bXpmY3d5LTJWRmZkangtLWhHZWxKVTBUTWp1V0xzbmJYTE1YUndGVXRYdFJSSGJld0lDeGxfdDRkNnVqS2ZYY3dIOU1zLVg?oc=5",
-      "published": "2026-11-19T11:04:38+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "The Scout’s FPL Gameweek 11 transfer radar - Premier League"
-    },
-    {
-      "desc": "Xabi Alonso's Chelsea project is 10 Premier League games in. Here's what we've learnt so far...",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T12:00:52.878030+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612519/chelsea-ten-things-weve-learnt-about-xabi-alonsos-blues-after-10-premier-league-games",
-      "published": "2026-11-19T11:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Consistently inconsistent? Ten things we've learnt about Alonso's Chelsea so far"
-    },
-    {
-      "desc": "Mauricio Pochettino has vowed to \"change things\" at Old Trafford in a confident first interview as Manchester United bos",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T12:00:52.878045+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13613821/mauricio-pochettino-at-manchester-united-new-boss-vows-to-change-situation-at-old-trafford-in-first-interview",
-      "published": "2026-11-19T11:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Pochettino vows to 'change things' at Man Utd"
-    },
-    {
-      "desc": "'I've been focusing on my finishing - I need to keep working hard for minutes' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470426+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOY1BFdVBqb0kyX3ZkdW41NHMyWXkyeEo2UkxvemlNR3BiMDh6X1pjWFJXU0F2dWU4MTg1X21FUDE5SVZoNHVwd2FHRjZRdWktdkxoTTItZk5PT0ZFMzk0VDZMandnUHI0ekVZZHV0VEV6VlA4aDhJSkNHbDFfWHVlTGhwbjQxT3VyMWJvWUxlZkZwaTJHVGc?oc=5",
-      "published": "2026-11-19T10:54:59+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "'I've been focusing on my finishing - I need to keep working hard for minutes' - Liverpool FC"
     }
   ],
   "processed_urls": [
