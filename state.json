@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 66066,
-    "output_tokens": 7592,
-    "requests": 10
+    "input_tokens": 72425,
+    "output_tokens": 8179,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4374,7 +4374,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-18T23:00:52.324971+00:00",
+  "last_scan_at": "2026-11-19T00:00:52.337603+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4396,6 +4396,36 @@
   },
   "news_pool": [
     {
+      "desc": "Fortunately for Real Madrid, Trent Alexander-Arnold isn't running back to Liverpool The Real Champs",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T00:00:52.341062+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZmhsTEZTbnVhYzgtMm44VjBkSnNBTTFuTHRudFFicnlRaC1kcHBwMXQxSDNsdS1OMXZQQW1jV2lFUnpSSldDRzRZTFRSR2lPTFk4ZHh0M2VnMkNlU1pZa1hJazdfc2NvRzFON3dvTVI3ZUpDRS0zTHNmMWlsSGlaRVRvUmxXYWVqQ3p3QWJUVHkxeEFPZDlOUWFJaWx4M2FhZHc1ejN1eHhqT2hCX2VCWWhPcE5GOWw0QW1MdHRn?oc=5",
+      "published": "2026-11-18T23:50:51+00:00",
+      "publisher": "https://therealchamps.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fortunately for Real Madrid, Trent Alexander-Arnold isn't running back to Liverpool - The Real Champs"
+    },
+    {
+      "desc": "Kylian Mbappé and Arda Güler make Endrick's Real Madrid path almost impossible The Real Champs",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T00:00:52.341100+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTlJVQWF1bkJYelNfOFllN1FGdUVES0dMYzExX0dySUJUWWFVWjBBNE13YUtXM0RqelNGY1FUYko0ZTFjV3JGTUluVDZMc3BMSUNIWlNhSU5jZ0FXMVc1WDd3aW5YREF0Sk5LcTVlUjlWeTlnSWV1eVpMYXVjUDRfNHhSbFNhZ2ZDSGEwaGswU3M1SXVrY0N0MTVjSU5weHJtNFVfM2N6OWQ1c2VwTHgtZ0UxVGp1Y2pQ?oc=5",
+      "published": "2026-11-18T23:40:00+00:00",
+      "publisher": "https://therealchamps.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Kylian Mbappé and Arda Güler make Endrick's Real Madrid path almost impossible - The Real Champs"
+    },
+    {
+      "desc": "VITOR MATOS has bizarrely been announced as the new Strasbourg manager despite Swansea City refusing to confirm his depa",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T00:00:52.341131+00:00",
+      "link": "https://www.thesun.co.uk/sport/41066599/vitor-matos-swansea-city-strasbourg-manager/",
+      "published": "2026-11-18T23:32:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Vitor Matos bizarrely announced as new Strasbourg manager despite Swansea refusing to confirm his departure"
+    },
+    {
       "desc": "MAURICIO POCHETTINO has appointed his son Sebastiano as a coach at Manchester United. The Argentine arrived at Carringto",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-18T22:59:12.526263+00:00",
@@ -4414,6 +4444,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Man Utd pursuing Como's Paz - Thursday's gossip"
+    },
+    {
+      "desc": "Spurs Women vs Everton Women | Full Match | 2026/27 Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T00:00:52.341203+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcUFyd1ZwYkE0Z0o5T0ZCdnYyTkhqcU1Bekt4Sml1ZlkyZ0RGS2xuanFfR0FLZVBXMmgtSGJreE44TzY0ZG1jbDNBUVZ1RXVOZ3hsQjRsUTVuMXQzVDBlMFFQQmgtcktwSUg2ek9ZNjlCZFBGQUZWT25JS3c5Q1BVd1FR?oc=5",
+      "published": "2026-11-18T22:10:55+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Women vs Everton Women | Full Match | 2026/27 - Tottenham Hotspur"
     },
     {
       "desc": "Veerle Buurman's late winner snatched a late 1-0 win for Chelsea against Paris Saint-Germain to move them to the top of ",
@@ -4446,6 +4486,16 @@
       "title": "Lionesses star Chloe Kelly cuts a glamorous figure in see-through dress at GQ awards night - hours after being left out of the England squad"
     },
     {
+      "desc": "Juan Mata retires: See Chelsea's tribute to former player Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T00:00:52.341365+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8tdnlpc05RWUUyZEJEZGZuSmZnNjNzYTJWRVFkTmZ4Q25DWXpjWEV5OGtIX2FBeGxScHZXLUVsaXdaN29GTlUwMFVSMlRvYWM3ODZvbW5teEN2SnFRU05sZUZvOThmNmZXY1NV?oc=5",
+      "published": "2026-11-18T21:23:31+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Juan Mata retires: See Chelsea's tribute to former player - Premier League"
+    },
+    {
       "desc": "Tottenham's on-loan Chelsea winger Mykhailo Mudryk says he blames the Ukrainian Association of Football for his failed d",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-18T22:01:08.221624+00:00",
@@ -4454,6 +4504,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Ukrainian FA to blame for failed drugs test - Mudryk"
+    },
+    {
+      "desc": "Dominant display sinks Foxes in Players Cup Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T00:00:52.341414+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPU0ZqV1d4VlZaMXgxRmJXUVZydy1pVzZMZDNEVzJZTW5EdkEwdlBxOXZwVlhQTkt2eVg3Uy1pN1JhcENCb2NOZmhoZERJb0xqZXNHdUh2TmVNSkNEVmE3Um1YY1F1UWVyVWdKNmgydjFaVldZT1p2dFEtQ0JrV24wZUZtMGd6dHRZM2phb1dOUmV1S0E?oc=5",
+      "published": "2026-11-18T21:17:52+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Dominant display sinks Foxes in Players Cup - Tottenham Hotspur"
     },
     {
       "desc": "LEICESTER CITY have dropped their man shirt sponsor over its relationship with a porn star. BC Game has sponsored the Le",
@@ -5834,66 +5894,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Odegaard inspires Norway fightback - Arsenal.com"
-    },
-    {
-      "desc": "Interview: Frank outlines his plans for Crystal Palace Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T10:00:52.990870+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdjFTTWJqUkpRSHhGXzlXVTFEd3hWdUJuemd4czFYdTlmdUxPMWNvODJQZkg0b044SzhjT3VHek5uRDAxazJMbXJKeVVuWnRBeG9DSldvSV9LTGYtaFVrQXVRYzE2RS1aTkgwSkpXZDZyVHFWeEpkbVUwLUNqVEpITWZ4T1JoaVA1eU9paWw2NGYxVFFOeUxvSHJRRmc0b0V0VVhnaWEwemw1dGF6anRONjRqYW44OVNKYlgyRnoxWQ?oc=5",
-      "published": "2026-11-18T09:35:59+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Interview: Frank outlines his plans for Crystal Palace - Premier League"
-    },
-    {
-      "desc": "JUAN MATA has announced his retirement from football with a tear-jerking video. The beloved Spaniard was most recently p",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T10:00:52.990892+00:00",
-      "link": "https://www.thesun.co.uk/sport/41056861/juan-mata-retires-premier-league-news/",
-      "published": "2026-11-18T09:34:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Premier League legend who won Champions League & World Cup, 38, announces retirement with tear-jerking video"
-    },
-    {
-      "desc": "Topps Premier League Starter Pack Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T14:01:15.558208+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc0dzUkxuZ0pFTmFMMHlqT0pXM21IXzBtakI4MnFsWEtBX2VxVXVva3Bka3BBYzMtM3pScDFaR1prMzRNZUpZQjl6MGpUVVRSekM3b1dCTWV5VllNZ01ac1dHclpiTjlqd3dydFhfZUU1WE5JSzBiOV8waWExR2N3WnFaRnpEcEZuWjZ2eFhxa2c?oc=5",
-      "published": "2026-11-18T09:30:58+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Topps Premier League Starter Pack - Arsenal Direct"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has already won over Manchester United fans after shutting down suggestions that the city is blue. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-18T10:00:52.990912+00:00",
-      "link": "https://www.thesun.co.uk/sport/41056465/man-utd-mauricio-pochettino-man-city-damarcus-beasley/",
-      "published": "2026-11-18T09:27:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd fans say ‘my manager’ after Pochettino’s live TV response to being told Manchester ‘will always be blue’"
-    },
-    {
-      "desc": "Mauricio Pochettino has promised to make Manchester United the dominant force in the city again, insisting \"you will see",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-18T11:00:55.211518+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13613499/mauricio-pochettino-incoming-manchester-united-head-coach-calls-for-time-to-topple-manchester-city-ahead-of-old-trafford-arrival",
-      "published": "2026-11-18T09:21:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Pochettino vows to make Manchester red again"
-    },
-    {
-      "desc": "Arsenal: Ornstein hints at Kroupi decision on joining Gunners over Barcelona in 2027 - 'my information is' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T12:00:51.447307+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQjRKVmhpQzJqZjd4bzktY3dYbENDZjVVS1FBaWFicE9DNEFXTGdHbVE1U3hCUWhNVWlqbmxmN2I3LTVJUHJrUkxsTWszQ2dwYWdrQmxXZ09RN1M3X0RndXhOQWFZUzNvV3BYVjFjVW9pLXRlakZJTDlBWEF4cm5MMU1la0ZzREZhM3A2Q2QzMU9VcHpJNFRESkNxYTliZUxzNTVLMA?oc=5",
-      "published": "2026-11-18T09:14:27+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal: Ornstein hints at Kroupi decision on joining Gunners over Barcelona in 2027 - 'my information is' - Football365"
     }
   ],
   "processed_urls": [
