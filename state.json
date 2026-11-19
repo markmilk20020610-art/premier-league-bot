@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 11,
+        "calls": 12,
         "errors": 0,
-        "requests": 11
+        "requests": 12
       }
     },
-    "calls": 11,
+    "calls": 12,
     "date": "2026-11-19",
     "errors": 0,
-    "input_tokens": 72425,
-    "output_tokens": 8179,
-    "requests": 11
+    "input_tokens": 78786,
+    "output_tokens": 9024,
+    "requests": 12
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1702,6 +1702,41 @@
       "telegram_message_id": 98,
       "title": "曼联补时两球绝平维拉，八球大战战平",
       "updated_at": "2026-11-08T20:25:34.427610+00:00"
+    },
+    "5bdb0087bb14": {
+      "article_title": "Strasbourg appoint Swansea boss Matos",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "28bc45afa74067c7",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 172
+        }
+      ],
+      "created_at": "2026-11-19T01:01:10.748233+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ac0a35340bf735da",
+      "event_id": "5bdb0087bb14",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-19T01:01:10.748233+00:00",
+          "origin": "created",
+          "title": "Strasbourg appoint Swansea boss Matos",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 172,
+      "title": "斯特拉斯堡官方任命维托尔·马托斯为新任主教练",
+      "updated_at": "2026-11-19T01:01:11.379009+00:00"
     },
     "609364fa2dd1": {
       "article_title": "Arsenal close to new deals for Raya, Timber and Hincapie",
@@ -4374,7 +4409,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T00:00:52.337603+00:00",
+  "last_scan_at": "2026-11-19T01:00:58.488200+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4395,6 +4430,16 @@
     "updated_at": "2026-11-18T22:01:44.838662+00:00"
   },
   "news_pool": [
+    {
+      "desc": "'Credit to our backline' | Video | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T01:00:58.491586+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSS1iT3VvM1pSNGFwQ2dnU05ybUpxU2xtSkcxNUQ0TllLYzREenFDYW1IZHd4MHhoUHNrMFhzQlg4R3dLVGJCdlNDY3BvZkN6ZjJsdmp0YXNJV25VemRwMWxIUFdoM2xvOFV5OWRJb0FaempNMDY1X3hGWlMzV3dWakI4ZE9WaGtJMi1vRW84SzNwTi1QT3lhMQ?oc=5",
+      "published": "2026-11-19T00:19:43+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "'Credit to our backline' | Video | Official Site - Chelsea Football Club"
+    },
     {
       "desc": "Fortunately for Real Madrid, Trent Alexander-Arnold isn't running back to Liverpool The Real Champs",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4476,6 +4521,16 @@
       "title": "Mauricio Pochettino's Man United rallying cry: New boss promises fans it will be a 'SPECIAL' season - despite club sitting in drop zone - as"
     },
     {
+      "desc": "Arsenal: Ornstein hints at Kroupi decision on joining Gunners over Barcelona in 2027 - 'my information is' Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T01:00:58.491835+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQjRKVmhpQzJqZjd4bzktY3dYbENDZjVVS1FBaWFicE9DNEFXTGdHbVE1U3hCUWhNVWlqbmxmN2I3LTVJUHJrUkxsTWszQ2dwYWdrQmxXZ09RN1M3X0RndXhOQWFZUzNvV3BYVjFjVW9pLXRlakZJTDlBWEF4cm5MMU1la0ZzREZhM3A2Q2QzMU9VcHpJNFRESkNxYTliZUxzNTVLMA?oc=5",
+      "published": "2026-11-18T21:48:40+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Arsenal: Ornstein hints at Kroupi decision on joining Gunners over Barcelona in 2027 - 'my information is' - Football365"
+    },
+    {
       "desc": "Lionesses and Arsenal star Chloe Kelly stole the show at the GQ Men of the Year Awards on Tuesday night, going braless i",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-18T22:59:12.526448+00:00",
@@ -4514,6 +4569,16 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Dominant display sinks Foxes in Players Cup - Tottenham Hotspur"
+    },
+    {
+      "desc": "Access All Areas: Pochettino's first day Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T01:00:58.492019+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSmREUnkwdlBiUzVWNkV4djdqcnoxMGsyQlhsTVh0SGRJTjJqMjVqTG4zOUlPTERXbmZLbURWZGtOWndNWUE0QUFQMzFmQ2FWUmcwWXA5cE12aEtmM0xnaEpHVjdTVVhxREVDdV9FY2EtT1RzUTRTSkU3UjhwNmpsOEhnaVJ6WVJhMlFhcFg4ZW95R29mS0dF?oc=5",
+      "published": "2026-11-18T21:14:39+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Access All Areas: Pochettino's first day - Manchester United Website"
     },
     {
       "desc": "LEICESTER CITY have dropped their man shirt sponsor over its relationship with a porn star. BC Game has sponsored the Le",
@@ -5864,36 +5929,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "What does Arteta do with Konsa once Saliba returns?"
-    },
-    {
-      "desc": "Internationals: Martinez returns and Anselmino debuts in huge Argentina win | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T11:00:55.211436+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPX0VPVVdSRjUyUVh4M1NpVXBWLWVnMEEzVDVwZ2VnQTZUQml5dG1hOUIxemNsV3k1YWVzZVlQWGFlcHB3eG5HZHFCV3ZVMnFyVnY3Zk93c2s0eGF1Ry1EbVhQZEJFdWw3UXBmd1VGOEFaWDA3TmpoZEhPbTVEWnZwQ3RXN2hpT2drbVBJRWtCbi12OF9GVlVMR3FwSjFTMnFzanhyNUtLU1RCRG1XSU9WN2toUFgtLUE?oc=5",
-      "published": "2026-11-18T10:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Internationals: Martinez returns and Anselmino debuts in huge Argentina win | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Pochettino signs off from USA with victory Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T16:18:58.943950+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaGVpcGV2ZzdyM1Jtc2ZnenRUZ0JzWHQ0aWhmODVfVW5zWExwdHUyUmpMU1Rnc3lOUW1BLV9PZlJXOTQzVGM2dGRnNFNIZ1NPb1pqYVdiUDhXeDUtdmpIMUY3dVZNV2ROVGdNdl9Tbl9SZkd5b0hVWlR2ZEJGc3BNMGR6bUJ2amFBVHc?oc=5",
-      "published": "2026-11-18T09:55:35+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino signs off from USA with victory - Manchester United"
-    },
-    {
-      "desc": "Odegaard inspires Norway fightback Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-18T10:00:52.990846+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOFNsdDhhNFBZeFlOdGxMRFpSRmpNRVctZmNDMnlRZkNjSEFoU1ROME1DNUQyQVN2NWxmMVhrNnJfZDk1ZXh6M0hqLVlXZmRnQmowQUxKTWp1SVVYdlo3NkFjUE0zU3lFZ0ZDdGQ4c08xRDE2STNBUVhPMktRbkc5TzNB?oc=5",
-      "published": "2026-11-18T09:39:28+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Odegaard inspires Norway fightback - Arsenal.com"
     }
   ],
   "processed_urls": [
@@ -6034,7 +6069,8 @@
     "https://www.dailymail.com/sport/football/article-16302359/man-united-jj-gabriel-real-madrid-legal-fight.html",
     "https://www.bbc.co.uk/sport/football/articles/c69q8jy924y4o",
     "https://www.thesun.co.uk/sport/41059532/cole-palmer-hasselbaink-england-tuchel-chelsea",
-    "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html"
+    "https://www.dailymail.com/sport/football/article-16301915/Mauricio-Pochettino-private-jet-Manchester-promise-Man-City-dominance-city-rivalry-bizarre-declaration-Country-Roads.html",
+    "https://www.bbc.co.uk/sport/football/articles/c6174epxv1p4o"
   ],
   "s_overflow": {},
   "schema_version": 4
