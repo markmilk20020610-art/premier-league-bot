@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 43330,
-    "output_tokens": 4846,
-    "requests": 7
+    "input_tokens": 49823,
+    "output_tokens": 5403,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4654,7 +4654,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T21:15:38.556120+00:00",
+  "last_scan_at": "2026-11-19T22:00:52.881676+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4675,6 +4675,56 @@
     "updated_at": "2026-11-18T22:01:44.838662+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Barcelona interested in Lisandro Martinez, while Manchester United target Fulham defensive pair and Liverpool scout Seri",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T22:00:52.884214+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj5y14g2wppko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T21:57:22+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Barcelona target Man Utd's Martinez - Friday's gossip"
+    },
+    {
+      "desc": "Thibaut Courtois signs new Real Madrid deal until June 2028 Tu Futbolero",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T22:00:52.884242+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaHA3d19XQXJ0RmcxNVJUa3NhY2dWc1BVZHFzNmx6R2NabFBSZXpwRS1WTjJleEVDSjJLTXRxZjc4S3lOd3NrOUVlVHVuMWFpNDJTSGVDb19Fa1gwUzFfa01ObHNFOTJqeG9tWXdyTkVGeWkxY1k3aGVqS05LZ3lKSVVUNzhFNjNjUHB5V0U3MThOck5WUzhOc0ppWVU5MzJPRUk2TA?oc=5",
+      "published": "2026-11-19T21:42:50+00:00",
+      "publisher": "https://www.tufutbolero.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Thibaut Courtois signs new Real Madrid deal until June 2028 - Tu Futbolero"
+    },
+    {
+      "desc": "Evatt had been in charge for a year and his final match was Saturday's 1-0 away defeat by fellow strugglers AFC Wimbledo",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-19T22:00:52.884271+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16307125/Blackpool-sack-manager-seven-hours-wishing-happy-birthday.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-19T21:32:40+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Blackpool sack their manager just seven hours after wishing him happy birthday: 'Have a great day, Gaffer!'"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO fell in love with Manchester United watching Alex Ferguson pull off the greatest smash-and-grab in C",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T22:00:52.884291+00:00",
+      "link": "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson/",
+      "published": "2026-11-19T21:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Mauricio Pochettino fell in love with Man Utd attending 1999 Champions League final with future goalkeeping coach"
+    },
+    {
+      "desc": "Mykhailo Mudryk has been accused of 'baseless slander' by Ukraine FA (UAF) president Andriy Shevchenko after the former ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-19T22:00:52.884319+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16307087/Andriy-Shevchenko-hits-explosive-Mykhailo-Mudryk-claims-blame-game-failed-drugs-test-Ukraine-chief-accuses-89m-star-slander-demands-apology.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-19T21:14:05+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Andriy Shevchenko hits back at explosive Mykhailo Mudryk claims in blame game over failed drugs test: Ukraine chief accuses £89m star of 'sl"
+    },
     {
       "desc": "MAURICIO POCHETTINO faces a baptism of fire in his first game as Manchester United boss when he takes his side to Anfiel",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4756,6 +4806,16 @@
       "title": "Newcastle ‘closer than ever’ to announcing 65,000-seater ‘Allianz Arena-style’ new stadium in £1.3billion project"
     },
     {
+      "desc": "Video - Mykhailo Mudryk Reveals How His Former Agent Prevented Him From Joining Arsenal roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T22:00:52.884473+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNU1JuM1VFZXhwQ3dGTXlTUmtiV18tblBtMW5PSTdzNXBReDNWWHBaM0hUOWFZZlE1Y2paaEFscmdfaUFPUG9zVDB5MTFzSEZTRzhNenZVRkZCeFdsYk0zUEYwUEFGWW9Wb1RZUUtOa3E5VkR2Yi05R2FvZkVWeU9wVVhsUTVGZWtxdVF5dUVManRTZThfVERMek5mV085Yk1qb1VXZ1paTE02SlhYbDFrMmJaekNqVWliWXBGbDluTi0xelNCVFpUYVQyQWVpZHBpbi13OVg3S2MzYl8t?oc=5",
+      "published": "2026-11-19T20:30:41+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Video - Mykhailo Mudryk Reveals How His Former Agent Prevented Him From Joining Arsenal - roundtable.io"
+    },
+    {
       "desc": "Mauricio Pochettino’s first Manchester United training session today has been leaked online in a major security breach.",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-19T21:00:55.151831+00:00",
@@ -4814,6 +4874,16 @@
       "publisher": "https://sports.yahoo.com",
       "source": "https://www.thefa.com/rss",
       "title": "Tuchel Warned Players Before Madrid, but England Fans Cost the FA €15,000 - Yahoo Sports"
+    },
+    {
+      "desc": "Andriy Shevchenko asks Mudryk for evidence or an apology Dave.Sport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T22:00:52.884572+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9kazMxaTdMSWUzNERUMVpSTlotNmNZZUNXUko4dGFveURsMTh0ZTBJZ2RQcThrQUFyVjVTYng5VWhwZlBwQ01lVHFib1NpM19PVTNUOUtQV0hrS2tScWFZWW1OTU9xVFNGOUdQdE83VWx3SEE?oc=5",
+      "published": "2026-11-19T19:55:40+00:00",
+      "publisher": "https://dave.sport",
+      "source": "https://www.thefa.com/rss",
+      "title": "Andriy Shevchenko asks Mudryk for evidence or an apology - Dave.Sport"
     },
     {
       "desc": "CONOR SAMMON will kick off his managerial career with a return to Scottish League One side Alloa Athletic. Sammon, 40, t",
@@ -5324,6 +5394,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League club reveal amazing new video of stadium updates which will boost capacity to over 50,000 and new tunnel"
+    },
+    {
+      "desc": "Everything you need for Gameweek 11 of FPL with the latest tips and advice Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T22:00:52.885084+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8yRnNGQTFDYjdFMzZYM0xmYnBYZlJUcjhPazJ1ajBRWGRLdVhpNDhUME5NTUUtcUNNWFhyMC1VS3pwbjBtSlFESXFZU21saUdRX2IyYjd5NGI?oc=5",
+      "published": "2026-11-19T16:16:29+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Everything you need for Gameweek 11 of FPL with the latest tips and advice - Premier League"
     },
     {
       "desc": "Blackpool sack head coach Ian Evatt after a year in charge following a run of one win and six defeats in their past 10 l",
@@ -6094,86 +6174,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "'I've been focusing on my finishing - I need to keep working hard for minutes' - Liverpool FC"
-    },
-    {
-      "desc": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect LEADERSHIP Newspapers",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T13:00:53.858728+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY3Zuc1k1QlVQNC12MFM4R3JJTGZILUNpbkZ0TWk0ejljdVYzVTJLWFRrVUVtdXJQOFVIWFZKYzBfUlpqc0NBOGVna2k4VDduN190SGRGRjNoRGxoRHA0cEJ5dUJLSXRSNUNESGFoQUFqUTZaeGJCRFViZzFuRUM5bnN5SUwzQXdsUWxYaHVVUUJENGRIVklr?oc=5",
-      "published": "2026-11-19T10:54:55+00:00",
-      "publisher": "https://leadership.ng",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect - LEADERSHIP Newspapers"
-    },
-    {
-      "desc": "KIERAN GILL: A poll taken by Daily Mail Sport led to almost 2,000 votes from Chelsea fans, and 57.9 per cent were in fav",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T12:00:52.878086+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16302941/xabi-alonso-goalkeeping-dilemma-emiliano-martinez-mike-penders.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T10:52:52+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Inside Xabi Alonso's goalkeeping headache: Why Blues boss could go against the fans' view and pick volatile Emiliano Martinez over 21-year-o"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.290240+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-19T10:51:12+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Everything felt a bit gloomy at Everton after the closure of the summer transfer window. 'Disappointment' was the buzzwo",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T12:00:52.878110+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612885/everton-how-premier-leagues-sleeping-giant-are-exceeding-expectations-ahead-of-brentford-test",
-      "published": "2026-11-19T10:45:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "How 'sleeping giant' Everton are exceeding expectations"
-    },
-    {
-      "desc": "Callum Hudson-Odoi’s brother and agent loses appeal against 6-month FA suspension The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:00:52.878129+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYWZJN2ZBZXAwTUZXTTJwNXAwOHpRSTVvb1duN3dvaHFteVFlOUJuZzE3d0dJUEtiekVhZy0wenZSZ3VZak5VSUhES0tWaVFqR291em92cmpCSmxGcjNhZUFjSmdXaTUwNWxncXNYcEJ5bW9zSGxlOUF1czR6UHBZU2xNd1g4ZWlRQjQ4T05HVFhFUE9zRFhB?oc=5",
-      "published": "2026-11-19T10:41:24+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Callum Hudson-Odoi’s brother and agent loses appeal against 6-month FA suspension - The New York Times"
-    },
-    {
-      "desc": "REVEALED: Premier League Team of the Season so far Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470460+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMjk5UEctWlN5eEE0YVBYZjNmci1aU2N4a2RvUlZLLUltU280dEhDd3k0Nko5bUJsMDF4c0xZaTc3OFRKc3hGVEFhODN1Y0liclVMWnFKYWRfTXcyMUx1QlBEUUI0TnpwOUJOY29ack1oVkZTZ0FwRThDeURoNjJHVnRSX3R2b2tpTkNVY2I3QlJQMTlWUzZsdWJkWQ?oc=5",
-      "published": "2026-11-19T10:39:19+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "REVEALED: Premier League Team of the Season so far - Premier League"
-    },
-    {
-      "desc": "Preview: Arsenal Women v Lyon Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:00:52.878157+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9vM3NMcDdKcVJ2ZkR2VUU4YkVqUEViWC1YelVPcTg1dk1yZGx3S2IyTEhnZ3oycTFSSDAtS2x3VzJRVGI5MnBkUG5fVjRmZkdFV1hzcU5USThMd3lHQUpMenZrSktYU0ZvWFZESEFOY1lLcmMwLTQtZm5R?oc=5",
-      "published": "2026-11-19T10:37:12+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Preview: Arsenal Women v Lyon - Arsenal.com"
-    },
-    {
-      "desc": "Bayern Munich boss Vincent Kompany says he is \"very healthy\" and grateful for all of the support he has recieved as he p",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T11:00:52.470491+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm0rkzwgn0lro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T10:32:30+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'I'm very healthy' - Kompany to return to dugout after health scare"
     }
   ],
   "processed_urls": [
