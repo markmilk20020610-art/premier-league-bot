@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 30667,
-    "output_tokens": 3490,
-    "requests": 5
+    "input_tokens": 36978,
+    "output_tokens": 4140,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1190,6 +1190,41 @@
       "telegram_message_id": 34,
       "title": "利桑德罗·马丁内斯84秒两黄变一红，曼联客战切尔西少打一人",
       "updated_at": "2026-10-31T14:02:29.019266+00:00"
+    },
+    "3ca4534d8355": {
+      "article_title": "Mauricio Pochettino's first Man United training session is LEAKED ahead of Liverpool clash: Drone over Carrington captures 12 MINUTES of foo",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "c4730a5873f2eb9c",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 179
+        }
+      ],
+      "created_at": "2026-11-19T21:01:00.320303+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "078c77437bb66bf6",
+      "event_id": "3ca4534d8355",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-19T21:01:00.320303+00:00",
+          "origin": "created",
+          "title": "Mauricio Pochettino's first Man United training session is LEAKED ahead of Liverpool clash: Drone over Carrington captures 12 MINUTES of foo",
+          "url": "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 179,
+      "title": "波切蒂诺曼联首训遭无人机偷拍泄露",
+      "updated_at": "2026-11-19T21:01:00.944681+00:00"
     },
     "3d668757665a": {
       "article_title": "Man Utd target Julian Nagelsmann ‘considering taking over at European giants after being approached’",
@@ -4619,7 +4654,7 @@
     }
   },
   "last_morning_report_date": "2026-11-19",
-  "last_scan_at": "2026-11-19T20:00:50.421276+00:00",
+  "last_scan_at": "2026-11-19T21:00:55.149921+00:00",
   "last_summary_sent_at": "2026-11-18T22:01:44.851859+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4641,6 +4676,126 @@
   },
   "news_pool": [
     {
+      "desc": "The 12-minute video taken by a drone hovering over the club's Carrington training complex on Thursday clearly shows Poch",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-19T21:00:55.151730+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-19T20:56:56+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino's first Man United training session is LEAKED ahead of Liverpool clash: Drone over Carrington captures 12 MINUTES of foo"
+    },
+    {
+      "desc": "Ukraine great Andriy Shevchenko accuses Mykhailo Mudryk of a \"baseless slander\" after the on-loan Tottenham winger blame",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T21:00:55.151750+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmgqx908lk44o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T20:44:11+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Shevchenko accuses Mudryk camp of 'baseless slander'"
+    },
+    {
+      "desc": "Spurs Mens 3 Pack Navy Contrast Waist Underpants I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151764+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMHZYZFpsaGJNb2lGc0pVbUFlTjZud0UxbUpNZERLQTZXN0c2VnB6ekVBQjd4YjFIMDBLekE4OWgzTF9lTG5zZnZhRC1JU0V5VENCb2lfMVEwaTdmaEVleHpnSmxIQUswWWJ0bzBnTlpnT2d2U0JCYjRCWDlnSEVkejdXeGNPODdUYzJ0cWVXWjB4UmhJTHhSdkJxT0NfMm9HbTVLV1NiV2h0QUVQMGk0?oc=5",
+      "published": "2026-11-19T20:41:23+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Mens 3 Pack Navy Contrast Waist Underpants I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Men's 3 Pack Retro Boxer Shorts I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151777+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOa2F1M1ctdGR2LUNwZ1ktMDJwdHZYSjM3eGRleE92X0QtdXJLc0NiNWtxUjhCLThMWnhBcVVRRmtOSWpSR2VMMnFmRl9CYU1kNnl6MDJXZlQ0cEt1a0VlVC12Yy1uVHI0RDFNblFGa2VVVnAxZU04Q2FEbFpaUFZaMm85dURUb1BySDVHNlZUZm9kclp0ald4aGM2eUQ?oc=5",
+      "published": "2026-11-19T20:41:23+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Men's 3 Pack Retro Boxer Shorts I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Mens Essential Grey T-Shirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151789+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVmFmazNDenhHTEZXdlhWcms3N1pLaHFYSzlnQm5vQnJTZk1mdzVVanlIU3lERy1JRzdJT08zaGlWeDlsTGRyWEphNUJwRWlYbll6THJmVDlHVFI1R0VqTWhVaFFmZ2pxOEFha1h1WGxJYUIyRHVDaXpyUHFkaEFFRFZCdFB3a09na1BvMkpNLWpydHg2?oc=5",
+      "published": "2026-11-19T20:41:23+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Mens Essential Grey T-Shirt I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Mudryk vs. the UAF: Who Is to Blame for the Doping Scandal, and Why Did the Player Lose Nearly Two Years? UA.NEWS",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151804+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVkhrY3QyeWpzV1llTURmT0VqM0NfM2hvY3dhY2lFNVc0WGltLUd6TGdPdHJESDVpQmROdW5aaWpCc2tuMG85cXQxX19rWVRwRVJuWHBVaUxTSU1oTGk2eU9ESnNWdnBaekhiSTNJakM0Skszb042akFKZU80LUl2cC1SRjM5UHZvSGxELWpjTlN3VEZRR2xLSUxScVJvZlhRUmlvR1dkYVJZamY3SmtCNEtpMHkzZUloSkE?oc=5",
+      "published": "2026-11-19T20:38:38+00:00",
+      "publisher": "https://ua.news",
+      "source": "https://www.thefa.com/rss",
+      "title": "Mudryk vs. the UAF: Who Is to Blame for the Doping Scandal, and Why Did the Player Lose Nearly Two Years? - UA.NEWS"
+    },
+    {
+      "desc": "NEWCASTLE could be ready to end 134 years of history at St James' Park. Toon have occupied the famous old stadium since ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-19T21:00:55.151819+00:00",
+      "link": "https://www.thesun.co.uk/sport/41075590/newcastle-st-james-park-new-stadium-latest-allianz-arena/",
+      "published": "2026-11-19T20:35:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Newcastle ‘closer than ever’ to announcing 65,000-seater ‘Allianz Arena-style’ new stadium in £1.3billion project"
+    },
+    {
+      "desc": "Mauricio Pochettino’s first Manchester United training session today has been leaked online in a major security breach.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-19T21:00:55.151831+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614159/manchester-united-drone-footage-of-mauricio-pochettinos-first-training-session-leaked-online",
+      "published": "2026-11-19T20:28:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Drone footage of Pochettino's first Man Utd training session leaked online"
+    },
+    {
+      "desc": "Thomas Frank is happy to be \"back in the circus\" after speaking at his first news conference as Crystal Palace manager.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-19T21:00:55.151846+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cje3900n0vvro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T20:16:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Frank happy to be 'back in the circus' at Palace"
+    },
+    {
+      "desc": "Black Friday All Red Membership Promotion Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151858+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9UcHZFSjNkWjllTzJoMGxOZ0VwcG5USkZVYVJ2T3dwQ2ctbUVLMHdDaU5sN3pmemJEMjJPaTBJY3Q3STlLOFRyb0pOYllEVEVQY1lRdVg1MzZtaGJEci1fUWxSZUNuQkxMemw0SjlzcGFJYTZMS2dSQTJETQ?oc=5",
+      "published": "2026-11-19T20:15:39+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Black Friday All Red Membership Promotion - Liverpool FC"
+    },
+    {
+      "desc": "Black Friday Promotion Terms & Conditions Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151870+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40ZUkxQlJhQlFOYVFEUVJTZUduZDFpdEtTTzBYSlAweXNzTzh1WEVXVlp1c05qSVJ6YVU0MUhYOG50aXRtOFRkd1hocHo2cFIwc2V5dkd5aEpMOS1FMEJvbEFEMXlQbDJJaGxiQUl6V0o?oc=5",
+      "published": "2026-11-19T20:15:39+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Black Friday Promotion Terms & Conditions - Liverpool FC"
+    },
+    {
+      "desc": "Tuchel Warned Players Before Madrid, but England Fans Cost the FA €15,000 Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151883+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb1gtX3FsbnpqamtkU3JBWTVZOGhFcUc4RVItOWVMcFRXQkRSZHE2LW04Z1VMX2ZITF9kd2RCX01JWGhDU1dxcnMxMUpDM0ZUdUh5X3JSdmg4N2pfSk5WTkZEUnc0WUIteTMyanhSYzA5Qno0anpCa3hoSDhWMmdEOTJvelVZSVQ1U19PUFp3?oc=5",
+      "published": "2026-11-19T19:56:36+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Tuchel Warned Players Before Madrid, but England Fans Cost the FA €15,000 - Yahoo Sports"
+    },
+    {
       "desc": "CONOR SAMMON will kick off his managerial career with a return to Scottish League One side Alloa Athletic. Sammon, 40, t",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-19T20:00:50.423763+00:00",
@@ -4659,6 +4814,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Bromley sign forgotten Premier League wonderkid, 27, who ‘pocketed Mesut Ozil’ in first transfer since Andy Woodman axe"
+    },
+    {
+      "desc": "The biggest casualty of Piero Hincapié’s new Arsenal contract will surprise fans LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.151918+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQzhnZ3A3cXpOMUhzSU0xdW52UVNzV3FKZGhiVTJJN2Q1U212QmZ0SE51TDhNXzhlS0tRVzZGVTN2eGVOVDBsM1hoOHd6MVhtRmlfWjN3QUhJV0c1aXBXSXZSVWxZLWZVbktzLVYwekt6bDhkNXNqN0ZjS2xURlNEc1A5TTdERml3bmJ5WHNaVWVKRzktbGNqRFM0WGhzbFY4UUtmRjR3UUYtaUNya2hzaHNHR3dqdkFzaDRCSEhYeGh2OVJRcU9mSEZMbTRIRWJyVEowWFZZOFpBbnVMbV9MSGVOMkQ4d1lHRGZqcXln?oc=5",
+      "published": "2026-11-19T19:45:33+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "The biggest casualty of Piero Hincapié’s new Arsenal contract will surprise fans - LiveScore"
     },
     {
       "desc": "England punished by UEFA! FA hit with fine and suspended away fan ban after discriminatory chants in Spain Goal.com",
@@ -4689,6 +4854,16 @@
       "publisher": "https://www.aol.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "England receive UEFA punishment for 'racist or discriminatory behaviour' of fans in Spain - AOL.co.uk"
+    },
+    {
+      "desc": "BOBBY MANZI: Some of the 3,000 England fans who travelled to Madrid were heard chanting 'f**k the Pope and the IRA' insi",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-19T21:00:55.151974+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16306933/England-UEFA-Fine-Racism-Spain.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-19T19:14:48+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'F*** the Pope and the IRA' chant lands England in hot water as fans are given suspended one-game stadium ban and FA fined"
     },
     {
       "desc": "England are punished by Uefa following anti-Catholic chanting from the away fans during their Nations League victory in ",
@@ -4829,6 +5004,16 @@
       "publisher": "https://www.thesun.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "England fans handed suspended away ban for 'racist/discriminatory behaviour' - The Sun"
+    },
+    {
+      "desc": "Our top tipster Lewis Jones, aka Jones Knows, provides his analysis and betting insight as the Premier League returns fr",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-19T21:00:55.152094+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13611640/premier-league-predictions-jones-knows-best-bets-newcastle-vs-arsenal-liverpool-vs-manchester-united-and-much-more",
+      "published": "2026-11-19T18:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "PL Predictions: How will your club fare this weekend?"
     },
     {
       "desc": "Liverpool v Manchester United: TV channels, live audio commentary, highlights guide and more Liverpool FC",
@@ -4981,6 +5166,16 @@
       "title": "Daily Who Am I? Play 19 November Premier League game - Premier League"
     },
     {
+      "desc": "QUIZ: Name the manager from their Premier League career path Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.152224+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmw2QjJ6REI0M0RKOERMQVBGQzdBZVJkb0hHUWM4WUpxQ3RKQkpSSThkWUtMRC12eVZieWNDNHZkNFNUNUdYUkJnbU84bjJ4enZLR0dCWXk0RW5SeVRnU1BHQ0duanJvRDVxckRxekJXRmxOVkxIZ0NsTmc4U19MR29SdDNzZjN0dkFOUVVGMUpVUUJtNkpuT3YwUlhORlFGZFNELTNaVVI?oc=5",
+      "published": "2026-11-19T17:02:31+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "QUIZ: Name the manager from their Premier League career path - Premier League"
+    },
+    {
       "desc": "Romano states Milan could be an option for Balde with Mendes links: “Discuss a strategy” SempreMilan",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-19T19:00:59.108303+00:00",
@@ -5009,6 +5204,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano claims Mauricio Pochettino and Bruno Fernandes ‘discussions’ - TEAMtalk"
+    },
+    {
+      "desc": "How to watch Pochettino's first interview Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-19T21:00:55.152287+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNjR6RXh1UV9VcFMtZGxGYWZxR1FTbUVyN1JKNk8wU0VmSmZLdDNsaHZ6X2o4NE83RFdPcl9GeUczUl94TU85enR6QjJZaGN6MnhMYTBMUXRORVJOd1haQjk4ZTROaGhFZ1hJQjJoSEt3RFZqajJfZ1lzRWZ6V2tCcEpwaUlCM2FLQkRROVVaLU80SDRRQlE?oc=5",
+      "published": "2026-11-19T16:51:34+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "How to watch Pochettino's first interview - Manchester United"
     },
     {
       "desc": "EFL club brutally sack head coach on his birthday talkSPORT",
@@ -5969,176 +6174,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Eight-year ban for player who threw rock that hit assistant referee"
-    },
-    {
-      "desc": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid The Independent",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T15:01:00.205379+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbW45QjZ5Rjg5alZWWDNzZWg3dUE5QzZSdTJfUndUMzBLSk8zdmtIaE93YkdNOVQ0eW53V3hCYkJTcWU1Y0ZmRE5MRExURlF2WDNTbWNScDJQWnlZUHd0c2xuSGdCbG9aTTh2MEZjOTVVOXlRN3RnT1NKd3NmV20xN0JRdFBTS1ZpU0t3ajduNU15Mk9LdXRJU3NWQm4tdGZBRHpEaVFXbVljczlKdlR0NWx2SzZUWWJBZHc?oc=5",
-      "published": "2026-11-19T10:19:00+00:00",
-      "publisher": "https://www.independent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid - The Independent"
-    },
-    {
-      "desc": "Five big moments from the international break Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470608+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVjJIMEl6S3ZRYUNlc0xzVXRfVmE0NGtyM2FuSlJrdTNFRGFRZW9ZQnBmYnlQdUdkOXgxZzZVZTE1ckNlUk0zVl9FQzl6WXVJR2JxbjNCYTRYc2xzMkV3TFpzdEN0QXFSMVlsc3ZCLXMxR1FUYkZBVi1TWFN5b3VqQmZ3UmhsT0pzX2NoOFNMbU8?oc=5",
-      "published": "2026-11-19T10:15:07+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Five big moments from the international break - Arsenal.com"
-    },
-    {
-      "desc": "Infantino to face two challengers in FIFA presidential election RTE.ie",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470633+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPd3d4N2Z4Smt5b1FNalY4SlFJalZtS3VlY2wtTGphYlJqZ2haM3c1ZExMYkZsUWk1bmx4RTVNeUlZN1VKN09uakFTWTdFX2Z6YmJnLWxncHF0c01IaWtvMERJdmFTZFY3Tm1KUUJSUEpVektFS0tDWXB2RnhKZm52cVdwWWsxaS1QRFI1SVkwNDhVTVFFcEtLT3pIVEhnYWRTcUV3?oc=5",
-      "published": "2026-11-19T10:13:19+00:00",
-      "publisher": "https://www.rte.ie",
-      "source": "https://www.thefa.com/rss",
-      "title": "Infantino to face two challengers in FIFA presidential election - RTE.ie"
-    },
-    {
-      "desc": "West Bromwich Albion v Stoke City | 2008-9 | Full Match Replay Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T15:01:00.205457+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE02d0pkWXpiQUVDVXUzbWdqRlVNOE51X1J3T0FwejZZZVpGWnVsdGJ6eDR1bFgzYjFQTTB1TDZvWmlGN1hITDlqZUM1aWNxalQwSG9nU1I3TVg3TXR6dERSSGJB?oc=5",
-      "published": "2026-11-19T10:05:56+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "West Bromwich Albion v Stoke City | 2008-9 | Full Match Replay - Premier League"
-    },
-    {
-      "desc": "Ceri Holland is in the Wales squad for next month's Women's World Cup play-off final against Norway despite being out si",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T11:00:52.470662+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c620535y8zpjo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T10:00:07+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Five return for Wales' World Cup play-off final"
-    },
-    {
-      "desc": "What Mauricio Pochettino achieved with Tottenham Hotspur in the previous decade looks even more impressive now than it d",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T11:00:52.470686+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612583/mauricio-pochettino-at-man-utd-seven-years-on-from-the-sack-at-spurs-what-sort-of-coach-is-he-now-we-will-soon-find-out",
-      "published": "2026-11-19T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Seven years on from the sack at Spurs what sort of coach is Pochettino now?"
-    },
-    {
-      "desc": "Premier League Fans Fund promoting connection, inclusion and belonging Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470711+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaFEzMDFxWlFwUlB3bGNDWG1tNGFDSG9iZWJXTVE4U1pFbUM5VnN2RVgybms3WVpjVzNGc1lwRVFvelQ0WTdORldHOGZoaWhQWmNVRk5ib3Vmb3pxZ1NNRmVnUE9HMVNNSkk2UVprRHl2WFdQYy02RU5pcXZmNlZIa3JLREhhMkVqVE81Q2VXdEluOVA5UEE?oc=5",
-      "published": "2026-11-19T09:59:19+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League Fans Fund promoting connection, inclusion and belonging - Premier League"
-    },
-    {
-      "desc": "When is Pochettino's first United press conference? Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T10:00:54.225791+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeGxZYnNDNU83Q0dtMERTekRjb2YxbHZZM2dheFZDY1dBcjJ4TGJVVHBqYW1xTGw0M0Y3cTBqTTZmMkFPMTdYTkxTVmFPYUk2cTJDdHBFOGh1TjJfX1NpeldfLUFNaEdoNU5uVjduNzNteFNGMGw3eEhRendJRTJUYWYtT2dhSjhFdWxvcWs4MFhaTXM?oc=5",
-      "published": "2026-11-19T09:29:05+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "When is Pochettino's first United press conference? - Manchester United Website"
-    },
-    {
-      "desc": "FOOTBALL fans can enjoy the spine-tingling atmosphere of Champions League matches with official ticket and hospitality d",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T10:00:54.225816+00:00",
-      "link": "https://www.thesun.co.uk/sport/40258344/real-madrid-liverpool-man-city-champions-league-match-breaks/",
-      "published": "2026-11-19T09:18:55+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "See Real Madrid, Barcelona, Man Utd matches with UEFA Champions League tickets and official packages from just £100pp"
-    },
-    {
-      "desc": "Alexander Isak: You want to contribute important goals - I can feel a connection with fans Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470797+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQV3FwS1ZhWTZzYzFlVzg4VXhVaktEMjVFY0xMRmFqb2dPNEdobHdLVXRxUmVXX0dSaGE4NWV2TFMtSHAzV1hiT25fZGNnQ0hBOTFjMnk4bXpjMFZEdzVpVGtJWG8tX2dpSUtUbTVHM1BRSzF0NVFuV2Y2OFF5SFN5bzRIb3FsYWxZc2hMNG5OR1U2ZVdhZERsTFZmS0o5TG54S2c3U2ZiY0xqaXlvN0NqakxSS3liZ194emZMaQ?oc=5",
-      "published": "2026-11-19T09:15:51+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Alexander Isak: You want to contribute important goals - I can feel a connection with fans - Liverpool FC"
-    },
-    {
-      "desc": "Liverpool and Chelsea handed Martin Zubimendi opportunity as Arsenal set €70m asking price Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T15:01:00.205563+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNN3AyN1ZMaGN1aEFMX2d3SXlJUElUQkFrODNOV1RDeGRENE5LeWtzdzVhczFXMDdDQk9uLWdWYU11WmNKeFpLTms0aWRlNEZ5OExfYUoteXJ4VjBKcjFUME5PTERSMTZnbFBJZVc2bW1KV0JrZm5wOWxoX0pOR1hCTnR2aGp4b0xXb3VWTzlVbTgyTm5lUmR3QlRTUHRZdXpDRFhNQVpxdVhjZjhTVWU4ZWJhZUFCZlVZMUF0WDRGc2pYR28?oc=5",
-      "published": "2026-11-19T09:15:51+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool and Chelsea handed Martin Zubimendi opportunity as Arsenal set €70m asking price - Liverpool FC"
-    },
-    {
-      "desc": "UNO skills, superstitions and becoming Liverpool's No.9 - watch 'A Day With... Alexander Isak' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T11:00:52.470852+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNakdnM3J2bkMyZG84ZjQwZUE1T2JlQnFiN1hVSDlIYzRIX3FHcEM5Y2hPQ2RoZExYSkFGc28zb0thS1o3OFRuSWpISFpTbEt6OGtnSVZLZmtlcWVUNWVOb3dxOW8ycFRYVHJxaE1GMFczOGkzam9MU1BpMkxHcVpTcGc4U1NiRHJCZzZQMGZyeGoxWWRrVndWX0hBX0hUOFdVbkJlejFMc2ZsRzlxRFRmU0Z2VQ?oc=5",
-      "published": "2026-11-19T09:07:23+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "UNO skills, superstitions and becoming Liverpool's No.9 - watch 'A Day With... Alexander Isak' - Liverpool FC"
-    },
-    {
-      "desc": "FA considered challenging Gianni Infantino’s eligibility for FIFA election LBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:00:52.878359+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSl9MdFl0QjBaaDV0QTQ1Zm8zYU1xODBub3EwY1dLbVY3SmRpTGpmcm8xbks2dG9QQ29rT09OQ0gxUjdIbUVIRy1oQ09ZZ1Fuakw5QVhCQ3VseVlheXpBYkpOQUJxM29YS0d1X29tSGF6SFBuS01qSnBJN3A5Y19vbV9kTHN6YjdBN2xXTzZTa0xpRDNydldRSWxiZEFUb1hKdk5xTXBYb1ZYaFBhdE9ERVdxMnI?oc=5",
-      "published": "2026-11-19T08:53:27+00:00",
-      "publisher": "https://www.lbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA considered challenging Gianni Infantino’s eligibility for FIFA election - LBC"
-    },
-    {
-      "desc": "FA considered legal challenge to stop Gianni Infantino standing in Fifa election The Independent",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T09:00:53.245381+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdVhQR2NoN0lOeGpoV2ZzTUdfWUdqYVZGeEk5cVdpM2xMUWt4cW1fNzhRVDd2bTF0WlhQdUtLTFEzeHJCR1lQSDRMbmFVOHJRc29TdnU0X0VmSllvdVlhMTlNdTNvdjdaZjRzOTk4YmhCUGNleGRpWEpFMVJsdi1HRkRKRW94cVpneW0yeVZsXzRJZmxwNU9B?oc=5",
-      "published": "2026-11-19T08:52:00+00:00",
-      "publisher": "https://www.independent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA considered legal challenge to stop Gianni Infantino standing in Fifa election - The Independent"
-    },
-    {
-      "desc": "BBC Sport reveals the top 10 European strikers this century, as voted for by you.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T09:00:53.245416+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cw5y1ver2rpyo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T08:50:01+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "The best European strikers this century - ranked by you"
-    },
-    {
-      "desc": "Fabrizio Romano confirms Liverpool are in talks over deal that changes everything LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T09:00:53.245445+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOR0FWRWFvdzBLQzBtcjBobWlsbm9NWXA0eTAwY2pHbkNkZnh6R01wUjkyeEJDRUJrNkRSMFNwWW9DUUpoWElFZzJXblZwNGIyMmtqaWlMR09oV1c4MzB4X09ZSnZJeFhBQXdmbHFjdmx4dlA3czNjZXlHZWJZVHMyTmZxZnQtUXdtVG5zX0p3MzVkY19nYnZnZmg5TUxqcUdFVG9XbEJUSFF2N3ZpLWhoRUlPeHZ2Q1hsQ1hvdWFhOWFuS1gzeE15ZmhtODUxSTk5U0JZdU5MdDZJRXFXby01VldkNjhGRlZp?oc=5",
-      "published": "2026-11-19T08:44:11+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano confirms Liverpool are in talks over deal that changes everything - LiveScore"
-    },
-    {
-      "desc": "FPL Scout: Timo tops the chart for Fulham points Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.290445+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOOFRDUnVkczE1NXVkNndSelQyN0VXZS1Qc09aWXJFQ2dOWjhpYUtIQnhZbldPcmRRRE5qeEVfZ0VaX1piczNVSTZpWHdTa3NxVjdUUGRIQ2ZGOWpzRjJNUXJ2bmw2SEdncXlfSzgtZldFd1h6T0pKZXRNdk5ZZFY5cFczTGY0MUlZT3VZVnFZcU5GZ1VYOWkwSQ?oc=5",
-      "published": "2026-11-19T08:41:04+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "FPL Scout: Timo tops the chart for Fulham points - Premier League"
     }
   ],
   "processed_urls": [
@@ -6286,7 +6321,8 @@
     "https://www.thesun.co.uk/sport/41069105/man-utd-fans-fume-bryan-mbeumo-grand-theft-auto",
     "https://www.bbc.co.uk/sport/football/articles/cqy4jvdw7jdlo",
     "https://www.thesun.co.uk/sport/41075369/man-utd-mauricio-pochettino-training-session-drone",
-    "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln"
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln",
+    "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html"
   ],
   "s_overflow": {},
   "schema_version": 4
