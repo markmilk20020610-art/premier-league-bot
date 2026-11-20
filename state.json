@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 25,
+        "calls": 26,
         "errors": 0,
-        "requests": 25
+        "requests": 26
       }
     },
-    "calls": 25,
+    "calls": 26,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 161606,
-    "output_tokens": 16894,
-    "requests": 25
+    "input_tokens": 167328,
+    "output_tokens": 17582,
+    "requests": 26
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4687,6 +4687,41 @@
       "title": "切尔西球迷怒斥摩根·罗杰斯逃红：VAR为何不介入？",
       "updated_at": "2026-11-08T20:05:42.127072+00:00"
     },
+    "fb33ef2a93de": {
+      "article_title": "Man Utd blow with transfer target Calvin Bassey in talks over new Fulham contract as Pochettino plots defensive help",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "63ce7c11c8317b85",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 184
+        }
+      ],
+      "created_at": "2026-11-20T14:01:14.421969+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "62bcbb4ebc543e9e",
+      "event_id": "fb33ef2a93de",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-20T14:01:14.421969+00:00",
+          "origin": "created",
+          "title": "Man Utd blow with transfer target Calvin Bassey in talks over new Fulham contract as Pochettino plots defensive help",
+          "url": "https://www.thesun.co.uk/sport/41082781/man-utd-calvin-bassey-fulham-pochettino-nigeria"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41082781/man-utd-calvin-bassey-fulham-pochettino-nigeria",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 184,
+      "title": "曼联关注巴锡，富勒姆启动续约谈判",
+      "updated_at": "2026-11-20T14:01:15.157301+00:00"
+    },
     "fcfbd39949b4": {
       "article_title": "Goalkeeper involved in fatal collision gets 12-game ban",
       "attempts": 1,
@@ -4759,7 +4794,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T13:00:56.683636+00:00",
+  "last_scan_at": "2026-11-20T14:01:08.493263+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4780,6 +4815,96 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Mauricio Pochettino's first press conference as Manc",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T14:01:08.495447+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308325/Mauricio-Pochettino-Man-United-press-conference-LIVE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-20T13:54:20+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino first Man United press conference LIVE: New boss faces the media as the Premier League returns with Mikel Arteta sharing"
+    },
+    {
+      "desc": "The Scottish Premiership returns with managers to the fore - this is all you need to know about Saturday's games.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T14:01:08.495471+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c50mdwnn90jyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T13:53:22+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Key questions as Scottish Premiership returns"
+    },
+    {
+      "desc": "Man City v Fulham - 21 Nov 2026 Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T14:01:08.495490+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iNnJsTXd1LVdFR2F2SktpaVMyX1NhMHZRSWo1VDNCVEhnTC0zbGYwUHRzR2dJdGh3ZGplNF9kbmlVMFFKTE5saWUzeGVteUhFOUE2STRwdmlfU0xqcy1JNG1OZnNtR2dzUDF2ZXlqS0pJNVNG?oc=5",
+      "published": "2026-11-20T13:45:38+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City v Fulham - 21 Nov 2026 - Manchester City FC"
+    },
+    {
+      "desc": "ANTONIO RUDIGER is one of a number of famous footballing faces who have been turned into a surprise meme following the r",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T14:01:08.495526+00:00",
+      "link": "https://www.thesun.co.uk/sport/41081137/antonio-rudiger-gta-vi-meme/",
+      "published": "2026-11-20T13:43:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Antonio Rudiger becomes unlikely meme after GTA VI finally released as football fans share hilarious crossover jokes"
+    },
+    {
+      "desc": "FULHAM are working on a new contract for Calvin Bassey amid growing interest from Manchester United. The Cottagers are k",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T14:01:08.495542+00:00",
+      "link": "https://www.thesun.co.uk/sport/41082781/man-utd-calvin-bassey-fulham-pochettino-nigeria/",
+      "published": "2026-11-20T13:41:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd blow with transfer target Calvin Bassey in talks over new Fulham contract as Pochettino plots defensive help"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T14:01:08.495555+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614295/mauricio-pochettinos-first-manchester-united-press-conference-watch-live-stream-on-sky-sports-as-new-head-coach-faces-media",
+      "published": "2026-11-20T13:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "LIVE STREAM: Watch Pochettino's first Man Utd press conference"
+    },
+    {
+      "desc": "YOU have to be a brave man to be football manager these days. They work under immense scrutiny and are always the first ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T14:01:08.495571+00:00",
+      "link": "https://www.thesun.co.uk/sport/41080763/brutal-sackings-football-ian-evatt-mourinho-poyet-rosenior/",
+      "published": "2026-11-20T13:27:22+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Football’s most brutal sackings including Chelsea legend axed while on MOTD and boss who only had job for 10 MINUTES"
+    },
+    {
+      "desc": "BRIGHTON boss Fabian Hurzeler is so wedded to counter-pressing that he gives his players a running penalty if they lose ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T14:01:08.495604+00:00",
+      "link": "https://www.thesun.co.uk/sport/41082370/fabian-hurzeler-training-revealed-brighton-title-charge/",
+      "published": "2026-11-20T13:13:19+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Fabian Hurzeler’s brutal training methods that have fired Brighton into shock title race revealed"
+    },
+    {
+      "desc": "MYKHAILO MUDRYK has revealed it was his \"dream\" to join Arsenal - but says his agent prevented the move because he wante",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T14:01:08.495637+00:00",
+      "link": "https://www.thesun.co.uk/sport/41080191/mudryk-arsenal-dream-chelsea-debt-threats/",
+      "published": "2026-11-20T13:11:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Arsenal was my dream but my agent only wanted money’ – Mudryk opens up on doping scandal, being in debt & gang threats"
+    },
     {
       "desc": "Southampton head coach Tonda Eckert signs a new contract at the club through until 2029.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -4991,6 +5116,16 @@
       "title": "Panel gives Arsenal a unanimous yes on the penalty they didn't get against Hull - Digg"
     },
     {
+      "desc": "Everything you need for Gameweek 11 of FPL with the latest tips and advice Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T14:01:08.495802+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPX2hDZ1BSLWdocWJaYTFPYTRqVEh3a1JxYTBCakh0V0h6cDE2elZTQVZmTE40UENpM2V5ME51TGttOTJ1ZGlsUjJPeDJtOWd5SXlGUFBnd2xwc1pBaTljZzBfQmU2QTd2YkJ4bDZuSmg3N3M4S09jZWptY08tLXoxamIzYWVBN01fY2JYa1ZyX0VEQ1lKRF9HVlUwOWRFSlR0UXF6U2hhRVRLZ2JzamVMcjFpTUk0enptMElJWQ?oc=5",
+      "published": "2026-11-20T11:45:48+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Everything you need for Gameweek 11 of FPL with the latest tips and advice - Premier League"
+    },
+    {
       "desc": "Stoke host Birmingham in a Championship game of two teams both bang in form going into the latest international break. H",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-20T12:00:56.082463+00:00",
@@ -5009,6 +5144,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "England to face Norway in Nations League last eight"
+    },
+    {
+      "desc": "Ballon d’Or winner Harry Kane visits our Academy Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T14:01:08.495827+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaE92MWlfMkRsckt2aGdYbWUwYkxZay1YdUJlTDduYkJWSXdTNmVWVHVjc292UjRHa3lIdmJsN2l0LTBMUWFBMzZ5SEdBdmJlX28yYll2ei12b3hVSmpseEF5Yk5CRjZnbWVicE1HMG5XeDZWMWFGWWF6c2ZTTjRYVEpDZmZBQVVWSloxUXk5OWNoSDdvcHBRaDBKQXh5azMzaWVB?oc=5",
+      "published": "2026-11-20T11:30:00+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Ballon d’Or winner Harry Kane visits our Academy - Tottenham Hotspur"
     },
     {
       "desc": "ENGLAND will meet Erling Haaland’s Norway in a two-legged Nations League quarter-final in March. It will be a rematch of",
@@ -5059,6 +5204,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Inside Newcastle United's transfer tension: Matthias Jaissle wants greater control as he eyes a new No 10 and No 9 in January - but the next"
+    },
+    {
+      "desc": "Official Spurs Website Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T14:01:08.495858+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeUxtM0JfTXhlbjlzMVFGbWN4TW0wcXhVQTNJLUlGZVRhbVVaZXMtWldkTkwyZm93R0gyXzZzdzBNVGMwUTJ5cDlmOFJrQlI0NTNGNlNFbWVyRUFuMDU3am5ZZ2U1aGNFVkV6eFNkMTZNUy1xRjhVVEwwaDNQdDQwNkxR?oc=5",
+      "published": "2026-11-20T10:53:48+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Official Spurs Website - Tottenham Hotspur"
     },
     {
       "desc": "Arteta's update on Saka, Saliba and Zubimendi Arsenal.com",
@@ -5329,6 +5484,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Report: Arsenal Women 0-2 OL Lyonnes - Arsenal.com"
+    },
+    {
+      "desc": "FPL ocus: Madueke, Konsa and striker dilemmas Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T14:01:08.496051+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbmNsSDg3U1JiQ0FWSDJxaGU4cUdkSWR0OG16bGNHbzJZa2x0RW12TDctSzdTa3c4MUZ1MUQtU3V4ajBob3hHTmxzQUNrejlsLUZia1o2ZDFfYTB3cEEwNENIRUJ2YzIzSEFXck8tWV9vWkFJX0p3YnF2aDNoVmVUdkVSbWxnYnVSSmhLajZQRQ?oc=5",
+      "published": "2026-11-20T08:02:01+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "FPL ocus: Madueke, Konsa and striker dilemmas - Arsenal.com"
     },
     {
       "desc": "Fifteen years on from West Ham striker Dylan Tombides discovering he had testicular cancer at the U17 World Cup, his mot",
@@ -6149,136 +6314,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Mauricio Pochettino gets straight to work: New Man United boss meets struggling stars for the first time and vows to shift losing mentality "
-    },
-    {
-      "desc": "Liverpool v Manchester United: TV channels, live audio commentary, highlights guide and more Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T18:01:05.935733+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNajJodlYwb0FSMnBxcWt6TmRCdXUxblctdmZvek8zQTRaeU9KcjhDNWhUWWFEQ1dmd21TSFFZOGxZOFVXMllBcm4tZGRyblBNSEk1VHgyQk9tdzRCSlkxWVA1X3BuaDBEMlNtYUY1WXdmNnVnbWFiLXRSTWhGdmpfaGhrZ25XNkFCNnlBcmZMeUtCanVOTE1NUE9tYmViRXpPdWNPc0w4Q19GcU5GWFdpNw?oc=5",
-      "published": "2026-11-19T17:57:10+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool v Manchester United: TV channels, live audio commentary, highlights guide and more - Liverpool FC"
-    },
-    {
-      "desc": "MATTHIAS JAISSLE admits he failed in a last-ditch plea to convince Bruno Guimaraes to stay at Newcastle. And the German ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T18:01:05.935767+00:00",
-      "link": "https://www.thesun.co.uk/sport/41075081/matthias-jaissle-bruno-guimaraes-newcastle/",
-      "published": "2026-11-19T17:48:30+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Matthias Jaissle begged Bruno Guimaraes to stay at Newcastle as star prepares for first return after Arsenal transfer"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO's first training session at Manchester United was secretly filmed by a drone and shared on YouTube. ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T18:01:05.935796+00:00",
-      "link": "https://www.thesun.co.uk/sport/41075369/man-utd-mauricio-pochettino-training-session-drone/",
-      "published": "2026-11-19T17:45:51+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Pochettino’s first Man Utd training session secretly filmed by drone and posted online in alarming security breach"
-    },
-    {
-      "desc": "FOOTBALL fans can book an unbeatable city break to Spain's iconic capital with top tickets to see the likes of Vini Juni",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T18:01:05.935822+00:00",
-      "link": "https://www.thesun.co.uk/sport/39805767/real-madrid-tickets-la-liga-santiago-bernabeu-mourinho-bellingham/",
-      "published": "2026-11-19T17:45:36+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Real Madrid tickets and hotel offers for city breaks to the new look Santiago Bernabeu from just £359pp"
-    },
-    {
-      "desc": "SPURS fans can secure top tickets with VIP hospitality at the unbeatable Tottenham Stadium from just £135 per person. Ro",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T18:01:05.935848+00:00",
-      "link": "https://www.thesun.co.uk/sport/39228834/tottenham-hotspur-premier-league-ticket-hotel-packages/",
-      "published": "2026-11-19T17:45:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tottenham Hotspur ticket and hospitality packages for all Premier League matches from only £135 per person"
-    },
-    {
-      "desc": "FOOTBALL fans can look forward to the ultimate European city break to Paris... with fantastic seats to see the megastars",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T18:01:05.935874+00:00",
-      "link": "https://www.thesun.co.uk/sport/39584577/paris-saint-germain-psg-ticket-hotel-packages-ligue/",
-      "published": "2026-11-19T17:44:21+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "PSG tickets and hotel packages for Ligue 1 games from just £319pp in thrilling Parc des Princes in Paris"
-    },
-    {
-      "desc": "AN ECUADORIAN footballer landed an eight-year ban after a brutal assault left an official needing emergency surgery. Jho",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T18:01:05.935898+00:00",
-      "link": "https://www.thesun.co.uk/sport/41074743/footballer-banned-rock-linesman-surgery-ecuador-football-federation-fifa/",
-      "published": "2026-11-19T17:40:20+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Footballer banned for eight years for throwing ROCK at linesman with official left needing facial surgery"
-    },
-    {
-      "desc": "Training gallery: All together for Leeds | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T20:00:50.424143+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONVFON3JodkpqRGpOcW41RUwyRFQ3Rk9Yem1pZ19jbWJ4WDZORWtRajdVeWRtTkVsVUZmZUtudzlXRnRTanRxNUh1Sl9PZTZ2TDFmU3MwN2xYRThvcFNWamI2VVlFT1lCa1R3NWpzdXl0dGFGeEVHOTNrelVRdlU3ZzlYZTRXWE9U?oc=5",
-      "published": "2026-11-19T17:30:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Training gallery: All together for Leeds | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T18:01:05.935920+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13279295/brighton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-      "published": "2026-11-19T17:23:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Brighton latest: Hurzeler not leaving for a long time, says Bloom"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T18:01:05.935941+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025489/tottenham-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-19T17:20:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Spurs latest: 'You only know a tenth of the truth,' says Frank"
-    },
-    {
-      "desc": "Who is the best FPL captain for Gameweek 11? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T18:01:05.936001+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQN2hOM2gwR0dHakIxRTR0Wm14ZFM1dC1hMHBKNmQ4Z0hMV2NicVFPdlhYVDdqanN5cHNVX1RKOXl0VDhIOU5UN0xWRlNweUZYVHp5WUd6WFQtUGVyQWtMeGhXRUhwSnY2a0xLcFVFZTVNWnRCcGxtUnF3cTZRd2s1dkgtWjlWWm52Rmk3YzY2RkYtbzg?oc=5",
-      "published": "2026-11-19T17:14:19+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who is the best FPL captain for Gameweek 11? - Premier League"
-    },
-    {
-      "desc": "Manager Derek McInnes says Rangers will only sell players in January if they receive offers that \"makes the club blink\".",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T18:01:05.936032+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwlymr2159y5o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T17:11:51+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "We'll only sell if offer makes club blink - McInnes"
-    },
-    {
-      "desc": "Gallery: 35 photos as international stars return Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T19:00:59.108223+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMDJEcTkzOURSWkVMbkpINEJDVVh3amFHYldQd0ZHWGRFZ3ZpMmFTNjRYT3lPekhzZjhoNXd4WGJqaF94LTZXSjU3a3Q0NVEwWFVVSXEzYk5BVFVhU0dLc01HTm42XzBFQjAwcUY2OWx4XzNzQXBXUmFDZ29CNU9ZU1FpV3VaYmluTFFaT2NNM3R3Umc?oc=5",
-      "published": "2026-11-19T17:06:40+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Gallery: 35 photos as international stars return - Arsenal.com"
     }
   ],
   "processed_urls": [
@@ -6430,7 +6465,8 @@
     "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html",
     "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson",
     "https://www.dailymail.com/sport/football/article-16306933/England-UEFA-Fine-Racism-Spain.html",
-    "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYnREZkFxUU9xTmFaN0tLVVlLS3U3T0NNSmJVbnZPQ0hKRnhhUGdBZVg2bDZSZFdBbnJmZ3Z2NzB4WmNxOTVodjhURVRZaU11dHdodDYxaVVfZDdEZ1BkTXVERjYzZnhsZWJtaXJ4UmZKOF9UV2xWZnRaY0wzSnoxcTQ0ajdFYzVScVlhNGc0VlNwWGFqc3dNeA"
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYnREZkFxUU9xTmFaN0tLVVlLS3U3T0NNSmJVbnZPQ0hKRnhhUGdBZVg2bDZSZFdBbnJmZ3Z2NzB4WmNxOTVodjhURVRZaU11dHdodDYxaVVfZDdEZ1BkTXVERjYzZnhsZWJtaXJ4UmZKOF9UV2xWZnRaY0wzSnoxcTQ0ajdFYzVScVlhNGc0VlNwWGFqc3dNeA",
+    "https://www.thesun.co.uk/sport/41082781/man-utd-calvin-bassey-fulham-pochettino-nigeria"
   ],
   "s_overflow": {},
   "schema_version": 4
