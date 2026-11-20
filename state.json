@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 67510,
-    "output_tokens": 7201,
-    "requests": 10
+    "input_tokens": 73968,
+    "output_tokens": 7902,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1947,6 +1947,41 @@
       "telegram_message_id": 174,
       "title": "波切蒂诺执教曼联首战即客战利物浦",
       "updated_at": "2026-11-19T08:01:10.709323+00:00"
+    },
+    "60e36bd03b9c": {
+      "article_title": "How Pochettino fell in love with Man Utd by watching 1999 Champions League final at Nou Camp with future goalie coach",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "19fe96901dd70545",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 181
+        }
+      ],
+      "created_at": "2026-11-20T01:00:59.424130+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "1209e5308f2d5be8",
+      "event_id": "60e36bd03b9c",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-20T01:00:59.424130+00:00",
+          "origin": "created",
+          "title": "How Pochettino fell in love with Man Utd by watching 1999 Champions League final at Nou Camp with future goalie coach",
+          "url": "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 181,
+      "title": "波切蒂诺自曝因1999欧冠决赛爱上曼联",
+      "updated_at": "2026-11-20T01:00:59.955602+00:00"
     },
     "63a8870656ae": {
       "article_title": "How Carrick's reign unravelled",
@@ -4654,7 +4689,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T00:00:54.447962+00:00",
+  "last_scan_at": "2026-11-20T01:00:49.338601+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4675,6 +4710,16 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "In a difficult defeat by French giants Lyon, Arsenal were shown the gap they need to bridge to challenge for the Champio",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T01:00:49.342102+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm4gnxz8dvx1o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-19T23:57:54+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Arsenal 'have ingredients' but Europe's elite on another level"
+    },
     {
       "desc": "Man City vs Fulham Lineups and Team News: Guéhi Doubt, O’Reilly to Start The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4986,6 +5031,16 @@
       "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T01:00:49.342863+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43RGFYMnIxYVNsN0FtWHY5VHRoNUFXLXJaMFVzVzdZQTh6NlZwZlFNNXY2R1o0cGlJQkp6bWxwODZpWWlZdkg4d1oyV3Azc1RXbUtmVg?oc=5",
+      "published": "2026-11-19T20:06:26+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
+    },
+    {
       "desc": "England hit with suspended one-game away ticket ban and fine after sectarian, anti-Irish chanting during win over Spain ",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-19T21:15:38.559905+00:00",
@@ -5244,6 +5299,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "PL Predictions: How will your club fare this weekend?"
+    },
+    {
+      "desc": "Mauricio Pochettino was officially appointed as United's new head coach on Wednesday and he has since addressed the club",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T01:00:49.343238+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16305357/Mauricio-Pochettino-culture-reset-Man-United-boss.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-19T17:57:49+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino gets straight to work: New Man United boss meets struggling stars for the first time and vows to shift losing mentality "
     },
     {
       "desc": "Liverpool v Manchester United: TV channels, live audio commentary, highlights guide and more Liverpool FC",
@@ -6144,36 +6209,6 @@
       "publisher": "https://dailycannon.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Ornstein: Arsenal target more likely to go abroad - Daily Cannon"
-    },
-    {
-      "desc": "Two Premier League games in January moved for TV coverage Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:56:17.111743+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRXhkVVVnVTJFaE9VSkpiVXNuMEE5WExjSDRUcjZzaEJSaXFpUG9XQ1BzQUlLQkxFeG9GY1VXdG5DZVdrTjBselVkQk5mZTZZOWZWZzdiRTZrZWRJSGRIbUZuR09NLVRCbTk4NENMYllNcXR2VVR6dDRNUDg5dms4VndfdzFJUQ?oc=5",
-      "published": "2026-11-19T12:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Two Premier League games in January moved for TV coverage - Manchester City FC"
-    },
-    {
-      "desc": "Two January fixtures moved for TV coverage | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446648+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZ1lPclVxQlVTYTFzd3NVdWdCdHB0NVIyZXl5ZW9mZGpNaWMzRDFMZXlIODlEUHlXSmNod2o5NU44UmttWWVFZC1RaTVTeUlpY2NKR2dLTExuNFZfT3RYOTA0YnNJM3RrR3J2UFNIa2dPMXBKdGM5Ump2VkJqSzI0WktnajVRa2ZRNkNDNQ?oc=5",
-      "published": "2026-11-19T12:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Two January fixtures moved for TV coverage | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Fixture changes | January, 2027 Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T18:01:05.936938+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAyN19ubXNiRzZrMGliUmgwbU9xMjUzV1QzNmlJVmdzM2tSYU5VZURZWVhCU1l1SFRlbFdNWTM3U2xSWWNCNXMybTBSTzlmNDlWTFB4Mnkwc2xXSGp2dXR3d3ZmSjlsM3ZnbFNSYTBtOXdwWFNuZms4TW5ZVXlBcWM?oc=5",
-      "published": "2026-11-19T12:00:00+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Fixture changes | January, 2027 - Tottenham Hotspur"
     }
   ],
   "processed_urls": [
@@ -6322,7 +6357,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cqy4jvdw7jdlo",
     "https://www.thesun.co.uk/sport/41075369/man-utd-mauricio-pochettino-training-session-drone",
     "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln",
-    "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html"
+    "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html",
+    "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson"
   ],
   "s_overflow": {},
   "schema_version": 4
