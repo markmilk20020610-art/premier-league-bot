@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 55406,
-    "output_tokens": 5299,
-    "requests": 8
+    "input_tokens": 61528,
+    "output_tokens": 5854,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4652,6 +4652,41 @@
       "title": "曼联与皇马就16岁新星JJ Gabriel展开法律战",
       "updated_at": "2026-11-18T12:00:57.916547+00:00"
     },
+    "f0512b643277": {
+      "article_title": "Harry Kane out for MONTHS after tearing ankle ligament as Bayern Munich release worrying injury statement",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "116f53c57662f556",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 188
+        }
+      ],
+      "created_at": "2026-11-20T23:00:51.805518+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "74d3ad43fcee5c9b",
+      "event_id": "f0512b643277",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-20T23:00:51.805518+00:00",
+          "origin": "created",
+          "title": "Harry Kane out for MONTHS after tearing ankle ligament as Bayern Munich release worrying injury statement",
+          "url": "https://www.thesun.co.uk/sport/41088674/harry-kane-injury-bayern-munich-koln-england-olise"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41088674/harry-kane-injury-bayern-munich-koln-england-olise",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 188,
+      "title": "凯恩脚踝韧带撕裂恐缺阵三个月",
+      "updated_at": "2026-11-20T23:00:52.385346+00:00"
+    },
     "f336c2fdca18": {
       "article_title": "Revealed: SIX Man United stars named in combined XI with Chelsea despite Michael Carrick's side's nightmare start - as stats boffins pick Ko",
       "attempts": 1,
@@ -4864,7 +4899,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-20T22:00:53.729879+00:00",
+  "last_scan_at": "2026-11-20T23:00:46.675340+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4885,6 +4920,96 @@
     "updated_at": "2026-11-20T22:01:20.683399+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Tzolis FPL Leak: Arteta Stops Arsenal Players Picking Themselves (20 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T23:00:46.677234+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUjZ6emZBTG5EV2d2UFZGYUlkUUV0Vm5ONGdfcmZKYW0zNGNMUm01d1JoN2xLZXozZThnbVFiNU1nZ1h2Z3YzZG9udVg5dTZEZmt1bzVoLW1LeG1NYnB5VjBBbTlYRU40dXlpYnBqbVlVOF9jd09UTERwa0lGZHQ5dUQtSWV5Sm85QUpvcUlR?oc=5",
+      "published": "2026-11-20T22:46:49+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Tzolis FPL Leak: Arteta Stops Arsenal Players Picking Themselves (20 November) - The False 9"
+    },
+    {
+      "desc": "American football great Tom Brady is looking to invest in Chelsea through ownership group Clearlake Capital.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T23:00:46.677254+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmg46k97k92do?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T22:36:35+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "NFL great Brady could buy Chelsea stake"
+    },
+    {
+      "desc": "BRUNO GUIMARAES is yet to catch fire since swapping Newcastle for Arsenal this summer. But what better place could there",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T23:00:46.677269+00:00",
+      "link": "https://www.thesun.co.uk/sport/41086408/mikel-arteta-arsenal-newcastle-bruno-guimaraes/",
+      "published": "2026-11-20T22:36:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mikel Arteta demands more from Bruno Guimaraes as Arsenal star heads for emotional reunion with old club Newcastle"
+    },
+    {
+      "desc": "Harry Kane is expected to be sidelined for three months after suffering an ankle injury during Bayern Munich's Bundeslig",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T23:00:46.677293+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614559/harry-kane-england-and-bayern-munich-striker-set-to-miss-three-months-with-ankle-injury",
+      "published": "2026-11-20T22:26:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Kane set to miss three months with ankle injury"
+    },
+    {
+      "desc": "CRISTIANO RONALDO endured a nightmare evening in the Saudi Pro league as he was shown up by Ivan Toney. The Al-Nassr sta",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T23:00:46.677308+00:00",
+      "link": "https://www.thesun.co.uk/sport/41088121/ivan-toney-cristiano-ronaldo-penalty-saudi-pro-league/",
+      "published": "2026-11-20T22:21:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ivan Toney ‘shows Cristiano Ronaldo how it’s done’ as England star scores penalty after ex-Portugal ace missed"
+    },
+    {
+      "desc": "HARRY KANE could be sidelined for three months after suffering a nasty ankle ligament injury on his return match with Ba",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T23:00:46.677321+00:00",
+      "link": "https://www.thesun.co.uk/sport/41088674/harry-kane-injury-bayern-munich-koln-england-olise/",
+      "published": "2026-11-20T22:21:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Harry Kane out for MONTHS after tearing ankle ligament as Bayern Munich release worrying injury statement"
+    },
+    {
+      "desc": "Once again England's biggest football club is relying on a personality lift to drag them back to their feet. This is wha",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T23:00:46.677342+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16309693/Mauricio-Pochettino-fix-club-stuck-constant-cycle-failure-new-Man-United-boss-personality-squad-mish-mash-sits-coach-great-unknown-writes-IAN-LADYMAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-20T22:07:06+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino must fix a club stuck in a constant cycle of failure. The new Man United boss has the personality but the squad is a mis"
+    },
+    {
+      "desc": "REAL MADRID star Marc Cucurella's partner Claudia Rodriguez took social media by storm as she attended a music awards ce",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T23:00:46.677354+00:00",
+      "link": "https://www.thesun.co.uk/sport/41088154/real-madrid-wag-claudia-rodriguez-marc-cucurella-chelsea/",
+      "published": "2026-11-20T22:05:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Real Madrid and former Premier League wag stuns in low cut sequin dress as she attends lavish awards ceremony"
+    },
+    {
+      "desc": "Coventry boss Frank Lampard wants officials to spend time ensuring they get decisions correct in the wake of his side be",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T23:00:46.677369+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c678299n1018o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T22:04:19+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Lampard calls for fairness after Coventry penalty row"
+    },
     {
       "desc": "LABOUR’S deputy leader poses for a selfie with Man City ace Erling Haaland at a swanky bash laid on by the under-fire cl",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4916,6 +5041,16 @@
       "title": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit - LiveScore"
     },
     {
+      "desc": "It would see the seven-time Super Bowl champion make a swift return to investment in English football after he stepped a",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T23:00:46.677422+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16309805/tom-brady-buys-chelsea-stake.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-20T21:24:20+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Tom Brady 'buys stake in Premier League giants Chelsea'... just days after his shock exit from Birmingham City"
+    },
+    {
       "desc": "JESUS OWONO has been seen for the first time since the horror challenge that killed Jesus de Miguel. The goalkeeper was ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-20T22:00:53.732936+00:00",
@@ -4926,6 +5061,16 @@
       "title": "Goalkeeper Jesus Owono seen for first time since horror challenge that killed Jesus de Miguel as he joins public tribute"
     },
     {
+      "desc": "Chelsea respond after being handed $196,000 fine by FA for anti-Catholic and anti-Irish chants Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T23:00:46.677446+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNWZMNmZfQWtvbDI5YzBFNXZVTTdOcUlQOUFyQnpxWkVyRnJ3VDhfTWcydU5vemNtQ0d3NkVJUC1MVHl0TmFrWlpHeHB6aGRYQlpfYXZVZVRJYlo1NzZoUnpFaXVBcld1YUdnOE1KN09iWU1rMHowTTBrd1FEMTY3UDhTcEhRb1NO?oc=5",
+      "published": "2026-11-20T20:57:47+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Chelsea respond after being handed $196,000 fine by FA for anti-Catholic and anti-Irish chants - Yahoo Sports"
+    },
+    {
       "desc": "Chelsea Transfer News Today: Scott McTominay bombshell as Romano provides major update LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-20T22:00:53.732959+00:00",
@@ -4934,6 +5079,16 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Chelsea Transfer News Today: Scott McTominay bombshell as Romano provides major update - LiveScore"
+    },
+    {
+      "desc": "Conte, who remains out of work after leaving Napoli in the summer, has now hit back at reports suggesting Man United may",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T23:00:46.677476+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16309997/Antonio-Conte-Man-United-clubs-frightened-winning-cryptic-interview-Mauricio-Pochettino-landed-Old-Trafford-gig.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-20T20:50:20+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Antonio Conte hits back after missing out on Man United job: Ex-Chelsea boss warns clubs they are 'frightened of winning' if they don't hire"
     },
     {
       "desc": "Fabrizio Romano confirms Liverpool have path to complete bombshell Arsenal deal LiveScore",
@@ -5006,6 +5161,26 @@
       "title": "Man City vs Fulham: Get 2/1 on City to win, Haaland to score or assist and Anderson 1+ foul | Betfred"
     },
     {
+      "desc": "Fantasy Show: Experts reveal GW11 teams Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T23:00:46.677547+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRDFUdlBmX3RqYkpOV2U3aDdVNlh4REFSSUJaYTQ4ZEJ5R3REeHIwNXpEM0dJd0dUQzlOYXhJUW05VGlibzVCNm90UFNSS0NmLWw2Q2EwY0N4ZjFwOTJta2hKYW9QSzJzX3YxRVFmdm5YRnM5bG54ZlhJSE11VlVNakRHYjRUSENNOXVFTWl3?oc=5",
+      "published": "2026-11-20T19:46:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fantasy Show: Experts reveal GW11 teams - Premier League"
+    },
+    {
+      "desc": "Watch the BEST OF Haaland so far this season Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T23:00:46.677559+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYnZaSElJUDVhcURROVc2Tnl2b0hXbWl5V2Y0ME5fVHBoNUxBcVl1UVZNSXZaeEVMRTN6U0JpWXN0M1V2dE5JY3F2LUg1SjFGbjBBaEM5QjNLZFVCU3R4b2JHdGs2RWNrVlloSTI4N0RYRmtLZGY2eVBiTUJScGhmVHY0M2NDWkFtc3BOSTBKWWlrTWF0bXc?oc=5",
+      "published": "2026-11-20T19:46:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch the BEST OF Haaland so far this season - Premier League"
+    },
+    {
       "desc": "MANCHESTER UNITED chief executive Omar Berrada has defended Sir Jim Ratcliffe and the Glazer family as “very dedicated a",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-20T20:00:48.708980+00:00",
@@ -5014,6 +5189,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Omar Berrada hails ‘dedicated’ Glazers as he claims some Man Utd fan criticism has ‘crossed a line’"
+    },
+    {
+      "desc": "Grealish will be considered for the squad when Everton face Brentford on Monday. Moyes confirmed Grealish is fit and ava",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T23:00:46.677597+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16309683/Jack-Grealish-available-play-Everton-star-axed-month-missing-training-without-permission.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-20T19:35:59+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Jack Grealish's Everton olive branch: Star IS available to return to first team after being axed for skipping training without permission in"
     },
     {
       "desc": "Manchester United and Liverpool monitor Atalanta star Giorgio Scalvini Liverpool FC",
@@ -5034,6 +5219,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Play GW11 FPL Challenge to win a UNIQUE Football Manager prize - Premier League"
+    },
+    {
+      "desc": "Official Spurs Website Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T23:00:46.677634+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQd0xQUmdJWVZyYmxxYWZGOGk0V2VBaloxeUpVQ0M3eUdhVW53TjFCUk5BYzB6aXdTSThnVUowVmYzb05McjFkNlZPRjl3SXF5NkpVRmsyTFNIemxIUzR5eFJzYTFLcDN2NHUtdEpSNUZWc3dqQktrR2pKN1QyOU5zMUVB?oc=5",
+      "published": "2026-11-20T19:06:20+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Official Spurs Website - Tottenham Hotspur"
     },
     {
       "desc": "Ex-PGMOL chief calls for Government action after YouTuber speaks out over Man United drone incident Yahoo",
@@ -5156,6 +5351,16 @@
       "title": "England fans slapped with ticket ban for anti-Catholic chants in Madrid – after Thomas Tuchel warned players about Spanish racism - Olive Pr"
     },
     {
+      "desc": "£67m Player Who Tottenham Tried to Sign to Replace James Maddison is Now Set Join Real Madrid roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T23:00:46.677745+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPY0tCR2JKRzVwUEF4eEFDQnVQMHF6WnRBWFU1UUo2TVBRTjM0eTR2U0ZmSUFMaE84SWVXeVJyRHJpZHdLNkZka3M0UVlQRDlRSzcyMkVwRzVvLUdYTlg1MDJWQ3FHUFF4Z3JXNHhXTUxjcGY3YW10a0pXR1lPNFJMLU1SWFp2TEJCU3RLNE1Na0xLbWNpbHJSYTJVeENXOWRDa2J1cEV2MmtNTzMxWkNONi12UjVONGp3TUpQOGhxWThUajhIRUhMNWVaVS1BNk9vNHdDOXYtQ2V0TFNQUWswMzhNeFUzLVBZdnotWnlHQTdjUl9pdXc?oc=5",
+      "published": "2026-11-20T18:04:26+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "£67m Player Who Tottenham Tried to Sign to Replace James Maddison is Now Set Join Real Madrid - roundtable.io"
+    },
+    {
       "desc": "'It comes down to hunger': Mikel Arteta pleased with Arsenal desire ahead of Newcastle clash Tribuna.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-20T21:00:53.452999+00:00",
@@ -5214,6 +5419,16 @@
       "publisher": "https://www.bbc.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Chelsea fined £150,000 by FA for discriminatory chanting - BBC"
+    },
+    {
+      "desc": "Manchester United chief executive Omar Berrada has insisted he was not involved in any wrongdoing at his former club Man",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T23:00:46.677796+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16309383/Man-United-CEO-Omar-Berrada-says-not-involved-wrongdoing-former-club-Man-City-Enzo-Maresca-insists-stars-unaffected-guilty-verdicts-despite-three-straight-Premier-League-defeats.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-20T17:46:52+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United chief Omar Berrada distances himself from Man City's Premier League charges - as Enzo Maresca insists his stars are unaffected by"
     },
     {
       "desc": "MYKHAILO MUDRYK has had an injury setback - as Roberto De Zerbi defended the Ukrainian for his \"Arsenal dream\" comments.",
@@ -6204,186 +6419,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Football fans in stitches as unfortunate police mugshot of ‘drug dealer’ is dead ringer for Manchester United star"
-    },
-    {
-      "desc": "FOOTBALL fans looking to score a huge football away day in the UK or Europe can now save money with a Black Friday barga",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T12:00:56.082343+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
-      "published": "2026-11-20T11:49:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and others"
-    },
-    {
-      "desc": "Romano confirms Man Utd’s January plans as Sesko & Zirkzee status revealed LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T13:00:56.687630+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOanRUb3hBYTM3TWRDWGxxSlJoc2dsVEtmYmhGelNUcm15cWxKemk1X0VpY1JkRWNob3JFUWpUYVpiYzNSakd4UFZjM0F4RGtvLV9aQmhNU0w4dWIxc19QRUpLRXdxNmR2TVFTUW1OeWlfWFMtZkJ0S0ZKVHB6M1RzRTh6WW5pSDlOUk5RSUY0VEFoQjNxWVIxNjN5ck56R1FQa2NIZWRoRGNkRnl2azNVdDY0dVAtU3IwR2xNOWZiY192eTdvMS1XdHJpc0NPT3dtaDVwalVwRQ?oc=5",
-      "published": "2026-11-20T11:48:44+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano confirms Man Utd’s January plans as Sesko & Zirkzee status revealed - LiveScore"
-    },
-    {
-      "desc": "Watch FPL deadline live stream on YouTube from 09:00 GMT on Saturday Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T12:00:56.082369+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRUtBQ0JUTW1HNVJIVnlXZy1QY3BNdUEzSjB6TkEyNmk3eW52bmU1TWk2NHlRM2dQQ2dPNXNnV0RPQXA5NTVZUUVKWHJaMHVsLVB3cVljSXMyWTdlb2hqR1hhaEM1WTFyY2Y1WEFES1poNU5uMXRsNVlhM2ZDNVZvVlR6OW40VUpPeVphTzgtemJxRDU1eWk3Q0Vwd0dBYjg1UkNXdkVIUVNuZXhSNWh2eWcyMA?oc=5",
-      "published": "2026-11-20T11:48:35+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch FPL deadline live stream on YouTube from 09:00 GMT on Saturday - Premier League"
-    },
-    {
-      "desc": "Saliba Injury Update: Ready for Newcastle, Saka Still Out The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T12:00:56.082393+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa05sNFVVQm13R3VGOG95MEtYekFKSm5YSGhpa1VKNUpGQVcyZjFpLXI4QXJHU1hwWG1YYjJvTGc2azJsRTVWSHluaFNXQ3FhNW9tSnJMekprOFBSWWFubFhjazNBZmYxZHE0b1FWZGR3eHVPOUt5bEx0Y0F6SVI3S1RyQ3RYYkdXTGlFTlI5MEJjTFJsbVE?oc=5",
-      "published": "2026-11-20T11:46:34+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Saliba Injury Update: Ready for Newcastle, Saka Still Out - The False 9"
-    },
-    {
-      "desc": "Panel gives Arsenal a unanimous yes on the penalty they didn't get against Hull Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T12:00:56.082417+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBRRm8zQlFhTzRvUUdHUUtLbC1BQnd0ZGpHejFDOEZic0xtS3ZmQ0JLa0Q1S05GVmdVOXlHUmtqVDhOdVRENkVz?oc=5",
-      "published": "2026-11-20T11:46:28+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Panel gives Arsenal a unanimous yes on the penalty they didn't get against Hull - Digg"
-    },
-    {
-      "desc": "Everything you need for Gameweek 11 of FPL with the latest tips and advice Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T14:01:08.495802+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPX2hDZ1BSLWdocWJaYTFPYTRqVEh3a1JxYTBCakh0V0h6cDE2elZTQVZmTE40UENpM2V5ME51TGttOTJ1ZGlsUjJPeDJtOWd5SXlGUFBnd2xwc1pBaTljZzBfQmU2QTd2YkJ4bDZuSmg3N3M4S09jZWptY08tLXoxamIzYWVBN01fY2JYa1ZyX0VEQ1lKRF9HVlUwOWRFSlR0UXF6U2hhRVRLZ2JzamVMcjFpTUk0enptMElJWQ?oc=5",
-      "published": "2026-11-20T11:45:48+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Everything you need for Gameweek 11 of FPL with the latest tips and advice - Premier League"
-    },
-    {
-      "desc": "Daunting challenge ahead: Why Arsenal's next 6 matches before Christmas can make or break their 2026/27 Premier League s",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:39:54.797776+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT2sxNnZCNk42MjFxUThUY3lUODhFeGlFZFFDLUlzdUVLcXdCT19vNVUtWTlEN3d5YUpmd1gwV1hSUDJFamhoVktZYTBGeDlxRW1YY1FaaURkbG53UVREX3ZUeTk0WVFqbGVGQ250Yy1fYWVRRG0xdEEwMmJLaTAtdjY2VXhSVV9FSlZvU0NTcXJLQkXSAZgBQVVfeXFMUElTamNncXEzX05LYjR4QUQzanRTWDdoWHlTcFVRQmJHRU1QSWxZVFpscTFyamtHdXF1bjZSTkNRd1RvWHltOUJjUEhVY2J2WUpHWDV0MzRwTmdfSE1xd1d0X0VTR2JSdElGV2JiSlpRakUzUXFJazlvVUVZSjdwZEc0c3l2RUk0T3VrQWYtVi1vMk83YXY2eks?oc=5",
-      "published": "2026-11-20T11:39:00+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Daunting challenge ahead: Why Arsenal's next 6 matches before Christmas can make or break their 2026/27 Premier League season - Tribuna.com"
-    },
-    {
-      "desc": "Stoke host Birmingham in a Championship game of two teams both bang in form going into the latest international break. H",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-20T12:00:56.082463+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmy8670vjlx0o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T11:35:16+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Stoke and Birmingham proving you shouldn't judge a book by its cover"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T16:01:01.824388+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yQXhEQmJfVWxNU1otTFVSUWV2MmZYZXJId19Ibl9fSXJRYUlQOUxIc0FHX05jNjVzRTJXZG43TDNtZWZyaW1BMmNIOUpJWDhGNjBnWGJ3?oc=5",
-      "published": "2026-11-20T11:30:25+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
-    },
-    {
-      "desc": "England will take on Erling Haaland and Norway in the Nations League quarter-finals.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-20T12:00:56.082483+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13614281/nations-league-quarter-finals-england-to-face-norway-in-the-last-eight-with-a-potential-semi-final-tie-with-germany-waiting",
-      "published": "2026-11-20T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "England to face Norway in Nations League last eight"
-    },
-    {
-      "desc": "Ballon d’Or winner Harry Kane visits our Academy Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T14:01:08.495827+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaE92MWlfMkRsckt2aGdYbWUwYkxZay1YdUJlTDduYkJWSXdTNmVWVHVjc292UjRHa3lIdmJsN2l0LTBMUWFBMzZ5SEdBdmJlX28yYll2ei12b3hVSmpseEF5Yk5CRjZnbWVicE1HMG5XeDZWMWFGWWF6c2ZTTjRYVEpDZmZBQVVWSloxUXk5OWNoSDdvcHBRaDBKQXh5azMzaWVB?oc=5",
-      "published": "2026-11-20T11:30:00+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Ballon d’Or winner Harry Kane visits our Academy - Tottenham Hotspur"
-    },
-    {
-      "desc": "ENGLAND will meet Erling Haaland’s Norway in a two-legged Nations League quarter-final in March. It will be a rematch of",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T12:00:56.082504+00:00",
-      "link": "https://www.thesun.co.uk/sport/41079999/england-nations-league-opponents-confirmed/",
-      "published": "2026-11-20T11:26:46+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England discover fate in Nations League draw as Three Lions handed dream route to final"
-    },
-    {
-      "desc": "Manchester United issues three-year ban after fans hurl tennis balls on pitch Facebook",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:39:54.797816+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNX0RaOU5CbEd5ZTA1S3JlWmd1bjRmVkR2UWpCbFVJNG1xSElCVUdtOHBlVVg4VnFJMEFLeFl3dUprQ09UMU1zY3NEU3NBaG9vbmUzYXJyR21PUmUyVkIzVFJXVnlFLU4xTDg4YTRmUUJ0RmtHcWsyU0tTcVhYb29WNDZ4NjN0dURidm54ejBDNzNMMmF6VzJjODFLdkJ3bEV5R3UyR3dZbEVGa21VRnY1RGM4VTdsemxla2pjVzJoY2tkN21YMmNFdkVaMFRndlF5dWwyaXd2VzI2MGR6Q3U3TlNR?oc=5",
-      "published": "2026-11-20T11:20:23+00:00",
-      "publisher": "https://www.facebook.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United issues three-year ban after fans hurl tennis balls on pitch - Facebook"
-    },
-    {
-      "desc": "Fabrizio Romano reveals Benjamin Sesko decision on leaving Man Utd for Juventus Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T15:00:55.064563+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa3J6b3ZiQmU0cjZGQUhmLTNJQ0tVYXpMRkI1ZnU0c1FVd1Q5X2J1YzdEa3JBY2NmSnVSMDdkSXhJWm04UEdvbk5fVlNPc2wwc19SQ3FWUHRuTlBzUTRRWDRhN3F3eWVJektoNmtxT3A3Q0J6SC1GZnVIUHN4R3FrSUhDRjh1NE5XVXNzUkhlVVNHSDBjdG9MZkN1aHBVaEtNemVuQzFHUmtWSTRsSk9hdg?oc=5",
-      "published": "2026-11-20T11:19:18+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reveals Benjamin Sesko decision on leaving Man Utd for Juventus - Football365"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T13:00:56.687822+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-20T11:14:20+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "LFC Foundation teams up with Lucozade to launch running club by Anfield Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T12:00:56.082541+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObWRpVW1TaDhqV0E3dHFwRXJITXZiYjR4UmdHcVU3aG1qbDR5Y3FpdjBYWTBybWljN0tUanhhNnpROG1jekh3eEtHTjljaDJaTThMUFZzODlmZmIxUkFueU9kTzREdlR0TmotYkpyWXRIZUh6d3lmVWtpQVNkZ3dSTVlMY05yanQyMDdfU0xQWkJBTHJkbkNKSWhfUVZCNkZma2NrXzE0cw?oc=5",
-      "published": "2026-11-20T11:02:06+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC Foundation teams up with Lucozade to launch running club by Anfield - Liverpool FC"
-    },
-    {
-      "desc": "Bompastor updates on Manaka Matsukubo availability | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T16:01:01.824472+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWUVFQnU0U2VYQ1pzaW1RczhjYWYtMVhnaG5oSk9RM0p0c3ViNjNMYnNjcGttQkh5cWl0elJoNnpYQ19YcXpwVDc0MU9qNms5WkpfdDZCbHB5dUtWVVRNSzk5eGFpYUIwVmRrX3FlUTdBamNzelJjcE1MV0xxV1lYNFh6b3NKcUhIRzRXZDN1TU16V1pmTUxF?oc=5",
-      "published": "2026-11-20T11:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Bompastor updates on Manaka Matsukubo availability | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Watch City's EDS take on West Brom in the Premier League 2 on CITY+ Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:01:06.506257+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPN25EbHFOTl9OT211MzNyWFkya1BJbEJrSTc0MU5ROUxMNzJyYnZmTUVITnBDdE9kRlE1UVNrTmtfRzJtajBpZ1dkWVJIUGhMZERSdWRtSlZHUnAzRVhjNXV4Q0JfYU9jV1cyWTlDUnVzcy13eDBWWmU1Vy11NlZ1Qm1PSWpsblQzdjJVS2hDcXRCSnpLOXNSRUJGaWQ?oc=5",
-      "published": "2026-11-20T11:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Watch City's EDS take on West Brom in the Premier League 2 on CITY+ - Manchester City FC"
     }
   ],
   "processed_urls": [
@@ -6538,7 +6573,8 @@
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYnREZkFxUU9xTmFaN0tLVVlLS3U3T0NNSmJVbnZPQ0hKRnhhUGdBZVg2bDZSZFdBbnJmZ3Z2NzB4WmNxOTVodjhURVRZaU11dHdodDYxaVVfZDdEZ1BkTXVERjYzZnhsZWJtaXJ4UmZKOF9UV2xWZnRaY0wzSnoxcTQ0ajdFYzVScVlhNGc0VlNwWGFqc3dNeA",
     "https://www.thesun.co.uk/sport/41082781/man-utd-calvin-bassey-fulham-pochettino-nigeria",
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEl1OTNGbXhIZzdBS2owMjhUVkpnY1EtTFJfT3JVd3U5QmJ1Nkp4SzgxY1NJUzJ2WGhiWkt4dDdnUTRtR2FuQ2VhLWFrN0lvVGhlZUt1U2tNb0pldWFTZS1Gb0dLdFVORUxkeWYyeG5PT1ZxOVMybFViY2s4Q0JHUDFlRUtpS3NHakU0OXBIbnJzSGNq",
-    "https://www.thesun.co.uk/sport/41087047/omar-berrada-glazers-man-utd-jim-ratcliffe-pochettino"
+    "https://www.thesun.co.uk/sport/41087047/omar-berrada-glazers-man-utd-jim-ratcliffe-pochettino",
+    "https://www.thesun.co.uk/sport/41088674/harry-kane-injury-bayern-munich-koln-england-olise"
   ],
   "s_overflow": {},
   "schema_version": 4
