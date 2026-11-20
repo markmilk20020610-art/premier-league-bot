@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 129004,
-    "output_tokens": 13901,
-    "requests": 20
+    "input_tokens": 135425,
+    "output_tokens": 14492,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4724,7 +4724,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T09:01:03.191904+00:00",
+  "last_scan_at": "2026-11-20T10:00:50.584318+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4746,6 +4746,76 @@
   },
   "news_pool": [
     {
+      "desc": "One of the Premier League's most charismatic managers is back.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T10:00:50.587156+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13613145/thomas-frank-what-should-crystal-palace-expect-from-their-new-manager-what-does-he-need-to-change-and-can-he-keep-the-eagles-up",
+      "published": "2026-11-20T10:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Will Frank turn things around at Crystal Palace?"
+    },
+    {
+      "desc": "It's all eyes on Bruno Guimaraes this Saturday. The Newcastle hero who captained the team to cup success returns in Arse",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T10:00:50.587181+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13612946/bruno-guimaraes-arsenal-midfielder-is-growing-in-stature-but-mikel-arteta-still-wants-more-from-brazilian-ahead-of-newcastle-return",
+      "published": "2026-11-20T09:38:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Guimaraes growing at Arsenal - but Arteta still wants more"
+    },
+    {
+      "desc": "LIVERPOOL play host to Mauricio Pochettino's Manchester United on Sunday as two great rivals collide once again. It's a ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T10:00:50.587203+00:00",
+      "link": "https://www.thesun.co.uk/sport/41072859/liverpool-manchester-united-sky-bet-odds/",
+      "published": "2026-11-20T09:35:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool vs Manchester United: Get 50/1 for hosts to win with Sky Bet"
+    },
+    {
+      "desc": "Romano: Transfer-Linked Man Utd Star Will Not Leave Club In January GiveMeSport",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587228+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRnd0d082NkVlNWp2UU9UVjJ1WWVURzdpTm15LTdabmMyNFRmSWhCNDBmZ2c0ajRaM1B5OE02ejBjd1pDeHdqMThCNUVnRVp5Y3VuRmx4R1g4d3I0NTcyYmZaM2dNa3pBR0k3OWNwMVFlZnM2SEhlNGdIdE5BdFJBRE1n?oc=5",
+      "published": "2026-11-20T09:15:14+00:00",
+      "publisher": "https://www.givemesport.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Transfer-Linked Man Utd Star Will Not Leave Club In January - GiveMeSport"
+    },
+    {
+      "desc": "The drone operator who posted footage of Mauricio Pochettino's first training session at Manchester United on YouTube ha",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T10:00:50.587246+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614271/manchester-united-drone-operator-removes-training-footage-of-mauricio-pochettinos-first-training-session-and-apologises",
+      "published": "2026-11-20T09:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Drone operator takes down Man Utd footage and issues apology"
+    },
+    {
+      "desc": "Our biggest ever Black Friday sale - get 30% off everything* now! Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587268+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0lpblpLSDRGUjNUdkZGcUNZZzc0ei1PRE5remlNZEVFaUlDRXkxMUxQWm00R2lDOGg1Sk1waG8zbDAxcFIwYURGS2hCbTZ0YXh2Vm1nYjBxeU1ERXB4V1lob1F0QndnT1ZFUFAwa0QwTldfSnV1WmM5b2lVLVFWT3JsRVc3aFZwbVBYYVRTcTk3a3UzM0E5SG9fLUk?oc=5",
+      "published": "2026-11-20T09:13:38+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Our biggest ever Black Friday sale - get 30% off everything* now! - Liverpool FC"
+    },
+    {
+      "desc": "40 years of history: A special Man City podcast Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587313+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kN1MzTjZBeTdzdzdKWm13QjVlSEtFMFFBbUVhbnlCV0hfV2V0YVI3bW5laDJObkJxTW02U0tGNXJDWThqMklQd1NiYllvUG00MEVEWGtZbUlPUzdEbFRjd09LWGdHNE1vam81cHNZVUthNEM1NmJZ?oc=5",
+      "published": "2026-11-20T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "40 years of history: A special Man City podcast - Manchester City FC"
+    },
+    {
       "desc": "FOOTAGE of Mauricio Pochettino's first Manchester United training session has been DELETED from YouTube. And the user th",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-20T09:01:03.195466+00:00",
@@ -4754,6 +4824,36 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘Total error of judgment’ – Drone footage filmer removes video and issues grovelling apology to Pochettino and Man Utd"
+    },
+    {
+      "desc": "Mauricio Pochettino ‘will talk to’ £68m star over Man Utd deal – Fabrizio Romano Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587355+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUndrb1NlZ3ZYUHY5MzBxVzhUcGY2b0Ftd2psSXZ0emx4S0FXYkFoSXNraGQ2ZGphcUx3eHg3M1dXZkpFQUJpWUF0d3NXUGhrZ212eWluZnV5aFhCVkxkOGNpZU9HaC1iLWlJTXdVNzI4UHY1aTJ0T1gtUl9tcTRGWThOaTFzVVhZc3N4RXVTTHlpOWtPZXhDU2xCckZtUm5aZV9LaUJJU21yQUN0dkdGdnA4WjFON1RR?oc=5",
+      "published": "2026-11-20T08:43:12+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Mauricio Pochettino ‘will talk to’ £68m star over Man Utd deal – Fabrizio Romano - Football365"
+    },
+    {
+      "desc": "Spurs Nike Men's Slate All Over Print T-Shirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587375+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdkZzQmNfdF83VGtkcS1oZ2lfZTV5a0dhRDRNTHBULUFoNnd0TVdUb1ZqMGhHd2dncFNHdzZzVHpqUHJVaDFaUFh5OWN5X2MzdkFtQ0p6MS1OWXJNeUl0Q2ZaMUN2aXRMZzY5bXFhdGoxdlFHLS12cG9WSW05NGg2OWd5RXMxSDNrTDVXdTMxcHRESV9BZktSMUQ2bFRTdWdNdUEtX0JOSQ?oc=5",
+      "published": "2026-11-20T08:25:15+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Slate All Over Print T-Shirt I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Nike Men's Blue T90 Crew Sweatshirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587394+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUG15ZDhsZzdCU3Q0dHhGSnJsaVoyeWRndlJLRHRzY05oVXU2eVpuOURsOVJtbk1VWVpKODlSU3hRM25DSVFKNjJ0TFEtUFFCWldram13bW5PMDc3YnBkal95YUM4X0VEelRGTUlRZFM5ZTFIUGpVYlZDZmpPbXhQcnZyaEFHU09zV2s0ZFZxYVUxR1ktRWdaRTZkZXZSMGlzVXc?oc=5",
+      "published": "2026-11-20T08:25:15+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Blue T90 Crew Sweatshirt I Spurs - Tottenham Hotspur"
     },
     {
       "desc": "BBC Sport explores five things to capture your attention this EFL weekend.",
@@ -4806,6 +4906,16 @@
       "title": "‘Respect me, you f***ing small team’ – Neymar in extraordinary X-rated outburst at rival fans on live TV"
     },
     {
+      "desc": "Highlights: Arsenal Women 0-2 Lyon Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587562+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU1JFNWNSMjNpaTlsM1E3Uk9iZlJoSVdpU05teHQ2SnktX1JZUjgwQ1NGOWt5WTBLTWs2WlRaUTZqck50akI0OEFfblFLRnZocGVfZEFuMnBuMEVnRXNDeUFOR01fYzNuVlJpVy1Zc0ZzSFpUTUdQMktjSm1acUZqcg?oc=5",
+      "published": "2026-11-20T07:52:52+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Highlights: Arsenal Women 0-2 Lyon - Arsenal.com"
+    },
+    {
       "desc": "Read Renée's Lyon programme notes Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-20T09:01:03.195752+00:00",
@@ -4824,6 +4934,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Inside the rise of 'humble' Nyoni and why Iraola trusts him"
+    },
+    {
+      "desc": "Tickets - Manchester City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587641+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
+      "published": "2026-11-20T07:41:25+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Tickets - Manchester City - Manchester City FC"
     },
     {
       "desc": "MAURICIO POCHETTINO once gained immediate respect from Southampton stars after being embraced by Lionel Messi and his Ba",
@@ -4854,6 +4974,16 @@
       "publisher": "https://madriduniversal.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano confirms Real Madrid veteran has signed renewal until 2028 - Madrid Universal"
+    },
+    {
+      "desc": "Thibaut Courtois extends Real Madrid contract until 2028 — Romano Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T10:00:50.587727+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaDNIclEtYzNkOERXZkdBc2tjLXdXZHF3TXpGWG9jZms1TUc5N3o5U1N2YzJ3OGlQSmlyUDUxbG00TjFROGptblprbFBlUjhISVlyano1RGdhX0R3VEhRZ3RjNmxacmc1cVBhWGxBOWtSNDdJcnl5bmpHam5KSDlaUnBrdExySEpvT3gzTm9DcGFTMWRmd3REcWcxX2phYmdRRXgxOFJ30gGrAUFVX3lxTFBwcGFxc2ZuV21JZl83TExaQzlwRWl1MGJKOHRtRzhoWVRXQ1lZLTlzVG0yX1FsaVVNUWhXVjhWc3U1YVVsd1V2T2FGZDQybzlYRnNlNXhuSkQ0YUx5Y3c5STBTRXhJdWZIcHVhczJqVDdtXzFHYVk1cC1DUXE5OGd5VFkteGlObGdxZ01DeFU4Q3UyN2tCTlNHdFJ2cG94TnFxVG1zSWVNZ1JUWQ?oc=5",
+      "published": "2026-11-20T06:21:37+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Thibaut Courtois extends Real Madrid contract until 2028 — Romano - Tribuna.com"
     },
     {
       "desc": "Not pleasant to be around and staring at a wall for hours after being told you are not going to the World Cup - what's i",
@@ -6114,136 +6244,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "FPL Pod: How to prepare for busy winter period - Premier League"
-    },
-    {
-      "desc": "NONI MADUEKE stepped up his training after being snubbed by England. The Arsenal winger was left out of Thomas Tuchel’s ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T14:00:52.446226+00:00",
-      "link": "https://www.thesun.co.uk/sport/41071338/arsenal-noni-madueke-dubai-max-dowman-england-football-manager/",
-      "published": "2026-11-19T13:58:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal files: Madueke uses England snub as fuel for Dubai training bootcamp & Max Dowman finally added to FM27"
-    },
-    {
-      "desc": "LIV COOKE jumped out of bed as a world champion freestyle footballer but the rest of her felt incomplete. At 18, Cooke h",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T14:00:52.446246+00:00",
-      "link": "https://www.thesun.co.uk/sport/41036201/liv-cooke-property-elevator-supercars-injury-man-utd/",
-      "published": "2026-11-19T13:51:33+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Inside Liv Cooke’s amazing life, from becoming a world champion to £100million property empire and Barbie-pink supercars"
-    },
-    {
-      "desc": "'Please Be Wrong' 'Dang, So He's Going To PSG' Arsenal Fans Are Disappointed As Ornstein Makes Transfer Claim GoonerNews",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446264+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdE5NWmJZQ01Kcjg3VW02Q0RXOGY2ZTNBRHp0Z2hEU0FqYUs5UUduaWx1STFIdzZ1V3Bwd1ZjVmxKZG12OVM1WmNId0hYMG1IX09uNS16R3d1VVJkZWw1ZjBWWFREOGI4emlsYTVHOS02S1h1UVNGWkczZGFlUTVnRk5fcG5yQW5MdnB0NzFOQkxERXhYM0J6VXY3TTBJUzRIRXFwLVJKRTRMNmc5R0Rfb201YWVUWjVVaHR5d0pxbjBVV3NULUhVdUtjWXh5SnZDREFVUVFDcEI?oc=5",
-      "published": "2026-11-19T13:49:04+00:00",
-      "publisher": "https://goonernews.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "'Please Be Wrong' 'Dang, So He's Going To PSG' Arsenal Fans Are Disappointed As Ornstein Makes Transfer Claim - GoonerNews.com | Latest Arse"
-    },
-    {
-      "desc": "Oldham Athletic boss Micky Mellon handed touchline ban and fine for FA Cup incident Oldham Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T15:01:00.204603+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWnBTRDM2X3A4LTBGQ3MzeFpiLXcwaFpvLUhxUGhLMU9VSGU5VExkc0R6Q1paZ0tfdTkxNGhLMUpneFpJTUdzcjhUTF9iX21NVUg1cXA0ellfOFltNVk5cVBoTFRwUkRDTlJJVlQtVVdaMVp2dnNldmNaVDdrcHdrczNRa1psR1VzSERKOE81MzdvTXR3WGRJVTNOUGl4NjFFQ2VjejUybnU?oc=5",
-      "published": "2026-11-19T13:47:31+00:00",
-      "publisher": "https://www.theoldhamtimes.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Oldham Athletic boss Micky Mellon handed touchline ban and fine for FA Cup incident - Oldham Times"
-    },
-    {
-      "desc": "Man City Sponsors: Clubs Vote to Cover Board Legal Costs The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446279+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOLXR5OXBZVDBTbUZfdXpaQVh5V0dDRHctUm9sSzNWUXBqWXhfVEtLVlJ1Y2ZlLWRjOWU4ZC0zR2FQVXFEc1F1VERjNUwxVGVDQVpycy00Um9XMV9JLTN2NTQzRUlIWFZsZDlYWTFSN0Vmb01Rb1F5aUJCN2xQcTdSM3RGQTNoQVZOV3ppT2hNZFlWTDBwVDdoOF9aOA?oc=5",
-      "published": "2026-11-19T13:47:20+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Man City Sponsors: Clubs Vote to Cover Board Legal Costs - The False 9"
-    },
-    {
-      "desc": "MANCHESTER UNITED are still weighing up whether to hire one of Mauricio Pochettino's backroom staff. Silvia Tuya was set",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T14:00:52.446294+00:00",
-      "link": "https://www.thesun.co.uk/sport/41071719/silvia-tuya-arrives-carrington-man-utd-female-coach/",
-      "published": "2026-11-19T13:42:21+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Silvia Tuya spotted arriving at Carrington with Man Utd still considering hiring 1st-ever female coach under Pochettino"
-    },
-    {
-      "desc": "A FOOTBALL fan plunged more than 10ft over a stadium barrier while celebrating a goal - but escaped without serious inju",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T14:00:52.446317+00:00",
-      "link": "https://www.thesun.co.uk/sport/41069686/fan-plummets-stadium-barrier-goal-celebration/",
-      "published": "2026-11-19T13:38:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Awkward moment fan plummets 10ft after leaping over stadium barrier celebrating goal"
-    },
-    {
-      "desc": "Mykhailo Mudryk links meldonium test to Ukraine duty Dave.Sport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446331+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9fT2JfRk9Ydk5nalFQSnMxeVgwS0F2Q2pQUXRoVGFjMm5UN3J2U1ZMTXpNMGZSazJtZzhRcUtmSlRVbXg4YUZGTW9XMlNrWEFiVTN4NnpscmJ2YVBTU3FWYldNc2p2c25KYzlUSEYyYkljMEx2TkMtZg?oc=5",
-      "published": "2026-11-19T13:35:59+00:00",
-      "publisher": "https://dave.sport",
-      "source": "https://www.thefa.com/rss",
-      "title": "Mykhailo Mudryk links meldonium test to Ukraine duty - Dave.Sport"
-    },
-    {
-      "desc": "Scout Selection: Best Fantasy team for Gameweek 11 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446345+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNU2N4SF84cEpVdDhXSlBScnc4aDYyUVJ3VVR3RG9vSkx2UjVmWDJXVnp3c2l6MTBsOWk2OHlPd3hESVJUcmYtMWJoM1RqVVM2azRielQtNUZXZ2VPT0VaUDg3WnhGc0xhSldyWVVJMVJSOGVmTnF0bkp6b1ZycnpEYXY3LUx6Ti1SSzd4MEhYYXNhd3lZLXRzZDRrbw?oc=5",
-      "published": "2026-11-19T13:35:46+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Scout Selection: Best Fantasy team for Gameweek 11 - Premier League"
-    },
-    {
-      "desc": "FA considered challenging Gianni Infantino’s eligibility for FIFA election Radio News Hub",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T21:15:38.560986+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbk1VLTlObkk5dnJhSTNnUEVOdnZUZHVyU3R2bW9zQ1JRcWZ2d2FDY0Y5QkpfcFMteUdOTVpMNjVWakhac0pmcDBzZXdrUHI1MmtKNGdmd0FkUVg2MFRnTnZZYm91Mm5wbjA5eVNKdlcwS0R2QmoyVlBFUkVydm4zT1ZMTmE2R0NkNnAtRFVkU1kxWEJZaUtlNnQ0WFh5Nm1Bbm83RTU1QmFLUDdwY0tpUXFKOGhJc0N6?oc=5",
-      "published": "2026-11-19T13:35:32+00:00",
-      "publisher": "https://www.radionewshub.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA considered challenging Gianni Infantino’s eligibility for FIFA election - Radio News Hub"
-    },
-    {
-      "desc": "Premier League clubs vote to provide legal cover to the organisation's five board directors in the event Manchester City",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T14:00:52.446361+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqy4jvdw7jdlo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T13:29:42+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Premier League clubs to cover legal costs if Man City sponsors sue"
-    },
-    {
-      "desc": "Man City v Fulham - 21 Nov 2026 Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446374+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iNnJsTXd1LVdFR2F2SktpaVMyX1NhMHZRSWo1VDNCVEhnTC0zbGYwUHRzR2dJdGh3ZGplNF9kbmlVMFFKTE5saWUzeGVteUhFOUE2STRwdmlfU0xqcy1JNG1OZnNtR2dzUDF2ZXlqS0pJNVNG?oc=5",
-      "published": "2026-11-19T13:29:35+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Man City v Fulham - 21 Nov 2026 - Manchester City FC"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T14:00:52.446386+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13279298/crystal-palace-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-      "published": "2026-11-19T13:27:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Palace latest: Frank adds two more to backroom team"
     }
   ],
   "processed_urls": [
