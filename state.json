@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 26,
+        "calls": 27,
         "errors": 0,
-        "requests": 26
+        "requests": 27
       }
     },
-    "calls": 26,
+    "calls": 27,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 167328,
-    "output_tokens": 17582,
-    "requests": 26
+    "input_tokens": 173554,
+    "output_tokens": 18224,
+    "requests": 27
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1877,6 +1877,41 @@
       "telegram_message_id": 172,
       "title": "斯特拉斯堡官方任命维托尔·马托斯为新任主教练",
       "updated_at": "2026-11-19T01:01:11.379009+00:00"
+    },
+    "5ce348280463": {
+      "article_title": "Xabi Alonso confirms Chelsea team news for Leeds | News | Official Site - Chelsea Football Club",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "11e57ad3329ff04e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 185
+        }
+      ],
+      "created_at": "2026-11-20T15:01:00.741213+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "82e63ac538d1155a",
+      "event_id": "5ce348280463",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-20T15:01:00.741213+00:00",
+          "origin": "created",
+          "title": "Xabi Alonso confirms Chelsea team news for Leeds | News | Official Site - Chelsea Football Club",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEl1OTNGbXhIZzdBS2owMjhUVkpnY1EtTFJfT3JVd3U5QmJ1Nkp4SzgxY1NJUzJ2WGhiWkt4dDdnUTRtR2FuQ2VhLWFrN0lvVGhlZUt1U2tNb0pldWFTZS1Gb0dLdFVORUxkeWYyeG5PT1ZxOVMybFViY2s4Q0JHUDFlRUtpS3NHakU0OXBIbnJzSGNq"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEl1OTNGbXhIZzdBS2owMjhUVkpnY1EtTFJfT3JVd3U5QmJ1Nkp4SzgxY1NJUzJ2WGhiWkt4dDdnUTRtR2FuQ2VhLWFrN0lvVGhlZUt1U2tNb0pldWFTZS1Gb0dLdFVORUxkeWYyeG5PT1ZxOVMybFViY2s4Q0JHUDFlRUtpS3NHakU0OXBIbnJzSGNq",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 185,
+      "title": "切尔西主帅确认对阵利兹联球队新闻",
+      "updated_at": "2026-11-20T15:01:01.412917+00:00"
     },
     "609364fa2dd1": {
       "article_title": "Arsenal close to new deals for Raya, Timber and Hincapie",
@@ -4794,7 +4829,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T14:01:08.493263+00:00",
+  "last_scan_at": "2026-11-20T15:00:55.061245+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4816,6 +4851,136 @@
   },
   "news_pool": [
     {
+      "desc": "Moyes offers latest on Everton squad ahead Brentford trip Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.063884+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMkNEcG9JYVUzQ2RsZzdtWloxdDBsOTMzOTEtaHMwQWRmT0U5WU4wQzdrS0U5Z05jMWRnMnVvMURFVm8tSEVXRnk4ZllnbjlGbzJBZldwR2dwVHVKNl9jdk1JbzZBZjlRLTVFdU1ubktQbFJycTNkZjFPMFhNaHJHS3ZqckNqQXlqazNaWUpoWW85elFuY0dtNGQ4N0hjX09jRUF1NHNR?oc=5",
+      "published": "2026-11-20T14:48:46+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Moyes offers latest on Everton squad ahead Brentford trip - Premier League"
+    },
+    {
+      "desc": "FULHAM striker Gonzalo Garcia made a surprising admission while discussing his Hollywood royalty relative. Garcia, 22, w",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.063912+00:00",
+      "link": "https://www.thesun.co.uk/sport/41083229/gonzalo-garcia-related-hollywood-rita-hayworth/",
+      "published": "2026-11-20T14:46:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘She was a great actress’ – Premier League striker related to Hollywood legend but hasn’t seen any of her movies"
+    },
+    {
+      "desc": "In a turbulent time at Manchester United, chief executive Omar Berrada has sat down exclusively with Sky Sports about Un",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T15:00:55.063932+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614312/omar-berrada-interview-manchester-united-chief-executive-on-michael-carrick-mauricio-pochettino-recent-transfer-activity-and-the-club-hierarchy",
+      "published": "2026-11-20T14:36:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Berrada on Carrick, Poch, defending club leadership and transfers"
+    },
+    {
+      "desc": "ARSENAL boss Mikel Arteta claims Declan Rice is yet to sign a new contract with the club. The 27-year-old's current deal",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.063953+00:00",
+      "link": "https://www.thesun.co.uk/sport/41083145/mikel-arteta-calls-owner-declan-rice-contract/",
+      "published": "2026-11-20T14:22:30+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘At the moment it’s NO DEAL’ – Mikel Arteta admits he needs to ‘call Arsenal owner’ over new Declan Rice contract"
+    },
+    {
+      "desc": "IVAN TONEY is being lined up for a shock Premier League return in January in a potential reunion with former boss Thomas",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.063971+00:00",
+      "link": "https://www.thesun.co.uk/sport/41083262/ivan-toney-premier-league-crystal-palace-thomas-frank/",
+      "published": "2026-11-20T14:21:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ivan Toney ‘targeted for shock Premier League return in January’ in huge transfer reunion"
+    },
+    {
+      "desc": "MIKEL ARTETA will keep a close eye on how much time his Arsenal stars spend playing Grand Theft Auto VI. The new video g",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.063988+00:00",
+      "link": "https://www.thesun.co.uk/sport/41082766/mikel-arteta-monitors-arsenal-gta-play/",
+      "published": "2026-11-20T14:15:48+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mikel Arteta to monitor how long Arsenal stars spend playing GTA VI as new game takes football world by storm"
+    },
+    {
+      "desc": "BETFRED'S new Acca Flex is here and you can take advantage ahead of a big weekend of football. Acca Flex will see punter",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.064004+00:00",
+      "link": "https://www.thesun.co.uk/sport/41068425/betfred-football-acca-bonus-money-back/",
+      "published": "2026-11-20T14:14:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Place a football acca this weekend & get up to 100% CASH bonus if you win – or money back if one leg loses | Betfred"
+    },
+    {
+      "desc": "ARSENAL star Bukayo Saka faces a race to be fit before Christmas. The winger, 25, has been out of action since the middl",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.064021+00:00",
+      "link": "https://www.thesun.co.uk/sport/41082627/arsenal-news-mikel-arteta-bukayo-saka-injury-update/",
+      "published": "2026-11-20T14:14:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mikel Arteta issues Bukayo Saka health update as Arsenal star faces missing four crucial clashes with quad injury"
+    },
+    {
+      "desc": "MANCHESTER UNITED begin life under Mauricio Pochettino with a massive league clash at old rivals Liverpool on Sunday. Br",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.064037+00:00",
+      "link": "https://www.thesun.co.uk/sport/41081741/liverpool-manchester-united-goal-paddy-power/",
+      "published": "2026-11-20T14:12:40+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool vs Manchester United: Get 50/1 for a goal to be scored at Anfield with Paddy Power"
+    },
+    {
+      "desc": "MANCHESTER UNITED will not take legal action against the drone pilot who published footage of Mauricio Pochettino’s firs",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.064054+00:00",
+      "link": "https://www.thesun.co.uk/sport/41083306/man-utd-sue-drone-pochettino-liverpool/",
+      "published": "2026-11-20T14:09:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd make legal action decision against drone operator who published footage of Pochettino’s first training session"
+    },
+    {
+      "desc": "Xabi Alonso confirms Chelsea team news for Leeds | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064076+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEl1OTNGbXhIZzdBS2owMjhUVkpnY1EtTFJfT3JVd3U5QmJ1Nkp4SzgxY1NJUzJ2WGhiWkt4dDdnUTRtR2FuQ2VhLWFrN0lvVGhlZUt1U2tNb0pldWFTZS1Gb0dLdFVORUxkeWYyeG5PT1ZxOVMybFViY2s4Q0JHUDFlRUtpS3NHakU0OXBIbnJzSGNq?oc=5",
+      "published": "2026-11-20T14:09:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Xabi Alonso confirms Chelsea team news for Leeds | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Mikel Arteta says his Arsenal players have been warned against inadvertently leaking team news via Fantasy Premier Leagu",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T15:00:55.064099+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck62pz5r16pro?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T14:08:55+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Arteta warns Arsenal players over FPL team news leak"
+    },
+    {
+      "desc": "ENGLAND fans are full of confidence ahead of the Nations League knockouts after being left delighted by their favourable",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T15:00:55.064119+00:00",
+      "link": "https://www.thesun.co.uk/sport/41082941/england-fans-nations-league-draw-favourable-knockouts/",
+      "published": "2026-11-20T14:05:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘It’s coming home’ – Fans convinced Nations League draw ‘rigged’ for England as stats show how favourable it is"
+    },
+    {
       "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Mauricio Pochettino's first press conference as Manc",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-20T14:01:08.495447+00:00",
@@ -4834,6 +4999,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Key questions as Scottish Premiership returns"
+    },
+    {
+      "desc": "Pochettino wants USMNT stars at Man Utd? Romano delivers McKennie verdict LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064180+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNakxGWWVKY2tOMURSbW4xSnJKVVZORTdGNGdneXVYOXVWdGNhWjhTUDJNdHExUzNhejB3OVpvM1MwNG9JMTltV3FMUjgtUVo4SkhJd19zOVZkeV9vQ1FpMERjN09naFphR250WUdTNGdxVnNUVUEzYXVKMDRmZlE1clcxNzE5bFBCVmg4enVMRnhPYzhtdUNvNXNwVUkwaVkwaTNfc3VLZkE3YkhQMllZcHlUeXd3MzdKRmZGSUwtTGJfRVNKeHBWX0daSFlYRUNOQTVTVWRrNERzekpWa0ZjTkxSMA?oc=5",
+      "published": "2026-11-20T13:53:01+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Pochettino wants USMNT stars at Man Utd? Romano delivers McKennie verdict - LiveScore"
     },
     {
       "desc": "Man City v Fulham - 21 Nov 2026 Manchester City FC",
@@ -4906,6 +5081,26 @@
       "title": "‘Arsenal was my dream but my agent only wanted money’ – Mudryk opens up on doping scandal, being in debt & gang threats"
     },
     {
+      "desc": "Photo gallery: Behind the scenes during our 'A Day With... Alexander Isak' filming Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064270+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUkhNRFI5Z00xRVBib2NWUFRRWFVCYU5MbXpqZlkxcFg1MzVYUlcyUUdmS0kxS0M1NE1FempTSWR6ZGx5X3dTOWVNeUhja0YwaFJ6REZuOUZidGxiSGI0WGpITmEta2h3NE1TZW8tZl8tN3pHbW44Y29uRzVoWTZFZktkLXVaT2hCeEswSnlkV1Q3cmdKY1RFai1zbFpQZ0x2cUJ2RFk5eW0?oc=5",
+      "published": "2026-11-20T13:07:30+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Photo gallery: Behind the scenes during our 'A Day With... Alexander Isak' filming - Liverpool FC"
+    },
+    {
+      "desc": "Coming soon: Enzo Maresca’s City v Fulham press conference Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064290+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWW1sRUotYVc0dFFkbUtBUWl3TWJhaFZub3V3LTlPaHBHRHg1LTFyekQ3MlQzY1RfOERPMDZkTVVUZFVjMGMzT3pxLW1TRW1EV3ctNGhHRHRtOFNYZnMxRXQ5WXBXWXJUZmZ4aFhITnJ5U1dIV1ZDc1BEbS1kZ1hjRnJjWWszWkg4ZllsYm81aHJPd09wbFMtZW54cGZfbFg1aGUwMEx2aw?oc=5",
+      "published": "2026-11-20T13:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Coming soon: Enzo Maresca’s City v Fulham press conference - Manchester City FC"
+    },
+    {
       "desc": "Southampton head coach Tonda Eckert signs a new contract at the club through until 2029.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-20T13:00:56.687099+00:00",
@@ -4954,6 +5149,26 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Go Inside Training ahead of Premier League return - Arsenal.com"
+    },
+    {
+      "desc": "Why Alexander Isak is Liverpool’s most-owned asset in FPL Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064342+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTUFWOUZHSkhnSEV6V2pZeW5qQmR2UDBMZ1hhSW1EM1kwTmV1NzZ3b3RkYzZXY3RyOEtReDN5UXZKeFNqWG1XZTZKd1pXUmM0SUtvelQ3S0xmaHFNSHJJcUJrbnI2SDhJZ09CYTVhRmtqcHdXTVB1am81MzVWcUZOOWFBUDF1dHhoWGNjMjJBUGNUNDlLcVVjMlg1LUtEQQ?oc=5",
+      "published": "2026-11-20T12:34:07+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Why Alexander Isak is Liverpool’s most-owned asset in FPL - Liverpool FC"
+    },
+    {
+      "desc": "Press conference | Watch Gareth Taylor preview LFC Women v Chelsea Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064359+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQM0p1Vm45Z0MzMlhqcDhNdnJ6ZmRNbkVLbjRsaEdYUmFkV1N5d0swdVpTTlNOR2U3RDk3eUxuUTVoYnE3djZaek1KRUhsSTFFV195Y0RmMk8tV19STjhjNUdhQklReEoxcHF5NHZXdFdpd284dEM2Y3I2cXdUWDdVeDZoc1FXMzJrNDY3MXZiWWVvVHc?oc=5",
+      "published": "2026-11-20T12:34:06+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Press conference | Watch Gareth Taylor preview LFC Women v Chelsea - Liverpool FC"
     },
     {
       "desc": "The drone operator who filmed Mauricio Pochettino's first training session at Manchester United has removed the video fr",
@@ -5014,6 +5229,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Victor Osimhen flattered by Man Utd transfer interest and willing to join to solve Mauricio Pochettino’s striker woes"
+    },
+    {
+      "desc": "Romano: Milan keep contacts with Goncalo Inacio over January move 懂球帝",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064413+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0yY3hLMU1EaElOUEVOVHFXRHpldERxeDd2c3F6Y0RYeUZWUlVlZ1NoclM2NFlzVXJrSVBHS1ctQ1ljSF9Cbk1GNFNEMEJNcTg?oc=5",
+      "published": "2026-11-20T12:03:00+00:00",
+      "publisher": "https://m.dongqiudi.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Milan keep contacts with Goncalo Inacio over January move - 懂球帝"
     },
     {
       "desc": "ISAAN KHAN: Spurs are targeting Britain's most talented Under 15s with a bespoke package, headed by hefty wages at 17 an",
@@ -5166,6 +5391,16 @@
       "title": "England discover fate in Nations League draw as Three Lions handed dream route to final"
     },
     {
+      "desc": "Fabrizio Romano reveals Benjamin Sesko decision on leaving Man Utd for Juventus Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064563+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa3J6b3ZiQmU0cjZGQUhmLTNJQ0tVYXpMRkI1ZnU0c1FVd1Q5X2J1YzdEa3JBY2NmSnVSMDdkSXhJWm04UEdvbk5fVlNPc2wwc19SQ3FWUHRuTlBzUTRRWDRhN3F3eWVJektoNmtxT3A3Q0J6SC1GZnVIUHN4R3FrSUhDRjh1NE5XVXNzUkhlVVNHSDBjdG9MZkN1aHBVaEtNemVuQzFHUmtWSTRsSk9hdg?oc=5",
+      "published": "2026-11-20T11:19:18+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Benjamin Sesko decision on leaving Man Utd for Juventus - Football365"
+    },
+    {
       "desc": "Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-20T13:00:56.687822+00:00",
@@ -5224,6 +5459,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Arteta's update on Saka, Saliba and Zubimendi - Arsenal.com"
+    },
+    {
+      "desc": "Mikel Arteta reveals BREAKING update on Martin Odegaard Arsenal future now.arsenal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064660+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ0t1VmRJbk9qNl9BWGpkU2RqaG80cXFrRWFscnF1WjJ5bzVPYjJBa0JndjhwWWdtdUsxVWxweTlsNXZQN1dBYXczZm9TaFhrZWk1ZGoyQ0tRSVJyQmhLVG1yX01Ra1F3T2dKSTAtTVlzSW5jRHN5ekcxUnp6QmtibHpHU3hQbmE3d3JMZG9iN25qUWxBT3JFWmUyTlI1T2pfNzRJbHAwXzRmdEs3ME5r?oc=5",
+      "published": "2026-11-20T10:37:18+00:00",
+      "publisher": "https://www.nowarsenal.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Mikel Arteta reveals BREAKING update on Martin Odegaard Arsenal future - now.arsenal"
     },
     {
       "desc": "WAYNE ROONEY has revealed he urged Manchester United staff to treat son Kai the same as every other academy prospect. Th",
@@ -5494,6 +5739,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "FPL ocus: Madueke, Konsa and striker dilemmas - Arsenal.com"
+    },
+    {
+      "desc": "Gallery: 35 photos as international stars return Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T15:00:55.064953+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMDJEcTkzOURSWkVMbkpINEJDVVh3amFHYldQd0ZHWGRFZ3ZpMmFTNjRYT3lPekhzZjhoNXd4WGJqaF94LTZXSjU3a3Q0NVEwWFVVSXEzYk5BVFVhU0dLc01HTm42XzBFQjAwcUY2OWx4XzNzQXBXUmFDZ29CNU9ZU1FpV3VaYmluTFFaT2NNM3R3Umc?oc=5",
+      "published": "2026-11-20T08:02:01+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Gallery: 35 photos as international stars return - Arsenal.com"
     },
     {
       "desc": "Fifteen years on from West Ham striker Dylan Tombides discovering he had testicular cancer at the U17 World Cup, his mot",
@@ -6094,226 +6349,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Bromley sign forgotten Premier League wonderkid, 27, who ‘pocketed Mesut Ozil’ in first transfer since Andy Woodman axe"
-    },
-    {
-      "desc": "Team news: Two changes for UWCL at Meadow Park Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T23:00:52.197921+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVER2d3Bpanl1Sk84dGVqeVRDbGFibVVpSVBZS1VUWmdoUHNoUU04TjN2UDJmQmo3UElFVlR0UmZjQnFUcVhXZVRaZ0FjSXlJd0hNczdOOGxGcHZoUFg4d2hKaTVEcXB6eTk3N1JPczNjVHRnOUxxVGJzdjN5Z05NNjk4TXVudUFwZHIySnVuaHo?oc=5",
-      "published": "2026-11-19T19:47:13+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Team news: Two changes for UWCL at Meadow Park - Arsenal.com"
-    },
-    {
-      "desc": "The biggest casualty of Piero Hincapié’s new Arsenal contract will surprise fans LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T21:00:55.151918+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQzhnZ3A3cXpOMUhzSU0xdW52UVNzV3FKZGhiVTJJN2Q1U212QmZ0SE51TDhNXzhlS0tRVzZGVTN2eGVOVDBsM1hoOHd6MVhtRmlfWjN3QUhJV0c1aXBXSXZSVWxZLWZVbktzLVYwekt6bDhkNXNqN0ZjS2xURlNEc1A5TTdERml3bmJ5WHNaVWVKRzktbGNqRFM0WGhzbFY4UUtmRjR3UUYtaUNya2hzaHNHR3dqdkFzaDRCSEhYeGh2OVJRcU9mSEZMbTRIRWJyVEowWFZZOFpBbnVMbV9MSGVOMkQ4d1lHRGZqcXln?oc=5",
-      "published": "2026-11-19T19:45:33+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "The biggest casualty of Piero Hincapié’s new Arsenal contract will surprise fans - LiveScore"
-    },
-    {
-      "desc": "England punished by UEFA! FA hit with fine and suspended away fan ban after discriminatory chants in Spain Goal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T20:00:50.423813+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln?oc=5",
-      "published": "2026-11-19T19:44:28+00:00",
-      "publisher": "https://www.goal.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "England punished by UEFA! FA hit with fine and suspended away fan ban after discriminatory chants in Spain - Goal.com"
-    },
-    {
-      "desc": "SWANSEA have finally confirmed that Vitor Matos has left the club. Strasbourg announced the Portuguese manager had taken",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T20:00:50.423833+00:00",
-      "link": "https://www.thesun.co.uk/sport/41076466/swansea-victor-matos-strasbourg-ashley-williams-new-manager/",
-      "published": "2026-11-19T19:32:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Swansea appoint FOUR interim managers including Match of the Day pundit, 42, after ‘acknowledging’ Vitor Matos exit"
-    },
-    {
-      "desc": "England receive UEFA punishment for 'racist or discriminatory behaviour' of fans in Spain AOL.co.uk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T20:00:50.423854+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMnZCWGFYZ1haeW9DdjU0X21lVTNMTjJqd0RDVk5zS3JfWUNXbVJFeWxQeTFTZjljeHNvY1pyX19vNGJMbWl1emJNY28zdVQ3dDh6bzdnZzFLTWRLcXdHMUE1N2xhR3g3RTNSVjJHc1ZWQ2JpRS1ZdjVQTzFYcHl0VDJmdkhXYUVaSmlVQg?oc=5",
-      "published": "2026-11-19T19:27:34+00:00",
-      "publisher": "https://www.aol.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "England receive UEFA punishment for 'racist or discriminatory behaviour' of fans in Spain - AOL.co.uk"
-    },
-    {
-      "desc": "BOBBY MANZI: Some of the 3,000 England fans who travelled to Madrid were heard chanting 'f**k the Pope and the IRA' insi",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T21:00:55.151974+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16306933/England-UEFA-Fine-Racism-Spain.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T19:14:48+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'F*** the Pope and the IRA' chant lands England in hot water as fans are given suspended one-game stadium ban and FA fined"
-    },
-    {
-      "desc": "England are punished by Uefa following anti-Catholic chanting from the away fans during their Nations League victory in ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T20:00:50.423876+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmlye2n7p7d9o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T19:11:03+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "England fined for fans' anti-Catholic chants in Spain"
-    },
-    {
-      "desc": "FA fined, handed suspended ban after England fans’ ‘racist and/or discriminatory’ chanting in Spain The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T20:00:50.423897+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQSXBONzNvMXY1anRzMDhmUWxWaXhDaHAzRHpZQU4wam1GQ2ltWjY3THRYcnA5b1BPRWJycFE4YkpheElUZlpiSm8tNWVMdmVHQnY1cGk3elBNek5Wak1ieURGaWR1ZHpPVEF4bEdIV2l5Si1jLTUyNmVabFl4VmQzeTNlOG1UYm1FVk52di1wOHc?oc=5",
-      "published": "2026-11-19T19:07:47+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA fined, handed suspended ban after England fans’ ‘racist and/or discriminatory’ chanting in Spain - The New York Times"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T20:00:50.423911+00:00",
-      "link": "https://www.skysports.com/football/arsenal-women-vs-olympiques-lyon-women/live/578272",
-      "published": "2026-11-19T19:03:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "WCL: Arsenal vs Lyon LIVE!"
-    },
-    {
-      "desc": "DAVID Beckham’s production company is working on a George Best biopic. The film telling the story of the Manchester Unit",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T20:00:50.423929+00:00",
-      "link": "https://www.thesun.co.uk/sport/41074469/david-beckham-george-best-film/",
-      "published": "2026-11-19T19:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "David Beckham working on blockbuster film about fellow Man Utd icon George Best 21 years after his death"
-    },
-    {
-      "desc": "A MANCHESTER UNITED fan has been handed a THREE-YEAR ban from Old Trafford. The supporter is one of four who have been b",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T19:00:59.107776+00:00",
-      "link": "https://www.thesun.co.uk/sport/41076169/man-utd-fans-banned-tennis-balls-roma-champions-league/",
-      "published": "2026-11-19T18:59:22+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd fan hit with THREE-YEAR stadium ban for tennis ball stunt in protest against hated ownership"
-    },
-    {
-      "desc": "BBC Sport football expert Chris Sutton takes on world champion boxer Lauren Price, plus the BBC readers and AI, with his",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T19:00:59.107811+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c50mdnxy3ry0o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T18:52:00+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Sutton's predictions v world champion boxer Lauren Price"
-    },
-    {
-      "desc": "Fabrizio Romano confirms Liverpool have entered talks with midfielder Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T20:00:50.423978+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSjlPbTRIVDdyR1dOSU5RcXV6Q2hIN2c2bXIzTWdGT3NzaHNxWUh3UGpmN0pNbXNVSFkzc09nQ012YlJxbVZOYUZTcGZySnBQcTR3TUJvTUU2Y0hZQU5XUEJocVREN2lTRTM2cnFIZUJfb1lnTlFkU21nc3FoalliQXhlcGhMcU5PMDZPalMwQ0FYUHk2UWc?oc=5",
-      "published": "2026-11-19T18:50:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano confirms Liverpool have entered talks with midfielder - Yahoo Sports"
-    },
-    {
-      "desc": "NOBODY wants to be the boyfriend who forgot Valentine’s Day - and Amslux is here for each and every man needing a last-m",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T19:00:59.107838+00:00",
-      "link": "https://www.thesun.co.uk/sport/41073273/amslux-members-club-footballers-arsenal-party-interpol/",
-      "published": "2026-11-19T18:46:44+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Prem fixer reveals hidden secrets of £1,700-a-month members club from Interpol run-in to partying with Arsenal star"
-    },
-    {
-      "desc": "Mauricio Pochettino's first Manchester United training session has been filmed by fan with a drone from outside the club",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T19:00:59.107866+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6wy9d7wqy7wo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T18:45:56+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pochettino's first Man Utd training session filmed by drone operator"
-    },
-    {
-      "desc": "Manchester United ban four fans after tennis balls thrown during protest against ownership The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T19:00:59.107893+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNckk4RkhOdll1ZEtXSjI5RE92VTdFZ2lmYTUxUkNnU1lsbWpHdlFRUE9VRXE2Q0NtVnloYWhYRVVIYnVzaVR3S1R2aG51SXprTjBSSDM3Y3d3dGZsTXlCUGpzY0VUTXhsUlQ0R1JPREV3ck9hcE1lQ2xZaExxdUFlVXNUM0I1N0FDNTItZV82ZFd0eUdKcmY5d0tmbHF1VEoy?oc=5",
-      "published": "2026-11-19T18:42:22+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Manchester United ban four fans after tennis balls thrown during protest against ownership - The New York Times"
-    },
-    {
-      "desc": "England have been given a suspended away ticket ban by UEFA for \"racist and/or discriminatory behaviour\" by their fans d",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T19:00:59.107913+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13614117/england-handed-suspended-away-ticket-ban-and-fine-by-uefa-for-fans-racist-and-or-discriminatory-behaviour-in-spain",
-      "published": "2026-11-19T18:36:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "England handed suspended away ticket ban for fans' chants in Spain"
-    },
-    {
-      "desc": "Man Utd: Four 'lined up' January signings revealed as Romano confirms decision on selling Sesko, Zirkzee Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T19:00:59.107939+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQT0lTbWVHZlI0WHNRMHNuRUtWVTF4QlZNTGdGZV9nd0FKQmRrYkxHVU00TGk1UHE3bjhCU0dtMDMxejJMekltTFNNNC1ud3pGZmZueGE5YzdjLUtCWjVTaVJMOEFXOWFncVo0VFhqRHdhLXplTVYya19QR2ktb0RHaGQ0X2NoTU50TjhLc1g1Ny1rREFsczY1U01yQ0FpdlFMdHh1RGZKT2JiNnhoYW9XMkJ5TzRfUQ?oc=5",
-      "published": "2026-11-19T18:34:19+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Four 'lined up' January signings revealed as Romano confirms decision on selling Sesko, Zirkzee - Football365"
-    },
-    {
-      "desc": "UEFA fined the FA £12.6million and put a suspended ban on away fans over \"racist and/or discriminatory behaviour\" during",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T19:00:59.107962+00:00",
-      "link": "https://www.thesun.co.uk/sport/41075804/uefa-england-fans-suspended-away-ban-racist-discriminatory-behaviour/",
-      "published": "2026-11-19T18:29:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Uefa hand England fans suspended away ban due to ‘racist and/or discriminatory behaviour’ in Spain clash"
-    },
-    {
-      "desc": "England fans handed suspended away ban for 'racist/discriminatory behaviour' The Sun",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T19:00:59.107986+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSFFxVnAtblNwQmUzNTlZQ1ByRXFNdFU0T2xQT3UzUjg2cm9aUHVQclpqN0dXeTRTZl9lRGtkd1JGRTZDZWw1SlRMLTZhQUN1QzZZbU9obmpvRE05OXhKYlBjckxBUk51RU1uQUFKdW1wWlo3UWVNSWVlQ1Q2U1dlemJNS2x6YzNjTE5xLXdsYk5vUVZOdVY2TXl2LTQzaWpoejhVa3g1ZUFMVEptWUE?oc=5",
-      "published": "2026-11-19T18:29:00+00:00",
-      "publisher": "https://www.thesun.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "England fans handed suspended away ban for 'racist/discriminatory behaviour' - The Sun"
-    },
-    {
-      "desc": "Our top tipster Lewis Jones, aka Jones Knows, provides his analysis and betting insight as the Premier League returns fr",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T21:00:55.152094+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13611640/premier-league-predictions-jones-knows-best-bets-newcastle-vs-arsenal-liverpool-vs-manchester-united-and-much-more",
-      "published": "2026-11-19T18:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "PL Predictions: How will your club fare this weekend?"
-    },
-    {
-      "desc": "Mauricio Pochettino was officially appointed as United's new head coach on Wednesday and he has since addressed the club",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-20T01:00:49.343238+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16305357/Mauricio-Pochettino-culture-reset-Man-United-boss.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T17:57:49+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino gets straight to work: New Man United boss meets struggling stars for the first time and vows to shift losing mentality "
     }
   ],
   "processed_urls": [
@@ -6466,7 +6501,8 @@
     "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson",
     "https://www.dailymail.com/sport/football/article-16306933/England-UEFA-Fine-Racism-Spain.html",
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYnREZkFxUU9xTmFaN0tLVVlLS3U3T0NNSmJVbnZPQ0hKRnhhUGdBZVg2bDZSZFdBbnJmZ3Z2NzB4WmNxOTVodjhURVRZaU11dHdodDYxaVVfZDdEZ1BkTXVERjYzZnhsZWJtaXJ4UmZKOF9UV2xWZnRaY0wzSnoxcTQ0ajdFYzVScVlhNGc0VlNwWGFqc3dNeA",
-    "https://www.thesun.co.uk/sport/41082781/man-utd-calvin-bassey-fulham-pochettino-nigeria"
+    "https://www.thesun.co.uk/sport/41082781/man-utd-calvin-bassey-fulham-pochettino-nigeria",
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEl1OTNGbXhIZzdBS2owMjhUVkpnY1EtTFJfT3JVd3U5QmJ1Nkp4SzgxY1NJUzJ2WGhiWkt4dDdnUTRtR2FuQ2VhLWFrN0lvVGhlZUt1U2tNb0pldWFTZS1Gb0dLdFVORUxkeWYyeG5PT1ZxOVMybFViY2s4Q0JHUDFlRUtpS3NHakU0OXBIbnJzSGNq"
   ],
   "s_overflow": {},
   "schema_version": 4
