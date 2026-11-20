@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 5765,
-    "output_tokens": 634,
-    "requests": 1
+    "input_tokens": 10347,
+    "output_tokens": 1221,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4829,7 +4829,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T16:01:01.820032+00:00",
+  "last_scan_at": "2026-11-20T17:01:17.783286+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4850,6 +4850,46 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Manchester United chief executive Omar Berrada says some of the recent criticism of the club's hierarchy has \"crossed a ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T17:01:17.785590+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwz0k32j9kr9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T16:55:11+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd fan criticism has gone too far at times - Berrada"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO is seeking control in all squad-related decisions at Manchester United amid mounting pressure on dir",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T17:01:17.785614+00:00",
+      "link": "https://www.thesun.co.uk/sport/41084817/mauricio-pochettino-man-utd-jason-wilcox-brun0-fernandes/",
+      "published": "2026-11-20T16:45:45+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Pochettino seeking control in ALL squad decisions at Man Utd as pressure continues to mount on Jason Wilcox"
+    },
+    {
+      "desc": "OMAR BERRADA insists Manchester United pulled out all the stops to keep JJ Gabriel from joining Real Madrid. The club CE",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T17:01:17.785651+00:00",
+      "link": "https://www.thesun.co.uk/sport/41084886/omar-berrada-man-utd-jj-gabriel/",
+      "published": "2026-11-20T16:19:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Omar Berrada says ‘Man Utd is the best place’ for JJ Gabriel as he claims club did everything to keep wonderkid"
+    },
+    {
+      "desc": "BBC Sport looks at why promoted Charlton Athletic have had one of the worst starts in Women's Super League history.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T17:01:17.785686+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq0k0kxg5k4zo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T16:00:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "10 games, 0 points & 30 goals conceded - why Charlton are struggling"
+    },
     {
       "desc": "MAURICIO POCHETTINO's first Manchester United press conference took a strange turn after the new manager was late. Poche",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -6309,46 +6349,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Champions League club set to build stunning 40,116-seater new stadium as agreement is reached"
-    },
-    {
-      "desc": "England get one-match suspended ban on away tickets for anti-pope chants in Spain The Guardian",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T23:00:52.197417+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWkJmQy1IQ2RZd2NRRk1tOUppczQzSDd2QVM1amVaV3ZsWFlYWWRkM0tXenhtUjVMMWVGa0FId2l6V3BFeVY1YmF4ZWxWT0g0eWppUTFNQ0d5QTZ6RWs5TWZTd3djeUdxX1RpOHpGTm9TM0JEQWVrMXRYdUZyQlNXSm9GYXJfWFRMSlRtcmozLUEyN1NxeUk4U2M4MkxoQmstal9MQlVXYkpKNnpMLUUtVW9seVlRT2l3RTFGc0l3?oc=5",
-      "published": "2026-11-19T22:17:00+00:00",
-      "publisher": "https://www.theguardian.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "England get one-match suspended ban on away tickets for anti-pope chants in Spain - The Guardian"
-    },
-    {
-      "desc": "Thibaut Courtois signs new Real Madrid deal through June 2028 Operativ Məlumat Mərkəzi",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T23:00:52.197443+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOS1wX2tUdjk5cGJRdnVPazVVOXMwNEdOQXVJSU5pU0NPT1R6N2tqOVNlX3dvd19UWUtERzNsdTdYN01XVWdQazFSOTZRUlpJd3Jmc3hIaGdTQktDOXBhaG01dHl6WTJxcWRmWFhmVWFSUTNCUUx5MXZ2UHc1ZUZkemNOdEJPX0swRV9wMVBzQXdvUkVtd1JQdG1CNU5VQQ?oc=5",
-      "published": "2026-11-19T22:15:30+00:00",
-      "publisher": "https://operativmm.az",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Thibaut Courtois signs new Real Madrid deal through June 2028 - Operativ Məlumat Mərkəzi"
-    },
-    {
-      "desc": "REVEALED: Premier League Team of the Season so far Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T00:00:54.451864+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMjk5UEctWlN5eEE0YVBYZjNmci1aU2N4a2RvUlZLLUltU280dEhDd3k0Nko5bUJsMDF4c0xZaTc3OFRKc3hGVEFhODN1Y0liclVMWnFKYWRfTXcyMUx1QlBEUUI0TnpwOUJOY29ack1oVkZTZ0FwRThDeURoNjJHVnRSX3R2b2tpTkNVY2I3QlJQMTlWUzZsdWJkWQ?oc=5",
-      "published": "2026-11-19T22:07:45+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "REVEALED: Premier League Team of the Season so far - Premier League"
-    },
-    {
-      "desc": "Barcelona interested in Lisandro Martinez, while Manchester United target Fulham defensive pair and Liverpool scout Seri",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T22:00:52.884214+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cj5y14g2wppko?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T21:57:22+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Barcelona target Man Utd's Martinez - Friday's gossip"
     }
   ],
   "processed_urls": [
