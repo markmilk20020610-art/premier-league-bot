@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 117459,
-    "output_tokens": 12660,
-    "requests": 18
+    "input_tokens": 122532,
+    "output_tokens": 13189,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4689,7 +4689,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T07:00:53.773119+00:00",
+  "last_scan_at": "2026-11-20T08:01:02.913231+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4711,6 +4711,56 @@
   },
   "news_pool": [
     {
+      "desc": "THE knockout stage of the Nations League is quickly approaching and the draw for it gets underway THIS MORNING! The top ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T08:01:02.915787+00:00",
+      "link": "https://www.thesun.co.uk/sport/41019819/nations-league-quarter-final-draw-date-time-live-stream-england/",
+      "published": "2026-11-20T07:58:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "When is the Nations League quarter-final draw? Date, start time, TV channel & live stream as England learn fate"
+    },
+    {
+      "desc": "FURIOUS Neymar lashed out at rival fans while playing for Santos on Wednesday. The outburst took place following a 1-0 w",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T08:01:02.915812+00:00",
+      "link": "https://www.thesun.co.uk/sport/41078763/neymar-x-rated-outburst-rival-fans/",
+      "published": "2026-11-20T07:55:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Respect me, you f***ing small team’ – Neymar in extraordinary X-rated outburst at rival fans on live TV"
+    },
+    {
+      "desc": "Teenage midfielder Trey Nyoni backed himself in the summer to play regular football for Liverpool. He is doing exactly t",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T08:01:02.915836+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck24enjqvlyeo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T07:42:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Inside the rise of 'humble' Nyoni and why Iraola trusts him"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO once gained immediate respect from Southampton stars after being embraced by Lionel Messi and his Ba",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T08:01:02.915855+00:00",
+      "link": "https://www.thesun.co.uk/sport/41078676/lionel-messi-launched-mauricio-pochettino-managerial-career/",
+      "published": "2026-11-20T07:37:30+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lionel Messi moment that helped launch Mauricio Pochettino’s managerial career in Premier League"
+    },
+    {
+      "desc": "Cologne loanee Mikey Moore says he hopes to exchange shirts with former Spurs team-mate Harry Kane when they face Bayern",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T08:01:02.915875+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq0k65pyp4jvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T07:26:36+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Moore eyes Kane shirt as Spurs' past and future stars meet"
+    },
+    {
       "desc": "Not pleasant to be around and staring at a wall for hours after being told you are not going to the World Cup - what's i",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-20T07:00:53.776702+00:00",
@@ -4729,6 +4779,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Sjoeke Nusken: There is more to come from us | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect LEADERSHIP Newspapers",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T08:01:02.915936+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY3Zuc1k1QlVQNC12MFM4R3JJTGZILUNpbkZ0TWk0ejljdVYzVTJLWFRrVUVtdXJQOFVIWFZKYzBfUlpqc0NBOGVna2k4VDduN190SGRGRjNoRGxoRHA0cEJ5dUJLSXRSNUNESGFoQUFqUTZaeGJCRFViZzFuRUM5bnN5SUwzQXdsUWxYaHVVUUJENGRIVklr?oc=5",
+      "published": "2026-11-20T05:32:51+00:00",
+      "publisher": "https://leadership.ng",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect - LEADERSHIP Newspapers"
     },
     {
       "desc": "Fabrizio Romano reveals Man Utd’s stance on signing ex-Leeds flop: “All under control” LiveScore",
@@ -6149,66 +6209,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Glam ex-international footballer, 32, arrested after ‘laundering drug money for notorious gang with 10 relatives’"
-    },
-    {
-      "desc": "A MAJOR finance organisation has scrapped a planned £1.52BILLION loan to Manchester City. In what appears the first repe",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T13:00:53.858415+00:00",
-      "link": "https://www.thesun.co.uk/sport/41069846/man-city-lose-loan-guilty-verdict/",
-      "published": "2026-11-19T12:55:47+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City miss out on £1.5BILLION as major finance organisation scrap loan after guilty verdict"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has been given the green light to break a Premier League rule following his arrival at Manchester Un",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T12:56:17.111567+00:00",
-      "link": "https://www.thesun.co.uk/sport/41070368/mauricio-pochettino-break-premier-league-rule-man-utd/",
-      "published": "2026-11-19T12:49:02+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino allowed to break little-known Premier League rule just days before Man Utd’s trip to Liverpool"
-    },
-    {
-      "desc": "Training photos: Liverpool prepare for meeting with Manchester United Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:56:17.111593+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNDZUb3NqbVNhZVlWVGZveXNQb0hyS1YtSUQzWEU0X2ZOWVc5UDNnT0pxQ0lla0poN0R0UnlvVk5DQXc3aHMyNDVIRTVQSEhFMkJVTThzWmExeGgzbEpESGlaeDl5WFUxLWRac0hHNm9wcGZmRVQwUWJ0R1dFeHlLSVNidmc0eThtTG45MEU4ZTdzZw?oc=5",
-      "published": "2026-11-19T12:36:52+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Training photos: Liverpool prepare for meeting with Manchester United - Liverpool FC"
-    },
-    {
-      "desc": "With five teams separated by just one point at the top of the Championship, could this be the best season yet?",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T12:56:17.111617+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c63ele354444o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T12:36:31+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Will this be the tightest Championship promotion race ever?"
-    },
-    {
-      "desc": "2027/28 Premier League season: Key dates confirmed Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:56:17.111636+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQXJWQ0d6eUZVMWRPMEtEaDdQQnAtWDVzN2I5Q3NWckw3Y0kxMTROV1pYYl91cWJPU1pUam42NWRPNzJwcm5GeXk4OU5CZzBHVzZ3V3N6cVlOREtiZTV5SHhnTmY5Mk1FamMwNmlUVlhleGMwd0Z5d2NEcGJDcTdsVFY0ZU9QZ1JIMzVBUTE4d1VkbGtCeUttMWpR?oc=5",
-      "published": "2026-11-19T12:35:16+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "2027/28 Premier League season: Key dates confirmed - Premier League"
-    },
-    {
-      "desc": "THIS luxury two-bedroom apartment sits atop a former Premier League stadium - but do you recognise where it is? The impr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T12:56:17.111655+00:00",
-      "link": "https://www.thesun.co.uk/sport/41069872/luxury-apartment-former-premier-league-stadium/",
-      "published": "2026-11-19T12:31:39+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Luxury two-bed apartment inside former Premier League stadium goes on the market – but do you recognise it?"
     }
   ],
   "processed_urls": [
