@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 61021,
-    "output_tokens": 6514,
-    "requests": 9
+    "input_tokens": 67510,
+    "output_tokens": 7201,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4654,7 +4654,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-19T23:00:52.194244+00:00",
+  "last_scan_at": "2026-11-20T00:00:54.447962+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4675,6 +4675,66 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Man City vs Fulham Lineups and Team News: Guéhi Doubt, O’Reilly to Start The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T00:00:54.451483+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPS1pNT20wS3I4V29mYkRNRW1zMThhaGhjXzE4YmNDeWc2N2xodFloNlBFTzh6QnNxeWhhc29kU2Jvd0ZycG1faG5vQVROdWtKTkF5UVNsWTV0MlQzMGVGOEFHMXMtVmROdUU0SmZSY1NoY2FNbUlHRkI5M2xHUXVEUEhFcjZHUmNoSlZ2QXBocVpxM28yX1N3?oc=5",
+      "published": "2026-11-19T23:54:12+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City vs Fulham Lineups and Team News: Guéhi Doubt, O’Reilly to Start - The False 9"
+    },
+    {
+      "desc": "Manchester United issues three-year ban after fans hurl tennis balls on pitch Facebook",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T00:00:54.451557+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNX0RaOU5CbEd5ZTA1S3JlWmd1bjRmVkR2UWpCbFVJNG1xSElCVUdtOHBlVVg4VnFJMEFLeFl3dUprQ09UMU1zY3NEU3NBaG9vbmUzYXJyR21PUmUyVkIzVFJXVnlFLU4xTDg4YTRmUUJ0RmtHcWsyU0tTcVhYb29WNDZ4NjN0dURidm54ejBDNzNMMmF6VzJjODFLdkJ3bEV5R3UyR3dZbEVGa21VRnY1RGM4VTdsemxla2pjVzJoY2tkN21YMmNFdkVaMFRndlF5dWwyaXd2VzI2MGR6Q3U3TlNR?oc=5",
+      "published": "2026-11-19T23:46:41+00:00",
+      "publisher": "https://www.facebook.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United issues three-year ban after fans hurl tennis balls on pitch - Facebook"
+    },
+    {
+      "desc": "UEFA Fines England FA Over Anti Catholic Chants in Madrid cwibc.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T00:00:54.451586+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBsRU9lWkFmVkRZWVBSc2RkUFNNeGo2UTFlQ0ZxbWdjYWVTZjNKVlRwdnQyU0J2ejJ5XzRJRHNraU84V3dMcWVkMUNzMFhob19xVmFwcU1tcFBKMXVkV2VjWg?oc=5",
+      "published": "2026-11-19T23:39:00+00:00",
+      "publisher": "https://cwibc.co.id",
+      "source": "https://www.thefa.com/rss",
+      "title": "UEFA Fines England FA Over Anti Catholic Chants in Madrid - cwibc.co.id"
+    },
+    {
+      "desc": "WSL Fantasy | Spurs Matchweek 11 Preview Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T00:00:54.451647+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU3d6V3Bwa0lQblUwZzBfLVg5cVFqNG5sM08xU05VTEs5S1pBZXl0bHA5Z0RfYjVvRktmclRPSWUtQWpyN1lmdnhCVkkzTlY2Rzc4M3IzTFVQSVBUam9feHBPSHJ4S2kwRHoxMllFRXRqdmNlODBKR2o2VXdvbjJBQzIyNkxnV2tfX1h0OA?oc=5",
+      "published": "2026-11-19T23:20:06+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "WSL Fantasy | Spurs Matchweek 11 Preview - Tottenham Hotspur"
+    },
+    {
+      "desc": "Leah: \"The better team took the three points\" Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T00:00:54.451672+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQT2JiZVhXZUdMNkFBTmkxUDRlUzRKa1J2MlQ0QU43YjNTeXozMnBaYmFqbnA3LUEtcUkyTFBEeDZURG5WblZaVXVkOGdnOUhVSmVQbDlKOWh4d2YyNDJsWjlSMVo4Q2pTb3c3bHRUcndzT3NReWRhNElTZ1J6R28xakxVeUdQTFpPWGFicw?oc=5",
+      "published": "2026-11-19T23:18:06+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Leah: \"The better team took the three points\" - Arsenal.com"
+    },
+    {
+      "desc": "As far as auditions to replace Cristiano Ronaldo go, Carlos Forbs' couldn't have gone much better. His winner against Wa",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-20T00:00:54.451734+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16305161/cristiano-ronaldo-carlos-forbs-portugal-man-city.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-19T23:07:21+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Have Portugal found Cristiano Ronaldo's replacement? Ex-Man City star Carlos Forbs impressed Erling Haaland and stunned Wales this week in N"
+    },
     {
       "desc": "Renee feels plenty to learn from Lyon defeat Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4714,6 +4774,16 @@
       "publisher": "https://operativmm.az",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Thibaut Courtois signs new Real Madrid deal through June 2028 - Operativ Məlumat Mərkəzi"
+    },
+    {
+      "desc": "REVEALED: Premier League Team of the Season so far Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T00:00:54.451864+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMjk5UEctWlN5eEE0YVBYZjNmci1aU2N4a2RvUlZLLUltU280dEhDd3k0Nko5bUJsMDF4c0xZaTc3OFRKc3hGVEFhODN1Y0liclVMWnFKYWRfTXcyMUx1QlBEUUI0TnpwOUJOY29ack1oVkZTZ0FwRThDeURoNjJHVnRSX3R2b2tpTkNVY2I3QlJQMTlWUzZsdWJkWQ?oc=5",
+      "published": "2026-11-19T22:07:45+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "REVEALED: Premier League Team of the Season so far - Premier League"
     },
     {
       "desc": "Barcelona interested in Lisandro Martinez, while Manchester United target Fulham defensive pair and Liverpool scout Seri",
@@ -6104,76 +6174,6 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Fixture changes | January, 2027 - Tottenham Hotspur"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has vowed to lift the pressure off Manchester United’s players and build a new philosophy by \"starti",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T12:00:52.877850+00:00",
-      "link": "https://www.thesun.co.uk/sport/41070392/mauricio-pochettino-man-utd-pressure-interview/",
-      "published": "2026-11-19T11:58:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino vows to lift pressure off struggling Man Utd players and build new philosophy ‘starting from zero’"
-    },
-    {
-      "desc": "Mauricio Pochettino was officially appointed as United's new head coach on Wednesday and he has since addressed the club",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T12:00:52.877883+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16305357/Mauricio-Pochettino-culture-reset-Man-United-boss.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T11:51:32+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino's culture reset: New Man United boss vows to shift losing mentality in his first interview - as he tells all on cheering"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T12:00:52.877901+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13163353/championship-news-transfer-latest-and-gossip-plus-efl-updates-from-league-one-and-league-two",
-      "published": "2026-11-19T11:48:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "EFL latest: Swansea favourites set to join as interim coaches"
-    },
-    {
-      "desc": "BRYAN MBEUMO has been brutally blasted by Manchester United fans after revealing he was playing Grand Theft Auto VI past",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T12:00:52.877920+00:00",
-      "link": "https://www.thesun.co.uk/sport/41069105/man-utd-fans-fume-bryan-mbeumo-grand-theft-auto/",
-      "published": "2026-11-19T11:43:29+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd fans fume ‘this is why we’re in relegation zone’ as Mbeumo stays up until after midnight playing GTA VI"
-    },
-    {
-      "desc": "The world has been waiting 13 years for GTA6 and footballers are not immune from the lure and addictive nature of the ga",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T12:00:52.877961+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16304981/Man-United-star-Bryan-Mbeumo-stays-late-play-GTA6-morning-new-bosss-day-work-Athletes-performances-plummet-weeks-Liverpool-Arsenal-players-reveal-video-game-nighters.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T11:33:00+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United star Bryan Mbeumo stays up late to play GTA6 on morning of his new boss's first day at work: Athletes' performances to 'plummet' "
-    },
-    {
-      "desc": "Liverpool Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:00:52.877977+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbW9YbU5xd1d1TjZvZ0FJLWY4VE5QSC00VVlsODBSRmxYQ3VzeWN4NWR1Mk9lZ3dGZlNXQzdDZDFabjNVZDBFRWlFdWJ4QkpUMGVYUTd1ekFubWNxdzBKUzJKcGRUQzdPSm1ZVks5akJfV01sVHZOS3pCUDJZZDVYRTNEWFNfU2Vhd05OU2RBSzRycUExc3o5Vzd3LURMdDBwLTI4?oc=5",
-      "published": "2026-11-19T11:32:09+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool - Liverpool FC"
-    },
-    {
-      "desc": "Culture is a priority for Pochettino Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.290143+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZU9sVzY3bjhlSUZzUmNKZThzSXV1em1tN0JZM25wTWhrbGdpcXY5WFQ5SW5Hd3pJQWNqb1BYcE1iNFlpek1vcnU2ZkVWNlNCeEZ6Ql93SVU2Q2FJamJKQU81cUpFZGpNNWRONVZLYXU0QjFzOUhfUk9VcnIyM01ZaThoSER4ZWlhQlE?oc=5",
-      "published": "2026-11-19T11:29:54+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Culture is a priority for Pochettino - Manchester United Website"
     }
   ],
   "processed_urls": [
