@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 17,
+        "calls": 18,
         "errors": 0,
-        "requests": 17
+        "requests": 18
       }
     },
-    "calls": 17,
+    "calls": 18,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 111630,
-    "output_tokens": 12007,
-    "requests": 17
+    "input_tokens": 117459,
+    "output_tokens": 12660,
+    "requests": 18
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4689,7 +4689,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T06:00:55.203362+00:00",
+  "last_scan_at": "2026-11-20T07:00:53.773119+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4710,6 +4710,26 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Not pleasant to be around and staring at a wall for hours after being told you are not going to the World Cup - what's i",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T07:00:53.776702+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg27m9xp1xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T06:13:23+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Loneliness & mood swings - what's it like to miss a season through injury?"
+    },
+    {
+      "desc": "Sjoeke Nusken: There is more to come from us | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T07:00:53.776740+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPXzI4UnBRMDlwMWtHOTdRdzhWaDF6bXRuZXlaQVg0WW5yY0c3Q29SQkpiUXkzVFFKLUF4VnRHV0QxLXp5aWFELW80VmppdTFYSm9JQU1NRzloM0hvWmZ3WHZ2cWxyTG4xem80cXBBYlpjVzBUVkJDXy1wZEROdXI1UjB3Nkd1Y3g2VHcxdk5B?oc=5",
+      "published": "2026-11-20T06:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Sjoeke Nusken: There is more to come from us | News | Official Site - Chelsea Football Club"
+    },
     {
       "desc": "Fabrizio Romano reveals Man Utd’s stance on signing ex-Leeds flop: “All under control” LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6189,26 +6209,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Luxury two-bed apartment inside former Premier League stadium goes on the market – but do you recognise it?"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T13:00:53.858510+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13575723/european-football-news-and-transfers-barcelona-real-madrid-psg-bayern-munich-latest-and-more",
-      "published": "2026-11-19T12:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Euro latest: Tchouameni pens new deal at Real Madrid"
-    },
-    {
-      "desc": "COLD25 - Chelsea Store Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446537+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1RYXh1TEpxczR6NjFWWm01M183VTFSY25ReTdxei01eW0wdlI0djZYM2VNVGxJTjNqd09MUjB4UU80Y213amlrY3BZbnZ0OGNTcmJ5N1lJb1JUOFo2VENnLWptT3NGWUI3NHRJcQ?oc=5",
-      "published": "2026-11-19T12:27:27+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "COLD25 - Chelsea Store - Chelsea FC Store"
     }
   ],
   "processed_urls": [
