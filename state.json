@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 105527,
-    "output_tokens": 11205,
-    "requests": 16
+    "input_tokens": 111630,
+    "output_tokens": 12007,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4689,7 +4689,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T05:00:48.235319+00:00",
+  "last_scan_at": "2026-11-20T06:00:55.203362+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4710,6 +4710,36 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Fabrizio Romano reveals Man Utd’s stance on signing ex-Leeds flop: “All under control” LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T06:00:55.206923+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMWhqOVdYclBQODNWa2JyODc5OFFXLUYwNGFuYjNpOWRyVnk3VURseW50THktQTJwSHdQUHFKYTF4d3gxck52WDdhM3NNM2ZwSV9iTjd5ZUt6UjRpZUlnZ3lHRjV0VTVCWjN1eUFhajJMeGozb0VRT29IZ3kwQmk2OWRONkkyRXpEZ2x0TGNneGlWejBsb1N0V1l0Wm1DR1o3a0ctbnZyclRMVG8xV0VZZXdnYkx5UzlPaVRwXzV1QVZ1YU04SkpNTUZmTVFHNU5iR0ZuVTZGb19GUmQtTGw4QlJmbzI2Zw?oc=5",
+      "published": "2026-11-20T05:28:13+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Man Utd’s stance on signing ex-Leeds flop: “All under control” - LiveScore"
+    },
+    {
+      "desc": "Newcastle vs Arsenal Lineups and Team News: Bruno Faces Old Club, Saliba Waits The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T06:00:55.206960+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcGdhLW42WUhGZGZfLU1hOG9SVzVQbUZSQkN0Y29QUXpjY2s5YmlTZGhGdzluZEZrMFJQVkR3U1Job2MxZ1pFR2FzUUZVeGg1eUNONFhCUnNRTUFlMUFKRG5adFBKZ2ZNVHRPZ1FCMnJyNnFSZ0tZaHM5d1k3TVVqbjhNaS16R1I4X2o3ZXBBZFhPZ3M5OEdWNVlR?oc=5",
+      "published": "2026-11-20T04:51:46+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Newcastle vs Arsenal Lineups and Team News: Bruno Faces Old Club, Saliba Waits - The False 9"
+    },
+    {
+      "desc": "Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T06:00:55.207042+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
+      "published": "2026-11-20T01:33:28+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United Website"
+    },
     {
       "desc": "Video - Carlos Forbs Attracts Growing Interest From Arsenal and Other Premier League Clubs roundtable.io",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6179,36 +6209,6 @@
       "publisher": "https://store.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "COLD25 - Chelsea Store - Chelsea FC Store"
-    },
-    {
-      "desc": "PREMIER LEAGUE chiefs have confirmed January's TV fixtures, with Manchester United vs Liverpool topping the bill. The mo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T12:56:17.111672+00:00",
-      "link": "https://www.thesun.co.uk/sport/41070719/premer-league-january-tv-fixtures/",
-      "published": "2026-11-19T12:12:44+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Premier League fixtures revealed for January with new date for huge Man Utd vs Liverpool clash"
-    },
-    {
-      "desc": "Match of the Week: Hammering the Irons in 2024 Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T14:00:52.446561+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNUptNDdRTEhSV1ZJcVA3amF0MGJOOVlvUi1tS19nbE83eEFXLVpwS05hamEtZkpBbEJhamxfWEl2X3RzYl9rUmFmTGdKWHc5akFRX3EwTGhKUlM5M2dWWmFaQ3NZRE1lOG9uV1ZPS1M3UkMwMDVVNTE2Q0xla29NNHdFZGpRR2h4TGJOY1NycHM?oc=5",
-      "published": "2026-11-19T12:05:29+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Match of the Week: Hammering the Irons in 2024 - Arsenal.com"
-    },
-    {
-      "desc": "Read Renée's Lyon programme notes Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.290029+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9FR0F3cDhHWXVybklLYzVvdFExRXVKb2p0MHVFWXRKWHJwc004OS16YUZVVjVpN3VCc3Znend5VFFURVR3b09YTlhXTGNmckVzdkJKUk5zanUzZ1NYblVSWnVKWEtwcGpBaUpQOU83elFldFhRTjFWOUExbWRJOXc?oc=5",
-      "published": "2026-11-19T12:05:27+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Read Renée's Lyon programme notes - Arsenal.com"
     }
   ],
   "processed_urls": [
