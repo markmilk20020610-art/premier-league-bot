@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 23,
+        "calls": 24,
         "errors": 0,
-        "requests": 23
+        "requests": 24
       }
     },
-    "calls": 23,
+    "calls": 24,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 148642,
-    "output_tokens": 15724,
-    "requests": 23
+    "input_tokens": 155268,
+    "output_tokens": 16410,
+    "requests": 24
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4759,7 +4759,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T11:00:51.329238+00:00",
+  "last_scan_at": "2026-11-20T12:00:56.078999+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4780,6 +4780,126 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MK Dons travel to Mansfield this afternoon in League One! Paul Warne's side are looking to climb into the play-off spots",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T12:00:56.082261+00:00",
+      "link": "https://www.thesun.co.uk/sport/41067391/mansfield-vs-mk-dons-live-score-result-league-one-updates/",
+      "published": "2026-11-20T12:00:20+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mansfield vs MK Dons LIVE: Score, teams and updates as Paul Warne’s side chase play-offs in League One"
+    },
+    {
+      "desc": "NOTTS COUNTY host Stevenage this afternoon in League One. Just two points separate the two sides towards the bottom of t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T12:00:56.082292+00:00",
+      "link": "https://www.thesun.co.uk/sport/41070685/notts-county-vs-stevenage-live-score-result-league-one-updates/",
+      "published": "2026-11-20T12:00:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Notts County vs Stevenage LIVE: Score, teams and updates as League One strugglers face off at Meadow Lane"
+    },
+    {
+      "desc": "FOOTIE fans have been left in stitches by a suspected drug dealer's mugshot that is a dead ringer for Man United captain",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T12:00:56.082319+00:00",
+      "link": "https://www.thesun.co.uk/sport/41080364/fans-drug-dealer-mugshot-man-utd-star/",
+      "published": "2026-11-20T11:59:45+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Football fans in stitches as unfortunate police mugshot of ‘drug dealer’ is dead ringer for Manchester United star"
+    },
+    {
+      "desc": "FOOTBALL fans looking to score a huge football away day in the UK or Europe can now save money with a Black Friday barga",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T12:00:56.082343+00:00",
+      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
+      "published": "2026-11-20T11:49:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and others"
+    },
+    {
+      "desc": "Watch FPL deadline live stream on YouTube from 09:00 GMT on Saturday Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T12:00:56.082369+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRUtBQ0JUTW1HNVJIVnlXZy1QY3BNdUEzSjB6TkEyNmk3eW52bmU1TWk2NHlRM2dQQ2dPNXNnV0RPQXA5NTVZUUVKWHJaMHVsLVB3cVljSXMyWTdlb2hqR1hhaEM1WTFyY2Y1WEFES1poNU5uMXRsNVlhM2ZDNVZvVlR6OW40VUpPeVphTzgtemJxRDU1eWk3Q0Vwd0dBYjg1UkNXdkVIUVNuZXhSNWh2eWcyMA?oc=5",
+      "published": "2026-11-20T11:48:35+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch FPL deadline live stream on YouTube from 09:00 GMT on Saturday - Premier League"
+    },
+    {
+      "desc": "Saliba Injury Update: Ready for Newcastle, Saka Still Out The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T12:00:56.082393+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPa05sNFVVQm13R3VGOG95MEtYekFKSm5YSGhpa1VKNUpGQVcyZjFpLXI4QXJHU1hwWG1YYjJvTGc2azJsRTVWSHluaFNXQ3FhNW9tSnJMekprOFBSWWFubFhjazNBZmYxZHE0b1FWZGR3eHVPOUt5bEx0Y0F6SVI3S1RyQ3RYYkdXTGlFTlI5MEJjTFJsbVE?oc=5",
+      "published": "2026-11-20T11:46:34+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Saliba Injury Update: Ready for Newcastle, Saka Still Out - The False 9"
+    },
+    {
+      "desc": "Panel gives Arsenal a unanimous yes on the penalty they didn't get against Hull Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T12:00:56.082417+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBRRm8zQlFhTzRvUUdHUUtLbC1BQnd0ZGpHejFDOEZic0xtS3ZmQ0JLa0Q1S05GVmdVOXlHUmtqVDhOdVRENkVz?oc=5",
+      "published": "2026-11-20T11:46:28+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Panel gives Arsenal a unanimous yes on the penalty they didn't get against Hull - Digg"
+    },
+    {
+      "desc": "Stoke host Birmingham in a Championship game of two teams both bang in form going into the latest international break. H",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T12:00:56.082463+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmy8670vjlx0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T11:35:16+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Stoke and Birmingham proving you shouldn't judge a book by its cover"
+    },
+    {
+      "desc": "England will take on Erling Haaland and Norway in the Nations League quarter-finals.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T12:00:56.082483+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614281/nations-league-quarter-finals-england-to-face-norway-in-the-last-eight-with-a-potential-semi-final-tie-with-germany-waiting",
+      "published": "2026-11-20T11:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "England to face Norway in Nations League last eight"
+    },
+    {
+      "desc": "ENGLAND will meet Erling Haaland’s Norway in a two-legged Nations League quarter-final in March. It will be a rematch of",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T12:00:56.082504+00:00",
+      "link": "https://www.thesun.co.uk/sport/41079999/england-nations-league-opponents-confirmed/",
+      "published": "2026-11-20T11:26:46+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England discover fate in Nations League draw as Three Lions handed dream route to final"
+    },
+    {
+      "desc": "LFC Foundation teams up with Lucozade to launch running club by Anfield Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T12:00:56.082541+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObWRpVW1TaDhqV0E3dHFwRXJITXZiYjR4UmdHcVU3aG1qbDR5Y3FpdjBYWTBybWljN0tUanhhNnpROG1jekh3eEtHTjljaDJaTThMUFZzODlmZmIxUkFueU9kTzREdlR0TmotYkpyWXRIZUh6d3lmVWtpQVNkZ3dSTVlMY05yanQyMDdfU0xQWkJBTHJkbkNKSWhfUVZCNkZma2NrXzE0cw?oc=5",
+      "published": "2026-11-20T11:02:06+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFC Foundation teams up with Lucozade to launch running club by Anfield - Liverpool FC"
+    },
+    {
+      "desc": "Courtois reportedly signs until 2028 as Real Madrid keeps its renewal pen busy Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T12:00:56.082565+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE0zYjRyUWVLMEtZQ2pjQi1yU3QzM0FnTUtSQUxRUUVKRnNLVFlKNnRodjVVcGExNUN5SzkwbS01azNHUko3UF93?oc=5",
+      "published": "2026-11-20T10:54:34+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Courtois reportedly signs until 2028 as Real Madrid keeps its renewal pen busy - Digg"
+    },
     {
       "desc": "WAYNE ROONEY has revealed he urged Manchester United staff to treat son Kai the same as every other academy prospect. Th",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -4931,6 +5051,26 @@
       "title": "40 years of history: A special Man City podcast - Manchester City FC"
     },
     {
+      "desc": "The Scottish Premiership returns after the international break and with it comes the guaranteed drama.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T12:00:56.082832+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614280/scottish-premiership-derek-mcinnes-rangers-on-sky-celtic-lead-the-way-as-aberdeen-begin-mario-frick-era",
+      "published": "2026-11-20T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Celtic look to keep Rangers at bay in title race as Frick starts Aberdeen rebuild"
+    },
+    {
+      "desc": "Events explainer: Make the most of City v Spurs! Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T12:00:56.082868+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMy1UZjJMczRqRjhuTExRdE5EbEpOY00yY21CRTNaR2dXZjNkUExaWUhXbFRoUXNrNGs1ZGZiTllNSzRrWUwxdVlScHZRWXVsUVRCcFFBeEUzd1M0X2l6LXJqR0VhMWxEdkoyWXZYWUhXMTZTOUlPeFlmVUowQ0NnT0JWRTVZTVBQeXc?oc=5",
+      "published": "2026-11-20T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Events explainer: Make the most of City v Spurs! - Manchester City FC"
+    },
+    {
       "desc": "FOOTAGE of Mauricio Pochettino's first Manchester United training session has been DELETED from YouTube. And the user th",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-20T09:01:03.195466+00:00",
@@ -4989,6 +5129,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd reach decision on signing Weston McKennie from Juventus - TEAMtalk"
+    },
+    {
+      "desc": "Report: Arsenal Women 0-2 OL Lyonnes Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T12:00:56.083059+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcVBPb2JuRDEybHJKMHdqbnB1TDlIWmhXS3ZzT1lsYzZ4MjRlT0Q0UEw0OV9XUEdHOU5UVTZCQjYzcUN5elhoX3dGQk00UGN4NjdDYk1WZjIzN3p0QldRUjFnZGdTOGY0ZndPbHAyUVlPYlk3T3NKbEhTVkJCTUIzX0x5QQ?oc=5",
+      "published": "2026-11-20T08:02:01+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Report: Arsenal Women 0-2 OL Lyonnes - Arsenal.com"
     },
     {
       "desc": "Fifteen years on from West Ham striker Dylan Tombides discovering he had testicular cancer at the U17 World Cup, his mot",
@@ -6129,156 +6279,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "FPL focus: Madueke, Konsa and striker dilemmas - Arsenal.com"
-    },
-    {
-      "desc": "City vs Spurs: Kick-off time, teams news and TV information Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T17:01:04.652269+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYi1hcGN4QlFKZFBXOTJtUVBRMGxTSk5GLVhxLTEzaTQ1bTNrX21haGdEMGRCTi1aYkVteXFUNy1LcFpXVmk0SUxKTFk0TFQ4MjFoTVFJNHM5VExqWl9DRnA1TjdxWEVaOTBiZE9BdEZyUDJ6dTdMQ1BxSXdfYnR3V1RRWXhaZ0I1?oc=5",
-      "published": "2026-11-19T16:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "City vs Spurs: Kick-off time, teams news and TV information - Manchester City FC"
-    },
-    {
-      "desc": "Dates and kick-off times confirmed for City’s Premier League International Cup group games Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T20:00:50.424407+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbmhVYkIwRjI1blVFSGJuX1BjaUJZZHFKSFJNeWhzZEtUR3p5Mi1uWV9oUndSd1draWN3U0pDblRkNUo5dUJibFZVRUdKano2bDRKajlnV0xFbHhsNGxQOGZyeHlJLVp3OGVUS0R2OUJvNVM5UUtTeDR5WkUzWVRIM29jUEZoNEMxdVByaWktV2JVVnAyQ2M4T2k1U1ByazBfNldnWTl1d3c0RXFDZVUwck5R?oc=5",
-      "published": "2026-11-19T16:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Dates and kick-off times confirmed for City’s Premier League International Cup group games - Manchester City FC"
-    },
-    {
-      "desc": "Liverpool vs Chelsea Women: How to watch, kick-off time, live stream info | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T23:00:52.198548+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSUFINm1jcmJTUkR5VTQtXzhHRHFEZU90WGJ0dGpPakdWMmF2UUVwZTVGYkJ1ZlphT0NtNmtldW5RRFJrc2xFbEtockR0NE5JZUw0YzVTREttcXRHSV9SYU1LTnlEZ0lUQ3JFZUFBYlR3cVh2cEJmTEV6SlRCdGdSU29SaFo4Ul9jSEI0RFRRbTJCOTljVGViUkZHMTBaOEVqT0tJTWc0el95M0NITVRQc21VSQ?oc=5",
-      "published": "2026-11-19T16:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Liverpool vs Chelsea Women: How to watch, kick-off time, live stream info | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Pochettino's message to fans Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T20:00:50.424423+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRzFndGp2NkVHdUlEdHpQY01FSnNoYmxBT2lQaVRfWHFEbm95R0hWcXdFQlFobmVUX3lQNDVSaDBnUGdVcEhkSmRjaF83dVJhU1NYRGZ2Yi0tSVA0Wmt6T252ZjNQRWM2YlVNeXNpam1JS3RIdFZZcWpRbnZmNXpoUg?oc=5",
-      "published": "2026-11-19T15:57:00+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino's message to fans - Manchester United"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T17:01:04.652280+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13279286/bournemouth-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-      "published": "2026-11-19T15:55:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Rose says Scott will start one of next three games - but not drawn on transfer links"
-    },
-    {
-      "desc": "Joelinton Injury Update: Out vs Arsenal, Specialist Next The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.289402+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQX3hVUFF5OXVOT1dCby1qTEc4T2RlSmhCdi0wOXVmVURYTDBFU2ZCLVhmbThzUUIxRllkamtDeWhhRWVCWTVuS0ZNbmZiNWJOMVdxc0dHQjlSRmNlQXV3T3Z0a3BLbWVNUUgtOU9EMmZqcDYtQ3JyTGNaaS1qVXJwcFZWTFpIcEp0dU4wSFF3WEtJVjg?oc=5",
-      "published": "2026-11-19T15:50:30+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Joelinton Injury Update: Out vs Arsenal, Specialist Next - The False 9"
-    },
-    {
-      "desc": "MANCHESTER CITY were left virtually isolated as Prem clubs agreed to cover all the legal bills of League chiefs if they ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T16:00:53.289428+00:00",
-      "link": "https://www.thesun.co.uk/sport/41073112/premier-league-clubs-back-chiefs-man-city-legal-costs/",
-      "published": "2026-11-19T15:34:07+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City in new blow as 18 Premier League clubs vote to cover legal costs of chiefs if club sued over ‘sham’ contracts"
-    },
-    {
-      "desc": "CHRIS WHEELER: United's first quarter financials up to September 30 don't include the cost of paying the US Soccer Feder",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T16:00:53.289456+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16305763/Man-United-toast-revenues-Avram-Glazer-said-club-dont-need-success-pitch-make-money-pain-come-15m-payouts-following-Carrick-sacking-Pochettino-appointment.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T15:33:36+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Are you sure, Avram? Man United post operating LOSS of £3m in new accounts - weeks after co-owner Glazer said club 'don't need success on th"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T19:00:59.108573+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-19T15:33:26+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "MYKHAILO MUDRYK has gone in two-footed on the Ukrainian national team hierarchy for the doping scandal which threatened ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T16:00:53.289476+00:00",
-      "link": "https://www.thesun.co.uk/sport/41069268/mykhailo-mudryk-ukraine-rant-doping-scandal/",
-      "published": "2026-11-19T15:26:05+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mykhailo Mudryk in two-footed rant at Ukraine team over doping scandal which felt like ‘falling off a skyscraper’"
-    },
-    {
-      "desc": "BOBBY MANZI: The Premier League clubs - including City themselves - will foot any legal bills incurred by a potential co",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T16:00:53.289502+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16305529/Premier-League-Man-City-Richard-Masters.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T15:25:06+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Premier League clubs vote 18-2 in favour of protecting top-flight chiefs from legal action... if Man City's sponsors sue them for defamation"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-19T16:00:53.289519+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13353569/leeds-united-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-19T15:20:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Leeds latest: 'I’m a bit bored,' jokes Farke after Trafford frenzy"
-    },
-    {
-      "desc": "PIERS MORGAN was left baffled after Sol Campbell appeared to suggest that Gabriel Magalhaes and William Saliba would get",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T16:00:53.289551+00:00",
-      "link": "https://www.thesun.co.uk/sport/41072240/sol-campbell-funniest-guy-piers-morgan-arsenal/",
-      "published": "2026-11-19T15:09:31+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal legend Sol Campbell branded ‘funniest guy ever’ over his Gabriel and Saliba claim on Piers Morgan’s Uncensored"
-    },
-    {
-      "desc": "Culture, defence and Bruno Fernandes - the key issues facing Mauricio Pochettino as he takes over as Manchester United b",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-19T16:00:53.289590+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxlylzyg38l8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-19T15:05:21+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Culture, defence, Fernandes - Pochettino's priorities at Man Utd"
-    },
-    {
-      "desc": "THE 2027-28 Prem season will kick off a week earlier than this term. League club bosses meeting in central London agreed",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T16:00:53.289609+00:00",
-      "link": "https://www.thesun.co.uk/sport/41072507/premier-league-fixtures-change-dates-season/",
-      "published": "2026-11-19T15:03:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Premier League 2027/28 to kick off on Friday 13th as chiefs confirm major change to festive fixtures"
     }
   ],
   "processed_urls": [
