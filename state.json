@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 19,
+        "calls": 20,
         "errors": 0,
-        "requests": 19
+        "requests": 20
       }
     },
-    "calls": 19,
+    "calls": 20,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 122532,
-    "output_tokens": 13189,
-    "requests": 19
+    "input_tokens": 129004,
+    "output_tokens": 13901,
+    "requests": 20
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4582,6 +4582,41 @@
       "title": "曼联切尔西联合最佳阵：红魔6人入选引争议",
       "updated_at": "2026-10-31T11:20:38.057660+00:00"
     },
+    "f84cd935fd09": {
+      "article_title": "'F*** the Pope and the IRA' chant lands England in hot water as fans are given suspended one-game stadium ban and FA fined",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "0870c1ea917a971f",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 182
+        }
+      ],
+      "created_at": "2026-11-20T09:01:09.855348+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "eb703065b75553e6",
+      "event_id": "f84cd935fd09",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-20T09:01:09.855348+00:00",
+          "origin": "created",
+          "title": "'F*** the Pope and the IRA' chant lands England in hot water as fans are given suspended one-game stadium ban and FA fined",
+          "url": "https://www.dailymail.com/sport/football/article-16306933/England-UEFA-Fine-Racism-Spain.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16306933/England-UEFA-Fine-Racism-Spain.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 182,
+      "title": "英格兰球迷反天主教口号致英足总遭欧足联罚款并缓期关闭球场",
+      "updated_at": "2026-11-20T09:01:10.478122+00:00"
+    },
     "fb01c8970fbe": {
       "article_title": "Fans furious at missed Morgan Rogers incident in Chelsea defeat to Sunderland and ask ‘why did VAR not review this’",
       "attempts": 1,
@@ -4689,7 +4724,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T08:01:02.913231+00:00",
+  "last_scan_at": "2026-11-20T09:01:03.191904+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4711,6 +4746,46 @@
   },
   "news_pool": [
     {
+      "desc": "FOOTAGE of Mauricio Pochettino's first Manchester United training session has been DELETED from YouTube. And the user th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T09:01:03.195466+00:00",
+      "link": "https://www.thesun.co.uk/sport/41079255/man-utd-drone-footage-training-pochettino/",
+      "published": "2026-11-20T08:58:11+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Total error of judgment’ – Drone footage filmer removes video and issues grovelling apology to Pochettino and Man Utd"
+    },
+    {
+      "desc": "BBC Sport explores five things to capture your attention this EFL weekend.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T09:01:03.195510+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/crwy4wl1n0q2o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T08:24:38+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "EFL preview: Evans' gripes & unexpected departures"
+    },
+    {
+      "desc": "Man Utd reach decision on signing Weston McKennie from Juventus TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T09:01:03.195544+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObmNobE5uYlFWTnFZeUhPQU9mNHBrYk1KRVM1b2JGSWZLLTVqQUpwMGcwbFc5MGh5QzdrVnN6RUUwQXVjT3RXLXFjRXpxMnZrSVQ3VjhncjY4UlhJMFhONVR6Q01zaGJ3bGRxc005ai1xalAyU294S19ZRkI3dDJOdUlQMUFjNkU1b1AwUWh3MWRoUjh0MG9WaTlxdG50VTl3YlZoMGtoYTBKNmZnNEJsOWhDZzJUTDRhQmIwdW1GWQ?oc=5",
+      "published": "2026-11-20T08:22:54+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Man Utd reach decision on signing Weston McKennie from Juventus - TEAMtalk"
+    },
+    {
+      "desc": "Fifteen years on from West Ham striker Dylan Tombides discovering he had testicular cancer at the U17 World Cup, his mot",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T09:01:03.195638+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614140/how-the-story-of-dylan-tombides-is-helping-educate-fifa-u17-world-cup-players-about-testicular-cancer",
+      "published": "2026-11-20T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "How West Ham striker's testicular cancer tragedy is educating next generation"
+    },
+    {
       "desc": "THE knockout stage of the Nations League is quickly approaching and the draw for it gets underway THIS MORNING! The top ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-20T08:01:02.915787+00:00",
@@ -4729,6 +4804,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘Respect me, you f***ing small team’ – Neymar in extraordinary X-rated outburst at rival fans on live TV"
+    },
+    {
+      "desc": "Read Renée's Lyon programme notes Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T09:01:03.195752+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9FR0F3cDhHWXVybklLYzVvdFExRXVKb2p0MHVFWXRKWHJwc004OS16YUZVVjVpN3VCc3Znend5VFFURVR3b09YTlhXTGNmckVzdkJKUk5zanUzZ1NYblVSWnVKWEtwcGpBaUpQOU83elFldFhRTjFWOUExbWRJOXc?oc=5",
+      "published": "2026-11-20T07:52:30+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Read Renée's Lyon programme notes - Arsenal.com"
     },
     {
       "desc": "Teenage midfielder Trey Nyoni backed himself in the summer to play regular football for Liverpool. He is doing exactly t",
@@ -4759,6 +4844,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Moore eyes Kane shirt as Spurs' past and future stars meet"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Real Madrid veteran has signed renewal until 2028 Madrid Universal",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T09:01:03.195849+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYzJEa29pQXhqaGlLWm12MWI4RzdSR0xGWXdlcTU3RkQ5eXVJQXpjZm5ndEE4VGNSSG1kOVVmNG1ZeTByMHlGUnkxSy1pZVU4dmFmY3dJNEtyQk1tamFaSmROVEthTElkZGQ1TVZJRFlFazZGOFd4c1YtUDgtdE1pNEFvdHMwOHNoWjY3NjJ5OVRYaU9wbDI2b3VKNDhRdFlSUXhnVGFB?oc=5",
+      "published": "2026-11-20T07:21:27+00:00",
+      "publisher": "https://madriduniversal.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Real Madrid veteran has signed renewal until 2028 - Madrid Universal"
     },
     {
       "desc": "Not pleasant to be around and staring at a wall for hours after being told you are not going to the World Cup - what's i",
@@ -6149,66 +6244,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Palace latest: Frank adds two more to backroom team"
-    },
-    {
-      "desc": "LFC Foundation's spectacular Gala Ball returns to raise vital funds for communities Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T16:00:53.289874+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQUpqRV9QeEFTTW5KZGNURFdxYjEwenc5d3lGZVVrM1U3VHZTM2NzWVdFejhJdi1zNnlwOUNtWnVWd2U4bHpxTmhFdUNOU216d3FqOXVKWW5PV3paZTltX1p0ODFBTWRoRXRkcGxpbmlPOGFtWmp6cjl2bzlmQnZ0eQ?oc=5",
-      "published": "2026-11-19T13:26:28+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC Foundation's spectacular Gala Ball returns to raise vital funds for communities - Liverpool FC"
-    },
-    {
-      "desc": "Premier League matches in January confirmed Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T15:01:00.204799+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQnZmZ0hjalFKNzJfdUQ5YTN6eUNCV0ZYRXAzQ3dYTEpSQVlIUDFuMWNyZUdmT1hLTXFwNmhMOVNlZUtuWlZlcDZibjh0TzNZZ0F2QlEtLU15V1lITkpoNUZYeV91akFPQjNwRVRFWVN6REt2a3pSem5rUGZmV2prZFlnVW5jVWZJVEtVYnNn?oc=5",
-      "published": "2026-11-19T13:25:42+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Premier League matches in January confirmed - Arsenal.com"
-    },
-    {
-      "desc": "Contact Made: Fabrizio Romano Drops Update on Tottenham Signing 'Remarkable' Striker in January GiveMeSport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T15:01:00.204826+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONFg4S1JVdnVLR1dTd2ltbG1XRDdkSm1QZkVwNEZtWlpZWEh1NERXQ1F1dVFrNmctTTFwNXQ3T3c3dDZEVXMwTDFyVTNyX09BVEJrNlFXdk0wTFVVcVJVRTU0UmdwbHB2eU5DZ1Njd3RvcVM1RWlVRkVVeld5QkRHVl96REZXZldoU2w4WVBDUWEzaXJLNFhveWJrN1BsYnc?oc=5",
-      "published": "2026-11-19T13:15:14+00:00",
-      "publisher": "https://www.givemesport.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Contact Made: Fabrizio Romano Drops Update on Tottenham Signing 'Remarkable' Striker in January - GiveMeSport"
-    },
-    {
-      "desc": "ISAAN KHAN: Most of the new deals have been months in the making - talks over Declan Rice's new contract stretch back to",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-19T16:00:53.289925+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16303115/Arsenal-contracts-Rice-Raya-Timber-Hincapie-Arteta-Odegaard-Havertz.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-19T13:12:45+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Arsenal's dynasty drive behind their raft of new contracts: Why stars are desperate to play for Mikel Arteta, the ultimatum he gives each of"
-    },
-    {
-      "desc": "NEW Manchester United boss Mauricio Pochettino has told his players \"not to think about sleep\" ahead of their huge Premi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T14:00:52.446401+00:00",
-      "link": "https://www.thesun.co.uk/sport/41070706/pochettino-warns-man-utd-stars-gta-mbeumo/",
-      "published": "2026-11-19T13:06:07+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Pochettino tells Man Utd stars ‘not to think about sleep’… in boost to Mbeumo after midnight GTA VI gaming session"
-    },
-    {
-      "desc": "A GLAMOROUS ex-international footballer has been arrested on suspicion of laundering dirty cash for a notorious narco ca",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-19T13:00:53.858390+00:00",
-      "link": "https://www.thesun.co.uk/sport/41070724/brazil-women-footballer-drug-trafficking/",
-      "published": "2026-11-19T12:59:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Glam ex-international footballer, 32, arrested after ‘laundering drug money for notorious gang with 10 relatives’"
     }
   ],
   "processed_urls": [
@@ -6358,7 +6393,8 @@
     "https://www.thesun.co.uk/sport/41075369/man-utd-mauricio-pochettino-training-session-drone",
     "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXZDS1VkajE3aEZRYnR2M2FpTWRMTTNhaGNRUTdiZnpIU2N2UVVMQzlPNXk3a3JmSTJQYlRlcl8tSmRMOFlPQ2tZaWpQN1pGdFFCeW9Nd2NXTDBkRGZQU1ZZY2x6eFZyUWp6bDlreXRWNHdDYk01QTdEdGZzWmlnb2NIcGxEMEZpeXFPa21maDNpMFNwODFtSmFzNklzWUlnRHY3Mnd3MmtnYkNDcDEzeEprMGg2T2VHRVRsOGln",
     "https://www.dailymail.com/sport/football/article-16306899/Mauricio-Pochettino-Man-United-training-session-LEAKED-blow-ahead-Liverpool-clash.html",
-    "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson"
+    "https://www.thesun.co.uk/sport/41076317/mauricio-pochettino-love-man-utd-champions-league-1999-ferguson",
+    "https://www.dailymail.com/sport/football/article-16306933/England-UEFA-Fine-Racism-Spain.html"
   ],
   "s_overflow": {},
   "schema_version": 4
