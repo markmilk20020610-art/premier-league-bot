@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 22429,
-    "output_tokens": 2407,
-    "requests": 4
+    "input_tokens": 28525,
+    "output_tokens": 3061,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4829,7 +4829,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T18:39:54.792855+00:00",
+  "last_scan_at": "2026-11-20T19:01:01.433597+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4850,6 +4850,36 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "VINCENT KOMPANY is back on the touchline with his dislocated shoulder in a sling. The Bayern Munich boss collapsed last ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T19:01:01.437090+00:00",
+      "link": "https://www.thesun.co.uk/sport/41086752/vincent-kompany-bayern-munich-return-sling-hospital-collapse/",
+      "published": "2026-11-20T18:58:02+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Vincent Kompany returns to Bayern Munich touchline in sling after being rushed to hospital after collapsing"
+    },
+    {
+      "desc": "ANTONIO CONTE has blasted Manchester United after he was snubbed for the managerial role. The fiery Italian was one of t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T19:01:01.437126+00:00",
+      "link": "https://www.thesun.co.uk/sport/41086722/antonio-conte-man-united-manager-snub/",
+      "published": "2026-11-20T18:51:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Antonio Conte blasts Man Utd as being ‘frightened of winning’ after being snubbed for Pochettino"
+    },
+    {
+      "desc": "Crystal Palace forward Ismaila Sarr says he has moved on from Liverpool's interest in signing him and is keen for a \"fre",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T19:01:01.437163+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvj6l7pd1yd0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T18:41:33+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Sarr focused on Palace return after Liverpool interest"
+    },
     {
       "desc": "FOOTBALL has never been short of prodigies — every season another 16-year-old is described as the next big superstar. We",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5569,6 +5599,16 @@
       "publisher": "https://tribuna.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "No Ljungberg or Gabriel: Charles Watts picks ultimate combined XI between current Arsenal side and Invincibles side - Tribuna.com"
+    },
+    {
+      "desc": "Tickets - Manchester City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T19:01:01.438211+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
+      "published": "2026-11-20T13:18:50+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Tickets - Manchester City - Manchester City FC"
     },
     {
       "desc": "BRIGHTON boss Fabian Hurzeler is so wedded to counter-pressing that he gives his players a running penalty if they lose ",
@@ -6309,46 +6349,6 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Mauricio Pochettino ‘will talk to’ £68m star over Man Utd deal – Fabrizio Romano - Football365"
-    },
-    {
-      "desc": "Spurs Nike Men's Slate All Over Print T-Shirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T10:00:50.587375+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdkZzQmNfdF83VGtkcS1oZ2lfZTV5a0dhRDRNTHBULUFoNnd0TVdUb1ZqMGhHd2dncFNHdzZzVHpqUHJVaDFaUFh5OWN5X2MzdkFtQ0p6MS1OWXJNeUl0Q2ZaMUN2aXRMZzY5bXFhdGoxdlFHLS12cG9WSW05NGg2OWd5RXMxSDNrTDVXdTMxcHRESV9BZktSMUQ2bFRTdWdNdUEtX0JOSQ?oc=5",
-      "published": "2026-11-20T08:25:15+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Nike Men's Slate All Over Print T-Shirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Spurs Nike Men's Blue T90 Crew Sweatshirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T10:00:50.587394+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUG15ZDhsZzdCU3Q0dHhGSnJsaVoyeWRndlJLRHRzY05oVXU2eVpuOURsOVJtbk1VWVpKODlSU3hRM25DSVFKNjJ0TFEtUFFCWldram13bW5PMDc3YnBkal95YUM4X0VEelRGTUlRZFM5ZTFIUGpVYlZDZmpPbXhQcnZyaEFHU09zV2s0ZFZxYVUxR1ktRWdaRTZkZXZSMGlzVXc?oc=5",
-      "published": "2026-11-20T08:25:15+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Nike Men's Blue T90 Crew Sweatshirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "BBC Sport explores five things to capture your attention this EFL weekend.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-20T09:01:03.195510+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/crwy4wl1n0q2o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T08:24:38+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "EFL preview: Evans' gripes & unexpected departures"
-    },
-    {
-      "desc": "Man Utd reach decision on signing Weston McKennie from Juventus TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T09:01:03.195544+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObmNobE5uYlFWTnFZeUhPQU9mNHBrYk1KRVM1b2JGSWZLLTVqQUpwMGcwbFc5MGh5QzdrVnN6RUUwQXVjT3RXLXFjRXpxMnZrSVQ3VjhncjY4UlhJMFhONVR6Q01zaGJ3bGRxc005ai1xalAyU294S19ZRkI3dDJOdUlQMUFjNkU1b1AwUWh3MWRoUjh0MG9WaTlxdG50VTl3YlZoMGtoYTBKNmZnNEJsOWhDZzJUTDRhQmIwdW1GWQ?oc=5",
-      "published": "2026-11-20T08:22:54+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd reach decision on signing Weston McKennie from Juventus - TEAMtalk"
     }
   ],
   "processed_urls": [
