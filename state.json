@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 34756,
-    "output_tokens": 3650,
-    "requests": 6
+    "input_tokens": 41425,
+    "output_tokens": 4300,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4864,7 +4864,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T20:00:48.706972+00:00",
+  "last_scan_at": "2026-11-20T21:00:53.449513+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4886,6 +4886,76 @@
   },
   "news_pool": [
     {
+      "desc": "Fabrizio Romano confirms Liverpool have path to complete bombshell Arsenal deal LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T21:00:53.452517+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMUhmd1ZEQ3M0NnpqVEd2eWxUOFhjSjkyLTlwNGFqU2d4R2YzX0s1QTN4d3RxbkNMWHB6d0ZhWHFPa3J2YUJnUkdGTmFZNE92ZU9nWFFmaVNpTDNSbkwwRnE0U1Vaa0hjLWVoLVlFT25RS3RNNkZYaGRXb2Fzak1NYkdTU1NmTWRaa0hEOGFoelJpcUROMnBUNDgyNi1BTmxNTTN5aW1PVEVQUlpjWmY5OFVnNVZPVVRhQ0h0VnFnX005RGRERUNUMWZtbGpXLUlXR1NnOVU5TnVNVEtscjFhWTlnRFNvQQ?oc=5",
+      "published": "2026-11-20T20:24:24+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Liverpool have path to complete bombshell Arsenal deal - LiveScore"
+    },
+    {
+      "desc": "Liverpool captain Virgil van Dijk believes he can keeping playing for \"many more years\" - but says he does not yet know ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T21:00:53.452544+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614508/liverpool-virgil-van-dijk-uncertain-on-anfield-future-beyond-the-summer-but-believes-he-can-play-for-many-more-years",
+      "published": "2026-11-20T20:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "'It's been an incredible journey' - Van Dijk uncertain on Liverpool future"
+    },
+    {
+      "desc": "Chelsea hit with £150,000 FA fine and action plan after anti-Catholic and anti-Irish chants by fans during Charlton FA C",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T21:00:53.452576+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOME8zaVNibS1XT0c4cW5WSUwzdUpSQnc4OWRLNWkxakZaUU5KOUotdC1nN3JhLWVhN1dSZ01ja2dPVWxXZ0NKaFdLZGRoT3lQYmk4dVd3dVpIaklKcGdvYUR1TVZabmNfbGhERXFSbGlYUVhFNGQ1MkNiV3UzUVZ6ZjB4UlpaZ0NDNEI1T3lPSGxORmU0MDBRVEsxUjh6R3loWlBLZkNjZzlROW1uWTNhalJfRl8?oc=5",
+      "published": "2026-11-20T20:08:36+00:00",
+      "publisher": "https://www.goal.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Chelsea hit with £150,000 FA fine and action plan after anti-Catholic and anti-Irish chants by fans during Charlton FA Cup tie - Goal.com"
+    },
+    {
+      "desc": "Victor Osimhen is keen on a move to Manchester United, Aston Villa are interested in Amad Diallo and Ivan Toney is a tar",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T21:00:53.452604+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c60qj1924wyeo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T20:06:51+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Osimhen keen on Man Utd move - Saturday's gossip"
+    },
+    {
+      "desc": "HARRY KANE suffered a shock injury just 20 minutes into his return match with Bayern Munich after the international brea",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T21:00:53.452628+00:00",
+      "link": "https://www.thesun.co.uk/sport/41087357/harry-kane-injured-bayern-munich-bundesliga-koln-england/",
+      "published": "2026-11-20T20:04:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Harry Kane limps off injured just 20 minutes into Bayern Munich’s Bundesliga clash with Koln"
+    },
+    {
+      "desc": "Mauricio Pochettino has questioned what could have been gained from the drone footage of a Manchester United training se",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-20T21:00:53.452644+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13614363/mauricio-pochettino-manchester-united-head-coach-discusses-drone-footage-his-approach-to-data-and-bruno-fernandes-ahead-of-first-game",
+      "published": "2026-11-20T20:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Drones, data and Bruno - Pochettino on his early Man Utd challenges"
+    },
+    {
+      "desc": "MANCHESTER CITY host Fulham on Saturday, looking to return to winning ways after three defeats on the spin. To mark the ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T21:00:53.452664+00:00",
+      "link": "https://www.thesun.co.uk/sport/41083541/man-city-fulham-haaland-betfred-boost/",
+      "published": "2026-11-20T20:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man City vs Fulham: Get 2/1 on City to win, Haaland to score or assist and Anderson 1+ foul | Betfred"
+    },
+    {
       "desc": "MANCHESTER UNITED chief executive Omar Berrada has defended Sir Jim Ratcliffe and the Glazer family as “very dedicated a",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-20T20:00:48.708980+00:00",
@@ -4894,6 +4964,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Omar Berrada hails ‘dedicated’ Glazers as he claims some Man Utd fan criticism has ‘crossed a line’"
+    },
+    {
+      "desc": "Play GW11 FPL Challenge to win a UNIQUE Football Manager prize Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T21:00:53.452739+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZ2p6VzljckFuVGZJcFNydDdQbmhUbThJUmdXYlQ4S2VKUWFpSFlXajZjVkJEc05NaTM1NzBoUlhIRTBNOF9zMTNrQXc2WVlDR1M2YVVTTDNWNEc1MEh2bVNQX2I2VnNiM3IzT2dFX1BCYnhIZkZPdTFNR0k5SHVYRW5aNDUyRzhfQTFmUnRmSW5RMkRrb0RqcWJOSjk0Y3pfRGxiNjcwczZaWHpN?oc=5",
+      "published": "2026-11-20T19:08:44+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Play GW11 FPL Challenge to win a UNIQUE Football Manager prize - Premier League"
     },
     {
       "desc": "Ex-PGMOL chief calls for Government action after YouTuber speaks out over Man United drone incident Yahoo",
@@ -4924,6 +5004,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Vincent Kompany returns to Bayern Munich touchline in sling after being rushed to hospital after collapsing"
+    },
+    {
+      "desc": "Chelsea fined £150,000 by FA for anti-Catholic and anti-Irish chants as statement issued The Mirror",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T21:00:53.452832+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWXh0blF2aDhXXzlaNlJKdUJBNWxnU0JXQzBKdU1qckhfNG5MRnRvWmx3OF95d2RXc2NpYm9SV0FBTkg0dUNmc0V5Nno0X0gyeVg3Y0dtU3RBNDVSSVZPZ2xNQlVVenFnYkdMTWJjeE9LU04yb3NoMzMxSExic2FvSXVKdnIzb3lzWndjNUN5bXNBd0VKZ0HSAZsBQVVfeXFMT3AyRm5PMHdVd09KQUN1OHNlTUt4WTFqeTFiNWxCUVEwQ1NDbWRPQmZsTktaUWIxOEZMeXlBOGlKOWZhYndwSVBvRkptaWtjbm5IMW5neTVnZUwtdlY5Q1dUTmUzLUZnZ29fX29qaWtEeUV5c2pndk54MTdPUmpVMDF1R1lXeUpFWDlLY3A1UXRRRjVNQXRpYlhiOG8?oc=5",
+      "published": "2026-11-20T18:54:00+00:00",
+      "publisher": "https://www.mirror.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Chelsea fined £150,000 by FA for anti-Catholic and anti-Irish chants as statement issued - The Mirror"
     },
     {
       "desc": "ANTONIO CONTE has blasted Manchester United after he was snubbed for the managerial role. The fiery Italian was one of t",
@@ -5004,6 +5094,16 @@
       "publisher": "https://www.theolivepress.es",
       "source": "https://www.thefa.com/rss",
       "title": "England fans slapped with ticket ban for anti-Catholic chants in Madrid – after Thomas Tuchel warned players about Spanish racism - Olive Pr"
+    },
+    {
+      "desc": "'It comes down to hunger': Mikel Arteta pleased with Arsenal desire ahead of Newcastle clash Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T21:00:53.452999+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWjl0ODRSZDhlQ2F3QkdFLWN1R2YtblNPam5ncHVRUXM1dHZOc1RSVFNVdURjc3RPLXFTOGlxVC1WSFRsbEVMbXpabXhJQ1ZWRjYzQkFHNlRCd0x4czdhRzJ6NUgtbC13QVlxR1JlcWVVamtpeU9qeEd6N1M0YTRYbG9sX05tWldVdWNwcGV0eGQyeUV4WXdNYmVZbEVIVmFpdVFlY2ZoaUtkR2p0QkdaN0VOdUdwYkZydGxER1FRcnp5WnQyVEpJMNIBzgFBVV95cUxNSDJCXzQtQ1FyeHlYNFhUX1U1XzlacjlqVG02Z1IyWUJ1MkNzeVBoc01kOUNsdmY0NExPbFhFc0JUTmVBY1ZhcHJTMkdrU3luT3A2YmN1QUt4M1BpSW5KNE9qX0V1a2llTmF5LVZHbW5wcmUwUkFfMGNRcFVHbHRLY2NUTXdfSlpndFhFdE1hRjVsTDBKVmJQazdOeG9Xd1htY2NENnQ3VFB3b3pwZEh3cWhQNGNhTFpPdTVHc3NXV0d1R0Q0TTNHSDhYUVlzUQ?oc=5",
+      "published": "2026-11-20T18:02:30+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "'It comes down to hunger': Mikel Arteta pleased with Arsenal desire ahead of Newcastle clash - Tribuna.com"
     },
     {
       "desc": "Milos Kerkez on Liverpool v Man Utd: 'It's a blessing to be involved in the biggest game in England' Liverpool FC",
@@ -5276,6 +5376,16 @@
       "title": "Pochettino reveals why he was late to first Man Utd presser and jokes he didn’t even have time to shower"
     },
     {
+      "desc": "What Mauricio said in his first press conference Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T21:00:53.453311+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWRpSnRGTFRnUkRqeWlXV1RoTXdyOHBfRmVkY2NXN0J4ZFdadWRsZTJFUWNaNFRMa2V0RHJxNzJEY0VoaE9veEdMbkVzY242Q1prMTd6WW45TjJraGozVEVRdlpiNy1hTVctRXNzSXdVbXFNY09VUFh3aGhuaV9HM0M3SVBiTXZDRjNsTFVxaVRHUUdYQmdYdFN3?oc=5",
+      "published": "2026-11-20T15:56:33+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "What Mauricio said in his first press conference - Manchester United"
+    },
+    {
       "desc": "FPL Team News GW11: Guéhi Available, Saliba Back, City Pair Doubts (20 November) The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-20T16:01:01.823335+00:00",
@@ -5484,6 +5594,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘She was a great actress’ – Premier League striker related to Hollywood legend but hasn’t seen any of her movies"
+    },
+    {
+      "desc": "Pochettino addresses Bruno captaincy question Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T21:00:53.453539+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQlpWNDZXX3dvWm1oS1BRZTJWM2hnR1owQmh2bjcydVR2X2VzUUZ3dmJ1UFU1MzM0WG5xdUpYdjhuSzZBM29kXzJjbEhfQVpNWFlPdldES0Z5QVFtWkROZW9PSmg5U0tLRW9qLWFoeFdIUFNFblhNZmMtUlNpb0ZDT1RqQV91X1doeVZqSzB6SlRHQ1RDalpaazRqaw?oc=5",
+      "published": "2026-11-20T14:36:02+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino addresses Bruno captaincy question - Manchester United"
     },
     {
       "desc": "In a turbulent time at Manchester United, chief executive Omar Berrada has sat down exclusively with Sky Sports about Un",
@@ -6264,126 +6384,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Liverpool v Manchester United: TV channels, live audio commentary, highlights guide and more - Liverpool FC"
-    },
-    {
-      "desc": "Mikel Arteta reveals BREAKING update on Martin Odegaard Arsenal future now.arsenal",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T15:00:55.064660+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZ0t1VmRJbk9qNl9BWGpkU2RqaG80cXFrRWFscnF1WjJ5bzVPYjJBa0JndjhwWWdtdUsxVWxweTlsNXZQN1dBYXczZm9TaFhrZWk1ZGoyQ0tRSVJyQmhLVG1yX01Ra1F3T2dKSTAtTVlzSW5jRHN5ekcxUnp6QmtibHpHU3hQbmE3d3JMZG9iN25qUWxBT3JFWmUyTlI1T2pfNzRJbHAwXzRmdEs3ME5r?oc=5",
-      "published": "2026-11-20T10:37:18+00:00",
-      "publisher": "https://www.nowarsenal.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Mikel Arteta reveals BREAKING update on Martin Odegaard Arsenal future - now.arsenal"
-    },
-    {
-      "desc": "WAYNE ROONEY has revealed he urged Manchester United staff to treat son Kai the same as every other academy prospect. Th",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T11:00:51.331026+00:00",
-      "link": "https://www.thesun.co.uk/sport/41079643/wayne-rooney-man-utd-son-kai-release-academy/",
-      "published": "2026-11-20T10:33:44+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Wayne Rooney forced Man Utd to keep promise about son Kai, 17, that could have seen academy ace RELEASED"
-    },
-    {
-      "desc": "Free Lions statement on suspended away fan ban Football Supporters' Association",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T10:18:52.866342+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1YTDQyQTkyWU5DMGpDSDRtMDdVM3Q3WnktUDhkQ2NOQ1dnSjgtRHVDc3pITUd1MlNoeW5UbDFFSXlmaGhSRjBVMXo0TVY5X2tNbVVsMF9nczN3ZnpmSHV5Zl9jeDI2VWFlR2prZUxiai04dHhjUHdBMXRzeWZQMU0?oc=5",
-      "published": "2026-11-20T10:15:58+00:00",
-      "publisher": "https://thefsa.org.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Free Lions statement on suspended away fan ban - Football Supporters' Association"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has a lot of leaks to plug at Manchester United, and drone footage publicly revealing his first trai",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T10:18:52.866378+00:00",
-      "link": "https://www.thesun.co.uk/sport/41079054/man-utd-pochettino-training-spying-footage-reveal-liverpool/",
-      "published": "2026-11-20T10:11:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "What shock drone spying footage reveals about Pochettino’s line-up and tactics for Man Utd’s visit to Liverpool"
-    },
-    {
-      "desc": "Every word from Mikel Arteta's pre-Newcastle presser Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T10:18:52.866408+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYnREZkFxUU9xTmFaN0tLVVlLS3U3T0NNSmJVbnZPQ0hKRnhhUGdBZVg2bDZSZFdBbnJmZ3Z2NzB4WmNxOTVodjhURVRZaU11dHdodDYxaVVfZDdEZ1BkTXVERjYzZnhsZWJtaXJ4UmZKOF9UV2xWZnRaY0wzSnoxcTQ0ajdFYzVScVlhNGc0VlNwWGFqc3dNeA?oc=5",
-      "published": "2026-11-20T10:07:31+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Every word from Mikel Arteta's pre-Newcastle presser - Arsenal.com"
-    },
-    {
-      "desc": "Track Order - Chelsea Store Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T13:00:56.688030+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tZVAtOG1XSExLdm1Hc1hKNjBVbkdJLTVRSmJ1LVhMcG53MURxZTlXb0xXUGdQSVFyMXcyZ040QnJXd2YtbXRoTHY3SWNXYW1r?oc=5",
-      "published": "2026-11-20T10:06:32+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Track Order - Chelsea Store - Chelsea FC Store"
-    },
-    {
-      "desc": "Fabrizio Romano reports whether ‘Arsenal are open to selling’ Martin Zubimendi to Chelsea TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T10:18:52.866439+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZW93bWh1b215Njg4aFNteFZ0SHhiWnZkYXVRajZNLXhmMmdORzRuV3FPcDA4Yy1JeXotSjA2c0lVMHVUbVhCckF2MF8tOW1iNjJVaE1BWnVVTmxMQWVaYWVqUUxjTG1mcC1IVWtKbUd1ZjFVV0E0Zm1ZXzBzYm5RLXJPa0NRNGIzYURJbUdHLW8zblBYVDROeFZJSDNhLWFRMUpYNXhOQVBpcDgydkhWaEhYX005WjE5ZEE?oc=5",
-      "published": "2026-11-20T10:03:03+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reports whether ‘Arsenal are open to selling’ Martin Zubimendi to Chelsea - TEAMtalk"
-    },
-    {
-      "desc": "One of the Premier League's most charismatic managers is back.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-20T10:00:50.587156+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13613145/thomas-frank-what-should-crystal-palace-expect-from-their-new-manager-what-does-he-need-to-change-and-can-he-keep-the-eagles-up",
-      "published": "2026-11-20T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Will Frank turn things around at Crystal Palace?"
-    },
-    {
-      "desc": "Women's Super League ticket news: Brighton away | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T10:18:52.866509+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUEQ5V0lCX2xUaG5kT0Y3N01FOVBnQjVvdnJiNm5taHplWlR4V2tUOU5IamstN2RlUTBfd2ZkUlQ2V1NCaElCTnJwNnlxWkRJZElCN3VqR2JybUU1S0ttVXc1M28weXliemZwOFA5anlyQ0w0eDZFRmMxcTY0RnJzWG1zdnljWGNsNWtoeDA3dTI?oc=5",
-      "published": "2026-11-20T10:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Women's Super League ticket news: Brighton away | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Santa to be at Medlock Square for Arsenal v City! Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T16:01:01.824621+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNSVdVQTRpNFZabnlXM1h5UFhxb25VbkY4OHFwSUw1ei13aU1yMnlDMlk1blA1UEZQTlNXdG9JOHpvekxFN1p1Wm51TTRuX0JhQjQ3MXhZUVlHU3JOMmpZNVQ0Q3Vncy1kdE1fMnRWVkx2dVdwUXRlbGFsQUotdjVSRjlkRlFIeFU?oc=5",
-      "published": "2026-11-20T10:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Santa to be at Medlock Square for Arsenal v City! - Manchester City FC"
-    },
-    {
-      "desc": "Fabrizio Romano predicts double Man Utd swoop in January – ‘already started exploring’ TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T11:00:51.331093+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQUTdFUGFkSzhfM2VjY1VHZ0lwMTBncmItLUZhbWtkRDE5X0laMlpfbTVqYU1GdjhHLTBBV2JJZnVoemZMZzcwVmVLeVZaRUdfZnJQbkRwTDdySHY5aEJFSWdnQUh5cERfNFRsbzMzWWltZTRNZ3VCRFJqM1JRbmZBbHZIMk03WDZQS0xiOUlyV0N4LXB5SWg1cVQyMlJPM2gyZXNYMzJ4UndkNlppc1dNRkpPUU95Yjcyamc?oc=5",
-      "published": "2026-11-20T09:51:03+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano predicts double Man Utd swoop in January – ‘already started exploring’ - TEAMtalk"
-    },
-    {
-      "desc": "It's all eyes on Bruno Guimaraes this Saturday. The Newcastle hero who captained the team to cup success returns in Arse",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-20T10:00:50.587181+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612946/bruno-guimaraes-arsenal-midfielder-is-growing-in-stature-but-mikel-arteta-still-wants-more-from-brazilian-ahead-of-newcastle-return",
-      "published": "2026-11-20T09:38:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Guimaraes growing at Arsenal - but Arteta still wants more"
     }
   ],
   "processed_urls": [
