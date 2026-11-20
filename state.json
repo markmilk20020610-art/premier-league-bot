@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 41425,
-    "output_tokens": 4300,
-    "requests": 7
+    "input_tokens": 48045,
+    "output_tokens": 4816,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4864,7 +4864,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T21:00:53.449513+00:00",
+  "last_scan_at": "2026-11-20T22:00:53.729879+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4885,6 +4885,56 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "LABOUR’S deputy leader poses for a selfie with Man City ace Erling Haaland at a swanky bash laid on by the under-fire cl",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T22:00:53.732844+00:00",
+      "link": "https://www.thesun.co.uk/sport/41087639/labour-deputy-leader-selfie-haaland-city-bash/",
+      "published": "2026-11-20T21:55:11+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Grinning Labour deputy leader poses for selfie with Haaland at lavish Man City bash weeks before guilty verdict"
+    },
+    {
+      "desc": "Mykhailo Mudryk accuses Ukraine legend Andriy Shevchenko of lying about the circumstances surrounding the winger's posit",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-20T22:00:53.732880+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cjn502n9vqp4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-20T21:54:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Shevchenko lying about drugs test claims - Mudryk"
+    },
+    {
+      "desc": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit Liv",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T22:00:53.732911+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNYndGeHB0bUV6YVNweWRGTkx2dEVBZTN3Vmp3UWtzMFl2Z2hLTUx6S2R5eEx2bERJVmFBQ0ZXOVRLYmlQbGlPamZaVEZaTlRNZkhsYzhickhhcXFBTWc5bVU2NWVtM3hiczExRFh0UWZzWXdqT2tITUtEVXZhcFlTTE1vS1BadndkOGcyemlHVUIzdW5tWlhqeDN4NHY1QkFrM1dzSlZiaEktTUJXZ2FHQ3Z0OFpvamZjWGVnRHo2OWdBd2h6Mm9qVWp0aE1COFlBWktqV2M3MXBHd2pyMmp0WDFVZjl5Uk1oOUktVkpGODVHal83MUNVREZFdFV6Z1JhWTVJc09qWGZJaDJtbS1VcnFn?oc=5",
+      "published": "2026-11-20T21:30:38+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit - LiveScore"
+    },
+    {
+      "desc": "JESUS OWONO has been seen for the first time since the horror challenge that killed Jesus de Miguel. The goalkeeper was ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-20T22:00:53.732936+00:00",
+      "link": "https://www.thesun.co.uk/sport/41087613/jesus-owono-goalkeeper-andorra-tenerife-jesus-de-miguel/",
+      "published": "2026-11-20T21:04:50+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Goalkeeper Jesus Owono seen for first time since horror challenge that killed Jesus de Miguel as he joins public tribute"
+    },
+    {
+      "desc": "Chelsea Transfer News Today: Scott McTominay bombshell as Romano provides major update LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T22:00:53.732959+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZElNU1BlQzNfcjk1NTJIeURCT3Q2eldQcUFNa0pTQ2NzcHU4Q0JFSnBianFFQW1LZ0x0YnlacmVPaWlwTV9tLTBjd3UzVE1NcV9hTHdPMkpsdGVVUkdRZDlfRFI0a0Jib3JGeGxEY2dXWHdIMHRSeVNuaTk1dmFwVXA1bFNDenJ0a0RUbko0REFyelM2dUNySTJQeVUxWVZ1d3RRMGhxdVVDazVPTUl0X0ROeXZOcUJsZTJTZkNHaHN6WDJGdlJzNEI3SlI1ZWJNYXd1alRDNDBLeWo2NlhoUDRVVW01UHA3WmJGU2pFbTVFd0ZS?oc=5",
+      "published": "2026-11-20T20:57:16+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Chelsea Transfer News Today: Scott McTominay bombshell as Romano provides major update - LiveScore"
+    },
     {
       "desc": "Fabrizio Romano confirms Liverpool have path to complete bombshell Arsenal deal LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -4964,6 +5014,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Omar Berrada hails ‘dedicated’ Glazers as he claims some Man Utd fan criticism has ‘crossed a line’"
+    },
+    {
+      "desc": "Manchester United and Liverpool monitor Atalanta star Giorgio Scalvini Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T22:00:53.733146+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYWZTbEZ1S2VUd21GMjRzeGpiem1HMEc0c3I1bTBhNUdZSVFmWVc3c012SUxyeXFKODFWNDdfMTI5Y0JfYmpQc1lueUdyc0ZnM01wb3plcnRQN044YWZMbVV0U29uT1ppcHNDZDVmR056enV6WE9lXzIxOWJQVXc4Rmc0R2hVNmRiUEFVRzdDR1dITmZ0aWJxY2RkNS1NeDdzY0oxZ0ZB?oc=5",
+      "published": "2026-11-20T19:22:24+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Manchester United and Liverpool monitor Atalanta star Giorgio Scalvini - Liverpool FC"
     },
     {
       "desc": "Play GW11 FPL Challenge to win a UNIQUE Football Manager prize Premier League",
@@ -5224,6 +5284,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ex-Sunderland hero says Regis Le Bris axe talk was ‘crazy’ as he addresses infamous goal that made him a Mackem villian"
+    },
+    {
+      "desc": "Team news v Liverpool Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T22:00:53.733530+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYm05eTlTUVg4dlBXTkNrMFFWeURKcDlFOE5KS0c3dF9YbXlqcTRwc21tVzFiUms1QnlNVDZvNUs3UlJhcW9tb0hrQXN1WTFaWEdOdlJoNE9yajNmNmxuY1dEY25PRl9kdDZRb1FnUVZrNTJSOU45Y0R1MmZaM2t5S3RZemU4bzJmVWk5MFA3Zw?oc=5",
+      "published": "2026-11-20T16:57:12+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Team news v Liverpool - Manchester United"
     },
     {
       "desc": "Manchester United chief executive Omar Berrada says some of the recent criticism of the club's hierarchy has \"crossed a ",
@@ -6314,76 +6384,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Watch City's EDS take on West Brom in the Premier League 2 on CITY+ - Manchester City FC"
-    },
-    {
-      "desc": "Courtois reportedly signs until 2028 as Real Madrid keeps its renewal pen busy Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T12:00:56.082565+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE0zYjRyUWVLMEtZQ2pjQi1yU3QzM0FnTUtSQUxRUUVKRnNLVFlKNnRodjVVcGExNUN5SzkwbS01azNHUko3UF93?oc=5",
-      "published": "2026-11-20T10:54:34+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Courtois reportedly signs until 2028 as Real Madrid keeps its renewal pen busy - Digg"
-    },
-    {
-      "desc": "This time, Matthias Jaissle wants his fingerprints on the bank notes. But what the head coach wishes for in January, and",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-20T13:00:56.687904+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16306201/Newcastle-United-Matthias-Jaissle-inside-discontent.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-20T10:54:34+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Inside Newcastle United's transfer tension: Matthias Jaissle wants greater control as he eyes a new No 10 and No 9 in January - but the next"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T14:01:08.495858+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeUxtM0JfTXhlbjlzMVFGbWN4TW0wcXhVQTNJLUlGZVRhbVVaZXMtWldkTkwyZm93R0gyXzZzdzBNVGMwUTJ5cDlmOFJrQlI0NTNGNlNFbWVyRUFuMDU3am5ZZ2U1aGNFVkV6eFNkMTZNUy1xRjhVVEwwaDNQdDQwNkxR?oc=5",
-      "published": "2026-11-20T10:53:48+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Arteta's update on Saka, Saliba and Zubimendi Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T13:00:56.687930+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQ01ZMDlmRjhEMTRPWG5pMjRfY2ZtVjlyQzFUUk1JS3ZoQlNLVmE4WmNqbGkwRW5ScDQtYzNSdGptWnZQUmZtdm9JTkxFTDdqREtPZHFLaTFJMXpPOFlCczZqMld6RjhZSW05VS1xNVR3QmpZM2xldU1UakNEY2VXYnItRWlmN0FEUGgzcFZ3?oc=5",
-      "published": "2026-11-20T10:46:05+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arteta's update on Saka, Saliba and Zubimendi - Arsenal.com"
-    },
-    {
-      "desc": "On demand | Watch Andoni Iraola's pre-Manchester United press conference Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:01:06.506309+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZVJhWlRSQU10Tnl5MmI0YW9DeVh0clN3VzhEel9FMlFtTW9DVTR4ejB6ZkkwaUZkX3FoS0RqcS1pSDF0ekpwYml6ak1RdmF0OXNySzF0aUtOWkZKc0ItSldYVFlBYXF5c09tSWdBa1hiLTZGV0t3cHp1bVoxSkh4TU4ySVVNMUJnWWMtV1hpYVo0MkpxcjZGRFZuRTQzZw?oc=5",
-      "published": "2026-11-20T10:42:53+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "On demand | Watch Andoni Iraola's pre-Manchester United press conference - Liverpool FC"
-    },
-    {
-      "desc": "Training photos: Liverpool prepare for meeting with Manchester United Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:01:06.506323+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNDZUb3NqbVNhZVlWVGZveXNQb0hyS1YtSUQzWEU0X2ZOWVc5UDNnT0pxQ0lla0poN0R0UnlvVk5DQXc3aHMyNDVIRTVQSEhFMkJVTThzWmExeGgzbEpESGlaeDl5WFUxLWRac0hHNm9wcGZmRVQwUWJ0R1dFeHlLSVNidmc0eThtTG45MEU4ZTdzZw?oc=5",
-      "published": "2026-11-20T10:42:53+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Training photos: Liverpool prepare for meeting with Manchester United - Liverpool FC"
-    },
-    {
-      "desc": "Liverpool v Manchester United: TV channels, live audio commentary, highlights guide and more Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:01:06.506338+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNajJodlYwb0FSMnBxcWt6TmRCdXUxblctdmZvek8zQTRaeU9KcjhDNWhUWWFEQ1dmd21TSFFZOGxZOFVXMllBcm4tZGRyblBNSEk1VHgyQk9tdzRCSlkxWVA1X3BuaDBEMlNtYUY1WXdmNnVnbWFiLXRSTWhGdmpfaGhrZ25XNkFCNnlBcmZMeUtCanVOTE1NUE9tYmViRXpPdWNPc0w4Q19GcU5GWFdpNw?oc=5",
-      "published": "2026-11-20T10:42:53+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool v Manchester United: TV channels, live audio commentary, highlights guide and more - Liverpool FC"
     }
   ],
   "processed_urls": [
