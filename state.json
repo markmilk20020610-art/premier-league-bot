@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 13,
+        "calls": 14,
         "errors": 0,
-        "requests": 13
+        "requests": 14
       }
     },
-    "calls": 13,
+    "calls": 14,
     "date": "2026-11-20",
     "errors": 0,
-    "input_tokens": 86816,
-    "output_tokens": 9098,
-    "requests": 13
+    "input_tokens": 93314,
+    "output_tokens": 9879,
+    "requests": 14
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4689,7 +4689,7 @@
     }
   },
   "last_morning_report_date": "2026-11-20",
-  "last_scan_at": "2026-11-20T02:24:39.236660+00:00",
+  "last_scan_at": "2026-11-20T03:01:01.228282+00:00",
   "last_summary_sent_at": "2026-11-19T22:01:22.417192+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4710,6 +4710,16 @@
     "updated_at": "2026-11-19T22:01:22.401641+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Video - Carlos Forbs Attracts Growing Interest From Arsenal and Other Premier League Clubs roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-20T03:01:01.231704+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeEpYQ293endQb0tVLVJ2VTFsUi1yUDBya1BWNTliOUJKZVJ4Wk1IV0hFVjljdGdramN1Q1NwN0c1VktvdmpkSkRRN21zVUhrTzdGaHVpVUxsRFpxZF9lYllQbFFST3phd0NoVFpwWWFLeFFMZFJpVFpPYTQtUzc2SUJ6bzluR2VoX0FDU3VaRElnblVYUDdVUGdCdHlJZVhPb1VVVVJYVFl4c3plYkU3aWVmRl9JenhJcmtEc0RGRzM0Y244bkdQaHdGZmMtcUlwanJieVFUUmtUOUZXY19EcQ?oc=5",
+      "published": "2026-11-20T01:03:17+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Video - Carlos Forbs Attracts Growing Interest From Arsenal and Other Premier League Clubs - roundtable.io"
+    },
     {
       "desc": "Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6199,16 +6209,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Read Renée's Lyon programme notes - Arsenal.com"
-    },
-    {
-      "desc": "Three fixture changes in early 2027 Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-19T12:56:17.111711+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORGFKWEFHSEJvUlAzTWxqMTNWVklyUzUwVU90Y0xYQU1yN3R4YUM0ZWtNdjc1Mml4S0M0Y0VlSlhNbEltSG1kS1N6bkd6NVRlRUZwVEZacXN5SDFuR1RYYkFJWTlTNkh4X0hycFdORWJYWTBRUzdkbUI0cHNtemVmbUl2SXQ?oc=5",
-      "published": "2026-11-19T12:02:14+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Three fixture changes in early 2027 - Manchester United"
     }
   ],
   "processed_urls": [
