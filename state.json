@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 142666,
-    "output_tokens": 16362,
-    "requests": 24
+    "input_tokens": 149100,
+    "output_tokens": 17259,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5004,7 +5004,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T12:00:50.462996+00:00",
+  "last_scan_at": "2026-11-21T13:00:59.510343+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5026,6 +5026,56 @@
   },
   "news_pool": [
     {
+      "desc": "Follow Daily Mail Sport's live blog for the latest score, team news and updates as Manchester City entertain Fulham in t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-21T13:00:59.513867+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308753/Manchester-City-vs-Fulham-Premier-League-Live-scores-team-news-updates-Enzo-Marescas-look-end-losing-streak.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-21T12:59:34+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Manchester City vs Fulham - Premier League: Live scores and updates as Erling Haaland baffled after smuggled attempt ruled out... as Enzo Ma"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T13:00:59.513954+00:00",
+      "link": "https://www.skysports.com/football/liverpool-women-vs-chelsea-women/live/575829",
+      "published": "2026-11-21T12:20:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "WSL: Liverpool vs Chelsea LIVE!"
+    },
+    {
+      "desc": "Fabrizio Romano reveals Man United’s January transfer plans as decisions emerge on two stars CaughtOffside",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T13:00:59.514008+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZHhGN28wWTU4UE81T1ZmM1h5aWN1SllRNERPZlZGYmlfSXR5ZjQzbHgxUWthbkUzWk90Q2JRVFJzT3RhQVZCWEJWZ01vZzFtLWZSZklXTlpGdGNzbjNuVnRqTGNfN21EOFptNWJYNDltOVQwOVItcHRRV1B5aU9uM0NXQU93Yjg1ZDFSNnp5UjlNT09fUVB4LWhHcW5vYmvSAaQBQVVfeXFMT0gtOGtGUnVUNzA3bnpUb3VaMnhyZ09ub3NGbk9jY080RHlDT2RyQk1IX2pKRHBLV25KZGIwdGluVHVCR252S3BvcmhobEdneWtYdjJhLWZHQjNMMlBIZlpQSnpuOTQ5SzJpeE1YQUw1NlNkd3c4WGJEcUlvT2NTSWh4aThyNTBfdXQzdkVhcGd1ZGRNdE9qS0s1cFp0UDJENDZMYVU?oc=5",
+      "published": "2026-11-21T12:13:54+00:00",
+      "publisher": "https://www.caughtoffside.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Man United’s January transfer plans as decisions emerge on two stars - CaughtOffside"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T13:00:59.514054+00:00",
+      "link": "https://www.skysports.com/football/southampton-vs-derby-county/live/560685",
+      "published": "2026-11-21T12:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Southampton hit the bar against Derby LIVE!"
+    },
+    {
+      "desc": "Eli Junior Kroupi transfer update: Tottenham and Arsenal may struggle even with 'amazing offer' Spurs Web",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T13:00:59.514084+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPT19iUFhPSmZ2M2RvN0JZX000d2U5aVl6SzlaeVZicHRMb1RsWU9RMU5nRlQ3T0dFNVNHR2RIM3V5QkI2Tm9tZl8wbWxEakV1Rmk4UGJnOW5naXpKSnBQMU12ZDZ2NFpQNW5kZVVqMktaeDlFVHNtaFVmdUVBTTRVb0VnMl9iZEdicVFsMTRlMTVwUWpKX2pEWTlKRmRfejdJOTNaV0NXZEVDMV9QRWloTkdmSlVXYmtpcHRsMXpVcEk0S1ZRWk13cU1R?oc=5",
+      "published": "2026-11-21T12:00:00+00:00",
+      "publisher": "https://www.spurs-web.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Eli Junior Kroupi transfer update: Tottenham and Arsenal may struggle even with 'amazing offer' - Spurs Web"
+    },
+    {
       "desc": "Man City vs Fulham Confirmed Lineups: Khusanov Fit, Guéhi Starts, Cherki Benched The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-21T12:00:50.466485+00:00",
@@ -5034,6 +5084,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Man City vs Fulham Confirmed Lineups: Khusanov Fit, Guéhi Starts, Cherki Benched - The False 9"
+    },
+    {
+      "desc": "Chelsea Women's starting line up vs Liverpool confirmed | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T13:00:59.514159+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPY3NfbTUtZnliX1NHbVBCbVVUQlY2M3NlSmc2bThqdUdyNmU5Z0JxdVV0dVQxQnhrRVFfSFBiOEh6bGxGOTd5UXBBalRydzFsbHVvWjVOVjJBU0lkZUtRS3FyZUxxSi1OTUlUWGFOSWJrZVpUSktfeXMwR0FKRlBkRFFvTjZTLTNWU3lLSHJNSHZfSHI1b253VkxSODY?oc=5",
+      "published": "2026-11-21T11:45:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Women's starting line up vs Liverpool confirmed | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "ENGLAND have been dealt a potentially devastating blow to their Nations League hopes after Harry Kane picked up a major ",
@@ -5094,6 +5154,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Former Man Utd star Scott McTominay to become a dad as partner Cam Reading shows off baby bump in bikini"
+    },
+    {
+      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T13:00:59.514317+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
+      "published": "2026-11-21T10:49:25+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     },
     {
       "desc": "Not quite 50 miles south of Rome sits Frosinone. It is a town of 42,000 best known for many years as the birthplace of 2",
@@ -6454,76 +6524,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘We’re actually happy’ – Omar Berrada defends Man Utd’s much-maligned transfer window and counts Rashford as addition"
-    },
-    {
-      "desc": "Fabrizio Romano Transfer News: Sesko truth, Zubimendi to Chelsea update, Dembele deal LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T16:01:01.823466+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOdlM1ZTU2MzVTUGF4aFd1ZmQxblF1NVdTc01TYjRiRDNFYzgwaEl5WG9MN05sU3BtUEZjN05ESEROcklZVXJ3R1NpenlhSG02RFVvVllhNFZLR3lYSUJrYlVCcWF6LW5FWWlDalhBM18xRDBkLWpxcm85UjdtWmhUUHFaSXlHVDE4MXNvTTI5RXNIRkpweXc1X3A3VFdxU2NrRUdvZWRtT3NQS0NxbEZqeTdKUXA4d0gwU1BrT0lqTkVnbmlzUXdGR2VfZ1M2NzhqdTh1WkplZllnVzI5NXlIVzBkX1BFbVhtODk3RUxyRFg?oc=5",
-      "published": "2026-11-20T15:36:38+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Transfer News: Sesko truth, Zubimendi to Chelsea update, Dembele deal - LiveScore"
-    },
-    {
-      "desc": "Celtic midfielder Mika Baur faces a lengthy period on the sidelines with an ankle injury.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-20T16:01:01.823484+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13614395/mika-baur-celtic-midfielder-ruled-out-for-considerable-period-with-ankle-ligament-damage",
-      "published": "2026-11-20T15:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Celtic suffer Baur injury blow"
-    },
-    {
-      "desc": "DAVID MOYES has confirmed that Jack Grealish is available to face Brentford on Monday. The Everton winger has missed the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T16:01:01.823506+00:00",
-      "link": "https://www.thesun.co.uk/sport/41084123/jack-grealish-everton-brentford-team-news-david-moyes/",
-      "published": "2026-11-20T15:22:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Jack Grealish available to face Brentford after being frozen out by Everton following two pub sessions"
-    },
-    {
-      "desc": "FPL GW11 Template Team: Haaland at 78.8% and Three Arsenal Starters at Newcastle The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T16:01:01.823529+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SX2ZrekZBUmotdHg0azQ0Sjh4bjc1Q2Y1bEZIRVdJX1Z3SDFqTmNEa29uWWk3MDlDUTBVQk1aeV80eFRJNEpBdHNhTWVvSThFR3NYUjVFeGtybmZ1RUVseFRsaVRiZ29lcGhB?oc=5",
-      "published": "2026-11-20T15:18:48+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "FPL GW11 Template Team: Haaland at 78.8% and Three Arsenal Starters at Newcastle - The False 9"
-    },
-    {
-      "desc": "With Joao Pedro missing again for Chelsea on Saturday, BBC Sport looks at the importance of the Brazilian to the Blues.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-20T16:01:01.823555+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cr62p7x23vg3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T15:18:42+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Why injured Joao Pedro may be Chelsea's most important player"
-    },
-    {
-      "desc": "Frimpong and Gravenberch in contention to return against Man Utd Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T16:01:01.823578+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObEpPTkxNUEhhWGNpLXhBSl9FMlpfb3c2UGJYeDdjQkhlanl4WXdLZFU1QnNIaURhVWQtbXF0SF9WdTdqd1RNRmozczBGOHhSQXJjNUZlaFdzZFhtcEVSRW01OGN0ajZENGhzc25fUTJKbjl5SHdySzJ5aFJtdkRJLUdJamNrVnpxSkY3WTg4aHBXc3lCOEZYck5oVmx0VHFpSlEwWTI0am1VOWdlNGUw?oc=5",
-      "published": "2026-11-20T15:16:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Frimpong and Gravenberch in contention to return against Man Utd - Premier League"
-    },
-    {
-      "desc": "Injury update: Hickey and Collins 'out for a number of weeks' Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:39:54.797026+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQXlNSFp0eUxjOXlGUFYwak5rNEdDQ1d1c09NdG5jeHJWdmtCdW83c2RlV2JGcS1xLWZYekdpSmdvU2RFbTZyY2FXWVF0bWdoaFNsYUJ4QV9lUTN4RWJHQVYwWWdZdFlBa2JCQld6bzI2bkg2WmoyMDhUclBOYmYzank0Z1FoOUg5RXZoZElELTE5ckNzU3BER2U1SnZCNWFuQ3FGNzlXZw?oc=5",
-      "published": "2026-11-20T15:16:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Injury update: Hickey and Collins 'out for a number of weeks' - Premier League"
     }
   ],
   "processed_urls": [
