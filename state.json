@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 12,
+        "calls": 13,
         "errors": 0,
-        "requests": 12
+        "requests": 13
       }
     },
-    "calls": 12,
+    "calls": 13,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 80859,
-    "output_tokens": 7466,
-    "requests": 12
+    "input_tokens": 87283,
+    "output_tokens": 8241,
+    "requests": 13
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4969,7 +4969,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T01:00:56.438448+00:00",
+  "last_scan_at": "2026-11-21T02:00:49.259808+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4990,6 +4990,16 @@
     "updated_at": "2026-11-20T22:01:20.683399+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Ornstein: Manchester United intend to sack Michael Carrick; club says no final decision Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T02:00:49.263238+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE43LURISDF5STlrM2hiMHV6a1NCRTRxbGJVWnpfajh6YTltWGNVc1hMY21MTkNTdzRYaFQ3MDJUc3hLbkIweVNN?oc=5",
+      "published": "2026-11-21T01:02:00+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein: Manchester United intend to sack Michael Carrick; club says no final decision - Digg"
+    },
     {
       "desc": "A Bayern club statement confirmed the blow, reading: 'Harry Kane suffered a tear of the syndesmosis ligament in his left",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -5119,6 +5129,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Harry Kane out for MONTHS after tearing ankle ligament as Bayern Munich release worrying injury statement"
+    },
+    {
+      "desc": "Arsenal Transfer News Today: Michael Olise latest as Arteta confirms wish LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T02:00:49.263509+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb203LTNVNmd1bHY3WFlia0Z6aThBZE8xanJLRmkwU2t2LWpicmpLYXZkajlTOVFvdVdiNHo0amVNOWJNMG9uNy1TVXFiaDRWUGt4NzFuWlppN0FPUkdIOHUxQllrajkzSHZ2blJJX0lORXJjZFAzbHRuOTBjdG9XUHViUzlLNndyRmNreHZxWDdvcjVIOThNNUVFZmNWUVYtcmpXbDFOZlYyS2xFRm85azNhMzhBZ2J6QVlqT1hPT2ZHenU4Z0xYUWZGV29PcW9xaHgtU3BDenVzYlFDOExDbi1iSQ?oc=5",
+      "published": "2026-11-20T22:13:25+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Arsenal Transfer News Today: Michael Olise latest as Arteta confirms wish - LiveScore"
     },
     {
       "desc": "Once again England's biggest football club is relying on a personality lift to drag them back to their feet. This is wha",
@@ -6469,26 +6489,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Go Inside Training ahead of Premier League return - Arsenal.com"
-    },
-    {
-      "desc": "Why Alexander Isak is Liverpool’s most-owned asset in FPL Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T15:00:55.064342+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTUFWOUZHSkhnSEV6V2pZeW5qQmR2UDBMZ1hhSW1EM1kwTmV1NzZ3b3RkYzZXY3RyOEtReDN5UXZKeFNqWG1XZTZKd1pXUmM0SUtvelQ3S0xmaHFNSHJJcUJrbnI2SDhJZ09CYTVhRmtqcHdXTVB1am81MzVWcUZOOWFBUDF1dHhoWGNjMjJBUGNUNDlLcVVjMlg1LUtEQQ?oc=5",
-      "published": "2026-11-20T12:34:07+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Why Alexander Isak is Liverpool’s most-owned asset in FPL - Liverpool FC"
-    },
-    {
-      "desc": "Press conference | Watch Gareth Taylor preview LFC Women v Chelsea Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T15:00:55.064359+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQM0p1Vm45Z0MzMlhqcDhNdnJ6ZmRNbkVLbjRsaEdYUmFkV1N5d0swdVpTTlNOR2U3RDk3eUxuUTVoYnE3djZaek1KRUhsSTFFV195Y0RmMk8tV19STjhjNUdhQklReEoxcHF5NHZXdFdpd284dEM2Y3I2cXdUWDdVeDZoc1FXMzJrNDY3MXZiWWVvVHc?oc=5",
-      "published": "2026-11-20T12:34:06+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Press conference | Watch Gareth Taylor preview LFC Women v Chelsea - Liverpool FC"
     }
   ],
   "processed_urls": [
