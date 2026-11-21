@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 67775,
-    "output_tokens": 6372,
-    "requests": 10
+    "input_tokens": 74257,
+    "output_tokens": 6957,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4057,6 +4057,41 @@
       "title": "纽卡主帅Jaissle怒斥球员无视战术布置",
       "updated_at": "2026-11-03T03:40:52.424800+00:00"
     },
+    "d178e23cc4d8": {
+      "article_title": "Jack Grealish's Everton olive branch: Star IS available to return to first team after being axed for skipping training without permission in",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "58d7c5da4546ab6e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 190
+        }
+      ],
+      "created_at": "2026-11-21T00:17:27.826741+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "db49faf9ec8d0df2",
+      "event_id": "d178e23cc4d8",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-21T00:17:27.826741+00:00",
+          "origin": "created",
+          "title": "Jack Grealish's Everton olive branch: Star IS available to return to first team after being axed for skipping training without permission in",
+          "url": "https://www.dailymail.com/sport/football/article-16309683/Jack-Grealish-available-play-Everton-star-axed-month-missing-training-without-permission.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16309683/Jack-Grealish-available-play-Everton-star-axed-month-missing-training-without-permission.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 190,
+      "title": "格拉利什获准回归埃弗顿一线队",
+      "updated_at": "2026-11-21T00:17:29.111211+00:00"
+    },
     "d22b9ee00080": {
       "article_title": "Man Utd latest: Carrick given no assurances over future beyond Villa match",
       "attempts": 1,
@@ -4934,7 +4969,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T00:00:52.025158+00:00",
+  "last_scan_at": "2026-11-21T00:17:23.131721+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4984,6 +5019,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea could get double injury boost as Xabi Alonso backs two key men to return early"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T00:17:23.134407+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-20T23:23:21+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "Manchester United borrowed £10m three days after confirming Mauricio Pochettino would be their new head coach, which wil",
@@ -5304,6 +5349,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Omar Berrada hails ‘dedicated’ Glazers as he claims some Man Utd fan criticism has ‘crossed a line’"
+    },
+    {
+      "desc": "Pep Guardiola's City was all about control. Keep the ball, dominate the pitch, play the game at your pace, on your terms",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-21T00:17:23.134858+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16300279/enzo-maresca-manchester-city-losses.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-20T19:40:03+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "THE BREAKDOWN: The real reasons why Enzo Maresca's Man City can't stop losing - from anonymous Enzo Fernandez abandoning Elliot Anderson, to"
     },
     {
       "desc": "Grealish will be considered for the squad when Everton face Brentford on Monday. Moyes confirmed Grealish is fit and ava",
@@ -6434,26 +6489,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Press conference | Watch Gareth Taylor preview LFC Women v Chelsea - Liverpool FC"
-    },
-    {
-      "desc": "The drone operator who filmed Mauricio Pochettino's first training session at Manchester United has removed the video fr",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-20T13:00:56.687254+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308507/Drone-apologises-Mauricio-Pochettinos-Man-United-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-20T12:19:38+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Drone operator apologises for filming Mauricio Pochettino's first training session, while Man United must apply to close airspace if they wa"
-    },
-    {
-      "desc": "Journalist gives transfer update on €40m PSG star as January window gets closer LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T13:00:56.687285+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNVEJlUVJLYmNEekVXV3hKdmdDR2ZNTGpDLUJwRy11YXdnb29SQzJ6aGFDdVRUZFUtM0ZFYk5IanhEclByUkdmck9CUEg4akZJT2RTVWdlSXJHZjdWazVKdnhlY3hIOGU3QURSUUVNNXhua1luUDhUTnNHbXRIdnBSQzh4ektDRDFrQy03VkhGYTFiTFA0bGRad09nZWc4WXBSNDVhQ1NSZWJIUUdWUmxIMk9qMlR6YlAxelc2WVRxS2FMQ0lTbEdlVG9MX2lTVldMMlFkaUdR?oc=5",
-      "published": "2026-11-20T12:13:17+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Journalist gives transfer update on €40m PSG star as January window gets closer - LiveScore"
     }
   ],
   "processed_urls": [
@@ -6610,7 +6645,8 @@
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxObEl1OTNGbXhIZzdBS2owMjhUVkpnY1EtTFJfT3JVd3U5QmJ1Nkp4SzgxY1NJUzJ2WGhiWkt4dDdnUTRtR2FuQ2VhLWFrN0lvVGhlZUt1U2tNb0pldWFTZS1Gb0dLdFVORUxkeWYyeG5PT1ZxOVMybFViY2s4Q0JHUDFlRUtpS3NHakU0OXBIbnJzSGNq",
     "https://www.thesun.co.uk/sport/41087047/omar-berrada-glazers-man-utd-jim-ratcliffe-pochettino",
     "https://www.thesun.co.uk/sport/41088674/harry-kane-injury-bayern-munich-koln-england-olise",
-    "https://www.skysports.com/football/news/12040/13614555/x-paper-talk"
+    "https://www.skysports.com/football/news/12040/13614555/x-paper-talk",
+    "https://www.dailymail.com/sport/football/article-16309683/Jack-Grealish-available-play-Everton-star-axed-month-missing-training-without-permission.html"
   ],
   "s_overflow": {},
   "schema_version": 4
