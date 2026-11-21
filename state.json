@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 42096,
-    "output_tokens": 4977,
-    "requests": 7
+    "input_tokens": 47568,
+    "output_tokens": 5420,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4372,6 +4372,41 @@
       "title": "德布劳内妻子放话：越快越好，他将离开那不勒斯回比利时",
       "updated_at": "2026-11-14T00:01:03.553324+00:00"
     },
+    "dcf506cb0b2a": {
+      "article_title": "Raya set to have scan on injury - how much would Arsenal miss him?",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "7ed28e55d946a818",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 199
+        }
+      ],
+      "created_at": "2026-11-21T22:01:03.362255+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "933b6c5da80df9cc",
+      "event_id": "dcf506cb0b2a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-21T22:01:03.362255+00:00",
+          "origin": "created",
+          "title": "Raya set to have scan on injury - how much would Arsenal miss him?",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 199,
+      "title": "阿森纳门将拉亚肩部受伤将接受扫描检查",
+      "updated_at": "2026-11-21T22:01:04.101917+00:00"
+    },
     "dd13e9d267b9": {
       "article_title": "Acting legend shares first pic from Sir Alex Ferguson 40th anniversary dinner with Man Utd icon surrounded by ex-stars",
       "attempts": 1,
@@ -5109,7 +5144,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T21:04:18.293365+00:00",
+  "last_scan_at": "2026-11-21T22:00:59.647618+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5130,6 +5165,96 @@
     "updated_at": "2026-11-20T22:01:20.683399+00:00"
   },
   "news_pool": [
+    {
+      "desc": "DAVID RAYA will have an MRI tomorrow after going off injured in Arsenal's 2-2 draw with Newcastle. The Spanish keeper co",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T22:00:59.651034+00:00",
+      "link": "https://www.thesun.co.uk/sport/41103653/mikel-arteta-david-raya-injury-update-arsenal-newcastle/",
+      "published": "2026-11-21T21:46:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Not good news’ – Mikel Arteta shares worrying David Raya update after nasty-looking injury in Arsenal draw vs Newcastle"
+    },
+    {
+      "desc": "David Raya Injury Update: Shoulder MRI Before Dortmund and City (21 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T22:00:59.651072+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTU94bWFXU0hMa1FaUnljbmY3LVZzRUlFWnk3eUwtSDU2SXNjTkNwVHZROWVXT2lITk1CU3lLaExyeVF5Y2ZRUTctVUhNby1VY0xxekxXVGc1WEpWZnRMdUlxYnRVOGJ2U2RzbzBuSjNKVDUxZjlkNGduVXQ3X2VKTWRuTlF5cXhYTGhHWA?oc=5",
+      "published": "2026-11-21T21:44:46+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "David Raya Injury Update: Shoulder MRI Before Dortmund and City (21 November) - The False 9"
+    },
+    {
+      "desc": "THREE days to get his new team ready for Liverpool at Anfield? Mauricio Pochettino may have been dropped in the deep end",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T22:00:59.651103+00:00",
+      "link": "https://www.thesun.co.uk/sport/41103517/mauricio-pochettino-man-utd-harry-redknapp-tottenham-liverpool/",
+      "published": "2026-11-21T21:43:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "I managed Spurs to a victory hours after meeting the squad – here’s how Pochettino can get off to winning Man Utd start"
+    },
+    {
+      "desc": "MANCHESTER City’s Abu Dhabi chairman raised the Premier League’s investigation into his football club during trade talks",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T22:00:59.651130+00:00",
+      "link": "https://www.thesun.co.uk/sport/41102101/man-city-lobbying-scandal-probe-trade-talks/",
+      "published": "2026-11-21T21:43:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man City lobbying scandal deepens as redacted docs show Prem probe WAS raised during trade talks with Business Secretary"
+    },
+    {
+      "desc": "The Gunners' No 1 went off in the second half in the 2-2 draw at St James' Park, supporting his arm or shoulder before h",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-21T22:00:59.651202+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16312085/Arsenal-David-Raya-arm-scan-Newcastle.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-21T21:37:01+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Arsenal face nervous wait with David Raya set for scan after being forced off against Newcastle... as club legend Ian Wright admits he's 'pe"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T22:00:59.651231+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13279317/ipswich-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
+      "published": "2026-11-21T21:31:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Ipswich latest: O'Neil reflects on 'tough afternoon' after Spurs loss"
+    },
+    {
+      "desc": "Palmer, who opted against going around the pitch applauding the remaining fans at full-time, was captured in conversatio",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-21T22:00:59.651272+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16311993/Cole-Palmer-frosty-exchange-Joao-Pedro-Chelsea-4-1-humiliation-Leeds.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-21T21:30:26+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Frustrated Cole Palmer shares frosty exchange with Joao Pedro after upsetting Chelsea staff member before walking off down the tunnel after "
+    },
+    {
+      "desc": "CRAIG HOPE AT ST JAMES' PARK: Do not invite the hostility, Arsenal were warned. Do not prod the bear. Do not start Bruno",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-21T22:00:59.651311+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308775/Newcastle-2-2-Arsenal-Premier-League-2026-27-Result.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-21T21:15:01+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Arsenal's complacency and a lack of ambition allowed Newcastle a way back and the Gunners were fortunate to escape with a point after paying"
+    },
+    {
+      "desc": "Arsenal goalkeeper David Raya is set to have a scan on his shoulder after going off injured during Saturday's 2-2 draw w",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-21T22:00:59.651340+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-21T21:14:08+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Raya set to have scan on injury - how much would Arsenal miss him?"
+    },
     {
       "desc": "NEW Manchester United boss Mauricio Pochettino has hit out at the “dangerous” drone filming of his training session. The",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5199,6 +5324,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "'We can't let setbacks affect us' | Video | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "From \"exceptional\" to \"complacent\" - Arsenal's drop-off in the second half at Newcastle was extraordinary.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T22:00:59.651504+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13615040/arsenal-escape-with-2-2-draw-at-newcastle-after-complacent-second-half-almost-proves-costly-for-defending-champions",
+      "published": "2026-11-21T20:21:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "How 'complacent' Arsenal unravelled at Newcastle - and their key lesson"
     },
     {
       "desc": "FURIOUS Cole Palmer snubbed the home fans and even appeared to be in an angry exchange with Joao Pedro after their 4-1 d",
@@ -5291,6 +5426,16 @@
       "title": "Coventry beat Palace in Frank's first game after late own goal"
     },
     {
+      "desc": "Luca Williams-Barnett will score better goals. That was the consensus on a day when the Tottenham starlet marked his fir",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-21T22:00:59.651732+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308771/There-buzz-Luca-Williams-Barnett-2-0-win-against-Ipswich-Tottenham-fans-writes-MATT-BARLOW.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-21T19:52:05+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "The next Lamine Yamal? Why not! Roberto De Zerbi sets high bar for Luca Williams-Barnett after 18-year-old thrilled Tottenham fans in win ov"
+    },
+    {
       "desc": "Report: Newcastle United 2-2 Arsenal Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-21T21:00:50.845793+00:00",
@@ -5369,6 +5514,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "England stars in furious bust-up during Newcastle vs Arsenal as tensions boil over after Dan Burn challenge"
+    },
+    {
+      "desc": "The Belgian midfielder left Aston Villa to join Manchester United last summer and though these are early days in his Old",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-21T22:00:59.651914+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308759/Giving-Youri-Tielemans-35m-release-clause-looks-like-error-Aston-Villa-toiling-draw-Sunderland-proof-Unai-Emery-midfield-controller-January-writes-TOM-COLLOMOSSE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-21T19:14:56+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Giving Youri Tielemans a £35m release clause looks like an error... Aston Villa toiling to a draw with Sunderland was more proof Unai Emery "
     },
     {
       "desc": "Chelsea manager Xabi Alonso said his side are \"fragile\" and need to be \"tougher\" after being embarrassed by Leeds United",
@@ -6509,126 +6664,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Fantasy Premier League: Why Alexander Isak is Liverpool's most-owned asset - Liverpool FC"
-    },
-    {
-      "desc": "Liverpool v Manchester United: 13 stats to know ahead of Anfield clash Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T16:00:50.097362+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTlpKdVpITjZNd3Zydm14OEk5bjZ4RlI3R0s1WkVma3lkUmE0c0FKZmkxNFMwVHZXVGNTSzFyOXpTdEd6MzV5YTVNbjA4djNXZ2k3QnVWVFZlaG1jNUVrWXpDb2tJWV8tdTh6TEtCOUpPemphSFFKdHJBXzczTVV6ZjBUTVBxaXg3RDBCSXpxcFVfeEVnSUk1aGF3?oc=5",
-      "published": "2026-11-21T10:38:50+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool v Manchester United: 13 stats to know ahead of Anfield clash - Liverpool FC"
-    },
-    {
-      "desc": "HARRY KANE has broken his silence after being laid low with a serious injury. Kane has been sidelined for a \"few months\"",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T11:00:53.048837+00:00",
-      "link": "https://www.thesun.co.uk/sport/41090450/harry-kane-statement-hospital-bed-protective-boot-injury/",
-      "published": "2026-11-21T10:27:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Harry Kane shares pic from hospital bed wearing protective boot as he breaks silence on devastating ligament injury"
-    },
-    {
-      "desc": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid The Independent",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T12:00:50.466842+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbW45QjZ5Rjg5alZWWDNzZWg3dUE5QzZSdTJfUndUMzBLSk8zdmtIaE93YkdNOVQ0eW53V3hCYkJTcWU1Y0ZmRE5MRExURlF2WDNTbWNScDJQWnlZUHd0c2xuSGdCbG9aTTh2MEZjOTVVOXlRN3RnT1NKd3NmV20xN0JRdFBTS1ZpU0t3ajduNU15Mk9LdXRJU3NWQm4tdGZBRHpEaVFXbVljczlKdlR0NWx2SzZUWWJBZHc?oc=5",
-      "published": "2026-11-21T10:21:00+00:00",
-      "publisher": "https://www.independent.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid - The Independent"
-    },
-    {
-      "desc": "MAN UNITED fans can still book top ticket deals to watch the Red Devils under new boss Mauricio Pochettino at Old Traffo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T11:00:53.048857+00:00",
-      "link": "https://www.thesun.co.uk/sport/39220790/man-united-premier-league-ticket-hotel-packages-old-trafford/",
-      "published": "2026-11-21T10:04:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd tickets plus hotels and official hospitality for Champions League and Premier League matches at Old Trafford"
-    },
-    {
-      "desc": "ARSENAL supporters can get their hands on tickets to watch the champions take on the finest teams in Europe from the fin",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T11:00:53.048874+00:00",
-      "link": "https://www.thesun.co.uk/sport/39227637/arsenal-premier-league-champions-ticket-hotel-deal/",
-      "published": "2026-11-21T10:04:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal tickets and hospitality packages to Premier League and Champions League games at The Emirates"
-    },
-    {
-      "desc": "MANCHESTER City's fans are getting behind the players since the club were found guilty of breaking financial rules. And ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T11:00:53.048890+00:00",
-      "link": "https://www.thesun.co.uk/sport/39222150/manchester-city-ticket-hotel-deal-premier-league-etihad/",
-      "published": "2026-11-21T10:03:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Manchester City ticket and hotel deals for Premier League and Champions League matches at The Etihad"
-    },
-    {
-      "desc": "LFC Signed Dalglish Retro Ball In Box Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T11:00:53.048906+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVjkwbk5pU00yYms0bkNLdkxsUlFRbkR5Zld3cTVOTy1KalNkRlI2bmtROHN6ZnRqMC00dXphNTl0M2FfRER5ZkF5aU9hbnp6S05YV1JrSmRkbi1NNG9OSmdQVko4UjdWS3BVaVBrWUNaZGd5OVkxMnRaN1dGLUttUA?oc=5",
-      "published": "2026-11-21T09:57:56+00:00",
-      "publisher": "https://store.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC Signed Dalglish Retro Ball In Box - Liverpool FC"
-    },
-    {
-      "desc": "Fabrizio Romano provides updates on Manchester United striker duo www.soccernews.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T10:00:45.647690+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb1hyY19EOVhJOHJLT1NvV3Iwa255bURmQVZqRWRqeTNxZ2g1V2FlTVJmYUItenFrSElYUjFhVkwwUnVDV3N3bHpBTndOYWFKQzNxQUhycHh3ZTZ5Q2p3VzNUek1peVVMbVQ5VFM4ekhGT0FNbzFIc09LYlFRalZVTFc4QklSbG9uRGp5YmlkY3ZSamQyR2JmTnRMZ0hXMlY5d2c?oc=5",
-      "published": "2026-11-21T09:53:16+00:00",
-      "publisher": "https://www.soccernews.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano provides updates on Manchester United striker duo - www.soccernews.com"
-    },
-    {
-      "desc": "Share your team with our new FPL feature Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T11:00:53.048937+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORmtCcDlVVXU2WVlxY19RbmR3WGNUeFF1V1VYUUczRGZzOXJPV3dvdjZlbFF0bTczcnEyLWptaXVaNFdrSFdpclgwcmFKZUdtQ0JQa3oxS243UHRYbmg4andOMkI1aFRPNFVRZkR1RXQ4R2pIS04xNHlCaGlfOG1GU1pPMEVvaGM5RDFMU3hQMA?oc=5",
-      "published": "2026-11-21T09:47:22+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Share your team with our new FPL feature - Premier League"
-    },
-    {
-      "desc": "Spurs Nike Mens White Back Print T-Shirt 2026/27 Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T12:00:50.467045+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSEtuNmlSWloxdlh6RzhRcXFyenNCQ3llekNsMWg2VFlhQWEzMFhsQW9TOG1PRXotcGF3TktYMUxDdDF5c0R6Vl9jNVFPaFBseVJTR21SUi1fcGx3ME11MThfb1BRdXVmQXd2Q2luUHExQjNsQnZuZHNxSV9Id3Z6cVNPcC1aX1pSanVkZlhtdXVSdVE5VnZHejRpd2xLRnR0ek5MUmVB?oc=5",
-      "published": "2026-11-21T09:36:50+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Nike Mens White Back Print T-Shirt 2026/27 - Tottenham Hotspur"
-    },
-    {
-      "desc": "Arsenal fans select preferred XI for Newcastle clash - Raya and Rice lead vote with 99 per cent Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T12:00:50.467074+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNS19kRnhRSnZnQ3gwMnB6TGd3eU9zbU1Vb25LaWpzSVVrTHJpVE93U0ZuTDk5U1AzLUlKUDBNbXJUeldOd0ZET2tjV1lrQ0ZuSjF0UTNReG1wYktaT2tmYnJ5WkhWbUIwbi1vbXNJTlJpZVVDNWF6S2RNVS1LcXo5YVNvN3dMRi1KWlJtSEpLdXlsank30gGaAUFVX3lxTE5PQmxiUHNpa0l2Q1dwbEZuMkNYRTRUTTEyMjctV1hqOE0zdkE1OHphX2lyczRCVVJmM25UT3UwN1FNaDA5XzhOTFhZMnpZOHlpUFh6LXZOeV9zM3R0VEdnNXkycjAxNTBUZVctLTJabHZzMkZEWWxJUzMzdWxOUXMxaG8wNDJERWd4aHl2dDdOcGIwSXRaemlQQVE?oc=5",
-      "published": "2026-11-21T09:21:57+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal fans select preferred XI for Newcastle clash - Raya and Rice lead vote with 99 per cent - Tribuna.com"
-    },
-    {
-      "desc": "CHELSEA host old rivals Leeds on Saturday as the Premier League makes its return. New customers who sign up and stake ju",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T10:00:45.647721+00:00",
-      "link": "https://www.thesun.co.uk/sport/41070069/chelsea-leeds-free-bets-bet-builder/",
-      "published": "2026-11-21T09:21:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea vs Leeds: Get £50 in free bets, plus our 9/1 Bet Builder tip | Sky Bet"
     }
   ],
   "processed_urls": [
@@ -6790,7 +6825,8 @@
     "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdmZSenpIV185RlJPNmdQcVgzT2ZrNHh6N3licWJDWFhYV1Q5NXBPS0stMzR5RG9sQVo3dTA1cm9pQlZPd3VpSm82TF8tUE1yeTVXSWduWGNlWEJqN19JanAxenhGVXZ3eUtfdDg3T3pCNHVidTlHQm5RWVRVNnF5RkZ6TUpoaWpRaVl0SDBVR2Qxb2VKck5uWXZ2X2VJaU44Q1B2ZVVzalhSTG9rTTRBcGFRSkU1a21YTXEtZFVlVVFwQUx4akl1ZHo2bFB3MTJlS2FNTTlxNWI3MGdUY2NkaV9WYkF6ZVhTcm15ag",
     "https://www.thesun.co.uk/sport/41095418/moises-caicedo-injury-chelsea-clash-vs-leeds-updates",
     "https://www.thesun.co.uk/sport/41101407/luca-williams-barnett-tottenham-ipswich-match-report",
-    "https://www.thesun.co.uk/sport/41102444/david-raya-injured-newcastle-arsenal-joe-willock-osula"
+    "https://www.thesun.co.uk/sport/41102444/david-raya-injured-newcastle-arsenal-joe-willock-osula",
+    "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo"
   ],
   "s_overflow": {},
   "schema_version": 4
