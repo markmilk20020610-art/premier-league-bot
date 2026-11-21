@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 19,
+        "calls": 20,
         "errors": 0,
-        "requests": 19
+        "requests": 20
       }
     },
-    "calls": 19,
+    "calls": 20,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 115348,
-    "output_tokens": 12847,
-    "requests": 19
+    "input_tokens": 119408,
+    "output_tokens": 13593,
+    "requests": 20
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4969,7 +4969,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T07:26:12.770425+00:00",
+  "last_scan_at": "2026-11-21T08:00:47.159621+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
