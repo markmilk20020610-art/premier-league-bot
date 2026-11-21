@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 53826,
-    "output_tokens": 6097,
-    "requests": 8
+    "input_tokens": 59286,
+    "output_tokens": 6705,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5144,7 +5144,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-21T22:00:59.647618+00:00",
+  "last_scan_at": "2026-11-21T23:00:50.321511+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5165,6 +5165,66 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T23:00:50.323276+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025489/tottenham-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-11-21T22:37:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Spurs latest: 'Williams-Barnett has to be given assist for my goal!' says Solanke"
+    },
+    {
+      "desc": "PARIS SAINT-GERMAIN star Desire Doue suffered a horror injury that left him crying despite never clashing with an oppone",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T23:00:50.323294+00:00",
+      "link": "https://www.thesun.co.uk/sport/41103822/desire-doue-serious-injury-luis-enrique-confirms/",
+      "published": "2026-11-21T22:32:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Desire Doue stretchered off pitch in tears as PSG boss Luis Enrique confirms ‘serious injury’ despite no contact"
+    },
+    {
+      "desc": "LEEDS stars turned Stamford Bridge into Ally Pally after thumping Chelsea 4-1. The Blues were bullied on home turf as th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T23:00:50.323308+00:00",
+      "link": "https://www.thesun.co.uk/sport/41103845/leeds-stars-party-luke-littler-chelsea-win/",
+      "published": "2026-11-21T22:27:48+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Leeds stars celebrate epic Chelsea win with Luke Littler-inspired party as away dressing room goes wild"
+    },
+    {
+      "desc": "Tottenham boss Roberto De Zerbi was not surprised by a dazzling full-debut display from “special” talent Luca Williams-B",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T23:00:50.323321+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13615058/luca-williams-barnett-tottenham-boss-roberto-de-zerbi-compares-teenager-to-lamine-yamal-after-ipswich-heroics",
+      "published": "2026-11-21T22:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "De Zerbi compares Williams-Barnett to Lamine Yamal - who is Spurs teen?"
+    },
+    {
+      "desc": "MANCHESTER UNITED’S flops have been told by new boss Mauricio Pochettino the real work starts AFTER Sunday's trip to Liv",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T23:00:50.323341+00:00",
+      "link": "https://www.thesun.co.uk/sport/41103174/man-utd-mauricio-pochettino-training-michael-carrick-liverpool/",
+      "published": "2026-11-21T22:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Struggling Man Utd stars get culture shock in training under Pochettino with promise it gets even WORSE after Liverpool"
+    },
+    {
+      "desc": "SAM SURRIDGE is going toe-to-toe with Lionel Messi for MLS Cup glory — and wonders if Thomas Tuchel might be watching. T",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T23:00:50.323355+00:00",
+      "link": "https://www.thesun.co.uk/sport/41093110/sam-surridge-messi-mls-cup-thomas-tuchel/",
+      "published": "2026-11-21T22:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-Prem & EFL star Sam Surridge going toe-to-toe with Lionel Messi in MLS Cup bid — and hopes Thomas Tuchel is watching"
+    },
     {
       "desc": "DAVID RAYA will have an MRI tomorrow after going off injured in Arsenal's 2-2 draw with Newcastle. The Spanish keeper co",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5254,6 +5314,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Raya set to have scan on injury - how much would Arsenal miss him?"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T23:00:50.323468+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13575723/european-football-news-and-transfers-barcelona-real-madrid-psg-bayern-munich-latest-and-more",
+      "published": "2026-11-21T21:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Euro latest: PSG's Doue suffers serious knee injury"
     },
     {
       "desc": "NEW Manchester United boss Mauricio Pochettino has hit out at the “dangerous” drone filming of his training session. The",
@@ -5636,6 +5706,16 @@
       "title": "- Arsenal Direct"
     },
     {
+      "desc": "Roberto's latest on Savio's injury Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T23:00:50.323761+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSjBuRUVjWkNjQk0wS0VNakhqZXpub2VkUW1Pd1F1STBadEpjOUNvVVNtRGlnNThpRWNaWWdTNlVsc05EbkpZWG1OdzVkdFFhalp1NDdBQjZuTFdJVUpDbWR5TVE1UGVKWGtZaU5MQUNYbkZXc3ZyUFViYl9lNFNfdDRsc0Y?oc=5",
+      "published": "2026-11-21T18:52:18+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Roberto's latest on Savio's injury - Tottenham Hotspur"
+    },
+    {
       "desc": "Chelsea miss the chance to consolidate their lead over Manchester City at the top of the Women's Super League as they fa",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-21T19:00:49.673172+00:00",
@@ -5746,6 +5826,16 @@
       "title": "Aston Villa latest: 'Replacements were signed - but not for Tielemans'"
     },
     {
+      "desc": "Musiala retirement rocks Bayern Munich: what is the truth behind the expected announcement? Goal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T23:00:50.323822+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdWJDOTg0eGZnX0w0WHZyY0ZYa0pYMTNJdzBwaFA4MGhYdEF5bWptV2d5RmNFdkhOczBXbmN1LUs0U09oLWF6V3RDelNtR1RrTUdzbDIxZmVKUVR3dXZaRzdqcVpXbHBSLVVKM2NUUTJjd2w1Qy1MQ0stcVYzYUM5OUlpVnVPWFlDVHJQQnExSkE1cWRYWGNWNlduYXZaNEo1YXlRTnVvRU9mZVZadlU5dXp2ZTF4ZENTbUlLWnB5RWdUeEY2RDMtVDdMc0pnVGJKZmViYQ?oc=5",
+      "published": "2026-11-21T17:47:05+00:00",
+      "publisher": "https://www.goal.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Musiala retirement rocks Bayern Munich: what is the truth behind the expected announcement? - Goal.com"
+    },
+    {
       "desc": "Football players' union Fifpro says it is concerned by German club Bayern Munich's comments about Jamal Musiala's contra",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-21T18:00:51.818549+00:00",
@@ -5774,6 +5864,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Bournemouth 2 Nottingham Forest 0: Cherries gatecrash Prem top four as Evanilson scores for sixth successive game"
+    },
+    {
+      "desc": "Jaume Camacho sends message to Pochettino with Man Utd U18 display United In Focus",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T23:00:50.323834+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ2RZTVB4c0VqUE5tWHNGSndoWVZCVnlUbnhadmp6S3dYdVo1QXd4b3J3ZnFpUlRCVmZUU0ozS3ppUmw5UE5QN1pacmN1WUhodGh4YS1pNzhtbi1qYmRyYkVrNDBTLUxNbEpVNDg5WWZMbFFQbWl6a1QwNlVzQTc4eEJQZEVSWHltam5KVWRHWVE2MURsQVNnOVdzbGJMa1J4dk15WllSZHM?oc=5",
+      "published": "2026-11-21T17:30:00+00:00",
+      "publisher": "https://www.unitedinfocus.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Jaume Camacho sends message to Pochettino with Man Utd U18 display - United In Focus"
     },
     {
       "desc": "A WOEFUL Chelsea suffered a 4-1 battering at the hands of Leeds with a number of players failing to rise to the occasion",
@@ -6564,106 +6664,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Chelsea Women's starting line up vs Liverpool confirmed | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "ENGLAND have been dealt a potentially devastating blow to their Nations League hopes after Harry Kane picked up a major ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T12:00:50.466520+00:00",
-      "link": "https://www.thesun.co.uk/sport/41090154/england-lineup-no-kane-bellingham-lankshear/",
-      "published": "2026-11-21T11:44:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How England could line up without Harry Kane for Nations League quarter-final after his devastating injury lay-off"
-    },
-    {
-      "desc": "De Miguel's passing shocked the footballing world and Owono was subsequently given a 12-match ban by authorities.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T12:00:50.466594+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16311007/Goalkeeper-involved-fatal-collision-Spanish-star-Jesus-Miguel-30-breaks-cover-time-tragic-accident-pay-tribute-Tenerife-player.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Goalkeeper involved in fatal collision with Spanish star Jesus de Miguel, 30, breaks cover for the first time after tragic accident to pay t"
-    },
-    {
-      "desc": "Harry Kane is targeting the \"business end of the season\" after undergoing surgery on a torn ligament in his left ankle.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T12:00:50.466621+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13614655/harry-kane-england-and-bayern-munich-striker-vows-to-be-back-for-business-end-of-season-after-ankle-surgery",
-      "published": "2026-11-21T11:20:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Kane vows to be back for ‘business end of season’ after ankle surgery"
-    },
-    {
-      "desc": "O'Reilly, Bouaddi, Foden start as City make three changes Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T12:00:50.466649+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUkd4NTg3aHUxTHdHT1EwMEJ3M2l5TEpMM3I1ZHhkOVVZRk9feHBRdzZRUlg3UGM2OWtrUXlqS2FwUFdrMmFqblM4YkpjY1VkMUZMZWZnS21LcEhEcHNkWGFxZ0ZuUDBuY2twcTNJRkpnYm16OVRSWXBpam82bThxNGVWeW1Oalp1cmxfVmNtTThkTUhVOXRWQW1uUWhWaDBscUZ1Y1MxQkpkUzhFc2c?oc=5",
-      "published": "2026-11-21T11:15:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "O'Reilly, Bouaddi, Foden start as City make three changes - Manchester City FC"
-    },
-    {
-      "desc": "Chelsea lose appeal against £150,000 FA fine for anti-Catholic and anti-Irish chanting LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T12:00:50.466678+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdmZSenpIV185RlJPNmdQcVgzT2ZrNHh6N3licWJDWFhYV1Q5NXBPS0stMzR5RG9sQVo3dTA1cm9pQlZPd3VpSm82TF8tUE1yeTVXSWduWGNlWEJqN19JanAxenhGVXZ3eUtfdDg3T3pCNHVidTlHQm5RWVRVNnF5RkZ6TUpoaWpRaVl0SDBVR2Qxb2VKck5uWXZ2X2VJaU44Q1B2ZVVzalhSTG9rTTRBcGFRSkU1a21YTXEtZFVlVVFwQUx4akl1ZHo2bFB3MTJlS2FNTTlxNWI3MGdUY2NkaV9WYkF6ZVhTcm15ag?oc=5",
-      "published": "2026-11-21T11:11:35+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Chelsea lose appeal against £150,000 FA fine for anti-Catholic and anti-Irish chanting - LiveScore"
-    },
-    {
-      "desc": "FORMER Manchester United star Scott McTominay is set to become a dad for the first time after girlfriend Cam Reading sho",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T11:00:53.048755+00:00",
-      "link": "https://www.thesun.co.uk/sport/41090384/former-man-utd-star-scott-mctominay-to-become-dad/",
-      "published": "2026-11-21T10:59:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Former Man Utd star Scott McTominay to become a dad as partner Cam Reading shows off baby bump in bikini"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T13:00:59.514317+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-11-21T10:49:25+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
-    },
-    {
-      "desc": "Not quite 50 miles south of Rome sits Frosinone. It is a town of 42,000 best known for many years as the birthplace of 2",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T12:00:50.466736+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16302739/Europes-biggest-surprise-package-Frosinones-remarkable-rise-new-Roberto-Zerbi-takes-Italian-minnows-owned-Ipswich-chiefs-reach-Europe-eight-promotions.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T10:49:01+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Europe's biggest surprise package: Frosinone's remarkable rise as the new Roberto De Zerbi takes Italian minnows owned by Ipswich chiefs to "
-    },
-    {
-      "desc": "Andoni Iraola reveals 'next steps' for Conor Bradley and Giovanni Leoni Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T11:00:53.048806+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQlViZDRzWTliSXU3UUpraVNNR0paRmkyQS0wMDNqanNFcy16MGMycjlIdDRHVXJTenlkZ0NhbXI5VHBGSnR2TVJMbUhyenhBVWk0akluMm4yMFo5cWhfLVlxMVVsRXpDNGRCblIxVkU5UVlBLVlVakRoeTV2U3o0eEdlRmJFZzVxcXdiZWY0RnZ0RXZyeUpORERrOWE4SDV3aEhucQ?oc=5",
-      "published": "2026-11-21T10:38:50+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Andoni Iraola reveals 'next steps' for Conor Bradley and Giovanni Leoni - Liverpool FC"
-    },
-    {
-      "desc": "Fantasy Premier League: Why Alexander Isak is Liverpool's most-owned asset Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T14:01:00.680788+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTUFWOUZHSkhnSEV6V2pZeW5qQmR2UDBMZ1hhSW1EM1kwTmV1NzZ3b3RkYzZXY3RyOEtReDN5UXZKeFNqWG1XZTZKd1pXUmM0SUtvelQ3S0xmaHFNSHJJcUJrbnI2SDhJZ09CYTVhRmtqcHdXTVB1am81MzVWcUZOOWFBUDF1dHhoWGNjMjJBUGNUNDlLcVVjMlg1LUtEQQ?oc=5",
-      "published": "2026-11-21T10:38:50+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Fantasy Premier League: Why Alexander Isak is Liverpool's most-owned asset - Liverpool FC"
     }
   ],
   "processed_urls": [
