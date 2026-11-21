@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 103411,
-    "output_tokens": 10361,
-    "requests": 16
+    "input_tokens": 107823,
+    "output_tokens": 11293,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4969,7 +4969,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T05:00:48.709332+00:00",
+  "last_scan_at": "2026-11-21T06:00:49.936529+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4990,6 +4990,16 @@
     "updated_at": "2026-11-20T22:01:20.683399+00:00"
   },
   "news_pool": [
+    {
+      "desc": "‘We did everything’: Omar Berrada issues rare public statement confirming MUFC tried to convince player to stay LiveScor",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T06:00:49.939576+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPRWFVZWY0OHUzbXBzbEtrWTA3Q19VLTRqSEpzalQ3ME1RUzF4SEFoZzJ4Y0kwMFQ0WURmcnRCY0tObUpNb29tQUdjODJYXzNmR2pUOXQ2UEJnb3VJajh2Q1J0TnA0b05TMUQzOG9aVE1zY2ZPejZPZTZCQnA1OUlVckpLcFJjdUg3SDJ5M05lV0ctOU0wampCV3R6VUdjYkRrQUtsUHpWMGxCbXV5QnREWl96cHdLQm84dnBJZ3pyVlBJNmMtODE0MWltT2I3ZnMwUDdDenU3NnNyd0VfaDM3UGREMXpLbjZ2dS0xMDFJNnBXUTBfaXAxWnYtaw?oc=5",
+      "published": "2026-11-21T05:39:01+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "‘We did everything’: Omar Berrada issues rare public statement confirming MUFC tried to convince player to stay - LiveScore"
+    },
     {
       "desc": "Romano: Milan ‘agree terms’ with Krösche after derby win – Cardinale gets his man LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6479,16 +6489,6 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Trent Alexander-Arnold transfer announcement: Romano reveals Real Madrid star’s future - LiveScore"
-    },
-    {
-      "desc": "Coming soon: Enzo Maresca’s City v Fulham press conference Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T15:00:55.064290+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWW1sRUotYVc0dFFkbUtBUWl3TWJhaFZub3V3LTlPaHBHRHg1LTFyekQ3MlQzY1RfOERPMDZkTVVUZFVjMGMzT3pxLW1TRW1EV3ctNGhHRHRtOFNYZnMxRXQ5WXBXWXJUZmZ4aFhITnJ5U1dIV1ZDc1BEbS1kZ1hjRnJjWWszWkg4ZllsYm81aHJPd09wbFMtZW54cGZfbFg1aGUwMEx2aw?oc=5",
-      "published": "2026-11-20T13:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Coming soon: Enzo Maresca’s City v Fulham press conference - Manchester City FC"
     }
   ],
   "processed_urls": [
