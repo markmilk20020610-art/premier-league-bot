@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 18568,
-    "output_tokens": 2310,
-    "requests": 3
+    "input_tokens": 24443,
+    "output_tokens": 3026,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3090,6 +3090,41 @@
       "title": "维拉威胁起诉卡拉格：称其言论建议埃梅里接替卡里克执教曼联",
       "updated_at": "2026-10-31T00:15:54.364209+00:00"
     },
+    "92d9c243555f": {
+      "article_title": "Tottenham 2 Ipswich 0: Luca Williams-Barnett steals show as he becomes Spurs’ third-youngest ever Prem scorer",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "2a45e92902845e35",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 197
+        }
+      ],
+      "created_at": "2026-11-21T19:00:55.254523+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "d4f0904c3d0ec903",
+      "event_id": "92d9c243555f",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-21T19:00:55.254523+00:00",
+          "origin": "created",
+          "title": "Tottenham 2 Ipswich 0: Luca Williams-Barnett steals show as he becomes Spurs’ third-youngest ever Prem scorer",
+          "url": "https://www.thesun.co.uk/sport/41101407/luca-williams-barnett-tottenham-ipswich-match-report"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41101407/luca-williams-barnett-tottenham-ipswich-match-report",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 197,
+      "title": "热刺17岁小将威廉姆斯-巴内特创队史第三年轻英超进球纪录",
+      "updated_at": "2026-11-21T19:00:55.988725+00:00"
+    },
     "92e81b710610": {
       "article_title": "Confirmed line-ups: Spurs vs Crystal Palace - Tottenham Hotspur",
       "attempts": 1,
@@ -5039,7 +5074,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T18:00:51.814941+00:00",
+  "last_scan_at": "2026-11-21T19:00:49.670593+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5060,6 +5095,136 @@
     "updated_at": "2026-11-20T22:01:20.683399+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Spurs Nike Men's Slate All Over Print T-Shirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673038+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdkZzQmNfdF83VGtkcS1oZ2lfZTV5a0dhRDRNTHBULUFoNnd0TVdUb1ZqMGhHd2dncFNHdzZzVHpqUHJVaDFaUFh5OWN5X2MzdkFtQ0p6MS1OWXJNeUl0Q2ZaMUN2aXRMZzY5bXFhdGoxdlFHLS12cG9WSW05NGg2OWd5RXMxSDNrTDVXdTMxcHRESV9BZktSMUQ2bFRTdWdNdUEtX0JOSQ?oc=5",
+      "published": "2026-11-21T18:54:59+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Slate All Over Print T-Shirt I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Topps Premier League 2025/26 Mega Tins Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673063+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdHVqY1NLMWhXY1M0R3RqUHp0NDFwUWpnV0pNUlFBQXByQUh6N0U0V2xLVkZOMjVMYm11Wi1rRGU0cjZfSGpiV1pvYTUyQnNMaXNuRGtYdTB4RFgyMm5sb0Qya3lGcm40NGxldXpnamh6a19ucFpQckR0TTJQQ0R4d3p0R0ZjUFQ3N2hTbzlxN1BteEh6Y29ZMQ?oc=5",
+      "published": "2026-11-21T18:54:58+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Topps Premier League 2025/26 Mega Tins - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Nike Men's Blue T90 Crew Sweatshirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673082+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUG15ZDhsZzdCU3Q0dHhGSnJsaVoyeWRndlJLRHRzY05oVXU2eVpuOURsOVJtbk1VWVpKODlSU3hRM25DSVFKNjJ0TFEtUFFCWldram13bW5PMDc3YnBkal95YUM4X0VEelRGTUlRZFM5ZTFIUGpVYlZDZmpPbXhQcnZyaEFHU09zV2s0ZFZxYVUxR1ktRWdaRTZkZXZSMGlzVXc?oc=5",
+      "published": "2026-11-21T18:54:57+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Men's Blue T90 Crew Sweatshirt I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Men's Navy THFC Contrast Sleeve T-Shirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673103+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTGx0ZDNfQlJrN0RCUkYxQXRScEtfN096WERzUktDV2Fad0Y4VDhjWXlNTmlBLUlfZUlteFVsX0lScDA1VHZlU1Zsenh4TDg0bGlPZ1F3ZTR2cW0xUkFMekVNdUZIcXE2eUVjRzZYaWE0aDBRVVNqa0Z0UHpKbzZfcGtfc0RELXJkNTl4SWFiMk1xWWhPOVJmUlpSbnBKUU0wMDdrWlMwNA?oc=5",
+      "published": "2026-11-21T18:54:57+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Men's Navy THFC Contrast Sleeve T-Shirt I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Nike Women's Blue T90 T-Shirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673119+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUTFJVVlfV3RWZ3R0TVNqMlQ2SDMyOUZmODNlZV9aV3lCZGdxRjNWYW9ZUWZoTkxUbXVyTVZDc09TaTRqR0U4TDdUYUw3YWh0MnJReHBVdkgxYWpLcHpSal95bXNXRGVTMTBsWFB3dFA3Mm5zTkp6NXB4Wk9XOUtnVm9LVU9xMG1SZFF5bGROcmFKYk1hWVcxVWJn?oc=5",
+      "published": "2026-11-21T18:54:56+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Nike Women's Blue T90 T-Shirt I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Spurs Boxed Leather Crest Wallet I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673136+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZU9kOXBkV0NpR2FvOTlSNXBuLUxnY3BIOWNSbUVxcnpCZmFfVklNYU56TkJDdVhvTlRQNTI3S3IxU2FEUDZwQlFyR09JOGVnbl9VU1JPSVBUdWtvc0dtVHVxSzRvV0xUVHFxMHhnMWlPZFJpSnFaU2lTaHp6SjFTelQzaGdmNEZlWGRVVUliZUI?oc=5",
+      "published": "2026-11-21T18:54:56+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Boxed Leather Crest Wallet I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Chelsea miss the chance to consolidate their lead over Manchester City at the top of the Women's Super League as they fa",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-21T19:00:49.673172+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cmde1ll6pgj3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-21T18:34:55+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Keating stars as Liverpool hold high-flying Chelsea to goalless draw"
+    },
+    {
+      "desc": "Tottenham Hotspur head coach Roberto De Zerbi is full of praise for teenager Luca Williams-Barnett who was at the heart ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-21T19:00:49.673192+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c6wy4gg24vlno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-21T18:32:27+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Williams-Barnett's talent bigger than performance - De Zerbi"
+    },
+    {
+      "desc": "The decision to give Leeds a crucial penalty in their win at Chelsea reopens the Premier League handball debate around i",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-21T19:00:49.673210+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c50md981n277o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-21T18:30:22+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Officials can't use common sense' - was Rogers handball correct?"
+    },
+    {
+      "desc": "SUNDERLAND were a sinking ship only a few weeks ago. But after beating Chelsea and battling to a draw against Aston Vill",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T19:00:49.673242+00:00",
+      "link": "https://www.thesun.co.uk/sport/41101988/sunderland-aston-villa-0-0-escape-relegation-battle/",
+      "published": "2026-11-21T18:26:29+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Aston Villa 0 Sunderland 0: Black Cats prove they’re good enough to escape relegation with battling performance"
+    },
+    {
+      "desc": "Nottingham Forest manager Oliver Glasner believes his side \"deserved\" to lose against Bournemouth as a 2-0 defeat leaves",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-21T19:00:49.673260+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c63dg88zdzxko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-21T18:16:48+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'It's a deserved defeat' - Glasner on Bournemouth loss"
+    },
+    {
+      "desc": "CHELSEA'S injury crisis deepened before Xabi Alonso's Blues capitulated despite taking the lead against Leeds. The Yorks",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T19:00:49.673279+00:00",
+      "link": "https://www.thesun.co.uk/sport/41101749/chelsea-1-4-leeds-reaction-cole-palmer-xabi-alonso/",
+      "published": "2026-11-21T18:12:30+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Three points from Chelsea’s 4-1 defeat to Leeds with Cole Palmer among big names becoming major problem for Xabi Alonso"
+    },
+    {
+      "desc": "Musiala retirement shakes Bayern Munich: what is the truth behind the expected announcement? LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673298+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQLUc2U1BPcFJHYUdpWVgwRGNoRlFGZ05oNkd4cGRYTU9JZFdXaVlzbmQySmEtWF9valZibEMteXZaMTJSRDRMUktYbXpoVllNUXZBSjlZLTdqX3duM0NnaHZYb2h0amllV0VmRVpVX2FmSUtjUDZ1SVJLYWMwazZuRDAwRTlmeTZRWHF4UlluSVJoTmlEcWMyX1EzXzNhdElxanhhRmdxam5VYV9veVdtaUpwSkJLSkFTbXlhZ2RuSVQ4UjZ1WXpPQlRWM2hqeER2QTNPMXl4OTlJM2ZrUUVvclpyTmM?oc=5",
+      "published": "2026-11-21T18:08:33+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Musiala retirement shakes Bayern Munich: what is the truth behind the expected announcement? - LiveScore"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -5241,6 +5406,16 @@
       "title": "Falkirk beat St Johnstone to extend winning run to six"
     },
     {
+      "desc": "Mario Frick enjoyed a dream start to life as Aberdeen boss by edging a six-goal thriller with a 4-2 win over Kilmarnock.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-21T19:00:49.673502+00:00",
+      "link": "https://www.skysports.com/football/kilmarnock-vs-aberdeen/report/558415",
+      "published": "2026-11-21T16:50:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Frick enjoys winning start with Aberdeen with victory at Kilmarnock"
+    },
+    {
       "desc": "Newcastle vs Arsenal Confirmed Lineups: Bruno Starts, Saliba on the Bench The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-21T17:00:53.813020+00:00",
@@ -5269,6 +5444,16 @@
       "publisher": "https://www.indiatimes.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Is Jamal Musiala retiring at 23? Shocking rumours swirl after Bayern Munich star’s rusty return vs FC Koln - Indiatimes"
+    },
+    {
+      "desc": "Team news: Eze in, Guimaraes starts at Newcastle Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673588+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbGZKaGRIYVE2ZDJvVHVMZzZDT2VncENLT0ZrcVJGcXRqYmVIWWFxaWtZLUZQTEhSRUc2anI2eWlZRy1oZ2dodk5XdXU5VXdlZ0VMNkpRWUNRYWJkTGFCSkpyYzIyZmt1aUlkbklzUEM5NnZuS25xd3ptbDJuX3BJZkJiaFRzWUYyUVFlM2dFdTdadw?oc=5",
+      "published": "2026-11-21T16:16:43+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Team news: Eze in, Guimaraes starts at Newcastle - Arsenal.com"
     },
     {
       "desc": "Checkout - Man City Shop Man City Shop",
@@ -5521,6 +5706,16 @@
       "title": "Erling Haaland sees Man City equaliser DISALLOWED in controversial circumstances - with fans and pundits split over whether Fulham goalkeepe"
     },
     {
+      "desc": "MW11 VAR decisions explained: Why Haaland goal v Fulham did not stand Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.673852+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1TZXVLekFKaXJMYkd3WWZFY0dVUk5NLTRxMWNPRUlxZF9XUTdOMnlKWG1KaklETlV2MkdDcXFmaGNzQW8wX0k2SkRWNUJoSFVjU3dPTUpXMmF3Sld2ZFhfY0h0VldRaTlFSHV4QnF5NUZaeDRLM052Xw?oc=5",
+      "published": "2026-11-21T13:53:40+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "MW11 VAR decisions explained: Why Haaland goal v Fulham did not stand - Premier League"
+    },
+    {
       "desc": "Bournemouth’s Eli Kroupi favours a move overseas despite Premier League Interest LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-21T14:01:00.680339+00:00",
@@ -5759,6 +5954,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Parker takes charge of first West Ham home game vs Preston LIVE!"
+    },
+    {
+      "desc": "Team news: Confirmed Liverpool line-up against Chelsea in the WSL Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T19:00:49.674016+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZm8zNm5URW1kSGxqcW16eTNDVnhrbWk3anZBQktUWVhIQ3NzeVdvdzBGcy1kRWIweXQ2NzQ5TDhLWGY5WDBFQnN3UW1IeG9KU1Qtb1VhXzZHRHNabDQ2VDdZbEpTWGRDZzc3YzdGNGh0V0hlblRyVU91N3pOREhCellDUll1aHNBS0dSNWhBTXhEZ0kxcmgxRkRhT085QQ?oc=5",
+      "published": "2026-11-21T11:48:58+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Team news: Confirmed Liverpool line-up against Chelsea in the WSL - Liverpool FC"
     },
     {
       "desc": "Man City vs Fulham Confirmed Lineups: Khusanov Fit, Guéhi Starts, Cherki Benched The False 9",
@@ -6389,176 +6594,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "NFL great Brady could buy Chelsea stake"
-    },
-    {
-      "desc": "BRUNO GUIMARAES is yet to catch fire since swapping Newcastle for Arsenal this summer. But what better place could there",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T23:00:46.677269+00:00",
-      "link": "https://www.thesun.co.uk/sport/41086408/mikel-arteta-arsenal-newcastle-bruno-guimaraes/",
-      "published": "2026-11-20T22:36:24+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mikel Arteta demands more from Bruno Guimaraes as Arsenal star heads for emotional reunion with old club Newcastle"
-    },
-    {
-      "desc": "Martin Ødegaard’s rebound goal gives Arsenal 1-0 win over Hull City Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T00:00:52.027319+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1mSmJOWExaV0ZhWWZkczhGd29XTlBUMXlkaF9tTFBfRFlUY2tjbkM3WHY1UGhKUDNMYy1KVWgxdWpPR0RkM3Bz?oc=5",
-      "published": "2026-11-20T22:30:32+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Martin Ødegaard’s rebound goal gives Arsenal 1-0 win over Hull City - Digg"
-    },
-    {
-      "desc": "Latest update on James and Lacroix returns from Alonso | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T00:00:52.027334+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeWl3NzZFSURxLVB0THhEeFdwYzc4QlVjV0FtY3NueHZySzQtYmRxZWRVeGUyRldYQkc5NHFPbHA1LW9HWVFITExiVWNBaE1JWFlrRVlIUUI0UURNQXFmZV9GNFNkUlNfYnJJdU84X3JoSy16eHpZc0dXeGpSQjZWdTZVWUhHX3dVVURxdGlhSHZHQmNta1ZOUS1Gc2o?oc=5",
-      "published": "2026-11-20T22:30:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Latest update on James and Lacroix returns from Alonso | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Harry Kane is expected to be sidelined for three months after suffering an ankle injury during Bayern Munich's Bundeslig",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-20T23:00:46.677293+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13614559/harry-kane-england-and-bayern-munich-striker-set-to-miss-three-months-with-ankle-injury",
-      "published": "2026-11-20T22:26:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Kane set to miss three months with ankle injury"
-    },
-    {
-      "desc": "CRISTIANO RONALDO endured a nightmare evening in the Saudi Pro league as he was shown up by Ivan Toney. The Al-Nassr sta",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T23:00:46.677308+00:00",
-      "link": "https://www.thesun.co.uk/sport/41088121/ivan-toney-cristiano-ronaldo-penalty-saudi-pro-league/",
-      "published": "2026-11-20T22:21:59+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ivan Toney ‘shows Cristiano Ronaldo how it’s done’ as England star scores penalty after ex-Portugal ace missed"
-    },
-    {
-      "desc": "HARRY KANE could be sidelined for three months after suffering a nasty ankle ligament injury on his return match with Ba",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T23:00:46.677321+00:00",
-      "link": "https://www.thesun.co.uk/sport/41088674/harry-kane-injury-bayern-munich-koln-england-olise/",
-      "published": "2026-11-20T22:21:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Harry Kane out for MONTHS after tearing ankle ligament as Bayern Munich release worrying injury statement"
-    },
-    {
-      "desc": "Arsenal Transfer News Today: Michael Olise latest as Arteta confirms wish LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T02:00:49.263509+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb203LTNVNmd1bHY3WFlia0Z6aThBZE8xanJLRmkwU2t2LWpicmpLYXZkajlTOVFvdVdiNHo0amVNOWJNMG9uNy1TVXFiaDRWUGt4NzFuWlppN0FPUkdIOHUxQllrajkzSHZ2blJJX0lORXJjZFAzbHRuOTBjdG9XUHViUzlLNndyRmNreHZxWDdvcjVIOThNNUVFZmNWUVYtcmpXbDFOZlYyS2xFRm85azNhMzhBZ2J6QVlqT1hPT2ZHenU4Z0xYUWZGV29PcW9xaHgtU3BDenVzYlFDOExDbi1iSQ?oc=5",
-      "published": "2026-11-20T22:13:25+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Arsenal Transfer News Today: Michael Olise latest as Arteta confirms wish - LiveScore"
-    },
-    {
-      "desc": "Once again England's biggest football club is relying on a personality lift to drag them back to their feet. This is wha",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-20T23:00:46.677342+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16309693/Mauricio-Pochettino-fix-club-stuck-constant-cycle-failure-new-Man-United-boss-personality-squad-mish-mash-sits-coach-great-unknown-writes-IAN-LADYMAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-20T22:07:06+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino must fix a club stuck in a constant cycle of failure. The new Man United boss has the personality but the squad is a mis"
-    },
-    {
-      "desc": "REAL MADRID star Marc Cucurella's partner Claudia Rodriguez took social media by storm as she attended a music awards ce",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T23:00:46.677354+00:00",
-      "link": "https://www.thesun.co.uk/sport/41088154/real-madrid-wag-claudia-rodriguez-marc-cucurella-chelsea/",
-      "published": "2026-11-20T22:05:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Real Madrid and former Premier League wag stuns in low cut sequin dress as she attends lavish awards ceremony"
-    },
-    {
-      "desc": "Coventry boss Frank Lampard wants officials to spend time ensuring they get decisions correct in the wake of his side be",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-20T23:00:46.677369+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c678299n1018o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T22:04:19+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Lampard calls for fairness after Coventry penalty row"
-    },
-    {
-      "desc": "LABOUR’S deputy leader poses for a selfie with Man City ace Erling Haaland at a swanky bash laid on by the under-fire cl",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T22:00:53.732844+00:00",
-      "link": "https://www.thesun.co.uk/sport/41087639/labour-deputy-leader-selfie-haaland-city-bash/",
-      "published": "2026-11-20T21:55:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Grinning Labour deputy leader poses for selfie with Haaland at lavish Man City bash weeks before guilty verdict"
-    },
-    {
-      "desc": "Mykhailo Mudryk accuses Ukraine legend Andriy Shevchenko of lying about the circumstances surrounding the winger's posit",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-20T22:00:53.732880+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cjn502n9vqp4o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T21:54:17+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Shevchenko lying about drugs test claims - Mudryk"
-    },
-    {
-      "desc": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit Liv",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T22:00:53.732911+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNYndGeHB0bUV6YVNweWRGTkx2dEVBZTN3Vmp3UWtzMFl2Z2hLTUx6S2R5eEx2bERJVmFBQ0ZXOVRLYmlQbGlPamZaVEZaTlRNZkhsYzhickhhcXFBTWc5bVU2NWVtM3hiczExRFh0UWZzWXdqT2tITUtEVXZhcFlTTE1vS1BadndkOGcyemlHVUIzdW5tWlhqeDN4NHY1QkFrM1dzSlZiaEktTUJXZ2FHQ3Z0OFpvamZjWGVnRHo2OWdBd2h6Mm9qVWp0aE1COFlBWktqV2M3MXBHd2pyMmp0WDFVZjl5Uk1oOUktVkpGODVHal83MUNVREZFdFV6Z1JhWTVJc09qWGZJaDJtbS1VcnFn?oc=5",
-      "published": "2026-11-20T21:30:38+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit - LiveScore"
-    },
-    {
-      "desc": "Man Utd Transfer News Today: Osimhen 'ready' to join as contract talks confirmed LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T00:00:52.027456+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxObVRZeTNJR19fS25qeDd0ZVBoeFI2SV93VkpTQ3V3SFFHNHB4bF9XYjliX2dpOFc0aEZmR1ZMS1JZdlg2ZGRzck9uTWpWX3JGS0ROcGxKYkdyb2pVQWFOYmxGejkxSVVMX0pWRGd2QUhPRXh5Skgzb2NDbDJQQml6SnJEd01KNVdQN3lhQWd0U0pQdV9kMGZPZGpIX1NMZUVaSGV1bDkxVGhQOF9DYWpnbDRRYnZKVm9PQ0ptSTl6dHRaUmdMM3Y1amhmVzVQLVhFQnNOYmd1WjNaVXl2SFBYbjdDRERXZ2dseWc?oc=5",
-      "published": "2026-11-20T21:29:54+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd Transfer News Today: Osimhen 'ready' to join as contract talks confirmed - LiveScore"
-    },
-    {
-      "desc": "It would see the seven-time Super Bowl champion make a swift return to investment in English football after he stepped a",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-20T23:00:46.677422+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16309805/tom-brady-buys-chelsea-stake.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-20T21:24:20+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Tom Brady 'buys stake in Premier League giants Chelsea'... just days after his shock exit from Birmingham City"
-    },
-    {
-      "desc": "JESUS OWONO has been seen for the first time since the horror challenge that killed Jesus de Miguel. The goalkeeper was ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T22:00:53.732936+00:00",
-      "link": "https://www.thesun.co.uk/sport/41087613/jesus-owono-goalkeeper-andorra-tenerife-jesus-de-miguel/",
-      "published": "2026-11-20T21:04:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Goalkeeper Jesus Owono seen for first time since horror challenge that killed Jesus de Miguel as he joins public tribute"
-    },
-    {
-      "desc": "Chelsea respond after being handed $196,000 fine by FA for anti-Catholic and anti-Irish chants Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T23:00:46.677446+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNWZMNmZfQWtvbDI5YzBFNXZVTTdOcUlQOUFyQnpxWkVyRnJ3VDhfTWcydU5vemNtQ0d3NkVJUC1MVHl0TmFrWlpHeHB6aGRYQlpfYXZVZVRJYlo1NzZoUnpFaXVBcld1YUdnOE1KN09iWU1rMHowTTBrd1FEMTY3UDhTcEhRb1NO?oc=5",
-      "published": "2026-11-20T20:57:47+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Chelsea respond after being handed $196,000 fine by FA for anti-Catholic and anti-Irish chants - Yahoo Sports"
     }
   ],
   "processed_urls": [
@@ -6718,7 +6753,8 @@
     "https://www.skysports.com/football/news/12040/13614555/x-paper-talk",
     "https://www.dailymail.com/sport/football/article-16309683/Jack-Grealish-available-play-Everton-star-axed-month-missing-training-without-permission.html",
     "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdmZSenpIV185RlJPNmdQcVgzT2ZrNHh6N3licWJDWFhYV1Q5NXBPS0stMzR5RG9sQVo3dTA1cm9pQlZPd3VpSm82TF8tUE1yeTVXSWduWGNlWEJqN19JanAxenhGVXZ3eUtfdDg3T3pCNHVidTlHQm5RWVRVNnF5RkZ6TUpoaWpRaVl0SDBVR2Qxb2VKck5uWXZ2X2VJaU44Q1B2ZVVzalhSTG9rTTRBcGFRSkU1a21YTXEtZFVlVVFwQUx4akl1ZHo2bFB3MTJlS2FNTTlxNWI3MGdUY2NkaV9WYkF6ZVhTcm15ag",
-    "https://www.thesun.co.uk/sport/41095418/moises-caicedo-injury-chelsea-clash-vs-leeds-updates"
+    "https://www.thesun.co.uk/sport/41095418/moises-caicedo-injury-chelsea-clash-vs-leeds-updates",
+    "https://www.thesun.co.uk/sport/41101407/luca-williams-barnett-tottenham-ipswich-match-report"
   ],
   "s_overflow": {},
   "schema_version": 4
