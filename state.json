@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 98240,
-    "output_tokens": 9633,
-    "requests": 15
+    "input_tokens": 103411,
+    "output_tokens": 10361,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4969,7 +4969,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T04:00:47.656349+00:00",
+  "last_scan_at": "2026-11-21T05:00:48.709332+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4990,6 +4990,16 @@
     "updated_at": "2026-11-20T22:01:20.683399+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Romano: Milan ‘agree terms’ with Krösche after derby win – Cardinale gets his man LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T05:00:48.711930+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPY1FUcEpueGFFQ3ZrYXBYR1JCU0ZLYnNrcW10OUdQVTRPSXFSTElKWHZjNFBhN0lBTlRla0FWTmtvUExtUjg4YVJnVlZfdEdkcUxWTmg0WWg4LThDWDRQem1PSnRxOGhOamYzTVIzZ2ZFeGxnZ1plVkgtMzNVVVdtMWh0RUxscS1CX2lrd1ozMnhNX283ZTZXV25uZnlSQUpBbmtTNDljaWdCYm9XM3FWckMwb3ZmRklBaWJsSGRrMGQxeXA3UlJQdDRDYW84TXBxQ1NBOXNB?oc=5",
+      "published": "2026-11-21T02:44:36+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Milan ‘agree terms’ with Krösche after derby win – Cardinale gets his man - LiveScore"
+    },
     {
       "desc": "Black Friday All Red Membership Promotion Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6479,16 +6489,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Coming soon: Enzo Maresca’s City v Fulham press conference - Manchester City FC"
-    },
-    {
-      "desc": "Spurs Mens N17 Seven Sisters Navy Zip Up Top Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:01:06.506065+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcU1vOXZjcHAtNmVmVHl2ZGg0Smp0N3hHTUwtRnRnNmZGZWk2WEJDcDd4bjlMTWw1UU1WZlFLNEFwMlA1TXBhS3d6RkpYd05GLTRfVHEybm85dHhhUjFOVVZlZnF0c3BaVzNlWVNTN3g3UTIxMXd4dU1SWWVSb0FPa3p1OExBaEgtNFRIanhKSVh1NHcwMVlDVzk1UjdxVFNQ?oc=5",
-      "published": "2026-11-20T12:57:59+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Mens N17 Seven Sisters Navy Zip Up Top - Tottenham Hotspur"
     }
   ],
   "processed_urls": [
