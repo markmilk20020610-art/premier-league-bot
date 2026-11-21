@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-21",
     "errors": 0,
-    "input_tokens": 124238,
-    "output_tokens": 14411,
-    "requests": 21
+    "input_tokens": 130007,
+    "output_tokens": 15004,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4969,7 +4969,7 @@
     }
   },
   "last_morning_report_date": "2026-11-21",
-  "last_scan_at": "2026-11-21T09:01:01.797864+00:00",
+  "last_scan_at": "2026-11-21T10:00:45.644672+00:00",
   "last_summary_sent_at": "2026-11-20T22:01:20.697417+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -4991,6 +4991,76 @@
   },
   "news_pool": [
     {
+      "desc": "Fabrizio Romano provides updates on Manchester United striker duo www.soccernews.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T10:00:45.647690+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb1hyY19EOVhJOHJLT1NvV3Iwa255bURmQVZqRWRqeTNxZ2g1V2FlTVJmYUItenFrSElYUjFhVkwwUnVDV3N3bHpBTndOYWFKQzNxQUhycHh3ZTZ5Q2p3VzNUek1peVVMbVQ5VFM4ekhGT0FNbzFIc09LYlFRalZVTFc4QklSbG9uRGp5YmlkY3ZSamQyR2JmTnRMZ0hXMlY5d2c?oc=5",
+      "published": "2026-11-21T09:53:16+00:00",
+      "publisher": "https://www.soccernews.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano provides updates on Manchester United striker duo - www.soccernews.com"
+    },
+    {
+      "desc": "CHELSEA host old rivals Leeds on Saturday as the Premier League makes its return. New customers who sign up and stake ju",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T10:00:45.647721+00:00",
+      "link": "https://www.thesun.co.uk/sport/41070069/chelsea-leeds-free-bets-bet-builder/",
+      "published": "2026-11-21T09:21:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea vs Leeds: Get £50 in free bets, plus our 9/1 Bet Builder tip | Sky Bet"
+    },
+    {
+      "desc": "MANCHESTER CITY are looking to avoid FOUR defeats in a row when welcoming Fulham in Saturday's early kick-off. Brand-new",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T10:00:45.647790+00:00",
+      "link": "https://www.thesun.co.uk/sport/41069182/man-city-fulham-bet-builder-tip-free-bets/",
+      "published": "2026-11-21T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man City vs Fulham: Our 6/1 bet builder tip, plus get £50 in free bets | Paddy Power"
+    },
+    {
+      "desc": "ARSENAL head to St James' Park on Saturday, looking to extend their lead at the top when facing Newcastle. To celebrate ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-21T10:00:45.647813+00:00",
+      "link": "https://www.thesun.co.uk/sport/41071576/newcastle-arsenal-betfred-free-bet-builder/",
+      "published": "2026-11-21T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Newcastle vs Arsenal: Get money back as free bets if your Bet Builder loses, plus our 11/1 tip | Betfred"
+    },
+    {
+      "desc": "Full match: Arsenal Women 0-2 Lyon Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T10:00:45.647835+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZHRGOURCRFZqemxFdmZwU0Nzb1lFdkhNcDg0bGl2NjVPcFVFOHFqQmd5ZHo4YW03SGRFQ1FnbXpnTGdWMUtwUXJhZDFwMlRMNndCRlE4cmdFbGVRaUNoWUVpaVdUbW9fX1NuYjhFRFJGeTFRcHVudEJYc1N0WXlsYnJR?oc=5",
+      "published": "2026-11-21T09:00:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Full match: Arsenal Women 0-2 Lyon - Arsenal.com"
+    },
+    {
+      "desc": "In pictures | Mikey Moore scores for Köln against Bayern Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T10:00:45.647859+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVXdOMjdWUmpJdzItTDZMT2UxMmswRk1kMVB1TGgyMWRURnF6MUJQTUhYNnE4S0ppWHBUaTFMUlNIcGxveXV6dDhuWm9OQ2x6UmUzRGhQZVpMNmNIa3d3Z1F6aDRtWWs4WHlVUkFtbmhQb1Q2ckJLUHdXaXVyS2MtY1gzZlNMUTVWSjc4aG5heHlCR2h3MXVseHJRZGRwX3pER1E?oc=5",
+      "published": "2026-11-21T08:59:35+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "In pictures | Mikey Moore scores for Köln against Bayern - Tottenham Hotspur"
+    },
+    {
+      "desc": "Bournemouth set £100m Alex Scott price tag as Chelsea and Arsenal eye January move LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T10:00:45.647883+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQcDEtTS1feVhPeG8wSFpjWWY4V2NiM0Y0QnI1SnNBUUVFdFVmSnAwaF9Xb2dzQXdOcVJJOWlma3pwNjN3VFdTajh6dGZQM3RzeC1WUEdKOHlpUEtybHJxVm9iUmxSaS1UdE1BemdFX1VYaVNuZUNqV1NfdEJOVmVMb1FobHlocVZiclByUjFRVVNFUmtnZEI5U1dVdUVQWVlTenU5RGhuaGVfbnpta29DTVVtYWJQcjl3am1UWGthNDc0eHZVYWQ5eGVPbmpZZl9DZzNRUFVfMWhDbHotN3FZY3NzMkVVM1hweFE?oc=5",
+      "published": "2026-11-21T08:49:03+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Bournemouth set £100m Alex Scott price tag as Chelsea and Arsenal eye January move - LiveScore"
+    },
+    {
       "desc": "Fabrizio Romano: Van Dijk's future, Pochettino's Man Utd plans, Vini Jr decision FootballTransfers.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-21T09:01:01.801446+00:00",
@@ -4999,6 +5069,26 @@
       "publisher": "https://www.footballtransfers.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano: Van Dijk's future, Pochettino's Man Utd plans, Vini Jr decision - FootballTransfers.com"
+    },
+    {
+      "desc": "Under-21 Tickets - Manchester United Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T10:00:45.647970+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BOVJlYVN6YkJsX1ZfX0VJc25CN2daXzZsclBKZC1PbDF0WWdmYnNtQlJfODFtM0VwX29OQk5pZ2FvLXFQYnR0eEhIbjRNc2E3Q3h4dHhBQ01vdGpQUEx4Y2w0Q18tUQ?oc=5",
+      "published": "2026-11-21T08:34:26+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Under-21 Tickets - Manchester United - Manchester United"
+    },
+    {
+      "desc": "Hugo Ekitike injury update Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-21T10:00:45.647992+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ENGlxZ0pRVU1VdDlyRXhpV0tkWWI2UExBN1dkUi1LTVlURXQyOGpPWFdSMU01SjZBTUlZYkpGZ0F2VmF4TXV4RERhU0Q5N1NIYWkxLTIzNnBPaHprSGM2WWNjbzBnR2R1eWJLRDNNLTZ2Rk0wTlZV?oc=5",
+      "published": "2026-11-21T08:08:28+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Hugo Ekitike injury update - Liverpool FC"
     },
     {
       "desc": "The Blackout Range Manchester United Store",
@@ -6399,96 +6489,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Xabi Alonso confirms Chelsea team news for Leeds | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Mikel Arteta says his Arsenal players have been warned against inadvertently leaking team news via Fantasy Premier Leagu",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-20T15:00:55.064099+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ck62pz5r16pro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T14:08:55+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Arteta warns Arsenal players over FPL team news leak"
-    },
-    {
-      "desc": "ENGLAND fans are full of confidence ahead of the Nations League knockouts after being left delighted by their favourable",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-20T15:00:55.064119+00:00",
-      "link": "https://www.thesun.co.uk/sport/41082941/england-fans-nations-league-draw-favourable-knockouts/",
-      "published": "2026-11-20T14:05:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘It’s coming home’ – Fans convinced Nations League draw ‘rigged’ for England as stats show how favourable it is"
-    },
-    {
-      "desc": "Every word of Renée’s pre-West Ham press conference Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T20:00:48.709615+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaTNUNVRtNlhOYXYyQzdKWExzUzh4WHRhQUU5SENTT2FFWlg1YnFEZ1NBcWRZWHdDZndaMDBCNG4zM1hLRDVuQ2dkLXMtWWlUamF3eHQySUhvb2hzNm1LTktwQmVxR0ljZ0lIcTVaeWpPNzJFZG4ycEFVYWhjWlhyaVdQMWd4WGVVTUd2Wk1UOUlSRTQ3cTI0?oc=5",
-      "published": "2026-11-20T14:03:19+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Every word of Renée’s pre-West Ham press conference - Arsenal.com"
-    },
-    {
-      "desc": "Manchester City form not impacted by Premier League case, Enzo Maresca insists The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T18:01:06.505921+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeDh3MVF1ejdoTXhZVkwtRnBlLVYwYTljb3FNSHRhRmVHR29LY0lOcGJnanVEdXFKVGVIeUg0YmFsT0pmenVhVXFWZTJ6VnBfWkpWVTV0eEhkS1htNjdmMXl2RHoxOXY2eXFyZXVsdFloZ093UTZBWmFIZFA1UDY5bVJXZ2x5Wm4zOUJjeQ?oc=5",
-      "published": "2026-11-20T14:01:01+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Manchester City form not impacted by Premier League case, Enzo Maresca insists - The New York Times"
-    },
-    {
-      "desc": "Fabrizio Romano Transfer News: Man Utd striker hunt, Messi update, Nico Paz latest LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T16:01:01.823957+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQZFdIa01jcVpIR3c1NEtPdFVhb2wzWnBDVjlheGNuNEtrZXFQWS02TzVXYTYwRjFDWGZWc213WF9Cd0FycUxKWW9qOWQ3MlZrd3lLRVpoLU9hX3BySWlDb3IxZ3cyWngtNF9kVHZyaGpJUG9DNFNhdUpHLW5UMzJlekNUV2hKU0NVRERVams2VTRuaWNMalU3OTNzcVJLYmRTRklvZlFtenVuQzI2RllpTzYwaHBuYUdvQ29tZGpjX0xkWTRBYzk0dnJndjBRWFhlelZGeHk4UWNiSHpCTTVPMmtmc2RmajJxTTNFMA?oc=5",
-      "published": "2026-11-20T13:56:51+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Transfer News: Man Utd striker hunt, Messi update, Nico Paz latest - LiveScore"
-    },
-    {
-      "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Mauricio Pochettino's first press conference as Manc",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-20T14:01:08.495447+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308325/Mauricio-Pochettino-Man-United-press-conference-LIVE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-20T13:54:20+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino first Man United press conference LIVE: New boss faces the media as the Premier League returns with Mikel Arteta sharing"
-    },
-    {
-      "desc": "The Scottish Premiership returns with managers to the fore - this is all you need to know about Saturday's games.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-20T14:01:08.495471+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c50mdwnn90jyo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-20T13:53:22+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Key questions as Scottish Premiership returns"
-    },
-    {
-      "desc": "Pochettino wants USMNT stars at Man Utd? Romano delivers McKennie verdict LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T15:00:55.064180+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNakxGWWVKY2tOMURSbW4xSnJKVVZORTdGNGdneXVYOXVWdGNhWjhTUDJNdHExUzNhejB3OVpvM1MwNG9JMTltV3FMUjgtUVo4SkhJd19zOVZkeV9vQ1FpMERjN09naFphR250WUdTNGdxVnNUVUEzYXVKMDRmZlE1clcxNzE5bFBCVmg4enVMRnhPYzhtdUNvNXNwVUkwaVkwaTNfc3VLZkE3YkhQMllZcHlUeXd3MzdKRmZGSUwtTGJfRVNKeHBWX0daSFlYRUNOQTVTVWRrNERzekpWa0ZjTkxSMA?oc=5",
-      "published": "2026-11-20T13:53:01+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Pochettino wants USMNT stars at Man Utd? Romano delivers McKennie verdict - LiveScore"
-    },
-    {
-      "desc": "Man City v Fulham - 21 Nov 2026 Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-20T14:01:08.495490+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iNnJsTXd1LVdFR2F2SktpaVMyX1NhMHZRSWo1VDNCVEhnTC0zbGYwUHRzR2dJdGh3ZGplNF9kbmlVMFFKTE5saWUzeGVteUhFOUE2STRwdmlfU0xqcy1JNG1OZnNtR2dzUDF2ZXlqS0pJNVNG?oc=5",
-      "published": "2026-11-20T13:45:38+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Man City v Fulham - 21 Nov 2026 - Manchester City FC"
     }
   ],
   "processed_urls": [
