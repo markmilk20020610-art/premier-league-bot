@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 40415,
-    "output_tokens": 4976,
-    "requests": 7
+    "input_tokens": 46363,
+    "output_tokens": 5692,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5459,7 +5459,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T21:00:59.417313+00:00",
+  "last_scan_at": "2026-11-22T21:50:11.561398+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5480,6 +5480,86 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Fifa is set to confirm on Monday that a first football World Cup will be hosted in the United Kingdom since 1966.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T21:50:11.564295+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T21:44:37+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Fifa to confirm UK bid to host 2035 Women's World Cup"
+    },
+    {
+      "desc": "MANCHESTER UNITED officially have the leakiest defence in Europe after their humiliating loss to fierce foes Liverpool. ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:50:11.564326+00:00",
+      "link": "https://www.thesun.co.uk/sport/41110217/man-utd-worst-defence-europe-crystal-palace/",
+      "published": "2026-11-22T21:42:19+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd have worst defence in EUROPE with even more goals conceded than Prem basement boys Crystal Palace"
+    },
+    {
+      "desc": "CHRIS WHEELER: Pochettino gave up his job as US national team coach to join United on Wednesday, but any hope of a new m",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T21:50:11.564361+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16313585/Mauricio-Pochettino-Man-United-thrashing-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T21:41:21+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino blames Man United's 'painful' thrashing at Liverpool on 'unfair' red card - after Roy Keane lashes out at Gary Neville f"
+    },
+    {
+      "desc": "GARY NEVILLE bizarrely slapped himself in the face live on Sky Sports as he ripped into Manchester United's defence. The",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:50:11.564385+00:00",
+      "link": "https://www.thesun.co.uk/sport/41110146/man-utd-gary-neville-liverpool/",
+      "published": "2026-11-22T21:37:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd fans fear for Gary Neville after club legend slaps himself in the face live on Sky Sports after Liverpool loss"
+    },
+    {
+      "desc": "Mauricio Pochettino believes even the best team in the world could have conceded four goals at Liverpool in Manchester U",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T21:50:11.564411+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm782j80yypwo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T21:36:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'World's best could've lost 4-0' - but should Man Utd have done more at Anfield?"
+    },
+    {
+      "desc": "Kroupi’s preferred destination ‘revealed’ as Bournemouth rule out January sale Sports Mole",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:50:11.564464+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ3B5dGROQi1rOXY1ajFYVWlPeG4zelBhaC1YVHRwWm5zVWs5dnhTQmgyUFNFdVA0RWVPSUZYWGNoTWRrUmJNVnM4QWlSVm5VOENxaGFCYXo0Q0E5N3F4cFBpOGRJQkNmMjFQRFN0dmg4S3NXS2pLMFlqNG5qeVhGY1JGRUxrMm9KYzNoYmFCRXB3ODE5ZWRDZTZyQUhqbjhNeVplNElrN2NmSkZlc2RTNkUwWVFjVVNIUE1ialhLNEVhR2d0UllQWm1VaVJEVkhKRWNwZEZldw?oc=5",
+      "published": "2026-11-22T21:24:53+00:00",
+      "publisher": "https://www.sportsmole.co.uk",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Kroupi’s preferred destination ‘revealed’ as Bournemouth rule out January sale - Sports Mole"
+    },
+    {
+      "desc": "Mauricio Pochettino's reign as Manchester United boss could barely have got off to a more chastening start, writes Simon",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T21:50:11.564490+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwd012903kvgo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T21:22:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Chaotic week, nightmare start and huge reality check for Pochettino"
+    },
+    {
+      "desc": "Manchester United eye move for Al-Ahli striker Ivan Toney, Fulham hold contract talks with Calvin Bassey and PSG could s",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T21:50:11.564527+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck053nyl6399o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T21:04:15+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd plotting Toney move - Monday's gossip"
+    },
     {
       "desc": "MANCHESTER UNITED fan Mark Goldbridge went absolutely ballistic during his favourite team's 4-0 hammering to rivals Live",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5741,6 +5821,16 @@
       "title": "Daily Who Am I? Play 22 November Premier League game - Premier League"
     },
     {
+      "desc": "2026/11/22-West Ham United-Women-Women's Super League-H Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:50:11.564945+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdS12T1ZaTTh4YW9DbUxoT1dZT09xVWxGR0xNeTRmbUNVa0RmU2tkZlRfQXBJSVFCRjlxcnJlbzlVS2poQWJuaE8wMThKN0JLRTZ3ejRDSVJ0dmZkTzMwc3F1MXZpQVhxM3hacllOS19WOUR5RWYwQ0x0R21uRGh1TmJUYkhDUVNuNEs3NTZmQTBxdEstam9EWmtoQmVVcm1YQUdRVS0tYl8zYklEOXMtX3h3?oc=5",
+      "published": "2026-11-22T18:28:10+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "2026/11/22-West Ham United-Women-Women's Super League-H - Arsenal.com"
+    },
+    {
       "desc": "GARY NEVILLE suggested that returning to action after a year out is like playing \"after having six pints\" following Matt",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T19:00:52.722216+00:00",
@@ -5849,6 +5939,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "City v Napoli: Kick-off time and TV information - Manchester City FC"
+    },
+    {
+      "desc": "How can I watch City v Napoli on TV around the globe? Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:50:11.565062+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObERKODZVMG1WemRFQk9TNzhLa3NpTVZqR2ZNNnU3djU1Z29lMUYwRThmeFFCcDE1b2RLVFI0QjBSWFcwXzBZTUN1NXp5RTlMWXVmQWVhbVdBNWFtZ0laUHljdGNoNWtIdnA3OFhWWG1wcEpXcUlTRVZtV2p4LTc1LVR5em1Ldw?oc=5",
+      "published": "2026-11-22T18:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "How can I watch City v Napoli on TV around the globe? - Manchester City FC"
     },
     {
       "desc": "Manchester United Target January Striker Reinforcements Demokratis.co.id",
@@ -6361,6 +6461,16 @@
       "title": "Kroupi prefers Barcelona over Paris Saint-Germain - YSscores"
     },
     {
+      "desc": "Tribute paid to ‘kind and caring’ jewellers owner after passing Peterborough Telegraph",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:50:11.565380+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYjk3Q3VqNFZJVnl2SlM1YkZIZk5YYkRkd2gzaEFaRDJtZmpwR05YRVZhekZrNm1JcVNxQUNMZ29oZHI4UFY4NGtfSUJSbTR0dTM4REtQZkZCSzE2REx4NzF0d195blQ4VFY1NGtKODZITEV0Z1FmUHZBY0g2d2pndENyWC1IUQ?oc=5",
+      "published": "2026-11-22T14:44:00+00:00",
+      "publisher": "https://www.peterboroughtoday.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Tribute paid to ‘kind and caring’ jewellers owner after passing - Peterborough Telegraph"
+    },
+    {
       "desc": "Manchester City Cherki Cushion Man City Shop",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T16:00:54.324160+00:00",
@@ -6869,116 +6979,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Read Renée's West Ham programme notes - Arsenal.com"
-    },
-    {
-      "desc": "What Mauricio said in his first press conference Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T10:00:52.612468+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWRpSnRGTFRnUkRqeWlXV1RoTXdyOHBfRmVkY2NXN0J4ZFdadWRsZTJFUWNaNFRMa2V0RHJxNzJEY0VoaE9veEdMbkVzY242Q1prMTd6WW45TjJraGozVEVRdlpiNy1hTVctRXNzSXdVbXFNY09VUFh3aGhuaV9HM0M3SVBiTXZDRjNsTFVxaVRHUUdYQmdYdFN3?oc=5",
-      "published": "2026-11-22T09:06:07+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "What Mauricio said in his first press conference - Manchester United"
-    },
-    {
-      "desc": "LIONEL MESSI escaped a red card after launching a ball into an opponent's face. The Argentine star was in action for Int",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T10:00:52.612495+00:00",
-      "link": "https://www.thesun.co.uk/sport/41105005/lionel-messi-mls-inter-miami-ball-throw-columbus-crew/",
-      "published": "2026-11-22T09:02:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Lionel Messi launches ball off opponent’s face in moment of madness but escapes red card in ‘really sad’ scenes"
-    },
-    {
-      "desc": "LIVERPOOL host Mauricio Pochettino's Manchester United on Sunday in a blockbuster Premier League clash. To celebrate the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T10:00:52.612516+00:00",
-      "link": "https://www.thesun.co.uk/sport/41085553/florian-wirtz-liverpool-man-utd-boost/",
-      "published": "2026-11-22T09:01:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Liverpool vs Man Utd: Get Florian Wirtz 1+ shot on target at Evens | Betfred"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO begins his Manchester United tenure with a tasty trip to Liverpool on Sunday. To mark the big game o",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T10:00:52.612537+00:00",
-      "link": "https://www.thesun.co.uk/sport/41073349/liverpool-man-utd-betfred-free-builder/",
-      "published": "2026-11-22T09:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Liverpool vs Man Utd: Bet £5 on a bet builder & Get a free £5 bet builder, plus our 37/1 tip | Betfred"
-    },
-    {
-      "desc": "Andoni Iraola programme notes | Why Liverpool need to be 'all in' from the off today Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T11:00:54.145424+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSF95bEw5a0psS21Zd0xkRXo4LWpINDlkajdSTk55X0V5Wm1BYzVHZUdLZng5cXQwVjByU3R5ZDMwMGhKX1NYWWwybHhoR2FyNTZyXzVmR0NtcmNQdFBrN2x0UmJQdHppeTNJRFdjT0IwdFNuVDdJLUtuRU00WDZyMF9LdWh3R2JuaG83ZDFOT2xfNUxmcUxicm96QlhRdw?oc=5",
-      "published": "2026-11-22T08:58:09+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Andoni Iraola programme notes | Why Liverpool need to be 'all in' from the off today - Liverpool FC"
-    },
-    {
-      "desc": "Team news v Liverpool Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T10:00:52.612558+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYm05eTlTUVg4dlBXTkNrMFFWeURKcDlFOE5KS0c3dF9YbXlqcTRwc21tVzFiUms1QnlNVDZvNUs3UlJhcW9tb0hrQXN1WTFaWEdOdlJoNE9yajNmNmxuY1dEY25PRl9kdDZRb1FnUVZrNTJSOU45Y0R1MmZaM2t5S3RZemU4bzJmVWk5MFA3Zw?oc=5",
-      "published": "2026-11-22T08:50:03+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Team news v Liverpool - Manchester United"
-    },
-    {
-      "desc": "Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T11:00:54.145467+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbGVSVGNVbm5IRUlqYk9ZN0RObTF1LXRNcndRSkV4TVJFU1RPdS1HZ3c4aVg4TklVNWRJRzdwbEpYX2JLODBOTERkUWRLOG5Na0Iwel80OFdVQklROWJRSEEzYW51bUxmbEh6VUlOMDc1ODMxeTd2NXppVWtOeWFXOFBaMHZrTVowOGV1SmRWSjZRSUJCam9sQzlwSzF5Vmx4dU84WE8yUWUtbk50RDYzR2hlSHh0UQ?oc=5",
-      "published": "2026-11-22T08:48:19+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United Website"
-    },
-    {
-      "desc": "Ahead of PSG and Arsenal: Barcelona receive a valuable signal from France striker LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T10:00:52.612581+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQT1psTGctZ29kal9Nc0hid0RmSkxFZXhDMXQyelBzSDFiamxDWmMtb2dMNVJJMndPdE01M1UyaXFjN3cwOUZCYWxZbmVPcWJTYVA3aUJTNHZxR0FzTFd6bF9lOXVMVUJQY0xMT25oZ0w4NHpHS05mcHlIRnFnMTNmWlZpNkg2SWhISzJhMUhxdzdYdF9HeEJGUDlMYVdCQk5zZG1pcVI5b3BCZGhXNGpGUkRuQjk2bGNaZ1JheUE2R1A2RHR4ZURwODZidHFxTDVyT0NV?oc=5",
-      "published": "2026-11-22T08:42:20+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Ahead of PSG and Arsenal: Barcelona receive a valuable signal from France striker - LiveScore"
-    },
-    {
-      "desc": "Manchester United captain Bruno Fernandes says he has been offered a new contract by the club but feels it \"is not the r",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T09:00:56.405641+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T08:41:20+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'Not the right time' - Fernandes pauses Man Utd contract talks"
-    },
-    {
-      "desc": "Premier League Football News, Fixtures, Scores & Results Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T09:00:56.405659+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE0ybW56TURtbnh4VXdOOHZqM05pTGxxMjVuUVJsUVotMnc1MjJBaDhBdzlibHBDeEF5aW5SQWFudUlmUlNs?oc=5",
-      "published": "2026-11-22T08:25:12+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League Football News, Fixtures, Scores & Results - Premier League"
-    },
-    {
-      "desc": "Kluivert's pride after Bournemouth win nine in a row Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T10:00:52.612636+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQY3ZHeDJRZzBxYWVqV2V3WFd5LWFLSmZsUGw0ZjFPYW1FdjA2TFNQQmtxLUpWMXZQOTVSY0F4d0ZVOUw1NmFZdGlhd0JRYVFXUlVibDlvNEVud0hwam1Wd1lYU04tUV9MTDBFM1RYVHp4SmVsbE1ySmJxb3NoUF9PTW1hZzJZc0JYM2lqdWZRWUNMbDhsVll1RERmdEhUUQ?oc=5",
-      "published": "2026-11-22T08:23:14+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Kluivert's pride after Bournemouth win nine in a row - Premier League"
     }
   ],
   "processed_urls": [
