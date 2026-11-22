@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 22,
+        "calls": 23,
         "errors": 0,
-        "requests": 22
+        "requests": 23
       }
     },
-    "calls": 22,
+    "calls": 23,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 129523,
-    "output_tokens": 15235,
-    "requests": 22
+    "input_tokens": 136187,
+    "output_tokens": 15748,
+    "requests": 23
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3685,6 +3685,41 @@
       "title": "科莫球员尼科·帕斯赛前悼念因车祸去世的特内里费前锋赫苏斯·德·米格尔",
       "updated_at": "2026-11-04T23:57:37.945602+00:00"
     },
+    "b4f24608f6d7": {
+      "article_title": "Bruno Fernandes reveals why he has paused Man Utd contract talks in incredibly open interview about his future",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "6ac0438d83381383",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 203
+        }
+      ],
+      "created_at": "2026-11-22T11:01:00.142069+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "dc08580bcf72b907",
+      "event_id": "b4f24608f6d7",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T11:01:00.142069+00:00",
+          "origin": "created",
+          "title": "Bruno Fernandes reveals why he has paused Man Utd contract talks in incredibly open interview about his future",
+          "url": "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 203,
+      "title": "B费暂停与曼联续约谈判：称现在不是合适时机",
+      "updated_at": "2026-11-22T11:01:00.831825+00:00"
+    },
     "b564a15a290c": {
       "article_title": "Man convicted for racist abuse of Real Madrid's Mbappe",
       "attempts": 1,
@@ -5214,7 +5249,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T10:00:52.609553+00:00",
+  "last_scan_at": "2026-11-22T11:00:54.141588+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5236,6 +5271,66 @@
   },
   "news_pool": [
     {
+      "desc": "BRUNO FERNANDES has claimed it is \"not right\" to be discussing a new contract at Manchester United amid their disastrous",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T11:00:54.145015+00:00",
+      "link": "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future/",
+      "published": "2026-11-22T10:55:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Bruno Fernandes reveals why he has paused Man Utd contract talks in incredibly open interview about his future"
+    },
+    {
+      "desc": "Romano gives update on Liverpool, Aston Villa interest in Endrick with one club ‘in love’ Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145056+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMDJvLWZiN3JoVDdCR2xfbHBnMjZYRFhBQ2k5aTBvSzBTRWZSVjJMaDRTYXhNUmZzQ2IzR0o0U0xDeDVUa3RpaG9VNDJuU1I1XzY0OGpBS1puaUFObG5jaXpQQ3dXcFo4MlgyMWdWUkJmVUpvME1RMWxUMWJTbWJvRmxBTnpacVQ3VmxaUlFHci01alJlVXNLaG5zeGtoYlhwa3JwT1N0bUFRbXY5?oc=5",
+      "published": "2026-11-22T10:25:28+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano gives update on Liverpool, Aston Villa interest in Endrick with one club ‘in love’ - Football365"
+    },
+    {
+      "desc": "LOCALS living in the shadow of a Premier League stadium as it undergoes a huge redevelopment say its a nightmare. Reside",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T11:00:54.145088+00:00",
+      "link": "https://www.thesun.co.uk/sport/41105084/stadium-redevelopment-shakes-homes/",
+      "published": "2026-11-22T10:16:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "We live in shadow of Premier League stadium – huge redevelopment is a nightmare with homes shaking & terrifying our kids"
+    },
+    {
+      "desc": "IAN WATSON has been sacked by Rochdale after the defeat to Northampton. The Dale are just two points above League Two's ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T11:00:54.145149+00:00",
+      "link": "https://www.thesun.co.uk/sport/41105467/rochdale-sack-manager-ian-watson/",
+      "published": "2026-11-22T10:09:18+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Rochdale SACK manager Ian Watson as club release blunt 62-word statement after they fall into relegation fight"
+    },
+    {
+      "desc": "In a sport where the dominant question is 'what's next', it is perhaps unsurprising that football fans share an insatiab",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T11:00:54.145185+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16298933/jj-gabriel-manchester-united-real-madrid.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T10:00:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Be warned, JJ Gabriel: The SEVEN wonderkids who flopped after making high-profile moves - as Man United star, 16, closes in on move to Real "
+    },
+    {
+      "desc": "FPL player price changes - risers, fallers and top transfers in Gameweek 11 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145236+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdWtaVUdZZEFiVG1SLWU0bV9JV3A0VGN0b0dVajFUZUNwNF9fZjFzSjhSM3lMTFp2RkZSamJVaEdEY3JNTmhDWm9pUF80ZndTeExNX3o0NURKTVBFNUZoM0dJSU1GX0NUOUFHeDRtUm1nZDNjbXA1ZU5yTGl5ZFV5RnFId3BxQUlMbkR0YXQ5SmpRNmpLMTV3MlZvbmNMRV9ic0VUSGxaTE05YVFnVVRlOEFGREhpRVNLeWc?oc=5",
+      "published": "2026-11-22T09:43:43+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "FPL player price changes - risers, fallers and top transfers in Gameweek 11 - Premier League"
+    },
+    {
       "desc": "The Man United captain's contract is set to expire in June 2027, which means that if the club and player fail to agree f",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-22T10:00:52.612410+00:00",
@@ -5244,6 +5339,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Bruno Fernandes reveals contract negotiations with Manchester United have stalled after he rejected a new deal in the summer"
+    },
+    {
+      "desc": "Read Renée's West Ham programme notes Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145292+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMW5TNzdndWUtV0pCUUlhLTV2aWVrQjFzRXZGSll1RFBsWTRrYUd2Uk5VT2ViOWRmbGYtcUVGOVJJSlRUWWlwUGJrQVZZWnpuR2ZUZzV6eTd6N2VWV1RCZnQtekd3cFZ6TWZDXzlaQ2J5U19ac0lRSTBKbjlKN1RsaGJhcnQ?oc=5",
+      "published": "2026-11-22T09:07:03+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Read Renée's West Ham programme notes - Arsenal.com"
     },
     {
       "desc": "What Mauricio said in his first press conference Manchester United",
@@ -5286,6 +5391,16 @@
       "title": "Liverpool vs Man Utd: Bet £5 on a bet builder & Get a free £5 bet builder, plus our 37/1 tip | Betfred"
     },
     {
+      "desc": "Andoni Iraola programme notes | Why Liverpool need to be 'all in' from the off today Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145424+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSF95bEw5a0psS21Zd0xkRXo4LWpINDlkajdSTk55X0V5Wm1BYzVHZUdLZng5cXQwVjByU3R5ZDMwMGhKX1NYWWwybHhoR2FyNTZyXzVmR0NtcmNQdFBrN2x0UmJQdHppeTNJRFdjT0IwdFNuVDdJLUtuRU00WDZyMF9LdWh3R2JuaG83ZDFOT2xfNUxmcUxicm96QlhRdw?oc=5",
+      "published": "2026-11-22T08:58:09+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Andoni Iraola programme notes | Why Liverpool need to be 'all in' from the off today - Liverpool FC"
+    },
+    {
       "desc": "Team news v Liverpool Manchester United",
       "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T10:00:52.612558+00:00",
@@ -5294,6 +5409,16 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Team news v Liverpool - Manchester United"
+    },
+    {
+      "desc": "Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145467+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbGVSVGNVbm5IRUlqYk9ZN0RObTF1LXRNcndRSkV4TVJFU1RPdS1HZ3c4aVg4TklVNWRJRzdwbEpYX2JLODBOTERkUWRLOG5Na0Iwel80OFdVQklROWJRSEEzYW51bUxmbEh6VUlOMDc1ODMxeTd2NXppVWtOeWFXOFBaMHZrTVowOGV1SmRWSjZRSUJCam9sQzlwSzF5Vmx4dU84WE8yUWUtbk50RDYzR2hlSHh0UQ?oc=5",
+      "published": "2026-11-22T08:48:19+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United Website"
     },
     {
       "desc": "Ahead of PSG and Arsenal: Barcelona receive a valuable signal from France striker LiveScore",
@@ -5364,6 +5489,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Alonso's injury update on Caicedo - Premier League"
+    },
+    {
+      "desc": "How to watch Arsenal v Borussia Dortmund live on TV Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145605+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUGI1NzNGTWlJVVhrUllPMmRidzhYVzd3RGlKWGo2ZVNzczJOQTdqUmdJTEMyRUJmWEtsb0tBNkpwVkVxMU9iVG05WGFWN0ZzTW5fNUpDWEVpWFdOMV9IdUFEMENuS2huMWI3bExIRW5CNmlETWZYVUN6b01Vb2FvcDJaMUhvNlRvbXc?oc=5",
+      "published": "2026-11-22T08:08:03+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "How to watch Arsenal v Borussia Dortmund live on TV - Arsenal.com"
     },
     {
       "desc": "Fabrizio Romano News: One team 'in love' with Endrick as Spurs reject Williams-Barnett bids FootballTransfers.com",
@@ -5476,6 +5611,16 @@
       "title": "Revealed: Just two Man United stars are selected in combined XI with Liverpool by stats boffins as Andoni Iraola's defence dominates... but "
     },
     {
+      "desc": "COV’S KENZIE CHECKS IN The Non-League Football Paper",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145842+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNXzg2dTBrcXRGVWFhUEFiSDdnNkNvbkxFVXpsaHhtM3VHY0Y1TE9TOElKZHIzaXVjTzA1RXhFbVE5cHYzY2dfZ1ZyMF83dVdJVXNwNGVYMVZMczhvQ3hyaEtGWVRGUzNiV1h2MnJNWXRTbmxvaU1LZGVWRHJneUVHSWg2WFFFbmczRlhJRlk2YlhxRmk4dkZTdlBKWkdodHBRdnc?oc=5",
+      "published": "2026-11-22T06:34:51+00:00",
+      "publisher": "https://www.thenonleaguefootballpaper.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "COV’S KENZIE CHECKS IN - The Non-League Football Paper"
+    },
+    {
       "desc": "BBC Sport columnist Tony Pulis explains how new Manchester United boss Mauricio Pochettino will prepare for Sunday's gam",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-22T07:00:53.901113+00:00",
@@ -5544,6 +5689,16 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Man City have problems all over the pitch. Don’t get this wrong – it’s not the verdict - The New York Times"
+    },
+    {
+      "desc": "Share your team with our new FPL feature Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T11:00:54.145993+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBibktFRjJ2TVNfMTY1bklMZ0ZxQTNURHdvVFZ0T2NmTEl1cEpTNnRBbWppcVRQTk9FTXl6RXBSeUpneEVMdkxwNjlDNTFHMFpObGFyZEtMaXg?oc=5",
+      "published": "2026-11-22T04:46:14+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Share your team with our new FPL feature - Premier League"
     },
     {
       "desc": "Video - David Raya to Undergo MRI Scan After Shoulder Injury Against Newcastle United roundtable.io",
@@ -6614,126 +6769,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea 1 Leeds 4: Pressure piles on Xabi Alonso as furious Blues fans storm out early during Stamford Bridge mauling"
-    },
-    {
-      "desc": "DION DUBLIN has been left fuming after being forced to sit on the floor of a train during a journey to London. The forme",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T17:00:53.812968+00:00",
-      "link": "https://www.thesun.co.uk/sport/41097367/dion-dublin-fumes-forced-to-sit-on-train-floor/",
-      "published": "2026-11-21T16:56:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "BBC MOTD pundit, 57, fumes as he’s forced to sit on FLOOR of train to London"
-    },
-    {
-      "desc": "Mauricio Pochettino’s two transfer priorities revealed as £36.5m man faces January exit talkSPORT",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T17:00:53.812997+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMnZzNkFsSXdiSEl1QW9tdnVpbUJhMUFuV0ZqbFlNcTU1WXJwRFpUcnJtTFByX1pXWkxxY2ZyYi04ZUlmZFFjcXNWaXNid2I0WnpWNC1uNUU0TTNiOW9icHVkTUFIRnZsWUFkdXJJTU80dkNUeUhmTEFXOVFncWdJV2ZvR1JjSGR4T25MNWFHWk5MYlpyellhUzBScmY5VnhxSFE?oc=5",
-      "published": "2026-11-21T16:50:09+00:00",
-      "publisher": "https://talksport.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Mauricio Pochettino’s two transfer priorities revealed as £36.5m man faces January exit - talkSPORT"
-    },
-    {
-      "desc": "Falkirk clung on to clock up six top-flight wins in a row for the first time since 1966 with a 2-1 home victory over St ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T18:00:51.818915+00:00",
-      "link": "https://www.skysports.com/football/falkirk-vs-st-johnstone/report/558413",
-      "published": "2026-11-21T16:50:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Falkirk beat St Johnstone to extend winning run to six"
-    },
-    {
-      "desc": "Mario Frick enjoyed a dream start to life as Aberdeen boss by edging a six-goal thriller with a 4-2 win over Kilmarnock.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T19:00:49.673502+00:00",
-      "link": "https://www.skysports.com/football/kilmarnock-vs-aberdeen/report/558415",
-      "published": "2026-11-21T16:50:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Frick enjoys winning start with Aberdeen with victory at Kilmarnock"
-    },
-    {
-      "desc": "Newcastle vs Arsenal Confirmed Lineups: Bruno Starts, Saliba on the Bench The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T17:00:53.813020+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMmxTeGVYLTQ2MnlBMmlDTUM4WTFidXVuQjlPN0lSOGplTlJYZXRQQVlGeWN5U2xOek9wQzBxT0t5dXNqQ1hrZ056SEpoWV9Fc2FQX3pXb2JpZktyNW81OFowdFJYUUV2WmF5LXc1MWtnWkcybUNHSWpOVGJjYXg1SS14eTg5RmJDS09Tdzhn?oc=5",
-      "published": "2026-11-21T16:44:09+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Newcastle vs Arsenal Confirmed Lineups: Bruno Starts, Saliba on the Bench - The False 9"
-    },
-    {
-      "desc": "TAIWO AWONIYI was forced off after injuring himself while JOGGING OUT for the second half. Awoniyi, 29, emerged from the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T17:00:53.813060+00:00",
-      "link": "https://www.thesun.co.uk/sport/41097680/coventry-palace-liove-taiwo-awoniyi-freak-injury-tunnel/",
-      "published": "2026-11-21T16:21:53+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Premier League star suffers freak injury coming out of TUNNEL in bizarre scenes during Coventry’s 3-2 win over Palace"
-    },
-    {
-      "desc": "Is Jamal Musiala retiring at 23? Shocking rumours swirl after Bayern Munich star’s rusty return vs FC Koln Indiatimes",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T17:00:53.813090+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNcGZsSnJaQ3NGc3hNLTZqRHdYUmZjVUV3ZWE2aDJWZnAzQzBhcWFkd0ZraWpoOGhIUzhiZFA5UEF1VFl3Z2p1NVUzYWtYWjZqRWRJbnoxV0RtWlRHMHJnbkV2dERvWEI4T3doSkZBSllQbHRmNmdWXzhhRWhIVzFwaV84R3ppU3dtRW1LVjdfN0p5dDJQSWpvbldlNFZCVlNLOXl6SHE4bVhBekdJcEtZNk5fbHMxUk00QnpCc0tQSlM0bE91dFQ2eXUxTEwzZGozWE50c2pYcTJCZzRnT1NrU1NEUGZ5a0hzaG5CcEQyeWxmbUtvZHJnN0N6MNIBgAJBVV95cUxPQW1MTXJRTGt0WnpQTUw3aDVxVmhxS1JZRy13SVFwaTN2aGtQUUFaWXd4RkhtaXA3bFlFbWJ1eFRPaExRcVF1RzhGZUdxbDQzZHZaamtmMVdxZnRJaEVuOVhUSndDR04yTFhCX3kxWk9QS1BZMng4Tk1MQ01SeVBvNmpSLTQwblk3WHl3OW1Kd0dVcHVxQlA5c1NoYm5iX3UyLUUwMllLV3hzZjFpQmpQRU9RS1NqNV9aNG5zc2VydlBCNnAwREFaZGhlWks3dDVOYVlUdmtvWDNFMnFYZG1QSnFZeVozSkpSNmxZcXJ1SXhhVEVTcE5ZYTVaeGQ2M3pw?oc=5",
-      "published": "2026-11-21T16:17:55+00:00",
-      "publisher": "https://www.indiatimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Is Jamal Musiala retiring at 23? Shocking rumours swirl after Bayern Munich star’s rusty return vs FC Koln - Indiatimes"
-    },
-    {
-      "desc": "Team news: Eze in, Guimaraes starts at Newcastle Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T19:00:49.673588+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbGZKaGRIYVE2ZDJvVHVMZzZDT2VncENLT0ZrcVJGcXRqYmVIWWFxaWtZLUZQTEhSRUc2anI2eWlZRy1oZ2dodk5XdXU5VXdlZ0VMNkpRWUNRYWJkTGFCSkpyYzIyZmt1aUlkbklzUEM5NnZuS25xd3ptbDJuX3BJZkJiaFRzWUYyUVFlM2dFdTdadw?oc=5",
-      "published": "2026-11-21T16:16:43+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Team news: Eze in, Guimaraes starts at Newcastle - Arsenal.com"
-    },
-    {
-      "desc": "Checkout - Man City Shop Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T18:00:51.819009+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE10TDdxMTJKcW1xSWxBWGdNd2ZlVTRaeXpoWjc4V3pZeTlZaFhsSTcxdmtFdkJuXzAtbUVPc1gyeGNTWWVyNlppdW5vamRCUQ?oc=5",
-      "published": "2026-11-21T16:13:57+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Checkout - Man City Shop - Man City Shop"
-    },
-    {
-      "desc": "JACK GAUGHAN AT THE ETIHAD: The bananas are disappearing now winter is coming, the fire and fury waning with each passin",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T17:00:53.813124+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308757/Man-City-failing-supporters-stand-Enzo-Marescas-radiate-uncertainty-meek-display-Fulham-draw-writes-JACK-GAUGHAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T16:11:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man City are failing to give their supporters something to stand behind as Enzo Maresca's side radiate uncertainty with meek display in Fulh"
-    },
-    {
-      "desc": "Manchester City spent £327m overhauling their midfield in the summer - but how does Enzo Maresca find the right balance?",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T17:00:53.813148+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxe8944j188yo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T16:07:19+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Fernandez dropped, Anderson scores - Man City's £327m midfield dilemma"
-    },
-    {
-      "desc": "MANCHESTER UNITED fans have been left fuming after the club unveiled a new limited-edition Blackout kit - with one suppo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T16:00:50.096356+00:00",
-      "link": "https://www.thesun.co.uk/sport/41094431/more-jerseys-than-wins-man-utd-fans-fuming/",
-      "published": "2026-11-21T15:57:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘More jerseys than wins’ – Man Utd fans fume as club release limited edition Blackout kit"
     }
   ],
   "processed_urls": [
@@ -6898,7 +6933,8 @@
     "https://www.thesun.co.uk/sport/41102444/david-raya-injured-newcastle-arsenal-joe-willock-osula",
     "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo",
     "https://www.dailymail.com/sport/football/article-16311993/Cole-Palmer-frosty-exchange-Joao-Pedro-Chelsea-4-1-humiliation-Leeds.html",
-    "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o"
+    "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o",
+    "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future"
   ],
   "s_overflow": {},
   "schema_version": 4
