@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 28510,
-    "output_tokens": 3378,
-    "requests": 5
+    "input_tokens": 34545,
+    "output_tokens": 4244,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2893,6 +2893,41 @@
       "title": "波切蒂诺出任曼联新帅，BBC解析其执教风格",
       "updated_at": "2026-11-13T23:28:04.684917+00:00"
     },
+    "83c7a7dd340e": {
+      "article_title": "Liverpool 4-0 Man United PLAYER RATINGS: Who looked 'like a rabbit in headlights'? Who is 'playing 100 times better' than last season? And w",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "3ada98912ee2e15b",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 211
+        }
+      ],
+      "created_at": "2026-11-22T20:00:56.673183+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "da1d41e50faa6f6a",
+      "event_id": "83c7a7dd340e",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T20:00:56.673183+00:00",
+          "origin": "created",
+          "title": "Liverpool 4-0 Man United PLAYER RATINGS: Who looked 'like a rabbit in headlights'? Who is 'playing 100 times better' than last season? And w",
+          "url": "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 211,
+      "title": "利物浦4-0曼联，波切蒂诺执教首秀惨败，约罗7分钟直红",
+      "updated_at": "2026-11-22T20:00:57.301094+00:00"
+    },
     "85b871108469": {
       "article_title": "Angulo dodges VAR red after HAIR pull on Coventry’s Sakamoto as Sunderland sink further into relegation mire with loss",
       "attempts": 1,
@@ -5389,7 +5424,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T19:00:52.719916+00:00",
+  "last_scan_at": "2026-11-22T20:00:50.229175+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5410,6 +5445,76 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "OLIVER HOLT AT ANFIELD: Omar Berrada, the United chief executive, looked colder and colder in the chill and, beside him,",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T20:00:50.231109+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308781/Liverpool-4-0-Man-United-Premier-League-2026-27-Result.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T19:52:59+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino was immediately up against it in his first few days at this slow-motion car crash of a club - Man United's 4-0 loss at L"
+    },
+    {
+      "desc": "MANCHESTER United fans belted out Bob Marley's Three Little Birds following their dismal 4-0 Anfield defeat. Leny Yoro w",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T20:00:50.231136+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109617/liverpool-man-utd-song-bob-marley-three-little-birds/",
+      "published": "2026-11-22T19:27:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Diss of the year’ – Fans convinced Liverpool were teasing Man Utd with song at end of Anfield thrashing"
+    },
+    {
+      "desc": "Liverpool head coach Andoni Iraola is pleased with his side's performance in their dominant win over Manchester United a",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T20:00:50.231154+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c3y0x55ey81yo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T19:25:21+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Iraola 'enjoyed' big win over Man Utd"
+    },
+    {
+      "desc": "Mauricio Pochettino's Manchester United reign began in humiliating fashion as Liverpool put four past their bitter rival",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T20:00:50.231175+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T19:11:40+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Liverpool 4-0 Man United PLAYER RATINGS: Who looked 'like a rabbit in headlights'? Who is 'playing 100 times better' than last season? And w"
+    },
+    {
+      "desc": "Nine days after playing for Greece in a nightmare 7-0 loss, keeper Konstantinos Tzolakis plays a pivotal role in Hull's ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T20:00:50.231190+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm4gn7npqe8yo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T19:03:32+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "From conceding seven to Hull heroics - how Tzolakis recovered to defy Brighton"
+    },
+    {
+      "desc": "Manchester United's new head coach Mauricio Pochettino says his side must transform \"anger\" from their thumping at the h",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T20:00:50.231206+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c8p3vyyg4d6vo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T19:03:24+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Pochettino on 'painful' defeat in first game as Man Utd boss"
+    },
+    {
+      "desc": "Mauricio Pochettino felt Manchester United were given an \"unfair\" red card in their 4-0 defeat at Liverpool - with Kobbi",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T20:00:50.231232+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13615402/leny-yoro-red-card-man-utd-boss-mauricio-pochettino-and-kobbie-mainoo-angry-at-sending-off-for-foul-on-liverpools-alexander-isak",
+      "published": "2026-11-22T18:58:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "'No chance!' - Poch and Mainoo fume at 'unfair' Yoro red card"
+    },
     {
       "desc": "ROY KEANE slammed Manchester United's players and his fellow pundits after the side's 4-0 thumping at the hands of Liver",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5499,6 +5604,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Nightmare start for Pochettino as Liverpool rout 10-man Man Utd"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T20:00:50.231372+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-22T18:24:17+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "",
@@ -5659,6 +5774,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Mauricio Pochettino brings Man Utd youngster to Anfield despite not naming him on bench in hint over future role"
+    },
+    {
+      "desc": "Buy Manchester United Raglan Pyjama Set Black Manchester United Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T20:00:50.231494+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9JelFHWFFNdDF5YmRieGM5eDJOTkZ0bEZXNzdGT1drN3ZoWmVoNGtScm9ETmxjVUR0THZYaTF0Y1NmSEVqaEJQRlBDbFgzRFVDQkFGdV9GbThIUzV2X2N6VmVOWmxYZkJDUUhHTGlZcm1yNHNTRnlwTkM5RFQ5UQ?oc=5",
+      "published": "2026-11-22T17:35:13+00:00",
+      "publisher": "https://store.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Buy Manchester United Raglan Pyjama Set Black - Manchester United Store"
     },
     {
       "desc": "Footage has emerged of Ange Postecoglou locked in a fiery exchange with a reporter after Al-Nassr's defeat to Al-Ahli - ",
@@ -5959,6 +6084,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "PSG's Doue to have surgery on ruptured ACL"
+    },
+    {
+      "desc": "Jeglertz: We must learn from Spurs defeat and move on Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T20:00:50.231665+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQzRrZ3EtZ1VPUzhRNTBLRnk1enBGRFZJTFh5ZEhZR1B6Y2JGb3Nid0pac2tFZjJzSGlQejVlVWIweC1EN3NseFN1eldhNGFaWS1GQ2hRWFlzb1N3d29xWjBOWF9VWS1CbXN6eXlwY2JaN3c3YUIwZkpUY2ctLWtPZVRIY2RSSzhMWDlyWVdFYXNXZw?oc=5",
+      "published": "2026-11-22T15:30:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Jeglertz: We must learn from Spurs defeat and move on - Manchester City FC"
     },
     {
       "desc": "Team news: Confirmed Liverpool line-up v Manchester United Liverpool FC",
@@ -6809,106 +6944,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Short Highlights: Man City - Premier League"
-    },
-    {
-      "desc": "Extended Highlights: Man City Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T13:00:51.743596+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FelZMY3NFUXZSUXBIYk1lN2NqVkNfaUpOTzJvMnVocVM5VlpmOFM1bWZBX0N3M3pyZG1BZk9WNzNSeWxoMlFYczAydGJQMXFuajRGMWFYLUVaNzJXN2JQVGN0ajJKTWc5VWlnZHBNNWdrQkJZcEZ2ZHBtel9rU0E?oc=5",
-      "published": "2026-11-22T06:37:22+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Extended Highlights: Man City - Premier League"
-    },
-    {
-      "desc": "COV’S KENZIE CHECKS IN The Non-League Football Paper",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T11:00:54.145842+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNXzg2dTBrcXRGVWFhUEFiSDdnNkNvbkxFVXpsaHhtM3VHY0Y1TE9TOElKZHIzaXVjTzA1RXhFbVE5cHYzY2dfZ1ZyMF83dVdJVXNwNGVYMVZMczhvQ3hyaEtGWVRGUzNiV1h2MnJNWXRTbmxvaU1LZGVWRHJneUVHSWg2WFFFbmczRlhJRlk2YlhxRmk4dkZTdlBKWkdodHBRdnc?oc=5",
-      "published": "2026-11-22T06:34:51+00:00",
-      "publisher": "https://www.thenonleaguefootballpaper.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "COV’S KENZIE CHECKS IN - The Non-League Football Paper"
-    },
-    {
-      "desc": "BBC Sport columnist Tony Pulis explains how new Manchester United boss Mauricio Pochettino will prepare for Sunday's gam",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T07:00:53.901113+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckqx5w58dgv7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T06:21:55+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game"
-    },
-    {
-      "desc": "Nobby Stiles spent his career heading a football more than 136,000 times before dying immobile and bed-bound with a prof",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T07:00:53.901155+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQejlYdWFuTlFXeDQwTXMzVzZibWV1TTBQNDFFbGNwRnprbGpSUUwxMklTMW9NSndxOHNBMXZIWmFqOFBFa2Z6Q0oxc1E5QzJxNlhvUG9BZHBmTWRfS0dyQ2pxM0tYclUxZWtrOVozM1lwcjhRdVRaLWZOejlrbDM5X0VXMHNYNm1tSFZ4d0JVSnRPUEN3dXlpZkkySHNNQjlldGJLdWZBcHBhS0tYSnRIdWdDbHM0SnBnUWFoeTVObUtSR29HUlFGQ0RmNGhkbFdGZGVEcDV6bENhbzItVDRtbkEwZXg0UQ?oc=5",
-      "published": "2026-11-22T06:03:12+00:00",
-      "publisher": "https://www.facebook.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Nobby Stiles spent his career heading a football more than 136,000 times before dying immobile and bed-bound with a profound neurological di"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO takes to the dugout for the first time as Manchester United manager when his side make the trip to l",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T07:00:53.901184+00:00",
-      "link": "https://www.thesun.co.uk/sport/41058697/liverpool-man-utd-mauricio-pochettino/",
-      "published": "2026-11-22T06:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Liverpool vs Man Utd | Premier League predictions, preview and free bets for first Mauricio Pochettino game"
-    },
-    {
-      "desc": "International breaks tough on top clubs – Mourinho Punch Newspapers",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T06:00:48.356990+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMN3U0cVJtUk5rU0VKeGMySTM0eGh1MDNMYUEyTHdYcW10MXlDZnl5V2MtVUlHajA1MzlLTXNhWklIU3M1UnZ2MERYZFJxWkZpM3JXWklZc1pfWFBmX2lRbl9JUEczSTJQUklTN0JBY2ZraGdnN0luZUREYUJ0QQ?oc=5",
-      "published": "2026-11-22T05:43:09+00:00",
-      "publisher": "https://punchng.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "International breaks tough on top clubs – Mourinho - Punch Newspapers"
-    },
-    {
-      "desc": "7 Iliman Ndiaye Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T09:00:56.405853+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOV3J4bDNNZ0xudXdBdFJGR1pXLXQ5bVVPTVAwdTJXTllWQlBpQ3c3aHlONTlOQXdoV0NyeDhYUlhFQ01nMkU4N0lSOFl6R2gtU2dOblVEanJtNmloeEJ3dTJZSkhNclVoYkdmRU9mdS1HR3k3NDZXOTQ5NHI0eVVxa2R4bWx3Z3JuV2tmb1plclFaenJkVlBSa1d3NTllQ3pWUk12c05ocUNHNTZmSk5odk1rc19tVktiR2RsSXFNOVBZWmEwR2owMmdwcmNLeUty?oc=5",
-      "published": "2026-11-22T05:34:02+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "7 Iliman Ndiaye - Man City Shop"
-    },
-    {
-      "desc": "Inside Anfield: BEST UNSEEN FOOTAGE From Premier League Trophy Lift | Liverpool vs Crystal Palace Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T06:00:48.357028+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3cVliQld0UFRWei13dW5sMnQxWHN1cDBsdTl4bHNCQnRzQUtsR1BnVUhheTZYZHozdW1rX19sWUJwaHFtVHVKNjVoQzhZa2k2cXFzeHBrRE0yNFVtb2p0dzZBRzM1Wjc1dE1EdXVDM2dKYXl2YmF2VkFSRQ?oc=5",
-      "published": "2026-11-22T05:28:37+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Inside Anfield: BEST UNSEEN FOOTAGE From Premier League Trophy Lift | Liverpool vs Crystal Palace - Liverpool FC"
-    },
-    {
-      "desc": "Man City have problems all over the pitch. Don’t get this wrong – it’s not the verdict The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T06:00:48.357060+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZy1iR0R1MEFFUDFDSkZGa1pSZG00eV8tTlRlV1FCQlR5dG9ibHoxYmRnbFMxUzFKVGVuempXa0NPNUl0bTVDU1dsQlAxQ2Myc0RxTHFmUkctaHJldEh5cGIzYVpzQkJZSlUxd1hxSkFOZU9zZGUwem81MFZJQkkyWWJuQXV5S1daRkFKMUtMRmdYb042b1RDUzVpeG9oMVJZUC1ycHNvb3pNTElCYW9R?oc=5",
-      "published": "2026-11-22T05:10:21+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Man City have problems all over the pitch. Don’t get this wrong – it’s not the verdict - The New York Times"
-    },
-    {
-      "desc": "Unai Emery to use Barcelona trip as Gavi recruitment mission for Aston Villa LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T13:00:51.743746+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU0psdjhSOWg1Vmp3eXUzTW1fVUk2dkFieUlLeEJNdFh6d2JHY3JsNHEtZF95VWV2VGxTNEM4VmF6RVJlcFUzR1NQWE52ZFJxT3dSR3ZDTDNmQ2ZzdUZ1c01YM2VDMVZMUzQ4SGtxdk5YNXNEenpvMndIMUExaGFTOC1MRHc4U0tReXBETF9TUkdVLThOSldtaHBxZGp6Wkw4OGplbnNsQXQ1amttc0JGTWhydw?oc=5",
-      "published": "2026-11-22T05:03:59+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Unai Emery to use Barcelona trip as Gavi recruitment mission for Aston Villa - LiveScore"
     }
   ],
   "processed_urls": [
@@ -7078,7 +7113,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo",
     "https://www.dailymail.com/sport/football/article-16308805/Liverpool-vs-Manchester-United-Premier-League-Mauricio-Pochettino-takes-charge-Red-Devils-time-rivals-head-head-Anfield.html",
     "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero",
-    "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut"
+    "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut",
+    "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html"
   ],
   "s_overflow": {},
   "schema_version": 4
