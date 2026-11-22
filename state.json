@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 123159,
-    "output_tokens": 14650,
-    "requests": 21
+    "input_tokens": 129523,
+    "output_tokens": 15235,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5214,7 +5214,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T09:00:56.403814+00:00",
+  "last_scan_at": "2026-11-22T10:00:52.609553+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5236,6 +5236,76 @@
   },
   "news_pool": [
     {
+      "desc": "The Man United captain's contract is set to expire in June 2027, which means that if the club and player fail to agree f",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T10:00:52.612410+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16312949/Bruno-Fernandes-reveals-contract-negotiations-Manchester-United-stalled-rejected-new-deal-summer.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T09:23:12+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Bruno Fernandes reveals contract negotiations with Manchester United have stalled after he rejected a new deal in the summer"
+    },
+    {
+      "desc": "What Mauricio said in his first press conference Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T10:00:52.612468+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWRpSnRGTFRnUkRqeWlXV1RoTXdyOHBfRmVkY2NXN0J4ZFdadWRsZTJFUWNaNFRMa2V0RHJxNzJEY0VoaE9veEdMbkVzY242Q1prMTd6WW45TjJraGozVEVRdlpiNy1hTVctRXNzSXdVbXFNY09VUFh3aGhuaV9HM0M3SVBiTXZDRjNsTFVxaVRHUUdYQmdYdFN3?oc=5",
+      "published": "2026-11-22T09:06:07+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "What Mauricio said in his first press conference - Manchester United"
+    },
+    {
+      "desc": "LIONEL MESSI escaped a red card after launching a ball into an opponent's face. The Argentine star was in action for Int",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T10:00:52.612495+00:00",
+      "link": "https://www.thesun.co.uk/sport/41105005/lionel-messi-mls-inter-miami-ball-throw-columbus-crew/",
+      "published": "2026-11-22T09:02:42+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lionel Messi launches ball off opponent’s face in moment of madness but escapes red card in ‘really sad’ scenes"
+    },
+    {
+      "desc": "LIVERPOOL host Mauricio Pochettino's Manchester United on Sunday in a blockbuster Premier League clash. To celebrate the",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T10:00:52.612516+00:00",
+      "link": "https://www.thesun.co.uk/sport/41085553/florian-wirtz-liverpool-man-utd-boost/",
+      "published": "2026-11-22T09:01:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool vs Man Utd: Get Florian Wirtz 1+ shot on target at Evens | Betfred"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO begins his Manchester United tenure with a tasty trip to Liverpool on Sunday. To mark the big game o",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T10:00:52.612537+00:00",
+      "link": "https://www.thesun.co.uk/sport/41073349/liverpool-man-utd-betfred-free-builder/",
+      "published": "2026-11-22T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool vs Man Utd: Bet £5 on a bet builder & Get a free £5 bet builder, plus our 37/1 tip | Betfred"
+    },
+    {
+      "desc": "Team news v Liverpool Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T10:00:52.612558+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQYm05eTlTUVg4dlBXTkNrMFFWeURKcDlFOE5KS0c3dF9YbXlqcTRwc21tVzFiUms1QnlNVDZvNUs3UlJhcW9tb0hrQXN1WTFaWEdOdlJoNE9yajNmNmxuY1dEY25PRl9kdDZRb1FnUVZrNTJSOU45Y0R1MmZaM2t5S3RZemU4bzJmVWk5MFA3Zw?oc=5",
+      "published": "2026-11-22T08:50:03+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Team news v Liverpool - Manchester United"
+    },
+    {
+      "desc": "Ahead of PSG and Arsenal: Barcelona receive a valuable signal from France striker LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T10:00:52.612581+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQT1psTGctZ29kal9Nc0hid0RmSkxFZXhDMXQyelBzSDFiamxDWmMtb2dMNVJJMndPdE01M1UyaXFjN3cwOUZCYWxZbmVPcWJTYVA3aUJTNHZxR0FzTFd6bF9lOXVMVUJQY0xMT25oZ0w4NHpHS05mcHlIRnFnMTNmWlZpNkg2SWhISzJhMUhxdzdYdF9HeEJGUDlMYVdCQk5zZG1pcVI5b3BCZGhXNGpGUkRuQjk2bGNaZ1JheUE2R1A2RHR4ZURwODZidHFxTDVyT0NV?oc=5",
+      "published": "2026-11-22T08:42:20+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ahead of PSG and Arsenal: Barcelona receive a valuable signal from France striker - LiveScore"
+    },
+    {
       "desc": "Manchester United captain Bruno Fernandes says he has been offered a new contract by the club but feels it \"is not the r",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-22T09:00:56.405641+00:00",
@@ -5256,6 +5326,16 @@
       "title": "Premier League Football News, Fixtures, Scores & Results - Premier League"
     },
     {
+      "desc": "Kluivert's pride after Bournemouth win nine in a row Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T10:00:52.612636+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQY3ZHeDJRZzBxYWVqV2V3WFd5LWFLSmZsUGw0ZjFPYW1FdjA2TFNQQmtxLUpWMXZQOTVSY0F4d0ZVOUw1NmFZdGlhd0JRYVFXUlVibDlvNEVud0hwam1Wd1lYU04tUV9MTDBFM1RYVHp4SmVsbE1ySmJxb3NoUF9PTW1hZzJZc0JYM2lqdWZRWUNMbDhsVll1RERmdEhUUQ?oc=5",
+      "published": "2026-11-22T08:23:14+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Kluivert's pride after Bournemouth win nine in a row - Premier League"
+    },
+    {
       "desc": "Watch: Barnes celebrates major career milestone after Arsenal goal Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T09:00:56.405674+00:00",
@@ -5264,6 +5344,26 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Watch: Barnes celebrates major career milestone after Arsenal goal - Premier League"
+    },
+    {
+      "desc": "Arteta provides injury update on David Raya Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T10:00:52.612655+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYzRnRjhqd2VDNkQtS1VzY0QyNURYQ0FlOTctaVFjeUtfSFJadi1iQUNxVFR1U2VKNjVjSGR6NFRyLUZQVFU5UlptR2hYdzNBeTFkN1RNY1JvemdkYnIxOE45M1JJYWRRSW95cTFHaEtRbWxhV3FWUTRNUVRqRFhxb0laNEQwc2FkaER2dGxvSGlsZ0U?oc=5",
+      "published": "2026-11-22T08:21:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Arteta provides injury update on David Raya - Premier League"
+    },
+    {
+      "desc": "Alonso's injury update on Caicedo Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T10:00:52.612688+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMFVJd1I3U2NoQ2ZDQlpQYV82dHQzUTQ3U2NnTTVFenZoaFNmWG1hcUxYQU0wbXV5Smx0OU1wanQ1b1VxSS1IRVhQTnIwV1E2d29FVE5wLXBoLXN4a3Zxdl9adW92bmIyeGRmNmpfdmVqVDhUR3lxbkpEYUp5U2hKUExOWHU?oc=5",
+      "published": "2026-11-22T08:21:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Alonso's injury update on Caicedo - Premier League"
     },
     {
       "desc": "Fabrizio Romano News: One team 'in love' with Endrick as Spurs reject Williams-Barnett bids FootballTransfers.com",
@@ -6634,106 +6734,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘More jerseys than wins’ – Man Utd fans fume as club release limited edition Blackout kit"
-    },
-    {
-      "desc": "Bayern Munich fear Harry Kane will be ruled out for months after suffering an ankle injury against Cologne - with the st",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T21:00:50.846529+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16310357/Harry-Kane-Bayern-blow-England-captain-ruled-MONTHS.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T15:47:13+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Harry Kane's injury blow: Ballon d'Or winner sends upbeat message from hospital amid England concerns captain will be out for MONTHS after t"
-    },
-    {
-      "desc": "Fabrizio Romano: Man Utd have \"already started\" groundwork on January striker deal Football FanCast",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T16:00:50.096419+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVi02OExSdDF1Zlo5QnluYkYwMTlpVWNRUUVKejBmdkhKTEl2RXlrNXhUQTZNUGRKM0l0N3ZFczM4NDZzY1R2b1VsanQ3dG9oa1JSQUlubm93WTdqRHNnam5lV01fdVJOOTB6RDQ5UWl3ZzRZbjloVXV3c2NkbWVZWThUMVJtWWM?oc=5",
-      "published": "2026-11-21T15:36:20+00:00",
-      "publisher": "https://www.footballfancast.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: Man Utd have \"already started\" groundwork on January striker deal - Football FanCast"
-    },
-    {
-      "desc": "Manchester City manager Enzo Maresca says Erling Haaland's first-half goal against Fulham should have stood.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T16:00:50.096451+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c9e85mmr3z8vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T15:34:35+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'It's quite clear' - Maresca believes Haaland goal should have stood"
-    },
-    {
-      "desc": "MOISES CAICEDO suffered a brutal injury in Che;sea's clash with Leeds. The midfielder went up for a header and was knock",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T15:31:49.983442+00:00",
-      "link": "https://www.thesun.co.uk/sport/41095418/moises-caicedo-injury-chelsea-clash-vs-leeds-updates/",
-      "published": "2026-11-21T15:27:54+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Moises Caicedo limps off injured after sickening fall in Chelsea’s clash vs Leeds as fans say ‘this is scary to watch’"
-    },
-    {
-      "desc": "How to watch Newcastle United v Arsenal live on TV Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T17:00:53.813282+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYzgwMFg0Mjg2TWtIalhNdDRQMl9vV0x0d2dya1FYa2pOTFBOcHZhRlhCLThzNi1DV3lIbEtFRklWRWhvNE5jTWVoMkI4R0o2TjhkMEdBdmhtajRKVFdYbWN6V0w1ODJnTmxZRGFBaUdMYUdlbEVHLUdTeDkzSGg5WDRaeHBad0w1Z3h5ZUd3clNmWkRBWTFB?oc=5",
-      "published": "2026-11-21T15:27:25+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "How to watch Newcastle United v Arsenal live on TV - Arsenal.com"
-    },
-    {
-      "desc": "Liverpool frustrated Women's Super League leaders Chelsea with a stubborn defensive display to earn a goalless draw at t",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T15:31:49.983536+00:00",
-      "link": "https://www.skysports.com/football/liverpool-women-vs-chelsea-women/report/575829",
-      "published": "2026-11-21T15:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Liverpool frustrate Chelsea as Keating heroics leave WSL title race wide open"
-    },
-    {
-      "desc": "Watch City's U18s Premier League North clash with Newcastle live on CITY+ Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T16:00:50.096503+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVTF6T3BBRlBSMk1FWi1GekVTV0tWTHVZdXJ0SzdUdGZfRUVtcktwMWpGdGFxY1BLT0ZKX3NDc1liekNwczM5MU92N1lzdFhjdm9uQk5xeEhUY2lLNzIwSjhsNnp5ejFLMlV2TjZBcy1ITlA4dnMtNmFTQXNMOEFoRGJ5SDd1SU5lQWY1X09POFBaUVRHeU53Zk9OTmg0ZTFnRjF0dHJ2LXpkQQ?oc=5",
-      "published": "2026-11-21T15:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Watch City's U18s Premier League North clash with Newcastle live on CITY+ - Manchester City FC"
-    },
-    {
-      "desc": "Man City Player Ratings vs Fulham: 1-1, Elliot Anderson Rescues Booed City thefalse9.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:00:54.689254+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUVNab3RFcGNTN1A3ODB1M1oxT29oaFpvcVVjZDFjWTNYclQ3ajFCbUFZQzVFU01OREMxanhZMWowWVNDYjBGaHpuWDZIZjV0NVYtWTNSTXBaRE1Sc0c2RW9WV0hOY0ZaYndVSktkSmJycFlocW1ZRzZucVllbm43RUpDNVctZC14cmRtTmdxNEwySDg?oc=5",
-      "published": "2026-11-21T14:54:47+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Man City Player Ratings vs Fulham: 1-1, Elliot Anderson Rescues Booed City - thefalse9.com"
-    },
-    {
-      "desc": "FORMER ITV pundit Duncan Ferguson was sent off after launching a furious tirade at match officials - moments after his o",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T15:00:54.689340+00:00",
-      "link": "https://www.thesun.co.uk/sport/41092550/duncan-ferguson-sent-off-after-berating-official/",
-      "published": "2026-11-21T14:41:17+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Former ITV pundit sent off after berating fourth official following his OWN TEAM’S goal"
-    },
-    {
-      "desc": "Was it right to disallow Erling Haaland’s goal as Man City are held to Fulham draw The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:00:54.689368+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ1NLRjFBeUkyV3hWNjlCek4ydE5DdVVkWUc3Z19RcUtJSXFONWdnMXJsRnR0RnQtT3Zkei1qU25PUEJyb1d2Qlo3VmN4dDJHZUNLRkNYNFZJQmJLZ1hKV1BQeDd6NmIweTROWEg5V2ZQT1p4d3B6TVMzelZrNUJMSWpRdXl2Ml81TUd0MTR3SzRZQQ?oc=5",
-      "published": "2026-11-21T14:30:29+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Was it right to disallow Erling Haaland’s goal as Man City are held to Fulham draw - The New York Times"
     }
   ],
   "processed_urls": [
