@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 34545,
-    "output_tokens": 4244,
-    "requests": 6
+    "input_tokens": 40415,
+    "output_tokens": 4976,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4267,6 +4267,41 @@
       "title": "曼联官方：伊森·威廉姆斯转会加盟EFL俱乐部",
       "updated_at": "2026-11-19T06:01:04.379507+00:00"
     },
+    "c92363267ab4": {
+      "article_title": "Mark Goldbridge in ‘generational breakdown’ during Man Utd’s 4-0 battering at Liverpool",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "c5396c3373eddf44",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 212
+        }
+      ],
+      "created_at": "2026-11-22T21:01:04.939253+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "7346ddccb1c0bd3a",
+      "event_id": "c92363267ab4",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T21:01:04.939253+00:00",
+          "origin": "created",
+          "title": "Mark Goldbridge in ‘generational breakdown’ during Man Utd’s 4-0 battering at Liverpool",
+          "url": "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 212,
+      "title": "曼联0-4惨败利物浦，名嘴Goldbridge直播崩溃",
+      "updated_at": "2026-11-22T21:01:05.549523+00:00"
+    },
     "c9a63c2229de": {
       "article_title": "Mauricio Pochettino’s reaction to Man Utd’s 1999 Treble win re-emerges as he closes in on Old Trafford hotseat",
       "attempts": 1,
@@ -5424,7 +5459,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T20:00:50.229175+00:00",
+  "last_scan_at": "2026-11-22T21:00:59.417313+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5445,6 +5480,106 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED fan Mark Goldbridge went absolutely ballistic during his favourite team's 4-0 hammering to rivals Live",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:00:59.421048+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino/",
+      "published": "2026-11-22T20:44:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mark Goldbridge in ‘generational breakdown’ during Man Utd’s 4-0 battering at Liverpool"
+    },
+    {
+      "desc": "Gary Neville accused Manchester United's hierarchy of negligence for failing to strengthen their back line as their 4-0 ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T21:00:59.421101+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13615413/liverpool-4-0-man-utd-gary-neville-on-matthijs-de-ligt-selection-and-negligent-red-devils",
+      "published": "2026-11-22T20:25:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Gary Neville on De Ligt selection and 'negligent' Man Utd"
+    },
+    {
+      "desc": "PETER SCHMEICHEL revealed hard truths following Manchester United's tragic 4-0 defeat at Liverpool. The Red Devils legen",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:00:59.421129+00:00",
+      "link": "https://www.thesun.co.uk/sport/41110006/man-utd-peter-schmeichel-warns-relegation-pochettino-liverpool/",
+      "published": "2026-11-22T20:24:11+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd legend sends RELEGATION warning to Mauricio Pochettino and says safety is new target"
+    },
+    {
+      "desc": "LAMINE YAMAL shocked Fermin Lopez with an unexpected celebration during Barcelona's sensational comeback win over Villar",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:00:59.421152+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109629/lamine-yamal-baby-celebration-barcelona-fermin-lopez/",
+      "published": "2026-11-22T20:24:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lamine Yamal, 19, does baby celebration leaving Barcelona team-mate stunned"
+    },
+    {
+      "desc": "FOOTBALL fans looking to score a huge football away day in the UK or Europe can now save money with a huge Black Friday ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:00:59.421202+00:00",
+      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
+      "published": "2026-11-22T20:21:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and others"
+    },
+    {
+      "desc": "Watch highlights from matchday ten in the Bundesliga.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T21:00:59.421239+00:00",
+      "link": "https://www.bbc.co.uk/iplayer/episode/l0059298?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T20:13:29+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Bundesliga"
+    },
+    {
+      "desc": "JOSHUA ZIRKZEE produced one small moment of excitement during Manchester United's otherwise miserable 4-0 thumping at Li",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:00:59.421302+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109853/man-utd-joshua-zirkzee-milos-kerkez/",
+      "published": "2026-11-22T20:03:31+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Zirkzee ‘sends Kerkez back to Bournemouth’ with filthy skill as Man Utd fans find silver lining in Liverpool thrashing"
+    },
+    {
+      "desc": "EX-Manchester United ace Zlatan Ibrahimovic has netted a role as a villain in UK gangster drama MobLand. The former Swed",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T21:00:59.421327+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109619/zlatan-ibrahimovic-joins-gangster-drama-mobland-as-villain/",
+      "published": "2026-11-22T20:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Football legend joins gritty gangster drama Mobland as terrifying villain three years after quitting the game"
+    },
+    {
+      "desc": "Oli McBurnie's stoppage-time double earns victory for Hull City against second-placed Brighton in the Premier League.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T21:00:59.421357+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/ck62pzzezqz2o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T19:59:38+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "McBurnie stoppage-time double earns Hull win over 10-man Brighton"
+    },
+    {
+      "desc": "Mauricio Pochettino's reign as Manchester United head coach begins in desperate fashion as his team are thrashed by riva",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T21:00:59.421385+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T19:59:35+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Ngumoha stars as Liverpool thrash 10-man Man Utd"
+    },
     {
       "desc": "OLIVER HOLT AT ANFIELD: Omar Berrada, the United chief executive, looked colder and colder in the chill and, beside him,",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -5474,6 +5609,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Iraola 'enjoyed' big win over Man Utd"
+    },
+    {
+      "desc": "Match report: Liverpool score four to earn victory over 10-man Manchester United Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:00:59.421464+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbjVNR3dMSF9obzk0TFM0TGMzRndyYUFoZUVQV1lucU1KNmtqYUJjeko2c0tFaVBGQ1JkdmJWTC05MFgtSkxTQUxjMVdnU0Fpd1Y4Ymx0MmNkblVLVkRYamlnbVhwaHhtVk94S1VfVFV4WnNtSXVYZkRUUmUzRTgwTHVpNUNzTzJHZnRsS3ZtU0tTdXZvajVr?oc=5",
+      "published": "2026-11-22T19:12:11+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Match report: Liverpool score four to earn victory over 10-man Manchester United - Liverpool FC"
     },
     {
       "desc": "Mauricio Pochettino's Manchester United reign began in humiliating fashion as Liverpool put four past their bitter rival",
@@ -5586,6 +5731,16 @@
       "title": "Yoro sees red as Ngumoha shines - Liverpool v Man Utd player ratings"
     },
     {
+      "desc": "Daily Who Am I? Play 22 November Premier League game Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:00:59.421711+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNU2lHcnV3aHJuSVVtbGJMODdIWER4X1Nnb2lmcktkb2hqU1VhRTZSQzVFYkJvQnNkYUJBa25TVGVfZjRGeUo5SlgzSnBWNERPVUxtdTYwMmE1MHJTMWVxWWcxSTJkRHVBVElWSlduZ1pvVV95T1pMNXMyX1dnNmlvQU5CLUtseHhZSmt3UHFn?oc=5",
+      "published": "2026-11-22T18:28:21+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Daily Who Am I? Play 22 November Premier League game - Premier League"
+    },
+    {
       "desc": "GARY NEVILLE suggested that returning to action after a year out is like playing \"after having six pints\" following Matt",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T19:00:52.722216+00:00",
@@ -5644,6 +5799,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Roy Keane explains why Man Utd star Leny Yoro should NOT have been sent off against Liverpool"
+    },
+    {
+      "desc": "Naz: It was nice to get the cooking celebration out again! Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:00:59.421818+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVUs4RURJc290NTRnd2pXVnNLM1JEREg5MVBNSFVMT0hBaHNMTXFKMEV3WGdNSUhjWHlaNUN0QmZZb3B0QWlZQVBUODBWZXVhODVmUnBNeEJKa3YxX0R6X3pJeWVOZUQyT3hwN19Vd3E5N0hHaTlaV3N6ZVBxd2dEcWM3QmdXNlpHTC0wSmsweHpta0N0Ul9kSkI0MVkyNWJpOGdxRA?oc=5",
+      "published": "2026-11-22T18:18:24+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Naz: It was nice to get the cooking celebration out again! - Tottenham Hotspur"
     },
     {
       "desc": "\"Untouchable\": huge English offer for Barcelona star as club refuse to bargain LiveScore",
@@ -5956,6 +6121,16 @@
       "title": "Yoro sees red eight minutes into Poch's Man Utd reign"
     },
     {
+      "desc": "Report: Arsenal Women 0-0 West Ham United Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:00:59.422124+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQVJtb3A0elhxdzdKNmQzV2ZMWFhGNDVTTnNnekxiaWxVSnB3X3lUZkhTZWVsMElPTFdwaE84QzVwNGxIOTk1bG1tdWhycC1nRkM0UjZiRVhqTkhFcWNxLWtRU2FuRm16TkxkaUt2MDdsdGNtY1lBOXhId3dBdFo2TGREZ1RNTUpXb0E?oc=5",
+      "published": "2026-11-22T16:38:22+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Report: Arsenal Women 0-0 West Ham United - Arsenal.com"
+    },
+    {
       "desc": "Peterborough United Women are finally through in the FA Cup, but the under 21s were heavily beaten Peterborough Telegrap",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T17:00:59.192098+00:00",
@@ -6136,6 +6311,16 @@
       "title": "Arsenal Women star Lisa Baum goes down off the ball and given oxygen as she’s stretchered off in worrying scenes"
     },
     {
+      "desc": "Barcelona emerge as Eli Junior Kroupi's preferred destination ahead of Arsenal and Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:00:59.422353+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZFlkdXZlN05HaDJHTDROV1NhbmVsLXBjdzFYZ0JReEN4MFVJVzBRc2xLZEdhUXhEamNTdWZKTzF6aHhUUUNZSU5qNUZNSTMyNURqOFdCdW42OTNfUWF1anhzUGNMemp2MFQ2cVlnbGotXzZJU3djbHl5NURfMV9hVlVBdWpHazlKVmxKdlRyazRyMjQzcUl6XzZtZ3lxT0dDYl9CNmhWMzg4ejdma19JanVfUjhwUndaNVJtU1lHMDRHSW_SAcMBQVVfeXFMTmRZZHV2ZTdOR2gyR0w0TldTYW5lbC1wY3cxWGdCUXhDeDBVSVcwUXNsS2RHYVF4RGpjU3VmSk8xemh4VFFDWUlOajVGTUkzMjVEajhXQnVuNjkzX1FhdWp4c1BjTHpqdjBUNnFZZ2xqLV82SVN3Y2x5eTVEXzFfYVZVQXVqR2s5SlZsSnZUcms0cjI0M3FJel82bWd5cU9HQ2JfQjZoVjM4OHo3ZmtfSWp1X1I4cFJ3WjVSbVNZRzA0R0lv?oc=5",
+      "published": "2026-11-22T15:16:17+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Barcelona emerge as Eli Junior Kroupi's preferred destination ahead of Arsenal and - Tribuna.com"
+    },
+    {
       "desc": "LAMINE YAMAL breathed a sigh of relief after his horror penalty miss was avenged by a flurry of goals in Barcelona's com",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T16:00:54.324084+00:00",
@@ -6164,6 +6349,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Football star is dead ringer for Mick Jagger and spent years baffled by Rolling Stones nickname"
+    },
+    {
+      "desc": "Kroupi prefers Barcelona over Paris Saint-Germain YSscores",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T21:00:59.422378+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUkIweG9qMk50UW14by1MeEV3STNVWkIzb1p5U1RQdmZSMlYzUkJRX0RoLWFROGpuaWV6UmZEeUNnQWNsbmNXTENqRWMzOGk0V0lFZ0FYdDY5NldhaXU3cVRiTVVGY1ZtLW5abWVWYktDLVBoZ2tMMFY0a2o4MVliWjJqNVVDNGp0MUpObXZWWjFpYW12emc?oc=5",
+      "published": "2026-11-22T14:44:57+00:00",
+      "publisher": "https://www.ysscores.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Kroupi prefers Barcelona over Paris Saint-Germain - YSscores"
     },
     {
       "desc": "Manchester City Cherki Cushion Man City Shop",
@@ -6784,166 +6979,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Kluivert's pride after Bournemouth win nine in a row - Premier League"
-    },
-    {
-      "desc": "Watch: Barnes celebrates major career milestone after Arsenal goal Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T09:00:56.405674+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWXBZelFLQmpzdXFEZ0ZCUVFsemJ5RE1PYXByUGNhWHZpc1ViYkhPSmJ1YjhjN3JYUGRLa1BrNFFhY2VfdzA0WUFBY2NpbFMzYkNVdHV1ZVBmRnFSalBqZE5uUEtOakk5V0ZocDl2MFpaOW9ZaG1USkVsRVRyS2xSWElqUWI5Ymloak9HQTUzUEtld21XZGdoN21qYV9Jd1M5eGtGM0RoZFlpcnpJOTliQQ?oc=5",
-      "published": "2026-11-22T08:21:10+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch: Barnes celebrates major career milestone after Arsenal goal - Premier League"
-    },
-    {
-      "desc": "Arteta provides injury update on David Raya Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T10:00:52.612655+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPYzRnRjhqd2VDNkQtS1VzY0QyNURYQ0FlOTctaVFjeUtfSFJadi1iQUNxVFR1U2VKNjVjSGR6NFRyLUZQVFU5UlptR2hYdzNBeTFkN1RNY1JvemdkYnIxOE45M1JJYWRRSW95cTFHaEtRbWxhV3FWUTRNUVRqRFhxb0laNEQwc2FkaER2dGxvSGlsZ0U?oc=5",
-      "published": "2026-11-22T08:21:10+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Arteta provides injury update on David Raya - Premier League"
-    },
-    {
-      "desc": "Alonso's injury update on Caicedo Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T10:00:52.612688+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMFVJd1I3U2NoQ2ZDQlpQYV82dHQzUTQ3U2NnTTVFenZoaFNmWG1hcUxYQU0wbXV5Smx0OU1wanQ1b1VxSS1IRVhQTnIwV1E2d29FVE5wLXBoLXN4a3Zxdl9adW92bmIyeGRmNmpfdmVqVDhUR3lxbkpEYUp5U2hKUExOWHU?oc=5",
-      "published": "2026-11-22T08:21:10+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Alonso's injury update on Caicedo - Premier League"
-    },
-    {
-      "desc": "How to watch Arsenal v Borussia Dortmund live on TV Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T11:00:54.145605+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUGI1NzNGTWlJVVhrUllPMmRidzhYVzd3RGlKWGo2ZVNzczJOQTdqUmdJTEMyRUJmWEtsb0tBNkpwVkVxMU9iVG05WGFWN0ZzTW5fNUpDWEVpWFdOMV9IdUFEMENuS2huMWI3bExIRW5CNmlETWZYVUN6b01Vb2FvcDJaMUhvNlRvbXc?oc=5",
-      "published": "2026-11-22T08:08:03+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "How to watch Arsenal v Borussia Dortmund live on TV - Arsenal.com"
-    },
-    {
-      "desc": "Fabrizio Romano News: One team 'in love' with Endrick as Spurs reject Williams-Barnett bids FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T09:00:56.405688+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNkFJMDFUa1BFQ3ZYU2poaW9Mdm5la0d1U3drMmZueFJHVXY5RWZLMkxDNjgweFJSVk1MTG9KRWJXdDFNLVV6Y2NnZHNPaGdVN0FGTi1nZjFidXhXSDF3ZjdEazVLcVhYNTZxUG5FS3dtazZnb3NQakZ2Q1BTNldab2J4UVRLMkdNckJnWEg2czVqVW9kZEVPak9qLVVmRWNVWFVCczJibzRFQW4yUU5iZ3dFMUxlelpWU1UxX3o0eF96MGtmeGl5MzBfZ25DeTVyR093WS04MnphQ1ZOanhvMHhWd0lXQ0pGRk9FZUV5cw?oc=5",
-      "published": "2026-11-22T08:08:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano News: One team 'in love' with Endrick as Spurs reject Williams-Barnett bids - FootballTransfers.com"
-    },
-    {
-      "desc": "Alonso: We need to be tougher to recover from set-backs | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T09:00:56.405701+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdEV1cTdoNEFTRmhnUlRqcW5FM0VESllEa3E1eERJcDcxSXJNbG53dXZXeld2NWJTdjN4bllsTF9UdzZPcV96c2llY2ROeWVHeHhaWDU2VkpGVFV0V1QxMXZDRzRjblpXdVJac0FRX0o2eGNhVENIWWxIcy1DMHZwTkFPOG9LT1Y1MHoyNll2OTJ2eXlXM0dBYkx1QWQ?oc=5",
-      "published": "2026-11-22T08:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Alonso: We need to be tougher to recover from set-backs | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "LEANDRO PAREDES collapsed while giving a post-match interview after winning the Copa Sudamericana. The Argentine star wa",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T08:00:57.151005+00:00",
-      "link": "https://www.thesun.co.uk/sport/41104745/leandro-paredes-collapse-argentina-boca-juniors/",
-      "published": "2026-11-22T07:58:17+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "World Cup winner Leandro Paredes COLLAPSES during live TV interview as medics rush to help"
-    },
-    {
-      "desc": "Cristiano Ronaldo reaches 986 career goals, Fabrizio Romano reports Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T08:00:57.151028+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1ZZnQwcGtSSGJ3SFpTdDF2cUltOWhKOEVldkV6Y3FoRElIWlBFZGl5NmJQSzdwVHNsM1dZVnhLSHFxTkNhQjhn?oc=5",
-      "published": "2026-11-22T07:55:36+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Cristiano Ronaldo reaches 986 career goals, Fabrizio Romano reports - Digg"
-    },
-    {
-      "desc": "Arsenal were open about their aim to win the WSL this season but they find themselves well adrift - where have things go",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T08:00:57.151049+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c8752llr1ed1o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T07:17:10+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Why Arsenal are behind in race for Champions League spots"
-    },
-    {
-      "desc": "World Cup winning midfielder Leandro Paredes collapses while giving a post-match interview minutes after winning a troph",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T09:00:56.405745+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T07:13:34+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Argentina midfielder Paredes collapses during TV interview"
-    },
-    {
-      "desc": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T09:00:56.405757+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq0l31gw1809o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T07:12:55+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "We do not know why Cole Palmer headed for the tunnel in a huff after full-time while others in the same Chelsea side par",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T08:00:57.151074+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16312357/Cool-Palmer-turned-Complaining-Cole-sulking-club-lurches-crisis-doesnt-say-lot-Chelseas-cultural-reset-writes-KIERAN-GILL.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T07:10:59+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Cool Palmer has turned into Complaining Cole... his sulking as his club lurches into crisis doesn't say a lot for Chelsea's cultural reset, "
-    },
-    {
-      "desc": "LEWIS STEELE: Since thrashing United 7-0 in 2023, Liverpool have beaten their friends in Manchester just once in seven m",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T08:00:57.151097+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16309669/Why-Liverpool-point-prove-against-Man-United-Andoni-Iraolas-end-rotten-run-against-Big-Six-rivals-Florian-Wirtz-Alexander-Isak-finally-step-matters.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T07:08:35+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Why Liverpool have a point to prove against Man United: Andoni Iraola's side must end rotten run against 'Big Six' rivals - and Florian Wirt"
-    },
-    {
-      "desc": "JDT+ releases \"Outbound\" teaser amid scrutiny of FIFA eligibility scandal NST Online",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T08:00:57.151116+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRjVLQjE3UkpiSnZTME1BZVZ2bjl6UHlxVmo0cWNxNWxFcXA1Y3lQSV9EU2NJcmd3Q1VPRHlHWERZa1BmUmZyODc3RzBkWER2Z3JIeTdmRDhqVjFZQUtvN3BfTE1DMXVFY1lqdkJCc3VtVG1QN0VSVEtReFlyX3dSU2F0d200LW0wcVNfcHNaaTc2SFJDalhKWHE0ckNHQVh5emV4WUc0T1JfSXBxcUMza1h1U1BXRlZINmNuQUJrZ9IBxAFBVV95cUxNTHRTYTduM0lQY3NtaGp5MS1qajJWYVN3ZW9xaGRGRW56THhoaW9uUTkxZk9LNW1WNjk3aW1LMzJhV3h0dk5EYVVmY1YxaFRpYnhMRlhPd1k0X0ZkVjlIMk5lTkxDb01OZFA1eVlmUi0yVnpHNXBmbXJCNTNQcDU0cmI5ZENZTkJWVm1BSmJQRkRpVzU1T29xOGlsdDJhVmtFTWFvRm1vNHNNT0NCazhjUV9SM25nOUxtMFd1SW9fNGktZDJf?oc=5",
-      "published": "2026-11-22T06:59:09+00:00",
-      "publisher": "https://www.nst.com.my",
-      "source": "https://www.thefa.com/rss",
-      "title": "JDT+ releases \"Outbound\" teaser amid scrutiny of FIFA eligibility scandal - NST Online"
-    },
-    {
-      "desc": "All eyes will be on Manchester United's new head coach Mauricio Pochettino when they take on Liverpool at Anfield this a",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T08:00:57.151139+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16296287/Just-two-Man-United-stars-selected-combined-XI-Liverpool-stats-boffins-Andoni-Iraolas-defence-dominates-Liverpool-boss-missing-hidden-gem.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T06:45:55+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Revealed: Just two Man United stars are selected in combined XI with Liverpool by stats boffins as Andoni Iraola's defence dominates... but "
-    },
-    {
-      "desc": "Short Highlights: Man City Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T13:00:51.743570+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE41aGZZaUJqUmVlMDM2cnJSWDItRnE1RUlZQXdnUDdjTDhjUGJXWG50dk5fY3lUb01tdGNBcDlXa2sxSlktWlhtc0pqbXhQcXQ5SmFzRWpHbk1EQzFKbUk2WFRlMzlMM19YY3FCQ3hldzNqR011UjRVVnk2TQ?oc=5",
-      "published": "2026-11-22T06:39:54+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Short Highlights: Man City - Premier League"
     }
   ],
   "processed_urls": [
@@ -7114,7 +7149,8 @@
     "https://www.dailymail.com/sport/football/article-16308805/Liverpool-vs-Manchester-United-Premier-League-Mauricio-Pochettino-takes-charge-Red-Devils-time-rivals-head-head-Anfield.html",
     "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero",
     "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut",
-    "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html"
+    "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html",
+    "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino"
   ],
   "s_overflow": {},
   "schema_version": 4
