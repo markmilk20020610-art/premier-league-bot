@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 106238,
-    "output_tokens": 13009,
-    "requests": 18
+    "input_tokens": 111896,
+    "output_tokens": 13523,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5179,7 +5179,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T07:00:53.897742+00:00",
+  "last_scan_at": "2026-11-22T08:00:57.148934+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5200,6 +5200,76 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "LEANDRO PAREDES collapsed while giving a post-match interview after winning the Copa Sudamericana. The Argentine star wa",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T08:00:57.151005+00:00",
+      "link": "https://www.thesun.co.uk/sport/41104745/leandro-paredes-collapse-argentina-boca-juniors/",
+      "published": "2026-11-22T07:58:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "World Cup winner Leandro Paredes COLLAPSES during live TV interview as medics rush to help"
+    },
+    {
+      "desc": "Cristiano Ronaldo reaches 986 career goals, Fabrizio Romano reports Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T08:00:57.151028+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1ZZnQwcGtSSGJ3SFpTdDF2cUltOWhKOEVldkV6Y3FoRElIWlBFZGl5NmJQSzdwVHNsM1dZVnhLSHFxTkNhQjhn?oc=5",
+      "published": "2026-11-22T07:55:36+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Cristiano Ronaldo reaches 986 career goals, Fabrizio Romano reports - Digg"
+    },
+    {
+      "desc": "Arsenal were open about their aim to win the WSL this season but they find themselves well adrift - where have things go",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T08:00:57.151049+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c8752llr1ed1o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T07:17:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Why Arsenal are behind in race for Champions League spots"
+    },
+    {
+      "desc": "We do not know why Cole Palmer headed for the tunnel in a huff after full-time while others in the same Chelsea side par",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T08:00:57.151074+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16312357/Cool-Palmer-turned-Complaining-Cole-sulking-club-lurches-crisis-doesnt-say-lot-Chelseas-cultural-reset-writes-KIERAN-GILL.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T07:10:59+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Cool Palmer has turned into Complaining Cole... his sulking as his club lurches into crisis doesn't say a lot for Chelsea's cultural reset, "
+    },
+    {
+      "desc": "LEWIS STEELE: Since thrashing United 7-0 in 2023, Liverpool have beaten their friends in Manchester just once in seven m",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T08:00:57.151097+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16309669/Why-Liverpool-point-prove-against-Man-United-Andoni-Iraolas-end-rotten-run-against-Big-Six-rivals-Florian-Wirtz-Alexander-Isak-finally-step-matters.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T07:08:35+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Why Liverpool have a point to prove against Man United: Andoni Iraola's side must end rotten run against 'Big Six' rivals - and Florian Wirt"
+    },
+    {
+      "desc": "JDT+ releases \"Outbound\" teaser amid scrutiny of FIFA eligibility scandal NST Online",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T08:00:57.151116+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRjVLQjE3UkpiSnZTME1BZVZ2bjl6UHlxVmo0cWNxNWxFcXA1Y3lQSV9EU2NJcmd3Q1VPRHlHWERZa1BmUmZyODc3RzBkWER2Z3JIeTdmRDhqVjFZQUtvN3BfTE1DMXVFY1lqdkJCc3VtVG1QN0VSVEtReFlyX3dSU2F0d200LW0wcVNfcHNaaTc2SFJDalhKWHE0ckNHQVh5emV4WUc0T1JfSXBxcUMza1h1U1BXRlZINmNuQUJrZ9IBxAFBVV95cUxNTHRTYTduM0lQY3NtaGp5MS1qajJWYVN3ZW9xaGRGRW56THhoaW9uUTkxZk9LNW1WNjk3aW1LMzJhV3h0dk5EYVVmY1YxaFRpYnhMRlhPd1k0X0ZkVjlIMk5lTkxDb01OZFA1eVlmUi0yVnpHNXBmbXJCNTNQcDU0cmI5ZENZTkJWVm1BSmJQRkRpVzU1T29xOGlsdDJhVmtFTWFvRm1vNHNNT0NCazhjUV9SM25nOUxtMFd1SW9fNGktZDJf?oc=5",
+      "published": "2026-11-22T06:59:09+00:00",
+      "publisher": "https://www.nst.com.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "JDT+ releases \"Outbound\" teaser amid scrutiny of FIFA eligibility scandal - NST Online"
+    },
+    {
+      "desc": "All eyes will be on Manchester United's new head coach Mauricio Pochettino when they take on Liverpool at Anfield this a",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T08:00:57.151139+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16296287/Just-two-Man-United-stars-selected-combined-XI-Liverpool-stats-boffins-Andoni-Iraolas-defence-dominates-Liverpool-boss-missing-hidden-gem.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T06:45:55+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Revealed: Just two Man United stars are selected in combined XI with Liverpool by stats boffins as Andoni Iraola's defence dominates... but "
+    },
     {
       "desc": "BBC Sport columnist Tony Pulis explains how new Manchester United boss Mauricio Pochettino will prepare for Sunday's gam",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -5269,6 +5339,16 @@
       "publisher": "https://roundtable.io",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Video - David Raya to Undergo MRI Scan After Shoulder Injury Against Newcastle United - roundtable.io"
+    },
+    {
+      "desc": "Trialist A Videos & Best Moments Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T08:00:57.151259+00:00",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zYlNpUjBiMDFqQ3gxOHV1ek5QMG1idFE2RmZXQUhoRmNRSFE4SnBpU01jbEx6Xzh2dDZZaTVSd21PVHhrNGpIcEN1ZnB6OEdKeDV1Yk5iOHo1MDlWWmN0WUh4cy1YYlp5OWluYzFJbUxpdw?oc=5",
+      "published": "2026-11-22T02:37:41+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Trialist A Videos & Best Moments - Premier League"
     },
     {
       "desc": "“Rapidly Securing All Three Homegrown FA Players”: SSG’s Fearsome Move, Preparing for the Bidding War Over “Top FA Targe",
@@ -6619,86 +6699,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Southampton see off Derby to return to winning ways"
-    },
-    {
-      "desc": "Five things we learned about Alexander Isak during 'A Day With...' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:31:49.983810+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRkFLN0NHbm92ZmJSa2M1MFRUSGxlbTBRdnhSTFRTNElUVFU4WEVGazIwcGtxbGRJbURSNlFvTGRZQ3lDMVVPY3F2YW1VbDBqQW84ZW95NlpxME84X1g4bXhDeUdJeVB0czFkeGQzVEhKUEt6c2lETzJ3bFJPN2pXcnd0SUJRZDJJai00dnNqYzFWQUdoY19xMFB3?oc=5",
-      "published": "2026-11-21T14:03:37+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Five things we learned about Alexander Isak during 'A Day With...' - Liverpool FC"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T18:00:51.819510+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOby15UFczeENtMkdHRnVoZWF4SXluUnVkMl9qR2xoMmpzNzdFV3dzUVpTWmFhV3VKRVpvRXBnbE9IaUhvUDFNXzBheThDTVBuZlI0b2JjVm9zSWhhZjJneXJZTzBvRTJVSmEzdXNrc1RkT2VscEpnbDYydWVRYjN5TDdn?oc=5",
-      "published": "2026-11-21T14:03:27+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Nicolas Madsen's scruffy winner gave Queens Park Rangers their first away victory since August as they defeated Millwall",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T15:00:54.689531+00:00",
-      "link": "https://www.skysports.com/football/millwall-vs-queens-park-rangers/report/560682",
-      "published": "2026-11-21T14:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "QPR battle to victory at 10-man Millwall"
-    },
-    {
-      "desc": "Haaland latched onto a beautifully bent cross from Iliman Ndiaye to bundle home from less than eight minutes after Rodri",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T14:01:00.680312+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16311225/Erling-Haaland-Man-City-equaliser-DISALLOWED-controversial-Fulham.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T13:55:42+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Erling Haaland sees Man City equaliser DISALLOWED in controversial circumstances - with fans and pundits split over whether Fulham goalkeepe"
-    },
-    {
-      "desc": "MW11 VAR decisions explained: Why Haaland goal v Fulham did not stand Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T19:00:49.673852+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1TZXVLekFKaXJMYkd3WWZFY0dVUk5NLTRxMWNPRUlxZF9XUTdOMnlKWG1KaklETlV2MkdDcXFmaGNzQW8wX0k2SkRWNUJoSFVjU3dPTUpXMmF3Sld2ZFhfY0h0VldRaTlFSHV4QnF5NUZaeDRLM052Xw?oc=5",
-      "published": "2026-11-21T13:53:40+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "MW11 VAR decisions explained: Why Haaland goal v Fulham did not stand - Premier League"
-    },
-    {
-      "desc": "Bournemouth’s Eli Kroupi favours a move overseas despite Premier League Interest LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T14:01:00.680339+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOLV9oU2RyNlRGazBvdWZNUTgxR3VsMnhCZklIU2xlZ0dieVByeGpXQmpKWEhxSnAwZDMwTFRJTWgzZkU4dEE0N1ZkMF9XbS0tVHdZa1M2Z1cwcEZEeGxZWUZlWVZDZHIwbDljZS15LWdicUZtS1RndzlJbXFjUUg2emM0My1xN2tZZnN3ampKM014VHBXMm9IY091eVNXSnZpR3Z2ZG5jS3k4cGhWS2FmbjIxZHJ0VzJ4TkRxb0xNY0Z6X05Kb1VGMWNOYjRCY1hQM3FOVXR6Q3o1MWZrX1k3UTdhLTJ0WDQ?oc=5",
-      "published": "2026-11-21T13:46:43+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Bournemouth’s Eli Kroupi favours a move overseas despite Premier League Interest - LiveScore"
-    },
-    {
-      "desc": "Confirmed Chelsea line up vs Leeds | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T14:01:00.680359+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbld3WHZYbDRObFRESDdTbkdoTjZNRDFzMGpaZDgzUGtVU1NfYTdaOUhSX3gzZ0dBOElRR1NJLXVvb0xXOUFVX09QX2JtN1gzLXNlUHBxdTRNRjBUMFktWUFiMkxkRUpOZU02RjltdElIQS1NVGh6ajlXazk3T0Q1V1B3?oc=5",
-      "published": "2026-11-21T13:45:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Confirmed Chelsea line up vs Leeds | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Benjamin Sesko future decided as Man Utd prepare sacrifice for new No.9 - Fabrizio Romano Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T14:01:00.680378+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQLV9JdkJGc1h0aExBdzQtd3JqSXNFeTNDR1RRN0hsREM4bC1SMmo5dlJsZC0wU1BXODdnX2dZbUg2U1hxMFMwb19PMFdEQTBwa3Bpc3hlYmNfTkVORzhVNk91Y0o2Z1lTcVRPdmt5WTlyXy1OVi1qUTloRGlBWkNLZnRKN2hWTTVTTUVXWnZR?oc=5",
-      "published": "2026-11-21T13:36:38+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Benjamin Sesko future decided as Man Utd prepare sacrifice for new No.9 - Fabrizio Romano - Football365"
     }
   ],
   "processed_urls": [
