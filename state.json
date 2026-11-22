@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 142507,
-    "output_tokens": 16540,
-    "requests": 24
+    "input_tokens": 148902,
+    "output_tokens": 17256,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4022,6 +4022,41 @@
       "title": "温格放弃竞选FIFA主席，因凡蒂诺连任前景大增",
       "updated_at": "2026-11-15T12:00:54.873718+00:00"
     },
+    "c65859f7a4dd": {
+      "article_title": "Watford seek sixth manager in 18 months after sacking Dionisi",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "c3beab73ccbcc8fe",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 204
+        }
+      ],
+      "created_at": "2026-11-22T13:00:56.508205+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "6a12972d27031544",
+      "event_id": "c65859f7a4dd",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T13:00:56.508205+00:00",
+          "origin": "created",
+          "title": "Watford seek sixth manager in 18 months after sacking Dionisi",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 204,
+      "title": "沃特福德解雇迪奥尼西，18个月第六任主帅",
+      "updated_at": "2026-11-22T13:00:57.162583+00:00"
+    },
     "c82dc290ae10": {
       "article_title": "Football world mourns Tenerife striker De Miguel",
       "attempts": 1,
@@ -5249,7 +5284,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T12:00:58.891430+00:00",
+  "last_scan_at": "2026-11-22T13:00:51.739049+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5270,6 +5305,96 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ALAN SHEARER has warned Thomas Frank he could be back on Match of the Day if he can not turn things around at Crystal Pa",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T13:00:51.742444+00:00",
+      "link": "https://www.thesun.co.uk/sport/41105799/alan-shearer-thomas-frank-crystal-palace-motd-pundit/",
+      "published": "2026-11-22T12:55:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Premier League manager warned he may have to find job as BBC MOTD pundit if results don’t improve"
+    },
+    {
+      "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Anfield as Mauricio Pochettino takes charge of Manch",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T13:00:51.742509+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308805/Liverpool-vs-Manchester-United-Premier-League-Mauricio-Pochettino-takes-charge-Red-Devils-time-rivals-head-head-Anfield.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T12:53:44+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Liverpool vs Manchester United - Premier League: Mauricio Pochettino takes charge of the Red Devils for the very first time as the rivals go"
+    },
+    {
+      "desc": "BLACKBURN players have sent a touching message to manager Tony Mowbray amid his health battle. The EFL hero coach announ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T13:00:51.742593+00:00",
+      "link": "https://www.thesun.co.uk/sport/41106362/chelsea-gudjohnsen-son-tony-mowbray-blackburn/",
+      "published": "2026-11-22T12:41:54+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea icon’s son holds up shirt with heartwarming message to Tony Mowbray amid health battle after goal for Blackburn"
+    },
+    {
+      "desc": "Tributes paid as former Wrexham vice-chairman and director David Rhodes dies Leader Live",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.742625+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeHlSeGdxc2FkaWgweUlpdGRiWk5XTGF6UExTOHZEU1BCanFSWXQ1XzhRSC0yLVVISS1rM3RlcUVVUkdxQS16dXJBUWRFb091MVhjWkRsamJEdGlBTHlSY1dwS3ZsV09YT05OM1FISFJRV2hfR0VoV0QyUjNRYlRtRFFEdE5SOGlWdW9Ocmx0bnNBLXhzQ2MyRUE0XzhnNVRF?oc=5",
+      "published": "2026-11-22T12:31:00+00:00",
+      "publisher": "https://www.leaderlive.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Tributes paid as former Wrexham vice-chairman and director David Rhodes dies - Leader Live"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T13:00:51.742648+00:00",
+      "link": "https://www.skysports.com/football/hull-city-vs-brighton-and-hove-albion/live/559549",
+      "published": "2026-11-22T12:23:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Belloumi starts for Hull with Rutter up front for Brighton LIVE!"
+    },
+    {
+      "desc": "WATFORD have sacked yet another manager after confirming Alessio Dionisi had left his role. The Italian was only appoint",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T13:00:51.742696+00:00",
+      "link": "https://www.thesun.co.uk/sport/41106018/watford-sack-alessio-dionisi-championship-sheff-utd/",
+      "published": "2026-11-22T12:03:27+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Watford SACK manager Alessio Dionisi after 4-0 mauling at Sheff Utd but thank ‘really good guy’ in classy statement"
+    },
+    {
+      "desc": "Watford sack head coach Alessio Dionisi after 18 games in charge.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T13:00:51.742727+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T12:00:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Watford seek sixth manager in 18 months after sacking Dionisi"
+    },
+    {
+      "desc": "MAURICIO Pochettino has made Manchester United a family affair by bringing his son Sebastiano onto the coaching staff. T",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T13:00:51.742751+00:00",
+      "link": "https://www.thesun.co.uk/sport/41079585/mauricio-pochettino-son-sebastiano-man-utd-coach/",
+      "published": "2026-11-22T12:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Who is Mauricio Pochettino’s son Sebastiano? Meet Man Utd’s newest coach"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.742776+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
+      "published": "2026-11-22T11:56:16+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
+    },
     {
       "desc": "CHELSEA lovers can enjoy a luxury VIP experience at Stamford Bridge at an unmissable price with these top deals. Perfect",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5341,6 +5466,16 @@
       "title": "Argentina star Leandro Paredes collapses during post-match interview as journalist tries to break his fall after he 'felt dizzy' at the end "
     },
     {
+      "desc": "Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.742963+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE85Z1c2LUJRZFdrZ0h6Slg0anpFSDJvQV9fX2pYRmlta1BHclhnT3hEYVlqbEI4YXpQaW5UaVBMczU0NFdYSktzS2ZFRGtFVXRFREo4d3VMQkFOT25CVjFlS0htT2VfdGFPaUhGM3EyWkFXZnBXNkkyRVdSWFo?oc=5",
+      "published": "2026-11-22T10:55:15+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea FC Store"
+    },
+    {
       "desc": "BRUNO FERNANDES has claimed it is \"not right\" to be discussing a new contract at Manchester United amid their disastrous",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T11:00:54.145015+00:00",
@@ -5401,6 +5536,16 @@
       "title": "Be warned, JJ Gabriel: The SEVEN wonderkids who flopped after making high-profile moves - as Man United star, 16, closes in on move to Real "
     },
     {
+      "desc": "A video released by the Philippine Navy’s (PN) Naval Command Western Mindanao (NCWM) shows the French Navy’s surveillanc",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.743125+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNYWpaSndyRDFrR0g0T0RBSk05WEFjcFZIRXdBNGV5M2ljaGlsNzlwaFFVeUl3d1NmQ2FkT01uUE1Ld0JFaXk2d3VwVFFEbXFEMnFDRWh3MkVKNTNhdTBULVh5Mk5veE96aVhXT3FsNWZqdGNhVWdlYVFDY2RQenNIQmlYWXFBQnBvcnVZQWtzSjNxNWxHdHlwa1lpNW1DU0NxMS1la0JHUk5RTHJpckN5UEdjcVkyV2FOUGdVald0Y1VDdldTWEFfNUx3Ym50QU5tY0NjRnZDVl81T3RY?oc=5",
+      "published": "2026-11-22T10:00:31+00:00",
+      "publisher": "https://www.facebook.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "A video released by the Philippine Navy’s (PN) Naval Command Western Mindanao (NCWM) shows the French Navy’s surveillance frigate FS Vendémi"
+    },
+    {
       "desc": "Keeper voted Star of the Match in Liverpool stalemate | News | Official Site Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T12:00:58.894766+00:00",
@@ -5429,6 +5574,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Bruno Fernandes reveals contract negotiations with Manchester United have stalled after he rejected a new deal in the summer"
+    },
+    {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.743200+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tNFRxNmdiMHdqU1JLQTA5UUFUTklIYnFFa0s3cDVOdmcyaUFqazJwRXVBX1pOTXhuYXhlUXU0TUpKM2JRRTJlLUxoclg2LXg0ZzdtdnZROUZleXo2Q3B5NVQyNzR2dnNRMllTano4eDRWVThvVDA4YmNB?oc=5",
+      "published": "2026-11-22T09:20:12+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
     },
     {
       "desc": "Read Renée's West Ham programme notes Arsenal.com",
@@ -5701,6 +5856,26 @@
       "title": "Revealed: Just two Man United stars are selected in combined XI with Liverpool by stats boffins as Andoni Iraola's defence dominates... but "
     },
     {
+      "desc": "Short Highlights: Man City Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.743570+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE41aGZZaUJqUmVlMDM2cnJSWDItRnE1RUlZQXdnUDdjTDhjUGJXWG50dk5fY3lUb01tdGNBcDlXa2sxSlktWlhtc0pqbXhQcXQ5SmFzRWpHbk1EQzFKbUk2WFRlMzlMM19YY3FCQ3hldzNqR011UjRVVnk2TQ?oc=5",
+      "published": "2026-11-22T06:39:54+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Short Highlights: Man City - Premier League"
+    },
+    {
+      "desc": "Extended Highlights: Man City Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.743596+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FelZMY3NFUXZSUXBIYk1lN2NqVkNfaUpOTzJvMnVocVM5VlpmOFM1bWZBX0N3M3pyZG1BZk9WNzNSeWxoMlFYczAydGJQMXFuajRGMWFYLUVaNzJXN2JQVGN0ajJKTWc5VWlnZHBNNWdrQkJZcEZ2ZHBtel9rU0E?oc=5",
+      "published": "2026-11-22T06:37:22+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Extended Highlights: Man City - Premier League"
+    },
+    {
       "desc": "COV’S KENZIE CHECKS IN The Non-League Football Paper",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T11:00:54.145842+00:00",
@@ -5779,6 +5954,16 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Man City have problems all over the pitch. Don’t get this wrong – it’s not the verdict - The New York Times"
+    },
+    {
+      "desc": "Unai Emery to use Barcelona trip as Gavi recruitment mission for Aston Villa LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T13:00:51.743746+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU0psdjhSOWg1Vmp3eXUzTW1fVUk2dkFieUlLeEJNdFh6d2JHY3JsNHEtZF95VWV2VGxTNEM4VmF6RVJlcFUzR1NQWE52ZFJxT3dSR3ZDTDNmQ2ZzdUZ1c01YM2VDMVZMUzQ4SGtxdk5YNXNEenpvMndIMUExaGFTOC1MRHc4U0tReXBETF9TUkdVLThOSldtaHBxZGp6Wkw4OGplbnNsQXQ1amttc0JGTWhydw?oc=5",
+      "published": "2026-11-22T05:03:59+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Unai Emery to use Barcelona trip as Gavi recruitment mission for Aston Villa - LiveScore"
     },
     {
       "desc": "Share your team with our new FPL feature Premier League",
@@ -6619,156 +6804,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Three points from Chelsea’s 4-1 defeat to Leeds with Cole Palmer among big names becoming major problem for Xabi Alonso"
-    },
-    {
-      "desc": "Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T20:00:48.093807+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPSzlRckNMV3lqOUFXN29nX3lzb0NpRjk0V2VoaW1faWI0MUVWMGxFZHdmdFdQVzhTbVd3bzZick81RWRoQmNzZmpwTDhPX3ExVXFwTGQzV2U0LXgyM01zZDF6RmlXbDFtS3ZOY1h1ODZZRElFMGgwMmZzM2d1VEtZaUQ0MkVHbU1ZZXBNWXRlYUVwMFpWSWNKaUp4SHZGU2hKUUIwRDBXYk9UVVJiaWoyaWZrNUV1ZjJRWlh0XzhSQnNMYkFzTnhMQkExZ2ZSUEFlUnMzNWswT0t5SWJ3V2h4aFFuN0o5bE5JenVBZlhmZ1FDYldpOFV3NGFWWkhNMFJ5ZjJrNEdXdXpZRnVPazBNQ0c0S1BIaVVzY28xRExQbEVzUU56bDN3QngyZFFZdjRGR0RjX0l4VDFtVEV6YThDX3k1S2lOaWRlRnhXRmI3WXpZd0dwNEplWFo1OWt4dGRkZVJUa1p6S0xuUk1KUVVVWm8ya0Q?oc=5",
-      "published": "2026-11-21T18:09:26+00:00",
-      "publisher": "https://shop.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "- Premier League"
-    },
-    {
-      "desc": "Musiala retirement shakes Bayern Munich: what is the truth behind the expected announcement? LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T19:00:49.673298+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQLUc2U1BPcFJHYUdpWVgwRGNoRlFGZ05oNkd4cGRYTU9JZFdXaVlzbmQySmEtWF9valZibEMteXZaMTJSRDRMUktYbXpoVllNUXZBSjlZLTdqX3duM0NnaHZYb2h0amllV0VmRVpVX2FmSUtjUDZ1SVJLYWMwazZuRDAwRTlmeTZRWHF4UlluSVJoTmlEcWMyX1EzXzNhdElxanhhRmdxam5VYV9veVdtaUpwSkJLSkFTbXlhZ2RuSVQ4UjZ1WXpPQlRWM2hqeER2QTNPMXl4OTlJM2ZrUUVvclpyTmM?oc=5",
-      "published": "2026-11-21T18:08:33+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Musiala retirement shakes Bayern Munich: what is the truth behind the expected announcement? - LiveScore"
-    },
-    {
-      "desc": "Arsenal's four-game winning Premier League run without conceding was ended by Newcastle in a frantic 2-2 draw.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T20:00:48.093852+00:00",
-      "link": "https://www.skysports.com/football/newcastle-united-vs-arsenal/report/559552",
-      "published": "2026-11-21T18:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Arsenal's winning run ended by Newcastle in thrilling draw"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T21:00:50.846281+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025496/newcastle-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-21T18:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Newcastle latest: Comeback gave me goosebumps, says Jaissle"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T18:00:51.818509+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025491/aston-villa-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-21T17:52:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Aston Villa latest: 'Replacements were signed - but not for Tielemans'"
-    },
-    {
-      "desc": "Musiala retirement rocks Bayern Munich: what is the truth behind the expected announcement? Goal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T23:00:50.323822+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdWJDOTg0eGZnX0w0WHZyY0ZYa0pYMTNJdzBwaFA4MGhYdEF5bWptV2d5RmNFdkhOczBXbmN1LUs0U09oLWF6V3RDelNtR1RrTUdzbDIxZmVKUVR3dXZaRzdqcVpXbHBSLVVKM2NUUTJjd2w1Qy1MQ0stcVYzYUM5OUlpVnVPWFlDVHJQQnExSkE1cWRYWGNWNlduYXZaNEo1YXlRTnVvRU9mZVZadlU5dXp2ZTF4ZENTbUlLWnB5RWdUeEY2RDMtVDdMc0pnVGJKZmViYQ?oc=5",
-      "published": "2026-11-21T17:47:05+00:00",
-      "publisher": "https://www.goal.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Musiala retirement rocks Bayern Munich: what is the truth behind the expected announcement? - Goal.com"
-    },
-    {
-      "desc": "Football players' union Fifpro says it is concerned by German club Bayern Munich's comments about Jamal Musiala's contra",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T18:00:51.818549+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9x2evr1rg85o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T17:43:44+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Fifpro criticises Bayern Munich for Musiala comments"
-    },
-    {
-      "desc": "Leeds United manager Daniel Farke is delighted his side \"created a piece of history\" following their 4-1 win against Che",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T18:00:51.818582+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cmwy5ddwnygqo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T17:42:14+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Leeds 'created piece of history' in Chelsea win - Farke"
-    },
-    {
-      "desc": "BOURNEMOUTH gatecrashed the top four in a haze of smashed records as Evanilson netted for the SIXTH game on the spin. Ma",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T18:00:51.818610+00:00",
-      "link": "https://www.thesun.co.uk/sport/41101573/bournemouth-2-0-nottingham-forest-evanilson-scores-again/",
-      "published": "2026-11-21T17:34:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Bournemouth 2 Nottingham Forest 0: Cherries gatecrash Prem top four as Evanilson scores for sixth successive game"
-    },
-    {
-      "desc": "Jaume Camacho sends message to Pochettino with Man Utd U18 display United In Focus",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T23:00:50.323834+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ2RZTVB4c0VqUE5tWHNGSndoWVZCVnlUbnhadmp6S3dYdVo1QXd4b3J3ZnFpUlRCVmZUU0ozS3ppUmw5UE5QN1pacmN1WUhodGh4YS1pNzhtbi1qYmRyYkVrNDBTLUxNbEpVNDg5WWZMbFFQbWl6a1QwNlVzQTc4eEJQZEVSWHltam5KVWRHWVE2MURsQVNnOVdzbGJMa1J4dk15WllSZHM?oc=5",
-      "published": "2026-11-21T17:30:00+00:00",
-      "publisher": "https://www.unitedinfocus.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Jaume Camacho sends message to Pochettino with Man Utd U18 display - United In Focus"
-    },
-    {
-      "desc": "A WOEFUL Chelsea suffered a 4-1 battering at the hands of Leeds with a number of players failing to rise to the occasion",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T18:00:51.818636+00:00",
-      "link": "https://www.thesun.co.uk/sport/41098389/chelsea-player-ratings-emmanuel-emegha-wesley-fofana-leeds/",
-      "published": "2026-11-21T17:28:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea player ratings: Emegha an instant hit on first Prem start but Fofana too slow in Leeds battering"
-    },
-    {
-      "desc": "DARNELL FURLONG can console himself with this simple fact. He may be the first, but he certainly will not be the last Pr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T18:00:51.818662+00:00",
-      "link": "https://www.thesun.co.uk/sport/41101407/luca-williams-barnett-tottenham-ipswich-match-report/",
-      "published": "2026-11-21T17:21:02+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tottenham 2 Ipswich 0: Luca Williams-Barnett steals show as he becomes Spurs’ third-youngest ever Prem scorer"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T20:00:48.093930+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-21T17:18:40+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "George Thomason grabbed a late winner as Wrexham secured a welcome 1-0 victory away at Lincoln.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T18:00:51.818683+00:00",
-      "link": "https://www.skysports.com/football/lincoln-city-vs-wrexham/report/560680",
-      "published": "2026-11-21T17:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Wrexham earn narrow late win at Lincoln"
-    },
-    {
-      "desc": "Bolton nemesis Josh Murphy helped Portsmouth secure a 1-1 Championship draw at the Toughsheet Community Stadium.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T18:00:51.818702+00:00",
-      "link": "https://www.skysports.com/football/bolton-wanderers-vs-portsmouth/report/560678",
-      "published": "2026-11-21T17:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Bolton hit back to hold Portsmouth"
     }
   ],
   "processed_urls": [
@@ -6934,7 +6969,8 @@
     "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo",
     "https://www.dailymail.com/sport/football/article-16311993/Cole-Palmer-frosty-exchange-Joao-Pedro-Chelsea-4-1-humiliation-Leeds.html",
     "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o",
-    "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future"
+    "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future",
+    "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo"
   ],
   "s_overflow": {},
   "schema_version": 4
