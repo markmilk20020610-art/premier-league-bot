@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 27,
+        "calls": 1,
         "errors": 0,
-        "requests": 27
+        "requests": 1
       }
     },
-    "calls": 27,
-    "date": "2026-11-22",
+    "calls": 1,
+    "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 160697,
-    "output_tokens": 18500,
-    "requests": 27
+    "input_tokens": 5665,
+    "output_tokens": 498,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3068,6 +3068,41 @@
       "title": "16岁道曼替补绝杀法国U21，创英格兰U21最年轻进球纪录",
       "updated_at": "2026-11-17T07:00:57.029483+00:00"
     },
+    "8d1cddc16c7a": {
+      "article_title": "PSG's Doue to have surgery on ruptured ACL",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "707788240780ccde",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 209
+        }
+      ],
+      "created_at": "2026-11-22T16:00:59.492787+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "34d8371c86996df2",
+      "event_id": "8d1cddc16c7a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T16:00:59.492787+00:00",
+          "origin": "created",
+          "title": "PSG's Doue to have surgery on ruptured ACL",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 209,
+      "title": "巴黎圣日耳曼前锋杜埃右膝前十字韧带断裂将接受手术",
+      "updated_at": "2026-11-22T16:01:00.090329+00:00"
+    },
     "8e90eaab6e7a": {
       "article_title": "Kane beat Mbappe to Ballon d'Or by just 28 points",
       "attempts": 1,
@@ -5319,7 +5354,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T15:00:49.070619+00:00",
+  "last_scan_at": "2026-11-22T16:00:54.321432+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5341,6 +5376,66 @@
   },
   "news_pool": [
     {
+      "desc": "OLI MCBURNIE capitalised against ten-man Brighton to seal 2-0 win at MKM Stadium. Costinha pushed Sorba Thomas in the 89",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T16:00:54.323989+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107711/tzolakis-heroics-deny-brighton-hull-2-0-mcburnie-double/",
+      "published": "2026-11-22T15:58:30+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Hull 2 Brighton 0: Oli McBurnie scores dramatic injury-time double in blow to Seagulls’ Premier League title dream"
+    },
+    {
+      "desc": "PEP GUARDIOLA has been spotted dancing at a samba club during a trip to Brazil. The out-of-work manager has been enjoyin",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T16:00:54.324014+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107444/pep-guardiola-samba-brazil-club/",
+      "published": "2026-11-22T15:50:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Looks so awkward’ joke fans as Pep Guardiola spotted dancing at samba club in Brazil as he enjoys break from football"
+    },
+    {
+      "desc": "Paris St-Germain forward Desire Doue will have surgery later this month after rupturing the anterior cruciate ligament i",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T16:00:54.324036+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T15:50:05+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "PSG's Doue to have surgery on ruptured ACL"
+    },
+    {
+      "desc": "LISA BAUM was stretchered off while wearing an oxygen mask after going down off the ball during Arsenal Women's showdown",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T16:00:54.324055+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107573/arsenal-women-lisa-baum-stretchered-off-west-ham/",
+      "published": "2026-11-22T15:18:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal Women star Lisa Baum goes down off the ball and given oxygen as she’s stretchered off in worrying scenes"
+    },
+    {
+      "desc": "LAMINE YAMAL breathed a sigh of relief after his horror penalty miss was avenged by a flurry of goals in Barcelona's com",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T16:00:54.324084+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107327/barcelona-comeback-win-yamal-penalty-miss-villareal/",
+      "published": "2026-11-22T15:03:49+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Barcelona 3 Villarreal 2: Yamal bailed out after horror penalty miss thanks to 10-minute goal blitz in comeback win"
+    },
+    {
+      "desc": "BRITNEY DE VILLIERS has stunned fans as she put on a busty display in a daring dress. The stunning model is the fiancée ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T16:00:54.324101+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107170/england-morgan-gibbs-white-britney-de-villiers/",
+      "published": "2026-11-22T15:02:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "England Wag puts on busty display as she goes braless in daring dress and is branded ‘dream’ by fans"
+    },
+    {
       "desc": "FACUNDO HERRERA can't get no Satisfaction with his Mick Jagger links. The Boca Juniors star may have little clue who the",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T15:00:49.074081+00:00",
@@ -5349,6 +5444,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Football star is dead ringer for Mick Jagger and spent years baffled by Rolling Stones nickname"
+    },
+    {
+      "desc": "Manchester City Cherki Cushion Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T16:00:54.324160+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTUxFZWFIZWVzWW5GU3d2YTNGU1JCMEJCcl9VS3pNcXlGYmx4WVNMOWJJVzdQbU1CV3NQMDNSMUJDV2M0RUdaX0JELV83X2YzbEJtQ0tIV1YtZS1lMml6dXE0UXFqM3c5UHAxeDFlZVZ3cmFzWHlDNEozWU00RDdvUVFYZ0J3ZU5aV0dBbmJYWQ?oc=5",
+      "published": "2026-11-22T14:27:43+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Manchester City Cherki Cushion - Man City Shop"
     },
     {
       "desc": "Premier League Manchester United",
@@ -5369,6 +5474,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Burnley’s wait for a home win goes on as Blackburn twice hit back in derby"
+    },
+    {
+      "desc": "Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T16:00:54.324198+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
+      "published": "2026-11-22T14:03:46+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "- Arsenal Direct"
     },
     {
       "desc": "ALAN SHEARER and Joe Hart were left stunned by Gabby Logan's \"bull testicles\" joke in the intro of Match of the Day. The",
@@ -5649,6 +5764,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Five things we learned about Alexander Isak during 'A Day With...' - Liverpool FC"
+    },
+    {
+      "desc": "'We know what this game means' - Virgil van Dijk previews Liverpool v Man Utd Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T16:00:54.324481+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSEQxX1dDOS11UGZ0WGtONmpmbHNzT0ZfUktMWjRjMXV4dDA0ZkdfUEEzVDB1MmstUUV3eENtWWVlU08tTHJ1WHY0Tl9YNW9xbEthdlhfU0RTbDdQNlBCM3NHdjM4ZkNEQXloSlktcFFOV25zY2N4N3ZnM0NLR25Cc0xsS3Y0Z0I2YTNKZlNzQXI1eTFrbS1ERHdCbl8tcHB0bXVORl95VVVuMEhNanpLWGo2aGg?oc=5",
+      "published": "2026-11-22T10:45:48+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "'We know what this game means' - Virgil van Dijk previews Liverpool v Man Utd - Liverpool FC"
     },
     {
       "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
@@ -6749,96 +6874,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Who was 'a consistent threat'? Newcastle v Arsenal player ratings"
-    },
-    {
-      "desc": "THERE was a huge groan around St James’ Park when it was announced that there would be NINE minutes of stoppage time. Bu",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T20:00:48.093595+00:00",
-      "link": "https://www.thesun.co.uk/sport/41102468/newcastle-2-2-arsenal-match-report-noni-madueke/",
-      "published": "2026-11-21T19:27:30+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Newcastle 2 Arsenal 2: Noni Madueke rescues point for Gunners after Toon’s thrilling second-half fightback"
-    },
-    {
-      "desc": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T01:00:51.114040+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdk5LQTJxS25CeUswUW1fRXYwS05NSzIwaHNqQlppSFo3ZHVmNVZjZ1lTbkZsalp6Y19tcDlHc2lsUkJHamF4cWZkay1uWUJxTkVEemRuclQ5RkxLX0pONmdsUGJPems4c2hPVkotNGg1LUpWTlpIbTgyRVJyN2RGOWhPQlJEaUpyVEcxdzZzYklobWtIMmlIRTc0cFlXZzZlVzBjZUV2X1p3a1NQM1k0eW04MHR3LW9HOGZSMDNwMU5CdHJVX1ZYaWt3TlpfaW43eXZucDJBWGMtYXhlWVhj?oc=5",
-      "published": "2026-11-21T19:21:35+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 - Tottenham Hotspur"
-    },
-    {
-      "desc": "BBC Sport looks at Tottenham's new teenage star after Luca Williams-Barnett makes a superb full Premier League debut for",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T20:00:48.093611+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm9d7jg50e12o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:21:01+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'The world got to see today' - who is new Spurs star Williams-Barnett?"
-    },
-    {
-      "desc": "TENSIONS boiled over amongst England stars in an explosive clash moments after Arsenal drew level at Newcastle. Eberechi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T20:00:48.093641+00:00",
-      "link": "https://www.thesun.co.uk/sport/41102548/england-stars-bust-up-newcastle-arsenal-burn-madueke-rice/",
-      "published": "2026-11-21T19:15:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "England stars in furious bust-up during Newcastle vs Arsenal as tensions boil over after Dan Burn challenge"
-    },
-    {
-      "desc": "The Belgian midfielder left Aston Villa to join Manchester United last summer and though these are early days in his Old",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T22:00:59.651914+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308759/Giving-Youri-Tielemans-35m-release-clause-looks-like-error-Aston-Villa-toiling-draw-Sunderland-proof-Unai-Emery-midfield-controller-January-writes-TOM-COLLOMOSSE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T19:14:56+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Giving Youri Tielemans a £35m release clause looks like an error... Aston Villa toiling to a draw with Sunderland was more proof Unai Emery "
-    },
-    {
-      "desc": "Chelsea manager Xabi Alonso said his side are \"fragile\" and need to be \"tougher\" after being embarrassed by Leeds United",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T21:00:50.845957+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13614992/chelsea-are-fragile-and-need-to-toughen-up-says-manager-xabi-alonso-after-humiliating-defeat-to-leeds-united",
-      "published": "2026-11-21T19:13:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Alonso: Chelsea are fragile and need to be tougher"
-    },
-    {
-      "desc": "Man City Fantasy Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T21:00:50.845980+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1WM2FLUXBhTlZsVmY3SHd5eG1tQnl2cGxPdEVDTFFuMGhtQlF4ZDlwV282QXI2a3gzY3lPVkF3WmxuWjJhLVBKWEd2RFY5Wl9HNC1uUkRhLTVsZXRJMmtOTE4xWnNERHJXWjBF?oc=5",
-      "published": "2026-11-21T19:04:49+00:00",
-      "publisher": "https://fantasy.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Man City - Fantasy Premier League"
-    },
-    {
-      "desc": "The honeymoon period is over for Chelsea manager Xabi Alonso, who is now in firefighting mode after a 4-1 defeat by Leed",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T20:00:48.093657+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwe8944d004yo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:04:09+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'Fragile' and 'miles off it' - Alonso's Chelsea honeymoon is over"
-    },
-    {
-      "desc": "ARSENAL goalkeeper David Raya was close to tears after injuring his arm against Newcastle. Raya, 31, was forced off on 6",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T20:00:48.093672+00:00",
-      "link": "https://www.thesun.co.uk/sport/41102444/david-raya-injured-newcastle-arsenal-joe-willock-osula/",
-      "published": "2026-11-21T19:03:45+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Distressed’ David Raya fights back tears as he is forced off against Newcastle in major Arsenal injury blow"
     }
   ],
   "processed_urls": [
@@ -7006,7 +7041,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o",
     "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future",
     "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo",
-    "https://www.dailymail.com/sport/football/article-16308805/Liverpool-vs-Manchester-United-Premier-League-Mauricio-Pochettino-takes-charge-Red-Devils-time-rivals-head-head-Anfield.html"
+    "https://www.dailymail.com/sport/football/article-16308805/Liverpool-vs-Manchester-United-Premier-League-Mauricio-Pochettino-takes-charge-Red-Devils-time-rivals-head-head-Anfield.html",
+    "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero"
   ],
   "s_overflow": {},
   "schema_version": 4
