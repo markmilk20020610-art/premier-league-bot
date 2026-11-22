@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 22857,
-    "output_tokens": 2592,
-    "requests": 4
+    "input_tokens": 28510,
+    "output_tokens": 3378,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5389,7 +5389,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T18:00:57.534066+00:00",
+  "last_scan_at": "2026-11-22T19:00:52.719916+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5410,6 +5410,176 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ROY KEANE slammed Manchester United's players and his fellow pundits after the side's 4-0 thumping at the hands of Liver",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722087+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109466/roy-keane-swearing-rant-neville-man-utd-liverpool/",
+      "published": "2026-11-22T18:52:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘I feel like swearing’ – Roy Keane lashes out at Neville for what he said on commentary in Man Utd’s Liverpool mauling"
+    },
+    {
+      "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino endured a disastrous debut with TWO tragic Premier League records. P",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722108+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109089/mauricio-pochettino-man-utd-liverpool-leny-yoro/",
+      "published": "2026-11-22T18:51:37+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino sets TWO unwanted Premier League records in Man Utd’s disastrous clash at Liverpool"
+    },
+    {
+      "desc": "EMMA LOUISE JONES has given an update on her recovery from having her gallbladder removed. The BBC presenter has been in",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722126+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109074/emma-louise-jones-recovering-gallbladder-surgery/",
+      "published": "2026-11-22T18:36:26+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "BBC presenter Emma Louise Jones recovering from gallbladder removal after surgery leaves her with stomach stitches"
+    },
+    {
+      "desc": "“SACKED IN the morning” is not what any manager wants to hear. Few will have heard it during their first match in charge",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722142+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109323/liverpool-man-utd-pochettino-carrick-sacked/",
+      "published": "2026-11-22T18:33:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino made the same calls as Michael Carrick and Man Utd got what they deserved in Liverpool horror show"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO'S reign got off to a nightmare start after ten-man Manchester United were schooled 4-0 at Liverpool ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722157+00:00",
+      "link": "https://www.thesun.co.uk/sport/41108408/man-utd-ratings-liverpool-de-ligt-pochettino/",
+      "published": "2026-11-22T18:31:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd player ratings: De Ligt and Martinez humiliated in Liverpool horror show with Lammens best despite shipping FOUR"
+    },
+    {
+      "desc": "After just eight minutes, Mauricio Pochettino's plans were thrown into tatters when errors from Matthijs De Ligt and Len",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-22T19:00:52.722182+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16313467/Gary-Neville-Man-Uniteds-Matthijs-Ligt.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-22T18:29:02+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Gary Neville tears into Man United's Matthijs de Ligt for 'unforgivable' defending that led to Leny Yoro's red card - and claims duo played "
+    },
+    {
+      "desc": "How Liverpool and Manchester United's players rated following their Premier League match.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T19:00:52.722200+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c933gzxk66yyo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T18:28:51+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Yoro sees red as Ngumoha shines - Liverpool v Man Utd player ratings"
+    },
+    {
+      "desc": "GARY NEVILLE suggested that returning to action after a year out is like playing \"after having six pints\" following Matt",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722216+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109160/man-utd-matthijs-de-ligt-liverpool/",
+      "published": "2026-11-22T18:26:48+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Gary Neville compares Man Utd star Matthijs de Ligt to ‘playing football after six pints’ during Liverpool horror show"
+    },
+    {
+      "desc": "Mauricio Pochettino endured a horror start to his Manchester United tenure as his 10-man side were thrashed 4-0 by Liver",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T19:00:52.722230+00:00",
+      "link": "https://www.skysports.com/football/liverpool-vs-manchester-united/report/559550",
+      "published": "2026-11-22T18:25:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Nightmare start for Pochettino as Liverpool rout 10-man Man Utd"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T19:00:52.722262+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025492/man-utd-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-11-22T18:24:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd latest: Neville reacts to club having worst defence in Europe"
+    },
+    {
+      "desc": "IT WASN’T supposed to start like this for new Manchester United boss Mauricio Pochettino. But now he truly knows the sca",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722277+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109097/liverpool-man-utd-pochettino-yoro-szoboszlai-wirtz-ngumoha-munoz/",
+      "published": "2026-11-22T18:22:33+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool 4 Man Utd 0: Mauricio Pochettino suffers horror show in first game as his ten men are mauled at Anfield"
+    },
+    {
+      "desc": "ROY KEANE fumed after Man Utd's Leny Yoro was sent off just seven minutes into the thrashing at Liverpool. Yoro saw a st",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722290+00:00",
+      "link": "https://www.thesun.co.uk/sport/41109003/man-utd-roy-keane-defends-leny-yoro-liverpool-red/",
+      "published": "2026-11-22T18:20:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Roy Keane explains why Man Utd star Leny Yoro should NOT have been sent off against Liverpool"
+    },
+    {
+      "desc": "\"Untouchable\": huge English offer for Barcelona star as club refuse to bargain LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722309+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQaXEwUVNxMjhFSTZuaDhVZE0xMU0xVnVQNkRjckpNSlJMNDNQeXN4a05BajVtX2dEOGtQUjJNYTBLQzdQNEFHUnNKN2lTaWJIcHQtWjNpcnNMWVNKRWtSc3kyekNDZG5iYUVsYU5rVmNMY1g1MjkxY1l4NV9aZkdhVUd3OVZxc1cxeXVNRmZWUnVjWTNyc05DV2JiX1otdm9QUVBJRHVSMEluOG5lUUthMVZLZVNWbTE0R0Nid1BKYzljOXRrdS15Z21oMA?oc=5",
+      "published": "2026-11-22T18:13:37+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "\"Untouchable\": huge English offer for Barcelona star as club refuse to bargain - LiveScore"
+    },
+    {
+      "desc": "FOOTY WAG Apollonia Llewellyn stunned fans as she shared raunchy pictures from a soak in a bath tub. The glamorous forme",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T19:00:52.722326+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107684/apollonia-llewellyn-naked-bath-pics/",
+      "published": "2026-11-22T18:07:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Football Wag Apollonia Llewellyn shares naked pics as she poses in bath tub and enjoys ‘me time’"
+    },
+    {
+      "desc": "Manchester United Targets Striker and Defender for January Window cwibc.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722342+00:00",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8xY2dJWlFpOFpMRm5vaUNsSmpsMTMyMTBOcVdkVG0tUGxoeElBMk1oMnNFaFdBR2w1bEhyQ0ZSYlh3YkRFZ3dyZWU5QV9rZElXNWMzUTNCaU4zMnhjMzdtYkRpVjBDd29OS0tndksxNE4?oc=5",
+      "published": "2026-11-22T18:01:00+00:00",
+      "publisher": "https://cwibc.co.id",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Manchester United Targets Striker and Defender for January Window - cwibc.co.id"
+    },
+    {
+      "desc": "City v Napoli: Kick-off time and TV information Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722357+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZ3ZGUS1qNnE3ZEdpbnlkWXN2aFFsLVg1Y0NqMVVPVkF6WlJPUXNrdmVNZEstak13UWExRWxVM2xNQi03a0FRSzVUY0VEVkp4RWdjNWl0SUNtb2dfU09oT0t4U3pscWdJdXgwR0I4NmJiR3o3WW9ISkFlYzVnTHBBOUlKeVJKVnZH?oc=5",
+      "published": "2026-11-22T18:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City v Napoli: Kick-off time and TV information - Manchester City FC"
+    },
+    {
+      "desc": "Manchester United Target January Striker Reinforcements Demokratis.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722372+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0zQnl3OFN2Q0tkTVRDOXJPckI5WFFlVWE5TEdESlBVYTFwYnBvMm5qU3pQRGNSNFZZVm1sVnE1MGNqTW5GT05lRVljd2o0bkl3S1JJdk1Yd3hxTVlrbjdIbTgzVWJqakVQeUdVMFdvbjVTemhIVWc?oc=5",
+      "published": "2026-11-22T17:58:00+00:00",
+      "publisher": "https://demokratis.co.id",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Manchester United Target January Striker Reinforcements - Demokratis.co.id"
+    },
     {
       "desc": "Leny Yoro's red card after eight minutes changed Liverpool v Manchester United - did officials make the correct call?",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -5511,6 +5681,16 @@
       "title": "Arsenal frustrations grow as winless home run continues"
     },
     {
+      "desc": "Buy Manchester United Core Crest Flag Red Manchester United Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722511+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5TUjdjbk5hT2huU0ozZnRXdGJ3ek83a3JTZXRDUDBtM1VfMndndW5GV1hSZ0V3QjE3YzdsSUhmTHk1aW9hTmFvMVBYR1Q4RlBrbGZJbkU0azJxcWpVVjVOb1V6TEVvU21pbVIxSDBreHhXQ28zOENZNA?oc=5",
+      "published": "2026-11-22T17:29:15+00:00",
+      "publisher": "https://store.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Buy Manchester United Core Crest Flag Red - Manchester United Store"
+    },
+    {
       "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino surprised fans with a bizarre choice in his first starting line-up d",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T18:00:57.537857+00:00",
@@ -5591,6 +5771,16 @@
       "title": "How did Spurs beat Man City?"
     },
     {
+      "desc": "Track Order - Chelsea Store Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722593+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tZVAtOG1XSExLdm1Hc1hKNjBVbkdJLTVRSmJ1LVhMcG53MURxZTlXb0xXUGdQSVFyMXcyZ040QnJXd2YtbXRoTHY3SWNXYW1r?oc=5",
+      "published": "2026-11-22T16:59:48+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Track Order - Chelsea Store - Chelsea FC Store"
+    },
+    {
       "desc": "Declan Rice set for huge pay rise as Arsenal close in on five-year contract Lente Desportiva",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T18:00:57.538235+00:00",
@@ -5619,6 +5809,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Leny Yoro SENT OFF just 7 minutes into Man Utd’s clash at Liverpool as Mauricio Pochettino suffers nightmare start"
+    },
+    {
+      "desc": "Man City v Napoli - 24 Nov 2026 Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722620+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5jZWFNN2NMVkEzWUJhUUlnMEdpNkRCN2huLXJiYzBqWTNfTXpydzhnOUNMODY4NWx4R0dBSVVqQXJfOWlnR3RUOE5CcjhMVnFXWEJwWDhEUzFSYzlGUkU2M2tqcVllRHRFY09IUG4wZWxER2V0?oc=5",
+      "published": "2026-11-22T16:46:12+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City v Napoli - 24 Nov 2026 - Manchester City FC"
     },
     {
       "desc": "Manchester United's Leny Yoro is shown a straight red card just seven minutes into the match at Anfield after bringing d",
@@ -5981,6 +6181,16 @@
       "title": "Chelsea icon’s son holds up shirt with heartwarming message to Tony Mowbray amid health battle after goal for Blackburn"
     },
     {
+      "desc": "Kroupi prefers Barcelona over Paris Saint-Germain… | Yalla Shoot YSscores",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722852+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTk5oM0htZ01yc0xidjY3U0k2NzNBajc5WTZmUFY5Zk9NSmpNR1ItaHlZNTAwY0dBR3lLZXRUMUltZWwySlBPUEpvZVpTb1hxN25Uc3JYRXZEUENfVHFENHQtbl9OWVBlckVqZ0x2cXJlYlY4djZxb1dLY0lfaXNCZ2dNNVI1R19fZjViNk12Zi0zSUdRbkd2NXp5YkNVWHItOXZwa3Fn?oc=5",
+      "published": "2026-11-22T12:34:17+00:00",
+      "publisher": "https://www.ysscores.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Kroupi prefers Barcelona over Paris Saint-Germain… | Yalla Shoot - YSscores"
+    },
+    {
       "desc": "Tributes paid as former Wrexham vice-chairman and director David Rhodes dies Leader Live",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T13:00:51.742625+00:00",
@@ -6099,6 +6309,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "WSL: Arsenal struggling to create against West Ham LIVE!"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T19:00:52.722904+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-22T11:20:26+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "NEIL ROBERTSON has demanded that Xabi Alonso QUIT Chelsea after the defeat to Leeds. The Blues were well beaten at Stamf",
@@ -6689,226 +6909,6 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Unai Emery to use Barcelona trip as Gavi recruitment mission for Aston Villa - LiveScore"
-    },
-    {
-      "desc": "Share your team with our new FPL feature Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T11:00:54.145993+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBibktFRjJ2TVNfMTY1bklMZ0ZxQTNURHdvVFZ0T2NmTEl1cEpTNnRBbWppcVRQTk9FTXl6RXBSeUpneEVMdkxwNjlDNTFHMFpObGFyZEtMaXg?oc=5",
-      "published": "2026-11-22T04:46:14+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Share your team with our new FPL feature - Premier League"
-    },
-    {
-      "desc": "Video - David Raya to Undergo MRI Scan After Shoulder Injury Against Newcastle United roundtable.io",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T06:00:48.357120+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPV0k1ZUU2VWJFbS1vVHpYZGRtcnE5a1JMcFlweHh6T0N1UHhRb1pyQXpBN0JpMTFFTXJ3Q2NESHdXaUNzYlN2djVDU1BKUjhpaXhwMXdDQ2FNU3ktenh1S01tN05KY0VHR0Y0YldIUlNfQThjNWxBMW5WR2Vscjg4WF92MXVGZzJGUUd2Qk4yYllnQnFVNDZWcWtDRU5OU1BQU1BmaGpTeGhPVk5oQVAwVVBpMFpTNGhXRWR1NlpYdEpSUG8tV0FZamlFVDNFdkVYZjJDUERUdDd3UQ?oc=5",
-      "published": "2026-11-22T02:59:58+00:00",
-      "publisher": "https://roundtable.io",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Video - David Raya to Undergo MRI Scan After Shoulder Injury Against Newcastle United - roundtable.io"
-    },
-    {
-      "desc": "Fulham Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T09:00:56.405901+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaVQwVnY0RlpEcHkxTlMzRkR1cm5JUFZiOGU3U21jaW9kT0hWTC1rcFpKU01BSW55ZGFXQ0pzQm1Ydzd3YTNxU2dOcURkb2ROWE92MzdxUXBRbDIyVWdfNmx3YWJwV1dWZ1J2ZWw4UXZuVEw0WktBbThLaXFUTi1YYy1OVWpXZDVSWlRJMXFYMDJqTUZham9LaWIyRXY?oc=5",
-      "published": "2026-11-22T02:55:43+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Fulham - Manchester City FC"
-    },
-    {
-      "desc": "Trialist A Videos & Best Moments Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T08:00:57.151259+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1zYlNpUjBiMDFqQ3gxOHV1ek5QMG1idFE2RmZXQUhoRmNRSFE4SnBpU01jbEx6Xzh2dDZZaTVSd21PVHhrNGpIcEN1ZnB6OEdKeDV1Yk5iOHo1MDlWWmN0WUh4cy1YYlp5OWluYzFJbUxpdw?oc=5",
-      "published": "2026-11-22T02:37:41+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Trialist A Videos & Best Moments - Premier League"
-    },
-    {
-      "desc": "“Rapidly Securing All Three Homegrown FA Players”: SSG’s Fearsome Move, Preparing for the Bidding War Over “Top FA Targe",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T07:00:53.901366+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBMY05SUUtxMWJ6VTFaRzJnNEQ4SE9aUzFXemZhQS1lYkd4Z21ocGpzTlgtcVhmMmhUT0tnUVhjNWltSTdGdUtVNnBWakpfWGx2NXVjZnFHczZ5QVhRQm1VTmpCRnlZb19RQkp0dnNUbmJZdzU3Vk1JRHBn?oc=5",
-      "published": "2026-11-22T01:35:03+00:00",
-      "publisher": "https://www.starnewskorea.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "“Rapidly Securing All Three Homegrown FA Players”: SSG’s Fearsome Move, Preparing for the Bidding War Over “Top FA Target” Koo Ja-wook - 스타뉴"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T04:00:50.896940+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-22T01:13:45+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Liverpool / Chelsea - Barclays Women's Super League - St Helens Stadium, St Helens Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T01:00:51.113415+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdHpnYlZHVTlDTXI0TjVINWpnOVVZOTdrejlBbW1OVzF4eGthM2pOSW0tdUwxYW0yRnNMLUFTeFdhbk1vNmNFOUZlYTlHVWdxTHJqd0NjWjczVGQ5eDZTeGxpYVpfc1U0RmtWUEI1dVNRNmxvZV9rSzVtUjR5SXJHaDdkLW5ndDYtVFl2ZDN2MjdMTmxfS0lDSl95bXM5aUNKaTNKdkRBdkNzOFBkZDV5M0RhdzVRTWc?oc=5",
-      "published": "2026-11-22T00:56:54+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool / Chelsea - Barclays Women's Super League - St Helens Stadium, St Helens - Liverpool FC"
-    },
-    {
-      "desc": "Has the sex noise prank happened on live TV before? Yes, at least three times before Strictly Nacionale",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T01:12:14.537259+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUi1HNmNsRUJpOGJwT2dpNHBLcGU5OTF2TlZjdVZ4SW13TC1qbFFyY28xOWRfRE9WaXZXMjNJLWVIS3A5Wjd3MmdEaElvbGRwa01BdTlYTGUxSlR3TDlQMWRpSExDWXkyV0d4b0toVDY4QkZOMjdWdHN5NUgxaW1DWktyc2hpWEFCWWxVMXhCSnVodnppYkpZNWFPbXRYTy1Fd3NIaTFXN0xyMjhLNHR0UTVPT0w4a2xCaUE?oc=5",
-      "published": "2026-11-22T00:50:51+00:00",
-      "publisher": "https://www.nacionale.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Has the sex noise prank happened on live TV before? Yes, at least three times before Strictly - Nacionale"
-    },
-    {
-      "desc": "MELLON & BRUCE STUNG BY BANS Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T05:00:52.535549+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBGOEt0QXhndFdOLWdQeGh2cUpIZUp0b3JzWUpOTUd6eUxDUnBOck9GSVcxMW1mVEJsY1hCNkk5cnZkOUhleDVQTUhZVVFpTHktLVQwbF9DOTBIaU13WnVkM1JPLXhDOFF4MXBhZ3Qwb3BNOHRQRnJZaGpNYXQ?oc=5",
-      "published": "2026-11-22T00:00:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "MELLON & BRUCE STUNG BY BANS - Yahoo Sports"
-    },
-    {
-      "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino held back tears as he received an emotional send-off from USA's nati",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T00:01:08.435638+00:00",
-      "link": "https://www.thesun.co.uk/sport/41104098/mauricio-pochettino-usa-send-off-man-utd-liverpool/",
-      "published": "2026-11-21T23:32:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Inside Man Utd boss Mauricio Pochettino’s tearful USA send-off with Chick-fil-A and favourite bottle of tequila"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T23:00:50.323276+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025489/tottenham-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-21T22:37:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Spurs latest: 'Williams-Barnett has to be given assist for my goal!' says Solanke"
-    },
-    {
-      "desc": "PARIS SAINT-GERMAIN star Desire Doue suffered a horror injury that left him crying despite never clashing with an oppone",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T23:00:50.323294+00:00",
-      "link": "https://www.thesun.co.uk/sport/41103822/desire-doue-serious-injury-luis-enrique-confirms/",
-      "published": "2026-11-21T22:32:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Desire Doue stretchered off pitch in tears as PSG boss Luis Enrique confirms ‘serious injury’ despite no contact"
-    },
-    {
-      "desc": "LEEDS stars turned Stamford Bridge into Ally Pally after thumping Chelsea 4-1. The Blues were bullied on home turf as th",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T23:00:50.323308+00:00",
-      "link": "https://www.thesun.co.uk/sport/41103845/leeds-stars-party-luke-littler-chelsea-win/",
-      "published": "2026-11-21T22:27:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Leeds stars celebrate epic Chelsea win with Luke Littler-inspired party as away dressing room goes wild"
-    },
-    {
-      "desc": "Tottenham boss Roberto De Zerbi was not surprised by a dazzling full-debut display from “special” talent Luca Williams-B",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T23:00:50.323321+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615058/luca-williams-barnett-tottenham-boss-roberto-de-zerbi-compares-teenager-to-lamine-yamal-after-ipswich-heroics",
-      "published": "2026-11-21T22:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "De Zerbi compares Williams-Barnett to Lamine Yamal - who is Spurs teen?"
-    },
-    {
-      "desc": "MANCHESTER UNITED’S flops have been told by new boss Mauricio Pochettino the real work starts AFTER Sunday's trip to Liv",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T23:00:50.323341+00:00",
-      "link": "https://www.thesun.co.uk/sport/41103174/man-utd-mauricio-pochettino-training-michael-carrick-liverpool/",
-      "published": "2026-11-21T22:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Struggling Man Utd stars get culture shock in training under Pochettino with promise it gets even WORSE after Liverpool"
-    },
-    {
-      "desc": "SAM SURRIDGE is going toe-to-toe with Lionel Messi for MLS Cup glory — and wonders if Thomas Tuchel might be watching. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T23:00:50.323355+00:00",
-      "link": "https://www.thesun.co.uk/sport/41093110/sam-surridge-messi-mls-cup-thomas-tuchel/",
-      "published": "2026-11-21T22:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Prem & EFL star Sam Surridge going toe-to-toe with Lionel Messi in MLS Cup bid — and hopes Thomas Tuchel is watching"
-    },
-    {
-      "desc": "DAVID RAYA will have an MRI tomorrow after going off injured in Arsenal's 2-2 draw with Newcastle. The Spanish keeper co",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T22:00:59.651034+00:00",
-      "link": "https://www.thesun.co.uk/sport/41103653/mikel-arteta-david-raya-injury-update-arsenal-newcastle/",
-      "published": "2026-11-21T21:46:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Not good news’ – Mikel Arteta shares worrying David Raya update after nasty-looking injury in Arsenal draw vs Newcastle"
-    },
-    {
-      "desc": "David Raya Injury Update: Shoulder MRI Before Dortmund and City (21 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T22:00:59.651072+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTU94bWFXU0hMa1FaUnljbmY3LVZzRUlFWnk3eUwtSDU2SXNjTkNwVHZROWVXT2lITk1CU3lLaExyeVF5Y2ZRUTctVUhNby1VY0xxekxXVGc1WEpWZnRMdUlxYnRVOGJ2U2RzbzBuSjNKVDUxZjlkNGduVXQ3X2VKTWRuTlF5cXhYTGhHWA?oc=5",
-      "published": "2026-11-21T21:44:46+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "David Raya Injury Update: Shoulder MRI Before Dortmund and City (21 November) - The False 9"
-    },
-    {
-      "desc": "THREE days to get his new team ready for Liverpool at Anfield? Mauricio Pochettino may have been dropped in the deep end",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T22:00:59.651103+00:00",
-      "link": "https://www.thesun.co.uk/sport/41103517/mauricio-pochettino-man-utd-harry-redknapp-tottenham-liverpool/",
-      "published": "2026-11-21T21:43:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "I managed Spurs to a victory hours after meeting the squad – here’s how Pochettino can get off to winning Man Utd start"
-    },
-    {
-      "desc": "MANCHESTER City’s Abu Dhabi chairman raised the Premier League’s investigation into his football club during trade talks",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T22:00:59.651130+00:00",
-      "link": "https://www.thesun.co.uk/sport/41102101/man-city-lobbying-scandal-probe-trade-talks/",
-      "published": "2026-11-21T21:43:03+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City lobbying scandal deepens as redacted docs show Prem probe WAS raised during trade talks with Business Secretary"
-    },
-    {
-      "desc": "The Gunners' No 1 went off in the second half in the 2-2 draw at St James' Park, supporting his arm or shoulder before h",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T22:00:59.651202+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16312085/Arsenal-David-Raya-arm-scan-Newcastle.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T21:37:01+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Arsenal face nervous wait with David Raya set for scan after being forced off against Newcastle... as club legend Ian Wright admits he's 'pe"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T22:00:59.651231+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13279317/ipswich-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-      "published": "2026-11-21T21:31:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Ipswich latest: O'Neil reflects on 'tough afternoon' after Spurs loss"
     }
   ],
   "processed_urls": [
