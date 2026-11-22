@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 46363,
-    "output_tokens": 5692,
-    "requests": 8
+    "input_tokens": 52248,
+    "output_tokens": 6361,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3068,6 +3068,41 @@
       "title": "桑德兰争议点球绝杀切尔西，蓝军进攻哑火引质疑",
       "updated_at": "2026-11-08T16:45:47.233446+00:00"
     },
+    "89a31871d9bf": {
+      "article_title": "Man Utd have worst defence in EUROPE with even more goals conceded than Prem basement boys Crystal Palace",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "00eb85b4e7d312ed",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 213
+        }
+      ],
+      "created_at": "2026-11-22T22:00:56.835333+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ad8c252d63748f05",
+      "event_id": "89a31871d9bf",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T22:00:56.835333+00:00",
+          "origin": "created",
+          "title": "Man Utd have worst defence in EUROPE with even more goals conceded than Prem basement boys Crystal Palace",
+          "url": "https://www.thesun.co.uk/sport/41110217/man-utd-worst-defence-europe-crystal-palace"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41110217/man-utd-worst-defence-europe-crystal-palace",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 213,
+      "title": "曼联被曝成欧洲防守最差球队，丢球数超水晶宫",
+      "updated_at": "2026-11-22T22:00:57.582206+00:00"
+    },
     "8cf58fbfb0ec": {
       "article_title": "Mauricio Pochettino's Man United rallying cry: New boss promises fans it will be a 'SPECIAL' season - despite club sitting in drop zone - as",
       "attempts": 1,
@@ -5459,7 +5494,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T21:50:11.561398+00:00",
+  "last_scan_at": "2026-11-22T22:00:50.938226+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5480,6 +5515,26 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MAURICIO POCHETTINO unconvincingly defended his decision to start Matthijs de Ligt in Manchester United’s 4-0 thrashing ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T22:00:50.941677+00:00",
+      "link": "https://www.thesun.co.uk/sport/41110151/mauricio-pochettino-matthijs-de-ligt-man-utd-liverpool/",
+      "published": "2026-11-22T21:56:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino explains tactical reason behind rare Matthijs de Ligt start in Man Utd debut after it backfired"
+    },
+    {
+      "desc": "MANCHESTER UNITED flop Bebe went viral after a wild shot missed the target and smashed the stadium lights. The winger we",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T22:00:50.941713+00:00",
+      "link": "https://www.thesun.co.uk/sport/41110337/man-utd-bebe-shatters-lights-shot-alex-ferguson/",
+      "published": "2026-11-22T21:56:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-Man Utd flop Bebe goes viral after wild shot misses goal by miles and SHATTERS LIGHTS in stadium"
+    },
     {
       "desc": "Fifa is set to confirm on Monday that a first football World Cup will be hosted in the United Kingdom since 1966.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -5619,6 +5674,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Bundesliga"
+    },
+    {
+      "desc": "Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T22:00:50.942083+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43RGFYMnIxYVNsN0FtWHY5VHRoNUFXLXJaMFVzVzdZQTh6NlZwZlFNNXY2R1o0cGlJQkp6bWxwODZpWWlZdkg4d1oyV3Azc1RXbUtmVg?oc=5",
+      "published": "2026-11-22T20:04:39+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United Website"
     },
     {
       "desc": "JOSHUA ZIRKZEE produced one small moment of excitement during Manchester United's otherwise miserable 4-0 thumping at Li",
@@ -6949,36 +7014,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Bruno Fernandes reveals contract negotiations with Manchester United have stalled after he rejected a new deal in the summer"
-    },
-    {
-      "desc": "Stream U19s on Tuesday afternoon Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T15:00:49.075018+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5EQnptSTE0eUZIalJ0ZXBhMHNJQkVSR2VNWk82Wi1xOG1MazMxXzVxMkdMVEVSQVlOZFI5UWwxcGprQWU3RGdQN3RUQ3kwU3JIQnlnS3QycDFJb2hKeVpMSEhHdFlIRFBqdjZZQ3FCLUZmc3A5V29kQnQwS0pNM0k?oc=5",
-      "published": "2026-11-22T09:22:39+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Stream U19s on Tuesday afternoon - Arsenal.com"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T13:00:51.743200+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tNFRxNmdiMHdqU1JLQTA5UUFUTklIYnFFa0s3cDVOdmcyaUFqazJwRXVBX1pOTXhuYXhlUXU0TUpKM2JRRTJlLUxoclg2LXg0ZzdtdnZROUZleXo2Q3B5NVQyNzR2dnNRMllTano4eDRWVThvVDA4YmNB?oc=5",
-      "published": "2026-11-22T09:20:12+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "Read Renée's West Ham programme notes Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T11:00:54.145292+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMW5TNzdndWUtV0pCUUlhLTV2aWVrQjFzRXZGSll1RFBsWTRrYUd2Uk5VT2ViOWRmbGYtcUVGOVJJSlRUWWlwUGJrQVZZWnpuR2ZUZzV6eTd6N2VWV1RCZnQtekd3cFZ6TWZDXzlaQ2J5U19ac0lRSTBKbjlKN1RsaGJhcnQ?oc=5",
-      "published": "2026-11-22T09:07:03+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Read Renée's West Ham programme notes - Arsenal.com"
     }
   ],
   "processed_urls": [
@@ -7150,7 +7185,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero",
     "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut",
     "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html",
-    "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino"
+    "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino",
+    "https://www.thesun.co.uk/sport/41110217/man-utd-worst-defence-europe-crystal-palace"
   ],
   "s_overflow": {},
   "schema_version": 4
