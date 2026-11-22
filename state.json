@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 117309,
-    "output_tokens": 14123,
-    "requests": 20
+    "input_tokens": 123159,
+    "output_tokens": 14650,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5002,6 +5002,41 @@
       "title": "曼联切尔西联合最佳阵：红魔6人入选引争议",
       "updated_at": "2026-10-31T11:20:38.057660+00:00"
     },
+    "f5d4b81c220f": {
+      "article_title": "Argentina midfielder Paredes collapses during TV interview",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "a1d54bf46ca87ab3",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 202
+        }
+      ],
+      "created_at": "2026-11-22T09:01:02.853652+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "008c2efedfabc6b0",
+      "event_id": "f5d4b81c220f",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T09:01:02.853652+00:00",
+          "origin": "created",
+          "title": "Argentina midfielder Paredes collapses during TV interview",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 202,
+      "title": "帕雷德斯赛后直播采访中突然晕厥",
+      "updated_at": "2026-11-22T09:01:03.981742+00:00"
+    },
     "f84cd935fd09": {
       "article_title": "'F*** the Pope and the IRA' chant lands England in hot water as fans are given suspended one-game stadium ban and FA fined",
       "attempts": 1,
@@ -5179,7 +5214,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T08:02:44.688393+00:00",
+  "last_scan_at": "2026-11-22T09:00:56.403814+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5200,6 +5235,56 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Manchester United captain Bruno Fernandes says he has been offered a new contract by the club but feels it \"is not the r",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T09:00:56.405641+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6x2e8devk1po?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T08:41:20+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Not the right time' - Fernandes pauses Man Utd contract talks"
+    },
+    {
+      "desc": "Premier League Football News, Fixtures, Scores & Results Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T09:00:56.405659+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE0ybW56TURtbnh4VXdOOHZqM05pTGxxMjVuUVJsUVotMnc1MjJBaDhBdzlibHBDeEF5aW5SQWFudUlmUlNs?oc=5",
+      "published": "2026-11-22T08:25:12+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Premier League Football News, Fixtures, Scores & Results - Premier League"
+    },
+    {
+      "desc": "Watch: Barnes celebrates major career milestone after Arsenal goal Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T09:00:56.405674+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWXBZelFLQmpzdXFEZ0ZCUVFsemJ5RE1PYXByUGNhWHZpc1ViYkhPSmJ1YjhjN3JYUGRLa1BrNFFhY2VfdzA0WUFBY2NpbFMzYkNVdHV1ZVBmRnFSalBqZE5uUEtOakk5V0ZocDl2MFpaOW9ZaG1USkVsRVRyS2xSWElqUWI5Ymloak9HQTUzUEtld21XZGdoN21qYV9Jd1M5eGtGM0RoZFlpcnpJOTliQQ?oc=5",
+      "published": "2026-11-22T08:21:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch: Barnes celebrates major career milestone after Arsenal goal - Premier League"
+    },
+    {
+      "desc": "Fabrizio Romano News: One team 'in love' with Endrick as Spurs reject Williams-Barnett bids FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T09:00:56.405688+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNkFJMDFUa1BFQ3ZYU2poaW9Mdm5la0d1U3drMmZueFJHVXY5RWZLMkxDNjgweFJSVk1MTG9KRWJXdDFNLVV6Y2NnZHNPaGdVN0FGTi1nZjFidXhXSDF3ZjdEazVLcVhYNTZxUG5FS3dtazZnb3NQakZ2Q1BTNldab2J4UVRLMkdNckJnWEg2czVqVW9kZEVPak9qLVVmRWNVWFVCczJibzRFQW4yUU5iZ3dFMUxlelpWU1UxX3o0eF96MGtmeGl5MzBfZ25DeTVyR093WS04MnphQ1ZOanhvMHhWd0lXQ0pGRk9FZUV5cw?oc=5",
+      "published": "2026-11-22T08:08:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano News: One team 'in love' with Endrick as Spurs reject Williams-Barnett bids - FootballTransfers.com"
+    },
+    {
+      "desc": "Alonso: We need to be tougher to recover from set-backs | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T09:00:56.405701+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdEV1cTdoNEFTRmhnUlRqcW5FM0VESllEa3E1eERJcDcxSXJNbG53dXZXeld2NWJTdjN4bllsTF9UdzZPcV96c2llY2ROeWVHeHhaWDU2VkpGVFV0V1QxMXZDRzRjblpXdVJac0FRX0o2eGNhVENIWWxIcy1DMHZwTkFPOG9LT1Y1MHoyNll2OTJ2eXlXM0dBYkx1QWQ?oc=5",
+      "published": "2026-11-22T08:00:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Alonso: We need to be tougher to recover from set-backs | News | Official Site - Chelsea Football Club"
+    },
     {
       "desc": "LEANDRO PAREDES collapsed while giving a post-match interview after winning the Copa Sudamericana. The Argentine star wa",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5229,6 +5314,26 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Why Arsenal are behind in race for Champions League spots"
+    },
+    {
+      "desc": "World Cup winning midfielder Leandro Paredes collapses while giving a post-match interview minutes after winning a troph",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T09:00:56.405745+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T07:13:34+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Argentina midfielder Paredes collapses during TV interview"
+    },
+    {
+      "desc": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T09:00:56.405757+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq0l31gw1809o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T07:12:55+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
     },
     {
       "desc": "We do not know why Cole Palmer headed for the tunnel in a huff after full-time while others in the same Chelsea side par",
@@ -5311,6 +5416,16 @@
       "title": "International breaks tough on top clubs – Mourinho - Punch Newspapers"
     },
     {
+      "desc": "7 Iliman Ndiaye Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T09:00:56.405853+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOV3J4bDNNZ0xudXdBdFJGR1pXLXQ5bVVPTVAwdTJXTllWQlBpQ3c3aHlONTlOQXdoV0NyeDhYUlhFQ01nMkU4N0lSOFl6R2gtU2dOblVEanJtNmloeEJ3dTJZSkhNclVoYkdmRU9mdS1HR3k3NDZXOTQ5NHI0eVVxa2R4bWx3Z3JuV2tmb1plclFaenJkVlBSa1d3NTllQ3pWUk12c05ocUNHNTZmSk5odk1rc19tVktiR2RsSXFNOVBZWmEwR2owMmdwcmNLeUty?oc=5",
+      "published": "2026-11-22T05:34:02+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "7 Iliman Ndiaye - Man City Shop"
+    },
+    {
       "desc": "Inside Anfield: BEST UNSEEN FOOTAGE From Premier League Trophy Lift | Liverpool vs Crystal Palace Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-22T06:00:48.357028+00:00",
@@ -5339,6 +5454,16 @@
       "publisher": "https://roundtable.io",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Video - David Raya to Undergo MRI Scan After Shoulder Injury Against Newcastle United - roundtable.io"
+    },
+    {
+      "desc": "Fulham Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T09:00:56.405901+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaVQwVnY0RlpEcHkxTlMzRkR1cm5JUFZiOGU3U21jaW9kT0hWTC1rcFpKU01BSW55ZGFXQ0pzQm1Ydzd3YTNxU2dOcURkb2ROWE92MzdxUXBRbDIyVWdfNmx3YWJwV1dWZ1J2ZWw4UXZuVEw0WktBbThLaXFUTi1YYy1OVWpXZDVSWlRJMXFYMDJqTUZham9LaWIyRXY?oc=5",
+      "published": "2026-11-22T02:55:43+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Fulham - Manchester City FC"
     },
     {
       "desc": "Trialist A Videos & Best Moments Premier League",
@@ -6609,96 +6734,6 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Was it right to disallow Erling Haaland’s goal as Man City are held to Fulham draw - The New York Times"
-    },
-    {
-      "desc": "Lamb hat-trick helps City Under-18s hit Blackburn for six Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:00:54.689393+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYTFURWNOdjdMclhtbVcxOGdWZ0Z3UzYwT0ZXcTBIRXdEbEhiY25GX1IzNlhxeDlsM2FjM0E0R3dnTmlvVkRMOEpQak5jVUhLblpEUjRwQXNhYWhsRk5WLWxVTVRobmJ3dDFwTHdwcEg3Vm1tLS0tUnFMa2ZzRTg5dEdyQkRkT1NWVU9mOGFJWEtuOW0taHc2SlYzY3F6NTZsZmFfTUtESnFpNmtmTkE?oc=5",
-      "published": "2026-11-21T14:30:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Lamb hat-trick helps City Under-18s hit Blackburn for six - Manchester City FC"
-    },
-    {
-      "desc": "City held to frustrating draw by Fulham Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:00:54.689415+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNb3RQazF1Z29MVzd6eWNpckJ4LVBHeFp4bGtSV2x3aFRZTkRxNERnMFM1TnZ5SzJ3bmRjUFh0aUdsYW45QTBRMVdrZmZHYnlyZzJiWmdqUm1DaW52YlB6VlYyNEU0U1RkZ01Yc3VWWUt0VE4tckM4N0I1Q1hLcEdJc3ZRNF9CNUlwRFRQSWtWRFhrVTdXRjhDSjVRNGZXcncyY1pCdQ?oc=5",
-      "published": "2026-11-21T14:25:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "City held to frustrating draw by Fulham - Manchester City FC"
-    },
-    {
-      "desc": "WhatsApp messages at the centre of the Mudryk-Shevchenko row KarloBag.eu",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T21:00:50.846679+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcnRDVnNnaTF3ZlQ5dU5OMDFublZRMUE5X3RVNEdpUW5Zak5ST2ZnV2R3bG5JN1k0VEpBOUtscGZxS0ZHMzBuS2YwWG5uQ3NQdnhHZUx5UVZHejVNLWdlZk9xNV9QNVNzTDZTdWlvUkRkQS01OW91eDk5QktGQzFsU2JrYmlaRUlJbFN1WkxVeEtMNmFRSlRiRmQwLXNMNGNxOUFNQWVpNlZhVVJqMWs1T2VXUXNIS1Iy?oc=5",
-      "published": "2026-11-21T14:24:41+00:00",
-      "publisher": "https://karlobag.eu",
-      "source": "https://www.thefa.com/rss",
-      "title": "WhatsApp messages at the centre of the Mudryk-Shevchenko row - KarloBag.eu"
-    },
-    {
-      "desc": "RODRIGO MUNIZ got the goal which helped Fulham finally end the longest losing streak in English football history. It was",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T15:00:54.689438+00:00",
-      "link": "https://www.thesun.co.uk/sport/41092429/man-city-fulham-1-1-elliot-anderson-haaland-goal/",
-      "published": "2026-11-21T14:21:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City 1 Fulham 1: City BOOED off as Anderson rescues point after Haaland’s goal is controversially ruled out"
-    },
-    {
-      "desc": "How Manchester City and Fulham players rated in their Premier League match.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T15:00:54.689462+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqwy06p44g3no?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T14:21:31+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Anderson steps up, Berge impresses - player ratings for Man City v Fulham"
-    },
-    {
-      "desc": "Norwich came from behind to beat Cardiff 2-1 and make it five straight Championship victories - after losing their previ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T15:00:54.689479+00:00",
-      "link": "https://www.skysports.com/football/norwich-city-vs-cardiff-city/report/560683",
-      "published": "2026-11-21T14:20:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Norwich hit back to beat Cardiff"
-    },
-    {
-      "desc": "Roberto De Zerbi on Tonali absence Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:31:49.983729+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbTJXX3VBY0xydW8wRmFtNHlUQVlacm5HMVpGZE9EWUlDZEg5NG1hblREWjkzMEQzYlRVd2xVWWFvcm5nMExZa2trcXpnYWV3MDRZRkhiV2EzRUhmQ2poV1JpNkJkZnpPVThIWlVHVVp6dmIxbi1UcnRfVUM0LVV0dGJGYWJ1Q1k?oc=5",
-      "published": "2026-11-21T14:18:15+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Roberto De Zerbi on Tonali absence - Tottenham Hotspur"
-    },
-    {
-      "desc": "U18s match report: Liverpool come back to claim 4-3 victory away at Stoke City Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:31:49.983756+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZ1RaWHNXMnZRcGJDMUJBTFI0VDBiTU1WT3Q2N1hKaWhScm9PX3JuMnljMFd5eTlnR2Y1YW5lTU10dE1GRGxuQzctWlE0MjdZdHE1Y2pnSWlMTlRBTkI4N1VFRTlkU2JLQ2FTNmpoejNTaWh2eUdFSXlJeWFoMzZTQg?oc=5",
-      "published": "2026-11-21T14:16:56+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "U18s match report: Liverpool come back to claim 4-3 victory away at Stoke City - Liverpool FC"
-    },
-    {
-      "desc": "Cyle Larin returned to action with a bang as Southampton extended their unbeaten run at home in the Championship to 18 g",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T15:00:54.689497+00:00",
-      "link": "https://www.skysports.com/football/southampton-vs-derby-county/report/560685",
-      "published": "2026-11-21T14:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Southampton see off Derby to return to winning ways"
     }
   ],
   "processed_urls": [
@@ -6862,7 +6897,8 @@
     "https://www.thesun.co.uk/sport/41101407/luca-williams-barnett-tottenham-ipswich-match-report",
     "https://www.thesun.co.uk/sport/41102444/david-raya-injured-newcastle-arsenal-joe-willock-osula",
     "https://www.bbc.co.uk/sport/football/articles/ckx28w9ree9vo",
-    "https://www.dailymail.com/sport/football/article-16311993/Cole-Palmer-frosty-exchange-Joao-Pedro-Chelsea-4-1-humiliation-Leeds.html"
+    "https://www.dailymail.com/sport/football/article-16311993/Cole-Palmer-frosty-exchange-Joao-Pedro-Chelsea-4-1-humiliation-Leeds.html",
+    "https://www.bbc.co.uk/sport/football/articles/cwnv45818z59o"
   ],
   "s_overflow": {},
   "schema_version": 4
