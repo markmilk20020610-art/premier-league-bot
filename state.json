@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 97305,
-    "output_tokens": 11556,
-    "requests": 16
+    "input_tokens": 101494,
+    "output_tokens": 12237,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5179,7 +5179,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T05:00:52.531917+00:00",
+  "last_scan_at": "2026-11-22T06:00:48.353514+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5200,6 +5200,46 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "International breaks tough on top clubs – Mourinho Punch Newspapers",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T06:00:48.356990+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMN3U0cVJtUk5rU0VKeGMySTM0eGh1MDNMYUEyTHdYcW10MXlDZnl5V2MtVUlHajA1MzlLTXNhWklIU3M1UnZ2MERYZFJxWkZpM3JXWklZc1pfWFBmX2lRbl9JUEczSTJQUklTN0JBY2ZraGdnN0luZUREYUJ0QQ?oc=5",
+      "published": "2026-11-22T05:43:09+00:00",
+      "publisher": "https://punchng.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "International breaks tough on top clubs – Mourinho - Punch Newspapers"
+    },
+    {
+      "desc": "Inside Anfield: BEST UNSEEN FOOTAGE From Premier League Trophy Lift | Liverpool vs Crystal Palace Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T06:00:48.357028+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA3cVliQld0UFRWei13dW5sMnQxWHN1cDBsdTl4bHNCQnRzQUtsR1BnVUhheTZYZHozdW1rX19sWUJwaHFtVHVKNjVoQzhZa2k2cXFzeHBrRE0yNFVtb2p0dzZBRzM1Wjc1dE1EdXVDM2dKYXl2YmF2VkFSRQ?oc=5",
+      "published": "2026-11-22T05:28:37+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Inside Anfield: BEST UNSEEN FOOTAGE From Premier League Trophy Lift | Liverpool vs Crystal Palace - Liverpool FC"
+    },
+    {
+      "desc": "Man City have problems all over the pitch. Don’t get this wrong – it’s not the verdict The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T06:00:48.357060+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNZy1iR0R1MEFFUDFDSkZGa1pSZG00eV8tTlRlV1FCQlR5dG9ibHoxYmRnbFMxUzFKVGVuempXa0NPNUl0bTVDU1dsQlAxQ2Myc0RxTHFmUkctaHJldEh5cGIzYVpzQkJZSlUxd1hxSkFOZU9zZGUwem81MFZJQkkyWWJuQXV5S1daRkFKMUtMRmdYb042b1RDUzVpeG9oMVJZUC1ycHNvb3pNTElCYW9R?oc=5",
+      "published": "2026-11-22T05:10:21+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City have problems all over the pitch. Don’t get this wrong – it’s not the verdict - The New York Times"
+    },
+    {
+      "desc": "Video - David Raya to Undergo MRI Scan After Shoulder Injury Against Newcastle United roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T06:00:48.357120+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPV0k1ZUU2VWJFbS1vVHpYZGRtcnE5a1JMcFlweHh6T0N1UHhRb1pyQXpBN0JpMTFFTXJ3Q2NESHdXaUNzYlN2djVDU1BKUjhpaXhwMXdDQ2FNU3ktenh1S01tN05KY0VHR0Y0YldIUlNfQThjNWxBMW5WR2Vscjg4WF92MXVGZzJGUUd2Qk4yYllnQnFVNDZWcWtDRU5OU1BQU1BmaGpTeGhPVk5oQVAwVVBpMFpTNGhXRWR1NlpYdEpSUG8tV0FZamlFVDNFdkVYZjJDUERUdDd3UQ?oc=5",
+      "published": "2026-11-22T02:59:58+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Video - David Raya to Undergo MRI Scan After Shoulder Injury Against Newcastle United - roundtable.io"
+    },
     {
       "desc": "My Account | Tickets - Man City Manchester City FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6659,46 +6699,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Daily Who Am I? Play 21 November Premier League game - Premier League"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T14:01:00.680424+00:00",
-      "link": "https://www.skysports.com/football/coventry-city-vs-crystal-palace/live/559548",
-      "published": "2026-11-21T13:29:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Coventry vs Crystal Palace team news LIVE!"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T14:01:00.680439+00:00",
-      "link": "https://www.skysports.com/football/tottenham-hotspur-vs-ipswich-town/live/559553",
-      "published": "2026-11-21T13:24:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Spurs teenager Williams-Barnett handed first start vs Ipswich LIVE!"
-    },
-    {
-      "desc": "ERLING HAALAND was left fuming after being denied a controversial equaliser for Manchester City against Fulham - with fa",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T14:01:00.680457+00:00",
-      "link": "https://www.thesun.co.uk/sport/41091820/erling-haalands-goal-ruled-out-man-city/",
-      "published": "2026-11-21T13:13:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Major controversy as Erling Haaland’s goal is RULED OUT in Man City vs Fulham with TNT Sports pundit stunned"
-    },
-    {
-      "desc": "Confirmed line-ups: Spurs vs Ipswich Town Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T14:01:00.680474+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMVJtVU00UGRuYTlzTnBYNEYxejBwVWJUMXdrbk8teW84X3V6YWpFSVVENVN0U0xGQm1UdG5qLWU1Y2ZqNzJhdE5uVENzTHJMbjVyVTBWaXFnSGRDSTRGSlFBdy0xSmZNaUlnNWNWZkhRcEJPWGNuTDU1UWRHZk9maHFBeUlQWW15eGR4blp5U1ZiR0hOM0wyQWZwLUNYMTBwaktKUmRqS0dLMkxXLXRHVVpWc2N5Zw?oc=5",
-      "published": "2026-11-21T13:13:20+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Confirmed line-ups: Spurs vs Ipswich Town - Tottenham Hotspur"
     }
   ],
   "processed_urls": [
