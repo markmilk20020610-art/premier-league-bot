@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 5665,
-    "output_tokens": 498,
-    "requests": 1
+    "input_tokens": 11341,
+    "output_tokens": 1086,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5354,7 +5354,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T16:00:54.321432+00:00",
+  "last_scan_at": "2026-11-22T16:12:11.966198+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5376,6 +5376,16 @@
   },
   "news_pool": [
     {
+      "desc": "ARSENAL fans are in for a thrilling end to the year with the small matter of NINE fixtures before 2027 begins. Mikel Art",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T16:12:11.969761+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107523/arsenal-kits-reduced-black-friday-sale/",
+      "published": "2026-11-22T16:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal shirts reduced by up to £50 including this season’s kit in massive Black Friday sale – retro kits up to £35 off"
+    },
+    {
       "desc": "OLI MCBURNIE capitalised against ten-man Brighton to seal 2-0 win at MKM Stadium. Costinha pushed Sorba Thomas in the 89",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T16:00:54.323989+00:00",
@@ -5384,6 +5394,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Hull 2 Brighton 0: Oli McBurnie scores dramatic injury-time double in blow to Seagulls’ Premier League title dream"
+    },
+    {
+      "desc": "Watch highlights of Barcelona 3-2 Villarreal, as the home side come from 2-0 down, Lamine Yamal misses a penalty, but st",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T16:12:11.969813+00:00",
+      "link": "https://www.skysports.com/watch/video/13615299/barcelona-3-2-villarreal-la-liga-highlights",
+      "published": "2026-11-22T15:56:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "2-0 down, Yamal misses pen but Barcelona STILL beat Villarreal"
     },
     {
       "desc": "PEP GUARDIOLA has been spotted dancing at a samba club during a trip to Brazil. The out-of-work manager has been enjoyin",
@@ -5404,6 +5424,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "PSG's Doue to have surgery on ruptured ACL"
+    },
+    {
+      "desc": "Team news: Confirmed Liverpool line-up v Manchester United Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T16:12:11.969891+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNHF6Y2pDMnZiSmZHcW1GSzVBMkxqZHV2aERiUURFcExocVVpV2xPeUJ4WmJfeGI0TVRnV2ZaOUFrSnRMaDhZbU5QS1YwM1lDeW80UUNFQzBSU1JqbFdVU3lzX09XMnBvQnd6amhPWm55MkRzYjIydS1NWGJCWnF2cDdadEJ2T2JwRlBSUWYxbGdPcFVT?oc=5",
+      "published": "2026-11-22T15:29:10+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Team news: Confirmed Liverpool line-up v Manchester United - Liverpool FC"
     },
     {
       "desc": "LISA BAUM was stretchered off while wearing an oxygen mask after going down off the ball during Arsenal Women's showdown",
@@ -6844,36 +6874,6 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Arsenal Player Ratings vs Newcastle: 2-2, Madueke Rescues Point as Raya Hurt - The False 9"
-    },
-    {
-      "desc": "ARSENAL were almost blown away by Newcastle’s second half fightback before Noni Madueke rescued a point. The leaders wer",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T20:00:48.093543+00:00",
-      "link": "https://www.thesun.co.uk/sport/41093769/arsenal-player-ratings-newcastle/",
-      "published": "2026-11-21T19:38:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal player ratings: Noni Madueke shines but Bruno Guimaraes flops on return to Newcastle"
-    },
-    {
-      "desc": "HOLLYWOOD superstar Ryan Reynolds was spotted at Tottenham's VIP section during the Premier League clash against Ipswich",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T20:00:48.093559+00:00",
-      "link": "https://www.thesun.co.uk/sport/41101971/ryan-reynolds-wrexham-premier-league-tottenham-ipswich-lincoln/",
-      "published": "2026-11-21T19:37:40+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ryan Reynolds snubs Wrexham’s clash at Lincoln to watch Premier League giants"
-    },
-    {
-      "desc": "BBC Sport's Alex Howell shares his player ratings for Newcastle and Arsenal's 2-2 draw in the Premier League - and you c",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T20:00:48.093579+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq4gn97e8ee4o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:29:48+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who was 'a consistent threat'? Newcastle v Arsenal player ratings"
     }
   ],
   "processed_urls": [
