@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 64825,
-    "output_tokens": 7408,
-    "requests": 10
+    "input_tokens": 70342,
+    "output_tokens": 8117,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5179,7 +5179,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T00:01:08.433578+00:00",
+  "last_scan_at": "2026-11-22T01:00:51.110899+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5200,6 +5200,16 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Liverpool / Chelsea - Barclays Women's Super League - St Helens Stadium, St Helens Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T01:00:51.113415+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdHpnYlZHVTlDTXI0TjVINWpnOVVZOTdrejlBbW1OVzF4eGthM2pOSW0tdUwxYW0yRnNMLUFTeFdhbk1vNmNFOUZlYTlHVWdxTHJqd0NjWjczVGQ5eDZTeGxpYVpfc1U0RmtWUEI1dVNRNmxvZV9rSzVtUjR5SXJHaDdkLW5ndDYtVFl2ZDN2MjdMTmxfS0lDSl95bXM5aUNKaTNKdkRBdkNzOFBkZDV5M0RhdzVRTWc?oc=5",
+      "published": "2026-11-22T00:56:54+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool / Chelsea - Barclays Women's Super League - St Helens Stadium, St Helens - Liverpool FC"
+    },
     {
       "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino held back tears as he received an emotional send-off from USA's nati",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5361,6 +5371,16 @@
       "title": "Raya set to have scan on injury - how much would Arsenal miss him?"
     },
     {
+      "desc": "Arteta rues two dropped points after Newcastle draw Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T01:00:51.113713+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV0RYb0VGRjlfaXAwbEJRMUVkenZJMEw1Wmx3NUZ3UHA2ZVhkZnQyVkNSSU1jeDlRVV9ZaGx4cVg2bVNOYWJFXzQ5YmwzQ0FpRnpXc0RBUVFkNVQ0RU5aYVJ5Q1hfSi1tMThaZ3BYZ2tPS25reHg0UkhSMFdYUVNodXRiX3JLY1ZieHh3VFFvRVg3QjRacEwtUA?oc=5",
+      "published": "2026-11-21T21:11:49+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arteta rues two dropped points after Newcastle draw - Arsenal.com"
+    },
+    {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-21T23:00:50.323468+00:00",
@@ -5381,6 +5401,26 @@
       "title": "Mauricio Pochettino breaks silence on ‘dangerous’ drone that filmed his Man Utd training session"
     },
     {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T01:00:51.113757+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yQXhEQmJfVWxNU1otTFVSUWV2MmZYZXJId19Ibl9fSXJRYUlQOUxIc0FHX05jNjVzRTJXZG43TDNtZWZyaW1BMmNIOUpJWDhGNjBnWGJ3?oc=5",
+      "published": "2026-11-21T20:47:47+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
+    {
+      "desc": "Madueke's relief at grabbing our equaliser at Newcastle Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T01:00:51.113774+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMDI2QXdOQ0hzeXVVYWlfSnZoc0ZIOWVTLThDeFhQVC1iLW43ZkxnSEJGZm9KMG0yREdZR0NlMGF4VlhLcHBiT01OZVE2OXprM2E2eDByMnpnNWQxSWtTX2JuYTJDY2E4TThTWHltRHByWE1Fa1Y1eEYwMmw1blR2U1ZoLWc0a0xzaHlELWFSdW0yLU1vaHkyMUpjYk4?oc=5",
+      "published": "2026-11-21T20:47:45+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Madueke's relief at grabbing our equaliser at Newcastle - Arsenal.com"
+    },
+    {
       "desc": "Newcastle Player Ratings vs Arsenal: 2-2, Barnes and Thiaw Lead the Fightback The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-21T21:00:50.845360+00:00",
@@ -5389,6 +5429,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Newcastle Player Ratings vs Arsenal: 2-2, Barnes and Thiaw Lead the Fightback - The False 9"
+    },
+    {
+      "desc": "Bournemouth Set £100m Price for Alex Scott Amid Chelsea Interest cwibc.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T01:00:51.113806+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE05a2dVMlZSRlp0akhtWE9ramg2YU10U25leFdsMzFhLW9vM2ZJQzRxM0lKdVNGcGZSUkVpRlVfS3FXMVI4Z3BPb1ZWYTdDVnRNR2F2VDVPbzV1MnFhRW9WbDczTktyemdRdmtoUg?oc=5",
+      "published": "2026-11-21T20:42:00+00:00",
+      "publisher": "https://cwibc.co.id",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Bournemouth Set £100m Price for Alex Scott Amid Chelsea Interest - cwibc.co.id"
     },
     {
       "desc": "ARSENAL had to dig deep to get a result in Newcastle with Mikel Arteta's side not at their best. A 2-2 draw sees the Gun",
@@ -5611,6 +5661,16 @@
       "title": "Newcastle 2 Arsenal 2: Noni Madueke rescues point for Gunners after Toon’s thrilling second-half fightback"
     },
     {
+      "desc": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T01:00:51.114040+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdk5LQTJxS25CeUswUW1fRXYwS05NSzIwaHNqQlppSFo3ZHVmNVZjZ1lTbkZsalp6Y19tcDlHc2lsUkJHamF4cWZkay1uWUJxTkVEemRuclQ5RkxLX0pONmdsUGJPems4c2hPVkotNGg1LUpWTlpIbTgyRVJyN2RGOWhPQlJEaUpyVEcxdzZzYklobWtIMmlIRTc0cFlXZzZlVzBjZUV2X1p3a1NQM1k0eW04MHR3LW9HOGZSMDNwMU5CdHJVX1ZYaWt3TlpfaW43eXZucDJBWGMtYXhlWVhj?oc=5",
+      "published": "2026-11-21T19:21:35+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 - Tottenham Hotspur"
+    },
+    {
       "desc": "BBC Sport looks at Tottenham's new teenage star after Luca Williams-Barnett makes a superb full Premier League debut for",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-21T20:00:48.093611+00:00",
@@ -5789,6 +5849,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "'Officials can't use common sense' - was Rogers handball correct?"
+    },
+    {
+      "desc": "Alonso updates on Caicedo’s game changing injury | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T01:00:51.114198+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONVNfb2pSeTB2TVhnblNva0l4RDRTZnZZNjZQWEtBa0RocTBmLXc4MWswWUhyRzNHQzRLY1F5aFNKeHI3WkNqd2FnSlVrUUVkaHI4eF96R2NGUDNxbWxPMWdrWEt2SFllWkR6YTV5Q0x3LUw2ODA3dG9MM0pGNHdqY2dNcGVuY1ozRjF2RTVFb2NVVlk?oc=5",
+      "published": "2026-11-21T18:30:00+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Alonso updates on Caicedo’s game changing injury | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "SUNDERLAND were a sinking ship only a few weeks ago. But after beating Chelsea and battling to a draw against Aston Vill",
@@ -6629,76 +6699,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "WSL: Liverpool vs Chelsea LIVE!"
-    },
-    {
-      "desc": "Fabrizio Romano reveals Man United’s January transfer plans as decisions emerge on two stars CaughtOffside",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T13:00:59.514008+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZHhGN28wWTU4UE81T1ZmM1h5aWN1SllRNERPZlZGYmlfSXR5ZjQzbHgxUWthbkUzWk90Q2JRVFJzT3RhQVZCWEJWZ01vZzFtLWZSZklXTlpGdGNzbjNuVnRqTGNfN21EOFptNWJYNDltOVQwOVItcHRRV1B5aU9uM0NXQU93Yjg1ZDFSNnp5UjlNT09fUVB4LWhHcW5vYmvSAaQBQVVfeXFMT0gtOGtGUnVUNzA3bnpUb3VaMnhyZ09ub3NGbk9jY080RHlDT2RyQk1IX2pKRHBLV25KZGIwdGluVHVCR252S3BvcmhobEdneWtYdjJhLWZHQjNMMlBIZlpQSnpuOTQ5SzJpeE1YQUw1NlNkd3c4WGJEcUlvT2NTSWh4aThyNTBfdXQzdkVhcGd1ZGRNdE9qS0s1cFp0UDJENDZMYVU?oc=5",
-      "published": "2026-11-21T12:13:54+00:00",
-      "publisher": "https://www.caughtoffside.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reveals Man United’s January transfer plans as decisions emerge on two stars - CaughtOffside"
-    },
-    {
-      "desc": "'We know what this game means' - Virgil van Dijk previews Liverpool v Man Utd Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T15:00:54.689832+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSEQxX1dDOS11UGZ0WGtONmpmbHNzT0ZfUktMWjRjMXV4dDA0ZkdfUEEzVDB1MmstUUV3eENtWWVlU08tTHJ1WHY0Tl9YNW9xbEthdlhfU0RTbDdQNlBCM3NHdjM4ZkNEQXloSlktcFFOV25zY2N4N3ZnM0NLR25Cc0xsS3Y0Z0I2YTNKZlNzQXI1eTFrbS1ERHdCbl8tcHB0bXVORl95VVVuMEhNanpLWGo2aGg?oc=5",
-      "published": "2026-11-21T12:03:58+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "'We know what this game means' - Virgil van Dijk previews Liverpool v Man Utd - Liverpool FC"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T13:00:59.514054+00:00",
-      "link": "https://www.skysports.com/football/southampton-vs-derby-county/live/560685",
-      "published": "2026-11-21T12:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Southampton hit the bar against Derby LIVE!"
-    },
-    {
-      "desc": "Eli Junior Kroupi transfer update: Tottenham and Arsenal may struggle even with 'amazing offer' Spurs Web",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T13:00:59.514084+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPT19iUFhPSmZ2M2RvN0JZX000d2U5aVl6SzlaeVZicHRMb1RsWU9RMU5nRlQ3T0dFNVNHR2RIM3V5QkI2Tm9tZl8wbWxEakV1Rmk4UGJnOW5naXpKSnBQMU12ZDZ2NFpQNW5kZVVqMktaeDlFVHNtaFVmdUVBTTRVb0VnMl9iZEdicVFsMTRlMTVwUWpKX2pEWTlKRmRfejdJOTNaV0NXZEVDMV9QRWloTkdmSlVXYmtpcHRsMXpVcEk0S1ZRWk13cU1R?oc=5",
-      "published": "2026-11-21T12:00:00+00:00",
-      "publisher": "https://www.spurs-web.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Eli Junior Kroupi transfer update: Tottenham and Arsenal may struggle even with 'amazing offer' - Spurs Web"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T15:00:54.689863+00:00",
-      "link": "https://www.skysports.com/football/west-ham-united-vs-preston-north-end/live/560688",
-      "published": "2026-11-21T12:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Parker takes charge of first West Ham home game vs Preston LIVE!"
-    },
-    {
-      "desc": "Team news: Confirmed Liverpool line-up against Chelsea in the WSL Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T19:00:49.674016+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZm8zNm5URW1kSGxqcW16eTNDVnhrbWk3anZBQktUWVhIQ3NzeVdvdzBGcy1kRWIweXQ2NzQ5TDhLWGY5WDBFQnN3UW1IeG9KU1Qtb1VhXzZHRHNabDQ2VDdZbEpTWGRDZzc3YzdGNGh0V0hlblRyVU91N3pOREhCellDUll1aHNBS0dSNWhBTXhEZ0kxcmgxRkRhT085QQ?oc=5",
-      "published": "2026-11-21T11:48:58+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Team news: Confirmed Liverpool line-up against Chelsea in the WSL - Liverpool FC"
-    },
-    {
-      "desc": "Man City vs Fulham Confirmed Lineups: Khusanov Fit, Guéhi Starts, Cherki Benched The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T12:00:50.466485+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOU1dKX2F0OWtrbTA0aGo1d0dTazVvNmVad0lJVkJyM0l1eGJERkc1bGNEU3hSWTg2SEVYSy1fd0FaWGZBUjAyLXVJamxSenQwM05KZVduS3lRQnJuQ1VlanNRUWdmWnl6bXJVOXpneHM5bENhU2NBMEM3aDRnb1ZxMEgzdlBXcXFyQ0Nz?oc=5",
-      "published": "2026-11-21T11:45:22+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Man City vs Fulham Confirmed Lineups: Khusanov Fit, Guéhi Starts, Cherki Benched - The False 9"
     }
   ],
   "processed_urls": [
