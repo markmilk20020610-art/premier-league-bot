@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 14,
+        "calls": 15,
         "errors": 0,
-        "requests": 14
+        "requests": 15
       }
     },
-    "calls": 14,
+    "calls": 15,
     "date": "2026-11-22",
     "errors": 0,
-    "input_tokens": 87655,
-    "output_tokens": 10183,
-    "requests": 14
+    "input_tokens": 92912,
+    "output_tokens": 10778,
+    "requests": 15
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5179,7 +5179,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T03:00:57.393808+00:00",
+  "last_scan_at": "2026-11-22T04:00:50.893392+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5200,6 +5200,16 @@
     "updated_at": "2026-11-21T22:01:32.085677+00:00"
   },
   "news_pool": [
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T04:00:50.896940+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-22T01:13:45+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
     {
       "desc": "Liverpool / Chelsea - Barclays Women's Super League - St Helens Stadium, St Helens Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6689,16 +6699,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Under-18 Premier League report: Chelsea 5-0 Arsenal | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "FULHAM ace Rodrigo Muniz celebrated a goal with a baby bump celebration after revealing his wife's tragic miscarriage he",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T14:01:00.680492+00:00",
-      "link": "https://www.thesun.co.uk/sport/41091229/rodrigo-muniz-baby-celebration-wife-miscarriage-fulham-man-city/",
-      "published": "2026-11-21T13:09:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Fulham star Rodrigo Muniz does emotional baby celebration vs City after revealing wife’s heartbreaking miscarriage"
     }
   ],
   "processed_urls": [
