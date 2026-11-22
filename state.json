@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 11341,
-    "output_tokens": 1086,
-    "requests": 2
+    "input_tokens": 17142,
+    "output_tokens": 1769,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -980,6 +980,41 @@
       "telegram_message_id": 176,
       "title": "英超18-2投票通过：为联盟高管承担曼城赞助商潜在诽谤诉讼法律费用",
       "updated_at": "2026-11-19T16:01:02.579728+00:00"
+    },
+    "2f2f1ca90bd8": {
+      "article_title": "Liverpool fans in brutal six-word chant at Mauricio Pochettino just 14 minutes into disastrous Man Utd debut",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d3fb78ebd9e1077a",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 210
+        }
+      ],
+      "created_at": "2026-11-22T17:01:04.767642+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "a63db8f216549bd2",
+      "event_id": "2f2f1ca90bd8",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-22T17:01:04.767642+00:00",
+          "origin": "created",
+          "title": "Liverpool fans in brutal six-word chant at Mauricio Pochettino just 14 minutes into disastrous Man Utd debut",
+          "url": "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 210,
+      "title": "利物浦球迷开场14分钟高唱嘲讽波切蒂诺，曼联新帅首秀噩梦开局",
+      "updated_at": "2026-11-22T17:01:05.554056+00:00"
     },
     "328b8bfb8327": {
       "article_title": "Bizarre moment Emery goes completely silent and gives reporter death stare in explosive interview after Man Utd draw",
@@ -5354,7 +5389,7 @@
     }
   },
   "last_morning_report_date": "2026-11-22",
-  "last_scan_at": "2026-11-22T16:12:11.966198+00:00",
+  "last_scan_at": "2026-11-22T17:00:59.189877+00:00",
   "last_summary_sent_at": "2026-11-21T22:01:32.100969+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5376,6 +5411,106 @@
   },
   "news_pool": [
     {
+      "desc": "LIVERPOOL fans fired a brutal chant towards Mauricio Pochettino after his nightmare start at Manchester United. The Arge",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T17:00:59.192039+00:00",
+      "link": "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut/",
+      "published": "2026-11-22T16:51:22+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool fans in brutal six-word chant at Mauricio Pochettino just 14 minutes into disastrous Man Utd debut"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO'S Manchester United reign got off to a nightmare start - after Leny Yoro was shown a quickfire red c",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T17:00:59.192060+00:00",
+      "link": "https://www.thesun.co.uk/sport/41108432/leny-yoro-sent-off-liverpool-man-utd-mauricio-pochettino/",
+      "published": "2026-11-22T16:46:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Leny Yoro SENT OFF just 7 minutes into Man Utd’s clash at Liverpool as Mauricio Pochettino suffers nightmare start"
+    },
+    {
+      "desc": "Manchester United's Leny Yoro is shown a straight red card just seven minutes into the match at Anfield after bringing d",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T17:00:59.192076+00:00",
+      "link": "https://www.skysports.com/watch/video/13615331/off-l-yoro-8-liverpool-0-0-manchester-utd",
+      "published": "2026-11-22T16:45:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Yoro sees red eight minutes into Poch's Man Utd reign"
+    },
+    {
+      "desc": "Peterborough United Women are finally through in the FA Cup, but the under 21s were heavily beaten Peterborough Telegrap",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T17:00:59.192098+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOTGZoSzBwQm5ld0Iyc1lpYXhwMF8yd2pRX01vWHc4M0RHSk94Qmo1bDNkX0NmTlNaX2NQaExINDlDRzFFdzJTbnd6SWVaY2h1STR2X2s0UHZnQlZLTnlHdmc4elhkZVlVc0NEcXhlUkk3M3lnQjRqdDdDN3BTM3UzOWhOZlh2a2Q4SXhXdnFtSVNNVXRuRzRGNkQ3NlY5NjhicG9wXzVMM1Y4aTBkbXdzNXZMMXJHb2lkNEUyazcwcHZjaU8wbzVfMWdhUC1DRnJXeEs4V21GS3hpb19yN2RTd1V3blNNamw4emtfc3BsWWxGWm40MUZ4Y2tGeTFVdVdwVmNpX1B2SQ?oc=5",
+      "published": "2026-11-22T16:35:00+00:00",
+      "publisher": "https://www.peterboroughtoday.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Peterborough United Women are finally through in the FA Cup, but the under 21s were heavily beaten - Peterborough Telegraph"
+    },
+    {
+      "desc": "Pochettino: I feel great! Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T17:00:59.192114+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE55eWp4MC1KRklWeC1pMUR6X2loV2FyVFhDa3ZpSnkwUU9KNWFLSzNvaXhLRnVmWmtXWHMzV01xSC1EdHRjRXBxUVJaTDZNZUlQQktiZ1FVTTc4OE9wQmd6RFFtTUJhSWoxLUNNSjJjNERZUElJNllz?oc=5",
+      "published": "2026-11-22T16:34:07+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino: I feel great! - Manchester United Website"
+    },
+    {
+      "desc": "Fermín López sent off from the bench against Villarreal Tu Futbolero",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T17:00:59.192132+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQXQtdUxJa3FHcm1ueDVmWVVSZVl4ODJmY1lPS2ZBUGJyaTJqUWJRSll6V0p3NVdfNFpyMl92ZnF5UF9QUF9MbGM5STBCVWpqX2pGQ1NjbzBkaXEwWTdhMnBLTHlwWVVSVUxlRnBpTXBGQjUzZDUxeWN1MW4wUVJYZUtybW5GZjc3Slpvd1hyLUd5LXIzeE52Vk9DY3FVbGM?oc=5",
+      "published": "2026-11-22T16:30:52+00:00",
+      "publisher": "https://www.tufutbolero.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fermín López sent off from the bench against Villarreal - Tu Futbolero"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO has explained his first Manchester United line-up after dropping a trio of stars. The Argentine mana",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T17:00:59.192149+00:00",
+      "link": "https://www.thesun.co.uk/sport/41108125/mauricio-pochettino-man-utd-xi-harry-maguire/",
+      "published": "2026-11-22T16:28:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino explains his first Man Utd XI after dropping trio of stars including Harry Maguire"
+    },
+    {
+      "desc": "With the Women's Super League big four firmly established, and London City Lionesses spending their way into European co",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-22T17:00:59.192169+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6n901w453nlo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-22T16:25:35+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Spurs 'a match for anyone' as win at Man City boosts European hopes"
+    },
+    {
+      "desc": "BLACKBURN cult hero David Bentley was spotted cheering on his former side as they came from behind twice to notch a 2-2 ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-22T17:00:59.192183+00:00",
+      "link": "https://www.thesun.co.uk/sport/41107454/david-bentley-spotted-itv-cameras-burnley-blackburn/",
+      "published": "2026-11-22T16:21:11+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former England star spotted by ITV cameras casually in stands for Burnley vs Blackburn"
+    },
+    {
+      "desc": "A Konstantinos Tzolakis goalkeeping masterclass teed up Oli McBurnie to score two late goals as Hull stunned dominant Br",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-22T17:00:59.192197+00:00",
+      "link": "https://www.skysports.com/football/hull-city-vs-brighton-and-hove-albion/report/559549",
+      "published": "2026-11-22T16:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "McBurnie's late double stuns 10-man Brighton after Tzolakis heroics"
+    },
+    {
       "desc": "ARSENAL fans are in for a thrilling end to the year with the small matter of NINE fixtures before 2027 begins. Mikel Art",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-22T16:12:11.969761+00:00",
@@ -5384,6 +5519,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal shirts reduced by up to £50 including this season’s kit in massive Black Friday sale – retro kits up to £35 off"
+    },
+    {
+      "desc": "Cody Gakpo and Ryan Gravenberch injury update Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T17:00:59.192224+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNckNOS0N6ZnBxN2cteTJfUnNwZWo0S0dIREpYek1qeG1FUF9hOHV6RG9RUl9ScjFVT1pzMjVDc3VKbkFwYURBT2IxdkVzUlNFNnZKSWRwWEJRdDBNd0pHRjRaUXBLZk9DTkVjc0J3Z3ZWSUZZSjA4bDNDQkZQX2Znel9lbWw?oc=5",
+      "published": "2026-11-22T15:59:35+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Cody Gakpo and Ryan Gravenberch injury update - Liverpool FC"
     },
     {
       "desc": "OLI MCBURNIE capitalised against ten-man Brighton to seal 2-0 win at MKM Stadium. Costinha pushed Sorba Thomas in the 89",
@@ -5434,6 +5579,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Team news: Confirmed Liverpool line-up v Manchester United - Liverpool FC"
+    },
+    {
+      "desc": "Checkout - Man City Shop Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T17:00:59.192296+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE10TDdxMTJKcW1xSWxBWGdNd2ZlVTRaeXpoWjc4V3pZeTlZaFhsSTcxdmtFdkJuXzAtbUVPc1gyeGNTWWVyNlppdW5vamRCUQ?oc=5",
+      "published": "2026-11-22T15:27:57+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Checkout - Man City Shop - Man City Shop"
     },
     {
       "desc": "LISA BAUM was stretchered off while wearing an oxygen mask after going down off the ball during Arsenal Women's showdown",
@@ -5544,6 +5699,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "City’s unbeaten run ended by Spurs - Manchester City FC"
+    },
+    {
+      "desc": "Team news: Four changes in Leah’s 300th game Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-22T17:00:59.192469+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ3htd3F5R3RhMk12WkhmVl9SaXBwX05naHhtcTBMRDhZYTdlbmlJVzVsQjBjeDFHeEhsY1hwX2hRMjNnaFQwVmJ4d1A1V0lSV1g1alhrUTdaNy1BaFJCclM0bU41dzBwTzBHbjA1SnJkYXRnSVZRSEtuTjcyVGVUZ2hwaTBTTXhLV3FhRg?oc=5",
+      "published": "2026-11-22T13:39:37+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Team news: Four changes in Leah’s 300th game - Arsenal.com"
     },
     {
       "desc": "Romano: Roma finalize Hermoso’s new contract until 2029 Yahoo Sports",
@@ -6744,136 +6909,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "'We can't let setbacks affect us' | Video | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "From \"exceptional\" to \"complacent\" - Arsenal's drop-off in the second half at Newcastle was extraordinary.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-21T22:00:59.651504+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615040/arsenal-escape-with-2-2-draw-at-newcastle-after-complacent-second-half-almost-proves-costly-for-defending-champions",
-      "published": "2026-11-21T20:21:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "How 'complacent' Arsenal unravelled at Newcastle - and their key lesson"
-    },
-    {
-      "desc": "FURIOUS Cole Palmer snubbed the home fans and even appeared to be in an angry exchange with Joao Pedro after their 4-1 d",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T21:00:50.845509+00:00",
-      "link": "https://www.thesun.co.uk/sport/41102299/chelsea-cole-palmer-snubs-fans-joao-pedro-leeds-defeat/",
-      "published": "2026-11-21T20:16:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Cole Palmer dismisses Joao Pedro and refuses to applaud Chelsea fans after 4-1 Leeds mauling"
-    },
-    {
-      "desc": "FIFPRO are “deeply concerned” with Bayern Munich’s comments on Jamal Musiala’s ongoing health problems. The Germany inte",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-21T21:00:50.845535+00:00",
-      "link": "https://www.thesun.co.uk/sport/41102996/bayern-munich-jamal-musiala-health-harry-kane-rummenigge/",
-      "published": "2026-11-21T20:12:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Bayern Munich slammed for ‘putting pressure’ on Jamal Musiala with ‘deeply concerning’ comments about his health"
-    },
-    {
-      "desc": "Noni Madueke's second-half goal earns Arsenal a 2-2 draw against Newcastle United at St James' Park, as the reigning cha",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T21:00:50.845566+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cm702zzl66l6o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:59:35+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Arsenal go six points clear after lively draw at Newcastle"
-    },
-    {
-      "desc": "Evanilson scores in his sixth consecutive Premier League game, as Bournemouth defeat Nottingham Forest 2-0 at the Vitali",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T21:00:50.845595+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cm4gn997yry2o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:59:17+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Evanilson strikes again as Bournemouth beat Forest"
-    },
-    {
-      "desc": "Noah Okafor scores twice to deliver Leeds United's first win at Chelsea in 27 years, in an impressive 4-1 victory at Sta",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T21:00:50.845649+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c3ewvkk4qgxjo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:59:13+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Leeds dominate Chelsea for first Stamford Bridge win since 1999"
-    },
-    {
-      "desc": "Elliot Anderson's fantastic volley earns Manchester City a first Premier League point in over a month as they come from ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T21:00:50.845683+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c30rkq9xyk8eo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:59:08+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Man City drop points to Fulham despite superb Anderson volley"
-    },
-    {
-      "desc": "Tottenham Hotspur teenager Luca Williams-Barnett starres for Roberto de Zerbi's side as they comfortably beat Ipswich To",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T21:00:50.845711+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c3174qq2j82zo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:59:02+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Teenager Williams-Barnett shines as Spurs beat Ipswich"
-    },
-    {
-      "desc": "Aston Villa's struggles at home this season continue as they are held to a goalless draw by Sunderland in the Premier Le",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T21:00:50.845739+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c5j9m227l42do?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:58:56+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Villa's home woes continue as Sunderland earn point"
-    },
-    {
-      "desc": "A Dwight McNeil own goal in the 85th minute gives Coventry City a 3-2 win to move three points clear of the relegation z",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-21T21:00:50.845768+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c8wy5ddky5n9o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-21T19:58:52+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Coventry beat Palace in Frank's first game after late own goal"
-    },
-    {
-      "desc": "Luca Williams-Barnett will score better goals. That was the consensus on a day when the Tottenham starlet marked his fir",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-21T22:00:59.651732+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308771/There-buzz-Luca-Williams-Barnett-2-0-win-against-Ipswich-Tottenham-fans-writes-MATT-BARLOW.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-21T19:52:05+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "The next Lamine Yamal? Why not! Roberto De Zerbi sets high bar for Luca Williams-Barnett after 18-year-old thrilled Tottenham fans in win ov"
-    },
-    {
-      "desc": "Report: Newcastle United 2-2 Arsenal Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T21:00:50.845793+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSmF1YjN0VExmTWY1SFE3YWNKVGtZQ1ZXbE9hWkMybkM4U0UwZDYyUHBId0FCVzc5LUs4NVhiN1RtMXNHa0xlaHdRRVdFRVA4cWhkbS0zS25UU2U2RGxhTjJpMWpULXFGejJ3T2V6djdPWGJjYlpKazc5Y2lESWVQbjFtNA?oc=5",
-      "published": "2026-11-21T19:49:32+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Report: Newcastle United 2-2 Arsenal - Arsenal.com"
-    },
-    {
-      "desc": "Arsenal Player Ratings vs Newcastle: 2-2, Madueke Rescues Point as Raya Hurt The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-21T20:00:48.093521+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSjZrQmhkbEVCT3FHTUpnYzBiNG9VU2R0akh5QUdMSDUxUlM4Nm1hMHZEVDNOWGc1dVh5Ml9wczM2eF95dnZwT1Q3TUl5T1pkWUlHa3NwN21UVjdoWFVYSEw4d2ZiaEt4X2h6cHVveUF4d1YzOGlTX2ZIQTRBT1RqSnFTTHFyTWFFQkI4QzlYVGFVUDNG?oc=5",
-      "published": "2026-11-21T19:48:28+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal Player Ratings vs Newcastle: 2-2, Madueke Rescues Point as Raya Hurt - The False 9"
     }
   ],
   "processed_urls": [
@@ -7042,7 +7077,8 @@
     "https://www.thesun.co.uk/sport/41105481/bruno-fernandes-pauses-man-utd-contract-talks-future",
     "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo",
     "https://www.dailymail.com/sport/football/article-16308805/Liverpool-vs-Manchester-United-Premier-League-Mauricio-Pochettino-takes-charge-Red-Devils-time-rivals-head-head-Anfield.html",
-    "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero"
+    "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero",
+    "https://www.thesun.co.uk/sport/41108515/liverpool-fans-taunt-mauricio-pochettino-man-utd-debut"
   ],
   "s_overflow": {},
   "schema_version": 4
