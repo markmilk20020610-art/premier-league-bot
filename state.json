@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 6230,
-    "output_tokens": 704,
-    "requests": 1
+    "input_tokens": 12186,
+    "output_tokens": 1403,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -980,6 +980,41 @@
       "telegram_message_id": 176,
       "title": "英超18-2投票通过：为联盟高管承担曼城赞助商潜在诽谤诉讼法律费用",
       "updated_at": "2026-11-19T16:01:02.579728+00:00"
+    },
+    "2f0944034e8d": {
+      "article_title": "Ex-Arsenal ace Tomas Rosicky among two ex-Premier League stars sacked by Europa League side after woeful run of results",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "52aa91ce641da7f7",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 220
+        }
+      ],
+      "created_at": "2026-11-23T17:01:14.323802+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ce3194630c9f84eb",
+      "event_id": "2f0944034e8d",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-23T17:01:14.323802+00:00",
+          "origin": "created",
+          "title": "Ex-Arsenal ace Tomas Rosicky among two ex-Premier League stars sacked by Europa League side after woeful run of results",
+          "url": "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 220,
+      "title": "罗西基被布拉格斯巴达解雇体育总监职务",
+      "updated_at": "2026-11-23T17:01:15.169554+00:00"
     },
     "2f2f1ca90bd8": {
       "article_title": "Liverpool fans in brutal six-word chant at Mauricio Pochettino just 14 minutes into disastrous Man Utd debut",
@@ -5669,7 +5704,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T16:00:51.532153+00:00",
+  "last_scan_at": "2026-11-23T17:01:08.058491+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5690,6 +5725,96 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "FORMER Arsenal midfielder Tomas Rosicky has been sacked as sporting director of Sparta Prague, with another ex Prem star",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T17:01:08.061907+00:00",
+      "link": "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague/",
+      "published": "2026-11-23T16:44:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-Arsenal ace Tomas Rosicky among two ex-Premier League stars sacked by Europa League side after woeful run of results"
+    },
+    {
+      "desc": "CRISTIANO RONALDO has been honoured with a stunning new museum in China featuring a gigantic 23-FOOT statue of the footb",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T17:01:08.061968+00:00",
+      "link": "https://www.thesun.co.uk/sport/41118204/cristiano-ronaldo-museum-portugal-al-nassr/",
+      "published": "2026-11-23T16:42:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Cristiano Ronaldo gets new museum seven thousand miles away with 23 FOOT tall statue"
+    },
+    {
+      "desc": "Clearer Twist National Stadium at Windsor Park named as a venue for the 2035 Women's World Cup LoveBelfast",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T17:01:08.062006+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYk4yeXVFVzU1ZHBxQmg3ZEhUNVFDRGV3T1A4bmJaVUZMSHZlcWVqRmlYbDM3SWdDVklyNG15cDh0U25oVjBHel9zMV9IbjNFVUs4cjlJN3Fac3JOUlR2U1BaX2l0Y2ZUaW9mNTRiOU15UmtfQ1dOS09fbTdTbHRBN2ZJaFJzcWpz?oc=5",
+      "published": "2026-11-23T16:36:33+00:00",
+      "publisher": "https://lovebelfast.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Clearer Twist National Stadium at Windsor Park named as a venue for the 2035 Women's World Cup - LoveBelfast"
+    },
+    {
+      "desc": "How does Mauricio Pochettino halt Manchester United's desperate slide towards the foot of the Premier League",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T17:01:08.062040+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck9d7qxxl7w8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T16:30:59+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'No-one's coming to save us' - but how can Man Utd save themselves?"
+    },
+    {
+      "desc": "Our Ask Me Anything team tell you all you need to know about the Euro 2028 qualifying draw.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T17:01:08.062101+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cklye3q3jvnwo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T16:25:50+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "When is the Euro 2028 qualifying draw?"
+    },
+    {
+      "desc": "Hibernian manager Marink Reedijk rejects suggestions Easter Road is jinxed after going seven months without a home win i",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T17:01:08.062151+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cr78274gepz0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T16:17:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Hibs boss Reedijk rejects talk of Easter Road jinx"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-23T17:01:08.062174+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13615719/premier-league-qa-sky-sports-news-kaveh-solhekol-answers-your-questions-on-man-utd-liverpool-arsenal-and-more",
+      "published": "2026-11-23T16:14:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "What would relegation mean for Man Utd? Kaveh answers your questions!"
+    },
+    {
+      "desc": "Premier League referee appointments: Matchweek 12 officials Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T17:01:08.062202+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWFhvaXBuT1hPOWRZc1V5eTViWUNzVDhsMl9OWTl1dE9TZ0xTMi13VVJSWjJPRWtuZkFkeWNEOXIxTDFmNXBjRkF5NWFKemk1d2FIa0dtcEJSTXZyVF9IdE9FWDhKTzNFRTI5SmkwWFFnNUJBNVhiWFpNa2hxRzAzX3hiU3pZX21IdTB5d0NwaEt5OGIyYVl4bUc1X1F1UlpTbHM5VHFrWQ?oc=5",
+      "published": "2026-11-23T16:11:08+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Premier League referee appointments: Matchweek 12 officials - Premier League"
+    },
+    {
+      "desc": "UNO skills, superstitions and becoming Liverpool's No.9 - watch 'A Day With... Alexander Isak' Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T17:01:08.062229+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNakdnM3J2bkMyZG84ZjQwZUE1T2JlQnFiN1hVSDlIYzRIX3FHcEM5Y2hPQ2RoZExYSkFGc28zb0thS1o3OFRuSWpISFpTbEt6OGtnSVZLZmtlcWVUNWVOb3dxOW8ycFRYVHJxaE1GMFczOGkzam9MU1BpMkxHcVpTcGc4U1NiRHJCZzZQMGZyeGoxWWRrVndWX0hBX0hUOFdVbkJlejFMc2ZsRzlxRFRmU0Z2VQ?oc=5",
+      "published": "2026-11-23T16:02:14+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "UNO skills, superstitions and becoming Liverpool's No.9 - watch 'A Day With... Alexander Isak' - Liverpool FC"
+    },
     {
       "desc": "Bruno feels his best is yet to come as a Gunner Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5791,6 +5916,16 @@
       "title": "UK to host first World Cup since 1966 with TWELVE Premier League stadiums to be used at Women’s tournament in 2035"
     },
     {
+      "desc": "What grounds will be used as UK confirmed as host of 2035 FIFA Women's World Cup? TNT Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T17:01:08.062465+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNMi1yZUJVZmFvZ3plOUxKTEYwd0hXSWpqeHFwYURkeUhMb3duOTBEOVhXUHptNThBY24zVGEyMktCZU85LTBOS3QzOXV0NWF3dVZ1eUlzcnVheWtBak9uZG1KZWhybE5EbGRSdjNqSG90MUFCeERObXdlNVh0S3NRSGVlbHVDRzVfNEdldzc0YUxnSkNteHNEeFJBUzRPNkRReHhvOGY3Nnhla1Nhclpyd2JqRXJIREN3WnJuVVlCLW1rT1ktSlN1eENIbHlSRjBvbm9RUTZWcVRQaEV3NkJnM0xCVnI5RWc?oc=5",
+      "published": "2026-11-23T15:12:00+00:00",
+      "publisher": "https://www.tntsports.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "What grounds will be used as UK confirmed as host of 2035 FIFA Women's World Cup? - TNT Sports"
+    },
+    {
       "desc": "Argentina star Leandro Paredes collapsed during a live interview immediately after winning a trophy with his Boca Junior",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-23T16:00:51.535281+00:00",
@@ -5849,6 +5984,16 @@
       "publisher": "https://roundtable.io",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano Reveals Important Bruno Fernandes Contract Clause - roundtable.io"
+    },
+    {
+      "desc": "LFC Mens Logo Oversized Hoodie Black Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T17:01:08.062609+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5seFRLNnNjcHk3ZHIxUTlRdUpnVUJfMlYyZ2NzZ2xRX01TMWpreTZPNEQ4Y2IwYndsM20waVZJV0dzTGw1aGVkWTcwN01NX3pZeWd3UkdqdWM2VS14bG0zNEtDTndNaV9CajBubE5qRmZwcmM1ZmVZbG5mREN1N1E?oc=5",
+      "published": "2026-11-23T14:46:10+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFC Mens Logo Oversized Hoodie Black - Liverpool FC"
     },
     {
       "desc": "A GERMAN match had to be abandoned after a thug threw a BOTTLE at an assistant referee. The match between Berlin Hilalsp",
@@ -6201,6 +6346,16 @@
       "title": "Why Andoni Iraola - NOT Jurgen Klopp - deserves credit for fixing Florian Wirtz, Omar Berrada's Sky appearance has made things worse for Man"
     },
     {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T17:01:08.063118+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1abEhXcVBzVDFKMnpVQWZjcUxkQmUtVU5iaGVaSEVzNFVFUkN0U3FMbVo3SnNUT01sNGRWU3hHbVJoX2E1MnBUaHY1OEZMOTRXNVByamRSYUI0N2l6ZUExaFJEN2k2TVpRMFZWLUxsNzlyQWdhZzVnTW9R?oc=5",
+      "published": "2026-11-23T12:08:52+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
+    },
+    {
       "desc": "In his latest Sky Sports column, Paul Merson has raised doubts about whether Xabi Alonso is good enough as Chelsea manag",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-23T13:01:06.843927+00:00",
@@ -6519,6 +6674,16 @@
       "publisher": "https://www.football365.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Man Utd: Romano reveals FOURTH vital condition to decide Fernandes future - 'there is a serious risk' - Football365"
+    },
+    {
+      "desc": "Exam success for United youngsters Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T17:01:08.063334+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rNkJUcFVFbEtDVkZCRllxTVlNUDluNVB1dWs5czBfLW5YTlJaenhZZ1luRnl4R1JqT3dRV2hGVERUUmRMUEctZ09UX1AtRW5uSnZPdmF5dWpxVGExb3lNc0o2WWNFVjIwRFAyWERkQlFualU?oc=5",
+      "published": "2026-11-23T09:32:57+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Exam success for United youngsters - Manchester United"
     },
     {
       "desc": "BRENTFORD host Everton for Monday Night Football tonight, with the Bees looking to leapfrog the Toffees and David Moyes'",
@@ -7059,136 +7224,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Chaotic week, nightmare start and huge reality check for Pochettino"
-    },
-    {
-      "desc": "Manchester United eye move for Al-Ahli striker Ivan Toney, Fulham hold contract talks with Calvin Bassey and PSG could s",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T21:50:11.564527+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ck053nyl6399o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T21:04:15+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Man Utd plotting Toney move - Monday's gossip"
-    },
-    {
-      "desc": "Pochettino: Let's keep our heads up Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T00:00:51.566823+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLW40X3JYak4xY25WUFZtXzFCVGN4WkJqQWtxRXlleDdlTjdBSk44QlhWR0hZMnh5emlTZjdlVnZwNjFJUTd5R3dmenRkQXpveGRlczZTZ1FmaVFieDUyMTZWbl9Wd2F2Xy1ZZXg5YXdDM01SR1NJS1d5NzdJcFBmR3I5NTNoUndu?oc=5",
-      "published": "2026-11-22T20:46:51+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino: Let's keep our heads up - Manchester United"
-    },
-    {
-      "desc": "MANCHESTER UNITED fan Mark Goldbridge went absolutely ballistic during his favourite team's 4-0 hammering to rivals Live",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:00:59.421048+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino/",
-      "published": "2026-11-22T20:44:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mark Goldbridge in ‘generational breakdown’ during Man Utd’s 4-0 battering at Liverpool"
-    },
-    {
-      "desc": "Five KEY lessons from Sunday's matches Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T00:00:51.566897+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOS3VnUDdjRW0zVVF4REFyMm5TT080b0hBQjl5S2g3YkctaXpPQmVSZFBiT2M4NVBCUnQxRlZGOE9aR3dibFo2cWU1NS1oN2otSW1XMVdvam14Q3ZVcGh3TmJOeHNORWRQTjYwOGkyVWtBRXp0WUFpcFlQRXk0Q2dNYUZsQ29nZl82bTVr?oc=5",
-      "published": "2026-11-22T20:36:06+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Five KEY lessons from Sunday's matches - Premier League"
-    },
-    {
-      "desc": "Liverpool reach landmark of 700 wins in the Premier League Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T04:00:51.056366+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbjFKUXhQLUdOMDJCdVBRTjAtYmQtaThBUHVVWE9KbTdwYjZ0TEZmOGRNd19NNUh2LU5QNXp3cVNYenFRNldLRUgyNWdUQXRCNWtxSzRldE1iOWM5RlRUZ3ptUVdqcDBwUUtaT05KaXRiUENTbmtaZ2NwaWpfM3ZQd0NiY3dKYjJZMkFXX2ZPOWEwanRhVXc?oc=5",
-      "published": "2026-11-22T20:31:33+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool reach landmark of 700 wins in the Premier League - Liverpool FC"
-    },
-    {
-      "desc": "Gary Neville accused Manchester United's hierarchy of negligence for failing to strengthen their back line as their 4-0 ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-22T21:00:59.421101+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615413/liverpool-4-0-man-utd-gary-neville-on-matthijs-de-ligt-selection-and-negligent-red-devils",
-      "published": "2026-11-22T20:25:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Gary Neville on De Ligt selection and 'negligent' Man Utd"
-    },
-    {
-      "desc": "PETER SCHMEICHEL revealed hard truths following Manchester United's tragic 4-0 defeat at Liverpool. The Red Devils legen",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:00:59.421129+00:00",
-      "link": "https://www.thesun.co.uk/sport/41110006/man-utd-peter-schmeichel-warns-relegation-pochettino-liverpool/",
-      "published": "2026-11-22T20:24:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd legend sends RELEGATION warning to Mauricio Pochettino and says safety is new target"
-    },
-    {
-      "desc": "LAMINE YAMAL shocked Fermin Lopez with an unexpected celebration during Barcelona's sensational comeback win over Villar",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:00:59.421152+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109629/lamine-yamal-baby-celebration-barcelona-fermin-lopez/",
-      "published": "2026-11-22T20:24:03+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Lamine Yamal, 19, does baby celebration leaving Barcelona team-mate stunned"
-    },
-    {
-      "desc": "FOOTBALL fans looking to score a huge football away day in the UK or Europe can now save money with a huge Black Friday ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:00:59.421202+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
-      "published": "2026-11-22T20:21:27+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and others"
-    },
-    {
-      "desc": "Watch highlights from matchday ten in the Bundesliga.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T21:00:59.421239+00:00",
-      "link": "https://www.bbc.co.uk/iplayer/episode/l0059298?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T20:13:29+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Bundesliga"
-    },
-    {
-      "desc": "Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T22:00:50.942083+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43RGFYMnIxYVNsN0FtWHY5VHRoNUFXLXJaMFVzVzdZQTh6NlZwZlFNNXY2R1o0cGlJQkp6bWxwODZpWWlZdkg4d1oyV3Azc1RXbUtmVg?oc=5",
-      "published": "2026-11-22T20:04:39+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United Website"
-    },
-    {
-      "desc": "JOSHUA ZIRKZEE produced one small moment of excitement during Manchester United's otherwise miserable 4-0 thumping at Li",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:00:59.421302+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109853/man-utd-joshua-zirkzee-milos-kerkez/",
-      "published": "2026-11-22T20:03:31+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Zirkzee ‘sends Kerkez back to Bournemouth’ with filthy skill as Man Utd fans find silver lining in Liverpool thrashing"
-    },
-    {
-      "desc": "Revealed: Liverpool's Carlsberg Player of the Match against Manchester United Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T23:00:47.863320+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNLTJFNzJ3QUE5bFVaY002WEp0NUhrd3VVYmNNQ0JuN1J2Zll0SmliM1pMdGlXOHNIbnJZZTJrQlZUMjhOR2VZRmNlMkZNVEx0RjctbXM2enVqeXROOGxGNTBfOWo4VDlUZlNka25GREcxci01anE2RWt3d3R1Q2YtdEg2QUFaeUJMa3JCd2U1Wmc5dXNWTDlpR0dVaw?oc=5",
-      "published": "2026-11-22T20:01:40+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Revealed: Liverpool's Carlsberg Player of the Match against Manchester United - Liverpool FC"
     }
   ],
   "processed_urls": [
@@ -7366,7 +7401,8 @@
     "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o",
     "https://www.thesun.co.uk/sport/41110978/chelsea-emmanuel-emegha-robbed",
     "https://www.dailymail.com/sport/football/article-16314883/man-united-pochettino-liverpool-carrington-training.html",
-    "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo"
+    "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo",
+    "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague"
   ],
   "s_overflow": {},
   "schema_version": 4
