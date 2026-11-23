@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 92225,
-    "output_tokens": 11004,
-    "requests": 15
+    "input_tokens": 97069,
+    "output_tokens": 11563,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1982,6 +1982,41 @@
       "telegram_message_id": 191,
       "title": "切尔西就15万镑反天主教/反爱尔兰口号罚款上诉失败",
       "updated_at": "2026-11-21T12:00:58.621858+00:00"
+    },
+    "54d9d210364b": {
+      "article_title": "Chelsea star Emmanuel Emegha reveals he was ROBBED after scoring first Premier League goal in Leeds loss",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "2ea0713fdd30b701",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 217
+        }
+      ],
+      "created_at": "2026-11-23T04:00:56.089972+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "0c776a297c403a2f",
+      "event_id": "54d9d210364b",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-23T04:00:56.089972+00:00",
+          "origin": "created",
+          "title": "Chelsea star Emmanuel Emegha reveals he was ROBBED after scoring first Premier League goal in Leeds loss",
+          "url": "https://www.thesun.co.uk/sport/41110978/chelsea-emmanuel-emegha-robbed"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41110978/chelsea-emmanuel-emegha-robbed",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 217,
+      "title": "切尔西前锋埃梅加自曝进球后遭抢劫",
+      "updated_at": "2026-11-23T04:00:56.656578+00:00"
     },
     "5722dc94a340": {
       "article_title": "Jack Grealish ‘OUT of Everton’s clash at Newcastle’ after axing over two boozy nights in pub and karaoke bar",
@@ -5564,7 +5599,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T03:00:59.180583+00:00",
+  "last_scan_at": "2026-11-23T04:00:51.052457+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5585,6 +5620,26 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Liverpool / Manchester United - Premier League - Anfield, Liverpool Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T04:00:51.055789+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPX2FqZGRGTmh3SkRiaE1KcFQ5bklGZ05YTDBJSlRMZExaak9tWmduVUdVU09NU3dqQlN4d0FkakNpYnJIdmFTaUM1SDhETHp2bzgxQV9jbGRFVTRBeVFDcFlYbWJpQ0VzOW55QlQ1ZHgwWkF2bkxDelNERWVZcWZVZ1FoMkVtUlhUUkp6S1J1OWFpcDNGc2lMSC1zYURnQVNxdnVSUHk5cTREQUU?oc=5",
+      "published": "2026-11-23T01:21:07+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool / Manchester United - Premier League - Anfield, Liverpool - Liverpool FC"
+    },
+    {
+      "desc": "Romelu Lukaku retires from international football, BBC reports Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T04:00:51.055902+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBjZnE2b0MxUHpTcDZlcE1IMkMyN1Fvc0p1MUNCaS1kTm9ZN0ttWjhmek9ieWsyS0o4RGZwT1M2TFA2MVBhRDMw?oc=5",
+      "published": "2026-11-23T00:45:27+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romelu Lukaku retires from international football, BBC reports - Digg"
+    },
     {
       "desc": "Official Spurs Website Tottenham Hotspur",
       "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5824,6 +5879,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Five KEY lessons from Sunday's matches - Premier League"
+    },
+    {
+      "desc": "Liverpool reach landmark of 700 wins in the Premier League Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T04:00:51.056366+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbjFKUXhQLUdOMDJCdVBRTjAtYmQtaThBUHVVWE9KbTdwYjZ0TEZmOGRNd19NNUh2LU5QNXp3cVNYenFRNldLRUgyNWdUQXRCNWtxSzRldE1iOWM5RlRUZ3ptUVdqcDBwUUtaT05KaXRiUENTbmtaZ2NwaWpfM3ZQd0NiY3dKYjJZMkFXX2ZPOWEwanRhVXc?oc=5",
+      "published": "2026-11-22T20:31:33+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool reach landmark of 700 wins in the Premier League - Liverpool FC"
     },
     {
       "desc": "Gary Neville accused Manchester United's hierarchy of negligence for failing to strengthen their back line as their 4-0 ",
@@ -7054,36 +7119,6 @@
       "publisher": "https://login.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "- Manchester City FC"
-    },
-    {
-      "desc": "NEIL ROBERTSON has demanded that Xabi Alonso QUIT Chelsea after the defeat to Leeds. The Blues were well beaten at Stamf",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T12:00:58.894531+00:00",
-      "link": "https://www.thesun.co.uk/sport/41105269/snooker-neil-robertson-xabi-alonso-chelseas-leeds/",
-      "published": "2026-11-22T11:04:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Snooker star Neil Robertson demands Xabi Alonso QUIT after Chelsea’s 4-1 mauling at home to Leeds"
-    },
-    {
-      "desc": "Tottenham: De Zerbi makes stunning Yamal comparison; Romano confirms wonderkid's future Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T12:00:58.894558+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQk4wd0doSzNuSjcxd0FXRl9FeG82ZXU4bGNJenZhb0dXbWhYV3o1NjgySTlvOWU3TWI2R1hncW1CcUFCVTEtTkhzdldZbmxrajFJcnVrUEJIelRodjlnNXRSemE3eE10WUpVSHdkSTkwNmRDMWVudnRfckw0S2VOTnJ6OUxyV0lIdHNmT1BEWmpfX0ZIbUNfbHA0eUxVVWlNRHM0dzVZYjJ6Nm04dDAyMi01QQ?oc=5",
-      "published": "2026-11-22T11:02:51+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Tottenham: De Zerbi makes stunning Yamal comparison; Romano confirms wonderkid's future - Football365"
-    },
-    {
-      "desc": "Argentina star Leandro Paredes collapsed during a live interview immediately after winning a trophy with his Boca Junior",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T12:00:58.894603+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16312997/Argentina-star-Leandro-Paredes-collapses-post-match-interview-Boca-Juniors.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T11:00:59+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Argentina star Leandro Paredes collapses during post-match interview as journalist tries to break his fall after he 'felt dizzy' at the end "
     }
   ],
   "processed_urls": [
@@ -7258,7 +7293,8 @@
     "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino",
     "https://www.thesun.co.uk/sport/41110217/man-utd-worst-defence-europe-crystal-palace",
     "https://www.dailymail.com/sport/football/article-16313467/Gary-Neville-Man-Uniteds-Matthijs-Ligt.html",
-    "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o"
+    "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o",
+    "https://www.thesun.co.uk/sport/41110978/chelsea-emmanuel-emegha-robbed"
   ],
   "s_overflow": {},
   "schema_version": 4
