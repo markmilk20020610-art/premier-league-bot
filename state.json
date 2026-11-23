@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 97069,
-    "output_tokens": 11563,
-    "requests": 16
+    "input_tokens": 101778,
+    "output_tokens": 12314,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5599,7 +5599,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T04:00:51.052457+00:00",
+  "last_scan_at": "2026-11-23T05:00:52.208289+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5620,6 +5620,16 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid The Independent",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T05:00:52.211623+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbW45QjZ5Rjg5alZWWDNzZWg3dUE5QzZSdTJfUndUMzBLSk8zdmtIaE93YkdNOVQ0eW53V3hCYkJTcWU1Y0ZmRE5MRExURlF2WDNTbWNScDJQWnlZUHd0c2xuSGdCbG9aTTh2MEZjOTVVOXlRN3RnT1NKd3NmV20xN0JRdFBTS1ZpU0t3ajduNU15Mk9LdXRJU3NWQm4tdGZBRHpEaVFXbVljczlKdlR0NWx2SzZUWWJBZHc?oc=5",
+      "published": "2026-11-23T03:18:34+00:00",
+      "publisher": "https://www.independent.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid - The Independent"
+    },
     {
       "desc": "Liverpool / Manchester United - Premier League - Anfield, Liverpool Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5709,6 +5719,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea star Emmanuel Emegha reveals he was ROBBED after scoring first Premier League goal in Leeds loss"
+    },
+    {
+      "desc": "Spurs Mens White Varsity T-Shirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T05:00:52.211950+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMnFhakxhbldWMEh4SDVoeGoxcmFFRkFyU211TFlsRFF2c2VkWTU5V29wVTJJSWxBYy14dzBSQU5wdklPYmkzZ08tUzkwVWx2YVVZajNGOG9jMThRWVcxaWJnbTg1ZFlkb3FDWFlYUm9QbnlIMmhMOWZRcU9pdU9IbHMySjhfSkRmZDY5UFlPbHU?oc=5",
+      "published": "2026-11-22T22:46:27+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Mens White Varsity T-Shirt I Spurs - Tottenham Hotspur"
     },
     {
       "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
@@ -7099,26 +7119,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "WSL: Man City vs Spurs LIVE!"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-22T15:00:49.074748+00:00",
-      "link": "https://www.skysports.com/football/arsenal-women-vs-west-ham-united-women/live/575825",
-      "published": "2026-11-22T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "WSL: Arsenal struggling to create against West Ham LIVE!"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T19:00:52.722904+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
-      "published": "2026-11-22T11:20:26+00:00",
-      "publisher": "https://login.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
     }
   ],
   "processed_urls": [
