@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 23,
+        "calls": 24,
         "errors": 0,
-        "requests": 23
+        "requests": 24
       }
     },
-    "calls": 23,
+    "calls": 24,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 128640,
-    "output_tokens": 16574,
-    "requests": 23
+    "input_tokens": 135006,
+    "output_tokens": 17103,
+    "requests": 24
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5599,7 +5599,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T10:40:37.253896+00:00",
+  "last_scan_at": "2026-11-23T11:00:56.228402+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5620,6 +5620,16 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Diego Simeone records his 345th La Liga victory as Atletico Madrid manager to set a new mark.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T11:00:56.231901+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5pv9kkwn3y3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T10:48:45+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Atletico's Simeone breaks La Liga victories record"
+    },
     {
       "desc": "FOOTBALL fans are cracking up at a GTA 6 meme taking aim at Diogo Dalot. The right-back was one of the sorry Manchester ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -7109,16 +7119,6 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Jeglertz: We must learn from Spurs defeat and move on - Manchester City FC"
-    },
-    {
-      "desc": "Team news: Confirmed Liverpool line-up v Manchester United Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T16:12:11.969891+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNHF6Y2pDMnZiSmZHcW1GSzVBMkxqZHV2aERiUURFcExocVVpV2xPeUJ4WmJfeGI0TVRnV2ZaOUFrSnRMaDhZbU5QS1YwM1lDeW80UUNFQzBSU1JqbFdVU3lzX09XMnBvQnd6amhPWm55MkRzYjIydS1NWGJCWnF2cDdadEJ2T2JwRlBSUWYxbGdPcFVT?oc=5",
-      "published": "2026-11-22T15:29:10+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Team news: Confirmed Liverpool line-up v Manchester United - Liverpool FC"
     }
   ],
   "processed_urls": [
