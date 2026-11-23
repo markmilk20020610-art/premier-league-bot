@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 36614,
-    "output_tokens": 3978,
-    "requests": 6
+    "input_tokens": 42713,
+    "output_tokens": 4600,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5492,6 +5492,41 @@
       "title": "凯恩脚踝韧带撕裂恐缺阵三个月",
       "updated_at": "2026-11-20T23:00:52.385346+00:00"
     },
+    "f211223603f4": {
+      "article_title": "No amount of history or trophies will save Man Utd if they carry on like this – they’re sleepwalking towards relegation",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "72f1fcb68f972084",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 223
+        }
+      ],
+      "created_at": "2026-11-23T22:00:54.520989+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "a9831e305fdcc569",
+      "event_id": "f211223603f4",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-23T22:00:54.520989+00:00",
+          "origin": "created",
+          "title": "No amount of history or trophies will save Man Utd if they carry on like this – they’re sleepwalking towards relegation",
+          "url": "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 223,
+      "title": "太阳报炮轰曼联：再这样踢下去将滑向降级区",
+      "updated_at": "2026-11-23T22:00:55.173104+00:00"
+    },
     "f336c2fdca18": {
       "article_title": "Revealed: SIX Man United stars named in combined XI with Chelsea despite Michael Carrick's side's nightmare start - as stats boffins pick Ko",
       "attempts": 1,
@@ -5739,7 +5774,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T21:00:57.451105+00:00",
+  "last_scan_at": "2026-11-23T22:00:49.592510+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5760,6 +5795,76 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "MANCHESTER UNITED are not too big to go down. And if they think a new manager alone will save them, they are sleepwalkin",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T22:00:49.594456+00:00",
+      "link": "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation/",
+      "published": "2026-11-23T21:42:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "No amount of history or trophies will save Man Utd if they carry on like this – they’re sleepwalking towards relegation"
+    },
+    {
+      "desc": "Arsenal and PSG are both looking at a move for RB Leipzig winger Antonio Nusa, Xabi Alonso has Chelsea hierarchy backing",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T22:00:49.594477+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm8x0grpder5o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T21:41:52+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Arsenal and PSG keen on Nusa - Tuesday's gossip"
+    },
+    {
+      "desc": "Janelt rifles rocket for Brentford’s third against Everton in the Premier League",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-23T22:00:49.594493+00:00",
+      "link": "https://www.skysports.com/watch/video/13615825/goal-v-janelt-67-brentford-3-0-everton",
+      "published": "2026-11-23T21:41:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "WHAT A STRIKE! Janelt rifles rocket for Brentford’s third"
+    },
+    {
+      "desc": "XABI ALONSO isn’t hearing ‘Chelsea Dagger’ to celebrate his side scoring at home nearly enough. But the Blues boss might",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T22:00:49.594509+00:00",
+      "link": "https://www.thesun.co.uk/sport/41120587/xabi-alonso-must-fix-chelsea/",
+      "published": "2026-11-23T21:34:37+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Xabi Alonso needs to turn Chelsea around before things snowball out of control – just ask Potter, Lampard and Rosenior"
+    },
+    {
+      "desc": "Fabrizio Romano reveals Man Utd transfer talks ‘this week’ as top priority named TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T22:00:49.594527+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPV1VLVUxTYlE3TkxXWHZydC1HR0Rrb2syVWRuUmZxd29ZbHNPYW9YR2VEMDJGdlAxWFJtZEFNbTE1RXpYZk44cWNzSXBiQXExbFl5bGdUYWhjenlFWEtWWkplUDNNQ0JZWGZVeGwwV0JpNmJIeTlFTHVQaFBHQ3M4UFl4TWh5OUtVenJsWF9sTnhIR2lhQ2dIeGlVM0lBYS15WFhyWUQyWEZpZzU2UnNNTGt5Rlk0cVNhNEdoSg?oc=5",
+      "published": "2026-11-23T21:24:34+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Man Utd transfer talks ‘this week’ as top priority named - TEAMtalk"
+    },
+    {
+      "desc": "MANCHESTER UNITED failed to sign Rio Ngumoha, even though he is a “massive” fan of the club and was given a personal tou",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T22:00:49.594541+00:00",
+      "link": "https://www.thesun.co.uk/sport/41120694/man-utd-rio-ngumoha-liverpool-nicky-butt/",
+      "published": "2026-11-23T21:11:34+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd legend claims Ngumoha is massive Red Devils fan and was given personal tour of facilities before Liverpool move"
+    },
+    {
+      "desc": "Kevin de Bruyne says he has \"love\" for Manchester City's owners and his feelings for the club will \"never change\" despit",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T22:00:49.594558+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cxq6e9vlp39jo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T21:05:23+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "De Bruyne's feelings for Man City will 'never change'"
+    },
     {
       "desc": "VAR controversy as Tarkowski sent off after review during Everton's Premier League match against Brentford.",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -5911,6 +6016,16 @@
       "title": "Chelsea loan watch: Genesis Antwi making a name for himself and Robert Sanchez’s Como move becoming a nightmare"
     },
     {
+      "desc": "Courtois: goalkeepers have little chance of winning the Ballon d'Or Tu Futbolero",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T22:00:49.594781+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNV0JGcF9PVUVVQlFlQlE2bnhGeEM5VjZmaWxNM3RGTWUwZ0lPdHFPSUVROHNacVhtak5ZalZtSk9vODFMR2k0VGw2Z0Y5dFlVVjduT0Q3TlRtblZJaHYtOGtybXFFdTlHY21SZnMxZktNQWZiaGVBSzJhNnZldTRfb2VOWXRnU3hrWW5OdkREY2tPTUNEU01LeDR1TnJmdw?oc=5",
+      "published": "2026-11-23T18:06:51+00:00",
+      "publisher": "https://www.tufutbolero.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Courtois: goalkeepers have little chance of winning the Ballon d'Or - Tu Futbolero"
+    },
+    {
       "desc": "STEVEN GERRARD has claimed that Mauricio Pochettino made a 'disrespectful' gamble against Liverpool which failed to pay ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-23T19:00:53.691652+00:00",
@@ -5919,6 +6034,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘He got it wrong’ – Steven Gerrard calls out Mauricio Pochettino’s ‘disrespectful’ Man Utd mistake against Liverpool"
+    },
+    {
+      "desc": "FIFA confirms 2035 Women’s World Cup will be held in UK for first time 101 Great Goals",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T22:00:49.594808+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZWVMRERpdDVnSi1KZlBIRmVMOXRScTI0UWtOc0R2UmVneWpwQ2s2TVI4X2RJSlkzVGI5bzJZdXIweTh4TXFsek41bVk4N1ZodmFCZjhocHNUc2Q1Q2hMbEU4Z0tFaFBnaXdna3dQandPb09yNmd1aUdhOVRMT1N6TlFCWHJ1S1dGcXlpNV81cjktcERFMHllbWlvcHA1SEkxTTI1VzRmREtkQktteFlReElGZV9Eb0R2VjQ4dHdLLXRnQQ?oc=5",
+      "published": "2026-11-23T17:47:07+00:00",
+      "publisher": "https://www.101greatgoals.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "FIFA confirms 2035 Women’s World Cup will be held in UK for first time - 101 Great Goals"
     },
     {
       "desc": "",
@@ -7169,96 +7294,6 @@
       "publisher": "https://pt.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "Como assistir ao City vs Napoli na TV em todo o mundo? - Manchester City FC"
-    },
-    {
-      "desc": "Jamal Musiala retirement rumours erupt amid Bayern pay-cut dispute Lente Desportiva",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T12:01:09.950753+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN0IyZU1iVU1LeUJadkZkWDNFTnpxUTlYZFRSV1poMXg4dWZad0JNaTdFNXhNSTZoMGYyekZFb1k3ajV2WTVXNkUwa3V0R2NRRnNiTDBmY2hYc0VFQlFIUmRrVFAzbW9pUUNlX2RlVlZLOUZ5U05ibHJZODM2MjA3OHBmZDRNLXNkUUtHbUpmSkUzbGc2ZFlpcXhNUQ?oc=5",
-      "published": "2026-11-23T09:45:00+00:00",
-      "publisher": "https://lentedesportiva.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Jamal Musiala retirement rumours erupt amid Bayern pay-cut dispute - Lente Desportiva"
-    },
-    {
-      "desc": "Man Utd: Romano reveals FOURTH vital condition to decide Fernandes future - 'there is a serious risk' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T10:40:37.256877+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZXFybVNMa05qX043b2t1QTlvTXRmVkxfTDVqa0dVSEZ4SFd0ek1jYm1LaFJPRFlVOVZuQnZQUUJRRFp4eVZrV1cwUDNJNEhYb0FFY2l3ZEpFOXZQRmk0eFV5TkV4cGx0WC11bnA4c3B1bDdEOEFRbkdmSHU4MHpYLTZmVTRMTG91SkMzd09JNUJhQzc1OUpQaWk2U01nTjR1ckJJNEJNNl8?oc=5",
-      "published": "2026-11-23T09:39:39+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Romano reveals FOURTH vital condition to decide Fernandes future - 'there is a serious risk' - Football365"
-    },
-    {
-      "desc": "Exam success for United youngsters Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T17:01:08.063334+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rNkJUcFVFbEtDVkZCRllxTVlNUDluNVB1dWs5czBfLW5YTlJaenhZZ1luRnl4R1JqT3dRV2hGVERUUmRMUEctZ09UX1AtRW5uSnZPdmF5dWpxVGExb3lNc0o2WWNFVjIwRFAyWERkQlFualU?oc=5",
-      "published": "2026-11-23T09:32:57+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Exam success for United youngsters - Manchester United"
-    },
-    {
-      "desc": "BRENTFORD host Everton for Monday Night Football tonight, with the Bees looking to leapfrog the Toffees and David Moyes'",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T10:00:58.663170+00:00",
-      "link": "https://www.thesun.co.uk/sport/41112227/brentford-everton-talksport-bet-offer/",
-      "published": "2026-11-23T09:28:42+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Brentford vs Everton: Bet £10+ on football and get up to £30 in free bets | talkSPORT BET"
-    },
-    {
-      "desc": "The conditions were favourable. Leny Yoro's red card after just eight minutes. A Man Utd team devoid of confidence and d",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-23T10:00:58.663217+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615535/liverpools-attack-shows-its-devastating-potential-as-florian-wirtz-steps-up-in-thumping-win-over-10-man-man-utd",
-      "published": "2026-11-23T09:01:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "The day Liverpool's attack showed its devastating potential"
-    },
-    {
-      "desc": "Pioneering or problematic? Why Gino Pozzo's 14-year Watford ownership is at a crossroads as the club search for their 26",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T09:01:18.749452+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq98z9p66g0xo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T08:55:36+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pioneer or coach-eater? The complex world of Pozzo's Watford"
-    },
-    {
-      "desc": "Swindon sack manager Ian Holloway following their poor start to the League Two season.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T09:01:18.749477+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5yrg1r6ezno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T08:44:53+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Holloway sacked by Swindon after two seasons"
-    },
-    {
-      "desc": "SWINDON have sacked Ian Holloway after a run of four straight defeats. Former Blackpool, Crystal Palace and QPR boss Hol",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T09:01:18.749496+00:00",
-      "link": "https://www.thesun.co.uk/sport/41112019/ian-holloway-sacked-swindon-efl-league-two/",
-      "published": "2026-11-23T08:37:30+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ian Holloway SACKED by Swindon after four straight defeats as League Two club release statement"
-    },
-    {
-      "desc": "Premier League Football News, Fixtures, Scores & Results Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T10:00:58.663291+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE0ybW56TURtbnh4VXdOOHZqM05pTGxxMjVuUVJsUVotMnc1MjJBaDhBdzlibHBDeEF5aW5SQWFudUlmUlNs?oc=5",
-      "published": "2026-11-23T08:29:13+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League Football News, Fixtures, Scores & Results - Premier League"
     }
   ],
   "processed_urls": [
@@ -7438,7 +7473,8 @@
     "https://www.dailymail.com/sport/football/article-16314883/man-united-pochettino-liverpool-carrington-training.html",
     "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo",
     "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague",
-    "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta"
+    "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta",
+    "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation"
   ],
   "s_overflow": {},
   "schema_version": 4
