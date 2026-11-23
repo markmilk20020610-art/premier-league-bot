@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 8,
+        "calls": 9,
         "errors": 0,
-        "requests": 8
+        "requests": 9
       }
     },
-    "calls": 8,
+    "calls": 9,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 55086,
-    "output_tokens": 5688,
-    "requests": 8
+    "input_tokens": 61053,
+    "output_tokens": 6324,
+    "requests": 9
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5774,7 +5774,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-23T22:15:14.626776+00:00",
+  "last_scan_at": "2026-11-23T23:00:56.312752+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5795,6 +5795,66 @@
     "updated_at": "2026-11-23T22:01:18.160962+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Everton captain James Tarkowski was sent off for the first time in his Premier League career in Monday's 4-0 loss at Bre",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T23:00:56.316204+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmqx5eynvpqno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T22:43:39+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Tarkowski's first Premier League red ruins Moyes' night - was it deserved?"
+    },
+    {
+      "desc": "FROZEN assets from the sale of Chelsea earned over £100million in interest last year, The Sun can reveal. Accounts for e",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T23:00:56.316240+00:00",
+      "link": "https://www.thesun.co.uk/sport/41121880/roman-abramovich-chelsea-sale-funds-earn-interest/",
+      "published": "2026-11-23T22:40:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Frozen assets from sale of Chelsea earned over £100million in interest last year"
+    },
+    {
+      "desc": "The top stories and transfer rumours from Tuesday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-23T23:00:56.316266+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13615837/man-utd-transfer-news-brentford-defender-nathan-collins-emerges-as-january-target-paper-talk",
+      "published": "2026-11-23T22:40:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Brentford defender emerges as Man Utd target as January budget revealed"
+    },
+    {
+      "desc": "Watch highlights as Brentford earn a comfortable 3-0 win against 10-man Everton in the Premier League, including a great",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T23:00:56.316359+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/c5gm3jlw7l7xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T22:31:27+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Janelt scores stunner as Brentford beat 10-man Everton"
+    },
+    {
+      "desc": "ETHAN NWANERI was supposed to be the Arsenal starboy. Nwaneri had been discussed as one of Hale End’s brightest sparks w",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T23:00:56.316393+00:00",
+      "link": "https://www.thesun.co.uk/sport/41121292/ethan-nwaneri-arsenal-return-borussia-dortmund-loan/",
+      "published": "2026-11-23T22:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ethan Nwaneri was supposed to be Arsenal’s starboy but returns to Emirates in all too familiar situation with Dortmund"
+    },
+    {
+      "desc": "EXCLUSIVE BY CHRIS WHEELER: Pochettino admitted that United are in a relegation battle after a painful 4-0 defeat to Liv",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-23T23:00:56.316435+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16316449/Manchester-United-January-transfer-budget.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-23T22:03:31+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United's January transfer budget will be less than £50m with Mauricio Pochettino expected to make only TWO signings - despite needing to"
+    },
     {
       "desc": "DAVID MOYES has been around long enough to know football would deliver him a gut-punch on his big night. With heavyweigh",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5824,6 +5884,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "MW11 VAR decisions explained: Why Tarkowski was sent off - Premier League"
+    },
+    {
+      "desc": "Fabrizio Romano reveals Mourinho's stance on Endrick's Real Madrid future Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T23:00:56.316531+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRlh0UEptaXdzTHVMZ2ZGaFU4Uk5ucFhvZkNkQXB3cGtQOUpDaXlXZEVzakl5d3FMeXAzTWRMc1ZOZ1RNZVd3eTRfOGQ3endmaTN6S0htVTgxalRXLTB6TzFtdzdCVnp6M2F1bnQ1cmNXX1cySWRaM3J5QkJjb0hHUm0ySWE4S19HUnVYWmNYMmUzWmJqOTBncXdBeUFKbVNzaklOSWxvYVlabGZwdGtfM9IBtgFBVV95cUxQbjJ0SmVneUZ0cjRkNVkzb0tkZlF1REtZZUtYd1RYUlg0RG9TR1c0eHFESmVoOFlWSVRMVjFRUUNLMWxERE1wWmpfN0xEdkh6eDc0Q1hFRDBFNWdPX2dVUVRJVXNsOUFCbHVhZVhYU2cyQ3JCeG1vclh1M0VHRzBNemZNOXNPb2lReTlybzRaZFdPdDJwRzcwUjhOMEplTnJXTnE1N2xwNlVtbnUzSmNBbmhiODNSUQ?oc=5",
+      "published": "2026-11-23T21:42:25+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals Mourinho's stance on Endrick's Real Madrid future - Tribuna.com"
     },
     {
       "desc": "MANCHESTER UNITED are not too big to go down. And if they think a new manager alone will save them, they are sleepwalkin",
@@ -6046,6 +6116,16 @@
       "title": "Grealish on bench for Everton as Wilson starts for Brentford LIVE!"
     },
     {
+      "desc": "إحصائيات Haitam Aleesami هذا الموسم وإحصائيات مسيرته | بريميرليج Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T23:00:56.316965+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBwaWNQbkU3c3R0UUoyZUdvQ1lwYVRqU1Y5bkI0YzFGNXFOTWROdUp4WTVLNjc5eWFMTndzVVZ3RlgxQjU3dVlJTlkwSE9fNTJNNjFQNDB6U1lsSHcyNzZzaXhJUmxCUjhBcDRBYVhaS25hSTBOXzNIYg?oc=5",
+      "published": "2026-11-23T18:19:23+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "إحصائيات Haitam Aleesami هذا الموسم وإحصائيات مسيرته | بريميرليج - Premier League"
+    },
+    {
       "desc": "ONLY two of Chelsea's TWENTY PLAYERS on loan were on the winning side at the weekend. That statistic indicates Chelsea h",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-23T19:00:53.691604+00:00",
@@ -6174,6 +6254,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "What to do with injured Raya in Fantasy? - Premier League"
+    },
+    {
+      "desc": "Man Utd have contacted FA to appeal Leny Yoro red card after Liverpool loss Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T23:00:56.317123+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPREV2QnNOb2UwUVBTa2VBUWhsRjlQX0d3X2JTRzNHQk5fZkhkRkZmS2VyVHhrRW1vWU1yZHJWUk8xWU5LWEFVQ2xCODRxQ2Z2amJWQjk3ZGVidzMxVTdYaE1CV0lzQ2ZSR2M2M0J0cWhyaTVDSXRZTW5GVERtYWY1ZWVR?oc=5",
+      "published": "2026-11-23T16:51:15+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Man Utd have contacted FA to appeal Leny Yoro red card after Liverpool loss - Yahoo Sports"
     },
     {
       "desc": "FORMER Arsenal midfielder Tomas Rosicky has been sacked as sporting director of Sparta Prague, with another ex Prem star",
@@ -7204,96 +7294,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Non-League club put up for sale as owner releases emotional statement eight years after starring in infamous documentary"
-    },
-    {
-      "desc": "The journeyman manager had himself called the 2-0 loss on the road 'unforgivable' after he was taunted by home supporter",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-23T12:01:09.950612+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16314529/ian-holloway-sacked-swindon-training-ground-haunted.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T11:00:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Ian Holloway SACKED by Swindon two days after trying to confront angry fans in feisty full-time scenes at Newport - with Premier League cult"
-    },
-    {
-      "desc": "Pochettino: Let's keep our heads up Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T18:00:59.428900+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLW40X3JYak4xY25WUFZtXzFCVGN4WkJqQWtxRXlleDdlTjdBSk44QlhWR0hZMnh5emlTZjdlVnZwNjFJUTd5R3dmenRkQXpveGRlczZTZ1FmaVFieDUyMTZWbl9Wd2F2Xy1ZZXg5YXdDM01SR1NJS1d5NzdJcFBmR3I5NTNoUndu?oc=5",
-      "published": "2026-11-23T10:59:15+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino: Let's keep our heads up - Manchester United"
-    },
-    {
-      "desc": "Diego Simeone records his 345th La Liga victory as Atletico Madrid manager to set a new mark.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T11:00:56.231901+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c5pv9kkwn3y3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T10:48:45+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Atletico's Simeone breaks La Liga victories record"
-    },
-    {
-      "desc": "Man Utd: Romano reveals truth over £84m bid for Barcelona star as Fernandes faces 'several issues' Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.551407+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTkNKVHAxYmhyVlBDcUpXUTJKSUVEb21nbVB2U2FjUG1zRFVyM0pvb05FRTU4NmQzSGFPbGg2TWNCLUpxa1hNWldYUlY4bGhUMjdYc0ViZEh0azZXVHFFMlc2QWYxVFZocFgyRHZ5NUJiSS1OVTNnWm8tRjd5ZmVDU3FCZjBOMEtZUm04cWpxRi1oaG9aUzBUQWxBY3BpVTNQ?oc=5",
-      "published": "2026-11-23T10:39:56+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Man Utd: Romano reveals truth over £84m bid for Barcelona star as Fernandes faces 'several issues' - Football365"
-    },
-    {
-      "desc": "FOOTBALL fans are cracking up at a GTA 6 meme taking aim at Diogo Dalot. The right-back was one of the sorry Manchester ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T10:40:37.256675+00:00",
-      "link": "https://www.thesun.co.uk/sport/41112790/diogo-dalot-gta-6-man-utd-liverpool/",
-      "published": "2026-11-23T10:37:20+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Diogo Dalot trolled by hilarious GTA 6 meme after Man Utd’s disastrous defeat to Liverpool"
-    },
-    {
-      "desc": "SKY SPORTS presenter Kate Tracey gave fans a glimpse of her relaxing retreat as she enjoyed some downtime in a jacuzzi. ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T10:40:37.256705+00:00",
-      "link": "https://www.thesun.co.uk/sport/41112712/kate-tracey-jacuzzi-zen-retreat-sky-sport-social-media/",
-      "published": "2026-11-23T10:36:46+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Sky Sports presenter Kate Tracey treats fans to jacuzzi video as she wears low cut top on ‘zen’ retreat"
-    },
-    {
-      "desc": "Sudi Abdallah banned from Burundi national team Pan Africa Football",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.551433+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1yNXVhNnd4WVF6Q0hfYWtVVW9EZjYwdkIwYm9UcHR3THFiMnk2YTVmWmxielJ0WEtvOFBJQ3E3YXd5WHdjbkxoeXdaYlpiVzRicVNlN1JubF96WTZ5Wm1GZUV3dUhPSkUxa3o5NW1Pb2lEUFFQ?oc=5",
-      "published": "2026-11-23T10:26:53+00:00",
-      "publisher": "https://panafricafootball.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Sudi Abdallah banned from Burundi national team - Pan Africa Football"
-    },
-    {
-      "desc": "BTEC Football Coach (8 Month FTC) Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T16:00:51.536065+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0zSWI4UFREci00QmlBSUhMUVcwTlVkZFVkS3J5bmtIWTVxNDNsamxiWVo3bGIycmF3WHgtZG0tZUExSXNMUFQ1RGhTdzA2NG1sZjZFM1ladWF6bGVPX2F4b19lWEVIS0JOZmJpalAwNW1jOVNaU0RENi1OTmw?oc=5",
-      "published": "2026-11-23T10:20:33+00:00",
-      "publisher": "https://careers.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "BTEC Football Coach (8 Month FTC) - Manchester United"
-    },
-    {
-      "desc": "MATT BARLOW: Having summoned Luca Williams-Barnett to his office to let the teenager know he would be making his first P",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-23T12:01:09.950683+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16313103/two-things-Roberto-Zerbi-demanded-Luca-Williams-Barnett-Tottenham-new-lucrative-new-deal.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T10:17:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "The two things Roberto De Zerbi demanded from Luca Williams-Barnett's first Tottenham start as 18-year-old star eyes new lucrative deal with"
     }
   ],
   "processed_urls": [
