@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 28,
+        "calls": 1,
         "errors": 0,
-        "requests": 28
+        "requests": 1
       }
     },
-    "calls": 28,
-    "date": "2026-11-23",
+    "calls": 1,
+    "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 159279,
-    "output_tokens": 19927,
-    "requests": 28
+    "input_tokens": 6230,
+    "output_tokens": 704,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1365,6 +1365,41 @@
       "telegram_message_id": 112,
       "title": "曼联解雇卡里克拖延，恐被迫启用临时主帅迎战利物浦",
       "updated_at": "2026-11-10T22:01:07.628879+00:00"
+    },
+    "3eb6c660e63d": {
+      "article_title": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "6b434640a939f016",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 219
+        }
+      ],
+      "created_at": "2026-11-23T16:00:57.551219+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "d76bd0f07220b1c1",
+      "event_id": "3eb6c660e63d",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-23T16:00:57.551219+00:00",
+          "origin": "created",
+          "title": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 219,
+      "title": "英国四地联合获得2035年女足世界杯主办权",
+      "updated_at": "2026-11-23T16:00:59.449896+00:00"
     },
     "4086062173e1": {
       "article_title": "When will Mauricio Pochettino take charge of Man Utd?",
@@ -5634,7 +5669,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T15:00:56.696226+00:00",
+  "last_scan_at": "2026-11-23T16:00:51.532153+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5655,6 +5690,136 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Bruno feels his best is yet to come as a Gunner Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535000+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVWt3RVpCdUQyeTlHLV9MVlBaM2plbmF6QklJRGoxWmpDRHA3ZEVCQmI1VU1NSkd0MDEzQk4xMW9tU3E2R1EzQktrVEZlMW1saGdvbmEwMnVmcjZEM1BWTkxzTnlxZlJrWFNUcEszRTJQQ0lPZWVhLXA1bWMyRW5QYkFpQ2Y0Uk15QnMzcl9kQklPcTg?oc=5",
+      "published": "2026-11-23T15:52:13+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Bruno feels his best is yet to come as a Gunner - Arsenal.com"
+    },
+    {
+      "desc": "PRESENTER Emma Louise Jones looked sensational as she shared her first selfie since undergoing surgery to have her gallb",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T16:00:51.535030+00:00",
+      "link": "https://www.thesun.co.uk/sport/41117634/emma-louise-jones-instagram-bbc-presenter-football-influencers/",
+      "published": "2026-11-23T15:45:04+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Emma Louise Jones stuns in low cut top as BBC presenter posts first selfie since undergoing surgery"
+    },
+    {
+      "desc": "Bayern Munich have come under criticism from FIFA's players' union amid accusations that the club is attempting to slash",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-23T16:00:51.535087+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16314857/bayern-munich-jamal-musiala-contract-row.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-23T15:41:06+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Bayern Munich slammed as 'despicable' and accused of 'co-ordinated' plot to undermine Jamal Musiala after club chief questioned star's contr"
+    },
+    {
+      "desc": "Arteta on Dortmund, Madueke and Bellingham Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535109+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaHJEZ0N5Z2FMR1ZwVzNnMU9lSXpRMUU0RXhpSDlvU2ItNGJ1cUhBRzBYR1kxRzFnRTd3U3NzZzU5cDk1dTBDamxJbjNZaTNZaGxRUjBZRkU0TXlFQTVXaHBpdUlOS1Q1R2MtRlBJWV9uOGg5emVzbkxtRnN5allLZU9nZEFERC1lZHhv?oc=5",
+      "published": "2026-11-23T15:36:58+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arteta on Dortmund, Madueke and Bellingham - Arsenal.com"
+    },
+    {
+      "desc": "Steven Pressley says he felt embarrassed by Dundee's 8-0 \"humiliation\" by Hearts and that there is a \"fragility\" in his ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T16:00:51.535134+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cre3d9j5k4n8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T15:31:57+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "I've wanted to crawl under a rock and hide' - Pressley"
+    },
+    {
+      "desc": "Home nations to host FIFA Women’s World Cup in 2035 Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535158+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcVdFMk9zeXNHaFl1Q0h0OWNEbjl4d29yckxwQXl4aTRRSWF3VnZBWDFLRlJZUklyN2l2NFk2RFlTNzhkSlgzOXhFcnhQcmNrc3NzUW54MHNzeXJfT3NCUnNHam80M2FEU1owaDkxRWtRQTAxNnRmSzFIUS1MQ0pFRWJYbw?oc=5",
+      "published": "2026-11-23T15:24:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Home nations to host FIFA Women’s World Cup in 2035 - Yahoo Sports"
+    },
+    {
+      "desc": "Arsenal goalkeeper David Raya will miss Tuesday's Champions League game against Borussia Dortmund but his shoulder injur",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T16:00:51.535181+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cjx2rqpr7l9lo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T15:23:09+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Raya to miss Dortmund game but injury 'not serious'"
+    },
+    {
+      "desc": "Tottenham Hotspur Stadium included as candidate host venue for FIFA Women’s World Cup 2035 Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535205+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOTEFIMVgtZk4zN2xJRHZsb3hqaUpzVDJ2bG4zYVVVTVJLSFQzdTRtYzQyaXV5S1o4cVFDdmpQNk04UzBGVVpkSE9SNlFTTzJYbTcyUFNrUDdDUmFjb2IzekZKVHJPY2FIQnd2bFNXU0J3SVkyOUR6SEtQanJSQ0NJNE9vSTJZUHI5aW1TSE1hQWZGbV9kWWJfbnIxRG0xWmc1WFVDRGdtQUQ2Z25yR3BYcUVhd2I5RmQ3NHllc184NV9HeXJuMEpzTm1CMm1DcDdH?oc=5",
+      "published": "2026-11-23T15:21:18+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Tottenham Hotspur Stadium included as candidate host venue for FIFA Women’s World Cup 2035 - Tottenham Hotspur"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Tottenham interest in Gustavo Varela after nine goals in 10 games Spurs Web",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535228+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRVJaVmQzS0ppN1FwVE1YNHhzM2xuM0dOM0I3U0dKNjU5TTJDU3lBTl9TRlhRa2VXQzd3ZGtsb09uRVFTb3MtejN4bEZOVy1WMmdlRGtZMXBCQlZlRU54S213d3RzWC1OQXZmRE9OZjl5d1R1dm1UcnJTTmZ6cWdNanFEMmJJMjNSaTJCRkxlUkUtTWpWM0NNUUhoMmNzV0ZCZER6SkF2ZHM5dUF6Tk9CNlhfanIzcWpGLXNaSXF0dHNRMkdLTGd3?oc=5",
+      "published": "2026-11-23T15:16:21+00:00",
+      "publisher": "https://www.spurs-web.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Tottenham interest in Gustavo Varela after nine goals in 10 games - Spurs Web"
+    },
+    {
+      "desc": "ENGLAND, Scotland, Wales and Northern Ireland have been confirmed as joint hosts of the 2035 Women's World Cup. Fifa off",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T16:00:51.535250+00:00",
+      "link": "https://www.thesun.co.uk/sport/41117519/uk-world-cup-twelve-premier-league-fifa-england/",
+      "published": "2026-11-23T15:16:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "UK to host first World Cup since 1966 with TWELVE Premier League stadiums to be used at Women’s tournament in 2035"
+    },
+    {
+      "desc": "Argentina star Leandro Paredes collapsed during a live interview immediately after winning a trophy with his Boca Junior",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-23T16:00:51.535281+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16312997/Argentina-star-Leandro-Paredes-collapses-post-match-interview-Boca-Juniors.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-23T15:11:02+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Argentina star Leandro Paredes collapses during post-match interview as journalist tries to break his fall after he 'felt dizzy' at the end "
+    },
+    {
+      "desc": "UK to host FIFA Women's World Cup 2035 TheFA.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535316+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZHhjTGpRQnZYUG5vTExDYlo1U1gyR1YyaV9hNGItek1xSXdzbDZ5YnBFdUhDUlVDUHI3WGZqc0NSU1BlbDlJdkpteW5WQ19qNmR6ZVpfWnMtbkdMWjk3REV0NlBEVUw4OWZZQmJQZ29mTzJvU3k2LU5aNnpfc2VpYnFvWlFTTzNDd2pWbnphdXZpaVNwNWJzZmYzeWh0Zw?oc=5",
+      "published": "2026-11-23T15:09:50+00:00",
+      "publisher": "https://www.thefa.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "UK to host FIFA Women's World Cup 2035 - TheFA.com"
+    },
+    {
+      "desc": "The UK has been confirmed as the host of the 2035 Women's World Cup.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-23T16:00:51.535334+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13615555/womens-world-cup-uk-announced-as-2035-hosts-as-costa-rica-jamaica-mexico-and-usa-host-in-2031",
+      "published": "2026-11-23T15:05:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "UK confirmed as hosts of 2035 Women's World Cup"
+    },
     {
       "desc": "GEORGINA RODRIGUEZ showed off her incredible figure as she slipped into a skin-tight gym outfit for her latest social me",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5724,6 +5889,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Dele Alli films update on busy life despite being a free agent – from gym routine to Prada event"
+    },
+    {
+      "desc": "Arsenal 47 Match Day Cold Weather 1886 Navy Pom Beanie Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535469+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOUtvVThBY1ZkWHBmSThhdWJWRmRNUXBTOHZHamxvS28xdXMwUDRTckp1U1g3aTVpLVZERHlPdVlBbW9mNUJRWVJfY1R5ZHlrQTFnakFaeXA3eHN2clJOcUUzQ2JtU0U0cWQ3TzBfV2NFdWR3bGFGd3NXWEo5cGNVc2NRWlpuSXRNeWRjajczYVN3V2o4SEJ3NXoyZTFrZ1FDME5haGJhd3FDNVBHRG9tWl9mRWtsY0ZONVdfZExlNXVJMW9nQUxuRzh1V0g?oc=5",
+      "published": "2026-11-23T14:19:10+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal 47 Match Day Cold Weather 1886 Navy Pom Beanie - Arsenal Direct"
+    },
+    {
+      "desc": "Arsenal 47 Match Day Cold Weather Burgundy Beanie Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535491+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQaE1rUGl4R1IwWUtFbFNDdjVEVGVrU1Z1WmRfOGNUdTJiRWZZOEp6RWRKSk1YUDBDTVRRaDJ1WDRaZDQ1QXdPM2NUcmVhbFlwdWdNZzFNOVRUQWRSaHNZUVUxNjgyZWl5WEhZQ0s3VFhMcVAwZGNWa3VwbF9qOUU0X0tfTVBmXzdtamRaeEZfU2hvV3Uzc0tsU09JSWdJZE9PQjd4ZFJMMHFibmVmQmc4RlhRZmRGS2o2SlNzaUFDVzBrSndYQnc?oc=5",
+      "published": "2026-11-23T14:19:09+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal 47 Match Day Cold Weather Burgundy Beanie - Arsenal Direct"
     },
     {
       "desc": "XABI ALONSO is already walking on thin ice at Chelsea after damning statistics revealed he has made one of the worst sta",
@@ -5836,6 +6021,16 @@
       "title": "International stadium set to look unrecognisable with 46,000-seater expansion proposed ahead of England clash"
     },
     {
+      "desc": "Spurs Womens Back Leopard Print T-Shirt I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535684+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSVUzVlJBY2dfLVZSd01KQXVGSl9yb2VmUjhWa1BPTldRVUJ2aUpVSHpUanNHNE81Q3BFQU1VQThnNUFING45Um5FUVpxLUV1U3otMzdzUkRNZXlzVEpRWmI1ZzM3TzFFZlp0LVhRMXJfdko2czJUU1JfcUNSaGpRa2REM09pc0FGd0lxMWxhZU9tYUNDMDNlbkJB?oc=5",
+      "published": "2026-11-23T13:31:00+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Womens Back Leopard Print T-Shirt I Spurs - Tottenham Hotspur"
+    },
+    {
       "desc": "Man United prepare appeal after Leny Yoro's controversial red card against Liverpool Business Upturn",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-23T14:00:50.550733+00:00",
@@ -5874,6 +6069,16 @@
       "publisher": "https://tickets.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "- Manchester United"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.535752+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-23T12:58:16+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "Semenyo Injury Update: Still Out for Man City vs Napoli thefalse9.com",
@@ -6234,6 +6439,16 @@
       "publisher": "https://panafricafootball.com",
       "source": "https://www.thefa.com/rss",
       "title": "Sudi Abdallah banned from Burundi national team - Pan Africa Football"
+    },
+    {
+      "desc": "BTEC Football Coach (8 Month FTC) Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T16:00:51.536065+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0zSWI4UFREci00QmlBSUhMUVcwTlVkZFVkS3J5bmtIWTVxNDNsamxiWVo3bGIycmF3WHgtZG0tZUExSXNMUFQ1RGhTdzA2NG1sZjZFM1ladWF6bGVPX2F4b19lWEVIS0JOZmJpalAwNW1jOVNaU0RENi1OTmw?oc=5",
+      "published": "2026-11-23T10:20:33+00:00",
+      "publisher": "https://careers.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "BTEC Football Coach (8 Month FTC) - Manchester United"
     },
     {
       "desc": "MATT BARLOW: Having summoned Luca Williams-Barnett to his office to let the teenager know he would be making his first P",
@@ -6974,186 +7189,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Revealed: Liverpool's Carlsberg Player of the Match against Manchester United - Liverpool FC"
-    },
-    {
-      "desc": "EX-Manchester United ace Zlatan Ibrahimovic has netted a role as a villain in UK gangster drama MobLand. The former Swed",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:00:59.421327+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109619/zlatan-ibrahimovic-joins-gangster-drama-mobland-as-villain/",
-      "published": "2026-11-22T20:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Football legend joins gritty gangster drama Mobland as terrifying villain three years after quitting the game"
-    },
-    {
-      "desc": "Oli McBurnie's stoppage-time double earns victory for Hull City against second-placed Brighton in the Premier League.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T21:00:59.421357+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/ck62pzzezqz2o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T19:59:38+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "McBurnie stoppage-time double earns Hull win over 10-man Brighton"
-    },
-    {
-      "desc": "Mauricio Pochettino's reign as Manchester United head coach begins in desperate fashion as his team are thrashed by riva",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T21:00:59.421385+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T19:59:35+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Ngumoha stars as Liverpool thrash 10-man Man Utd"
-    },
-    {
-      "desc": "OLIVER HOLT AT ANFIELD: Omar Berrada, the United chief executive, looked colder and colder in the chill and, beside him,",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T20:00:50.231109+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308781/Liverpool-4-0-Man-United-Premier-League-2026-27-Result.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T19:52:59+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino was immediately up against it in his first few days at this slow-motion car crash of a club - Man United's 4-0 loss at L"
-    },
-    {
-      "desc": "MANCHESTER United fans belted out Bob Marley's Three Little Birds following their dismal 4-0 Anfield defeat. Leny Yoro w",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T20:00:50.231136+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109617/liverpool-man-utd-song-bob-marley-three-little-birds/",
-      "published": "2026-11-22T19:27:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Diss of the year’ – Fans convinced Liverpool were teasing Man Utd with song at end of Anfield thrashing"
-    },
-    {
-      "desc": "Liverpool head coach Andoni Iraola is pleased with his side's performance in their dominant win over Manchester United a",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T20:00:50.231154+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c3y0x55ey81yo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T19:25:21+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Iraola 'enjoyed' big win over Man Utd"
-    },
-    {
-      "desc": "Match report: Liverpool score four to earn victory over 10-man Manchester United Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T21:00:59.421464+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbjVNR3dMSF9obzk0TFM0TGMzRndyYUFoZUVQV1lucU1KNmtqYUJjeko2c0tFaVBGQ1JkdmJWTC05MFgtSkxTQUxjMVdnU0Fpd1Y4Ymx0MmNkblVLVkRYamlnbVhwaHhtVk94S1VfVFV4WnNtSXVYZkRUUmUzRTgwTHVpNUNzTzJHZnRsS3ZtU0tTdXZvajVr?oc=5",
-      "published": "2026-11-22T19:12:11+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Match report: Liverpool score four to earn victory over 10-man Manchester United - Liverpool FC"
-    },
-    {
-      "desc": "Mauricio Pochettino's Manchester United reign began in humiliating fashion as Liverpool put four past their bitter rival",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T20:00:50.231175+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T19:11:40+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Liverpool 4-0 Man United PLAYER RATINGS: Who looked 'like a rabbit in headlights'? Who is 'playing 100 times better' than last season? And w"
-    },
-    {
-      "desc": "Nine days after playing for Greece in a nightmare 7-0 loss, keeper Konstantinos Tzolakis plays a pivotal role in Hull's ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T20:00:50.231190+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm4gn7npqe8yo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T19:03:32+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "From conceding seven to Hull heroics - how Tzolakis recovered to defy Brighton"
-    },
-    {
-      "desc": "Manchester United's new head coach Mauricio Pochettino says his side must transform \"anger\" from their thumping at the h",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T20:00:50.231206+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c8p3vyyg4d6vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T19:03:24+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pochettino on 'painful' defeat in first game as Man Utd boss"
-    },
-    {
-      "desc": "Mauricio Pochettino felt Manchester United were given an \"unfair\" red card in their 4-0 defeat at Liverpool - with Kobbi",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-22T20:00:50.231232+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615402/leny-yoro-red-card-man-utd-boss-mauricio-pochettino-and-kobbie-mainoo-angry-at-sending-off-for-foul-on-liverpools-alexander-isak",
-      "published": "2026-11-22T18:58:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'No chance!' - Poch and Mainoo fume at 'unfair' Yoro red card"
-    },
-    {
-      "desc": "ROY KEANE slammed Manchester United's players and his fellow pundits after the side's 4-0 thumping at the hands of Liver",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T19:00:52.722087+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109466/roy-keane-swearing-rant-neville-man-utd-liverpool/",
-      "published": "2026-11-22T18:52:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘I feel like swearing’ – Roy Keane lashes out at Neville for what he said on commentary in Man Utd’s Liverpool mauling"
-    },
-    {
-      "desc": "MANCHESTER UNITED'S new manager Mauricio Pochettino endured a disastrous debut with TWO tragic Premier League records. P",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T19:00:52.722108+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109089/mauricio-pochettino-man-utd-liverpool-leny-yoro/",
-      "published": "2026-11-22T18:51:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino sets TWO unwanted Premier League records in Man Utd’s disastrous clash at Liverpool"
-    },
-    {
-      "desc": "EMMA LOUISE JONES has given an update on her recovery from having her gallbladder removed. The BBC presenter has been in",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T19:00:52.722126+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109074/emma-louise-jones-recovering-gallbladder-surgery/",
-      "published": "2026-11-22T18:36:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "BBC presenter Emma Louise Jones recovering from gallbladder removal after surgery leaves her with stomach stitches"
-    },
-    {
-      "desc": "“SACKED IN the morning” is not what any manager wants to hear. Few will have heard it during their first match in charge",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T19:00:52.722142+00:00",
-      "link": "https://www.thesun.co.uk/sport/41109323/liverpool-man-utd-pochettino-carrick-sacked/",
-      "published": "2026-11-22T18:33:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino made the same calls as Michael Carrick and Man Utd got what they deserved in Liverpool horror show"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO'S reign got off to a nightmare start after ten-man Manchester United were schooled 4-0 at Liverpool ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T19:00:52.722157+00:00",
-      "link": "https://www.thesun.co.uk/sport/41108408/man-utd-ratings-liverpool-de-ligt-pochettino/",
-      "published": "2026-11-22T18:31:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd player ratings: De Ligt and Martinez humiliated in Liverpool horror show with Lammens best despite shipping FOUR"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T02:00:51.150717+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBfMUJQR05SS1BEOFRhbGJGTzVsWHNPcFNPdUhid1ZJQU90SEp1S1BncGhhbVNLX3JPbEJQeDRGdWdKVFpyLTdWamxra1FkTUdBcUxGSEVtSUwwYUN1T2k1UlJmOG5GWVd2Z0llV29mMEJkb0pZV1ZaZ0lB?oc=5",
-      "published": "2026-11-22T18:29:38+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "After just eight minutes, Mauricio Pochettino's plans were thrown into tatters when errors from Matthijs De Ligt and Len",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T19:00:52.722182+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16313467/Gary-Neville-Man-Uniteds-Matthijs-Ligt.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T18:29:02+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Gary Neville tears into Man United's Matthijs de Ligt for 'unforgivable' defending that led to Leny Yoro's red card - and claims duo played "
     }
   ],
   "processed_urls": [
@@ -7330,7 +7365,8 @@
     "https://www.dailymail.com/sport/football/article-16313467/Gary-Neville-Man-Uniteds-Matthijs-Ligt.html",
     "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o",
     "https://www.thesun.co.uk/sport/41110978/chelsea-emmanuel-emegha-robbed",
-    "https://www.dailymail.com/sport/football/article-16314883/man-united-pochettino-liverpool-carrington-training.html"
+    "https://www.dailymail.com/sport/football/article-16314883/man-united-pochettino-liverpool-carrington-training.html",
+    "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo"
   ],
   "s_overflow": {},
   "schema_version": 4
