@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 19,
+        "calls": 20,
         "errors": 0,
-        "requests": 19
+        "requests": 20
       }
     },
-    "calls": 19,
+    "calls": 20,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 109501,
-    "output_tokens": 13734,
-    "requests": 19
+    "input_tokens": 113634,
+    "output_tokens": 14443,
+    "requests": 20
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5599,7 +5599,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T07:00:59.820361+00:00",
+  "last_scan_at": "2026-11-23T08:00:55.775919+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5620,6 +5620,46 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "The National Women's Soccer League in the USA is booming, so what is it getting right - and what can the Women's Super L",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T08:00:55.778403+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c893rk66e1l7o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T07:52:55+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Our Super Bowl moment' - what can WSL learn from booming US league?"
+    },
+    {
+      "desc": "Man City vs Napoli Lineups and Team News: Cherki to Start, Napoli Missing 11 thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T08:00:55.778453+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcm1zVExYU05Pcjlfc1dpVFhrT2dhdk9OZkk5SThiWXlLTUlBbVMtUjJMMnE0S0RyOW15U2d5enpuNUZ0N1lfdVpZY0N6eWpvZWlXSC1zYWk0MGcxSk5RNWwzbWZReTRlaFh6UzhPcmY0b3g0eHNta1VhRjJOdEZLbTdCMU0wNTA2QUlabEhoaDBSZ2pvMC1V?oc=5",
+      "published": "2026-11-23T07:48:33+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City vs Napoli Lineups and Team News: Cherki to Start, Napoli Missing 11 - thefalse9.com"
+    },
+    {
+      "desc": "LEWIS STEELE: Iraola may not look as natural at the grand gestures or possess the aura of his predecessor Jurgen Klopp j",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-23T08:00:55.778478+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308801/Liverpools-Man-United-Andoni-Iraola-Jurgen-Klopp.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-23T07:00:56+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Liverpool's win over Man United was a landmark day for Andoni Iraola - he is playing a style of football that Jurgen Klopp would be proud of"
+    },
+    {
+      "desc": "CHRIS WHEELER AT ANFIELD: As the fourth goal flew in and Anfield rejoiced once again, Mauricio Pochettino stood on the t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-23T08:00:55.778503+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16308783/Man-United-relegation-zone-merit-need-Mauricio-Pochettinos-coaching-powers-chronically-short-form-forgotten-win-writes-CHRIS-WHEELER.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-23T07:00:52+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Man United are in the relegation zone on merit and will need all of Mauricio Pochettino's coaching powers to get them out of it - they are c"
+    },
     {
       "desc": "Fabrizio Romano Transfer News: Bruno Fernandes alarm, Fermin Lopes, Musiala backlash www.footballtransfers.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5699,6 +5739,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Romano delivers major update on Liverpool, Aston Villa chase for Endrick; one club 'loves' Real Madrid star - TEAMtalk"
+    },
+    {
+      "desc": "Liverpool THRASH 10-man Man Utd in Pochettino's bow Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T08:00:55.778653+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOU1NGeFd3NHRfZTlDOW5sSWpabjFGZW5fUUJXMjRIS1RTZ0ZkRUY5Nk0xcmlkS1pJengxX3ZGREs4OTRFbkpwX2dyVXJBU2pPV0loMHA5Mmc3bGppY1I2VUFXNWVlODEyM1lndEpBdC05ZThzWDNpdV94bHlqYUVwOFd3YWtMa0VackV1NXNVSWNsWkFVMVhMakoxT1A?oc=5",
+      "published": "2026-11-23T05:05:47+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Liverpool THRASH 10-man Man Utd in Pochettino's bow - Premier League"
     },
     {
       "desc": "Every country opposing and supporting Gianni Infantino in Fifa re-election bid The Independent",
@@ -7069,56 +7119,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League manager warned he may have to find job as BBC MOTD pundit if results don’t improve"
-    },
-    {
-      "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Anfield as Mauricio Pochettino takes charge of Manch",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T13:00:51.742509+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308805/Liverpool-vs-Manchester-United-Premier-League-Mauricio-Pochettino-takes-charge-Red-Devils-time-rivals-head-head-Anfield.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T12:53:44+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Liverpool vs Manchester United - Premier League: Mauricio Pochettino takes charge of the Red Devils for the very first time as the rivals go"
-    },
-    {
-      "desc": "BLACKBURN players have sent a touching message to manager Tony Mowbray amid his health battle. The EFL hero coach announ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T13:00:51.742593+00:00",
-      "link": "https://www.thesun.co.uk/sport/41106362/chelsea-gudjohnsen-son-tony-mowbray-blackburn/",
-      "published": "2026-11-22T12:41:54+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea icon’s son holds up shirt with heartwarming message to Tony Mowbray amid health battle after goal for Blackburn"
-    },
-    {
-      "desc": "Kroupi prefers Barcelona over Paris Saint-Germain… | Yalla Shoot YSscores",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T19:00:52.722852+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTk5oM0htZ01yc0xidjY3U0k2NzNBajc5WTZmUFY5Zk9NSmpNR1ItaHlZNTAwY0dBR3lLZXRUMUltZWwySlBPUEpvZVpTb1hxN25Uc3JYRXZEUENfVHFENHQtbl9OWVBlckVqZ0x2cXJlYlY4djZxb1dLY0lfaXNCZ2dNNVI1R19fZjViNk12Zi0zSUdRbkd2NXp5YkNVWHItOXZwa3Fn?oc=5",
-      "published": "2026-11-22T12:34:17+00:00",
-      "publisher": "https://www.ysscores.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Kroupi prefers Barcelona over Paris Saint-Germain… | Yalla Shoot - YSscores"
-    },
-    {
-      "desc": "Tributes paid as former Wrexham vice-chairman and director David Rhodes dies Leader Live",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T13:00:51.742625+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeHlSeGdxc2FkaWgweUlpdGRiWk5XTGF6UExTOHZEU1BCanFSWXQ1XzhRSC0yLVVISS1rM3RlcUVVUkdxQS16dXJBUWRFb091MVhjWkRsamJEdGlBTHlSY1dwS3ZsV09YT05OM1FISFJRV2hfR0VoV0QyUjNRYlRtRFFEdE5SOGlWdW9Ocmx0bnNBLXhzQ2MyRUE0XzhnNVRF?oc=5",
-      "published": "2026-11-22T12:31:00+00:00",
-      "publisher": "https://www.leaderlive.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Tributes paid as former Wrexham vice-chairman and director David Rhodes dies - Leader Live"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-22T13:00:51.742648+00:00",
-      "link": "https://www.skysports.com/football/hull-city-vs-brighton-and-hove-albion/live/559549",
-      "published": "2026-11-22T12:23:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Belloumi starts for Hull with Rutter up front for Brighton LIVE!"
     }
   ],
   "processed_urls": [
