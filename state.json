@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 14,
+        "calls": 15,
         "errors": 0,
-        "requests": 14
+        "requests": 15
       }
     },
-    "calls": 14,
+    "calls": 15,
     "date": "2026-11-23",
     "errors": 0,
-    "input_tokens": 86783,
-    "output_tokens": 10424,
-    "requests": 14
+    "input_tokens": 92225,
+    "output_tokens": 11004,
+    "requests": 15
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1400,6 +1400,41 @@
       "telegram_message_id": 126,
       "title": "波切蒂诺将接替卡里克执教曼联？",
       "updated_at": "2026-11-12T16:50:11.257444+00:00"
+    },
+    "409c04be5bac": {
+      "article_title": "Ngumoha stars as Liverpool thrash 10-man Man Utd",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "f381db631188f632",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 216
+        }
+      ],
+      "created_at": "2026-11-23T03:01:07.816766+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e7947d38df67e02a",
+      "event_id": "409c04be5bac",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-23T03:01:07.816766+00:00",
+          "origin": "created",
+          "title": "Ngumoha stars as Liverpool thrash 10-man Man Utd",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 216,
+      "title": "利物浦4-0大胜十人曼联，恩古莫哈闪耀",
+      "updated_at": "2026-11-23T03:01:08.480439+00:00"
     },
     "4116e6d3a07d": {
       "article_title": "Aston Villa to initiate legal action against Jamie Carragher for ‘unacceptable insults’ - The New York Times",
@@ -5529,7 +5564,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T02:02:47.343758+00:00",
+  "last_scan_at": "2026-11-23T03:00:59.180583+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -7222,7 +7257,8 @@
     "https://www.dailymail.com/sport/football/article-16295031/Liverpool-4-0-Man-United-PLAYER-RATINGS-Premier-League.html",
     "https://www.thesun.co.uk/sport/41109813/mark-goldbridge-meltdown-liverpool-man-utd-mauricio-pochettino",
     "https://www.thesun.co.uk/sport/41110217/man-utd-worst-defence-europe-crystal-palace",
-    "https://www.dailymail.com/sport/football/article-16313467/Gary-Neville-Man-Uniteds-Matthijs-Ligt.html"
+    "https://www.dailymail.com/sport/football/article-16313467/Gary-Neville-Man-Uniteds-Matthijs-Ligt.html",
+    "https://www.bbc.co.uk/sport/football/videos/c933g77knz00o"
   ],
   "s_overflow": {},
   "schema_version": 4
