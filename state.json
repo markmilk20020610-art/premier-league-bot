@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 12186,
-    "output_tokens": 1403,
-    "requests": 2
+    "input_tokens": 18077,
+    "output_tokens": 2076,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3033,6 +3033,41 @@
       "title": "贝林厄姆弟弟进球被吹，因前切尔西球员踢中门将面部",
       "updated_at": "2026-10-31T19:37:30.014681+00:00"
     },
+    "7fefb60e423a": {
+      "article_title": "Raya injury 'not too serious' says relieved Arteta",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d13dfaa7034ff937",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 221
+        }
+      ],
+      "created_at": "2026-11-23T18:01:04.663066+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "fb19f8cb433f9e5c",
+      "event_id": "7fefb60e423a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-23T18:01:04.663066+00:00",
+          "origin": "created",
+          "title": "Raya injury 'not too serious' says relieved Arteta",
+          "url": "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 221,
+      "title": "阿尔特塔确认拉亚肩伤无大碍 无需手术",
+      "updated_at": "2026-11-23T18:01:05.283288+00:00"
+    },
     "8045827fbd3f": {
       "article_title": "Ten-man England hold on to claim famous win over Spain",
       "attempts": 1,
@@ -5704,7 +5739,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T17:01:08.058491+00:00",
+  "last_scan_at": "2026-11-23T18:00:59.425470+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5725,6 +5760,66 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-23T18:00:59.427820+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/12476234/transfer-centre-live-football-transfer-news-updates-and-rumours",
+      "published": "2026-11-23T17:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Transfer Centre LIVE! Williams-Barnett agrees long-term Spurs contract"
+    },
+    {
+      "desc": "Watch WSL highlights: Liverpool 0-0 Chelsea Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.427848+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOT1ItTXFHbkwwN2x6aVlSdVBoZWNaR0JfTEZMVkh0MUh6dXBsSzRldURXUV80VVVtdVNtQ1dRbC1sNE85RXU0Yld3cHZQWEhHUG5xZGtVa2UyU1QwR2FiaTZkTktvNmVONUo1SlR6MWljVEFwMXRlQU5JTzZaWVVCSw?oc=5",
+      "published": "2026-11-23T17:25:58+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Watch WSL highlights: Liverpool 0-0 Chelsea - Liverpool FC"
+    },
+    {
+      "desc": "ALICE CAMPELLO is no stranger to a stunning social media display. But the former Premier League Wag's latest Instagram p",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T18:00:59.427872+00:00",
+      "link": "https://www.thesun.co.uk/sport/41118599/premier-league-news-alvaro-morata-wife-alice-campello/",
+      "published": "2026-11-23T17:20:30+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former Premier League wag labelled ‘the most beautiful’ as she goes braless in shimmering dress during TV awards"
+    },
+    {
+      "desc": "FOOTBALL fans looking to score a huge football away day in the UK or Europe can now save money with a huge Black Friday ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T18:00:59.427891+00:00",
+      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
+      "published": "2026-11-23T17:16:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and others"
+    },
+    {
+      "desc": "A weekend to remember in Paris! Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.427910+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORUhDbElUTXB2SF9TcFdPY0ZaRHFQMGNpR3U0OUt3WHhCSUk3MUNlcU0yYmFBRUk2QklXUUM1cXhybGRQbWFXMXdUQ3o1NExaU3k2S0lnZzhLTkNGWUVCT0sxZE9ycGROMFZMY1UwUU5hdnRTZzNHb21jcGZlWXFMcUJfaEs?oc=5",
+      "published": "2026-11-23T17:14:19+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "A weekend to remember in Paris! - Manchester City FC"
+    },
+    {
+      "desc": "What to do with injured Raya in Fantasy? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.427939+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeHlQZzFvUGlFbXZWSkRnNV9ub3JqUTF2NkZRV0hta2VfWDctd2lWblJSd0NCOVBoaV9uWU8xal9ibjRIRGcwTnVORExxdWtvUnNGYWxjSkVtZ0hMbjRCbHJYdGJXd0ZRRzVwUk9KMVBlZ243VVA0akVCcDdrYi1HS2JRSQ?oc=5",
+      "published": "2026-11-23T17:02:09+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What to do with injured Raya in Fantasy? - Premier League"
+    },
     {
       "desc": "FORMER Arsenal midfielder Tomas Rosicky has been sacked as sporting director of Sparta Prague, with another ex Prem star",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5806,6 +5901,16 @@
       "title": "Premier League referee appointments: Matchweek 12 officials - Premier League"
     },
     {
+      "desc": "Gallery: 32 shots from pre-Dortmund training Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428103+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZkpPV3g3OHRQWGMxaTBxVVdQT0otb1FvVDVYT3pNZF9vYnpmUnBFUkFPV2hRYXVZNnoyQldkQUpHR3FDSy1xS0NNdEpvU2Jza3RjckVQeUFjdFdYaFZOd3BlODR4LWtZam1ZaGlra1FzRGdVWjBrcWV2NGd5cVhENDEtRFZWZFRwRjgwR0F3?oc=5",
+      "published": "2026-11-23T16:07:12+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Gallery: 32 shots from pre-Dortmund training - Arsenal.com"
+    },
+    {
       "desc": "UNO skills, superstitions and becoming Liverpool's No.9 - watch 'A Day With... Alexander Isak' Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-23T17:01:08.062229+00:00",
@@ -5864,6 +5969,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "I've wanted to crawl under a rock and hide' - Pressley"
+    },
+    {
+      "desc": "Emirates Stadium named as potential 2035 World Cup venue Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428194+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdlNhMzA0b2VqOEk3a21RcXFoQjJ2TjRHNnRSbDROOVBjbHZVZFk3dHJtNDF0U1lEeFUyRzhjTklVXzlOVUlYTUdLT2lybEM2Um9NYWhuMjYzejduczBOOGxVcExMNzB5WExJOGZPa3lOUkV2RjQxMS1iYVRVN1I2RWd2UElCU2pzdENoRERtQ19hSm1ZLTBkb3p1NXV4U2c?oc=5",
+      "published": "2026-11-23T15:27:56+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Emirates Stadium named as potential 2035 World Cup venue - Arsenal.com"
     },
     {
       "desc": "Home nations to host FIFA Women’s World Cup in 2035 Yahoo Sports",
@@ -5956,6 +6071,16 @@
       "title": "UK confirmed as hosts of 2035 Women's World Cup"
     },
     {
+      "desc": "Arteta issues fitness update on David Raya Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428342+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaWpVV0t2cmFiZXd4VEg1cjZFV1dPV01DUUh0Z3oxWVdKZG1BcWhaNXlmZGFBVXp4U04xZE9KOUNQaG9MTlVobTd6eGZ3bmlnWHB4aDF1MTJLZnZsby1JMU9mZThTWVlXQ0Z0U1RLX2d1bGFDRUc5OHdfNnh3Z1c0bjlMT0szdWJuak1lNA?oc=5",
+      "published": "2026-11-23T14:58:42+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arteta issues fitness update on David Raya - Arsenal.com"
+    },
+    {
       "desc": "GEORGINA RODRIGUEZ showed off her incredible figure as she slipped into a skin-tight gym outfit for her latest social me",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-23T15:00:56.699738+00:00",
@@ -6016,6 +6141,16 @@
       "title": "Manchester United challenge Leny Yoro's controversial red card after Liverpool humiliation - Dailysports"
     },
     {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428448+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-23T14:27:58+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
       "desc": "Premier League teams in Europe: fixtures, opponents and dates Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-23T15:00:56.699923+00:00",
@@ -6054,6 +6189,16 @@
       "publisher": "https://arsenaldirect.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Arsenal 47 Match Day Cold Weather Burgundy Beanie - Arsenal Direct"
+    },
+    {
+      "desc": "Conceicao is on the market: how much Juventus need to make a profit LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428537+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVjk1QmlsVUUzdWM0ZnZPQlBaVDYzU3M5X281d0xDVHVYNFR2UFI2aUdQNjB0LVhwbG9sWERDcHpQMTU3NkJvUVl1NGxzOVZBcFpNN2dseGZSYnpMaTVEQVJQVkU3ZUJxOEFVeGdDclExYmdrRjc0Y3E4cGJ4Sl9jYldFcUpsNjdZbS0tTXUwRF8xMlE3MTdXbWlHeW1YVE15dld2dUJYd24yekE3SUJ3QXhpeEZTMTQ2b1htRG9HMWE?oc=5",
+      "published": "2026-11-23T14:18:18+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Conceicao is on the market: how much Juventus need to make a profit - LiveScore"
     },
     {
       "desc": "XABI ALONSO is already walking on thin ice at Chelsea after damning statistics revealed he has made one of the worst sta",
@@ -6114,6 +6259,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "PSG tickets and hotel packages from just £319pp and watch Ligue 1 action at Parc des Princes in Paris"
+    },
+    {
+      "desc": "'Future president of Benfica': Mourinho makes surprising claim about Bernardo Silva Business Upturn",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428585+00:00",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYldRd004OUVnSFV0QTJkOGRGaHNPOW5JX1hZUmh6XzNCOFoxcXZVZ1dnMGpuX3E1M1BGem9WVWdwVUVqcXczc2s3bVp0VlFiNVg2bGRGT3Z0OTA2a0hQVmtUaXN3SUo1SDVTOW9zQmprbS15WHhFdWVyY0JNTkdCTDQ5X3EtM1BwT0NxQllpbUREbGl3ZjRIUzRwaUtaMWlNRGtYLUdSVzdnVVZubEZYTnMwR01RYXZMTlRPZFNDeUlfQ2tsU3NhWWNHVlI?oc=5",
+      "published": "2026-11-23T13:51:15+00:00",
+      "publisher": "https://businessupturn.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "'Future president of Benfica': Mourinho makes surprising claim about Bernardo Silva - Business Upturn"
     },
     {
       "desc": "The Athletic FC: Ask David Ornstein your questions The New York Times",
@@ -6264,6 +6419,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Club Brugge v Liverpool: TV channels, audio commentary and highlights guide for UCL tie - Liverpool FC"
+    },
+    {
+      "desc": "Edward Iordănescu could be close to becoming the manager of a team in England Informat.ro",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428732+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNmlwdndySTFSblJRcjVsSFVJRi0xTWNib3pic0xOc0twUXlaOTlGX3RzQTllVmc5Y0pVV3lUU1JBdU90anBkRDZ5LUY4OUh3c1RkcDZkZGk5VmFzUTJOZDh3Q2ZtZlk3Z2pDMnVCdHZnMV9NaVpXazdpZHNKUGNqRHNqTkVFT1JUbWRwQ0dPcjV6QjA?oc=5",
+      "published": "2026-11-23T12:39:26+00:00",
+      "publisher": "https://informat.ro",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Edward Iordănescu could be close to becoming the manager of a team in England - Informat.ro"
     },
     {
       "desc": "Watford are set to appoint former Romania coach Edward Iordanescu as their new head coach, reports BBC Three Counties Ra",
@@ -6466,6 +6631,16 @@
       "title": "Fede Valverde Set To Sign New Real Madrid Contract Until 2031, Fabrizio Romano Confirms - The Sunday Guardian"
     },
     {
+      "desc": "Real Madrid captain never considered leaving as renewal until 2031 nears – Romano Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428843+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWnI5VUxMX3NSb0NxWC1BVlFleV9FdkFBdlFoU0xoSm5hQ1RDUEtJcGNsb0ZRMWZDX2FvTzJUQkJGYXdBM3doak9tU2ZZQl9Ha0hkVVQ3YkpVeTR1ZFY2Z2hDOVhCRDdEOFY2TEg2ZFRpV051angyOTZ0dDNGUG44NzRhVWZ5UHFqUWxQcmNR?oc=5",
+      "published": "2026-11-23T11:20:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Real Madrid captain never considered leaving as renewal until 2031 nears – Romano - Yahoo Sports"
+    },
+    {
       "desc": "ARSENAL dropped points for the first time since September as they fought back to earn a 2-2 draw with Newcastle at the w",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-23T12:01:09.950528+00:00",
@@ -6546,6 +6721,16 @@
       "title": "Ian Holloway SACKED by Swindon two days after trying to confront angry fans in feisty full-time scenes at Newport - with Premier League cult"
     },
     {
+      "desc": "Pochettino: Let's keep our heads up Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428900+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLW40X3JYak4xY25WUFZtXzFCVGN4WkJqQWtxRXlleDdlTjdBSk44QlhWR0hZMnh5emlTZjdlVnZwNjFJUTd5R3dmenRkQXpveGRlczZTZ1FmaVFieDUyMTZWbl9Wd2F2Xy1ZZXg5YXdDM01SR1NJS1d5NzdJcFBmR3I5NTNoUndu?oc=5",
+      "published": "2026-11-23T10:59:15+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino: Let's keep our heads up - Manchester United"
+    },
+    {
       "desc": "Diego Simeone records his 345th La Liga victory as Atletico Madrid manager to set a new mark.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-23T11:00:56.231901+00:00",
@@ -6614,6 +6799,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "The two things Roberto De Zerbi demanded from Luca Williams-Barnett's first Tottenham start as 18-year-old star eyes new lucrative deal with"
+    },
+    {
+      "desc": "Former Wrexham Vice Chairman Rhodes Dies roundtable.io",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T18:00:59.428928+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcVlRQ3F6aXZOMm1EU3hzdERUWU44TzFkZm5UWFgzdjNSb3UyU0JyQVQ5VXF1bFBuRFhWN0JPNE5saXR1Z08xUGswdzRITmhSQ0JZekxCTy1hWmxXdUFoRUl5NG1WbFprT0ZuMmxGcjdpLXcwR2xNemNwcy0yN2tYaDdhQ1NzMEJNcDNSYXRvMXZUakM0bng5MA?oc=5",
+      "published": "2026-11-23T10:07:05+00:00",
+      "publisher": "https://roundtable.io",
+      "source": "https://www.thefa.com/rss",
+      "title": "Former Wrexham Vice Chairman Rhodes Dies - roundtable.io"
     },
     {
       "desc": "MANCHESTER UNITED have hired Arsenal’s former lead physical performance coach Sam Wilson. He is joining United as a fitn",
@@ -7064,166 +7259,6 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Arsenal midfielder Zubimendi 'loved' at Chelsea but he's not the main target - Fabrizio Romano - LiveScore"
-    },
-    {
-      "desc": "Match of the Day pundit Danny Murphy explains how Rio Ngumoha showed everyone what he is capable of in Liverpool's 4-0 w",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T00:00:51.566407+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmn80y5w84qqo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T23:20:16+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "A 'wow' player - why Ngumoha is already a Liverpool game-changer"
-    },
-    {
-      "desc": "CHELSEA striker Emmanuel Emegha revealed that he was robbed after Saturday's match against Leeds. Emegha, 23, marked his",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T23:00:47.863090+00:00",
-      "link": "https://www.thesun.co.uk/sport/41110978/chelsea-emmanuel-emegha-robbed/",
-      "published": "2026-11-22T22:53:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea star Emmanuel Emegha reveals he was ROBBED after scoring first Premier League goal in Leeds loss"
-    },
-    {
-      "desc": "Spurs Mens White Varsity T-Shirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T05:00:52.211950+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMnFhakxhbldWMEh4SDVoeGoxcmFFRkFyU211TFlsRFF2c2VkWTU5V29wVTJJSWxBYy14dzBSQU5wdklPYmkzZ08tUzkwVWx2YVVZajNGOG9jMThRWVcxaWJnbTg1ZFlkb3FDWFlYUm9QbnlIMmhMOWZRcU9pdU9IbHMySjhfSkRmZDY5UFlPbHU?oc=5",
-      "published": "2026-11-22T22:46:27+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Mens White Varsity T-Shirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T02:00:51.150157+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-11-22T22:32:40+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
-    },
-    {
-      "desc": "MALICK THIAW says Newcastle’s fightback against Arsenal shows how much they are fighting for manager Matthias Jaissle. T",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T23:00:47.863131+00:00",
-      "link": "https://www.thesun.co.uk/sport/41104233/malick-thiaw-matthias-jaissle-newcastle/",
-      "published": "2026-11-22T22:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Newcastle star Malick Thiaw insists squad are ‘giving everything’ for boss Matthias Jaissle after Arsenal heroics"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO unconvincingly defended his decision to start Matthijs de Ligt in Manchester United’s 4-0 thrashing ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T22:00:50.941677+00:00",
-      "link": "https://www.thesun.co.uk/sport/41110151/mauricio-pochettino-matthijs-de-ligt-man-utd-liverpool/",
-      "published": "2026-11-22T21:56:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino explains tactical reason behind rare Matthijs de Ligt start in Man Utd debut after it backfired"
-    },
-    {
-      "desc": "MANCHESTER UNITED flop Bebe went viral after a wild shot missed the target and smashed the stadium lights. The winger we",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T22:00:50.941713+00:00",
-      "link": "https://www.thesun.co.uk/sport/41110337/man-utd-bebe-shatters-lights-shot-alex-ferguson/",
-      "published": "2026-11-22T21:56:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Man Utd flop Bebe goes viral after wild shot misses goal by miles and SHATTERS LIGHTS in stadium"
-    },
-    {
-      "desc": "Southampton gives Tonda Eckert new deal after scandal KarloBag.eu",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T00:00:51.566573+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObVBqME9ReWtXNTBZS0xtUEc5cXJldUhiLVBGTDJONVkta2JzOXZxZUxaUkhYMHJXelYxMThYNUF3VDFTQkZuanM3alRmdk9Yanc4Q1lxUDVhUGdVeGNnVnlzSUVKLUE0RGtmdEExMmJyUVVUeG45SXNjbnV3V3k0TnJ3dlpnNDFaX3VnbzJ0UkpGSUg5UzR0d3pCTHFzZUVyR2pDSi1kZ2dvOHJBNnhjN0ZVa1NFc3dl?oc=5",
-      "published": "2026-11-22T21:52:56+00:00",
-      "publisher": "https://karlobag.eu",
-      "source": "https://www.thefa.com/rss",
-      "title": "Southampton gives Tonda Eckert new deal after scandal - KarloBag.eu"
-    },
-    {
-      "desc": "Fifa is set to confirm on Monday that a first football World Cup will be hosted in the United Kingdom since 1966.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T21:50:11.564295+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T21:44:37+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Fifa to confirm UK bid to host 2035 Women's World Cup"
-    },
-    {
-      "desc": "MANCHESTER UNITED officially have the leakiest defence in Europe after their humiliating loss to fierce foes Liverpool. ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:50:11.564326+00:00",
-      "link": "https://www.thesun.co.uk/sport/41110217/man-utd-worst-defence-europe-crystal-palace/",
-      "published": "2026-11-22T21:42:19+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd have worst defence in EUROPE with even more goals conceded than Prem basement boys Crystal Palace"
-    },
-    {
-      "desc": "CHRIS WHEELER: Pochettino gave up his job as US national team coach to join United on Wednesday, but any hope of a new m",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-22T21:50:11.564361+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16313585/Mauricio-Pochettino-Man-United-thrashing-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T21:41:21+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Mauricio Pochettino blames Man United's 'painful' thrashing at Liverpool on 'unfair' red card - after Roy Keane lashes out at Gary Neville f"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T00:00:51.566641+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-22T21:40:04+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "GARY NEVILLE bizarrely slapped himself in the face live on Sky Sports as he ripped into Manchester United's defence. The",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-22T21:50:11.564385+00:00",
-      "link": "https://www.thesun.co.uk/sport/41110146/man-utd-gary-neville-liverpool/",
-      "published": "2026-11-22T21:37:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd fans fear for Gary Neville after club legend slaps himself in the face live on Sky Sports after Liverpool loss"
-    },
-    {
-      "desc": "Mauricio Pochettino believes even the best team in the world could have conceded four goals at Liverpool in Manchester U",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T21:50:11.564411+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm782j80yypwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T21:36:00+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'World's best could've lost 4-0' - but should Man Utd have done more at Anfield?"
-    },
-    {
-      "desc": "Kroupi’s preferred destination ‘revealed’ as Bournemouth rule out January sale Sports Mole",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-22T21:50:11.564464+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ3B5dGROQi1rOXY1ajFYVWlPeG4zelBhaC1YVHRwWm5zVWs5dnhTQmgyUFNFdVA0RWVPSUZYWGNoTWRrUmJNVnM4QWlSVm5VOENxaGFCYXo0Q0E5N3F4cFBpOGRJQkNmMjFQRFN0dmg4S3NXS2pLMFlqNG5qeVhGY1JGRUxrMm9KYzNoYmFCRXB3ODE5ZWRDZTZyQUhqbjhNeVplNElrN2NmSkZlc2RTNkUwWVFjVVNIUE1ialhLNEVhR2d0UllQWm1VaVJEVkhKRWNwZEZldw?oc=5",
-      "published": "2026-11-22T21:24:53+00:00",
-      "publisher": "https://www.sportsmole.co.uk",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Kroupi’s preferred destination ‘revealed’ as Bournemouth rule out January sale - Sports Mole"
-    },
-    {
-      "desc": "Mauricio Pochettino's reign as Manchester United boss could barely have got off to a more chastening start, writes Simon",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-22T21:50:11.564490+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwd012903kvgo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-22T21:22:10+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Chaotic week, nightmare start and huge reality check for Pochettino"
     }
   ],
   "processed_urls": [
@@ -7402,7 +7437,8 @@
     "https://www.thesun.co.uk/sport/41110978/chelsea-emmanuel-emegha-robbed",
     "https://www.dailymail.com/sport/football/article-16314883/man-united-pochettino-liverpool-carrington-training.html",
     "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo",
-    "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague"
+    "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague",
+    "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta"
   ],
   "s_overflow": {},
   "schema_version": 4
