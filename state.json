@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 18077,
-    "output_tokens": 2076,
-    "requests": 3
+    "input_tokens": 24566,
+    "output_tokens": 2728,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5739,7 +5739,7 @@
     }
   },
   "last_morning_report_date": "2026-11-23",
-  "last_scan_at": "2026-11-23T18:00:59.425470+00:00",
+  "last_scan_at": "2026-11-23T19:00:53.688159+00:00",
   "last_summary_sent_at": "2026-11-22T22:01:24.901340+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5760,6 +5760,36 @@
     "updated_at": "2026-11-22T22:01:24.882967+00:00"
   },
   "news_pool": [
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-23T19:00:53.691569+00:00",
+      "link": "https://www.skysports.com/football/brentford-vs-everton/live/559546",
+      "published": "2026-11-23T18:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Grealish on bench for Everton as Wilson starts for Brentford LIVE!"
+    },
+    {
+      "desc": "ONLY two of Chelsea's TWENTY PLAYERS on loan were on the winning side at the weekend. That statistic indicates Chelsea h",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T19:00:53.691604+00:00",
+      "link": "https://www.thesun.co.uk/sport/41119569/chelsea-news-loan-players-xabi-alonso/",
+      "published": "2026-11-23T18:13:49+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea loan watch: Genesis Antwi making a name for himself and Robert Sanchez’s Como move becoming a nightmare"
+    },
+    {
+      "desc": "STEVEN GERRARD has claimed that Mauricio Pochettino made a 'disrespectful' gamble against Liverpool which failed to pay ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-23T19:00:53.691652+00:00",
+      "link": "https://www.thesun.co.uk/sport/41119450/steven-gerrard-slams-mauricio-pochettino-man-utd-mistake/",
+      "published": "2026-11-23T18:01:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘He got it wrong’ – Steven Gerrard calls out Mauricio Pochettino’s ‘disrespectful’ Man Utd mistake against Liverpool"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -5809,6 +5839,16 @@
       "publisher": "https://www.mancity.com",
       "source": "https://rsshub.app/twitter/user/ManCity",
       "title": "A weekend to remember in Paris! - Manchester City FC"
+    },
+    {
+      "desc": "Man City v Napoli - 24 Nov 2026 Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T19:00:53.691822+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5jZWFNN2NMVkEzWUJhUUlnMEdpNkRCN2huLXJiYzBqWTNfTXpydzhnOUNMODY4NWx4R0dBSVVqQXJfOWlnR3RUOE5CcjhMVnFXWEJwWDhEUzFSYzlGUkU2M2tqcVllRHRFY09IUG4wZWxER2V0?oc=5",
+      "published": "2026-11-23T17:05:27+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City v Napoli - 24 Nov 2026 - Manchester City FC"
     },
     {
       "desc": "What to do with injured Raya in Fantasy? Premier League",
@@ -6011,6 +6051,16 @@
       "title": "Tottenham Hotspur Stadium included as candidate host venue for FIFA Women’s World Cup 2035 - Tottenham Hotspur"
     },
     {
+      "desc": "Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T19:00:53.692247+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
+      "published": "2026-11-23T15:20:29+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "- Liverpool FC"
+    },
+    {
       "desc": "Fabrizio Romano confirms Tottenham interest in Gustavo Varela after nine goals in 10 games Spurs Web",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-23T16:00:51.535228+00:00",
@@ -6029,6 +6079,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "UK to host first World Cup since 1966 with TWELVE Premier League stadiums to be used at Women’s tournament in 2035"
+    },
+    {
+      "desc": "Every word from Mikel Arteta's pre-Dortmund presser Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T19:00:53.692315+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWnp4OXRwSDctMFNraHIxWFdOdUxwWjN5Z000TF9BLS1iVFRQRjk5YU9SLU9fSXhzWHZ3RGFkamEtYlNXVmNURUU5QmNlZWZERG80RDRLVkRkNUxQODcyUW5zSnRYbktnLXJTc2x6Tzk3a1lHV3ljMnU2LWhXbDI3Vlh2R0FkY2ZVQWx3aHhRYmJZa0VYWWVB?oc=5",
+      "published": "2026-11-23T15:12:56+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Every word from Mikel Arteta's pre-Dortmund presser - Arsenal.com"
     },
     {
       "desc": "What grounds will be used as UK confirmed as host of 2035 FIFA Women's World Cup? TNT Sports",
@@ -6059,6 +6119,16 @@
       "publisher": "https://www.thefa.com",
       "source": "https://www.thefa.com/rss",
       "title": "UK to host FIFA Women's World Cup 2035 - TheFA.com"
+    },
+    {
+      "desc": "The United Kingdom will host a football World Cup for the first time since 1966.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-23T19:00:53.692397+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-23T15:09:50+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "England, Northern Ireland, Scotland & Wales to host 2035 Women's World Cup"
     },
     {
       "desc": "The UK has been confirmed as the host of the 2035 Women's World Cup.",
@@ -6119,6 +6189,16 @@
       "publisher": "https://store.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "LFC Mens Logo Oversized Hoodie Black - Liverpool FC"
+    },
+    {
+      "desc": "Valverde never considered leaving Real Madrid as he nears renewal until 2031 - Romano Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T19:00:53.692516+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOFkyZzJFTEEtOXVTR1Jaa3NISnF1MkszaXBMUkpZS2dTcVRwZnZJZWk0NTFVMDI3UkJuOUt3MXNuUFNIZWJoR1hiSHNTekVCSVhEQldMRzRQZjRKT1dBRDBCamlCV2JMd3dnbG9ZejBBNTVETGZhNlFDT2lKOWVrZ0xVckUxbHZ3RnF4b1ctZkQ5SHpxclM5WVlWX3hYNXpNU1pWWklpaTcwM0dkUm1CNFpHZVFrRmZTcDRPbWxqS0PSAcYBQVVfeXFMUDZtR2VKeHBtdEgxSUhDaDV1X3BzZ2Zoem44UFBYb0c2bHpaQ3Q4VmFFUGlkU0JreFRKclBJNm5IdWNSSFlKeDIzWmNWMktPVlBBTnh2NTlZWG1RTi1vaHgzMW1VWXpIVEs4TF9maDkyajRlWll3TVFfT01DZlU1SXRoZW1xUVAzVC1GMUJGbTNvVHp6S3NxNzExazN2OGFJN2hfTklXTHlqMGVyVWxDb2F1eHcxSWVNSjV0OFlFWG1QVFZKWEp3?oc=5",
+      "published": "2026-11-23T14:43:21+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Valverde never considered leaving Real Madrid as he nears renewal until 2031 - Romano - Tribuna.com"
     },
     {
       "desc": "A GERMAN match had to be abandoned after a thug threw a BOTTLE at an assistant referee. The match between Berlin Hilalsp",
@@ -6511,6 +6591,16 @@
       "title": "Why Andoni Iraola - NOT Jurgen Klopp - deserves credit for fixing Florian Wirtz, Omar Berrada's Sky appearance has made things worse for Man"
     },
     {
+      "desc": "Meet the Academy: From a 10-0 defeat to the day that blew Joe Bradshaw's mind Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T19:00:53.692977+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fcy16dTVWTlYzREpYWGVmWmQ0S1Z3QUlfVUN3VXhXWWhmb0ZaRmtUazJvN00xQzlKNmw2NzgweUZtMnJxLWJsUUdrTmIzVWE2MzdxLUVlSEluMmh4bnZLb09lSnB3MTg0V1FiWWpDdzhRNzA?oc=5",
+      "published": "2026-11-23T12:09:12+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Meet the Academy: From a 10-0 defeat to the day that blew Joe Bradshaw's mind - Liverpool FC"
+    },
+    {
       "desc": "Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-23T17:01:08.063118+00:00",
@@ -6559,6 +6649,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Morocco and Senegal await Afcon final verdict after court case"
+    },
+    {
+      "desc": "Luca: “I knew our fans would back me every time I got on the ball” Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T19:00:53.693026+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQWh6Ym5YTENNR1pUMkNtSk9zZDdRUnJBR0w1bDFYUnd1ZjJTSDZ5NEQzRXcxRXJKWG1lbnNCdmpfZkU2ZnNrNUgxaWpjblc1RTYzV3N6U0d3VGFDbDBxNDhHLTRrM3lUWTlHM21lVGh0Q3NseDczWGRNbjc0OUx5b2J2TGQ5dWRYazlXbU1zZXJCOTBjWFlpdlJLd0hpYm1JbG1WRHREX3YwcEVRWGc?oc=5",
+      "published": "2026-11-23T11:51:41+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Luca: “I knew our fans would back me every time I got on the ball” - Tottenham Hotspur"
     },
     {
       "desc": "Scotland intend to bring fancied Sweden's World Cup dream \"crashing down - and do it in a truly Scottish way\", says mana",
@@ -6669,6 +6769,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Gary Neville slaps himself in the FACE in bizarre on-air moment after Man United's humiliation at Anfield - weeks after claiming his old clu"
+    },
+    {
+      "desc": "Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-23T19:00:53.693129+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQV9fcGt4NjNVenlaUlNncXRkaWxTQkpSTGxEdDNuSVpCTi1NcTJ5TEpsamRKMTFEeG9oUmY0TFJxUlJmM19VWnR2eG83Q25OUmNvbk1OT2JzdndINzRyLXFoOGlPeEVIWnRkY2dxdWZRSnIxZlZ3X2piek42RlFIMmFjaVZKS2hrdF94dVFn?oc=5",
+      "published": "2026-11-23T11:14:42+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea FC Store"
     },
     {
       "desc": "The Ref Watch panel debate whether Leny Yoro should have been sent off against Liverpool on Sunday.",
@@ -7149,116 +7259,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Cercle Brugge ضد Standard Liège، Stats، ترتيب الدوري وحالة الفريق | 2024/2025 | Belgian Jupiler Pro League - Premier League"
-    },
-    {
-      "desc": "Cercle Brugge ضد Standard Liège، الجدول والترتيب الحالي | 2024/2025 | Belgian Jupiler Pro League Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T10:00:58.663467+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYWk2N0sxZkZ1Ung2bXhxQzUtU195Sld0WmVCTlV4NUpGemRUS2ZmY3N3TjVURlVPWTNDQTNwRWNicHBGUDR2Z21xVlkwZVlMcGRlNE1IQ2VNLURyejlzeFZkUVFJTVRsUmJWX2FmaGt0MnRQNVBYWHA5aWNDM3dfU3hYQklzWmZJeEVYaQ?oc=5",
-      "published": "2026-11-23T02:36:34+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Cercle Brugge ضد Standard Liège، الجدول والترتيب الحالي | 2024/2025 | Belgian Jupiler Pro League - Premier League"
-    },
-    {
-      "desc": "A pathetic performance': Roy Keane tears into Man United after 4-0 disaster Business Upturn",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T10:00:58.663484+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYXQ4dFNaemhvdzU5eWVzcW0wQUJ6d2ZfbDZ1cG05bnRiU3pwZmZ4TzYwOHJQWXZKNjdpb2ZEY0xvVVFlTnBSbmg3UDhscmNNbTVqeV9hV05xQWk0elFHNldqQzRHZHRzZWVfMHhmU2xkVml4U0tBX19lc2x5SEFHLUNERE5aVGR4bExjdVdEeGJmM05zRlRFd29Fay1jQjdfN0txM0pBVk1xU3ZWbnJBYTZ2S3FEOWNtQ2ttY0xqam9TbzVva09SYWtZaGY?oc=5",
-      "published": "2026-11-23T02:25:30+00:00",
-      "publisher": "https://businessupturn.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "A pathetic performance': Roy Keane tears into Man United after 4-0 disaster - Business Upturn"
-    },
-    {
-      "desc": "Pochettino questions referee's decision to send off Yoro in controversial incident Business Upturn",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T10:00:58.663501+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZEdpb29PanJmeGo1OF9rQ1VEWW5ZdEdJQ1hhekg1eDVndVhZYUt5TTVZb3I4bVUxQTRFX05lelY0RXJCV1NrQWhPM2FHejJjaHJNTDNjcmdCN29xTTNMMlItWjRfZEVBeXdnZnplRzhjNWtGUTNqYU1wYjlUM04wQzdrSW1yMjBNYlNjMi14M0wtLTdiemZZQ1c4SUNjb2JXdnJ6SjlqVGstdWlMM0gxSE9VYm41T2N0aXlVanRDR3Nsck1BS19wQzQ4ZkVLbVVFSTBMU29faw?oc=5",
-      "published": "2026-11-23T02:25:30+00:00",
-      "publisher": "https://businessupturn.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Pochettino questions referee's decision to send off Yoro in controversial incident - Business Upturn"
-    },
-    {
-      "desc": "Report: Liverpool 4 United 0 Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T07:00:59.822366+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBjejBRY3hRNVgwWVQyY0JkVGhnRXBzUTJxcmNsZ1ZyVDVmT0xwQXE5TWY4RGdzU01XMDhRWnBESkk0WTRuWlhnZWNEODlYeGJwZE9hLTB1Zm8zWnZBWDdENzFsV0pfUTN0NUJ0Y3ZlNjRMS1pNTGk4?oc=5",
-      "published": "2026-11-23T01:42:08+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Report: Liverpool 4 United 0 - Manchester United"
-    },
-    {
-      "desc": "Liverpool / Manchester United - Premier League - Anfield, Liverpool Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T04:00:51.055789+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPX2FqZGRGTmh3SkRiaE1KcFQ5bklGZ05YTDBJSlRMZExaak9tWmduVUdVU09NU3dqQlN4d0FkakNpYnJIdmFTaUM1SDhETHp2bzgxQV9jbGRFVTRBeVFDcFlYbWJpQ0VzOW55QlQ1ZHgwWkF2bkxDelNERWVZcWZVZ1FoMkVtUlhUUkp6S1J1OWFpcDNGc2lMSC1zYURnQVNxdnVSUHk5cTREQUU?oc=5",
-      "published": "2026-11-23T01:21:07+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Liverpool / Manchester United - Premier League - Anfield, Liverpool - Liverpool FC"
-    },
-    {
-      "desc": "Romelu Lukaku retires from international football, BBC reports Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T04:00:51.055902+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBjZnE2b0MxUHpTcDZlcE1IMkMyN1Fvc0p1MUNCaS1kTm9ZN0ttWjhmek9ieWsyS0o4RGZwT1M2TFA2MVBhRDMw?oc=5",
-      "published": "2026-11-23T00:45:27+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romelu Lukaku retires from international football, BBC reports - Digg"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T02:00:51.149933+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSkVvSXN4dXdPR00wUjRJcXdYdE1IRVZ5aUFhN2FlU3JFNFZkUHhneXJSRzYxemFOQkwzM1FEbzhtUlp6Xy0wVnhhRkFtWEc4MzRiLWpHUnRsZlRoa3FrX19XODZPdFQ0akQ1QjFvTXhlUjIyLXlXZWtBcDVwdXZyZHB3?oc=5",
-      "published": "2026-11-23T00:04:22+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Koo and Won take it slow in FA talks 조선일보",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T02:00:51.149968+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSTZLNlA3MDdTbzV3c1FGZUNJckVqQm1BcWk3c1FicE5sZlRLQ2dpREliWGRCS014LXFLX2ZqdDFaRG1LVWV1bDBQVGNVTzh1aTVxOWdmakg5X29mbkJVYU1USkdtaGswR3poc1RKcEFGT1FEQXhzbmNYLWlfck9mbHFlN1pnUQ?oc=5",
-      "published": "2026-11-22T23:46:36+00:00",
-      "publisher": "https://www.chosun.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Koo and Won take it slow in FA talks - 조선일보"
-    },
-    {
-      "desc": "Chelsea striker Emmanuel Emegha was robbed after leaving Stamford Bridge on Saturday evening, with the 23-year-old Dutch",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-23T00:00:51.566336+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16313915/Emmanuel-Emegha-ROBBED-Chelsea-Leeds.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-22T23:41:01+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Chelsea star Emmanuel Emegha was ROBBED in the aftermath of his side's 4-1 defeat by Leeds - as striker confirms 'no one was hurt'"
-    },
-    {
-      "desc": "Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T01:01:02.171148+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
-      "published": "2026-11-22T23:25:27+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Arsenal midfielder Zubimendi 'loved' at Chelsea but he's not the main target - Fabrizio Romano LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T00:00:51.566375+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdHFWOVhDRExjTWFYZzNtQkw0VllQUnFhYlZwN1pDTjZQZlI4Q195VG9Jd2JoR2NEQWcxWEQ3MFR0cng2a1JOd052Y1lqejE1cmt3cllFWVoyaC1TQXpwaFhYbC1xX0pYcjdpN2NXdVlGNFA5RUdOd09BS0ZTVTFhWkFvOHFSLUh5WGpFcTNfeUNrTXN0YjlNSktMTmRJTTBLSTFobnIxT01zcjUwSElma0gtTndoSnpoN3VSejFTOFhnRG55NDBrM3h0SnZkZw?oc=5",
-      "published": "2026-11-22T23:22:39+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Arsenal midfielder Zubimendi 'loved' at Chelsea but he's not the main target - Fabrizio Romano - LiveScore"
     }
   ],
   "processed_urls": [
