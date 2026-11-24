@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 11,
+        "calls": 12,
         "errors": 0,
-        "requests": 11
+        "requests": 12
       }
     },
-    "calls": 11,
+    "calls": 12,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 73502,
-    "output_tokens": 7923,
-    "requests": 11
+    "input_tokens": 79818,
+    "output_tokens": 8641,
+    "requests": 12
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1610,6 +1610,41 @@
       "telegram_message_id": 46,
       "title": "曼联42年最差无胜绩，卡里克仍不下课？罗马诺曝新帅目标",
       "updated_at": "2026-10-31T16:45:38.303518+00:00"
+    },
+    "443b6d938bd5": {
+      "article_title": "Mauricio Pochettino ‘to be handed tiny January transfer budget’ as Man Utd target three positions in need of fixing",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "80017dc4671fab77",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 225
+        }
+      ],
+      "created_at": "2026-11-24T02:01:03.949214+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "5cace5de6c69045a",
+      "event_id": "443b6d938bd5",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-24T02:01:03.949214+00:00",
+          "origin": "created",
+          "title": "Mauricio Pochettino ‘to be handed tiny January transfer budget’ as Man Utd target three positions in need of fixing",
+          "url": "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 225,
+      "title": "波切蒂诺一月仅获小额预算，曼联引援目标三位置",
+      "updated_at": "2026-11-24T02:01:04.528273+00:00"
     },
     "454d73c82863": {
       "article_title": "Moises Caicedo limps off injured after sickening fall in Chelsea’s clash vs Leeds as fans say ‘this is scary to watch’",
@@ -5774,7 +5809,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T01:01:00.996704+00:00",
+  "last_scan_at": "2026-11-24T02:00:54.178223+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6256,6 +6291,16 @@
       "title": "Aston Villa Cool On Madrid’s Benched Brazilian: Is A January Loan Still Wise? - Yahoo Sports"
     },
     {
+      "desc": "Spurs Mens Hawaiian Print Shirt Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T02:00:54.189068+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRnNZOThHS0pOdTRPbDRnZFhYZ1BkazB4Xzd5a2R5S3Vra3JkTXdnSTFuT0dWa1I2LXRNb3FRWnRMaDI3cFVvbHNpSlFnU1FRTTBxSXNuR1YteWJSNE50Q3lycDN6TE1kaHpidUZ3TFpUMy1yZXNCZTFqa00tRm9yRUw3b3lTM0RMRjFzR240cw?oc=5",
+      "published": "2026-11-23T18:40:14+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Mens Hawaiian Print Shirt - Tottenham Hotspur"
+    },
+    {
       "desc": "Daily Who Am I? Play 23 November Premier League game Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-23T21:00:57.454707+00:00",
@@ -6284,6 +6329,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "إحصائيات Haitam Aleesami هذا الموسم وإحصائيات مسيرته | بريميرليج - Premier League"
+    },
+    {
+      "desc": "Emery provides latest team news ahead of trip to Galatasaray Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T02:00:54.189138+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRDF6VEFxRlc0eS0wMUJYVGliMy03ZmROR1lPMEticVBvd25ndG5yS2s4bXZ0RVR1cEk4RGJ6TGZYbV9WLVlCcGd4emJPR20yVThERlgxN0pHZ0hqaHh3Ql9teUNld1g5UDBHeDI3bEtWSTh4cUllOVFjT3JneUdCYTdnLWNELVhnT21PVmxUMFk5Y2VlZFJhYV96LURoUGI3cExF?oc=5",
+      "published": "2026-11-23T18:15:11+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Emery provides latest team news ahead of trip to Galatasaray - Premier League"
     },
     {
       "desc": "ONLY two of Chelsea's TWENTY PLAYERS on loan were on the winning side at the weekend. That statistic indicates Chelsea h",
@@ -7274,26 +7329,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Why Andoni Iraola - NOT Jurgen Klopp - deserves credit for fixing Florian Wirtz, Omar Berrada's Sky appearance has made things worse for Man"
-    },
-    {
-      "desc": "Meet the Academy: From a 10-0 defeat to the day that blew Joe Bradshaw's mind Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T19:00:53.692977+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fcy16dTVWTlYzREpYWGVmWmQ0S1Z3QUlfVUN3VXhXWWhmb0ZaRmtUazJvN00xQzlKNmw2NzgweUZtMnJxLWJsUUdrTmIzVWE2MzdxLUVlSEluMmh4bnZLb09lSnB3MTg0V1FiWWpDdzhRNzA?oc=5",
-      "published": "2026-11-23T12:09:12+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Meet the Academy: From a 10-0 defeat to the day that blew Joe Bradshaw's mind - Liverpool FC"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T17:01:08.063118+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1abEhXcVBzVDFKMnpVQWZjcUxkQmUtVU5iaGVaSEVzNFVFUkN0U3FMbVo3SnNUT01sNGRWU3hHbVJoX2E1MnBUaHY1OEZMOTRXNVByamRSYUI0N2l6ZUExaFJEN2k2TVpRMFZWLUxsNzlyQWdhZzVnTW9R?oc=5",
-      "published": "2026-11-23T12:08:52+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
     }
   ],
   "processed_urls": [
@@ -7474,7 +7509,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cx30g83716lzo",
     "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague",
     "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta",
-    "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation"
+    "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation",
+    "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window"
   ],
   "s_overflow": {},
   "schema_version": 4
