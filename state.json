@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 34821,
-    "output_tokens": 4070,
-    "requests": 6
+    "input_tokens": 40744,
+    "output_tokens": 4883,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6019,7 +6019,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T20:00:49.990856+00:00",
+  "last_scan_at": "2026-11-24T21:00:52.816188+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6041,6 +6041,66 @@
   },
   "news_pool": [
     {
+      "desc": "MAURICIO POCHETTINO panned the Premier League’s VAR system as a “car without drivers”. Manchester United had Leny Yoro’s",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T21:00:52.818295+00:00",
+      "link": "https://www.thesun.co.uk/sport/41132028/mauricio-pochettino-var-man-utd-leny-yoro-liverpool/",
+      "published": "2026-11-24T20:53:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino slams VAR as ‘car without drivers’ and hits out at ‘illegal’ Liverpool goal in Man Utd defeat"
+    },
+    {
+      "desc": "Manchester United target Brentford defender Nathan Collins, Bournemouth price forward Eli Junior Kroupi at £100m and Liv",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-24T21:00:52.818318+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm15en5je9eko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T20:51:44+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd target Collins - Wednesday's gossip"
+    },
+    {
+      "desc": "MARIA GUARDIOLA is no stranger to a jaw-dropping social media post. But her latest Instagram offering sent her legion of",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T21:00:52.818335+00:00",
+      "link": "https://www.thesun.co.uk/sport/41133677/premier-league-news-maria-guardiola-instagram-boyfriend/",
+      "published": "2026-11-24T20:37:43+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Premier League legend’s daughter turns heads as she goes braless in daring outfit"
+    },
+    {
+      "desc": "MANCHESTER CITY continue their Champions League campaign against Napoli TONIGHT! Although the Cityzens have struggled re",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T21:00:52.818376+00:00",
+      "link": "https://www.thesun.co.uk/sport/41123794/man-city-wearing-special-orange-kit-napoli-champions-league/",
+      "published": "2026-11-24T20:15:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why are Man City wearing a special orange kit against Napoli in the Champions League?"
+    },
+    {
+      "desc": "MANCHESTER UNITED have launched an astonishing attack on Howard Webb after he claimed Leny Yoro’s red card should not ha",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T21:00:52.818393+00:00",
+      "link": "https://www.thesun.co.uk/sport/41132598/man-utd-howard-webb-yoro-red-card-liverpool/",
+      "published": "2026-11-24T20:08:19+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd launch stunning attack on Howard Webb’s Leny Yoro red card verdict and fume they can PROVE ref boss is wrong"
+    },
+    {
+      "desc": "MANCHESTER UNITED fans have been left fuming after hearing the VAR audio of Leny Yoro's controversial red card against L",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T21:00:52.818409+00:00",
+      "link": "https://www.thesun.co.uk/sport/41132475/leny-yoro-red-card-liverpool-manchester-united-pochettino/",
+      "published": "2026-11-24T20:07:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘That’s worrying’ – Man Utd fans left fuming after hearing VAR audio of Leny Yoro’s red card against Liverpool"
+    },
+    {
       "desc": "Bayern Munich are only focused on getting Jamal Musiala back from injury and not interested in the comments made regardi",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-24T20:00:49.992828+00:00",
@@ -6059,6 +6119,26 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Champions League - LIVE: Arsenal host Borussia Dortmund and Man City play Napoli after Villa BEATEN by Galatasaray"
+    },
+    {
+      "desc": "City debut special edition kit on-pitch in collaboration with PUMA and C.P. Company Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T21:00:52.818442+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVTNfNWZ1Nnp1cXBhUmNmeFdYMGRjVUhkcGhWajk1ZHh5Q3Zoek9lRHhtcGpBaW5sQkNhd2ozRk9VRzJkNUNLZkppTE5kRzdpOUEtaEN5eGFSSktrRjNPVS1TdEhLdWNTbXlfSzhNSjVKREZlbVE3TS1GdVlLckUxbDhHZ0VBQQ?oc=5",
+      "published": "2026-11-24T19:55:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City debut special edition kit on-pitch in collaboration with PUMA and C.P. Company - Manchester City FC"
+    },
+    {
+      "desc": "Manchester United plan two or three January signings as Pochettino targets striker and defender - Fabrizio Romano Tribun",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T21:00:52.818461+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNazB6alF0TlV0aEpXclhTdHJfUmt1eUJveE1xS1V2Z2NqOFFBNzZpa004S01ERHJoY095TVdQN1o4M1NDS0xCelByYUdsVTlfM3JEVG9jc1AwXzZWQ0tscGNoMjN2Y3NFN2R0bHdUZ3NFbFRLcTlWSjBnei12Wng2TElNLVhUMWpZUTFCM0NIOURNNUdVSTNZNlhUT3hQa3VJdWRuUl8tYjczblppMEFOT1hoNldhSUxEdzIzNWNsc0hqVnZiS3BCRg?oc=5",
+      "published": "2026-11-24T19:53:42+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Manchester United plan two or three January signings as Pochettino targets striker and defender - Fabrizio Romano - Tribuna.com"
     },
     {
       "desc": "MANCHESTER CITY continue their Champions League campaign against Italian giants Napoli TONIGHT! Although the Cityzens ha",
@@ -6119,6 +6199,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/CharlesWatts",
       "title": "Arsenal vs Dortmund Confirmed Lineups: Kepa In, Saliba Benched, Tzolis Starts - The False 9"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T21:00:52.818572+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-24T19:00:02+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "Romano gives dreaded confidence update on Xabi Alonso as manager suffers another damaging defeat Talk Chelsea",
@@ -6411,6 +6501,16 @@
       "title": "City boost hopes of UEFA Youth League knockouts with Napoli victory - Manchester City FC"
     },
     {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T21:00:52.818825+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
+      "published": "2026-11-24T16:57:47+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
+    },
+    {
       "desc": "LEEDS fans can get their hands on the best seats in the house to see their heroes perform at Elland Road this season. Th",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T17:00:54.526334+00:00",
@@ -6489,6 +6589,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "FA chief signs NDA to view Fifa sell-off plot documents"
+    },
+    {
+      "desc": "Leny Yoro red card against Liverpool overturned Business News Nigeria",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T21:00:52.818904+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObm1VVEpFVnh4R19ybVp2WXFCWHRvVnVtcTFMZkdTQjcyWXZ6b0xTVHU4Qk9zZGFPSVFPUmNBM2hsQnJtREVMVnFsaTlPRTYtd3BxVnF4WE82d0VGR1BxLWQ4LXI1RnpsODl5ZWl3RWdtdGRMNTBSZjRiRjl3bkNBRnRtcVVwOUw0bUZqWk5rOA?oc=5",
+      "published": "2026-11-24T16:30:59+00:00",
+      "publisher": "https://businessday.ng",
+      "source": "https://www.thefa.com/rss",
+      "title": "Leny Yoro red card against Liverpool overturned - Business News Nigeria"
     },
     {
       "desc": "The 2035 FIFA Women’s World Cup is coming to the UK – here’s where you could watch matches near Gloucestershire SoGlos",
@@ -7429,116 +7539,6 @@
       "publisher": "https://sports.yahoo.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Barcelona declare in-form midfielder untouchable amid Chelsea and Manchester United interest - Yahoo Sports"
-    },
-    {
-      "desc": "Daily Who Am I? Play 24 November Premier League game Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T12:00:56.154679+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbkdOR0s0NW5hakVnOXJ4VkhSR2RlRl95Umt2cV85ZUpJczdKdUpVSEdQc0Z2UDUtcTl4b3h5LVBtSDN4NUYtN1RWNXk4NFZkdzBHOWFDTzJ3SXFzVnNkUFcydmhaRlhnTnF2TUVFU21odnZnNkZKMG1GTy1udjltYzNicUd2c1hEOUplcHRR?oc=5",
-      "published": "2026-11-24T10:25:19+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Daily Who Am I? Play 24 November Premier League game - Premier League"
-    },
-    {
-      "desc": "Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T13:01:03.902231+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ELTlwQTBfSWMxY2R4eTRVWmdJTmFfUGRLRFJWZm5Ya3ZhTFo2RzVEbFlrU2pDUVZuUG5PR3N1ZHZ5WHR4VlNqblM1SG4zZkxmcWxfQ3RVbmpSZFdkVTdjMURVUzBWbHpGalBITjBUbHk4T2x0Q3pHQw?oc=5",
-      "published": "2026-11-24T10:23:54+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea FC Store"
-    },
-    {
-      "desc": "NHL: Connor McMichael wins it for Blues in eight-round shootout Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T12:00:56.154693+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5xdmRoaTJFRllWQXQxQUJHcG9ZMG1yRF9fQk1iYldzX1BmZDJTZkZObW9PU1NtY2xmOEJ1a0pwQVNaNEY1X1dj?oc=5",
-      "published": "2026-11-24T10:19:10+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "NHL: Connor McMichael wins it for Blues in eight-round shootout - Digg"
-    },
-    {
-      "desc": "Odegaard on his recent form and reuniting with Nwaneri Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.962532+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTHhkNEN3c2Jabk5XUHVvQWFSa3EwdHl3YTVjcWgxRnZyek5ldjM3NkpaSktudnN1c1UtRHNtbU9OaTl3cHZ4bmJ0MVdocjFkUU1zMlhtZDVMcFVZWlhHd2xOOURJVjRTMTM5MV9pWkFHZF9ob2dDSGN4YlR6WUctbkRHWnBpTFh2QzU0TkJ0ZThWYXYzeHVNaVhSNEo?oc=5",
-      "published": "2026-11-24T10:17:11+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Odegaard on his recent form and reuniting with Nwaneri - Arsenal.com"
-    },
-    {
-      "desc": "Sportsnet: Shane Pinto picks off a pass and buries Senators’ OT winner Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T11:00:50.026535+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE52VThYaGlmdFVCeDVIRExFUldjLWdUeTRvQmY2X01LeUxtZ3lDZTlQeEIyNUVyVzRVUG1NMVk0UmpqelkySzNV?oc=5",
-      "published": "2026-11-24T10:16:44+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Sportsnet: Shane Pinto picks off a pass and buries Senators’ OT winner - Digg"
-    },
-    {
-      "desc": "Premier League clubs are bracing themselves for a raid of their talent from Saudi Arabia, as the mega-money league consi",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T14:00:50.051764+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16317587/Premier-League-transfers-Saudi-Arabia.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T10:13:38+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Prepare for another Saudi Premier League raid: Relaxation of foreign player rules set to spark mega-money recruitment drive - after near-$1B"
-    },
-    {
-      "desc": "Manchester City were masters of playing out from the back. Not anymore The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T17:43:53.331234+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSnpBQWwyZWc1MU1yRTJtWndpQklYU05rTVA3dzIyVWV1X3VqeVNwWkdia3B3S1N5WDdRaS04WWpRS0lDbDU5U3ZfdWJhVWJYazU5bFU1Q3JLNW1mNFdBbl9XNEkta1FhTkJXWVB1dlUtYk8yZ2RBaF9Zb3F3a1lOQWx4VTdxOEhKQU5FNkYxX1Z2UmlX?oc=5",
-      "published": "2026-11-24T10:07:00+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Manchester City were masters of playing out from the back. Not anymore - The New York Times"
-    },
-    {
-      "desc": "ERLING HAALAND has launched a legal challenge against a Polish electrician who trademarked his surname. Haaland discover",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T11:00:50.026594+00:00",
-      "link": "https://www.thesun.co.uk/sport/41123790/erling-haaland-trademark-electrician-man-city-news/",
-      "published": "2026-11-24T10:06:54+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Erling Haaland forced to battle Polish electrician for the rights to his own name"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T18:00:57.757141+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VNlU1dWpaS3VlNkZDaHlDNV9aWlN2azlKRFplSzRXOGQtLUtqXzc5d2JvT3VoUWNuTmtNYVZyWDk0ZFA3ZlpkV0RabHBzQXU2Vkh0bS15bFJWaUpfc3NJbEwtN2h6bGxpREJsN1BZZ3FRQmxmV252YXFn?oc=5",
-      "published": "2026-11-24T10:06:23+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "ASTON VILLA head to Galatasaray on Tuesday in a tricky Champions League trip. To mark the European card, Betfred are off",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T10:00:50.093442+00:00",
-      "link": "https://www.thesun.co.uk/sport/41117726/galatasaray-aston-villa-free-bets-tip/",
-      "published": "2026-11-24T10:00:13+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Galatasaray vs Aston Villa: Get money back as free bets if your Bet Builder loses, plus our 6/1 tip | Betfred"
-    },
-    {
-      "desc": "Who is Chelsea's BIGGEST prankster?! | S4 EP 8 | Video | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T10:00:50.093464+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN0o1a1QxMWhwSjZqMnR6VTEtcHV6QW04SG9hNGZKMEhneUVDc1Y0UVZleFgtLUt2MjZDVmVTS1AycnNBdWltbTJsSTl6SXlNY1AxalFfMHMtTGd1aVVaZzN2NGNNTTMtSDdCWjBJSGhjNXVrRXJUSEtUR1VPb1BGZnVIU1doTUdZTzZhT0dzbmt6NXltaGNQR0M5cnU?oc=5",
-      "published": "2026-11-24T10:00:13+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Who is Chelsea's BIGGEST prankster?! | S4 EP 8 | Video | Official Site - Chelsea Football Club"
     }
   ],
   "processed_urls": [
