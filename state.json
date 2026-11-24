@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 12,
+        "calls": 13,
         "errors": 0,
-        "requests": 12
+        "requests": 13
       }
     },
-    "calls": 12,
+    "calls": 13,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 79818,
-    "output_tokens": 8641,
-    "requests": 12
+    "input_tokens": 86417,
+    "output_tokens": 9369,
+    "requests": 13
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1295,6 +1295,41 @@
       "telegram_message_id": 34,
       "title": "利桑德罗·马丁内斯84秒两黄变一红，曼联客战切尔西少打一人",
       "updated_at": "2026-10-31T14:02:29.019266+00:00"
+    },
+    "3a7de007879b": {
+      "article_title": "De Bruyne knows fans will call Man City a ‘DISGRACE’ over cheating – but he’ll still be proud even if stripped of titles",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "b5d6d8097f6fa3de",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 226
+        }
+      ],
+      "created_at": "2026-11-24T03:01:11.133782+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "a45ceabbb03e3366",
+      "event_id": "3a7de007879b",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-24T03:01:11.133782+00:00",
+          "origin": "created",
+          "title": "De Bruyne knows fans will call Man City a ‘DISGRACE’ over cheating – but he’ll still be proud even if stripped of titles",
+          "url": "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 226,
+      "title": "曼城财务违规被判有罪，德布劳内称球迷会骂俱乐部是耻辱",
+      "updated_at": "2026-11-24T03:01:11.782401+00:00"
     },
     "3ca4534d8355": {
       "article_title": "Mauricio Pochettino's first Man United training session is LEAKED ahead of Liverpool clash: Drone over Carrington captures 12 MINUTES of foo",
@@ -5809,7 +5844,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T02:00:54.178223+00:00",
+  "last_scan_at": "2026-11-24T03:01:01.314600+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5830,6 +5865,16 @@
     "updated_at": "2026-11-23T22:01:18.160962+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Chelsea have no doubts over Xabi Alonso as club maintain full confidence in manager Business Upturn",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T03:01:01.316668+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWDFLZFRaeGV6N3RKZUNybDQ5dFBnWFBoZzRzRUhyZmlYVU1HV0NiMFEybVhneWw3WGU1N2M4VVJzNjgyRlpkZEpYcnhZWngtdUxyYTlMcGFNazBkZUNLMmRfQmRjdldzSWVabUhTc2xzUklwazBWMmU0enFhbGZmQmZRNnpCYkE4RWNkd2hldnY5TnY0ejVkOGQ2M21kNjNINWx2N3o5aDY2YjZFc01KcWRXdDYyUWlOa0ttQy1Fdm9nNlB0MVVrazhGQlpseTJLNHpxTndBQXJKdw?oc=5",
+      "published": "2026-11-24T02:29:21+00:00",
+      "publisher": "https://businessupturn.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Chelsea have no doubts over Xabi Alonso as club maintain full confidence in manager - Business Upturn"
+    },
     {
       "desc": "Under-21s set for Oxford trip Tottenham Hotspur",
       "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5959,6 +6004,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ethan Nwaneri was supposed to be Arsenal’s starboy but returns to Emirates in all too familiar situation with Dortmund"
+    },
+    {
+      "desc": "Fabrizio Romano reveals why Real Madrid are holding back on Olise transfer Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T03:01:01.316905+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc1VyalhkSHQ2eUhEYjdZSktFYm9uLVY1LTI5YU9GNHk5RVpXUmd1QUNvbHlVSGN1cEg1LUp1TVYtYXYxYTVHZHh2NFRQbTlKNGY1SEY3MVdnSTZKMzltU3oyTDBETTk5cS1QQXhWNHdrVjBIeTYwTHFUeVp3WlNtMnNPNUFzYWh5ZmVhV1paQlVxSWh2d01wcC1LbDVGMXZ2YmFJV0ZaU0VoNlFUMFRFVFotSW_SAboBQVVfeXFMTnhoZ3ZxNTdLNHRhMDVSOWZHb2ZINE9aNU9OdzFUUDdNWWRjLUZQRTJlMEdtSzlzV1dOWmdaOVNFRzZ4ZENMdHlhZEQyS1lhN1lMUC1tcFN3RHZQZnNyRzZJdGFGLU9KR3hSbWMxQzJWQXRXZkZ0MlBWX3U4TUwyMDRmT2pGdmh3c2hzTG9aX3pfNGFtQjgxc0xpUVpYTjhTUFlNSHFCZ0JEOWIxTGE2UWZFczd3NG85dThB?oc=5",
+      "published": "2026-11-23T22:21:48+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano reveals why Real Madrid are holding back on Olise transfer - Tribuna.com"
     },
     {
       "desc": "The United Kingdom will host the 2035 Women's World Cup, the first football World Cup to be staged on these shores since",
@@ -6189,6 +6244,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Are Man Utd genuinely in a relegation battle?"
+    },
+    {
+      "desc": "Fortune Onoh Videos & Best Moments Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T03:01:01.317224+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Fb0RoZ3FadUZlUUJjY2dhT3BMeFZTYk9XXzVIRG96N0d0SUQxbWl0MGR2bFdwWk5veWJNVXJoMHdaekItVDltN1Nod2s3TGpXTUM0VGV3Q0ZqVlZRZExUQ1FNbDRxQlNpRWVxRndnR1ZmbDFX?oc=5",
+      "published": "2026-11-23T19:43:49+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fortune Onoh Videos & Best Moments - Premier League"
     },
     {
       "desc": "Fortune Onoh Matches Premier League",
@@ -7299,36 +7364,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea ‘fear Joao Pedro out injured for rest of YEAR’ with Moises Caicedo future uncertain after limping off vs Leeds"
-    },
-    {
-      "desc": "FPL GW12 Sell List: Cherki, Raya and João Pedro Face the Axe (23 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T13:01:06.843835+00:00",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBLazNjcmJ4SGFKSXlteHVKOEhZcVNCWkR0Z0dQeE1Nb0lFdng3UkJpcHFfNHZRZ1FzeHoxR3FWdGE4WDdTLVlUUmx2Y3pGQmNVa0wtWGhVQjhCb2hYcFZkcVc3QzEyeTJhNUlqaEcyTTZVblk?oc=5",
-      "published": "2026-11-23T12:14:26+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "FPL GW12 Sell List: Cherki, Raya and João Pedro Face the Axe (23 November) - The False 9"
-    },
-    {
-      "desc": "PARIS SAINT-GERMAIN are reportedly set to make a move for Arsenal target Eli Junior Kroupi in January. The European cham",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T13:01:06.843863+00:00",
-      "link": "https://www.thesun.co.uk/sport/41114462/psg-eli-kroupi-transfer-arsenal-bournemouth-doue-kvaratskhelia/",
-      "published": "2026-11-23T12:13:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "PSG ‘step up transfer chase for Arsenal target Eli Kroupi Jr’ as Desire Doue joins Khvicha Kvaratskhelia with ACL injury"
-    },
-    {
-      "desc": "IAN LADYMAN: In what transpired to be a lively Sky TV studio at Anfield, Daniel Sturridge turned in one of his own perfo",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-23T13:01:06.843902+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16313091/andoni-iraola-jurgen-klopp-florian-wirtz-premier-league.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T12:10:41+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Why Andoni Iraola - NOT Jurgen Klopp - deserves credit for fixing Florian Wirtz, Omar Berrada's Sky appearance has made things worse for Man"
     }
   ],
   "processed_urls": [
@@ -7510,7 +7545,8 @@
     "https://www.thesun.co.uk/sport/41118564/arsenal-tomas-rosicky-brian-priske-sacked-sparta-prague",
     "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta",
     "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation",
-    "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window"
+    "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window",
+    "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league"
   ],
   "s_overflow": {},
   "schema_version": 4
