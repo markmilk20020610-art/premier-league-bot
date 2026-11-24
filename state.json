@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 130722,
-    "output_tokens": 14853,
-    "requests": 21
+    "input_tokens": 136892,
+    "output_tokens": 15502,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3418,6 +3418,41 @@
       "title": "曼联被曝成欧洲防守最差球队，丢球数超水晶宫",
       "updated_at": "2026-11-22T22:00:57.582206+00:00"
     },
+    "8c3d32c6152a": {
+      "article_title": "Jamie Carragher tells Chelsea to sign giant centre-back with Levi Colwill and Wesley Fofana ‘looking like novices’",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "cf459f632cc2ef0b",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 228
+        }
+      ],
+      "created_at": "2026-11-24T11:00:55.741524+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "d5aa3dd88607f596",
+      "event_id": "8c3d32c6152a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-24T11:00:55.741524+00:00",
+          "origin": "created",
+          "title": "Jamie Carragher tells Chelsea to sign giant centre-back with Levi Colwill and Wesley Fofana ‘looking like novices’",
+          "url": "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 228,
+      "title": "卡拉格炮轰切尔西防线：科尔威尔和福法纳像新手，不买中卫没戏",
+      "updated_at": "2026-11-24T11:00:56.259761+00:00"
+    },
     "8cf58fbfb0ec": {
       "article_title": "Mauricio Pochettino's Man United rallying cry: New boss promises fans it will be a 'SPECIAL' season - despite club sitting in drop zone - as",
       "attempts": 1,
@@ -5879,7 +5914,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T10:00:50.091431+00:00",
+  "last_scan_at": "2026-11-24T11:00:50.022849+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5900,6 +5935,86 @@
     "updated_at": "2026-11-23T22:01:18.160962+00:00"
   },
   "news_pool": [
+    {
+      "desc": "JAMIE CARRAGHER reckons Chelsea have \"no chance of achieving anything\" without a dominant centre-half. Liverpool hero Ca",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T11:00:50.026357+00:00",
+      "link": "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news/",
+      "published": "2026-11-24T10:56:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Jamie Carragher tells Chelsea to sign giant centre-back with Levi Colwill and Wesley Fofana ‘looking like novices’"
+    },
+    {
+      "desc": "GW12 FPL Challenge: Players aged 23 and under earn DOUBLE points Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.026395+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5xclQwNm5WWEMtNkNBWko5QnRlNjIzd185WlNlWTBBZkt0Zk9tZ0FrbC1Ya0VkaWpHRW01emRSUkFXSFJCdFEyY2MxQXRjTDJRTlEtdHRvU1c?oc=5",
+      "published": "2026-11-24T10:49:32+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "GW12 FPL Challenge: Players aged 23 and under earn DOUBLE points - Premier League"
+    },
+    {
+      "desc": "Gyokeres Goals This Season: Two in 15 Before Dortmund The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.026424+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxObVNOem93eXZxN1lMOXE5OHgzbk9OdG5pa2xMdzM1TDkzMWFka2ZhQlR2dlNQSTc0MXcyUEhqNzVpTHZfYV91Y25yRVhaSFhySVpnTVFzdUNnbEpoT3VIcG9fNlhreDk0UExjeVJQYmJWV0lHdkxnUXF6eWI5UkRVQnlpMjJNcWFQb29sWFRrOHlMRnM?oc=5",
+      "published": "2026-11-24T10:47:30+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Gyokeres Goals This Season: Two in 15 Before Dortmund - The False 9"
+    },
+    {
+      "desc": "Liverpool given clear run at January midfield targets as Chelsea twist revealed This Is Anfield",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.026451+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOelJLcGEyQWpMZHE5cDJqakthQkJCS0gwV09uZVBHS0c0M1JLRkg0Z01oTWlFSjJnMmVuMlEtaVZXSmw5ei1HTW4yQzhjVjdlMW1KYkxQVGhMTG5JM1hvZ2tmMmVWZFl6WkRET3NyTVYyWU4zQTgtall6cnlNT3dSLU96RVVGbTFKNGE0VmxyU3ljQVYwX1RmLXlNYkU?oc=5",
+      "published": "2026-11-24T10:42:34+00:00",
+      "publisher": "https://www.thisisanfield.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Liverpool given clear run at January midfield targets as Chelsea twist revealed - This Is Anfield"
+    },
+    {
+      "desc": "IN THE 2025 winter transfer window, Manchester United decided against signing a striker as none of the options were cons",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T11:00:50.026479+00:00",
+      "link": "https://www.thesun.co.uk/sport/41123877/man-utd-january-transfer-window-danny-welbeck/",
+      "published": "2026-11-24T10:31:09+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd must go in for Danny Welbeck and third-choice Brighton star to make best of £50m bleakest transfer window ever"
+    },
+    {
+      "desc": "What Enzo Maresca really thinks of Gianluigi Donnarumma amid poor form Manchester City News",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.026508+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWjNaU29WT1lNaDRkMENNVlE1d0VwaWd5anhpQ1VFbV9rZFAxWlgtMF9zSm1JQ2RvNFM0dkFyd19HdUhfV1BZMWtkSmJZZHE2S29BQVNnMjRUeW1SS3VhUm5VWGpKWXJpNnpOQU1xU0xkTGt5YjAxUWdGRXB6eURtWkJnZTRQM1Ytam1wUWx0OUZ2SVBybXdNekhmaDlLd0UtdzJjTXR3?oc=5",
+      "published": "2026-11-24T10:30:03+00:00",
+      "publisher": "https://www.manchestercity.news",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "What Enzo Maresca really thinks of Gianluigi Donnarumma amid poor form - Manchester City News"
+    },
+    {
+      "desc": "Sportsnet: Shane Pinto picks off a pass and buries Senators’ OT winner Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.026535+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE52VThYaGlmdFVCeDVIRExFUldjLWdUeTRvQmY2X01LeUxtZ3lDZTlQeEIyNUVyVzRVUG1NMVk0UmpqelkySzNV?oc=5",
+      "published": "2026-11-24T10:16:44+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Sportsnet: Shane Pinto picks off a pass and buries Senators’ OT winner - Digg"
+    },
+    {
+      "desc": "ERLING HAALAND has launched a legal challenge against a Polish electrician who trademarked his surname. Haaland discover",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T11:00:50.026594+00:00",
+      "link": "https://www.thesun.co.uk/sport/41123790/erling-haaland-trademark-electrician-man-city-news/",
+      "published": "2026-11-24T10:06:54+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Erling Haaland forced to battle Polish electrician for the rights to his own name"
+    },
     {
       "desc": "ASTON VILLA head to Galatasaray on Tuesday in a tricky Champions League trip. To mark the European card, Betfred are off",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -6001,6 +6116,16 @@
       "title": "Everything David Ornstein said on Xabi Alonso and Chelsea - Si Phillips Talks Chelsea"
     },
     {
+      "desc": "Virgil van Dijk: The performance against United was spot on Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.026863+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWUVlcmUzWnV4djF6VlliQkxrUE1RYXRRWTF3YkNwSFNnalJCbXJIel9oVWI5WENqV1pQOHJ3UzFGb0lObnBoQ0k0bWdfVmlhZU5hNEwtamtxSlh0bzhDNnhqdTFYUTA3Z0NQLTJwUWU2MDY0UUthSnB4WUI2OUpXejNLWmkxcEhZanpobHBLX0I?oc=5",
+      "published": "2026-11-24T09:29:51+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Virgil van Dijk: The performance against United was spot on - Liverpool FC"
+    },
+    {
       "desc": "After the stellar performances of Liverpool's Rio Ngumoha and Tottenham's Luca Williams-Barnett, BBC Sport looks at the ",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-24T10:00:50.093622+00:00",
@@ -6041,6 +6166,16 @@
       "title": "Barnet forward Noel-Williams charged with rape"
     },
     {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.026978+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBSNnNybE9VWENyV0xZR1ItWVhaRmpkOUpvcVFXNnQxQll2RVY3MFdyWGJjUEVGeXpBSno2dllJTHJDaGxaQmg1NA?oc=5",
+      "published": "2026-11-24T08:47:33+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
+    },
+    {
       "desc": "LIVE! Chelsea News Blog: TUESDAY! Si Phillips Talks Chelsea",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-24T10:00:50.093676+00:00",
@@ -6069,6 +6204,16 @@
       "publisher": "https://www.geo.tv",
       "source": "https://www.thefa.com/rss",
       "title": "Prince William breaks silence on Fifa decision in fresh statement - Geo News"
+    },
+    {
+      "desc": "FAM appoints Hodak as national team coach NST Online",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T11:00:50.027045+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb0piZV82RFo5LW9mRW9VRVkyOFVwX1c1YnM1eXk4ejhFQzBZVGM3aEk0X2hneDNyWlRBXzg3WmZQT2VlUGtXZFNGckhBNmlyOV9WY3gybjl4X2otZ3F1djk1NEMzY0twOWFUOWozZXdTREpid29HTkpxeHpKVmtRLXNSNEZlb3RhYmdiXzJYbGR0ZzMzU0ZYamItejZWZ9IBngFBVV95cUxNb0piZV82RFo5LW9mRW9VRVkyOFVwX1c1YnM1eXk4ejhFQzBZVGM3aEk0X2hneDNyWlRBXzg3WmZQT2VlUGtXZFNGckhBNmlyOV9WY3gybjl4X2otZ3F1djk1NEMzY0twOWFUOWozZXdTREpid29HTkpxeHpKVmtRLXNSNEZlb3RhYmdiXzJYbGR0ZzMzU0ZYamItejZWZw?oc=5",
+      "published": "2026-11-24T08:18:38+00:00",
+      "publisher": "https://www.nst.com.my",
+      "source": "https://www.thefa.com/rss",
+      "title": "FAM appoints Hodak as national team coach - NST Online"
     },
     {
       "desc": "NEWCASTLE chief executive David Hopkinson says the club “need” a new stadium for the revenue it will unlock. The Magpies",
@@ -7289,116 +7434,6 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Premier League referee appointments: Matchweek 12 officials - Premier League"
-    },
-    {
-      "desc": "Premier League referee appointments: Matchweek 13 officials Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T00:00:52.908975+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTWIxZUNabHFvSHlKOHBadVdBQkUxZkxnT3N3M2pjM3VHSzlKOVhNOW1QTXE1Mm1XcW9uaWxhOEpERFpISTBhOWc4algyODdIUl9ZUkcxVS1fVXRFc0YwelIzX0dFY1Vza2Vod1RfQ3dYY2VNTjlrbW93czluaW9DY1cxS2lSTTU1UkdnckNzNmdNY2dqRHlkQ3g5dHhkUVhsMkE5OU1XVQ?oc=5",
-      "published": "2026-11-23T16:11:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League referee appointments: Matchweek 13 officials - Premier League"
-    },
-    {
-      "desc": "Gallery: 32 shots from pre-Dortmund training Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T18:00:59.428103+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZkpPV3g3OHRQWGMxaTBxVVdQT0otb1FvVDVYT3pNZF9vYnpmUnBFUkFPV2hRYXVZNnoyQldkQUpHR3FDSy1xS0NNdEpvU2Jza3RjckVQeUFjdFdYaFZOd3BlODR4LWtZam1ZaGlra1FzRGdVWjBrcWV2NGd5cVhENDEtRFZWZFRwRjgwR0F3?oc=5",
-      "published": "2026-11-23T16:07:12+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Gallery: 32 shots from pre-Dortmund training - Arsenal.com"
-    },
-    {
-      "desc": "UNO skills, superstitions and becoming Liverpool's No.9 - watch 'A Day With... Alexander Isak' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T17:01:08.062229+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNakdnM3J2bkMyZG84ZjQwZUE1T2JlQnFiN1hVSDlIYzRIX3FHcEM5Y2hPQ2RoZExYSkFGc28zb0thS1o3OFRuSWpISFpTbEt6OGtnSVZLZmtlcWVUNWVOb3dxOW8ycFRYVHJxaE1GMFczOGkzam9MU1BpMkxHcVpTcGc4U1NiRHJCZzZQMGZyeGoxWWRrVndWX0hBX0hUOFdVbkJlejFMc2ZsRzlxRFRmU0Z2VQ?oc=5",
-      "published": "2026-11-23T16:02:14+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "UNO skills, superstitions and becoming Liverpool's No.9 - watch 'A Day With... Alexander Isak' - Liverpool FC"
-    },
-    {
-      "desc": "Bruno feels his best is yet to come as a Gunner Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T16:00:51.535000+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVWt3RVpCdUQyeTlHLV9MVlBaM2plbmF6QklJRGoxWmpDRHA3ZEVCQmI1VU1NSkd0MDEzQk4xMW9tU3E2R1EzQktrVEZlMW1saGdvbmEwMnVmcjZEM1BWTkxzTnlxZlJrWFNUcEszRTJQQ0lPZWVhLXA1bWMyRW5QYkFpQ2Y0Uk15QnMzcl9kQklPcTg?oc=5",
-      "published": "2026-11-23T15:52:13+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Bruno feels his best is yet to come as a Gunner - Arsenal.com"
-    },
-    {
-      "desc": "PRESENTER Emma Louise Jones looked sensational as she shared her first selfie since undergoing surgery to have her gallb",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T16:00:51.535030+00:00",
-      "link": "https://www.thesun.co.uk/sport/41117634/emma-louise-jones-instagram-bbc-presenter-football-influencers/",
-      "published": "2026-11-23T15:45:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Emma Louise Jones stuns in low cut top as BBC presenter posts first selfie since undergoing surgery"
-    },
-    {
-      "desc": "Bayern Munich have come under criticism from FIFA's players' union amid accusations that the club is attempting to slash",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-23T16:00:51.535087+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16314857/bayern-munich-jamal-musiala-contract-row.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T15:41:06+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Bayern Munich slammed as 'despicable' and accused of 'co-ordinated' plot to undermine Jamal Musiala after club chief questioned star's contr"
-    },
-    {
-      "desc": "Arteta on Dortmund, Madueke and Bellingham Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T16:00:51.535109+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaHJEZ0N5Z2FMR1ZwVzNnMU9lSXpRMUU0RXhpSDlvU2ItNGJ1cUhBRzBYR1kxRzFnRTd3U3NzZzU5cDk1dTBDamxJbjNZaTNZaGxRUjBZRkU0TXlFQTVXaHBpdUlOS1Q1R2MtRlBJWV9uOGg5emVzbkxtRnN5allLZU9nZEFERC1lZHhv?oc=5",
-      "published": "2026-11-23T15:36:58+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arteta on Dortmund, Madueke and Bellingham - Arsenal.com"
-    },
-    {
-      "desc": "Steven Pressley says he felt embarrassed by Dundee's 8-0 \"humiliation\" by Hearts and that there is a \"fragility\" in his ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T16:00:51.535134+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cre3d9j5k4n8o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T15:31:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "I've wanted to crawl under a rock and hide' - Pressley"
-    },
-    {
-      "desc": "Emirates Stadium named as potential 2035 World Cup venue Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T18:00:59.428194+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdlNhMzA0b2VqOEk3a21RcXFoQjJ2TjRHNnRSbDROOVBjbHZVZFk3dHJtNDF0U1lEeFUyRzhjTklVXzlOVUlYTUdLT2lybEM2Um9NYWhuMjYzejduczBOOGxVcExMNzB5WExJOGZPa3lOUkV2RjQxMS1iYVRVN1I2RWd2UElCU2pzdENoRERtQ19hSm1ZLTBkb3p1NXV4U2c?oc=5",
-      "published": "2026-11-23T15:27:56+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Emirates Stadium named as potential 2035 World Cup venue - Arsenal.com"
-    },
-    {
-      "desc": "Home nations to host FIFA Women’s World Cup in 2035 Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T16:00:51.535158+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcVdFMk9zeXNHaFl1Q0h0OWNEbjl4d29yckxwQXl4aTRRSWF3VnZBWDFLRlJZUklyN2l2NFk2RFlTNzhkSlgzOXhFcnhQcmNrc3NzUW54MHNzeXJfT3NCUnNHam80M2FEU1owaDkxRWtRQTAxNnRmSzFIUS1MQ0pFRWJYbw?oc=5",
-      "published": "2026-11-23T15:24:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Home nations to host FIFA Women’s World Cup in 2035 - Yahoo Sports"
-    },
-    {
-      "desc": "Arsenal goalkeeper David Raya will miss Tuesday's Champions League game against Borussia Dortmund but his shoulder injur",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T16:00:51.535181+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cjx2rqpr7l9lo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T15:23:09+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Raya to miss Dortmund game but injury 'not serious'"
     }
   ],
   "processed_urls": [
@@ -7582,7 +7617,8 @@
     "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation",
     "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window",
     "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league",
-    "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster"
+    "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster",
+    "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news"
   ],
   "s_overflow": {},
   "schema_version": 4
