@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 26,
+        "calls": 1,
         "errors": 0,
-        "requests": 26
+        "requests": 1
       }
     },
-    "calls": 26,
-    "date": "2026-11-24",
+    "calls": 1,
+    "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 161406,
-    "output_tokens": 18083,
-    "requests": 26
+    "input_tokens": 6089,
+    "output_tokens": 659,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -223,6 +223,41 @@
       "telegram_message_id": 27,
       "title": "切尔西vs曼联、利物浦vs阿森纳焦点战前瞻与投注情报",
       "updated_at": "2026-10-31T08:45:38.192338+00:00"
+    },
+    "0982b0305fdc": {
+      "article_title": "Tottenham breakout star Luca Williams-Barnett set to snub Chelsea and Man Utd transfer interest with bumper new deal",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "b1383d9edf0cae99",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 230
+        }
+      ],
+      "created_at": "2026-11-24T16:01:03.089572+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "9287881871dc04c8",
+      "event_id": "0982b0305fdc",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-24T16:01:03.089572+00:00",
+          "origin": "created",
+          "title": "Tottenham breakout star Luca Williams-Barnett set to snub Chelsea and Man Utd transfer interest with bumper new deal",
+          "url": "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 230,
+      "title": "热刺新星威廉姆斯-巴内特将续约，拒绝切尔西曼联",
+      "updated_at": "2026-11-24T16:01:03.868112+00:00"
     },
     "0b7ba270c639": {
       "article_title": "£75million man Malo Gusto is open to LEAVING Chelsea this season after struggling for minutes under Xabi Alonso",
@@ -5949,7 +5984,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T15:00:51.549498+00:00",
+  "last_scan_at": "2026-11-24T16:00:53.958972+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5971,6 +6006,176 @@
   },
   "news_pool": [
     {
+      "desc": "LUIS MUNOZ continued his remarkable rise as he inspired an incredible second-half comeback for Arsenal Under-19s in the ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T16:00:53.961568+00:00",
+      "link": "https://www.thesun.co.uk/sport/41129381/luis-munoz-arsenal-borussia-dortmund-comeback-max-dowman/",
+      "published": "2026-11-24T15:52:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘New Max Dowman’ – Arsenal fans go wild as latest prodigy Luis Munoz, 14, bags goal and assist in stunning comeback win"
+    },
+    {
+      "desc": "CHRIS WHEELER: Leny Yoro's one-match ban has been lifted by the FA after Manchester United successfully appealed against",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T16:00:53.961605+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T15:47:56+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Leny Yoro red card OVERTURNED: Man United star available for Brentford clash after controversial dismissal in Liverpool trouncing"
+    },
+    {
+      "desc": "DAVID RAYA is set to miss Arsenal's Champions League clash with Borussia Dortmund this evening. And stats suggest that t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T16:00:53.961642+00:00",
+      "link": "https://www.thesun.co.uk/sport/41126901/arsenal-david-raya-injury-kepa-arrizabalaga/",
+      "published": "2026-11-24T15:37:23+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Shocking stats show why David Raya can’t come back soon enough as Kepa leaves Arsenal fans fearing worst"
+    },
+    {
+      "desc": "Manchester United learn Leny Yoro red card appeal verdict after controversial suspension Yahoo",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961663+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUnhHU1dyN1drWE9tLXRJVTRMUTF4MjFyRlAwUlNSUVgwcmgwS3RYb3duM2FmM2Z6S1l1VEZEYXlkVWU4andiLVFEQ2pDTGRDcG5xcE51eVdHaUdla1dDZWw1S3psZ1VnT01IOTFjeWxSOEY1eEY2ZEVRY1lCLVBoNmozX2FsbmZN?oc=5",
+      "published": "2026-11-24T15:36:15+00:00",
+      "publisher": "https://uk.sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Manchester United learn Leny Yoro red card appeal verdict after controversial suspension - Yahoo"
+    },
+    {
+      "desc": "Leny Yoro's red card against Liverpool has been overturned following a successful appeal from Manchester United.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-24T16:00:53.961680+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13616021/leny-yoros-red-card-for-manchester-united-against-liverpool-overturned-following-successful-appeal",
+      "published": "2026-11-24T15:34:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Yoro red card overturned after successful Man Utd appeal"
+    },
+    {
+      "desc": "MANCHESTER UNITED have successfully appealed Leny Yoro’s one-match ban for his red card in the club’s 4-0 defeat at Anfi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T16:00:53.961699+00:00",
+      "link": "https://www.thesun.co.uk/sport/41129139/man-utd-news-yoro-red-card-liverpool-overturned/",
+      "published": "2026-11-24T15:30:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Leny Yoro’s ban overturned after successful claim of wrongful dismissal in Man Utd’s 4-0 battering at Liverpool"
+    },
+    {
+      "desc": "David Ornstein Reveals Chelsea's \"Plans\" For \"Another Coaching Change\" Amid Alonso Criticism Chelsea News",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961719+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUGk1S2t3R0pYVVBHNjV5TnRJNzROZnVKSk1kNHJDN0U0d29FSmVMVkdDUU9wM2w5NHgzbVNjZTk1c09BQmdteVRESG96V2luUy0zZnRici01RV81WS1mMDd4RG5MYzduZnVfaFItaUd3WnBraWVQRXdrVWpveHlZOXdqR3d4RHBQbUJOV2JmRXB4UmZuTFNyYmdkbnZ4VTdGNUdKNHkxZXVYR0ppMV82cnBOcUNEMDRPdHNNRlpYMC0tYTc4WmdVUWZSTkhvTF9Dcnc?oc=5",
+      "published": "2026-11-24T15:24:46+00:00",
+      "publisher": "https://chelseanews.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein Reveals Chelsea's \"Plans\" For \"Another Coaching Change\" Amid Alonso Criticism - Chelsea News"
+    },
+    {
+      "desc": "Manchester United win Leny Yoro red card appeal after controversial sending off Yahoo",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961737+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcUZEVHRJYW1KeHRhOEtqMzItNW1lOU1aOW9pVHJBemdXTXhabkJrNFBNZ1ZrLXUxUm1UU2puTlBaUy1hZGpVbjhsNXJTMkVhSDZtN0dtTDQ2c1VhYm8zalRyMW8wVFRvclpQNUp2ZmNGdHJvRHVZWmhISUktX3dIdUNPU184UQ?oc=5",
+      "published": "2026-11-24T15:23:05+00:00",
+      "publisher": "https://uk.sports.yahoo.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Manchester United win Leny Yoro red card appeal after controversial sending off - Yahoo"
+    },
+    {
+      "desc": "Millwall Face Stadium Closure Over Discriminatory Chants cwibc.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961753+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kQ05vdnR5VTV5UVRSZmF6ZVcwR21oZWhIak1LVnVtVVNDdXZGVUZscVo3eldPN1hkbGtrUDRya3V2UUNKLW9UNnppTXFmcTZYTzVPV0pRalJqUm5vU29MZFNjNWNjQXBzemk2S2NOdXJWeVEweHZxbg?oc=5",
+      "published": "2026-11-24T15:19:50+00:00",
+      "publisher": "https://cwibc.co.id",
+      "source": "https://www.thefa.com/rss",
+      "title": "Millwall Face Stadium Closure Over Discriminatory Chants - cwibc.co.id"
+    },
+    {
+      "desc": "FPL GW11 Review: Haaland Returns 2 Points, Lewis-Potter Tops at 16 (24 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961771+00:00",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9kRTYyT3lqbWhuX2NzVXBGdU05SXFMbFNPd1B1MVRsZjh0TjFKMEpiVWJpZXNnNUNOdHNfWFZ6cDNNOUdKNWludU5mTXE2ZjJuaDdXR3Z6dElVS0NDTXYyb1lyVXI1SW8tRlcxcm5BVQ?oc=5",
+      "published": "2026-11-24T15:15:29+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "FPL GW11 Review: Haaland Returns 2 Points, Lewis-Potter Tops at 16 (24 November) - The False 9"
+    },
+    {
+      "desc": "Leny Yoro suspension removed Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961786+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQUThmOVVxMjNaOEFlM3JCbHdyMWV1eHB6YjlNYWk3N3BCcUZXRzQ3ODRLUkdXbnREZ3hoOW96Q3BQOUJVa2h5dkRHU243UUJhSXlYdmhGdW9DUzVTeDFQTzFiRGh6UnVkSHkzM3UwUzJsQXdieWcxX2RIczY1YW5xMFpUR1U?oc=5",
+      "published": "2026-11-24T15:15:15+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Leny Yoro suspension removed - Manchester United"
+    },
+    {
+      "desc": "Fabrizio Romano: Krösche to work with Cardinale on Milan’s transfer market from December Milanreports.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961805+00:00",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tZjV6YmpYRlg1YXh2U19fZ1R0RjhybDNQeEpxUDV1MGZ0Zm9MbC02TTBTRkVNR081X0hiTkRfc2VYdFlBM0lPQmtZMEk3SXhZT1dwbzI5VHMxNTdCLXVucVhzLUNobDBJVW1tVUlZVnBMdHV6LVpPaQ?oc=5",
+      "published": "2026-11-24T15:12:45+00:00",
+      "publisher": "https://milanreports.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: Krösche to work with Cardinale on Milan’s transfer market from December - Milanreports.com"
+    },
+    {
+      "desc": "Pick the Official Premier League Fan Team of the Week Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961821+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUnBBZVl0QTJJSGV6WGgxM1lQQnhZZ3BxcTZmNFlKaGoxMkozc19Kbl8zcDNZSjZzZ2x3TmM2QjctN2t3QVc2eHVhYzZXSjd5QVRiSUNKQUJkRFU4TkxES2puNm5oVHVTcjNJX25UcjNxd0M5ak9DSlRCcHFQaW1LMndyQkRTSGRJeldVSV9zSlZCV2pCRVhEVUZuak1aZDlZ?oc=5",
+      "published": "2026-11-24T15:11:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Pick the Official Premier League Fan Team of the Week - Premier League"
+    },
+    {
+      "desc": "Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961835+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1FTm9hQ3ZfTHNLdHVsYmluT2x2NDY2V3NIdHE2V0pwcGtsVXdNbThYU0xqSUl5b196NEFhY0R6VTE0RVRPNDFiZzNBMXdDdlozbURCZjJUczdNYldMREw0aQ?oc=5",
+      "published": "2026-11-24T15:09:54+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "- Arsenal Direct"
+    },
+    {
+      "desc": "U19s report: Arsenal 3-2 Borussia Dortmund Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961851+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSl9wNTMtUEQxM3RhWElYTHRScmZpNGZ0M1h4bkxueE5WS0F3elRxa2hpWkJaZ1M1ZUVrbDlDUVVCVkhyeTZwVGRSUEJGYkk5S3lkQ3NzUHB6bEZMYnJCS1ZUQ1ZOWng3bzZGazFXV3ZHamR3MnRuXzNJS1c5QXFEM2lDRnpVX3dSVW40?oc=5",
+      "published": "2026-11-24T15:05:53+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "U19s report: Arsenal 3-2 Borussia Dortmund - Arsenal.com"
+    },
+    {
+      "desc": "The ruling follows a controversial final in which Senegal initially won 1-0 after extra time, only for the result to be ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T16:00:53.961877+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317621/Senegal-WIN-Africa-Cup-Nations-appeal-Title-restored-huge-CAS-verdict-Morocco-stripped-crown-following-controversial-final-saw-team-walk-pitch.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T15:02:45+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Senegal KEEP Africa Cup of Nations title: Champions see crown restored in huge CAS verdict despite walking off the pitch in chaotic final ag"
+    },
+    {
+      "desc": "AFTER watching Dominic Calvert-Lewin bully his defence, Chelsea boss Xabi Alonso may have a new priority in the January ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T16:00:53.961894+00:00",
+      "link": "https://www.thesun.co.uk/sport/41127431/chelsea-transfer-targets-january-cb-calvin-bassey-antonio-rudiger/",
+      "published": "2026-11-24T15:02:24+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Five GIANT centre-backs Chelsea could sign in January including Man Utd target Calvin Bassey and icon Antonio Rudiger"
+    },
+    {
       "desc": "Ten months after the 2025 Africa Cup of Nations final, Senegal are reinstated as champions following a ruling by the Cou",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-24T15:00:51.552955+00:00",
@@ -5979,6 +6184,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Senegal reinstated as Afcon 2025 winners by court ruling"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Liverpool move for Real Madrid star Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.961933+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONVYyVVo3QU5Ham51QWEyS092cXJPWFVKRHlPbEtVYzlZNXh4MWtzSjlPemNZT0VpcG9JRnhtdDR4RWpaeXoyWEtZVUpLZjh5UHJYYzhqYUJsa0xJYnA0Z3RMWS1jOXdfclhwaVY3VWJuRUdYU1J6aUNRUXNoZjhfNE9ZenJOYTRWS2syUjhqR09qZw?oc=5",
+      "published": "2026-11-24T14:50:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Liverpool move for Real Madrid star - Yahoo Sports"
     },
     {
       "desc": "SENEGAL have been officially reinstated as African Nations Cup winners - 10 MONTHS after lifting the trophy. The Lions o",
@@ -6041,6 +6256,16 @@
       "title": "Millwall handed partial stadium closure, £70,000 fine for discriminatory chanting in Charlton win - Southwark News"
     },
     {
+      "desc": "Ray Winstone, Jason Statham, Mike Myers and Vinnie Jones all turned out for a team that grew out of a gathering of Briti",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T16:00:53.962045+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317753/sex-pistols-vinnie-jones-hollywood-united-los-angeles.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T14:00:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Meet the world's most famous pub team: How a Sex Pistol, Superman and Vinnie Jones took Hollywood United beyond Sunset Boulevard via private"
+    },
+    {
       "desc": "Millwall given partial stadium closure and will enhance Den messaging talkSPORT",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-24T15:00:51.553192+00:00",
@@ -6089,6 +6314,36 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Luke Shaw returns to Man Utd training in huge boost for Mauricio Pochettino and could face Sporting after six weeks out"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 EZE Pre-Printed Authentic Away Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.962133+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSFRFNXJsanZhNGlzR2xCLXF5b2JHVjc3dnVqdE96NEltYlhKakVoSTk0a0plZ2NOU0duSGt4dXQzS1FFQVJEWkZfTzhhWlJDRjZodEY2Y3ZUS1o0WHJzcjFUOS1FeHJrTUhBY2Mxa1h5dXVKdlBQek5GWG9hem85WG4tZTBlNUNIZ05rSzRxZkxMeTF0a3BsOWNEOVUtWERtQ3A3Ym5IZGpzUUllUjlUa2JQOFhtOTVzakhLRUNtZV9RRzh1WUcxV2loaTJnZTBpME9N?oc=5",
+      "published": "2026-11-24T13:45:55+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal adidas 26/27 EZE Pre-Printed Authentic Away Shirt - Arsenal Direct"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 Pre Print Eze Authentic Third Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.962150+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOa0MxU2oyVjhpYUtKV1YzVHNVZW05SGhvdHkxUGFFOG10VllTbHFqUGdyNWVFcXFOZFZZdXZBR3NjVGVEekhiUGNtck0tSUkyM2R6ZHMzZzZ3Qlp1d1ZrNEh5ZkptcFBvaXMwNnB2bDZqZ1BHUHM3RVFmZ0c0R29wY1cwcWloUUpOSTlORnkzb1M0T191SUtjMHE5c0VfVDhnMk1POWZrcDk1UlllZVJIeE5aYW1reUJHM1VNbE1vTi1QNzBLTXNEeHlkaDM4aE41akVN?oc=5",
+      "published": "2026-11-24T13:45:55+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Arsenal adidas 26/27 Pre Print Eze Authentic Third Shirt - Arsenal Direct"
+    },
+    {
+      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.962165+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
+      "published": "2026-11-24T13:45:38+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     },
     {
       "desc": "What to do with Haaland in FPL? Premier League",
@@ -6521,6 +6776,16 @@
       "title": "NHL: Connor McMichael wins it for Blues in eight-round shootout - Digg"
     },
     {
+      "desc": "Odegaard on his recent form and reuniting with Nwaneri Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.962532+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTHhkNEN3c2Jabk5XUHVvQWFSa3EwdHl3YTVjcWgxRnZyek5ldjM3NkpaSktudnN1c1UtRHNtbU9OaTl3cHZ4bmJ0MVdocjFkUU1zMlhtZDVMcFVZWlhHd2xOOURJVjRTMTM5MV9pWkFHZF9ob2dDSGN4YlR6WUctbkRHWnBpTFh2QzU0TkJ0ZThWYXYzeHVNaVhSNEo?oc=5",
+      "published": "2026-11-24T10:17:11+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Odegaard on his recent form and reuniting with Nwaneri - Arsenal.com"
+    },
+    {
       "desc": "Sportsnet: Shane Pinto picks off a pass and buries Senators’ OT winner Digg",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-24T11:00:50.026535+00:00",
@@ -6751,6 +7016,16 @@
       "title": "City v Napoli: What’s happening at the Etihad Stadium - Manchester City FC"
     },
     {
+      "desc": "Watch City's Under-19s take on Napoli in the UEFA Youth League live on CITY+ today Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.962707+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQXRETmduRGlBRVgxQXJ3UjB2bmlpRWx1aEM0dzRMMnp0Unhlc1BFQk9BeVBreXd5SjMwRWdMV25rdGwzLXhaR2NGWWNPTGZJZVNGUURNM3FmQkl3dTlVSUhhc25Bb0pEWFZXZFdFM2FXdVo1MEozbE1JZExWS2Z3YVd5bWNaLXlvM3NNazhfTUpfLTAtYVVoYmhn?oc=5",
+      "published": "2026-11-24T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Watch City's Under-19s take on Napoli in the UEFA Youth League live on CITY+ today - Manchester City FC"
+    },
+    {
       "desc": "SPORTS presenter Olivia Buzaglo caught the eye in a recent Instagram story. The TNT Sports anchor delighted her 131,000 ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T09:01:17.113222+00:00",
@@ -6809,6 +7084,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Why Potts swapped West Ham for Club Brugge after 16 years"
+    },
+    {
+      "desc": "A Complete Guide To Sandusky Register Death Notices: Finding And Placing Obituaries Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T16:00:53.962752+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRjNQT0ZlUDk1cWlpTG9mTE9hMXowSnB3QndQNHRTdlJhb2NfTFpCLWpBYzZsUmFjU21IMVBwdWo5X3VaeldxcjhyMmRYTkswbTFKeW95TTkxU3l6Q3J5OTJUSG5CMEs3cWl6cEpVZFZKSXRJR1h4Wk1WNm9VUzQ4bDBGM0Y3TzhW?oc=5",
+      "published": "2026-11-24T08:33:33+00:00",
+      "publisher": "https://www.partner.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "A Complete Guide To Sandusky Register Death Notices: Finding And Placing Obituaries - Manchester United"
     },
     {
       "desc": "Prince William breaks silence on Fifa decision in fresh statement Geo News",
@@ -7219,256 +7504,6 @@
       "publisher": "https://businessupturn.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Chelsea have no doubts over Xabi Alonso as club maintain full confidence in manager - Business Upturn"
-    },
-    {
-      "desc": "Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T04:00:52.503245+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
-      "published": "2026-11-24T02:20:50+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United Website"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T06:00:56.985184+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBKTXRMUkF5cy1FZUFvUE1Wa3VkR3ptaUwwQ0VxV1FjcC1ncHo3TEtET0N1cnBTdkdUTldnd3lJV3BUTE45SUdOc2c3eHdaOUFrQ2t1aGEyZGNEU2ZaYlhPNG9VU2FUeWwtY0loU3lnMmFHZU5xbXUwWjh3?oc=5",
-      "published": "2026-11-24T01:00:13+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "Under-21s set for Oxford trip Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T01:01:01.000183+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLTBKeXFPNWc1Z3pWNkpfWEFvbHBjRVN1WWhYSlZQMzRraUQ1UGZSLUhRTldPY1AwM1RtYXZqY3l5X3E3QVNUclAzdGxGc2FwajNFRk9WVy05MUcyNUVOVXh1SVYzNjlnOXkxQVotdWdYY1Y5U0ZYN2xQSjZTNE1Kdm52RTR5UkpSV1l3?oc=5",
-      "published": "2026-11-23T23:46:23+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Under-21s set for Oxford trip - Tottenham Hotspur"
-    },
-    {
-      "desc": "SIMON JONES: Jude Bellingham and Real Madrid are advancing in talks over a new contract that will make him one of the be",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T00:00:52.908031+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16316407/Jude-Bellingham-Real-Madrid-advanced-talks-new-five-year-deal-England-superstar-set-one-Europes-HIGHEST-earners-par-500-000-week-team-mate-Vinicius-Junior.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T23:40:48+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Jude Bellingham and Real Madrid in advanced talks over new five-year deal - with England superstar set to become one of Europe's HIGHEST ear"
-    },
-    {
-      "desc": "After every round of Premier League matches this season, Troy Deeney gives us his team of the week. Do you agree with hi",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-24T00:00:52.908061+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c34gn2p5d0zwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T23:26:35+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who has made Troy's Premier League team of the week?"
-    },
-    {
-      "desc": "TOM COLLOMOSSE IN ISTANBUL: In a bizarre development, Turkish security and wildlife personnel were on Monday searching f",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T00:00:52.908102+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16315947/Aston-Villa-Champions-League-Galatasaray-lion.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T23:09:02+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Aston Villa's Champions League clash with Galatasaray plunged into chaos as Turkish police hunt for a fugitive LION spotted 10 miles from th"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T07:00:51.878478+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
-      "published": "2026-11-23T23:06:18+00:00",
-      "publisher": "https://login.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
-    },
-    {
-      "desc": "BOBBY MANZI: David Moyes' record-breaking night as Everton manager could not have been more miserable. In his 593rd game",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T00:00:52.908128+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16308803/brentford-everton-david-moyes-james-tarkowski-red.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T23:06:04+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Brentford 4-0 Everton: David Moyes' record-breaking night ends in misery as James Tarkowski sees red and rampant Bees boost European hopes"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO wants three January signings to save Manchester United from relegation — but will only have a shoest",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T00:00:52.908149+00:00",
-      "link": "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window/",
-      "published": "2026-11-23T23:01:52+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino ‘to be handed tiny January transfer budget’ as Man Utd target three positions in need of fixing"
-    },
-    {
-      "desc": "The Manchester City loanee was punished by the club for failing to report to training sessions and missed several matche",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T00:00:52.908175+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16316189/Jack-Grealish-returns-Everton.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T22:56:03+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Jack Grealish plays for Everton for the first time since being axed for skipping training without permission in 'breach of club discipline' "
-    },
-    {
-      "desc": "CAS: Fabrizio Romano sows doubt on the eve of the verdict Afrique Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T00:00:52.908194+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaFI2OS11Y04xZHZVR2VFaXN3MTg2VVNhV1ZxcTJmcEYtSHUtMVlEZ1lXdE9LdzJqRFZSUlBaZnR5OTBreVJQQmp0X2pMTWIya2Z5WTVXV0R3ZGZRcmpEMDR1bEo5MXdNU0xJUXBpN0VJOUVLN2ZJRUh3OURoRUtYcXZRRS1pbTc3THgxcjFNRlRaajVyc09UV2FvR0tuaG9SbGc?oc=5",
-      "published": "2026-11-23T22:56:01+00:00",
-      "publisher": "https://www.afriquesports.net",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "CAS: Fabrizio Romano sows doubt on the eve of the verdict - Afrique Sports"
-    },
-    {
-      "desc": "Everton captain James Tarkowski was sent off for the first time in his Premier League career in Monday's 4-0 loss at Bre",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T23:00:56.316204+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cmqx5eynvpqno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T22:43:39+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Tarkowski's first Premier League red ruins Moyes' night - was it deserved?"
-    },
-    {
-      "desc": "FROZEN assets from the sale of Chelsea earned over £100million in interest last year, The Sun can reveal. Accounts for e",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T23:00:56.316240+00:00",
-      "link": "https://www.thesun.co.uk/sport/41121880/roman-abramovich-chelsea-sale-funds-earn-interest/",
-      "published": "2026-11-23T22:40:35+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Frozen assets from sale of Chelsea earned over £100million in interest last year"
-    },
-    {
-      "desc": "The top stories and transfer rumours from Tuesday's newspapers...",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-23T23:00:56.316266+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615837/man-utd-transfer-news-brentford-defender-nathan-collins-emerges-as-january-target-paper-talk",
-      "published": "2026-11-23T22:40:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Papers: Brentford defender emerges as Man Utd target as January budget revealed"
-    },
-    {
-      "desc": "Watch highlights as Brentford earn a comfortable 3-0 win against 10-man Everton in the Premier League, including a great",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-23T23:00:56.316359+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c5gm3jlw7l7xo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-23T22:31:27+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Janelt scores stunner as Brentford beat 10-man Everton"
-    },
-    {
-      "desc": "ETHAN NWANERI was supposed to be the Arsenal starboy. Nwaneri had been discussed as one of Hale End’s brightest sparks w",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T23:00:56.316393+00:00",
-      "link": "https://www.thesun.co.uk/sport/41121292/ethan-nwaneri-arsenal-return-borussia-dortmund-loan/",
-      "published": "2026-11-23T22:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ethan Nwaneri was supposed to be Arsenal’s starboy but returns to Emirates in all too familiar situation with Dortmund"
-    },
-    {
-      "desc": "Fabrizio Romano reveals why Real Madrid are holding back on Olise transfer Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T03:01:01.316905+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc1VyalhkSHQ2eUhEYjdZSktFYm9uLVY1LTI5YU9GNHk5RVpXUmd1QUNvbHlVSGN1cEg1LUp1TVYtYXYxYTVHZHh2NFRQbTlKNGY1SEY3MVdnSTZKMzltU3oyTDBETTk5cS1QQXhWNHdrVjBIeTYwTHFUeVp3WlNtMnNPNUFzYWh5ZmVhV1paQlVxSWh2d01wcC1LbDVGMXZ2YmFJV0ZaU0VoNlFUMFRFVFotSW_SAboBQVVfeXFMTnhoZ3ZxNTdLNHRhMDVSOWZHb2ZINE9aNU9OdzFUUDdNWWRjLUZQRTJlMEdtSzlzV1dOWmdaOVNFRzZ4ZENMdHlhZEQyS1lhN1lMUC1tcFN3RHZQZnNyRzZJdGFGLU9KR3hSbWMxQzJWQXRXZkZ0MlBWX3U4TUwyMDRmT2pGdmh3c2hzTG9aX3pfNGFtQjgxc0xpUVpYTjhTUFlNSHFCZ0JEOWIxTGE2UWZFczd3NG85dThB?oc=5",
-      "published": "2026-11-23T22:21:48+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reveals why Real Madrid are holding back on Olise transfer - Tribuna.com"
-    },
-    {
-      "desc": "The United Kingdom will host the 2035 Women's World Cup, the first football World Cup to be staged on these shores since",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T00:00:52.908303+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16316219/women-world-cup-2035-united-kingdom.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T22:04:21+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "The Women's World Cup is coming home... but 2035 cannot be treated as a fix for the game's problems, writes TARA ANSON-WALSH"
-    },
-    {
-      "desc": "EXCLUSIVE BY CHRIS WHEELER: Pochettino admitted that United are in a relegation battle after a painful 4-0 defeat to Liv",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-23T23:00:56.316435+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16316449/Manchester-United-January-transfer-budget.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-23T22:03:31+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United's January transfer budget will be less than £50m with Mauricio Pochettino expected to make only TWO signings - despite needing to"
-    },
-    {
-      "desc": "DAVID MOYES has been around long enough to know football would deliver him a gut-punch on his big night. With heavyweigh",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T22:15:14.630235+00:00",
-      "link": "https://www.thesun.co.uk/sport/41121472/brentford-everton-oleksandr-usyk-david-moyes-punch/",
-      "published": "2026-11-23T22:02:19+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Brentford 4 Everton 0: Oleksandr Usyk watches on as David Moyes hit with sucker punch on record-breaking evening"
-    },
-    {
-      "desc": "KEVIN DE BRUYNE knows people might call Manchester City a ‘disgrace’ after the Premier League’s guilty verdict. But the ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T22:15:14.630271+00:00",
-      "link": "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league/",
-      "published": "2026-11-23T22:01:39+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Kevin De Bruyne admits feelings for Man City will never change even if they are stripped of titles over guilty verdict"
-    },
-    {
-      "desc": "MW11 VAR decisions explained: Why Tarkowski was sent off Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T22:15:14.630303+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOR0xnTTM5cHQ3dnI1ZWRTSFFUT0VHSURXQ2xyZm5JZjN5UjYzZ1hxME1QZFNYRnRXYTM3X0QzdDFSTTRKVXZCcVBrQjJ5dWc4ejhRSHltVWlNNVRjS2hPWDhvRjNaRkttQi11bGo4VmlDMm5jc293bmV2LWE0R3ZEeU5mVWp3akdYSEQ1NTlNNnFDQ2hxaFpiaUdmdHQ?oc=5",
-      "published": "2026-11-23T22:01:09+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "MW11 VAR decisions explained: Why Tarkowski was sent off - Premier League"
-    },
-    {
-      "desc": "Black Friday Sale Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T00:00:52.908390+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORV9qRUxyS3ZzZlQtNjc5dHNTNjBCLXVTd1ZqUjdaT191U0JMTVhtRTM0ck8xZzdid2FLMk9FTkQ3a3lXRXRvdWtRVUFKQmVDajhMRy0zUzhkX0ROeV9XZUdjSUU3akFHM1k3d2hFMVMzcGtmc2hLVmlKdHB3MHBFWUlDODQwTms?oc=5",
-      "published": "2026-11-23T21:51:40+00:00",
-      "publisher": "https://hospitality.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Black Friday Sale - Manchester United Website"
-    },
-    {
-      "desc": "Fabrizio Romano reveals Mourinho's stance on Endrick's Real Madrid future Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T23:00:56.316531+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRlh0UEptaXdzTHVMZ2ZGaFU4Uk5ucFhvZkNkQXB3cGtQOUpDaXlXZEVzakl5d3FMeXAzTWRMc1ZOZ1RNZVd3eTRfOGQ3endmaTN6S0htVTgxalRXLTB6TzFtdzdCVnp6M2F1bnQ1cmNXX1cySWRaM3J5QkJjb0hHUm0ySWE4S19HUnVYWmNYMmUzWmJqOTBncXdBeUFKbVNzaklOSWxvYVlabGZwdGtfM9IBtgFBVV95cUxQbjJ0SmVneUZ0cjRkNVkzb0tkZlF1REtZZUtYd1RYUlg0RG9TR1c0eHFESmVoOFlWSVRMVjFRUUNLMWxERE1wWmpfN0xEdkh6eDc0Q1hFRDBFNWdPX2dVUVRJVXNsOUFCbHVhZVhYU2cyQ3JCeG1vclh1M0VHRzBNemZNOXNPb2lReTlybzRaZFdPdDJwRzcwUjhOMEplTnJXTnE1N2xwNlVtbnUzSmNBbmhiODNSUQ?oc=5",
-      "published": "2026-11-23T21:42:25+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reveals Mourinho's stance on Endrick's Real Madrid future - Tribuna.com"
-    },
-    {
-      "desc": "MANCHESTER UNITED are not too big to go down. And if they think a new manager alone will save them, they are sleepwalkin",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T22:00:49.594456+00:00",
-      "link": "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation/",
-      "published": "2026-11-23T21:42:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "No amount of history or trophies will save Man Utd if they carry on like this – they’re sleepwalking towards relegation"
     }
   ],
   "processed_urls": [
@@ -7654,7 +7689,8 @@
     "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league",
     "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster",
     "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news",
-    "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child"
+    "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child",
+    "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal"
   ],
   "s_overflow": {},
   "schema_version": 4
