@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 67225,
-    "output_tokens": 7099,
-    "requests": 10
+    "input_tokens": 73502,
+    "output_tokens": 7923,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5774,7 +5774,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T00:00:52.905479+00:00",
+  "last_scan_at": "2026-11-24T01:01:00.996704+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5795,6 +5795,16 @@
     "updated_at": "2026-11-23T22:01:18.160962+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Under-21s set for Oxford trip Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T01:01:01.000183+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLTBKeXFPNWc1Z3pWNkpfWEFvbHBjRVN1WWhYSlZQMzRraUQ1UGZSLUhRTldPY1AwM1RtYXZqY3l5X3E3QVNUclAzdGxGc2FwajNFRk9WVy05MUcyNUVOVXh1SVYzNjlnOXkxQVotdWdYY1Y5U0ZYN2xQSjZTNE1Kdm52RTR5UkpSV1l3?oc=5",
+      "published": "2026-11-23T23:46:23+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Under-21s set for Oxford trip - Tottenham Hotspur"
+    },
     {
       "desc": "SIMON JONES: Jude Bellingham and Real Madrid are advancing in talks over a new contract that will make him one of the be",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -6146,6 +6156,16 @@
       "title": "Are Man Utd genuinely in a relegation battle?"
     },
     {
+      "desc": "Fortune Onoh Matches Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T01:01:01.001105+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1QQ2hvenZiNlYzaEJzb2ZtMnZUQWo3MnJPUVhpaTdjX2RrdXc5a3dHY1VPNGgxbEpGQm52WTA4OVE4WURaZnMzcGM0UE9WeE5WQlhEUzhqNk01d2k0VlNfbDNTSFdZUWhSSTVTT1FsSFY4THN2NVFF?oc=5",
+      "published": "2026-11-23T19:43:30+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fortune Onoh Matches - Premier League"
+    },
+    {
       "desc": "Jamie Carragher believes Chelsea must sign a dominant centre-back or they will have \"no chance of achieving anything\".",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-23T21:00:57.454590+00:00",
@@ -6174,6 +6194,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Win latest Acceleration Ball & Future 10 PUMA Boots, signed by Morgan Rogers - Premier League"
+    },
+    {
+      "desc": "Harrison Langford Sheffield Wednesday Midfielder, Profile & Stats Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T01:01:01.001155+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tS3c0R3R2UDJUaDNiQXZGN1hfN3VISWJoa1hpU3Q0QW0yUTNOZ2VDV1FwMDBFQUIxOVYwdVJtLWxiblk5bDR5b3phbC1rbXdLSVZGVkdrUHZIZUhRRF9KM2tfOC05SjljZ25OM2YzYVVvWnJYWWk4OFJDVnlXdVk?oc=5",
+      "published": "2026-11-23T19:20:41+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Harrison Langford Sheffield Wednesday Midfielder, Profile & Stats - Premier League"
     },
     {
       "desc": "LIVERPOOL out-matched and out-thought Mauricio Pochettino's Manchester United in their 4-0 win on Sunday. The Reds ran r",
@@ -7264,36 +7294,6 @@
       "publisher": "https://theshed.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "In his latest Sky Sports column, Paul Merson has raised doubts about whether Xabi Alonso is good enough as Chelsea manag",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-23T13:01:06.843927+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615585/paul-merson-believes-liverpool-knew-xabi-alonso-wasnt-good-enough-and-were-seeing-it-play-out-as-chelsea-manager",
-      "published": "2026-11-23T12:08:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Merson on Chelsea: My biggest worry is Liverpool knew Alonso wasn't good enough"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO'S first week in charge of Manchester United could not have gone worse - after being thrashed by arch",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T13:01:06.843953+00:00",
-      "link": "https://www.thesun.co.uk/sport/41113989/mauricio-pochettino-nightmare-first-week-man-utd/",
-      "published": "2026-11-23T12:05:08+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Inside Mauricio Pochettino’s nightmare first week at Man Utd including drones, GTA 6 and red card amid relegation fears"
-    },
-    {
-      "desc": "Lincoln City Recently Had £10,000 FA Fine Withdrawn The Stacey West",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.551120+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVjI4MnY5eGVWN0FHTnBpeFJ4YlVuWEpZeGUteDBMVWdNbzAtUVVOQ3pTWWZqVUtib3k5LWdqazg3Q3ZhWWZxaWJxc2R3cU9RYVM1Q21nVHdSM0hUdWZ0ZHIybXU3dzBSQmJsRFYyaVRiY0s3U1ZTUXBtNUg4OTQwQnlnckxULUxrRndRQQ?oc=5",
-      "published": "2026-11-23T12:02:21+00:00",
-      "publisher": "https://staceywest.net",
-      "source": "https://www.thefa.com/rss",
-      "title": "Lincoln City Recently Had £10,000 FA Fine Withdrawn - The Stacey West"
     }
   ],
   "processed_urls": [
