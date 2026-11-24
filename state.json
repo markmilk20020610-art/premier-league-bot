@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 17,
+        "calls": 18,
         "errors": 0,
-        "requests": 17
+        "requests": 18
       }
     },
-    "calls": 17,
+    "calls": 18,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 108808,
-    "output_tokens": 12229,
-    "requests": 17
+    "input_tokens": 115538,
+    "output_tokens": 12826,
+    "requests": 18
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4455,6 +4455,41 @@
       "title": "阿尔特塔赛前发布会全文发布，备战纽卡斯尔",
       "updated_at": "2026-11-20T10:18:59.181854+00:00"
     },
+    "c1a032236cbe": {
+      "article_title": "Nicky Butt launches blistering attack on ‘worst Man Utd team ever seen’ and brands club ‘disaster from top to bottom’",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "1bb3bb596ec6f053",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 227
+        }
+      ],
+      "created_at": "2026-11-24T07:00:58.873313+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "65d978931277cd7a",
+      "event_id": "c1a032236cbe",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-24T07:00:58.873313+00:00",
+          "origin": "created",
+          "title": "Nicky Butt launches blistering attack on ‘worst Man Utd team ever seen’ and brands club ‘disaster from top to bottom’",
+          "url": "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 227,
+      "title": "尼基·巴特炮轰曼联为队史最差并称俱乐部从上到下都是灾难",
+      "updated_at": "2026-11-24T07:00:59.459587+00:00"
+    },
     "c1ca9017032e": {
       "attempts": 1,
       "chunks": [],
@@ -5844,7 +5879,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T06:09:27.564770+00:00",
+  "last_scan_at": "2026-11-24T07:00:51.874310+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5865,6 +5900,96 @@
     "updated_at": "2026-11-23T22:01:18.160962+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Kevin de Bruyne's move to Napoli last summer was supposed to mark a continuation of his glittering decade at Manchester ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-24T07:00:51.877809+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqglreexkk06o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T06:57:16+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Why has De Bruyne struggled at Napoli as he returns to Man City?"
+    },
+    {
+      "desc": "NICKY BUTT has ripped into Manchester United's big-name players after seeing their season go from bad to worse. The Red ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T07:00:51.877847+00:00",
+      "link": "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster/",
+      "published": "2026-11-24T06:51:26+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Nicky Butt launches blistering attack on ‘worst Man Utd team ever seen’ and brands club ‘disaster from top to bottom’"
+    },
+    {
+      "desc": "Arsenal have made an impressive start to the campaign but it has been a frustrating one for striker Viktor Gyokeres.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-24T07:00:51.877880+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cklylr15gr2do?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T06:45:27+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Two goals in 15 games - what's going on with Gyokeres?"
+    },
+    {
+      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-24T07:00:51.877909+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cke89ve1lnzvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T06:42:40+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "Fabrizio Romano delivers a reality check on Barcelona’s January transfer plans Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T07:00:51.877941+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdGo5WjJYdmRTaWtpVWp3aVFpV0ZyYWJyWE9rUnlTQ1lkUXRDV1BHMzhORURWNmNkSkVpb084SzNMbWR2OW8wX0QyTW5rVlF5R3Nzc1gxYzlMc0ZfTER4Q0ktd3lON05aWmdBSFQ2R2Q5MlRnVUlub0dwdDdGUWU4bl9fTGl1dkk5V1NTOW1qbmxuYlE3ak1tdDR3WFlUSko3YWxhLU12T0h6dDhyQTA0cVJvUzlnMktq0gG-AUFVX3lxTE9jMFh3Smd3T0ZsZlZKaHhZWGxSMDU0aFZsUkdqaFF6WW1iMlFhTHNjbklGdGJsNkxLajhjRVJwSWJCb0ZRVzU3VVh1OHJuT0UtQm5qLVo5RFdieG11b0o2V0UtSGN6c1lkSkJoUnVHcTdZNlFNb2pmUzNETEFVVnphY245M19BdlItSTg3cmxvczdIMjFFWGhKWENBX3c2eU01ZTVVVmtCNWRNa2JBczI3bDNDWjdJd1Rmb3lNU1E?oc=5",
+      "published": "2026-11-24T06:40:33+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano delivers a reality check on Barcelona’s January transfer plans - Tribuna.com"
+    },
+    {
+      "desc": "Alex Scott to Chelsea: Ornstein drops January transfer bombshell FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T07:00:51.877968+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMkducTJkNXc1Nll5dDh2b1hOTlEyVTQ5WW92OUgyakU4NnVmZ2FrQ0Z0QzNDUnE3dXlFLXpicVhlSEhlZEVRc0tRamNwbVJmSUhGby1XS2k3MklGRXctdmU2WEpYWGlmQkFYMzlsM0lFT3RaR3VDak5QeWVRY2s2T0F0eGFJZWxZSGgwV01md0NPRjVvVjBxYjUwNVZaM284N3NKcE1qZTU5eEVObmxmMEFHREZaLUFWUGtZNjVqc3pxcGlEQVE0VlUtc0ptWDBKaFpUV2o2MnBMT0FHU3FKR3VBSQ?oc=5",
+      "published": "2026-11-24T06:37:24+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Alex Scott to Chelsea: Ornstein drops January transfer bombshell - FootballTransfers.com"
+    },
+    {
+      "desc": "From the vault: Our best wins against German teams Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T07:00:51.877994+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYUFjYUVlaFhSYVlITHpZaGlFdUNDcUdvWkNkR0NlUkVPNG13cWptNjZxcTJlcll1UVh5VF9kNTlNZFVHNko2UEJtX3hQOFNOVkNydEFZaXNmQk9ERkVCdVhVS3d4R2MzamRQM2U3WW00ZnN4WEdsaUxsWmFJYzJIUjhKZGJIOE5MM3ZtQk5DUUppZ2IzTmd1d2VR?oc=5",
+      "published": "2026-11-24T06:24:17+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "From the vault: Our best wins against German teams - Arsenal.com"
+    },
+    {
+      "desc": "Fifa president Gianni Infantino's globe-trotting by private jet since his plan to sell of a stake in the World Cup has c",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-24T07:00:51.878023+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmkgk22w3vlvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T06:16:53+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "115 days, 39 private-jet flights, one election - Infantino's globetrotting"
+    },
+    {
+      "desc": "49ers will be nervous as Fabrizio Romano issues update on Leeds United star: View LeedsAllOver",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T07:00:51.878050+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxON3c2Yl9hanhLOS1JdFlJaWs1U2Vmd19zUzZfMmppYmt0Wnd2ZG9VVTkxZWZUekF3SnZJX0xQai14Y3FGSmg5R1A0RW5qYzVGVGgwOHJzSkczS084NmhvZWNqdFNsZnVHUXUzUEJiSzgzZ3dZV3lRQW5OSjJqS2lPMnhuWVdFRnc4cklCSDFuUC1qREI2bjFlaE5ZYkZiRm9sSWxlaUV3aUxTM2V1cXZB?oc=5",
+      "published": "2026-11-24T06:12:53+00:00",
+      "publisher": "https://www.leedsallover.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "49ers will be nervous as Fabrizio Romano issues update on Leeds United star: View - LeedsAllOver"
+    },
     {
       "desc": "ARSENAL are looking to continue their unbeaten Champions League run when Dortmund visit on Tuesday. SunSport’s betting e",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -5926,6 +6051,16 @@
       "title": "Saints drawn for away trip in third round of prestigious FA Youth Cup - Daily Echo"
     },
     {
+      "desc": "Are Adam Dunn And Blake Dunn Related? The Truth Behind The Cincinnati Reds Connection Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T07:00:51.878191+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUU9OV2JWSUVpNDVISm11N3RfY1lrcFhxVkV6aXhXN1JjWTFwbUotVUFsSmJWcGJ2dGE2ZzVyY1dXcUxtLXlWbWY1QXlzZlI1RDYxem1YT2VDYU5Ucl9iYUQ1ay1VdFRyM3pFSV9vS0RwWkF6NEdQdFVaVXNsMkEtMXN3WFBUdWs?oc=5",
+      "published": "2026-11-24T03:23:55+00:00",
+      "publisher": "https://www.partner.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Are Adam Dunn And Blake Dunn Related? The Truth Behind The Cincinnati Reds Connection - Manchester United"
+    },
+    {
       "desc": "Press Conference: Club Brugge vs Liverpool | UEFA Champions League Preview Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-24T04:00:52.503127+00:00",
@@ -5964,6 +6099,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "De Bruyne on Man City Verdict: ‘Everybody Plays on the Limit’ (24 November) - The False 9"
+    },
+    {
+      "desc": "Bara Sapoko Ndiaye - Bayern München - Midfielder، الملف الشخصي والإحصائيات | بريميرليج Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T07:00:51.878293+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQWlpQk9jWGExOWU1ZUc1TTJpX2hIQ3JRSUh4VmFMdUJxRXhoRVBXNTNHaFQ4Y2Z5V0llOFRTZm95RGRKanlUYkZrOUpSTktweHV3MGgzRGlaUTZkb1dLTDlxU2NRUi1Od29EN2dEV2lSRGs5UUdvZHVqR0xlcXgxcw?oc=5",
+      "published": "2026-11-24T02:40:14+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Bara Sapoko Ndiaye - Bayern München - Midfielder، الملف الشخصي والإحصائيات | بريميرليج - Premier League"
     },
     {
       "desc": "Chelsea have no doubts over Xabi Alonso as club maintain full confidence in manager Business Upturn",
@@ -6034,6 +6179,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Aston Villa's Champions League clash with Galatasaray plunged into chaos as Turkish police hunt for a fugitive LION spotted 10 miles from th"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T07:00:51.878478+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-23T23:06:18+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "BOBBY MANZI: David Moyes' record-breaking night as Everton manager could not have been more miserable. In his 593rd game",
@@ -7244,126 +7399,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "PSG tickets and hotel packages from just £319pp and watch Ligue 1 action at Parc des Princes in Paris"
-    },
-    {
-      "desc": "Club Brugge / Liverpool - Champions League - Jan Breydelstadion, Brugge Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T21:00:57.455703+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVG5SU01keUEzdmVJSXZfUkNMbmdiTEpqeEZFU25NazlQVTB0RzlDMmFGTWN5Vkp3N0dXbTlWUXNoMWt6UVpBSVgyNTZyQnNZQnc3QjgxZG5MU01CeXBXVk4tQnVuQmhxSno5ckxJbHBxbHMtUUxHenNvRS1jRVdnZlpyMkdFbkl2UXFfbGNkWW1qNDNwY3lDMGF0LVR6UVp5SFcwUk93?oc=5",
-      "published": "2026-11-23T13:56:49+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Club Brugge / Liverpool - Champions League - Jan Breydelstadion, Brugge - Liverpool FC"
-    },
-    {
-      "desc": "Classic Match | Chelsea 4-0 Juventus | Video | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T20:00:49.522608+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORkd5X3dGTWtWU0R6SlJiRzlUSDVTdXcwY1JmMGVzNmdRbFB0Y2ZRbXdqWDE5R0trYXFmRl9IMXVCb1NqUWRpNC1qSWlQVTVMWkdfZXNCTHVFSEE4RG1aMTZ3eFhMY0lnTjdDS1ltV1lpVnJweU14eWxXN3dxbUp6UVNUcWpLeDBFUXhyMW5sR0pnUnQ0OFNTLXlIVG92MVhLQ3RGMjN3?oc=5",
-      "published": "2026-11-23T13:55:16+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Classic Match | Chelsea 4-0 Juventus | Video | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Emegha suffers off-field setback hours after scoring his first Chelsea goal Business Upturn",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T20:00:49.522620+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUHVXQ2N1UVVKVDZ1Z1ZpSUVfYzBGMkhhU1NHd1ByUkZEMmMyZFdWSE05WWJGWUttQ2RKNHk4aEY2b2phMHVoZ3VKREVkMEo1X3lpOEU0LTNnRFo2NWJMVHhSWDQzekNUU29rMjR3UWJKNV9rbmZPdGZWRkcxRHlORDdDN3RQLXhCOWNmMVk2Zkt6WFR0RmFkaGFkU2Jib3hKY2NIREFBVFRqcjQtYVlfMnRSbXpYX0REZFQ1UFZBRTkwNUJTZW1ac0hLa2hrZEk?oc=5",
-      "published": "2026-11-23T13:53:46+00:00",
-      "publisher": "https://businessupturn.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Emegha suffers off-field setback hours after scoring his first Chelsea goal - Business Upturn"
-    },
-    {
-      "desc": "'Future president of Benfica': Mourinho makes surprising claim about Bernardo Silva Business Upturn",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T18:00:59.428585+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYldRd004OUVnSFV0QTJkOGRGaHNPOW5JX1hZUmh6XzNCOFoxcXZVZ1dnMGpuX3E1M1BGem9WVWdwVUVqcXczc2s3bVp0VlFiNVg2bGRGT3Z0OTA2a0hQVmtUaXN3SUo1SDVTOW9zQmprbS15WHhFdWVyY0JNTkdCTDQ5X3EtM1BwT0NxQllpbUREbGl3ZjRIUzRwaUtaMWlNRGtYLUdSVzdnVVZubEZYTnMwR01RYXZMTlRPZFNDeUlfQ2tsU3NhWWNHVlI?oc=5",
-      "published": "2026-11-23T13:51:15+00:00",
-      "publisher": "https://businessupturn.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "'Future president of Benfica': Mourinho makes surprising claim about Bernardo Silva - Business Upturn"
-    },
-    {
-      "desc": "The Athletic FC: Ask David Ornstein your questions The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.550592+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVDA0U2dQNVpaSjREeDZNU1JTamF2Q3lvRGk2RjZZd014UmNyOGhBclJ4RTJGY1hnQXp4dTg0ZVpyUlVJN3Zab21kT0xtMEJBYUVmVmJBUUE0OC14WXBFeHhCNmtmaURDTk1tQXNiWGlQZVVrWVROUUk0NUt2VTBEY2FjOFI1ZlY5WG9WNzNlT0N4OGdnTFdqbU5rRlhwcFpiYkNqTGRROA?oc=5",
-      "published": "2026-11-23T13:49:24+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "The Athletic FC: Ask David Ornstein your questions - The New York Times"
-    },
-    {
-      "desc": "FORMER Premier League star Patrick van Aanholt has swapped matches for menswear - by opening a clothes shop. The Holland",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T14:00:50.550621+00:00",
-      "link": "https://www.thesun.co.uk/sport/41116298/chelsea-patrick-van-aanholt-clothes-shop-den-bosch/",
-      "published": "2026-11-23T13:48:02+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Former Chelsea star, 36, makes major career change as he lands brand new job just months after being released"
-    },
-    {
-      "desc": "Sky Sports columnist Laura Hunter analyses the big talking points from the sixth round of Women's Super League matches, ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-23T15:00:56.700207+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615572/arsenals-shocking-wsl-season-analysed-no-home-win-a-lack-of-goals-and-a-disenfranchised-fanbase",
-      "published": "2026-11-23T13:46:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Arsenal's struggles explained - and why they should have signed Putellas"
-    },
-    {
-      "desc": "David Raya Injury Update: No Surgery, Out of Dortmund, City Doubt (23 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.550650+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOXZPcnhfQTRJQzZvM2UxUFFMWGliQmc5WUdrQUVvdll2U0lHMlF3cXc3TFI4Z2w5Y2ZoYjJvTnFjT1lhbWNQQ24xODlzNzZkSXRsZmQyY2xRSzVDZGZXVGVnX0hYQlQtRVJJa2tRY2Q0TUR6MVB4S2dlSWh5QXpZTWlsYWJ2c1BXV1Y0Z0I0UjBGbE1MRVE?oc=5",
-      "published": "2026-11-23T13:45:45+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "David Raya Injury Update: No Surgery, Out of Dortmund, City Doubt (23 November) - The False 9"
-    },
-    {
-      "desc": "ENGLAND will lock horns with Norway at the Ullevaal Stadion in March - and the arena is set for a huge makeover. The Thr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T14:00:50.550698+00:00",
-      "link": "https://www.thesun.co.uk/sport/41115980/norway-ullevaal-stadion-unrecognisable-expansion-proposed-england-nations-league/",
-      "published": "2026-11-23T13:40:18+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "International stadium set to look unrecognisable with 46,000-seater expansion proposed ahead of England clash"
-    },
-    {
-      "desc": "Spurs Womens Back Leopard Print T-Shirt I Spurs Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T16:00:51.535684+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSVUzVlJBY2dfLVZSd01KQXVGSl9yb2VmUjhWa1BPTldRVUJ2aUpVSHpUanNHNE81Q3BFQU1VQThnNUFING45Um5FUVpxLUV1U3otMzdzUkRNZXlzVEpRWmI1ZzM3TzFFZlp0LVhRMXJfdko2czJUU1JfcUNSaGpRa2REM09pc0FGd0lxMWxhZU9tYUNDMDNlbkJB?oc=5",
-      "published": "2026-11-23T13:31:00+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Womens Back Leopard Print T-Shirt I Spurs - Tottenham Hotspur"
-    },
-    {
-      "desc": "Man United prepare appeal after Leny Yoro's controversial red card against Liverpool Business Upturn",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.550733+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQN3otdW5SX1duaGc2dHdVbGpIUXZoZXNCWE92dkNGdlE3bmlxTlY3aXRTLTN2WjR6aDByQzFXNldHQWZCSTNlQjdEa3hlUV9kMlE0YVBKbE9vb2lUOGw0TVYxSG9pb2VBaGo1R1g2QkNBRWZDOFRoOFhULWw3dTkzZXpBRXozbFItUmMwMmZFQUthamp2YXdSMmY2SzdDS1Jrcm83TnEyR3Z2dGUtZVczV01PaGxubVhOWjZIT016Q092cTdFeldFblkzMXNzSjlCM0xRcVNFbHcwTWdyY1lj?oc=5",
-      "published": "2026-11-23T13:26:14+00:00",
-      "publisher": "https://www.businessupturn.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man United prepare appeal after Leny Yoro's controversial red card against Liverpool - Business Upturn"
-    },
-    {
-      "desc": "MANCHESTER UNITED were hammered 4-0 at Liverpool in Mauricio Pochettino's first game, but perhaps the man who should be ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T14:00:50.550758+00:00",
-      "link": "https://www.thesun.co.uk/sport/41115193/mauricio-pochettino-jason-wilcox-manchester-united-ruben-amorim-liverpool/",
-      "published": "2026-11-23T13:21:34+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Pochettino could be about to push Jason Wilcox towards Man Utd exit door and prove Ruben Amorim RIGHT"
     }
   ],
   "processed_urls": [
@@ -7546,7 +7581,8 @@
     "https://www.skysports.com/football/news/12040/13615438/david-raya-injury-arsenal-goalkeeper-avoids-surgery-and-blow-is-not-as-bad-as-first-feared-says-mikel-arteta",
     "https://www.thesun.co.uk/sport/41121126/man-utd-news-mauricio-pochettino-relegation",
     "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window",
-    "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league"
+    "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league",
+    "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster"
   ],
   "s_overflow": {},
   "schema_version": 4
