@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 23365,
-    "output_tokens": 2749,
-    "requests": 4
+    "input_tokens": 29159,
+    "output_tokens": 3348,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6019,7 +6019,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T18:00:57.752254+00:00",
+  "last_scan_at": "2026-11-24T19:00:53.097582+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6041,6 +6041,56 @@
   },
   "news_pool": [
     {
+      "desc": "Team news: Gyokeres starts against Dortmund Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T19:00:53.100187+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNam9lQWdmTkRfQ2NRQVE5cm9GVmF1Vjl0cUtsek5DdUVvZllOdmp0WURyY054aGJRcnctaVJVN2ZRRnZVblRFdDhTbkF1OThNNmJPekRQeWR6SHFXT21TTnd6VW1nWnh4cUl6Y1B1bEJHbl9za2Q0dTVsdEpkN1Y3NEcwRzhxNGdmRW5oaQ?oc=5",
+      "published": "2026-11-24T18:57:23+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Team news: Gyokeres starts against Dortmund - Arsenal.com"
+    },
+    {
+      "desc": "ASTON VILLA ace Taylor Harwood-Bellis was \"done dirty\" by TNT Sports as they didn't include his photo in Unai Emery's st",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T19:00:53.100214+00:00",
+      "link": "https://www.thesun.co.uk/sport/41131410/aston-villa-champions-league-galatasaray-taylor-harwood-bellis/",
+      "published": "2026-11-24T18:53:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Aston Villa star left as ‘the invisible man’ during TNT Sports coverage after not being named in original squad"
+    },
+    {
+      "desc": "ARSENAL will host Borussia Dortmund at the Emirates tonight and Hale End's Ethan Nwaneri is set to be involved for the v",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T19:00:53.100243+00:00",
+      "link": "https://www.thesun.co.uk/sport/41127282/why-ethan-nwaneri-playing-borussia-dortmund-arsenal/",
+      "published": "2026-11-24T18:05:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why is Ethan Nwaneri allowed to play for Borussia Dortmund against parent club Arsenal in Champions League?"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-24T19:00:53.100260+00:00",
+      "link": "https://www.skysports.com/football/arsenal-vs-borussia-dortmund/live/577669",
+      "published": "2026-11-24T18:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Saliba only on bench as Kepa replaces Raya against Dortmund LIVE!"
+    },
+    {
+      "desc": "ARSENAL welcome Borussia Dortmund to the Emirates in a blockbuster Champions League clash. The Gunners are looking to co",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T19:00:53.100277+00:00",
+      "link": "https://www.thesun.co.uk/sport/41127137/why-david-raya-not-playing-arsenal-borussia-dortmund-champions-league/",
+      "published": "2026-11-24T18:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why is David Raya not playing for Arsenal vs Borussia Dortmund in Champions League?"
+    },
+    {
       "desc": "Arsenal FC Official Website Arsenal.com",
       "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-24T18:00:57.755760+00:00",
@@ -6049,6 +6099,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Arsenal FC Official Website - Arsenal.com"
+    },
+    {
+      "desc": "FA Overturns Leny Yoro Red Card Against Liverpool cwibc.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T19:00:53.100307+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9VRlh5SmhJQUlyTURRMnBYY0hJNUw0V3A1Ty1fSXZLcmJEUXY0R21oNEZFNkVYM1VTbzl5QjRMUG51MXhreUszUko5bGRqX0NHMU9YVTdMYkYwX1gtMXc?oc=5",
+      "published": "2026-11-24T17:39:00+00:00",
+      "publisher": "https://cwibc.co.id",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA Overturns Leny Yoro Red Card Against Liverpool - cwibc.co.id"
     },
     {
       "desc": "NEWCASTLE are inclining towards building a brand new £1.3BILLION stadium as part of a plan that would see their legendar",
@@ -6081,6 +6141,16 @@
       "title": "Mauricio Pochettino orders Man Utd stars to report early for training after scrapping major Michael Carrick benefit"
     },
     {
+      "desc": "Sky Sports News’ Kaveh Solhekol explains Manchester United's appeal successful appeal process for Leny Yoro's red card, ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-24T19:00:53.100439+00:00",
+      "link": "https://www.skysports.com/watch/video/13616062/explained-how-did-manchester-united-successfully-appeal-leny-yoros-red-card-picked-up-against-liverpool",
+      "published": "2026-11-24T17:16:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man Utd's Yoro red card appeal process explained"
+    },
+    {
       "desc": "Man United receive Leny Yoro boost after Liverpool embarrassment Pulse Nigeria",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-24T17:43:53.330556+00:00",
@@ -6109,6 +6179,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ben Shelton and Trinity Rodman ‘split’ as reason behind sports power couple calling it quits revealed"
+    },
+    {
+      "desc": "Ryan Gravenberch and Cody Gakpo injury update Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T19:00:53.100483+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR1hSZEliV2Vtdy1UY20xWndidGd3SjE0ZEZfOTkzWm1mQWlGZjZOaVdleF9BQmVRZXYtZEc1d2VGRDA1UTJydjhzQ0x5SDlDb19FVnJvSlhfdTJZcTRnY3c2bDQydThCWjV1ajZJM2FrUDdaT0Q2S1RTZnB0OS1CLXJFSms?oc=5",
+      "published": "2026-11-24T17:08:57+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Ryan Gravenberch and Cody Gakpo injury update - Liverpool FC"
     },
     {
       "desc": "WOMEN'S World Cup matches will be hosted at 14 major stadiums in the UK as the four nations win bid to host the 2035 tou",
@@ -6379,6 +6459,16 @@
       "publisher": "https://www.bbc.co.uk",
       "source": "https://www.thefa.com/rss",
       "title": "Man Utd defender Leny Yoro has been cleared to face Brentford on Saturday - BBC"
+    },
+    {
+      "desc": "Rashford and Baleba take part in gym session Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T19:00:53.100772+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUlYS3NRWF9NdldNd2prc3JfNmpfVXJkRFFCa3lIb2NxWjUzcFFGcTRnZm12SjRYYjR2N2JpUmw3U3EtMVlaRWw5akpweW5ybWxjbDg1SzNJakQ1ckhPZFhMZkNmWjl3Y1dKRXZCRUJOVWMxS1dveU5yaHZWTHhlQUZDNWxUSnBWaEltbUViTWRPSFE?oc=5",
+      "published": "2026-11-24T15:58:44+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Rashford and Baleba take part in gym session - Manchester United"
     },
     {
       "desc": "LUIS MUNOZ continued his remarkable rise as he inspired an incredible second-half comeback for Arsenal Under-19s in the ",
@@ -6849,6 +6939,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Barnet midfielder charged with rape"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-24T19:00:53.101041+00:00",
+      "link": "https://www.skysports.com/football/manchester-city-vs-napoli/live/577674",
+      "published": "2026-11-24T12:40:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man City vs Napoli team news as De Bruyne starts LIVE!"
     },
     {
       "desc": "Cav Miley missed Chelmsford City's draw with Walton and Hersham after spraining an ankle falling down a badger hole.",
@@ -7439,106 +7539,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Go Inside Training ahead of Dortmund clash - Arsenal.com"
-    },
-    {
-      "desc": "Inside the life of Lola Brown | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T10:00:50.093637+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5aVGFVcjZ0RUFIc1hHRTB0RjR5aV82VGFFRGsxNzFnMnVvWmtNWGtfNTdqSE1yU0JMTV9jVFdUTjZ3emE4NDcwRjNhOXpfZ3duNmx0OGcyZy1Sb1AxS1l1YV9lQ1Mtb1dDLXJBbGZRRWZUUURkVHNiTlctNA?oc=5",
-      "published": "2026-11-24T09:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Inside the life of Lola Brown | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "City v Napoli: What’s happening at the Etihad Stadium Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T13:01:03.902503+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWUlNYVN2M2lZdnpTdm5vTm1TY2t2Z0xBd0NXVEY1czBQak5KTlJBckxZUE5qZnJkR3NJWmdtOXJ4ek9rNmVhdUpUT25HS19wUHRZbGNKdk9rNE1xZVdYQmszNl85YVF4c0ZUblpJOFR5YkJzYlpUSDFEWnUtNlE0UTB1YjN6VDhK?oc=5",
-      "published": "2026-11-24T09:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "City v Napoli: What’s happening at the Etihad Stadium - Manchester City FC"
-    },
-    {
-      "desc": "Watch City's Under-19s take on Napoli in the UEFA Youth League live on CITY+ today Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.962707+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQXRETmduRGlBRVgxQXJ3UjB2bmlpRWx1aEM0dzRMMnp0Unhlc1BFQk9BeVBreXd5SjMwRWdMV25rdGwzLXhaR2NGWWNPTGZJZVNGUURNM3FmQkl3dTlVSUhhc25Bb0pEWFZXZFdFM2FXdVo1MEozbE1JZExWS2Z3YVd5bWNaLXlvM3NNazhfTUpfLTAtYVVoYmhn?oc=5",
-      "published": "2026-11-24T09:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Watch City's Under-19s take on Napoli in the UEFA Youth League live on CITY+ today - Manchester City FC"
-    },
-    {
-      "desc": "SPORTS presenter Olivia Buzaglo caught the eye in a recent Instagram story. The TNT Sports anchor delighted her 131,000 ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T09:01:17.113222+00:00",
-      "link": "https://www.thesun.co.uk/sport/41122824/olivia-buzaglo-workout-pic-instagram-tnt-sports/",
-      "published": "2026-11-24T08:57:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "TNT Sports presenter Olivia Buzaglo wows fans in pink sports bra as she shares workout pic"
-    },
-    {
-      "desc": "Isiah Noel-Williams, from St Albans, is remanded in custody charged with three rape offences.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-24T10:00:50.093662+00:00",
-      "link": "https://www.bbc.co.uk/news/articles/c8dx1v361vw7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-24T08:50:17+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Barnet forward Noel-Williams charged with rape"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T11:00:50.026978+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBSNnNybE9VWENyV0xZR1ItWVhaRmpkOUpvcVFXNnQxQll2RVY3MFdyWGJjUEVGeXpBSno2dllJTHJDaGxaQmg1NA?oc=5",
-      "published": "2026-11-24T08:47:33+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "LIVE! Chelsea News Blog: TUESDAY! Si Phillips Talks Chelsea",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T10:00:50.093676+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1qNFV5Mmdsc2VtcERVcGcyUk50VmhtMUFxdzJQMjdoX0hQdF9jeVNGSzhUOG8ySmR5UlB1T1B0WDRNZ0pOSHRvMkpPM21PNkpiaHI1VEVCZzY1RlZtSE5EVWFDZGw?oc=5",
-      "published": "2026-11-24T08:46:31+00:00",
-      "publisher": "https://sptc.news",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "LIVE! Chelsea News Blog: TUESDAY! - Si Phillips Talks Chelsea"
-    },
-    {
-      "desc": "Merseyside Police reportedly arrested seven supporters at last weekend's clash between Manchester United and Liverpool, ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T14:00:50.052016+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16317395/Police-arrest-seven-men-Man-Uniteds-4-0-thrashing-Liverpool-Anfield-two-suspected-illegal-tragedy-chanting.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T08:45:37+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Police arrest seven men after Man United's 4-0 thrashing by Liverpool at Anfield - with two suspected of illegal tragedy chanting"
-    },
-    {
-      "desc": "When Liverpool visit Club Brugge on Wendesday they are likely to come up against English midfelder Freddie Potts.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-24T09:01:17.113250+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxe89j8gj96jo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-24T08:36:50+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Why Potts swapped West Ham for Club Brugge after 16 years"
-    },
-    {
-      "desc": "A Complete Guide To Sandusky Register Death Notices: Finding And Placing Obituaries Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.962752+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRjNQT0ZlUDk1cWlpTG9mTE9hMXowSnB3QndQNHRTdlJhb2NfTFpCLWpBYzZsUmFjU21IMVBwdWo5X3VaeldxcjhyMmRYTkswbTFKeW95TTkxU3l6Q3J5OTJUSG5CMEs3cWl6cEpVZFZKSXRJR1h4Wk1WNm9VUzQ4bDBGM0Y3TzhW?oc=5",
-      "published": "2026-11-24T08:33:33+00:00",
-      "publisher": "https://www.partner.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "A Complete Guide To Sandusky Register Death Notices: Finding And Placing Obituaries - Manchester United"
     }
   ],
   "processed_urls": [
