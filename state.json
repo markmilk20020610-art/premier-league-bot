@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 99833,
-    "output_tokens": 10659,
-    "requests": 15
+    "input_tokens": 105454,
+    "output_tokens": 11563,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5844,7 +5844,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T05:01:00.385914+00:00",
+  "last_scan_at": "2026-11-24T06:00:56.982935+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5865,6 +5865,56 @@
     "updated_at": "2026-11-23T22:01:18.160962+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Man City were the masters of playing out from the back. Not anymore The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T06:00:56.985024+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSnpBQWwyZWc1MU1yRTJtWndpQklYU05rTVA3dzIyVWV1X3VqeVNwWkdia3B3S1N5WDdRaS04WWpRS0lDbDU5U3ZfdWJhVWJYazU5bFU1Q3JLNW1mNFdBbl9XNEkta1FhTkJXWVB1dlUtYk8yZ2RBaF9Zb3F3a1lOQWx4VTdxOEhKQU5FNkYxX1Z2UmlX?oc=5",
+      "published": "2026-11-24T05:09:59+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City were the masters of playing out from the back. Not anymore - The New York Times"
+    },
+    {
+      "desc": "The Wrap: What happened in Matchweek 27 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T06:00:56.985044+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPN2x0VWdRcVIyX1lDbFFwZUlkdU9SazdMMVBqTjR1LXFTWFRDS0dfdXFmMWhRd2l6WFNRUXFfMXY4VlFGVHM3bEFOSi0zN2ljU0pXWVVib0RSTzRMZF9YLVRYdWczc2NrdG0tN3V3VnZzX3BlUzBFLUoyVnQtSXZES3pnakxWdkZqQ21qUTJ5aXpMT0txR1FVQg?oc=5",
+      "published": "2026-11-24T04:50:56+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "The Wrap: What happened in Matchweek 27 - Premier League"
+    },
+    {
+      "desc": "‘No chance’: Kobbie Mainoo disputes Leny Yoro’s red card Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T06:00:56.985062+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9oUUNneDVyOXdlZXNNUW91MGx5X25tLXJaQlQzZzdfY3hfSVIwLVRMeXNYV0V6WUo5S21wZ240YUtyOWkyUTFF?oc=5",
+      "published": "2026-11-24T04:35:47+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "‘No chance’: Kobbie Mainoo disputes Leny Yoro’s red card - Digg"
+    },
+    {
+      "desc": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T06:00:56.985081+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdk5LQTJxS25CeUswUW1fRXYwS05NSzIwaHNqQlppSFo3ZHVmNVZjZ1lTbkZsalp6Y19tcDlHc2lsUkJHamF4cWZkay1uWUJxTkVEemRuclQ5RkxLX0pONmdsUGJPems4c2hPVkotNGg1LUpWTlpIbTgyRVJyN2RGOWhPQlJEaUpyVEcxdzZzYklobWtIMmlIRTc0cFlXZzZlVzBjZUV2X1p3a1NQM1k0eW04MHR3LW9HOGZSMDNwMU5CdHJVX1ZYaWt3TlpfaW43eXZucDJBWGMtYXhlWVhj?oc=5",
+      "published": "2026-11-24T04:03:32+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 - Tottenham Hotspur"
+    },
+    {
+      "desc": "Saints drawn for away trip in third round of prestigious FA Youth Cup Daily Echo",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T06:00:56.985098+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPclNVZ1hWQU1Bb2lJU3JWYVk1Um82TXhoS2J1RXRwTk4yWlBfY1duYUhRcDVhRkR1NDI5VDZnU1cwZUdmNUZKeGFGQ2JBNkN0aTZ1LWkxUks1bGV0OU1HUjF5MVg4b3JHaC1wVl83M042TDItX1pMdDd3bUFKSjkybUVwTjEteVdZd2taeE9KUndhelZYX29aSTB3Z1NhX2gtY0Z5Q1JjVkNXUQ?oc=5",
+      "published": "2026-11-24T03:30:00+00:00",
+      "publisher": "https://www.dailyecho.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Saints drawn for away trip in third round of prestigious FA Youth Cup - Daily Echo"
+    },
     {
       "desc": "Press Conference: Club Brugge vs Liverpool | UEFA Champions League Preview Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -5924,6 +5974,16 @@
       "publisher": "https://tickets.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "- Manchester United Website"
+    },
+    {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T06:00:56.985184+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBKTXRMUkF5cy1FZUFvUE1Wa3VkR3ptaUwwQ0VxV1FjcC1ncHo3TEtET0N1cnBTdkdUTldnd3lJV3BUTE45SUdOc2c3eHdaOUFrQ2t1aGEyZGNEU2ZaYlhPNG9VU2FUeWwtY0loU3lnMmFHZU5xbXUwWjh3?oc=5",
+      "published": "2026-11-24T01:00:13+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
     },
     {
       "desc": "Under-21s set for Oxford trip Tottenham Hotspur",
@@ -7304,66 +7364,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Chelsea ‘ready to SELL Marco Palestra just months after £43m move as they line up mega January transfer replacement’"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T15:00:56.700317+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FdFB2MFRTczRGb2NVelpLa3p0OVlaNjVTd3hCblBvUjBUVWlnaG1IdEQ4bDB5dTc4Z1ViUzd5UzFHaGFaZGhYdUlNbWR1UU9vSE5pcWs0cktnczhrYnlZX2pMSnZCNjg?oc=5",
-      "published": "2026-11-23T13:01:23+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T16:00:51.535752+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
-      "published": "2026-11-23T12:58:16+00:00",
-      "publisher": "https://login.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
-    },
-    {
-      "desc": "Semenyo Injury Update: Still Out for Man City vs Napoli thefalse9.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T13:01:06.843656+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV2Z0ekswWEwtSHNtSXhOLXFvN1c3LW1oOFdfZVNvSjN4a28wOWZWV3BHUGdpRXhPLWp6UG1DTUFaOEFMbmxGMGsxNTdmeG53WlVxMkRyY0kzSlFBNHlEY2lYbkVyZWVEYU1lQ2M4bzhRMGhZZGFKWDlibHhjUlp0WU5pQ2o4N2Nsa2hN?oc=5",
-      "published": "2026-11-23T12:47:59+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Semenyo Injury Update: Still Out for Man City vs Napoli - thefalse9.com"
-    },
-    {
-      "desc": "Virgil van Dijk: The performance against United was spot on Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.550889+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWUVlcmUzWnV4djF6VlliQkxrUE1RYXRRWTF3YkNwSFNnalJCbXJIel9oVWI5WENqV1pQOHJ3UzFGb0lObnBoQ0k0bWdfVmlhZU5hNEwtamtxSlh0bzhDNnhqdTFYUTA3Z0NQLTJwUWU2MDY0UUthSnB4WUI2OUpXejNLWmkxcEhZanpobHBLX0I?oc=5",
-      "published": "2026-11-23T12:40:28+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Virgil van Dijk: The performance against United was spot on - Liverpool FC"
-    },
-    {
-      "desc": "Rio Ngumoha reaction | 'I just want to help the team as much as I can' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T14:00:50.550915+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaEY3eGhhSU1jRG1oVjNzeURTQm5kTXp2T0FDQUR1dHFrcXpkbEl1YTNILTNLdkRHYTlUTUNua0pkYUNfTUlhMld2UHl6QkN3aEZnZHNzMnlhc1g5OVhYbXc0dzZ5M1ZPaThNb3ZhdGkyV2hSajh4ZDJMSWpkdE41MzgxVGl4Y1VxZ2FVRXpYTUU4a2xhX1E?oc=5",
-      "published": "2026-11-23T12:40:28+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Rio Ngumoha reaction | 'I just want to help the team as much as I can' - Liverpool FC"
-    },
-    {
-      "desc": "Club Brugge v Liverpool: TV channels, audio commentary and highlights guide for UCL tie Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T15:00:56.700401+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVzhsa1pncG56aTI5ZkdZX2JjZy1XZ3U5YVB5UFR5ZkNfOFBKa1pJNHhDTmFqNVJtWjlEd2ZrQWJRRllSQWZKVEFLSDk5M2w4NjFuVFh1N1lWSE5CeU5xMVBsOHJNUWlhWXBFbTN6OVN6VTB2c1RtOThLNXA4U0Uzc0VxZ3l5RWtjY1lBRkRMVUhncHdpTTVmUFRyczlFbHJfUF96c0szSWFHTFVoNTVYZUJRc0tLbUdGVVE?oc=5",
-      "published": "2026-11-23T12:40:28+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Club Brugge v Liverpool: TV channels, audio commentary and highlights guide for UCL tie - Liverpool FC"
     }
   ],
   "processed_urls": [
