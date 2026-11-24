@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-24",
     "errors": 0,
-    "input_tokens": 149526,
-    "output_tokens": 16774,
-    "requests": 24
+    "input_tokens": 155431,
+    "output_tokens": 17449,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4897,6 +4897,41 @@
       "title": "格拉利什获准回归埃弗顿一线队",
       "updated_at": "2026-11-21T00:17:29.111211+00:00"
     },
+    "d1e1ea751809": {
+      "article_title": "Barnet midfielder charged with rape",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "21ac8cb35247564f",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 229
+        }
+      ],
+      "created_at": "2026-11-24T14:00:55.729770+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "449345739d8f176d",
+      "event_id": "d1e1ea751809",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-24T14:00:55.729770+00:00",
+          "origin": "created",
+          "title": "Barnet midfielder charged with rape",
+          "url": "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 229,
+      "title": "巴尼特中场伊赛亚·诺埃尔-威廉姆斯被控三项强奸罪及一项与儿童进行性交流罪",
+      "updated_at": "2026-11-24T14:00:56.286932+00:00"
+    },
     "d22b9ee00080": {
       "article_title": "Man Utd latest: Carrick given no assurances over future beyond Villa match",
       "attempts": 1,
@@ -5914,7 +5949,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T13:01:03.898357+00:00",
+  "last_scan_at": "2026-11-24T14:00:50.048531+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -5936,6 +5971,96 @@
   },
   "news_pool": [
     {
+      "desc": "TOTTENHAM are set to announce a bumper, long-term deal for breakout star Luca Williams-Barnett. SunSport exclusively rev",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T14:00:50.051109+00:00",
+      "link": "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal/",
+      "published": "2026-11-24T13:54:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Tottenham breakout star Luca Williams-Barnett set to snub Chelsea and Man Utd transfer interest with bumper new deal"
+    },
+    {
+      "desc": "LUKE SHAW has given Mauricio Pochettino a boost after returning to full training as Manchester United look to fix their ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T14:00:50.051134+00:00",
+      "link": "https://www.thesun.co.uk/sport/41127518/man-utd-luke-shaw-sporting-champions-league-pochettino/",
+      "published": "2026-11-24T13:48:32+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Luke Shaw returns to Man Utd training in huge boost for Mauricio Pochettino and could face Sporting after six weeks out"
+    },
+    {
+      "desc": "What to do with Haaland in FPL? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T14:00:50.051154+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Sanc4dGhsYnI0bkxJaUtpR2pyUkFaWGJWNkdfU2JaVjhDOEc2UmhrZlEtZmI0NENRaE5fbEZQSGsyLUthek01Q3BudUF0c1NyejdDRmVjb08?oc=5",
+      "published": "2026-11-24T13:34:28+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What to do with Haaland in FPL? - Premier League"
+    },
+    {
+      "desc": "ETHAN NWANERI takes on parent club Arsenal this evening. The Borussia Dortmund loanee has struggled for minutes in a sta",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-24T14:00:50.051174+00:00",
+      "link": "https://www.thesun.co.uk/sport/41126085/arsenal-ethan-nwaneri-loan-recall-january-transfer-window/",
+      "published": "2026-11-24T13:19:20+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal ‘have costly secret Ethan Nwaneri clause in Borussia Dortmund loan deal’ amid transfer recall possibility"
+    },
+    {
+      "desc": "Romano: Endrick’s agents set for crunch Real Madrid meeting as Milan await news LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T14:00:50.051194+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZ0pyQ2NZTHlXSUwzSmtLSE95VU1HSlJGQktMRTY1WE1STUdFQkNjOG5EX3dlbnlFSkxNVGwxOEc2X2Y4WHdsQXRrb0Ezb2w1ZlJpdmN4RS1Ld3hiRkJhbkwzakwyYXVGcm5WXzRBLUIya2R3ZjhfNm81Z0tSOS1mY3drX19yQXVndVlUMjd0N0RlVzlYTDV5OF9lYlNONTFiN095Ykt4dTdPSGstbi03UE1mOFRsNVlMcElTbnZmUWo5THFzWWgwenZ3RDBjUnBxaHRKdWswd2pObnRQUGl3Y0Z3?oc=5",
+      "published": "2026-11-24T13:17:59+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Endrick’s agents set for crunch Real Madrid meeting as Milan await news - LiveScore"
+    },
+    {
+      "desc": "KIERAN GILL: Wesley Fofana has risked the ire of Chelsea fans with an ill-timed interview in which he laughed off his pe",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T14:00:50.051223+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16318177/Chelsea-Wesley-Fofana-Liverpool-penalty.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T13:05:10+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Chelsea star Wesley Fofana risks angering Blues fans as he LAUGHS off penalty miss against Liverpool and reveals he considered quitting foot"
+    },
+    {
+      "desc": "INTERVIEW BY WILL PICKWORTH: A boyhood West Ham fan whose dad Steve is a club legend and still serves as a first-team co",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T14:00:50.051249+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16303009/Freddie-Potts-pain-leaving-West-Ham-summer-upsetting-odds-Champions-League-Club-Brugge-dont-fear-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T13:00:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Freddie Potts on the pain of leaving West Ham, why he had to move on this summer, upsetting the odds in the Champions League with Club Brugg"
+    },
+    {
+      "desc": "Chelsea’s stance on Xabi Alonso revealed as speculation mounts around his future K24 Digital",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T14:00:50.051269+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV21NLVIzamdMM3pBRUZHOU11SFh4NVRtVF9TbFd4WFl0NG1aNTY4a2lNUDRiUS1nSXpYZVlVNGpyQTEtYTZlazQwaTlYYV9QajdZamxnakQ2dWlMU1pHVnRIRFluUDJfdzBHaDZRanlhZEl5Y1hfNVN1X0twdld0bmw3RlE5OUMyVmlYTC1mZzhBSEhGaEQyUjk1TXRUVVhjMnpxcDh2U2RtXzVJQU9N?oc=5",
+      "published": "2026-11-24T13:00:27+00:00",
+      "publisher": "https://k24.digital",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Chelsea’s stance on Xabi Alonso revealed as speculation mounts around his future - K24 Digital"
+    },
+    {
+      "desc": "VOTE: Who was the best player of Matchweek 11? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T14:00:50.051286+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMGMtdVVTSUIwX3ZnT0xWcm9IVGNzLVRYa0JrWTltUFp5OWRhUlVPOXdSVVJnOWFDbGVFQWo4bjZReEtYZDhKWXNrVklkOENqbFJlUEtkdmJrTUNjSmJ1SGpObXVvQVZyczljMG5pNXBBR1dEM3FwdGZXdkV6SFluYjdLdVB3OGlpNG54Z3kxcVVucTQ2?oc=5",
+      "published": "2026-11-24T12:56:10+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "VOTE: Who was the best player of Matchweek 11? - Premier League"
+    },
+    {
       "desc": "MATTHIAS JAISSLE received a public vote of confidence and was promised the “final say” on Newcastle transfers. The Germa",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T13:01:03.901760+00:00",
@@ -5944,6 +6069,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Matthias Jaissle gets Newcastle vote of confidence and Ivan Toney boost as he is promised ‘final say’ on all transfers"
+    },
+    {
+      "desc": "A League Two footballer has been charged with three counts of rape and one count of engaging in sexual communication wit",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-24T14:00:50.051315+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child",
+      "published": "2026-11-24T12:41:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Barnet midfielder charged with rape"
     },
     {
       "desc": "Cav Miley missed Chelmsford City's draw with Walton and Hersham after spraining an ankle falling down a badger hole.",
@@ -5996,6 +6131,26 @@
       "title": "Palace docked points for using four sub windows in win"
     },
     {
+      "desc": "Legends in conversation: Leah Williamson and Thierry Henry Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T14:00:50.051441+00:00",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPckFUOGQ4QmVxY2VsdlRFSlVUa3k0WFZ1WHhfVnRYcWtYVlJONzVTYU4za09pOTFqVDFGcC11TkJFYVFGUGMzSDlwYi1MRzFKRG4zRzBER1RhTTFnX2JBV2RhWVZ1S19uS1NCVDBlWDNSZlFmS09xS19NU3B5ZzhMallLU0ZpajVuU0ZQdGJkRENJUXFhT0RDa0hCVjBpWGJY?oc=5",
+      "published": "2026-11-24T12:08:29+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Legends in conversation: Leah Williamson and Thierry Henry - Arsenal.com"
+    },
+    {
+      "desc": "From manutd.com Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T14:00:50.051457+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVGM4LTZpdEp3RUx5MmpiSUxjdFZhXzNJZUQzZmx2OGdkcEZTRDlIZnhVWS0xMld0eVVNTVE4aEM3ZXBYM2tnNWotTFhvODN2NjdybUZXMUxTd2M4eTNkbkFTdDlQLVlYY0RycTdWMVUtVVdLaHE1VkNTZkNaZ1FWeks1NXE0eE9KaGxyNkROMzRnMWV2bHhBTmZnbHNmei1iMDU1cGRjQmVldzhSd2pVNWNtV18zbzdud1RnRXVCNC1wNTlyNEt4Z2YzM0JBWDhyaVZUdHVJTTRrQW5aRVlxZXRUSjh2SUV4?oc=5",
+      "published": "2026-11-24T12:08:29+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "From manutd.com - Manchester United"
+    },
+    {
       "desc": "FORMER Premier League ace Fabrizio Ravanelli is locked in a High Court battle with the taxman. He is trying to claw back",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T13:01:03.901928+00:00",
@@ -6004,6 +6159,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League legend footballer locked in £340k court battle with taxman over club wages from 20 years ago"
+    },
+    {
+      "desc": "Newcastle United's hierarchy addressed supporters at a 'United We Stand' event by St James' Park this week. CRAIG HOPE i",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T14:00:50.051498+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317937/Newcastle-bosses-grilled-fans-Matthias-Jaissle-January-transfer-plans-new-stadium-verdict-CRAIG-HOPE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T12:01:52+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "I was in the room with Newcastle bosses as they were grilled by fans on Matthias Jaissle, their January transfer plans and the new stadium -"
     },
     {
       "desc": "DUNCAN FERGUSON has been handed a seven-match ban after he was dismissed for aggressively confronting an official. The f",
@@ -6044,6 +6209,16 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Training update from Carrington - Manchester United"
+    },
+    {
+      "desc": "Jude Bellingham has more than settled into his routine in Madrid, with the England star learning Spanish and living in a",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T14:00:50.051571+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317459/jude-bellingham-madrid-life.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T11:30:30+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside Jude Bellingham's life in Madrid: Kisses from elderly ladies, coffee shop bliss and finding love - England star feels at home as he n"
     },
     {
       "desc": "Fabrizio Romano confirms Liverpool tried to sign Endrick DaveOCKOP",
@@ -6226,6 +6401,16 @@
       "title": "Sportsnet: Shane Pinto picks off a pass and buries Senators’ OT winner - Digg"
     },
     {
+      "desc": "Premier League clubs are bracing themselves for a raid of their talent from Saudi Arabia, as the mega-money league consi",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T14:00:50.051764+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317587/Premier-League-transfers-Saudi-Arabia.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T10:13:38+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Prepare for another Saudi Premier League raid: Relaxation of foreign player rules set to spark mega-money recruitment drive - after near-$1B"
+    },
+    {
       "desc": "ERLING HAALAND has launched a legal challenge against a Polish electrician who trademarked his surname. Haaland discover",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T11:00:50.026594+00:00",
@@ -6316,6 +6501,16 @@
       "title": "Bruno Guimaraes reveals he immediately apologised to entire Arsenal squad after £75million transfer from Newcastle"
     },
     {
+      "desc": "Inside Anfield: New views and unseen footage from Liverpool 4-0 Manchester United Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T14:00:50.051860+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWTlSMDNZOFRsdEY5MkIwNURuSjhlTWdDWFZOcjRCc3RIT2EzX0JrVjkxeF9WOWJabFVLUFZyWDJ2UnZUdnZ4SjRac09nR0lRSHNtUy1SYkdOd2VqcE1rUUJVbnZRS3NMcUYxQzJ1LTZJQ3h1ZDRSRHF0VUU2TUMwaXlrWFJUV3FxcElTc0ZnNEZEbEpfMk9EVnVDb2s3cEJTT2VSWlFDNA?oc=5",
+      "published": "2026-11-24T09:40:29+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Inside Anfield: New views and unseen footage from Liverpool 4-0 Manchester United - Liverpool FC"
+    },
+    {
       "desc": "A LEAGUE Two footballer has been charged with rape and a child sex offence. Barnet striker Isiah Noel-Williams is accuse",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T10:00:50.093563+00:00",
@@ -6324,6 +6519,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "EFL striker charged with three counts of rape and child sex offence – as star remanded into custody"
+    },
+    {
+      "desc": "Lukaku's shock announcement caught Belgian media by surprise, while his former international team-mate Nainggolan has cl",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T14:00:50.051884+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317515/Romelu-Lukaku-bombshell-Belgian-football-shock-retirement.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T09:38:40+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'Bitter' Romelu Lukaku set to 'drop a bombshell' on Belgian football following his shock retirement, claims former team-mate after one-hour "
     },
     {
       "desc": "MANCHESTER CITY host Napoli on Tuesday, looking to strengthen their grip on a Champions League top eight finish. BOYLE S",
@@ -6454,6 +6659,16 @@
       "publisher": "https://sptc.news",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "LIVE! Chelsea News Blog: TUESDAY! - Si Phillips Talks Chelsea"
+    },
+    {
+      "desc": "Merseyside Police reportedly arrested seven supporters at last weekend's clash between Manchester United and Liverpool, ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-24T14:00:50.052016+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317395/Police-arrest-seven-men-Man-Uniteds-4-0-thrashing-Liverpool-Anfield-two-suspected-illegal-tragedy-chanting.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T08:45:37+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Police arrest seven men after Man United's 4-0 thrashing by Liverpool at Anfield - with two suspected of illegal tragedy chanting"
     },
     {
       "desc": "When Liverpool visit Club Brugge on Wendesday they are likely to come up against English midfelder Freddie Potts.",
@@ -7254,186 +7469,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "James Tarkowski sent off for reckless tackle and out of Merseyside derby as Everton capitulate in front of Andy Burnham"
-    },
-    {
-      "desc": "UNAI EMERY insists Galatasaray’s pitch will be “no excuse” after Aston Villa’s training plans were left in disarray. The",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T21:00:57.454507+00:00",
-      "link": "https://www.thesun.co.uk/sport/41120577/aston-villa-galatasaray-pitch-champions-league-news/",
-      "published": "2026-11-23T20:22:59+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Aston Villa blocked from training on Galatasaray pitch as emergency repairs continue ahead of Champions League clash"
-    },
-    {
-      "desc": "ARSENAL manager Mikel Arteta has called up SIX academy aces into first-team training ahead of the upcoming Champions Lea",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T21:00:57.454533+00:00",
-      "link": "https://www.thesun.co.uk/sport/41120325/arsenal-academy-training-mikel-arteta-injuries-david-raya/",
-      "published": "2026-11-23T20:07:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Six Arsenal academy kids called into first team training ahead of Borussia Dortmund clash as Gunners face injury woes"
-    },
-    {
-      "desc": "What started as a blip has become a problem far more systemic for Man Utd.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-23T20:00:49.522026+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615552/are-manchester-united-in-a-relegation-battle-gary-neville-and-jamie-carragher-assess-their-survival-chances",
-      "published": "2026-11-23T19:45:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Are Man Utd genuinely in a relegation battle?"
-    },
-    {
-      "desc": "Fortune Onoh Videos & Best Moments Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T03:01:01.317224+00:00",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Fb0RoZ3FadUZlUUJjY2dhT3BMeFZTYk9XXzVIRG96N0d0SUQxbWl0MGR2bFdwWk5veWJNVXJoMHdaekItVDltN1Nod2s3TGpXTUM0VGV3Q0ZqVlZRZExUQ1FNbDRxQlNpRWVxRndnR1ZmbDFX?oc=5",
-      "published": "2026-11-23T19:43:49+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Fortune Onoh Videos & Best Moments - Premier League"
-    },
-    {
-      "desc": "Fortune Onoh Matches Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T01:01:01.001105+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1QQ2hvenZiNlYzaEJzb2ZtMnZUQWo3MnJPUVhpaTdjX2RrdXc5a3dHY1VPNGgxbEpGQm52WTA4OVE4WURaZnMzcGM0UE9WeE5WQlhEUzhqNk01d2k0VlNfbDNTSFdZUWhSSTVTT1FsSFY4THN2NVFF?oc=5",
-      "published": "2026-11-23T19:43:30+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Fortune Onoh Matches - Premier League"
-    },
-    {
-      "desc": "Jamie Carragher believes Chelsea must sign a dominant centre-back or they will have \"no chance of achieving anything\".",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-23T21:00:57.454590+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615767/chelsea-must-sign-centre-back-or-will-achieve-nothing-with-levi-colwill-and-wesley-fofana-says-jamie-carragher",
-      "published": "2026-11-23T19:37:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Carra: Chelsea must sign centre-back or achieve nothing"
-    },
-    {
-      "desc": "Fabrizio Romano gives an update on Vinicius Junior transfer links to PSG Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T20:00:49.522045+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaUFNN1VqT2dYcTk1YmEyaWNZN1d1aDBPMHM5MTJWMEswSDUxdHFuclZKMWFvZW9LTFVrdHE1dVBuT3o3NTNqaGxydUlJTS04OWhQUmJIdHB5dmF3czZaLWpZOHlwMWFGNVhaS3BkLVptS2xQMWJ1bHV5YkdJVjM1aVphQWJzN09ERGdPeVhfek0xMGs2cTdzbGNKYXdOVHdwNExteDB6Qm9uaVZMQ0hHZThR0gG3AUFVX3lxTE91ZDdXb25vTlFTMkJwdDlLd05wTTVaVWpCcVpaLXFtbG9KR3Y0VGdqLS12SDlud2F4RmZYWlY3OFNpLUNYdm9xVDZGX3FzZ0ZXSWp5dm9WYzF0eVlaZE5HNE5NTW1URDNiM1Yxc1lfRzM3ZlBsVFlmRXNMMk1zaDJmeUxGT0IyR3k2X3BMRHhCeC0yaU51ZXVsN2dXd3p3TWV0dW9QNXU1QmNpUk5QZnhtUFdwb0VUVQ?oc=5",
-      "published": "2026-11-23T19:36:53+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano gives an update on Vinicius Junior transfer links to PSG - Tribuna.com"
-    },
-    {
-      "desc": "Win latest Acceleration Ball & Future 10 PUMA Boots, signed by Morgan Rogers Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T20:00:49.522060+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQS1RKQktJaXN6bWV3dlJfR1hjQjBWSmV2by1NT3BycnllTGJLUVZLTC1RX0ZybktoaVJDSnNnLWUwWHRzVERqYXFXZmkyS0QxWG82NWZ6YzJvMTJoNTNQNzU1dV9zTml6TE9CWDloakVkZU9SM0hwS09JWHZEUUxJYVVVMG1WbjhXSjBFWlRKblgyUXRocTBudnpmYw?oc=5",
-      "published": "2026-11-23T19:30:00+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Win latest Acceleration Ball & Future 10 PUMA Boots, signed by Morgan Rogers - Premier League"
-    },
-    {
-      "desc": "Harrison Langford Sheffield Wednesday Midfielder, Profile & Stats Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T01:01:01.001155+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1tS3c0R3R2UDJUaDNiQXZGN1hfN3VISWJoa1hpU3Q0QW0yUTNOZ2VDV1FwMDBFQUIxOVYwdVJtLWxiblk5bDR5b3phbC1rbXdLSVZGVkdrUHZIZUhRRF9KM2tfOC05SjljZ25OM2YzYVVvWnJYWWk4OFJDVnlXdVk?oc=5",
-      "published": "2026-11-23T19:20:41+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Harrison Langford Sheffield Wednesday Midfielder, Profile & Stats - Premier League"
-    },
-    {
-      "desc": "LIVERPOOL out-matched and out-thought Mauricio Pochettino's Manchester United in their 4-0 win on Sunday. The Reds ran r",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T20:00:49.522074+00:00",
-      "link": "https://www.thesun.co.uk/sport/41119800/liverpool-tactics-exposed-man-utd-mauricio-pochettino/",
-      "published": "2026-11-23T19:20:31+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Liverpool’s ‘ten times table’ tactic monopolised Man Utd and ensured worst possible start for Mauricio Pochettino"
-    },
-    {
-      "desc": "LFC New Era Adults Scotland 9FORTY Cap Black Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T21:00:57.454661+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZHJoRldyZnViVEpMaGRXX0JYZ1VYQWpsOU4tYlVLNmpScUJWeTBzS3ZCOEJ4TkdIQXhMYk4xUnNlN1BscWZfLTZDM2pPQ1JQNmFaUjBmbnIxOVBoR29VODkxVkdjUXBIN3RTNEFIdDdza1pkTWZSTE5SRUF4NTltNjVoRk9HQQ?oc=5",
-      "published": "2026-11-23T19:19:07+00:00",
-      "publisher": "https://store.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC New Era Adults Scotland 9FORTY Cap Black - Liverpool FC"
-    },
-    {
-      "desc": "FA Youth Cup: Ipswich v Liverpool fixture details confirmed Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T00:00:52.908719+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRlpPclVLYWxDR0Z0NS0zVGkta29CVDN1bW9NRXlZS3g4LTczcHQzcVNDdmpMQUh6cUx4MWdDeEhUQV9URjA4YVg0N05MeHVvWElZblZleWJZR0hDYVd3RTVfVVRQV3I2Rjk0WWlNM0xtR1E5OWVETVh3UWFnOGNNbGVQOHVGNm81VFpWX1c3bjJiWHBXT0E?oc=5",
-      "published": "2026-11-23T19:14:24+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "FA Youth Cup: Ipswich v Liverpool fixture details confirmed - Liverpool FC"
-    },
-    {
-      "desc": "MANCHESTER CITY announced they will wear a mystery kit against Napoli in the Champions League as part of a secret new co",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-23T20:00:49.522087+00:00",
-      "link": "https://www.thesun.co.uk/sport/41119963/man-city-mystery-kit-napoli-champions-league/",
-      "published": "2026-11-23T19:12:58+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man City to wear mystery different kit in Champions League clash with Napoli as club tease major new collaboration"
-    },
-    {
-      "desc": "Aston Villa Cool On Madrid’s Benched Brazilian: Is A January Loan Still Wise? Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T20:00:49.522101+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdTJPZHMzU09VUGxpN3F2cTI4aU9YdGlPQU5JSmlFdlFsV25Dd2JXdjg1d3YweXVSWUs1WlFuVWJFUUNjSElKRFcwUExsVW04ZWlPdjRIYTZaaDBfQ1RSVXZPQk5GUnlwQ1B4UXhpcFRRWjlDdVI1dzgwcFdZZHAzT1JfSHpXLVk?oc=5",
-      "published": "2026-11-23T19:00:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Aston Villa Cool On Madrid’s Benched Brazilian: Is A January Loan Still Wise? - Yahoo Sports"
-    },
-    {
-      "desc": "Spurs Mens Hawaiian Print Shirt Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T02:00:54.189068+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRnNZOThHS0pOdTRPbDRnZFhYZ1BkazB4Xzd5a2R5S3Vra3JkTXdnSTFuT0dWa1I2LXRNb3FRWnRMaDI3cFVvbHNpSlFnU1FRTTBxSXNuR1YteWJSNE50Q3lycDN6TE1kaHpidUZ3TFpUMy1yZXNCZTFqa00tRm9yRUw3b3lTM0RMRjFzR240cw?oc=5",
-      "published": "2026-11-23T18:40:14+00:00",
-      "publisher": "https://shop.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Spurs Mens Hawaiian Print Shirt - Tottenham Hotspur"
-    },
-    {
-      "desc": "Daily Who Am I? Play 23 November Premier League game Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T21:00:57.454707+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMklnRnljSmZYY1NWQ2xPdXdibUs0WE1pcHhRQUNEblhTZjBMMUstVUtFWk1QaVUzQnhpNnlidndjTmh4a0xOSDN2b2Zmd25PZUhyRXY4T1FjcG9uMjg1U2lmWkNrUFhMUEpDUzF1NjYwZGt4YVlXNm4xYXJyMGItSm5DMlhIcXoyZEtkakR3?oc=5",
-      "published": "2026-11-23T18:31:15+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Daily Who Am I? Play 23 November Premier League game - Premier League"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-23T19:00:53.691569+00:00",
-      "link": "https://www.skysports.com/football/brentford-vs-everton/live/559546",
-      "published": "2026-11-23T18:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Grealish on bench for Everton as Wilson starts for Brentford LIVE!"
-    },
-    {
-      "desc": "إحصائيات Haitam Aleesami هذا الموسم وإحصائيات مسيرته | بريميرليج Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-23T23:00:56.316965+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBwaWNQbkU3c3R0UUoyZUdvQ1lwYVRqU1Y5bkI0YzFGNXFOTWROdUp4WTVLNjc5eWFMTndzVVZ3RlgxQjU3dVlJTlkwSE9fNTJNNjFQNDB6U1lsSHcyNzZzaXhJUmxCUjhBcDRBYVhaS25hSTBOXzNIYg?oc=5",
-      "published": "2026-11-23T18:19:23+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "إحصائيات Haitam Aleesami هذا الموسم وإحصائيات مسيرته | بريميرليج - Premier League"
     }
   ],
   "processed_urls": [
@@ -7618,7 +7653,8 @@
     "https://www.thesun.co.uk/sport/41121753/mauricio-pochettino-man-utd-january-transfer-window",
     "https://www.thesun.co.uk/sport/41121284/kevin-de-bruyne-man-city-napoli-champions-league",
     "https://www.thesun.co.uk/sport/41122421/nicky-butt-launches-blistering-attack-man-utd-disaster",
-    "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news"
+    "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news",
+    "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child"
   ],
   "s_overflow": {},
   "schema_version": 4
