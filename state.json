@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 3,
+        "calls": 4,
         "errors": 0,
-        "requests": 3
+        "requests": 4
       }
     },
-    "calls": 3,
+    "calls": 4,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 17557,
-    "output_tokens": 2032,
-    "requests": 3
+    "input_tokens": 23365,
+    "output_tokens": 2749,
+    "requests": 4
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6019,7 +6019,7 @@
     }
   },
   "last_morning_report_date": "2026-11-24",
-  "last_scan_at": "2026-11-24T17:43:53.328677+00:00",
+  "last_scan_at": "2026-11-24T18:00:57.752254+00:00",
   "last_summary_sent_at": "2026-11-23T22:01:18.175919+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6040,6 +6040,16 @@
     "updated_at": "2026-11-23T22:01:18.160962+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Arsenal FC Official Website Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T18:00:57.755760+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53cEFWZ3hGQ2Z4c1pCVmNBQTY3WGlUMmN6emt6dWJQSWVpUTF1aHMwWUZQYU1LLTNOQ3FBRFhsNHBmMWI4SGs3NlUyT1llNVZCTHBNMGpxQXk5bVBmdGJGaGs1Mkg?oc=5",
+      "published": "2026-11-24T17:47:13+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal FC Official Website - Arsenal.com"
+    },
     {
       "desc": "NEWCASTLE are inclining towards building a brand new £1.3BILLION stadium as part of a plan that would see their legendar",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -7231,6 +7241,16 @@
       "title": "Erling Haaland forced to battle Polish electrician for the rights to his own name"
     },
     {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-24T18:00:57.757141+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1VNlU1dWpaS3VlNkZDaHlDNV9aWlN2azlKRFplSzRXOGQtLUtqXzc5d2JvT3VoUWNuTmtNYVZyWDk0ZFA3ZlpkV0RabHBzQXU2Vkh0bS15bFJWaUpfc3NJbEwtN2h6bGxpREJsN1BZZ3FRQmxmV252YXFn?oc=5",
+      "published": "2026-11-24T10:06:23+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
+    },
+    {
       "desc": "ASTON VILLA head to Galatasaray on Tuesday in a tricky Champions League trip. To mark the European card, Betfred are off",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T10:00:50.093442+00:00",
@@ -7519,26 +7539,6 @@
       "publisher": "https://www.partner.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "A Complete Guide To Sandusky Register Death Notices: Finding And Placing Obituaries - Manchester United"
-    },
-    {
-      "desc": "Prince William breaks silence on Fifa decision in fresh statement Geo News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T10:00:50.093714+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWUI0R0hwSTM1azloci0wNWZTbWNXT3lCSGhfNnpFTWd3c21zdWNjMy1fSHgzLVBkbF82UFA0U0pXRHJlNmhPcjdaVzZUbVUzel9aSFB6VDB1OVdSbHlmSWdxZzE1Zm94UFZkdHNFczdkTVJUSWxoRDJWcC1vZUFlcmNRQ3pqUzlUVDdjd2ZGZ085cTA0aUwxWHQyQWV0QTA?oc=5",
-      "published": "2026-11-24T08:28:00+00:00",
-      "publisher": "https://www.geo.tv",
-      "source": "https://www.thefa.com/rss",
-      "title": "Prince William breaks silence on Fifa decision in fresh statement - Geo News"
-    },
-    {
-      "desc": "FAM appoints Hodak as national team coach NST Online",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T11:00:50.027045+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb0piZV82RFo5LW9mRW9VRVkyOFVwX1c1YnM1eXk4ejhFQzBZVGM3aEk0X2hneDNyWlRBXzg3WmZQT2VlUGtXZFNGckhBNmlyOV9WY3gybjl4X2otZ3F1djk1NEMzY0twOWFUOWozZXdTREpid29HTkpxeHpKVmtRLXNSNEZlb3RhYmdiXzJYbGR0ZzMzU0ZYamItejZWZ9IBngFBVV95cUxNb0piZV82RFo5LW9mRW9VRVkyOFVwX1c1YnM1eXk4ejhFQzBZVGM3aEk0X2hneDNyWlRBXzg3WmZQT2VlUGtXZFNGckhBNmlyOV9WY3gybjl4X2otZ3F1djk1NEMzY0twOWFUOWozZXdTREpid29HTkpxeHpKVmtRLXNSNEZlb3RhYmdiXzJYbGR0ZzMzU0ZYamItejZWZw?oc=5",
-      "published": "2026-11-24T08:18:38+00:00",
-      "publisher": "https://www.nst.com.my",
-      "source": "https://www.thefa.com/rss",
-      "title": "FAM appoints Hodak as national team coach - NST Online"
     }
   ],
   "processed_urls": [
