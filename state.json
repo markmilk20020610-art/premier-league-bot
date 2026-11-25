@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 37204,
-    "output_tokens": 4468,
-    "requests": 6
+    "input_tokens": 43278,
+    "output_tokens": 5140,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6439,7 +6439,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T20:08:01.020861+00:00",
+  "last_scan_at": "2026-11-25T21:00:54.089656+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6461,6 +6461,96 @@
   },
   "news_pool": [
     {
+      "desc": "A MUM whose daughter was killed by a “hippy crack” driver blasted footballer Raheem Sterling’s “soft” sentence after he ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T21:00:54.093374+00:00",
+      "link": "https://www.thesun.co.uk/sport/41150463/hippy-crack-driver-killed-daughter-raheem-sterling-sentence/",
+      "published": "2026-11-25T21:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Hippy crack driver killed my daughter yet Raheem Sterling got a soft sentence – he should have been made an example of"
+    },
+    {
+      "desc": "Follow Daily Mail Sport's live coverage for the latest updates from Wednesday's Champions League action as Manchester Un",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T21:00:54.093425+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320951/Sporting-Lisbon-vs-Manchester-United-Liverpool-Champions-League.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T20:58:25+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Sporting Lisbon vs Manchester United: Visitors BEHIND again as Senne Lammens concedes penalty minutes after saving one, Liverpool lead at Cl"
+    },
+    {
+      "desc": "Liverpool consider return for Jarrell Quansah, Tottenham scout Vangelis Pavlidis and Paris St-Germain target Estevao Wil",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T21:00:54.093459+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6n831jk3x4mo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-25T20:57:48+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Liverpool mull Quansah return - Thursday's gossip"
+    },
+    {
+      "desc": "LIVERPOOL were handed another injury worry as winger Victor Munoz needed intensive treatment before being replaced in th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T21:00:54.093486+00:00",
+      "link": "https://www.thesun.co.uk/sport/41152275/liverpool-victor-munoz-brugge-champions-league/",
+      "published": "2026-11-25T20:57:44+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool star Victor Munoz put on stretcher but then gets up and walks off pitch against Brugge in injury blow"
+    },
+    {
+      "desc": "MANCHESTER UNITED had a goal by Amad Diallo controversially disallowed against Sporting Lisbon and left fans as well as ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T21:00:54.093513+00:00",
+      "link": "https://www.thesun.co.uk/sport/41152221/man-utd-amad-diallo-sporting-lisbon-referee-marciniak/",
+      "published": "2026-11-25T20:50:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd fans fume as Amad’s goal vs Sporting is RULED OUT in ‘horrendous’ referee decision"
+    },
+    {
+      "desc": "Clinton Morrison reacts to the two penalties in Manchester United's Champions League clash with Sporting Lisbon.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-25T21:00:54.093534+00:00",
+      "link": "https://www.skysports.com/watch/video/13616547/sporing-lisbon-vs-manchester-united-clinton-morrison-reacts-to-double-penalty-drama",
+      "published": "2026-11-25T20:43:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "'Where's he going?!' - Morrison reacts to Man Utd double penalty drama!"
+    },
+    {
+      "desc": "MANCHESTER UNITED conceded two penalties in as many minutes against Sporting Lisbon in a farcical first half. The Red De",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T21:00:54.093559+00:00",
+      "link": "https://www.thesun.co.uk/sport/41151893/man-utd-two-penalties-sporting-lisbon-champions-league-lammens/",
+      "published": "2026-11-25T20:38:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd give away two penalties in space of two minutes as Senne Lammens commits another howler after Martinez incident"
+    },
+    {
+      "desc": "MANCHESTER UNITED legend Paul Scholes’ daughter Alicia took social media by storm once more in leopard-print pyjamas. Th",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T21:00:54.093582+00:00",
+      "link": "https://www.thesun.co.uk/sport/41150095/man-utd-daughter-paul-scholes-alicia-netball/",
+      "published": "2026-11-25T20:11:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd legend’s daughter poses in leopard-print pyjamas as fans brand her ‘boss queen’"
+    },
+    {
+      "desc": "EXCLUSIVE BY CRAIG HOPE: Premier League officials are 'shocked and furious' after the FA overturned Manchester United de",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T21:00:54.093621+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16322217/Furious-Premier-League-refs-SHOCKED-Leny-Yoros-red-card-Liverpool-overturned-Row-erupts-key-panel-votes-unanimously-decision-RIGHT-Man-United-left-angered-Howard-Webb.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T20:01:12+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Furious Premier League refs 'SHOCKED' at Leny Yoro's red card at Liverpool being overturned: Row erupts over Man United star's ban being scr"
+    },
+    {
       "desc": "LIVERPOOL have agreed a deal to sign highly-rated Senegalese wonderkid Sidy Barhama Ndiaye. The Reds have moved to secur",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-25T20:00:53.022018+00:00",
@@ -6469,6 +6559,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Liverpool agree deal to sign Senegalese wonderkid Sidy Barhama Ndiaye, 16, after he shines at U17 World Cup"
+    },
+    {
+      "desc": "Team news: Confirmed Liverpool line-up v Club Brugge Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T21:00:54.093669+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaGpNejFwMlRVMXNLdXNBS1VTRzZaa2c4UF9jNHo4bVB4WHFZRlFpUkZiakFBZGZqQkE1dHVmYTBrZW95NzN2Qi1xcEI0OUVKbXU5ZDQzOERkU3NmLUNIb3dZM0g1eUI5RG9hSFh6SFRsaEVDMWtja1JYRDJHSWJLd1dHX2I1RkEzeWpfRQ?oc=5",
+      "published": "2026-11-25T19:52:10+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Team news: Confirmed Liverpool line-up v Club Brugge - Liverpool FC"
+    },
+    {
+      "desc": "Liverpool tee up deal for Senegal wonderkid as transfer 'option' agreed Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T21:00:54.093697+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOF9Demk3T1lpNi05bWtiYnkwa1JlSHppUWdPZFJSSkwxelJUQUV0TVA2Q1VuQmlBblAteHpndHluSzdKV2tTZjNtODdLTjBWZWhyeFIxek5IMUJydG5zVFpMb0FfeEk0dGJnaXE0RFVwd204Uk9USm85YVRjWEF5cXVLXzJUOVdxMVdxWEJucDlpQ3BCUGJxY3QtcTJtdTRVMHpJaw?oc=5",
+      "published": "2026-11-25T19:51:32+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Liverpool tee up deal for Senegal wonderkid as transfer 'option' agreed - Liverpool FC"
     },
     {
       "desc": "Vote now: Liverpool's Player of the Match against Club Brugge Liverpool FC",
@@ -6909,6 +7019,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Why wasn't Szoboszlai's free-kick ruled out vs Man Utd?"
+    },
+    {
+      "desc": "David Ornstein’s The Athletic FC Q&A: Will Man Utd try to do business in January? Does Glasner have support? The New Yor",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T21:00:54.094455+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOUJBR1lxSUEwTzFCa0h6ME5ta3cwd1B4UGVHVkVpdVJUM1FXRlNETzNIdHB0VU9pal9LbXM1ZUdDUHJOQmt3MXRUSGR6dS1QVjd1bG9LdVhzZGNXNUFLQldiWnZDckxfV2E3Ry1VUVg4VDhhSWpFV2dxMTY0NGxCV3BoRTVDcFdPN2dGTUhUdExHUFhxbmpvMTF0UzhfTVhsX1E?oc=5",
+      "published": "2026-11-25T15:10:00+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein’s The Athletic FC Q&A: Will Man Utd try to do business in January? Does Glasner have support? - The New York Times"
     },
     {
       "desc": "Official Spurs Website Tottenham Hotspur",
@@ -7839,126 +7959,6 @@
       "publisher": "https://punchng.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Guardiola urges Portugal to give Ronaldo fitting farewell - Punch Newspapers"
-    },
-    {
-      "desc": "Bayern Munich initially aim to find local young players from Bavaria before looking further afield - here's how they do ",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T08:00:44.284688+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6702wddqz17o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T07:22:27+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "How to unearth young stars, the Bayern Munich way"
-    },
-    {
-      "desc": "Man United’s Yoro red card against Liverpool overturned Realnews Magazine",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T08:00:44.284701+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVHdoZUZwR1hiNFJabzlQYjNfUlhzRlhWc2xuRjJOVjBPVkpuLUVWUjlvRnE4bzhBM3VtMGxYVWh6WDRDSFR6eUtEeHZFOENseVpkQzNrNkk3LTM5WmtuaHZUbjItTHU4ZEYxQVhQaVR2UUxTZFZLNXR0eVVwQWljTk1JMGJTbHk4YTl6aQ?oc=5",
-      "published": "2026-11-25T07:12:52+00:00",
-      "publisher": "https://realnewsmagazine.net",
-      "source": "https://www.thefa.com/rss",
-      "title": "Man United’s Yoro red card against Liverpool overturned - Realnews Magazine"
-    },
-    {
-      "desc": "CHRIS WHEELER: Yoro was sent off for pushing Alexander Isak in the back, but United disputed the referee's view that he ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-25T08:00:44.284720+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-25T07:10:53+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Man United FURIOUS with Howard Webb after he backed decision to send off Leny Yoro at Anfield: Club to take fight to Premier League as red c"
-    },
-    {
-      "desc": "ASTRID WETT was able to laugh off an outfit choice after she suffered a wardrobe malfunction. The viral Chelsea fan has ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T08:00:44.284733+00:00",
-      "link": "https://www.thesun.co.uk/sport/41140588/astrid-wett-wardrobe-malfunction-social-media/",
-      "published": "2026-11-25T07:04:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Viral Chelsea fan Astrid Wett suffers wardrobe malfunction but laughs off outfit choice"
-    },
-    {
-      "desc": "Fabrizio Romano Transfer News: Evanilson’s Man Utd message, Arsenal update, Spurs signing FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T08:00:44.284748+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOSGdjdGdCNnNyWWtYT3lBNF9SODZZazBfNTNvbXRqcGE5OXRvdklRdG1xT2RnQjJaeEZFTlNVSDlhdkRJZlBmRndTRWFwUWt0TjVHNWgwdFBwWThhbGZvMTRNYTRKSEJCamVpUVQtT2tjSW1hRkJqRDNnM0k4OWRTMWw0OTNQVm9vZUJxaDJ5QmRfMGpmVTdOdl9YcV9UTm5ORDh1enJBLU96XzN4bHIwUFdaVjhuODhhRTVLLUtnLU1vZEdJdTRLVkx5dG5tNld3VmllM1F1NjZic0NTR2JYLUhkU2I1QTRXUTlOZ24wSnhPOHVV?oc=5",
-      "published": "2026-11-25T07:01:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Transfer News: Evanilson’s Man Utd message, Arsenal update, Spurs signing - FootballTransfers.com"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO takes charge of his first European game at Manchester United when they head to Sporting on Wednesday",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T08:00:44.284759+00:00",
-      "link": "https://www.thesun.co.uk/sport/41124022/sporting-vs-man-utd-champions-league-tips/",
-      "published": "2026-11-25T07:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Sporting vs Man Utd | Champions League predictions, preview and free bets"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T07:00:47.808678+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxvg2e6l57j7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T06:56:11+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
-    },
-    {
-      "desc": "Bournemouth News Today: Alex Scott Talk, Celta Vigo Trip and Injury Absences (25 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T08:00:44.284784+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1jVUJXMEYwb3hmQlZlOEhOSm44QUVsSGloTDFaWmx4SXl1Ul9obWNPakc5UzV5SFZHZEpvQ3I4YjhHWW1rSkw2S0U3UGhCVWFsQXk1cHNsS1huZjJjN28tWHV3MFdNQlFqSVFVR2RTNk9tQlk0TW40WllYV0F5YVk?oc=5",
-      "published": "2026-11-25T06:55:13+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Bournemouth News Today: Alex Scott Talk, Celta Vigo Trip and Injury Absences (25 November) - The False 9"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T09:00:57.271534+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-11-25T06:45:30+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
-    },
-    {
-      "desc": "Tottenham escaped an unthinkable Premier League relegation last season on the final day, but are Man Utd in danger of be",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T07:00:47.808801+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cj4gndepk312o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T06:22:36+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Are Manchester United this season's Tottenham?"
-    },
-    {
-      "desc": "LIVERPOOL are looking to build on Sunday's huge win over Manchester United, when traveling to a Club Brugge side a place",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T07:00:47.808827+00:00",
-      "link": "https://www.thesun.co.uk/sport/41115964/club-brugge-liverpool-predictions-bets/",
-      "published": "2026-11-25T06:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Club Brugge vs Liverpool | Champions League predictions, preview and free bets"
-    },
-    {
-      "desc": "Enzo Maresca is trying to solve Manchester City’s problems – but it is not a quick fix The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T07:00:47.808856+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMnV0V2NEdmxYY2FlR3FwTGhubVQzWnhib0tjYUJDbENNTjQ3a2JvWUhBcmo0d0c2cFVuSFhuWjBvNjNRUDA2aXROYzhnY3B5T0NGNGtYWU1pNlN0UFJGdEhJbW5wTnN5UGVaNmw1NWpfSXc3ZkdQRGZHRjFyTDJZTmxoa003b2dSQ2w2NE4tb3BWQVMwdEdKeEwxd0o1YVE?oc=5",
-      "published": "2026-11-25T05:55:08+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Enzo Maresca is trying to solve Manchester City’s problems – but it is not a quick fix - The New York Times"
     }
   ],
   "processed_urls": [
