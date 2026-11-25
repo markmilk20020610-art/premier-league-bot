@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 17,
+        "calls": 18,
         "errors": 0,
-        "requests": 17
+        "requests": 18
       }
     },
-    "calls": 17,
+    "calls": 18,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 105531,
-    "output_tokens": 11941,
-    "requests": 17
+    "input_tokens": 109345,
+    "output_tokens": 12553,
+    "requests": 18
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6264,7 +6264,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T06:00:49.237938+00:00",
+  "last_scan_at": "2026-11-25T07:00:47.805341+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6285,6 +6285,46 @@
     "updated_at": "2026-11-24T22:01:42.464744+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T07:00:47.808678+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cxvg2e6l57j7o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-25T06:56:11+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "Tottenham escaped an unthinkable Premier League relegation last season on the final day, but are Man Utd in danger of be",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T07:00:47.808801+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj4gndepk312o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-25T06:22:36+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Are Manchester United this season's Tottenham?"
+    },
+    {
+      "desc": "LIVERPOOL are looking to build on Sunday's huge win over Manchester United, when traveling to a Club Brugge side a place",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T07:00:47.808827+00:00",
+      "link": "https://www.thesun.co.uk/sport/41115964/club-brugge-liverpool-predictions-bets/",
+      "published": "2026-11-25T06:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Club Brugge vs Liverpool | Champions League predictions, preview and free bets"
+    },
+    {
+      "desc": "Enzo Maresca is trying to solve Manchester City’s problems – but it is not a quick fix The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T07:00:47.808856+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMnV0V2NEdmxYY2FlR3FwTGhubVQzWnhib0tjYUJDbENNTjQ3a2JvWUhBcmo0d0c2cFVuSFhuWjBvNjNRUDA2aXROYzhnY3B5T0NGNGtYWU1pNlN0UFJGdEhJbW5wTnN5UGVaNmw1NWpfSXc3ZkdQRGZHRjFyTDJZTmxoa003b2dSQ2w2NE4tb3BWQVMwdEdKeEwxd0o1YVE?oc=5",
+      "published": "2026-11-25T05:55:08+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Enzo Maresca is trying to solve Manchester City’s problems – but it is not a quick fix - The New York Times"
+    },
     {
       "desc": "Man City Crisis: One Point in Four Before Arsenal The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6454,6 +6494,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Arteta: \"There was a lot to be pleased with\" - Arsenal.com"
+    },
+    {
+      "desc": "A year on, Lammens is handling the pressure Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T07:00:47.809261+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85Z0JvMmE3N1FsVXNjbk1FazdpcHVjSExhTFhPRUhHUlNxSVgyLVA5TUZHeDZfcF90aEVmOTRybWsxalN6YjIxelU0bFZqdldndFJBZkpLVEgzdDhGS3dCelF5bktobnoyMVVHeklraUw2aWlhdldsNWJmV2R1Zw?oc=5",
+      "published": "2026-11-24T23:19:54+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "A year on, Lammens is handling the pressure - Manchester United"
     },
     {
       "desc": "Manchester City's slick footballing machine is starting to grind to a halt, as displayed in their laborious Champions Le",
@@ -7734,56 +7784,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘New Max Dowman’ – Arsenal fans go wild as latest prodigy Luis Munoz, 14, bags goal and assist in stunning comeback win"
-    },
-    {
-      "desc": "CHRIS WHEELER: Leny Yoro's one-match ban has been lifted by the FA after Manchester United successfully appealed against",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T16:00:53.961605+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T15:47:56+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Leny Yoro red card OVERTURNED: Man United star available for Brentford clash after controversial dismissal in Liverpool trouncing"
-    },
-    {
-      "desc": "DAVID RAYA is set to miss Arsenal's Champions League clash with Borussia Dortmund this evening. And stats suggest that t",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T16:00:53.961642+00:00",
-      "link": "https://www.thesun.co.uk/sport/41126901/arsenal-david-raya-injury-kepa-arrizabalaga/",
-      "published": "2026-11-24T15:37:23+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Shocking stats show why David Raya can’t come back soon enough as Kepa leaves Arsenal fans fearing worst"
-    },
-    {
-      "desc": "Manchester United learn Leny Yoro red card appeal verdict after controversial suspension Yahoo",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.961663+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUnhHU1dyN1drWE9tLXRJVTRMUTF4MjFyRlAwUlNSUVgwcmgwS3RYb3duM2FmM2Z6S1l1VEZEYXlkVWU4andiLVFEQ2pDTGRDcG5xcE51eVdHaUdla1dDZWw1S3psZ1VnT01IOTFjeWxSOEY1eEY2ZEVRY1lCLVBoNmozX2FsbmZN?oc=5",
-      "published": "2026-11-24T15:36:15+00:00",
-      "publisher": "https://uk.sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Manchester United learn Leny Yoro red card appeal verdict after controversial suspension - Yahoo"
-    },
-    {
-      "desc": "Leny Yoro's red card against Liverpool has been overturned following a successful appeal from Manchester United.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T16:00:53.961680+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13616021/leny-yoros-red-card-for-manchester-united-against-liverpool-overturned-following-successful-appeal",
-      "published": "2026-11-24T15:34:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Yoro red card overturned after successful Man Utd appeal"
-    },
-    {
-      "desc": "MANCHESTER UNITED have successfully appealed Leny Yoro’s one-match ban for his red card in the club’s 4-0 defeat at Anfi",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T16:00:53.961699+00:00",
-      "link": "https://www.thesun.co.uk/sport/41129139/man-utd-news-yoro-red-card-liverpool-overturned/",
-      "published": "2026-11-24T15:30:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Leny Yoro’s ban overturned after successful claim of wrongful dismissal in Man Utd’s 4-0 battering at Liverpool"
     }
   ],
   "processed_urls": [
