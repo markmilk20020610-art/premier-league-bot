@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 58365,
-    "output_tokens": 6631,
-    "requests": 9
+    "input_tokens": 64367,
+    "output_tokens": 7344,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4140,6 +4140,41 @@
       "title": "桑德兰争议点球1-0绝杀切尔西，蓝军国际比赛日前遭遇连败",
       "updated_at": "2026-11-08T16:05:41.022508+00:00"
     },
+    "abf08f3fa4cb": {
+      "article_title": "Man City 2 Napoli 2: Champions League clash ends in huge controversy as City stars rage at ref for ‘ending game early’",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "566c8ff7790dc9ee",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 233
+        }
+      ],
+      "created_at": "2026-11-25T00:00:57.599285+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "f28779b56cd20cb1",
+      "event_id": "abf08f3fa4cb",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-25T00:00:57.599285+00:00",
+          "origin": "created",
+          "title": "Man City 2 Napoli 2: Champions League clash ends in huge controversy as City stars rage at ref for ‘ending game early’",
+          "url": "https://www.thesun.co.uk/sport/41138398/man-city-draw-napoli-rayan-cherki-champions-league-hojlund"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.thesun.co.uk/sport/41138398/man-city-draw-napoli-rayan-cherki-champions-league-hojlund",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 233,
+      "title": "曼城2-2那不勒斯终场判罚争议，蓝月球员怒斥裁判提前吹哨",
+      "updated_at": "2026-11-25T00:00:58.273128+00:00"
+    },
     "b03cd11506e7": {
       "article_title": "Verstappen, Lawson receive grid penalties after 'unacceptable' practice collision",
       "attempts": 1,
@@ -6019,7 +6054,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-24T23:01:47.618333+00:00",
+  "last_scan_at": "2026-11-25T00:00:50.716597+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6041,6 +6076,96 @@
   },
   "news_pool": [
     {
+      "desc": "Jose Mourinho says Jude Bellingham is the best midfielder in the world, but the Real Madrid star played down comparisons",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T00:00:50.719767+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c893r9kdwl91o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T23:54:10+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Bellingham plays down Zidane comparison after wonder goal"
+    },
+    {
+      "desc": "RASMUS HOJLUND aimed a cheeky dig at Manchester City after scoring against his former club's bitter rivals in the Champi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T00:00:50.719800+00:00",
+      "link": "https://www.thesun.co.uk/sport/41140215/rasmus-hojlund-man-city-man-united-napoli-maresca/",
+      "published": "2026-11-24T23:48:09+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Rasmus Hojlund reveals the five words he shouted after scoring against Man City that Utd fans will love"
+    },
+    {
+      "desc": "Arsenal need more luck to kill off games says manager Mikel Arteta after they are held to a draw by Borussia Dortmund.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T00:00:50.719837+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c3ewv0kdjlp9o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T23:44:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Arteta says Arsenal need more luck to kill off games"
+    },
+    {
+      "desc": "JACK GAUGHAN AT THE ETIHAD: The message from Maresca ought to be clear when Manchester City convene for their meeting at",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T00:00:50.719872+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317793/Man-Citys-trip-Arsenal-come-perfect-time-Enzo-Maresca-searching-answers-Rayan-Cherki-rescues-2-2-draw-Napoli-writes-JACK-GAUGHAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T23:29:18+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Enzo Maresca is still searching for answers after Man City's draw with Napoli: There were glimpses of improvement but individual mistakes ag"
+    },
+    {
+      "desc": "Man City v Napoli - 24 Nov 2026 Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.719897+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5jZWFNN2NMVkEzWUJhUUlnMEdpNkRCN2huLXJiYzBqWTNfTXpydzhnOUNMODY4NWx4R0dBSVVqQXJfOWlnR3RUOE5CcjhMVnFXWEJwWDhEUzFSYzlGUkU2M2tqcVllRHRFY09IUG4wZWxER2V0?oc=5",
+      "published": "2026-11-24T23:28:21+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Man City v Napoli - 24 Nov 2026 - Manchester City FC"
+    },
+    {
+      "desc": "Hojlund was yet to score in Europe this campaign for a Napoli side who had been struggling to even reach the play-off qu",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T00:00:50.719930+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16319727/Rasmus-Hojlund-taunts-Man-City-United.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T23:23:51+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Rasmus Hojlund MOCKS Man City as ex-Man United star is caught telling fans there is 'one team in Manchester' after scoring for Napoli - desp"
+    },
+    {
+      "desc": "Manchester City's slick footballing machine is starting to grind to a halt, as displayed in their laborious Champions Le",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T00:00:50.719960+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cj3vgdp2edpxo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-24T23:17:42+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Pass, pass, slow, slow' - Man City's slick machine grinding to a halt"
+    },
+    {
+      "desc": "ISAAN KHAN AT THE EMIRATES: Whether through complacency, boredom, or a mixture of both, Arsenal's habit of switching off",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T00:00:50.719994+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317787/Arsenals-silent-flaw-switching-bite-hard-against-Europes-best-not-sustainable-pay-Borussia-Dortmund-draw-writes-ISAAN-KHAN.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T23:04:22+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Arsenal's silent flaw of switching off could bite them hard against Europe's best - it's not sustainable and they were made to pay again in "
+    },
+    {
+      "desc": "The top stories and transfer rumours from Tuesday's newspapers...",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-25T00:00:50.720016+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13616238/chelsea-transfer-news-blues-will-push-to-sign-bournemouth-midfielder-alex-scott-in-january-paper-talk",
+      "published": "2026-11-24T23:02:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Papers: Chelsea will push to sign Bournemouth's Scott in January"
+    },
+    {
       "desc": "ANDRIY SHEVCHENKO’S son Kristian Shevchenko has signed with Basingstoke just eight weeks after joining fellow non-league",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T23:01:47.620518+00:00",
@@ -6049,6 +6174,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ballon d’Or winner’s son joins non-league Basingstoke Town just weeks after joining previous club"
+    },
+    {
+      "desc": "Arsenal face Manchester City in a blockbuster Premier League contest this weekend, but in recent days and months, both t",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-25T00:00:50.720052+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13616234/arsenal-and-manchester-citys-problems-analysed-as-both-set-to-meet-in-bumper-premier-league-clash-this-weekend",
+      "published": "2026-11-24T22:54:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Arsenal showing bluntless in attack - but Man City have problems too"
     },
     {
       "desc": "JUDE BELLINGHAM left football fans speechless after scoring a sensational volley in Real Madrid's 5-1 Champions League t",
@@ -6061,6 +6196,16 @@
       "title": "Jude Bellingham scores ‘pure filth’ volley after juggling ball as fans brand Real Madrid star ‘alien’ for goal vs PSV"
     },
     {
+      "desc": "Man City Player Ratings vs Napoli: 2-2, Bouaddi Best as Cherki Rescues a Point The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720101+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZ0wya1poZ1Qyc1NUekNnU0MxM1dDcjBsVFNBVlR6MnE3NEZyNFlFSmFWc2NjejNpQnJxZ3NwN0oyTDUzU3JYWWJOLXd0TEdnSEFjcWVEaXhCV0Q2YlhDUzFMZWZSTjRqeUp1dVd2SkR4WE8tRkkzNU5VZ0NJRzkxdEdWWl9kUzZTVl96bXQ3Y3pVQQ?oc=5",
+      "published": "2026-11-24T22:46:38+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City Player Ratings vs Napoli: 2-2, Bouaddi Best as Cherki Rescues a Point - The False 9"
+    },
+    {
       "desc": "ALAN SHEARER put Arsenal on full blast as he suggested they were lucky not to concede a penalty against Borussia Dortmun",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T23:01:47.620575+00:00",
@@ -6069,6 +6214,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal were ‘fortunate’ not to concede penalty against Dortmund as Shearer slams referee decision in 1-1 draw"
+    },
+    {
+      "desc": "PSG Rejects Vinicius Transfer Amid Attacking Injury Crisis cwibc.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720141+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9oQy1QVXZBQzF6YTRSaEFnLVNOYkZTeWhYa2dnQ3JjVXIxNnRoS2hrcGRYWVlfMW9nRlpnN2dsYko3c3NYVEtZX2llaFh3dkhhUlR4VVdBUWUwdjJjS2laVDlB?oc=5",
+      "published": "2026-11-24T22:31:00+00:00",
+      "publisher": "https://cwibc.co.id",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "PSG Rejects Vinicius Transfer Amid Attacking Injury Crisis - cwibc.co.id"
+    },
+    {
+      "desc": "Report: Arsenal 1-1 Borussia Dortmund Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720163+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdlhudDU5MktrRm51c04wSWZ5YzlKZDdxQlpqLTdzOXpPQ0lfeE45TTlBbVE2NEtfdU8tc3I4UVBOTm1WNk9XMEs2b3l6RUllbEhwbjVLRHYxSlNzZmJmcDJsZndGUW8xNk5QcWkxMUNyM2lCaExQU2VQOUtCU0Y5QUZKMzc?oc=5",
+      "published": "2026-11-24T22:22:23+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Report: Arsenal 1-1 Borussia Dortmund - Arsenal.com"
     },
     {
       "desc": "UNAI EMERY has explained why he brutally dumped Alejandro Garnacho from Aston Villa's squad against Galatasaray. The Arg",
@@ -6089,6 +6254,36 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Poch questions Barcola role in Szoboszlai goal and makes Eze comparison"
+    },
+    {
+      "desc": "Manchester City 2 Napoli 2 – Cherki and Doku provide a spark, but City still labour The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720226+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTldXdW03bk4xRTZQZDZkWndnN3lZc3p1RUs4a2l6V3JtZVFiMkhHREg0X1VrUTBDSE5lOVg5Ul95ZEROMnhBOTFObnhtb1h0ZTdXbTZRV3d4ME5nbkhaNnpUX1NSWktIWk5IU3IyLU9sTFk0bGlTUUx3UHZ5bHZXVi1aSElpRFBtTHdud2k4VzZhMEMtWTF2cFZSVGR3M1FmamlV?oc=5",
+      "published": "2026-11-24T22:10:23+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Manchester City 2 Napoli 2 – Cherki and Doku provide a spark, but City still labour - The New York Times"
+    },
+    {
+      "desc": "Arsenal Player Ratings vs Dortmund: 1-1, Madueke Best as Gyökeres Misses Late thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720295+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUURnQnVTeHZLLXFfazBFeElUS2dxR3lsQ19VUEdlX3V3ZlF3WHNvZ1pwMlYxd3ZpTDM1c01YVElaU2VUNWs4a0NBYW5NdnVpeERJLTZzY3Q3c1M4dUcxVGxxOEo4bXRsZk9Ha1h1WWgtTnRpQVFTeHVmUnBfVmRodkpXay1zOW5B?oc=5",
+      "published": "2026-11-24T22:02:10+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal Player Ratings vs Dortmund: 1-1, Madueke Best as Gyökeres Misses Late - thefalse9.com"
+    },
+    {
+      "desc": "City hit back twice to share the spoils with Napoli Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720316+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcF9mUi1YeGpMUXAzTzRnRXZ6UHluM0FTeUJTYzJlcDhSV0FxWWFoNmFLWFZndXFzcnlCeGU2elZiSmR2WlVUOE9BN2R4dlZKNFVIWFNSa09mUHdlM2lUUDVDRjJfcHZla1FmS0NlanB0clgxbXg3U3Y3NG1kQmNYR3ZiLXFSSU50TUxfc2IzSC1ZZ1hVbEwwaHh0dWpRcWZxWkFxSA?oc=5",
+      "published": "2026-11-24T22:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City hit back twice to share the spoils with Napoli - Manchester City FC"
     },
     {
       "desc": "Arsenal were punished for failing to take their chances for the second game in a row as Maximilian Beier clinched a 1-1 ",
@@ -6251,6 +6446,16 @@
       "title": "Preston off bottom after thrashing Cardiff"
     },
     {
+      "desc": "SSC Napoli vs. Manchester City - November 24, 2026 Bleacher Report",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720532+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ZUVJodmFBMzc3YXRHdGVXLXN1ZkRRXzdzbjhzaXYydzdnVWdDanBzZXRiM1R6bHZVN3YyYmhsaDNqUkFJak5fRm5WWVdCZVNpbFlBMS1sMkRjZVVYOTQwbk1TS3ljcWM1cVRUVGhBUEl4bGtJSm11cEU4YlRrb0E?oc=5",
+      "published": "2026-11-24T21:34:33+00:00",
+      "publisher": "https://bleacherreport.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "SSC Napoli vs. Manchester City - November 24, 2026 - Bleacher Report"
+    },
+    {
       "desc": "Manchester United and Mauricio Pochettino are furious at how Leny Yoro's red card has been handled by VAR John Brooks an",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-24T22:01:01.371508+00:00",
@@ -6311,6 +6516,16 @@
       "title": "Man Utd target Collins - Wednesday's gossip"
     },
     {
+      "desc": "Chelsea Gold Plated Crest Signet Ring - Stainless Steel Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720618+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPb3pVcHVCd2x6dlM2Y2doUzZzUlgzSV9ia2xabDdRZGhHVmlsV1VwX0dsVE5YMnduT3RpZkFwQnN3NDhKaGhCMlNucXB2TnVpeGpfMkhXcG5XQU84LUM0TkExRXdRMUNOY0prUkVYVUtjWVlOZGRCX0d0d0hnWU1MQ1NSRTg1M2FycGhaY3NKZ280cFQ1UUs1M09HRWp4bFdzOVFQbG1HLUhXVDEwYzFJWnV5WjdKOW05ZENnN1JsdGtkTWRPeDNwQVdabnhTZW1ESVQ1UG9FN0tDQkdNS19qQjZDX285YVJma1dVUElYemJWZ2lUNHJlOVZRbVZpaGw3TnI5OFVSa1ZtRW1hU29YSA?oc=5",
+      "published": "2026-11-24T20:48:21+00:00",
+      "publisher": "https://eustore.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Gold Plated Crest Signet Ring - Stainless Steel - Chelsea Football Club"
+    },
+    {
       "desc": "MARIA GUARDIOLA is no stranger to a jaw-dropping social media post. But her latest Instagram offering sent her legion of",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-24T21:00:52.818335+00:00",
@@ -6319,6 +6534,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League legend’s daughter turns heads as she goes braless in daring outfit"
+    },
+    {
+      "desc": "Romano: Bruno Fernandes ‘more than a dream’ for Milan – why Amorim ‘could be crucial’ LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T00:00:50.720643+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcWtSVmU2eFNGcWtJWXNHTzkwb1puQnRxdTFtX3RQbkNfWjBub1pHd2t5SmFON3MtYUFKcnI1c0VOa1JkbVhnSHE0bWRnQUVkYndvck15RHpUMU1faWNNN0JnS1Fja1FtVEJXcjZEdDBGVVFTTTlPTE9ycUU5NEx2OVVmTFdKaTFGd1I3OEFNVF84UlBSNjVndW1hRUcyUEtTY0lCTjIyTXl3di0zSUROVkxMcEdWeS1KcFlOb2lOTXZhNXBfVDBUT19mekZneWNUc2pJNWhXdVc1Zw?oc=5",
+      "published": "2026-11-24T20:37:33+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Bruno Fernandes ‘more than a dream’ for Milan – why Amorim ‘could be crucial’ - LiveScore"
     },
     {
       "desc": "coming-soon-cp-company Man City Shop",
@@ -7349,196 +7574,6 @@
       "publisher": "https://talksport.com",
       "source": "https://www.thefa.com/rss",
       "title": "Millwall given partial stadium closure and will enhance Den messaging - talkSPORT"
-    },
-    {
-      "desc": "MILLWALL have been hit with the first partial stadium closure in EFL history for discriminatory chanting, and have asked",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T15:00:51.553217+00:00",
-      "link": "https://www.thesun.co.uk/sport/41127480/millwall-den-stadium-closure-championship-charlton/",
-      "published": "2026-11-24T14:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Millwall handed partial stadium closure as FA impose rarely-seen punishment after homophobic and ableist chanting"
-    },
-    {
-      "desc": "Millwall have become the first club in the top four divisions of English football to be punished with a partial stadium ",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T15:00:51.553240+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615754/millwall-forced-to-partially-close-the-den-after-commission-proves-fa-charges-of-discriminatory-chanting",
-      "published": "2026-11-24T14:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Millwall first club hit with partial closure over discriminatory chants"
-    },
-    {
-      "desc": "TOTTENHAM are set to announce a bumper, long-term deal for breakout star Luca Williams-Barnett. SunSport exclusively rev",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T14:00:50.051109+00:00",
-      "link": "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal/",
-      "published": "2026-11-24T13:54:07+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Tottenham breakout star Luca Williams-Barnett set to snub Chelsea and Man Utd transfer interest with bumper new deal"
-    },
-    {
-      "desc": "LUKE SHAW has given Mauricio Pochettino a boost after returning to full training as Manchester United look to fix their ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T14:00:50.051134+00:00",
-      "link": "https://www.thesun.co.uk/sport/41127518/man-utd-luke-shaw-sporting-champions-league-pochettino/",
-      "published": "2026-11-24T13:48:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Luke Shaw returns to Man Utd training in huge boost for Mauricio Pochettino and could face Sporting after six weeks out"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 EZE Pre-Printed Authentic Away Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.962133+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSFRFNXJsanZhNGlzR2xCLXF5b2JHVjc3dnVqdE96NEltYlhKakVoSTk0a0plZ2NOU0duSGt4dXQzS1FFQVJEWkZfTzhhWlJDRjZodEY2Y3ZUS1o0WHJzcjFUOS1FeHJrTUhBY2Mxa1h5dXVKdlBQek5GWG9hem85WG4tZTBlNUNIZ05rSzRxZkxMeTF0a3BsOWNEOVUtWERtQ3A3Ym5IZGpzUUllUjlUa2JQOFhtOTVzakhLRUNtZV9RRzh1WUcxV2loaTJnZTBpME9N?oc=5",
-      "published": "2026-11-24T13:45:55+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal adidas 26/27 EZE Pre-Printed Authentic Away Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "Arsenal adidas 26/27 Pre Print Eze Authentic Third Shirt Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.962150+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOa0MxU2oyVjhpYUtKV1YzVHNVZW05SGhvdHkxUGFFOG10VllTbHFqUGdyNWVFcXFOZFZZdXZBR3NjVGVEekhiUGNtck0tSUkyM2R6ZHMzZzZ3Qlp1d1ZrNEh5ZkptcFBvaXMwNnB2bDZqZ1BHUHM3RVFmZ0c0R29wY1cwcWloUUpOSTlORnkzb1M0T191SUtjMHE5c0VfVDhnMk1POWZrcDk1UlllZVJIeE5aYW1reUJHM1VNbE1vTi1QNzBLTXNEeHlkaDM4aE41akVN?oc=5",
-      "published": "2026-11-24T13:45:55+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Arsenal adidas 26/27 Pre Print Eze Authentic Third Shirt - Arsenal Direct"
-    },
-    {
-      "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.962165+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FR2xESk1GeVdyRWxnbTJDcFZxcUowREJXQzJkN1JRSVdleDJwd3M3LWNTVFFTd3YtNUxVeXRzR2R5TERISFJrT0d6UWFxcE1URjdyeTVkVQ?oc=5",
-      "published": "2026-11-24T13:45:38+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
-    },
-    {
-      "desc": "What to do with Haaland in FPL? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T14:00:50.051154+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Sanc4dGhsYnI0bkxJaUtpR2pyUkFaWGJWNkdfU2JaVjhDOEc2UmhrZlEtZmI0NENRaE5fbEZQSGsyLUthek01Q3BudUF0c1NyejdDRmVjb08?oc=5",
-      "published": "2026-11-24T13:34:28+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "What to do with Haaland in FPL? - Premier League"
-    },
-    {
-      "desc": "Real Madrid seal six renewals, Bellingham's among them Tu Futbolero",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T15:00:51.553304+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTW5MZUdubEs0QnZTYldxTGJqcm5VZGNzMlhObTVXazhZLTl6N1lfbkNIMmVpYmQ2T3hTY0JXZ2RRMEZNeFliem8yaUZDRk9jTmlpZmNaQWt5OFJqT0xPYnhaWUZ5bU5lcnRSckVlWjlMXzdGOTM1UEJsU2h4SlZDWmtnU3hFZGVRcG1waWowdzdJYURkcF9NZVFLSU4?oc=5",
-      "published": "2026-11-24T13:30:05+00:00",
-      "publisher": "https://www.tufutbolero.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Real Madrid seal six renewals, Bellingham's among them - Tu Futbolero"
-    },
-    {
-      "desc": "ETHAN NWANERI takes on parent club Arsenal this evening. The Borussia Dortmund loanee has struggled for minutes in a sta",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T14:00:50.051174+00:00",
-      "link": "https://www.thesun.co.uk/sport/41126085/arsenal-ethan-nwaneri-loan-recall-january-transfer-window/",
-      "published": "2026-11-24T13:19:20+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Arsenal ‘have costly secret Ethan Nwaneri clause in Borussia Dortmund loan deal’ amid transfer recall possibility"
-    },
-    {
-      "desc": "Romano: Endrick’s agents set for crunch Real Madrid meeting as Milan await news LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T14:00:50.051194+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZ0pyQ2NZTHlXSUwzSmtLSE95VU1HSlJGQktMRTY1WE1STUdFQkNjOG5EX3dlbnlFSkxNVGwxOEc2X2Y4WHdsQXRrb0Ezb2w1ZlJpdmN4RS1Ld3hiRkJhbkwzakwyYXVGcm5WXzRBLUIya2R3ZjhfNm81Z0tSOS1mY3drX19yQXVndVlUMjd0N0RlVzlYTDV5OF9lYlNONTFiN095Ykt4dTdPSGstbi03UE1mOFRsNVlMcElTbnZmUWo5THFzWWgwenZ3RDBjUnBxaHRKdWswd2pObnRQUGl3Y0Z3?oc=5",
-      "published": "2026-11-24T13:17:59+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano: Endrick’s agents set for crunch Real Madrid meeting as Milan await news - LiveScore"
-    },
-    {
-      "desc": "KIERAN GILL: Wesley Fofana has risked the ire of Chelsea fans with an ill-timed interview in which he laughed off his pe",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T14:00:50.051223+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16318177/Chelsea-Wesley-Fofana-Liverpool-penalty.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T13:05:10+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Chelsea star Wesley Fofana risks angering Blues fans as he LAUGHS off penalty miss against Liverpool and reveals he considered quitting foot"
-    },
-    {
-      "desc": "INTERVIEW BY WILL PICKWORTH: A boyhood West Ham fan whose dad Steve is a club legend and still serves as a first-team co",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T14:00:50.051249+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16303009/Freddie-Potts-pain-leaving-West-Ham-summer-upsetting-odds-Champions-League-Club-Brugge-dont-fear-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T13:00:46+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Freddie Potts on the pain of leaving West Ham, why he had to move on this summer, upsetting the odds in the Champions League with Club Brugg"
-    },
-    {
-      "desc": "Chelsea’s stance on Xabi Alonso revealed as speculation mounts around his future K24 Digital",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T14:00:50.051269+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV21NLVIzamdMM3pBRUZHOU11SFh4NVRtVF9TbFd4WFl0NG1aNTY4a2lNUDRiUS1nSXpYZVlVNGpyQTEtYTZlazQwaTlYYV9QajdZamxnakQ2dWlMU1pHVnRIRFluUDJfdzBHaDZRanlhZEl5Y1hfNVN1X0twdld0bmw3RlE5OUMyVmlYTC1mZzhBSEhGaEQyUjk1TXRUVVhjMnpxcDh2U2RtXzVJQU9N?oc=5",
-      "published": "2026-11-24T13:00:27+00:00",
-      "publisher": "https://k24.digital",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Chelsea’s stance on Xabi Alonso revealed as speculation mounts around his future - K24 Digital"
-    },
-    {
-      "desc": "VOTE: Who was the best player of Matchweek 11? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T14:00:50.051286+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMGMtdVVTSUIwX3ZnT0xWcm9IVGNzLVRYa0JrWTltUFp5OWRhUlVPOXdSVVJnOWFDbGVFQWo4bjZReEtYZDhKWXNrVklkOENqbFJlUEtkdmJrTUNjSmJ1SGpObXVvQVZyczljMG5pNXBBR1dEM3FwdGZXdkV6SFluYjdLdVB3OGlpNG54Z3kxcVVucTQ2?oc=5",
-      "published": "2026-11-24T12:56:10+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "VOTE: Who was the best player of Matchweek 11? - Premier League"
-    },
-    {
-      "desc": "The best stats behind Leah Williamson's 300 appearances Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T17:00:54.527382+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSF9YXzNhUWtudU01b2sybmRhcnZiSW5MTnBPNFZ0V1JCRDdlME0xXzRMNkVOR0lvWUxBRzFmVE5mOHNWdUxFU195a2dSVjk0dG9fX3BHQTR5ZjZDSWMyMjhDeHhUWEtCVnY2VGtQdURSQmpqSGV6XzFVRzlUcE9lWWsySHRhcVBIOVM2T2l2aDBpN0QyS3FIZExVVVE?oc=5",
-      "published": "2026-11-24T12:52:47+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "The best stats behind Leah Williamson's 300 appearances - Arsenal.com"
-    },
-    {
-      "desc": "MATTHIAS JAISSLE received a public vote of confidence and was promised the “final say” on Newcastle transfers. The Germa",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T13:01:03.901760+00:00",
-      "link": "https://www.thesun.co.uk/sport/41126518/matthias-jaissle-newcastle-ivan-toney/",
-      "published": "2026-11-24T12:43:29+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Matthias Jaissle gets Newcastle vote of confidence and Ivan Toney boost as he is promised ‘final say’ on all transfers"
-    },
-    {
-      "desc": "A League Two footballer has been charged with three counts of rape and one count of engaging in sexual communication wit",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T14:00:50.051315+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child",
-      "published": "2026-11-24T12:41:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Barnet midfielder charged with rape"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T19:00:53.101041+00:00",
-      "link": "https://www.skysports.com/football/manchester-city-vs-napoli/live/577674",
-      "published": "2026-11-24T12:40:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man City vs Napoli team news as De Bruyne starts LIVE!"
     }
   ],
   "processed_urls": [
@@ -7726,7 +7761,8 @@
     "https://www.thesun.co.uk/sport/41124360/jamie-carragher-chelsea-levi-colwill-wesley-fofana-transfer-news",
     "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child",
     "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal",
-    "https://www.skysports.com/football/news/12040/13616033/leny-yoro-red-card-ref-chief-howard-webb-backs-process-that-saw-man-utd-defender-sent-off-at-liverpool"
+    "https://www.skysports.com/football/news/12040/13616033/leny-yoro-red-card-ref-chief-howard-webb-backs-process-that-saw-man-utd-defender-sent-off-at-liverpool",
+    "https://www.thesun.co.uk/sport/41138398/man-city-draw-napoli-rayan-cherki-champions-league-hojlund"
   ],
   "s_overflow": {},
   "schema_version": 4
