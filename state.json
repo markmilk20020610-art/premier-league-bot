@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 27,
+        "calls": 1,
         "errors": 0,
-        "requests": 27
+        "requests": 1
       }
     },
-    "calls": 27,
-    "date": "2026-11-25",
+    "calls": 1,
+    "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 164021,
-    "output_tokens": 18250,
-    "requests": 27
+    "input_tokens": 6514,
+    "output_tokens": 783,
+    "requests": 1
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5107,6 +5107,41 @@
       "title": "波切蒂诺接近曼联帅位，旧日言论被翻出",
       "updated_at": "2026-11-12T15:01:10.441868+00:00"
     },
+    "cba254cd9edf": {
+      "article_title": "Newcastle’s Saudi owners begin process of selling 25 per cent stake in club in order to fund 65,000-seater stadium",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "5eba75d8f95c78ac",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 244
+        }
+      ],
+      "created_at": "2026-11-25T16:01:01.358092+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "13c75b338e85839a",
+      "event_id": "cba254cd9edf",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-25T16:01:01.358092+00:00",
+          "origin": "created",
+          "title": "Newcastle’s Saudi owners begin process of selling 25 per cent stake in club in order to fund 65,000-seater stadium",
+          "url": "https://www.thesun.co.uk/sport/41146359/newcastle-united-new-stadium-saudi-sell-stake"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41146359/newcastle-united-new-stadium-saudi-sell-stake",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 244,
+      "title": "纽卡沙特老板启动出售25%股份程序，为6.5万座新球场筹资",
+      "updated_at": "2026-11-25T16:01:01.996144+00:00"
+    },
     "cc210ac0d702": {
       "article_title": "Man Utd ratings: Senne Lammens suffers worst outing since joining as Diogo Dalot booed off after horror display",
       "attempts": 1,
@@ -6404,7 +6439,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T15:00:56.720708+00:00",
+  "last_scan_at": "2026-11-25T16:00:54.538376+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6426,6 +6461,66 @@
   },
   "news_pool": [
     {
+      "desc": "‘TIS the season to start thinking about Christmas presents. Gym clothes are always great to give - whether they’re for a",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T16:00:54.540884+00:00",
+      "link": "https://www.thesun.co.uk/sport/40933141/oneills-gymwear-review/",
+      "published": "2026-11-25T15:50:01+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "I tested O’Neills’ gymwear that’s affordable without compromising on quality – the leggings take comfort to a new level"
+    },
+    {
+      "desc": "JAMIE VARDY is taking his next step as a media mogul. The Burnley striker's playing days are drawing to a close at 39, b",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T16:00:54.540910+00:00",
+      "link": "https://www.thesun.co.uk/sport/41146660/jamie-vardys-having-a-party-tv-channel-samsung-youtube/",
+      "published": "2026-11-25T15:37:13+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Jamie Vardy launches own ‘Jamie Vardy’s Having A Party’ TV channel with Tyson Fury’s dad John among special guests"
+    },
+    {
+      "desc": "NEWCASTLE’s majority owners, Saudi Arabia’s Public Investment Fund, have started the process of selling a 25 PER CENT st",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T16:00:54.540932+00:00",
+      "link": "https://www.thesun.co.uk/sport/41146359/newcastle-united-new-stadium-saudi-sell-stake/",
+      "published": "2026-11-25T15:31:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Newcastle’s Saudi owners begin process of selling 25 per cent stake in club in order to fund 65,000-seater stadium"
+    },
+    {
+      "desc": "FPL GW12 goalkeepers: Raya 50%, Verbruggen the pick at £4.7m The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.540976+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4xeW5GaTFlNm9UNmxCdWZDRmdiWFQ5LWU4OUdPX3Y5RXlTQ0hUSklKUjlQakpMWTF4ekV6NTRWMmlzeUFjLVRxVDczNW14eVZySUJib0FDcDg3N1Z4NFYzLWo3aGZqSnZlOFNtREdoaVNiUURnT2VjWmpPUQ?oc=5",
+      "published": "2026-11-25T15:18:30+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "FPL GW12 goalkeepers: Raya 50%, Verbruggen the pick at £4.7m - The False 9"
+    },
+    {
+      "desc": "Mauricio Pochettino fumed over Leny Yoro's red card for Manchester United in their defeat to Liverpool, but also felt Do",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-25T16:00:54.540992+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13616388/dominik-szoboszlai-free-kick-for-liverpool-vs-man-utd-reveals-grey-area-as-mauricio-pochettino-questions-decision",
+      "published": "2026-11-25T15:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Why wasn't Szoboszlai's free-kick ruled out vs Man Utd?"
+    },
+    {
+      "desc": "REVEALED: Official Premier League Fan Team of Matchweek 11 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541064+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVXluX0JtS3lHZGFUTGxzc2FoNkJJaEJKbGRxSDdtZThsVlZZdklqOEJHVW5hQ082clI2T01GX0ZkTkd1NXhmMnJPVHkxdVVSUjBxYUFTc3cwTTJsZ0VOYmdzQ1l3eU1pZEFrN3lKZnBOMHlnZmRpOEtXd21RTE85eEg1S0F0QzBHR2lOQndFVV9VRXcwNkVwLXA3Q3p6el94OURBbHBR?oc=5",
+      "published": "2026-11-25T15:03:13+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "REVEALED: Official Premier League Fan Team of Matchweek 11 - Premier League"
+    },
+    {
       "desc": "PHIL NEVILLE has given his verdict on Mauricio Pochettino's Manchester United tactics, and claimed he cannot change the ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-25T15:00:56.723408+00:00",
@@ -6436,6 +6531,16 @@
       "title": "Phil Neville’s take on Pochettino tactics sparks wild reaction as Goldbridge blasts ‘ridiculous’ Man Utd mistake"
     },
     {
+      "desc": "Emily Fox | Ask Me Anything Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541109+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Tb05MLVZJSDItVUw1RVdmc3J1elRfT0NWY2UzcUZyQ21jYlB6T3dGaHVwZnFPLWt0M3BYb21uRXhHazNQRGhQYzFGT3VndTg3SHE3TG9fTkhVVGFLLVN5OWJMaFhBRk5JZ1U1WEJUY3pKUmtJaTZv?oc=5",
+      "published": "2026-11-25T14:49:19+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Emily Fox | Ask Me Anything - Arsenal.com"
+    },
+    {
       "desc": "JUDE BELLINGHAM says Zinedine Zidane is much more elegant than him despite his Champions League wonder goal for Real Mad",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-25T15:00:56.723480+00:00",
@@ -6444,6 +6549,36 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Jude Bellingham reveals how Jose Mourinho has transformed his game in blunt three-word statement"
+    },
+    {
+      "desc": "Liverpool's Wirtz voted Player of the Matchweek Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541159+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxORC0xTlNJQzlyOS1iOWFFa0d6NHU2TlcxNWlOT0RYZktCS2RBR0pmZi15bFRMc1FaOUtsM25OVnBzOEhjVEZmMkdvU3NMUDRuVEJadER6UjlwQy1CMHpFM1BKRzZZU2dBSDdkclJGal9qSnZGU09jSmlEbEtWNnN3ZmoxRUlRd3VCa2ZYaE5OMEVFMjltaWVrMjVQaW4tVmREWnVoNEtRTW9HalBFZ0F2R25MSklZMm55UmR5TUx1WEVFN2tPOU9ib3JkSDZvTG84N3l0ZHpYVkRoZG5YN1g1eDRyRzNpMjdUUUM1NTV3?oc=5",
+      "published": "2026-11-25T14:33:13+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Liverpool's Wirtz voted Player of the Matchweek - Premier League"
+    },
+    {
+      "desc": "Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541177+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE43RGFYMnIxYVNsN0FtWHY5VHRoNUFXLXJaMFVzVzdZQTh6NlZwZlFNNXY2R1o0cGlJQkp6bWxwODZpWWlZdkg4d1oyV3Azc1RXbUtmVg?oc=5",
+      "published": "2026-11-25T14:29:59+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United Website"
+    },
+    {
+      "desc": "Shop Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541210+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOZC1ZOHdOcjZPNUN3dFJHWGVUMEtROTlBRWdibkJhR3UzQzZmbFgzeTMxNUp4M1BJRlhraVlpSHExOWVDWndiMnIxZkR3SmZBdDhlUzBqRDdETG9vV2dwR0NOenQ4YjR4WmJUYVhkbmtNMDluZEctY3VGNHgtcE5qVDFucXliWHRqY2FYeGFxZV9aYWRpbWdfeE9TUzlyVmhEQmx2WlBYV1daVlBTZ1k0TFVOYUlzNlVYUF9KdlBxYzF1OTB0YndjcDFLY2FFOFZvZ2szZXI2bmpaTkJlaHVuZWNER1F1dmM4dUxqR1VCQnltSXA4aFlxWGs4TFBKeTE2MGlwRzVidkd3dE1LMWc?oc=5",
+      "published": "2026-11-25T14:14:53+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Shop Spurs - Tottenham Hotspur"
     },
     {
       "desc": "Newcastle United: Ornstein drops PIF sale bombshell as he reveals key details on 'proposed transaction' Football365",
@@ -6514,6 +6649,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Florian Wirtz wins Premier League Player of the Matchweek award - Liverpool FC"
+    },
+    {
+      "desc": "Fabrizio Romano provides massive update on David Raya ahead of Arsenal vs Manchester City Sportskeeda",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541281+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYndNS184MEZpcHUzZkFOZkh6bGJjOXg4UWhmeTloNWhKUm16THRiZVhVNnZQcG1KSkZna2NaR2k1UW5OZjJ4RDB3UlZVOWpNcnc2aWM3NVU0REYwWlVZbmtxV0xTQllZYXEyYmloamh4N1AwM1BwbGR0V1E2UlVRdlN3TmgtMEpJQlFmekRkd0otVDlKajVVRXJBZGtKbVp2RlFFdmdwaW0yckw2VkJXYnZDcVFKX3phYnMtbVk5RzEwTWM?oc=5",
+      "published": "2026-11-25T13:34:00+00:00",
+      "publisher": "https://www.sportskeeda.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano provides massive update on David Raya ahead of Arsenal vs Manchester City - Sportskeeda"
     },
     {
       "desc": "David Ornstein shares what he is hearing about Xabi Alonso The Chelsea Chronicle",
@@ -6614,6 +6759,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Man City latest: 'Title race over if City lose to Arsenal,' says Merse"
+    },
+    {
+      "desc": "Martin Ødegaard’s rebound goal gives Arsenal 1-0 win over Hull City Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541425+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1mSmJOWExaV0ZhWWZkczhGd29XTlBUMXlkaF9tTFBfRFlUY2tjbkM3WHY1UGhKUDNMYy1KVWgxdWpPR0RkM3Bz?oc=5",
+      "published": "2026-11-25T12:44:02+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Martin Ødegaard’s rebound goal gives Arsenal 1-0 win over Hull City - Digg"
     },
     {
       "desc": "Raheem Sterling was sentenced to 12 months imprisonment, suspended for 18 months, on Wednesday.",
@@ -6764,6 +6919,16 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit - LiveScore"
+    },
+    {
+      "desc": "Sporting v United: What's the team news? Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T16:00:54.541596+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1ZndElFTWhfOEp1ZmdUTS1SVWZPamhlSEJrTVBDM1ljVXRpQ3d5WTc2bXpsTzlrUmVtQ1A2c2VVMmVGM25abG1lb0x0X1Y3ODM3MlJGVWhkTmVTT3hBZ2JaVU9pY3hNaWtMV2Z4MFp0REhJWklLc1JTSmhkSTE3eU5ycTA5M0hCSTZGSGRHTXVGcW95V2JkYw?oc=5",
+      "published": "2026-11-25T11:07:58+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Sporting v United: What's the team news? - Manchester United Website"
     },
     {
       "desc": "LINCOLN CITY have sacked joint-managers Chris Cohen and Tom Shaw after five defeats on the spin. The Imps were consigned",
@@ -7794,136 +7959,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Poch fumes at Yoro red and thinks Szoboszlai goal shouldn't have stood"
-    },
-    {
-      "desc": "TOMAS SOUCEK was left covered in blood after a nasty collision during West Ham's 1-0 defeat to Portsmouth. The Czech mid",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T22:01:01.371446+00:00",
-      "link": "https://www.thesun.co.uk/sport/41139045/tomas-soucek-hammers-west-ham-portsmouth/",
-      "published": "2026-11-24T21:47:32+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "West Ham star Tomas Soucek left covered in blood after horror collision with Scott Parker still winless as Hammers boss"
-    },
-    {
-      "desc": "Will Lankshear was back among the goals as Middlesbrough cemented their position at the top of the Championship with a 2",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T22:01:01.371465+00:00",
-      "link": "https://www.skysports.com/football/middlesbrough-vs-swansea-city/report/560693",
-      "published": "2026-11-24T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Lankshear steers Boro back to the top of the Championship"
-    },
-    {
-      "desc": "Scott Parker's winless start to life as West Ham boss continued as Odin Bailey netted his first Portsmouth goal in a 1-0",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T22:01:01.371482+00:00",
-      "link": "https://www.skysports.com/football/portsmouth-vs-west-ham-united/report/560695",
-      "published": "2026-11-24T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Parker still winless as Portsmouth beat West Ham"
-    },
-    {
-      "desc": "Hibernian ended their long wait for a Premiership home win after overcoming Dundee 2-1 at Easter Road.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T23:01:47.620707+00:00",
-      "link": "https://www.skysports.com/football/hibernian-vs-dundee/report/558401",
-      "published": "2026-11-24T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Hibernian finally register home win after battling past Dundee"
-    },
-    {
-      "desc": "Norwich's impressive run of victories came to an end as QPR held them to a 1-1 draw at Carrow Road.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T23:01:47.620718+00:00",
-      "link": "https://www.skysports.com/football/norwich-city-vs-queens-park-rangers/report/560694",
-      "published": "2026-11-24T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Norwich hit back to hold QPR"
-    },
-    {
-      "desc": "Adam Armstrong's brace made it six goals in six games to give dominant Wolves a 3-0 win over Derby in the Sky Bet Champi",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T23:01:47.620728+00:00",
-      "link": "https://www.skysports.com/football/wolverhampton-wanderers-vs-derby-county/report/560697",
-      "published": "2026-11-24T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Armstrong nets twice in Wolves win"
-    },
-    {
-      "desc": "Sydie Peck equalised in the 90th minute as Sheffield United came from behind to secure a 1-1 Championship draw with Sout",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T23:01:47.620739+00:00",
-      "link": "https://www.skysports.com/football/sheffield-united-vs-southampton/report/560696",
-      "published": "2026-11-24T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Southampton held at Sheffield United"
-    },
-    {
-      "desc": "Preston's revival under new boss Graham Alexander picked up more pace as they took Cardiff's unbeaten home league record",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T23:01:47.620751+00:00",
-      "link": "https://www.skysports.com/football/cardiff-city-vs-preston-north-end/report/560691",
-      "published": "2026-11-24T21:35:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Preston off bottom after thrashing Cardiff"
-    },
-    {
-      "desc": "SSC Napoli vs. Manchester City - November 24, 2026 Bleacher Report",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T00:00:50.720532+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ZUVJodmFBMzc3YXRHdGVXLXN1ZkRRXzdzbjhzaXYydzdnVWdDanBzZXRiM1R6bHZVN3YyYmhsaDNqUkFJak5fRm5WWVdCZVNpbFlBMS1sMkRjZVVYOTQwbk1TS3ljcWM1cVRUVGhBUEl4bGtJSm11cEU4YlRrb0E?oc=5",
-      "published": "2026-11-24T21:34:33+00:00",
-      "publisher": "https://bleacherreport.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "SSC Napoli vs. Manchester City - November 24, 2026 - Bleacher Report"
-    },
-    {
-      "desc": "Chelsea Nike Home 'KMC' Anthem Jacket - Bright Blue Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T03:00:58.058210+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxORWZhcEdEOF9CcHhlVlZHT1pBU0wwQkRGc1dxbUFqOXpGVWFwZThJXzdyN05jSlJmY283RjhocnV0RlBSSDgxVHJvelVCOENRZmg2OEJ2WmVDcFpGMjdpR21qdkw3d2tXWW9QY2VZUDlUWkduSEJKUmkyVjhfUzByNXpaYktTbmc1Zi1KTXRMcnZsWkY5dm5GUmhFRmVxYWpicHVHdGlOaXRidmN4OUkyRHhRZFhad0Z5M3ppdDRoTVBsdGpSMkhDMm80LXRBdTl3RU9kSzI5Q2s1YWxRM2pLNDI3ZklRR282b0Q0TUdCVjRBUUFw?oc=5",
-      "published": "2026-11-24T21:28:54+00:00",
-      "publisher": "https://eustore.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea Nike Home 'KMC' Anthem Jacket - Bright Blue - Chelsea Football Club"
-    },
-    {
-      "desc": "Manchester United and Mauricio Pochettino are furious at how Leny Yoro's red card has been handled by VAR John Brooks an",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-24T22:01:01.371508+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqzr5ylmeerlo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-24T21:27:13+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Pochettino leads Man Utd fury at Yoro red card ruling"
-    },
-    {
-      "desc": "FPL GW12 Template Team: Haaland in 77.6%, Four of the XI Face Arsenal v City The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T22:01:01.371531+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95MFZzcWNnYWw0cWJNblltQV9CMWhOcGk2Q0p1LXV4aHl0VkFBQXJDWjRsM1JidjVQNGo1dXpuWDM0ZVRrU20tdnQxNFg5VzNZQW5IOXdRS1ZTOENiM0NYOGhGSWhNREd3?oc=5",
-      "published": "2026-11-24T21:14:14+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "FPL GW12 Template Team: Haaland in 77.6%, Four of the XI Face Arsenal v City - The False 9"
-    },
-    {
-      "desc": "GEORGINA RODRIGUEZ sent fans wild as she showed off two skintight yoga outfits on Instagram. The glamorous partner of Cr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T22:01:01.371554+00:00",
-      "link": "https://www.thesun.co.uk/sport/41135446/cristiano-ronaldo-georgina-rodriguez-al-nassr-real-madrid/",
-      "published": "2026-11-24T21:10:23+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Cristiano Ronaldo’s Wag Georgina Rodriguez stuns in two skintight yoga outfits as she asks fans for help on what to wear"
     }
   ],
   "processed_urls": [
@@ -8122,7 +8157,8 @@
     "https://www.thesun.co.uk/sport/41141885/bayern-munich-jamal-musiala-statement",
     "https://www.dailymail.com/sport/football/article-16320567/Erling-Haaland-concerning-TV-interview-Man-City-draw-Napoli.html",
     "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving",
-    "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html"
+    "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html",
+    "https://www.thesun.co.uk/sport/41146359/newcastle-united-new-stadium-saudi-sell-stake"
   ],
   "s_overflow": {},
   "schema_version": 4
