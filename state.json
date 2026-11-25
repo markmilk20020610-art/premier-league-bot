@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 25,
+        "calls": 26,
         "errors": 0,
-        "requests": 25
+        "requests": 26
       }
     },
-    "calls": 25,
+    "calls": 26,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 151195,
-    "output_tokens": 16794,
-    "requests": 25
+    "input_tokens": 157450,
+    "output_tokens": 17392,
+    "requests": 26
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -3593,6 +3593,41 @@
       "title": "桑德兰争议点球绝杀切尔西，蓝军进攻哑火引质疑",
       "updated_at": "2026-11-08T16:45:47.233446+00:00"
     },
+    "8890bd655bf0": {
+      "article_title": "Raheem Sterling avoids jail for £270,000 Lamborghini crash: England star handed suspended prison sentence after telling court he underwent 1",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "7f9f0104a781160e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 243
+        }
+      ],
+      "created_at": "2026-11-25T14:01:00.586701+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "b4aad22b61f22f7a",
+      "event_id": "8890bd655bf0",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-25T14:01:00.586701+00:00",
+          "origin": "created",
+          "title": "Raheem Sterling avoids jail for £270,000 Lamborghini crash: England star handed suspended prison sentence after telling court he underwent 1",
+          "url": "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 243,
+      "title": "斯特林危险驾驶及持有笑气被判缓刑，免于入狱",
+      "updated_at": "2026-11-25T14:01:01.201572+00:00"
+    },
     "89a31871d9bf": {
       "article_title": "Man Utd have worst defence in EUROPE with even more goals conceded than Prem basement boys Crystal Palace",
       "attempts": 1,
@@ -6369,7 +6404,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T13:01:07.033946+00:00",
+  "last_scan_at": "2026-11-25T14:00:55.585101+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6390,6 +6425,116 @@
     "updated_at": "2026-11-24T22:01:42.464744+00:00"
   },
   "news_pool": [
+    {
+      "desc": "JAMIE CARRAGHER stole the show on CBS Sports with his joke about Jude Bellingham's PANTS. The former Liverpool star turn",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T14:00:55.588606+00:00",
+      "link": "https://www.thesun.co.uk/sport/41144826/jamie-carragher-jude-bellingham-pants-joke-steals-show/",
+      "published": "2026-11-25T13:41:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Hilarious Jamie Carragher joke about Jude Bellingham’s PANTS steals show on big CBS Sports Champions League night"
+    },
+    {
+      "desc": "BLACKPOOL could be ready to announce Conor Coady as Ian Evatt's replacement. The former England and Wolves star announce",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T14:00:55.588637+00:00",
+      "link": "https://www.thesun.co.uk/sport/41144506/conor-coady-favourite-next-blackpool-manager-ian-evatt/",
+      "published": "2026-11-25T13:39:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Former England star Conor Coady, 33, tipped for first job in management at EFL strugglers"
+    },
+    {
+      "desc": "Newcastle owners PIF looking to sell up to 25 per cent of club through new shares The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.588670+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRWNicXBnQUZDVmdMSjdPdE1xMzI4MEJyMFRkbFZET3I4X2k2WExlVEZ2ZkpseTRTbG44bjd3c01IODY1OHJOdnh1d09YWllrdzIyUTlGR3hJY0stMHFUSHloc0Mxb0ZMRXVzNVBkSzNmVUVBUXB4YTBDWUlwYl84ZjEtWHBSQURkN3NCaVN3aUVwbDQ?oc=5",
+      "published": "2026-11-25T13:37:06+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Newcastle owners PIF looking to sell up to 25 per cent of club through new shares - The New York Times"
+    },
+    {
+      "desc": "David Ornstein shares what he is hearing about Xabi Alonso The Chelsea Chronicle",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.588726+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLXRuSXFaM25jTVAxNWRuWjlfbktBNHN5Wld2eUhmQV9HcjYzUUlYTU1veXN4WWVmNDA5NFNPdGdZeWdVU3F6S3ZuWEh4SEdNdEdiQTRnX0FLYmlFUHF4NHM1U09TMDI2c3FJenU5aVN1TE8xRzdpNmdQdm1KRkNFYUNtZFFvTmptLVROREp5T3BCdzB1aWZrcnhudHREX1Z1eGpyVUQ5d2EyUU50YWFRM0lrVDBxYmQ4LW5kd3V6ZVlqX0RJclZlWQ?oc=5",
+      "published": "2026-11-25T13:33:14+00:00",
+      "publisher": "https://www.thechelseachronicle.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein shares what he is hearing about Xabi Alonso - The Chelsea Chronicle"
+    },
+    {
+      "desc": "The 31-year-old ultimately avoided prison, but was handed a 12-month suspended sentence and 100 hours of community servi",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T14:00:55.588763+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320563/raheem-sterling-rise-tragedy-poverty-career.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T13:31:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside Raheem Sterling's rise from childhood tragedy and poverty to England superstar at the peak of his powers - but Lamborghini crash and "
+    },
+    {
+      "desc": "Not for the first time in recent weeks, he had appeared morose and despondent, radiating an air of gloom, talking about ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T14:00:55.588798+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16321101/erling-haaland-manchester-city-form.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T13:31:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "What's wrong with Erling Haaland? Man City's superstar has been radiating an air of gloom in front of the cameras - but it's his form on the"
+    },
+    {
+      "desc": "IAN HERBERT: What makes Raheem Sterling's personal disintegration so needless is that he really has had positive influen",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T14:00:55.588835+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16321337/raheem-sterling-dangerous-driving-career.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T13:23:35+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Raheem Sterling's chaotic descent into insanity is a product of the cocooned football world where stars can't handle rejection, writes IAN H"
+    },
+    {
+      "desc": "Fabrizio Romano: Evanilson keen on Man Utd, but January exit unlikely AllFootball",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.588862+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZlNGZUJXd01fbWhGZjhuSWhmVzFYM1FDdjBxYzlDci1qMUVtcGtPTHp4WVEtanVDUWZIaXlGZFc4djN6anBVTVNUSUY1TTBmdUNObTNRUFVQbVVHMGxIb2JIQjVObjdjeGRCSE9nY19IYk1qVXl6RUFlUmhmc2ZLU3I4bzdSSVFfOUlucFdVYw?oc=5",
+      "published": "2026-11-25T13:16:54+00:00",
+      "publisher": "https://www.allfootballapp.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: Evanilson keen on Man Utd, but January exit unlikely - AllFootball"
+    },
+    {
+      "desc": "LFC adidas Youth Tiro Travel Sweat Pants Black Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.588886+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObGxxc21kdG5ieDdzMWpPYVRxb21xUldac2Vib1RsV0dIcUYxSFBYWFlBQnhtQklDWmg5VEQ0NFNic1FGTWM1TjlhUlpVV0xDcEJwRlVXdUVXTkNTU0tLNUhYaTVUZHRZMTI5MUpCX29ta19JNGlTT2V0QlhGS1l0d1lUdWhkeUxtQkpQeA?oc=5",
+      "published": "2026-11-25T13:10:44+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFC adidas Youth Tiro Travel Sweat Pants Black - Liverpool FC"
+    },
+    {
+      "desc": "‘It’s not that clear-cut’ – Pochettino transfer plan revealed by Ornstein FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.588914+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdllhRlEwQ0RHOWttcHBERzU2djFUZ19VekkxLVd3R0wzSHVBeEZkWTJIeXM0VDNOZndUdkVBSDFRbTQtM1pGNjdKRlhpVnlpYjZHOUtGY1BrMWpJQVhEVUc5UDZyS250UmdObnI1Yzd1M0hFZGVZcU5EZmdYZDdYN2dBZnJKbW5pWm5vUWdiU3RKbEZmWHNCaXd0cTlKZjR6eFduNjZXYm5NdTZ1MWhHeHBjSTVMNXBvNUFvZWFOTHpCQl9yWFkzQXhCM2JiOFNwRzdfVTdfRWVLbVpCa0E?oc=5",
+      "published": "2026-11-25T13:08:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "‘It’s not that clear-cut’ – Pochettino transfer plan revealed by Ornstein - FootballTransfers.com"
+    },
+    {
+      "desc": "Ornstein drops key update on Xabi Alonso sack at Chelsea as Liverpool comparison made Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.588940+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYUZsaVR4RDFqWlExaHNrZkpQb1JiUjNvdUJfQmFVYXdKOTdsUV9HV2hMUVp2SFIybmpsVDl2OFZkSktOQzhiZjJRQXM3TFNtc2hXSFcwbXVMSElQM25keEppVDRsUmg0TVRJSnZOTm96SmQyZmcyQ2cwS2RoYjNIVGZKZ0h5ZUhBTUE5ak5UOVRIRFk4S2d1QXV0dFlLSzJpcGc?oc=5",
+      "published": "2026-11-25T13:03:34+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein drops key update on Xabi Alonso sack at Chelsea as Liverpool comparison made - Football365"
+    },
     {
       "desc": "",
       "feed_origin": "https://www.skysports.com/rss/12040",
@@ -6451,6 +6596,16 @@
       "title": "‘Do a Leicester’ – West Ham fans fear club could be RELEGATED after horror results, manager change and flops’ struggles"
     },
     {
+      "desc": "Ornstein predicts first Man Utd January signing and reacts to £50m ‘budget’ claim TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.589065+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWkdTb2FRb1ozckxwZU1fZTBMUlpaZXJ0dXlTTG0tN3QzT2RSMk9FQXRxNDYweUhMakRqd0pTMEp2SDNWYUpXUjlGRExLbGFrZ0t2RU5aX2ZWREZ0eUwtLUNkUl9MeTdock9BaFRYcENfNFl4VDBETmhsMHRmalNma2xHSGVock5OTUlQSkJDV2xlWmIzZ0NzNERvRFFjMk5faEIzTEpHcGhNMnJRTzdidFFlUVNlWHdyckhidURB?oc=5",
+      "published": "2026-11-25T12:32:15+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein predicts first Man Utd January signing and reacts to £50m ‘budget’ claim - TEAMtalk"
+    },
+    {
       "desc": "FPL GW12 Injury News: Raya 50% for Arsenal v City The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-25T13:01:07.036158+00:00",
@@ -6509,6 +6664,26 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Watford appoint Iordanescu as head coach"
+    },
+    {
+      "desc": "Rasmus Hojlund has laid bare the suffocating pressure of playing for Manchester United and what Mauricio Pochettino's sq",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T14:00:55.589301+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320865/You-escape-Rasmus-Hojlund-opens-suffocating-pressure-playing-Man-United-reveals-Bruno-Fernandes-Diogo-Dalot-looking-forward-change-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T11:12:24+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'You can't escape from it': Rasmus Hojlund opens up on the suffocating pressure of playing for Man United - and reveals Bruno Fernandes and "
+    },
+    {
+      "desc": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit Liv",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.589333+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNYndGeHB0bUV6YVNweWRGTkx2dEVBZTN3Vmp3UWtzMFl2Z2hLTUx6S2R5eEx2bERJVmFBQ0ZXOVRLYmlQbGlPamZaVEZaTlRNZkhsYzhickhhcXFBTWc5bVU2NWVtM3hiczExRFh0UWZzWXdqT2tITUtEVXZhcFlTTE1vS1BadndkOGcyemlHVUIzdW5tWlhqeDN4NHY1QkFrM1dzSlZiaEktTUJXZ2FHQ3Z0OFpvamZjWGVnRHo2OWdBd2h6Mm9qVWp0aE1COFlBWktqV2M3MXBHd2pyMmp0WDFVZjl5Uk1oOUktVkpGODVHal83MUNVREZFdFV6Z1JhWTVJc09qWGZJaDJtbS1VcnFn?oc=5",
+      "published": "2026-11-25T11:10:58+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit - LiveScore"
     },
     {
       "desc": "LINCOLN CITY have sacked joint-managers Chris Cohen and Tom Shaw after five defeats on the spin. The Imps were consigned",
@@ -6621,6 +6796,16 @@
       "title": "Man Utd tickets plus hotels and hospitality for Champions League and Premier League matches at Old Trafford"
     },
     {
+      "desc": "Bellingham's stunning strike meant he was unsurprisingly in-demand post-match, with reporters eager to get his assessmen",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T14:00:55.589465+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320765/Jude-Bellingham-praised-female-journalist-post-match-press-huddle-scored-best-goal-life.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T10:49:34+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'Class act' Jude Bellingham praised for standing up for female journalist in chaotic post-match press huddle after he scored 'the best goal "
+    },
+    {
       "desc": "Lincoln sack head coaches Chris Cohen and Tom Shaw just six months after they took joint charge of the Championship side",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-25T11:00:53.210316+00:00",
@@ -6729,6 +6914,16 @@
       "publisher": "https://store.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "LFCW Junior Crest Tee Red - Liverpool FC"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T14:00:55.589572+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-25T10:01:33+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "MAURICIO POCHETTINO takes his Manchester United side to Sporting on Wednesday for a crucial MD5 clash in the Champions L",
@@ -7729,166 +7924,6 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Sporting v United: What's the team news? - Manchester United"
-    },
-    {
-      "desc": "coming-soon-cp-company Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T22:01:01.371670+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBOaGtYWWk4eWhBWjV5WHp1Vmg1MTdaTUZyTTNpdDZfdnVoNnBvWmU4eW1QQ1FsRWNMd2FxVmVFMVBrTUR0MDNZVmhLZXUyOHZrLTBtcW5aN2xOWXNJOEJmQUJiT0lXdy1mMTNsQWwxVXo0QURsUEZnTWFVYw?oc=5",
-      "published": "2026-11-24T20:27:03+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "coming-soon-cp-company - Man City Shop"
-    },
-    {
-      "desc": "Watch Liverpool's pre-Club Brugge training session Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T22:01:01.371690+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaUNueXhhcHYxY2pzb0JpZ1dfZkFnakdHUGQwZGstNDM0RlM5QXhMVlZMOGxpX2Fid0NtZXdoRXd5N0hTLTNxZmNCc1VvSlJfVWNKcmdrOWF0VHpIZ1VvTkhVMnd3WWRnTlR0ckhVMGlwTUhEeDFDZ2ZFeXJHMkU3RjhwOGhhS2djWkJOa1BUOW1rTHYzM0JhVUQ4VmVaXzVWSmJV?oc=5",
-      "published": "2026-11-24T20:22:38+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Watch Liverpool's pre-Club Brugge training session - Liverpool FC"
-    },
-    {
-      "desc": "Andoni Iraola press conference: 'Analysing Club Brugge wasn't boring!' Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T01:00:47.672728+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORGNmN1lNRW1ucEZtbUZabHV4VzkweGFhT0tLcjMtQjdFSzh0MTF6YkFnQ3JuVmdhejludlA5eUJDejFyYWNTNnJ6d3hRcXoyZHd6dzlWX0R1Y3ZVSGp5dll6WWF5ZlhiWldsQlhydWdZaF9Ld0ItRUtEeDNpNVllclNfQUk2UzY5aXVKa1hqbkpCbGxzUm5hckFPb20wTWs?oc=5",
-      "published": "2026-11-24T20:22:38+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Andoni Iraola press conference: 'Analysing Club Brugge wasn't boring!' - Liverpool FC"
-    },
-    {
-      "desc": "MANCHESTER CITY continue their Champions League campaign against Napoli TONIGHT! Although the Cityzens have struggled re",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T21:00:52.818376+00:00",
-      "link": "https://www.thesun.co.uk/sport/41123794/man-city-wearing-special-orange-kit-napoli-champions-league/",
-      "published": "2026-11-24T20:15:14+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why are Man City wearing a special orange kit against Napoli in the Champions League?"
-    },
-    {
-      "desc": "MANCHESTER UNITED have launched an astonishing attack on Howard Webb after he claimed Leny Yoro’s red card should not ha",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T21:00:52.818393+00:00",
-      "link": "https://www.thesun.co.uk/sport/41132598/man-utd-howard-webb-yoro-red-card-liverpool/",
-      "published": "2026-11-24T20:08:19+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd launch stunning attack on Howard Webb’s Leny Yoro red card verdict and fume they can PROVE ref boss is wrong"
-    },
-    {
-      "desc": "MANCHESTER UNITED fans have been left fuming after hearing the VAR audio of Leny Yoro's controversial red card against L",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T21:00:52.818409+00:00",
-      "link": "https://www.thesun.co.uk/sport/41132475/leny-yoro-red-card-liverpool-manchester-united-pochettino/",
-      "published": "2026-11-24T20:07:15+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘That’s worrying’ – Man Utd fans left fuming after hearing VAR audio of Leny Yoro’s red card against Liverpool"
-    },
-    {
-      "desc": "Bayern Munich are only focused on getting Jamal Musiala back from injury and not interested in the comments made regardi",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-24T20:00:49.992828+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c9x2ejnypp8jo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-24T19:58:58+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Bayern hold 'constructive' talks over Musiala's health"
-    },
-    {
-      "desc": "Watch the BEST SAVES of Matchweek 11 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T22:01:01.371764+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZWxkYXU5dHRSSzVrUVp1VE9kODYtM0g4UUl2NFJlYXQzSTVIcTZsVFhJcUVmeUJlVVhxRkJmMnE5Vm9TOVRVcGNuSDJoOUR4QzhUcW53TDhnNlVpbjZCWlk3SEZHd3E5Q3pOXzZ4bFRLNWJvRUtZajR5V1VuZkJ1MDZTbzcyd3VBdUpN?oc=5",
-      "published": "2026-11-24T19:57:14+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch the BEST SAVES of Matchweek 11 - Premier League"
-    },
-    {
-      "desc": "Follow Daily Mail Sport's live coverage of Tuesday's Champions League action for the latest updates.",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T20:00:49.992850+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16317785/Arsenal-vs-Borussia-Dortmund-Champions-League-Aston-Villa-face-Galatasaray-Istanbul-Gunners-action-plus-Man-City-vs-Napoli.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T19:56:27+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Champions League - LIVE: Arsenal host Borussia Dortmund and Man City play Napoli after Villa BEATEN by Galatasaray"
-    },
-    {
-      "desc": "City debut special edition kit on-pitch in collaboration with PUMA and C.P. Company Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T21:00:52.818442+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVTNfNWZ1Nnp1cXBhUmNmeFdYMGRjVUhkcGhWajk1ZHh5Q3Zoek9lRHhtcGpBaW5sQkNhd2ozRk9VRzJkNUNLZkppTE5kRzdpOUEtaEN5eGFSSktrRjNPVS1TdEhLdWNTbXlfSzhNSjVKREZlbVE3TS1GdVlLckUxbDhHZ0VBQQ?oc=5",
-      "published": "2026-11-24T19:55:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "City debut special edition kit on-pitch in collaboration with PUMA and C.P. Company - Manchester City FC"
-    },
-    {
-      "desc": "Manchester United plan two or three January signings as Pochettino targets striker and defender - Fabrizio Romano Tribun",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T21:00:52.818461+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNazB6alF0TlV0aEpXclhTdHJfUmt1eUJveE1xS1V2Z2NqOFFBNzZpa004S01ERHJoY095TVdQN1o4M1NDS0xCelByYUdsVTlfM3JEVG9jc1AwXzZWQ0tscGNoMjN2Y3NFN2R0bHdUZ3NFbFRLcTlWSjBnei12Wng2TElNLVhUMWpZUTFCM0NIOURNNUdVSTNZNlhUT3hQa3VJdWRuUl8tYjczblppMEFOT1hoNldhSUxEdzIzNWNsc0hqVnZiS3BCRg?oc=5",
-      "published": "2026-11-24T19:53:42+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Manchester United plan two or three January signings as Pochettino targets striker and defender - Fabrizio Romano - Tribuna.com"
-    },
-    {
-      "desc": "Millwall forced to partially close the Den after commission proves FA charges of discriminatory chanting Sky Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T01:38:28.580714+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMThKSGtQcHlZMnVoSUc1REMzYUk3VHl4OU0tanJwMFExMDVaZHpzSEdwcmdVZlA3TV9PczU5SkVkTUdnUk50Z19RMl92YlFwdHo2RHd1cF9uR1ZRc1lkRmhJSlM1dE1sVzdPSDlEOFg5ZUtmYzhvN2lYQVZ6b19DU0ZXeFlCMDNpdnZENXJhU0o2UzY4LW9WdzhHakVMWERIYnlsYUxIYmdYNlFRQmFNY2FGNGFyaU81QmdiR1VCOGxFNEdFbzloZ0hRTVpISExNR2ZFem1sOVcyOXY5ck0xOWRQOXI0Z3hK?oc=5",
-      "published": "2026-11-24T19:52:45+00:00",
-      "publisher": "https://www.skysports.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Millwall forced to partially close the Den after commission proves FA charges of discriminatory chanting - Sky Sports"
-    },
-    {
-      "desc": "MANCHESTER CITY continue their Champions League campaign against Italian giants Napoli TONIGHT! Although the Cityzens ha",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T20:00:49.992865+00:00",
-      "link": "https://www.thesun.co.uk/sport/41123794/man-city-wearing-special-kit-napoli-champions-league/",
-      "published": "2026-11-24T19:51:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Why are Man City wearing a special kit against Napoli in the Champions League?"
-    },
-    {
-      "desc": "Chelsea 750ml Fade Bottle - Blue Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T03:00:58.058491+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOaHNiQ1l3TnJDcjMxRjhSSHlYRnRCa3ZlXzhmUjFrNjFEMFBLNFJPT3Z1Y2dobGJjRzhOM2poRGpid1M4aHZCcGUtbzJXNjdEX29ma1U4OHhyLWNndFpYY185X2x5U3F5NDI0VENmYjhlUGFaaFZ3VDI3eDlCbmtsLTgwdHRzTWVVanAySmhhUFRFU1hCb1BXcVo3anpicDJlandpR2Z3Wk51OWZkU0psNnBad3BzUDA3bEtVckVYcVM4QTFKVTZVWkxhYUJKWUNTcVdPbGEteUo4SS1ZZTViTmNwSGtpZk1sN2ZF?oc=5",
-      "published": "2026-11-24T19:44:52+00:00",
-      "publisher": "https://eustore.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea 750ml Fade Bottle - Blue - Chelsea Football Club"
-    },
-    {
-      "desc": "Aston Villa's winless run extended to six games as a late Deniz Gul's header saw them beaten 1-0 by Galatasaray in the C",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T20:00:49.992893+00:00",
-      "link": "https://www.skysports.com/football/galatasaray-vs-aston-villa/report/577673",
-      "published": "2026-11-24T19:40:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Villa beaten late on at Galatasaray as winless run continues"
-    },
-    {
-      "desc": "GALATASARAY star Deniz Gul was left covered in blood after being booted in the head by Nicolas Jackson while scoring the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T20:00:49.992908+00:00",
-      "link": "https://www.thesun.co.uk/sport/41132151/galatasaray-deniz-gul-blood-head-nicolas-jackson-aston-villa/",
-      "published": "2026-11-24T19:26:38+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Galatasaray star Deniz Gul left covered in blood as he’s booted in head while scoring winner vs Aston Villa"
     }
   ],
   "processed_urls": [
@@ -8086,7 +8121,8 @@
     "https://www.thesun.co.uk/sport/41139716/unai-emery-alejandro-garnacho-aston-villa-galatasaray-bench-missing",
     "https://www.thesun.co.uk/sport/41141885/bayern-munich-jamal-musiala-statement",
     "https://www.dailymail.com/sport/football/article-16320567/Erling-Haaland-concerning-TV-interview-Man-City-draw-Napoli.html",
-    "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving"
+    "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving",
+    "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html"
   ],
   "s_overflow": {},
   "schema_version": 4
