@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 99916,
-    "output_tokens": 11090,
-    "requests": 16
+    "input_tokens": 105531,
+    "output_tokens": 11941,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -595,6 +595,41 @@
       "telegram_message_id": 111,
       "title": "德布劳内被曝与霍伊伦冲突，或自由身离开那不勒斯",
       "updated_at": "2026-11-10T18:45:35.676215+00:00"
+    },
+    "1539a27d7ed8": {
+      "article_title": "Emery explains brutal Garnacho snub after naming bizarre Villa bench including TWO keepers vs Galatasaray",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e3b2307ee200d404",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 239
+        }
+      ],
+      "created_at": "2026-11-25T06:00:57.027017+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3102fa4f2c7206cd",
+      "event_id": "1539a27d7ed8",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-25T06:00:57.027017+00:00",
+          "origin": "created",
+          "title": "Emery explains brutal Garnacho snub after naming bizarre Villa bench including TWO keepers vs Galatasaray",
+          "url": "https://www.thesun.co.uk/sport/41139716/unai-emery-alejandro-garnacho-aston-villa-galatasaray-bench-missing"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41139716/unai-emery-alejandro-garnacho-aston-villa-galatasaray-bench-missing",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 239,
+      "title": "埃梅里解释为何将加纳乔排除出维拉对阵加拉塔萨雷名单",
+      "updated_at": "2026-11-25T06:00:57.605128+00:00"
     },
     "16751cf2a121": {
       "article_title": "Arsenal were ‘fortunate’ not to concede penalty against Dortmund as Shearer slams referee decision in 1-1 draw",
@@ -6229,7 +6264,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T05:00:50.170761+00:00",
+  "last_scan_at": "2026-11-25T06:00:49.237938+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6250,6 +6285,36 @@
     "updated_at": "2026-11-24T22:01:42.464744+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Man City Crisis: One Point in Four Before Arsenal The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T06:00:49.241332+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMXYxX1IyMmZ3SUx6WXhyMFRjb09hWUsydnZXUDlmc0tybFRLd2wxT2Y3ODBtQ2l4VFNxbTVkQ0ZTTjcxNFlrUHZEUVc2aTdoWU9NZGxTX3B2T0ozVC15SFhXaEFQb0VuWHJIZ21jYmR0N0ZfUTBVR3hwLXA2bE9DUktRSW83UmZMb0gwNjFQWWg1WHpYTUE?oc=5",
+      "published": "2026-11-25T05:50:42+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Man City Crisis: One Point in Four Before Arsenal - The False 9"
+    },
+    {
+      "desc": "David Ornstein’s The Athletic FC Q&A: Will Man Utd try to do business in January? Does Glasner have support? The New Yor",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T06:00:49.241374+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOUJBR1lxSUEwTzFCa0h6ME5ta3cwd1B4UGVHVkVpdVJUM1FXRlNETzNIdHB0VU9pal9LbXM1ZUdDUHJOQmt3MXRUSGR6dS1QVjd1bG9LdVhzZGNXNUFLQldiWnZDckxfV2E3Ry1VUVg4VDhhSWpFV2dxMTY0NGxCV3BoRTVDcFdPN2dGTUhUdExHUFhxbmpvMTF0UzhfTVhsX1E?oc=5",
+      "published": "2026-11-25T05:00:03+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein’s The Athletic FC Q&A: Will Man Utd try to do business in January? Does Glasner have support? - The New York Times"
+    },
+    {
+      "desc": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T06:00:49.241407+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdk5LQTJxS25CeUswUW1fRXYwS05NSzIwaHNqQlppSFo3ZHVmNVZjZ1lTbkZsalp6Y19tcDlHc2lsUkJHamF4cWZkay1uWUJxTkVEemRuclQ5RkxLX0pONmdsUGJPems4c2hPVkotNGg1LUpWTlpIbTgyRVJyN2RGOWhPQlJEaUpyVEcxdzZzYklobWtIMmlIRTc0cFlXZzZlVzBjZUV2X1p3a1NQM1k0eW04MHR3LW9HOGZSMDNwMU5CdHJVX1ZYaWt3TlpfaW43eXZucDJBWGMtYXhlWVhj?oc=5",
+      "published": "2026-11-25T04:17:38+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 - Tottenham Hotspur"
+    },
     {
       "desc": "Chelsea WSL Nike Third Stadium Shirt 2026-27 with Carpenter 2 printing Chelsea FC Store",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -7719,36 +7784,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Leny Yoro’s ban overturned after successful claim of wrongful dismissal in Man Utd’s 4-0 battering at Liverpool"
-    },
-    {
-      "desc": "David Ornstein Reveals Chelsea's \"Plans\" For \"Another Coaching Change\" Amid Alonso Criticism Chelsea News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.961719+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOUGk1S2t3R0pYVVBHNjV5TnRJNzROZnVKSk1kNHJDN0U0d29FSmVMVkdDUU9wM2w5NHgzbVNjZTk1c09BQmdteVRESG96V2luUy0zZnRici01RV81WS1mMDd4RG5MYzduZnVfaFItaUd3WnBraWVQRXdrVWpveHlZOXdqR3d4RHBQbUJOV2JmRXB4UmZuTFNyYmdkbnZ4VTdGNUdKNHkxZXVYR0ppMV82cnBOcUNEMDRPdHNNRlpYMC0tYTc4WmdVUWZSTkhvTF9Dcnc?oc=5",
-      "published": "2026-11-24T15:24:46+00:00",
-      "publisher": "https://chelseanews.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein Reveals Chelsea's \"Plans\" For \"Another Coaching Change\" Amid Alonso Criticism - Chelsea News"
-    },
-    {
-      "desc": "Manchester United win Leny Yoro red card appeal after controversial sending off Yahoo",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.961737+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNcUZEVHRJYW1KeHRhOEtqMzItNW1lOU1aOW9pVHJBemdXTXhabkJrNFBNZ1ZrLXUxUm1UU2puTlBaUy1hZGpVbjhsNXJTMkVhSDZtN0dtTDQ2c1VhYm8zalRyMW8wVFRvclpQNUp2ZmNGdHJvRHVZWmhISUktX3dIdUNPU184UQ?oc=5",
-      "published": "2026-11-24T15:23:05+00:00",
-      "publisher": "https://uk.sports.yahoo.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Manchester United win Leny Yoro red card appeal after controversial sending off - Yahoo"
-    },
-    {
-      "desc": "Millwall Face Stadium Closure Over Discriminatory Chants cwibc.co.id",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.961753+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9kQ05vdnR5VTV5UVRSZmF6ZVcwR21oZWhIak1LVnVtVVNDdXZGVUZscVo3eldPN1hkbGtrUDRya3V2UUNKLW9UNnppTXFmcTZYTzVPV0pRalJqUm5vU29MZFNjNWNjQXBzemk2S2NOdXJWeVEweHZxbg?oc=5",
-      "published": "2026-11-24T15:19:50+00:00",
-      "publisher": "https://cwibc.co.id",
-      "source": "https://www.thefa.com/rss",
-      "title": "Millwall Face Stadium Closure Over Discriminatory Chants - cwibc.co.id"
     }
   ],
   "processed_urls": [
@@ -7942,7 +7977,8 @@
     "https://www.dailymail.com/sport/football/article-16319727/Rasmus-Hojlund-taunts-Man-City-United.html",
     "https://www.dailymail.com/sport/football/article-16319773/Jude-Bellingham-scores-best-goal-life-stunning-long-range-volley-helps-Real-Madrid-come-thump-PSV-Eindhoven-5-1-Champions-League.html",
     "https://www.thesun.co.uk/sport/41139753/alan-shearer-arsenal-penalty-borussia-dortmund-champions-league",
-    "https://www.thesun.co.uk/sport/41139045/tomas-soucek-hammers-west-ham-portsmouth"
+    "https://www.thesun.co.uk/sport/41139045/tomas-soucek-hammers-west-ham-portsmouth",
+    "https://www.thesun.co.uk/sport/41139716/unai-emery-alejandro-garnacho-aston-villa-galatasaray-bench-missing"
   ],
   "s_overflow": {},
   "schema_version": 4
