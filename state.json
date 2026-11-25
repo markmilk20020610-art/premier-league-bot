@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 25000,
-    "output_tokens": 3099,
-    "requests": 4
+    "input_tokens": 31119,
+    "output_tokens": 3840,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6439,7 +6439,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T19:00:54.637712+00:00",
+  "last_scan_at": "2026-11-25T20:00:53.018560+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6460,6 +6460,46 @@
     "updated_at": "2026-11-24T22:01:42.464744+00:00"
   },
   "news_pool": [
+    {
+      "desc": "LIVERPOOL have agreed a deal to sign highly-rated Senegalese wonderkid Sidy Barhama Ndiaye. The Reds have moved to secur",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T20:00:53.022018+00:00",
+      "link": "https://www.thesun.co.uk/sport/41150452/liverpool-senegal-sidy-barhama-ndiaye-world-cup/",
+      "published": "2026-11-25T19:52:29+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Liverpool agree deal to sign Senegalese wonderkid Sidy Barhama Ndiaye, 16, after he shines at U17 World Cup"
+    },
+    {
+      "desc": "TOTTENHAM fan Flav Bateman outsmarted Spurs hero Tim Sherwood and beat him with his Premier League all-time XI. Flav was",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T20:00:53.022052+00:00",
+      "link": "https://www.thesun.co.uk/sport/41149157/tottenham-flav-tim-sherwood-goat-episode-aston-villa/",
+      "published": "2026-11-25T19:21:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Viral Tottenham fan outsmarts ex-Spurs star Tim Sherwood as he picks all-time Premier League XI in latest GOAT episode"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-25T20:00:53.022103+00:00",
+      "link": "https://www.skysports.com/football/burnley-vs-birmingham-city/live/560699",
+      "published": "2026-11-25T19:15:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Birmingham take an early lead at Burnley LIVE!"
+    },
+    {
+      "desc": "David Ornstein shares what he’s been told about Oliver Glasner’s future at Forest Nottingham Forest News",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T20:00:53.022169+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNUU3b2ljT0VnX2ExN2lYdVB5R3ZFd21GR2dWQ09RN3RjWVFtOXlSenRWcnVXOWtDbkNuX3J2RUk3QTlqRW5YMEdDSndRZnhCd3JuT0xnU1doZXZQdG1oNmVRUk1tYmRSLWhvNzNsbk40TnduT2NBSmp3aGk3NjYzSXd2b21pQXpnUHY5TkNSMFRtNDJFYlpvczVoQW9iVVZfSm4ybnRmVGE5dVRCbnRrZ3Y1Y3JzcVd2Q3hvdFZ4cFBWM28?oc=5",
+      "published": "2026-11-25T19:00:00+00:00",
+      "publisher": "https://www.nottinghamforest.news",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein shares what he’s been told about Oliver Glasner’s future at Forest - Nottingham Forest News"
+    },
     {
       "desc": "ADULT film star Alexis Fawx ticked off a bucket-list experience as she watched Real Madrid in action at the Santiago Ber",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -6529,6 +6569,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Sunderland star Reinildo trains in tiny vest despite freezing North East weather and growing up in sub-Saharan Africa"
+    },
+    {
+      "desc": "Fabrizio Romano confirms Liverpool agree deal to sign winger DaveOCKOP",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T20:00:53.022366+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSmNNb1J6N2ZYQWxGbllYSUVpaVJNa01GYUhXaFVJWXd3X0haVFlnWE1yZFk5d0dzbnBiOHpES0g5anMwYUNWdkpOZ0E0TURFSVRITjh3N3hJRVplZU11MjYwM3k4WmFKUEctZUhzRU42Tjh0RXNsR01zX2FKM1lLUDhHUnUtUkxpeWthUnJTTm1leHo0SjJjYkFEcWVETEVxcThv?oc=5",
+      "published": "2026-11-25T18:00:00+00:00",
+      "publisher": "https://www.daveockop.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano confirms Liverpool agree deal to sign winger - DaveOCKOP"
     },
     {
       "desc": "",
@@ -6639,6 +6689,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘I’ll NEVER close the door’ – Struggling Man Utd star Bruno Fernandes drops transfer hint and refuses to ‘make promise’"
+    },
+    {
+      "desc": "Who was in contention for Premier League Fan Team of the Week? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T20:00:53.022579+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9xbmVVT192cThKSnVEcDA2M29MRjhlaXlNZUFldGtBNmRhOXZWLW5mZEJxUmpLekI3aGNMejRkSmF2TXhKZE5BSTIxN0tJeVpyWWh6ZUFiZ1k?oc=5",
+      "published": "2026-11-25T16:54:25+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Who was in contention for Premier League Fan Team of the Week? - Premier League"
     },
     {
       "desc": "Jose Mourinho called Real Madrid's Jude Bellingham \"the best midfielder in the world\", but where would you rank him?",
@@ -6809,6 +6869,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Why wasn't Szoboszlai's free-kick ruled out vs Man Utd?"
+    },
+    {
+      "desc": "Official Spurs Website Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T20:00:53.022959+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZEVpYnQyeWU0d0ZjNW1Ia21FU0ZGekNzUzEyeGZoY1ZJMVNmUVhueUZLR1paTG9YODloOE0ya2lrM0JEek1vMWRFVE02SmNQakhfb2MwQkVIRnhEWGFyNXg4bmxZVWdSRWJtamFOWTIxLWw3ZGhWemNGX3BCOHlHOHh3?oc=5",
+      "published": "2026-11-25T15:04:54+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Official Spurs Website - Tottenham Hotspur"
     },
     {
       "desc": "REVEALED: Official Premier League Fan Team of Matchweek 11 Premier League",
@@ -7889,76 +7959,6 @@
       "publisher": "https://shop.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 - Tottenham Hotspur"
-    },
-    {
-      "desc": "Chelsea WSL Nike Third Stadium Shirt 2026-27 with Carpenter 2 printing Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T04:00:46.769627+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPam9DYklpYlJfMTlUSS1xWHUxX0VKS2taUG9WZnRHcktYTlFySnRkaUN3VGdDZTg2MnRyOVZWVDZpMWNHR0xycjFpcVlTYzNsMy1Md2gtZmdSSlZnOG9XRzVpQ3liMUZCWm9DSXc5R0tKWEZVckUyMmFscHd5cDlDQU44Y0VidHlaclQ5bEllcXNHRV9FN1hIRC1KTUNUQmhXX2pvNjRQcXJSX0d6VDUzTVBzSDVvN0FZTGFOM3ctemVjeHRIUlNqZ3RjS1hIVkY1cW5ocmJ5WTdHeEptb3VnWXpJTEozclBPeTdrQno4V1hPZHJrZkd0ZHoxdVJBUQ?oc=5",
-      "published": "2026-11-25T02:25:51+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea WSL Nike Third Stadium Shirt 2026-27 with Carpenter 2 printing - Chelsea FC Store"
-    },
-    {
-      "desc": "Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T05:00:50.173292+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNlJYUGFURl8xakVQamN6dnh1UVV2UFE2a0ZqUDR5S1ZLcFh4b3lvajlMR1h2c2dUaUUwb04xd3lTZGlkUWQ3MThZY09QczA1TXIzNkItakd2VXN1d2FTaHJnTWR3M0tmY29jeGViTk82TlVlcG9YUUxiSTVoQXBjNjV0ZkVYZHg0Y2w2a3JLcW5QVEpueG1QdUFfQlJzTlRJb1V5SHczbmdKbDdpN0Q1VW5LX2Y5ZzN2UTZVZlpDYlMzOGw5YklJal9fVDdSR2FyMHVKc3ZRejZ6NlBVLVdFOWJabw?oc=5",
-      "published": "2026-11-25T02:25:51+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea FC Store"
-    },
-    {
-      "desc": "Kids with Palmer 10 printing - Chelsea Store Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T09:00:57.271747+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOT1pPMnN1VjlpVkdyTi0tNEYtUm1BRkpYS0Z5Y3h2T2JXZnluRGtJWGhjNC1yemtMd3NwNVZ6Z0FETmpZVkJMcmtkUXhaRUtOczJRY3dObDdHU3Blek56bXlSSE92RW5BakpaNUxSR2N4cXN5dlJuY0tMcl9wWmx5SUZoNkY0UXlid0JaVUtXZW16dFI0ZkxZc2lLbjBiTE9pQjVzbnhNNHltb3MyTzc0dXdzUzV3TmpXUmQ3MTVudlh0T0tXa1d6UnhfMDBqbW5fMDByTHVTaUd5VXFJQ1RWWlFiMWVYUjZyMUNqTDVaMHBFZUFncnYxWFA3bw?oc=5",
-      "published": "2026-11-25T02:25:51+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Kids with Palmer 10 printing - Chelsea Store - Chelsea FC Store"
-    },
-    {
-      "desc": "Chelsea Nike Strike Training Drill Top - Bright Blue - Kids Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T05:00:50.173318+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPRElJRHVSZE1aRE1zX19MMkZQakszd1JkRkNiT3NZYWE2N1VfQUZZZkE0SV9pRW9fZ3VKeklTTi1teWJUdm9TdTQ3Z29OZURldEZoU0JJMlUyeHJGZTI1eG9wSmJiU2RicjVNWXR3TWJQbnR4SWx6dW5CQzBxQ3JjQ3B4VUlDSzdudDNJNHdrMVUwdC1FeFp6QUZaSngxNDFfaHhJUWZUMEZZd3pYcTRUMzViZThjZFVsRG9BVGwzeE04R0liMGFFdDdKMG9VQkVyTVZDNkE0MHZpN2RDYXVUc0ZzNXdXd2pzN1E?oc=5",
-      "published": "2026-11-25T02:25:48+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea Nike Strike Training Drill Top - Bright Blue - Kids - Chelsea FC Store"
-    },
-    {
-      "desc": "JAIR CUNHA NAMED IN BRAZIL SQUAD Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T05:00:50.173336+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUTlicU9tc1Zyc2lxbWd0OFpCZ3E4dVdxS2NCTW5SaHZuRjBUX0xGR0swMjBYMEkyWF9KWHN3UjdZYTQ3WHFuTlYtWGR3aUh3M1lJYXR6dFNyT0xzMjhmcnZVTDFBdGtGV0pNQ3VEMmpfTU4tVFJjTFMzWjhiZm92eXJ3MTI?oc=5",
-      "published": "2026-11-25T02:20:58+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "JAIR CUNHA NAMED IN BRAZIL SQUAD - Premier League"
-    },
-    {
-      "desc": "Jude Bellingham underlined his class once more with a stunning goal as Real Madrid came from behind to thump PSV Eindhov",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-25T01:00:47.671942+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16319773/Jude-Bellingham-scores-best-goal-life-stunning-long-range-volley-helps-Real-Madrid-come-thump-PSV-Eindhoven-5-1-Champions-League.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-25T00:32:43+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Jude Bellingham scores 'the best goal of my life' as his stunning long-range volley helps Real Madrid come from behind to thump PSV Eindhove"
-    },
-    {
-      "desc": "Jose Mourinho says Jude Bellingham is the best midfielder in the world, but the Real Madrid star played down comparisons",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T00:00:50.719767+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c893r9kdwl91o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-24T23:54:10+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Bellingham plays down Zidane comparison after wonder goal"
     }
   ],
   "processed_urls": [
