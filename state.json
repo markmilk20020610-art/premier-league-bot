@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 145229,
-    "output_tokens": 16182,
-    "requests": 24
+    "input_tokens": 151195,
+    "output_tokens": 16794,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5562,6 +5562,41 @@
       "title": "邮报独家：曼联从未真正追求帕尔默，切尔西新约内幕曝光",
       "updated_at": "2026-10-31T10:55:32.255016+00:00"
     },
+    "e0b9c77753f2": {
+      "article_title": "Sterling given suspended jail sentence for dangerous driving",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "b91c695cc786415c",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 242
+        }
+      ],
+      "created_at": "2026-11-25T13:01:11.334436+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "7e3e848e19a2e7ba",
+      "event_id": "e0b9c77753f2",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-25T13:01:11.334436+00:00",
+          "origin": "created",
+          "title": "Sterling given suspended jail sentence for dangerous driving",
+          "url": "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 242,
+      "title": "斯特林危险驾驶及持有笑气被判缓刑",
+      "updated_at": "2026-11-25T13:01:12.091114+00:00"
+    },
     "e0f8bf9564d2": {
       "article_title": "Man United's new boss contenders: Mauricio Pochettino tops the bookies' favourites ahead of Eddie Howe and Julian Nagelsmann on 14-man list",
       "attempts": 1,
@@ -6334,7 +6369,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T12:00:53.552463+00:00",
+  "last_scan_at": "2026-11-25T13:01:07.033946+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6356,6 +6391,76 @@
   },
   "news_pool": [
     {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-25T13:01:07.036050+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-11-25T12:45:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Man City latest: 'Title race over if City lose to Arsenal,' says Merse"
+    },
+    {
+      "desc": "Raheem Sterling was sentenced to 12 months imprisonment, suspended for 18 months, on Wednesday.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T13:01:07.036074+00:00",
+      "link": "https://www.bbc.co.uk/news/articles/cv8e04ll9dd3o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-25T12:43:48+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Sterling given suspended sentence for dangerous driving"
+    },
+    {
+      "desc": "Fourteen years after making his Premier League debut at 17, Raheem Sterling has been given a suspended prison sentence.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-25T13:01:07.036093+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cxzd9ydqzylno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-25T12:42:57+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Raheem Sterling - from national icon to suspended jail sentence"
+    },
+    {
+      "desc": "FORMER Manchester United star Alejandro Garnacho appears to have thrown another social media strop after deleting all tr",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T13:01:07.036111+00:00",
+      "link": "https://www.thesun.co.uk/sport/41143225/alejandro-garnacho-deletes-aston-villa-instagram-man-utd-pin/",
+      "published": "2026-11-25T12:41:25+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd fans say ‘he’d unironically start for us’ as Garnacho deletes all trace of Aston Villa and Chelsea"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO came agonisingly close to being crowned a shock Champions League winner while in the Tottenham dugou",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T13:01:07.036126+00:00",
+      "link": "https://www.thesun.co.uk/sport/41142532/mauricio-pochettino-champions-league-redemption-man-utd-tottenham-psg/",
+      "published": "2026-11-25T12:36:22+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino desperate for Champions League redemption with Man Utd after Tottenham heartbreak & PSG failure"
+    },
+    {
+      "desc": "WEST HAM fans have been left fearing the club could be relegated to League One after a shock run of form. The Hammers we",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-25T13:01:07.036141+00:00",
+      "link": "https://www.thesun.co.uk/sport/41142824/west-ham-championship-relegation-leicester-city-scott-parker/",
+      "published": "2026-11-25T12:36:22+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Do a Leicester’ – West Ham fans fear club could be RELEGATED after horror results, manager change and flops’ struggles"
+    },
+    {
+      "desc": "FPL GW12 Injury News: Raya 50% for Arsenal v City The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T13:01:07.036158+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBsS3Y4ZjFmcjJ0dzd4VkRxVGprT3BIWkhBR0laUDN6c0Z5WkNPT1ZZVW1QYjBtN1VySTlvejQ2OUFRa3QxNnJGa2hNcUlmczktXzFxakdJaVJOcFVKd21ybG9IeXdTZw?oc=5",
+      "published": "2026-11-25T12:15:45+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "FPL GW12 Injury News: Raya 50% for Arsenal v City - The False 9"
+    },
+    {
       "desc": "Former England player Raheem Sterling has been given a suspended 12-month jail sentence for dangerous driving and posses",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-25T12:00:53.555536+00:00",
@@ -6374,6 +6479,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Ex-England star Raheem Sterling AVOIDS jail after being caught in Lambo with laughing gas canisters and deflated balloon"
+    },
+    {
+      "desc": "Who was in contention for the best player of Matchweek 11? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T13:01:07.036210+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFpEQkNXbXpOOHpZVjNQWUFsU285TFFDQnIwZk9pNkt0TjJyVHUta0owOU1LWklIOUNyMG8ybFkzejFoNVR3cUZaMzNtT2N5bXpjSlRJSHlHNkxoVGl2NnZ3Z1FOX21KWlhxVGdKazExU3owUDd1N0dqYWhOV3hkb19xNnR5X3lRdEcwSUNoc3RBLVlDcFE?oc=5",
+      "published": "2026-11-25T11:21:47+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Who was in contention for the best player of Matchweek 11? - Premier League"
     },
     {
       "desc": "WATFORD have appointed Edward Iordanescu as their new manager. The former boss of the Romanian national team becomes the",
@@ -6486,6 +6601,16 @@
       "title": "Manchester City ticket and hotel deals for Premier League and Champions League matches this season"
     },
     {
+      "desc": "Centurion FOX on 100 apps, full-backs and reading Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T13:01:07.036318+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS1JqSzJnUFh6UHBMaU9LYi1hWlJTM0o1ZzNmVEpnYUJYam91RFBnNk1Yc3YtOEl6WlZWVFZHSzk1Z3E4Ti13NDBjSDR5eDdUR2ZiT3hKNC1HdmhQQUxkd1ZQc1N2RTVJUXI0TmJ4U0lsQkdiX2ZVdEJWY3Rja2xOT1dsdGdKcFFNV1AwVmgwcHRCQUFIMnBlaTNB?oc=5",
+      "published": "2026-11-25T10:54:55+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Centurion FOX on 100 apps, full-backs and reading - Arsenal.com"
+    },
+    {
       "desc": "MAN UTD fans can still book top ticket deals to watch the Red Devils under new boss Mauricio Pochettino at Old Trafford ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-25T11:00:53.210281+00:00",
@@ -6514,6 +6639,16 @@
       "publisher": "https://www.football.london",
       "source": "https://www.thefa.com/rss",
       "title": "Arsenal vs Man City referee at centre of Man Utd controversy after FA statement - Football London"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T13:01:07.036356+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
+      "published": "2026-11-25T10:39:34+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
     },
     {
       "desc": "Reason Why Referee ‘Blew Final Whistle Early' at End of Man City 2-2 Napoli Yardbarker",
@@ -6584,6 +6719,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd stars were ‘devastated’ by Michael Carrick axe, reveals Rasmus Hojlund who speaks out on their relegation battle"
+    },
+    {
+      "desc": "LFCW Junior Crest Tee Red Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T13:01:07.036407+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vREZRM0VjUXgxU2kxd2NPQkVwcUpseGxDbVBkcW5NdjZpMW15dmhJYmoyRjFRN01Ubi1XbHh0NDNDVXp1QnlqZXlPZFQ4dTZJblhUY3JZTnJzS0dyLWNFdjdpZWlLQlNfR1E?oc=5",
+      "published": "2026-11-25T10:01:45+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "LFCW Junior Crest Tee Red - Liverpool FC"
     },
     {
       "desc": "MAURICIO POCHETTINO takes his Manchester United side to Sporting on Wednesday for a crucial MD5 clash in the Champions L",
@@ -7744,116 +7889,6 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Galatasaray star Deniz Gul left covered in blood as he’s booted in head while scoring winner vs Aston Villa"
-    },
-    {
-      "desc": "Chelsea WSL Nike Away Stadium Long Sleeve Shirt 2026-27 with McCabe 15 printing Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T03:00:58.058528+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQMlNHcGU5bkxYWEhVSnI3MzZjVlNvUmtCUEFLcnlPMGhmNkNsUVZNTXJGMVRHWjJZMXRyWEdySXltbGRiTDgwRE1tWTIyT0tManpjdFJnejVDdFVRdFozYmlXaTROMFl5bXMwV2toVUNGMkJPWEdRbnFvQWVtTW5JcnhFQU84dkFIUWlCcHlPN1poRkZuaXhtZzA4SUZWNnBXNUxVZ1R5QkNjUjNuZmNOWDk1ZDFTX3ZjZ2pmSHBlS0Rma3EwWXdpcDVGRzMwQjRNanFpODZTUWROc1hMbWxOaVZ2MzdjTWc4WllwWXJVZVdvNURHY3BnZW5FS0FVRm9DanBtNS1sWFd5aEph?oc=5",
-      "published": "2026-11-24T19:20:12+00:00",
-      "publisher": "https://eustore.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea WSL Nike Away Stadium Long Sleeve Shirt 2026-27 with McCabe 15 printing - Chelsea Football Club"
-    },
-    {
-      "desc": "INTERVIEW BY WILL PICKWORTH: A boyhood West Ham fan whose dad Steve is a club legend and still serves as a first-team co",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-25T01:00:47.672891+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16303009/Freddie-Potts-pain-leaving-West-Ham-summer-upsetting-odds-Champions-League-Club-Brugge-dont-fear-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T19:15:46+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Freddie Potts on the pain of leaving West Ham, why he had to move on this summer, upsetting the odds in the Champions League with Club Brugg"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T20:00:49.992933+00:00",
-      "link": "https://www.skysports.com/football/portsmouth-vs-west-ham-united/live/560695",
-      "published": "2026-11-24T19:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Portsmouth vs West Ham LIVE!"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T22:01:01.371873+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13616079/portsmouth-vs-west-ham-live-championship-match-updates-score-stream-and-free-highlights",
-      "published": "2026-11-24T19:15:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Boro win to go top; West Ham beaten by Portsmouth - EFL highlights"
-    },
-    {
-      "desc": "CHELSEA could be handed a major injury boost with Maxence Lacroix hoping to return to action ahead of schedule. The Fren",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T20:00:49.992946+00:00",
-      "link": "https://www.thesun.co.uk/sport/41131620/chelsea-maxence-lacroix-hamstring-new-year-leeds-united/",
-      "published": "2026-11-24T19:14:50+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Chelsea in potential injury boost with Maxence Lacroix hoping to return early from hamstring KO"
-    },
-    {
-      "desc": "Arsenal vs Dortmund Confirmed Lineups: Kepa In, Saliba Benched, Tzolis Starts The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T20:00:49.992961+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcEVpRGFDcHdreGNFdGxUclk0R2lpQ3hlMXRSaDlNYk9ycjlqZFl3bFU2ZmlNdEdtYXhUdDEydXRzdk5Pd2tkbExRRHR2TTNkM1pzQ1hyazhjSzdFNmdaMkVWRE84WVM4X2t4Zi1PMUxhbktEWVNzRkFBX0FEX1IyTzZKRUN1X0FCdjJaZg?oc=5",
-      "published": "2026-11-24T19:02:45+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Arsenal vs Dortmund Confirmed Lineups: Kepa In, Saliba Benched, Tzolis Starts - The False 9"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T21:00:52.818572+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-24T19:00:02+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Romano gives dreaded confidence update on Xabi Alonso as manager suffers another damaging defeat Talk Chelsea",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T20:00:49.992977+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLTNRQnQ0OUdpTHBDOFE1TktzQWdjSE9hN1FhQTRyY3diWENERG1aZ3NxUkh0eGpjdTJRT3NuM0VhRlJEYU9yQUpnU1hiRWpQMlByaFNFREdfZjhfbzJSTHY1U1BscWN4S1U0dFhzdV9EcFBpanRtTnpudmdBR3hneHVPbWvSAYoBQVVfeXFMUEhyRDJxM0dPSUM1Y3phamdCYnZXcnR1T3NxZEpxTXZnNV9QNU9iaDc2Yi1FODNxQkRwMGZ4TW12QllpT2QwQVFVMDRaaUdyR01kRGNuT1I3bkd4SXo2dU54ZUdNSkpZOGZGUU0tdkNMSkxCYTllREN3a1Y2OXpSaGtrcnEyT1JMYjB3?oc=5",
-      "published": "2026-11-24T19:00:00+00:00",
-      "publisher": "https://www.talkchelsea.net",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Romano gives dreaded confidence update on Xabi Alonso as manager suffers another damaging defeat - Talk Chelsea"
-    },
-    {
-      "desc": "Team news: Gyokeres starts against Dortmund Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T19:00:53.100187+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNam9lQWdmTkRfQ2NRQVE5cm9GVmF1Vjl0cUtsek5DdUVvZllOdmp0WURyY054aGJRcnctaVJVN2ZRRnZVblRFdDhTbkF1OThNNmJPekRQeWR6SHFXT21TTnd6VW1nWnh4cUl6Y1B1bEJHbl9za2Q0dTVsdEpkN1Y3NEcwRzhxNGdmRW5oaQ?oc=5",
-      "published": "2026-11-24T18:57:23+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Team news: Gyokeres starts against Dortmund - Arsenal.com"
-    },
-    {
-      "desc": "ASTON VILLA ace Taylor Harwood-Bellis was \"done dirty\" by TNT Sports as they didn't include his photo in Unai Emery's st",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T19:00:53.100214+00:00",
-      "link": "https://www.thesun.co.uk/sport/41131410/aston-villa-champions-league-galatasaray-taylor-harwood-bellis/",
-      "published": "2026-11-24T18:53:41+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Aston Villa star left as ‘the invisible man’ during TNT Sports coverage after not being named in original squad"
-    },
-    {
-      "desc": "City make five changes for Napoli clash Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T20:00:49.993012+00:00",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNkluVU51NW5NX3hsYW56SGlOdHh2bHo4a1VkRF81RHprOVZmRV9JRVhCQmVzeHMtQWtRNUtXNnFWZnppb3V6TEhQcnJEYlJJM19rNHVxSTd3ZXFTaS00alJoaVFtYTlCMy04RWFCNjVFbUp6RGdBaE9LWXdxLW1pQUtjejFjNllVRm4yQVVGaUtlbGtwaHZMYl9ybmhTSk51?oc=5",
-      "published": "2026-11-24T18:45:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "City make five changes for Napoli clash - Manchester City FC"
     }
   ],
   "processed_urls": [
@@ -8050,7 +8085,8 @@
     "https://www.thesun.co.uk/sport/41139045/tomas-soucek-hammers-west-ham-portsmouth",
     "https://www.thesun.co.uk/sport/41139716/unai-emery-alejandro-garnacho-aston-villa-galatasaray-bench-missing",
     "https://www.thesun.co.uk/sport/41141885/bayern-munich-jamal-musiala-statement",
-    "https://www.dailymail.com/sport/football/article-16320567/Erling-Haaland-concerning-TV-interview-Man-City-draw-Napoli.html"
+    "https://www.dailymail.com/sport/football/article-16320567/Erling-Haaland-concerning-TV-interview-Man-City-draw-Napoli.html",
+    "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving"
   ],
   "s_overflow": {},
   "schema_version": 4
