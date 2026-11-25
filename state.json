@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 11,
+        "calls": 12,
         "errors": 0,
-        "requests": 11
+        "requests": 12
       }
     },
-    "calls": 11,
+    "calls": 12,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 70333,
-    "output_tokens": 8034,
-    "requests": 11
+    "input_tokens": 76200,
+    "output_tokens": 8765,
+    "requests": 12
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5632,6 +5632,41 @@
       "title": "阿森纳门将拉亚伤退，枪手2-2战平纽卡",
       "updated_at": "2026-11-21T21:00:56.071571+00:00"
     },
+    "ea5fdd215837": {
+      "article_title": "Rasmus Hojlund MOCKS Man City as ex-Man United star is caught telling fans there is 'one team in Manchester' after scoring for Napoli - desp",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "f00996d5fed942f6",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 235
+        }
+      ],
+      "created_at": "2026-11-25T01:38:35.047344+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ddfd06afe9ce47bd",
+      "event_id": "ea5fdd215837",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-25T01:38:35.047344+00:00",
+          "origin": "created",
+          "title": "Rasmus Hojlund MOCKS Man City as ex-Man United star is caught telling fans there is 'one team in Manchester' after scoring for Napoli - desp",
+          "url": "https://www.dailymail.com/sport/football/article-16319727/Rasmus-Hojlund-taunts-Man-City-United.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16319727/Rasmus-Hojlund-taunts-Man-City-United.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 235,
+      "title": "霍伊伦德反戈一击后嘲讽曼城：曼彻斯特只有一支球队",
+      "updated_at": "2026-11-25T01:38:35.650978+00:00"
+    },
     "eac80da6da92": {
       "article_title": "Man City 0 Brighton 1: Enzo Maresca left frustrated as Arsenal regain title advantage and Seagulls go TWO points off top",
       "attempts": 1,
@@ -6089,7 +6124,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T01:00:47.668651+00:00",
+  "last_scan_at": "2026-11-25T01:38:28.577556+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6279,6 +6314,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal were ‘fortunate’ not to concede penalty against Dortmund as Shearer slams referee decision in 1-1 draw"
+    },
+    {
+      "desc": "Haaland: Fighting spirit against Napoli was important Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:38:28.580290+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRFBqazlLa01odVM4NGoxcTdtSjFjeHRXODJORGpVeGNIOHF1NUVLSkhfbTVBaV9XYzhUNlAwdURkN2N3TU5VdWhLNm94SU9QTy1YTWhtcEoyT01pNEQxdmdxMFZwM1QxSWdIcG1HNThyTlY3NVVvSXNIdlVSNVN2a3JWVmt2bVVJVmZfQmdlYndXcFE?oc=5",
+      "published": "2026-11-24T22:40:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Haaland: Fighting spirit against Napoli was important - Manchester City FC"
     },
     {
       "desc": "PSG Rejects Vinicius Transfer Amid Attacking Injury Crisis cwibc.co.id",
@@ -6581,6 +6626,16 @@
       "title": "Man Utd target Collins - Wednesday's gossip"
     },
     {
+      "desc": "Chelsea Crest Heart Pendant Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:38:28.580570+00:00",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOY2dhZHFXdV9fVGJ3eE83eGFpQmdWeDRnNGZycHBGU2d0ZWFGR3djSENJOUY1MVg2bVNqLTdET3FaSVdONVQ5Yk5SekFyNTh0SnVGbmMyREdHVElWTGo3RURTQ0J5aFhGYXh3S2RQSkh0T1dVbzJVUHNVTnZHQ25nTGQwX0dkSm5EdVljR1NxNFhRbXN4ZkI5QW93dFUxRldOWkNULUljajlmZDRVVVBvTC1Mbk44cUtEN2EyLVhnMFFjUG9tNDI4?oc=5",
+      "published": "2026-11-24T20:49:38+00:00",
+      "publisher": "https://eustore.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Crest Heart Pendant - Chelsea Football Club"
+    },
+    {
       "desc": "Chelsea Gold Plated Crest Signet Ring - Stainless Steel Chelsea Football Club",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-25T00:00:50.720618+00:00",
@@ -6729,6 +6784,16 @@
       "publisher": "https://tribuna.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Manchester United plan two or three January signings as Pochettino targets striker and defender - Fabrizio Romano - Tribuna.com"
+    },
+    {
+      "desc": "Millwall forced to partially close the Den after commission proves FA charges of discriminatory chanting Sky Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:38:28.580714+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMThKSGtQcHlZMnVoSUc1REMzYUk3VHl4OU0tanJwMFExMDVaZHpzSEdwcmdVZlA3TV9PczU5SkVkTUdnUk50Z19RMl92YlFwdHo2RHd1cF9uR1ZRc1lkRmhJSlM1dE1sVzdPSDlEOFg5ZUtmYzhvN2lYQVZ6b19DU0ZXeFlCMDNpdnZENXJhU0o2UzY4LW9WdzhHakVMWERIYnlsYUxIYmdYNlFRQmFNY2FGNGFyaU81QmdiR1VCOGxFNEdFbzloZ0hRTVpISExNR2ZFem1sOVcyOXY5ck0xOWRQOXI0Z3hK?oc=5",
+      "published": "2026-11-24T19:52:45+00:00",
+      "publisher": "https://www.skysports.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Millwall forced to partially close the Den after commission proves FA charges of discriminatory chanting - Sky Sports"
     },
     {
       "desc": "MANCHESTER CITY continue their Champions League campaign against Italian giants Napoli TONIGHT! Although the Cityzens ha",
@@ -7579,36 +7644,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Senegal reinstated as Afcon 2025 winners by court ruling"
-    },
-    {
-      "desc": "Fabrizio Romano confirms Liverpool move for Real Madrid star Yahoo Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T16:00:53.961933+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONVYyVVo3QU5Ham51QWEyS092cXJPWFVKRHlPbEtVYzlZNXh4MWtzSjlPemNZT0VpcG9JRnhtdDR4RWpaeXoyWEtZVUpLZjh5UHJYYzhqYUJsa0xJYnA0Z3RMWS1jOXdfclhwaVY3VWJuRUdYU1J6aUNRUXNoZjhfNE9ZenJOYTRWS2syUjhqR09qZw?oc=5",
-      "published": "2026-11-24T14:50:00+00:00",
-      "publisher": "https://sports.yahoo.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano confirms Liverpool move for Real Madrid star - Yahoo Sports"
-    },
-    {
-      "desc": "SENEGAL have been officially reinstated as African Nations Cup winners - 10 MONTHS after lifting the trophy. The Lions o",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T15:00:51.553005+00:00",
-      "link": "https://www.thesun.co.uk/sport/41128129/senegal-afcon-winners-morocco-verdict/",
-      "published": "2026-11-24T14:28:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Senegal given BACK Afcon title after CAS overturn controversial decision to award Morocco trophy"
-    },
-    {
-      "desc": "Millwall must play a home game in front of a partially-closed stadium as punishment for fans' discriminatory chants.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-24T15:00:51.553039+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6wy474lxd22o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-24T14:23:49+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Millwall face partial stadium closure after discriminatory chants"
     }
   ],
   "processed_urls": [
@@ -7798,7 +7833,8 @@
     "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal",
     "https://www.skysports.com/football/news/12040/13616033/leny-yoro-red-card-ref-chief-howard-webb-backs-process-that-saw-man-utd-defender-sent-off-at-liverpool",
     "https://www.thesun.co.uk/sport/41138398/man-city-draw-napoli-rayan-cherki-champions-league-hojlund",
-    "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html"
+    "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html",
+    "https://www.dailymail.com/sport/football/article-16319727/Rasmus-Hojlund-taunts-Man-City-United.html"
   ],
   "s_overflow": {},
   "schema_version": 4
