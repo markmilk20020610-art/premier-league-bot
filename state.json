@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-25",
     "errors": 0,
-    "input_tokens": 64367,
-    "output_tokens": 7344,
-    "requests": 10
+    "input_tokens": 70333,
+    "output_tokens": 8034,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1610,6 +1610,41 @@
       "telegram_message_id": 24,
       "title": "阿斯顿维拉拟对卡拉格提起法律诉讼，指控其言论构成“不可接受的侮辱”",
       "updated_at": "2026-10-31T07:00:54.836824+00:00"
+    },
+    "419f6bd5560a": {
+      "article_title": "Man United FURIOUS with Howard Webb after he backed decision to send off Leny Yoro at Anfield: Club to take fight to Premier League as red c",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "157807abe7a1f390",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 234
+        }
+      ],
+      "created_at": "2026-11-25T01:00:57.410614+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "6e6380a94d850ca8",
+      "event_id": "419f6bd5560a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-25T01:00:57.410614+00:00",
+          "origin": "created",
+          "title": "Man United FURIOUS with Howard Webb after he backed decision to send off Leny Yoro at Anfield: Club to take fight to Premier League as red c",
+          "url": "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 234,
+      "title": "曼联怒斥韦伯力挺约罗红牌，将向英超讨说法",
+      "updated_at": "2026-11-25T01:00:58.030466+00:00"
     },
     "42bf00faafdc": {
       "article_title": "Omar Berrada hails ‘dedicated’ Glazers as he claims some Man Utd fan criticism has ‘crossed a line’",
@@ -6054,7 +6089,7 @@
     }
   },
   "last_morning_report_date": "2026-11-25",
-  "last_scan_at": "2026-11-25T00:00:50.716597+00:00",
+  "last_scan_at": "2026-11-25T01:00:47.668651+00:00",
   "last_summary_sent_at": "2026-11-24T22:01:42.480042+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6075,6 +6110,16 @@
     "updated_at": "2026-11-24T22:01:42.464744+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Jude Bellingham underlined his class once more with a stunning goal as Real Madrid came from behind to thump PSV Eindhov",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T01:00:47.671942+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16319773/Jude-Bellingham-scores-best-goal-life-stunning-long-range-volley-helps-Real-Madrid-come-thump-PSV-Eindhoven-5-1-Champions-League.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T00:32:43+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Jude Bellingham scores 'the best goal of my life' as his stunning long-range volley helps Real Madrid come from behind to thump PSV Eindhove"
+    },
     {
       "desc": "Jose Mourinho says Jude Bellingham is the best midfielder in the world, but the Real Madrid star played down comparisons",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -6106,6 +6151,16 @@
       "title": "Arteta says Arsenal need more luck to kill off games"
     },
     {
+      "desc": "Kepa on ‘frustrating’ Champions League draw Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:00:47.672103+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTV9sNDljWXlOMVZub2xMOVRCUHpiSjRIektIdTJlR3FienVyV1BwY2J1RHA2UUJoWm5HcnFoWkQtdWo3dXBHanFKYlBPcjRSeU9JUld5MlZHVEdLc2d4X2NUTkZBcHl0eVJMdlZkekNXRFoyMjdLeTRINXNDMnVKcHNoTXFva3JBVTQw?oc=5",
+      "published": "2026-11-24T23:30:39+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Kepa on ‘frustrating’ Champions League draw - Arsenal.com"
+    },
+    {
       "desc": "JACK GAUGHAN AT THE ETIHAD: The message from Maresca ought to be clear when Manchester City convene for their meeting at",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-25T00:00:50.719872+00:00",
@@ -6134,6 +6189,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Rasmus Hojlund MOCKS Man City as ex-Man United star is caught telling fans there is 'one team in Manchester' after scoring for Napoli - desp"
+    },
+    {
+      "desc": "Every word from Arteta’s post-Dortmund presser Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:00:47.672172+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOelZhcjBnd0JiTm0yRFZIVUpPdFQxU0pCbU11Qzk5dFJTYjJkX2Y4VnM2dXF1dUZvLTMwY0NNaEdPMnNQcTNGTTZoUlphMUxTdURORzVXcjVWM2c3Y0s2dGhOU2Y0cl8xLXJYeFlIUWpGQ0lvdVVubW4wZ3VGNDE2czVsaGRQT0pGYkkzQ0ZyRmU?oc=5",
+      "published": "2026-11-24T23:20:35+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Every word from Arteta’s post-Dortmund presser - Arsenal.com"
     },
     {
       "desc": "Manchester City's slick footballing machine is starting to grind to a halt, as displayed in their laborious Champions Le",
@@ -6546,6 +6611,16 @@
       "title": "Romano: Bruno Fernandes ‘more than a dream’ for Milan – why Amorim ‘could be crucial’ - LiveScore"
     },
     {
+      "desc": "Sporting v United: What's the team news? Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:00:47.672667+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1ZndElFTWhfOEp1ZmdUTS1SVWZPamhlSEJrTVBDM1ljVXRpQ3d5WTc2bXpsTzlrUmVtQ1A2c2VVMmVGM25abG1lb0x0X1Y3ODM3MlJGVWhkTmVTT3hBZ2JaVU9pY3hNaWtMV2Z4MFp0REhJWklLc1JTSmhkSTE3eU5ycTA5M0hCSTZGSGRHTXVGcW95V2JkYw?oc=5",
+      "published": "2026-11-24T20:31:26+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Sporting v United: What's the team news? - Manchester United"
+    },
+    {
       "desc": "coming-soon-cp-company Man City Shop",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-24T22:01:01.371670+00:00",
@@ -6564,6 +6639,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Watch Liverpool's pre-Club Brugge training session - Liverpool FC"
+    },
+    {
+      "desc": "Andoni Iraola press conference: 'Analysing Club Brugge wasn't boring!' Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:00:47.672728+00:00",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORGNmN1lNRW1ucEZtbUZabHV4VzkweGFhT0tLcjMtQjdFSzh0MTF6YkFnQ3JuVmdhejludlA5eUJDejFyYWNTNnJ6d3hRcXoyZHd6dzlWX0R1Y3ZVSGp5dll6WWF5ZlhiWldsQlhydWdZaF9Ld0ItRUtEeDNpNVllclNfQUk2UzY5aXVKa1hqbkpCbGxzUm5hckFPb20wTWs?oc=5",
+      "published": "2026-11-24T20:22:38+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Andoni Iraola press conference: 'Analysing Club Brugge wasn't boring!' - Liverpool FC"
     },
     {
       "desc": "MANCHESTER CITY continue their Champions League campaign against Napoli TONIGHT! Although the Cityzens have struggled re",
@@ -6674,6 +6759,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Galatasaray star Deniz Gul left covered in blood as he’s booted in head while scoring winner vs Aston Villa"
+    },
+    {
+      "desc": "INTERVIEW BY WILL PICKWORTH: A boyhood West Ham fan whose dad Steve is a club legend and still serves as a first-team co",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-25T01:00:47.672891+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16303009/Freddie-Potts-pain-leaving-West-Ham-summer-upsetting-odds-Champions-League-Club-Brugge-dont-fear-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-24T19:15:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Freddie Potts on the pain of leaving West Ham, why he had to move on this summer, upsetting the odds in the Champions League with Club Brugg"
     },
     {
       "desc": "",
@@ -6824,6 +6919,16 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano reveals Man United’s January transfer plans as decisions emerge on two stars - LiveScore"
+    },
+    {
+      "desc": "VOTE: Who was the best player of Matchweek 11? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-25T01:00:47.673050+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9iZHNSN2l6V0VFMTItcGd2TWtiTUhjWkVnWXh6eTAxX1hnZEw5d1Z6SVk4OEkxd1p5WDlVbVRBSkpUX1N6VVNPay1pSmYyd3hDSzQ5ZlJwSkM?oc=5",
+      "published": "2026-11-24T18:10:47+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "VOTE: Who was the best player of Matchweek 11? - Premier League"
     },
     {
       "desc": "ARSENAL will host Borussia Dortmund at the Emirates tonight and Hale End's Ethan Nwaneri is set to be involved for the v",
@@ -7504,76 +7609,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Millwall face partial stadium closure after discriminatory chants"
-    },
-    {
-      "desc": "COLE PALMER's numbers are worse under new boss Xabi Alonso than any previous Chelsea manager - but his stats do offer so",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-24T15:00:51.553066+00:00",
-      "link": "https://www.thesun.co.uk/sport/41124940/cole-palmer-struggles-xabi-alonso-chelsea/",
-      "published": "2026-11-24T14:22:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Cole Palmer is worse under Xabi Alonso than any other Chelsea boss – but stats offer hope he can return to top form"
-    },
-    {
-      "desc": "The Court of Arbitration for Sport (CAS) have announced Senegal as the winners of AFCON 2025.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-24T15:00:51.553089+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615545/senegal-crowned-afcon-2025-champions-by-court-of-arbitration-for-sport-following-appeal",
-      "published": "2026-11-24T14:20:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Senegal confirmed AFCON 2025 champions after appeal"
-    },
-    {
-      "desc": "FA hit Millwall with partial stadium ban after latest offensive chanting charge AOL.co.uk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T15:00:51.553118+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMGpUWXlvY2lUY1NuUi1McEJqbGJfdW5iMHFCX1dHRGNTUUJfOUhJTDhKM2diNWhBOWlKZGJVX0pfN1hKZF9pTGtRN04yNkNKeEhsRXl1dWg3UTFNWFFfM3N2NHBwX0ViZ1pmUmdFMFIyTmNuWHMwaENhR0paZmRDLWxSRQ?oc=5",
-      "published": "2026-11-24T14:09:38+00:00",
-      "publisher": "https://www.aol.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA hit Millwall with partial stadium ban after latest offensive chanting charge - AOL.co.uk"
-    },
-    {
-      "desc": "Millwall forced to partially close the Den after commission proves FA charges of discriminatory chanting Sky Sports",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T17:43:53.330961+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMThKSGtQcHlZMnVoSUc1REMzYUk3VHl4OU0tanJwMFExMDVaZHpzSEdwcmdVZlA3TV9PczU5SkVkTUdnUk50Z19RMl92YlFwdHo2RHd1cF9uR1ZRc1lkRmhJSlM1dE1sVzdPSDlEOFg5ZUtmYzhvN2lYQVZ6b19DU0ZXeFlCMDNpdnZENXJhU0o2UzY4LW9WdzhHakVMWERIYnlsYUxIYmdYNlFRQmFNY2FGNGFyaU81QmdiR1VCOGxFNEdFbzloZ0hRTVpISExNR2ZFem1sOVcyOXY5ck0xOWRQOXI0Z3hK?oc=5",
-      "published": "2026-11-24T14:06:34+00:00",
-      "publisher": "https://www.skysports.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Millwall forced to partially close the Den after commission proves FA charges of discriminatory chanting - Sky Sports"
-    },
-    {
-      "desc": "Millwall handed partial stadium closure, £70,000 fine for discriminatory chanting in Charlton win Southwark News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T15:00:51.553148+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNU3J3OGJOSDFFRkhCNEt1NU9GNTRCNUZkbUx1MlhtMkN4RnRveTNzYmNjVU5EazZmN1BqNm1pY1gwOTZKUWppWkVBeDVQZ1lMNE5wemFqVThXb0VlU1JDd29rVXZfOGRUMk1OQWhKYlJtQ25fRW85Qm9rMjBZZWlBZW9BZFJ3MC1WRFpOSXR6QUpoQW1QYkpoMFQySnhDSFVBWUdRQjRRUVVKcnp4dGlhYlQ1RVVrVnFtUTVEMmRKZjROTldrX2FVUElCdERBNk9lR0dqUERodXlkMUM2NmtuRWs5bnlFaGZzR1ZiSmZUdXZnX3dKTG9xVER6X3BHWWFWbjMzMF93?oc=5",
-      "published": "2026-11-24T14:05:45+00:00",
-      "publisher": "https://southwarknews.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Millwall handed partial stadium closure, £70,000 fine for discriminatory chanting in Charlton win - Southwark News"
-    },
-    {
-      "desc": "Ray Winstone, Jason Statham, Mike Myers and Vinnie Jones all turned out for a team that grew out of a gathering of Briti",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-24T16:00:53.962045+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16317753/sex-pistols-vinnie-jones-hollywood-united-los-angeles.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-24T14:00:46+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Meet the world's most famous pub team: How a Sex Pistol, Superman and Vinnie Jones took Hollywood United beyond Sunset Boulevard via private"
-    },
-    {
-      "desc": "Millwall given partial stadium closure and will enhance Den messaging talkSPORT",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-24T15:00:51.553192+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdlgyUTBnSzh6Qm9aWTk1RDc5MGc0Qi00dVlzVjNJVGRmZVU1S0VyNGdDa3ctamZZVEdSOU55S1I1c0NiTTYyc2ptOW9yQ3VKSHJHMW51VWdueWRUN0hiMmxtNlJIR0p5RHFCeUhSX1BKLXdhYzlpcEZlbnR5UHF2VHFDanRCbUttanRBNGVGTmwzdU5fNWtQbkloX2xMYUtTS2Z6MjV3?oc=5",
-      "published": "2026-11-24T14:00:02+00:00",
-      "publisher": "https://talksport.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Millwall given partial stadium closure and will enhance Den messaging - talkSPORT"
     }
   ],
   "processed_urls": [
@@ -7762,7 +7797,8 @@
     "https://www.skysports.com/football/news/12040/13615973/barnet-midfielder-isiah-noel-williams-charged-with-three-counts-of-rape-and-one-count-of-engaging-in-sexual-communication-with-a-child",
     "https://www.thesun.co.uk/sport/41127223/luca-williams-barnett-snubs-chelsea-man-utd-tottenham-deal",
     "https://www.skysports.com/football/news/12040/13616033/leny-yoro-red-card-ref-chief-howard-webb-backs-process-that-saw-man-utd-defender-sent-off-at-liverpool",
-    "https://www.thesun.co.uk/sport/41138398/man-city-draw-napoli-rayan-cherki-champions-league-hojlund"
+    "https://www.thesun.co.uk/sport/41138398/man-city-draw-napoli-rayan-cherki-champions-league-hojlund",
+    "https://www.dailymail.com/sport/football/article-16318613/Leny-Yoro-red-card-OVERTURNED-Man-United-star-available-Brentford-clash-controversial-dismissal-Liverpool-trouncing.html"
   ],
   "s_overflow": {},
   "schema_version": 4
