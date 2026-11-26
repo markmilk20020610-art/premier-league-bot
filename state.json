@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 12,
+        "calls": 13,
         "errors": 0,
-        "requests": 12
+        "requests": 13
       }
     },
-    "calls": 12,
+    "calls": 13,
     "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 76628,
-    "output_tokens": 8774,
-    "requests": 12
+    "input_tokens": 82805,
+    "output_tokens": 9469,
+    "requests": 13
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1995,6 +1995,41 @@
       "telegram_message_id": 196,
       "title": "凯塞多争顶后重摔受伤离场，切尔西对利兹联比赛引担忧",
       "updated_at": "2026-11-21T15:31:55.273392+00:00"
+    },
+    "45d2b49c6adf": {
+      "article_title": "Ex-Man Utd star Darron Gibson breaks down in tears over secret addiction hell and moment wife feared he’d died",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "9a81503124c40df7",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 250
+        }
+      ],
+      "created_at": "2026-11-26T02:50:57.646884+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "ad322c18e2702eac",
+      "event_id": "45d2b49c6adf",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-26T02:50:57.646884+00:00",
+          "origin": "created",
+          "title": "Ex-Man Utd star Darron Gibson breaks down in tears over secret addiction hell and moment wife feared he’d died",
+          "url": "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 250,
+      "title": "前曼联球星达伦·吉布森自曝成瘾挣扎，妻子曾以为他离世",
+      "updated_at": "2026-11-26T02:50:58.281949+00:00"
     },
     "46e14e64e099": {
       "article_title": "Mauricio Pochettino to sign two-and-a-half year contract at Manchester United - The New York Times",
@@ -6579,7 +6614,7 @@
     }
   },
   "last_morning_report_date": "2026-11-26",
-  "last_scan_at": "2026-11-26T02:00:51.457630+00:00",
+  "last_scan_at": "2026-11-26T02:50:49.108817+00:00",
   "last_summary_sent_at": "2026-11-25T22:01:25.513987+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6600,6 +6635,16 @@
     "updated_at": "2026-11-25T22:01:25.492822+00:00"
   },
   "news_pool": [
+    {
+      "desc": "No drums, no tifos, no Palace? PressReader",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T02:50:49.111322+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE40SjFMU2hTclZCeVVvbElxSWNkUXdOTVA3RHNiOGF4X2xrMjdVSUVKRnhFVjlQUlR3c0NsRVV5X1NYTmx6d1FDcnpVaVRyRDJGaEFDc3NaN2w0d3RVVUlGNzNoR0V4QWNpdzhoVGswbXFja1dJcE04?oc=5",
+      "published": "2026-11-26T01:55:47+00:00",
+      "publisher": "https://www.pressreader.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "No drums, no tifos, no Palace? - PressReader"
+    },
     {
       "desc": "MAURICIO POCHEETINO bemoaned the “impossible” refereeing that denied Manchester United a first-half equaliser in their w",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -8089,20 +8134,9 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Newcastle owners PIF looking to sell up to 25 per cent of club through new shares - The New York Times"
-    },
-    {
-      "desc": "Florian Wirtz wins Premier League Player of the Matchweek award Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T15:00:56.723659+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdk9sam1Za3FsQkhXaDdGZjRib0JpMEhSZmlTdmJjU2FCYXZhMzlma1JkQkd3VW0xWGZTbmFtbEJUTkFRZGVneFAyaS1OQ1FhZEFXV1hBQmUtaFItRmk5V19aSk9RWjQteGZCSzJGc3dDTjNLc1diX1dSdmppWmhrcEo4dlVzQkFKbDdjMkpfMzU4SnlpS1hWZXdaSUs?oc=5",
-      "published": "2026-11-25T13:34:42+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Florian Wirtz wins Premier League Player of the Matchweek award - Liverpool FC"
     }
   ],
   "processed_urls": [
-    "https://www.bbc.co.uk/sport/football/articles/cjvgx0ek6rz2o?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/ckz7x8z1e9y9o?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/ckz7x8z1e9y9o",
     "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo?at_medium=RSS&at_campaign=rss",
@@ -8301,7 +8335,8 @@
     "https://www.thesun.co.uk/sport/41153695/sporting-man-utd-result-senne-lammens-error",
     "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino",
     "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html",
-    "https://www.thesun.co.uk/sport/41154695/bruno-fernandes-man-utd-bench-rant-subbed-sporting-lisbon"
+    "https://www.thesun.co.uk/sport/41154695/bruno-fernandes-man-utd-bench-rant-subbed-sporting-lisbon",
+    "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton"
   ],
   "s_overflow": {},
   "schema_version": 4
