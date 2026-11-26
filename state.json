@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-27",
     "errors": 0,
-    "input_tokens": 6579,
-    "output_tokens": 687,
-    "requests": 1
+    "input_tokens": 12714,
+    "output_tokens": 1413,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6684,7 +6684,7 @@
     }
   },
   "last_morning_report_date": "2026-11-26",
-  "last_scan_at": "2026-11-26T16:00:55.067404+00:00",
+  "last_scan_at": "2026-11-26T17:01:06.970530+00:00",
   "last_summary_sent_at": "2026-11-25T22:01:25.513987+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6705,6 +6705,96 @@
     "updated_at": "2026-11-25T22:01:25.492822+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Chelsea manager Xabi Alonso says defender Wesley Fofana has apologised for his controversial comments in an interview he",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-26T17:01:06.974030+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5wy43j1l3rwo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T16:47:47+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Fofana has apologised for interview - Alonso"
+    },
+    {
+      "desc": "THANKSGIVING is a time for good food, seeing family, and sticking the telly on. However, it is also a chance for everyon",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T17:01:06.974066+00:00",
+      "link": "https://www.thesun.co.uk/sport/41160959/every-premier-league-thanksgiving-man-utd-arsenal-chelsea-tottenham/",
+      "published": "2026-11-26T16:43:56+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "What every Premier League club should be thankful for this Thanksgiving… including miserable Manchester United"
+    },
+    {
+      "desc": "FA issue four-match stadium ban after Man Utd vs Aston Villa tunnel chaos AOL.co.uk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T17:01:06.974098+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xc1p3Z2RuZ1Z4TG5Kc1BWY2l2aGlkWjVzVVJISjY4LTc2Z0NiWUItbGI1Rnc2LXM5VVB5UWo4a1F6Umo0eU0xZzBsYVFpOGhnNnl1YU5JR2otWDdwbEMweTFKNlVGbldIcEZaYWFsTFVFQWN2U3MxUlNOWUJ2dw?oc=5",
+      "published": "2026-11-26T16:42:01+00:00",
+      "publisher": "https://www.aol.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA issue four-match stadium ban after Man Utd vs Aston Villa tunnel chaos - AOL.co.uk"
+    },
+    {
+      "desc": "FA dish out four-match stadium ban after Man Utd vs Aston Villa stoppage time fury AOL.co.uk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T17:01:06.974127+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5IeVJ1dXVrXzlaUzZmel8xUkhfTEpKT0VZbFpneGtwVm0wY3FZUUdiSThrWkhHZ21hdE52cnlwQUZNcUtzLWZ0UXpvdmNuX1ZhRmM1MU5pdU9UZXdnQUFCdzdQVUFWR2NDU2hHQmZnb3lQckEzUkhRN0pfd3g?oc=5",
+      "published": "2026-11-26T16:41:44+00:00",
+      "publisher": "https://www.aol.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA dish out four-match stadium ban after Man Utd vs Aston Villa stoppage time fury - AOL.co.uk"
+    },
+    {
+      "desc": "PIERRE-EMERICK AUBAMEYANG was involved in a car crash on his way to training in Spain. The former Arsenal star’s turquoi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T17:01:06.974154+00:00",
+      "link": "https://www.thesun.co.uk/sport/41162658/pierre-emerick-aubameyang-car-crash-deportivo-training-barcelona/",
+      "published": "2026-11-26T16:32:53+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-Arsenal star Pierre-Emerick Aubameyang involved in car accident on the way to Deportivo training"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-26T17:01:06.974210+00:00",
+      "link": "https://www.skysports.com/football/celta-vigo-vs-bournemouth/live/577814",
+      "published": "2026-11-26T16:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Europa and Conference League LIVE! Bournemouth & Brighton in action"
+    },
+    {
+      "desc": "Our top tipster Lewis Jones, aka Jones Knows, provides his analysis and betting insight across the Premier League.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-26T17:01:06.974233+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13616076/premier-league-predictions-jones-knows-best-bets-nottingham-forest-vs-chelsea-arsenal-vs-manchester-city-and-more",
+      "published": "2026-11-26T16:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "PL Predictions: How will your club fare this weekend?"
+    },
+    {
+      "desc": "What do you know? | Declan Rice x Ezri Konsa Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T17:01:06.974259+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPczF0dDF1TVFfWXltR18ycGl1empHblZjV0ZWcVMxOHN4Nl9iNjJNVEt1SlYxLVZmRm91ekZoMDN2YVRqWVJucVJxQ0RjQ1dxV2Nyc1RFM1oxTW4zRWxyYW5hT0JBdE9ZM0kzNWdleDVBVU1KT0F1c1lFMnNCbnZ6U2tUVHVFMnUyZU5hVQ?oc=5",
+      "published": "2026-11-26T15:59:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "What do you know? | Declan Rice x Ezri Konsa - Arsenal.com"
+    },
+    {
+      "desc": "‘Already discussing…’ – Fabrizio Romano shares how Liverpool chiefs feel about Andoni Iraola Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T17:01:06.974317+00:00",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLVJ0clBzZHVWNXpYRWRHVW43RFRFVHdJR2lnVklmTXh2MUxSbkY4RmRwRFBjUjFoY3FGM1FvYVVCRG9pS1lJbFdzNFhwUzJ2ME1TVE5qTlY3ci1pNVFYWmw1eFVwYm81YWcyZ1dEbE1oQzFVUXlTdndHVkYtSlhLZXNMNmstZkNYZE5LY1NjV2pzbUdYTTluQ0RURGo4Zw?oc=5",
+      "published": "2026-11-26T15:50:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "‘Already discussing…’ – Fabrizio Romano shares how Liverpool chiefs feel about Andoni Iraola - Yahoo Sports"
+    },
     {
       "desc": "COPS launched a huge security lockdown across Southampton with tough new powers to arrest troublemakers ahead of Friday'",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -6794,6 +6884,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Referee hauled off at half-time after team accused him of 'being DRUNK' following bizarre yellow card handed out to goalkeeper"
+    },
+    {
+      "desc": "REF CAM: Watch Hull v Brighton through official's eyes Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T17:01:06.974536+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVkdkdU4xcmRmR3B4bjVCaXowYUh5azBHZTJRbmVYTm04UmRvSWRHZW9hM3BkLTZFYXlUU2xibWJsaEd2N1BPX2NLaHN4ekQyZEw5X3h3X2hERV9ZQS1xV3Q0MHFMYmxKWGluZmR3UFp5X3NNT2VjS0RIaWdCRUhGTnk0bVljQWhCYzZPSlhKUmxuSXVtOHV4QmpURDB2YjFLMXktN2VIaw?oc=5",
+      "published": "2026-11-26T14:24:43+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "REF CAM: Watch Hull v Brighton through official's eyes - Premier League"
     },
     {
       "desc": "FLORIAN WIRTZ has found himself in a purple patch of form after a rough first season in England and struggles earlier th",
@@ -8104,106 +8204,6 @@
       "publisher": "https://store.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Chelsea Nike Home Stadium Mini Kit 2026-27 - Infants - Chelsea FC Store"
-    },
-    {
-      "desc": "Donyell Malen scores for the fourth Champions League game running as Roma ends Paris St-Germain's 100% start to the comp",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T23:00:51.267349+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cwvg2832elr4o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T22:27:14+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "PSG held by Roma as in-form Malen scores again"
-    },
-    {
-      "desc": "Bayern Munich suffer their first defeat of the Champions League campaign as Lille find the net twice in three minutes in",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T23:00:51.267373+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cq36gx1g10p6o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T22:24:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Terrible Pavlovic own goal gifts Lille shock win against Bayern"
-    },
-    {
-      "desc": "FOOTBALL lovers looking to score a huge football away day in the UK or Europe can now save money with a huge Black Frida",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T23:00:51.267395+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
-      "published": "2026-11-25T22:19:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and other giants"
-    },
-    {
-      "desc": "Watch the BEST REACTIONS from Matchweek 11 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T00:00:53.931586+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNGc4NnJFREZ3cHY2cGN2MkU0WlFIWlhYMUhnaEt1VFBqM0ZkNllRVFJwaG9ZcjNGWnAxcFRTS0lpa0I4Z2FlUGFjaWFwTlpSU2pWM1ptZHJFZFZJWXR6OU1qZGxrZDhXUXgtRUZPZHZKZlpGelFUUVR3eGg2QnZqeF9uNFdTNkJ3endZNmw2Ti1jTGs?oc=5",
-      "published": "2026-11-25T22:16:31+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Watch the BEST REACTIONS from Matchweek 11 - Premier League"
-    },
-    {
-      "desc": "Garnacho finds Chelsea and Aston Villa escape route: Romano confirms January 'calls' LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T00:00:53.931610+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZXg4RGVLa0hGUmNfWXowVVpuZWFRdkNRZGdkaFAzay1TSW0ybEM2Umwzd3lkVGFhSUQ1ZzhremlJSTBIYjNtSy1BemZDUjYwNHNkUUhGVUFKRlB6UHRoeVdFRFFoMGxYUWc4SGVpeTNGdUJ5dXZhN25lbnNEZG1SRWk5VllmeHJNR0ZmVEIxRE5fZ0xTcEVtVk1qLXY2VllXZk9fampLNk1GY0ZXWWNGazc2bUYxd0ExLTd6UHhXdEtSSkFuZjY0dVJPaVlpbE1RUERhRFpubm9pRF9jOTh2YmZmc2tpOWxXRVNPdU11NA?oc=5",
-      "published": "2026-11-25T22:15:53+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Garnacho finds Chelsea and Aston Villa escape route: Romano confirms January 'calls' - LiveScore"
-    },
-    {
-      "desc": "Liverpool defeat Club Brugge in a clinical performance thanks to goals from Alexander Isak and Florian Wirtz, bouncing b",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T23:00:51.267433+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cqvg28l0z8mro?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T22:12:19+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Isak scores twice as clinical Liverpool beat Brugge"
-    },
-    {
-      "desc": "Anthony Gordon scores Barcelona's opening two goals as they ease past Sabah with a 4-1 win in the Champions League.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T23:00:51.267454+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c6z74ljxjv2xo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T22:07:02+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Gordon stars in comfortable Barca win over Sabah"
-    },
-    {
-      "desc": "Borussia Dortmund fight back from a goal behind to draw with Arsenal in the Champions League.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T23:00:51.267475+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/cmedqg06d8vwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T22:05:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Borussia Dortmund fight back to draw with Arsenal"
-    },
-    {
-      "desc": "Jude Bellingham comes off the bench to score a stunning goal as Real Madrid come from behind to beat PSV Eindhoven and m",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T23:00:51.267496+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/videos/c5evr0y83197o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T22:05:45+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Real Madrid put in five-star second half to win against PSV"
-    },
-    {
-      "desc": "MANCHESTER UNITED were denied a first win under new boss Mauricio Pochettino after a bonkers 2-2 draw at Sporting. A div",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T23:00:51.267517+00:00",
-      "link": "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino/",
-      "published": "2026-11-25T22:04:06+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd ratings: Senne Lammens’ mistakes are simply inexcusable as Bruno Fernandes bails out flops once again"
     }
   ],
   "processed_urls": [
