@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 64759,
-    "output_tokens": 7467,
-    "requests": 10
+    "input_tokens": 70510,
+    "output_tokens": 8241,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2822,6 +2822,41 @@
       "telegram_message_id": 218,
       "title": "曼联0-4惨败利物浦后 新帅波切蒂诺紧急召回全队加练",
       "updated_at": "2026-11-23T12:01:23.308964+00:00"
+    },
+    "6a33d53592c4": {
+      "article_title": "Frustrated Mauricio Pochettino accuses referee of 'punishing' Man United in chaotic Sporting Lisbon draw after having TWO goals ruled out -",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "f055f9e03437f48d",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 248
+        }
+      ],
+      "created_at": "2026-11-26T01:01:09.185821+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "0644bb73375e5e4b",
+      "event_id": "6a33d53592c4",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-26T01:01:09.185821+00:00",
+          "origin": "created",
+          "title": "Frustrated Mauricio Pochettino accuses referee of 'punishing' Man United in chaotic Sporting Lisbon draw after having TWO goals ruled out -",
+          "url": "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 248,
+      "title": "曼联里斯本竞技争议平局：两球被吹+门将失误，波切蒂诺炮轰裁判",
+      "updated_at": "2026-11-26T01:01:09.921464+00:00"
     },
     "6bdccb33fa06": {
       "article_title": "Declan Rice New Contract: Verbal Deal Agreed at Arsenal - The False 9",
@@ -6509,7 +6544,7 @@
     }
   },
   "last_morning_report_date": "2026-11-26",
-  "last_scan_at": "2026-11-26T00:00:53.927999+00:00",
+  "last_scan_at": "2026-11-26T01:00:58.139662+00:00",
   "last_summary_sent_at": "2026-11-25T22:01:25.513987+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6530,6 +6565,96 @@
     "updated_at": "2026-11-25T22:01:25.492822+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Highlights: Sporting v United Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T01:00:58.142234+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOMkZyVGZ6dmg4YVE3amVYTWxhZUNEaWVzTUV2b2RIYjRrQ3RUM3BHTVNUTWFpZG9sbWp6ZG5tcFBMZEhaS0lPdU4xRWpaZmdRN0RJTzgtVjlLbGVvNERlX3FoUHM0cE1kUXRDcUd0TXZaRGkwSk1YMlJrMUwyQjJta2Zocm9zSDk1bEZCWEdmVTVaOEo0LUYzLWlhWERTXzdjVHJaYUZYVzZadEZTV1BuOXExWXNvZWxIdkRjdjRScGJ4dE5jSzVnWThPaGwtQ2hSU1d0TmFtcDRzOXZwaVRjVWtXeC1LVklBWnRDVlh3?oc=5",
+      "published": "2026-11-26T00:53:25+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Highlights: Sporting v United - Manchester United"
+    },
+    {
+      "desc": "What are the findings for Mauricio Pochettino after his first two matches as Manchester United manager?",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-26T01:00:58.142264+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6vg24l724l4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T00:24:48+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Frustration reigns for Pochettino in chaotic start to Man Utd job"
+    },
+    {
+      "desc": "CHRIS WHEELER IN LISBON: On TNT Sports, Hargreaves added: 'The amount of things he got wrong today was astonishing. Peop",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-26T01:00:58.142294+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T00:23:13+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Frustrated Mauricio Pochettino accuses referee of 'punishing' Man United in chaotic Sporting Lisbon draw after having TWO goals ruled out - "
+    },
+    {
+      "desc": "BBC Sport breaks down the chaos amid Manchester United's rollercoaster Champions League draw against Sporting in Lisbon.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-26T01:00:58.142315+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cvrlg074ld74o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T00:22:28+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Divots, howlers and bad decisions - dissecting Man Utd's draw in Lisbon"
+    },
+    {
+      "desc": "Footage appears to show the Manchester United captain had created the divot in the turf that led to his fortunate second",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-26T01:00:58.142341+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16322789/bruno-fernandes-divot-man-united-sporting-lisbon.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T00:19:20+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "The assist of the season! Remarkable new footage shows moment Bruno Fernandes created the divot HIMSELF before scoring one of the most bizar"
+    },
+    {
+      "desc": "Zirkzee: We're disappointed not to win Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T01:00:58.142358+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZW13STV5NWVJbHJnSS1yLVNEWXdaN0RsUnZvMHJJN2NvTDFEODNZeXV0ZVU4cUM4Zk9HSFVMTWpSakFndjU0N2xzellGYXo2Zl84ZHFEOXJrRDRGck1oSUU5M0pUV1pidGdPVlhES2ZYdjJqLXEwT1A3SUF0anJjWEFGTEkwbng2TWZBY0F6d1FHb3N1Y2IzUzlWVlVpS1VWdFlnWl9hMUE?oc=5",
+      "published": "2026-11-26T00:11:15+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Zirkzee: We're disappointed not to win - Manchester United Website"
+    },
+    {
+      "desc": "Who was Liverpool's Player of the Match v Club Brugge? Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T01:00:58.142374+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWTF0MWw3TWdWdzdTRS05dmxQOTcxNGdaWE9OZmJVc0RZLWpvNGYxU0RfR2hPb1k5eUZubm9qOE9mY2lXM3Vjb25rcV80SVcwYnBrZVN3UXJSeGdrYXprcXVuczZJdXd4R3EzLVF2MW43MGlwOHZKTmJMSnA0LTBEcnZn?oc=5",
+      "published": "2026-11-26T00:06:36+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Who was Liverpool's Player of the Match v Club Brugge? - Liverpool FC"
+    },
+    {
+      "desc": "EX-MANCHESTER UNITED ace Darron Gibson broke down in tears as he bravely opened up about a hidden addiction and a scary ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T01:00:58.142394+00:00",
+      "link": "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton/",
+      "published": "2026-11-26T00:06:35+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Ex-Man Utd star Darron Gibson breaks down in tears over secret addiction hell and moment wife feared he’d died"
+    },
+    {
+      "desc": "LEWIS STEELE AT JAN BREYDEL STADION: A brace for Isak and another from Wirtz fired the Reds to victory in Bruges after t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-26T01:00:58.142431+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320957/Liverpool-fans-enjoying-watching-team-close-Champions-League-qualification-Club-Brugge-victory-time-Andoni-Iraola-make-perfect-week-Everton-writes-LEWIS-STEELE.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T23:48:24+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Liverpool fans are enjoying watching their team again as they close in on Champions League qualification after Club Brugge victory... now it"
+    },
     {
       "desc": "PETER SCHMEICHEL fears Senne Lammens has never recovered from his World Cup nightmare after the Manchester United goalke",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -6559,6 +6684,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "'All coming together' - Isak repaying Liverpool faith"
+    },
+    {
+      "desc": "Jamie Carragher says Manchester United goalkeeper Senne Lammens' confidence is a cause for concern after his howler cost",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-26T01:00:58.142477+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13616618/man-utd-goalkeeper-senne-lammens-criticised-for-howler-in-sporting-draw-by-jamie-carragher",
+      "published": "2026-11-25T23:10:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Carra: Lammens confidence worrying but Poch will feel Man Utd were robbed"
     },
     {
       "desc": "",
@@ -7041,6 +7176,16 @@
       "title": "- Manchester United"
     },
     {
+      "desc": "Information for fans travelling to Sunderland Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T01:00:58.142889+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlY3LVBCei01Q2tSMVFManNLSVpwdVBoUDRINlhUZ2Y1QS1UeWhzb2NXMVJaUGswQ3Ryb1NXVkRxYVZuRDlWaTk2T3NXd25kY21XdGs1QjdoWldzcy0zd2duNUVBdzV5YU9PeGJzLXlzcnB5UXNnbW94T2J6cGp4UFZ4eEtEenhJamsyeGkxRmhQM0JyVEE?oc=5",
+      "published": "2026-11-25T20:14:46+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Information for fans travelling to Sunderland - Tottenham Hotspur"
+    },
+    {
       "desc": "MANCHESTER UNITED legend Paul Scholes’ daughter Alicia took social media by storm once more in leopard-print pyjamas. Th",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-25T21:00:54.093582+00:00",
@@ -7151,6 +7296,16 @@
       "title": "Ticketing Account - Tickets - Liverpool FC - Liverpool FC"
     },
     {
+      "desc": "Sporting v United: What's the team news? Manchester United Website",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T01:00:58.142976+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1ZndElFTWhfOEp1ZmdUTS1SVWZPamhlSEJrTVBDM1ljVXRpQ3d5WTc2bXpsTzlrUmVtQ1A2c2VVMmVGM25abG1lb0x0X1Y3ODM3MlJGVWhkTmVTT3hBZ2JaVU9pY3hNaWtMV2Z4MFp0REhJWklLc1JTSmhkSTE3eU5ycTA5M0hCSTZGSGRHTXVGcW95V2JkYw?oc=5",
+      "published": "2026-11-25T19:00:56+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Sporting v United: What's the team news? - Manchester United Website"
+    },
+    {
       "desc": "David Ornstein shares what he’s been told about Oliver Glasner’s future at Forest Nottingham Forest News",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-25T20:00:53.022169+00:00",
@@ -7199,6 +7354,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Time to invest in Liverpool in FPL? See the best picks - Premier League"
+    },
+    {
+      "desc": "Who was in contention for the best player of Matchweek 11? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T01:00:58.143033+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFpEQkNXbXpOOHpZVjNQWUFsU285TFFDQnIwZk9pNkt0TjJyVHUta0owOU1LWklIOUNyMG8ybFkzejFoNVR3cUZaMzNtT2N5bXpjSlRJSHlHNkxoVGl2NnZ3Z1FOX21KWlhxVGdKazExU3owUDd1N0dqYWhOV3hkb19xNnR5X3lRdEcwSUNoc3RBLVlDcFE?oc=5",
+      "published": "2026-11-25T18:36:47+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Who was in contention for the best player of Matchweek 11? - Premier League"
     },
     {
       "desc": "Nottingham Forest manager Oliver Glasner has questioned why some of his squad cannot speak English after being in the co",
@@ -7899,136 +8064,6 @@
       "publisher": "https://store.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "LFC adidas Youth Tiro Travel Sweat Pants Black - Liverpool FC"
-    },
-    {
-      "desc": "‘It’s not that clear-cut’ – Pochettino transfer plan revealed by Ornstein FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T14:00:55.588914+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdllhRlEwQ0RHOWttcHBERzU2djFUZ19VekkxLVd3R0wzSHVBeEZkWTJIeXM0VDNOZndUdkVBSDFRbTQtM1pGNjdKRlhpVnlpYjZHOUtGY1BrMWpJQVhEVUc5UDZyS250UmdObnI1Yzd1M0hFZGVZcU5EZmdYZDdYN2dBZnJKbW5pWm5vUWdiU3RKbEZmWHNCaXd0cTlKZjR6eFduNjZXYm5NdTZ1MWhHeHBjSTVMNXBvNUFvZWFOTHpCQl9yWFkzQXhCM2JiOFNwRzdfVTdfRWVLbVpCa0E?oc=5",
-      "published": "2026-11-25T13:08:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "‘It’s not that clear-cut’ – Pochettino transfer plan revealed by Ornstein - FootballTransfers.com"
-    },
-    {
-      "desc": "Ornstein drops key update on Xabi Alonso sack at Chelsea as Liverpool comparison made Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T14:00:55.588940+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYUZsaVR4RDFqWlExaHNrZkpQb1JiUjNvdUJfQmFVYXdKOTdsUV9HV2hMUVp2SFIybmpsVDl2OFZkSktOQzhiZjJRQXM3TFNtc2hXSFcwbXVMSElQM25keEppVDRsUmg0TVRJSnZOTm96SmQyZmcyQ2cwS2RoYjNIVGZKZ0h5ZUhBTUE5ak5UOVRIRFk4S2d1QXV0dFlLSzJpcGc?oc=5",
-      "published": "2026-11-25T13:03:34+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Ornstein drops key update on Xabi Alonso sack at Chelsea as Liverpool comparison made - Football365"
-    },
-    {
-      "desc": "Register your interest in our new PUMA x C.P. Company kit Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T15:00:56.723772+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeXdCSVkzNDhURjFLZ2ltcUhUN0p4Z3RJMWNMMGpYYUFlSU5kRkRlY3hMSFFjanJJNFNid0dtUGpRZTR3NFZld0VXUzBtMVlBLU5oYmFkMi1PMUh0UVZPQU5GTno0RUVRS05ZalE4aml4R2x0a3JDZ0FHX2dTbTZnMzhKT2YyNDEwZzN4SUtwQkRRaGxGZVE?oc=5",
-      "published": "2026-11-25T13:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Register your interest in our new PUMA x C.P. Company kit - Manchester City FC"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-25T13:01:07.036050+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13025499/man-city-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-      "published": "2026-11-25T12:45:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man City latest: 'Title race over if City lose to Arsenal,' says Merse"
-    },
-    {
-      "desc": "Martin Ødegaard’s rebound goal gives Arsenal 1-0 win over Hull City Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T16:00:54.541425+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1mSmJOWExaV0ZhWWZkczhGd29XTlBUMXlkaF9tTFBfRFlUY2tjbkM3WHY1UGhKUDNMYy1KVWgxdWpPR0RkM3Bz?oc=5",
-      "published": "2026-11-25T12:44:02+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Martin Ødegaard’s rebound goal gives Arsenal 1-0 win over Hull City - Digg"
-    },
-    {
-      "desc": "Raheem Sterling was sentenced to 12 months imprisonment, suspended for 18 months, on Wednesday.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T13:01:07.036074+00:00",
-      "link": "https://www.bbc.co.uk/news/articles/cv8e04ll9dd3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T12:43:48+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Sterling given suspended sentence for dangerous driving"
-    },
-    {
-      "desc": "Fourteen years after making his Premier League debut at 17, Raheem Sterling has been given a suspended prison sentence.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T13:01:07.036093+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cxzd9ydqzylno?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T12:42:57+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Raheem Sterling - from national icon to suspended jail sentence"
-    },
-    {
-      "desc": "FORMER Manchester United star Alejandro Garnacho appears to have thrown another social media strop after deleting all tr",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T13:01:07.036111+00:00",
-      "link": "https://www.thesun.co.uk/sport/41143225/alejandro-garnacho-deletes-aston-villa-instagram-man-utd-pin/",
-      "published": "2026-11-25T12:41:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd fans say ‘he’d unironically start for us’ as Garnacho deletes all trace of Aston Villa and Chelsea"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO came agonisingly close to being crowned a shock Champions League winner while in the Tottenham dugou",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T13:01:07.036126+00:00",
-      "link": "https://www.thesun.co.uk/sport/41142532/mauricio-pochettino-champions-league-redemption-man-utd-tottenham-psg/",
-      "published": "2026-11-25T12:36:22+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino desperate for Champions League redemption with Man Utd after Tottenham heartbreak & PSG failure"
-    },
-    {
-      "desc": "WEST HAM fans have been left fearing the club could be relegated to League One after a shock run of form. The Hammers we",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T13:01:07.036141+00:00",
-      "link": "https://www.thesun.co.uk/sport/41142824/west-ham-championship-relegation-leicester-city-scott-parker/",
-      "published": "2026-11-25T12:36:22+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Do a Leicester’ – West Ham fans fear club could be RELEGATED after horror results, manager change and flops’ struggles"
-    },
-    {
-      "desc": "Ornstein predicts first Man Utd January signing and reacts to £50m ‘budget’ claim TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T14:00:55.589065+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWkdTb2FRb1ozckxwZU1fZTBMUlpaZXJ0dXlTTG0tN3QzT2RSMk9FQXRxNDYweUhMakRqd0pTMEp2SDNWYUpXUjlGRExLbGFrZ0t2RU5aX2ZWREZ0eUwtLUNkUl9MeTdock9BaFRYcENfNFl4VDBETmhsMHRmalNma2xHSGVock5OTUlQSkJDV2xlWmIzZ0NzNERvRFFjMk5faEIzTEpHcGhNMnJRTzdidFFlUVNlWHdyckhidURB?oc=5",
-      "published": "2026-11-25T12:32:15+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Ornstein predicts first Man Utd January signing and reacts to £50m ‘budget’ claim - TEAMtalk"
-    },
-    {
-      "desc": "FPL GW12 Injury News: Raya 50% for Arsenal v City The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T13:01:07.036158+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBsS3Y4ZjFmcjJ0dzd4VkRxVGprT3BIWkhBR0laUDN6c0Z5WkNPT1ZZVW1QYjBtN1VySTlvejQ2OUFRa3QxNnJGa2hNcUlmczktXzFxakdJaVJOcFVKd21ybG9IeXdTZw?oc=5",
-      "published": "2026-11-25T12:15:45+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "FPL GW12 Injury News: Raya 50% for Arsenal v City - The False 9"
-    },
-    {
-      "desc": "Frida Maanum kicks off round one! | The Ultimate Gooner Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T19:00:54.642587+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWU95cGJWWWp1dFhtQURFZGZxckRLYzN2cFVDNU9RWTFuUTFocmlLbUFlTEwtajFwN05Kcm1GNnpWWEI2eGJyVWV0UV90Y0EyYmU0V2Q0MWQ0eFlTVF9KVVc2NGtCemktNVZzVGoyYlhoc3oxZENBeGNVUjJDNmJlM2F6QzV3RWhRTHh2dS1TWXNYd3o1cTdwN056VQ?oc=5",
-      "published": "2026-11-25T12:00:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Frida Maanum kicks off round one! | The Ultimate Gooner - Arsenal.com"
     }
   ],
   "processed_urls": [
@@ -8230,7 +8265,8 @@
     "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html",
     "https://www.thesun.co.uk/sport/41146359/newcastle-united-new-stadium-saudi-sell-stake",
     "https://www.thesun.co.uk/sport/41153695/sporting-man-utd-result-senne-lammens-error",
-    "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino"
+    "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino",
+    "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html"
   ],
   "s_overflow": {},
   "schema_version": 4
