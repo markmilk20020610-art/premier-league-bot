@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 59228,
-    "output_tokens": 6727,
-    "requests": 9
+    "input_tokens": 64759,
+    "output_tokens": 7467,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1435,6 +1435,41 @@
       "telegram_message_id": 105,
       "title": "阿隆索执教切尔西陷混乱，名记批其失败",
       "updated_at": "2026-11-09T13:01:08.017631+00:00"
+    },
+    "39d08f5eaf22": {
+      "article_title": "Man Utd ratings: Senne Lammens’ mistakes are simply inexcusable as Bruno Fernandes bails out flops once again",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "f1eac6b6a44a2090",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 247
+        }
+      ],
+      "created_at": "2026-11-26T00:01:00.411483+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "e435ca19fb9ba10f",
+      "event_id": "39d08f5eaf22",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-26T00:01:00.411483+00:00",
+          "origin": "created",
+          "title": "Man Utd ratings: Senne Lammens’ mistakes are simply inexcusable as Bruno Fernandes bails out flops once again",
+          "url": "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 247,
+      "title": "曼联2-2葡萄牙体育：拉门斯失误送礼，B费双响救主，新帅波切蒂诺无缘首胜",
+      "updated_at": "2026-11-26T00:01:01.010090+00:00"
     },
     "3a3e564ec6eb": {
       "article_title": "Lisandro Martinez blanked by Michael Carrick as Man Utd star is sent off vs Chelsea for moment of madness",
@@ -6474,7 +6509,7 @@
     }
   },
   "last_morning_report_date": "2026-11-26",
-  "last_scan_at": "2026-11-25T23:00:51.264357+00:00",
+  "last_scan_at": "2026-11-26T00:00:53.927999+00:00",
   "last_summary_sent_at": "2026-11-25T22:01:25.513987+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6495,6 +6530,56 @@
     "updated_at": "2026-11-25T22:01:25.492822+00:00"
   },
   "news_pool": [
+    {
+      "desc": "PETER SCHMEICHEL fears Senne Lammens has never recovered from his World Cup nightmare after the Manchester United goalke",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T00:00:53.931287+00:00",
+      "link": "https://www.thesun.co.uk/sport/41155431/man-utd-peter-schmeichel-senne-lammens-world-cup/",
+      "published": "2026-11-25T23:44:37+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd legend Peter Schmeichel convinced Senne Lammens ‘hasn’t recovered’ from World Cup blunder after Sporting howler"
+    },
+    {
+      "desc": "Match of the Day's Stephen Warnock and Nedum Onuoha analyse the recent resurgence of Alexander Isak and Florian Wirtz fo",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-26T00:00:53.931323+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/videos/cmqx527v3x19o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-25T23:38:42+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "How Isak and Wirtz are becoming Liverpool's 'big-game players'"
+    },
+    {
+      "desc": "Alexander Isak's two goals against Club Brugge take his tally for the season to 10 as the striker continues to show why ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-26T00:00:53.931350+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqm2l0gelkzxo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-25T23:25:30+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'All coming together' - Isak repaying Liverpool faith"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-26T00:00:53.931372+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+      "published": "2026-11-25T22:59:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Liverpool latest: Munoz adds to injury concern ahead of derby"
+    },
+    {
+      "desc": "Victor Munoz injury update Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.931395+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE54bXpQWXRrbzlfVVptdElQc05oTFB3S19iZk5ZQ3JCb2ppMDhPX1M4SjBWcWh6cDZvLV80VUg2TWh2VUVPdzBJUm02R2hUZk1pZGxSck1PMDk3Z2pOblBNTVNvODhPQ0xhUGNj?oc=5",
+      "published": "2026-11-25T22:56:35+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Victor Munoz injury update - Liverpool FC"
+    },
     {
       "desc": "AS the ball landed awkwardly at Jude Bellingham’s left foot, he deftly swept it on to his right one, juggled it in the a",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -6536,6 +6621,16 @@
       "title": "Lammens howler denies Man Utd victory against Sporting in incident-packed game"
     },
     {
+      "desc": "Chelsea Nike Home Stadium Mini Kit 2026-27 - Infants Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.931495+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOaXozTE82bENhMzBNdmI1VmhJaTNjMXZBRTk0QXlSa2lhWUlkWm5DNU1jV1hzcTFVNGFvRldNX0xKcHYzZTRhUEE2bnV4ZE5MNDJoQ0t3cEY3eUo3NlJhdVROY2o4amltWTFpRktxbExaa3BvZW16VnhTeng1LWlBd0lpY2RORVUtc0xHU2hCdlgyT1NELWh4SXJoNGptZnZCQy1NM25UallLd2FEcHUyZFpPRENEYXlPM3d6OEIteGRSa1BnT0tzelVaaTNMRDktVWN3cWVVWVo4QmFCSXhscmVZRWNhRTZMU2Q0SGprTmVUSWhZRzVQNFQwdUJYNjBXOUtqak1FWkNJWHBia0E?oc=5",
+      "published": "2026-11-25T22:30:20+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Nike Home Stadium Mini Kit 2026-27 - Infants - Chelsea FC Store"
+    },
+    {
       "desc": "Donyell Malen scores for the fourth Champions League game running as Roma ends Paris St-Germain's 100% start to the comp",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-25T23:00:51.267349+00:00",
@@ -6564,6 +6659,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and other giants"
+    },
+    {
+      "desc": "Watch the BEST REACTIONS from Matchweek 11 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.931586+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNGc4NnJFREZ3cHY2cGN2MkU0WlFIWlhYMUhnaEt1VFBqM0ZkNllRVFJwaG9ZcjNGWnAxcFRTS0lpa0I4Z2FlUGFjaWFwTlpSU2pWM1ptZHJFZFZJWXR6OU1qZGxrZDhXUXgtRUZPZHZKZlpGelFUUVR3eGg2QnZqeF9uNFdTNkJ3endZNmw2Ti1jTGs?oc=5",
+      "published": "2026-11-25T22:16:31+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Watch the BEST REACTIONS from Matchweek 11 - Premier League"
+    },
+    {
+      "desc": "Garnacho finds Chelsea and Aston Villa escape route: Romano confirms January 'calls' LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.931610+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZXg4RGVLa0hGUmNfWXowVVpuZWFRdkNRZGdkaFAzay1TSW0ybEM2Umwzd3lkVGFhSUQ1ZzhremlJSTBIYjNtSy1BemZDUjYwNHNkUUhGVUFKRlB6UHRoeVdFRFFoMGxYUWc4SGVpeTNGdUJ5dXZhN25lbnNEZG1SRWk5VllmeHJNR0ZmVEIxRE5fZ0xTcEVtVk1qLXY2VllXZk9fampLNk1GY0ZXWWNGazc2bUYxd0ExLTd6UHhXdEtSSkFuZjY0dVJPaVlpbE1RUERhRFpubm9pRF9jOTh2YmZmc2tpOWxXRVNPdU11NA?oc=5",
+      "published": "2026-11-25T22:15:53+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Garnacho finds Chelsea and Aston Villa escape route: Romano confirms January 'calls' - LiveScore"
     },
     {
       "desc": "Liverpool defeat Club Brugge in a clinical performance thanks to goals from Alexander Isak and Florian Wirtz, bouncing b",
@@ -6704,6 +6819,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "In-form Stoke see off Millwall to make it five wins on the bounce"
+    },
+    {
+      "desc": "Coke Top Three - Gameweek 12 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.931808+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0c2JJR2xnMG1mWVFpWlQ0d2hxOVprVjBlT3AtdHZQX2pPQ0l0bWlPdGtIeDUtNDc1SXBDSkF6NVZoMVV4cW5UNkJjeWtZUTlpam5lZXhCUEh4akFJZ0JzRTV2NGxRdTBRNldHbWZ5MFVqU3BnMEpxek52QmtSYnc?oc=5",
+      "published": "2026-11-25T21:30:57+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Coke Top Three - Gameweek 12 - Premier League"
     },
     {
       "desc": "The chair of English football's independent regulator tells MPs he \"has the stomach\" to take potential action against Ma",
@@ -6866,6 +6991,26 @@
       "title": "Man Utd fans fume as Amad’s goal vs Sporting is RULED OUT in ‘horrendous’ referee decision"
     },
     {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.932006+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-25T20:49:35+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
+    {
+      "desc": "Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.932024+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOeEZqLTZ5RTFNZ1N6ZXhZeHRfU3I2NUlhNElndkdEOE54aDJOT3RweEpNNXN3R04xWWxVY1N3TXQtVEhSRG90alZTb1h2Uy1mZTJnQ0d3?oc=5",
+      "published": "2026-11-25T20:47:34+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Tickets - Man City - Manchester City FC"
+    },
+    {
       "desc": "Clinton Morrison reacts to the two penalties in Manchester United's Champions League clash with Sporting Lisbon.",
       "feed_origin": "https://www.skysports.com/rss/12040",
       "first_seen": "2026-11-25T21:00:54.093534+00:00",
@@ -6884,6 +7029,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd give away two penalties in space of two minutes as Senne Lammens commits another howler after Martinez incident"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.932044+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
+      "published": "2026-11-25T20:26:28+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
     },
     {
       "desc": "MANCHESTER UNITED legend Paul Scholes’ daughter Alicia took social media by storm once more in leopard-print pyjamas. Th",
@@ -6936,6 +7091,16 @@
       "title": "Liverpool tee up deal for Senegal wonderkid as transfer 'option' agreed - Liverpool FC"
     },
     {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.932161+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-25T19:38:26+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
+    },
+    {
       "desc": "Vote now: Liverpool's Player of the Match against Club Brugge Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-25T20:08:01.023949+00:00",
@@ -6966,6 +7131,16 @@
       "title": "Birmingham take an early lead at Burnley LIVE!"
     },
     {
+      "desc": "Raheem Sterling has been given a suspended prison sentence for dangerous driving and possession of nitrous oxide - avoid",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-26T00:00:53.932225+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-25T19:13:29+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Raheem Sterling avoids jail for £270,000 Lamborghini crash: England star handed suspended prison sentence after telling court he underwent 1"
+    },
+    {
       "desc": "Ticketing Account - Tickets - Liverpool FC Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-25T22:00:52.672514+00:00",
@@ -6994,6 +7169,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Jude Bellingham goal sends porn star wild as she ticks off bucket list Real Madrid clash at Bernabeu"
+    },
+    {
+      "desc": "Vinicius Jr to PSG? Fabrizio Romano confirms stance on 'smart signing' LiveScore",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.932267+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPanhRX2ZZejRIOXRYZWFxbG83czdFNXVTTXUwTW5MRTBvbTM2bHhFSjcwcGl5N2d3ZjB5TUdhUktxYWpYMVM2Zk5fTnJ3dDY3U2NDZ01jVlMzeWNqdU92NFNRbDRaSjN3RFF0eG9KQ0hJWnEyRlFDSFRaUGM4MEhseG9pN2l4cl9RNXRWM2laTlQ3TDlzbTNKcnR4OUx4U0dlSUdjNnpXS2cxWEs2M1BWT2doNFh0Vk9WbGZBTUswYm5YX282eTJQa3lSOHhqamNuN1QzU0Nfc1hyY0Mt?oc=5",
+      "published": "2026-11-25T18:40:30+00:00",
+      "publisher": "https://www.livescore.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Vinicius Jr to PSG? Fabrizio Romano confirms stance on 'smart signing' - LiveScore"
     },
     {
       "desc": "‘Liverpool have verbally agreed deal’ – Fabrizio Romano shares exciting transfer update as Reds reach agreement for exci",
@@ -7204,6 +7389,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "‘I’ll NEVER close the door’ – Struggling Man Utd star Bruno Fernandes drops transfer hint and refuses to ‘make promise’"
+    },
+    {
+      "desc": "Donnarumma's all-time Italian Premier League XI Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T00:00:53.932490+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZDhITXhBdnFPYmgyUjJvUDlad2RwQTBlaG8zRWJoNWdLZXRfMldhYURaLUxnbThjZzExQ05uMGpnWGxxaXMxU3ZzTWpKdjlrN0dWQzFmak9pWTlESEl2YUVEZU9KOG41VldlYnV5OHREcDRsTFp1RHFrOWpfeGZ5S0FHM3Y0NmVqTE42ZzdfRmt3bFZGT3BEblhhQ3NfanNVVVRITV96MjNtaTBpb2h2VzhR?oc=5",
+      "published": "2026-11-25T17:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Donnarumma's all-time Italian Premier League XI - Manchester City FC"
     },
     {
       "desc": "Who was in contention for Premier League Fan Team of the Week? Premier League",
@@ -7834,166 +8029,6 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Frida Maanum kicks off round one! | The Ultimate Gooner - Arsenal.com"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T15:00:56.723889+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-25T11:52:30+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "Former England player Raheem Sterling has been given a suspended 12-month jail sentence for dangerous driving and posses",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-25T12:00:53.555536+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving",
-      "published": "2026-11-25T11:30:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Sterling given suspended jail sentence for dangerous driving"
-    },
-    {
-      "desc": "RAHEEM Sterling has avoided jail after he was caught in his Lambo with laughing gas canisters and a deflated balloon on ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T12:00:53.555567+00:00",
-      "link": "https://www.thesun.co.uk/sport/41140982/raheem-sterling-lambo-laughing-gas/",
-      "published": "2026-11-25T11:29:58+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-England star Raheem Sterling AVOIDS jail after being caught in Lambo with laughing gas canisters and deflated balloon"
-    },
-    {
-      "desc": "Who was in contention for the best player of Matchweek 11? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T13:01:07.036210+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRFpEQkNXbXpOOHpZVjNQWUFsU285TFFDQnIwZk9pNkt0TjJyVHUta0owOU1LWklIOUNyMG8ybFkzejFoNVR3cUZaMzNtT2N5bXpjSlRJSHlHNkxoVGl2NnZ3Z1FOX21KWlhxVGdKazExU3owUDd1N0dqYWhOV3hkb19xNnR5X3lRdEcwSUNoc3RBLVlDcFE?oc=5",
-      "published": "2026-11-25T11:21:47+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who was in contention for the best player of Matchweek 11? - Premier League"
-    },
-    {
-      "desc": "WATFORD have appointed Edward Iordanescu as their new manager. The former boss of the Romanian national team becomes the",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T12:00:53.555593+00:00",
-      "link": "https://www.thesun.co.uk/sport/41143072/watford-edward-iordanescu-gino-pozzo-alessio-dionisi-efl-championship/",
-      "published": "2026-11-25T11:20:59+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Watford appoint ‘most Watford manager ever’ as 26th boss in 15 years under trigger-happy owner Gino Pozzo"
-    },
-    {
-      "desc": "Watford appoint former Romania boss Edward Iordanescu as their new head coach after sacking Alessio Dionisi.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-25T12:00:53.555621+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cv1j65j2lw3po?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-25T11:15:34+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Watford appoint Iordanescu as head coach"
-    },
-    {
-      "desc": "Rasmus Hojlund has laid bare the suffocating pressure of playing for Manchester United and what Mauricio Pochettino's sq",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-25T14:00:55.589301+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16320865/You-escape-Rasmus-Hojlund-opens-suffocating-pressure-playing-Man-United-reveals-Bruno-Fernandes-Diogo-Dalot-looking-forward-change-Mauricio-Pochettino.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-25T11:12:24+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'You can't escape from it': Rasmus Hojlund opens up on the suffocating pressure of playing for Man United - and reveals Bruno Fernandes and "
-    },
-    {
-      "desc": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit Liv",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T14:00:55.589333+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNYndGeHB0bUV6YVNweWRGTkx2dEVBZTN3Vmp3UWtzMFl2Z2hLTUx6S2R5eEx2bERJVmFBQ0ZXOVRLYmlQbGlPamZaVEZaTlRNZkhsYzhickhhcXFBTWc5bVU2NWVtM3hiczExRFh0UWZzWXdqT2tITUtEVXZhcFlTTE1vS1BadndkOGcyemlHVUIzdW5tWlhqeDN4NHY1QkFrM1dzSlZiaEktTUJXZ2FHQ3Z0OFpvamZjWGVnRHo2OWdBd2h6Mm9qVWp0aE1COFlBWktqV2M3MXBHd2pyMmp0WDFVZjl5Uk1oOUktVkpGODVHal83MUNVREZFdFV6Z1JhWTVJc09qWGZJaDJtbS1VcnFn?oc=5",
-      "published": "2026-11-25T11:10:58+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Meeting scheduled: Romano confirms sought-after Man Utd star will hold talks with Pochettino to discuss January exit - LiveScore"
-    },
-    {
-      "desc": "Sporting v United: What's the team news? Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T16:00:54.541596+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1ZndElFTWhfOEp1ZmdUTS1SVWZPamhlSEJrTVBDM1ljVXRpQ3d5WTc2bXpsTzlrUmVtQ1A2c2VVMmVGM25abG1lb0x0X1Y3ODM3MlJGVWhkTmVTT3hBZ2JaVU9pY3hNaWtMV2Z4MFp0REhJWklLc1JTSmhkSTE3eU5ycTA5M0hCSTZGSGRHTXVGcW95V2JkYw?oc=5",
-      "published": "2026-11-25T11:07:58+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Sporting v United: What's the team news? - Manchester United Website"
-    },
-    {
-      "desc": "LINCOLN CITY have sacked joint-managers Chris Cohen and Tom Shaw after five defeats on the spin. The Imps were consigned",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T12:00:53.555645+00:00",
-      "link": "https://www.thesun.co.uk/sport/41142785/lincoln-city-sack-chris-cohen-tom-shaw-paul-mcshane/",
-      "published": "2026-11-25T11:04:10+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Lincoln City SACK managers Chris Cohen and Tom Shaw with ex-Man Utd ace, 40, appointed to interim coaching team"
-    },
-    {
-      "desc": "Ornstein delivers update on Oliver Glasner's future at Nottingham Forest Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T12:00:53.555673+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbzQtZE5mYmU3ZkM1S2Q3STRmb2VwWUF5VS1jWmRUaFY0RFltbXlmbnZrdng0ck9VOVVUbFFkRTZPRFB2NWtQbl9CZFk3VWtDRnVhLXpxeE9XOVZVREF5cHhyQjVCeUV2ZTNITTg2Nm9oRE5JcVZMWk9tRWZrZllvTzBuYi1uTVQ4cU1weXNQbmx5NDUxSURvYm1ueklvM2ZsY21IekpJLS14MEZtVDQ3dtIBtgFBVV95cUxNZElfRHJDRG9fVWxtRkNOZWZCTGxobWIxZk00MGpLY3hFaWVkY2tYVjh1UlhnZGlBaGVXTDgwX0l0NFQwaUxDakhtYXRqZ05MWV8tbWxkb2dyQmRkaFQ1OTdqY3RrVTBOZnBvUERqaG9NQUlpQ3BqNW5vY1drZG1mQmRpenM4S2w0VFZoN3ZCbExLVjV6Mktvd3R1SzEyUkVWdlhjOTRpYVp5QzNMbHQ2c2g3MlZoZw?oc=5",
-      "published": "2026-11-25T11:02:54+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Ornstein delivers update on Oliver Glasner's future at Nottingham Forest - Tribuna.com"
-    },
-    {
-      "desc": "Erling Haaland lets mask slip after Man City draw and it’s deeply concerning Manchester City News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T12:00:53.555700+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdENuTFNrRlBGU2U2UndtZ2VfWk5Hbm44OXJTMHpCUWZ0bTJnSkQybW9qeExjR0ZBNF90TUNHVTBHbzU2cFAzZW9FZkNoeUU3ZXIybWVTaGdRbDNSLU9qM1JQdXZ1TGNOeGJKaWlWSHAxRmlnZFRTNENQa2w3blR0eXVkZjRUS0RQQVNXUm1iLXotQUFkSTk5UElIb0s3Nng4dlVSWnVuNzRRS2JS?oc=5",
-      "published": "2026-11-25T11:00:03+00:00",
-      "publisher": "https://www.manchestercity.news",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Erling Haaland lets mask slip after Man City draw and it’s deeply concerning - Manchester City News"
-    },
-    {
-      "desc": "Fabrizio Romano shares what he has heard about David Raya’s injury Arsenal Insider",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T12:00:53.555725+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPM0NHVXlYUmhtcnZVdXFJRUVoeDVhLXdtZUpWamJ6c3poLTRncVVDYTJRT19yRFRpbTRQUHhZOHdiaEtmNUJfMUJucmJHaU4ybDFRb1F2akpZTnk4UXFPZTVmM3FGYlBtY21zclk3MEJCSzlCTERKNmo4RFBFeHNzQjhKUEY2dw?oc=5",
-      "published": "2026-11-25T11:00:00+00:00",
-      "publisher": "https://www.arsenalinsider.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano shares what he has heard about David Raya’s injury - Arsenal Insider"
-    },
-    {
-      "desc": "N'Golo Kante's best Chelsea strikes! | News | Official Site Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T12:00:53.555748+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sc1d6Mmh1X3FUYVZmbW5FR2NpalgxdkdFQ21pbTRkTzEwZXYwaGctTURxazM4WFlOS0RUdmUxTHpYbnpxTnhHQ0FzMjdldm1GQXZyelFldzd2SExGYXlrajdiczRCVmhqQkhHN29vTXlldkkzSDh6UUxocGVGa1k?oc=5",
-      "published": "2026-11-25T11:00:00+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "N'Golo Kante's best Chelsea strikes! | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "There once existed a time where Raheem Sterling was an unstoppable force. A player with a uniquely abstract running styl",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-25T12:00:53.555767+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13616028/raheem-sterling-enjoyed-a-wonderful-premier-league-career-but-regularly-attracted-controversy-is-there-any-way-back",
-      "published": "2026-11-25T11:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Sterling's career was defined by comebacks - this could be one too many"
-    },
-    {
-      "desc": "KEN FAGERBERG has tragically died at the age of 37. The Swedish footballer's passing was confirmed by his parents. Fager",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T11:00:53.210166+00:00",
-      "link": "https://www.thesun.co.uk/sport/41141769/ken-fagerberg-dead-sweden-football/",
-      "published": "2026-11-25T10:57:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ken Fagerberg dead aged 37: Swedish footie star and father of three tragically passes away"
     }
   ],
   "processed_urls": [
@@ -8194,7 +8229,8 @@
     "https://www.skysports.com/football/news/12040/13616290/raheem-sterling-former-england-international-given-suspended-12-month-jail-sentence-for-dangerous-driving",
     "https://www.dailymail.com/sport/football/article-16320565/Raheem-Sterling-arrives-court-drug-driving.html",
     "https://www.thesun.co.uk/sport/41146359/newcastle-united-new-stadium-saudi-sell-stake",
-    "https://www.thesun.co.uk/sport/41153695/sporting-man-utd-result-senne-lammens-error"
+    "https://www.thesun.co.uk/sport/41153695/sporting-man-utd-result-senne-lammens-error",
+    "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino"
   ],
   "s_overflow": {},
   "schema_version": 4
