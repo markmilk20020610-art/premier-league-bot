@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 111558,
-    "output_tokens": 12866,
-    "requests": 18
+    "input_tokens": 117200,
+    "output_tokens": 13538,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2927,6 +2927,41 @@
       "telegram_message_id": 248,
       "title": "曼联里斯本竞技争议平局：两球被吹+门将失误，波切蒂诺炮轰裁判",
       "updated_at": "2026-11-26T01:01:09.921464+00:00"
+    },
+    "6b55e3d2724f": {
+      "article_title": "Football Regulator chief warns he’s not afraid to boot out Man City owners if they fail in appeal against guilty verdict",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "ef41538b1a2f26fb",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 251
+        }
+      ],
+      "created_at": "2026-11-26T08:00:58.651390+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "f6084ce9504b2e2f",
+      "event_id": "6b55e3d2724f",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-26T08:00:58.651390+00:00",
+          "origin": "created",
+          "title": "Football Regulator chief warns he’s not afraid to boot out Man City owners if they fail in appeal against guilty verdict",
+          "url": "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 251,
+      "title": "足球监管机构主席警告：曼城老板若上诉失败将被逐出俱乐部",
+      "updated_at": "2026-11-26T08:00:59.387791+00:00"
     },
     "6bdccb33fa06": {
       "article_title": "Declan Rice New Contract: Verbal Deal Agreed at Arsenal - The False 9",
@@ -6614,7 +6649,7 @@
     }
   },
   "last_morning_report_date": "2026-11-26",
-  "last_scan_at": "2026-11-26T07:00:58.609810+00:00",
+  "last_scan_at": "2026-11-26T08:00:51.969355+00:00",
   "last_summary_sent_at": "2026-11-25T22:01:25.513987+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6635,6 +6670,66 @@
     "updated_at": "2026-11-25T22:01:25.492822+00:00"
   },
   "news_pool": [
+    {
+      "desc": "NATHAN SALT: Where Michael Carrick looked to put out fires - part of his appeal to bosses was his ability to steer clear",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-26T08:00:51.971207+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320963/Man-united-Mauricio-Pochettino-Sporting-Lisbon.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T07:50:25+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino is creating a siege mentality straight out of Sir Alex Ferguson's playbook - the refereeing horror show in Lisbon is jus"
+    },
+    {
+      "desc": "For Premier League referees, the KMI Panel is more important than you might realise. It determines a significant portion",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-26T08:00:51.971226+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq20x16zxxzeo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T07:28:18+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Why KMI Panel frustrates referees too - and impacts their salary"
+    },
+    {
+      "desc": "Bellingham's stunning strike meant he was unsurprisingly in-demand post-match, with reporters eager to get his assessmen",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-26T08:00:51.971248+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16320765/Jude-Bellingham-praised-female-journalist-post-match-press-huddle-scored-best-goal-life.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T07:27:20+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'Class act' Jude Bellingham praised for standing up for female journalist in chaotic post-match press huddle after he scored 'the best goal "
+    },
+    {
+      "desc": "FOOTBALL’S Regulator vowed he DOES have the “stomach” to boot Manchester City’s owners out of the club. David Kogan, cha",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T08:00:51.971264+00:00",
+      "link": "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners/",
+      "published": "2026-11-26T07:12:17+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Football Regulator chief warns he’s not afraid to boot out Man City owners if they fail in appeal against guilty verdict"
+    },
+    {
+      "desc": "CHELSEA boss Xabi Alonso celebrated his 45th birthday alongside wife Nagore on Wednesday. The Spaniard enjoyed his landm",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T08:00:51.971278+00:00",
+      "link": "https://www.thesun.co.uk/sport/41155845/chelsea-xabi-alonso-birthday-wife-nagore/",
+      "published": "2026-11-26T07:02:23+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Xabi Alonso celebrates 45th birthday with night in with wife Nagore as she shares pic of Chelsea boss enjoying cake"
+    },
+    {
+      "desc": "Fabrizio Romano Transfer News: Liverpool signing done, Man Utd striker blow, Barca targets FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T08:00:51.971293+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQLWNzclE0WGdOTHNDSVpfYVA2YWVmM2dpaEtLWjhuZnNNUmxRQzFGNnk3bVlGaE90QWNZaFYtc0lmSVQxQ1lva0wtcmJPdlYtckFyQUd1cTdFUXlRVjBjQ3FrcWlpT0xyMUZRYXN1dzhkYWgwUG10ZXF6SkI2Y0IwQlREMW81WlVILWJ0Y2ZYRVhLMHVmN2dYeEFzcWR0U2h3cXRZN3lVLTdMOE9ZWmd1TURET09NLVhiM1RlQlFVSnA0VFlHY1NsMW9IdFFrUjZrMV9GSllLTUNIVW9tWnV6S3l6WFhiUzA2X2oxcFRaRXJHdDJzWEQ0?oc=5",
+      "published": "2026-11-26T07:02:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano Transfer News: Liverpool signing done, Man Utd striker blow, Barca targets - FootballTransfers.com"
+    },
     {
       "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -6724,6 +6819,16 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Pochettino: Second half was how we want to play - Manchester United"
+    },
+    {
+      "desc": "Chelsea Cup Nike Home Stadium Shirt 2026-27 with Hamano 23 printing Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T08:00:51.971404+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVEJtZWF4MzVTc001SUNnSElxTGlGM3RrSV9xb0RxUXNJVWtkR3VpVUpOMDJGRmphWktybnAxM09fT0ZrR0UzcXpSRm9wcjZnenlQZEFIb2hFcnFMZnNIcFl2SFlpZ0g3MFp6TzFjelBlZjJuZElTZi1KSlExbHM1U0FlWk02WEdySzBWZ1Fzam5ONnNxejlNZDdIenVYMjR6M1loLXpORHo5ckxGdVBka1lsdDlBZnRmeFZzTHpEU1d3cVpEdXhZQ0Y1cE4wcHI4NmxZMEVFbnRsVzlBeHJYTHVRTDBfMlpYM04yY0FCODVRQQ?oc=5",
+      "published": "2026-11-26T02:08:13+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Cup Nike Home Stadium Shirt 2026-27 with Hamano 23 printing - Chelsea FC Store"
     },
     {
       "desc": "No drums, no tifos, no Palace? PressReader",
@@ -8064,80 +8169,9 @@
       "publisher": "https://www.nytimes.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "David Ornstein’s The Athletic FC Q&A: Will Man Utd try to do business in January? Does Glasner have support? - The New York Times"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T20:00:53.022959+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZEVpYnQyeWU0d0ZjNW1Ia21FU0ZGekNzUzEyeGZoY1ZJMVNmUVhueUZLR1paTG9YODloOE0ya2lrM0JEek1vMWRFVE02SmNQakhfb2MwQkVIRnhEWGFyNXg4bmxZVWdSRWJtamFOWTIxLWw3ZGhWemNGX3BCOHlHOHh3?oc=5",
-      "published": "2026-11-25T15:04:54+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "REVEALED: Official Premier League Fan Team of Matchweek 11 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T16:00:54.541064+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVXluX0JtS3lHZGFUTGxzc2FoNkJJaEJKbGRxSDdtZThsVlZZdklqOEJHVW5hQ082clI2T01GX0ZkTkd1NXhmMnJPVHkxdVVSUjBxYUFTc3cwTTJsZ0VOYmdzQ1l3eU1pZEFrN3lKZnBOMHlnZmRpOEtXd21RTE85eEg1S0F0QzBHR2lOQndFVV9VRXcwNkVwLXA3Q3p6el94OURBbHBR?oc=5",
-      "published": "2026-11-25T15:03:13+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "REVEALED: Official Premier League Fan Team of Matchweek 11 - Premier League"
-    },
-    {
-      "desc": "Fernandes: Wins are important, not my contract Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T22:00:52.672933+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOXp1aXRkRVE1eXplRzNCc3cxTXNWTE1FSEpUczhGTWMyQkFZc0d1d3hHc2VLWVRWbUVub3I0TlVSTmNhUjdOdWRkN19kc2lJOWpwbElMWkx3SVdTN010VkJvZDAxLW1hUzBUdHMwa1BReVc0YXFMc2o2dDNvazExNWd6LVZBeGM5UlE?oc=5",
-      "published": "2026-11-25T15:02:48+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Fernandes: Wins are important, not my contract - Manchester United"
-    },
-    {
-      "desc": "PHIL NEVILLE has given his verdict on Mauricio Pochettino's Manchester United tactics, and claimed he cannot change the ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-25T15:00:56.723408+00:00",
-      "link": "https://www.thesun.co.uk/sport/41145067/phil-neville-mauricio-pochettino-tactics-goldbridge-man-utd-mistake/",
-      "published": "2026-11-25T15:00:08+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Phil Neville’s take on Pochettino tactics sparks wild reaction as Goldbridge blasts ‘ridiculous’ Man Utd mistake"
-    },
-    {
-      "desc": "Pochettino makes his immediate focus clear Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T18:00:53.696795+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTTFfcDViSWk2dXFjSV9Fa3hlVUd4WnlmT2hlSnA2Q05Cc1hVU1JlQlFZLWRfWTEyUGw2VDhwRlhwWDJYcWhQVkg4MEdndTNTMmEtNHBOWlZLeHdhOHZQVGR2UlprVmNycWlTVlRGNldtZndYWF9KWHduNDNDYVRBcGRndUNnc04yUHR6OF9QNDdaaWRlY21EbmdR?oc=5",
-      "published": "2026-11-25T14:58:09+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Pochettino makes his immediate focus clear - Manchester United Website"
-    },
-    {
-      "desc": "Confirmed: Four new contracts at Arsenal – with Odegaard and Calafiori to follow LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T22:00:52.672964+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaThQZFVGNmhSWXMxNGcyeUEyelV2bWxwWjl3Z2xUMzgyQWNydkFHdFhjd2JBX3BwTmRDeUE3VHJ1ajlQTVBUN3BhdDVBRHBMNGQ3ampnRENrMEl4Z050WHNscUR0YVdYZ29GcE5HdlRJXzR3MEtjTS14VW5ZR19xRWhsX3lBcjI3UkUwR2hBMXJ6b1dGZ0ZkeFQwX0lXblYwUHA2c0JRVzhCR1M1R0VsQzE2dVNrRXB0d1hVU3JRYXhCQjJOYVY5aGRqd1ZMb1ZnVHF5OGVtTzd1SEpaeV9iNG1CdGRJcFpYa3c?oc=5",
-      "published": "2026-11-25T14:54:42+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Confirmed: Four new contracts at Arsenal – with Odegaard and Calafiori to follow - LiveScore"
-    },
-    {
-      "desc": "Emily Fox | Ask Me Anything Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T16:00:54.541109+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1Tb05MLVZJSDItVUw1RVdmc3J1elRfT0NWY2UzcUZyQ21jYlB6T3dGaHVwZnFPLWt0M3BYb21uRXhHazNQRGhQYzFGT3VndTg3SHE3TG9fTkhVVGFLLVN5OWJMaFhBRk5JZ1U1WEJUY3pKUmtJaTZv?oc=5",
-      "published": "2026-11-25T14:49:19+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Emily Fox | Ask Me Anything - Arsenal.com"
     }
   ],
   "processed_urls": [
-    "https://www.bbc.co.uk/sport/football/articles/ckz7x8z1e9y9o?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/ckz7x8z1e9y9o",
     "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo",
@@ -8336,7 +8370,8 @@
     "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino",
     "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html",
     "https://www.thesun.co.uk/sport/41154695/bruno-fernandes-man-utd-bench-rant-subbed-sporting-lisbon",
-    "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton"
+    "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton",
+    "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners"
   ],
   "s_overflow": {},
   "schema_version": 4
