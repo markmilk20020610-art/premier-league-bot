@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 11,
+        "calls": 12,
         "errors": 0,
-        "requests": 11
+        "requests": 12
       }
     },
-    "calls": 11,
+    "calls": 12,
     "date": "2026-11-26",
     "errors": 0,
-    "input_tokens": 70510,
-    "output_tokens": 8241,
-    "requests": 11
+    "input_tokens": 76628,
+    "output_tokens": 8774,
+    "requests": 12
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1575,6 +1575,41 @@
       "telegram_message_id": 179,
       "title": "波切蒂诺曼联首训遭无人机偷拍泄露",
       "updated_at": "2026-11-19T21:01:00.944681+00:00"
+    },
+    "3cb7ee6ac1ed": {
+      "article_title": "Bruno Fernandes caught ranting on Man Utd bench seconds after being subbed off in chaotic Sporting clash",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "3bd2960d84d8f89e",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 249
+        }
+      ],
+      "created_at": "2026-11-26T02:00:56.433689+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "a2ebe4a811bf7ea0",
+      "event_id": "3cb7ee6ac1ed",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-26T02:00:56.433689+00:00",
+          "origin": "created",
+          "title": "Bruno Fernandes caught ranting on Man Utd bench seconds after being subbed off in chaotic Sporting clash",
+          "url": "https://www.thesun.co.uk/sport/41154695/bruno-fernandes-man-utd-bench-rant-subbed-sporting-lisbon"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41154695/bruno-fernandes-man-utd-bench-rant-subbed-sporting-lisbon",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 249,
+      "title": "布鲁诺·费尔南德斯被换下后在曼联替补席激烈抱怨",
+      "updated_at": "2026-11-26T02:00:57.678882+00:00"
     },
     "3d668757665a": {
       "article_title": "Man Utd target Julian Nagelsmann ‘considering taking over at European giants after being approached’",
@@ -6544,7 +6579,7 @@
     }
   },
   "last_morning_report_date": "2026-11-26",
-  "last_scan_at": "2026-11-26T01:00:58.139662+00:00",
+  "last_scan_at": "2026-11-26T02:00:51.457630+00:00",
   "last_summary_sent_at": "2026-11-25T22:01:25.513987+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6566,6 +6601,36 @@
   },
   "news_pool": [
     {
+      "desc": "MAURICIO POCHEETINO bemoaned the “impossible” refereeing that denied Manchester United a first-half equaliser in their w",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T02:00:51.461264+00:00",
+      "link": "https://www.thesun.co.uk/sport/41155529/pochettino-slams-referee-decision-manchester-united-sporting/",
+      "published": "2026-11-26T01:27:41+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Mauricio Pochettino slams ‘impossible’ referee decision against Manchester United vs Sporting"
+    },
+    {
+      "desc": "ENJOY top-class European nights under the lights at iconic grounds like the San Siro and Celtic Park. Champions Travel h",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T02:00:51.461297+00:00",
+      "link": "https://www.thesun.co.uk/sport/40258251/tickets-ac-milan-celtic-crystal-palace-live-europa-league/",
+      "published": "2026-11-26T01:15:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "AC Milan, Celtic and Crystal Palace in Europa League with ticket and hospitality deals from less than £40"
+    },
+    {
+      "desc": "Andoni Iraola press conference: Key factors in Brugge victory, Isak and Wirtz form and more Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T02:00:51.461330+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMUVIV2ZWT05CQzhqMVVhS3R0Z2YyczVMV3hJV0R0MWJnTS1mVlFKR2tfNElWZktIVkhXTnRwNWNXMWhIaHJ4SnFHNUt6MlFBSDlCQTY0Tk9jeDl2ODhrUFlCT0d4TXNVNFB2VFBQSC1hN0wyeDlnZlQxXzItSzYwVmlMWU9iREVaajBUUTFQVDk1Uy1BZHhTNzZYcUFhN0NRbnN5YVpB?oc=5",
+      "published": "2026-11-26T00:54:46+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Andoni Iraola press conference: Key factors in Brugge victory, Isak and Wirtz form and more - Liverpool FC"
+    },
+    {
       "desc": "Highlights: Sporting v United Manchester United",
       "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-26T01:00:58.142234+00:00",
@@ -6574,6 +6639,16 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Highlights: Sporting v United - Manchester United"
+    },
+    {
+      "desc": "That's Proper Chels - Chelsea Store Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T02:00:51.461357+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMGh2dEdiOE80LXJOeTY5VDdjZG9yR2dkQndtLWJ6WFhtLVFoOEVWaGVtcVV3Wm8tcGNpdVAxOVVNTXFzRHBjdnNhcTdCTldTN0VXb3c3RkNnSWNSMlMtVS04TFltb0hkaHBYSDdGblEwaWZOazhPb0Z0eFpHbFVodWllZXlmRDR3X0xNa29PVmJmcnRkVUhlUUdGSlJza3JZTVM4YUJvV1VSNFN6?oc=5",
+      "published": "2026-11-26T00:41:08+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "That's Proper Chels - Chelsea Store - Chelsea FC Store"
     },
     {
       "desc": "What are the findings for Mauricio Pochettino after his first two matches as Manchester United manager?",
@@ -6614,6 +6689,26 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "The assist of the season! Remarkable new footage shows moment Bruno Fernandes created the divot HIMSELF before scoring one of the most bizar"
+    },
+    {
+      "desc": "Track Order - Chelsea Store Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T02:00:51.461462+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tZVAtOG1XSExLdm1Hc1hKNjBVbkdJLTVRSmJ1LVhMcG53MURxZTlXb0xXUGdQSVFyMXcyZ040QnJXd2YtbXRoTHY3SWNXYW1r?oc=5",
+      "published": "2026-11-26T00:13:09+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Track Order - Chelsea Store - Chelsea FC Store"
+    },
+    {
+      "desc": "Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T02:00:51.461485+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yNkF5bEllYUc0Um42OEpvdVpyM2xnSWw0VzVPSmRIRENWeURfMjduUzFFOWJfcldfVGRWUXUwNTdyT3JaaHljeEs1LWthX3gzd3NiRzB3a1ZHeVRjN1lKSUtHLUVtQVktblRvazhXMUZlRkRlUGJNUmFTUGNlRms?oc=5",
+      "published": "2026-11-26T00:13:06+00:00",
+      "publisher": "https://store.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea FC Store"
     },
     {
       "desc": "Zirkzee: We're disappointed not to win Manchester United Website",
@@ -6684,6 +6779,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "'All coming together' - Isak repaying Liverpool faith"
+    },
+    {
+      "desc": "Watch Andoni Iraola's press conference after Club Brugge 0-3 Liverpool Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T02:00:51.461685+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVURoWURkOXVJVm9iWnQ2YjBPcHFRYVlsYmdYbnFmM2k4SXlXd1o0WDV4ekxpQWJ1LXN3a3U0V0V6MzV4R0RtR2FScXp5Wi1wUlQ3ZVBaVlpXY25rYkVlRWI2dmMzODhRdGlTU2VxWXVVLWs0WnE0WG4xYkM3VlhHYkItampyOU1IUnhpTFI1UXE5UVk?oc=5",
+      "published": "2026-11-25T23:16:56+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Watch Andoni Iraola's press conference after Club Brugge 0-3 Liverpool - Liverpool FC"
     },
     {
       "desc": "Jamie Carragher says Manchester United goalkeeper Senne Lammens' confidence is a cause for concern after his howler cost",
@@ -7994,80 +8099,9 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Florian Wirtz wins Premier League Player of the Matchweek award - Liverpool FC"
-    },
-    {
-      "desc": "Fabrizio Romano provides massive update on David Raya ahead of Arsenal vs Manchester City Sportskeeda",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T16:00:54.541281+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYndNS184MEZpcHUzZkFOZkh6bGJjOXg4UWhmeTloNWhKUm16THRiZVhVNnZQcG1KSkZna2NaR2k1UW5OZjJ4RDB3UlZVOWpNcnc2aWM3NVU0REYwWlVZbmtxV0xTQllZYXEyYmloamh4N1AwM1BwbGR0V1E2UlVRdlN3TmgtMEpJQlFmekRkd0otVDlKajVVRXJBZGtKbVp2RlFFdmdwaW0yckw2VkJXYnZDcVFKX3phYnMtbVk5RzEwTWM?oc=5",
-      "published": "2026-11-25T13:34:00+00:00",
-      "publisher": "https://www.sportskeeda.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano provides massive update on David Raya ahead of Arsenal vs Manchester City - Sportskeeda"
-    },
-    {
-      "desc": "David Ornstein shares what he is hearing about Xabi Alonso The Chelsea Chronicle",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T14:00:55.588726+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPLXRuSXFaM25jTVAxNWRuWjlfbktBNHN5Wld2eUhmQV9HcjYzUUlYTU1veXN4WWVmNDA5NFNPdGdZeWdVU3F6S3ZuWEh4SEdNdEdiQTRnX0FLYmlFUHF4NHM1U09TMDI2c3FJenU5aVN1TE8xRzdpNmdQdm1KRkNFYUNtZFFvTmptLVROREp5T3BCdzB1aWZrcnhudHREX1Z1eGpyVUQ5d2EyUU50YWFRM0lrVDBxYmQ4LW5kd3V6ZVlqX0RJclZlWQ?oc=5",
-      "published": "2026-11-25T13:33:14+00:00",
-      "publisher": "https://www.thechelseachronicle.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein shares what he is hearing about Xabi Alonso - The Chelsea Chronicle"
-    },
-    {
-      "desc": "The 31-year-old ultimately avoided prison, but was handed a 12-month suspended sentence and 100 hours of community servi",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-25T14:00:55.588763+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16320563/raheem-sterling-rise-tragedy-poverty-career.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-25T13:31:46+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Inside Raheem Sterling's rise from childhood tragedy and poverty to England superstar at the peak of his powers - but Lamborghini crash and "
-    },
-    {
-      "desc": "Not for the first time in recent weeks, he had appeared morose and despondent, radiating an air of gloom, talking about ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-25T14:00:55.588798+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16321101/erling-haaland-manchester-city-form.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-25T13:31:46+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "What's wrong with Erling Haaland? Man City's superstar has been radiating an air of gloom in front of the cameras - but it's his form on the"
-    },
-    {
-      "desc": "IAN HERBERT: What makes Raheem Sterling's personal disintegration so needless is that he really has had positive influen",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-25T14:00:55.588835+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16321337/raheem-sterling-dangerous-driving-career.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-25T13:23:35+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Raheem Sterling's chaotic descent into insanity is a product of the cocooned football world where stars can't handle rejection, writes IAN H"
-    },
-    {
-      "desc": "Fabrizio Romano: Evanilson keen on Man Utd, but January exit unlikely AllFootball",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T14:00:55.588862+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZlNGZUJXd01fbWhGZjhuSWhmVzFYM1FDdjBxYzlDci1qMUVtcGtPTHp4WVEtanVDUWZIaXlGZFc4djN6anBVTVNUSUY1TTBmdUNObTNRUFVQbVVHMGxIb2JIQjVObjdjeGRCSE9nY19IYk1qVXl6RUFlUmhmc2ZLU3I4bzdSSVFfOUlucFdVYw?oc=5",
-      "published": "2026-11-25T13:16:54+00:00",
-      "publisher": "https://www.allfootballapp.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: Evanilson keen on Man Utd, but January exit unlikely - AllFootball"
-    },
-    {
-      "desc": "LFC adidas Youth Tiro Travel Sweat Pants Black Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-25T14:00:55.588886+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObGxxc21kdG5ieDdzMWpPYVRxb21xUldac2Vib1RsV0dIcUYxSFBYWFlBQnhtQklDWmg5VEQ0NFNic1FGTWM1TjlhUlpVV0xDcEJwRlVXdUVXTkNTU0tLNUhYaTVUZHRZMTI5MUpCX29ta19JNGlTT2V0QlhGS1l0d1lUdWhkeUxtQkpQeA?oc=5",
-      "published": "2026-11-25T13:10:44+00:00",
-      "publisher": "https://store.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC adidas Youth Tiro Travel Sweat Pants Black - Liverpool FC"
     }
   ],
   "processed_urls": [
-    "https://www.bbc.co.uk/sport/football/articles/crly062vd0z7o?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/cjvgx0ek6rz2o?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/ckz7x8z1e9y9o?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/ckz7x8z1e9y9o",
@@ -8266,7 +8300,8 @@
     "https://www.thesun.co.uk/sport/41146359/newcastle-united-new-stadium-saudi-sell-stake",
     "https://www.thesun.co.uk/sport/41153695/sporting-man-utd-result-senne-lammens-error",
     "https://www.thesun.co.uk/sport/41151034/man-utd-ratings-sporting-lammens-pochettino",
-    "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html"
+    "https://www.dailymail.com/sport/football/article-16322755/Mauricio-Pochettino-says-Man-United-punished-officials-having-two-goals-ruled-Youri-Tielemans-sent-Sporting-Lisbon-draw-Ashley-Young-calls-referees-performance-DISGRACE.html",
+    "https://www.thesun.co.uk/sport/41154695/bruno-fernandes-man-utd-bench-rant-subbed-sporting-lisbon"
   ],
   "s_overflow": {},
   "schema_version": 4
