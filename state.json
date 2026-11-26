@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-27",
     "errors": 0,
-    "input_tokens": 42605,
-    "output_tokens": 4553,
-    "requests": 7
+    "input_tokens": 49113,
+    "output_tokens": 5046,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6684,7 +6684,7 @@
     }
   },
   "last_morning_report_date": "2026-11-26",
-  "last_scan_at": "2026-11-26T21:00:49.624355+00:00",
+  "last_scan_at": "2026-11-26T22:00:54.221387+00:00",
   "last_summary_sent_at": "2026-11-25T22:01:25.513987+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6705,6 +6705,56 @@
     "updated_at": "2026-11-25T22:01:25.492822+00:00"
   },
   "news_pool": [
+    {
+      "desc": "PREMIER League legend Fabrizio Ravanelli has won a High Court fight with the taxman over a bill linked to his playing da",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T22:00:54.224915+00:00",
+      "link": "https://www.thesun.co.uk/sport/41165879/fabrizio-ravanelli-wins-tax-battle/",
+      "published": "2026-11-26T21:43:12+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Premier League legend Fabrizio Ravanelli wins High Court battle over £340k tax bill linked to playing days"
+    },
+    {
+      "desc": "Erling Haaland considers Manchester City exit, Liverpool explore Jamal Musiala deal and Manchester United eye move for M",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-26T22:00:54.224958+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c9zr568gje67o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T21:25:06+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Haaland considers Man City exit - Friday's gossip"
+    },
+    {
+      "desc": "FPL GW12 Injury News: Caicedo Cleared, Munoz 75%, Raya Still 50% (26 November) thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T22:00:54.224990+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRnBpVHpQME5WZjM0eXhpR0xNVXQ2OFZUR3lHczlWaWpmS1h6Umo0R1VTRk9XaW93SlIzUDhNd2hIU3oybWZ4NXFWcXNWZW5nYnUxei1XQW90WFhfTUZrZW93MDlZY0ZOZGl6dlptZG1mempSVTM1UlhxS0w2TzVidWF4NHo?oc=5",
+      "published": "2026-11-26T21:16:26+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "FPL GW12 Injury News: Caicedo Cleared, Munoz 75%, Raya Still 50% (26 November) - thefalse9.com"
+    },
+    {
+      "desc": "SUNDERLAND’S Europa League clash with Jagiellonia Bialystok was marred by “terrifying” scenes after away fans infiltrate",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-26T22:00:54.225020+00:00",
+      "link": "https://www.thesun.co.uk/sport/41165734/sunderland-jagiellonia-bialystok-fans-fight-europa-league/",
+      "published": "2026-11-26T21:01:14+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Terrifying’ moment Polish ultras start brawl at Sunderland despite being banned from Europa League clash"
+    },
+    {
+      "desc": "Eberechi Eze opens his Premier League account for the season at Newcastle’s expense Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T22:00:54.225066+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBScUVfZFg4Y3poZjg3VzkwMFBaNXhNNmZJdG5nR0RMd2puLXBHeWVTVHBfZTV6VGJXakVsUlNSa1VIb3Zjd1hj?oc=5",
+      "published": "2026-11-26T20:37:05+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Eberechi Eze opens his Premier League account for the season at Newcastle’s expense - Digg"
+    },
     {
       "desc": "Here, Daily Mail Sport's reporters look back at some of the strangest goals they can remember, from outrageous goalkeepi",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -6806,6 +6856,16 @@
       "title": "Arsenal adidas 26/27 GYOKERES Pre-Printed Authentic Away Shirt - Arsenal Direct"
     },
     {
+      "desc": "Pochettino: I like us to play with aggression! Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T22:00:54.225328+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdXZKQW9ZWFVLdWZaNFhLdXZtNTBiYnBRbEwzRlVMNkJNMUJQb0RtNW1aS2dzLS15dXVTaVQtY2N6VV9lZGhuMWloYzZJVjYzTkp0UjZNTVo2TUNxdk9WMEp1SElpaU9UVGwyZERnVmJlR2ZpaEdDdVNuOFBmNU45QmoxS1Z6VjhEbGxKemhtQ3BYZXhzY01CaQ?oc=5",
+      "published": "2026-11-26T19:04:57+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino: I like us to play with aggression! - Manchester United"
+    },
+    {
       "desc": "Alisson Becker named in Champions League Team of the Week Liverpool FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-26T21:00:49.627565+00:00",
@@ -6854,6 +6914,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Moment Besiktas football fans clash with cops after unfurling Palestinian flags during match against Israeli team"
+    },
+    {
+      "desc": "Chelsea Brxlz Stadium Chelsea FC Store",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-26T22:00:54.225438+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOWczSE1tQVFFWTBTVnBHVFpWZmVvQnRENjI2OWRhcnF6R0RTTU94ODFtaW9iY21tNGs0VDY5Z3V3STZuYVM4Vk9heWF1Wk5obm5FSHB0V0xSa2ZoM1dHdVdsS0k1NEZoSUlTNnVYTDZaaEJ0ZzVCckMzZERuVThldGo5LUNTeWd3UE5ySjdEbmZsTTB2VlIyZC1pdlNkN3hsS2I2eEZyanJMNnFoZk5tQ0x2ZktjMGhaczMxWlRRUFcyZW9YNWNnaFdEV0JRUV9QRDM2SzVsdWJQM1ZoQXBZYnd4SQ?oc=5",
+      "published": "2026-11-26T18:50:53+00:00",
+      "publisher": "https://austore.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Brxlz Stadium - Chelsea FC Store"
     },
     {
       "desc": "TOTTENHAM are reportedly eyeing up a move for Greek striker Vangelis Pavlidis. Roberto De Zerbi is searching for a new s",
@@ -8134,76 +8204,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Chelsea Q&A! Submit your questions as club backs Alonso"
-    },
-    {
-      "desc": "For Premier League referees, the KMI Panel is more important than you might realise. It determines a significant portion",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-26T08:00:51.971226+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cq20x16zxxzeo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-26T07:28:18+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Why KMI Panel frustrates referees too - and impacts their salary"
-    },
-    {
-      "desc": "Bellingham's stunning strike meant he was unsurprisingly in-demand post-match, with reporters eager to get his assessmen",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-26T08:00:51.971248+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16320765/Jude-Bellingham-praised-female-journalist-post-match-press-huddle-scored-best-goal-life.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-26T07:27:20+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'Class act' Jude Bellingham praised for standing up for female journalist in chaotic post-match press huddle after he scored 'the best goal "
-    },
-    {
-      "desc": "FOOTBALL’S Regulator vowed he DOES have the “stomach” to boot Manchester City’s owners out of the club. David Kogan, cha",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T08:00:51.971264+00:00",
-      "link": "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners/",
-      "published": "2026-11-26T07:12:17+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Football Regulator chief warns he’s not afraid to boot out Man City owners if they fail in appeal against guilty verdict"
-    },
-    {
-      "desc": "UEFA Champions League: Seven days until we return! Manchester United Website",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T13:01:05.350265+00:00",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQWEl3N3p4QTRtYlJUZ1pLRlBkZXdnMVh6X3lSS05nNXN2dldLczFMR25jcW5MOG9TQ1NnYnQzRW5XUjRWenZxY1ZteXdSV0ZwMnotNzVWZ3ZHU2VsUjNLYzdNVURKR3RrblozRG5NY3ppeFM4Znl6eTZ6clZRWHlYTlNGZjZPdw?oc=5",
-      "published": "2026-11-26T07:06:15+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "UEFA Champions League: Seven days until we return! - Manchester United Website"
-    },
-    {
-      "desc": "CHELSEA boss Xabi Alonso celebrated his 45th birthday alongside wife Nagore on Wednesday. The Spaniard enjoyed his landm",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T08:00:51.971278+00:00",
-      "link": "https://www.thesun.co.uk/sport/41155845/chelsea-xabi-alonso-birthday-wife-nagore/",
-      "published": "2026-11-26T07:02:23+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Xabi Alonso celebrates 45th birthday with night in with wife Nagore as she shares pic of Chelsea boss enjoying cake"
-    },
-    {
-      "desc": "Fabrizio Romano Transfer News: Liverpool signing done, Man Utd striker blow, Barca targets FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T08:00:51.971293+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQLWNzclE0WGdOTHNDSVpfYVA2YWVmM2dpaEtLWjhuZnNNUmxRQzFGNnk3bVlGaE90QWNZaFYtc0lmSVQxQ1lva0wtcmJPdlYtckFyQUd1cTdFUXlRVjBjQ3FrcWlpT0xyMUZRYXN1dzhkYWgwUG10ZXF6SkI2Y0IwQlREMW81WlVILWJ0Y2ZYRVhLMHVmN2dYeEFzcWR0U2h3cXRZN3lVLTdMOE9ZWmd1TURET09NLVhiM1RlQlFVSnA0VFlHY1NsMW9IdFFrUjZrMV9GSllLTUNIVW9tWnV6S3l6WFhiUzA2X2oxcFRaRXJHdDJzWEQ0?oc=5",
-      "published": "2026-11-26T07:02:00+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano Transfer News: Liverpool signing done, Man Utd striker blow, Barca targets - FootballTransfers.com"
-    },
-    {
-      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-26T07:00:58.614082+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6ly5125qgy9o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-26T06:53:51+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Who am I? Plus today's other quizzes"
     }
   ],
   "processed_urls": [
