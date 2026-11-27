@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 10,
+        "calls": 11,
         "errors": 0,
-        "requests": 10
+        "requests": 11
       }
     },
-    "calls": 10,
+    "calls": 11,
     "date": "2026-11-27",
     "errors": 0,
-    "input_tokens": 67324,
-    "output_tokens": 6919,
-    "requests": 10
+    "input_tokens": 73732,
+    "output_tokens": 7853,
+    "requests": 11
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -5212,6 +5212,41 @@
       "title": "温格放弃竞选FIFA主席，因凡蒂诺连任前景大增",
       "updated_at": "2026-11-15T12:00:54.873718+00:00"
     },
+    "c4ddf375bc98": {
+      "article_title": "Leny Yoro red card: Written reasons why Manchester United defender's red card at Liverpool was overturned published by the FA - Sky Sports",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "047bbc6fe5c1c9cf",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 255
+        }
+      ],
+      "created_at": "2026-11-27T01:01:06.279533+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "279aefcd93ff7331",
+      "event_id": "c4ddf375bc98",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T01:01:06.279533+00:00",
+          "origin": "created",
+          "title": "Leny Yoro red card: Written reasons why Manchester United defender's red card at Liverpool was overturned published by the FA - Sky Sports",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 255,
+      "title": "英足总公开解释撤销约罗红牌理由，职业裁判公司不满",
+      "updated_at": "2026-11-27T01:01:06.907394+00:00"
+    },
     "c65859f7a4dd": {
       "article_title": "Watford seek sixth manager in 18 months after sacking Dionisi",
       "attempts": 1,
@@ -6719,7 +6754,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T00:00:50.622471+00:00",
+  "last_scan_at": "2026-11-27T01:00:56.131820+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6740,6 +6775,36 @@
     "updated_at": "2026-11-26T22:01:23.143391+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Camilo Duran's 15-goal haul this season has made him an invaluable player for a Celtic side fighting for European progre",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T01:00:56.135515+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c62klz1wwdn7o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T00:18:44+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'Priceless' Duran proves 'the man' but is he papering over cracks at Celtic?"
+    },
+    {
+      "desc": "Unlock Stamford Bridge Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T01:00:56.135578+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTGFfMkpvZXBfVE51YjVmV3JhaktGNXdwSVVKaE9wNnFKTnMyX0RYS0hmNU5seF9ZOUlnZF9ZS2dRS0FYWTk5NjFzeXZmejZmZ0F4R0lEZUlhbFZhWXRyZ0VBaVlZTTA1N21EanR2MGlDUkdZc2N2TnFuWTdZcm9mcGNRVkdkS3lkSk1mV2hHM2lRZGUwLXB4eHpJVm5haW1UVTVmTXVrQVpiMHFzdFhWdWRFWTNnUy1TWW45MTZzN2lqMGVvRHRuVTB2M2tUc3g4LVhrRzM1YW9XeTRIZXZpbg?oc=5",
+      "published": "2026-11-27T00:16:17+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Unlock Stamford Bridge - Chelsea Football Club"
+    },
+    {
+      "desc": "Hearts head coach Wouter Vrancken expresses both pride and disappointment after his team came out on the wrong side of a",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T01:00:56.135610+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqr7g49ej14ko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T23:59:43+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Hearts' European hopes hang by a thread but Vrancken proud"
+    },
     {
       "desc": "Can anybody stop Bournemouth? For long stretches here it looked as if their relentless march would finally be stopped - ",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
@@ -6799,6 +6864,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://www.arsenal.com/rss/news",
       "title": "Full match | Arsenal v Borussia Dortmund - Arsenal.com"
+    },
+    {
+      "desc": "Checkout - Man City Shop Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T01:00:56.135775+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE10TDdxMTJKcW1xSWxBWGdNd2ZlVTRaeXpoWjc4V3pZeTlZaFhsSTcxdmtFdkJuXzAtbUVPc1gyeGNTWWVyNlppdW5vamRCUQ?oc=5",
+      "published": "2026-11-26T22:49:45+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Checkout - Man City Shop - Man City Shop"
     },
     {
       "desc": "XABI ALONSO hit back at old Liverpool team-mate Jamie Carragher over his scathing Chelsea criticism. Pundit Carragher cl",
@@ -6939,6 +7014,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Borussia Dortmund slap huge price tag on wonderkid Joane Gadou as Arsenal, Liverpool and Real Madrid circle - Liverpool FC"
+    },
+    {
+      "desc": "Inside: New angles and unseen footage from Club Brugge 0-3 Liverpool Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T01:00:56.136163+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSzJoNnAteHdzYjNFa0dLSjdUSGVkeWRnU3l2Z09PUFhvdkxVN1V3TWdsU3IxLUlWbERqVTZFempBMUlHUFN4ck8wblJlQ0E5NW44Uy01THVsSkhtNVV6alpyVEM2OHZYSERySmw1dmNYdlBGalJ0MzRXRjNoLU5KdHB3cnZrclZxWlpBLTBLajI1U09nQnlvUE1seUE3SmFqQXc?oc=5",
+      "published": "2026-11-26T20:56:33+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Inside: New angles and unseen footage from Club Brugge 0-3 Liverpool - Liverpool FC"
     },
     {
       "desc": "Eberechi Eze opens his Premier League account for the season at Newcastle’s expense Digg",
@@ -7279,6 +7364,16 @@
       "publisher": "https://sports.yahoo.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Liverpool will be on red alert over £33.5m signing after Fabrizio Romano update - Yahoo Sports"
+    },
+    {
+      "desc": "Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T01:00:56.136624+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1obk9RWjJCWHA0dGgzR1g5dWZmcVFYOGRyM3g3Zm9kYkhVVkFmSmx5dmFHQ0c5TkN6cXpFbWMyOUtSZXp2TzFVRmkzbHdpM19tTVYwbHlDT2tzcGV3LS1tMUQ0SmhKTnlKS2E4NWpHN01aUGpiZ2NUNzJR?oc=5",
+      "published": "2026-11-26T17:32:31+00:00",
+      "publisher": "https://theshed.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "- Chelsea Football Club"
     },
     {
       "desc": "Germany international Laura Freigang is suspended from football for 16 months over issues relating to three drugs tests.",
@@ -8179,70 +8274,9 @@
       "publisher": "https://dave.sport",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Manchester United could sign a defender first in January - Dave.Sport"
-    },
-    {
-      "desc": "Hurzeler reveals Gomez will miss Conference League match Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T11:41:13.159310+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRk1uLVJQZV9IendPN0hYRGFjaHNUZGwzdmZUaVZzM3pPWTNoY1RLSzdkc0ZLQXVRd210RDRZTzc4ejd5SENwUEhMM2VUeHBrcUVZYnE3LUdldExvUWQ2UHJPQnRBWE1ZWHZVakJKTlJESkdKdHZoZ1VORWVRTnp0OURGUWpNZWphLUJXVkV4VTVjSEt2eXAzbUgyRGxOZDFHbmZqWmdHMlQ?oc=5",
-      "published": "2026-11-26T10:08:14+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Hurzeler reveals Gomez will miss Conference League match - Premier League"
-    },
-    {
-      "desc": "When Yalcouye could return as Brighton confirm injury blow Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T11:01:11.171411+00:00",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPT0laQzBBLU90ZHM3YldEeTlIU0JRdDNaYnBNRTZkV0Q4Vm5lWXByUWQzampsQjRrYW1HMkdUSTF2bWN6M3pqZTVQeV9jcC1Nb0lOcFRBdmhTQlhKNTZVVW91RFdYUUN3X3JQbFIwa1lsUjhJbkhnNFpZVjFmbjdXVGJvMDAtaWU1R3o3aTE4aUp0ZGZKTmJ2Y2VEUVF1aWRfWVlld3luTQ?oc=5",
-      "published": "2026-11-26T10:06:09+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "When Yalcouye could return as Brighton confirm injury blow - Premier League"
-    },
-    {
-      "desc": "Premier League central payments to clubs 2025/26 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T11:01:11.171424+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMm5zS2V5aG1WX3JKSUw2LTFwWENWYnlBbUdNSnlvc3B5QlYzV2l3VF8yR2FNSV9Hc0JKSGxmdlA2d1M2bzRzZHFVejVJWjhNTUZ1cHRyN29WRFduRUxRaWotN2hNOUdNeTBib3J1WW9oTjZWOGNRVkVmS3VYa3V2U09CWkMwSnZ3Qm9zQWVrR0x4RWFFNWJ6bg?oc=5",
-      "published": "2026-11-26T10:06:08+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League central payments to clubs 2025/26 - Premier League"
-    },
-    {
-      "desc": "Slavia reportedly hit an unwanted European Cup record: 24 games without a win Digg",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T15:00:56.169255+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE13RUVDNHByS1RWSnUtajQ1bGNic1Q3Z1Via2tTSHl6UUtlVGpsV2R0RWI5bXlBT2stM3p3TVM3VjY1bkwzVkEw?oc=5",
-      "published": "2026-11-26T10:02:17+00:00",
-      "publisher": "https://digg.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Slavia reportedly hit an unwanted European Cup record: 24 games without a win - Digg"
-    },
-    {
-      "desc": "CHRIS WHEELER AT JOSE ALVALADE STADIUM: A week into the job and Mauricio Pochettino must be getting used to the madness ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-26T11:41:13.159363+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16320955/This-Man-United-team-capable-ridiculous-acts-self-sabotage-drive-head-coach-like-Mauricio-Pochettino-potty-Senne-Lammens-howlers-drop-two-points-Sporting-writes-CHRIS-WHEELER.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-26T10:01:27+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Welcome to the Man United madhouse, Mauricio! Man United emerge from the chaos at Sporting Lisbon with a draw as Senne Lammens joins their b"
-    },
-    {
-      "desc": "When Liam Delap joined Chelsea in the summer of 2025, he probably had ambitions of cementing himself as an elite Premier",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-26T11:01:11.171437+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13615913/liam-delap-has-a-chance-to-show-chelsea-what-theyre-missing-when-they-travel-to-nottingham-forest",
-      "published": "2026-11-26T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Delap's chance at redemption against toothless Chelsea"
     }
   ],
   "processed_urls": [
-    "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo",
     "https://www.thesun.co.uk/sport/40853330/glazers-upset-jim-ratcliffe-man-utd-management/",
     "https://www.dailymail.com/sport/football/article-16250391/Jack-Grealish-DROPPED-Everton-club-discipline.html",
     "https://www.thesun.co.uk/sport/40859069/man-utd-munich-air-disaster-memorial-medals-stolen-thieves/",
@@ -8441,7 +8475,8 @@
     "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton",
     "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners",
     "https://www.bbc.co.uk/sport/football/articles/crd61nvg4d84o",
-    "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html"
+    "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html",
+    "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc"
   ],
   "s_overflow": {},
   "schema_version": 4
