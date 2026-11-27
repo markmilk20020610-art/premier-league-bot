@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 7,
+        "calls": 8,
         "errors": 0,
-        "requests": 7
+        "requests": 8
       }
     },
-    "calls": 7,
+    "calls": 8,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 44629,
-    "output_tokens": 4735,
-    "requests": 7
+    "input_tokens": 51015,
+    "output_tokens": 5302,
+    "requests": 8
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1120,6 +1120,41 @@
       "telegram_message_id": 103,
       "title": "森林绿流浪者老板就未纪念阵亡将士道歉",
       "updated_at": "2026-11-09T09:20:39.779898+00:00"
+    },
+    "29b8b96a642f": {
+      "article_title": "Nottingham Forest 3 Chelsea 2: Alonso clinging on to his job as baffling XI and Fofana horror show blow up in his face",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "e695b809a998af92",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 261
+        }
+      ],
+      "created_at": "2026-11-27T22:01:00.550742+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "9aee0ef9164f494a",
+      "event_id": "29b8b96a642f",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T22:01:00.550742+00:00",
+          "origin": "created",
+          "title": "Nottingham Forest 3 Chelsea 2: Alonso clinging on to his job as baffling XI and Fofana horror show blow up in his face",
+          "url": "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 261,
+      "title": "诺丁汉森林3-2切尔西，阿隆索帅位告急",
+      "updated_at": "2026-11-27T22:01:01.054511+00:00"
     },
     "2b49a019e43a": {
       "article_title": "The chaos that took Carrick from two-year deal to sacked within 15 games",
@@ -5295,28 +5330,6 @@
       "title": "尼基·巴特炮轰曼联为队史最差并称俱乐部从上到下都是灾难",
       "updated_at": "2026-11-24T07:00:59.459587+00:00"
     },
-    "c1ca9017032e": {
-      "attempts": 1,
-      "chunks": [],
-      "created_at": "2026-10-31T00:05:41.133162+00:00",
-      "delivery_status": "COMMITTED",
-      "event_fingerprint": "06d5ca672e14792d",
-      "event_id": "c1ca9017032e",
-      "evidence_refs": [
-        {
-          "added_at": "2026-10-31T00:05:41.133162+00:00",
-          "origin": "migrated_from_evidence_url",
-          "title": "",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo"
-        }
-      ],
-      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
-      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
-      "last_error": "",
-      "telegram_message_id": 16,
-      "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
-      "updated_at": "2026-10-31T00:05:41.886537+00:00"
-    },
     "c364c0b835a9": {
       "article_title": "Wenger decides not to challenge Fifa chief Infantino",
       "attempts": 1,
@@ -6929,7 +6942,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T21:40:49.015514+00:00",
+  "last_scan_at": "2026-11-27T22:00:54.560188+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6950,6 +6963,46 @@
     "updated_at": "2026-11-26T22:01:23.143391+00:00"
   },
   "news_pool": [
+    {
+      "desc": "CHELSEA have become the Premier League’s pushovers. Bullied by Sunderland and Leeds, Xabi Alonso’s sorry side were beate",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T22:00:54.562321+00:00",
+      "link": "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show/",
+      "published": "2026-11-27T21:54:03+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Nottingham Forest 3 Chelsea 2: Alonso clinging on to his job as baffling XI and Fofana horror show blow up in his face"
+    },
+    {
+      "desc": "Celtic defend their head of security Mark Hargreaves and the action taken against the Green Brigade last season.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T22:00:54.562344+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/ck1ewjw1qqn7o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T21:50:01+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Celtic defend head of security amid Green Brigade row"
+    },
+    {
+      "desc": "Spurs Womens Pink Tottenham Hotspur Oversized Hoodie I Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T22:00:54.562363+00:00",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMVgyR0dERHpGNXVFMzNNY2dLdVNUX1VJYWJERkJDYlZVTzlqWWFnQnlkTVFDWXg0SElrY3RzSG0zY095NVpKQkMzZFhJMzdRZlJXYWxtSnZxU1JnZ1RYSHU1TjRsLWI1dFlKUlRxYW9UMERLamU0dHFoZEZDTThiVklzazVET3F3OFVfbUExUmFRTGgwMkE5VmdPaXRpM0lGOS1UZ1p0VU1uYkNwUEpaS3l3?oc=5",
+      "published": "2026-11-27T21:45:45+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Spurs Womens Pink Tottenham Hotspur Oversized Hoodie I Spurs - Tottenham Hotspur"
+    },
+    {
+      "desc": "Finn Azaz does his best Emmanuel Adebayor impression to celebrate in front of Middlesbrough supporters after scoring for",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-27T22:00:54.562379+00:00",
+      "link": "https://www.skysports.com/watch/video/13617359/southampton-v-middlesbrough-saints-second-causes-chaos-after-azaz-goads-boro-fans",
+      "published": "2026-11-27T21:42:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Azaz does a full Adebayor to celebrate in front of Boro fans!"
+    },
     {
       "desc": "Chelsea defender Wesley Fofana is booed by his own fans during the Premier League game at Nottingham Forest after a cont",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -7139,6 +7192,16 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Semenyo Injury Update: Out of Arsenal, Leeds Return Hope - The False 9"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T22:00:54.562615+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-27T19:42:40+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
     },
     {
       "desc": "Real Madrid superstar fully focused on club, nothing to recent PSG links – Romano Yahoo Sports",
@@ -7509,6 +7572,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Alonso underlines importance of control on and off the ball | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Sunderland vs Spurs | Every word of Roberto De Zerbi’s pre-match press conference Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T22:00:54.563050+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNXhfWUhpLVMzVms3V2VxS0VjbENCU2l4MDNYZnc5MkV0M25PWHktOVhjM0k4a2Vnb1F4Y2tpNmktTkVGeWQ3M3Y2RlJOdlBYd0F0aHFHdnRmeEJYOERnbHRkV1E2SmlQMklFLThtTk9QQVFGcHctb0hCdVY0VzBCVnVWbEs2MlZnclFsbTJDSC1tbHQ1V0ZRYjFfbU1wdC1rM2V6di15aFgtcm4xQlkwZmFObTgwajNFN3pOZEpoQ0Nqdw?oc=5",
+      "published": "2026-11-27T15:56:58+00:00",
+      "publisher": "https://www.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Sunderland vs Spurs | Every word of Roberto De Zerbi’s pre-match press conference - Tottenham Hotspur"
     },
     {
       "desc": "Watch: Liverpool's 10 best Premier League victories away at Everton Liverpool FC",
@@ -8389,70 +8462,9 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Florian Wirtz and Dominic Calvert-Lewin among transfer suggestions for Double Gameweek 12"
-    },
-    {
-      "desc": "Connor Hall to miss next three fixtures Port Vale Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T14:01:01.799740+00:00",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FNDFKU2pnUVZCazRZcTJfOTBoZjdLWnZ5Q1JZOFlYblpmU0J1ZEt1X0E2X0VPWjA2NFFfVm5Ua0ItNms4bUxLdEtiZlVWQ2dxWHhkRTdPZEVhcU54UkkyZ3kxTjJZMVgwUlFibHFOalNNLTNCYkZKMA?oc=5",
-      "published": "2026-11-27T10:44:24+00:00",
-      "publisher": "https://www.port-vale.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Connor Hall to miss next three fixtures - Port Vale Football Club"
-    },
-    {
-      "desc": "PREMIER LEAGUE clubs believe Manchester City's should be forced to sell the club as a punishment for breaching financial",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T11:01:02.699677+00:00",
-      "link": "https://www.thesun.co.uk/sport/41168268/man-city-owners-sell-club-regulator-guilty-verdict-charges/",
-      "published": "2026-11-27T10:42:48+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Premier League rivals ‘want Man City owners to be FORCED to sell club as punishment for guilty verdict’"
-    },
-    {
-      "desc": "Nico Paz cool on Madrid return despite €80m buy-back option Dave.Sport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T11:01:02.699708+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE15cFc3VXpWbWZ3UHBUb0VaU0ZfTEJPc3Zha3JSbGsxLVN1Y1FpQzhFRnhDRjZQLTlTZ0xQbmw0aFIyX3dJalI1Y2x2ZW14d0tYMjNxVkswWG1YNjdZenhHVjhVb29STVBSQkNzaWs3UTVmUQ?oc=5",
-      "published": "2026-11-27T10:40:54+00:00",
-      "publisher": "https://dave.sport",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Nico Paz cool on Madrid return despite €80m buy-back option - Dave.Sport"
-    },
-    {
-      "desc": "Villa analyst Victor Manas banned for four matches over Old Trafford conduct Stretty News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.196236+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNY0FlQ3JMWUdReDNXSzE0cmNUSk1LdU1sc0Q5dzJZczVMek0xRVBMRlJ4akI0U0NSVU9HbEl2cDFkMXZSallxRkZveXkyQlplZTVGTF9tX2FTbjJYLTV1Q2lrZF9WTmVOWVduZDNlWm5aNTFKTkU2SlJ1V1RlV0hINE9sX3luRWd3c1E4aE5nRVliRFJpMkNSZi1GdGlUczJxTUlpdmFJZV9KTzNGa0VjYXh30gG3AUFVX3lxTE5rNWVnVFhlTkpLd05oQ2Y5VncxUS1TZllFQm5PMG9mTi1tV2ljX0thMnMyT3d2OFJNQkNZam9sdWI0SFVrMGVTWFVFV3lmeDlxakhOanZXa0kxSUZ0RjZvc0JLRDF4cHRWTFViVllmc2lOclVtNVZ2V25YcVRObTRkZnIwOXFGZDR5akpfMDFQbWNvOUdzbXB5V25PdWhtOWpaUGhwZDB2ZlBxS284U21zZzkzbkcwTQ?oc=5",
-      "published": "2026-11-27T10:38:30+00:00",
-      "publisher": "https://strettynews.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Villa analyst Victor Manas banned for four matches over Old Trafford conduct - Stretty News"
-    },
-    {
-      "desc": "The Newcastle United defender was given a six-month ban at Newcastle Magistrates' Court.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T11:01:02.699741+00:00",
-      "link": "https://www.bbc.co.uk/news/articles/c6wy43d3ry12o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T10:34:09+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Botman banned from driving for using phone at wheel"
-    },
-    {
-      "desc": "Man Utd: Jarrad Branthwaite ‘exit clause’ bombshell gives INEOS dream transfer boost TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T11:01:02.699772+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcnlSSkRzSkhJZEZ1MGExN0s4UWJNbXdxS0hmT2VSVHVBNVVPQVZPWU12SFdjYnNQcnN1X2lrQS1hdG5vMF94UzB6OG5tNjVNWFp2SGo2OVYxNm1JMnhPMXIxZzBfSTVxam0zQmNGaWhfZjBUbG41VzZEbG9yMzhzQTNVWFRUMUY2cDVWcENtR25HTm55eU5IVnVfRHA4enBtNTQ0U0VfRGl3R1k?oc=5",
-      "published": "2026-11-27T10:32:09+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man Utd: Jarrad Branthwaite ‘exit clause’ bombshell gives INEOS dream transfer boost - TEAMtalk"
     }
   ],
   "processed_urls": [
-    "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
     "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
     "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html",
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
@@ -8651,7 +8663,8 @@
     "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o",
     "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers",
     "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid",
-    "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview"
+    "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview",
+    "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show"
   ],
   "s_overflow": {},
   "schema_version": 4
