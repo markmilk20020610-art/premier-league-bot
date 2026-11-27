@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-27",
     "errors": 0,
-    "input_tokens": 100672,
-    "output_tokens": 11005,
-    "requests": 16
+    "input_tokens": 104235,
+    "output_tokens": 11576,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -1085,6 +1085,41 @@
       "telegram_message_id": 122,
       "title": "卡里克执教15场即遭曼联解雇，创40年最差开局",
       "updated_at": "2026-11-12T11:00:59.382354+00:00"
+    },
+    "2cbed6320c0e": {
+      "article_title": "Thomas Frank earns his first Crystal Palace victory as boss, Bournemouth win TENTH game in a row with comeback, and Brighton thrash Romanian",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "af270ef336dbca62",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 256
+        }
+      ],
+      "created_at": "2026-11-27T06:00:55.173470+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "f7b3338bda0a6b36",
+      "event_id": "2cbed6320c0e",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T06:00:55.173470+00:00",
+          "origin": "created",
+          "title": "Thomas Frank earns his first Crystal Palace victory as boss, Bournemouth win TENTH game in a row with comeback, and Brighton thrash Romanian",
+          "url": "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 256,
+      "title": "托马斯·弗兰克执教水晶宫首胜，伯恩茅斯十连胜逆转，布莱顿大胜",
+      "updated_at": "2026-11-27T06:00:55.797505+00:00"
     },
     "2d0c18ebd560": {
       "article_title": "Chelsea tickets and hospitality packages for Premier League matches at Stamford Bridge from just £155pp",
@@ -6754,7 +6789,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T05:00:51.353394+00:00",
+  "last_scan_at": "2026-11-27T06:00:49.346088+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -8277,7 +8312,6 @@
     }
   ],
   "processed_urls": [
-    "https://www.thesun.co.uk/sport/40853330/glazers-upset-jim-ratcliffe-man-utd-management/",
     "https://www.dailymail.com/sport/football/article-16250391/Jack-Grealish-DROPPED-Everton-club-discipline.html",
     "https://www.thesun.co.uk/sport/40859069/man-utd-munich-air-disaster-memorial-medals-stolen-thieves/",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlhFdXFCdWNUZmo2Mi1sV191Q2pXWE9hbnVHN2N0ZGFxcWsxVUNvcjRyNVJldUluMHVYTUZUT3lxTGU1SDR0OG81a0tZY1NKbWV4ZjF5NlZ4RjR6VzlPcmZSREFNMHNrY3RmVVItQmcyRGpZTkg4dDFoU1h3by0yOERsekQ2aXV3V1pEN1FYM3NXTXk5dEthcVVTdWdTbEYyemZj?oc=5",
@@ -8476,7 +8510,8 @@
     "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners",
     "https://www.bbc.co.uk/sport/football/articles/crd61nvg4d84o",
     "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html",
-    "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc"
+    "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc",
+    "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html"
   ],
   "s_overflow": {},
   "schema_version": 4
