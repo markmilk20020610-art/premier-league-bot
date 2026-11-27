@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 4,
+        "calls": 5,
         "errors": 0,
-        "requests": 4
+        "requests": 5
       }
     },
-    "calls": 4,
+    "calls": 5,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 25370,
-    "output_tokens": 2637,
-    "requests": 4
+    "input_tokens": 31906,
+    "output_tokens": 3177,
+    "requests": 5
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6437,6 +6437,41 @@
       "title": "曼城主场0-1爆冷负布莱顿，阿森纳重夺争冠优势",
       "updated_at": "2026-10-31T16:54:27.073866+00:00"
     },
+    "eafbbc6a5b63": {
+      "article_title": "Gary Neville ‘absolutely certain’ Erling Haaland will leave Man City after seeing ‘something has changed’ at Etihad",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "d37c6fa05aa5bb01",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 259
+        }
+      ],
+      "created_at": "2026-11-27T20:01:03.443335+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3a1c7f08d57f9184",
+      "event_id": "eafbbc6a5b63",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T20:01:03.443335+00:00",
+          "origin": "created",
+          "title": "Gary Neville ‘absolutely certain’ Erling Haaland will leave Man City after seeing ‘something has changed’ at Etihad",
+          "url": "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 259,
+      "title": "加里·内维尔断言哈兰德18个月内离队加盟皇马",
+      "updated_at": "2026-11-27T20:01:03.980294+00:00"
+    },
     "eb3774fe3791": {
       "article_title": "‘Disgraceful.. shambles’ – Fans furious as Man Utd ‘allow Pochettino to finish international break’ as Liverpool looms",
       "attempts": 1,
@@ -6859,7 +6894,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T19:00:49.851281+00:00",
+  "last_scan_at": "2026-11-27T20:00:58.803666+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6880,6 +6915,56 @@
     "updated_at": "2026-11-26T22:01:23.143391+00:00"
   },
   "news_pool": [
+    {
+      "desc": "https://www.premierleague.com/es/sitemap/videos-7.xml Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807080+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB2eHVTUHJ6U0JRZkF4WEk0V3FlZjFNWlN3RUpWX2RmUk1PcDAtSnhzZTB4S2lOWVJjTmk1WWwyQk16T3pCZWhoVlM5TlRuWUluV1ltM0FiX3ZsWW9pcjVMOWhWbw?oc=5",
+      "published": "2026-11-27T19:55:13+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "https://www.premierleague.com/es/sitemap/videos-7.xml - Premier League"
+    },
+    {
+      "desc": "https://www.premierleague.com/es/sitemap/videos-1.xml Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807114+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HQmY4aXNCUnZ1dC03RkRYUFdJYmd1S2lkUWxsWG10NVB5QmhPNi1RclFqSnI4MDVhaEhrSkVLbzRSbGwtMUR3MzVRTjVCT2xEcUkwQkN5RWVQa2tqYnJieEZvQQ?oc=5",
+      "published": "2026-11-27T19:55:12+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "https://www.premierleague.com/es/sitemap/videos-1.xml - Premier League"
+    },
+    {
+      "desc": "Semenyo Injury Update: Out of Arsenal, Leeds Return Hope The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807142+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdm95OFJrME1EOTVhd3p0Rk03R28tX0lhWG1OY2tJZE1YVnZMNE55dHkxcnVmcnl0VE9DSTVtdGlaMUJnVFJTNjg3UUlWOHR1NVVUcVVBdl9BSlJTUVVfaUdHcmRPZUNzLVpBdC1XSjhKVnBTODFzQm4zVE9BZzhpWUdUc0F3QkkwRVlHYjVYTkNfMG5zV25iZFB3?oc=5",
+      "published": "2026-11-27T19:45:29+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Semenyo Injury Update: Out of Arsenal, Leeds Return Hope - The False 9"
+    },
+    {
+      "desc": "FA Bans Aston Villa Analyst Victor Manas for Four Matches Demokratis.co.id",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807168+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE90R1M0NVU5dVFQTEVoc1FfdC1RSGtiNXdicnN5MkFQcm40TnE0V1JxY0NSZmdzRlBxVDViVXBZTGNwYUQ2b19aRjVOd0YwMEVTWmRZYVFILXhXbkdLbTBXNXlrWGlMbXFmWG9KSQ?oc=5",
+      "published": "2026-11-27T19:32:00+00:00",
+      "publisher": "https://demokratis.co.id",
+      "source": "https://www.thefa.com/rss",
+      "title": "FA Bans Aston Villa Analyst Victor Manas for Four Matches - Demokratis.co.id"
+    },
+    {
+      "desc": "Fabrizio Romano: Savinho will be out for long time with an hamstring injury AllFootball",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807194+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOX1ZjeXFpUmFxei11elpXYWo3Q2ctLW1xemJLb2lqUW1IbTlIaTh4Q2ZNdnVTZUVleS1kR2JrSHdjbUpHLWtMRndLdXZSMnotLVlDQVBfc2ZTQXp1eHJ3LTg3SnlfX1FoQ0ZXMHFPY25TenpwSXNZZk1kcmJZdXJ1NmliS3dDMDdMVXpOY2pB?oc=5",
+      "published": "2026-11-27T19:07:32+00:00",
+      "publisher": "https://www.allfootballapp.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: Savinho will be out for long time with an hamstring injury - AllFootball"
+    },
     {
       "desc": "David Ornstein confirms Max Dowman will sign new Arsenal contract before 2027 now.arsenal",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6959,6 +7044,26 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Emery praises Garnacho attitude after Villa selection snub"
+    },
+    {
+      "desc": "Arsenal Official Annual 2027 Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807428+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSFNLYllzRkR0VnlvUWdsZVYzSjJFRHMyYkVjV250VTVfT1R3Q3BzbkhWUFd5b3JCZW9oV0lkMDRsUk1zREhfT1llTnkwQXJIdHZXWDNkZFp4MmpIQU9yTTNTYzQ1ZF9vcC1zdEFjS2NLdF9MeW5pLWRReHY0cmtZR0xjQ0NDQ3lCVFBN?oc=5",
+      "published": "2026-11-27T17:25:19+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal Official Annual 2027 - Arsenal Direct"
+    },
+    {
+      "desc": "Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807452+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
+      "published": "2026-11-27T17:20:26+00:00",
+      "publisher": "https://tickets.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "- Manchester United"
     },
     {
       "desc": "Scout Selection: Best Fantasy team for Gameweek 12 Premier League",
@@ -7079,6 +7184,16 @@
       "publisher": "https://soccer.realgm.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Maresca: Erling Haaland's Frustration Tied To Results, Not Charges - RealGM"
+    },
+    {
+      "desc": "Shop Spurs Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.807769+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOZC1ZOHdOcjZPNUN3dFJHWGVUMEtROTlBRWdibkJhR3UzQzZmbFgzeTMxNUp4M1BJRlhraVlpSHExOWVDWndiMnIxZkR3SmZBdDhlUzBqRDdETG9vV2dwR0NOenQ4YjR4WmJUYVhkbmtNMDluZEctY3VGNHgtcE5qVDFucXliWHRqY2FYeGFxZV9aYWRpbWdfeE9TUzlyVmhEQmx2WlBYV1daVlBTZ1k0TFVOYUlzNlVYUF9KdlBxYzF1OTB0YndjcDFLY2FFOFZvZ2szZXI2bmpaTkJlaHVuZWNER1F1dmM4dUxqR1VCQnltSXA4aFlxWGs4TFBKeTE2MGlwRzVidkd3dE1LMWc?oc=5",
+      "published": "2026-11-27T16:44:48+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Shop Spurs - Tottenham Hotspur"
     },
     {
       "desc": "",
@@ -7261,6 +7376,16 @@
       "title": "Savinho out for months with a hamstring injury at Tottenham - Tu Futbolero"
     },
     {
+      "desc": "Bayern Munich's Jamal Musiala might never return to his previous level and will deal with a medical condition for the re",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T20:00:58.808217+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmly5j49ypzqo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T15:03:12+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "What happens now for Bayern Munich and Musiala?"
+    },
+    {
       "desc": "Manchester United make major decision on Bruno Fernandes LiveScore",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-27T16:01:03.818238+00:00",
@@ -7369,6 +7494,16 @@
       "publisher": "https://www.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Mikel: “We need to enjoy and embrace this game” - Arsenal.com"
+    },
+    {
+      "desc": "‘Very important’ - how Alexander Isak is contributing more than just goals for Liverpool Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T20:00:58.808372+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcjlRS1BmRFdUaXVwX2RFS3lEV0NtMGE2MW05cXo4WFo1a2ZpSG5lY1J6Y0dVTEhER0FzNVI1SkRIYnJsaGVldzBmVWxwQ0w1S2FkSzFtRDdRU0dJb2pXUE1heFk3LW9DY0g5ZTRfUmE0S1VPU09uWFFGSFphM3VLNU93YTk5a250bzZ4UmJmS2syc1AxbnlYOGJ0Q0NSMFl2TGhIY1JkRTFvU0JYWkdIZ2lrdGpfVXh6?oc=5",
+      "published": "2026-11-27T14:50:14+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "‘Very important’ - how Alexander Isak is contributing more than just goals for Liverpool - Liverpool FC"
     },
     {
       "desc": "Manchester United have triggered the 12-month extension clause in Bruno Fernandes' contract after their captain put talk",
@@ -8279,110 +8414,9 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Best United deals for Black Friday - Manchester United"
-    },
-    {
-      "desc": "Team news for United v Brentford Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.196413+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBNS3hGWGRyeEdDZVRwVXNnSkpmeDYycDUycURxdDNvQm5HUVM1QThUdkFnLVM2dWFYTXpua0VtMU16S2d3MEcwaXZ1cHpqQ3NLcjViSmZlQXlDZEo2SlFYS2hWa1dvaXkyUEhFWEZ5YlRDVGZ1X0x3aUFUXy14UQ?oc=5",
-      "published": "2026-11-27T08:48:52+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Team news for United v Brentford - Manchester United"
-    },
-    {
-      "desc": "Man Utd: Ornstein reveals huge Paz transfer boost and CONFIRMS Red Devils interest Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.097778+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbnZnWDNCam5OdTVUVkNUZkdCUkJrUk1Ud1dndVRWc0ptZzN6dEtrejBLRmhkY2lfX2tHMUV0bUxqbHo2QUlBOG84U0YzamI5bHFNeUVqRFNpcTVuWXBZZUkyd0JEd2dYNVp0Tll2REhkYU10OS1ubk1GcGJ5UmVQUE4yVHBkcDNjQkpZRWk4TExlWnV1Q19jTWtZVEVSZGM?oc=5",
-      "published": "2026-11-27T08:48:47+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man Utd: Ornstein reveals huge Paz transfer boost and CONFIRMS Red Devils interest - Football365"
-    },
-    {
-      "desc": "Man City Punishment: Rival Clubs Want Owners Forced to Sell (27 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.097799+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZUFsNVhOckxNR2J2SVBjQllYWUZqM0hUR0EyT2ZfdGlwcVZYY2hhX0tDMXJmd0Q1d3NRcUNzWWFpS18zX2JUcElnNFd5UVFpZkZfNmlYMTAtbWZuaXgxVWhUeGd2WEVxQlBvMmF1aVo5RjRPY3VYUEFiZWo3b0FxSGVSRzdzN2JPWDJPZFNMdno1V01XbFFoLUhTWGFJLWVxb0E?oc=5",
-      "published": "2026-11-27T08:46:58+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Man City Punishment: Rival Clubs Want Owners Forced to Sell (27 November) - The False 9"
-    },
-    {
-      "desc": "“Very keen…” – Dominic Calvert-Lewin to be even more popular at Leeds United after latest Fabrizio Romano update LeedsAl",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.097822+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSHYxUUVwNWpfSExGY09wMy1hNHBIUTNtekdmWFlfcjBXR3h5Ykw2b1hzclpQWjJpbzZvaUJWSmVWYW4yOV9KVkw0dS0yZ1lBMU1GOFJjWWJIWjJka0dqVkFTaThOX2N2UlFicVBkSGxrdEVUcU1nN0lJcUlOQ0FNNEdCTWpkSjRLamgtQXRYRWpuRlZXUG9kYzlydGZpTE9jT1VaNUhhYmJKWDViX2p2WFFsZXpCcEpGdV9PYVRNWXExZ183MmR2bHJNSGlLVUUwbkJZ?oc=5",
-      "published": "2026-11-27T08:42:52+00:00",
-      "publisher": "https://www.leedsallover.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "“Very keen…” – Dominic Calvert-Lewin to be even more popular at Leeds United after latest Fabrizio Romano update - LeedsAllOver"
-    },
-    {
-      "desc": "NICO PAZ is \"open\" to joining Manchester United, according to reports. SunSport revealed earlier this month that the Red",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T09:00:52.097842+00:00",
-      "link": "https://www.thesun.co.uk/sport/41167606/nico-paz-man-utd-transfer-real-madrid/",
-      "published": "2026-11-27T08:39:44+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Nico Paz ‘open to Man Utd transfer’ with £67m Como star ‘not favouring return to Real Madrid’"
-    },
-    {
-      "desc": "Xabi Alonso concedes Chelsea's defending has been nowhere near good enough - but the Blues boss believes his friend Jami",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T16:01:03.818982+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16326111/Xabi-Alonso-hits-former-Liverpool-team-mate-Jamie-Carraghers-scathing-criticism-Chelsea-centre-backs-Levi-Colwill-Wesley-Fofana.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-27T08:35:10+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Xabi Alonso hits back at former Liverpool team-mate Jamie Carragher's scathing criticism of his Chelsea centre-backs Levi Colwill and Wesley"
-    },
-    {
-      "desc": "Kompany wants to keep Tah at Bayern amid Barcelona’s January interest - Romano Tribuna.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T10:01:03.038973+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaVdwY0xQX1hjQTU1ckFLamd4R01Da2hlS1lkU29uX3ZoNVlhenFibF9jNmY5bHVoSWFfbHFFeEp0TUJjSnpjbVBLU3hfamlQVDgtbXkwbFNHOTZzeEYwcV82cWU4SVR1X3JvZUtOQVM4SnVFeU1QX3ZLaENCY3h2NGJtRHc2TXY5WWNLWll2dE1JVTRYQTJjSWdGcm9Da3BDREF6YU0yZXdMM2VUNFhESEVRTHQ3Z9IBuwFBVV95cUxQSGhLRGplRVU3SDF0eEYtSkt2eVQxUGxtWXMwVFJrdDN2OENlUE5Wd0FFak9Bd1JkeDBQQWJsVzR3eDdhZTNjcTFhODkyTUhiZG01ZnZTR0JRX0lnQWpHVEdmMkRmcWQwV3FfZm1LZGVnR2g0cTJiaDlTNjJmNkJYY3JwVnRsMUZiUkgwY3A5TFI3Z21zVXZFdXUyTWNscTZBbXFGTThnbFJiTEtpRzJxNEc3dHJ3YVlvbFdj?oc=5",
-      "published": "2026-11-27T08:31:31+00:00",
-      "publisher": "https://tribuna.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Kompany wants to keep Tah at Bayern amid Barcelona’s January interest - Romano - Tribuna.com"
-    },
-    {
-      "desc": "Leeds United: Fabrizio Romano confirms huge Man Utd rejection with four major deals to follow Calvert-Lewin TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.097863+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSnNlaWRja2RFdDdpZlFybVo3UHVDSkZIdFlTRzhSZy1qOUlVUkJVN2JTdExNWmVLZmZ5LWUtNW4wOGFxSVpuVTJNQ0d0R2JNZE50OFpWYmVyYk13YnpxbklFTWJFcGNKN09JbTFSeG40VG1rbTBFRnBPNFg4a3ZRMDZ0V1FXTk82REFnZE10dURLcjhEMXROYmFIQkxuampmeWNDeUFnQXVEdw?oc=5",
-      "published": "2026-11-27T08:13:53+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Leeds United: Fabrizio Romano confirms huge Man Utd rejection with four major deals to follow Calvert-Lewin - TEAMtalk"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T10:01:03.038997+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-27T08:13:33+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "€23m deal is there for Liverpool to complete, Fabrizio Romano confirms it Anfield Watch",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T11:01:02.700331+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNS1hwck5OdVpTWm5nN2tUNVJJVlg1N2ltTU8ycE1OTHdVa3Itc0lfblZkRzZJRnVwTDJEN0RKdFM3TUREeDdjcjdvWmpPY0FhOFdBaWxpMVdHSXlOQXBzM3R4aDFsWU8wQzJkVF9DcmowYVBLUlJFTS1kdmFaUjByNVZHMUtqTDBqZnY0YVVsRk1Pd0dQQkdVTDFSTVN5VmJtaFJPdXdUNlFQeXFhR25nU1RSMHg4V0pXaXBuZk5kODFRQQ?oc=5",
-      "published": "2026-11-27T08:00:34+00:00",
-      "publisher": "https://www.anfieldwatch.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "€23m deal is there for Liverpool to complete, Fabrizio Romano confirms it - Anfield Watch"
     }
   ],
   "processed_urls": [
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlhFdXFCdWNUZmo2Mi1sV191Q2pXWE9hbnVHN2N0ZGFxcWsxVUNvcjRyNVJldUluMHVYTUZUT3lxTGU1SDR0OG81a0tZY1NKbWV4ZjF5NlZ4RjR6VzlPcmZSREFNMHNrY3RmVVItQmcyRGpZTkg4dDFoU1h3by0yOERsekQ2aXV3V1pEN1FYM3NXTXk5dEthcVVTdWdTbEYyemZj?oc=5",
     "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o",
     "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
     "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
@@ -8581,7 +8615,8 @@
     "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc",
     "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html",
     "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o",
-    "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers"
+    "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers",
+    "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid"
   ],
   "s_overflow": {},
   "schema_version": 4
