@@ -10,8 +10,8 @@
     "calls": 8,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 51015,
-    "output_tokens": 5302,
+    "input_tokens": 56694,
+    "output_tokens": 5721,
     "requests": 8
   },
   "circuit_breakers": {
@@ -5330,6 +5330,28 @@
       "title": "尼基·巴特炮轰曼联为队史最差并称俱乐部从上到下都是灾难",
       "updated_at": "2026-11-24T07:00:59.459587+00:00"
     },
+    "c1ca9017032e": {
+      "attempts": 1,
+      "chunks": [],
+      "created_at": "2026-10-31T00:05:41.133162+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "06d5ca672e14792d",
+      "event_id": "c1ca9017032e",
+      "evidence_refs": [
+        {
+          "added_at": "2026-10-31T00:05:41.133162+00:00",
+          "origin": "migrated_from_evidence_url",
+          "title": "",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
+      "last_error": "",
+      "telegram_message_id": 16,
+      "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
+      "updated_at": "2026-10-31T00:05:41.886537+00:00"
+    },
     "c364c0b835a9": {
       "article_title": "Wenger decides not to challenge Fifa chief Infantino",
       "attempts": 1,
@@ -6941,26 +6963,26 @@
       "updated_at": "2026-11-17T16:01:01.175769+00:00"
     }
   },
-  "last_morning_report_date": "2026-11-27",
+  "last_morning_report_date": "2026-11-28",
   "last_scan_at": "2026-11-27T22:00:54.560188+00:00",
-  "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
+  "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
     "chunks": [
       {
         "attempts": 1,
-        "chunk_hash": "49eedf977093152d",
+        "chunk_hash": "e91d38cdcdc3298b",
         "chunk_index": 1,
         "chunk_total": 1,
         "delivery_status": "DELIVERED",
         "last_error": "",
-        "telegram_message_id": 253
+        "telegram_message_id": 262
       }
     ],
-    "date": "2026-11-27",
-    "pending_text": "🌅 <b>【越位情报局 · 昨日情报汇总】</b>\n📅 <b>2026-11-27</b> · 覆盖过去 24 小时 · 素材 150 条\n━━━━━━━━━━━━━━━\n📌 <b>今日头条：</b> 英超24小时｜曼联绝平+德比裁判出炉\n🧾 <b>信息截至：</b> 信息截至今日 12:00（北京时间），素材时间跨度为过去24小时。\n\n🔎 <b>[今日必知]</b>\n1. <b>曼联客场2-2葡萄牙体育</b>（4小时前）\n   曼联官方确认，球队在里斯本2-2战平葡萄牙体育。\n   🛡 官方确认 · 📰 manutd.com（官方）\n   🔗 https://news.google.com/rss/articles/CBMimgFBVV95cUxOdTVDaHBhUGFubXB4dXhfRVpnZFNlZ2w5NnJWbWplMGttQ09PWGlJWjh6QUc3VkxfS19LRlByUDEwN09fZDFWQm1Nd3JEYU9FNjhWUHRiTnlhaHVMM1BMUHJnd2dXc2dacENPYVV6LW94YmNaSS1hNHF5MGU1U2pfWUYyNUYwa0pOZ2lhVGpUcjZ0aHpWMHpjeHJn?oc=5\n2. <b>默西塞德德比裁判组公布</b>（4小时前）\n   利物浦官方公布埃弗顿对利物浦的裁判与比赛官员名单。\n   🛡 官方确认 · 📰 liverpoolfc.com（官方）\n   🔗 https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSkxKcWJrbjJJMXByV3IyMzFfTEptU29DWE0yM2lIVlZGM2ZuT0hzNndWbmtPZU1icHpwOWg0enA4U1phZjRSTE9POUpwa1Z6RTVVOXd4S1ZKSjcwRDZ1dDNSbW9xTEM1X0dUNk04SGV2eUkzdkhrOVc4cFNFejgteW1GQ0x1Uzc3eng1c1FZTllkWmkzS3V4Qk42TXBIaWZsUF9CS1U3Xzl6Y0E?oc=5\n3. <b>阿利松入选欧冠周最佳阵容</b>（3小时前）\n   利物浦官方确认阿利松入选欧冠本周最佳阵容。\n   🛡 官方确认 · 📰 liverpoolfc.com（官方）\n   🔗 https://news.google.com/rss/articles/CBMilAFBVV95cUxQM0RpdmdrSi1KMFBTbTVEcG1Mdjk4LXVUTnpyZmM2UHdVMTlEYU9kaGVycXpUckJGeWJkbHBDakRQOHRJakJWSW4xTHdIeW83RXJnNmY2NVJKV0E0VHZ0aG1udzhjNFNVWUtCQlZUMjMtRDhUMWNqc2NEZThlOTBlbjhQUlJnNjIzdmVsSmotZzhsQldu?oc=5\n4. <b>热刺考察希腊前锋（传闻）</b>（3小时前）\n   太阳报称热刺派球探考察标价8700万英镑的希腊前锋，属传闻待官宣。\n   🛡 单一来源 · 📰 thesun.co.uk（爆料源）\n   🔗 https://www.thesun.co.uk/sport/41162650/tottenham-targets-greece-star/\n5. <b>福法纳为采访道歉</b>（5小时前）\n   BBC报道，阿隆索称福法纳已为争议采访道歉。\n   🛡 单一来源 · 📰 bbc.co.uk（一线媒体）\n   🔗 https://www.bbc.co.uk/sport/football/articles/c5wy43j1l3rwo?at_medium=RSS&amp;at_campaign=rss\n━━━━━━━━━━━━━━━\n📝 <b>[小红书笔记 · 可直接复制]</b>\n\n<b>【标题】</b>英超24小时｜曼联绝平+德比裁判出炉\n\n过去24小时英超圈最值得知道的几件事，一条比一条有信息量。\n\n过去24小时英超圈最值得知道的几件事，一条比一条有信息量。\n\n🔥 曼联客场2-2绝平葡萄牙体育\n官方战报确认，曼联在里斯本踢出一场“疯狂比赛”，最终2-2收场。俱乐部官网还专门盘点了比赛中值得注意的五个细节。说人话就是：这场球过程比比分更刺激。我的判断是，这种客场硬仗拿分对球队士气是实打实的加分项，但防守端的波动也藏不住。\n\n⚖️ 默西塞德德比裁判组官宣\n利物浦官网确认，埃弗顿对利物浦的默西塞德德比裁判与比赛官员名单已经公布。德比战裁判人选从来都是赛前焦点，这次提前官宣也算给双方球迷一个交代。我的判断是，德比这种强度，裁判尺度会直接决定比赛走向，名单一出，讨论度不会低。\n\n🏆 阿利松入选欧冠周最佳阵容\n利物浦官网消息，阿利松·贝克尔入选欧冠本周最佳阵容。门将位置能进周最佳，说明那场比赛的扑救含金量不低。我的判断是，门将状态在线，对球队接下来多线作战是最大的底气之一。\n\n📰 传闻区：热刺考察希腊前锋\n太阳报报道，热刺派出球探考察一名标价8700万英镑的希腊前锋，纽卡斯尔去年夏天也曾考虑过这笔转会。注意，这是太阳报的爆料，属于吃瓜级别，尚未官宣。我的判断是，锋线补强确实是热刺长期议题，但8700万这个数字，听听就好，别急着当真。\n\n🩹 切尔西：福法纳为采访道歉\nBBC报道，切尔西主帅阿隆索表示，后卫韦斯利·福法纳已为自己在采访中的争议言论道歉。更衣室话题向来敏感，公开道歉至少说明态度摆出来了。我的判断是，这种事处理得快比拖著强，球队内部别让它发酵成更大的噪音。\n\n📌 其他快讯\n- 卡尔弗特-勒温与利兹联签下新合同，期限到2029年（BBC、天空体育报道，单一来源，待俱乐部正式确认口径）。\n- 英超官方发布第12轮十大关键问题，周末看点已经铺好。\n\n信息量不算爆炸的一天，但德比裁判、曼联客场拿分、门将周最佳这几条，都是实打实能影响接下来走势的。\n\n你最关心哪一条？评论区聊聊。\n\n<b>【话题标签】</b>#英超 #曼联 #利物浦 #热刺 #切尔西 #默西塞德德比 #欧冠\n━━━━━━━━━━━━━━━\n🎨 <b>[封面指引]</b>\n深色背景+英超红蓝撞色，中央大字标题，左下角放曼联2-2比分牌元素，右下角放裁判哨子图标，整体信息流风格。\n\n🎭 <b>[绘图 Prompt]</b>\n<code>3D caricature style illustration of a Premier League news roundup, a football stadium at night with a giant scoreboard showing 2-2, a referee whistle and a goalkeeper glove floating as icons, red and blue neon lighting, dynamic composition, no text, high detail, social media cover style</code>\n🏷️ <b>[黄字标题]</b> 英超24小时复盘",
+    "date": "2026-11-28",
+    "pending_text": "🌅 <b>【越位情报局 · 昨日情报汇总】</b>\n📅 <b>2026-11-28</b> · 覆盖过去 24 小时 · 素材 150 条\n━━━━━━━━━━━━━━━\n📌 <b>今日头条：</b> 英超夜场｜切尔西球迷倒戈+阿森纳门将告急\n🧾 <b>信息截至：</b> 信息截至 11月8日 23:30（北京时间）\n\n🔎 <b>[今日必知]</b>\n1. <b>福法纳被切尔西自家球迷嘘</b>（29分钟前）\n   BBC报道，福法纳在客场对诺丁汉森林时被自家球迷嘘，球迷唱“你不受欢迎”。\n   🛡 单一来源 · 📰 bbc.co.uk（一线媒体）\n   🔗 https://www.bbc.co.uk/sport/football/articles/cmqlqeqd4wg5o?at_medium=RSS&amp;at_campaign=rss\n2. <b>阿隆索让凯塞多踢中卫引球迷不满</b>（1小时前）\n   多家媒体确认凯塞多再次被安排在中卫位置，切尔西球迷公开质疑。\n   🛡 多源独立印证 · 📰 thesun.co.uk（爆料源）\n   🔗 https://www.thesun.co.uk/sport/41176685/chelsea-caicedo-centre-back-nottingham-forest-xabi-alonso/\n3. <b>拉亚缺席阿森纳训练</b>（2小时前）\n   每日邮报爆料拉亚未参加训练，对曼城一战存疑，尚未官宣。\n   🛡 单一来源 · 📰 dailymail.com（爆料源）\n   🔗 https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html?ns_mchannel=rss&amp;ns_campaign=1490&amp;ito=1490\n4. <b>内维尔称哈兰德会离开曼城</b>（4小时前）\n   太阳报称内维尔“非常确定”哈兰德将离队，属名宿言论。\n   🛡 单一来源 · 📰 thesun.co.uk（爆料源）\n   🔗 https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid/\n5. <b>纽卡希望锁定利夫拉门托新合同</b>（5小时前）\n   太阳报称纽卡方面希望尽快续约利夫拉门托，单一来源。\n   🛡 单一来源 · 📰 thesun.co.uk（爆料源）\n   🔗 https://www.thesun.co.uk/sport/41174878/matthias-jaissle-newcastle-livramento-contract/\n━━━━━━━━━━━━━━━\n📝 <b>[小红书笔记 · 可直接复制]</b>\n\n<b>【标题】</b>英超夜场｜切尔西球迷倒戈+阿森纳门将告急\n\n自家球迷齐声骂自家球员，这种场面在英超真不多见。\n\n自家球迷齐声骂自家球员，这种场面在英超真不多见。\n\n🔥 切尔西客场：福法纳被自家球迷嘘\nBBC和太阳报都报了，切尔西后卫福法纳在客场对诺丁汉森林的比赛里被自家球迷嘘，球迷还唱了“你不受欢迎”。太阳报的说法是，这跟他此前一次采访有关。同一场，多家媒体确认主帅阿隆索把凯塞多又放到了中卫位置，切尔西球迷直接炸锅。说人话就是：场上位置乱，场下情绪也乱。我的判断是，这种内外同时起火的状态，比输一场球更伤。\n\n⚠️ 阿森纳门将：拉亚缺席训练\n每日邮报爆料，拉亚没有参加阿森纳的训练，赶在对曼城的关键战前，这可不是好消息。注意，这是单一来源的爆料，还没官宣，只能算“传闻待确认”。我的判断是，门将位置一旦有变数，阿森纳后场出球的整套逻辑都要跟着调整。\n\n👀 曼联与纽卡：两条传闻\n太阳报称，加里·内维尔“非常确定”哈兰德会离开曼城，理由是他在伊蒂哈德看到了“某些变化”。这属于名宿嘴炮，吃瓜就好。另一条，太阳报说纽卡方面希望尽快锁定利夫拉门托的新合同。两条都是单一来源，别当官宣看。我的判断是，纽卡这条更接近实际操作，哈兰德那条更像节目效果。\n\n📋 官方与场外零碎\n曼城官方确认EDS六球大胜西布朗；利物浦官方放出阿利松专访，聊到350场、默西塞德德比和助攻伊萨克。另外有报道称维拉分析师马纳斯被禁赛四场，这条来自两个非一线来源，先挂个问号。我的判断是，今天真正有分量的，还是切尔西那摊事。\n\n信息量不算爆炸的一天，但切尔西这出戏够聊一阵。你觉得球迷嘘自家球员，是表达不满还是过了头？\n\n<b>【话题标签】</b>#英超 #切尔西 #阿森纳 #曼城 #纽卡斯尔 #足球\n━━━━━━━━━━━━━━━\n🎨 <b>[封面指引]</b>\n深蓝夜色球场背景，左侧切尔西蓝色球迷剪影举围巾，右侧阿森纳红白门将手套特写，中间大字标题压暗角，整体高对比、强情绪。\n\n🎭 <b>[绘图 Prompt]</b>\n<code>3D caricature style, night football stadium, left side angry Chelsea fans in blue scarves booing, right side a goalkeeper glove and Arsenal red-white scarf, dramatic spotlight, high contrast, editorial poster composition, no text</code>\n🏷️ <b>[黄字标题]</b> 球迷倒戈夜",
     "status": "DELIVERED",
-    "updated_at": "2026-11-26T22:01:23.143391+00:00"
+    "updated_at": "2026-11-27T22:01:25.011859+00:00"
   },
   "news_pool": [
     {
