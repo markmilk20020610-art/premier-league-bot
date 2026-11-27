@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 1,
+        "calls": 2,
         "errors": 0,
-        "requests": 1
+        "requests": 2
       }
     },
-    "calls": 1,
+    "calls": 2,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 6308,
-    "output_tokens": 605,
-    "requests": 1
+    "input_tokens": 12798,
+    "output_tokens": 1167,
+    "requests": 2
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -258,6 +258,41 @@
       "telegram_message_id": 27,
       "title": "切尔西vs曼联、利物浦vs阿森纳焦点战前瞻与投注情报",
       "updated_at": "2026-10-31T08:45:38.192338+00:00"
+    },
+    "085dee943874": {
+      "article_title": "Arsenal head coach Slegers leaves by mutual consent",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "5e8b09062ad27ada",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 257
+        }
+      ],
+      "created_at": "2026-11-27T17:01:00.295612+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3520bda07a08b94f",
+      "event_id": "085dee943874",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T17:01:00.295612+00:00",
+          "origin": "created",
+          "title": "Arsenal head coach Slegers leaves by mutual consent",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 257,
+      "title": "阿森纳女足主帅斯莱格斯经双方同意离任",
+      "updated_at": "2026-11-27T17:01:00.998330+00:00"
     },
     "0982b0305fdc": {
       "article_title": "Tottenham breakout star Luca Williams-Barnett set to snub Chelsea and Man Utd transfer interest with bumper new deal",
@@ -6789,7 +6824,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T16:01:03.815907+00:00",
+  "last_scan_at": "2026-11-27T17:00:56.273327+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6811,6 +6846,136 @@
   },
   "news_pool": [
     {
+      "desc": "What to do with injured Raya in Fantasy? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.275817+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeHlQZzFvUGlFbXZWSkRnNV9ub3JqUTF2NkZRV0hta2VfWDctd2lWblJSd0NCOVBoaV9uWU8xal9ibjRIRGcwTnVORExxdWtvUnNGYWxjSkVtZ0hMbjRCbHJYdGJXd0ZRRzVwUk9KMVBlZ243VVA0akVCcDdrYi1HS2JRSQ?oc=5",
+      "published": "2026-11-27T16:55:59+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "What to do with injured Raya in Fantasy? - Premier League"
+    },
+    {
+      "desc": "Bukayo Saka Injury Update: Back in Training but City Too Soon (27 November) The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.275866+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd0FCR0JQXzdKS0EyNzRCek5NdVd5Q0lKZ25zMzFhdEhwdXROQlNISWNZeGdHeE4zbEZHV3hicVNDUThrbl9xaF95RWlnOU1RclY4V0U0Y19xblUzTTJSV2hkS0VPSUhhMEh0V3JMSXdCVGdKQUpRd0FDTWtrSlRoUjYtOTJLaXpndm9PcjJWQ3d4QTg?oc=5",
+      "published": "2026-11-27T16:55:39+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Bukayo Saka Injury Update: Back in Training but City Too Soon (27 November) - The False 9"
+    },
+    {
+      "desc": "BRIGHTON have been a dream team this season thanks to the fantasy football they are playing. Yet one player has had a ca",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T17:00:56.275899+00:00",
+      "link": "https://www.thesun.co.uk/sport/41170973/maxim-de-cuyper-brighton-fantasy-premier-league/",
+      "published": "2026-11-27T16:52:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How Brighton ace Maxim De Cuyper went from nearly QUITTING football to becoming a fantasy hero"
+    },
+    {
+      "desc": "Plan to use an FPL chip in GW12! Which one will be best? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.275919+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQkxfM1YxQ2RvbnVRVmdLTEVZaTUxeFREZi1ySmp2MHVtaG5pOEJFb2JMVVowdlZJeEFDRXA4N2ljWUpOeUNFLUZINVJsc0UtNW5vSHhZZFdoSmdNZG1odzhXcVNWX2l3djhWUUZrZFBVX1JpYjlmbkstR05LYmg2eXF3Sk9Ba2Q2T3h6Y1hEck5lZkJLVmgxbERIdGZ1ajdGbEE?oc=5",
+      "published": "2026-11-27T16:52:59+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Plan to use an FPL chip in GW12! Which one will be best? - Premier League"
+    },
+    {
+      "desc": "Fabrizio Romano drops ‘100%’ Nico Paz guarantee after Man Utd bombshell TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.275937+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOU3RYb2MtUm10ODNEb2gyQzRjcU5raEpxRHMtazZ6WUFGc2hTSkZGUlV2OHBteXh6dmMzOXhkbkdzcFkyVHBrMXEycm9hbWlOeGdsV1lpV2l5cFZWOWwtQmdHMnA4eVV2d25lcVdJd1N5cVN5U3ZSVWhWVE9aTWpFTjZoOFNMSWM5bzVQM0htX0VUZ0VPNVI1bjFKVHNNLXg1cDJIOTduZTBzMUVDMF8w?oc=5",
+      "published": "2026-11-27T16:48:21+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano drops ‘100%’ Nico Paz guarantee after Man Utd bombshell - TEAMtalk"
+    },
+    {
+      "desc": "SUNDERLAND’S preparations for Sunday’s Premier League clash with Tottenham have been rocked by a dressing-room virus. Bo",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T17:00:56.275954+00:00",
+      "link": "https://www.thesun.co.uk/sport/41174522/sunderland-virus-rocks-tottenham-clash/",
+      "published": "2026-11-27T16:48:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Sunderland preparations for Tottenham clash rocked by dressing room virus with host of stars sidelined"
+    },
+    {
+      "desc": "LUGANO were playing fifth-tier football after filing for bankruptcy in 2003, now they are fighting for the Swiss league ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T17:00:56.275972+00:00",
+      "link": "https://www.thesun.co.uk/sport/41174008/david-beckham-man-utd-real-madrid-lugano/",
+      "published": "2026-11-27T16:47:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "How bankrupt fifth-tier minnows catapulted themselves into Europe with help of ‘David Beckham’ and billionaire owner"
+    },
+    {
+      "desc": "Maresca: Erling Haaland's Frustration Tied To Results, Not Charges RealGM",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.275990+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPLVdGWE5ZTWZuajVGZUlOWmw2M29rakU2N3F1OUY0dUl1eE5LUDgzb3JsMzhYNnNwV2EyUnFaRWptd1M2elVHZDc1ckNWWnN2VjgtVy1qVnhTbEdXTm9FaEdxNHBTNUlhRXJmZ0lJbFhFZG9vNUg3X0NoQWZJVS12c3N5YTkwS0JKbGo2blM0V0h0dkNsWGRXVkp4Y0Nza0hqRk9oTlFn?oc=5",
+      "published": "2026-11-27T16:47:07+00:00",
+      "publisher": "https://soccer.realgm.com",
+      "source": "https://rsshub.app/twitter/user/SamLee",
+      "title": "Maresca: Erling Haaland's Frustration Tied To Results, Not Charges - RealGM"
+    },
+    {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-27T17:00:56.276003+00:00",
+      "link": "https://www.skysports.com/football/live-blog/12040/13208899/wsl-news-transfers-rumours-gossip-and-womens-football-latest",
+      "published": "2026-11-27T16:35:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "VOTE: Were Arsenal right to sack Slegers?"
+    },
+    {
+      "desc": "Hollywood actor Colin Farrell was moved to the verge of tears after being presented with a remarkable gift honouring his",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T17:00:56.276043+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16326521/Colin-Farrell-fights-tears-receiving-family-heirloom-gift-late-football-star-father-uncle.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-27T16:12:53+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Colin Farrell fights back tears after receiving 'family heirloom' gift of his late football star father and uncle"
+    },
+    {
+      "desc": "Check out our Stadium Tours offers for Blue Friday | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.276062+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdW5qR005UjBtc3BlTmNGMXhlUkMxVXdydm5lLVB0OFdEeGV4RGtmZzY1WjIwbGxlalV2ZTg1akphSGZLc3JYb0cwSHpBZURUXzB5UHFkcE1KU3ZRVGoyTTljVFZ1UXVyaVRCRnhseTQySDIyb3dMODlzRnFTa0J2b2J0aTF1R2RBVVQ5U1k5cS15NzBZTFhR?oc=5",
+      "published": "2026-11-27T16:10:26+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Check out our Stadium Tours offers for Blue Friday | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Tottenham winger Savio will miss the club's Christmas fixtures with injury and could be out for up to 80 days, manager R",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T17:00:56.276083+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cw4gnm4p3zxlo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T16:05:30+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Spurs' Savio to miss festive fixtures after injury setback"
+    },
+    {
+      "desc": "The former Man United defender theorised that Haaland's time at the club could be coming to an end and that he expects t",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T17:00:56.276108+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16326389/Real-Madrid-18-months-Gary-Neville-Erling-Haaland-prediction-Man-City.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-27T15:51:29+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "'He will be at Real Madrid within 18 months: Gary Neville makes bold Erling Haaland prediction as pundit claims 'the mood has changed at Man"
+    },
+    {
       "desc": "Arsenal part company with head coach Renee Slegers by mutual consent after a disappointing start to the season.",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "first_seen": "2026-11-27T16:01:03.818059+00:00",
@@ -6819,6 +6984,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Arsenal head coach Slegers leaves by mutual consent"
+    },
+    {
+      "desc": "Fabrizio Romano's behaviour at Inter's Champions League match raises questions: He has long history with Nerazzurri Trib",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.276128+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNnk2Yk1Da19KNEZEd3M2QzNVNGI0Tm1BNmttZEVVWGxrMUJmSHFyWk5xWEdKOUZLMmFad3ZFSEJUclZHcnFLNlMya0tfd05obnhoazFkbGZuRVZEZXRXOEd5ajV4SlVNZWlYRTFHeEcyTzNFZUJpQ2FiWW5vQXJYQWVjQS1lb1RBVjhVV0h2elg1UE3SAZgBQVVfeXFMTk5TZWtCOTk2QWdna3ZQejJFVWY1WXp6ZEEyNEtUN0lUNGx5SGhXcTJDSHRzRjM5R1JlY01IVUtGazVYRmVtUU1zVHk3TVV6X0NFQ1ZXbzBscnVyN1dWWGhVeU5zc251SDMyeEVQbEp0TkVKY0p3MUlLZzlyT1BIX19kRi1jbEYtYXFOaHRwRDcyOVNHYzBPajQ?oc=5",
+      "published": "2026-11-27T15:38:34+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano's behaviour at Inter's Champions League match raises questions: He has long history with Nerazzurri - Tribuna.com"
     },
     {
       "desc": "DREAM TEAM brings you all the latest injury, suspension and availability news ahead of Gameweek 12. Mikel Arteta was typ",
@@ -6849,6 +7024,16 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Chelsea complete midfield signing as Fabrizio Romano declares ‘here we go’ - TEAMtalk"
+    },
+    {
+      "desc": "Renée Slegers departs as Arsenal Women head coach Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.276209+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOWlQxOGJpQUNWMWZLbHREei10VjRfZUpNd0ZSM1prb1dBTkFSNExFTVRIdTlhYWVCdkMwOUtNUmw1M2h1V2I3NlRMTjdyNVR3Vml0Y09xOW9taV9DUDdWYnlzVkZqSC1lQzlFT0thaXZCS1liMUdJUEpQdjZCWVQtY1VTcnZhRVdhQ1NsdHpJZnFOTEFOUUE?oc=5",
+      "published": "2026-11-27T15:05:53+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Renée Slegers departs as Arsenal Women head coach - Arsenal.com"
     },
     {
       "desc": "MAURICIO POCHETTINO insists he will not be “nice” in his quest to turn Manchester United’s season around. Pochettino is ",
@@ -6899,6 +7084,16 @@
       "publisher": "https://www.tottenhamhotspur.com",
       "source": "https://rsshub.app/twitter/user/SpursOfficial",
       "title": "Martin Ho and team receive LMA Performance of the Week award - Tottenham Hotspur"
+    },
+    {
+      "desc": "Everything you need for Gameweek 12 of FPL with the latest tips and advice Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.276284+00:00",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPaG1hdDNvM1JjdW5jSlVqQXJTSmNicWVmbVBvc3NfRUVhUFBoMVZxNzFvcmRJS2FFcUhDRXhoT3gydFk1V0NRVEd1UjZsSGtNVXFIaVRIbGFiUnhDelBCeHB6aHZGX2hkS29tLXRFeTU5Tk1sM2U3Z3hkOUdGRkFXWXpTUGQ4S2ttUl9xb0Q4VWRJenY2TElnTFNOZlRYZC15MUt4SnNobmtFRmN1Q2NZSzR2bnFWcUZ1dnhyOA?oc=5",
+      "published": "2026-11-27T14:58:57+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Everything you need for Gameweek 12 of FPL with the latest tips and advice - Premier League"
     },
     {
       "desc": "CRISTIANO RONALDO and Lionel Messi could grace the turf on the same side after a huge hint was dropped by a former team-",
@@ -7041,6 +7236,16 @@
       "title": "Man Utd trigger Fernandes' one-year contract extension"
     },
     {
+      "desc": "Man Utd: Ornstein reveals Fernandes option has been activated after clear preference emerges Football365",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.276453+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdlVPZGdvRmZjak5SdDBfRlRNU0RFSmYtb0Rxc1IzdFV6S1hJU0dVV2RvSXhvN2dIc3Q5SU9FcWFzaDRPSWRETjBzelZtamM4OWphZ1h5MU1aQ0Nxb3dHZXFRZU4ySHVmZF9XN3M1MUhUR010WkowUHJHcUhBYS1xc2hOM1U1bE1JV3c?oc=5",
+      "published": "2026-11-27T14:36:39+00:00",
+      "publisher": "https://www.football365.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Man Utd: Ornstein reveals Fernandes option has been activated after clear preference emerges - Football365"
+    },
+    {
       "desc": "Erling Haaland mood down to Manchester City form not Premier League judgment – Enzo Maresca The New York Times",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-27T15:00:54.195696+00:00",
@@ -7079,6 +7284,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Shocking moment referee PUNCHES footballer and sends off four players in wild brawl after Bolivian Cup Final"
+    },
+    {
+      "desc": "Who is the best FPL captain for Gameweek 12? Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.276534+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNY1hIMEpBRTFWQ05ZSm9Wb2hOOVhjYVQwMzBLYzB2cXJsVXR1ZmgxLThyZGVubHdDc3huWTEzNFBCcnNqNGRDY3c0dGh0N3ZTRDdiYTNTTG85cV9xd3J3cC13N3p4Z21JQ0FIWW55eEJMcVF6eVRwTFhwNElQbFVxbUZqQXBnZmV2TVJzY0lhbkZLWUU?oc=5",
+      "published": "2026-11-27T14:18:09+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Who is the best FPL captain for Gameweek 12? - Premier League"
     },
     {
       "desc": "Man United make major move amid doubts over Bruno Fernandes’ future The Peoples Person",
@@ -7149,6 +7364,16 @@
       "publisher": "https://www.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "Latest news on Baleba and Rashford - Manchester United"
+    },
+    {
+      "desc": "Helafu signs new United contract Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T17:00:56.276608+00:00",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Rb3gwTVItSnMzRjU3UmxBLW9pUnpDUUMtSV9ySTVVeFBweExLRVpxTmRXYlduZmROX3lXdDZBZlMwVnEwQnVnSE9CS3hXVFFMNmhpbHM5Vk1vZ2dZWGRkRjZPTVRoaC1BT055bDFNNlVxTkZCNlNZ?oc=5",
+      "published": "2026-11-27T14:03:18+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Helafu signs new United contract - Manchester United"
     },
     {
       "desc": "The best training snaps ahead of City showdown Arsenal.com",
@@ -8119,200 +8344,9 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Liverpool hunt for second Barcelona signing Alejandro Balde revealed by insider - LiveScore"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.098164+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
-      "published": "2026-11-27T02:26:31+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "Buy Kids Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T03:15:34.213769+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4yQ3RUcWVoMnRzQW5XeXlxZ3dTLUhZT2VlSTVIb1ZmYndzMGJvVTZTd3FFS0JDVTBXMFJWZno0N0t6cjNLMUpzWGlsMzAtREtVcC1sNlV5ZGdxVmtFYlQ4?oc=5",
-      "published": "2026-11-27T01:29:52+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Kids - Manchester United Store"
-    },
-    {
-      "desc": "Buy Mens Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T03:15:34.213792+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ZOVhpdG0wQmVtMmpQVmRJRmNDbk1KOHAweUx2MllGMS1oYU5lOVFLOUo1V2VIRnd4M2pUWFg2U0stVHBhUXNkRkhvTjBNUTc1am9VLXdCdlB1M0RpUWdJ?oc=5",
-      "published": "2026-11-27T01:29:52+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Mens - Manchester United Store"
-    },
-    {
-      "desc": "Buy Manchester United x TaylorMade Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T03:15:34.213811+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR3BjNlBkU184WFIwMGdGX0picmxXSjBfZElfZFFBVnc5Y1Bad3lrN0tlR0s0Y2UtRXgxODVmb3FYckJLaHF5Umd2dzhsVDdQTkctd3JLajRBaldxVE5nZ09PWkRHLWpjbXpUWjN0enNLUklGUUlLa2ZNdUtwbUJuSzBLYV9UaXpXUy0yT2padTM?oc=5",
-      "published": "2026-11-27T01:29:51+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Manchester United x TaylorMade - Manchester United Store"
-    },
-    {
-      "desc": "Buy Womens Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T03:15:34.213828+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5zdXBhT3FmSl8xUzJOUmtNUWFuSmVaUFZYNWNtc0NCUk51YTVMQ2YyMDBqVThYN2VhNFlQTVhPanRnM2Y2cm9ILVJ2dXNtY05kcEtkUERGNkdmTm95MFBYRTdn?oc=5",
-      "published": "2026-11-27T01:29:51+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Womens - Manchester United Store"
-    },
-    {
-      "desc": "Buy Collections Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T08:00:49.739284+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAxU2JBajJLbms5Tno5VmpmaVhZY2tEcTdFczU3RkFheGFtRHZmaFNXbVBpcV9TempsRWl2d08tMkVQZVpiOXhnMzE0Qzc3SnlkcHlUMXhNWEJncW9zVU9XZlgtVkY3X29x?oc=5",
-      "published": "2026-11-27T01:29:51+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Collections - Manchester United Store"
-    },
-    {
-      "desc": "FOOTBALL lovers can book unbeatable away-days to enjoy some of the biggest matches on the planet. Supporters can experie",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T02:00:52.708923+00:00",
-      "link": "https://www.thesun.co.uk/sport/40226584/travel-real-madrid-barcelona-bayern-munich-champions-league/",
-      "published": "2026-11-27T01:23:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "European football trips to watch Real Madrid, Barcelona, PSG and Bayern Munich games live from just £189pp"
-    },
-    {
-      "desc": "Camilo Duran's 15-goal haul this season has made him an invaluable player for a Celtic side fighting for European progre",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T01:00:56.135515+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c62klz1wwdn7o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T00:18:44+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'Priceless' Duran proves 'the man' but is he papering over cracks at Celtic?"
-    },
-    {
-      "desc": "Unlock Stamford Bridge Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T01:00:56.135578+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNTGFfMkpvZXBfVE51YjVmV3JhaktGNXdwSVVKaE9wNnFKTnMyX0RYS0hmNU5seF9ZOUlnZF9ZS2dRS0FYWTk5NjFzeXZmejZmZ0F4R0lEZUlhbFZhWXRyZ0VBaVlZTTA1N21EanR2MGlDUkdZc2N2TnFuWTdZcm9mcGNRVkdkS3lkSk1mV2hHM2lRZGUwLXB4eHpJVm5haW1UVTVmTXVrQVpiMHFzdFhWdWRFWTNnUy1TWW45MTZzN2lqMGVvRHRuVTB2M2tUc3g4LVhrRzM1YW9XeTRIZXZpbg?oc=5",
-      "published": "2026-11-27T00:16:17+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Unlock Stamford Bridge - Chelsea Football Club"
-    },
-    {
-      "desc": "Hearts head coach Wouter Vrancken expresses both pride and disappointment after his team came out on the wrong side of a",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T01:00:56.135610+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cqr7g49ej14ko?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-26T23:59:43+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Hearts' European hopes hang by a thread but Vrancken proud"
-    },
-    {
-      "desc": "Can anybody stop Bournemouth? For long stretches here it looked as if their relentless march would finally be stopped - ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T00:00:50.624320+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-26T23:48:45+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Thomas Frank earns his first Crystal Palace victory as boss, Bournemouth win TENTH game in a row with comeback, and Brighton thrash Romanian"
-    },
-    {
-      "desc": "Crystal Palace head coach Thomas Frank reflects on Chis sides victory over Real Sociedad in the Europa League and how th",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-27T00:00:50.624335+00:00",
-      "link": "https://www.skysports.com/watch/video/13617040/thomas-frank-ambitious-to-continue-crystal-palaces-europa-league-run",
-      "published": "2026-11-26T23:29:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'We want to aim high' - Frank ambitious to continue Palace's Europa run"
-    },
-    {
-      "desc": "Some 90 miles north of the scene of the club's crowning moment, Celtic ensured that their latest return to Portugal did ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T00:00:50.624354+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16325501/Celtic-Duran-Europe.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-26T23:11:05+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Torreense 1-2 Celtic: Camilo Duran springs from the bench to get Bhoys out of jail again"
-    },
-    {
-      "desc": "Fans of Marseille and Levski Sofia clashed violently at their Europa League match, with home hooligans descending on the",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T00:00:50.624371+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-26T23:02:07+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Europa Fight League! Marseille hooligans descend on Levski Sofia end after 'Nazi salute' - while Besiktas match is SUSPENDED due to pro-Pale"
-    },
-    {
-      "desc": "Highlights: Arsenal 1-1 Borussia Dortmund | extended Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T00:00:50.624385+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMEcxU1ZtRXZZYW40M1ZvQ1BLTkFENDFXZXNRZUVsVjl1dlVHdm0yVkpyOVNBaHZkcVRsUTJOOHI2Z0ZfSWp4Q3VNVFJQMGQzdjV6TXdEc0xCeWFnV0xvT3BlSGFJRXY5R0dMZ3NpMTljRTc4TTV2NE1Pc3RBYTZ3dElVZnVqRzkwVXFNbS1jYTVuYUNnNFN3?oc=5",
-      "published": "2026-11-26T23:00:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Highlights: Arsenal 1-1 Borussia Dortmund | extended - Arsenal.com"
-    },
-    {
-      "desc": "Full match | Arsenal v Borussia Dortmund Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T00:00:50.624397+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOVRmbTRLZTExUmt4M0tibHhVaTNRYXFnZVcwVUUtY3BzdXg5R1NPcDEwYS10Uld0XzByY09oNjdETVpOa1U4eW85dE9ta0xMMG54SklYaEcyaDA5Vl82TE0xZHJ5MzM1dWRrTWJHRUxONDlJOHdZZTFld2txYS1qOU1aOWJERklV?oc=5",
-      "published": "2026-11-26T23:00:00+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://www.arsenal.com/rss/news",
-      "title": "Full match | Arsenal v Borussia Dortmund - Arsenal.com"
-    },
-    {
-      "desc": "Checkout - Man City Shop Man City Shop",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T01:00:56.135775+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE10TDdxMTJKcW1xSWxBWGdNd2ZlVTRaeXpoWjc4V3pZeTlZaFhsSTcxdmtFdkJuXzAtbUVPc1gyeGNTWWVyNlppdW5vamRCUQ?oc=5",
-      "published": "2026-11-26T22:49:45+00:00",
-      "publisher": "https://shop.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Checkout - Man City Shop - Man City Shop"
-    },
-    {
-      "desc": "XABI ALONSO hit back at old Liverpool team-mate Jamie Carragher over his scathing Chelsea criticism. Pundit Carragher cl",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T23:00:49.814169+00:00",
-      "link": "https://www.thesun.co.uk/sport/41166436/xabi-alonso-hits-back-jamie-carragher-fofana-colwill-chelsea/",
-      "published": "2026-11-26T22:44:53+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Xabi Alonso hits back at Jamie Carragher’s scathing Chelsea criticism that his team selection ‘will never work’"
-    },
-    {
-      "desc": "Hearts' bid to reach the knockout phase of the UEFA Conference League suffered an agonising 94th-minute blow after they ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T00:00:50.624425+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16325327/HEARTS-2-MONACO-3-Late-agony-brave-Hearts-Balogun-strikes-late-settle-rollercoaster-Tynecastle-epic.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-26T22:41:33+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Hearts 2-3 Monaco: Late agony for brave hosts in Conference League tie - as Folarin Balogun strikes at the death to settle rollercoaster Tyn"
     }
   ],
   "processed_urls": [
-    "https://www.dailymail.com/sport/football/article-16250391/Jack-Grealish-DROPPED-Everton-club-discipline.html",
     "https://www.thesun.co.uk/sport/40859069/man-utd-munich-air-disaster-memorial-medals-stolen-thieves/",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlhFdXFCdWNUZmo2Mi1sV191Q2pXWE9hbnVHN2N0ZGFxcWsxVUNvcjRyNVJldUluMHVYTUZUT3lxTGU1SDR0OG81a0tZY1NKbWV4ZjF5NlZ4RjR6VzlPcmZSREFNMHNrY3RmVVItQmcyRGpZTkg4dDFoU1h3by0yOERsekQ2aXV3V1pEN1FYM3NXTXk5dEthcVVTdWdTbEYyemZj?oc=5",
     "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o",
@@ -8511,7 +8545,8 @@
     "https://www.bbc.co.uk/sport/football/articles/crd61nvg4d84o",
     "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html",
     "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc",
-    "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html"
+    "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html",
+    "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o"
   ],
   "s_overflow": {},
   "schema_version": 4
