@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 24,
+        "calls": 25,
         "errors": 0,
-        "requests": 24
+        "requests": 25
       }
     },
-    "calls": 24,
+    "calls": 25,
     "date": "2026-11-27",
     "errors": 0,
-    "input_tokens": 144293,
-    "output_tokens": 16253,
-    "requests": 24
+    "input_tokens": 150645,
+    "output_tokens": 16841,
+    "requests": 25
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6789,7 +6789,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T12:44:28.984934+00:00",
+  "last_scan_at": "2026-11-27T13:00:53.517031+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6810,6 +6810,26 @@
     "updated_at": "2026-11-26T22:01:23.143391+00:00"
   },
   "news_pool": [
+    {
+      "desc": "ARSENAL host Manchester City as part of a blockbuster Super Sunday of Premier League football. And Sky Bet have ramped t",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T13:00:53.520415+00:00",
+      "link": "https://www.thesun.co.uk/sport/41169984/arsenal-man-city-sky-bet-goal-offer/",
+      "published": "2026-11-27T12:45:15+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Arsenal vs Man City: Get 60/1 for a goal to be scored with Sky Bet"
+    },
+    {
+      "desc": "ASTON VILLA analyst, Victor Manas, 61, has been struck with a four game ban and fined £6,000 following his antics agains",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T13:00:53.520459+00:00",
+      "link": "https://www.thesun.co.uk/sport/41169898/aston-villa-victor-manas-ban-dorgu-man-utd/",
+      "published": "2026-11-27T12:45:06+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Aston Villa coach slapped with four-game stadium ban for incident following dramatic 4-4 draw with Man Utd"
+    },
     {
       "desc": "JAY EMMANUEL-THOMAS has landed a role as a presenter on AFTV just over a year after being released from prison over drug",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -6949,6 +6969,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Germany star Manuel Neuer, 40, hit with cheating claims as estranged wife suggests goalkeeper was unfaithful while she was pregnant - as he "
+    },
+    {
+      "desc": "Aston Villa have a Victor Manas problem Unai Emery must address Read Aston Villa",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T13:00:53.520848+00:00",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMmNnaXBJRXdtZXpfdi05bEtPTEh4NDE2dWRjZFJwRFJ2Uklrd2stRDBkTUhDUThCdk40ZUtNcWptTmZsbnJ0QV9fd0l3QzhfYkRSWTgyUTg1bmNfeFh1UWpaYUtsVDRpNUhkbWNpTjM0cEJUYUQydUlNck9fWE1vb0VoV1MweFV3TE5mX3lKaDNOVG8?oc=5",
+      "published": "2026-11-27T11:34:00+00:00",
+      "publisher": "https://readastonvilla.com",
+      "source": "https://www.thefa.com/rss",
+      "title": "Aston Villa have a Victor Manas problem Unai Emery must address - Read Aston Villa"
     },
     {
       "desc": "Romano: Hutchinson dreams of permanent move but Milan ‘aren’t in a rush’ SempreMilan",
@@ -8279,36 +8309,6 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Fofana has apologised for interview - Alonso"
-    },
-    {
-      "desc": "THANKSGIVING is a time for good food, seeing family, and sticking the telly on. However, it is also a chance for everyon",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T17:01:06.974066+00:00",
-      "link": "https://www.thesun.co.uk/sport/41160959/every-premier-league-thanksgiving-man-utd-arsenal-chelsea-tottenham/",
-      "published": "2026-11-26T16:43:56+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "What every Premier League club should be thankful for this Thanksgiving… including miserable Manchester United"
-    },
-    {
-      "desc": "FA issue four-match stadium ban after Man Utd vs Aston Villa tunnel chaos AOL.co.uk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T17:01:06.974098+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4xc1p3Z2RuZ1Z4TG5Kc1BWY2l2aGlkWjVzVVJISjY4LTc2Z0NiWUItbGI1Rnc2LXM5VVB5UWo4a1F6Umo0eU0xZzBsYVFpOGhnNnl1YU5JR2otWDdwbEMweTFKNlVGbldIcEZaYWFsTFVFQWN2U3MxUlNOWUJ2dw?oc=5",
-      "published": "2026-11-26T16:42:01+00:00",
-      "publisher": "https://www.aol.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA issue four-match stadium ban after Man Utd vs Aston Villa tunnel chaos - AOL.co.uk"
-    },
-    {
-      "desc": "FA dish out four-match stadium ban after Man Utd vs Aston Villa stoppage time fury AOL.co.uk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T17:01:06.974127+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5IeVJ1dXVrXzlaUzZmel8xUkhfTEpKT0VZbFpneGtwVm0wY3FZUUdiSThrWkhHZ21hdE52cnlwQUZNcUtzLWZ0UXpvdmNuX1ZhRmM1MU5pdU9UZXdnQUFCdzdQVUFWR2NDU2hHQmZnb3lQckEzUkhRN0pfd3g?oc=5",
-      "published": "2026-11-26T16:41:44+00:00",
-      "publisher": "https://www.aol.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA dish out four-match stadium ban after Man Utd vs Aston Villa stoppage time fury - AOL.co.uk"
     }
   ],
   "processed_urls": [
