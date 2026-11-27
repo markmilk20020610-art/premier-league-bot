@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-27",
     "errors": 0,
-    "input_tokens": 61069,
-    "output_tokens": 6233,
-    "requests": 9
+    "input_tokens": 67324,
+    "output_tokens": 6919,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -2822,6 +2822,41 @@
       "telegram_message_id": 215,
       "title": "利物浦4-0十人曼联，波切蒂诺首秀惨败，内维尔怒批德利赫特防守",
       "updated_at": "2026-11-23T02:00:59.858267+00:00"
+    },
+    "6709f14f0a5a": {
+      "article_title": "Europa Fight League! Marseille hooligans descend on Levski Sofia end after 'Nazi salute' - while Besiktas match is SUSPENDED due to pro-Pale",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "f879566fd5933772",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 254
+        }
+      ],
+      "created_at": "2026-11-27T00:00:58.766954+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "f054e8253c45177e",
+      "event_id": "6709f14f0a5a",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T00:00:58.766954+00:00",
+          "origin": "created",
+          "title": "Europa Fight League! Marseille hooligans descend on Levski Sofia end after 'Nazi salute' - while Besiktas match is SUSPENDED due to pro-Pale",
+          "url": "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 254,
+      "title": "欧联杯球迷骚乱：马赛球迷冲入莱夫斯基索菲亚看台，贝西克塔斯比赛因政治标语被中止",
+      "updated_at": "2026-11-27T00:00:59.388594+00:00"
     },
     "68d6afe5a9be": {
       "article_title": "West Ham confirm Parker as boss",
@@ -6684,7 +6719,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-26T23:00:49.811611+00:00",
+  "last_scan_at": "2026-11-27T00:00:50.622471+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6706,6 +6741,66 @@
   },
   "news_pool": [
     {
+      "desc": "Can anybody stop Bournemouth? For long stretches here it looked as if their relentless march would finally be stopped - ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624320+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T23:48:45+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Thomas Frank earns his first Crystal Palace victory as boss, Bournemouth win TENTH game in a row with comeback, and Brighton thrash Romanian"
+    },
+    {
+      "desc": "Crystal Palace head coach Thomas Frank reflects on Chis sides victory over Real Sociedad in the Europa League and how th",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-27T00:00:50.624335+00:00",
+      "link": "https://www.skysports.com/watch/video/13617040/thomas-frank-ambitious-to-continue-crystal-palaces-europa-league-run",
+      "published": "2026-11-26T23:29:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "'We want to aim high' - Frank ambitious to continue Palace's Europa run"
+    },
+    {
+      "desc": "Some 90 miles north of the scene of the club's crowning moment, Celtic ensured that their latest return to Portugal did ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624354+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16325501/Celtic-Duran-Europe.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T23:11:05+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Torreense 1-2 Celtic: Camilo Duran springs from the bench to get Bhoys out of jail again"
+    },
+    {
+      "desc": "Fans of Marseille and Levski Sofia clashed violently at their Europa League match, with home hooligans descending on the",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624371+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T23:02:07+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Europa Fight League! Marseille hooligans descend on Levski Sofia end after 'Nazi salute' - while Besiktas match is SUSPENDED due to pro-Pale"
+    },
+    {
+      "desc": "Highlights: Arsenal 1-1 Borussia Dortmund | extended Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T00:00:50.624385+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMEcxU1ZtRXZZYW40M1ZvQ1BLTkFENDFXZXNRZUVsVjl1dlVHdm0yVkpyOVNBaHZkcVRsUTJOOHI2Z0ZfSWp4Q3VNVFJQMGQzdjV6TXdEc0xCeWFnV0xvT3BlSGFJRXY5R0dMZ3NpMTljRTc4TTV2NE1Pc3RBYTZ3dElVZnVqRzkwVXFNbS1jYTVuYUNnNFN3?oc=5",
+      "published": "2026-11-26T23:00:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Highlights: Arsenal 1-1 Borussia Dortmund | extended - Arsenal.com"
+    },
+    {
+      "desc": "Full match | Arsenal v Borussia Dortmund Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T00:00:50.624397+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOVRmbTRLZTExUmt4M0tibHhVaTNRYXFnZVcwVUUtY3BzdXg5R1NPcDEwYS10Uld0XzByY09oNjdETVpOa1U4eW85dE9ta0xMMG54SklYaEcyaDA5Vl82TE0xZHJ5MzM1dWRrTWJHRUxONDlJOHdZZTFld2txYS1qOU1aOWJERklV?oc=5",
+      "published": "2026-11-26T23:00:00+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://www.arsenal.com/rss/news",
+      "title": "Full match | Arsenal v Borussia Dortmund - Arsenal.com"
+    },
+    {
       "desc": "XABI ALONSO hit back at old Liverpool team-mate Jamie Carragher over his scathing Chelsea criticism. Pundit Carragher cl",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-26T23:00:49.814169+00:00",
@@ -6714,6 +6809,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Xabi Alonso hits back at Jamie Carragher’s scathing Chelsea criticism that his team selection ‘will never work’"
+    },
+    {
+      "desc": "Hearts' bid to reach the knockout phase of the UEFA Conference League suffered an agonising 94th-minute blow after they ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624425+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16325327/HEARTS-2-MONACO-3-Late-agony-brave-Hearts-Balogun-strikes-late-settle-rollercoaster-Tynecastle-epic.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T22:41:33+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Hearts 2-3 Monaco: Late agony for brave hosts in Conference League tie - as Folarin Balogun strikes at the death to settle rollercoaster Tyn"
+    },
+    {
+      "desc": "Chelsea have conceded 20 Premier League goals this season. It is as many as they have scored, and so as much as we appla",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624444+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16317465/Xabi-Alonso-brittle-Chelsea-KIERAN-GILL-TWENTY-Premier-League-goals-conceded.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T22:33:41+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "How Xabi Alonso's brittle Blues have wilted this season: KIERAN GILL runs the rule over all TWENTY Premier League goals conceded as new mana"
     },
     {
       "desc": "XABI ALONSO is in the middle of a culture war at Chelsea — and his future will hang on winning it. After back-to-back hu",
@@ -6774,6 +6889,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Premier League legend Fabrizio Ravanelli wins High Court battle over £340k tax bill linked to playing days"
+    },
+    {
+      "desc": "Tifos are back at the Emirates. Those loud, passionate designs which last season galvanised Arsenal en route to a first ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624537+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324183/Inside-Arsenals-tifo-culture-Emirates-banner-years-PSG-semi-final-fell-flat-led-fans-taking-control-prepare-unveil-new-design-Sundays-showdown-Man-City.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T21:30:46+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside Arsenal's tifo culture: how the Emirates banner at last year's PSG semi-final that fell flat led to fans taking control.... as they p"
     },
     {
       "desc": "Erling Haaland considers Manchester City exit, Liverpool explore Jamal Musiala deal and Manchester United eye move for M",
@@ -6896,6 +7021,26 @@
       "title": "‘Different level of evil’ – Neuer’s wife shares brutal post amid claims he ‘cheated with physio’ while she was pregnant"
     },
     {
+      "desc": "England have won the past two European Under-21 Championships, and Lee Carsley says they will \"go all out\" for a hat-tri",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T00:00:50.624720+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c97726npre86o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-26T19:35:17+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Carsley eyes Euros history with England U21s after draw"
+    },
+    {
+      "desc": "Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T00:00:50.624731+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02Q2ZFLUpXR0ZUNFFYRzg1VGR3bmN1NlVKTUFrVDd1cEFvX3JLNnEwS0E5RmVFSUZzRkk5M1VpNFlwUjJMUmRUTjE0Ny1lRTV3UEw2VlNhOTU?oc=5",
+      "published": "2026-11-26T19:28:43+00:00",
+      "publisher": "https://login.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "- Manchester City FC"
+    },
+    {
       "desc": "FA release statement to defend decision to overturn Leny Yoro red card despite Pro Ref blowback Tribuna.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-26T21:00:49.627463+00:00",
@@ -6924,6 +7069,16 @@
       "publisher": "https://arsenaldirect.arsenal.com",
       "source": "https://rsshub.app/twitter/user/Arsenal",
       "title": "Arsenal adidas 26/27 GYOKERES Pre-Printed Authentic Away Shirt - Arsenal Direct"
+    },
+    {
+      "desc": "EXCLUSIVE BY NATHAN SALT: The image, which emerged on X, formerly Twitter, on Wednesday night, appeared to show a Swanse",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624768+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324543/Swansea-investigate-naked-image-player-shared-social-media-Cardiff.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T19:05:43+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Swansea investigate after naked image of player is shared on social media ahead of grudge match with bitter rivals Cardiff"
     },
     {
       "desc": "Pochettino: I like us to play with aggression! Manchester United",
@@ -7134,6 +7289,26 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Germany's Freigang given 16-month ban over drugs test issues"
+    },
+    {
+      "desc": "Liverpool's dressing room has felt like a revolving door of uncertainty in the last five years, with constant doubt abou",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624899+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324235/Liverpool-Confidential-transfers-nine.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T17:08:23+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Liverpool Confidential squad audit: The NINE stars who could leave Anfield, the latest on each of their futures and what Reds should do with"
+    },
+    {
+      "desc": "Nottingham Forest's restless players have already seen off two managers in the past 12 months but now Oliver Glasner bel",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T00:00:50.624916+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324481/oliver-glasner-nottingham-forest-dressing-room.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-26T17:00:37+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Why Oliver Glasner is taking on the Nottingham Forest dressing room: The frustrations behind 'English-speakers' rant, key players up for sal"
     },
     {
       "desc": "Ten KEY questions for Matchweek 12's fixtures Premier League",
@@ -8064,150 +8239,9 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "Delap's chance at redemption against toothless Chelsea"
-    },
-    {
-      "desc": "On Friday November 6, Aaron Collins was notified by the FAW that he was on the standby list for Wales' Nations League ma",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-26T11:01:11.171449+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13612810/aaron-collins-exclusive-mk-dons-striker-discusses-electric-start-to-2026-27-and-first-senior-wales-call-up",
-      "published": "2026-11-26T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Collins: I got choked up before I came on for my Wales debut!"
-    },
-    {
-      "desc": "",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-26T13:01:05.350110+00:00",
-      "link": "https://www.skysports.com/football/live-blog/12040/13279303/everton-transfers-latest-news-rumours-and-gossip-live-updates-goals-and-highlights",
-      "published": "2026-11-26T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Everton latest: Renewed January bids for Richarlison & Zirkzee explored?"
-    },
-    {
-      "desc": "Fabrizio Romano reveals Liverpool ‘agreement’ to sign new right winger Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T10:00:58.964606+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOFAzTFJDcE5LT2wyWXBDbWlFcEoyOFZxR3YwYWZvc1pnU1NkMFlLNnZmVndFeC1wLV9qSlc4TG9tUGpEQm5jc3oxbGlUY2ZIeThhODVmdGUwa25zRHVTd3hWa2JIWHZmQThpMlF0dmM4N0ZJRS1UM3gtb3pLTC12SmNabjdXb3d5a3NDeFEydVJwVUhJMlkzMFlCZUM5QmJ2ZU5RZktoZFlFR0VSOG9DSDczTQ?oc=5",
-      "published": "2026-11-26T09:52:01+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano reveals Liverpool ‘agreement’ to sign new right winger - Football365"
-    },
-    {
-      "desc": "JOSHUA ZIRKZEE admits Manchester United must adopt an “us against the world” siege mentality. United had two goals disal",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T10:00:58.964632+00:00",
-      "link": "https://www.thesun.co.uk/sport/41156462/manchester-united/",
-      "published": "2026-11-26T09:48:11+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd dressing room to adopt ‘us against the world’ siege mentality after latest referee howler, reveals Zirkzee"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has introduced a new post-match routine at Manchester United amid the squad’s fitness issues. United",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T10:00:58.964651+00:00",
-      "link": "https://www.thesun.co.uk/sport/41155800/man-utd-extra-training-mauricio-pochettino-weights/",
-      "published": "2026-11-26T09:48:01+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Mauricio Pochettino introduces new post-match training at Man Utd to fix fitness woes as flops lift weights on touchline"
-    },
-    {
-      "desc": "WAYNE ROONEY's generational I'm a Celebrity run continued with a wild fever dream. The Manchester United icon is the boo",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T10:00:58.964668+00:00",
-      "link": "https://www.thesun.co.uk/sport/41156175/wayne-rooney-steven-gerrard-cristiano-ronaldo-im-a-celebrity/",
-      "published": "2026-11-26T09:38:26+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Wayne Rooney reveals he and Steven Gerrard KIDNAPPED Cristiano Ronaldo’s son from council house in wild dream"
-    },
-    {
-      "desc": "Speaking ahead of their Friday night clash against Chelsea, Glasner highlighted the failure of some of his squad to lear",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-26T11:41:13.159453+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16323641/Nottingham-Forest-boss-Oliver-Glasner-slams-stars-failing-adapt-England.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-26T09:38:02+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "'We have players who have been here for four years and can't speak English': Nottingham Forest boss Oliver Glasner slams stars for failing t"
-    },
-    {
-      "desc": "The Official Arsenal Podcast Episode 1 | Ben White Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T11:01:11.171516+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQVd2dE9wMnJnVF9LR3pncGN5dkNGNkRaSzRVQ0RRTDR4VGJLX0Z1ZFhBbGkySU1xNVZNUk1YNFE3enN2cXF5WjBiTVhTM0JDNFhrd3F4M19aZkVSb2ZNbXV5RUVYZEVPeWpnY3hnNmNIcnczbTVOVlRHbVh3THl0bmQxbVdyZzZVbDFubDBlWkJCZ2ZVdmc?oc=5",
-      "published": "2026-11-26T09:31:18+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "The Official Arsenal Podcast Episode 1 | Ben White - Arsenal.com"
-    },
-    {
-      "desc": "Fabrizio Romano: \"Wesley calls Endrick to Roma. Milan are keeping an eye on the situation\" Milanreports.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T10:00:58.964705+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE90RU5FVUJuVlJYLXRMTlM3eGt2eEN5NW1aRHFmeWFXbklQYXJmNTZaSmhOWFlXN1ZybkppdVB2MG9aOEhlbE1wZEFzalZZZ0dqLXYzSy1xeTlGRjdnOXNJVXdGbGpLYUxqeXhtWHhMT1MzUmNkSDFV?oc=5",
-      "published": "2026-11-26T09:26:13+00:00",
-      "publisher": "https://milanreports.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: \"Wesley calls Endrick to Roma. Milan are keeping an eye on the situation\" - Milanreports.com"
-    },
-    {
-      "desc": "MANCHESTER UNITED can feel \"very hard done by\" after last night's 2-2 draw at Sporting CP, claims former Premier League ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T10:00:58.964722+00:00",
-      "link": "https://www.thesun.co.uk/sport/41156201/man-utd-referee-decisions-mark-halsey/",
-      "published": "2026-11-26T09:15:37+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Ex-Premier League ref reveals all the reasons why Man Utd can feel very hard done by after controversial Sporting draw"
-    },
-    {
-      "desc": "MARTIN TYLER has revealed that he has been involved in a 30-year feud with Sir Alex Ferguson. The legendary commentator ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-26T09:01:04.052944+00:00",
-      "link": "https://www.thesun.co.uk/sport/41156003/martin-tyler-alex-ferguson-manchester-united-feud/",
-      "published": "2026-11-26T08:50:12+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Legendary commentator Martin Tyler reveals 30-year Sir Alex Ferguson feud and admits ‘it’s time for him to say sorry’"
-    },
-    {
-      "desc": "Man Utd row explodes as Premier League referees 'furious' with FA decision AOL.co.uk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T10:00:58.964752+00:00",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5VMTM2b2hnX0xwYWY4MXhIMFlkY1cydlhvOU9QS2lEcE90bjliREc2QU1hS1l4ay00dDZicEUwNlVXdHJlOTF4Zk1sdnJKa3I4SElCSzU5Q2dsTzB1UlZBT1ZkRnFyaXowR2J6Vkd0bE9sbEdvWWxaUjBhTkZPRG8?oc=5",
-      "published": "2026-11-26T08:50:07+00:00",
-      "publisher": "https://www.aol.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Man Utd row explodes as Premier League referees 'furious' with FA decision - AOL.co.uk"
-    },
-    {
-      "desc": "Fabrizio Romano has shock new information about Dominic Calvert-Lewin Leeds United News",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-26T09:01:04.052985+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcV9XWk05Y3hXWEZUWlZrZ3BJT0lGU0JmQUkzRkdvSGw4NUtHczQ1Rncxb2s4WkRNN0UyQ1FMRV85VGx0NjdOQVBLLTY0bXpfTVFwQ1pIR2lfeEZZQXRyZGVrWFVWTERrQ1RxNjBscnFweEh1dUxlV3RDRFBWYUpjUHlfMXVCNzIzRnpEMFB3ekV4dnAtbFpvQUJjaVZJTmY1ZTRMc2d0Z0ktU0hsb1FUbGtzT0xBdW5NQ1E?oc=5",
-      "published": "2026-11-26T08:39:02+00:00",
-      "publisher": "https://www.leedsunited.news",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano has shock new information about Dominic Calvert-Lewin - Leeds United News"
-    },
-    {
-      "desc": "Sky Sports' Danyal Khan gives three things we learnt from Manchester United's 2-2 draw away to Sporting Lisbon in the Ch",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-26T09:01:04.053011+00:00",
-      "link": "https://www.skysports.com/watch/video/13616675/sporting-lisbon-vs-manchester-united-three-things-we-learnt-from-sporting-vs-man-utd",
-      "published": "2026-11-26T08:20:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'Poch feels let down by ref decisions' - Three things we learnt from Sporting vs Man Utd"
     }
   ],
   "processed_urls": [
-    "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.co.uk/sport/football/articles/cmwy4vyl9nplo",
     "https://www.thesun.co.uk/sport/40853330/glazers-upset-jim-ratcliffe-man-utd-management/",
     "https://www.dailymail.com/sport/football/article-16250391/Jack-Grealish-DROPPED-Everton-club-discipline.html",
@@ -8406,7 +8440,8 @@
     "https://www.thesun.co.uk/sport/41154695/bruno-fernandes-man-utd-bench-rant-subbed-sporting-lisbon",
     "https://www.thesun.co.uk/sport/41152149/darron-gibson-addiction-man-utd-sunderland-everton",
     "https://www.thesun.co.uk/sport/41155874/football-regulator-warns-man-city-owners",
-    "https://www.bbc.co.uk/sport/football/articles/crd61nvg4d84o"
+    "https://www.bbc.co.uk/sport/football/articles/crd61nvg4d84o",
+    "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html"
   ],
   "s_overflow": {},
   "schema_version": 4
