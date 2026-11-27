@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 6,
+        "calls": 7,
         "errors": 0,
-        "requests": 6
+        "requests": 7
       }
     },
-    "calls": 6,
+    "calls": 7,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 38407,
-    "output_tokens": 3977,
-    "requests": 6
+    "input_tokens": 44629,
+    "output_tokens": 4735,
+    "requests": 7
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -4490,6 +4490,41 @@
       "title": "曼联冬窗瞄准科林斯与巴锡补强防线",
       "updated_at": "2026-11-11T17:01:07.096100+00:00"
     },
+    "9bc874966624": {
+      "article_title": "Fofana endures Chelsea disaster after shock interview as he’s hooked after fans tell him to ‘f*** off’ and penalty gaffe",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "48762ba1b6831dec",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 260
+        }
+      ],
+      "created_at": "2026-11-27T21:40:57.331885+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "95bab264786c48c7",
+      "event_id": "9bc874966624",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T21:40:57.331885+00:00",
+          "origin": "created",
+          "title": "Fofana endures Chelsea disaster after shock interview as he’s hooked after fans tell him to ‘f*** off’ and penalty gaffe",
+          "url": "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 260,
+      "title": "切尔西球迷倒戈狂嘘福法纳，赛后争议采访引爆更衣室",
+      "updated_at": "2026-11-27T21:40:57.993489+00:00"
+    },
     "9bcc0dc49802": {
       "article_title": "James Trafford makes horror error as Leeds star and England No1 hopeful left red-faced in painful Bournemouth defeat",
       "attempts": 1,
@@ -6894,7 +6929,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T21:00:52.952564+00:00",
+  "last_scan_at": "2026-11-27T21:40:49.015514+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6915,6 +6950,56 @@
     "updated_at": "2026-11-26T22:01:23.143391+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Chelsea defender Wesley Fofana is booed by his own fans during the Premier League game at Nottingham Forest after a cont",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T21:40:49.018851+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cmqlqeqd4wg5o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T21:31:54+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'You're not welcome here' - Chelsea's Fofana booed by own fans"
+    },
+    {
+      "desc": "RECKON Manchester City are struggling because of the guilty verdict hanging over their head? Think again. The answer is ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T21:40:49.018887+00:00",
+      "link": "https://www.thesun.co.uk/sport/41177047/man-city-struggles-explained/",
+      "published": "2026-11-27T21:24:55+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Reckon Man City are struggling because of the looming guilty verdict? Think again – it’s far more straightforward"
+    },
+    {
+      "desc": "Ryan Manning opens the scoring for Southampton in the second half of the Championship game against Middlesbrough.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-27T21:40:49.018913+00:00",
+      "link": "https://www.skysports.com/watch/video/13617353/southampton-v-middlesbrough-crowd-erupt-as-saints-make-breakthrough",
+      "published": "2026-11-27T21:21:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Crowd ERUPTS as Saints make breakthrough against Middlesbrough!"
+    },
+    {
+      "desc": "Manchester United may lose the chance to sign Nico Paz without Champions League qualification, Arsenal also want the Com",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T21:40:49.018945+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cqvg23jg6x78o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T21:19:27+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Champions League to be a factor in Paz move - Saturday's gossip"
+    },
+    {
+      "desc": "THERE is a phrase that should be banned from football: “They are too good to go down.” It is usually trotted out when a ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T21:40:49.018973+00:00",
+      "link": "https://www.thesun.co.uk/sport/41177153/man-utd-relegation-mauricio-pochettino-karren-brady/",
+      "published": "2026-11-27T21:16:36+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd are NOT too good to go down and Poch can’t fix years of trouble overnight – I know how fast things can unravel"
+    },
     {
       "desc": "City EDS hit six in comfortable win over West Brom Manchester City FC",
       "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6984,6 +7069,16 @@
       "publisher": "https://www.nbcsports.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Ornstein on Fernandes contract, Newcastle owners - NBC Sports"
+    },
+    {
+      "desc": "Fantasy Show: Experts reveal GW12 captain picks Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:40:49.019114+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSEVmTWptTXhndGxnYXNiU09tbVp2QXFnMDdtM0ZaclNXOVFDTUxXamJzS3BkTjNCNkkydTY1bDViY24zSHBRaFZJX1hMb1RKeFpNZHhSd20tTEJQczVxSmxYOGZaU0VWWkNQdWNDQV9qemFjLV9qOHhPRGdXTENJMnFIUU5XX0pPS3Rfc2g2ckRiVXJyc3VwQQ?oc=5",
+      "published": "2026-11-27T20:22:52+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Fantasy Show: Experts reveal GW12 captain picks - Premier League"
     },
     {
       "desc": "WESLEY FOFANA was booed and jeered by his own fans as Chelsea made the journey to Nottingham Forest. The French defender",
@@ -7414,6 +7509,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Alonso underlines importance of control on and off the ball | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Watch: Liverpool's 10 best Premier League victories away at Everton Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:40:49.019992+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTUUta2JlTmhIb3Z0RFB4X240d0NXLXFvNEVhRHl2dkRqZU9kWjREQkp1cmFCeEgyT0Rqa1ZQTUFRX3lQSnpMU3ZKdllEcjVYT0pUMHJyZFpjMjBtcEhGVUljXzQycnBlT2dzc3doYUx2OHdfWjUzNE1ORmpQamcyTWJTRGx2NGU5MGVWNTNCb0dNdzJjQ192UXhlSkNHRndsQXc?oc=5",
+      "published": "2026-11-27T15:51:53+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Watch: Liverpool's 10 best Premier League victories away at Everton - Liverpool FC"
     },
     {
       "desc": "The former Man United defender theorised that Haaland's time at the club could be coming to an end and that he expects t",
@@ -8344,80 +8449,9 @@
       "publisher": "https://www.teamtalk.com",
       "source": "https://rsshub.app/twitter/user/David_Ornstein",
       "title": "Man Utd: Jarrad Branthwaite ‘exit clause’ bombshell gives INEOS dream transfer boost - TEAMtalk"
-    },
-    {
-      "desc": "'Premier League Fans Fund making a huge difference to the Everton community' Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:44:28.989035+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYmRVYy1DbF9wWVpmNzdIdTNWVUNUaE9SLWROVUdSVnRsckd4aHhBdDhaVzctSXhyRUgwZ2J5RHVxUVhkVW5TRHVTWDVJN08ya2k2MkdIUGN5TG1ZNmJLQ3hnMGF3VnhwQVVYQjlHcWlmb3lUNUNsN2ZnbmU5NDd0UE5zemRzSktHYWtSdUtacHJCb19LR3g0a051SnR4MWJMQ3lHV2xHNngwVEJJQ3cxUjl5RV9VUTZFMGx5VkVB?oc=5",
-      "published": "2026-11-27T10:29:05+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "'Premier League Fans Fund making a huge difference to the Everton community' - Premier League"
-    },
-    {
-      "desc": "Daily Who Am I? Play 27 November Premier League GAME Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:44:28.989077+00:00",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbkgxZ0U5MGtyZldHVkRiN0JCajVxVWtoSUlwRjI5SldyS1NFTTg1MndRNWRtSE9oSW9iN01CTV8wZUVBSl9vVFV2VFgtSloxdzdmRXdkOHAzbHhyUTRacTJJSUlCbUFjbi14NFMxTGVLcGJJZ3BzVGVSRkJSQzdfVG4tazNPQ3FiSXljM2pmQ1A0UGpuNGpHWUFtR3hTUQ?oc=5",
-      "published": "2026-11-27T10:24:53+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Daily Who Am I? Play 27 November Premier League GAME - Premier League"
-    },
-    {
-      "desc": "Violent clashes mar a number of European football matches on Thursday night, with French president Emmanuel Macron conde",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T11:01:02.699803+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c69q8y5x03ywo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T10:24:24+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Clashes mar European games as Macron condemns violence"
-    },
-    {
-      "desc": "Southampton and Middlesbrough prepare to re-ignite their rivalry as they meet for the first time since the Spygate scand",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T11:01:02.699830+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/ckp809ledgpdo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T10:11:58+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'Massive for both' - Saints and Boro revisit Spygate rivalry"
-    },
-    {
-      "desc": "Under-21 Tickets - Manchester United Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:00:51.829434+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1BOVJlYVN6YkJsX1ZfX0VJc25CN2daXzZsclBKZC1PbDF0WWdmYnNtQlJfODFtM0VwX29OQk5pZ2FvLXFQYnR0eEhIbjRNc2E3Q3h4dHhBQ01vdGpQUEx4Y2w0Q18tUQ?oc=5",
-      "published": "2026-11-27T10:08:19+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Under-21 Tickets - Manchester United - Manchester United"
-    },
-    {
-      "desc": "It was a painful Sunday afternoon at Hull, but by the time Brighton pair Luka Vuskovic and Pascal Gross arrived at the b",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-27T11:01:02.699853+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13616787/pascal-gross-and-luka-vuskovic-helping-drive-fabian-hurzelers-brighton-and-their-stunning-premier-league-start",
-      "published": "2026-11-27T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Brighton's perfect blend: The duo key to Seagulls' rise"
-    },
-    {
-      "desc": "To earn comparisons to Lamine Yamal after just three Premier League appearances might seem a little far-fetched, but Rob",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-27T11:01:02.699876+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13616313/why-sky-is-the-limit-for-luca-williams-barnett-as-roberto-de-zerbi-makes-lamine-yamal-comparisons",
-      "published": "2026-11-27T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "The English Lamine Yamal? Why Williams-Barnett is getting Spurs fans excited"
     }
   ],
   "processed_urls": [
-    "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o",
     "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
     "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
     "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html",
@@ -8616,7 +8650,8 @@
     "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html",
     "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o",
     "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers",
-    "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid"
+    "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid",
+    "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview"
   ],
   "s_overflow": {},
   "schema_version": 4
