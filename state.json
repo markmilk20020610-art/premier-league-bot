@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 5,
+        "calls": 6,
         "errors": 0,
-        "requests": 5
+        "requests": 6
       }
     },
-    "calls": 5,
+    "calls": 6,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 31906,
-    "output_tokens": 3177,
-    "requests": 5
+    "input_tokens": 38407,
+    "output_tokens": 3977,
+    "requests": 6
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6894,7 +6894,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T20:00:58.803666+00:00",
+  "last_scan_at": "2026-11-27T21:00:52.952564+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6916,6 +6916,96 @@
   },
   "news_pool": [
     {
+      "desc": "City EDS hit six in comfortable win over West Brom Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.955952+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR3hDVHlsUzRWQ0diZjB1Q0NzQ2h4V2RXYnY0azMzSWNPTVpDOTQtQWtOdklCUHcwTTFtTmpLSUY1UlVfb080MUxuR2F6VEdkeWJVbG1yMDZNZUlqbUtsZTB0R29fQzEyNFF6WW9DWEdwMkc2UFl0a1Y2aGZGenRKYTFqN3FqRDRrSllESkRWUndDSEZlWG5SNDg2UQ?oc=5",
+      "published": "2026-11-27T20:58:23+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City EDS hit six in comfortable win over West Brom - Manchester City FC"
+    },
+    {
+      "desc": "Follow Daily Mail Sport's live blog for the latest score, team news and updates as Nottingham Forest entertain Chelsea i",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T21:00:52.955995+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324527/Nottingham-Forest-vs-Chelsea-Premier-League-Live-scores-team-news-updates-Blues-look-return-winning-ways-ease-pressure-fire-Xabi-Alonso.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-27T20:54:08+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Nottingham Forest vs Chelsea - Premier League: Igor Jesus' STUNNING strike gives hosts an early lead"
+    },
+    {
+      "desc": "William Saliba Injury Update: Minutes Coming but City Too Soon (27 November) thefalse9.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956027+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeHctSExqek1tYjRYQ3Jjb2Y0N3RjV0hCUnd5WjFFZjFXNjdhUjJabURJUzByNkhKbm9tUlR4YnhBa0dJbktVTUFOVVJVbEpYTEJXUUZndmxPa1BSaWp6ZjVkVGR5YnVldGxJdUM0UGE1U0tSYnIxWHNSN051S2pubkJfRG9SQzZ4QmxySzFxdjJyaGJXMXNV?oc=5",
+      "published": "2026-11-27T20:49:59+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "William Saliba Injury Update: Minutes Coming but City Too Soon (27 November) - thefalse9.com"
+    },
+    {
+      "desc": "Fabrizio Romano: “Bruno Fernandes? Keep an eye on Milan…” Milanreports.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956087+00:00",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FTkM3Yzh3dThIenplUDRNbEM4RjJfQWotQzVubUxNeE15QnVnZjlZMEZsMlA4VHgwNlphVjVFalVUM2NVcnkzRjVFZWhlcHZuWEFQdjlOMC1TZWI4cExldjBUdm1XZmx5ZFJMVEtKa2J4NUprcGVlOVZ2Q2pSRE0?oc=5",
+      "published": "2026-11-27T20:47:18+00:00",
+      "publisher": "https://milanreports.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano: “Bruno Fernandes? Keep an eye on Milan…” - Milanreports.com"
+    },
+    {
+      "desc": "CHELSEA fans were left fuming with manager Xabi Alonso, who started star midfielder Moises Caicedo at centre-back agains",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T21:00:52.956123+00:00",
+      "link": "https://www.thesun.co.uk/sport/41176685/chelsea-caicedo-centre-back-nottingham-forest-xabi-alonso/",
+      "published": "2026-11-27T20:40:48+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "‘Alonso has lost the plot’ – Chelsea fans can’t believe where Moises Caicedo ended up playing in Nottingham Forest clash"
+    },
+    {
+      "desc": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 Tottenham Hotspur",
+      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956155+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdk5LQTJxS25CeUswUW1fRXYwS05NSzIwaHNqQlppSFo3ZHVmNVZjZ1lTbkZsalp6Y19tcDlHc2lsUkJHamF4cWZkay1uWUJxTkVEemRuclQ5RkxLX0pONmdsUGJPems4c2hPVkotNGg1LUpWTlpIbTgyRVJyN2RGOWhPQlJEaUpyVEcxdzZzYklobWtIMmlIRTc0cFlXZzZlVzBjZUV2X1p3a1NQM1k0eW04MHR3LW9HOGZSMDNwMU5CdHJVX1ZYaWt3TlpfaW43eXZucDJBWGMtYXhlWVhj?oc=5",
+      "published": "2026-11-27T20:28:32+00:00",
+      "publisher": "https://shop.tottenhamhotspur.com",
+      "source": "https://rsshub.app/twitter/user/SpursOfficial",
+      "title": "Luca Williams-Barnett Men's Stadium Premier League Tottenham Hotspur Home Shirt 2026/27 - Tottenham Hotspur"
+    },
+    {
+      "desc": "Ornstein on Fernandes contract, Newcastle owners NBC Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956182+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUVhrQmpNWXh6Yk92NUZCekdLdW9DUTNlY0NlRURHaGZPdF84R1BDRi1sUElFbVdFcmJDak9MTjkwaFFsU2k0dU9FM2k4OG8tX3U1bGJfOWQzVzBuYkRXUXRQcGNiSHU1VVZGSkhUb09TN0hZRXhZR0tIcFVFWDJRSmNlQjExRU4xeVoxNlFobDIxUk1hUDE1bzRnX1YyeG9KZmE0MDZsb2RRUTBXWG80aW5xYVZKTEY0cDE5MWNEbHU?oc=5",
+      "published": "2026-11-27T20:26:21+00:00",
+      "publisher": "https://www.nbcsports.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Ornstein on Fernandes contract, Newcastle owners - NBC Sports"
+    },
+    {
+      "desc": "WESLEY FOFANA was booed and jeered by his own fans as Chelsea made the journey to Nottingham Forest. The French defender",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T21:00:52.956208+00:00",
+      "link": "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview/",
+      "published": "2026-11-27T20:09:58+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea fans sing ‘f*** off Fofana, you’re not welcome here’ after defender’s shock interview"
+    },
+    {
+      "desc": "STOCKPORT have brought back their popular Christmas Dinner in a Cup scran ahead of the holidays. The Hatters will serve ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T21:00:52.956234+00:00",
+      "link": "https://www.thesun.co.uk/sport/41176096/efl-christmas-scran-stockport-leyton-orient-league-one/",
+      "published": "2026-11-27T20:00:52+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "EFL club bring back viral ‘Christmas Dinner in a Cup’ and confirm it’ll be bigger and better than ever this year"
+    },
+    {
       "desc": "https://www.premierleague.com/es/sitemap/videos-7.xml Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-27T20:00:58.807080+00:00",
@@ -6936,6 +7026,16 @@
       "title": "https://www.premierleague.com/es/sitemap/videos-1.xml - Premier League"
     },
     {
+      "desc": "ISAAN KHAN: David Raya didn't take part in Arsenal's training session today, plunging into doubt his availability for Su",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T21:00:52.956271+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-27T19:53:49+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "David Raya MISSES training ahead of Arsenal's crunch clash with Man City in blow for Mikel Arteta"
+    },
+    {
       "desc": "Semenyo Injury Update: Out of Arsenal, Leeds Return Hope The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-27T20:00:58.807142+00:00",
@@ -6944,6 +7044,26 @@
       "publisher": "https://thefalse9.com",
       "source": "https://rsshub.app/twitter/user/SamLee",
       "title": "Semenyo Injury Update: Out of Arsenal, Leeds Return Hope - The False 9"
+    },
+    {
+      "desc": "Real Madrid superstar fully focused on club, nothing to recent PSG links – Romano Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956319+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUXRXTUZfSGNaUDJOeHdDaGFmdUhENEVDTjhKRTVUUU9nU0tQOVo3VHlQMzZwRHBQa0Exek1aaHRET0Jrb0JPa3BuQkFXQzV2Z2tkSG1rUTRja0dXeGFnTjlOS0hsSFdWNi1TbkNETVhFX25vZVJnRUJ4RHpvb1kya0ZqWi1oMkJmbjNHUDQtekVIS3ZjbGc?oc=5",
+      "published": "2026-11-27T19:40:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Real Madrid superstar fully focused on club, nothing to recent PSG links – Romano - Yahoo Sports"
+    },
+    {
+      "desc": "Aston Villa Analyst Victor Manas Receives Four-Match Ban SuaraGarut.ID",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956345+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5OU2hsYnc3em4wX0NBbURYR1ZKNm1LZF85M3JJVjZWZndaRXlrU3l5OFJ6LVF1c0ZlajA4bXZnLXU4UkpRQUlTY0NucFN0S2o4OWhSYXp4UjlobHoyV3ZkN1FB?oc=5",
+      "published": "2026-11-27T19:37:00+00:00",
+      "publisher": "https://suaragarut.id",
+      "source": "https://www.thefa.com/rss",
+      "title": "Aston Villa Analyst Victor Manas Receives Four-Match Ban - SuaraGarut.ID"
     },
     {
       "desc": "FA Bans Aston Villa Analyst Victor Manas for Four Matches Demokratis.co.id",
@@ -6964,6 +7084,16 @@
       "publisher": "https://www.allfootballapp.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano: Savinho will be out for long time with an hamstring injury - AllFootball"
+    },
+    {
+      "desc": "Mauricio Pochettino has hit back at Jamie Redknapp over his suggestion that Manchester United's new head coach has becom",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-27T21:00:52.956436+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16327205/mauricio-pochttino-man-united-jamie-redknapp.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-27T18:58:05+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Mauricio Pochettino denies claims he is 'TOO NICE' to manage Man United - after Jamie Redknapp accused him of going soft with bracelets, hig"
     },
     {
       "desc": "David Ornstein confirms Max Dowman will sign new Arsenal contract before 2027 now.arsenal",
@@ -7016,6 +7146,16 @@
       "title": "Programme Essentials - Manchester City FC"
     },
     {
+      "desc": "Alisson Becker interview | 350 games for Liverpool, Merseyside derby, assisting Isak and more Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956539+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcllVN1FwbDExR1BCNHdwQ0I4dnZNaUtzTzZUVlRLWWk0TEtlWnRjX2tuZUlMWk9DMlZISjU0bGt4X29wQzY5RGw5QWEyOEJFYWwtSmJEOHQwOGdSWW5ublFXRGN4VzA0WGpZMDQwSkhxTGZzVUJYMFkzbUxfdThpNFNneGdqaEhKVXlNM290Z0ZtckRfR1J4MUFwNkxjWU1RTzYwZXA1N2R0cXJQQXIwakZYdw?oc=5",
+      "published": "2026-11-27T18:11:54+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Alisson Becker interview | 350 games for Liverpool, Merseyside derby, assisting Isak and more - Liverpool FC"
+    },
+    {
       "desc": "ERLING HAALAND'S days are numbered at Manchester City according to Gary Neville - with the pundit \"absolutely certain\" h",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-27T19:00:49.853265+00:00",
@@ -7064,6 +7204,16 @@
       "publisher": "https://tickets.manutd.com",
       "source": "https://rsshub.app/twitter/user/ManUtd",
       "title": "- Manchester United"
+    },
+    {
+      "desc": "My Account | Tickets - Man City Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.956663+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
+      "published": "2026-11-27T17:18:27+00:00",
+      "publisher": "https://tickets.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "My Account | Tickets - Man City - Manchester City FC"
     },
     {
       "desc": "Scout Selection: Best Fantasy team for Gameweek 12 Premier League",
@@ -7796,6 +7946,26 @@
       "title": "‘Bellingham’s parents need to write a book on parenting’ say fans after Jude’s classy gesture to photographer"
     },
     {
+      "desc": "Team news for United v Brentford Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.957642+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBNS3hGWGRyeEdDZVRwVXNnSkpmeDYycDUycURxdDNvQm5HUVM1QThUdkFnLVM2dWFYTXpua0VtMU16S2d3MEcwaXZ1cHpqQ3NLcjViSmZlQXlDZEo2SlFYS2hWa1dvaXkyUEhFWEZ5YlRDVGZ1X0x3aUFUXy14UQ?oc=5",
+      "published": "2026-11-27T13:43:34+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Team news for United v Brentford - Manchester United"
+    },
+    {
+      "desc": "Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T21:00:52.957666+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
+      "published": "2026-11-27T13:41:11+00:00",
+      "publisher": "https://ticketing.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "- Liverpool FC"
+    },
+    {
       "desc": "Concacaf W Championship: Chelsea players, fixtures and World Cup qualifying explained | News | Official Site Chelsea Foo",
       "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-27T14:01:01.799191+00:00",
@@ -8244,176 +8414,6 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "The English Lamine Yamal? Why Williams-Barnett is getting Spurs fans excited"
-    },
-    {
-      "desc": "TWO sides badly out-of-form face off on Friday night, when Nottingham Forest host Chelsea. SunSport’s betting experts ha",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T11:01:02.699899+00:00",
-      "link": "https://www.thesun.co.uk/sport/41126592/nottingham-forest-chelsea-predictions/",
-      "published": "2026-11-27T10:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Nottingham Forest vs Chelsea | Premier League predictions, preview and free bets"
-    },
-    {
-      "desc": "Buy Kids Manchester United Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:00:51.829491+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CYktqMGZXUVNxZFV1U21JR2I2N0Fud3FWNFZweVdKWjlXeE5fMGc2OTJDYk1wZUxUMk5NeVlWTlBRaElmYUVHVUFDaUt0bzNnYjJaQVRGdDZWRE0?oc=5",
-      "published": "2026-11-27T09:58:27+00:00",
-      "publisher": "https://store.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Buy Kids - Manchester United Store"
-    },
-    {
-      "desc": "Premier League Fans Fund helping Everton families Start Well Together Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T11:01:02.699926+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVE1zcmdpcHB3SXlIeTRSUlpmMk9UdW54cURhNG02SUxxd0tlSUpJNG80a2EyZUFrNlVCaGFveEpjSExaRnhTUlNxVnNkVlgzTE8yOHpPYzA1bk1OTzVjdnQ1Z3JCUXUzUF93MHZFenRwLTU5UTZJc0ZNN3BkckFUb2R3Sk5WMVdWbkZkSkhWQ3ZmRy1BcXY1d09xZEhCOGFHRDMzcDBhTk83NjA?oc=5",
-      "published": "2026-11-27T09:53:55+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League Fans Fund helping Everton families Start Well Together - Premier League"
-    },
-    {
-      "desc": "They'll regret this: Chelsea give green light for Liverpool for signing LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T10:01:03.038795+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZU1ScFBIQkJYeXR4U3dMRHVYZWVlSC1uanJjR3FNSi1YUE45SWpzRjF0RWxiaHlvdFl5cWxZdWcyR3dBbk9IX2Nzc2M0UlRTYklTV1Z3Qkk3MFYwZEpRdERDMkRBODRkY2F3WnFRRFV4MzVsRHlrZENIRVExYTI1NEVxTGgwUHFEMUdyOUlsYkpCOTJPZnRkZHJSQXBvWHdMUFNfcUp0QUwyWGhCbVkxX2VDM0FLM0pvakxDclJ3RHFQNjdDQXgxaWZyTExWalUyeDNrQU9vN1Q?oc=5",
-      "published": "2026-11-27T09:44:01+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "They'll regret this: Chelsea give green light for Liverpool for signing - LiveScore"
-    },
-    {
-      "desc": "Nico Paz rejects return to Real Madrid, Manchester… | Yalla Shoot YSscores",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T10:01:03.038814+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOWYwNTZYU092Nm4xU3lFVjM1eThqR2VqUldOWGhreEtQeGtmR2ZTSnduaXgzSFI0bVpTU1p1WG5pQ3RoTGVsVVpBTE5fVGppSWRBTnFJdEVRaUs5Y09uc0I3NTdnWEd1Vy0wQlRvUnE4V3prTVFlNXpHcVViSERSbFQtWXlsRmNxYXhMQ2RISkxJd0IxSnFvNThhQzFfYXNMMFRBcU0xeWVXeXN1MGZRV3JDazJJQ3lwbGc?oc=5",
-      "published": "2026-11-27T09:38:17+00:00",
-      "publisher": "https://www.ysscores.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Nico Paz rejects return to Real Madrid, Manchester… | Yalla Shoot - YSscores"
-    },
-    {
-      "desc": "Chelsea FC Store",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:44:28.989272+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBYOWt3QUJKZk5Jdjc1M1ROWjh0MUdCcnNrSVp2MlFVMzdGSUh1RzdXR3p0eTE5Nkdaa3ktV3kwMXBNMGc2UjRianNTOER6S1dBM3drS0kwWlpJOWZmNzFHWDFNREdBTTQzTmMtb2psNEF4UQ?oc=5",
-      "published": "2026-11-27T09:29:57+00:00",
-      "publisher": "https://store.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea FC Store"
-    },
-    {
-      "desc": "David Ornstein: 'One of Europe's Best Players' Open to Joining Man Utd in 2027 GiveMeSport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T10:01:03.038829+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaVJldm92Y3oxaXdyaE9ZN3J1MG5oUmJQMWRTbkZELWh1N21ISTNpU2loVG16QlJWR2VjN3pZcFZzSnd1Q3FQRFU1VVVnYXhscGhIcng0a20wYnpIYWtzZXF4TUhwUFZjNmFxNW9Jekh2UzhkR1lYaHVlN29XMHFmc1BEc3RkaUVzcXR2Y0x1cTFjRWM?oc=5",
-      "published": "2026-11-27T09:16:02+00:00",
-      "publisher": "https://www.givemesport.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein: 'One of Europe's Best Players' Open to Joining Man Utd in 2027 - GiveMeSport"
-    },
-    {
-      "desc": "Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T16:01:03.818919+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yQXhEQmJfVWxNU1otTFVSUWV2MmZYZXJId19Ibl9fSXJRYUlQOUxIc0FHX05jNjVzRTJXZG43TDNtZWZyaW1BMmNIOUpJWDhGNjBnWGJ3?oc=5",
-      "published": "2026-11-27T09:14:27+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "- Manchester City FC"
-    },
-    {
-      "desc": "Nico Paz reaches verdict on joining Man Utd over Real Madrid as David Ornstein makes U-turn claim TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T10:01:03.038845+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTzJ0d1l3N3BVQ2ZuX3o4UGVkYS15cndpMlRMM3hYcE1uN0RUUWhnRXY2aG5OTVRYbFUtcFhCX212OWpBOE1tWnNfTnRobXlFQXZKZ19pVUlmOEl0RHRVWWFJbFZWUkxkNlBiaWV0Y2R3dGg4Z3Z1RVAtOENEcmR2ZldYc0FJdzlsbmVVWHhzUlE5Q2FlQU8ta2hxdHhjenYtekRkLUZKeU9QUlVlN213X1BrUkxTczNYOVhWdFpzZ3FtWXc?oc=5",
-      "published": "2026-11-27T09:11:24+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Nico Paz reaches verdict on joining Man Utd over Real Madrid as David Ornstein makes U-turn claim - TEAMtalk"
-    },
-    {
-      "desc": "SWANSEA CITY are reportedly investigating after a naked picture of a player circulated online. The Swans are gearing up ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T10:01:03.038860+00:00",
-      "link": "https://www.thesun.co.uk/sport/41167226/swansea-investigate-naked-player-photo-leak-cardiff-championship/",
-      "published": "2026-11-27T09:03:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Swansea launch probe after naked picture of one of their players is shared on social media before South Wales derby"
-    },
-    {
-      "desc": "NOTTINGHAM FOREST host Chelsea tonight to kick off the Premier League weekend. To mark the game, Betfred are offering al",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T10:01:03.038873+00:00",
-      "link": "https://www.thesun.co.uk/sport/41163039/nottinhgam-forest-chelsea-betfred-boost/",
-      "published": "2026-11-27T09:01:00+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Nottm Forest vs Chelsea: Get Evens on Liam Delap 1+ shot on target and 1+ foul | Betfred"
-    },
-    {
-      "desc": "In his latest Sky Sports column, Paul Merson previews a big weekend for Manchester United, before Arsenal take on Manche",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-27T10:01:03.038886+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13616882/man-utd-being-relegated-would-be-the-biggest-shock-in-history-but-it-wont-happen-says-paul-merson",
-      "published": "2026-11-27T09:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "'Man Utd being relegated would be the biggest shock in history... but it won't happen'"
-    },
-    {
-      "desc": "Watch City's EDS take on West Brom in the Premier League 2 on CITY+ today! Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:00:51.829651+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPN25EbHFOTl9OT211MzNyWFkya1BJbEJrSTc0MU5ROUxMNzJyYnZmTUVITnBDdE9kRlE1UVNrTmtfRzJtajBpZ1dkWVJIUGhMZERSdWRtSlZHUnAzRVhjNXV4Q0JfYU9jV1cyWTlDUnVzcy13eDBWWmU1Vy11NlZ1Qm1PSWpsblQzdjJVS2hDcXRCSnpLOXNSRUJGaWQ?oc=5",
-      "published": "2026-11-27T09:00:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Watch City's EDS take on West Brom in the Premier League 2 on CITY+ today! - Manchester City FC"
-    },
-    {
-      "desc": "FOOTBALL lovers looking to score a huge football away day in the UK or Europe can now save money with a huge Black Frida",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T12:00:51.829696+00:00",
-      "link": "https://www.thesun.co.uk/sport/41014319/black-friday-football-trips-real-madrid-barcelona/",
-      "published": "2026-11-27T08:57:25+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Black Friday 10% discount on football away days to games at Real Madrid, Barcelona, Man Utd and other European giants"
-    },
-    {
-      "desc": "Everton v Liverpool: Merseyside derby TV channels, how to follow and highlights guide Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:44:28.989376+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQV2oySjhRek1QbW5PZ21GTl9fTUtZRXpoRWp3LUxEN1Q4emdBM2doaS1Ddk1uejhXUm0ySE15M1pzZ2ZnXy1mUTI2ZXJEb0J6UE5tVlM2Z0o2emFMX2tDdHhsdzlOeEFfSy1RcmgyV2s0VzdUZVRST2MtXzF1YmFMbG93a2lEUUtwdGpnT2Vha2VVdW5KX0VxR1pteWhwUGE0SGlGRHU3QVM5ZTJmLXR1bkFfXzM5WFU?oc=5",
-      "published": "2026-11-27T08:53:48+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "Everton v Liverpool: Merseyside derby TV channels, how to follow and highlights guide - Liverpool FC"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO has quickly won over Manchester United players barely a week into the job. Dressing room sources say",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T09:00:52.097738+00:00",
-      "link": "https://www.thesun.co.uk/sport/41161167/mauricio-pochettino/",
-      "published": "2026-11-27T08:53:07+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Mauricio Pochettino won over Man Utd players with three skills – and ref rant after Yoro red card"
-    },
-    {
-      "desc": "Best United deals for Black Friday Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T14:01:01.800143+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLXJac0RsTFVQXzVjMjB0RzNDNm9ZYzlfZkxUTi1SdGtBTTZWbUZOMFRQdU8yM1k2ZzVNbnBvTHBodXF2NW9lWHByakpwX0pDS2VXeElvZlZTZjl0RjlkTkdtZU00dDlFeXRXX05NSnlpcGlKQzhmc2RReXZKakVyTGhfdDdDS0VhTnRET0d0aVhpaFZ0?oc=5",
-      "published": "2026-11-27T08:51:11+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Best United deals for Black Friday - Manchester United"
     }
   ],
   "processed_urls": [
