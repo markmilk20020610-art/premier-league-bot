@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 2,
+        "calls": 3,
         "errors": 0,
-        "requests": 2
+        "requests": 3
       }
     },
-    "calls": 2,
+    "calls": 3,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 12798,
-    "output_tokens": 1167,
-    "requests": 2
+    "input_tokens": 19253,
+    "output_tokens": 1734,
+    "requests": 3
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -560,6 +560,41 @@
       "telegram_message_id": 75,
       "title": "曼联16岁新星JJ·加布里埃尔接近加盟皇马",
       "updated_at": "2026-11-04T16:01:13.114786+00:00"
+    },
+    "12a9b9c38515": {
+      "article_title": "Arsenal Women sack manager Renee Slegers after Gunners’ dismal run of results under Champions League-winning boss",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "40f7db527de300a6",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 258
+        }
+      ],
+      "created_at": "2026-11-27T18:01:05.228323+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "2eff14b2298f466f",
+      "event_id": "12a9b9c38515",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-27T18:01:05.228323+00:00",
+          "origin": "created",
+          "title": "Arsenal Women sack manager Renee Slegers after Gunners’ dismal run of results under Champions League-winning boss",
+          "url": "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 258,
+      "title": "阿森纳女足解雇主帅蕾妮·斯莱格斯",
+      "updated_at": "2026-11-27T18:01:06.269707+00:00"
     },
     "12cf7f52715e": {
       "article_title": "Pochettino’s first Man Utd training session secretly filmed by drone and posted online in alarming security breach",
@@ -6824,7 +6859,7 @@
     }
   },
   "last_morning_report_date": "2026-11-27",
-  "last_scan_at": "2026-11-27T17:00:56.273327+00:00",
+  "last_scan_at": "2026-11-27T18:01:00.531638+00:00",
   "last_summary_sent_at": "2026-11-26T22:01:23.166573+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6845,6 +6880,46 @@
     "updated_at": "2026-11-26T22:01:23.143391+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Arsenal make contact to hijack £100m Man Utd move as Ornstein reveals Arteta advantage TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T18:01:00.534556+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObFR6SzluWl85bFJqLXJIRjNlUGg3dC1HYWtacGVXOEUxVkFLUHQtWHFBNU9uQUYxSVhsem9DYXJwVkxvTHEwWTVYb29FZUVjaUw4Z2RtcmIwMU12QXJyVHJOZ0pPbFVZeGdhRnk4ZF9Qek16eEFOSkNmMjJRYS1oelItbHZMeTkySFhvX0xZUC03WWZuYl9oZ1lENWROcGFLd0sxdEZoWkJHTzg?oc=5",
+      "published": "2026-11-27T17:47:36+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Arsenal make contact to hijack £100m Man Utd move as Ornstein reveals Arteta advantage - TEAMtalk"
+    },
+    {
+      "desc": "Aston Villa boss Unai Emery praises Alejandro Garnacho's \"fantastic attitude\" but suggests other players rank ahead of h",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-27T18:01:00.534610+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwp9d4eg4n2xo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T17:42:00+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Emery praises Garnacho attitude after Villa selection snub"
+    },
+    {
+      "desc": "Scout Selection: Best Fantasy team for Gameweek 12 Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T18:01:00.534637+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZXRNaFpzMGFwQUZLNThvemtoUE5GRTJGOHpoUUtGNENhdVlFek55SlJub2R0Q042V2U5NTlzaWVNQ3lqeVY2VlV0Si1xLUVrRG91TzQxNmxwUVg4T3dVLW9LTFZya3VzWkUxSzlHTkhRRUIxSFQwWER3OGluVFEyQ1ZiZTJzMlhuNFZsaENKMmpjSEEteXlVRHJNWQ?oc=5",
+      "published": "2026-11-27T17:15:00+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Scout Selection: Best Fantasy team for Gameweek 12 - Premier League"
+    },
+    {
+      "desc": "MATTHIAS JAISSLE is desperate for Newcastle to lock down Tino Livramento to a new deal like Lewis Hall. The German, 38, ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T18:01:00.534691+00:00",
+      "link": "https://www.thesun.co.uk/sport/41174878/matthias-jaissle-newcastle-livramento-contract/",
+      "published": "2026-11-27T17:04:51+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Matthias Jaissle desperate for Newcastle to lock down Tino Livramento to a new deal like Lewis Hall amid contract fears"
+    },
     {
       "desc": "What to do with injured Raya in Fantasy? Premier League",
       "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -6936,6 +7011,16 @@
       "title": "VOTE: Were Arsenal right to sack Slegers?"
     },
     {
+      "desc": "INTER MIAMI CF superstar Lionel Messi unsurprisingly leads the way as the highest-paid player in the MLS and by quite so",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-27T18:01:00.534846+00:00",
+      "link": "https://www.thesun.co.uk/sport/41175127/lionel-messi-highest-paid-mls-player-inter-miami/",
+      "published": "2026-11-27T16:24:57+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Lionel Messi highest-paid player in MLS as full salaries for league are revealed with five stars making more than $10m"
+    },
+    {
       "desc": "Hollywood actor Colin Farrell was moved to the verge of tears after being presented with a remarkable gift honouring his",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-27T17:00:56.276043+00:00",
@@ -6954,6 +7039,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Check out our Stadium Tours offers for Blue Friday | News | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Eberechi Eze opens his Premier League account for the season at Newcastle’s expense Digg",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T18:01:00.534932+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBScUVfZFg4Y3poZjg3VzkwMFBaNXhNNmZJdG5nR0RMd2puLXBHeWVTVHBfZTV6VGJXakVsUlNSa1VIb3Zjd1hj?oc=5",
+      "published": "2026-11-27T16:07:41+00:00",
+      "publisher": "https://digg.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Eberechi Eze opens his Premier League account for the season at Newcastle’s expense - Digg"
     },
     {
       "desc": "Tottenham winger Savio will miss the club's Christmas fixtures with injury and could be out for up to 80 days, manager R",
@@ -7014,6 +7109,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Arsenal Women sack manager Renee Slegers after Gunners’ dismal run of results under Champions League-winning boss"
+    },
+    {
+      "desc": "Arsenal 26/27 Home Boxed Signed Shirt RUSSO Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T18:01:00.535016+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcE05Q254d1RMc2p4ZlJDM1pRTWZfeUZIRm5Rc0s4Y3RHal9ibVlfWmJaOXBPN0p0VXlqYTFYclZqTURGbTY0TFhRX2dic2pMOE1PNHV4ZVYzV29NQk9mTVhQRU5jdXVBc09qVUExQWRhSnAtLWlqSERaa2FLd2hKZXdfVG10cTVURzdWdjJ0dW9jUTJZZ1JmUVBUUjFDTlA5Vk0xN2ZsRkZFMHdwTU4zRHVSZDJNWlA0QWJJ?oc=5",
+      "published": "2026-11-27T15:31:07+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal 26/27 Home Boxed Signed Shirt RUSSO - Arsenal Direct"
     },
     {
       "desc": "Chelsea complete midfield signing as Fabrizio Romano declares ‘here we go’ TEAMtalk",
@@ -7406,6 +7511,16 @@
       "title": "Manchester United activate option to extend Bruno Fernandes contract - The Athletic - The New York Times"
     },
     {
+      "desc": "Checkout - Man City Shop Man City Shop",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T18:01:00.535502+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE10TDdxMTJKcW1xSWxBWGdNd2ZlVTRaeXpoWjc4V3pZeTlZaFhsSTcxdmtFdkJuXzAtbUVPc1gyeGNTWWVyNlppdW5vamRCUQ?oc=5",
+      "published": "2026-11-27T13:57:03+00:00",
+      "publisher": "https://shop.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Checkout - Man City Shop - Man City Shop"
+    },
+    {
       "desc": "EFL star slapped with three-match ban for off the ball incident missed by officials talkSPORT",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-27T15:00:54.195898+00:00",
@@ -7454,6 +7569,16 @@
       "publisher": "https://www.tufutbolero.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Ferland Mendy returns to Real Madrid's bench after long injury - Tu Futbolero"
+    },
+    {
+      "desc": "Semenyo close to return – Enzo Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-27T18:01:00.535615+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYUZST0dpUEpsSHREdDVja3A4SFBEb3A1ZzV6ZWlBMXVqSVhqT1Z1TEhpbWV1S2hNYVVEN3BoUzB0TFlqSm5xOVdXNGdxR3ZGMEh3eGFGVnFhdjg4TVMzRHJFZWI2cXBBUmt4UGZHcnAwelFCalNOdjhpMHp3OHBLQmg0SWpSU1l1eGNWQWljei1XaUk4ZXpPVEtZZHpldG9mQUVDeWpGX212eEFh?oc=5",
+      "published": "2026-11-27T13:30:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Semenyo close to return – Enzo - Manchester City FC"
     },
     {
       "desc": "MAURICIO POCHETTINO hopes his experience as US national head coach will help him get his message across to Manchester Un",
@@ -8254,100 +8379,9 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "What happens now for Bayern Munich and Musiala?"
-    },
-    {
-      "desc": "LFC Clothing Sale | Liverpool FC Online Store Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.098005+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsSmx5TmcxUzlUVWVwZUtOcld3d3QzbG10dC1qYVFFcUF1VVpJejJoOTAtcGtxSkFFV3RGTUpqMjdCVlR1c3ZLc1A3Z3lwYWkzczZtZkhuMFFrU180cXZVaThVNA?oc=5",
-      "published": "2026-11-27T06:47:22+00:00",
-      "publisher": "https://store.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "LFC Clothing Sale | Liverpool FC Online Store - Liverpool FC"
-    },
-    {
-      "desc": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect LEADERSHIP Newspapers",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.098023+00:00",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY3Zuc1k1QlVQNC12MFM4R3JJTGZILUNpbkZ0TWk0ejljdVYzVTJLWFRrVUVtdXJQOFVIWFZKYzBfUlpqc0NBOGVna2k4VDduN190SGRGRjNoRGxoRHA0cEJ5dUJLSXRSNUNESGFoQUFqUTZaeGJCRFViZzFuRUM5bnN5SUwzQXdsUWxYaHVVUUJENGRIVklr?oc=5",
-      "published": "2026-11-27T06:44:59+00:00",
-      "publisher": "https://leadership.ng",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Just Now: Manchester United Sack Michael Carrick With Immediate Effect - LEADERSHIP Newspapers"
-    },
-    {
-      "desc": "Manchester City's owners must be forced to sell the club as punishment for breaking financial rules, senior figures at s",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T07:00:52.655582+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwp809d7yp4go?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T06:38:14+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Man City owners should be forced to sell, say rival club chiefs"
-    },
-    {
-      "desc": "FA Bans Aston Villa Analyst as Emery Faces Garnacho Questions SuaraGarut.ID",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.098056+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE51dlFlWVBrUUV0b19uMUVVbk5TUmZURzcyZVlOV1BUVWo5V1d6dnAwSFNUOUJnN1NLWFkzWTBUVHFjczA2WlNUOHJpTkpCcnoxYW9wU2RyVmktX3hVRVU3eQ?oc=5",
-      "published": "2026-11-27T06:34:30+00:00",
-      "publisher": "https://suaragarut.id",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA Bans Aston Villa Analyst as Emery Faces Garnacho Questions - SuaraGarut.ID"
-    },
-    {
-      "desc": "FA Bans Aston Villa Analyst Manas for Four Matches cwibc.co.id",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T07:00:52.655602+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qcm53a3UyUjdxdzhma3gtYXQwR1RYT1ZvaWJMR21pMGJpMGtGQmJvdkQ0UnpHT25JbWZXVFRCd05Wa3BENUpNVHl1TEYzX0tIV1hxTWx1ZDRtMnNtMUFTcjNCdkdGX2s?oc=5",
-      "published": "2026-11-27T06:26:29+00:00",
-      "publisher": "https://cwibc.co.id",
-      "source": "https://www.thefa.com/rss",
-      "title": "FA Bans Aston Villa Analyst Manas for Four Matches - cwibc.co.id"
-    },
-    {
-      "desc": "U18s preview: Arsenal v Bournemouth Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T07:00:52.655619+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQb1dmaHNaVlRBTzVyNVozSW9HeERSSEFTVlZrblRmcGVjY2doY2p0R3NIUURNNHpKdzgzVHVIQ0NNUVJsUTJadnZxUFlzbEhaZUZuRm1YY2RnbmhmRlFHS21wU3J4dEdpazBCQ1VkYzFidngwclNLTDJhd0pWVkF3cUR3?oc=5",
-      "published": "2026-11-27T06:03:10+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "U18s preview: Arsenal v Bournemouth - Arsenal.com"
-    },
-    {
-      "desc": "Leny Yoro red card: Written reasons why Manchester United defender's red card at Liverpool was overturned published by t",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T11:01:02.700665+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc?oc=5",
-      "published": "2026-11-27T05:30:17+00:00",
-      "publisher": "https://www.skysports.com",
-      "source": "https://www.thefa.com/rss",
-      "title": "Leny Yoro red card: Written reasons why Manchester United defender's red card at Liverpool was overturned published by the FA - Sky Sports"
-    },
-    {
-      "desc": "Transfer rumor: Romelu Lukaku from Chelsea to SSC Napoli www.footballtransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T09:00:52.098127+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWXU4a3JJNjdlUXFDeGR3clpsWGczdEwyRms3V09lZnNXQmZkbWc4WmF6WEVxTk9OMDZWc2h0VnA2VGVXREdLbllPcEdSb2NmLUdEUkktZGVOSlU0MFRHeHpMeFpZcllwNVd1V2piME1FMjVlV0tlMlFVVXZUdGx2T3dISVRDVW5NMmtLVGhZTko2X2dDd1pzXzZkUXo?oc=5",
-      "published": "2026-11-27T04:41:34+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Transfer rumor: Romelu Lukaku from Chelsea to SSC Napoli - www.footballtransfers.com"
-    },
-    {
-      "desc": "Liverpool hunt for second Barcelona signing Alejandro Balde revealed by insider LiveScore",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T07:00:52.655656+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeG51OFp2THJSQ211R19VZ1paMkFXUy1tQUVuVUw4cVBYbVVzMWhfU2hhVXFrcFNNMTl6ME9lTTQ1S3Y3Q3dXendPTkRYTWV6TTd2RXFzc3N3U1ZUWTVhM0xCUDdzQ2ZPdjZPNF93VEZHbVUxUmZVN2dzS2NnT0dZSGNEQUZiOHhNYUpxM0E1RGxtUGg3X3EzQlN6REhMcTd6ZGxGM3pNbmlsSnVKeEF4OWRUX08?oc=5",
-      "published": "2026-11-27T04:32:52+00:00",
-      "publisher": "https://www.livescore.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Liverpool hunt for second Barcelona signing Alejandro Balde revealed by insider - LiveScore"
     }
   ],
   "processed_urls": [
-    "https://www.thesun.co.uk/sport/40859069/man-utd-munich-air-disaster-memorial-medals-stolen-thieves/",
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlhFdXFCdWNUZmo2Mi1sV191Q2pXWE9hbnVHN2N0ZGFxcWsxVUNvcjRyNVJldUluMHVYTUZUT3lxTGU1SDR0OG81a0tZY1NKbWV4ZjF5NlZ4RjR6VzlPcmZSREFNMHNrY3RmVVItQmcyRGpZTkg4dDFoU1h3by0yOERsekQ2aXV3V1pEN1FYM3NXTXk5dEthcVVTdWdTbEYyemZj?oc=5",
     "https://www.bbc.co.uk/sport/football/articles/c875p940g5v2o",
     "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
@@ -8546,7 +8580,8 @@
     "https://www.dailymail.com/sport/football/article-16325217/marseille-levski-sofia-besiktas-sunderland-europe.html",
     "https://news.google.com/rss/articles/CBMiggJBVV95cUxNOV9QaGhwZ1RuN0hTU1hmNUZDZXQzV0FiemIxbFNCWGQ0X2UwVmxsZWx0UDNILVd4VXRXQnZaUlE1Z2xKOTBHd280d2ZucW5EYl9aM0FfRFJlOXlKOTI5dnNjT3lMaXZWUlBWcXJXXzg4WnhIdDJ5a3RlbkRneXFyZVQ4Y0JoOWFGSklCVDgtWXg2bnZxQzJfWVY3R2Y3cnItTmN5OHJha3JENVlKdVBTZkVac184SHU4TXhnMmZSZkJBRVQyTElHOWlYSnZTc0JscWZ3RUppbE9penJndHVPRlZVY3VoM2dwNElXeTZjZUtJU0JCeVJmbERMQmdJVlpYOXc",
     "https://www.dailymail.com/sport/football/article-16324333/bournemouth-brighton-crystal-palace-sunderland-europe.html",
-    "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o"
+    "https://www.bbc.co.uk/sport/football/articles/cmy49d5kpw78o",
+    "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers"
   ],
   "s_overflow": {},
   "schema_version": 4
