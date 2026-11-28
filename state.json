@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 15,
+        "calls": 16,
         "errors": 0,
-        "requests": 15
+        "requests": 16
       }
     },
-    "calls": 15,
+    "calls": 16,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 100604,
-    "output_tokens": 10611,
-    "requests": 15
+    "input_tokens": 105669,
+    "output_tokens": 11340,
+    "requests": 16
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6968,7 +6968,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-28T04:00:50.334626+00:00",
+  "last_scan_at": "2026-11-28T05:00:58.681149+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6990,6 +6990,26 @@
   },
   "news_pool": [
     {
+      "desc": "Arsenal vs Man City Predicted Lineup: Raya Back in Training The False 9",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T05:00:58.683636+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSkp2UW12Szcwa2s5Yk5FZXA5Q19CeVhTYlBybktoZWpGeEhRUGxBb1NTT1ZtWkRSTWJGUDJYX3kwTmRwWjZLT2JQYkZqOXUwTkl5Ymt6NGt4TVltMHpkN2lqM0RuVmRqZHBnRUwxMFhSZHNwMldFdkFVaWw5NlprLThuR2VyLU4wbHlQbXVjTzhseVc2blZieg?oc=5",
+      "published": "2026-11-28T04:48:34+00:00",
+      "publisher": "https://thefalse9.com",
+      "source": "https://rsshub.app/twitter/user/CharlesWatts",
+      "title": "Arsenal vs Man City Predicted Lineup: Raya Back in Training - The False 9"
+    },
+    {
+      "desc": "Forest Green Rovers Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T05:00:58.683658+00:00",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VOXVPWmpwWDZ2YzBJVGlZYklackhidDUyem14ZmF1TXU0b0pBaVRSV0s0d2JzRXhVT2NlQjJ1emlKc3dTSHVKeHJkMlFwZnNaZ3d5X2dVMkV2TnNvMHJLQ29pcG50RHBqOUVCOWZReVpLcDQ?oc=5",
+      "published": "2026-11-28T04:08:49+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "Forest Green Rovers - Premier League"
+    },
+    {
       "desc": "Aston Villa coach handed four-match ban after furious reaction to Manchester United equaliser Howl.Link",
       "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-28T02:00:46.773481+00:00",
@@ -7008,6 +7028,16 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "'Not many things are going our way' | Video | Official Site - Chelsea Football Club"
+    },
+    {
+      "desc": "Archie Brown Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T05:00:58.683732+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBieURZaXp4Sm9aa0hzNGJFOFN1czdGZ0FCbzVYNU8tTm90d3JrV0xuM01jNFI5azZFak95bzV2WVpCTlh1NFlxMjhjZm1LSFdVNXVaZU9LYURXVTczQ0E?oc=5",
+      "published": "2026-11-28T00:55:19+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Archie Brown - Liverpool FC"
     },
     {
       "desc": "Hinshelwood: 'We need to show a good reaction' Premier League",
@@ -8458,36 +8488,6 @@
       "publisher": "https://www.chelseafc.com",
       "source": "https://rsshub.app/twitter/user/ChelseaFC",
       "title": "Concacaf W Championship: Chelsea players, fixtures and World Cup qualifying explained | News | Official Site - Chelsea Football Club"
-    },
-    {
-      "desc": "Ferland Mendy returns to Real Madrid's bench after long injury Tu Futbolero",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T14:01:01.799219+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbkhmVWNid1J0RE5QNHNGQWZ1aWNpMk5pUTFKVEt2TzhnMTRjN0VhbE5rMEdnUDdwRlV4NHVRamdSa3VCTS1kcjg4T2d1d2Ixb2FGakp4VFJwanM2THhTOFdoSVNlVHlrRXRWazRYdURaUHNNRkkwQ1ctR0JteVJJcmFxcTBKelNQYUtRNTU3S2RrdnRxcGQtcFRFZUJpa0k?oc=5",
-      "published": "2026-11-27T13:30:10+00:00",
-      "publisher": "https://www.tufutbolero.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Ferland Mendy returns to Real Madrid's bench after long injury - Tu Futbolero"
-    },
-    {
-      "desc": "Semenyo close to return – Enzo Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T18:01:00.535615+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYUZST0dpUEpsSHREdDVja3A4SFBEb3A1ZzV6ZWlBMXVqSVhqT1Z1TEhpbWV1S2hNYVVEN3BoUzB0TFlqSm5xOVdXNGdxR3ZGMEh3eGFGVnFhdjg4TVMzRHJFZWI2cXBBUmt4UGZHcnAwelFCalNOdjhpMHp3OHBLQmg0SWpSU1l1eGNWQWljei1XaUk4ZXpPVEtZZHpldG9mQUVDeWpGX212eEFh?oc=5",
-      "published": "2026-11-27T13:30:00+00:00",
-      "publisher": "https://www.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "Semenyo close to return – Enzo - Manchester City FC"
-    },
-    {
-      "desc": "MAURICIO POCHETTINO hopes his experience as US national head coach will help him get his message across to Manchester Un",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T14:01:01.799245+00:00",
-      "link": "https://www.thesun.co.uk/sport/41170961/man-utd-pochettino-usa-training-season-ticket/",
-      "published": "2026-11-27T13:06:31+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd files: Why Pochettino staff reckon US stint is key to transforming players and fans get 25% off season tickets"
     }
   ],
   "processed_urls": [
