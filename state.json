@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 26,
+        "calls": 27,
         "errors": 0,
-        "requests": 26
+        "requests": 27
       }
     },
-    "calls": 26,
+    "calls": 27,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 163510,
-    "output_tokens": 17713,
-    "requests": 26
+    "input_tokens": 169985,
+    "output_tokens": 18472,
+    "requests": 27
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -7007,7 +7007,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-28T14:00:50.233848+00:00",
+  "last_scan_at": "2026-11-28T15:00:53.376289+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -7029,6 +7029,86 @@
   },
   "news_pool": [
     {
+      "desc": "Reports emerged that Vardy had been given time off by Burnley boss Fabio Celestini and would instead join his family in ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-28T15:00:53.379769+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16328829/Rebekah-Vardy-husband-Jamie-given-day-Burnley-boss-heads-watch-former-club-Leicester.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-28T14:46:38+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Rebekah Vardy hits back at claim husband Jamie given 'day off' by Burnley boss - as he heads to watch former club Leicester instead"
+    },
+    {
+      "desc": "Manchester United activate option to extend Bruno Fernandes contract - The Athletic The New York Times",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.379806+00:00",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLXBMY2VBeWU4NXp3MzdVVl82MDdLWjN2MlVmUzNNYUlHX2VCQ3lWRDZpZ1dLXzVKOUI3dWpqMzhfOXFxaWctdF9QNE95WThVM3NFLUdSa1pOQUhhQ3pIOWhQaV9jYXBkVEMyRURTZXhMV3p1T29UeWpLRkFwekxpNzl3VjAwY1hWTjA1U0xRRkQwTlJNdEh0YVhWT2hteUZQRkx0cw?oc=5",
+      "published": "2026-11-28T14:45:00+00:00",
+      "publisher": "https://www.nytimes.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "Manchester United activate option to extend Bruno Fernandes contract - The Athletic - The New York Times"
+    },
+    {
+      "desc": "Three Middlesbrough players walk disciplinary tightrope against Derby with West Ham in mind Teesside Live",
+      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.379838+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc0phc182MDFMOWJLOFhoSEZUdTdwdldfVE1veG9Lb3MtRGhvTDEwU193dTVEVENmZGw2SGdOMFd5bjlWeHptemdxQmxMNkNtZVV6YzRvcUxwMmYxcngxeENrT01RVWFHY2lJWjZQQ1NKM0Z3cTNnbnctTHA1dXJOMURFakRGcmhVZWMybTB6azV2Ny0tbks1aWlnd0QwOHVTb2J3c1Q1VjR0ZW9PRjBaLVBpb9IBuAFBVV95cUxOUEQyc0d6NUV0NXZObUJfTjlPeExfYnV1WWg4NFcxOU51dEdGMmhDdks3VG9FWmhNZ3JBcE1OeGxHeFpKUU16eG5xZzFJS2NZYUdaREdLWEhUNHpOLVpLREpWeEZyYkNtOS1ORDJpSkpnLU9QRms1SG9aY3puTTRRUEtKMGJDRW1ncHctUEtFNm1RSG55YUlfQXB4WHVIbXpVclVxX2x6QVZaWXhjbW5kd05EYUl3SWRB?oc=5",
+      "published": "2026-11-28T14:31:00+00:00",
+      "publisher": "https://www.gazettelive.co.uk",
+      "source": "https://www.thefa.com/rss",
+      "title": "Three Middlesbrough players walk disciplinary tightrope against Derby with West Ham in mind - Teesside Live"
+    },
+    {
+      "desc": "Watch City's EDS take on Dinamo Zagreb in the Premier League International Cup on CITY+ Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.379867+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWklHZ19kbk1PWDhXd1ZodjhyMWNpQWRUemlzbC1IaW5NU2tRaDZ2ZlJ2bXc5OXJMR3lMV3JIUlpHSWUzVlc5cG1SUERCbmRYWUtiME9IZ1Y5WG12THZRSXhwWHZGY3BIUm9KZFU1bkdvb3VzTVpaNUJhOHFHT1I3MHR1WHRMemtpazc3M1hJQjlHSUp2MzJRYVkxSU9PRHZqLVBSRmo4VHdsNlo4Q2NwSE9zN3NCa21yU0E?oc=5",
+      "published": "2026-11-28T14:30:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Watch City's EDS take on Dinamo Zagreb in the Premier League International Cup on CITY+ - Manchester City FC"
+    },
+    {
+      "desc": "You are unlikely to ever see a game of football stopped for such an absurd reason as this",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-28T15:00:53.379903+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16328605/Bizarre-moment-pitch-invader-SCOOTER-stops-football-match-security-chase-him.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-28T14:04:01+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Bizarre moment a pitch invader on a SCOOTER stops a football match - as security chase after him"
+    },
+    {
+      "desc": "Kristi Montgomery struck late to give 10-man Blackburn a deserved 1-0 win over Charlton.",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-28T15:00:53.379952+00:00",
+      "link": "https://www.skysports.com/football/blackburn-rovers-vs-charlton-athletic/report/560703",
+      "published": "2026-11-28T14:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Montgomery strikes to earn 10-man Blackburn win over Charlton"
+    },
+    {
+      "desc": "Lincoln ended a run of five straight defeats as they held high-flying Wolves to a 0-0 stalemate to earn a valuable Champ",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-28T15:00:53.379976+00:00",
+      "link": "https://www.skysports.com/football/lincoln-city-vs-wolverhampton-wanderers/report/560705",
+      "published": "2026-11-28T14:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Wolves held by managerless Lincoln"
+    },
+    {
+      "desc": "City Under-18s secure 10 wins in 10 after comeback victory over Newcastle Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.380005+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbjJDdFJneDg4b1FmWWNhcjg0cjVkZjFzNEV5bUNDdERvLVBrY3BVODFRa3o2SFNtVlNWNlloZEMwdDZILUtNWVZVY1hId05qU1htZW51a3JYUzNwZHprTXZIVnEzd0pMSUZzNTZidm5mWmVtS2ZUVHZCSjVTbWJ2WmNOSkg1TkhFa1h3LUxVVTAwcldaeXc4?oc=5",
+      "published": "2026-11-28T14:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "City Under-18s secure 10 wins in 10 after comeback victory over Newcastle - Manchester City FC"
+    },
+    {
       "desc": "Follow Daily Mail Sport's live blog for coverage of Manchester United vs Brentford in the Premier League, plus Leeds vs ",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-28T14:00:50.237298+00:00",
@@ -7037,6 +7117,16 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Manchester United vs Brentford - Premier League LIVE: Mauricio Pochettino seeks first win in Old Trafford bow - with updates from Leeds vs C"
+    },
+    {
+      "desc": "Swansea City are close to agreeing a deal to appoint Freyr Alexandersson as their new head coach.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T15:00:53.380036+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cwj0579d8jvpo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-28T13:56:02+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Swansea close in on Alexandersson as next boss"
     },
     {
       "desc": "PASCAL GROSS has revealed he is allergic to GRASS, despite playing on it for a living. Brighton star Gross has opened up",
@@ -7129,6 +7219,16 @@
       "title": "Why is Igor Thiago not playing for Brentford vs Man Utd?"
     },
     {
+      "desc": "",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-28T15:00:53.380117+00:00",
+      "link": "https://www.skysports.com/football/rangers-vs-falkirk/live/558421",
+      "published": "2026-11-28T13:30:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Naderi leads the line as Rangers make five changes vs Falkirk LIVE!"
+    },
+    {
       "desc": "JAMIE VARDY has been given permission to miss Burnley's Championship clash with Millwall, according to reports. Vardy wa",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-28T14:00:50.237572+00:00",
@@ -7137,6 +7237,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Jamie Vardy ‘gets permission to have match day OFF’ despite Burnley facing Millwall with club in drop zone"
+    },
+    {
+      "desc": "U18s match report: Liverpool come back to beat Everton in mini-Merseyside derby Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.380146+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNjdjN3lrZGNMdmJxamtvQlhoX0RyT0tKRVBESVdrUUQ5SmVjVGxqczE1Sld0eVg1akNXaUpPR0tXcjh5eGZKQktGVzI0TmxuTkhyVEpLY3hTUlFVZV95VVgtbGtqR1lOR3czME4xdkk1Uko4N2FnSVFpS0RBYzhJZUpFcVB6Zw?oc=5",
+      "published": "2026-11-28T13:08:51+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "U18s match report: Liverpool come back to beat Everton in mini-Merseyside derby - Liverpool FC"
+    },
+    {
+      "desc": "Romano: Chelsea Could End Garnacho's Aston Villa Loan in January, Saudi Arabia an Option 懂球帝",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.380173+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsaXNnb0NOQi1OQVZsUmpFcWp3bzhqeGtjSXVXMDhobGtZRFR6djE5LUFTNnEzWjRoSm54OGREQWJlb0prSFUxNkJqcl9ER3M?oc=5",
+      "published": "2026-11-28T13:08:00+00:00",
+      "publisher": "https://m.dongqiudi.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Chelsea Could End Garnacho's Aston Villa Loan in January, Saudi Arabia an Option - 懂球帝"
     },
     {
       "desc": "",
@@ -7197,6 +7317,26 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Crystal Palace vs Hull TV channel and live stream: How to watch Premier League clash"
+    },
+    {
+      "desc": "Ashley Cole has held talks with Bristol Rovers about the possibility of taking over as manager, as pressure mounts on St",
+      "feed_origin": "https://www.skysports.com/rss/12040",
+      "first_seen": "2026-11-28T15:00:53.380286+00:00",
+      "link": "https://www.skysports.com/football/news/12040/13617455/ashley-cole-in-talks-to-take-over-at-bristol-rovers-as-pressure-mounts-on-steve-evans-after-defeat-to-tranmere",
+      "published": "2026-11-28T11:58:00+00:00",
+      "publisher": "",
+      "source": "https://www.skysports.com/rss/12040",
+      "title": "Cole in talks to become Bristol Rovers boss as pressure mounts on Evans"
+    },
+    {
+      "desc": "Fantasy Premier League: How Florian Wirtz is becoming a must-have asset Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.380312+00:00",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZV9BLUlQMERNbmhsYklteEo0N2pKSDdiMU5DczZjeHN0MTd1UmxjSlRDcFR5TGVJcFhNRGh5QVdCRXFCQXdtdGJld0VWYk83Qjh2dVBZaHpNRTBrWkNsX085NUJoZEUtY3V3bHA2enE2RDFfQzlVQzRzc3pRN1EtOWR1RUp4UGd0V19VVGRUWGhrZE5UdGc?oc=5",
+      "published": "2026-11-28T11:55:10+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Fantasy Premier League: How Florian Wirtz is becoming a must-have asset - Liverpool FC"
     },
     {
       "desc": "Cole Palmer's dip in form mirrors Chelsea's recent slump and his frustration was evident after his side's recent defeat ",
@@ -7419,6 +7559,16 @@
       "title": "Man Utd vs Brentford: Our 32/1 bet builder tip, plus get £50 in free bets | Paddy Power"
     },
     {
+      "desc": "Watch City's U18s Premier League North clash with Newcastle live on CITY+ today! Manchester City FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.380616+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVTF6T3BBRlBSMk1FWi1GekVTV0tWTHVZdXJ0SzdUdGZfRUVtcktwMWpGdGFxY1BLT0ZKX3NDc1liekNwczM5MU92N1lzdFhjdm9uQk5xeEhUY2lLNzIwSjhsNnp5ejFLMlV2TjZBcy1ITlA4dnMtNmFTQXNMOEFoRGJ5SDd1SU5lQWY1X09POFBaUVRHeU53Zk9OTmg0ZTFnRjF0dHJ2LXpkQQ?oc=5",
+      "published": "2026-11-28T09:00:00+00:00",
+      "publisher": "https://www.mancity.com",
+      "source": "https://rsshub.app/twitter/user/ManCity",
+      "title": "Watch City's U18s Premier League North clash with Newcastle live on CITY+ today! - Manchester City FC"
+    },
+    {
       "desc": "Fabrizio Romano Transfer News: Mourinho's Madrid stance, Garnacho, Bruno Fernandes FootballTransfers.com",
       "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-28T11:00:52.588296+00:00",
@@ -7477,6 +7627,16 @@
       "publisher": "https://www.sportskeeda.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Fabrizio Romano provides key update on Real Madrid superstar Vinícius Jr amid reported PSG interest - Sportskeeda"
+    },
+    {
+      "desc": "Pochettino's first programme notes Manchester United",
+      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T15:00:53.380673+00:00",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9HVFdiblI3YWprQjVjS1N5VHNYd2ZiUzN0dnRRTXJGSFd4R3FOR01fdmVKMmFhajlWdEtlVVlWODJ4SEptUUdNUnp6Q09Zb25IWGdoWlEwUmJTYzBkb3J3WnBCTGx5SXdsRE9fa2hvY3Rqdw?oc=5",
+      "published": "2026-11-28T08:01:10+00:00",
+      "publisher": "https://www.manutd.com",
+      "source": "https://rsshub.app/twitter/user/ManUtd",
+      "title": "Pochettino's first programme notes - Manchester United"
     },
     {
       "desc": "IF IT’S darkest before the dawn, Enzo Maresca better hope it’s pitch black just after 7.30am tomorrow. In the wake of Pe",
@@ -8367,166 +8527,6 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Alisson Becker interview | 350 games for Liverpool, Merseyside derby, assisting Isak and more - Liverpool FC"
-    },
-    {
-      "desc": "ERLING HAALAND'S days are numbered at Manchester City according to Gary Neville - with the pundit \"absolutely certain\" h",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T19:00:49.853265+00:00",
-      "link": "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid/",
-      "published": "2026-11-27T18:07:04+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Gary Neville ‘absolutely certain’ Erling Haaland will leave Man City after seeing ‘something has changed’ at Etihad"
-    },
-    {
-      "desc": "Man United To REPLACE Bruno With Nico Paz?! - YouTube Howl.Link",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T23:00:59.657952+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE1HcnBleTE5YkRtR0d0bXdhT0FvUXlDaFJFdlo4RFVpcVVOVUdRWEJKN0JWU19WS1NnTEg4?oc=5",
-      "published": "2026-11-27T17:59:53+00:00",
-      "publisher": "https://t.co",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man United To REPLACE Bruno With Nico Paz?! - YouTube - Howl.Link"
-    },
-    {
-      "desc": "Arsenal make contact to hijack £100m Man Utd move as Ornstein reveals Arteta advantage TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T18:01:00.534556+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObFR6SzluWl85bFJqLXJIRjNlUGg3dC1HYWtacGVXOEUxVkFLUHQtWHFBNU9uQUYxSVhsem9DYXJwVkxvTHEwWTVYb29FZUVjaUw4Z2RtcmIwMU12QXJyVHJOZ0pPbFVZeGdhRnk4ZF9Qek16eEFOSkNmMjJRYS1oelItbHZMeTkySFhvX0xZUC03WWZuYl9oZ1lENWROcGFLd0sxdEZoWkJHTzg?oc=5",
-      "published": "2026-11-27T17:47:36+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Arsenal make contact to hijack £100m Man Utd move as Ornstein reveals Arteta advantage - TEAMtalk"
-    },
-    {
-      "desc": "Aston Villa boss Unai Emery praises Alejandro Garnacho's \"fantastic attitude\" but suggests other players rank ahead of h",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T18:01:00.534610+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cwp9d4eg4n2xo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T17:42:00+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Emery praises Garnacho attitude after Villa selection snub"
-    },
-    {
-      "desc": "Arsenal Official Annual 2027 Arsenal Direct",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T20:00:58.807428+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSFNLYllzRkR0VnlvUWdsZVYzSjJFRHMyYkVjV250VTVfT1R3Q3BzbkhWUFd5b3JCZW9oV0lkMDRsUk1zREhfT1llTnkwQXJIdHZXWDNkZFp4MmpIQU9yTTNTYzQ1ZF9vcC1zdEFjS2NLdF9MeW5pLWRReHY0cmtZR0xjQ0NDQ3lCVFBN?oc=5",
-      "published": "2026-11-27T17:25:19+00:00",
-      "publisher": "https://arsenaldirect.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arsenal Official Annual 2027 - Arsenal Direct"
-    },
-    {
-      "desc": "Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T20:00:58.807452+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVTJNUkNrd1owdTFDMWQ1bkg1MWdyWFltZE9KZW5oaWV1MjFaVU81aXFJbjFPYmNNZjZrUURYMXFRUUFfNkZ0Sk9JWGdveGZ2d0JySFg0aDQ3YnM3azYzMjc1R2dxMThSQjNWeVh4QVBwSVVkOXhzU1lxbkl1VlhNM2gwUXlZZmpBNzN6Z2dwNGdTTkZodEpFSk0wbzVycVZEZHk4R2pUaTVZZ3JBUU1QSDVmVUlqZEhmdXZROQ?oc=5",
-      "published": "2026-11-27T17:20:26+00:00",
-      "publisher": "https://tickets.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "- Manchester United"
-    },
-    {
-      "desc": "My Account | Tickets - Man City Manchester City FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:mancity.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T21:00:52.956663+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIeHhhZGROUFV1dFl0TlE4TkxiX0N0eWZIa2JsR2EtSk5teV9IVHJCMmtZcXRNYVFIVGh0OFctNUh1bWhWc3U5dkZ4eGl4b2l6TE5HVHNBVF8?oc=5",
-      "published": "2026-11-27T17:18:27+00:00",
-      "publisher": "https://tickets.mancity.com",
-      "source": "https://rsshub.app/twitter/user/ManCity",
-      "title": "My Account | Tickets - Man City - Manchester City FC"
-    },
-    {
-      "desc": "Scout Selection: Best Fantasy team for Gameweek 12 Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T18:01:00.534637+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZXRNaFpzMGFwQUZLNThvemtoUE5GRTJGOHpoUUtGNENhdVlFek55SlJub2R0Q042V2U5NTlzaWVNQ3lqeVY2VlV0Si1xLUVrRG91TzQxNmxwUVg4T3dVLW9LTFZya3VzWkUxSzlHTkhRRUIxSFQwWER3OGluVFEyQ1ZiZTJzMlhuNFZsaENKMmpjSEEteXlVRHJNWQ?oc=5",
-      "published": "2026-11-27T17:15:00+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Scout Selection: Best Fantasy team for Gameweek 12 - Premier League"
-    },
-    {
-      "desc": "MATTHIAS JAISSLE is desperate for Newcastle to lock down Tino Livramento to a new deal like Lewis Hall. The German, 38, ",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T18:01:00.534691+00:00",
-      "link": "https://www.thesun.co.uk/sport/41174878/matthias-jaissle-newcastle-livramento-contract/",
-      "published": "2026-11-27T17:04:51+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Matthias Jaissle desperate for Newcastle to lock down Tino Livramento to a new deal like Lewis Hall amid contract fears"
-    },
-    {
-      "desc": "Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T19:00:49.853341+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE51WjdBR3JKalVacWNDNDJlNUpSLWMtdkdKQkhRNGRtblQxRG50TXc3U2I3VllUbVRBd3NxNGRJSEhoVHNlRFdGbmFQdEdQakJTX0FVNTJ5Vkg?oc=5",
-      "published": "2026-11-27T17:04:45+00:00",
-      "publisher": "https://theshed.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "- Chelsea Football Club"
-    },
-    {
-      "desc": "What to do with injured Raya in Fantasy? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.275817+00:00",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeHlQZzFvUGlFbXZWSkRnNV9ub3JqUTF2NkZRV0hta2VfWDctd2lWblJSd0NCOVBoaV9uWU8xal9ibjRIRGcwTnVORExxdWtvUnNGYWxjSkVtZ0hMbjRCbHJYdGJXd0ZRRzVwUk9KMVBlZ243VVA0akVCcDdrYi1HS2JRSQ?oc=5",
-      "published": "2026-11-27T16:55:59+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "What to do with injured Raya in Fantasy? - Premier League"
-    },
-    {
-      "desc": "Bukayo Saka Injury Update: Back in Training but City Too Soon (27 November) The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.275866+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd0FCR0JQXzdKS0EyNzRCek5NdVd5Q0lKZ25zMzFhdEhwdXROQlNISWNZeGdHeE4zbEZHV3hicVNDUThrbl9xaF95RWlnOU1RclY4V0U0Y19xblUzTTJSV2hkS0VPSUhhMEh0V3JMSXdCVGdKQUpRd0FDTWtrSlRoUjYtOTJLaXpndm9PcjJWQ3d4QTg?oc=5",
-      "published": "2026-11-27T16:55:39+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "Bukayo Saka Injury Update: Back in Training but City Too Soon (27 November) - The False 9"
-    },
-    {
-      "desc": "BRIGHTON have been a dream team this season thanks to the fantasy football they are playing. Yet one player has had a ca",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T17:00:56.275899+00:00",
-      "link": "https://www.thesun.co.uk/sport/41170973/maxim-de-cuyper-brighton-fantasy-premier-league/",
-      "published": "2026-11-27T16:52:59+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "How Brighton ace Maxim De Cuyper went from nearly QUITTING football to becoming a fantasy hero"
-    },
-    {
-      "desc": "Plan to use an FPL chip in GW12! Which one will be best? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.275919+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQkxfM1YxQ2RvbnVRVmdLTEVZaTUxeFREZi1ySmp2MHVtaG5pOEJFb2JMVVowdlZJeEFDRXA4N2ljWUpOeUNFLUZINVJsc0UtNW5vSHhZZFdoSmdNZG1odzhXcVNWX2l3djhWUUZrZFBVX1JpYjlmbkstR05LYmg2eXF3Sk9Ba2Q2T3h6Y1hEck5lZkJLVmgxbERIdGZ1ajdGbEE?oc=5",
-      "published": "2026-11-27T16:52:59+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Plan to use an FPL chip in GW12! Which one will be best? - Premier League"
-    },
-    {
-      "desc": "Chelsea FC | Tours Chelsea Football Club",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T19:00:49.853406+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOcFZVNlVKQUNPV3djYUxBQktPa3ZKSzc3SHNKWGRKZkFvcFJKWXZZZi00Wlc1VnNWYWFBUmdCM1MzMUJmbm56YXhGZFNNa1NOTmhjTTJwaTBQb0p3MFR5b0FTRVVzX1FjS1o0S3BGdlV4QnpGNGRLUHg2SDgtUkhmdVpoS2pyQTJFZnZ3RVp2MUgwTnBZUTJaY0tIbFV0c21zNk5DWEhPaXhIc3JjNk1oWmQtLUFtVUhiYUV3cS1zeFc4NlVWRUZzZTJlNzNpLUltUWZXMVlBU1FDS2c3QlVLUWUtWQ?oc=5",
-      "published": "2026-11-27T16:52:48+00:00",
-      "publisher": "https://tours.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Chelsea FC | Tours - Chelsea Football Club"
-    },
-    {
-      "desc": "Fabrizio Romano drops ‘100%’ Nico Paz guarantee after Man Utd bombshell TEAMtalk",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.275937+00:00",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOU3RYb2MtUm10ODNEb2gyQzRjcU5raEpxRHMtazZ6WUFGc2hTSkZGUlV2OHBteXh6dmMzOXhkbkdzcFkyVHBrMXEycm9hbWlOeGdsV1lpV2l5cFZWOWwtQmdHMnA4eVV2d25lcVdJd1N5cVN5U3ZSVWhWVE9aTWpFTjZoOFNMSWM5bzVQM0htX0VUZ0VPNVI1bjFKVHNNLXg1cDJIOTduZTBzMUVDMF8w?oc=5",
-      "published": "2026-11-27T16:48:21+00:00",
-      "publisher": "https://www.teamtalk.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano drops ‘100%’ Nico Paz guarantee after Man Utd bombshell - TEAMtalk"
     }
   ],
   "processed_urls": [
