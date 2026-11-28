@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 16,
+        "calls": 17,
         "errors": 0,
-        "requests": 16
+        "requests": 17
       }
     },
-    "calls": 16,
+    "calls": 17,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 105669,
-    "output_tokens": 11340,
-    "requests": 16
+    "input_tokens": 110685,
+    "output_tokens": 11939,
+    "requests": 17
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6968,7 +6968,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-28T05:00:58.681149+00:00",
+  "last_scan_at": "2026-11-28T06:00:54.915009+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6989,6 +6989,56 @@
     "updated_at": "2026-11-27T22:01:25.011859+00:00"
   },
   "news_pool": [
+    {
+      "desc": "Fabrizio Romano drops update on Bruno Fernandes’ contract situation at Man United The Peoples Person",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T06:00:54.917119+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMG1qaF9sSUw2Y1dCRlp0V21FeUZtU19rdnBNNmdNTFdOdEhaM3I2MXRHSkJmdWxGX1pLb2NWYWJFa3NiaUZnRERfSG5iU29OQUdvWDY4Y2JQT2swaXRNX2lVVTlKSE05R3lGeTFGdlhXTzVSZFpYckRGbl9OcW82YXRFeFJsMDViTGY1M09ocC1CQVRyMUpTZ1NUcWZYb29HTEYwTkxBcHdTNjdsX0E?oc=5",
+      "published": "2026-11-28T05:30:02+00:00",
+      "publisher": "https://thepeoplesperson.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano drops update on Bruno Fernandes’ contract situation at Man United - The Peoples Person"
+    },
+    {
+      "desc": "Sports fans are in shock! Ban from Turkey on world-famous name Haberler.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T06:00:54.917141+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaDd3MDlOUUxfSHVUYmpWQkpBNXdaMEw3X0FPYzM2Mnk0aEtyZ0pHOHRNYUFZMFBBZUJVVkNyeGprMGlvMXc5Mml0OENFMmxxVU5Sck5qZHJScGFoXzNTbUItYWQ5b0xhalZyTUFadTZGMmhtUEhoTGFFSDZkNXBTRHRIMWtxYWhVZXc?oc=5",
+      "published": "2026-11-28T05:26:16+00:00",
+      "publisher": "https://en.haberler.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Sports fans are in shock! Ban from Turkey on world-famous name - Haberler.com"
+    },
+    {
+      "desc": "Foundation International Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T06:00:54.917166+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ySWVXUzZTZ2o3QWhSTnZZdndkZ0htY0llRktUdmZBX1c3d3BhYlVlS2UyRk0tLTc4VGVJTU42Y0s5M3dzM01SUFh1TEtMUnRKWEpvYzVscEl6QlNSX3VlcEZn?oc=5",
+      "published": "2026-11-28T05:16:08+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Foundation International - Liverpool FC"
+    },
+    {
+      "desc": "Foundation Community Engagement Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T06:00:54.917181+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CX19yc1dUM3R0OWZGRXdmS0RHZXZYT1RsR3M0ZTNrZndDb3A0UGNnUTB3b05sa1hpdHhPV0hYTzdmTFQ0WlZPakZfcWJJeGhxQThNdE9XTkppVExyQW9UenJndGk1dU9mM1Zv?oc=5",
+      "published": "2026-11-28T05:16:05+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Foundation Community Engagement - Liverpool FC"
+    },
+    {
+      "desc": "Andoni Iraola's pre-Everton press conference Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T06:00:54.917195+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOFFVaWNNbWgxVThHSEVfREZEUHNGVmhQSmZWNUdmdWVGRWRUc191VGtEVFNaVkxqRXo0OVNpN3hnMU1wQ3JSRlBuMWJQN0s1RzY1UkFBdElqcFZaQXdLOVdqcDNjTDZzbzMySlBHMi1nRDRwbnJwWFV4VWRfY1FmMDR0Y0pMU3dsQ1M3S2xn?oc=5",
+      "published": "2026-11-28T05:10:55+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Andoni Iraola's pre-Everton press conference - Liverpool FC"
+    },
     {
       "desc": "Arsenal vs Man City Predicted Lineup: Raya Back in Training The False 9",
       "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
@@ -8438,56 +8488,6 @@
       "publisher": "https://talksport.com",
       "source": "https://www.thefa.com/rss",
       "title": "EFL star slapped with three-match ban for off the ball incident missed by officials - talkSPORT"
-    },
-    {
-      "desc": "David Ornstein discloses what Man Utd can do to significantly boost their chances of signing Nico Paz in 2027 utdreport",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T14:01:01.799120+00:00",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPS3h4WEx5MDAzVUdOTTlvY1ZUNkQ4dlJkR0o3R1JXZ3kwMzlfdEtfbnVELXB1R2I3WEZZTjdmWEcxb1c1NEo0d1BhU0tGQi1EeTdwZXBlbTJzZWRNVklNeFdBUW5RQ2pab3Voc0NlZzNfdDhJenN5WFMtdGtIZDFOSGpmYlFrNW9lTk51TU5NT1JTWEEyXzVEb1lBVFh5eUpGYmJkNEJZUkdMcEx3ZUUyY1BoRHVHZ2ZvWWlQNzh6WjJVS3N2NG15T1JYdDU0RlR2ZGNvTjA5QjJJRkpndmfSAeMBQVVfeXFMTk5SRVJ3VlFZOEt2UFdVOU5XekkwazF3Nk5UZEVINEowMlNlUWVEaDZ2Tm1aWk1RQzB5cExYSzVHTG5idkZhYUswLUxUbkFabDRhWkpGVXlxY1hfY3ozbkxZSDY2UjBwXzFQZ1AzM0pTUm9OREhjRkdHLUlUUVg1NEN0NnNHUVhvQTMycE9Kai1WV1dNcnVTT1I1MEE1U3FLakoxQW55MWFKSmhlRVVhN2REZnZSVnJKYkV5U3hjajY2eFNrSHprTUtWSUF3TURkd2hjOFVxOTh2M1NxeEp1dUFyMFE?oc=5",
-      "published": "2026-11-27T13:48:43+00:00",
-      "publisher": "https://utdreport.co.uk",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "David Ornstein discloses what Man Utd can do to significantly boost their chances of signing Nico Paz in 2027 - utdreport"
-    },
-    {
-      "desc": "JUDE BELLINGHAM proved once again that he is an all-round top bloke after a kind-hearted exchange with a photographer. B",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T14:01:01.799157+00:00",
-      "link": "https://www.thesun.co.uk/sport/41170293/jude-bellingham-real-madrid-parenting-book-gesture-photographer/",
-      "published": "2026-11-27T13:43:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "‘Bellingham’s parents need to write a book on parenting’ say fans after Jude’s classy gesture to photographer"
-    },
-    {
-      "desc": "Team news for United v Brentford Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T21:00:52.957642+00:00",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBNS3hGWGRyeEdDZVRwVXNnSkpmeDYycDUycURxdDNvQm5HUVM1QThUdkFnLVM2dWFYTXpua0VtMU16S2d3MEcwaXZ1cHpqQ3NLcjViSmZlQXlDZEo2SlFYS2hWa1dvaXkyUEhFWEZ5YlRDVGZ1X0x3aUFUXy14UQ?oc=5",
-      "published": "2026-11-27T13:43:34+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Team news for United v Brentford - Manchester United"
-    },
-    {
-      "desc": "Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T21:00:52.957666+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ySUZybDBnVUp5OUt5MFpyX1IwRUZvS3pTalNKOEFVbEhhRnJlUEF4RHE1NWNFLXR0Y2tGelRfclFSS2hCYkRVdGZUWk9ZZnVPU21UUWxxQmJlS3RMVEE?oc=5",
-      "published": "2026-11-27T13:41:11+00:00",
-      "publisher": "https://ticketing.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "- Liverpool FC"
-    },
-    {
-      "desc": "Concacaf W Championship: Chelsea players, fixtures and World Cup qualifying explained | News | Official Site Chelsea Foo",
-      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T14:01:01.799191+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPejFsSWF6N1kzblQzNnZsVjM5UTdQRE41ZTdYWGtVWkt6T1pjU0FGNjE2dHdjZngwSkE3eU1aR2Vhczl3bVp6VHU4U0JlTEthRXR0bzA5bC1qWmRmWndZcG15LUhrYXM4VDlDcGhTM3NFUzRHVjYwUEQ0dnRtNWRBM0IybElvUFlRN1IwdU4tM25yd1VQWThIWGlSY3ZoYWs2VV9weUg0VHAtSF9qZzVEZmZJTmh2dw?oc=5",
-      "published": "2026-11-27T13:30:32+00:00",
-      "publisher": "https://www.chelseafc.com",
-      "source": "https://rsshub.app/twitter/user/ChelseaFC",
-      "title": "Concacaf W Championship: Chelsea players, fixtures and World Cup qualifying explained | News | Official Site - Chelsea Football Club"
     }
   ],
   "processed_urls": [
