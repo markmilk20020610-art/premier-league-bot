@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 18,
+        "calls": 19,
         "errors": 0,
-        "requests": 18
+        "requests": 19
       }
     },
-    "calls": 18,
+    "calls": 19,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 115151,
-    "output_tokens": 12584,
-    "requests": 18
+    "input_tokens": 120259,
+    "output_tokens": 13340,
+    "requests": 19
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -446,28 +446,6 @@
       "telegram_message_id": 165,
       "title": "波切蒂诺告别美国队，飞抵曼联上任",
       "updated_at": "2026-11-18T08:00:57.569404+00:00"
-    },
-    "107c7f016595": {
-      "attempts": 1,
-      "chunks": [],
-      "created_at": "2026-10-31T00:20:51.302306+00:00",
-      "delivery_status": "COMMITTED",
-      "event_fingerprint": "065013539840d7ca",
-      "event_id": "107c7f016595",
-      "evidence_refs": [
-        {
-          "added_at": "2026-10-31T00:20:51.302306+00:00",
-          "origin": "migrated_from_evidence_url",
-          "title": "",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3"
-        }
-      ],
-      "evidence_status": "SINGLE_SOURCE",
-      "evidence_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
-      "last_error": "",
-      "telegram_message_id": 19,
-      "title": "切尔西vs曼联焦点战主裁判敲定：班克斯执法，TNT午间12:30开球",
-      "updated_at": "2026-10-31T00:20:51.948581+00:00"
     },
     "117220f68938": {
       "article_title": "Erling Haaland sparks fear among fans after concerning TV interview as he admits he is 'questioning everything' after Man City's draw with N",
@@ -5916,6 +5894,41 @@
       "title": "曼联为卡里克安排解雇决定会议",
       "updated_at": "2026-11-08T23:40:50.622616+00:00"
     },
+    "d7c8773b78bc": {
+      "article_title": "Bungling Chelsea break three unwanted records in Forest defeat with Alonso losing same as Rosenior in fewer games",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "2a5f7cd202cc5e06",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 265
+        }
+      ],
+      "created_at": "2026-11-28T08:00:54.196331+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "281a90edfa68d5e0",
+      "event_id": "d7c8773b78bc",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-28T08:00:54.196331+00:00",
+          "origin": "created",
+          "title": "Bungling Chelsea break three unwanted records in Forest defeat with Alonso losing same as Rosenior in fewer games",
+          "url": "https://www.thesun.co.uk/sport/41178806/chelsea-nottingham-forest-records-xabi-alonso"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41178806/chelsea-nottingham-forest-records-xabi-alonso",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 265,
+      "title": "切尔西2-3负诺丁汉森林，创三项不光彩纪录，阿隆索执教败场数已追平罗塞尼尔",
+      "updated_at": "2026-11-28T08:00:54.965132+00:00"
+    },
     "d9e32e069409": {
       "article_title": "Man Utd want Paz, Chelsea target Kounde - Saturday's gossip",
       "attempts": 1,
@@ -6968,7 +6981,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-28T07:00:49.118166+00:00",
+  "last_scan_at": "2026-11-28T08:00:48.887903+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6989,6 +7002,86 @@
     "updated_at": "2026-11-27T22:01:25.011859+00:00"
   },
   "news_pool": [
+    {
+      "desc": "XABI ALONSO endured a nightmare evening as Chelsea were beaten 3-2 by Nottingham Forest. Igor Jesus' early opener and a ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T08:00:48.890413+00:00",
+      "link": "https://www.thesun.co.uk/sport/41178806/chelsea-nottingham-forest-records-xabi-alonso/",
+      "published": "2026-11-28T07:54:07+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Bungling Chelsea break three unwanted records in Forest defeat with Alonso losing same as Rosenior in fewer games"
+    },
+    {
+      "desc": "https://www.premierleague.com/en/sitemap/videos-28.xml Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T08:00:48.890456+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12UnhtUjZ3Zmd2cTNxYkxVWUppcFRXaWE3N0tRR3RWazAzVlFNNjFDYnZBSEU5MnBTU3phcjdmV25PcWwzSVpVS2I0TWFmMGNOUzU1UElkM0RhNEdoTXN4ZjBQYms?oc=5",
+      "published": "2026-11-28T07:43:47+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "https://www.premierleague.com/en/sitemap/videos-28.xml - Premier League"
+    },
+    {
+      "desc": "https://www.premierleague.com/en/sitemap/news-6.xml Premier League",
+      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T08:00:48.890478+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6QUU4Wnl4eHdMcVdjTjUtaDA2RzNsWGVpMzg2WEFqYjRtN3JRemQ1ZllJMm1SVjRrb2xORTB5WUdUWGtRY1UtS0gxdzRyRXdheFhNVGJnZ3VacWZKbFV2Ng?oc=5",
+      "published": "2026-11-28T07:42:55+00:00",
+      "publisher": "https://www.premierleague.com",
+      "source": "https://www.premierleague.com/rss/news",
+      "title": "https://www.premierleague.com/en/sitemap/news-6.xml - Premier League"
+    },
+    {
+      "desc": "Pascal Gross says his dad 'embarrassment' at him looking for free-kicks played an important part in him becoming the pla",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T08:00:48.890503+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm3egnw0y0d0o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-28T07:25:04+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "How dad's embarrassment was making of Gross at Brighton"
+    },
+    {
+      "desc": "Fabrizio Romano denies Nico Paz has rejected Real Madrid as future remains open Tribuna.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T08:00:48.890524+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTTd3ckJDX09IOThqVXpWVXpnNmNvc3hxalNqTy1WNXk3cjBOZWxPcFB5Y1R1MzZ0d1VFaHBhVHFuYkxTczdlRzFHeDFXTHBPNUQyV25HR181a2tpTTEwOWF5NmdDTFF4NDZ2MTBUWFZHaDFiX0lkU1pfT3QyUnRwNVRFVVByMjc0ZWdWbXpqLV9PcmlJVHM3eFV5U09PVEpSUDFPLVo4NmtmaEdUSkdlczJqT0lMaDFyNDJB0gHAAUFVX3lxTE1kUnUwWlBXUV90TFFJMmVyNExYVmgtakg2a0MzTTREVG4yaVBPemk3MFpnOU54RTZadVNRaUMyM0xJUGlUR2N2eVhaNVpjOUZ6REk5LXFDYUQwRHA2NmR6a0xrSmZpQ2tyX25QeW5DeURTNjNvc0NUUlFfaGFCdjNkeDNZcXBfTzdVQVMyUVgycFFYaFI3NDB5QzVlS09qMzc2X1hCMmxQUlExLVVROUlQem9EVlNQT0xiSW1OekNMaQ?oc=5",
+      "published": "2026-11-28T07:07:30+00:00",
+      "publisher": "https://tribuna.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano denies Nico Paz has rejected Real Madrid as future remains open - Tribuna.com"
+    },
+    {
+      "desc": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T08:00:48.890544+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c35y1kgn2l90o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-28T07:04:56+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "MAURICIO POCHETTINO'S first taste of Old Trafford as Manchester United manager comes on Saturday when the Reds host Bren",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T08:00:48.890561+00:00",
+      "link": "https://www.thesun.co.uk/sport/41145198/man-utd-brentford-predictions/",
+      "published": "2026-11-28T07:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd vs Brentford | Premier League predictions, preview and free bets"
+    },
+    {
+      "desc": "Southampton head coach Tonda Eckert stresses that taunts from the club aimed at Championship opponents Middlesbrough do ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T08:00:48.890579+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cq8e0xrk2gwno?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-28T06:54:09+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "'It doesn't come from me' - Eckert irked by Southampton's jibes at Boro"
+    },
     {
       "desc": "How a Brazilian football team rose again after a plane crash that killed most of their players and staff on the way to w",
       "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
@@ -8408,90 +8501,9 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Who is the best FPL captain for Gameweek 12? - Premier League"
-    },
-    {
-      "desc": "Man United make major move amid doubts over Bruno Fernandes’ future The Peoples Person",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T16:01:03.818517+00:00",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSFBEQ3I5QW5qSGR5VFlZRk01T3MtR0Vibnk5dWNvSGN0MEFfcmU1aDNoNkx4ZU9IYjhnNTR2bHZWWWpVWnBTSDJjMHdWSFZObmJBcDBZQXpWb0FfQlZWYXJablJ1X0o0MW1QUlhiOWtpQjFXYnItNDVYWnRDWmlFQVlZQmNUeE13ZV93M19pZ05HRllwUFB6QzB1dU1veUVwQkVzOVdVNS05Tjh0RUNmbmlENHM?oc=5",
-      "published": "2026-11-27T14:16:43+00:00",
-      "publisher": "https://thepeoplesperson.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man United make major move amid doubts over Bruno Fernandes’ future - The Peoples Person"
-    },
-    {
-      "desc": "MANCHESTER UNITED have triggered their one-year option to extend Bruno Fernandes' contract. The Old Trafford skipper, 32",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T15:00:54.195748+00:00",
-      "link": "https://www.thesun.co.uk/sport/41172409/man-utd-bruno-fernandes-contract-pochettino/",
-      "published": "2026-11-27T14:14:54+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd trigger one-year extension for Bruno Fernandes days after captain admitted contract talks had stalled"
-    },
-    {
-      "desc": "A FOOTBALL cup final descended into chaos after a player was punched by the referee during a furious row. La Paz based s",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T15:00:54.195766+00:00",
-      "link": "https://www.thesun.co.uk/sport/41171500/jordy-aleman-punch-cristian-martinez-always-ready-potosi-bolivia/",
-      "published": "2026-11-27T14:11:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Shocking moment referee PUNCHES player leaving him bleeding before showing seven red cards in wild end to cup final"
-    },
-    {
-      "desc": "David Raya Injury Update: Back Training Before Man City The False 9",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Charles+Watts%22+Arsenal+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195783+00:00",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORzRvS3RRQl9yYXNpVVdFOVNvSXFON2pxVHh5ZVR3dFVic1hwTUJGVzVvNHJjMGVQX0haRWRzN0hJXzdNZ2NPNmYyWkpObHlmXzB1LTRrTF85cWMtd05HR1JyX2xNcTFtSmtjMVQ4Z0gwOGVjQlYyTlBGOVB5NFVZcm1CeGpZeFd5Q2VhazEwYmdBZDVHQllPTE93?oc=5",
-      "published": "2026-11-27T14:10:34+00:00",
-      "publisher": "https://thefalse9.com",
-      "source": "https://rsshub.app/twitter/user/CharlesWatts",
-      "title": "David Raya Injury Update: Back Training Before Man City - The False 9"
-    },
-    {
-      "desc": "Manchester United have triggered their 12-month option to extend captain Bruno Fernandes' contract.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-27T15:00:54.195797+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13617215/bruno-fernandes-man-utd-activate-captains-12-month-option-to-extend-contract-which-now-ends-in-2028",
-      "published": "2026-11-27T14:10:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Man Utd activate Fernandes contract extension clause"
-    },
-    {
-      "desc": "KATE SCOTT has been tipped to be the one to 'save' BBC's Match of the Day show... by her husband. The renowned presenter",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T15:00:54.195815+00:00",
-      "link": "https://www.thesun.co.uk/sport/41170942/kate-scott-bbc-match-of-the-day-malik/",
-      "published": "2026-11-27T14:05:09+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Kate Scott can put magic touch on Match of the Day to save iconic BBC show says husband who calls her ‘second to none’"
-    },
-    {
-      "desc": "Latest news on Baleba and Rashford Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195831+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbDlZXy1wMU1ZWHBkVVBrNVZzT05ETGhyaDd6MFkxamlWd3JtV3JTTFplUldkaE93SXFMaGpzVVRuSEtfa1RDdTB4LXcxNFg5VUhMeXdQa1JIM0tPakZLbGYtNU4yaHJORDY3aFZvLWdQZTZ3ZU1mYnQwQUhVQnRiNnRB?oc=5",
-      "published": "2026-11-27T14:03:46+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Latest news on Baleba and Rashford - Manchester United"
-    },
-    {
-      "desc": "Helafu signs new United contract Manchester United",
-      "feed_origin": "https://news.google.com/rss/search?q=site:manutd.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.276608+00:00",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9Rb3gwTVItSnMzRjU3UmxBLW9pUnpDUUMtSV9ySTVVeFBweExLRVpxTmRXYlduZmROX3lXdDZBZlMwVnEwQnVnSE9CS3hXVFFMNmhpbHM5Vk1vZ2dZWGRkRjZPTVRoaC1BT055bDFNNlVxTkZCNlNZ?oc=5",
-      "published": "2026-11-27T14:03:18+00:00",
-      "publisher": "https://www.manutd.com",
-      "source": "https://rsshub.app/twitter/user/ManUtd",
-      "title": "Helafu signs new United contract - Manchester United"
     }
   ],
   "processed_urls": [
-    "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
     "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
     "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
     "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html",
@@ -8690,7 +8702,8 @@
     "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview",
     "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show",
     "https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html",
-    "https://www.thesun.co.uk/sport/41178557/southampton-middlesbrough-eckert-azaz-spygate"
+    "https://www.thesun.co.uk/sport/41178557/southampton-middlesbrough-eckert-azaz-spygate",
+    "https://www.thesun.co.uk/sport/41178806/chelsea-nottingham-forest-records-xabi-alonso"
   ],
   "s_overflow": {},
   "schema_version": 4
