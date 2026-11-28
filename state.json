@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 20,
+        "calls": 21,
         "errors": 0,
-        "requests": 20
+        "requests": 21
       }
     },
-    "calls": 20,
+    "calls": 21,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 125707,
-    "output_tokens": 14006,
-    "requests": 20
+    "input_tokens": 131880,
+    "output_tokens": 14627,
+    "requests": 21
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -6994,7 +6994,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-28T09:00:53.879544+00:00",
+  "last_scan_at": "2026-11-28T10:00:54.033584+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -7016,6 +7016,46 @@
   },
   "news_pool": [
     {
+      "desc": "A POLISH football match was bizarrely interrupted by fan on a SCOOTER invading the pitch. Stal Stalowa Wola took on Legi",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T10:00:54.035429+00:00",
+      "link": "https://www.thesun.co.uk/sport/41178924/police-scooter-stal-stalowa-wola-legia-warsaw/",
+      "published": "2026-11-28T09:48:10+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Bonkers moment football match stopped by pitch invader on scooter as police chase after him"
+    },
+    {
+      "desc": "Roma continue talks with Endrick’s entourage Yahoo Sports",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T10:00:54.035448+00:00",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYkxPeUp0RTEyLVJMc2hNdVRGek1NSG01MVBiVW04Tl9kaGRfTWU2VTRGWDlFYnZoZ0VKRkdlR1ZiTThlbnYwdlZvS2U1YldVbGtvVmpMZ1F4LVNmNURfNDc2SXVSUjF3QUw1NkY4QkFhVVNDTHZEMWR4V0NKNjBNbWlaR2RwMi1CeEEtOXpXZ1A4SlAwdEM5NQ?oc=5",
+      "published": "2026-11-28T09:41:00+00:00",
+      "publisher": "https://sports.yahoo.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Roma continue talks with Endrick’s entourage - Yahoo Sports"
+    },
+    {
+      "desc": "David Ornstein: £83m 'superstar in the making' now keen to join Man Utd Football FanCast",
+      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T10:00:54.035463+00:00",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZFlBVTdJcmE0LWtrX2xTTlRtMVNvRlozLTJIS1d1S2dldVFXb0pMcmpvWkJpNmt1cXdDUUdXUUVuOWFDaU93ZXhwTkZ6TExFblpGZDhMOHA1Wk5zWDJUcDVtUzN2SmppdkpVRUhqQ1ZGa0xRR2w3X3R1aWpiQ3N1Sm9OTElsQQ?oc=5",
+      "published": "2026-11-28T09:20:12+00:00",
+      "publisher": "https://www.footballfancast.com",
+      "source": "https://rsshub.app/twitter/user/David_Ornstein",
+      "title": "David Ornstein: £83m 'superstar in the making' now keen to join Man Utd - Football FanCast"
+    },
+    {
+      "desc": "MANCHESTER UNITED welcome Brentford to Old Trafford on Saturday for Mauricio Pochettino's first home game. Brand-new Pad",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T10:00:54.035478+00:00",
+      "link": "https://www.thesun.co.uk/sport/41146687/man-utd-vs-brentford-tip-free-bets-paddy-power/",
+      "published": "2026-11-28T09:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Man Utd vs Brentford: Our 32/1 bet builder tip, plus get £50 in free bets | Paddy Power"
+    },
+    {
       "desc": "We know what Chelsea's fans thought of Wesley Fofana starting. Whenever he had the ball, boos spilled out of the away en",
       "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
       "first_seen": "2026-11-28T09:00:53.882968+00:00",
@@ -7034,6 +7074,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Ranking the Premier League's ultimate free-kick specialists"
+    },
+    {
+      "desc": "Preview: Arsenal v Manchester City Arsenal.com",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T10:00:54.035512+00:00",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWWpDUzRjY052c2RqOHNKR1VJREtPRHpwWlBFMlVhalZkcDlkdWdlU0pBT0ZJN0VMNVJ5bUFXbjlDZVJWYWdXRlE1WTctTGI1eVg0UVhKOHM4eEpuYXdnVEdWenJ2Qm1XTFJONVE2UkIzaDMweHF1QzdiWlBaQU0zSQ?oc=5",
+      "published": "2026-11-28T08:06:13+00:00",
+      "publisher": "https://www.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Preview: Arsenal v Manchester City - Arsenal.com"
     },
     {
       "desc": "Fabrizio Romano provides key update on Real Madrid superstar Vinícius Jr amid reported PSG interest Sportskeeda",
@@ -7204,6 +7254,16 @@
       "publisher": "https://www.liverpoolfc.com",
       "source": "https://rsshub.app/twitter/user/LFC",
       "title": "Andoni Iraola's pre-Everton press conference - Liverpool FC"
+    },
+    {
+      "desc": "Chelsea Football Table Game - 20 Inch Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T10:00:54.035736+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQS1ZMmNKUm9HaUpRTGxtSnNCRHFzUXREZTJjOXlvV0FfU3J1aUI1eXM2aldpNlFIS2psdVRFaGxwNXQ2NFpCUXF4ajNvNFdsTzNQNDRyZGpnVUthWktSUmMxQ0k0RVRRSXEwa0l1X1F3RkxfTXQwcmtpdHN6TXJSVTR3VldzMG5KT21NdEMtc0kzSXNoaXJQOVJQcXRNNk5tbTdUcHBvNWNacTRFRVJHMVIyNERXTmlLLV9ScTBpRTVlRUlFeDNyQjhTWEowb2k2a2VNNDdHOA?oc=5",
+      "published": "2026-11-28T05:10:10+00:00",
+      "publisher": "https://eustore.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Chelsea Football Table Game - 20 Inch - Chelsea Football Club"
     },
     {
       "desc": "Arsenal vs Man City Predicted Lineup: Raya Back in Training The False 9",
@@ -8454,66 +8514,6 @@
       "publisher": "",
       "source": "https://www.dailymail.com/sport/football/index.rss",
       "title": "Bruno Fernandes is STAYING at Man United - for now! Red Devils trigger 12-month extension clause to prevent losing captain for free - as he "
-    },
-    {
-      "desc": "Enzo Maresca said Premier League title rivals Manchester City and Arsenal couldn’t be compared after his side's early-se",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-27T16:01:03.818368+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13617231/arsenal-vs-man-city-enzo-maresca-says-two-teams-cannot-be-compared-due-to-being-in-different-stages-of-project",
-      "published": "2026-11-27T14:47:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Maresca: You can't compare Man City and Arsenal"
-    },
-    {
-      "desc": "Mourinho shuts the door on Real Madrid transfers: no moves Tu Futbolero",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195574+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZGRTOXFIZXBXNDNfTFJXY04zdGo5eUV6TUk3ejB2eVVVUktJU0lSdEh1Z2I0bFlpS3hHWWhaZjRNWGUtNWhoQ2tHV2kxakdyeVl1M2Ywa2JSUkY3b2kzU3BiZW8zek0zb18zbmRUX0VhYk02TWRqSkJlTGE2MThXMGxfTkI5ZDA1NHRDamdoMmlHb3AzWURUQm01Z3BxcVlkcHc?oc=5",
-      "published": "2026-11-27T14:46:46+00:00",
-      "publisher": "https://www.tufutbolero.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Mourinho shuts the door on Real Madrid transfers: no moves - Tu Futbolero"
-    },
-    {
-      "desc": "NATHAN SALT: Manchester United are not too good to go down and absolutely are in a relegation battle. They aren't good, ",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T16:01:03.818401+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16315111/The-numbers-Man-United-NOT-good-down.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-27T14:45:32+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Revealed: The numbers that show Man United are NOT too good to go down - they have the worst defence in Europe, are constantly outrun by opp"
-    },
-    {
-      "desc": "MANCHESTER UNITED could be without Carlos Baleba until late January and will assess Bruno Fernandes ahead of the Premier",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T15:00:54.195592+00:00",
-      "link": "https://www.thesun.co.uk/sport/41172462/man-utd-injury-news-carlos-baleba-marcus-rashford/",
-      "published": "2026-11-27T14:44:29+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Man Utd suffer injury blow as £70m star set to be out until end of JANUARY as Pochettino gives Rashford update"
-    },
-    {
-      "desc": "Manchester City's leaky defence faces one of the most difficult games of the season with a trip to watertight Arsenal, a",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T15:00:54.195613+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cknv47dee54zo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T14:37:58+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "'I am not a magician' - what can Maresca's Man City learn from watertight Arsenal?"
-    },
-    {
-      "desc": "Falkirk's trip to Ibrox and Hearts' home match with Celtic stand out in another crucial Scottish Premiership weekend.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T15:00:54.195642+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6x2wx4e90jeo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T14:37:51+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Falkirk chase seven in a row at Rangers & Celtic visit Hearts"
     }
   ],
   "processed_urls": [
