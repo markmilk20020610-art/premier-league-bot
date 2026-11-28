@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 9,
+        "calls": 10,
         "errors": 0,
-        "requests": 9
+        "requests": 10
       }
     },
-    "calls": 9,
+    "calls": 10,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 62948,
-    "output_tokens": 6335,
-    "requests": 9
+    "input_tokens": 68972,
+    "output_tokens": 7157,
+    "requests": 10
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -74,28 +74,6 @@
       "telegram_message_id": 21,
       "title": "马丁内斯自曝手指重伤后无法复原：世界杯期间带伤作战如僵尸，看到X光片后痛哭",
       "updated_at": "2026-10-31T00:35:42.517218+00:00"
-    },
-    "03a59f1553fa": {
-      "attempts": 1,
-      "chunks": [],
-      "created_at": "2026-10-31T00:10:44.391024+00:00",
-      "delivery_status": "COMMITTED",
-      "event_fingerprint": "06d5ca672e14792d",
-      "event_id": "03a59f1553fa",
-      "evidence_refs": [
-        {
-          "added_at": "2026-10-31T00:10:44.391024+00:00",
-          "origin": "migrated_from_evidence_url",
-          "title": "",
-          "url": "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/"
-        }
-      ],
-      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
-      "evidence_url": "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
-      "last_error": "",
-      "telegram_message_id": 17,
-      "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
-      "updated_at": "2026-10-31T00:10:45.160755+00:00"
     },
     "0405dda1c690": {
       "article_title": "Chelsea star Pedro Neto restrained by Craig Bellamy as he clashes with Wales bench after being sent off for Portugal",
@@ -2682,6 +2660,41 @@
       "telegram_message_id": 68,
       "title": "格拉利什连续落选埃弗顿名单，纪律风波持续发酵",
       "updated_at": "2026-11-02T16:00:59.609747+00:00"
+    },
+    "59607a90f675": {
+      "article_title": "David Raya MISSES training ahead of Arsenal's crunch clash with Man City in blow for Mikel Arteta",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "bd79869bcbef2a67",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 263
+        }
+      ],
+      "created_at": "2026-11-28T00:01:05.456763+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "c61dd63881f1d645",
+      "event_id": "59607a90f675",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-28T00:01:05.456763+00:00",
+          "origin": "created",
+          "title": "David Raya MISSES training ahead of Arsenal's crunch clash with Man City in blow for Mikel Arteta",
+          "url": "https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html"
+        }
+      ],
+      "evidence_status": "OFFICIAL_CONFIRMED",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 263,
+      "title": "拉亚缺席训练，阿森纳战曼城门将告急",
+      "updated_at": "2026-11-28T00:01:06.118178+00:00"
     },
     "5bc8b4d5f9a5": {
       "article_title": "Man Utd score twice in stoppage time to share points in eight-goal thriller",
@@ -5330,28 +5343,6 @@
       "title": "尼基·巴特炮轰曼联为队史最差并称俱乐部从上到下都是灾难",
       "updated_at": "2026-11-24T07:00:59.459587+00:00"
     },
-    "c1ca9017032e": {
-      "attempts": 1,
-      "chunks": [],
-      "created_at": "2026-10-31T00:05:41.133162+00:00",
-      "delivery_status": "COMMITTED",
-      "event_fingerprint": "06d5ca672e14792d",
-      "event_id": "c1ca9017032e",
-      "evidence_refs": [
-        {
-          "added_at": "2026-10-31T00:05:41.133162+00:00",
-          "origin": "migrated_from_evidence_url",
-          "title": "",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo"
-        }
-      ],
-      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
-      "evidence_url": "https://www.bbc.co.uk/sport/football/articles/cqd09p3kppyvo",
-      "last_error": "",
-      "telegram_message_id": 16,
-      "title": "阿斯顿维拉就卡拉格言论提起法律诉讼",
-      "updated_at": "2026-10-31T00:05:41.886537+00:00"
-    },
     "c364c0b835a9": {
       "article_title": "Wenger decides not to challenge Fifa chief Infantino",
       "attempts": 1,
@@ -6964,7 +6955,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-27T23:00:59.655299+00:00",
+  "last_scan_at": "2026-11-28T00:00:57.106966+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -6985,6 +6976,26 @@
     "updated_at": "2026-11-27T22:01:25.011859+00:00"
   },
   "news_pool": [
+    {
+      "desc": "WESLEY FOFANA was booed and jeered by his own fans as he endured a night to forget just days after embarrassing himself ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T00:00:57.108791+00:00",
+      "link": "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview-penalty-nottingham-forest/",
+      "published": "2026-11-27T23:14:59+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Fofana endures Chelsea DISASTER after shock interview as he’s hooked and fans chant ‘f*** off’ after penalty gaffe"
+    },
+    {
+      "desc": "Eighteen years after making their Premier League debuts two minutes apart, Jack Wilshere and Aaron Ramsey meet as manage",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T00:00:57.108810+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cm1dvn9w1px4o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-27T22:58:49+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Wilshere v Ramsey - Arsenal legends treading similar managerial paths"
+    },
     {
       "desc": "FRANK LAMPARD admits he was ‘an inch’ away from signing for Leeds United 25 years ago. The Coventry boss expects a hosti",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -7044,6 +7055,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Spygate clash descends into furious brawl as Southampton star goads Middlesbrough fans despite playing 67 times for them"
+    },
+    {
+      "desc": "Match report: Nottingham Forest 3-2 Chelsea | News | Official Site Chelsea Football Club",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T00:00:57.108890+00:00",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeEU4RXhLNTBlWGZpSmRoWEloNVI3alk1RU1qWjFmcnJONWJ3MUs1Zll6a2ZJWHRvREs4X0dkbjBJck13SURBbmJldE9HclozWHJtYXZVazF5eEdZVzJCUUhOeUJLN01VZW9HV2N3YTA2S0tfM0lhN2R6ZUJMaDBDaVdmaHZQRjhBd19mTg?oc=5",
+      "published": "2026-11-27T22:05:33+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Match report: Nottingham Forest 3-2 Chelsea | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "Win latest Acceleration Ball & Future 10 PUMA Boots, signed by Morgan Rogers Premier League",
@@ -7264,6 +7285,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Fantasy Show: Experts reveal GW12 captain picks - Premier League"
+    },
+    {
+      "desc": "Late Stamford Bridge winners: vote for your favourite on the Chelsea Official App! | News | Official Site Chelsea Footba",
+      "feed_origin": "https://news.google.com/rss/search?q=site:chelseafc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T00:00:57.109085+00:00",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRDQ5WU5hV2J3SVp1UDFiYmozekQ1cGVyVTdvQjc1RGpiVWZsQ0xaSENQUXJ2WjZPMXpKN0lzcldmUzJ1TFJuQmJncHctLXRUWlBWOGozX2hjcjI5UVoyZkJJVW93R05Id2VBRk1tZFNadHBqQWI2Yl9KcF9vLS1ocXBTNlN4QngyMm1nRjZ6eGplYkJZQ19HeFVHZjNQSTZoanpGOTkzQm9ncXEwdVE?oc=5",
+      "published": "2026-11-27T20:12:36+00:00",
+      "publisher": "https://www.chelseafc.com",
+      "source": "https://rsshub.app/twitter/user/ChelseaFC",
+      "title": "Late Stamford Bridge winners: vote for your favourite on the Chelsea Official App! | News | Official Site - Chelsea Football Club"
     },
     {
       "desc": "WESLEY FOFANA was booed and jeered by his own fans as Chelsea made the journey to Nottingham Forest. The French defender",
@@ -7664,6 +7695,16 @@
       "publisher": "",
       "source": "https://www.skysports.com/rss/12040",
       "title": "VOTE: Were Arsenal right to sack Slegers?"
+    },
+    {
+      "desc": "Mode / Collections mode / Strauss | Liverpool FC Official Store Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T00:00:57.109361+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9wUjY5czRwUmhqZ3hiWnhSV3RCeFV4TVN2akZwbUJ1RWUyaUVEekY4TW5XWTZvVHp6Z2xaOGY0clZOcEQ0WDdDU2hsWU9mWUptbmNPN0VOV1BFXzhzb0NWek1GbUEzaGxsT3IwNEdn?oc=5",
+      "published": "2026-11-27T16:25:58+00:00",
+      "publisher": "https://store.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Mode / Collections mode / Strauss | Liverpool FC Official Store - Liverpool FC"
     },
     {
       "desc": "INTER MIAMI CF superstar Lionel Messi unsurprisingly leads the way as the highest-paid player in the MLS and by quite so",
@@ -8434,60 +8475,9 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "PSG tickets and hotel packages from just £319pp and watch Ligue 1 action at Parc des Princes in Paris"
-    },
-    {
-      "desc": "COMBINE a fun weekend in Barcelona with a match at the Nou Camp thanks to these incredible travel deals. Supporters have",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T12:44:28.988555+00:00",
-      "link": "https://www.thesun.co.uk/sport/39805720/barcelona-live-spain-match-ticket-hotel-nou-camp/",
-      "published": "2026-11-27T12:14:49+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Barcelona tickets and 2-night hotel deals from £309pp for game at the iconic Nou Camp"
-    },
-    {
-      "desc": "Kane, Mabbutt, Perryman, Son, Tull - how Sunderland link notable club firsts and lasts... Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:44:28.988588+00:00",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPX29VUUl0YUJ5TUIyR1A4ZzhKaFNCejlSczEyV3N2MmxTMk9JTlFXYnk3cE42MzB3aVlHVEdGcTlGUXo5LUFxSWJTWE5CczJ3cy1SRDRRWVpIaTJLTU1kUWIyR3VtUUpZSFZCdW4wU1VxY1cxZU8tem1vRE0tSmJZdk5HVk9IVzQwdG85YXpNSFg3eC14aVJ3SjNJSGFHYm1IQkxONEwyZ3docG9GSDg3QXl1TUowZFNkc2NwR000T1VKTGR6?oc=5",
-      "published": "2026-11-27T12:13:17+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Kane, Mabbutt, Perryman, Son, Tull - how Sunderland link notable club firsts and lasts... - Tottenham Hotspur"
-    },
-    {
-      "desc": "Premier League x Complex: A new take on football culture Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:44:28.988615+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5uRTRHRU9pa3l3dUpaVk1NT2RpZ3lZS3c5WXRRcGFDNS03SVUwU0U3WU43czJpenB0emRwWGlIdl9RVXhORmVubHNKYjZFM2pBZVViM0QyQWY?oc=5",
-      "published": "2026-11-27T12:10:21+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Premier League x Complex: A new take on football culture - Premier League"
-    },
-    {
-      "desc": "Fabrizio Romano confirms Liverpool 'delighted', currently in talks Anfield Watch",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T12:44:28.988644+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdTlrajU2c3BKRjFDR3liTnRCS0tEa3ZmQ3ZfeTNFRUZ0T3IwSnZlckV3Z21Xa3Fka3FDMmtrUkxaUTZtYWdUSDZRWWFBODVmTUcya3FOMUJZNVR2VE4yU0g0VGhkbDd1WWFuRWs1c1d0VkFGRDN4V0xibmR6S3N5VmhscTIxQlpmZ082UURGSnRMQ0VZZEt4U0hINzFUS0RKVFdzLUx4aERnWDZCeU1IUUh1OA?oc=5",
-      "published": "2026-11-27T12:00:30+00:00",
-      "publisher": "https://www.anfieldwatch.co.uk",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano confirms Liverpool 'delighted', currently in talks - Anfield Watch"
-    },
-    {
-      "desc": "Rangers should not experience any anxiety about the prospect of going top of the Premiership as they look to extend thei",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T12:44:28.988675+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/cm4gnqxvy34wo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T11:57:24+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "McInnes tempers 'anxiety' as Rangers seek top spot"
     }
   ],
   "processed_urls": [
-    "https://www.thesun.co.uk/sport/40865823/aston-villa-jamie-carragher-legal-action-man-utd/",
     "https://www.dailymail.com/sport/football/article-16253897/Aston-Villa-legal-action-against-Jamie-Carragher-pundit-claimed-Unai-Emery-replace-Michael-Carrick-Man-United-told-fans-f-off.html",
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xTHBzaVdnSktucERiTS1BMGpTVmtjQ3dSTTUxVjFaa3VmVHdHNG5lc2NuU0F1MDlRMHd3ekxwOERKNTZZNHk4ZWE5SzI2MUU5Qm1CdF82QmRYTlZ3UFJqTkxhN2tsVDU5SkpWZWF3",
     "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
@@ -8686,7 +8676,8 @@
     "https://www.thesun.co.uk/sport/41173512/arsenal-women-sack-renee-slegers",
     "https://www.thesun.co.uk/sport/41174415/gary-neville-erling-haaland-leaves-manchester-city-real-madrid",
     "https://www.thesun.co.uk/sport/41176575/chelsea-fans-abuse-fofana-interview",
-    "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show"
+    "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show",
+    "https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html"
   ],
   "s_overflow": {},
   "schema_version": 4
