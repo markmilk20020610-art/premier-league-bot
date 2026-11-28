@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 21,
+        "calls": 22,
         "errors": 0,
-        "requests": 21
+        "requests": 22
       }
     },
-    "calls": 21,
+    "calls": 22,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 131880,
-    "output_tokens": 14627,
-    "requests": 21
+    "input_tokens": 138665,
+    "output_tokens": 15239,
+    "requests": 22
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -52,28 +52,6 @@
       "telegram_message_id": 189,
       "title": "奥斯梅恩愿听取曼联报价，转会传闻再起",
       "updated_at": "2026-11-21T00:00:57.607542+00:00"
-    },
-    "02d6603fbef2": {
-      "attempts": 1,
-      "chunks": [],
-      "created_at": "2026-10-31T00:35:41.655392+00:00",
-      "delivery_status": "COMMITTED",
-      "event_fingerprint": "1647a3ee8dce1183",
-      "event_id": "02d6603fbef2",
-      "evidence_refs": [
-        {
-          "added_at": "2026-10-31T00:35:41.655392+00:00",
-          "origin": "migrated_from_evidence_url",
-          "title": "",
-          "url": "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html"
-        }
-      ],
-      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
-      "evidence_url": "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
-      "last_error": "",
-      "telegram_message_id": 21,
-      "title": "马丁内斯自曝手指重伤后无法复原：世界杯期间带伤作战如僵尸，看到X光片后痛哭",
-      "updated_at": "2026-10-31T00:35:42.517218+00:00"
     },
     "0405dda1c690": {
       "article_title": "Chelsea star Pedro Neto restrained by Craig Bellamy as he clashes with Wales bench after being sent off for Portugal",
@@ -5242,6 +5220,41 @@
       "title": "波切蒂诺首次执教曼联出战利物浦",
       "updated_at": "2026-11-22T14:01:00.701187+00:00"
     },
+    "bb871788c30d": {
+      "article_title": "Chelsea to stick with Xabi Alonso even though they’re in desperate need of guidance and lack anyone ready to provide it",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "232904d220a543c4",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 267
+        }
+      ],
+      "created_at": "2026-11-28T11:00:58.756791+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "c48adf13b52b83a5",
+      "event_id": "bb871788c30d",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-28T11:00:58.756791+00:00",
+          "origin": "created",
+          "title": "Chelsea to stick with Xabi Alonso even though they’re in desperate need of guidance and lack anyone ready to provide it",
+          "url": "https://www.thesun.co.uk/sport/41179599/chelsea-xabi-alonso-nottingham-forest"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.thesun.co.uk/sport/41179599/chelsea-xabi-alonso-nottingham-forest",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 267,
+      "title": "太阳报：切尔西坚持信任哈维·阿隆索，尽管球队急需指导",
+      "updated_at": "2026-11-28T11:00:59.655266+00:00"
+    },
     "bf397b956f34": {
       "article_title": "Chelsea Football Club marks 10 years since historic sexual abuse disclosures in football | News | Official Site - Chelsea Football Club",
       "attempts": 1,
@@ -6994,7 +7007,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-28T10:00:54.033584+00:00",
+  "last_scan_at": "2026-11-28T11:00:52.584460+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -7016,6 +7029,76 @@
   },
   "news_pool": [
     {
+      "desc": "WESLEY FOFANA will not have to look far if he wants someone to talk to about being targeted by Chelsea fans. The French ",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T11:00:52.587859+00:00",
+      "link": "https://www.thesun.co.uk/sport/41179599/chelsea-xabi-alonso-nottingham-forest/",
+      "published": "2026-11-28T10:58:16+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Chelsea to stick with Xabi Alonso even though they’re in desperate need of guidance and lack anyone ready to provide it"
+    },
+    {
+      "desc": "CRYSTAL PALACE want to back Thomas Frank with three new signings in January. The new Eagles boss, 53, is set to be given",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T11:00:52.587893+00:00",
+      "link": "https://www.thesun.co.uk/sport/41179669/crystal-palace-will-back-thomas-frank-with-three-signings/",
+      "published": "2026-11-28T10:56:50+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Crystal Palace want to back Thomas Frank with three January transfers with Maxence Lacroix replacement top of list"
+    },
+    {
+      "desc": "BOBBY MANZI AT ST MARY'S: Going full Emmanuel Adebayor, former Boro attacker Azaz found the bottom corner before idiotic",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-28T11:00:52.587964+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324521/southampton-middlesbrough-brawl-tonda-eckert-spygate.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-28T10:45:58+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Remarkable moment Southampton boss Tonda Eckert removes a box of tissues from his press conference: Manager left furious at his own club for"
+    },
+    {
+      "desc": "Manchester United activate an option on captain Bruno Fernandes' contract, extending it until 2028.",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T11:00:52.587995+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6d91j5geepqo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-28T10:28:36+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Man Utd trigger Fernandes' one-year contract extension"
+    },
+    {
+      "desc": "Alejandro Garnacho: Fabrizio Romano sends worrying message to Aston Villa with 'Chelsea not stupid' claim TEAMtalk",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T11:00:52.588025+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQ0l0WU9hcFBSVk5zNHlBSDNMeWQyZE1zTUJGZGlRRDFyaWtrNk1fM3pseHA4ams4RWdXQmE1OE1zekN0dlpiZHRYOUl1VHdsRk1NZG5LWW4zSlVJcUt3ZGxmelE3di1mMHlmRlpTdHMxaXNHekxxN0J0WmlrWmd6amFjRXVCbG55T2xRNkttYlp6MHRQR0U5bVlCeG0teXcxeHFz?oc=5",
+      "published": "2026-11-28T10:19:05+00:00",
+      "publisher": "https://www.teamtalk.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Alejandro Garnacho: Fabrizio Romano sends worrying message to Aston Villa with 'Chelsea not stupid' claim - TEAMtalk"
+    },
+    {
+      "desc": "Cardiff City used to be the dysfunctional poor relations in south Wales derbies, but they are changing the narrative wit",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T11:00:52.588055+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c6174nyvq2evo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-28T10:07:52+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "How Cardiff are changing Swansea derby narrative"
+    },
+    {
+      "desc": "THIS Saturday there won't be a 12.30pm kick-off in the Premier League. The early action comes from the EFL as Preston ho",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T11:00:52.588078+00:00",
+      "link": "https://www.thesun.co.uk/sport/41124513/why-no-premier-league-early-kick-off-saturday/",
+      "published": "2026-11-28T10:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Why is there no 12.30pm kick-off in the Premier League today?"
+    },
+    {
       "desc": "A POLISH football match was bizarrely interrupted by fan on a SCOOTER invading the pitch. Stal Stalowa Wola took on Legi",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
       "first_seen": "2026-11-28T10:00:54.035429+00:00",
@@ -7036,6 +7119,36 @@
       "title": "Roma continue talks with Endrick’s entourage - Yahoo Sports"
     },
     {
+      "desc": "Romano: Bruno Fernandes could leave Man Utd despite extension – Milan must be ‘closely monitored’ SempreMilan",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T11:00:52.588180+00:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5DUzhVLV9Jc3pUMVVXQjdFcW1XQkxQU2MyRk1CVWc4UWU5ZTJsVHBJUUh1X2J3S3d2SEFxZHdnRHN3M3ZKZjNFZ09LZ2p6WUYyTGNHRWk3a25HVkZKU2FHQTB1U3BpSk45cUJkeXNyejhjRGxwQkJyNlNVM01pd9IBgwFBVV95cUxQZ3dNSGdMYmVsZUMxaTZtV1FZbktwbHVTT0xDNEFfSHVDYjRuVDE0U1VYVExtYl9XdDhjYmJVUlh4bXRwZzdmeGVZOC1zUkZDMFhLZzFUNVdOX09qOGp1WXN3VFpKVTNRVk5RU0phVzNnMVdZX3NHR1JobWwtcVpWRF9UMA?oc=5",
+      "published": "2026-11-28T09:30:00+00:00",
+      "publisher": "https://sempremilan.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Romano: Bruno Fernandes could leave Man Utd despite extension – Milan must be ‘closely monitored’ - SempreMilan"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 Pre Print Gabriel Third Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T11:00:52.588206+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPLXBHSGl3SlpPVFQwdlc4TEJkbUNJVmxzN09BbFdnWWZ4dm9QdHBEaE5ZeENNd3UwT2ktUjVmMjU4MmR0Q3oxN0xtQnFsVXNUY0pqX3RzUTFPbElSV0pONGQzcExrOGlwZ3MwQjUtMll6X2UtVlY5Vkc5MjlHM2d6ZlhIVXY5eTJjTU91SWR1bzZQNURRTDRxS1R1bEtkWTU2SmtxZVZfU25LSE1jM2J0aHFjYlZqLVFTVUcyNEdNNjRWSVJpOV9pWUUyZDhPWm43?oc=5",
+      "published": "2026-11-28T09:21:32+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal adidas 26/27 Pre Print Gabriel Third Shirt - Arsenal Direct"
+    },
+    {
+      "desc": "Arsenal adidas 26/27 Pre Print Odegaard Authentic Third Shirt Arsenal Direct",
+      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T11:00:52.588230+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQZXBlSF9jd1lERWJkVXBVUjFyYzE2MHNKZ2J3cDV3ZExyN3M1UGtia05ZQXFUa0pwMGl0MW5fcXB3X0pHQUxCQXROZHlVcnZNV3NWOXh1T0ZnazRIUDhEQkdabTVsNzNlS0dpWlNkbER6dTh2RkQ0c1AxZFBNZUlaY29pTVFrOWh5VW5GV2I0d09FSEJPRlFRZktPVXIxOXVYbkhRaHdWak5EYjZTLUdZcXlQWUVmRW5mRUNQazlSb2ItNWNuenVRNkdRUzY5YWl1X1JzWHlBUkNSbm1ZN1RnTw?oc=5",
+      "published": "2026-11-28T09:21:32+00:00",
+      "publisher": "https://arsenaldirect.arsenal.com",
+      "source": "https://rsshub.app/twitter/user/Arsenal",
+      "title": "Arsenal adidas 26/27 Pre Print Odegaard Authentic Third Shirt - Arsenal Direct"
+    },
+    {
       "desc": "David Ornstein: £83m 'superstar in the making' now keen to join Man Utd Football FanCast",
       "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
       "first_seen": "2026-11-28T10:00:54.035463+00:00",
@@ -7054,6 +7167,16 @@
       "publisher": "",
       "source": "https://www.thesun.co.uk/sport/football/feed/",
       "title": "Man Utd vs Brentford: Our 32/1 bet builder tip, plus get £50 in free bets | Paddy Power"
+    },
+    {
+      "desc": "Fabrizio Romano Transfer News: Mourinho's Madrid stance, Garnacho, Bruno Fernandes FootballTransfers.com",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T11:00:52.588296+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeEtTakxmbFRxRmtiMEZtYTUzaFoyWEthd243SldmTEFiSEI0a3lqWG83YkV3czJyTDV2djYxcE1KOFYxbktBRzlnZTlGR2dGWHVkSWtMemhVVXNpNExReWpmVW02cXNrdXJFQXNWLTVhdzYweUlxVEFucjlkRXJSdXVQU1laVE5TN0g1b1hWd2tIb2p6UjFhejJOZFZ6MHBkUU1qQ2V0bHc1bjdSTDRVNU5Ia3FRQlJYdmhybkRfM3lBcVdHRmVwWFkyU0FFcE1uUTZmTDBoenROOFJyanJHRFZiZm9hVTZEOHN3?oc=5",
+      "published": "2026-11-28T08:57:00+00:00",
+      "publisher": "https://www.footballtransfers.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano Transfer News: Mourinho's Madrid stance, Garnacho, Bruno Fernandes - FootballTransfers.com"
     },
     {
       "desc": "We know what Chelsea's fans thought of Wesley Fofana starting. Whenever he had the ball, boos spilled out of the away en",
@@ -7314,6 +7437,16 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Forest Green Rovers - Premier League"
+    },
+    {
+      "desc": "Everton v Liverpool: Merseyside derby TV channels, how to follow and highlights guide Liverpool FC",
+      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T11:00:52.588795+00:00",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQV2oySjhRek1QbW5PZ21GTl9fTUtZRXpoRWp3LUxEN1Q4emdBM2doaS1Ddk1uejhXUm0ySE15M1pzZ2ZnXy1mUTI2ZXJEb0J6UE5tVlM2Z0o2emFMX2tDdHhsdzlOeEFfSy1RcmgyV2s0VzdUZVRST2MtXzF1YmFMbG93a2lEUUtwdGpnT2Vha2VVdW5KX0VxR1pteWhwUGE0SGlGRHU3QVM5ZTJmLXR1bkFfXzM5WFU?oc=5",
+      "published": "2026-11-28T03:48:39+00:00",
+      "publisher": "https://www.liverpoolfc.com",
+      "source": "https://rsshub.app/twitter/user/LFC",
+      "title": "Everton v Liverpool: Merseyside derby TV channels, how to follow and highlights guide - Liverpool FC"
     },
     {
       "desc": "LEWIS STEELE: The first sign that Andoni Iraola was different came in Chicago during Liverpool's pre-season tour. Iraola",
@@ -8394,130 +8527,9 @@
       "publisher": "https://www.livescore.com",
       "source": "https://rsshub.app/twitter/user/FabrizioRomano",
       "title": "Manchester United make major decision on Bruno Fernandes - LiveScore"
-    },
-    {
-      "desc": "Renee Slegers has been sacked as Arsenal head coach after a poor start to the Women's Super League season.",
-      "feed_origin": "https://www.skysports.com/rss/12040",
-      "first_seen": "2026-11-27T16:01:03.818252+00:00",
-      "link": "https://www.skysports.com/football/news/12040/13592850/renee-slegers-sacked-by-arsenal-only-18-months-after-winning-champions-league-following-poor-start-to-wsl-season",
-      "published": "2026-11-27T15:00:00+00:00",
-      "publisher": "",
-      "source": "https://www.skysports.com/rss/12040",
-      "title": "Slegers sacked by Arsenal"
-    },
-    {
-      "desc": "Martin Ho and team receive LMA Performance of the Week award Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T16:01:03.818268+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVkM3Zk40WENiQUJHY0xZcGZ3enJVNFZoSm1vRnV4SUNyZ1owU1VxSE9PVWNwRmFTTGZRRFZFVmhicmctWjBjc01WUFhFOXRjdmtneDAzSjk0T1FPYTV6dUtPbHB1VnVrQ3JpdW5KRHExRXE1dldzRUp6NHV6NEtEbE5BNjhyM2NrSTJuWjJfc050azdnZ21tdmlYWWhmTU56QTN3aWppUUpBZnliekUtcnVOb2MwWHJoaHc?oc=5",
-      "published": "2026-11-27T15:00:00+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Martin Ho and team receive LMA Performance of the Week award - Tottenham Hotspur"
-    },
-    {
-      "desc": "Everything you need for Gameweek 12 of FPL with the latest tips and advice Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.276284+00:00",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPaG1hdDNvM1JjdW5jSlVqQXJTSmNicWVmbVBvc3NfRUVhUFBoMVZxNzFvcmRJS2FFcUhDRXhoT3gydFk1V0NRVEd1UjZsSGtNVXFIaVRIbGFiUnhDelBCeHB6aHZGX2hkS29tLXRFeTU5Tk1sM2U3Z3hkOUdGRkFXWXpTUGQ4S2ttUl9xb0Q4VWRJenY2TElnTFNOZlRYZC15MUt4SnNobmtFRmN1Q2NZSzR2bnFWcUZ1dnhyOA?oc=5",
-      "published": "2026-11-27T14:58:57+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Everything you need for Gameweek 12 of FPL with the latest tips and advice - Premier League"
-    },
-    {
-      "desc": "CRISTIANO RONALDO and Lionel Messi could grace the turf on the same side after a huge hint was dropped by a former team-",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T15:00:54.195456+00:00",
-      "link": "https://www.thesun.co.uk/sport/41172043/cristiano-ronaldo-lionel-messi-play-together/",
-      "published": "2026-11-27T14:58:43+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Cristiano Ronaldo and Lionel Messi could finally be set to play TOGETHER after Man Utd legend lets slip"
-    },
-    {
-      "desc": "FORMER Liverpool star Naby Keita has been given a two-month break by his new club to improve his mental health. The midf",
-      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
-      "first_seen": "2026-11-27T15:00:54.195481+00:00",
-      "link": "https://www.thesun.co.uk/sport/41172721/naby-keita-liverpool-mental-health-ferencvaros/",
-      "published": "2026-11-27T14:56:07+00:00",
-      "publisher": "",
-      "source": "https://www.thesun.co.uk/sport/football/feed/",
-      "title": "Forgotten £53m Premier League star given two-month leave of absence by new club over mental health fears"
-    },
-    {
-      "desc": "Fabrizio Romano: Liverpool ‘already discussing’ next steps under Andoni Iraola Anfield Index",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195504+00:00",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVkQtclctUkxjUGd6ZTZ3YTUzNk5IQkpTdzNpUUdDcDR6ZHNPSW5UVTRFcXJLTmx2aUNjaGs2UUVPWE1fQmNCS2JkSE9FUW1Rb2V6WkhEX0xyQUQzclVmRER0SjJsUVk5MndVd1ZpS2pvMlBSbGJBWVJjRHFsUVNXTTVjeVRKRUVRZUZHX3RpcXBndWNpZldkSFdMTXQwZDVLMENYRm5WdkF6aW9nMmxUd2Jn?oc=5",
-      "published": "2026-11-27T14:53:36+00:00",
-      "publisher": "https://anfieldindex.com",
-      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
-      "title": "Fabrizio Romano: Liverpool ‘already discussing’ next steps under Andoni Iraola - Anfield Index"
-    },
-    {
-      "desc": "Every word of Arteta's pre-City press conference Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195522+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWnA3YnFQcEl1VVVTZGprOE1DTXVGdnZMMi1RUy1JX0FCVUd4UTJOZHotODRTMlI0TGdHZXlyM0tWb1FFdHFTcFBkLUprbmdZeVhJdHlad01EQlFjclBSWjFxOFZlY01TRW9zdEJ0bk9PeE8xTW9rTko5dDlKQ0IwZXlKS0pOMFJGZ3hrS2ZXellvbHM?oc=5",
-      "published": "2026-11-27T14:51:33+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Every word of Arteta's pre-City press conference - Arsenal.com"
-    },
-    {
-      "desc": "Arteta on whether Raya or Saka will be fit to face Man City Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195540+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZzhNRkFDcGRIR1Y3RlBILTZNUC1UMERaaktmVHRKWWtValJWaUlwcTVuWjRJS2JOZWpkVDY4M3BOU20zcF9zNGplNjUtSGtDRGxDNWhXMXdXTWNld2NYem55eWtRdzhxSXRKd05zNnBRdmp1ZGxRa2NaUVlpYTdMT2sycGt4c2k3aGh6bnF5TjVueDR6cWNraXhsWUR6S2VMemI4?oc=5",
-      "published": "2026-11-27T14:50:22+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Arteta on whether Raya or Saka will be fit to face Man City - Arsenal.com"
-    },
-    {
-      "desc": "Port Vale: Connor Hall banned for three games after Barnet incident BBC",
-      "feed_origin": "https://news.google.com/rss/search?q=%22The+FA%22+statement+OR+disciplinary+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T19:00:49.853701+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1LWxKcUdXczBGR0VxSlBBR2Iyc1poN0ViWFFNaTgwRlAxUGZCVVhGbHAySEJoNldRcDRWSG1IMHI1a0NOSkxHaTFZMloxaVFUdE80eFBBTGxEcHpNaVc1bHpYQlUxdmVOSkxr?oc=5",
-      "published": "2026-11-27T14:50:22+00:00",
-      "publisher": "https://www.bbc.co.uk",
-      "source": "https://www.thefa.com/rss",
-      "title": "Port Vale: Connor Hall banned for three games after Barnet incident - BBC"
-    },
-    {
-      "desc": "Mikel: “We need to enjoy and embrace this game” Arsenal.com",
-      "feed_origin": "https://news.google.com/rss/search?q=site:arsenal.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195557+00:00",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQT1JKZWRaaHdscjJZd1dEaTViRWFhZFFMWlZWTzhpX3c3TnVpTjVpbW5jSWRmYlphRHNKb19SdWZNaXVKMjFRbWxEcGlJbm1XZ3cyaTB3LXF2TERoU0kzR0hZWXZrZHUxenZ2a3NXcFNTQTZGV0E3NUdRc0JYUk9tcW1NSHlhLXpHMVlpY2V0cw?oc=5",
-      "published": "2026-11-27T14:50:21+00:00",
-      "publisher": "https://www.arsenal.com",
-      "source": "https://rsshub.app/twitter/user/Arsenal",
-      "title": "Mikel: “We need to enjoy and embrace this game” - Arsenal.com"
-    },
-    {
-      "desc": "‘Very important’ - how Alexander Isak is contributing more than just goals for Liverpool Liverpool FC",
-      "feed_origin": "https://news.google.com/rss/search?q=site:liverpoolfc.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T20:00:58.808372+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcjlRS1BmRFdUaXVwX2RFS3lEV0NtMGE2MW05cXo4WFo1a2ZpSG5lY1J6Y0dVTEhER0FzNVI1SkRIYnJsaGVldzBmVWxwQ0w1S2FkSzFtRDdRU0dJb2pXUE1heFk3LW9DY0g5ZTRfUmE0S1VPU09uWFFGSFphM3VLNU93YTk5a250bzZ4UmJmS2syc1AxbnlYOGJ0Q0NSMFl2TGhIY1JkRTFvU0JYWkdIZ2lrdGpfVXh6?oc=5",
-      "published": "2026-11-27T14:50:14+00:00",
-      "publisher": "https://www.liverpoolfc.com",
-      "source": "https://rsshub.app/twitter/user/LFC",
-      "title": "‘Very important’ - how Alexander Isak is contributing more than just goals for Liverpool - Liverpool FC"
-    },
-    {
-      "desc": "Manchester United have triggered the 12-month extension clause in Bruno Fernandes' contract after their captain put talk",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T16:01:03.818353+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16326907/Bruno-Fernandes-Man-United-new-contract-extension.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-27T14:49:34+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Bruno Fernandes is STAYING at Man United - for now! Red Devils trigger 12-month extension clause to prevent losing captain for free - as he "
     }
   ],
   "processed_urls": [
-    "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
     "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html",
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw",
     "https://www.thesun.co.uk/sport/40844914/man-city-brighton-predictions-etihad",
@@ -8716,7 +8728,8 @@
     "https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html",
     "https://www.thesun.co.uk/sport/41178557/southampton-middlesbrough-eckert-azaz-spygate",
     "https://www.thesun.co.uk/sport/41178806/chelsea-nottingham-forest-records-xabi-alonso",
-    "https://www.dailymail.com/sport/football/article-16324535/xabi-alonso-wesley-fofana-chelsea.html"
+    "https://www.dailymail.com/sport/football/article-16324535/xabi-alonso-wesley-fofana-chelsea.html",
+    "https://www.thesun.co.uk/sport/41179599/chelsea-xabi-alonso-nottingham-forest"
   ],
   "s_overflow": {},
   "schema_version": 4
