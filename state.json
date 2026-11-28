@@ -2,17 +2,17 @@
   "ai_stats": {
     "by_provider": {
       "deepseek": {
-        "calls": 19,
+        "calls": 20,
         "errors": 0,
-        "requests": 19
+        "requests": 20
       }
     },
-    "calls": 19,
+    "calls": 20,
     "date": "2026-11-28",
     "errors": 0,
-    "input_tokens": 120259,
-    "output_tokens": 13340,
-    "requests": 19
+    "input_tokens": 125707,
+    "output_tokens": 14006,
+    "requests": 20
   },
   "circuit_breakers": {
     "deepseek": {}
@@ -761,6 +761,41 @@
       "telegram_message_id": 237,
       "title": "希勒炮轰裁判：阿森纳战平多特蒙德逃过点球",
       "updated_at": "2026-11-25T03:01:05.935748+00:00"
+    },
+    "1981ebe132e3": {
+      "article_title": "Cruel Xabi Alonso exposed Wesley Fofana by starting under-fire star: Chelsea boss was as much at fault at his liability of a defender - and",
+      "attempts": 1,
+      "chunks": [
+        {
+          "attempts": 1,
+          "chunk_hash": "1f62cfed3fa172e5",
+          "chunk_index": 1,
+          "chunk_total": 1,
+          "delivery_status": "DELIVERED",
+          "last_error": "",
+          "telegram_message_id": 266
+        }
+      ],
+      "created_at": "2026-11-28T09:00:58.968310+00:00",
+      "delivery_status": "COMMITTED",
+      "event_fingerprint": "3a5f39d889a358bb",
+      "event_id": "1981ebe132e3",
+      "evidence_refs": [
+        {
+          "added_at": "2026-11-28T09:00:58.968310+00:00",
+          "origin": "created",
+          "title": "Cruel Xabi Alonso exposed Wesley Fofana by starting under-fire star: Chelsea boss was as much at fault at his liability of a defender - and",
+          "url": "https://www.dailymail.com/sport/football/article-16324535/xabi-alonso-wesley-fofana-chelsea.html"
+        }
+      ],
+      "evidence_status": "MULTIPLE_INDEPENDENT_SOURCES",
+      "evidence_url": "https://www.dailymail.com/sport/football/article-16324535/xabi-alonso-wesley-fofana-chelsea.html",
+      "last_error": "",
+      "next_retry_at": "",
+      "pending_text": "",
+      "telegram_message_id": 266,
+      "title": "阿隆索首发福法纳遭切尔西球迷嘘声，邮报批其用人失误",
+      "updated_at": "2026-11-28T09:00:59.707649+00:00"
     },
     "19acf61deebb": {
       "article_title": "Man Utd wonderkid Jaydan Kamason accidentally wipes out linesman as u21s clash marred by red card drama",
@@ -2441,28 +2476,6 @@
       "telegram_message_id": 61,
       "title": "拜仁多特球迷看台爆发斗殴 警方持警棍介入",
       "updated_at": "2026-11-01T08:29:28.671447+00:00"
-    },
-    "51d986cb8977": {
-      "attempts": 1,
-      "chunks": [],
-      "created_at": "2026-10-31T00:25:39.058557+00:00",
-      "delivery_status": "COMMITTED",
-      "event_fingerprint": "e04952b39ad3f689",
-      "event_id": "51d986cb8977",
-      "evidence_refs": [
-        {
-          "added_at": "2026-10-31T00:25:39.058557+00:00",
-          "origin": "migrated_from_evidence_url",
-          "title": "",
-          "url": "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/"
-        }
-      ],
-      "evidence_status": "SINGLE_SOURCE",
-      "evidence_url": "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
-      "last_error": "",
-      "telegram_message_id": 20,
-      "title": "西汉姆联以色列球员所罗门遭亲巴勒斯坦人士辱骂为“婴儿杀手”",
-      "updated_at": "2026-10-31T00:25:39.680813+00:00"
     },
     "5261400ac9ca": {
       "article_title": "New Man Utd boss Mauricio Pochettino to ban players’ day off after games as he cracks the whip in major fitness blitz",
@@ -6981,7 +6994,7 @@
     }
   },
   "last_morning_report_date": "2026-11-28",
-  "last_scan_at": "2026-11-28T08:00:48.887903+00:00",
+  "last_scan_at": "2026-11-28T09:00:53.879544+00:00",
   "last_summary_sent_at": "2026-11-27T22:01:25.037601+00:00",
   "morning_delivery": {
     "attempts": 1,
@@ -7002,6 +7015,46 @@
     "updated_at": "2026-11-27T22:01:25.011859+00:00"
   },
   "news_pool": [
+    {
+      "desc": "We know what Chelsea's fans thought of Wesley Fofana starting. Whenever he had the ball, boos spilled out of the away en",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-28T09:00:53.882968+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324535/xabi-alonso-wesley-fofana-chelsea.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-28T08:32:57+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Cruel Xabi Alonso exposed Wesley Fofana by starting under-fire star: Chelsea boss was as much at fault at his liability of a defender - and "
+    },
+    {
+      "desc": "Who are the greatest free-kick specialists in Premier League history? BBC Sport delves into the stats and ranks the top ",
+      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "first_seen": "2026-11-28T09:00:53.883009+00:00",
+      "link": "https://www.bbc.co.uk/sport/football/articles/cjzx97dz149qo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-11-28T08:14:24+00:00",
+      "publisher": "",
+      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
+      "title": "Ranking the Premier League's ultimate free-kick specialists"
+    },
+    {
+      "desc": "Fabrizio Romano provides key update on Real Madrid superstar Vinícius Jr amid reported PSG interest Sportskeeda",
+      "feed_origin": "https://news.google.com/rss/search?q=%22Fabrizio+Romano%22+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "first_seen": "2026-11-28T09:00:53.883045+00:00",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNU0tnU3RyeXI5WVNkWUtxbFBPYXIxbnQzRjJCUWd1Qk9lNFo2OUJILXdFUGNwUHB2LU9tWDF4eHNBcU1vZWxyTXphWVVoMmZrT19IMGNTaExzV1lpczhvQ3VNVHU5cjZYUEFZM1FUMG5uTDA5QkFNWlFvSE5kWWxTRFpYN0FFbHNrWDU4eGV2dWNuVnVYekI1UEdfUUt2Q3VldFVTNE41REJLdlByNlAySHJ4eUFtQmlLcE1YdHo3Z0x6dTIzdkVDc3o0bzdvSXJxMVpmM19B?oc=5",
+      "published": "2026-11-28T08:02:00+00:00",
+      "publisher": "https://www.sportskeeda.com",
+      "source": "https://rsshub.app/twitter/user/FabrizioRomano",
+      "title": "Fabrizio Romano provides key update on Real Madrid superstar Vinícius Jr amid reported PSG interest - Sportskeeda"
+    },
+    {
+      "desc": "IF IT’S darkest before the dawn, Enzo Maresca better hope it’s pitch black just after 7.30am tomorrow. In the wake of Pe",
+      "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
+      "first_seen": "2026-11-28T09:00:53.883071+00:00",
+      "link": "https://www.thesun.co.uk/sport/41168928/sunsport-picks-premier-league-arsenal-man-city/",
+      "published": "2026-11-28T08:00:00+00:00",
+      "publisher": "",
+      "source": "https://www.thesun.co.uk/sport/football/feed/",
+      "title": "Betting column: SunSport picks for Arsenal vs Man City and more in huge Prem weekend"
+    },
     {
       "desc": "XABI ALONSO endured a nightmare evening as Chelsea were beaten 3-2 by Nottingham Forest. Igor Jesus' early opener and a ",
       "feed_origin": "https://www.thesun.co.uk/sport/football/feed/",
@@ -7061,6 +7114,16 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Who am I? Plus today's other quizzes"
+    },
+    {
+      "desc": "CRAIG HOPE: It was four years ago this week that I spoke to Lothar Matthaus - and all he wanted to talk about was Jamal ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-28T09:00:53.883236+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16325031/bayern-munich-jamal-musiala-future.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-28T07:00:49+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Bayern Munich are at war with themselves over 'unacceptable' treatment of Jamal Musiala, writes CRAIG HOPE - now the £20m-a-year star faces "
     },
     {
       "desc": "MAURICIO POCHETTINO'S first taste of Old Trafford as Manchester United manager comes on Saturday when the Reds host Bren",
@@ -7191,6 +7254,26 @@
       "publisher": "https://www.premierleague.com",
       "source": "https://www.premierleague.com/rss/news",
       "title": "Forest Green Rovers - Premier League"
+    },
+    {
+      "desc": "LEWIS STEELE: The first sign that Andoni Iraola was different came in Chicago during Liverpool's pre-season tour. Iraola",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-28T09:00:53.883497+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324915/Andoni-Iraola-Liverpool.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-28T02:00:59+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "How Andoni Iraola made Liverpool's fans - and players - fall in love with him: 'There's a connection building. He gets the club'"
+    },
+    {
+      "desc": "Stoke City have been here before. They know how it feels to be among the pace-setters, striding towards the place where ",
+      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
+      "first_seen": "2026-11-28T09:00:53.883540+00:00",
+      "link": "https://www.dailymail.com/sport/football/article-16324225/stoke-city-mark-robins-turnaround.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
+      "published": "2026-11-28T02:00:56+00:00",
+      "publisher": "",
+      "source": "https://www.dailymail.com/sport/football/index.rss",
+      "title": "Inside Stoke City's turnaround under Mark Robins: How they cleansed 'toxic' dressing room, the medical guru who stopped their injury crisis,"
     },
     {
       "desc": "Aston Villa coach handed four-match ban after furious reaction to Manchester United equaliser Howl.Link",
@@ -8431,80 +8514,9 @@
       "publisher": "",
       "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
       "title": "Falkirk chase seven in a row at Rangers & Celtic visit Hearts"
-    },
-    {
-      "desc": "Manchester United activate an option on captain Bruno Fernandes' contract, extending it until 2028.",
-      "feed_origin": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "first_seen": "2026-11-27T15:00:54.195670+00:00",
-      "link": "https://www.bbc.co.uk/sport/football/articles/c6d91j5geepqo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-11-27T14:37:07+00:00",
-      "publisher": "",
-      "source": "https://feeds.bbci.co.uk/sport/football/rss.xml",
-      "title": "Man Utd trigger Fernandes' one-year contract extension"
-    },
-    {
-      "desc": "Man Utd: Ornstein reveals Fernandes option has been activated after clear preference emerges Football365",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.276453+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdlVPZGdvRmZjak5SdDBfRlRNU0RFSmYtb0Rxc1IzdFV6S1hJU0dVV2RvSXhvN2dIc3Q5SU9FcWFzaDRPSWRETjBzelZtamM4OWphZ1h5MU1aQ0Nxb3dHZXFRZU4ySHVmZF9XN3M1MUhUR010WkowUHJHcUhBYS1xc2hOM1U1bE1JV3c?oc=5",
-      "published": "2026-11-27T14:36:39+00:00",
-      "publisher": "https://www.football365.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man Utd: Ornstein reveals Fernandes option has been activated after clear preference emerges - Football365"
-    },
-    {
-      "desc": "Erling Haaland mood down to Manchester City form not Premier League judgment – Enzo Maresca The New York Times",
-      "feed_origin": "https://news.google.com/rss/search?q=%22Sam+Lee%22+Manchester+City+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195696+00:00",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZVVMeUZ1TDhZLTl5c1RMVDZVZWh3aE9DTXZVaFlmLWNKZlVIbTU2a1MtOEJjcFhYVDRlNmpqYWhQSDg1eERtNVZDN0FObTI0Rk5RRmNiYnloekpqVUp4dXF4bTl4bmtSNTVNb0gteHFPVGtmcDA4VmhmVGpDVDJyZUlKNlRhQ3NmMy14bXZ1eHF2aWJ1b2dDaHFZT24?oc=5",
-      "published": "2026-11-27T14:34:21+00:00",
-      "publisher": "https://www.nytimes.com",
-      "source": "https://rsshub.app/twitter/user/SamLee",
-      "title": "Erling Haaland mood down to Manchester City form not Premier League judgment – Enzo Maresca - The New York Times"
-    },
-    {
-      "desc": "Official Spurs Website Tottenham Hotspur",
-      "feed_origin": "https://news.google.com/rss/search?q=site:tottenhamhotspur.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195712+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMlJBdVFITHVyazMtY3Z2UHp2N0dLcGFOeVVsd0dWMV9vczhKaVB0Vm84YzJ3aERoWk1aWGQtd2Nrcmg4X2NNS1pnaVVFWGhFSWt4UjE4Nm1NS1lKbFYxcmJ4Z3FDMVFoTms4bXFDSXNtV2NFWGI2ZXA2MEpLX3pXR2JR?oc=5",
-      "published": "2026-11-27T14:23:35+00:00",
-      "publisher": "https://www.tottenhamhotspur.com",
-      "source": "https://rsshub.app/twitter/user/SpursOfficial",
-      "title": "Official Spurs Website - Tottenham Hotspur"
-    },
-    {
-      "desc": "Man Utd make Bruno Fernandes contract decision - David Ornstein FootballTransfers.com",
-      "feed_origin": "https://news.google.com/rss/search?q=%22David+Ornstein%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T15:00:54.195730+00:00",
-      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQQWNFTzh0YnpTUHVMbGtxZVZ5NjJGcGlTM0lzVFROdW01cjNTdGhzcUExNWlpemtvUWw5UHd6ZWtBZXRNZVV5Uk16d3hZZm9vY3Z2WmdJejBER0JIWHY3WlBTV1JMV2ZUQ1Y4b24wMTM3WmNOQ3MzSEplMG8yUDVuSHprZERhd1BzOUhEMFBxc2JialZmYzNGc19jQnZoX25UbldfM0dvbThiY05tNzkxMDl5Vl9sWTRDWDloMzR1MUQwc3BWYnRoQ0t5WHRNUQ?oc=5",
-      "published": "2026-11-27T14:23:08+00:00",
-      "publisher": "https://www.footballtransfers.com",
-      "source": "https://rsshub.app/twitter/user/David_Ornstein",
-      "title": "Man Utd make Bruno Fernandes contract decision - David Ornstein - FootballTransfers.com"
-    },
-    {
-      "desc": "Players had surrounded Aleman after the final whistle to contest decisions during the match, with the official then appe",
-      "feed_origin": "https://www.dailymail.com/sport/football/index.rss",
-      "first_seen": "2026-11-27T16:01:03.818499+00:00",
-      "link": "https://www.dailymail.com/sport/football/article-16326493/Shocking-moment-referee-PUNCHES-footballer-sends-four-players-wild-brawl-Bolivian-Cup-Final.html?ns_mchannel=rss&ns_campaign=1490&ito=1490",
-      "published": "2026-11-27T14:19:54+00:00",
-      "publisher": "",
-      "source": "https://www.dailymail.com/sport/football/index.rss",
-      "title": "Shocking moment referee PUNCHES footballer and sends off four players in wild brawl after Bolivian Cup Final"
-    },
-    {
-      "desc": "Who is the best FPL captain for Gameweek 12? Premier League",
-      "feed_origin": "https://news.google.com/rss/search?q=site:premierleague.com+%22Premier+League%22+when:1d&hl=en-US&gl=US&ceid=US:en",
-      "first_seen": "2026-11-27T17:00:56.276534+00:00",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNY1hIMEpBRTFWQ05ZSm9Wb2hOOVhjYVQwMzBLYzB2cXJsVXR1ZmgxLThyZGVubHdDc3huWTEzNFBCcnNqNGRDY3c0dGh0N3ZTRDdiYTNTTG85cV9xd3J3cC13N3p4Z21JQ0FIWW55eEJMcVF6eVRwTFhwNElQbFVxbUZqQXBnZmV2TVJzY0lhbkZLWUU?oc=5",
-      "published": "2026-11-27T14:18:09+00:00",
-      "publisher": "https://www.premierleague.com",
-      "source": "https://www.premierleague.com/rss/news",
-      "title": "Who is the best FPL captain for Gameweek 12? - Premier League"
     }
   ],
   "processed_urls": [
-    "https://www.thesun.co.uk/sport/40865564/manor-solomon-israel-pro-palestine-west-ham/",
     "https://www.dailymail.com/sport/football/article-16253773/Emiliano-Martinez-reveals-finger-wont-return-normal-Chelsea-goalkeeper-played-injury-World-Cup.html",
     "https://www.dailymail.com/sport/football/article-16252479/Gary-Neville-Michael-Carrick-Man-United.html",
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZk1QQzJXQV93V2Nha1RrbHNDRy1XYWJ5WmNBa0VIcmh4TGI4QmNPUHIyNGI5dzRULUdMLXE0SmNfd3E1dGhNb2pRRjN1S2hHVXdoSVZ3WFdIX1JwN1RHTDRSbWFJTVBlSlY0Z2N2bXVleEhvbXRuOFNLV3lwWFBaUmZHOHFFbmNQOTZNa3JwNTRKcllFRmp4Zw",
@@ -8703,7 +8715,8 @@
     "https://www.thesun.co.uk/sport/41177696/xabi-alonso-clings-on-fofana-horror-show",
     "https://www.dailymail.com/sport/football/article-16327561/david-raya-misses-training-arsenal-man-city.html",
     "https://www.thesun.co.uk/sport/41178557/southampton-middlesbrough-eckert-azaz-spygate",
-    "https://www.thesun.co.uk/sport/41178806/chelsea-nottingham-forest-records-xabi-alonso"
+    "https://www.thesun.co.uk/sport/41178806/chelsea-nottingham-forest-records-xabi-alonso",
+    "https://www.dailymail.com/sport/football/article-16324535/xabi-alonso-wesley-fofana-chelsea.html"
   ],
   "s_overflow": {},
   "schema_version": 4
